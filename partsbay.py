@@ -47,6 +47,8 @@ BRANCH_NAME = "AS_부산(해운중동)"
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "output"
 DOCS_DIR = BASE_DIR / "docs"  # GitHub Pages가 서빙하는 폴더
+# 팀 캘린더: 이 이름의 이미지 파일을 docs 폴더에 넣어두면 "팀 캘린더" 메뉴에 그대로 표시됨.
+CALENDAR_IMAGE_CANDIDATES = ["team-calendar.jpg", "team-calendar.jpeg", "team-calendar.png", "team-calendar.webp"]
 GIT_REMOTE_URL = "https://github.com/yabiruby-alt/dsparts-hd.git"
 PUBLISH_TO_GITHUB = True
 # 크로미움이 한글 등 비-ASCII 경로의 --user-data-dir 에서 불안정하게 종료되는 문제가 있어
@@ -566,9 +568,11 @@ def run_cycle(page: Page) -> None:
     oaov = build_oaov(pw_rows, inv["total"])
     ext, shop = build_ext_shop(to_rows, period_label)
     acc, tire = build_acc_tire(to_rows)
+    calendar_image = next((f for f in CALENDAR_IMAGE_CANDIDATES if (DOCS_DIR / f).exists()), None)
 
     data = {
-        "meta": {"branch_name": BRANCH_NAME, "brch_code": f"BRCH {BRCH_CD}", "generated_at": generated_at},
+        "meta": {"branch_name": BRANCH_NAME, "brch_code": f"BRCH {BRCH_CD}", "generated_at": generated_at,
+                 "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
     }
 
