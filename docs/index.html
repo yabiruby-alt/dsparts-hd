@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 백엔드가 10분마다 갱신하므로, 켜둔 화면도 같은 주기로 자동 새로고침 -->
+<meta http-equiv="refresh" content="600">
 <title>동성모터스 PARTS</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap');
@@ -184,7 +186,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 17일 (목) · 13:15 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 17일 (목) · 13:26 기준</div>
   </nav>
 
   <main class="main">
@@ -193,7 +195,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 17일 (목) · 13:15 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 17일 (목) · 13:26 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -207,8 +209,8 @@
         <button class="kpitile" id="tile-inv" onclick="selectKpi('inv')" aria-pressed="false">
           <span class="rank">02</span>
           <span class="eyebrow">재고금액 · 부품창고</span>
-          <span class="value">₩1,178,270,349</span>
-          <span class="foot">2156품목 · 25개 코드</span>
+          <span class="value">₩1,176,307,103</span>
+          <span class="foot">2151품목 · 25개 코드</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
       </div>
@@ -449,8 +451,8 @@
         <div id="detail-inv" hidden>
           <div class="viewer-head">
             <span class="lbl">재고금액 세부</span>
-            <span class="val">₩1,178,270,349</span>
-            <span class="foot">2156품목 · 부품창고</span>
+            <span class="val">₩1,176,307,103</span>
+            <span class="foot">2151품목 · 부품창고</span>
           </div>
           <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
           <div class="tablewrap"><table>
@@ -468,7 +470,7 @@
       <td><span class="aloistag">A1</span></td>
       <td class="num">2,349</td>
       <td class="num">219,447,980</td>
-      <td class="num">18.62%</td>
+      <td class="num">18.66%</td>
     </tr>
     
     <tr>
@@ -487,30 +489,30 @@
     
     <tr>
       <td><span class="aloistag">A4</span></td>
-      <td class="num">1,939</td>
-      <td class="num">42,019,282</td>
+      <td class="num">1,938</td>
+      <td class="num">42,008,228</td>
       <td class="num">3.57%</td>
     </tr>
     
     <tr>
       <td><span class="aloistag">A5</span></td>
-      <td class="num">1,331</td>
-      <td class="num">68,335,094</td>
-      <td class="num">5.80%</td>
+      <td class="num">1,315</td>
+      <td class="num">68,320,902</td>
+      <td class="num">5.81%</td>
     </tr>
     
     <tr>
       <td><span class="aloistag">A6</span></td>
-      <td class="num">1,445</td>
-      <td class="num">90,404,595</td>
+      <td class="num">1,444</td>
+      <td class="num">90,246,801</td>
       <td class="num">7.67%</td>
     </tr>
     
     <tr class="subtotal">
       <td>A 합계</td>
-      <td class="num">8,774</td>
-      <td class="num">452,416,393</td>
-      <td class="num">38.40%</td>
+      <td class="num">8,756</td>
+      <td class="num">452,233,353</td>
+      <td class="num">38.45%</td>
     </tr>
     
     <tr class="grouphead"><td colspan="4">L</td></tr>
@@ -524,8 +526,8 @@
     
     <tr>
       <td><span class="aloistag">L2</span></td>
-      <td class="num">232</td>
-      <td class="num">9,377,695</td>
+      <td class="num">231</td>
+      <td class="num">9,370,215</td>
       <td class="num">0.80%</td>
     </tr>
     
@@ -554,44 +556,44 @@
       <td><span class="aloistag">L6</span></td>
       <td class="num">370</td>
       <td class="num">30,683,557</td>
-      <td class="num">2.60%</td>
+      <td class="num">2.61%</td>
     </tr>
     
     <tr>
       <td><span class="aloistag">L7</span></td>
       <td class="num">1,331</td>
       <td class="num">55,765,348</td>
-      <td class="num">4.73%</td>
+      <td class="num">4.74%</td>
     </tr>
     
     <tr class="subtotal">
       <td>L 합계</td>
-      <td class="num">4,574</td>
-      <td class="num">145,949,041</td>
-      <td class="num">12.39%</td>
+      <td class="num">4,573</td>
+      <td class="num">145,941,561</td>
+      <td class="num">12.41%</td>
     </tr>
     
     <tr class="grouphead oseries"><td colspan="4">O</td></tr>
     
     <tr class="oseries">
       <td><span class="aloistag oseries">O8</span></td>
-      <td class="num">1,132</td>
-      <td class="num">63,968,977</td>
-      <td class="num">5.43%</td>
+      <td class="num">1,130</td>
+      <td class="num">62,368,342</td>
+      <td class="num">5.30%</td>
     </tr>
     
     <tr class="oseries">
       <td><span class="aloistag oseries">OA</span></td>
       <td class="num">236</td>
       <td class="num">40,178,669</td>
-      <td class="num">3.41%</td>
+      <td class="num">3.42%</td>
     </tr>
     
     <tr class="oseries">
       <td><span class="aloistag oseries">OE</span></td>
       <td class="num">1,153</td>
       <td class="num">305,152,735</td>
-      <td class="num">25.90%</td>
+      <td class="num">25.94%</td>
     </tr>
     
     <tr class="oseries">
@@ -610,25 +612,25 @@
     
     <tr class="subtotal oseries">
       <td>O 합계</td>
-      <td class="num">2,741</td>
-      <td class="num">433,024,829</td>
-      <td class="num">36.75%</td>
+      <td class="num">2,739</td>
+      <td class="num">431,424,194</td>
+      <td class="num">36.68%</td>
     </tr>
     
     <tr class="grouphead"><td colspan="4">I</td></tr>
     
     <tr>
       <td><span class="aloistag">II</span></td>
-      <td class="num">50</td>
-      <td class="num">10,365,251</td>
-      <td class="num">0.88%</td>
+      <td class="num">47</td>
+      <td class="num">10,193,160</td>
+      <td class="num">0.87%</td>
     </tr>
     
     <tr class="subtotal">
       <td>I 합계</td>
-      <td class="num">50</td>
-      <td class="num">10,365,251</td>
-      <td class="num">0.88%</td>
+      <td class="num">47</td>
+      <td class="num">10,193,160</td>
+      <td class="num">0.87%</td>
     </tr>
     
     <tr class="grouphead"><td colspan="4">S</td></tr>
@@ -651,7 +653,7 @@
       <td><span class="aloistag">SK</span></td>
       <td class="num">851</td>
       <td class="num">32,763,972</td>
-      <td class="num">2.78%</td>
+      <td class="num">2.79%</td>
     </tr>
     
     <tr>
@@ -672,14 +674,14 @@
       <td><span class="aloistag">SZ</span></td>
       <td class="num">251</td>
       <td class="num">87,218,135</td>
-      <td class="num">7.40%</td>
+      <td class="num">7.41%</td>
     </tr>
     
     <tr class="subtotal">
       <td>S 합계</td>
       <td class="num">1,446</td>
       <td class="num">136,514,835</td>
-      <td class="num">11.59%</td>
+      <td class="num">11.61%</td>
     </tr>
     
   </tbody>
@@ -914,8 +916,8 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">전체재고 대비 OA+OV 비율</span>
-          <span class="value">5.26%</span>
-          <span class="foot">OA+OV 재고금액 ₩61,981,848 · 전체재고 ₩1,178,270,349</span>
+          <span class="value">5.27%</span>
+          <span class="foot">OA+OV 재고금액 ₩61,981,848 · 전체재고 ₩1,176,307,103</span>
         </div>
       </div>
 
