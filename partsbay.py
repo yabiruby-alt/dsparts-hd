@@ -313,13 +313,14 @@ def build_oaov(pw_rows, inv_total):
     oa_qty = round(sum(num(r.get("crtQty")) for r in oa))
     ov_qty = round(sum(num(r.get("crtQty")) for r in ov))
     oa_items, ov_items = items_of(oa), items_of(ov)
+    top_items = sorted(oa_items + ov_items, key=lambda i: i["val"], reverse=True)[:10]
     total = oa_val + ov_val
     return {
         "total": total, "inv_total": inv_total,
         "pct": round(100 * total / inv_total, 2) if inv_total else 0,
         "oa_val": oa_val, "ov_val": ov_val, "oa_lines": len(oa), "ov_lines": len(ov),
         "oa_qty": oa_qty, "ov_qty": ov_qty, "item_count": len(oa) + len(ov),
-        "oa_items": oa_items, "ov_items": ov_items,
+        "oa_items": oa_items, "ov_items": ov_items, "top_items": top_items,
     }
 
 
