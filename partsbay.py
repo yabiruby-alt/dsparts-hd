@@ -326,6 +326,43 @@ def build_oaov(pw_rows, inv_total):
     }
 
 
+def build_longstock(pw_rows, inv_total, now):
+    """lastSaleDt(최종판매일) 기준 12개월+/24개월+ 미판매(장기재고) 집계. 판매이력 없음도 포함."""
+    def val_fn(r):
+        return num(r.get("crtQty")) * num(r.get("movPrc"))
+
+    def months_since(dt_str):
+        if not dt_str:
+            return None
+        d = datetime.strptime(dt_str[:10], "%Y-%m-%d")
+        return (now.year - d.year) * 12 + (now.month - d.month) - (1 if now.day < d.day else 0)
+
+    def items_of(rows):
+        return sorted([{
+            "item": r.get("itemCd"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
+            "qty": int(num(r.get("crtQty"))), "val": round(val_fn(r)),
+            "last_sale": (r.get("lastSaleDt") or "")[:10] or "판매이력 없음",
+        } for r in rows], key=lambda i: i["val"], reverse=True)
+
+    m12_rows, m24_rows = [], []
+    for r in pw_rows:
+        months = months_since(r.get("lastSaleDt"))
+        if months is None or months >= 12:
+            m12_rows.append(r)
+        if months is None or months >= 24:
+            m24_rows.append(r)
+
+    m12_items, m24_items = items_of(m12_rows), items_of(m24_rows)
+    m12_val = round(sum(i["val"] for i in m12_items))
+    m24_val = round(sum(i["val"] for i in m24_items))
+    return {
+        "m12_items": m12_items, "m12_val": m12_val, "m12_count": len(m12_items),
+        "m12_pct": round(100 * m12_val / inv_total, 2) if inv_total else 0,
+        "m24_items": m24_items, "m24_val": m24_val, "m24_count": len(m24_items),
+        "m24_pct": round(100 * m24_val / inv_total, 2) if inv_total else 0,
+    }
+
+
 def _num_of(r):
     return r.get("parInvNo") or r.get("roNo") or ""
 
@@ -568,12 +605,14 @@ def run_cycle(page: Page) -> None:
     oaov = build_oaov(pw_rows, inv["total"])
     ext, shop = build_ext_shop(to_rows, period_label)
     acc, tire = build_acc_tire(to_rows)
+    longstock = build_longstock(pw_rows, inv["total"], now)
     calendar_image = next((f for f in CALENDAR_IMAGE_CANDIDATES if (DOCS_DIR / f).exists()), None)
 
     data = {
         "meta": {"branch_name": BRANCH_NAME, "brch_code": f"BRCH {BRCH_CD}", "generated_at": generated_at,
                  "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
+        "longstock": longstock,
     }
 
     html = render(data)
