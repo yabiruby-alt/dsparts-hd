@@ -633,21 +633,21 @@
         </div>
         <div class="tablewrap">
           <table class="opart-table">
-            <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>참조문서번호</th><th>요청일</th><th>경과일</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th>담당SA</th></tr></thead>
+            <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>참조문서번호</th><th>요청일</th><th>경과일</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가금액</th><th>담당SA</th></tr></thead>
             <tbody>
               {% for g in opart.groups %}
-              <tr class="grouphead oseries" data-group="opart-{{ g.code }}" onclick="toggleAloisGroup(this)"><td colspan="10"><span class="caret">▸</span>{{ g.code }} ({{ g.count }}건)<span class="hint"></span></td></tr>
+              <tr class="grouphead oseries" data-group="opart-{{ g.code }}" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>{{ g.code }} ({{ g.count }}건)<span class="hint"></span></td></tr>
               {% for r in g.rows %}
               <tr class="oseries" data-group="opart-{{ g.code }}" hidden>
                 <td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td>
                 <td class="mono">{{ r.ref_no }}</td><td class="mono">{{ r.req_dt }}</td><td class="mono">{{ r.dday }}</td>
                 <td class="num">{{ r.req_qty }}</td><td class="num">{{ r.crt_qty }}</td><td class="num">{{ r.avail_qty }}</td>
-                <td>{{ r.sa }}</td>
+                <td class="num">{{ '{:,}'.format(r.val) }}</td><td>{{ r.sa }}</td>
               </tr>
               {% endfor %}
-              <tr class="subtotal oseries"><td colspan="6">{{ g.code }} 합계</td><td class="num">{{ g.qty_sum }}</td><td class="num"></td><td class="num"></td><td></td></tr>
+              <tr class="subtotal oseries"><td colspan="6">{{ g.code }} 합계</td><td class="num">{{ g.qty_sum }}</td><td class="num"></td><td class="num"></td><td class="num">{{ '{:,}'.format(g.val) }}</td><td></td></tr>
               {% else %}
-              <tr><td colspan="10" class="empty-note">현재 O계열 미처리 출고요청 없음</td></tr>
+              <tr><td colspan="11" class="empty-note">현재 O계열 미처리 출고요청 없음</td></tr>
               {% endfor %}
             </tbody>
           </table>
