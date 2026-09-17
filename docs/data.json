@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 17일 (목) · 15:19 기준"
+    "generated_at": "9월 17일 (목) · 15:30 기준"
   },
   "recv": {
     "total": 19293407,
@@ -253,8 +253,8 @@
     ]
   },
   "inv": {
-    "total": 1167593871,
-    "item_count": 2145,
+    "total": 1166922472,
+    "item_count": 2139,
     "code_count": 25,
     "alois_groups": [
       {
@@ -264,9 +264,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 218886542,
-            "pct": 18.75,
-            "qty": 2341
+            "val": 218913454,
+            "pct": 18.76,
+            "qty": 2345
           },
           {
             "code": "A2",
@@ -282,26 +282,26 @@
           },
           {
             "code": "A4",
-            "val": 38704155,
-            "pct": 3.31,
-            "qty": 1928
+            "val": 38457207,
+            "pct": 3.3,
+            "qty": 1910
           },
           {
             "code": "A5",
-            "val": 68012763,
-            "pct": 5.83,
-            "qty": 1311
+            "val": 67914468,
+            "pct": 5.82,
+            "qty": 1293
           },
           {
             "code": "A6",
-            "val": 90205647,
+            "val": 90171537,
             "pct": 7.73,
-            "qty": 1442
+            "qty": 1434
           }
         ],
-        "subtotal_val": 447914487,
-        "subtotal_qty": 8730,
-        "subtotal_pct": 38.36
+        "subtotal_val": 447562046,
+        "subtotal_qty": 8690,
+        "subtotal_pct": 38.35
       },
       {
         "code": "L",
@@ -310,14 +310,14 @@
         "rows": [
           {
             "code": "L1",
-            "val": 28223227,
+            "val": 28206827,
             "pct": 2.42,
-            "qty": 1907
+            "qty": 1906
           },
           {
             "code": "L2",
-            "val": 9353061,
-            "pct": 0.8,
+            "val": 9406108,
+            "pct": 0.81,
             "qty": 229
           },
           {
@@ -328,15 +328,15 @@
           },
           {
             "code": "L4",
-            "val": 12816285,
-            "pct": 1.1,
-            "qty": 552
+            "val": 12930085,
+            "pct": 1.11,
+            "qty": 554
           },
           {
             "code": "L5",
-            "val": 2862970,
-            "pct": 0.25,
-            "qty": 68
+            "val": 2976770,
+            "pct": 0.26,
+            "qty": 70
           },
           {
             "code": "L6",
@@ -346,14 +346,14 @@
           },
           {
             "code": "L7",
-            "val": 55765348,
-            "pct": 4.78,
-            "qty": 1331
+            "val": 55691326,
+            "pct": 4.77,
+            "qty": 1330
           }
         ],
-        "subtotal_val": 145277812,
-        "subtotal_qty": 4542,
-        "subtotal_pct": 12.44
+        "subtotal_val": 145468037,
+        "subtotal_qty": 4544,
+        "subtotal_pct": 12.47
       },
       {
         "code": "O",
@@ -362,9 +362,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 62348692,
-            "pct": 5.34,
-            "qty": 1126
+            "val": 62238333,
+            "pct": 5.33,
+            "qty": 1124
           },
           {
             "code": "OA",
@@ -375,7 +375,7 @@
           {
             "code": "OE",
             "val": 305104175,
-            "pct": 26.13,
+            "pct": 26.15,
             "qty": 1151
           },
           {
@@ -391,9 +391,9 @@
             "qty": 207
           }
         ],
-        "subtotal_val": 430618000,
-        "subtotal_qty": 2730,
-        "subtotal_pct": 36.88
+        "subtotal_val": 430507641,
+        "subtotal_qty": 2728,
+        "subtotal_pct": 36.89
       },
       {
         "code": "I",
@@ -402,14 +402,14 @@
         "rows": [
           {
             "code": "II",
-            "val": 10500236,
-            "pct": 0.9,
-            "qty": 48
+            "val": 10101412,
+            "pct": 0.87,
+            "qty": 45
           }
         ],
-        "subtotal_val": 10500236,
-        "subtotal_qty": 48,
-        "subtotal_pct": 0.9
+        "subtotal_val": 10101412,
+        "subtotal_qty": 45,
+        "subtotal_pct": 0.87
       },
       {
         "code": "S",
@@ -461,7 +461,7 @@
   },
   "oaov": {
     "total": 61243864,
-    "inv_total": 1167593871,
+    "inv_total": 1166922472,
     "pct": 5.25,
     "oa_val": 39448519,
     "ov_val": 21795345,
@@ -2272,10 +2272,10 @@
     ]
   },
   "tire": {
-    "total": 18012400,
-    "cost": 17306000,
-    "lines": 21,
-    "invoices_count": 13,
+    "total": 21610600,
+    "cost": 21164000,
+    "lines": 25,
+    "invoices_count": 15,
     "by_sa": [
       {
         "sa": "우종훈",
@@ -2290,6 +2290,12 @@
         "margin": -338600
       },
       {
+        "sa": "우상만",
+        "qty": 10,
+        "val": 4258800,
+        "margin": -197200
+      },
+      {
         "sa": "김민규",
         "qty": 4,
         "val": 1391200,
@@ -2300,17 +2306,27 @@
         "qty": 4,
         "val": 1339200,
         "margin": 129200
-      },
-      {
-        "sa": "우상만",
-        "qty": 2,
-        "val": 660600,
-        "margin": 62600
       }
     ],
-    "qty_total": 40,
-    "margin_total": 706400,
+    "qty_total": 48,
+    "margin_total": 446600,
     "all_invoices": [
+      {
+        "inv": "IV2609001823",
+        "num": "RO2609000935",
+        "cust": "이현호",
+        "dt": "2026-09-17 15:24",
+        "amt": 2071800,
+        "cost": 2302000
+      },
+      {
+        "inv": "IV2609001821",
+        "num": "RO2609000657",
+        "cust": "조창윤",
+        "dt": "2026-09-17 15:20",
+        "amt": 1526400,
+        "cost": 1556000
+      },
       {
         "inv": "IV2609001792",
         "num": "RO2609000770",
