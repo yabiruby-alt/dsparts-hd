@@ -45,7 +45,13 @@ BRCH_CD = "15"
 BRANCH_NAME = "AS_부산(해운중동)"
 
 # 팀 캘린더(사이드바 메뉴): 구글 캘린더 "설정 및 공유 > 퍼가기(embed) 코드"의 src 주소를 넣으면 활성화됨.
-CALENDAR_EMBED_URL = "https://calendar.google.com/calendar/embed?src=42f39f125c2d725d4f6cc061ba7f7b2d20e5050020e67e0c89bdacdb18e01ed9%40group.calendar.google.com&ctz=Asia%2FSeoul"
+CALENDAR_EMBED_URL = (
+    "https://calendar.google.com/calendar/embed"
+    "?src=42f39f125c2d725d4f6cc061ba7f7b2d20e5050020e67e0c89bdacdb18e01ed9%40group.calendar.google.com"
+    "&src=ko.south_korea%23holiday%40group.v.calendar.google.com"  # 대한민국 공휴일 (구글 공용 캘린더)
+    "&color=%230066B1&color=%23D50000"  # 부서 캘린더=BMW 블루, 공휴일=빨강
+    "&ctz=Asia%2FSeoul"
+)
 
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "output"
