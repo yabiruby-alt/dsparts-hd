@@ -390,9 +390,9 @@ def build_o_parts(rows):
         "ref_tp": r.get("refDocTp") or "기타", "ref_no": r.get("refDocNo") or "-",
         "req_qty": int(num(r.get("reqQty"))), "crt_qty": int(num(r.get("crtQty"))),
         "avail_qty": int(num(r.get("availQty"))), "req_dt": (r.get("reqDt") or "")[5:16],
-        "req_brch": r.get("reqBrchNm") or "-", "val": round(val_fn(r)),
+        "req_dt_full": r.get("reqDt") or "", "req_brch": r.get("reqBrchNm") or "-", "val": round(val_fn(r)),
         "sa": r.get("saNm") or r.get("reqUsrNm") or "-",
-    } for r in o_rows], key=lambda i: i["req_dt"], reverse=True)
+    } for r in o_rows], key=lambda i: i["req_dt_full"])  # 오래된 요청이 위로
 
     by_type = {}
     for i in items:
