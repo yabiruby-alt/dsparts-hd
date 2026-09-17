@@ -2,259 +2,21 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 17일 (목) · 16:18 기준",
+    "generated_at": "9월 18일 (금) · 07:19 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
-    "total": 19293407,
-    "date": "2026-09-17",
-    "grn_count": 13,
-    "lines": 106,
-    "qty": 241,
-    "alois_groups": [
-      {
-        "code": "A",
-        "label": "상시재고",
-        "oseries": false,
-        "rows": [
-          {
-            "code": "A2",
-            "val": 65751,
-            "pct": 0.34
-          },
-          {
-            "code": "A3",
-            "val": 215876,
-            "pct": 1.12
-          },
-          {
-            "code": "A4",
-            "val": 883747,
-            "pct": 4.58
-          },
-          {
-            "code": "A5",
-            "val": 489872,
-            "pct": 2.54
-          },
-          {
-            "code": "A6",
-            "val": 2803689,
-            "pct": 14.53
-          }
-        ],
-        "subtotal_val": 4458935,
-        "subtotal_qty": 0,
-        "subtotal_pct": 23.11
-      },
-      {
-        "code": "L",
-        "label": "로컬조달",
-        "oseries": false,
-        "rows": [
-          {
-            "code": "L2",
-            "val": 68640,
-            "pct": 0.36
-          },
-          {
-            "code": "L6",
-            "val": 54670,
-            "pct": 0.28
-          },
-          {
-            "code": "L7",
-            "val": 1462438,
-            "pct": 7.58
-          }
-        ],
-        "subtotal_val": 1585748,
-        "subtotal_qty": 0,
-        "subtotal_pct": 8.22
-      },
-      {
-        "code": "O",
-        "label": "특수/단종계열",
-        "oseries": true,
-        "rows": [
-          {
-            "code": "O8",
-            "val": 1885510,
-            "pct": 9.77
-          },
-          {
-            "code": "OV",
-            "val": 1441901,
-            "pct": 7.47
-          }
-        ],
-        "subtotal_val": 3327411,
-        "subtotal_qty": 0,
-        "subtotal_pct": 17.25
-      },
-      {
-        "code": "I",
-        "label": "비이동성",
-        "oseries": false,
-        "rows": [
-          {
-            "code": "II",
-            "val": 7425768,
-            "pct": 38.49
-          }
-        ],
-        "subtotal_val": 7425768,
-        "subtotal_qty": 0,
-        "subtotal_pct": 38.49
-      },
-      {
-        "code": "S",
-        "label": "특수발주",
-        "oseries": false,
-        "rows": [
-          {
-            "code": "SC",
-            "val": 1264422,
-            "pct": 6.55
-          },
-          {
-            "code": "SK",
-            "val": 327237,
-            "pct": 1.7
-          },
-          {
-            "code": "SY",
-            "val": 57470,
-            "pct": 0.3
-          },
-          {
-            "code": "SZ",
-            "val": 846416,
-            "pct": 4.39
-          }
-        ],
-        "subtotal_val": 2495545,
-        "subtotal_qty": 0,
-        "subtotal_pct": 12.93
-      }
-    ],
-    "grn_rows": [
-      {
-        "grn": "2279376",
-        "val": 1264422,
-        "is_top": false
-      },
-      {
-        "grn": "2279329",
-        "val": 2119099,
-        "is_top": false
-      },
-      {
-        "grn": "2279193",
-        "val": 328798,
-        "is_top": false
-      },
-      {
-        "grn": "2279106",
-        "val": 6578642,
-        "is_top": true
-      },
-      {
-        "grn": "2279064",
-        "val": 623863,
-        "is_top": false
-      },
-      {
-        "grn": "2278995",
-        "val": 5256,
-        "is_top": false
-      },
-      {
-        "grn": "2278994",
-        "val": 103194,
-        "is_top": false
-      },
-      {
-        "grn": "2278936",
-        "val": 51830,
-        "is_top": false
-      },
-      {
-        "grn": "2278863",
-        "val": 402868,
-        "is_top": false
-      },
-      {
-        "grn": "2278633",
-        "val": 101817,
-        "is_top": false
-      },
-      {
-        "grn": "2277637",
-        "val": 4058105,
-        "is_top": false
-      },
-      {
-        "grn": "2276850",
-        "val": 1562463,
-        "is_top": false
-      },
-      {
-        "grn": "2276849",
-        "val": 2093050,
-        "is_top": false
-      }
-    ],
-    "top5": [
-      {
-        "item": "11717822350",
-        "name": "Abgas-K#hler",
-        "alois": "A6",
-        "grn": "2277637",
-        "qty": 2,
-        "val": 1516284,
-        "oseries": false
-      },
-      {
-        "item": "51129852196",
-        "name": "Bumper trim",
-        "alois": "OV",
-        "grn": "2279106",
-        "qty": 1,
-        "val": 1198196,
-        "oseries": true
-      },
-      {
-        "item": "63117314531",
-        "name": "Headlight",
-        "alois": "II",
-        "grn": "2279106",
-        "qty": 1,
-        "val": 1053285,
-        "oseries": false
-      },
-      {
-        "item": "51127332764",
-        "name": "Bumper trim",
-        "alois": "L7",
-        "grn": "2279106",
-        "qty": 1,
-        "val": 864212,
-        "oseries": false
-      },
-      {
-        "item": "51117332678",
-        "name": "Panel",
-        "alois": "II",
-        "grn": "2279106",
-        "qty": 1,
-        "val": 830061,
-        "oseries": false
-      }
-    ]
+    "total": 0,
+    "date": "2026-09-18",
+    "grn_count": 0,
+    "lines": 0,
+    "qty": 0,
+    "alois_groups": [],
+    "grn_rows": [],
+    "top5": []
   },
   "inv": {
-    "total": 1167356151,
+    "total": 1167088334,
     "item_count": 2141,
     "code_count": 25,
     "alois_groups": [
@@ -265,15 +27,15 @@
         "rows": [
           {
             "code": "A1",
-            "val": 218845269,
-            "pct": 18.75,
-            "qty": 2344
+            "val": 218945774,
+            "pct": 18.76,
+            "qty": 2362
           },
           {
             "code": "A2",
-            "val": 14054731,
-            "pct": 1.2,
-            "qty": 1275
+            "val": 13546522,
+            "pct": 1.16,
+            "qty": 1243
           },
           {
             "code": "A3",
@@ -283,26 +45,26 @@
           },
           {
             "code": "A4",
-            "val": 38457207,
+            "val": 38378323,
             "pct": 3.29,
-            "qty": 1910
+            "qty": 1908
           },
           {
             "code": "A5",
-            "val": 67914468,
-            "pct": 5.82,
-            "qty": 1293
+            "val": 68274861,
+            "pct": 5.85,
+            "qty": 1317
           },
           {
             "code": "A6",
-            "val": 89979277,
-            "pct": 7.71,
-            "qty": 1437
+            "val": 90141979,
+            "pct": 7.72,
+            "qty": 1500
           }
         ],
-        "subtotal_val": 447236666,
-        "subtotal_qty": 8691,
-        "subtotal_pct": 38.31
+        "subtotal_val": 447273173,
+        "subtotal_qty": 8762,
+        "subtotal_pct": 38.32
       },
       {
         "code": "L",
@@ -311,15 +73,15 @@
         "rows": [
           {
             "code": "L1",
-            "val": 28064174,
-            "pct": 2.4,
-            "qty": 1896
+            "val": 27795937,
+            "pct": 2.38,
+            "qty": 1879
           },
           {
             "code": "L2",
-            "val": 9406108,
-            "pct": 0.81,
-            "qty": 229
+            "val": 8984886,
+            "pct": 0.77,
+            "qty": 227
           },
           {
             "code": "L3",
@@ -341,20 +103,20 @@
           },
           {
             "code": "L6",
-            "val": 30417217,
-            "pct": 2.61,
-            "qty": 369
+            "val": 29663547,
+            "pct": 2.54,
+            "qty": 272
           },
           {
             "code": "L7",
-            "val": 55790851,
-            "pct": 4.78,
-            "qty": 1330
+            "val": 56813686,
+            "pct": 4.87,
+            "qty": 1353
           }
         ],
-        "subtotal_val": 145424909,
-        "subtotal_qty": 4534,
-        "subtotal_pct": 12.46
+        "subtotal_val": 145004615,
+        "subtotal_qty": 4441,
+        "subtotal_pct": 12.42
       },
       {
         "code": "O",
@@ -363,21 +125,21 @@
         "rows": [
           {
             "code": "O8",
-            "val": 63273575,
-            "pct": 5.42,
-            "qty": 1126
+            "val": 65272710,
+            "pct": 5.59,
+            "qty": 1127
           },
           {
             "code": "OA",
-            "val": 39448519,
-            "pct": 3.38,
-            "qty": 235
+            "val": 39574631,
+            "pct": 3.39,
+            "qty": 234
           },
           {
             "code": "OE",
-            "val": 305104175,
-            "pct": 26.14,
-            "qty": 1151
+            "val": 305018415,
+            "pct": 26.13,
+            "qty": 1150
           },
           {
             "code": "ON",
@@ -387,14 +149,14 @@
           },
           {
             "code": "OV",
-            "val": 21795345,
-            "pct": 1.87,
-            "qty": 207
+            "val": 21575001,
+            "pct": 1.85,
+            "qty": 208
           }
         ],
-        "subtotal_val": 431542883,
+        "subtotal_val": 433362026,
         "subtotal_qty": 2730,
-        "subtotal_pct": 36.97
+        "subtotal_pct": 37.13
       },
       {
         "code": "I",
@@ -403,14 +165,14 @@
         "rows": [
           {
             "code": "II",
-            "val": 10101412,
-            "pct": 0.87,
-            "qty": 45
+            "val": 8779420,
+            "pct": 0.75,
+            "qty": 41
           }
         ],
-        "subtotal_val": 10101412,
-        "subtotal_qty": 45,
-        "subtotal_pct": 0.87
+        "subtotal_val": 8779420,
+        "subtotal_qty": 41,
+        "subtotal_pct": 0.75
       },
       {
         "code": "S",
@@ -419,9 +181,9 @@
         "rows": [
           {
             "code": "SC",
-            "val": 506927,
-            "pct": 0.04,
-            "qty": 4
+            "val": 195096,
+            "pct": 0.02,
+            "qty": 3
           },
           {
             "code": "SE",
@@ -431,9 +193,9 @@
           },
           {
             "code": "SK",
-            "val": 32762273,
-            "pct": 2.81,
-            "qty": 850
+            "val": 32723343,
+            "pct": 2.8,
+            "qty": 849
           },
           {
             "code": "SX",
@@ -443,9 +205,9 @@
           },
           {
             "code": "SY",
-            "val": 6368455,
-            "pct": 0.55,
-            "qty": 71
+            "val": 6338035,
+            "pct": 0.54,
+            "qty": 70
           },
           {
             "code": "SZ",
@@ -454,22 +216,22 @@
             "qty": 250
           }
         ],
-        "subtotal_val": 133050281,
-        "subtotal_qty": 1439,
-        "subtotal_pct": 11.4
+        "subtotal_val": 132669100,
+        "subtotal_qty": 1436,
+        "subtotal_pct": 11.37
       }
     ]
   },
   "oaov": {
-    "total": 61243864,
-    "inv_total": 1167356151,
-    "pct": 5.25,
-    "oa_val": 39448519,
-    "ov_val": 21795345,
-    "oa_lines": 111,
-    "ov_lines": 111,
-    "oa_qty": 235,
-    "ov_qty": 207,
+    "total": 61149632,
+    "inv_total": 1167088334,
+    "pct": 5.24,
+    "oa_val": 39574631,
+    "ov_val": 21575001,
+    "oa_lines": 110,
+    "ov_lines": 112,
+    "oa_qty": 234,
+    "ov_qty": 208,
     "item_count": 222,
     "oa_items": [
       {
@@ -662,6 +424,13 @@
         "val": 264416
       },
       {
+        "item": "51757185112",
+        "name": "Shielding",
+        "alois": "OA",
+        "qty": 1,
+        "val": 259199
+      },
+      {
         "item": "11288479241",
         "name": "Belt tension REPO",
         "alois": "OA",
@@ -737,13 +506,6 @@
         "alois": "OA",
         "qty": 2,
         "val": 190560
-      },
-      {
-        "item": "17137889450",
-        "name": "Expansion ta",
-        "alois": "OA",
-        "qty": 1,
-        "val": 181618
       },
       {
         "item": "36115A96C26",
@@ -849,6 +611,13 @@
         "alois": "OA",
         "qty": 1,
         "val": 107008
+      },
+      {
+        "item": "16115B4EAD4",
+        "name": "Tank cap, ca",
+        "alois": "OA",
+        "qty": 1,
+        "val": 101817
       },
       {
         "item": "11537827842",
@@ -1159,20 +928,6 @@
         "val": 27393
       },
       {
-        "item": "51497255695",
-        "name": "Trim cover,",
-        "alois": "OA",
-        "qty": 1,
-        "val": 26643
-      },
-      {
-        "item": "51497255696",
-        "name": "Trim cover,",
-        "alois": "OA",
-        "qty": 1,
-        "val": 26643
-      },
-      {
         "item": "63319335184",
         "name": "Fiber-optic",
         "alois": "OA",
@@ -1259,13 +1014,6 @@
         "val": 1353828
       },
       {
-        "item": "51129852196",
-        "name": "Bumper trim",
-        "alois": "OV",
-        "qty": 1,
-        "val": 1181320
-      },
-      {
         "item": "51477326338",
         "name": "FLOOR COVERI",
         "alois": "OV",
@@ -1278,6 +1026,13 @@
         "alois": "OV",
         "qty": 1,
         "val": 762146
+      },
+      {
+        "item": "12418490093",
+        "name": "Starter",
+        "alois": "OV",
+        "qty": 1,
+        "val": 653900
       },
       {
         "item": "51337466961",
@@ -1397,6 +1152,13 @@
         "alois": "OV",
         "qty": 1,
         "val": 312708
+      },
+      {
+        "item": "11618572859",
+        "name": "Charge air l",
+        "alois": "OV",
+        "qty": 1,
+        "val": 307076
       },
       {
         "item": "63212450107",
@@ -2087,23 +1849,23 @@
         "val": 1252826
       },
       {
-        "item": "51129852196",
-        "name": "Bumper trim",
-        "alois": "OV",
-        "qty": 1,
-        "val": 1181320
-      },
-      {
         "item": "51955A42425",
         "name": "Interior tri",
         "alois": "OA",
         "qty": 1,
         "val": 1129436
+      },
+      {
+        "item": "63115A7F385",
+        "name": "Headlight ba",
+        "alois": "OA",
+        "qty": 1,
+        "val": 1076185
       }
     ]
   },
   "ext": {
-    "period": "2026-09-01 ~ 2026-09-17",
+    "period": "2026-09-01 ~ 2026-09-18",
     "total": 3395220,
     "cost": 2484967,
     "margin": 910253,
@@ -2206,9 +1968,9 @@
   },
   "acc": {
     "total": 20826103,
-    "cost": 20896888,
-    "lines": 173,
-    "invoices_count": 103,
+    "cost": 20925208,
+    "lines": 177,
+    "invoices_count": 107,
     "by_type": [
       {
         "code": "3",
@@ -2225,11 +1987,43 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 116,
+        "lines": 120,
         "val": 11893624
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2609001878",
+        "num": "RO2609001092",
+        "cust": "임옥예",
+        "dt": "2026-09-17 18:52",
+        "amt": 0,
+        "cost": 7080
+      },
+      {
+        "inv": "IV2609001866",
+        "num": "RO2609001128",
+        "cust": "김현희",
+        "dt": "2026-09-17 18:36",
+        "amt": 0,
+        "cost": 7080
+      },
+      {
+        "inv": "IV2609001852",
+        "num": "RO2609001086",
+        "cust": "김주연",
+        "dt": "2026-09-17 17:16",
+        "amt": 0,
+        "cost": 7080
+      },
+      {
+        "inv": "IV2609001850",
+        "num": "RO2609001103",
+        "cust": "이아진",
+        "dt": "2026-09-17 17:14",
+        "amt": 0,
+        "cost": 7080
+      },
       {
         "inv": "IV2609001839",
         "num": "RO2608001773",
@@ -2237,38 +2031,6 @@
         "dt": "2026-09-17 16:04",
         "amt": 0,
         "cost": 0
-      },
-      {
-        "inv": "IV2609001837",
-        "num": "RO2609000720",
-        "cust": "배태랑",
-        "dt": "2026-09-17 15:51",
-        "amt": 3050670,
-        "cost": 3391813
-      },
-      {
-        "inv": "IV2609001819",
-        "num": "RO2609000936",
-        "cust": "공현수",
-        "dt": "2026-09-17 15:14",
-        "amt": 2410520,
-        "cost": 2651572
-      },
-      {
-        "inv": "IV2609001790",
-        "num": "RO2609000946",
-        "cust": "이태원",
-        "dt": "2026-09-17 12:52",
-        "amt": 8250,
-        "cost": 8250
-      },
-      {
-        "inv": "IV2609001783",
-        "num": "RO2609000957",
-        "cust": "김지태",
-        "dt": "2026-09-17 12:37",
-        "amt": 0,
-        "cost": 8250
       }
     ]
   },
@@ -3235,6 +2997,14 @@
         "qty": 2,
         "val": 109980,
         "last_in": "2025-07-19"
+      },
+      {
+        "item": "51139880520",
+        "name": "Primed drip",
+        "alois": "OA",
+        "qty": 1,
+        "val": 107008,
+        "last_in": "2025-09-18"
       },
       {
         "item": "16137300683",
@@ -4229,9 +3999,9 @@
         "last_in": "입고이력 없음"
       }
     ],
-    "m12_val": 63787145,
-    "m12_count": 224,
-    "m12_pct": 5.46,
+    "m12_val": 63894153,
+    "m12_count": 225,
+    "m12_pct": 5.47,
     "m24_items": [
       {
         "item": "24008741536",
