@@ -204,7 +204,7 @@ def extract_turnover(page: Page, month_start: str, today_str: str) -> list:
     return fetch_rows(frame, "/rpt/raw/selectDLRTurnOver.do", body)
 
 
-def extract_part_requests(page: Page, today_str: str) -> list:
+def extract_part_requests(page: Page) -> list:
     """출고요청관리: 미처리 부품 출고요청(어떤 RO/SB/SP에 재고가 묶여있는지 참조문서번호 포함)."""
     click_menu(page, "icon-parts", "출고요청관리")
     frame = wait_for_frame(page, "selectDlvReqMngMain")
@@ -212,7 +212,7 @@ def extract_part_requests(page: Page, today_str: str) -> list:
     for req_tp in ("01", "03"):  # 01=RO/SB/SP 대부분, 03=소수 잔여 유형(확인됨)
         body = {
             "recordCountPerPage": 5000, "pageIndex": 1, "firstIndex": 0, "lastIndex": 5000,
-            "sRefDocNo": "", "sReqStartDt": "2020-01-01", "sReqEndDt": today_str,
+            "sRefDocNo": "", "sReqStartDt": "2020-01-01", "sReqEndDt": "2099-12-31",  # SB 등 미래 예약분도 놓치지 않게 상한을 사실상 무제한으로
             "sStatCd": "01", "sReqDocNo": "", "sReqUsrId": "", "sPartNo": "",
             "sPartStatCd": "", "sReqBrchCd": "", "sNotProcQty": "01", "sPurcTp": "", "sReqTp": req_tp,
         }
@@ -389,7 +389,7 @@ def build_o_parts(rows, now):
             return "-"
         d = datetime.strptime(dt_str[:10], "%Y-%m-%d")
         days = (now.date() - d.date()).days
-        return f"D+{days}일"
+        return f"D+{days}일" if days >= 0 else f"D-{-days}일"  # 미래 예약분(SB 등)은 D-N일
 
     o_rows = [r for r in rows if str(r.get("aloisCd") or "").startswith("O")]
     items = sorted([{
@@ -655,7 +655,7 @@ def run_cycle(page: Page) -> None:
     print(" - Turn Over 리포트 (당월)")
     to_rows = extract_turnover(page, month_start, today_str)
     print(" - 출고요청관리 (O계열 RO/SB/SP)")
-    req_rows = extract_part_requests(page, today_str)
+    req_rows = extract_part_requests(page)
 
     print("집계 중...")
     recv = build_recv(recv_rows, today_str)
