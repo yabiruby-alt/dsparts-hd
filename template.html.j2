@@ -160,7 +160,7 @@
   </tr></thead>
   <tbody>
     {% for g in groups %}
-    <tr class="grouphead{{ ' oseries' if g.oseries else '' }}"><td colspan="{{ cols|length + 1 }}">{{ g.code }} — {{ g.label }}</td></tr>
+    <tr class="grouphead{{ ' oseries' if g.oseries else '' }}"><td colspan="{{ cols|length + 1 }}">{{ g.code }}</td></tr>
     {% for r in g.rows %}
     <tr{{ ' class="oseries"'|safe if g.oseries else '' }}>
       <td><span class="aloistag{{ ' oseries' if g.oseries else '' }}">{{ r.code }}</span></td>
