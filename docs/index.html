@@ -120,18 +120,26 @@
   .subttl .n{ font-family:var(--font-mono); color:var(--muted); font-weight:500; text-transform:none; letter-spacing:0; }
   tbody tr.top1 td{ background:var(--accent-wash); }
 
-  .grouphead td{ padding-top:12px; padding-bottom:4px; border-bottom:none; font-family:var(--font-display); font-weight:700; font-size:13px;
-    text-transform:uppercase; letter-spacing:.06em; color:var(--muted); cursor:pointer; user-select:none; }
-  .grouphead:hover td{ color:var(--ink-2); }
-  .grouphead .caret{ display:inline-block; margin-right:6px; font-size:11px; transition:transform .15s ease; }
+  .grouphead td{ margin-top:10px; padding:9px 12px; border-bottom:none; border-radius:8px;
+    background:var(--accent-wash); border:1px solid var(--line);
+    font-family:var(--font-display); font-weight:700; font-size:13.5px;
+    text-transform:uppercase; letter-spacing:.06em; color:var(--accent-strong); cursor:pointer; user-select:none; }
+  .grouphead:hover td{ border-color:var(--accent); background:var(--accent-wash); filter:brightness(0.97); }
+  .grouphead .caret{ display:inline-block; margin-right:8px; font-size:13px; font-weight:800; color:var(--accent); transition:transform .15s ease; }
   .grouphead.open .caret{ transform:rotate(90deg); }
-  tbody tr.grouphead:first-child td{ padding-top:0; }
+  .grouphead .hint{ float:right; font-family:var(--font-mono); font-size:11.5px; text-transform:none; letter-spacing:0; color:var(--accent); opacity:.75; }
+  .grouphead.open .hint::before{ content:"접기 ▲"; }
+  .grouphead:not(.open) .hint::before{ content:"펼치기 ▾"; }
+  tbody tr.grouphead:first-child td{ margin-top:0; }
+  tbody tr.grouphead + tr td{ border-top:none; }
   tbody tr.subtotal td{ border-top:1px solid var(--line); border-bottom:1.5px solid var(--line); font-weight:700; }
   td.num.neg{ color:var(--critical); }
 
   .aloistag.oseries{ background:var(--critical-wash); color:var(--critical); font-weight:700; }
   tbody tr.oseries td.num, tbody tr.oseries td.mono{ color:var(--critical); }
   tbody tr.subtotal.oseries td{ color:var(--critical); }
+  .grouphead.oseries td{ background:var(--critical-wash); color:var(--critical); }
+  .grouphead.oseries .caret, .grouphead.oseries .hint{ color:var(--critical); }
   tr.cancelled{ opacity:.55; }
   .empty-note{ font-size:15.5px; color:var(--muted); padding:12px 4px; }
 
@@ -189,7 +197,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 17일 (목) · 14:03 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 17일 (목) · 14:14 기준</div>
   </nav>
 
   <main class="main">
@@ -198,7 +206,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 17일 (목) · 14:03 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 17일 (목) · 14:14 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -238,7 +246,7 @@
   <tbody>
     
     
-    <tr class="grouphead" data-group="recv-1" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>A</td></tr>
+    <tr class="grouphead" data-group="recv-1" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>A<span class="hint"></span></td></tr>
     
     <tr data-group="recv-1" hidden>
       <td><span class="aloistag">A2</span></td>
@@ -283,7 +291,7 @@
     </tr>
     
     
-    <tr class="grouphead" data-group="recv-2" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>L</td></tr>
+    <tr class="grouphead" data-group="recv-2" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>L<span class="hint"></span></td></tr>
     
     <tr data-group="recv-2" hidden>
       <td><span class="aloistag">L2</span></td>
@@ -314,7 +322,7 @@
     </tr>
     
     
-    <tr class="grouphead oseries" data-group="recv-3" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>O</td></tr>
+    <tr class="grouphead oseries" data-group="recv-3" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>O<span class="hint"></span></td></tr>
     
     <tr data-group="recv-3" hidden class="oseries">
       <td><span class="aloistag oseries">O8</span></td>
@@ -338,7 +346,7 @@
     </tr>
     
     
-    <tr class="grouphead" data-group="recv-4" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>I</td></tr>
+    <tr class="grouphead" data-group="recv-4" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>I<span class="hint"></span></td></tr>
     
     <tr data-group="recv-4" hidden>
       <td><span class="aloistag">II</span></td>
@@ -355,7 +363,7 @@
     </tr>
     
     
-    <tr class="grouphead" data-group="recv-5" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>S</td></tr>
+    <tr class="grouphead" data-group="recv-5" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>S<span class="hint"></span></td></tr>
     
     <tr data-group="recv-5" hidden>
       <td><span class="aloistag">SC</span></td>
@@ -473,7 +481,7 @@
   <tbody>
     
     
-    <tr class="grouphead" data-group="inv-1" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>A</td></tr>
+    <tr class="grouphead" data-group="inv-1" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>A<span class="hint"></span></td></tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A1</span></td>
@@ -525,7 +533,7 @@
     </tr>
     
     
-    <tr class="grouphead" data-group="inv-2" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>L</td></tr>
+    <tr class="grouphead" data-group="inv-2" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>L<span class="hint"></span></td></tr>
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L1</span></td>
@@ -584,7 +592,7 @@
     </tr>
     
     
-    <tr class="grouphead oseries" data-group="inv-3" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>O</td></tr>
+    <tr class="grouphead oseries" data-group="inv-3" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>O<span class="hint"></span></td></tr>
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">O8</span></td>
@@ -629,7 +637,7 @@
     </tr>
     
     
-    <tr class="grouphead" data-group="inv-4" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>I</td></tr>
+    <tr class="grouphead" data-group="inv-4" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>I<span class="hint"></span></td></tr>
     
     <tr data-group="inv-4" hidden>
       <td><span class="aloistag">II</span></td>
@@ -646,7 +654,7 @@
     </tr>
     
     
-    <tr class="grouphead" data-group="inv-5" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>S</td></tr>
+    <tr class="grouphead" data-group="inv-5" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>S<span class="hint"></span></td></tr>
     
     <tr data-group="inv-5" hidden>
       <td><span class="aloistag">SC</span></td>
@@ -984,7 +992,7 @@
           <table>
             <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
             <tbody>
-              <tr class="grouphead oseries" data-group="oaov-oa" onclick="toggleAloisGroup(this)"><td colspan="5"><span class="caret">▸</span>OA</td></tr>
+              <tr class="grouphead oseries" data-group="oaov-oa" onclick="toggleAloisGroup(this)"><td colspan="5"><span class="caret">▸</span>OA<span class="hint"></span></td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">63119850411</td><td>Headlight, L</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">5,769,666</td></tr>
               
@@ -1212,7 +1220,7 @@
               
               <tr class="subtotal oseries"><td colspan="4">OA 합계 (112개)</td><td class="num">40,178,669</td></tr>
 
-              <tr class="grouphead oseries" data-group="oaov-ov" onclick="toggleAloisGroup(this)"><td colspan="5"><span class="caret">▸</span>OV</td></tr>
+              <tr class="grouphead oseries" data-group="oaov-ov" onclick="toggleAloisGroup(this)"><td colspan="5"><span class="caret">▸</span>OV<span class="hint"></span></td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">41617228974</td><td>Hood</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1,353,828</td></tr>
               
