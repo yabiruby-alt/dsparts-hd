@@ -229,6 +229,10 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><path d="M9 5v4l3 2"/></svg>
         장기 재고 현황
       </button>
+      <button class="sb-item" id="nav-opart" aria-current="false" onclick="selectPage('opart')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9h12M9 3v12"/><circle cx="9" cy="9" r="7"/></svg>
+        O파트 현황
+      </button>
       <button class="sb-item" id="nav-calendar" aria-current="false" onclick="selectPage('calendar')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="14" height="13" rx="1.5"/><path d="M2 7h14"/><path d="M6 2v3M12 2v3"/></svg>
         팀 캘린더
@@ -603,6 +607,51 @@
       </div>
     </section>
 
+    <section id="page-opart" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>O파트 현황</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 미처리 출고요청 기준</div>
+      </div>
+
+      <div class="kpistrip">
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">01</span>
+          <span class="eyebrow">O계열 · RO/SB/SP 묶인 재고</span>
+          <span class="value">{{ opart.count }}건</span>
+          <span class="foot">요청수량×원가 합계 ₩{{ '{:,}'.format(opart.total_val) }}</span>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">참조문서별 O계열 요청 세부</span>
+          <span class="val">{{ opart.count }}건</span>
+          <span class="foot">그룹 클릭해서 펼치기 · 요청일 최신순</span>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>참조문서번호</th><th>요청일</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th></tr></thead>
+            <tbody>
+              {% for g in opart.groups %}
+              <tr class="grouphead oseries" data-group="opart-{{ g.code }}" onclick="toggleAloisGroup(this)"><td colspan="8"><span class="caret">▸</span>{{ g.code }} ({{ g.count }}건)<span class="hint"></span></td></tr>
+              {% for r in g.rows %}
+              <tr class="oseries" data-group="opart-{{ g.code }}" hidden>
+                <td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td>
+                <td class="mono">{{ r.ref_no }}</td><td class="mono">{{ r.req_dt }}</td>
+                <td class="num">{{ r.req_qty }}</td><td class="num">{{ r.crt_qty }}</td><td class="num">{{ r.avail_qty }}</td>
+              </tr>
+              {% endfor %}
+              <tr class="subtotal oseries"><td colspan="5">{{ g.code }} 합계</td><td class="num">{{ g.qty_sum }}</td><td class="num"></td><td class="num"></td></tr>
+              {% else %}
+              <tr><td colspan="8" class="empty-note">현재 O계열 미처리 출고요청 없음</td></tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section id="page-calendar" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>팀 캘린더</b></span>
@@ -627,7 +676,7 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  function selectPage(key){ ['today','external','accessory','oaov','longstock','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); document.querySelector('.maininner').classList.toggle('wide', key==='calendar'); }
+  function selectPage(key){ ['today','external','accessory','oaov','longstock','opart','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); document.querySelector('.maininner').classList.toggle('wide', key==='calendar'); }
   function toggleAloisGroup(headEl){
     var key = headEl.getAttribute('data-group');
     var table = headEl.closest('table');

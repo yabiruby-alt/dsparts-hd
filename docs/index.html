@@ -200,6 +200,10 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><path d="M9 5v4l3 2"/></svg>
         장기 재고 현황
       </button>
+      <button class="sb-item" id="nav-opart" aria-current="false" onclick="selectPage('opart')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9h12M9 3v12"/><circle cx="9" cy="9" r="7"/></svg>
+        O파트 현황
+      </button>
       <button class="sb-item" id="nav-calendar" aria-current="false" onclick="selectPage('calendar')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="14" height="13" rx="1.5"/><path d="M2 7h14"/><path d="M6 2v3M12 2v3"/></svg>
         팀 캘린더
@@ -207,7 +211,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 18일 (금) · 07:27 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 18일 (금) · 07:35 기준</div>
   </nav>
 
   <main class="main">
@@ -216,22 +220,22 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 18일 (금) · 07:27 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 18일 (금) · 07:35 기준</div>
       </div>
 
       <div class="kpistrip">
         <button class="kpitile" id="tile-recv" onclick="selectKpi('recv')" aria-pressed="true">
           <span class="rank">01</span>
           <span class="eyebrow">오늘 입고금액</span>
-          <span class="value">₩0</span>
-          <span class="foot">2026-09-18 · GRN 0건 · 0라인</span>
+          <span class="value">₩67,317,927</span>
+          <span class="foot">2026-09-18 · GRN 13건 · 197라인</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
         <button class="kpitile" id="tile-inv" onclick="selectKpi('inv')" aria-pressed="false">
           <span class="rank">02</span>
           <span class="eyebrow">재고금액 · 부품창고</span>
-          <span class="value">₩1,167,088,334</span>
-          <span class="foot">2141품목 · 25개 코드</span>
+          <span class="value">₩1,234,406,263</span>
+          <span class="foot">2303품목 · 25개 코드</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
       </div>
@@ -240,8 +244,8 @@
         <div id="detail-recv">
           <div class="viewer-head">
             <span class="lbl">오늘 입고금액 세부</span>
-            <span class="val">₩0</span>
-            <span class="foot">0개 · 전건 확정 · 부품창고</span>
+            <span class="val">₩67,317,927</span>
+            <span class="foot">833개 · 전건 확정 · 부품창고</span>
           </div>
           <div class="subgrid">
             <div>
@@ -255,15 +259,175 @@
   </tr></thead>
   <tbody>
     
+    
+    <tr class="grouphead" data-group="recv-1" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>A<span class="hint"></span></td></tr>
+    
+    <tr data-group="recv-1" hidden>
+      <td><span class="aloistag">A2</span></td>
+      
+      <td class="num">1,834,002</td>
+      
+    </tr>
+    
+    <tr data-group="recv-1" hidden>
+      <td><span class="aloistag">A3</span></td>
+      
+      <td class="num">12,183,543</td>
+      
+    </tr>
+    
+    <tr data-group="recv-1" hidden>
+      <td><span class="aloistag">A4</span></td>
+      
+      <td class="num">8,411,164</td>
+      
+    </tr>
+    
+    <tr data-group="recv-1" hidden>
+      <td><span class="aloistag">A5</span></td>
+      
+      <td class="num">6,261,231</td>
+      
+    </tr>
+    
+    <tr data-group="recv-1" hidden>
+      <td><span class="aloistag">A6</span></td>
+      
+      <td class="num">4,175,045</td>
+      
+    </tr>
+    
+    <tr class="subtotal">
+      <td colspan="1">A 합계</td>
+      
+      <td class="num">32,864,985</td>
+      
+    </tr>
+    
+    
+    <tr class="grouphead" data-group="recv-2" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>L<span class="hint"></span></td></tr>
+    
+    <tr data-group="recv-2" hidden>
+      <td><span class="aloistag">L7</span></td>
+      
+      <td class="num">2,025,847</td>
+      
+    </tr>
+    
+    <tr class="subtotal">
+      <td colspan="1">L 합계</td>
+      
+      <td class="num">2,025,847</td>
+      
+    </tr>
+    
+    
+    <tr class="grouphead oseries" data-group="recv-3" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>O<span class="hint"></span></td></tr>
+    
+    <tr data-group="recv-3" hidden class="oseries">
+      <td><span class="aloistag oseries">O8</span></td>
+      
+      <td class="num">6,336,883</td>
+      
+    </tr>
+    
+    <tr data-group="recv-3" hidden class="oseries">
+      <td><span class="aloistag oseries">OV</span></td>
+      
+      <td class="num">120,633</td>
+      
+    </tr>
+    
+    <tr class="subtotal oseries">
+      <td colspan="1">O 합계</td>
+      
+      <td class="num">6,457,516</td>
+      
+    </tr>
+    
+    
+    <tr class="grouphead" data-group="recv-4" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>I<span class="hint"></span></td></tr>
+    
+    <tr data-group="recv-4" hidden>
+      <td><span class="aloistag">II</span></td>
+      
+      <td class="num">14,590,696</td>
+      
+    </tr>
+    
+    <tr class="subtotal">
+      <td colspan="1">I 합계</td>
+      
+      <td class="num">14,590,696</td>
+      
+    </tr>
+    
+    
+    <tr class="grouphead" data-group="recv-5" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>S<span class="hint"></span></td></tr>
+    
+    <tr data-group="recv-5" hidden>
+      <td><span class="aloistag">SE</span></td>
+      
+      <td class="num">547,860</td>
+      
+    </tr>
+    
+    <tr data-group="recv-5" hidden>
+      <td><span class="aloistag">SK</span></td>
+      
+      <td class="num">482,906</td>
+      
+    </tr>
+    
+    <tr data-group="recv-5" hidden>
+      <td><span class="aloistag">SZ</span></td>
+      
+      <td class="num">2,939,317</td>
+      
+    </tr>
+    
+    <tr class="subtotal">
+      <td colspan="1">S 합계</td>
+      
+      <td class="num">3,970,083</td>
+      
+    </tr>
+    
   </tbody>
 </table></div>
             </div>
             <div>
-              <p class="subttl">GRN별 입고금액 <span class="n">0건 · GRN 내림차순</span></p>
+              <p class="subttl">GRN별 입고금액 <span class="n">13건 · GRN 내림차순</span></p>
               <div class="tablewrap">
                 <table>
                   <thead><tr><th>GRN</th><th class="num">구매금액</th></tr></thead>
                   <tbody>
+                    
+                    <tr><td class="mono">2280069</td><td class="num">14,110</td></tr>
+                    
+                    <tr><td class="mono">2280019</td><td class="num">293,908</td></tr>
+                    
+                    <tr><td class="mono">2279939</td><td class="num">430,065</td></tr>
+                    
+                    <tr><td class="mono">2279892</td><td class="num">4,095,214</td></tr>
+                    
+                    <tr><td class="mono">2279891</td><td class="num">900,477</td></tr>
+                    
+                    <tr><td class="mono">2279857</td><td class="num">120,633</td></tr>
+                    
+                    <tr><td class="mono">2279856</td><td class="num">1,298,145</td></tr>
+                    
+                    <tr><td class="mono">2279821</td><td class="num">7,408,800</td></tr>
+                    
+                    <tr><td class="mono">2279516</td><td class="num">2,301,550</td></tr>
+                    
+                    <tr class="top1"><td class="mono">2278548</td><td class="num">31,856,260</td></tr>
+                    
+                    <tr><td class="mono">2277833</td><td class="num">3,099,589</td></tr>
+                    
+                    <tr><td class="mono">2277832</td><td class="num">116,578</td></tr>
+                    
+                    <tr><td class="mono">2277831</td><td class="num">15,382,598</td></tr>
                     
                   </tbody>
                 </table>
@@ -277,6 +441,16 @@
                 <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>GRN</th><th class="num">수량</th><th class="num">구매금액</th></tr></thead>
                 <tbody>
                   
+                  <tr><td class="mono">63117214961</td><td>Headlight, L</td><td><span class="aloistag">A3</span></td><td class="mono">2278548</td><td class="num">3</td><td class="num">8,791,635</td></tr>
+                  
+                  <tr><td class="mono">63117214962</td><td>Headlight, L</td><td><span class="aloistag">A4</span></td><td class="mono">2278548</td><td class="num">2</td><td class="num">5,861,090</td></tr>
+                  
+                  <tr><td class="mono">99995BC4397</td><td>BMW LL-12 FE</td><td><span class="aloistag">None</span></td><td class="mono">2279821</td><td class="num">240</td><td class="num">3,722,400</td></tr>
+                  
+                  <tr><td class="mono">99995BC4396</td><td>BMW LL-01 FE</td><td><span class="aloistag">None</span></td><td class="mono">2279821</td><td class="num">240</td><td class="num">3,686,400</td></tr>
+                  
+                  <tr><td class="mono">18308572487</td><td>RP-exhaust p</td><td><span class="aloistag">II</span></td><td class="mono">2277831</td><td class="num">1</td><td class="num">2,808,894</td></tr>
+                  
                 </tbody>
               </table>
             </div>
@@ -286,8 +460,8 @@
         <div id="detail-inv" hidden>
           <div class="viewer-head">
             <span class="lbl">재고금액 세부</span>
-            <span class="val">₩1,167,088,334</span>
-            <span class="foot">2141품목 · 부품창고</span>
+            <span class="val">₩1,234,406,263</span>
+            <span class="foot">2303품목 · 부품창고</span>
           </div>
           <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
           <div class="tablewrap"><table>
@@ -306,49 +480,49 @@
       <td><span class="aloistag">A1</span></td>
       <td class="num">2,362</td>
       <td class="num">218,945,774</td>
-      <td class="num">18.76%</td>
+      <td class="num">17.74%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A2</span></td>
-      <td class="num">1,243</td>
-      <td class="num">13,546,522</td>
-      <td class="num">1.16%</td>
+      <td class="num">1,265</td>
+      <td class="num">15,380,528</td>
+      <td class="num">1.25%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A3</span></td>
-      <td class="num">432</td>
-      <td class="num">17,985,714</td>
-      <td class="num">1.54%</td>
+      <td class="num">481</td>
+      <td class="num">30,169,258</td>
+      <td class="num">2.44%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A4</span></td>
-      <td class="num">1,908</td>
-      <td class="num">38,378,323</td>
-      <td class="num">3.29%</td>
+      <td class="num">1,931</td>
+      <td class="num">46,789,486</td>
+      <td class="num">3.79%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A5</span></td>
-      <td class="num">1,317</td>
-      <td class="num">68,274,861</td>
-      <td class="num">5.85%</td>
+      <td class="num">1,335</td>
+      <td class="num">74,536,095</td>
+      <td class="num">6.04%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A6</span></td>
-      <td class="num">1,500</td>
-      <td class="num">90,141,979</td>
-      <td class="num">7.72%</td>
+      <td class="num">1,532</td>
+      <td class="num">94,317,028</td>
+      <td class="num">7.64%</td>
     </tr>
     
     <tr class="subtotal">
       <td>A 합계</td>
-      <td class="num">8,762</td>
-      <td class="num">447,273,173</td>
-      <td class="num">38.32%</td>
+      <td class="num">8,906</td>
+      <td class="num">480,138,169</td>
+      <td class="num">38.90%</td>
     </tr>
     
     
@@ -358,56 +532,56 @@
       <td><span class="aloistag">L1</span></td>
       <td class="num">1,879</td>
       <td class="num">27,795,937</td>
-      <td class="num">2.38%</td>
+      <td class="num">2.25%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L2</span></td>
       <td class="num">227</td>
       <td class="num">8,984,886</td>
-      <td class="num">0.77%</td>
+      <td class="num">0.73%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L3</span></td>
       <td class="num">86</td>
       <td class="num">5,839,704</td>
-      <td class="num">0.50%</td>
+      <td class="num">0.47%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L4</span></td>
       <td class="num">554</td>
       <td class="num">12,930,085</td>
-      <td class="num">1.11%</td>
+      <td class="num">1.05%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L5</span></td>
       <td class="num">70</td>
       <td class="num">2,976,770</td>
-      <td class="num">0.26%</td>
+      <td class="num">0.24%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L6</span></td>
       <td class="num">272</td>
       <td class="num">29,663,547</td>
-      <td class="num">2.54%</td>
+      <td class="num">2.40%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L7</span></td>
-      <td class="num">1,353</td>
-      <td class="num">56,813,686</td>
-      <td class="num">4.87%</td>
+      <td class="num">1,370</td>
+      <td class="num">58,839,530</td>
+      <td class="num">4.77%</td>
     </tr>
     
     <tr class="subtotal">
       <td>L 합계</td>
-      <td class="num">4,441</td>
-      <td class="num">145,004,615</td>
-      <td class="num">12.42%</td>
+      <td class="num">4,458</td>
+      <td class="num">147,030,459</td>
+      <td class="num">11.91%</td>
     </tr>
     
     
@@ -415,23 +589,23 @@
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">O8</span></td>
-      <td class="num">1,127</td>
-      <td class="num">65,272,710</td>
-      <td class="num">5.59%</td>
+      <td class="num">1,188</td>
+      <td class="num">71,609,587</td>
+      <td class="num">5.80%</td>
     </tr>
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">OA</span></td>
       <td class="num">234</td>
       <td class="num">39,574,631</td>
-      <td class="num">3.39%</td>
+      <td class="num">3.21%</td>
     </tr>
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">OE</span></td>
       <td class="num">1,150</td>
       <td class="num">305,018,415</td>
-      <td class="num">26.13%</td>
+      <td class="num">24.71%</td>
     </tr>
     
     <tr data-group="inv-3" hidden class="oseries">
@@ -443,16 +617,16 @@
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">OV</span></td>
-      <td class="num">208</td>
-      <td class="num">21,575,001</td>
-      <td class="num">1.85%</td>
+      <td class="num">209</td>
+      <td class="num">21,695,634</td>
+      <td class="num">1.76%</td>
     </tr>
     
     <tr class="subtotal oseries">
       <td>O 합계</td>
-      <td class="num">2,730</td>
-      <td class="num">433,362,026</td>
-      <td class="num">37.13%</td>
+      <td class="num">2,792</td>
+      <td class="num">439,819,536</td>
+      <td class="num">35.63%</td>
     </tr>
     
     
@@ -460,16 +634,16 @@
     
     <tr data-group="inv-4" hidden>
       <td><span class="aloistag">II</span></td>
-      <td class="num">41</td>
-      <td class="num">8,779,420</td>
-      <td class="num">0.75%</td>
+      <td class="num">96</td>
+      <td class="num">23,370,116</td>
+      <td class="num">1.89%</td>
     </tr>
     
     <tr class="subtotal">
       <td>I 합계</td>
-      <td class="num">41</td>
-      <td class="num">8,779,420</td>
-      <td class="num">0.75%</td>
+      <td class="num">96</td>
+      <td class="num">23,370,116</td>
+      <td class="num">1.89%</td>
     </tr>
     
     
@@ -484,44 +658,44 @@
     
     <tr data-group="inv-5" hidden>
       <td><span class="aloistag">SE</span></td>
-      <td class="num">16</td>
-      <td class="num">136,000</td>
-      <td class="num">0.01%</td>
+      <td class="num">25</td>
+      <td class="num">683,860</td>
+      <td class="num">0.06%</td>
     </tr>
     
     <tr data-group="inv-5" hidden>
       <td><span class="aloistag">SK</span></td>
-      <td class="num">849</td>
-      <td class="num">32,723,343</td>
-      <td class="num">2.80%</td>
+      <td class="num">854</td>
+      <td class="num">33,206,249</td>
+      <td class="num">2.69%</td>
     </tr>
     
     <tr data-group="inv-5" hidden>
       <td><span class="aloistag">SX</span></td>
       <td class="num">248</td>
       <td class="num">9,123,066</td>
-      <td class="num">0.78%</td>
+      <td class="num">0.74%</td>
     </tr>
     
     <tr data-group="inv-5" hidden>
       <td><span class="aloistag">SY</span></td>
       <td class="num">70</td>
       <td class="num">6,338,035</td>
-      <td class="num">0.54%</td>
+      <td class="num">0.51%</td>
     </tr>
     
     <tr data-group="inv-5" hidden>
       <td><span class="aloistag">SZ</span></td>
-      <td class="num">250</td>
-      <td class="num">84,153,560</td>
-      <td class="num">7.21%</td>
+      <td class="num">311</td>
+      <td class="num">87,092,877</td>
+      <td class="num">7.06%</td>
     </tr>
     
     <tr class="subtotal">
       <td>S 합계</td>
-      <td class="num">1,436</td>
-      <td class="num">132,669,100</td>
-      <td class="num">11.37%</td>
+      <td class="num">1,511</td>
+      <td class="num">136,639,183</td>
+      <td class="num">11.07%</td>
     </tr>
     
   </tbody>
@@ -768,16 +942,16 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">전체재고 대비 OA+OV 비율</span>
-          <span class="value">5.24%</span>
-          <span class="foot">OA+OV 재고금액 ₩61,149,632 · 전체재고 ₩1,167,088,334</span>
+          <span class="value">4.96%</span>
+          <span class="foot">OA+OV 재고금액 ₩61,270,265 · 전체재고 ₩1,234,406,263</span>
         </div>
       </div>
 
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">OA / OV 재고 세부</span>
-          <span class="val">₩61,149,632</span>
-          <span class="foot">OA ₩39,574,631(110라인·234개) · OV ₩21,575,001(112라인·208개)</span>
+          <span class="val">₩61,270,265</span>
+          <span class="foot">OA ₩39,574,631(110라인·234개) · OV ₩21,695,634(112라인·209개)</span>
         </div>
         <p class="subttl">OA+OV 품목 TOP 10 <span class="n">금액 큰 순</span></p>
         <div class="tablewrap">
@@ -1103,6 +1277,8 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">63217376486</td><td>Tail light t</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">261,170</td></tr>
               
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51117379435</td><td>Black band s</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">238,212</td></tr>
+              
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">34116789544</td><td>Brake disc</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">235,500</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">34116789543</td><td>Brake disc</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">232,020</td></tr>
@@ -1154,8 +1330,6 @@
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">61357928662</td><td>Receiver rad</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">123,954</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">12638638551</td><td>Integrated s</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">121,512</td></tr>
-              
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51117379435</td><td>Black band s</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">117,579</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51138469959</td><td>Grille, fron</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">115,801</td></tr>
               
@@ -1265,7 +1439,7 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">07119906681</td><td>Hexagon scre</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1,836</td></tr>
               
-              <tr class="subtotal oseries"><td colspan="4">OV 합계 (112개)</td><td class="num">21,575,001</td></tr>
+              <tr class="subtotal oseries"><td colspan="4">OV 합계 (112개)</td><td class="num">21,695,634</td></tr>
             </tbody>
           </table>
         </div>
@@ -1284,14 +1458,14 @@
           <span class="rank">01</span>
           <span class="eyebrow">입고 12개월+ 장기재고</span>
           <span class="value">₩63,894,153</span>
-          <span class="foot">전체재고 대비 5.47% · 225품목</span>
+          <span class="foot">전체재고 대비 5.18% · 225품목</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
         <button class="kpitile" id="tile-m24" onclick="selectLongKpi('m24')" aria-pressed="false">
           <span class="rank">02</span>
           <span class="eyebrow">입고 24개월+ 장기재고</span>
           <span class="value">₩20,720,697</span>
-          <span class="foot">전체재고 대비 1.78% · 59품목</span>
+          <span class="foot">전체재고 대비 1.68% · 59품목</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
       </div>
@@ -1899,6 +2073,777 @@
       </div>
     </section>
 
+    <section id="page-opart" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>O파트 현황</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>AS_부산(해운중동) · 미처리 출고요청 기준</div>
+      </div>
+
+      <div class="kpistrip">
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">01</span>
+          <span class="eyebrow">O계열 · RO/SB/SP 묶인 재고</span>
+          <span class="value">121건</span>
+          <span class="foot">요청수량×원가 합계 ₩31,259,353</span>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">참조문서별 O계열 요청 세부</span>
+          <span class="val">121건</span>
+          <span class="foot">그룹 클릭해서 펼치기 · 요청일 최신순</span>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>참조문서번호</th><th>요청일</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th></tr></thead>
+            <tbody>
+              
+              <tr class="grouphead oseries" data-group="opart-RO" onclick="toggleAloisGroup(this)"><td colspan="8"><span class="caret">▸</span>RO (38건)<span class="hint"></span></td></tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">11427808443</td><td>Filt.Element</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000918</td><td class="mono">2026-09-18 07:00</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">33326760374</td><td>Nut</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000918</td><td class="mono">2026-09-18 07:00</td>
+                <td class="num">2</td><td class="num">4</td><td class="num">4</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">31356859651</td><td>Swing suppor</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000918</td><td class="mono">2026-09-18 07:00</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">61627407273</td><td>WIPER BLADE X3 Rear</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">RO2609001140</td><td class="mono">2026-09-17 18:35</td>
+                <td class="num">1</td><td class="num">16</td><td class="num">15</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">64119382886</td><td>MICROFILTER/</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">RO2609001140</td><td class="mono">2026-09-17 18:35</td>
+                <td class="num">1</td><td class="num">16</td><td class="num">14</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51247266241</td><td>Buffer</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001077</td><td class="mono">2026-09-17 16:18</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">07129904865</td><td>Hex nut</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001085</td><td class="mono">2026-09-17 15:42</td>
+                <td class="num">2</td><td class="num">0</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51645A2F5B4</td><td>Mount for he</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001102</td><td class="mono">2026-09-17 15:31</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51135A3EA66</td><td>Trim strip s</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001102</td><td class="mono">2026-09-17 15:31</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">07149502134</td><td>Multi-purpos</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000527</td><td class="mono">2026-09-17 15:01</td>
+                <td class="num">17</td><td class="num">13</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51758074612</td><td>Underhood sh</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000840</td><td class="mono">2026-09-17 14:44</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51168738349</td><td>Heated outsi</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">RO2609001101</td><td class="mono">2026-09-17 14:38</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">33326760346</td><td>Hex bolt wit 1개만 먼저 꺼내줌</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">RO2609000882</td><td class="mono">2026-09-17 14:38</td>
+                <td class="num">2</td><td class="num">2</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">90200007690</td><td>BMW Reusable</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">RO2608001033</td><td class="mono">2026-09-17 14:38</td>
+                <td class="num">3</td><td class="num">7</td><td class="num">4</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">52208129296</td><td>WIRE-STRAP</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000847</td><td class="mono">2026-09-17 14:33</td>
+                <td class="num">7</td><td class="num">7</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51115A2F712</td><td>Insert, bump</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001102</td><td class="mono">2026-09-17 11:46</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">11288573252</td><td>RIBBED V-BEL</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001060</td><td class="mono">2026-09-17 07:46</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">63147400207</td><td>Reflector, r</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000996</td><td class="mono">2026-09-15 16:41</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51115A1BCB8</td><td>Carrier, bum</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000962</td><td class="mono">2026-09-15 10:56</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">99985B94ED5</td><td>BMW ART BOLT(NEW)</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">RO2609000916</td><td class="mono">2026-09-14 14:57</td>
+                <td class="num">1</td><td class="num">19</td><td class="num">18</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51147345063</td><td>Label</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000879</td><td class="mono">2026-09-14 13:33</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51127373852</td><td>Carrier, bum</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">RO2608001777</td><td class="mono">2026-09-10 11:09</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">84105B52225</td><td>Wireless cha</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2604001722</td><td class="mono">2026-09-09 11:49</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">31106866023</td><td>Clip nut</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000563</td><td class="mono">2026-09-09 08:08</td>
+                <td class="num">2</td><td class="num">4</td><td class="num">2</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">31106780613</td><td>Combin.nut</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000563</td><td class="mono">2026-09-09 08:08</td>
+                <td class="num">2</td><td class="num">4</td><td class="num">2</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">32106871896</td><td>Pipe clamp</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000527</td><td class="mono">2026-09-08 11:57</td>
+                <td class="num">2</td><td class="num">9</td><td class="num">7</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">11288519128</td><td>FAN BELT REPO</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609000427</td><td class="mono">2026-09-07 12:45</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51477445471</td><td>Loading sill</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">RO2608001777</td><td class="mono">2026-09-04 09:44</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">41007431661</td><td>OUTER PANEL</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">RO2608001777</td><td class="mono">2026-09-04 09:44</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51137483595</td><td>Finisher, tr</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">RO2608001777</td><td class="mono">2026-09-04 09:44</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">41007431627</td><td>INTERIOR TAI</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">RO2608001777</td><td class="mono">2026-09-04 09:44</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">41007437607</td><td>Reinforcemen</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">RO2608001777</td><td class="mono">2026-09-04 09:43</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51127436843</td><td>Guide, cente</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">RO2608001575</td><td class="mono">2026-08-29 10:33</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">36116891824</td><td>Light alloy</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">RO2608001747</td><td class="mono">2026-08-28 10:39</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">07119907357</td><td>Hex bolt</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2608001656</td><td class="mono">2026-08-27 11:35</td>
+                <td class="num">4</td><td class="num">12</td><td class="num">8</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51317477267</td><td>Windshield,</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">RO2608000697</td><td class="mono">2026-08-19 09:48</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">16119455463</td><td>Supply modul</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">RO2607001668</td><td class="mono">2026-07-27 17:05</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">11127934596</td><td>Cylinder hea</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">RO2607001668</td><td class="mono">2026-07-27 17:05</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="subtotal oseries"><td colspan="5">RO 합계</td><td class="num">71</td><td class="num"></td><td class="num"></td></tr>
+              
+              <tr class="grouphead oseries" data-group="opart-SB" onclick="toggleAloisGroup(this)"><td colspan="8"><span class="caret">▸</span>SB (40건)<span class="hint"></span></td></tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">34207889663</td><td>Brake disc,</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2609001345</td><td class="mono">2026-09-17 17:10</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">34207889664</td><td>Brake disc v</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2609001345</td><td class="mono">2026-09-17 17:10</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">34111123072</td><td>BOLT</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2609001345</td><td class="mono">2026-09-17 17:10</td>
+                <td class="num">4</td><td class="num">4</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">34107889662</td><td>Ventilated b</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2609001345</td><td class="mono">2026-09-17 17:10</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">34107889661</td><td>Ventilated b</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2609001345</td><td class="mono">2026-09-17 17:10</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">63175A09227</td><td>Holder, lamp</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2609001022</td><td class="mono">2026-09-17 14:33</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">34207915314</td><td>Brake disc,</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2608001782</td><td class="mono">2026-09-12 10:24</td>
+                <td class="num">6</td><td class="num">8</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">12415B913B8</td><td>Starter</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SB2609000195</td><td class="mono">2026-09-07 11:03</td>
+                <td class="num">1</td><td class="num">4</td><td class="num">1</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">12415B913B8</td><td>Starter</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SB2609000480</td><td class="mono">2026-09-07 10:59</td>
+                <td class="num">1</td><td class="num">4</td><td class="num">1</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">51317422806</td><td>Cover, winds</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2609000380</td><td class="mono">2026-09-04 13:37</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">64119382886</td><td>MICROFILTER/</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SB2608001800</td><td class="mono">2026-08-26 17:15</td>
+                <td class="num">1</td><td class="num">16</td><td class="num">14</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">16137459686</td><td>Activated Ch</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2607001204</td><td class="mono">2026-08-26 09:34</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">16137404081</td><td>Venting line</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2607001204</td><td class="mono">2026-08-26 09:34</td>
+                <td class="num">1</td><td class="num">2</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">64536805453</td><td>Condenser ai</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2608000231</td><td class="mono">2026-08-25 17:39</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">51339447536</td><td>Seal mirror</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2607001710</td><td class="mono">2026-08-25 13:57</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">11537827841</td><td>Coolant hose</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2608001506</td><td class="mono">2026-08-21 17:56</td>
+                <td class="num">1</td><td class="num">2</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">11148490570</td><td>Acoustic cov</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2608001506</td><td class="mono">2026-08-21 17:56</td>
+                <td class="num">1</td><td class="num">2</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">11618507332</td><td>PROFILE-GASK</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2607001585</td><td class="mono">2026-07-28 16:28</td>
+                <td class="num">4</td><td class="num">4</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">51169493655</td><td>Cover, cente</td><td><span class="aloistag oseries">ON</span></td>
+                <td class="mono">SB2607001706</td><td class="mono">2026-07-23 15:40</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">51117297981</td><td>Set, covers,</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">SB2607001710</td><td class="mono">2026-07-23 15:34</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">61677402609</td><td>Hose line, h</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">SB2607001710</td><td class="mono">2026-07-23 15:34</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">61677241677</td><td>Hose</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">SB2607001710</td><td class="mono">2026-07-23 15:34</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">13627926310</td><td>NOx sensor</td><td><span class="aloistag oseries">ON</span></td>
+                <td class="mono">SB2607001710</td><td class="mono">2026-07-23 15:34</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">51437496417</td><td>Cover, B-col</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">SB2607001710</td><td class="mono">2026-07-23 15:34</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">11137603833</td><td>ASA-Bolt</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">SB2607001710</td><td class="mono">2026-07-23 15:34</td>
+                <td class="num">20</td><td class="num">20</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">61315A596C9</td><td>Steering col</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SB2607001710</td><td class="mono">2026-07-23 15:34</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">61357928662</td><td>Receiver rad</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">SB2607001710</td><td class="mono">2026-07-23 15:33</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">51335A05897</td><td>Window guide</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2607001204</td><td class="mono">2026-07-16 14:28</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">61316827362</td><td>Switch unit</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2604001621</td><td class="mono">2026-04-22 09:08</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">72117469953</td><td>UPPER BELT F</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">SB2601001642</td><td class="mono">2026-03-30 13:35</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">61125A8F801</td><td>Batt cable,</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">SB2603001960</td><td class="mono">2026-03-27 11:44</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">63255A016C9</td><td>3rd brake li</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">SB2509002355</td><td class="mono">2025-09-30 10:35</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">12638638551</td><td>Integrated s</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">SB2508000339</td><td class="mono">2025-08-05 13:07</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">34505B69D63</td><td>Power brake XM,X5,6,7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SB2505001546</td><td class="mono">2025-05-26 09:25</td>
+                <td class="num">1</td><td class="num">3</td><td class="num">2</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">51249482804</td><td>Spindle driv</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">SB2502002052</td><td class="mono">2025-04-25 10:31</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">51419115533</td><td>Trim</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">SB2502002201</td><td class="mono">2025-02-27 14:54</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">22117855818</td><td>Engine mount</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">SB2501001210</td><td class="mono">2025-01-17 09:50</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">52107310847</td><td>Seat mechani</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">SB2307001295</td><td class="mono">2024-10-31 17:01</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">51477326338</td><td>FLOOR COVERI</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">SB2402002175</td><td class="mono">2024-08-30 11:42</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">11428583896</td><td>Gasket set</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2404001458</td><td class="mono">2024-04-19 13:50</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="subtotal oseries"><td colspan="5">SB 합계</td><td class="num">70</td><td class="num"></td><td class="num"></td></tr>
+              
+              <tr class="grouphead oseries" data-group="opart-SP" onclick="toggleAloisGroup(this)"><td colspan="8"><span class="caret">▸</span>SP (43건)<span class="hint"></span></td></tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">51115A3C7E4</td><td>Trim, wheel</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SP2609000003</td><td class="mono">2026-09-17 14:31</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">51952449252</td><td>Klapptisch s</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SP2609000001</td><td class="mono">2026-09-16 09:29</td>
+                <td class="num">1</td><td class="num">3</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007310</td><td>BMW Golf Gift Set  재고</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000058</td><td class="mono">2026-09-14 11:26</td>
+                <td class="num">1</td><td class="num">3</td><td class="num">2</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007628</td><td>BMW Golfspor  재고</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000058</td><td class="mono">2026-09-14 11:26</td>
+                <td class="num">1</td><td class="num">3</td><td class="num">2</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007299</td><td>BMW Boston Black</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000060</td><td class="mono">2026-09-14 11:16</td>
+                <td class="num">1</td><td class="num">27</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000060</td><td class="mono">2026-09-14 11:16</td>
+                <td class="num">1</td><td class="num">17</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007299</td><td>BMW Boston Black</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2608000036</td><td class="mono">2026-09-14 11:16</td>
+                <td class="num">22</td><td class="num">27</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2608000036</td><td class="mono">2026-09-14 11:16</td>
+                <td class="num">13</td><td class="num">17</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">36116885457</td><td>Disc wheel l 재고휠</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SP2609000058</td><td class="mono">2026-09-14 10:59</td>
+                <td class="num">1</td><td class="num">2</td><td class="num">1</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">51265B35B63</td><td>Lock button, 재고</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SP2609000059</td><td class="mono">2026-09-14 10:58</td>
+                <td class="num">1</td><td class="num">2</td><td class="num">1</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007299</td><td>BMW Boston Black</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000023</td><td class="mono">2026-09-03 12:07</td>
+                <td class="num">1</td><td class="num">27</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000023</td><td class="mono">2026-09-03 12:07</td>
+                <td class="num">1</td><td class="num">17</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007299</td><td>BMW Boston Black</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000022</td><td class="mono">2026-09-03 12:06</td>
+                <td class="num">1</td><td class="num">27</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000022</td><td class="mono">2026-09-03 12:06</td>
+                <td class="num">1</td><td class="num">17</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">80435A5D002</td><td>BMW miniatur M4 GT3</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">80435A51946</td><td>BMW miniatur M8 GTE</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200008205</td><td>MINI Brick T</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">13</td><td class="num">12</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200008204</td><td>BMW Brick To</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">7</td><td class="num">6</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007293</td><td>BMW Caddy M</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">4</td><td class="num">3</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007292</td><td>BMW Caddy Beige &amp;amp; Grey</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">6</td><td class="num">5</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007291</td><td>BMW Caddy Cognac</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">80432454788</td><td>M1 Heritage Racing</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007566</td><td>MINI Magsafe</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">4</td><td class="num">3</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007565</td><td>BMW Magsafe</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">7</td><td class="num">6</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200008123</td><td>MINI Portabl</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">28</td><td class="num">27</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007607</td><td>MINI Fire ex</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">2</td><td class="num">1</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007605</td><td>BMW Fire ext</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">10</td><td class="num">9</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">80292454754</td><td>BMW M USB st</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">80272463141</td><td>BMW Classic</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">80262463269</td><td>BMW M watch,</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007068</td><td>BMW GOLFING</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">51955A4DA75</td><td>BMW tablet h</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">2</td><td class="num">1</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">82292355518</td><td>Key case, M</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">82292408819</td><td>Key case wit</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SP2609000016</td><td class="mono">2026-09-02 13:36</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">51337466961</td><td>Side window, m게러지 클레임</td><td><span class="aloistag oseries">OV</span></td>
+                <td class="mono">SP2609000006</td><td class="mono">2026-09-02 09:46</td>
+                <td class="num">1</td><td class="num">2</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007299</td><td>BMW Boston Black</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2609000001</td><td class="mono">2026-09-02 09:26</td>
+                <td class="num">1</td><td class="num">27</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">16137404081</td><td>Venting line 9월 리타반납</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SP2609000007</td><td class="mono">2026-09-01 11:20</td>
+                <td class="num">1</td><td class="num">2</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">11789452687</td><td>Regulating l 9월 리타반납</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">SP2609000007</td><td class="mono">2026-09-01 11:20</td>
+                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007299</td><td>BMW Boston Black</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2608000084</td><td class="mono">2026-08-26 12:13</td>
+                <td class="num">1</td><td class="num">27</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2608000084</td><td class="mono">2026-08-26 12:13</td>
+                <td class="num">1</td><td class="num">17</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007123</td><td>23Y BMW FW S</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">SP2605000092</td><td class="mono">2026-05-27 15:04</td>
+                <td class="num">4</td><td class="num">4</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007365</td><td>24Y BMW SS G</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SP2605000092</td><td class="mono">2026-05-27 15:04</td>
+                <td class="num">8</td><td class="num">8</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SP" hidden>
+                <td class="mono">90200007250</td><td>23Y BMW FW G</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SP2605000092</td><td class="mono">2026-05-27 15:04</td>
+                <td class="num">4</td><td class="num">4</td><td class="num">0</td>
+              </tr>
+              
+              <tr class="subtotal oseries"><td colspan="5">SP 합계</td><td class="num">89</td><td class="num"></td><td class="num"></td></tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section id="page-calendar" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>팀 캘린더</b></span>
@@ -1921,7 +2866,7 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  function selectPage(key){ ['today','external','accessory','oaov','longstock','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); document.querySelector('.maininner').classList.toggle('wide', key==='calendar'); }
+  function selectPage(key){ ['today','external','accessory','oaov','longstock','opart','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); document.querySelector('.maininner').classList.toggle('wide', key==='calendar'); }
   function toggleAloisGroup(headEl){
     var key = headEl.getAttribute('data-group');
     var table = headEl.closest('table');

@@ -204,6 +204,22 @@ def extract_turnover(page: Page, month_start: str, today_str: str) -> list:
     return fetch_rows(frame, "/rpt/raw/selectDLRTurnOver.do", body)
 
 
+def extract_part_requests(page: Page, today_str: str) -> list:
+    """출고요청관리: 미처리 부품 출고요청(어떤 RO/SB/SP에 재고가 묶여있는지 참조문서번호 포함)."""
+    click_menu(page, "icon-parts", "출고요청관리")
+    frame = wait_for_frame(page, "selectDlvReqMngMain")
+    rows = []
+    for req_tp in ("01", "03"):  # 01=RO/SB/SP 대부분, 03=소수 잔여 유형(확인됨)
+        body = {
+            "recordCountPerPage": 5000, "pageIndex": 1, "firstIndex": 0, "lastIndex": 5000,
+            "sRefDocNo": "", "sReqStartDt": "2020-01-01", "sReqEndDt": today_str,
+            "sStatCd": "01", "sReqDocNo": "", "sReqUsrId": "", "sPartNo": "",
+            "sPartStatCd": "", "sReqBrchCd": "", "sNotProcQty": "01", "sPurcTp": "", "sReqTp": req_tp,
+        }
+        rows += fetch_rows(frame, "/parts/dlv/dlvReq/selectPartReqInfo.do", body)
+    return rows
+
+
 # ============================================================
 # 집계 (JS로 검증한 로직을 그대로 Python으로 옮김)
 # ============================================================
@@ -361,6 +377,38 @@ def build_longstock(pw_rows, inv_total, now):
         "m24_items": m24_items, "m24_val": m24_val, "m24_count": len(m24_items),
         "m24_pct": round(100 * m24_val / inv_total, 2) if inv_total else 0,
     }
+
+
+def build_o_parts(rows):
+    """ALOIS O계열 중 미처리 출고요청(RO/SB/SP)에 걸려있는 재고. 요청수량×이동평균단가 = 원가."""
+    def val_fn(r):
+        return num(r.get("reqQty")) * num(r.get("movPrc"))
+
+    o_rows = [r for r in rows if str(r.get("aloisCd") or "").startswith("O")]
+    items = sorted([{
+        "item": r.get("partNo"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
+        "ref_tp": r.get("refDocTp") or "기타", "ref_no": r.get("refDocNo") or "-",
+        "req_qty": int(num(r.get("reqQty"))), "crt_qty": int(num(r.get("crtQty"))),
+        "avail_qty": int(num(r.get("availQty"))), "req_dt": (r.get("reqDt") or "")[:16],
+        "req_brch": r.get("reqBrchNm") or "-", "val": round(val_fn(r)),
+    } for r in o_rows], key=lambda i: i["req_dt"], reverse=True)
+
+    by_type = {}
+    for i in items:
+        by_type.setdefault(i["ref_tp"], []).append(i)
+    group_order = ["RO", "SB", "SP"]
+    groups = []
+    for tp in group_order:
+        if tp in by_type:
+            groups.append({"code": tp, "rows": by_type.pop(tp)})
+    for tp, rs in by_type.items():
+        groups.append({"code": tp, "rows": rs})
+    for g in groups:
+        g["count"] = len(g["rows"])
+        g["qty_sum"] = sum(i["req_qty"] for i in g["rows"])
+        g["val"] = round(sum(i["val"] for i in g["rows"]))
+
+    return {"items": items, "count": len(items), "total_val": round(sum(i["val"] for i in items)), "groups": groups}
 
 
 def _num_of(r):
@@ -598,6 +646,8 @@ def run_cycle(page: Page) -> None:
     inv_rows = extract_inventory(page)
     print(" - Turn Over 리포트 (당월)")
     to_rows = extract_turnover(page, month_start, today_str)
+    print(" - 출고요청관리 (O계열 RO/SB/SP)")
+    req_rows = extract_part_requests(page, today_str)
 
     print("집계 중...")
     recv = build_recv(recv_rows, today_str)
@@ -606,13 +656,14 @@ def run_cycle(page: Page) -> None:
     ext, shop = build_ext_shop(to_rows, period_label)
     acc, tire = build_acc_tire(to_rows)
     longstock = build_longstock(pw_rows, inv["total"], now)
+    opart = build_o_parts(req_rows)
     calendar_image = next((f for f in CALENDAR_IMAGE_CANDIDATES if (DOCS_DIR / f).exists()), None)
 
     data = {
         "meta": {"branch_name": BRANCH_NAME, "brch_code": f"BRCH {BRCH_CD}", "generated_at": generated_at,
                  "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
-        "longstock": longstock,
+        "longstock": longstock, "opart": opart,
     }
 
     html = render(data)
