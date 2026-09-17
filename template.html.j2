@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>동성모터스 PARTS</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap');
+
+  :root{
+    color-scheme: light;
+    --page:#f9f9f7; --surface:#fcfcfb; --surface-2:#f1f1ee; --sidebar:#ffffff;
+    --line:#e1e0d9; --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
+    --accent:#0066b1; --accent-strong:#003d7c; --accent-wash:#e5f0fa;
+    --m-blue:#1e5aa8; --m-violet:#5a287d; --m-red:#e2231a;
+    --good:#0ca30c; --critical:#c8372a; --critical-wash:#fbeae8;
+    --font-display:'Big Shoulders Display',system-ui,sans-serif;
+    --font-body:'Public Sans',system-ui,-apple-system,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme: dark;
+      --page:#0d0d0d; --surface:#1a1a19; --surface-2:#212120; --sidebar:#141414;
+      --line:#2c2c2a; --ink:#ffffff; --ink-2:#c3c2b7; --muted:#8f8d87;
+      --accent:#3f96e0; --accent-strong:#8ec3f2; --accent-wash:#122236;
+      --m-blue:#3f7fc7; --m-violet:#8a5aae; --m-red:#ff5b47;
+      --good:#0ca30c; --critical:#e2695c; --critical-wash:#301715;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --page:#0d0d0d; --surface:#1a1a19; --surface-2:#212120; --sidebar:#141414;
+    --line:#2c2c2a; --ink:#ffffff; --ink-2:#c3c2b7; --muted:#8f8d87;
+    --accent:#3f96e0; --accent-strong:#8ec3f2; --accent-wash:#122236;
+    --m-blue:#3f7fc7; --m-violet:#8a5aae; --m-red:#ff5b47;
+    --good:#0ca30c; --critical:#e2695c; --critical-wash:#301715;
+  }
+
+  *{box-sizing:border-box;}
+  html, body{ height:100%; margin:0; }
+  body{ background:var(--page); color:var(--ink); font-family:var(--font-body); }
+
+  .app{ display:flex; height:100%; min-height:100vh; }
+
+  /* ============ SIDEBAR ============ */
+  .sidebar{ width:248px; flex:none; background:var(--sidebar); border-right:1px solid var(--line);
+    display:flex; flex-direction:column; padding:18px 14px; gap:18px; overflow-y:auto; }
+  .sb-brand{ display:flex; align-items:center; gap:10px; padding:2px 6px; }
+  .sb-brand .mark{ width:32px; height:32px; border-radius:8px; background:var(--accent); color:#fff; flex:none;
+    display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; font-size:12px; }
+  .sb-brand .name{ font-family:var(--font-display); font-weight:800; font-size:18px; letter-spacing:.01em; }
+  .sb-mstripe{ height:2.5px; border-radius:2px; margin:-6px 6px 0;
+    background:linear-gradient(90deg, var(--m-blue) 0 33.33%, var(--m-violet) 33.33% 66.66%, var(--m-red) 66.66% 100%); }
+
+  .sb-workspace{ display:flex; align-items:center; gap:10px; padding:10px 10px; border:1px solid var(--line); border-radius:10px; }
+  .sb-workspace .ico{ width:26px; height:26px; border-radius:7px; background:var(--surface-2); flex:none; display:flex; align-items:center; justify-content:center; color:var(--ink-2); }
+  .sb-workspace .tt{ display:flex; flex-direction:column; line-height:1.25; min-width:0; }
+  .sb-workspace .tt b{ font-size:12.5px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .sb-workspace .tt span{ font-size:10.5px; color:var(--muted); font-family:var(--font-mono); }
+
+  .sb-section{ display:flex; flex-direction:column; gap:2px; }
+  .sb-label{ font-family:var(--font-display); font-weight:700; font-size:10.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); padding:0 10px; margin-bottom:4px; }
+  .sb-item{ all:unset; box-sizing:border-box; display:flex; align-items:center; gap:10px; padding:8px 10px; border-radius:8px; font-size:13px; font-weight:600; color:var(--ink-2); cursor:pointer; }
+  .sb-item svg{ flex:none; opacity:.85; }
+  .sb-item:hover{ background:var(--surface-2); color:var(--ink); }
+  .sb-item[aria-current="page"]{ background:var(--accent-wash); color:var(--accent-strong); }
+  .sb-item[aria-current="page"] svg{ opacity:1; }
+  .sb-item.soon{ cursor:default; }
+  .sb-item.soon:hover{ background:transparent; color:var(--ink-2); }
+  .sb-item.soon .tag{ margin-left:auto; font-family:var(--font-mono); font-size:9.5px; color:var(--muted); background:var(--surface-2); border-radius:5px; padding:1px 5px; }
+
+  .sb-spacer{ flex:1 1 auto; }
+  .sb-foot{ font-family:var(--font-mono); font-size:10.5px; color:var(--muted); padding:0 10px; }
+
+  /* ============ MAIN ============ */
+  .main{ flex:1 1 auto; min-width:0; overflow-y:auto; height:100%; }
+  .maininner{ max-width:1000px; margin:0 auto; padding:20px 28px 64px; display:flex; flex-direction:column; gap:20px; }
+
+  .crumbbar{ display:flex; align-items:center; gap:8px; }
+  .crumb{ font-size:12.5px; color:var(--muted); }
+  .crumb b{ color:var(--ink); font-weight:600; }
+  .crumbbar .spacer{ flex:1 1 auto; }
+  .freshness{ display:flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:12px; color:var(--ink-2); }
+  .dot{ width:8px; height:8px; border-radius:50%; background:var(--good); box-shadow:0 0 0 3px rgba(12,163,12,.18); }
+
+  .kpistrip{ display:flex; gap:12px; flex-wrap:wrap; }
+  .kpitile{ all:unset; box-sizing:border-box; flex:1 1 240px; cursor:pointer;
+    background:var(--surface); border:1.5px solid var(--line); border-radius:12px; padding:16px 18px;
+    display:flex; flex-direction:column; gap:5px; transition:border-color .12s ease, background .12s ease; }
+  .kpitile:hover{ border-color: var(--accent); }
+  .kpitile:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  .kpitile[aria-pressed="true"]{ border-color:var(--accent); background:var(--accent-wash); }
+  .kpitile .rank{ font-family:var(--font-mono); font-size:10.5px; color:var(--muted); }
+  .kpitile .eyebrow{ font-family:var(--font-display); font-weight:700; font-size:13.5px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-2); }
+  .kpitile .value{ font-family:var(--font-mono); font-weight:700; font-variant-numeric:tabular-nums; letter-spacing:-.01em; font-size:26px; color:var(--accent-strong); }
+  .kpitile .foot{ font-size:11.5px; color:var(--muted); }
+  .kpitile .tapln{ font-family:var(--font-mono); font-size:10.5px; color:var(--accent); margin-top:2px; }
+
+  .viewer{ background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:20px 22px; }
+  .viewer-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line); flex-wrap:wrap; }
+  .viewer-head .lbl{ font-family:var(--font-display); font-weight:800; font-size:17px; text-transform:uppercase; letter-spacing:.03em; }
+  .viewer-head .val{ font-family:var(--font-mono); font-weight:700; font-size:18px; color:var(--accent-strong); font-variant-numeric:tabular-nums; }
+  .viewer-head .foot{ font-size:12px; color:var(--muted); margin-left:auto; }
+
+  .subgrid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:18px; }
+
+  .tablewrap{ overflow-x:auto; }
+  table{ width:100%; border-collapse:collapse; font-size:12.5px; }
+  thead th{ text-align:left; font-family:var(--font-display); font-weight:700; font-size:10.5px; text-transform:uppercase; letter-spacing:.04em;
+    color:var(--muted); padding:0 8px 7px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  tbody td{ padding:6px 8px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  tbody tr:last-child td{ border-bottom:none; }
+  td.num, th.num{ text-align:right; font-family:var(--font-mono); font-variant-numeric:tabular-nums; }
+  td.mono{ font-family:var(--font-mono); font-size:12px; }
+  .aloistag{ display:inline-block; font-family:var(--font-mono); font-size:11px; font-weight:600; padding:1px 6px; border-radius:5px; background:var(--surface-2); color:var(--ink-2); }
+  .subttl{ font-family:var(--font-display); font-weight:700; font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-2); margin:0 0 8px; display:flex; justify-content:space-between; }
+  .subttl .n{ font-family:var(--font-mono); color:var(--muted); font-weight:500; text-transform:none; letter-spacing:0; }
+  tbody tr.top1 td{ background:var(--accent-wash); }
+
+  .grouphead td{ padding-top:12px; padding-bottom:4px; border-bottom:none; font-family:var(--font-display); font-weight:700; font-size:10.5px;
+    text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+  tbody tr.grouphead:first-child td{ padding-top:0; }
+  tbody tr.subtotal td{ border-top:1px solid var(--line); border-bottom:1.5px solid var(--line); font-weight:700; }
+  td.num.neg{ color:var(--critical); }
+
+  .aloistag.oseries{ background:var(--critical-wash); color:var(--critical); font-weight:700; }
+  tbody tr.oseries td.num, tbody tr.oseries td.mono{ color:var(--critical); }
+  tbody tr.subtotal.oseries td{ color:var(--critical); }
+  tr.cancelled{ opacity:.55; }
+  .empty-note{ font-size:12.5px; color:var(--muted); padding:12px 4px; }
+
+  @media (max-width:900px){
+    .app{ flex-direction:column; }
+    .sidebar{ width:100%; flex-direction:row; align-items:center; overflow-x:auto; overflow-y:visible; padding:10px 12px; gap:12px; }
+    .sb-workspace{ display:none; }
+    .sb-section{ flex-direction:row; }
+    .sb-label{ display:none; }
+    .sb-item .tag{ display:none; }
+    .sb-spacer{ display:none; }
+    .sb-foot{ display:none; }
+    .sb-mstripe{ display:none; }
+    .main{ height:auto; }
+  }
+  @media (max-width:820px){
+    .subgrid{ grid-template-columns:1fr; }
+    .viewer-head .foot{ margin-left:0; width:100%; }
+  }
+</style>
+</head>
+<body>
+
+{% macro alois_table(groups, cols) -%}
+<table>
+  <thead><tr>
+    <th>ALOIS</th>
+    {% if 'qty' in cols %}<th class="num">수량</th>{% endif %}
+    <th class="num">{{ '재고금액' if 'pct' in cols else '구매금액' }}</th>
+    {% if 'pct' in cols %}<th class="num">비중</th>{% endif %}
+  </tr></thead>
+  <tbody>
+    {% for g in groups %}
+    <tr class="grouphead{{ ' oseries' if g.oseries else '' }}"><td colspan="{{ cols|length + 1 }}">{{ g.code }} — {{ g.label }}</td></tr>
+    {% for r in g.rows %}
+    <tr{{ ' class="oseries"'|safe if g.oseries else '' }}>
+      <td><span class="aloistag{{ ' oseries' if g.oseries else '' }}">{{ r.code }}</span></td>
+      {% if 'qty' in cols %}<td class="num">{{ '{:,}'.format(r.qty) }}</td>{% endif %}
+      <td class="num">{{ '{:,}'.format(r.val) }}</td>
+      {% if 'pct' in cols %}<td class="num">{{ '%.2f'|format(r.pct) }}%</td>{% endif %}
+    </tr>
+    {% endfor %}
+    <tr class="subtotal{{ ' oseries' if g.oseries else '' }}">
+      <td{% if 'qty' not in cols and 'pct' not in cols %} colspan="1"{% endif %}>{{ g.code }} 합계</td>
+      {% if 'qty' in cols %}<td class="num">{{ '{:,}'.format(g.subtotal_qty) }}</td>{% endif %}
+      <td class="num">{{ '{:,}'.format(g.subtotal_val) }}</td>
+      {% if 'pct' in cols %}<td class="num">{{ '%.2f'|format(g.subtotal_pct) }}%</td>{% endif %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{%- endmacro %}
+
+<div class="app">
+
+  <nav class="sidebar" aria-label="동성모터스 PARTS 메뉴">
+    <div class="sb-brand"><div class="mark">DS</div><span class="name">동성모터스 PARTS</span></div>
+    <div class="sb-mstripe"></div>
+
+    <div class="sb-workspace">
+      <div class="ico"><svg width="14" height="14" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2 2 5.5v7L9 16l7-3.5v-7L9 2Z"/><path d="M2 5.5 9 9l7-3.5"/><path d="M9 9v7"/></svg></div>
+      <div class="tt"><b>{{ meta.branch_name }}</b><span>Parts Dept · {{ meta.brch_code }}</span></div>
+    </div>
+
+    <div class="sb-section">
+      <span class="sb-label">Workspace</span>
+      <button class="sb-item" id="nav-today" aria-current="page" onclick="selectPage('today')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="10" y="2" width="6" height="6" rx="1"/><rect x="2" y="10" width="6" height="6" rx="1"/><rect x="10" y="10" width="6" height="6" rx="1"/></svg>
+        오늘 현황
+      </button>
+      <button class="sb-item" id="nav-external" aria-current="false" onclick="selectPage('external')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 3h2l1.6 8.4a1.5 1.5 0 0 0 1.5 1.2h5.6a1.5 1.5 0 0 0 1.5-1.2L15 6H5"/><circle cx="7" cy="15.5" r="1"/><circle cx="13" cy="15.5" r="1"/><path d="M13 2.5 15.5 5M15.5 2.5 13 5"/></svg>
+        외부 판매 현황
+      </button>
+      <button class="sb-item" id="nav-accessory" aria-current="false" onclick="selectPage('accessory')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><circle cx="9" cy="9" r="2.4"/><path d="M9 2v2M9 14v2M2 9h2M14 9h2"/></svg>
+        악세사리&amp;타이어
+      </button>
+      <button class="sb-item" id="nav-oaov" aria-current="false" onclick="selectPage('oaov')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 9a7 7 0 0 1 12-5"/><path d="M14 4v4h-4"/><path d="M16 9a7 7 0 0 1-12 5"/><path d="M4 14v-4h4"/></svg>
+        OAOV 현황
+      </button>
+      <button class="sb-item soon"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2 2 5.5v7L9 16l7-3.5v-7L9 2Z"/><path d="M2 5.5 9 9l7-3.5"/><path d="M9 9v7"/></svg>재고 현황<span class="tag">예정</span></button>
+      <button class="sb-item soon"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="6" width="8" height="6"/><path d="M10 9h3l2 2v1h-5z"/><circle cx="5" cy="14" r="1.4"/><circle cx="13" cy="14" r="1.4"/></svg>입출고<span class="tag">예정</span></button>
+      <button class="sb-item soon"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 3h2l1.6 8.4a1.5 1.5 0 0 0 1.5 1.2h5.6a1.5 1.5 0 0 0 1.5-1.2L15 6H5"/><circle cx="7" cy="15.5" r="1"/><circle cx="13" cy="15.5" r="1"/></svg>구매 관리<span class="tag">예정</span></button>
+      <button class="sb-item soon"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="2" width="10" height="14" rx="1"/><path d="M6.5 6h5M6.5 9h5M6.5 12h3"/></svg>리포트<span class="tag">예정</span></button>
+    </div>
+
+    <div class="sb-section">
+      <span class="sb-label">Insights &amp; Tools</span>
+      <button class="sb-item soon"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="8" width="3" height="8"/><rect x="7.5" y="4" width="3" height="12"/><rect x="13" y="11" width="3" height="5"/></svg>지점 비교<span class="tag">예정</span></button>
+      <button class="sb-item soon"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><path d="M9 2v7h7"/></svg>ALOIS 분석<span class="tag">예정</span></button>
+      <button class="sb-item soon"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="14" height="12" rx="1"/><path d="M2 8h14M6 2v4M12 2v4"/></svg>주간 리포트<span class="tag">예정</span></button>
+      <button class="sb-item soon"><svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="6" r="3"/><path d="M2 16c0-3 2-5 5-5s5 2 5 5"/><path d="M13 10l1.5 1.5L17 8.5"/></svg>부서장 보고<span class="tag">예정</span></button>
+    </div>
+
+    <div class="sb-spacer"></div>
+    <div class="sb-foot">My DMS Console · {{ meta.generated_at }}</div>
+  </nav>
+
+  <main class="main">
+    <div class="maininner">
+    <section id="page-today">
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>{{ meta.generated_at }}</div>
+      </div>
+
+      <div class="kpistrip">
+        <button class="kpitile" id="tile-recv" onclick="selectKpi('recv')" aria-pressed="true">
+          <span class="rank">01</span>
+          <span class="eyebrow">오늘 입고금액</span>
+          <span class="value">₩{{ '{:,}'.format(recv.total) }}</span>
+          <span class="foot">{{ recv.date }} · GRN {{ recv.grn_count }}건 · {{ recv.lines }}라인</span>
+          <span class="tapln">눌러서 세부내역 보기 ↓</span>
+        </button>
+        <button class="kpitile" id="tile-inv" onclick="selectKpi('inv')" aria-pressed="false">
+          <span class="rank">02</span>
+          <span class="eyebrow">재고금액 · 부품창고</span>
+          <span class="value">₩{{ '{:,}'.format(inv.total) }}</span>
+          <span class="foot">{{ inv.item_count }}품목 · {{ inv.code_count }}개 코드</span>
+          <span class="tapln">눌러서 세부내역 보기 ↓</span>
+        </button>
+      </div>
+
+      <div class="viewer">
+        <div id="detail-recv">
+          <div class="viewer-head">
+            <span class="lbl">오늘 입고금액 세부</span>
+            <span class="val">₩{{ '{:,}'.format(recv.total) }}</span>
+            <span class="foot">{{ recv.qty }}개 · 전건 확정 · 부품창고</span>
+          </div>
+          <div class="subgrid">
+            <div>
+              <p class="subttl">ALOIS별 입고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순</span></p>
+              <div class="tablewrap">{{ alois_table(recv.alois_groups, ['val']) }}</div>
+            </div>
+            <div>
+              <p class="subttl">GRN별 입고금액 <span class="n">{{ recv.grn_count }}건 · GRN 내림차순</span></p>
+              <div class="tablewrap">
+                <table>
+                  <thead><tr><th>GRN</th><th class="num">구매금액</th></tr></thead>
+                  <tbody>
+                    {% for r in recv.grn_rows %}
+                    <tr{{ ' class="top1"'|safe if r.is_top else '' }}><td class="mono">{{ r.grn }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="subttl">입고금액 TOP 5</p>
+            <div class="tablewrap">
+              <table>
+                <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>GRN</th><th class="num">수량</th><th class="num">구매금액</th></tr></thead>
+                <tbody>
+                  {% for r in recv.top5 %}
+                  <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.oseries else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.grn }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-inv" hidden>
+          <div class="viewer-head">
+            <span class="lbl">재고금액 세부</span>
+            <span class="val">₩{{ '{:,}'.format(inv.total) }}</span>
+            <span class="foot">{{ inv.item_count }}품목 · 부품창고</span>
+          </div>
+          <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
+          <div class="tablewrap">{{ alois_table(inv.alois_groups, ['qty','val','pct']) }}</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-external" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>외부 판매 현황</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · {{ ext.period }} · 당월 누계</div>
+      </div>
+
+      <div class="kpistrip">
+        <button class="kpitile" id="tile-ext" onclick="selectExtKpi('ext')" aria-pressed="true">
+          <span class="rank">01</span>
+          <span class="eyebrow">외부 · 인보이스금액</span>
+          <span class="value">₩{{ '{:,}'.format(ext.total) }}</span>
+          <span class="foot">원가(품목원가합계) ₩{{ '{:,}'.format(ext.cost) }} · 유효 {{ ext.valid_count }}건{% if ext.cancelled_count %}(취소 {{ ext.cancelled_count }}건 제외){% endif %} · {{ ext.lines }}라인</span>
+          <span class="tapln">눌러서 세부내역 보기 ↓</span>
+        </button>
+        <button class="kpitile" id="tile-shop" onclick="selectExtKpi('shop')" aria-pressed="false">
+          <span class="rank">02</span>
+          <span class="eyebrow">외부공업사 · 인보이스금액</span>
+          <span class="value">₩{{ '{:,}'.format(shop.total) }}</span>
+          <span class="foot">{{ shop.foot_note }}</span>
+          <span class="tapln">눌러서 세부내역 보기 ↓</span>
+        </button>
+      </div>
+
+      <div class="viewer">
+        <div id="detail-ext">
+          <div class="viewer-head">
+            <span class="lbl">외부 세부 (C고객 · 정산상세유형 = 외부)</span>
+            <span class="val">₩{{ '{:,}'.format(ext.total) }}</span>
+            <span class="foot">원가(품목원가합계) ₩{{ '{:,}'.format(ext.cost) }} · 마진(DMS 산출) ₩{{ '{:,}'.format(ext.margin) }}</span>
+          </div>
+          <p class="subttl">인보이스 TOP 5 <span class="n">금액순 · 유효 {{ ext.valid_count }}건 중</span></p>
+          <div class="tablewrap">
+            <table>
+              <thead><tr><th>부품판매번호</th><th>인보이스번호</th><th>거래처</th><th>일자</th><th class="num">인보이스금액</th><th class="num">원가</th></tr></thead>
+              <tbody>
+                {% for r in ext.top5 %}
+                <tr><td class="mono">{{ r.num }}</td><td class="mono">{{ r.inv }}</td><td>{{ r.cust }}</td><td class="mono">{{ r.dt }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td class="num">{{ '{:,}'.format(r.cost) }}</td></tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="detail-shop" hidden>
+          <div class="viewer-head">
+            <span class="lbl">외부공업사 세부 (C고객 · 정산상세유형 = 외부공업사)</span>
+            <span class="val">₩{{ '{:,}'.format(shop.total) }}</span>
+            <span class="foot">{{ shop.foot_note }}</span>
+          </div>
+          <p class="subttl">인보이스 <span class="n">전체 {{ shop.invoices|length }}건</span></p>
+          <div class="tablewrap">
+            <table>
+              <thead><tr><th>부품판매번호</th><th>인보이스번호</th><th>거래처</th><th>일자</th><th class="num">인보이스금액</th><th class="num">원가</th><th>상태</th></tr></thead>
+              <tbody>
+                {% for r in shop.invoices %}
+                <tr{{ ' class="cancelled"'|safe if r.cancelled else '' }}><td class="mono">{{ r.num }}</td><td class="mono">{{ r.inv }}</td><td>{{ r.cust }}</td><td class="mono">{{ r.dt }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td class="num">{{ '{:,}'.format(r.cost) }}</td><td>{{ r.status }}</td></tr>
+                {% else %}
+                <tr><td colspan="7" class="empty-note">이번 달 외부공업사 인보이스 없음</td></tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div style="margin-top:18px; padding-top:14px; border-top:1px solid var(--line); display:flex; gap:24px; flex-wrap:wrap;">
+          <div><span class="subttl" style="margin:0">외부+외부공업사 합계</span></div>
+          <div style="display:flex; gap:24px; flex-wrap:wrap; font-family:var(--font-mono); font-size:13px;">
+            <span>인보이스금액 <b>₩{{ '{:,}'.format(ext.total + shop.total) }}</b></span>
+            <span>원가 <b>₩{{ '{:,}'.format(ext.cost + shop.cost) }}</b></span>
+            <span>유효 인보이스 <b>{{ ext.valid_count + shop.valid_count }}건</b> · <b>{{ ext.lines + shop.lines }}라인</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-accessory" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>악세사리&amp;타이어</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 정산유형 C+I · {{ ext.period }}</div>
+      </div>
+
+      <div class="kpistrip">
+        <button class="kpitile" id="tile-acc" onclick="selectAccKpi('acc')" aria-pressed="true">
+          <span class="rank">01</span>
+          <span class="eyebrow">악세사리 · 인보이스금액</span>
+          <span class="value">₩{{ '{:,}'.format(acc.total) }}</span>
+          <span class="foot">원가 ₩{{ '{:,}'.format(acc.cost) }} · {{ acc.invoices_count }}건 · {{ acc.lines }}라인</span>
+          <span class="tapln">눌러서 세부내역 보기 ↓</span>
+        </button>
+        <button class="kpitile" id="tile-tire" onclick="selectAccKpi('tire')" aria-pressed="false">
+          <span class="rank">02</span>
+          <span class="eyebrow">타이어 · 인보이스금액</span>
+          <span class="value">₩{{ '{:,}'.format(tire.total) }}</span>
+          <span class="foot">원가 ₩{{ '{:,}'.format(tire.cost) }} · {{ tire.invoices_count }}건 · {{ tire.lines }}라인</span>
+          <span class="tapln">눌러서 세부내역 보기 ↓</span>
+        </button>
+      </div>
+
+      <div class="viewer">
+        <div id="detail-acc">
+          <div class="viewer-head">
+            <span class="lbl">악세사리 세부 (부품타입 3·5·7 합산)</span>
+            <span class="val">₩{{ '{:,}'.format(acc.total) }}</span>
+            <span class="foot">원가 ₩{{ '{:,}'.format(acc.cost) }} · 정산유형 C(고객)+I(내부처리)</span>
+          </div>
+          <p class="subttl">부품타입별 인보이스금액 <span class="n">코드순</span></p>
+          <div class="tablewrap">
+            <table>
+              <thead><tr><th>코드</th><th>부품타입</th><th class="num">라인</th><th class="num">인보이스금액</th></tr></thead>
+              <tbody>
+                {% for r in acc.by_type %}
+                <tr><td class="mono">{{ r.code }}</td><td>{{ r.label }}</td><td class="num">{{ r.lines }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+                {% endfor %}
+                <tr class="subtotal"><td colspan="2">3+5+7 합계</td><td class="num">{{ acc.lines }}</td><td class="num">{{ '{:,}'.format(acc.total) }}</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="subttl" style="margin-top:16px">인보이스 최근 5건 <span class="n">최신일순 · RO 또는 SP번호</span></p>
+          <div class="tablewrap">
+            <table>
+              <thead><tr><th>RO/SP번호</th><th>인보이스번호</th><th>거래처</th><th>일시</th><th class="num">인보이스금액</th><th class="num">원가</th></tr></thead>
+              <tbody>
+                {% for r in acc.recent5 %}
+                <tr><td class="mono">{{ r.num }}</td><td class="mono">{{ r.inv }}</td><td>{{ r.cust }}</td><td class="mono">{{ r.dt }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td class="num">{{ '{:,}'.format(r.cost) }}</td></tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="detail-tire" hidden>
+          <div class="viewer-head">
+            <span class="lbl">타이어 세부 (부품타입 8)</span>
+            <span class="val">₩{{ '{:,}'.format(tire.total) }}</span>
+            <span class="foot">원가 ₩{{ '{:,}'.format(tire.cost) }} · 정산유형 C(고객)+I(내부처리)</span>
+          </div>
+          <p class="subttl">담당 SA별 실적 <span class="n">인보이스금액순</span></p>
+          <div class="tablewrap">
+            <table>
+              <thead><tr><th>담당SA</th><th class="num">품목수량합계</th><th class="num">인보이스금액</th><th class="num">마진금액</th></tr></thead>
+              <tbody>
+                {% for r in tire.by_sa %}
+                <tr><td>{{ r.sa }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td><td class="num{{ ' neg' if r.margin < 0 else '' }}">{{ '{:,}'.format(r.margin) }}</td></tr>
+                {% endfor %}
+                <tr class="subtotal"><td>합계</td><td class="num">{{ tire.qty_total }}</td><td class="num">{{ '{:,}'.format(tire.total) }}</td><td class="num">{{ '{:,}'.format(tire.margin_total) }}</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="subttl" style="margin-top:16px">인보이스 전체 {{ tire.invoices_count }}건 <span class="n">최신일순</span></p>
+          <div class="tablewrap">
+            <table>
+              <thead><tr><th>RO/SP번호</th><th>인보이스번호</th><th>거래처</th><th>일시</th><th class="num">인보이스금액</th><th class="num">원가</th></tr></thead>
+              <tbody>
+                {% for r in tire.all_invoices %}
+                <tr><td class="mono">{{ r.num }}</td><td class="mono">{{ r.inv }}</td><td>{{ r.cust }}</td><td class="mono">{{ r.dt }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td class="num">{{ '{:,}'.format(r.cost) }}</td></tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-oaov" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>OAOV 현황</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 부품창고 · {{ recv.date }}</div>
+      </div>
+
+      <div class="kpistrip">
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">01</span>
+          <span class="eyebrow">전체재고 대비 OA+OV 비율</span>
+          <span class="value">{{ '%.2f'|format(oaov.pct) }}%</span>
+          <span class="foot">OA+OV 재고금액 ₩{{ '{:,}'.format(oaov.total) }} · 전체재고 ₩{{ '{:,}'.format(oaov.inv_total) }}</span>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">OA / OV 재고 세부</span>
+          <span class="val">₩{{ '{:,}'.format(oaov.total) }}</span>
+          <span class="foot">OA ₩{{ '{:,}'.format(oaov.oa_val) }}({{ oaov.oa_lines }}라인·{{ oaov.oa_qty }}개) · OV ₩{{ '{:,}'.format(oaov.ov_val) }}({{ oaov.ov_lines }}라인·{{ oaov.ov_qty }}개)</span>
+        </div>
+        <p class="subttl">OA+OV 품목 <span class="n">금액 큰 순 · 상위 {{ oaov.top_items|length }}개 (전체 {{ oaov.item_count }}개)</span></p>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
+            <tbody>
+              {% for r in oaov.top_items %}
+              <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+              {% endfor %}
+              <tr class="subtotal"><td colspan="4">상위 {{ oaov.top_items|length }}개 소계</td><td class="num">{{ '{:,}'.format(oaov.top_items|sum(attribute='val')) }}</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+</div>
+
+<script>
+  function selectKpi(key){ ['recv','inv'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
+  function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
+  function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
+  function selectPage(key){ ['today','external','accessory','oaov'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); }
+</script>
+</body>
+</html>
