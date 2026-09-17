@@ -114,6 +114,8 @@
   thead th{ text-align:left; font-family:var(--font-display); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.04em;
     color:var(--muted); padding:0 8px 7px; border-bottom:1px solid var(--line); white-space:nowrap; }
   tbody td{ padding:6px 8px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  table.opart-table td, table.opart-table th{ padding-left:5px; padding-right:5px; }
+  table.opart-table td:nth-child(2){ white-space:normal; max-width:160px; }
   tbody tr:last-child td{ border-bottom:none; }
   td.num, th.num{ text-align:right; font-family:var(--font-mono); font-variant-numeric:tabular-nums; }
   td.mono{ font-family:var(--font-mono); font-size:15px; }
@@ -630,7 +632,7 @@
           <span class="foot">그룹 클릭해서 펼치기 · 요청일 최신순</span>
         </div>
         <div class="tablewrap">
-          <table>
+          <table class="opart-table">
             <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>참조문서번호</th><th>요청일</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th>담당SA</th></tr></thead>
             <tbody>
               {% for g in opart.groups %}
