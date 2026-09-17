@@ -539,6 +539,11 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>팀 캘린더</b></span>
         <div class="spacer"></div>
+        {% if meta.calendar_embed_url %}
+        <a href="https://calendar.google.com/calendar/u/0/r/eventedit" target="_blank" rel="noopener"
+           style="font-family:var(--font-display); font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:.03em;
+                  color:#fff; background:var(--accent); border-radius:8px; padding:8px 14px; text-decoration:none; margin-right:10px;">+ 일정 추가</a>
+        {% endif %}
         <div class="freshness"><span class="dot"></span>{{ meta.branch_name }}</div>
       </div>
 
@@ -549,6 +554,9 @@
         <div class="empty-note" style="padding:40px 22px;">팀 캘린더가 아직 연결되지 않았습니다. 구글 캘린더 공유 설정에서 "퍼가기(embed)" 링크를 받아 연결해주세요.</div>
         {% endif %}
       </div>
+      {% if meta.calendar_embed_url %}
+      <p style="font-size:14px; color:var(--muted); margin:10px 2px 0;">※ "일정 추가" 클릭 시 새 탭에서 구글 캘린더 입력창이 열립니다. 저장 전에 캘린더 선택란을 부서 캘린더로 바꿔주세요.</p>
+      {% endif %}
     </section>
     </div>
   </main>
