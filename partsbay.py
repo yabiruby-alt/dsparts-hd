@@ -515,15 +515,28 @@ CYCLE_INTERVAL_SEC = 600  # 상시 실행 모드에서 갱신 주기 (10분)
 ONCE = "--once" in sys.argv  # 테스트용: 한 번만 돌고 종료 (기본은 계속 켜져 있는 상시 실행)
 
 
+def _pid_alive(pid: int) -> bool:
+    """Windows에선 os.kill(pid, 0)이 생존여부와 무관하게 항상 예외를 던져서 못 씀
+    (그래서 잠금이 사실상 계속 무시되고 있었음) -> tasklist로 직접 확인."""
+    try:
+        result = subprocess.run(
+            ["tasklist", "/FI", f"PID eq {pid}", "/NH"],
+            capture_output=True, text=True, timeout=5,
+        )
+        return str(pid) in result.stdout
+    except Exception:
+        return False  # 확인 불가하면 안전하게 "죽은 것"으로 간주해 새로 진행
+
+
 def _acquire_lock() -> bool:
     """이미 실행 중인 인스턴스가 있으면 False. (중복 실행 -> 동시 로그인으로 세션 끊기는 사고 방지)"""
     if LOCK_FILE.exists():
         try:
             pid = int(LOCK_FILE.read_text().strip())
-            os.kill(pid, 0)  # 살아있으면 예외 없이 통과
+        except ValueError:
+            pid = None
+        if pid is not None and _pid_alive(pid):
             return False  # 여전히 실행 중
-        except (ValueError, OSError, ProcessLookupError):
-            pass  # 죽은 잠금 파일 -> 무시하고 진행
     LOCK_FILE.write_text(str(os.getpid()))
     return True
 

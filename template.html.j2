@@ -48,40 +48,40 @@
     display:flex; flex-direction:column; padding:18px 14px; gap:18px; overflow-y:auto; }
   .sb-brand{ display:flex; align-items:center; gap:10px; padding:2px 6px; }
   .sb-brand .mark{ width:32px; height:32px; border-radius:8px; background:var(--accent); color:#fff; flex:none;
-    display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; font-size:12px; }
-  .sb-brand .name{ font-family:var(--font-display); font-weight:800; font-size:18px; letter-spacing:.01em; }
+    display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; font-size:15px; }
+  .sb-brand .name{ font-family:var(--font-display); font-weight:800; font-size:22.5px; letter-spacing:.01em; }
   .sb-mstripe{ height:2.5px; border-radius:2px; margin:-6px 6px 0;
     background:linear-gradient(90deg, var(--m-blue) 0 33.33%, var(--m-violet) 33.33% 66.66%, var(--m-red) 66.66% 100%); }
 
   .sb-workspace{ display:flex; align-items:center; gap:10px; padding:10px 10px; border:1px solid var(--line); border-radius:10px; }
   .sb-workspace .ico{ width:26px; height:26px; border-radius:7px; background:var(--surface-2); flex:none; display:flex; align-items:center; justify-content:center; color:var(--ink-2); }
   .sb-workspace .tt{ display:flex; flex-direction:column; line-height:1.25; min-width:0; }
-  .sb-workspace .tt b{ font-size:12.5px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-  .sb-workspace .tt span{ font-size:10.5px; color:var(--muted); font-family:var(--font-mono); }
+  .sb-workspace .tt b{ font-size:15.5px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .sb-workspace .tt span{ font-size:13px; color:var(--muted); font-family:var(--font-mono); }
 
   .sb-section{ display:flex; flex-direction:column; gap:2px; }
-  .sb-label{ font-family:var(--font-display); font-weight:700; font-size:10.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); padding:0 10px; margin-bottom:4px; }
-  .sb-item{ all:unset; box-sizing:border-box; display:flex; align-items:center; gap:10px; padding:8px 10px; border-radius:8px; font-size:13px; font-weight:600; color:var(--ink-2); cursor:pointer; }
+  .sb-label{ font-family:var(--font-display); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); padding:0 10px; margin-bottom:4px; }
+  .sb-item{ all:unset; box-sizing:border-box; display:flex; align-items:center; gap:10px; padding:8px 10px; border-radius:8px; font-size:16px; font-weight:600; color:var(--ink-2); cursor:pointer; }
   .sb-item svg{ flex:none; opacity:.85; }
   .sb-item:hover{ background:var(--surface-2); color:var(--ink); }
   .sb-item[aria-current="page"]{ background:var(--accent-wash); color:var(--accent-strong); }
   .sb-item[aria-current="page"] svg{ opacity:1; }
   .sb-item.soon{ cursor:default; }
   .sb-item.soon:hover{ background:transparent; color:var(--ink-2); }
-  .sb-item.soon .tag{ margin-left:auto; font-family:var(--font-mono); font-size:9.5px; color:var(--muted); background:var(--surface-2); border-radius:5px; padding:1px 5px; }
+  .sb-item.soon .tag{ margin-left:auto; font-family:var(--font-mono); font-size:12px; color:var(--muted); background:var(--surface-2); border-radius:5px; padding:1px 5px; }
 
   .sb-spacer{ flex:1 1 auto; }
-  .sb-foot{ font-family:var(--font-mono); font-size:10.5px; color:var(--muted); padding:0 10px; }
+  .sb-foot{ font-family:var(--font-mono); font-size:13px; color:var(--muted); padding:0 10px; }
 
   /* ============ MAIN ============ */
   .main{ flex:1 1 auto; min-width:0; overflow-y:auto; height:100%; }
   .maininner{ max-width:1000px; margin:0 auto; padding:20px 28px 64px; display:flex; flex-direction:column; gap:20px; }
 
   .crumbbar{ display:flex; align-items:center; gap:8px; }
-  .crumb{ font-size:12.5px; color:var(--muted); }
+  .crumb{ font-size:15.5px; color:var(--muted); }
   .crumb b{ color:var(--ink); font-weight:600; }
   .crumbbar .spacer{ flex:1 1 auto; }
-  .freshness{ display:flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:12px; color:var(--ink-2); }
+  .freshness{ display:flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:15px; color:var(--ink-2); }
   .dot{ width:8px; height:8px; border-radius:50%; background:var(--good); box-shadow:0 0 0 3px rgba(12,163,12,.18); }
 
   .kpistrip{ display:flex; gap:12px; flex-wrap:wrap; }
@@ -91,34 +91,34 @@
   .kpitile:hover{ border-color: var(--accent); }
   .kpitile:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
   .kpitile[aria-pressed="true"]{ border-color:var(--accent); background:var(--accent-wash); }
-  .kpitile .rank{ font-family:var(--font-mono); font-size:10.5px; color:var(--muted); }
-  .kpitile .eyebrow{ font-family:var(--font-display); font-weight:700; font-size:13.5px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-2); }
-  .kpitile .value{ font-family:var(--font-mono); font-weight:700; font-variant-numeric:tabular-nums; letter-spacing:-.01em; font-size:26px; color:var(--accent-strong); }
-  .kpitile .foot{ font-size:11.5px; color:var(--muted); }
-  .kpitile .tapln{ font-family:var(--font-mono); font-size:10.5px; color:var(--accent); margin-top:2px; }
+  .kpitile .rank{ font-family:var(--font-mono); font-size:13px; color:var(--muted); }
+  .kpitile .eyebrow{ font-family:var(--font-display); font-weight:700; font-size:17px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-2); }
+  .kpitile .value{ font-family:var(--font-mono); font-weight:700; font-variant-numeric:tabular-nums; letter-spacing:-.01em; font-size:32.5px; color:var(--accent-strong); }
+  .kpitile .foot{ font-size:14.5px; color:var(--muted); }
+  .kpitile .tapln{ font-family:var(--font-mono); font-size:13px; color:var(--accent); margin-top:2px; }
 
   .viewer{ background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:20px 22px; }
   .viewer-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line); flex-wrap:wrap; }
-  .viewer-head .lbl{ font-family:var(--font-display); font-weight:800; font-size:17px; text-transform:uppercase; letter-spacing:.03em; }
-  .viewer-head .val{ font-family:var(--font-mono); font-weight:700; font-size:18px; color:var(--accent-strong); font-variant-numeric:tabular-nums; }
-  .viewer-head .foot{ font-size:12px; color:var(--muted); margin-left:auto; }
+  .viewer-head .lbl{ font-family:var(--font-display); font-weight:800; font-size:21px; text-transform:uppercase; letter-spacing:.03em; }
+  .viewer-head .val{ font-family:var(--font-mono); font-weight:700; font-size:22.5px; color:var(--accent-strong); font-variant-numeric:tabular-nums; }
+  .viewer-head .foot{ font-size:15px; color:var(--muted); margin-left:auto; }
 
   .subgrid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:18px; }
 
   .tablewrap{ overflow-x:auto; }
-  table{ width:100%; border-collapse:collapse; font-size:12.5px; }
-  thead th{ text-align:left; font-family:var(--font-display); font-weight:700; font-size:10.5px; text-transform:uppercase; letter-spacing:.04em;
+  table{ width:100%; border-collapse:collapse; font-size:15.5px; }
+  thead th{ text-align:left; font-family:var(--font-display); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.04em;
     color:var(--muted); padding:0 8px 7px; border-bottom:1px solid var(--line); white-space:nowrap; }
   tbody td{ padding:6px 8px; border-bottom:1px solid var(--line); white-space:nowrap; }
   tbody tr:last-child td{ border-bottom:none; }
   td.num, th.num{ text-align:right; font-family:var(--font-mono); font-variant-numeric:tabular-nums; }
-  td.mono{ font-family:var(--font-mono); font-size:12px; }
-  .aloistag{ display:inline-block; font-family:var(--font-mono); font-size:11px; font-weight:600; padding:1px 6px; border-radius:5px; background:var(--surface-2); color:var(--ink-2); }
-  .subttl{ font-family:var(--font-display); font-weight:700; font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-2); margin:0 0 8px; display:flex; justify-content:space-between; }
+  td.mono{ font-family:var(--font-mono); font-size:15px; }
+  .aloistag{ display:inline-block; font-family:var(--font-mono); font-size:14px; font-weight:600; padding:1px 6px; border-radius:5px; background:var(--surface-2); color:var(--ink-2); }
+  .subttl{ font-family:var(--font-display); font-weight:700; font-size:15px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-2); margin:0 0 8px; display:flex; justify-content:space-between; }
   .subttl .n{ font-family:var(--font-mono); color:var(--muted); font-weight:500; text-transform:none; letter-spacing:0; }
   tbody tr.top1 td{ background:var(--accent-wash); }
 
-  .grouphead td{ padding-top:12px; padding-bottom:4px; border-bottom:none; font-family:var(--font-display); font-weight:700; font-size:10.5px;
+  .grouphead td{ padding-top:12px; padding-bottom:4px; border-bottom:none; font-family:var(--font-display); font-weight:700; font-size:13px;
     text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
   tbody tr.grouphead:first-child td{ padding-top:0; }
   tbody tr.subtotal td{ border-top:1px solid var(--line); border-bottom:1.5px solid var(--line); font-weight:700; }
@@ -128,7 +128,7 @@
   tbody tr.oseries td.num, tbody tr.oseries td.mono{ color:var(--critical); }
   tbody tr.subtotal.oseries td{ color:var(--critical); }
   tr.cancelled{ opacity:.55; }
-  .empty-note{ font-size:12.5px; color:var(--muted); padding:12px 4px; }
+  .empty-note{ font-size:15.5px; color:var(--muted); padding:12px 4px; }
 
   @media (max-width:900px){
     .app{ flex-direction:column; }
@@ -361,7 +361,7 @@
 
         <div style="margin-top:18px; padding-top:14px; border-top:1px solid var(--line); display:flex; gap:24px; flex-wrap:wrap;">
           <div><span class="subttl" style="margin:0">외부+외부공업사 합계</span></div>
-          <div style="display:flex; gap:24px; flex-wrap:wrap; font-family:var(--font-mono); font-size:13px;">
+          <div style="display:flex; gap:24px; flex-wrap:wrap; font-family:var(--font-mono); font-size:16px;">
             <span>인보이스금액 <b>₩{{ '{:,}'.format(ext.total + shop.total) }}</b></span>
             <span>원가 <b>₩{{ '{:,}'.format(ext.cost + shop.cost) }}</b></span>
             <span>유효 인보이스 <b>{{ ext.valid_count + shop.valid_count }}건</b> · <b>{{ ext.lines + shop.lines }}라인</b></span>
