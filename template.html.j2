@@ -121,7 +121,10 @@
   tbody tr.top1 td{ background:var(--accent-wash); }
 
   .grouphead td{ padding-top:12px; padding-bottom:4px; border-bottom:none; font-family:var(--font-display); font-weight:700; font-size:13px;
-    text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+    text-transform:uppercase; letter-spacing:.06em; color:var(--muted); cursor:pointer; user-select:none; }
+  .grouphead:hover td{ color:var(--ink-2); }
+  .grouphead .caret{ display:inline-block; margin-right:6px; font-size:11px; transition:transform .15s ease; }
+  .grouphead.open .caret{ transform:rotate(90deg); }
   tbody tr.grouphead:first-child td{ padding-top:0; }
   tbody tr.subtotal td{ border-top:1px solid var(--line); border-bottom:1.5px solid var(--line); font-weight:700; }
   td.num.neg{ color:var(--critical); }
@@ -152,7 +155,7 @@
 </head>
 <body>
 
-{% macro alois_table(groups, cols) -%}
+{% macro alois_table(groups, cols, prefix) -%}
 <table>
   <thead><tr>
     <th>ALOIS</th>
@@ -162,9 +165,10 @@
   </tr></thead>
   <tbody>
     {% for g in groups %}
-    <tr class="grouphead{{ ' oseries' if g.oseries else '' }}"><td colspan="{{ cols|length + 1 }}">{{ g.code }}</td></tr>
+    {% set gkey = prefix ~ '-' ~ loop.index %}
+    <tr class="grouphead{{ ' oseries' if g.oseries else '' }}" data-group="{{ gkey }}" onclick="toggleAloisGroup(this)"><td colspan="{{ cols|length + 1 }}"><span class="caret">▸</span>{{ g.code }}</td></tr>
     {% for r in g.rows %}
-    <tr{{ ' class="oseries"'|safe if g.oseries else '' }}>
+    <tr data-group="{{ gkey }}" hidden{{ ' class="oseries"'|safe if g.oseries else '' }}>
       <td><span class="aloistag{{ ' oseries' if g.oseries else '' }}">{{ r.code }}</span></td>
       {% if 'qty' in cols %}<td class="num">{{ '{:,}'.format(r.qty) }}</td>{% endif %}
       <td class="num">{{ '{:,}'.format(r.val) }}</td>
@@ -253,7 +257,7 @@
           <div class="subgrid">
             <div>
               <p class="subttl">ALOIS별 입고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순</span></p>
-              <div class="tablewrap">{{ alois_table(recv.alois_groups, ['val']) }}</div>
+              <div class="tablewrap">{{ alois_table(recv.alois_groups, ['val'], 'recv') }}</div>
             </div>
             <div>
               <p class="subttl">GRN별 입고금액 <span class="n">{{ recv.grn_count }}건 · GRN 내림차순</span></p>
@@ -291,7 +295,7 @@
             <span class="foot">{{ inv.item_count }}품목 · 부품창고</span>
           </div>
           <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
-          <div class="tablewrap">{{ alois_table(inv.alois_groups, ['qty','val','pct']) }}</div>
+          <div class="tablewrap">{{ alois_table(inv.alois_groups, ['qty','val','pct'], 'inv') }}</div>
         </div>
       </div>
     </section>
@@ -506,6 +510,13 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectPage(key){ ['today','external','accessory','oaov'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); }
+  function toggleAloisGroup(headEl){
+    var key = headEl.getAttribute('data-group');
+    var table = headEl.closest('table');
+    var open = !headEl.classList.contains('open');
+    headEl.classList.toggle('open', open);
+    table.querySelectorAll('tr[data-group="'+key+'"]').forEach(function(tr){ if(tr!==headEl){ tr.hidden = !open; } });
+  }
 </script>
 </body>
 </html>
