@@ -48,7 +48,8 @@
   /* ============ SIDEBAR ============ */
   .sidebar{ width:248px; flex:none; background:var(--sidebar); border-right:1px solid var(--line);
     display:flex; flex-direction:column; padding:18px 14px; gap:18px; overflow-y:auto; }
-  .sb-brand{ display:flex; align-items:center; gap:10px; padding:2px 6px; }
+  .sb-brand{ display:flex; align-items:center; gap:10px; padding:2px 6px; cursor:pointer; border-radius:8px; }
+  .sb-brand:hover{ background:var(--surface-2); }
   .sb-brand .mark{ width:32px; height:32px; border-radius:8px; background:var(--accent); color:#fff; flex:none;
     display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; font-size:15px; }
   .sb-brand .name{ font-family:var(--font-display); font-weight:800; font-size:22.5px; letter-spacing:.01em; }
@@ -197,7 +198,7 @@
 <div class="app">
 
   <nav class="sidebar" aria-label="동성모터스 PARTS 메뉴">
-    <div class="sb-brand"><div class="mark">DS</div><span class="name">동성모터스 PARTS</span></div>
+    <div class="sb-brand" role="button" tabindex="0" onclick="selectPage('today')" onkeydown="if(event.key==='Enter'||event.key===' '){selectPage('today')}"><div class="mark">DS</div><span class="name">동성모터스 PARTS</span></div>
     <div class="sb-mstripe"></div>
 
     <div class="sb-workspace">

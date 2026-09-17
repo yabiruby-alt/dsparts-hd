@@ -48,7 +48,8 @@
   /* ============ SIDEBAR ============ */
   .sidebar{ width:248px; flex:none; background:var(--sidebar); border-right:1px solid var(--line);
     display:flex; flex-direction:column; padding:18px 14px; gap:18px; overflow-y:auto; }
-  .sb-brand{ display:flex; align-items:center; gap:10px; padding:2px 6px; }
+  .sb-brand{ display:flex; align-items:center; gap:10px; padding:2px 6px; cursor:pointer; border-radius:8px; }
+  .sb-brand:hover{ background:var(--surface-2); }
   .sb-brand .mark{ width:32px; height:32px; border-radius:8px; background:var(--accent); color:#fff; flex:none;
     display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; font-size:15px; }
   .sb-brand .name{ font-family:var(--font-display); font-weight:800; font-size:22.5px; letter-spacing:.01em; }
@@ -168,7 +169,7 @@
 <div class="app">
 
   <nav class="sidebar" aria-label="동성모터스 PARTS 메뉴">
-    <div class="sb-brand"><div class="mark">DS</div><span class="name">동성모터스 PARTS</span></div>
+    <div class="sb-brand" role="button" tabindex="0" onclick="selectPage('today')" onkeydown="if(event.key==='Enter'||event.key===' '){selectPage('today')}"><div class="mark">DS</div><span class="name">동성모터스 PARTS</span></div>
     <div class="sb-mstripe"></div>
 
     <div class="sb-workspace">
@@ -197,7 +198,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 17일 (목) · 14:14 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 17일 (목) · 14:25 기준</div>
   </nav>
 
   <main class="main">
@@ -206,7 +207,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 17일 (목) · 14:14 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 17일 (목) · 14:25 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -220,8 +221,8 @@
         <button class="kpitile" id="tile-inv" onclick="selectKpi('inv')" aria-pressed="false">
           <span class="rank">02</span>
           <span class="eyebrow">재고금액 · 부품창고</span>
-          <span class="value">₩1,175,280,205</span>
-          <span class="foot">2150품목 · 25개 코드</span>
+          <span class="value">₩1,171,366,448</span>
+          <span class="foot">2149품목 · 25개 코드</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
       </div>
@@ -467,8 +468,8 @@
         <div id="detail-inv" hidden>
           <div class="viewer-head">
             <span class="lbl">재고금액 세부</span>
-            <span class="val">₩1,175,280,205</span>
-            <span class="foot">2150품목 · 부품창고</span>
+            <span class="val">₩1,171,366,448</span>
+            <span class="foot">2149품목 · 부품창고</span>
           </div>
           <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
           <div class="tablewrap"><table>
@@ -487,49 +488,49 @@
       <td><span class="aloistag">A1</span></td>
       <td class="num">2,345</td>
       <td class="num">219,171,811</td>
-      <td class="num">18.65%</td>
+      <td class="num">18.71%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A2</span></td>
       <td class="num">1,276</td>
       <td class="num">14,119,666</td>
-      <td class="num">1.20%</td>
+      <td class="num">1.21%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A3</span></td>
       <td class="num">432</td>
       <td class="num">17,985,714</td>
-      <td class="num">1.53%</td>
+      <td class="num">1.54%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A4</span></td>
-      <td class="num">1,930</td>
-      <td class="num">41,851,092</td>
-      <td class="num">3.56%</td>
+      <td class="num">1,928</td>
+      <td class="num">38,704,155</td>
+      <td class="num">3.30%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A5</span></td>
       <td class="num">1,314</td>
       <td class="num">68,023,794</td>
-      <td class="num">5.79%</td>
+      <td class="num">5.81%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A6</span></td>
       <td class="num">1,442</td>
       <td class="num">90,205,647</td>
-      <td class="num">7.68%</td>
+      <td class="num">7.70%</td>
     </tr>
     
     <tr class="subtotal">
       <td>A 합계</td>
-      <td class="num">8,739</td>
-      <td class="num">451,357,724</td>
-      <td class="num">38.40%</td>
+      <td class="num">8,737</td>
+      <td class="num">448,210,787</td>
+      <td class="num">38.26%</td>
     </tr>
     
     
@@ -537,9 +538,9 @@
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L1</span></td>
-      <td class="num">1,918</td>
-      <td class="num">28,350,672</td>
-      <td class="num">2.41%</td>
+      <td class="num">1,913</td>
+      <td class="num">28,314,002</td>
+      <td class="num">2.42%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
@@ -574,21 +575,21 @@
       <td><span class="aloistag">L6</span></td>
       <td class="num">370</td>
       <td class="num">30,683,557</td>
-      <td class="num">2.61%</td>
+      <td class="num">2.62%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L7</span></td>
       <td class="num">1,331</td>
       <td class="num">55,765,348</td>
-      <td class="num">4.74%</td>
+      <td class="num">4.76%</td>
     </tr>
     
     <tr class="subtotal">
       <td>L 합계</td>
-      <td class="num">4,556</td>
-      <td class="num">145,688,751</td>
-      <td class="num">12.40%</td>
+      <td class="num">4,551</td>
+      <td class="num">145,652,081</td>
+      <td class="num">12.43%</td>
     </tr>
     
     
@@ -598,21 +599,21 @@
       <td><span class="aloistag oseries">O8</span></td>
       <td class="num">1,130</td>
       <td class="num">62,368,342</td>
-      <td class="num">5.31%</td>
+      <td class="num">5.32%</td>
     </tr>
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">OA</span></td>
-      <td class="num">236</td>
-      <td class="num">40,178,669</td>
-      <td class="num">3.42%</td>
+      <td class="num">235</td>
+      <td class="num">39,448,519</td>
+      <td class="num">3.37%</td>
     </tr>
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">OE</span></td>
       <td class="num">1,151</td>
       <td class="num">305,104,175</td>
-      <td class="num">25.96%</td>
+      <td class="num">26.05%</td>
     </tr>
     
     <tr data-group="inv-3" hidden class="oseries">
@@ -631,9 +632,9 @@
     
     <tr class="subtotal oseries">
       <td>O 합계</td>
-      <td class="num">2,737</td>
-      <td class="num">431,375,634</td>
-      <td class="num">36.70%</td>
+      <td class="num">2,736</td>
+      <td class="num">430,645,484</td>
+      <td class="num">36.76%</td>
     </tr>
     
     
@@ -643,14 +644,14 @@
       <td><span class="aloistag">II</span></td>
       <td class="num">48</td>
       <td class="num">10,500,236</td>
-      <td class="num">0.89%</td>
+      <td class="num">0.90%</td>
     </tr>
     
     <tr class="subtotal">
       <td>I 합계</td>
       <td class="num">48</td>
       <td class="num">10,500,236</td>
-      <td class="num">0.89%</td>
+      <td class="num">0.90%</td>
     </tr>
     
     
@@ -674,7 +675,7 @@
       <td><span class="aloistag">SK</span></td>
       <td class="num">851</td>
       <td class="num">32,763,972</td>
-      <td class="num">2.79%</td>
+      <td class="num">2.80%</td>
     </tr>
     
     <tr data-group="inv-5" hidden>
@@ -695,14 +696,14 @@
       <td><span class="aloistag">SZ</span></td>
       <td class="num">251</td>
       <td class="num">87,218,135</td>
-      <td class="num">7.42%</td>
+      <td class="num">7.45%</td>
     </tr>
     
     <tr class="subtotal">
       <td>S 합계</td>
       <td class="num">1,445</td>
       <td class="num">136,357,860</td>
-      <td class="num">11.60%</td>
+      <td class="num">11.64%</td>
     </tr>
     
   </tbody>
@@ -945,16 +946,16 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">전체재고 대비 OA+OV 비율</span>
-          <span class="value">5.27%</span>
-          <span class="foot">OA+OV 재고금액 ₩61,981,848 · 전체재고 ₩1,175,280,205</span>
+          <span class="value">5.23%</span>
+          <span class="foot">OA+OV 재고금액 ₩61,251,698 · 전체재고 ₩1,171,366,448</span>
         </div>
       </div>
 
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">OA / OV 재고 세부</span>
-          <span class="val">₩61,981,848</span>
-          <span class="foot">OA ₩40,178,669(112라인·236개) · OV ₩21,803,179(112라인·209개)</span>
+          <span class="val">₩61,251,698</span>
+          <span class="foot">OA ₩39,448,519(111라인·235개) · OV ₩21,803,179(112라인·209개)</span>
         </div>
         <p class="subttl">OA+OV 품목 TOP 10 <span class="n">금액 큰 순</span></p>
         <div class="tablewrap">
@@ -987,7 +988,7 @@
           </table>
         </div>
 
-        <p class="subttl" style="margin-top:20px">OA+OV 품목 전체 <span class="n">그룹 클릭해서 펼치기 · 전체 224개</span></p>
+        <p class="subttl" style="margin-top:20px">OA+OV 품목 전체 <span class="n">그룹 클릭해서 펼치기 · 전체 223개</span></p>
         <div class="tablewrap">
           <table>
             <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
@@ -1017,8 +1018,6 @@
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51195A36997</td><td>Rear spoiler</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">971,124</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">34117847241</td><td>Caliper hous</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">744,265</td></tr>
-              
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">62105B3E9C6</td><td>Instrument c</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">730,150</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">34108842390</td><td>Repair kit,</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">608,652</td></tr>
               
@@ -1218,7 +1217,7 @@
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">32106788407</td><td>Hex nut</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">2,859</td></tr>
               
-              <tr class="subtotal oseries"><td colspan="4">OA 합계 (112개)</td><td class="num">40,178,669</td></tr>
+              <tr class="subtotal oseries"><td colspan="4">OA 합계 (111개)</td><td class="num">39,448,519</td></tr>
 
               <tr class="grouphead oseries" data-group="oaov-ov" onclick="toggleAloisGroup(this)"><td colspan="5"><span class="caret">▸</span>OV<span class="hint"></span></td></tr>
               

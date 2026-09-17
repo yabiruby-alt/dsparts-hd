@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 17일 (목) · 14:14 기준"
+    "generated_at": "9월 17일 (목) · 14:25 기준"
   },
   "recv": {
     "total": 19293407,
@@ -253,8 +253,8 @@
     ]
   },
   "inv": {
-    "total": 1175280205,
-    "item_count": 2150,
+    "total": 1171366448,
+    "item_count": 2149,
     "code_count": 25,
     "alois_groups": [
       {
@@ -265,43 +265,43 @@
           {
             "code": "A1",
             "val": 219171811,
-            "pct": 18.65,
+            "pct": 18.71,
             "qty": 2345
           },
           {
             "code": "A2",
             "val": 14119666,
-            "pct": 1.2,
+            "pct": 1.21,
             "qty": 1276
           },
           {
             "code": "A3",
             "val": 17985714,
-            "pct": 1.53,
+            "pct": 1.54,
             "qty": 432
           },
           {
             "code": "A4",
-            "val": 41851092,
-            "pct": 3.56,
-            "qty": 1930
+            "val": 38704155,
+            "pct": 3.3,
+            "qty": 1928
           },
           {
             "code": "A5",
             "val": 68023794,
-            "pct": 5.79,
+            "pct": 5.81,
             "qty": 1314
           },
           {
             "code": "A6",
             "val": 90205647,
-            "pct": 7.68,
+            "pct": 7.7,
             "qty": 1442
           }
         ],
-        "subtotal_val": 451357724,
-        "subtotal_qty": 8739,
-        "subtotal_pct": 38.4
+        "subtotal_val": 448210787,
+        "subtotal_qty": 8737,
+        "subtotal_pct": 38.26
       },
       {
         "code": "L",
@@ -310,9 +310,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 28350672,
-            "pct": 2.41,
-            "qty": 1918
+            "val": 28314002,
+            "pct": 2.42,
+            "qty": 1913
           },
           {
             "code": "L2",
@@ -341,19 +341,19 @@
           {
             "code": "L6",
             "val": 30683557,
-            "pct": 2.61,
+            "pct": 2.62,
             "qty": 370
           },
           {
             "code": "L7",
             "val": 55765348,
-            "pct": 4.74,
+            "pct": 4.76,
             "qty": 1331
           }
         ],
-        "subtotal_val": 145688751,
-        "subtotal_qty": 4556,
-        "subtotal_pct": 12.4
+        "subtotal_val": 145652081,
+        "subtotal_qty": 4551,
+        "subtotal_pct": 12.43
       },
       {
         "code": "O",
@@ -363,19 +363,19 @@
           {
             "code": "O8",
             "val": 62368342,
-            "pct": 5.31,
+            "pct": 5.32,
             "qty": 1130
           },
           {
             "code": "OA",
-            "val": 40178669,
-            "pct": 3.42,
-            "qty": 236
+            "val": 39448519,
+            "pct": 3.37,
+            "qty": 235
           },
           {
             "code": "OE",
             "val": 305104175,
-            "pct": 25.96,
+            "pct": 26.05,
             "qty": 1151
           },
           {
@@ -391,9 +391,9 @@
             "qty": 209
           }
         ],
-        "subtotal_val": 431375634,
-        "subtotal_qty": 2737,
-        "subtotal_pct": 36.7
+        "subtotal_val": 430645484,
+        "subtotal_qty": 2736,
+        "subtotal_pct": 36.76
       },
       {
         "code": "I",
@@ -403,13 +403,13 @@
           {
             "code": "II",
             "val": 10500236,
-            "pct": 0.89,
+            "pct": 0.9,
             "qty": 48
           }
         ],
         "subtotal_val": 10500236,
         "subtotal_qty": 48,
-        "subtotal_pct": 0.89
+        "subtotal_pct": 0.9
       },
       {
         "code": "S",
@@ -431,7 +431,7 @@
           {
             "code": "SK",
             "val": 32763972,
-            "pct": 2.79,
+            "pct": 2.8,
             "qty": 851
           },
           {
@@ -449,27 +449,27 @@
           {
             "code": "SZ",
             "val": 87218135,
-            "pct": 7.42,
+            "pct": 7.45,
             "qty": 251
           }
         ],
         "subtotal_val": 136357860,
         "subtotal_qty": 1445,
-        "subtotal_pct": 11.6
+        "subtotal_pct": 11.64
       }
     ]
   },
   "oaov": {
-    "total": 61981848,
-    "inv_total": 1175280205,
-    "pct": 5.27,
-    "oa_val": 40178669,
+    "total": 61251698,
+    "inv_total": 1171366448,
+    "pct": 5.23,
+    "oa_val": 39448519,
     "ov_val": 21803179,
-    "oa_lines": 112,
+    "oa_lines": 111,
     "ov_lines": 112,
-    "oa_qty": 236,
+    "oa_qty": 235,
     "ov_qty": 209,
-    "item_count": 224,
+    "item_count": 223,
     "oa_items": [
       {
         "item": "63119850411",
@@ -554,13 +554,6 @@
         "alois": "OA",
         "qty": 1,
         "val": 744265
-      },
-      {
-        "item": "62105B3E9C6",
-        "name": "Instrument c",
-        "alois": "OA",
-        "qty": 1,
-        "val": 730150
       },
       {
         "item": "34108842390",
