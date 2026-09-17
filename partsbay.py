@@ -3,12 +3,16 @@
 """
 동성모터스 PARTS - BMW My DMS 부품부서 대시보드 생성기
 
-실행하면:
-  1. 브라우저가 뜨고 My DMS에 접속합니다.
-  2. 로그인이 안 되어 있으면 직접 로그인(2FA 포함)해주세요. 로그인된 상태면 바로 진행됩니다.
-  3. 로그인되면 자동으로 데이터를 뽑아서 대시보드 HTML을 만들고, 만들어진 파일을 엽니다.
+실행하면 (기본 = 상시 실행 모드):
+  1. 브라우저가 최소화된 채로 한 번 뜨고 My DMS에 접속합니다. 화면엔 안 보입니다.
+  2. 로그인이 안 되어 있으면 화면에 알림창이 뜹니다 - 작업표시줄에서 그 창을 열어 로그인(2FA 포함)해주세요.
+  3. 로그인되면 그 브라우저를 계속 켜둔 채로 10분마다 자동으로 데이터를 뽑아 대시보드를 갱신하고
+     깃허브에 push합니다. 프로그램을 끄지 않는 한 계속 이 상태로 돌아갑니다 (Ctrl+C로 종료).
 
-세션(쿠키)은 authdata 폴더에 저장되어 다음 실행부터는 로그인이 유지되는 동안 재로그인이 필요 없습니다.
+`python partsbay.py --once` 로 실행하면 한 번만 갱신하고 바로 종료합니다 (테스트용).
+
+세션(쿠키)은 authdata 폴더에 저장되어, 프로그램을 재시작해도 세션이 유지되는 동안은 재로그인이 필요 없습니다.
+동시에 두 개를 띄우면 DMS가 세션을 끊어버리므로 절대 두 인스턴스를 같이 실행하지 마세요(잠금 파일로 방지됨).
 """
 import json
 import os
@@ -481,7 +485,7 @@ def publish_to_github(commit_message: str) -> bool:
 
     _git("commit", "-m", commit_message)
     print("깃허브에 push 중... (세션 만료 시 브라우저 로그인 창이 뜰 수 있습니다)")
-    push_timeout = 60 if SCHEDULED else None  # 무인 실행 중엔 인증 대기로 무한정 멈추지 않게
+    push_timeout = 60  # 인증 대기 등으로 상시 실행 루프가 무한정 멈추지 않게
     try:
         result = _git("push", "-u", "origin", "main", check=False, timeout=push_timeout)
         if result.returncode != 0:
@@ -507,11 +511,12 @@ def render(data: dict) -> str:
 
 
 LOCK_FILE = BASE_DIR / ".partsbay.lock"
-SCHEDULED = os.environ.get("PARTSBAY_SCHEDULED") == "1"
+CYCLE_INTERVAL_SEC = 600  # 상시 실행 모드에서 갱신 주기 (10분)
+ONCE = "--once" in sys.argv  # 테스트용: 한 번만 돌고 종료 (기본은 계속 켜져 있는 상시 실행)
 
 
 def _acquire_lock() -> bool:
-    """이미 실행 중인 인스턴스가 있으면 False. (10분 간격 스케줄러가 겹쳐 도는 것 방지)"""
+    """이미 실행 중인 인스턴스가 있으면 False. (중복 실행 -> 동시 로그인으로 세션 끊기는 사고 방지)"""
     if LOCK_FILE.exists():
         try:
             pid = int(LOCK_FILE.read_text().strip())
@@ -523,46 +528,20 @@ def _acquire_lock() -> bool:
     return True
 
 
-def main():
-    if not _acquire_lock():
-        print("이전 실행이 아직 진행 중입니다. 이번 스케줄은 건너뜁니다.")
-        return
-    try:
-        _main()
-    finally:
-        LOCK_FILE.unlink(missing_ok=True)
-
-
-def _main():
+def run_cycle(page: Page) -> None:
+    """이미 로그인된 page로 데이터 한 번 뽑아서 대시보드 생성 + 깃허브 push."""
     now = datetime.now(ZoneInfo("Asia/Seoul"))
     today_str = now.strftime("%Y-%m-%d")
     month_start = now.strftime("%Y-%m-01")
     period_label = f"{month_start} ~ {today_str}"
     generated_at = f"{now.month}월 {now.day}일 ({WEEKDAYS_KO[now.weekday()]}) · {now.strftime('%H:%M')} 기준"
 
-    AUTH_DIR.mkdir(parents=True, exist_ok=True)
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    print("동성모터스 PARTS — DMS 접속 중...")
-    with sync_playwright() as p:
-        # 평소엔 화면에 안 보이게 항상 최소화 상태로 띄운다. 로그인이 필요할 때만
-        # notify_user()가 알림창을 띄우고, 사용자가 작업표시줄에서 직접 창을 열게 된다.
-        ctx = p.chromium.launch_persistent_context(
-            str(AUTH_DIR), headless=False, viewport={"width": 1440, "height": 900},
-            args=["--start-minimized"],
-        )
-        page = ctx.new_page()
-        ensure_logged_in(page, timeout_sec=120 if SCHEDULED else 420)
-        print("로그인 확인 완료. 데이터를 추출합니다...")
-
-        print(" - 오늘 입고현황")
-        recv_rows = extract_receiving(page, today_str)
-        print(" - 현재고리스트")
-        inv_rows = extract_inventory(page)
-        print(" - Turn Over 리포트 (당월)")
-        to_rows = extract_turnover(page, month_start, today_str)
-
-        ctx.close()
+    print(" - 오늘 입고현황")
+    recv_rows = extract_receiving(page, today_str)
+    print(" - 현재고리스트")
+    inv_rows = extract_inventory(page)
+    print(" - Turn Over 리포트 (당월)")
+    to_rows = extract_turnover(page, month_start, today_str)
 
     print("집계 중...")
     recv = build_recv(recv_rows, today_str)
@@ -589,11 +568,48 @@ def _main():
     (DOCS_DIR / "data.json").write_text(data_json, encoding="utf-8")
 
     print(f"완료: {out_path}")
-    if not SCHEDULED:
+    if ONCE:
         webbrowser.open(out_path.resolve().as_uri())
 
     if PUBLISH_TO_GITHUB:
         publish_to_github(f"대시보드 갱신 {generated_at}")
+
+
+def main():
+    if not _acquire_lock():
+        print("이미 실행 중인 인스턴스가 있습니다. (같은 프로그램을 두 번 띄우면 DMS 세션이 끊길 수 있어 종료합니다)")
+        return
+    AUTH_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    try:
+        print("동성모터스 PARTS — DMS 접속 중...")
+        with sync_playwright() as p:
+            # 브라우저는 한 번만 띄워서 계속 켜둔다(로그인 세션 유지). 화면엔 안 보이게
+            # 항상 최소화 상태로 띄우고, 로그인이 필요할 때만 notify_user()가 알려준다.
+            ctx = p.chromium.launch_persistent_context(
+                str(AUTH_DIR), headless=False, viewport={"width": 1440, "height": 900},
+                args=["--start-minimized"],
+            )
+            page = ctx.new_page()
+            ensure_logged_in(page)
+
+            if ONCE:
+                print("로그인 확인 완료. 데이터를 추출합니다...")
+                run_cycle(page)
+                ctx.close()
+                return
+
+            print(f"로그인 확인 완료. 상시 실행 시작 — {CYCLE_INTERVAL_SEC//60}분마다 자동 갱신합니다 (창은 계속 켜둔 채 백그라운드로 동작).")
+            while True:
+                try:
+                    ensure_logged_in(page)  # 그 사이 세션이 끊겼으면 재확인
+                    run_cycle(page)
+                except Exception as e:
+                    print(f"[이번 주기 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
+                print(f"다음 갱신까지 {CYCLE_INTERVAL_SEC}초 대기...")
+                time.sleep(CYCLE_INTERVAL_SEC)
+    finally:
+        LOCK_FILE.unlink(missing_ok=True)
 
 
 if __name__ == "__main__":
