@@ -195,10 +195,14 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 9a7 7 0 0 1 12-5"/><path d="M14 4v4h-4"/><path d="M16 9a7 7 0 0 1-12 5"/><path d="M4 14v-4h4"/></svg>
         OAOV 현황
       </button>
+      <button class="sb-item" id="nav-calendar" aria-current="false" onclick="selectPage('calendar')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="14" height="13" rx="1.5"/><path d="M2 7h14"/><path d="M6 2v3M12 2v3"/></svg>
+        팀 캘린더
+      </button>
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 17일 (목) · 14:35 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 17일 (목) · 14:37 기준</div>
   </nav>
 
   <main class="main">
@@ -207,7 +211,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 17일 (목) · 14:35 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 17일 (목) · 14:37 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -1451,6 +1455,20 @@
         </div>
       </div>
     </section>
+
+    <section id="page-calendar" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>팀 캘린더</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>AS_부산(해운중동)</div>
+      </div>
+
+      <div class="viewer" style="padding:0; overflow:hidden;">
+        
+        <div class="empty-note" style="padding:40px 22px;">팀 캘린더가 아직 연결되지 않았습니다. 구글 캘린더 공유 설정에서 "퍼가기(embed)" 링크를 받아 연결해주세요.</div>
+        
+      </div>
+    </section>
     </div>
   </main>
 </div>
@@ -1459,7 +1477,7 @@
   function selectKpi(key){ ['recv','inv'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  function selectPage(key){ ['today','external','accessory','oaov'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); }
+  function selectPage(key){ ['today','external','accessory','oaov','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); }
   function toggleAloisGroup(headEl){
     var key = headEl.getAttribute('data-group');
     var table = headEl.closest('table');

@@ -44,6 +44,9 @@ BIZ_AREA_CD = "051"
 BRCH_CD = "15"
 BRANCH_NAME = "AS_부산(해운중동)"
 
+# 팀 캘린더(사이드바 메뉴): 구글 캘린더 "설정 및 공유 > 퍼가기(embed) 코드"의 src 주소를 넣으면 활성화됨.
+CALENDAR_EMBED_URL = ""
+
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "output"
 DOCS_DIR = BASE_DIR / "docs"  # GitHub Pages가 서빙하는 폴더
@@ -568,7 +571,8 @@ def run_cycle(page: Page) -> None:
     acc, tire = build_acc_tire(to_rows)
 
     data = {
-        "meta": {"branch_name": BRANCH_NAME, "brch_code": f"BRCH {BRCH_CD}", "generated_at": generated_at},
+        "meta": {"branch_name": BRANCH_NAME, "brch_code": f"BRCH {BRCH_CD}", "generated_at": generated_at,
+                 "calendar_embed_url": CALENDAR_EMBED_URL},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
     }
 
