@@ -78,7 +78,8 @@
 
   /* ============ MAIN ============ */
   .main{ flex:1 1 auto; min-width:0; overflow-y:auto; height:100%; }
-  .maininner{ max-width:1000px; margin:0 auto; padding:20px 28px 64px; display:flex; flex-direction:column; gap:20px; }
+  .maininner{ max-width:1000px; margin:0 auto; padding:20px 28px 64px; display:flex; flex-direction:column; gap:20px; transition:max-width .15s ease; }
+  .maininner.wide{ max-width:1600px; }
 
   .crumbbar{ display:flex; align-items:center; gap:8px; }
   .crumb{ font-size:15.5px; color:var(--muted); }
@@ -558,7 +559,7 @@
   function selectKpi(key){ ['recv','inv'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  function selectPage(key){ ['today','external','accessory','oaov','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); }
+  function selectPage(key){ ['today','external','accessory','oaov','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); document.querySelector('.maininner').classList.toggle('wide', key==='calendar'); }
   function toggleAloisGroup(headEl){
     var key = headEl.getAttribute('data-group');
     var table = headEl.closest('table');

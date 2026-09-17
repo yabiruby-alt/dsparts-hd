@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 17일 (목) · 15:48 기준",
+    "generated_at": "9월 17일 (목) · 15:58 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -254,7 +254,7 @@
     ]
   },
   "inv": {
-    "total": 1166571539,
+    "total": 1166560197,
     "item_count": 2138,
     "code_count": 25,
     "alois_groups": [
@@ -311,9 +311,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 28206827,
+            "val": 28195485,
             "pct": 2.42,
-            "qty": 1906
+            "qty": 1905
           },
           {
             "code": "L2",
@@ -352,8 +352,8 @@
             "qty": 1330
           }
         ],
-        "subtotal_val": 145468037,
-        "subtotal_qty": 4544,
+        "subtotal_val": 145456695,
+        "subtotal_qty": 4543,
         "subtotal_pct": 12.47
       },
       {
@@ -462,7 +462,7 @@
   },
   "oaov": {
     "total": 61243864,
-    "inv_total": 1166571539,
+    "inv_total": 1166560197,
     "pct": 5.25,
     "oa_val": 39448519,
     "ov_val": 21795345,
@@ -2205,16 +2205,16 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 17775433,
-    "cost": 17505075,
-    "lines": 165,
-    "invoices_count": 101,
+    "total": 20826103,
+    "cost": 20896888,
+    "lines": 172,
+    "invoices_count": 102,
     "by_type": [
       {
         "code": "3",
         "label": "Car Accessories",
-        "lines": 49,
-        "val": 5881809
+        "lines": 56,
+        "val": 8932479
       },
       {
         "code": "5",
@@ -2230,6 +2230,14 @@
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2609001837",
+        "num": "RO2609000720",
+        "cust": "배태랑",
+        "dt": "2026-09-17 15:51",
+        "amt": 3050670,
+        "cost": 3391813
+      },
       {
         "inv": "IV2609001819",
         "num": "RO2609000936",
@@ -2261,14 +2269,6 @@
         "dt": "2026-09-17 10:56",
         "amt": 36604,
         "cost": 36600
-      },
-      {
-        "inv": "AR2609003755",
-        "num": "SP2609000049",
-        "cust": "박태강(직원)",
-        "dt": "2026-09-17 10:47",
-        "amt": 0,
-        "cost": 0
       }
     ]
   },

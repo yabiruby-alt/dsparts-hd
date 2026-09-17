@@ -78,7 +78,8 @@
 
   /* ============ MAIN ============ */
   .main{ flex:1 1 auto; min-width:0; overflow-y:auto; height:100%; }
-  .maininner{ max-width:1000px; margin:0 auto; padding:20px 28px 64px; display:flex; flex-direction:column; gap:20px; }
+  .maininner{ max-width:1000px; margin:0 auto; padding:20px 28px 64px; display:flex; flex-direction:column; gap:20px; transition:max-width .15s ease; }
+  .maininner.wide{ max-width:1600px; }
 
   .crumbbar{ display:flex; align-items:center; gap:8px; }
   .crumb{ font-size:15.5px; color:var(--muted); }
@@ -202,7 +203,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 17일 (목) · 15:48 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 17일 (목) · 15:58 기준</div>
   </nav>
 
   <main class="main">
@@ -211,7 +212,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 17일 (목) · 15:48 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 17일 (목) · 15:58 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -225,7 +226,7 @@
         <button class="kpitile" id="tile-inv" onclick="selectKpi('inv')" aria-pressed="false">
           <span class="rank">02</span>
           <span class="eyebrow">재고금액 · 부품창고</span>
-          <span class="value">₩1,166,571,539</span>
+          <span class="value">₩1,166,560,197</span>
           <span class="foot">2138품목 · 25개 코드</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
@@ -472,7 +473,7 @@
         <div id="detail-inv" hidden>
           <div class="viewer-head">
             <span class="lbl">재고금액 세부</span>
-            <span class="val">₩1,166,571,539</span>
+            <span class="val">₩1,166,560,197</span>
             <span class="foot">2138품목 · 부품창고</span>
           </div>
           <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
@@ -542,8 +543,8 @@
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L1</span></td>
-      <td class="num">1,906</td>
-      <td class="num">28,206,827</td>
+      <td class="num">1,905</td>
+      <td class="num">28,195,485</td>
       <td class="num">2.42%</td>
     </tr>
     
@@ -591,8 +592,8 @@
     
     <tr class="subtotal">
       <td>L 합계</td>
-      <td class="num">4,544</td>
-      <td class="num">145,468,037</td>
+      <td class="num">4,543</td>
+      <td class="num">145,456,695</td>
       <td class="num">12.47%</td>
     </tr>
     
@@ -817,8 +818,8 @@
         <button class="kpitile" id="tile-acc" onclick="selectAccKpi('acc')" aria-pressed="true">
           <span class="rank">01</span>
           <span class="eyebrow">악세사리 · 인보이스금액</span>
-          <span class="value">₩17,775,433</span>
-          <span class="foot">원가 ₩17,505,075 · 101건 · 165라인</span>
+          <span class="value">₩20,826,103</span>
+          <span class="foot">원가 ₩20,896,888 · 102건 · 172라인</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
         <button class="kpitile" id="tile-tire" onclick="selectAccKpi('tire')" aria-pressed="false">
@@ -834,8 +835,8 @@
         <div id="detail-acc">
           <div class="viewer-head">
             <span class="lbl">악세사리 세부 (부품타입 3·5·7 합산)</span>
-            <span class="val">₩17,775,433</span>
-            <span class="foot">원가 ₩17,505,075 · 정산유형 C(고객)+I(내부처리)</span>
+            <span class="val">₩20,826,103</span>
+            <span class="foot">원가 ₩20,896,888 · 정산유형 C(고객)+I(내부처리)</span>
           </div>
           <p class="subttl">부품타입별 인보이스금액 <span class="n">코드순</span></p>
           <div class="tablewrap">
@@ -843,13 +844,13 @@
               <thead><tr><th>코드</th><th>부품타입</th><th class="num">라인</th><th class="num">인보이스금액</th></tr></thead>
               <tbody>
                 
-                <tr><td class="mono">3</td><td>Car Accessories</td><td class="num">49</td><td class="num">5,881,809</td></tr>
+                <tr><td class="mono">3</td><td>Car Accessories</td><td class="num">56</td><td class="num">8,932,479</td></tr>
                 
                 <tr><td class="mono">5</td><td>Rims and Complete Wheels</td><td class="num">0</td><td class="num">0</td></tr>
                 
                 <tr><td class="mono">7</td><td>Accessories (Lifestyle)</td><td class="num">116</td><td class="num">11,893,624</td></tr>
                 
-                <tr class="subtotal"><td colspan="2">3+5+7 합계</td><td class="num">165</td><td class="num">17,775,433</td></tr>
+                <tr class="subtotal"><td colspan="2">3+5+7 합계</td><td class="num">172</td><td class="num">20,826,103</td></tr>
               </tbody>
             </table>
           </div>
@@ -859,6 +860,8 @@
               <thead><tr><th>RO/SP번호</th><th>인보이스번호</th><th>거래처</th><th>일시</th><th class="num">인보이스금액</th><th class="num">원가</th></tr></thead>
               <tbody>
                 
+                <tr><td class="mono">RO2609000720</td><td class="mono">IV2609001837</td><td>배태랑</td><td class="mono">2026-09-17 15:51</td><td class="num">3,050,670</td><td class="num">3,391,813</td></tr>
+                
                 <tr><td class="mono">RO2609000936</td><td class="mono">IV2609001819</td><td>공현수</td><td class="mono">2026-09-17 15:14</td><td class="num">2,410,520</td><td class="num">2,651,572</td></tr>
                 
                 <tr><td class="mono">RO2609000946</td><td class="mono">IV2609001790</td><td>이태원</td><td class="mono">2026-09-17 12:52</td><td class="num">8,250</td><td class="num">8,250</td></tr>
@@ -866,8 +869,6 @@
                 <tr><td class="mono">RO2609000957</td><td class="mono">IV2609001783</td><td>김지태</td><td class="mono">2026-09-17 12:37</td><td class="num">0</td><td class="num">8,250</td></tr>
                 
                 <tr><td class="mono">SP2609000070</td><td class="mono">AR2609003757</td><td>이태우(영업직원)</td><td class="mono">2026-09-17 10:56</td><td class="num">36,604</td><td class="num">36,600</td></tr>
-                
-                <tr><td class="mono">SP2609000049</td><td class="mono">AR2609003755</td><td>박태강(직원)</td><td class="mono">2026-09-17 10:47</td><td class="num">0</td><td class="num">0</td></tr>
                 
               </tbody>
             </table>
@@ -955,7 +956,7 @@
           <span class="rank">01</span>
           <span class="eyebrow">전체재고 대비 OA+OV 비율</span>
           <span class="value">5.25%</span>
-          <span class="foot">OA+OV 재고금액 ₩61,243,864 · 전체재고 ₩1,166,571,539</span>
+          <span class="foot">OA+OV 재고금액 ₩61,243,864 · 전체재고 ₩1,166,560,197</span>
         </div>
       </div>
 
@@ -1479,7 +1480,7 @@
   function selectKpi(key){ ['recv','inv'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  function selectPage(key){ ['today','external','accessory','oaov','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); }
+  function selectPage(key){ ['today','external','accessory','oaov','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); document.querySelector('.maininner').classList.toggle('wide', key==='calendar'); }
   function toggleAloisGroup(headEl){
     var key = headEl.getAttribute('data-group');
     var table = headEl.closest('table');
