@@ -351,7 +351,7 @@ def build_ext_shop(rows, period_label):
 
     ext_items, shop_items = items_of(ext_grp), items_of(shop_grp)
     ext_valid = [i for i in ext_items if i["amt"] != 0]
-    ext_top5 = sorted(ext_valid, key=lambda i: i["amt"], reverse=True)[:5]
+    ext_all = sorted(ext_valid, key=lambda i: i["amt"], reverse=True)
     ext_total = sum(i["amt"] for i in ext_items)
     ext_cost = sum(i["cost"] for i in ext_items)
     ext_margin = round(sum(num(r.get("marginAmt")) for r in c_rows if r.get("calcDetlTpNm") == "외부"))
@@ -372,7 +372,7 @@ def build_ext_shop(rows, period_label):
     ext = {
         "period": period_label, "total": ext_total, "cost": ext_cost, "margin": ext_margin,
         "valid_count": len(ext_valid), "cancelled_count": len(ext_items) - len(ext_valid),
-        "lines": len([r for r in c_rows if r.get("calcDetlTpNm") == "외부"]), "top5": ext_top5,
+        "lines": len([r for r in c_rows if r.get("calcDetlTpNm") == "외부"]), "top5": ext_all,
     }
     shop = {
         "total": shop_total, "cost": shop_cost,
