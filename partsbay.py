@@ -11,6 +11,7 @@
 세션(쿠키)은 authdata 폴더에 저장되어 다음 실행부터는 로그인이 유지되는 동안 재로그인이 필요 없습니다.
 """
 import json
+import os
 import re
 import subprocess
 import sys
@@ -430,9 +431,10 @@ def build_acc_tire(rows):
 # 렌더 & 저장
 # ============================================================
 
-def _git(*args, check=True):
+def _git(*args, check=True, timeout=None):
     return subprocess.run(
-        ["git", *args], cwd=str(BASE_DIR), capture_output=True, text=True, encoding="utf-8", check=check,
+        ["git", *args], cwd=str(BASE_DIR), capture_output=True, text=True, encoding="utf-8",
+        check=check, timeout=timeout,
     )
 
 
@@ -453,12 +455,17 @@ def publish_to_github(commit_message: str) -> bool:
         return True
 
     _git("commit", "-m", commit_message)
-    print("깃허브에 push 중... (최초 1회는 브라우저 로그인 창이 뜰 수 있습니다)")
-    result = _git("push", "-u", "origin", "main", check=False)
-    if result.returncode != 0:
-        # main이 처음이라 브랜치 이름이 다를 수 있음 (master 등) -> 강제로 main 사용
-        _git("branch", "-M", "main", check=False)
-        result = _git("push", "-u", "origin", "main", check=False)
+    print("깃허브에 push 중... (세션 만료 시 브라우저 로그인 창이 뜰 수 있습니다)")
+    push_timeout = 60 if SCHEDULED else None  # 무인 실행 중엔 인증 대기로 무한정 멈추지 않게
+    try:
+        result = _git("push", "-u", "origin", "main", check=False, timeout=push_timeout)
+        if result.returncode != 0:
+            # main이 처음이라 브랜치 이름이 다를 수 있음 (master 등) -> 강제로 main 사용
+            _git("branch", "-M", "main", check=False)
+            result = _git("push", "-u", "origin", "main", check=False, timeout=push_timeout)
+    except subprocess.TimeoutExpired:
+        print("push가 시간 내에 끝나지 않았습니다 (인증 대기 중일 수 있음). 다음 주기에 재시도합니다.")
+        return False
     if result.returncode != 0:
         print("push 실패:")
         print(result.stdout)
@@ -474,7 +481,34 @@ def render(data: dict) -> str:
     return template.render(**data)
 
 
+LOCK_FILE = BASE_DIR / ".partsbay.lock"
+SCHEDULED = os.environ.get("PARTSBAY_SCHEDULED") == "1"
+
+
+def _acquire_lock() -> bool:
+    """이미 실행 중인 인스턴스가 있으면 False. (10분 간격 스케줄러가 겹쳐 도는 것 방지)"""
+    if LOCK_FILE.exists():
+        try:
+            pid = int(LOCK_FILE.read_text().strip())
+            os.kill(pid, 0)  # 살아있으면 예외 없이 통과
+            return False  # 여전히 실행 중
+        except (ValueError, OSError, ProcessLookupError):
+            pass  # 죽은 잠금 파일 -> 무시하고 진행
+    LOCK_FILE.write_text(str(os.getpid()))
+    return True
+
+
 def main():
+    if not _acquire_lock():
+        print("이전 실행이 아직 진행 중입니다. 이번 스케줄은 건너뜁니다.")
+        return
+    try:
+        _main()
+    finally:
+        LOCK_FILE.unlink(missing_ok=True)
+
+
+def _main():
     now = datetime.now(ZoneInfo("Asia/Seoul"))
     today_str = now.strftime("%Y-%m-%d")
     month_start = now.strftime("%Y-%m-01")
@@ -486,11 +520,12 @@ def main():
 
     print("동성모터스 PARTS — DMS 접속 중...")
     with sync_playwright() as p:
+        launch_args = ["--start-minimized"] if SCHEDULED else []
         ctx = p.chromium.launch_persistent_context(
-            str(AUTH_DIR), headless=False, viewport={"width": 1440, "height": 900},
+            str(AUTH_DIR), headless=False, viewport={"width": 1440, "height": 900}, args=launch_args,
         )
         page = ctx.new_page()
-        ensure_logged_in(page)
+        ensure_logged_in(page, timeout_sec=120 if SCHEDULED else 420)
         print("로그인 확인 완료. 데이터를 추출합니다...")
 
         print(" - 오늘 입고현황")
@@ -527,7 +562,8 @@ def main():
     (DOCS_DIR / "data.json").write_text(data_json, encoding="utf-8")
 
     print(f"완료: {out_path}")
-    webbrowser.open(out_path.resolve().as_uri())
+    if not SCHEDULED:
+        webbrowser.open(out_path.resolve().as_uri())
 
     if PUBLISH_TO_GITHUB:
         publish_to_github(f"대시보드 갱신 {generated_at}")
