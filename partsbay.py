@@ -53,13 +53,33 @@ TEMPLATE_NAME = "template.html.j2"
 WEEKDAYS_KO = ["월", "화", "수", "목", "금", "토", "일"]
 
 # ============================================================
+# 사용자 알림 (창은 항상 최소화되어 있으므로, 사람 개입이 필요할 때만
+# 화면에 알림창을 띄운다)
+# ============================================================
+
+def notify_user(title: str, message: str) -> None:
+    safe_title = title.replace("'", "''")
+    safe_msg = message.replace("'", "''")
+    try:
+        subprocess.Popen(
+            ["powershell", "-NoProfile", "-WindowStyle", "Hidden", "-Command",
+             f"Add-Type -AssemblyName System.Windows.Forms; "
+             f"[System.Windows.Forms.MessageBox]::Show('{safe_msg}', '{safe_title}', "
+             f"[System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Warning) | Out-Null"],
+            creationflags=subprocess.CREATE_NO_WINDOW,
+        )
+    except Exception as e:
+        print(f"[알림 실패] {e}")
+
+
+# ============================================================
 # 브라우저 / 로그인
 # ============================================================
 
 def ensure_logged_in(page: Page, timeout_sec: int = 420) -> None:
     page.goto(f"{BASE_URL}/selectHome.do")
     deadline = time.time() + timeout_sec
-    printed = False
+    notified = False
     last_debug = 0.0
     while time.time() < deadline:
         try:
@@ -70,9 +90,14 @@ def ensure_logged_in(page: Page, timeout_sec: int = 420) -> None:
             return
         except Exception:
             pass
-        if not printed:
+        if not notified:
             print("DMS 로그인이 필요합니다. 브라우저 창에서 로그인(2FA 포함)해주세요...")
-            printed = True
+            notify_user(
+                "동성모터스 PARTS — 로그인 필요",
+                "DMS 세션이 만료되어 대시보드 자동 갱신이 멈춰 있습니다.\n"
+                "작업표시줄에서 최소화된 브라우저 창을 열어 로그인(2FA 포함)해주세요.",
+            )
+            notified = True
         if time.time() - last_debug > 10:
             last_debug = time.time()
             try:
@@ -520,9 +545,11 @@ def _main():
 
     print("동성모터스 PARTS — DMS 접속 중...")
     with sync_playwright() as p:
-        launch_args = ["--start-minimized"] if SCHEDULED else []
+        # 평소엔 화면에 안 보이게 항상 최소화 상태로 띄운다. 로그인이 필요할 때만
+        # notify_user()가 알림창을 띄우고, 사용자가 작업표시줄에서 직접 창을 열게 된다.
         ctx = p.chromium.launch_persistent_context(
-            str(AUTH_DIR), headless=False, viewport={"width": 1440, "height": 900}, args=launch_args,
+            str(AUTH_DIR), headless=False, viewport={"width": 1440, "height": 900},
+            args=["--start-minimized"],
         )
         page = ctx.new_page()
         ensure_logged_in(page, timeout_sec=120 if SCHEDULED else 420)
