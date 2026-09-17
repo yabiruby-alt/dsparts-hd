@@ -379,10 +379,17 @@ def build_longstock(pw_rows, inv_total, now):
     }
 
 
-def build_o_parts(rows):
+def build_o_parts(rows, now):
     """ALOIS O계열 중 미처리 출고요청(RO/SB/SP)에 걸려있는 재고. 요청수량×이동평균단가 = 원가."""
     def val_fn(r):
         return num(r.get("reqQty")) * num(r.get("movPrc"))
+
+    def dday_of(dt_str):
+        if not dt_str:
+            return "-"
+        d = datetime.strptime(dt_str[:10], "%Y-%m-%d")
+        days = (now.date() - d.date()).days
+        return f"D+{days}일"
 
     o_rows = [r for r in rows if str(r.get("aloisCd") or "").startswith("O")]
     items = sorted([{
@@ -391,7 +398,7 @@ def build_o_parts(rows):
         "req_qty": int(num(r.get("reqQty"))), "crt_qty": int(num(r.get("crtQty"))),
         "avail_qty": int(num(r.get("availQty"))), "req_dt": (r.get("reqDt") or "")[5:16],
         "req_dt_full": r.get("reqDt") or "", "req_brch": r.get("reqBrchNm") or "-", "val": round(val_fn(r)),
-        "sa": r.get("saNm") or r.get("reqUsrNm") or "-",
+        "sa": r.get("saNm") or r.get("reqUsrNm") or "-", "dday": dday_of(r.get("reqDt")),
     } for r in o_rows], key=lambda i: i["req_dt_full"])  # 오래된 요청이 위로
 
     by_type = {}
@@ -657,7 +664,7 @@ def run_cycle(page: Page) -> None:
     ext, shop = build_ext_shop(to_rows, period_label)
     acc, tire = build_acc_tire(to_rows)
     longstock = build_longstock(pw_rows, inv["total"], now)
-    opart = build_o_parts(req_rows)
+    opart = build_o_parts(req_rows, now)
     calendar_image = next((f for f in CALENDAR_IMAGE_CANDIDATES if (DOCS_DIR / f).exists()), None)
 
     data = {
