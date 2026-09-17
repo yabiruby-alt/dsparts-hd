@@ -487,15 +487,22 @@
           <span class="val">₩{{ '{:,}'.format(oaov.total) }}</span>
           <span class="foot">OA ₩{{ '{:,}'.format(oaov.oa_val) }}({{ oaov.oa_lines }}라인·{{ oaov.oa_qty }}개) · OV ₩{{ '{:,}'.format(oaov.ov_val) }}({{ oaov.ov_lines }}라인·{{ oaov.ov_qty }}개)</span>
         </div>
-        <p class="subttl">OA+OV 품목 <span class="n">금액 큰 순 · 상위 {{ oaov.top_items|length }}개 (전체 {{ oaov.item_count }}개)</span></p>
+        <p class="subttl">OA+OV 품목 전체 <span class="n">그룹 클릭해서 펼치기 · 전체 {{ oaov.item_count }}개</span></p>
         <div class="tablewrap">
           <table>
             <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
             <tbody>
-              {% for r in oaov.top_items %}
-              <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+              <tr class="grouphead oseries" data-group="oaov-oa" onclick="toggleAloisGroup(this)"><td colspan="5"><span class="caret">▸</span>OA</td></tr>
+              {% for r in oaov.oa_items %}
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
               {% endfor %}
-              <tr class="subtotal"><td colspan="4">상위 {{ oaov.top_items|length }}개 소계</td><td class="num">{{ '{:,}'.format(oaov.top_items|sum(attribute='val')) }}</td></tr>
+              <tr class="subtotal oseries"><td colspan="4">OA 합계 ({{ oaov.oa_items|length }}개)</td><td class="num">{{ '{:,}'.format(oaov.oa_val) }}</td></tr>
+
+              <tr class="grouphead oseries" data-group="oaov-ov" onclick="toggleAloisGroup(this)"><td colspan="5"><span class="caret">▸</span>OV</td></tr>
+              {% for r in oaov.ov_items %}
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+              {% endfor %}
+              <tr class="subtotal oseries"><td colspan="4">OV 합계 ({{ oaov.ov_items|length }}개)</td><td class="num">{{ '{:,}'.format(oaov.ov_val) }}</td></tr>
             </tbody>
           </table>
         </div>

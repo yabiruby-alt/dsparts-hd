@@ -301,22 +301,25 @@ def build_oaov(pw_rows, inv_total):
     def val_fn(r):
         return num(r.get("crtQty")) * num(r.get("movPrc"))
 
+    def items_of(rows):
+        return sorted([{
+            "item": r.get("itemCd"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
+            "qty": int(num(r.get("crtQty"))), "val": round(val_fn(r)),
+        } for r in rows], key=lambda i: i["val"], reverse=True)
+
     oa = [r for r in pw_rows if r.get("aloisCd") == "OA"]
     ov = [r for r in pw_rows if r.get("aloisCd") == "OV"]
     oa_val, ov_val = round(sum(val_fn(r) for r in oa)), round(sum(val_fn(r) for r in ov))
     oa_qty = round(sum(num(r.get("crtQty")) for r in oa))
     ov_qty = round(sum(num(r.get("crtQty")) for r in ov))
-    combined = sorted(oa + ov, key=val_fn, reverse=True)
-    top_items = [{
-        "item": r.get("itemCd"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
-        "qty": int(num(r.get("crtQty"))), "val": round(val_fn(r)),
-    } for r in combined[:10]]
+    oa_items, ov_items = items_of(oa), items_of(ov)
     total = oa_val + ov_val
     return {
         "total": total, "inv_total": inv_total,
         "pct": round(100 * total / inv_total, 2) if inv_total else 0,
         "oa_val": oa_val, "ov_val": ov_val, "oa_lines": len(oa), "ov_lines": len(ov),
-        "oa_qty": oa_qty, "ov_qty": ov_qty, "item_count": len(oa) + len(ov), "top_items": top_items,
+        "oa_qty": oa_qty, "ov_qty": ov_qty, "item_count": len(oa) + len(ov),
+        "oa_items": oa_items, "ov_items": ov_items,
     }
 
 
