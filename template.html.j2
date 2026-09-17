@@ -544,20 +544,20 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>장기 재고 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 부품창고 · 최종판매일 기준</div>
+        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 부품창고 · 최종입고일 기준</div>
       </div>
 
       <div class="kpistrip">
         <button class="kpitile" id="tile-m12" onclick="selectLongKpi('m12')" aria-pressed="true">
           <span class="rank">01</span>
-          <span class="eyebrow">12개월+ 미판매</span>
+          <span class="eyebrow">입고 12개월+ 장기재고</span>
           <span class="value">₩{{ '{:,}'.format(longstock.m12_val) }}</span>
           <span class="foot">전체재고 대비 {{ '%.2f'|format(longstock.m12_pct) }}% · {{ longstock.m12_count }}품목</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
         <button class="kpitile" id="tile-m24" onclick="selectLongKpi('m24')" aria-pressed="false">
           <span class="rank">02</span>
-          <span class="eyebrow">24개월+ 미판매</span>
+          <span class="eyebrow">입고 24개월+ 장기재고</span>
           <span class="value">₩{{ '{:,}'.format(longstock.m24_val) }}</span>
           <span class="foot">전체재고 대비 {{ '%.2f'|format(longstock.m24_pct) }}% · {{ longstock.m24_count }}품목</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
@@ -567,16 +567,16 @@
       <div class="viewer">
         <div id="detail-m12">
           <div class="viewer-head">
-            <span class="lbl">12개월+ 미판매 세부 (원가 기준)</span>
+            <span class="lbl">입고 12개월+ 장기재고 세부 (원가 기준)</span>
             <span class="val">₩{{ '{:,}'.format(longstock.m12_val) }}</span>
-            <span class="foot">{{ longstock.m12_count }}품목 · 판매이력 없음 포함 · 금액 큰 순</span>
+            <span class="foot">{{ longstock.m12_count }}품목 · 입고이력 없음 포함 · 금액 큰 순</span>
           </div>
           <div class="tablewrap">
             <table>
-              <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>최종판매일</th><th class="num">수량</th><th class="num">재고금액(원가)</th></tr></thead>
+              <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>최종입고일</th><th class="num">수량</th><th class="num">재고금액(원가)</th></tr></thead>
               <tbody>
                 {% for r in longstock.m12_items %}
-                <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.last_sale }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+                <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.last_in }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
                 {% endfor %}
               </tbody>
             </table>
@@ -585,16 +585,16 @@
 
         <div id="detail-m24" hidden>
           <div class="viewer-head">
-            <span class="lbl">24개월+ 미판매 세부 (원가 기준)</span>
+            <span class="lbl">입고 24개월+ 장기재고 세부 (원가 기준)</span>
             <span class="val">₩{{ '{:,}'.format(longstock.m24_val) }}</span>
-            <span class="foot">{{ longstock.m24_count }}품목 · 판매이력 없음 포함 · 금액 큰 순</span>
+            <span class="foot">{{ longstock.m24_count }}품목 · 입고이력 없음 포함 · 금액 큰 순</span>
           </div>
           <div class="tablewrap">
             <table>
-              <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>최종판매일</th><th class="num">수량</th><th class="num">재고금액(원가)</th></tr></thead>
+              <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>최종입고일</th><th class="num">수량</th><th class="num">재고금액(원가)</th></tr></thead>
               <tbody>
                 {% for r in longstock.m24_items %}
-                <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.last_sale }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+                <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.last_in }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
                 {% endfor %}
               </tbody>
             </table>

@@ -327,7 +327,7 @@ def build_oaov(pw_rows, inv_total):
 
 
 def build_longstock(pw_rows, inv_total, now):
-    """lastSaleDt(최종판매일) 기준 12개월+/24개월+ 미판매(장기재고) 집계. 판매이력 없음도 포함."""
+    """lastPurcDt(최종입고일) 기준 12개월+/24개월+ 장기재고(입고 후 재구매 없음) 집계."""
     def val_fn(r):
         return num(r.get("crtQty")) * num(r.get("movPrc"))
 
@@ -341,12 +341,12 @@ def build_longstock(pw_rows, inv_total, now):
         return sorted([{
             "item": r.get("itemCd"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
             "qty": int(num(r.get("crtQty"))), "val": round(val_fn(r)),
-            "last_sale": (r.get("lastSaleDt") or "")[:10] or "판매이력 없음",
+            "last_in": (r.get("lastPurcDt") or "")[:10] or "입고이력 없음",
         } for r in rows], key=lambda i: i["val"], reverse=True)
 
     m12_rows, m24_rows = [], []
     for r in pw_rows:
-        months = months_since(r.get("lastSaleDt"))
+        months = months_since(r.get("lastPurcDt"))
         if months is None or months >= 12:
             m12_rows.append(r)
         if months is None or months >= 24:
