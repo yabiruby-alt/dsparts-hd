@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 17일 (목) · 12:52 기준"
+    "generated_at": "9월 17일 (목) · 13:03 기준"
   },
   "recv": {
     "total": 19293407,
@@ -253,8 +253,8 @@
     ]
   },
   "inv": {
-    "total": 1178751151,
-    "item_count": 2158,
+    "total": 1178616744,
+    "item_count": 2156,
     "code_count": 25,
     "alois_groups": [
       {
@@ -265,7 +265,7 @@
           {
             "code": "A1",
             "val": 219540380,
-            "pct": 18.62,
+            "pct": 18.63,
             "qty": 2351
           },
           {
@@ -283,7 +283,7 @@
           {
             "code": "A4",
             "val": 42019282,
-            "pct": 3.56,
+            "pct": 3.57,
             "qty": 1939
           },
           {
@@ -301,7 +301,7 @@
         ],
         "subtotal_val": 452683355,
         "subtotal_qty": 8777,
-        "subtotal_pct": 38.4
+        "subtotal_pct": 38.41
       },
       {
         "code": "L",
@@ -346,14 +346,14 @@
           },
           {
             "code": "L7",
-            "val": 55847548,
-            "pct": 4.74,
-            "qty": 1332
+            "val": 55765348,
+            "pct": 4.73,
+            "qty": 1331
           }
         ],
-        "subtotal_val": 146110674,
-        "subtotal_qty": 4580,
-        "subtotal_pct": 12.4
+        "subtotal_val": 146028474,
+        "subtotal_qty": 4579,
+        "subtotal_pct": 12.39
       },
       {
         "code": "O",
@@ -386,13 +386,13 @@
           },
           {
             "code": "OV",
-            "val": 21855386,
+            "val": 21803179,
             "pct": 1.85,
-            "qty": 210
+            "qty": 209
           }
         ],
-        "subtotal_val": 433077036,
-        "subtotal_qty": 2742,
+        "subtotal_val": 433024829,
+        "subtotal_qty": 2741,
         "subtotal_pct": 36.74
       },
       {
@@ -460,16 +460,16 @@
     ]
   },
   "oaov": {
-    "total": 62034055,
-    "inv_total": 1178751151,
+    "total": 61981848,
+    "inv_total": 1178616744,
     "pct": 5.26,
     "oa_val": 40178669,
-    "ov_val": 21855386,
+    "ov_val": 21803179,
     "oa_lines": 112,
-    "ov_lines": 113,
+    "ov_lines": 112,
     "oa_qty": 236,
-    "ov_qty": 210,
-    "item_count": 225,
+    "ov_qty": 209,
+    "item_count": 224,
     "top_items": [
       {
         "item": "63119850411",
@@ -682,10 +682,10 @@
     ]
   },
   "tire": {
-    "total": 17281600,
-    "cost": 16494000,
-    "lines": 20,
-    "invoices_count": 12,
+    "total": 18012400,
+    "cost": 17306000,
+    "lines": 21,
+    "invoices_count": 13,
     "by_sa": [
       {
         "sa": "우종훈",
@@ -695,9 +695,9 @@
       },
       {
         "sa": "이정환",
-        "qty": 6,
-        "val": 4008600,
-        "margin": -257400
+        "qty": 8,
+        "val": 4739400,
+        "margin": -338600
       },
       {
         "sa": "김민규",
@@ -718,9 +718,17 @@
         "margin": 62600
       }
     ],
-    "qty_total": 38,
-    "margin_total": 787600,
+    "qty_total": 40,
+    "margin_total": 706400,
     "all_invoices": [
+      {
+        "inv": "IV2609001792",
+        "num": "RO2609000770",
+        "cust": "곽은진",
+        "dt": "2026-09-17 12:55",
+        "amt": 730800,
+        "cost": 812000
+      },
       {
         "inv": "IV2609001333",
         "num": "RO2609000754",
