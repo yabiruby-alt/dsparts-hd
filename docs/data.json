@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 13:09 기준",
+    "generated_at": "9월 18일 (금) · 13:20 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1212390587,
-    "item_count": 2207,
+    "total": 1210575791,
+    "item_count": 2203,
     "code_count": 25,
     "alois_groups": [
       {
@@ -251,13 +251,13 @@
           {
             "code": "A1",
             "val": 217500207,
-            "pct": 17.94,
+            "pct": 17.97,
             "qty": 2338
           },
           {
             "code": "A2",
             "val": 15197615,
-            "pct": 1.25,
+            "pct": 1.26,
             "qty": 1197
           },
           {
@@ -269,25 +269,25 @@
           {
             "code": "A4",
             "val": 46361580,
-            "pct": 3.82,
+            "pct": 3.83,
             "qty": 1914
           },
           {
             "code": "A5",
-            "val": 73686270,
+            "val": 73654599,
             "pct": 6.08,
-            "qty": 1325
+            "qty": 1324
           },
           {
             "code": "A6",
-            "val": 93941252,
-            "pct": 7.75,
-            "qty": 1516
+            "val": 94266038,
+            "pct": 7.79,
+            "qty": 1518
           }
         ],
-        "subtotal_val": 476638214,
-        "subtotal_qty": 8760,
-        "subtotal_pct": 39.31
+        "subtotal_val": 476931329,
+        "subtotal_qty": 8761,
+        "subtotal_pct": 39.4
       },
       {
         "code": "L",
@@ -297,7 +297,7 @@
           {
             "code": "L1",
             "val": 26815133,
-            "pct": 2.21,
+            "pct": 2.22,
             "qty": 1810
           },
           {
@@ -332,13 +332,13 @@
           },
           {
             "code": "L7",
-            "val": 57054802,
-            "pct": 4.71,
-            "qty": 1351
+            "val": 56894720,
+            "pct": 4.7,
+            "qty": 1349
           }
         ],
-        "subtotal_val": 144116909,
-        "subtotal_qty": 4358,
+        "subtotal_val": 143956827,
+        "subtotal_qty": 4356,
         "subtotal_pct": 11.89
       },
       {
@@ -348,20 +348,20 @@
         "rows": [
           {
             "code": "O8",
-            "val": 66777564,
-            "pct": 5.51,
+            "val": 65758950,
+            "pct": 5.43,
             "qty": 1141
           },
           {
             "code": "OA",
             "val": 38566400,
-            "pct": 3.18,
+            "pct": 3.19,
             "qty": 228
           },
           {
             "code": "OE",
             "val": 304334526,
-            "pct": 25.1,
+            "pct": 25.14,
             "qty": 1146
           },
           {
@@ -377,9 +377,9 @@
             "qty": 203
           }
         ],
-        "subtotal_val": 431990247,
+        "subtotal_val": 430971633,
         "subtotal_qty": 2729,
-        "subtotal_pct": 35.63
+        "subtotal_pct": 35.6
       },
       {
         "code": "I",
@@ -388,14 +388,14 @@
         "rows": [
           {
             "code": "II",
-            "val": 17462198,
-            "pct": 1.44,
-            "qty": 59
+            "val": 16532983,
+            "pct": 1.37,
+            "qty": 53
           }
         ],
-        "subtotal_val": 17462198,
-        "subtotal_qty": 59,
-        "subtotal_pct": 1.44
+        "subtotal_val": 16532983,
+        "subtotal_qty": 53,
+        "subtotal_pct": 1.37
       },
       {
         "code": "S",
@@ -435,20 +435,20 @@
           {
             "code": "SZ",
             "val": 85822724,
-            "pct": 7.08,
+            "pct": 7.09,
             "qty": 286
           }
         ],
         "subtotal_val": 133118164,
         "subtotal_qty": 1468,
-        "subtotal_pct": 10.98
+        "subtotal_pct": 11.0
       }
     ]
   },
   "oaov": {
     "total": 58956888,
-    "inv_total": 1212390587,
-    "pct": 4.86,
+    "inv_total": 1210575791,
+    "pct": 4.87,
     "oa_val": 38566400,
     "ov_val": 20390488,
     "oa_lines": 104,
@@ -2114,9 +2114,9 @@
   },
   "acc": {
     "total": 20826103,
-    "cost": 20932288,
-    "lines": 178,
-    "invoices_count": 108,
+    "cost": 20939368,
+    "lines": 179,
+    "invoices_count": 109,
     "by_type": [
       {
         "code": "3",
@@ -2133,11 +2133,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 121,
+        "lines": 122,
         "val": 11893624
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2609001938",
+        "num": "RO2609001088",
+        "cust": "원병용",
+        "dt": "2026-09-18 13:20",
+        "amt": 0,
+        "cost": 7080
+      },
       {
         "inv": "IV2609001892",
         "num": "RO2609001093",
@@ -2167,14 +2175,6 @@
         "num": "RO2609001086",
         "cust": "김주연",
         "dt": "2026-09-17 17:16",
-        "amt": 0,
-        "cost": 7080
-      },
-      {
-        "inv": "IV2609001850",
-        "num": "RO2609001103",
-        "cust": "이아진",
-        "dt": "2026-09-17 17:14",
         "amt": 0,
         "cost": 7080
       }
@@ -6147,12 +6147,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2609000882",
         "req_qty": 2,
-        "crt_qty": 2,
+        "crt_qty": 4,
         "avail_qty": 0,
         "req_dt": "09-17",
         "req_dt_full": "2026-09-17 14:38:31",
         "req_brch": "AS_울산",
-        "val": 9000,
+        "val": 8898,
         "sa": "황성민",
         "dday": "D+1일"
       },
@@ -6526,7 +6526,7 @@
       }
     ],
     "count": 119,
-    "total_val": 34189718,
+    "total_val": 34189616,
     "groups": [
       {
         "code": "RO",
@@ -6858,12 +6858,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2609000882",
             "req_qty": 2,
-            "crt_qty": 2,
+            "crt_qty": 4,
             "avail_qty": 0,
             "req_dt": "09-17",
             "req_dt_full": "2026-09-17 14:38:31",
             "req_brch": "AS_울산",
-            "val": 9000,
+            "val": 8898,
             "sa": "황성민",
             "dday": "D+1일"
           },
@@ -7046,7 +7046,7 @@
         ],
         "count": 32,
         "qty_sum": 57,
-        "val": 8113772
+        "val": 8113670
       },
       {
         "code": "SB",
