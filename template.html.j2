@@ -72,6 +72,12 @@
   .sb-workspace .tt b{ font-size:14.5px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .sb-workspace .tt span{ font-size:12.5px; color:var(--muted); font-family:var(--font-mono); }
 
+  .sb-print{ all:unset; box-sizing:border-box; display:flex; align-items:center; justify-content:center; gap:8px;
+    padding:9px 12px; border-radius:10px; background:var(--surface-2); font-family:var(--font-body); font-weight:600;
+    font-size:13.5px; color:var(--ink-2); cursor:pointer; transition:background .12s ease, color .12s ease; }
+  .sb-print:hover{ background:var(--accent-wash); color:var(--accent-strong); }
+  .sb-print svg{ flex:none; opacity:.85; }
+
   .sb-section{ display:flex; flex-direction:column; gap:2px; }
   .sb-label{ font-family:var(--font-display); font-weight:600; font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); padding:0 12px; margin-bottom:6px; }
   .sb-item{ all:unset; box-sizing:border-box; display:flex; align-items:center; gap:10px; padding:8.5px 12px; border-radius:10px; font-size:14.5px; font-weight:500; color:var(--ink-2); cursor:pointer; transition:background .12s ease, color .12s ease; }
@@ -178,6 +184,25 @@
     .subgrid{ grid-template-columns:1fr; }
     .viewer-head .foot{ margin-left:0; width:100%; }
   }
+
+  /* ============ 인쇄: 지금 보고 있는 화면만 깔끔하게 ============ */
+  @media print{
+    @page{ margin:14mm; }
+    body{ background:#fff; }
+    .sidebar{ display:none !important; }
+    .main{ height:auto; overflow:visible; }
+    .maininner{ max-width:none !important; padding:0; gap:16px; }
+    .maininner.wide{ max-width:none !important; }
+    .kpitile{ box-shadow:none; border:1px solid #ddd; }
+    .kpitile:hover{ box-shadow:none; transform:none; }
+    .kpitile .tapln{ display:none; }
+    .viewer{ box-shadow:none; border:1px solid #ddd; break-inside:avoid-page; }
+    .grouphead .hint{ display:none; }
+    tr{ break-inside:avoid; page-break-inside:avoid; }
+    tbody tr:hover td{ background:transparent; }
+    .aloistag.oseries, .grouphead.oseries td{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .kpitile[aria-pressed="true"]{ box-shadow:none; }
+  }
 </style>
 </head>
 <body>
@@ -224,6 +249,11 @@
       <div class="tt"><b>{{ meta.branch_name }}</b></div>
     </div>
 
+    <button class="sb-print" onclick="window.print()">
+      <svg width="15" height="15" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 6V2h8v4"/><rect x="2" y="6" width="14" height="7" rx="1.2"/><path d="M5 11h8v5H5z"/></svg>
+      현재 화면 인쇄
+    </button>
+
     <div class="sb-section">
       <span class="sb-label">Workspace</span>
       <button class="sb-item" id="nav-today" aria-current="page" onclick="selectPage('today')">
@@ -238,14 +268,18 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><circle cx="9" cy="9" r="2.4"/><path d="M9 2v2M9 14v2M2 9h2M14 9h2"/></svg>
         악세사리&amp;타이어
       </button>
-      <button class="sb-item" id="nav-oaov" aria-current="false" onclick="selectPage('oaov')">
-        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 9a7 7 0 0 1 12-5"/><path d="M14 4v4h-4"/><path d="M16 9a7 7 0 0 1-12 5"/><path d="M4 14v-4h4"/></svg>
-        OAOV 현황
-      </button>
       <button class="sb-item" id="nav-longstock" aria-current="false" onclick="selectPage('longstock')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><path d="M9 5v4l3 2"/></svg>
         장기 재고 현황
       </button>
+      <button class="sb-item" id="nav-calendar" aria-current="false" onclick="selectPage('calendar')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="14" height="13" rx="1.5"/><path d="M2 7h14"/><path d="M6 2v3M12 2v3"/></svg>
+        팀 캘린더
+      </button>
+    </div>
+
+    <div class="sb-section">
+      <span class="sb-label">O파트 관리</span>
       <button class="sb-item" id="nav-opart" aria-current="false" onclick="selectPage('opart')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9h12M9 3v12"/><circle cx="9" cy="9" r="7"/></svg>
         O파트 현황
@@ -254,9 +288,9 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12 7 7l3 3 5-6"/><path d="M12 4h3v3"/></svg>
         O파트 입출고 내역
       </button>
-      <button class="sb-item" id="nav-calendar" aria-current="false" onclick="selectPage('calendar')">
-        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="14" height="13" rx="1.5"/><path d="M2 7h14"/><path d="M6 2v3M12 2v3"/></svg>
-        팀 캘린더
+      <button class="sb-item" id="nav-oaov" aria-current="false" onclick="selectPage('oaov')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 9a7 7 0 0 1 12-5"/><path d="M14 4v4h-4"/><path d="M16 9a7 7 0 0 1-12 5"/><path d="M4 14v-4h4"/></svg>
+        OAOV 현황
       </button>
     </div>
 

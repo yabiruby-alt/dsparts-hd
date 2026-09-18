@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 10:18 기준",
+    "generated_at": "9월 18일 (금) · 10:30 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1221375152,
-    "item_count": 2242,
+    "total": 1220993838,
+    "item_count": 2240,
     "code_count": 25,
     "alois_groups": [
       {
@@ -250,9 +250,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 218206261,
-            "pct": 17.87,
-            "qty": 2349
+            "val": 218115525,
+            "pct": 17.86,
+            "qty": 2347
           },
           {
             "code": "A2",
@@ -268,9 +268,9 @@
           },
           {
             "code": "A4",
-            "val": 46630285,
+            "val": 46629179,
             "pct": 3.82,
-            "qty": 1924
+            "qty": 1923
           },
           {
             "code": "A5",
@@ -280,14 +280,14 @@
           },
           {
             "code": "A6",
-            "val": 93001238,
-            "pct": 7.61,
-            "qty": 1519
+            "val": 92799728,
+            "pct": 7.6,
+            "qty": 1516
           }
         ],
-        "subtotal_val": 477226246,
-        "subtotal_qty": 8827,
-        "subtotal_pct": 39.07
+        "subtotal_val": 476932894,
+        "subtotal_qty": 8821,
+        "subtotal_pct": 39.06
       },
       {
         "code": "L",
@@ -296,9 +296,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 27298243,
-            "pct": 2.24,
-            "qty": 1842
+            "val": 27210281,
+            "pct": 2.23,
+            "qty": 1836
           },
           {
             "code": "L2",
@@ -333,12 +333,12 @@
           {
             "code": "L7",
             "val": 57205302,
-            "pct": 4.68,
+            "pct": 4.69,
             "qty": 1354
           }
         ],
-        "subtotal_val": 144758015,
-        "subtotal_qty": 4396,
+        "subtotal_val": 144670053,
+        "subtotal_qty": 4390,
         "subtotal_pct": 11.85
       },
       {
@@ -379,7 +379,7 @@
         ],
         "subtotal_val": 434221796,
         "subtotal_qty": 2751,
-        "subtotal_pct": 35.55
+        "subtotal_pct": 35.56
       },
       {
         "code": "I",
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58956888,
-    "inv_total": 1221375152,
+    "inv_total": 1220993838,
     "pct": 4.83,
     "oa_val": 38566400,
     "ov_val": 20390488,
@@ -5812,7 +5812,7 @@
         "ref_no": "SB2609000480",
         "req_qty": 1,
         "crt_qty": 4,
-        "avail_qty": 1,
+        "avail_qty": 0,
         "req_dt": "09-07",
         "req_dt_full": "2026-09-07 10:59:18",
         "req_brch": "AS_부산(해운중동)",
@@ -5828,7 +5828,7 @@
         "ref_no": "SB2609000195",
         "req_qty": 1,
         "crt_qty": 4,
-        "avail_qty": 1,
+        "avail_qty": 0,
         "req_dt": "09-07",
         "req_dt_full": "2026-09-07 11:03:20",
         "req_brch": "AS_부산(해운중동)",
@@ -6379,10 +6379,26 @@
         "val": 812850,
         "sa": "강충성",
         "dday": "D+0일"
+      },
+      {
+        "item": "12415B913B8",
+        "name": "Starter",
+        "alois": "OE",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001170",
+        "req_qty": 1,
+        "crt_qty": 4,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 10:21:17",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 603474,
+        "sa": "우종훈",
+        "dday": "D+0일"
       }
     ],
-    "count": 110,
-    "total_val": 31425035,
+    "count": 111,
+    "total_val": 32028509,
     "groups": [
       {
         "code": "RO",
@@ -6866,11 +6882,27 @@
             "val": 812850,
             "sa": "강충성",
             "dday": "D+0일"
+          },
+          {
+            "item": "12415B913B8",
+            "name": "Starter",
+            "alois": "OE",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001170",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 10:21:17",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 603474,
+            "sa": "우종훈",
+            "dday": "D+0일"
           }
         ],
-        "count": 30,
-        "qty_sum": 55,
-        "val": 7263199
+        "count": 31,
+        "qty_sum": 56,
+        "val": 7866673
       },
       {
         "code": "SB",
@@ -7363,7 +7395,7 @@
             "ref_no": "SB2609000480",
             "req_qty": 1,
             "crt_qty": 4,
-            "avail_qty": 1,
+            "avail_qty": 0,
             "req_dt": "09-07",
             "req_dt_full": "2026-09-07 10:59:18",
             "req_brch": "AS_부산(해운중동)",
@@ -7379,7 +7411,7 @@
             "ref_no": "SB2609000195",
             "req_qty": 1,
             "crt_qty": 4,
-            "avail_qty": 1,
+            "avail_qty": 0,
             "req_dt": "09-07",
             "req_dt_full": "2026-09-07 11:03:20",
             "req_brch": "AS_부산(해운중동)",
