@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 13:32 기준",
+    "generated_at": "9월 18일 (금) · 13:44 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1208874449,
+    "total": 1208078756,
     "item_count": 2203,
     "code_count": 25,
     "alois_groups": [
@@ -250,9 +250,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 217185524,
-            "pct": 17.97,
-            "qty": 2330
+            "val": 217006906,
+            "pct": 17.96,
+            "qty": 2325
           },
           {
             "code": "A2",
@@ -268,15 +268,15 @@
           },
           {
             "code": "A4",
-            "val": 46024456,
+            "val": 45968020,
             "pct": 3.81,
-            "qty": 1912
+            "qty": 1906
           },
           {
             "code": "A5",
-            "val": 73649421,
-            "pct": 6.09,
-            "qty": 1323
+            "val": 73467043,
+            "pct": 6.08,
+            "qty": 1322
           },
           {
             "code": "A6",
@@ -285,9 +285,9 @@
             "qty": 1518
           }
         ],
-        "subtotal_val": 475999328,
-        "subtotal_qty": 8745,
-        "subtotal_pct": 39.38
+        "subtotal_val": 475581896,
+        "subtotal_qty": 8733,
+        "subtotal_pct": 39.37
       },
       {
         "code": "L",
@@ -296,15 +296,15 @@
         "rows": [
           {
             "code": "L1",
-            "val": 26623194,
-            "pct": 2.2,
-            "qty": 1797
+            "val": 26359783,
+            "pct": 2.18,
+            "qty": 1779
           },
           {
             "code": "L2",
-            "val": 8939453,
-            "pct": 0.74,
-            "qty": 225
+            "val": 8832853,
+            "pct": 0.73,
+            "qty": 223
           },
           {
             "code": "L3",
@@ -327,7 +327,7 @@
           {
             "code": "L6",
             "val": 29067355,
-            "pct": 2.4,
+            "pct": 2.41,
             "qty": 267
           },
           {
@@ -337,9 +337,9 @@
             "qty": 1349
           }
         ],
-        "subtotal_val": 143184388,
-        "subtotal_qty": 4341,
-        "subtotal_pct": 11.84
+        "subtotal_val": 142814377,
+        "subtotal_qty": 4321,
+        "subtotal_pct": 11.82
       },
       {
         "code": "O",
@@ -361,7 +361,7 @@
           {
             "code": "OE",
             "val": 304248766,
-            "pct": 25.17,
+            "pct": 25.18,
             "qty": 1145
           },
           {
@@ -379,7 +379,7 @@
         ],
         "subtotal_val": 430894669,
         "subtotal_qty": 2730,
-        "subtotal_pct": 35.64
+        "subtotal_pct": 35.67
       },
       {
         "code": "I",
@@ -422,9 +422,9 @@
           },
           {
             "code": "SX",
-            "val": 9054407,
+            "val": 9046157,
             "pct": 0.75,
-            "qty": 244
+            "qty": 243
           },
           {
             "code": "SY",
@@ -439,15 +439,15 @@
             "qty": 286
           }
         ],
-        "subtotal_val": 133198226,
-        "subtotal_qty": 1471,
+        "subtotal_val": 133189976,
+        "subtotal_qty": 1470,
         "subtotal_pct": 11.02
       }
     ]
   },
   "oaov": {
     "total": 58965684,
-    "inv_total": 1208874449,
+    "inv_total": 1208078756,
     "pct": 4.88,
     "oa_val": 38566400,
     "ov_val": 20399284,
@@ -2113,16 +2113,16 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 20826103,
+    "total": 20735194,
     "cost": 20939368,
-    "lines": 179,
-    "invoices_count": 109,
+    "lines": 193,
+    "invoices_count": 110,
     "by_type": [
       {
         "code": "3",
         "label": "Car Accessories",
-        "lines": 57,
-        "val": 8932479
+        "lines": 71,
+        "val": 8841570
       },
       {
         "code": "5",
@@ -2138,6 +2138,14 @@
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2609001948",
+        "num": "RO2609000720",
+        "cust": "배태랑",
+        "dt": "2026-09-18 13:36",
+        "amt": 2959761,
+        "cost": 3391813
+      },
       {
         "inv": "IV2609001938",
         "num": "RO2609001088",
@@ -2167,14 +2175,6 @@
         "num": "RO2609001128",
         "cust": "김현희",
         "dt": "2026-09-17 18:36",
-        "amt": 0,
-        "cost": 7080
-      },
-      {
-        "inv": "IV2609001852",
-        "num": "RO2609001086",
-        "cust": "김주연",
-        "dt": "2026-09-17 17:16",
         "amt": 0,
         "cost": 7080
       }
@@ -4616,7 +4616,7 @@
     ],
     "m24_val": 20720697,
     "m24_count": 59,
-    "m24_pct": 1.71
+    "m24_pct": 1.72
   },
   "opart": {
     "items": [
@@ -6189,38 +6189,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "51645A2F5B4",
-        "name": "Mount for he",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001102",
-        "req_qty": 1,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-17",
-        "req_dt_full": "2026-09-17 15:31:53",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 135248,
-        "sa": "염진아",
-        "dday": "D+1일"
-      },
-      {
-        "item": "51135A3EA66",
-        "name": "Trim strip s",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001102",
-        "req_qty": 1,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-17",
-        "req_dt_full": "2026-09-17 15:31:53",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 50735,
-        "sa": "염진아",
-        "dday": "D+1일"
-      },
-      {
         "item": "34207889663",
         "name": "Brake disc,",
         "alois": "O8",
@@ -6381,8 +6349,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 110,
-    "total_val": 31758675,
+    "count": 108,
+    "total_val": 31572692,
     "groups": [
       {
         "code": "RO",
@@ -6756,38 +6724,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "51645A2F5B4",
-            "name": "Mount for he",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001102",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-17",
-            "req_dt_full": "2026-09-17 15:31:53",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 135248,
-            "sa": "염진아",
-            "dday": "D+1일"
-          },
-          {
-            "item": "51135A3EA66",
-            "name": "Trim strip s",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001102",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-17",
-            "req_dt_full": "2026-09-17 15:31:53",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 50735,
-            "sa": "염진아",
-            "dday": "D+1일"
-          },
-          {
             "item": "51357491331",
             "name": "Molding, sid",
             "alois": "O8",
@@ -6836,9 +6772,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 28,
-        "qty_sum": 37,
-        "val": 7156799
+        "count": 26,
+        "qty_sum": 35,
+        "val": 6970816
       },
       {
         "code": "SB",
@@ -12173,14 +12109,14 @@
       {
         "date": "09-17",
         "in_val": 5097116,
-        "out_val": 18271779,
-        "net": -13174663
+        "out_val": 17727063,
+        "net": -12629947
       },
       {
         "date": "09-18",
         "in_val": 6457516,
-        "out_val": 3392957,
-        "net": 3064559
+        "out_val": 3937673,
+        "net": 2519843
       }
     ],
     "total_in": 170516132,
