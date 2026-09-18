@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 16:03 기준",
+    "generated_at": "9월 18일 (금) · 16:17 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1206393246,
-    "item_count": 2192,
+    "total": 1206244001,
+    "item_count": 2191,
     "code_count": 25,
     "alois_groups": [
       {
@@ -251,14 +251,14 @@
           {
             "code": "A1",
             "val": 216841208,
-            "pct": 17.97,
+            "pct": 17.98,
             "qty": 2322
           },
           {
             "code": "A2",
-            "val": 15080699,
+            "val": 15071209,
             "pct": 1.25,
-            "qty": 1194
+            "qty": 1184
           },
           {
             "code": "A3",
@@ -275,18 +275,18 @@
           {
             "code": "A5",
             "val": 73284665,
-            "pct": 6.07,
+            "pct": 6.08,
             "qty": 1321
           },
           {
             "code": "A6",
-            "val": 94008634,
-            "pct": 7.79,
-            "qty": 1515
+            "val": 93868879,
+            "pct": 7.78,
+            "qty": 1514
           }
         ],
-        "subtotal_val": 474998210,
-        "subtotal_qty": 8717,
+        "subtotal_val": 474848965,
+        "subtotal_qty": 8706,
         "subtotal_pct": 39.37
       },
       {
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58959984,
-    "inv_total": 1206393246,
+    "inv_total": 1206244001,
     "pct": 4.89,
     "oa_val": 38566400,
     "ov_val": 20393584,
@@ -2114,16 +2114,16 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 21046204,
-    "cost": 21272852,
-    "lines": 198,
-    "invoices_count": 114,
+    "total": 21218054,
+    "cost": 21461887,
+    "lines": 200,
+    "invoices_count": 115,
     "by_type": [
       {
         "code": "3",
         "label": "Car Accessories",
-        "lines": 74,
-        "val": 9083580
+        "lines": 76,
+        "val": 9255430
       },
       {
         "code": "5",
@@ -2139,6 +2139,14 @@
       }
     ],
     "recent5": [
+      {
+        "inv": "AR2609003759",
+        "num": "SP2609000073",
+        "cust": "배현우",
+        "dt": "2026-09-18 16:14",
+        "amt": 171850,
+        "cost": 189035
+      },
       {
         "inv": "IV2609001984",
         "num": "RO2609000868",
@@ -2170,14 +2178,6 @@
         "dt": "2026-09-18 13:53",
         "amt": 171850,
         "cost": 189035
-      },
-      {
-        "inv": "IV2609001948",
-        "num": "RO2609000720",
-        "cust": "배태랑",
-        "dt": "2026-09-18 13:36",
-        "amt": 2959761,
-        "cost": 3391813
       }
     ]
   },
@@ -6590,24 +6590,24 @@
         "dday": "D+0일"
       },
       {
-        "item": "51127389890",
-        "name": "Panel for bu",
-        "alois": "OA",
+        "item": "18307926575",
+        "name": "Seal",
+        "alois": "O8",
         "ref_tp": "RO",
-        "ref_no": "RO2609000869",
+        "ref_no": "RO2609001154",
         "req_qty": 1,
         "crt_qty": 0,
         "avail_qty": 0,
         "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 16:01:34",
+        "req_dt_full": "2026-09-18 16:16:57",
         "req_brch": "AS_부산(해운중동)",
-        "val": 141723,
-        "sa": "강충성",
+        "val": 23808,
+        "sa": "이정환",
         "dday": "D+0일"
       }
     ],
     "count": 124,
-    "total_val": 33912071,
+    "total_val": 33794156,
     "groups": [
       {
         "code": "RO",
@@ -7253,25 +7253,25 @@
             "dday": "D+0일"
           },
           {
-            "item": "51127389890",
-            "name": "Panel for bu",
-            "alois": "OA",
+            "item": "18307926575",
+            "name": "Seal",
+            "alois": "O8",
             "ref_tp": "RO",
-            "ref_no": "RO2609000869",
+            "ref_no": "RO2609001154",
             "req_qty": 1,
             "crt_qty": 0,
             "avail_qty": 0,
             "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 16:01:34",
+            "req_dt_full": "2026-09-18 16:16:57",
             "req_brch": "AS_부산(해운중동)",
-            "val": 141723,
-            "sa": "강충성",
+            "val": 23808,
+            "sa": "이정환",
             "dday": "D+0일"
           }
         ],
         "count": 41,
         "qty_sum": 53,
-        "val": 8453195
+        "val": 8335280
       },
       {
         "code": "SB",
