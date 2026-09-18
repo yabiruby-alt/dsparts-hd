@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 14:09 기준",
+    "generated_at": "9월 18일 (금) · 14:23 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1208032006,
-    "item_count": 2203,
+    "total": 1207774498,
+    "item_count": 2201,
     "code_count": 25,
     "alois_groups": [
       {
@@ -250,9 +250,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 217006906,
+            "val": 216934171,
             "pct": 17.96,
-            "qty": 2325
+            "qty": 2324
           },
           {
             "code": "A2",
@@ -280,14 +280,14 @@
           },
           {
             "code": "A6",
-            "val": 94266038,
-            "pct": 7.8,
-            "qty": 1518
+            "val": 94077003,
+            "pct": 7.79,
+            "qty": 1516
           }
         ],
-        "subtotal_val": 475527484,
-        "subtotal_qty": 8728,
-        "subtotal_pct": 39.36
+        "subtotal_val": 475265714,
+        "subtotal_qty": 8725,
+        "subtotal_pct": 39.35
       },
       {
         "code": "L",
@@ -296,9 +296,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 26367445,
+            "val": 26378787,
             "pct": 2.18,
-            "qty": 1780
+            "qty": 1781
           },
           {
             "code": "L2",
@@ -337,9 +337,9 @@
             "qty": 1349
           }
         ],
-        "subtotal_val": 142822039,
-        "subtotal_qty": 4322,
-        "subtotal_pct": 11.82
+        "subtotal_val": 142833381,
+        "subtotal_qty": 4323,
+        "subtotal_pct": 11.83
       },
       {
         "code": "O",
@@ -379,7 +379,7 @@
         ],
         "subtotal_val": 430894669,
         "subtotal_qty": 2730,
-        "subtotal_pct": 35.67
+        "subtotal_pct": 35.68
       },
       {
         "code": "I",
@@ -422,9 +422,9 @@
           },
           {
             "code": "SX",
-            "val": 9046157,
+            "val": 9039077,
             "pct": 0.75,
-            "qty": 243
+            "qty": 242
           },
           {
             "code": "SY",
@@ -435,19 +435,19 @@
           {
             "code": "SZ",
             "val": 85822724,
-            "pct": 7.1,
+            "pct": 7.11,
             "qty": 286
           }
         ],
-        "subtotal_val": 133189976,
-        "subtotal_qty": 1470,
+        "subtotal_val": 133182896,
+        "subtotal_qty": 1469,
         "subtotal_pct": 11.03
       }
     ]
   },
   "oaov": {
     "total": 58965684,
-    "inv_total": 1208032006,
+    "inv_total": 1207774498,
     "pct": 4.88,
     "oa_val": 38566400,
     "ov_val": 20399284,
@@ -4139,7 +4139,7 @@
     ],
     "m12_val": 63837215,
     "m12_count": 224,
-    "m12_pct": 5.28,
+    "m12_pct": 5.29,
     "m24_items": [
       {
         "item": "24008741536",
@@ -6347,10 +6347,218 @@
         "val": 220020,
         "sa": "최민수",
         "dday": "D+0일"
+      },
+      {
+        "item": "61130056962",
+        "name": "Contact bush",
+        "alois": "OV",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001196",
+        "req_qty": 2,
+        "crt_qty": 2,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:14:20",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 5700,
+        "sa": "김민규",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51775A73F00",
+        "name": "Rocker panel",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001167",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:18:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 119196,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51765A746D4",
+        "name": "[R] Gap seal, do",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001167",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:18:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 34263,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51335A747D1",
+        "name": "[R] Shaft cover",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001167",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:18:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 122910,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51169905223",
+        "name": "Fillister-he",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001167",
+        "req_qty": 4,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:18:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 4800,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51165A78119",
+        "name": "Drive exteri",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001167",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:18:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 223916,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51165A78061",
+        "name": "Mirror base",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001167",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:18:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 31365,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51165A78185",
+        "name": "Camera holde",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001167",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:18:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 25102,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51165A78147",
+        "name": "Supporting r",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001167",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:18:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 46354,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51165A77FE3",
+        "name": "Mirror cap,",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001167",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:18:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 59130,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51165A7A465",
+        "name": "[R] Exterior mir",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001167",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:18:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 174178,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "36105A72870",
+        "name": "Scheibenrad",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001167",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:18:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 421797,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "13717645645",
+        "name": "Air-intake d",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001185",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:18:22",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 128691,
+        "sa": "이정환",
+        "dday": "D+0일"
       }
     ],
-    "count": 108,
-    "total_val": 31572692,
+    "count": 121,
+    "total_val": 32970094,
     "groups": [
       {
         "code": "RO",
@@ -6770,11 +6978,219 @@
             "val": 95948,
             "sa": "염진아",
             "dday": "D+0일"
+          },
+          {
+            "item": "61130056962",
+            "name": "Contact bush",
+            "alois": "OV",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001196",
+            "req_qty": 2,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:14:20",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 5700,
+            "sa": "김민규",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51775A73F00",
+            "name": "Rocker panel",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001167",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:18:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 119196,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51765A746D4",
+            "name": "[R] Gap seal, do",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001167",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:18:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 34263,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51335A747D1",
+            "name": "[R] Shaft cover",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001167",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:18:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 122910,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51169905223",
+            "name": "Fillister-he",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001167",
+            "req_qty": 4,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:18:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 4800,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51165A78119",
+            "name": "Drive exteri",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001167",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:18:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 223916,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51165A78061",
+            "name": "Mirror base",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001167",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:18:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 31365,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51165A78185",
+            "name": "Camera holde",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001167",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:18:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 25102,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51165A78147",
+            "name": "Supporting r",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001167",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:18:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 46354,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51165A77FE3",
+            "name": "Mirror cap,",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001167",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:18:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 59130,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51165A7A465",
+            "name": "[R] Exterior mir",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001167",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:18:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 174178,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "36105A72870",
+            "name": "Scheibenrad",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001167",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:18:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 421797,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "13717645645",
+            "name": "Air-intake d",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001185",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:18:22",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 128691,
+            "sa": "이정환",
+            "dday": "D+0일"
           }
         ],
-        "count": 26,
-        "qty_sum": 35,
-        "val": 6970816
+        "count": 39,
+        "qty_sum": 52,
+        "val": 8368218
       },
       {
         "code": "SB",
@@ -12115,19 +12531,19 @@
       {
         "date": "09-18",
         "in_val": 6457516,
-        "out_val": 3937673,
-        "net": 2519843
+        "out_val": 5043174,
+        "net": 1414342
       }
     ],
     "total_in": 170516132,
-    "total_out": 151573457,
-    "net": 18942675,
+    "total_out": 152678958,
+    "net": 17837174,
     "by_code": [
       {
         "code": "O8",
         "in_val": 146230422,
-        "out_val": 122466617,
-        "net": 23763805
+        "out_val": 123572118,
+        "net": 22658304
       },
       {
         "code": "OA",
