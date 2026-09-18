@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 09:13 기준",
+    "generated_at": "9월 18일 (금) · 09:24 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1225888333,
+    "total": 1225512603,
     "item_count": 2259,
     "code_count": 25,
     "alois_groups": [
@@ -250,9 +250,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 218945774,
-            "pct": 17.86,
-            "qty": 2362
+            "val": 218786850,
+            "pct": 17.85,
+            "qty": 2359
           },
           {
             "code": "A2",
@@ -285,8 +285,8 @@
             "qty": 1528
           }
         ],
-        "subtotal_val": 479789686,
-        "subtotal_qty": 8855,
+        "subtotal_val": 479630762,
+        "subtotal_qty": 8852,
         "subtotal_pct": 39.14
       },
       {
@@ -296,9 +296,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 27791715,
-            "pct": 2.27,
-            "qty": 1878
+            "val": 27684749,
+            "pct": 2.26,
+            "qty": 1870
           },
           {
             "code": "L2",
@@ -333,13 +333,13 @@
           {
             "code": "L7",
             "val": 58408491,
-            "pct": 4.76,
+            "pct": 4.77,
             "qty": 1357
           }
         ],
-        "subtotal_val": 146561276,
-        "subtotal_qty": 4437,
-        "subtotal_pct": 11.96
+        "subtotal_val": 146454310,
+        "subtotal_qty": 4429,
+        "subtotal_pct": 11.95
       },
       {
         "code": "O",
@@ -360,9 +360,9 @@
           },
           {
             "code": "OE",
-            "val": 305009415,
+            "val": 304899575,
             "pct": 24.88,
-            "qty": 1149
+            "qty": 1147
           },
           {
             "code": "ON",
@@ -377,8 +377,8 @@
             "qty": 205
           }
         ],
-        "subtotal_val": 434901135,
-        "subtotal_qty": 2766,
+        "subtotal_val": 434791295,
+        "subtotal_qty": 2764,
         "subtotal_pct": 35.48
       },
       {
@@ -435,7 +435,7 @@
           {
             "code": "SZ",
             "val": 85857721,
-            "pct": 7.0,
+            "pct": 7.01,
             "qty": 287
           }
         ],
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 59357519,
-    "inv_total": 1225888333,
+    "inv_total": 1225512603,
     "pct": 4.84,
     "oa_val": 38566400,
     "ov_val": 20791119,
@@ -5225,7 +5225,7 @@
         "ref_tp": "SB",
         "ref_no": "SB2608001800",
         "req_qty": 1,
-        "crt_qty": 16,
+        "crt_qty": 15,
         "avail_qty": 14,
         "req_dt": "08-26",
         "req_dt_full": "2026-08-26 17:15:37",
@@ -6435,38 +6435,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "61627407273",
-        "name": "WIPER BLADE X3 Rear",
-        "alois": "OE",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001140",
-        "req_qty": 1,
-        "crt_qty": 16,
-        "avail_qty": 15,
-        "req_dt": "09-17",
-        "req_dt_full": "2026-09-17 18:35:58",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 24080,
-        "sa": "안준영",
-        "dday": "D+1일"
-      },
-      {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "alois": "OE",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001140",
-        "req_qty": 1,
-        "crt_qty": 16,
-        "avail_qty": 14,
-        "req_dt": "09-17",
-        "req_dt_full": "2026-09-17 18:35:58",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 85760,
-        "sa": "안준영",
-        "dday": "D+1일"
-      },
-      {
         "item": "11427808443",
         "name": "Filt.Element",
         "alois": "O8",
@@ -6513,10 +6481,58 @@
         "val": 59364,
         "sa": "우종훈",
         "dday": "D+0일"
+      },
+      {
+        "item": "61278877427",
+        "name": "Cell module,",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001026",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 09:19:28",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 3299360,
+        "sa": "최민수",
+        "dday": "D+0일"
+      },
+      {
+        "item": "61278848677",
+        "name": "Electronic m",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001026",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 09:23:50",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 269110,
+        "sa": "최민수",
+        "dday": "D+0일"
+      },
+      {
+        "item": "61278843416",
+        "name": "Cell monitor",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001026",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 09:23:50",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 110055,
+        "sa": "최민수",
+        "dday": "D+0일"
       }
     ],
-    "count": 117,
-    "total_val": 31077594,
+    "count": 118,
+    "total_val": 34646279,
     "groups": [
       {
         "code": "RO",
@@ -7018,38 +7034,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "61627407273",
-            "name": "WIPER BLADE X3 Rear",
-            "alois": "OE",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001140",
-            "req_qty": 1,
-            "crt_qty": 16,
-            "avail_qty": 15,
-            "req_dt": "09-17",
-            "req_dt_full": "2026-09-17 18:35:58",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 24080,
-            "sa": "안준영",
-            "dday": "D+1일"
-          },
-          {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001140",
-            "req_qty": 1,
-            "crt_qty": 16,
-            "avail_qty": 14,
-            "req_dt": "09-17",
-            "req_dt_full": "2026-09-17 18:35:58",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 85760,
-            "sa": "안준영",
-            "dday": "D+1일"
-          },
-          {
             "item": "11427808443",
             "name": "Filt.Element",
             "alois": "O8",
@@ -7096,11 +7080,59 @@
             "val": 59364,
             "sa": "우종훈",
             "dday": "D+0일"
+          },
+          {
+            "item": "61278877427",
+            "name": "Cell module,",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001026",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 09:19:28",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 3299360,
+            "sa": "최민수",
+            "dday": "D+0일"
+          },
+          {
+            "item": "61278848677",
+            "name": "Electronic m",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001026",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 09:23:50",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 269110,
+            "sa": "최민수",
+            "dday": "D+0일"
+          },
+          {
+            "item": "61278843416",
+            "name": "Cell monitor",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001026",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 09:23:50",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 110055,
+            "sa": "최민수",
+            "dday": "D+0일"
           }
         ],
-        "count": 36,
-        "qty_sum": 69,
-        "val": 6878018
+        "count": 37,
+        "qty_sum": 70,
+        "val": 10446703
       },
       {
         "code": "SB",
@@ -7560,7 +7592,7 @@
             "ref_tp": "SB",
             "ref_no": "SB2608001800",
             "req_qty": 1,
-            "crt_qty": 16,
+            "crt_qty": 15,
             "avail_qty": 14,
             "req_dt": "08-26",
             "req_dt_full": "2026-08-26 17:15:37",
