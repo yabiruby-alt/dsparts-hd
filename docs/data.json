@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 16:46 기준",
+    "generated_at": "9월 18일 (금) · 17:00 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1206675567,
-    "item_count": 2191,
+    "total": 1206315282,
+    "item_count": 2188,
     "code_count": 25,
     "alois_groups": [
       {
@@ -251,7 +251,7 @@
           {
             "code": "A1",
             "val": 216768473,
-            "pct": 17.96,
+            "pct": 17.97,
             "qty": 2321
           },
           {
@@ -280,13 +280,13 @@
           },
           {
             "code": "A6",
-            "val": 93868879,
-            "pct": 7.78,
-            "qty": 1514
+            "val": 93701267,
+            "pct": 7.77,
+            "qty": 1511
           }
         ],
-        "subtotal_val": 475280531,
-        "subtotal_qty": 8710,
+        "subtotal_val": 475112919,
+        "subtotal_qty": 8707,
         "subtotal_pct": 39.39
       },
       {
@@ -332,13 +332,13 @@
           },
           {
             "code": "L7",
-            "val": 56261380,
-            "pct": 4.66,
-            "qty": 1346
+            "val": 56134897,
+            "pct": 4.65,
+            "qty": 1345
           }
         ],
-        "subtotal_val": 141956385,
-        "subtotal_qty": 4321,
+        "subtotal_val": 141829902,
+        "subtotal_qty": 4320,
         "subtotal_pct": 11.76
       },
       {
@@ -348,9 +348,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 65644117,
-            "pct": 5.44,
-            "qty": 1135
+            "val": 65323745,
+            "pct": 5.42,
+            "qty": 1133
           },
           {
             "code": "OA",
@@ -361,7 +361,7 @@
           {
             "code": "OE",
             "val": 304248766,
-            "pct": 25.21,
+            "pct": 25.22,
             "qty": 1145
           },
           {
@@ -377,9 +377,9 @@
             "qty": 203
           }
         ],
-        "subtotal_val": 430774136,
-        "subtotal_qty": 2722,
-        "subtotal_pct": 35.7
+        "subtotal_val": 430453764,
+        "subtotal_qty": 2720,
+        "subtotal_pct": 35.68
       },
       {
         "code": "I",
@@ -388,14 +388,14 @@
         "rows": [
           {
             "code": "II",
-            "val": 16538700,
-            "pct": 1.37,
-            "qty": 54
+            "val": 16792882,
+            "pct": 1.39,
+            "qty": 56
           }
         ],
-        "subtotal_val": 16538700,
-        "subtotal_qty": 54,
-        "subtotal_pct": 1.37
+        "subtotal_val": 16792882,
+        "subtotal_qty": 56,
+        "subtotal_pct": 1.39
       },
       {
         "code": "S",
@@ -435,7 +435,7 @@
           {
             "code": "SZ",
             "val": 85714948,
-            "pct": 7.1,
+            "pct": 7.11,
             "qty": 284
           }
         ],
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58959984,
-    "inv_total": 1206675567,
+    "inv_total": 1206315282,
     "pct": 4.89,
     "oa_val": 38566400,
     "ov_val": 20393584,
@@ -6590,22 +6590,6 @@
         "dday": "D+0일"
       },
       {
-        "item": "18307926575",
-        "name": "Seal",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001154",
-        "req_qty": 1,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 16:16:57",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 23808,
-        "sa": "이정환",
-        "dday": "D+0일"
-      },
-      {
         "item": "99985B94ED5",
         "name": "BMW ART BOLT(NEW)",
         "alois": "OE",
@@ -6619,22 +6603,6 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 9000,
         "sa": "박영묵",
-        "dday": "D+0일"
-      },
-      {
-        "item": "34116896652",
-        "name": "Brake disc F10",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001212",
-        "req_qty": 2,
-        "crt_qty": 6,
-        "avail_qty": 4,
-        "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 16:31:46",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 320372,
-        "sa": "우종훈",
         "dday": "D+0일"
       },
       {
@@ -6670,8 +6638,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 128,
-    "total_val": 34443213,
+    "count": 126,
+    "total_val": 34099033,
     "groups": [
       {
         "code": "RO",
@@ -7317,22 +7285,6 @@
             "dday": "D+0일"
           },
           {
-            "item": "18307926575",
-            "name": "Seal",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001154",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 16:16:57",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 23808,
-            "sa": "이정환",
-            "dday": "D+0일"
-          },
-          {
             "item": "99985B94ED5",
             "name": "BMW ART BOLT(NEW)",
             "alois": "OE",
@@ -7346,22 +7298,6 @@
             "req_brch": "AS_부산(해운중동)",
             "val": 9000,
             "sa": "박영묵",
-            "dday": "D+0일"
-          },
-          {
-            "item": "34116896652",
-            "name": "Brake disc F10",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001212",
-            "req_qty": 2,
-            "crt_qty": 6,
-            "avail_qty": 4,
-            "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 16:31:46",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 320372,
-            "sa": "우종훈",
             "dday": "D+0일"
           },
           {
@@ -7397,9 +7333,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 45,
-        "qty_sum": 58,
-        "val": 8984337
+        "count": 43,
+        "qty_sum": 55,
+        "val": 8640157
       },
       {
         "code": "SB",
@@ -9129,7 +9065,7 @@
         "item": "34116896652",
         "name": "Brake disc F10",
         "alois": "O8",
-        "qty": 6,
+        "qty": 4,
         "avail_qty": 4,
         "val": 640744
       },
