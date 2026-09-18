@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 11:13 기준",
+    "generated_at": "9월 18일 (금) · 11:24 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1214501972,
+    "total": 1214622686,
     "item_count": 2209,
     "code_count": 25,
     "alois_groups": [
@@ -250,44 +250,44 @@
         "rows": [
           {
             "code": "A1",
-            "val": 217890568,
-            "pct": 17.94,
-            "qty": 2343
+            "val": 217758011,
+            "pct": 17.93,
+            "qty": 2341
           },
           {
             "code": "A2",
-            "val": 15257094,
-            "pct": 1.26,
-            "qty": 1199
+            "val": 15197615,
+            "pct": 1.25,
+            "qty": 1197
           },
           {
             "code": "A3",
-            "val": 30040051,
+            "val": 29980818,
             "pct": 2.47,
-            "qty": 475
+            "qty": 474
           },
           {
             "code": "A4",
-            "val": 46625091,
-            "pct": 3.84,
-            "qty": 1916
+            "val": 46361580,
+            "pct": 3.82,
+            "qty": 1914
           },
           {
             "code": "A5",
-            "val": 73972116,
-            "pct": 6.09,
-            "qty": 1327
+            "val": 73686270,
+            "pct": 6.07,
+            "qty": 1325
           },
           {
             "code": "A6",
-            "val": 92940873,
-            "pct": 7.65,
-            "qty": 1512
+            "val": 93941252,
+            "pct": 7.73,
+            "qty": 1516
           }
         ],
-        "subtotal_val": 476725793,
-        "subtotal_qty": 8772,
-        "subtotal_pct": 39.25
+        "subtotal_val": 476925546,
+        "subtotal_qty": 8767,
+        "subtotal_pct": 39.27
       },
       {
         "code": "L",
@@ -296,15 +296,15 @@
         "rows": [
           {
             "code": "L1",
-            "val": 27041627,
-            "pct": 2.23,
-            "qty": 1825
+            "val": 26942323,
+            "pct": 2.22,
+            "qty": 1818
           },
           {
             "code": "L2",
-            "val": 8870806,
-            "pct": 0.73,
-            "qty": 224
+            "val": 8939453,
+            "pct": 0.74,
+            "qty": 225
           },
           {
             "code": "L3",
@@ -337,8 +337,8 @@
             "qty": 1352
           }
         ],
-        "subtotal_val": 144336332,
-        "subtotal_qty": 4374,
+        "subtotal_val": 144305675,
+        "subtotal_qty": 4368,
         "subtotal_pct": 11.88
       },
       {
@@ -348,9 +348,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 66844415,
+            "val": 66796033,
             "pct": 5.5,
-            "qty": 1144
+            "qty": 1142
           },
           {
             "code": "OA",
@@ -377,8 +377,8 @@
             "qty": 203
           }
         ],
-        "subtotal_val": 432057098,
-        "subtotal_qty": 2732,
+        "subtotal_val": 432008716,
+        "subtotal_qty": 2730,
         "subtotal_pct": 35.57
       },
       {
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58956888,
-    "inv_total": 1214501972,
+    "inv_total": 1214622686,
     "pct": 4.85,
     "oa_val": 38566400,
     "ov_val": 20390488,
@@ -6379,10 +6379,90 @@
         "val": 95948,
         "sa": "염진아",
         "dday": "D+0일"
+      },
+      {
+        "item": "36118747235",
+        "name": "Disc wheel l",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001165",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 11:14:58",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 746130,
+        "sa": "박영묵",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51119492876",
+        "name": "Trim cover,",
+        "alois": "O8",
+        "ref_tp": "SB",
+        "ref_no": "SB2609001379",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 11:23:23",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 961837,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51117449688",
+        "name": "Grill, side,",
+        "alois": "O8",
+        "ref_tp": "SB",
+        "ref_no": "SB2609001379",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 11:23:23",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 90525,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51117449692",
+        "name": "Chrome strip",
+        "alois": "O8",
+        "ref_tp": "SB",
+        "ref_no": "SB2609001379",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 11:23:23",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 73075,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51117421792",
+        "name": "Trim, bumper",
+        "alois": "O8",
+        "ref_tp": "SB",
+        "ref_no": "SB2609001379",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 11:23:23",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 258804,
+        "sa": "강충성",
+        "dday": "D+0일"
       }
     ],
-    "count": 110,
-    "total_val": 31443718,
+    "count": 115,
+    "total_val": 33574089,
     "groups": [
       {
         "code": "RO",
@@ -6866,11 +6946,27 @@
             "val": 95948,
             "sa": "염진아",
             "dday": "D+0일"
+          },
+          {
+            "item": "36118747235",
+            "name": "Disc wheel l",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001165",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 11:14:58",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 746130,
+            "sa": "박영묵",
+            "dday": "D+0일"
           }
         ],
-        "count": 30,
-        "qty_sum": 55,
-        "val": 7281882
+        "count": 31,
+        "qty_sum": 56,
+        "val": 8028012
       },
       {
         "code": "SB",
@@ -7482,11 +7578,75 @@
             "val": 681360,
             "sa": "M GARAGE",
             "dday": "D+1일"
+          },
+          {
+            "item": "51119492876",
+            "name": "Trim cover,",
+            "alois": "O8",
+            "ref_tp": "SB",
+            "ref_no": "SB2609001379",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 11:23:23",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 961837,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51117449688",
+            "name": "Grill, side,",
+            "alois": "O8",
+            "ref_tp": "SB",
+            "ref_no": "SB2609001379",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 11:23:23",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 90525,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51117449692",
+            "name": "Chrome strip",
+            "alois": "O8",
+            "ref_tp": "SB",
+            "ref_no": "SB2609001379",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 11:23:23",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 73075,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51117421792",
+            "name": "Trim, bumper",
+            "alois": "O8",
+            "ref_tp": "SB",
+            "ref_no": "SB2609001379",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 11:23:23",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 258804,
+            "sa": "강충성",
+            "dday": "D+0일"
           }
         ],
-        "count": 38,
-        "qty_sum": 68,
-        "val": 14407339
+        "count": 42,
+        "qty_sum": 72,
+        "val": 15791580
       },
       {
         "code": "SP",
@@ -8288,8 +8448,8 @@
       {
         "code": "O8",
         "in_val": 146230422,
-        "out_val": 119243059,
-        "net": 26987363
+        "out_val": 119291441,
+        "net": 26938981
       },
       {
         "code": "OA",
