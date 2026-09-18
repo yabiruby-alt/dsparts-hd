@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 09:54 기준",
+    "generated_at": "9월 18일 (금) · 10:05 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1222946395,
-    "item_count": 2248,
+    "total": 1222567582,
+    "item_count": 2246,
     "code_count": 25,
     "alois_groups": [
       {
@@ -250,14 +250,14 @@
         "rows": [
           {
             "code": "A1",
-            "val": 218559715,
-            "pct": 17.87,
-            "qty": 2354
+            "val": 218347181,
+            "pct": 17.86,
+            "qty": 2351
           },
           {
             "code": "A2",
             "val": 15346689,
-            "pct": 1.25,
+            "pct": 1.26,
             "qty": 1228
           },
           {
@@ -285,8 +285,8 @@
             "qty": 1521
           }
         ],
-        "subtotal_val": 477836842,
-        "subtotal_qty": 8838,
+        "subtotal_val": 477624308,
+        "subtotal_qty": 8835,
         "subtotal_pct": 39.07
       },
       {
@@ -296,9 +296,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 27514070,
-            "pct": 2.25,
-            "qty": 1858
+            "val": 27434638,
+            "pct": 2.24,
+            "qty": 1852
           },
           {
             "code": "L2",
@@ -337,8 +337,8 @@
             "qty": 1354
           }
         ],
-        "subtotal_val": 144973842,
-        "subtotal_qty": 4412,
+        "subtotal_val": 144894410,
+        "subtotal_qty": 4406,
         "subtotal_pct": 11.85
       },
       {
@@ -348,9 +348,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 68528527,
+            "val": 68443379,
             "pct": 5.6,
-            "qty": 1171
+            "qty": 1163
           },
           {
             "code": "OA",
@@ -361,7 +361,7 @@
           {
             "code": "OE",
             "val": 304813815,
-            "pct": 24.92,
+            "pct": 24.93,
             "qty": 1146
           },
           {
@@ -377,8 +377,8 @@
             "qty": 203
           }
         ],
-        "subtotal_val": 434220499,
-        "subtotal_qty": 2759,
+        "subtotal_val": 434135351,
+        "subtotal_qty": 2751,
         "subtotal_pct": 35.51
       },
       {
@@ -416,9 +416,9 @@
           },
           {
             "code": "SK",
-            "val": 32882297,
+            "val": 32880598,
             "pct": 2.69,
-            "qty": 853
+            "qty": 852
           },
           {
             "code": "SX",
@@ -439,15 +439,15 @@
             "qty": 287
           }
         ],
-        "subtotal_val": 134953605,
-        "subtotal_qty": 1484,
+        "subtotal_val": 134951906,
+        "subtotal_qty": 1483,
         "subtotal_pct": 11.04
       }
     ]
   },
   "oaov": {
     "total": 58956888,
-    "inv_total": 1222946395,
+    "inv_total": 1222567582,
     "pct": 4.82,
     "oa_val": 38566400,
     "ov_val": 20390488,
@@ -3481,14 +3481,6 @@
         "last_in": "2025-04-15"
       },
       {
-        "item": "52208129296",
-        "name": "WIRE-STRAP",
-        "alois": "O8",
-        "qty": 7,
-        "val": 56938,
-        "last_in": "2025-07-04"
-      },
-      {
         "item": "51148087189",
         "name": "BMW emblem 5",
         "alois": "O8",
@@ -4145,8 +4137,8 @@
         "last_in": "입고이력 없음"
       }
     ],
-    "m12_val": 63894153,
-    "m12_count": 225,
+    "m12_val": 63837215,
+    "m12_count": 224,
     "m12_pct": 5.22,
     "m24_items": [
       {
@@ -6165,38 +6157,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "63175A09227",
-        "name": "Holder, lamp",
-        "alois": "O8",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001022",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-17",
-        "req_dt_full": "2026-09-17 14:33:31",
-        "req_brch": "AS_포항",
-        "val": 37740,
-        "sa": "윤권식",
-        "dday": "D+1일"
-      },
-      {
-        "item": "52208129296",
-        "name": "WIRE-STRAP",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609000847",
-        "req_qty": 7,
-        "crt_qty": 7,
-        "avail_qty": 0,
-        "req_dt": "09-17",
-        "req_dt_full": "2026-09-17 14:33:31",
-        "req_brch": "AS_포항",
-        "val": 56938,
-        "sa": "윤권식",
-        "dday": "D+1일"
-      },
-      {
         "item": "33326760346",
         "name": "Hex bolt wit 1개만 먼저 꺼내줌",
         "alois": "OV",
@@ -6547,26 +6507,10 @@
         "val": 812850,
         "sa": "강충성",
         "dday": "D+0일"
-      },
-      {
-        "item": "34356791961",
-        "name": "Sensor",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609000814",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 09:50:40",
-        "req_brch": "AS_부산(전포)",
-        "val": 28210,
-        "sa": "김법룡",
-        "dday": "D+0일"
       }
     ],
-    "count": 121,
-    "total_val": 35548485,
+    "count": 118,
+    "total_val": 35425597,
     "groups": [
       {
         "code": "RO",
@@ -6908,22 +6852,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "52208129296",
-            "name": "WIRE-STRAP",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609000847",
-            "req_qty": 7,
-            "crt_qty": 7,
-            "avail_qty": 0,
-            "req_dt": "09-17",
-            "req_dt_full": "2026-09-17 14:33:31",
-            "req_brch": "AS_포항",
-            "val": 56938,
-            "sa": "윤권식",
-            "dday": "D+1일"
-          },
-          {
             "item": "33326760346",
             "name": "Hex bolt wit 1개만 먼저 꺼내줌",
             "alois": "OV",
@@ -7194,27 +7122,11 @@
             "val": 812850,
             "sa": "강충성",
             "dday": "D+0일"
-          },
-          {
-            "item": "34356791961",
-            "name": "Sensor",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609000814",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 09:50:40",
-            "req_brch": "AS_부산(전포)",
-            "val": 28210,
-            "sa": "김법룡",
-            "dday": "D+0일"
           }
         ],
-        "count": 40,
-        "qty_sum": 73,
-        "val": 11348909
+        "count": 38,
+        "qty_sum": 65,
+        "val": 11263761
       },
       {
         "code": "SB",
@@ -7748,22 +7660,6 @@
             "dday": "D+6일"
           },
           {
-            "item": "63175A09227",
-            "name": "Holder, lamp",
-            "alois": "O8",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001022",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-17",
-            "req_dt_full": "2026-09-17 14:33:31",
-            "req_brch": "AS_포항",
-            "val": 37740,
-            "sa": "윤권식",
-            "dday": "D+1일"
-          },
-          {
             "item": "34207889663",
             "name": "Brake disc,",
             "alois": "O8",
@@ -7844,9 +7740,9 @@
             "dday": "D+1일"
           }
         ],
-        "count": 39,
-        "qty_sum": 69,
-        "val": 14445079
+        "count": 38,
+        "qty_sum": 68,
+        "val": 14407339
       },
       {
         "code": "SP",
