@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 16:17 기준",
+    "generated_at": "9월 18일 (금) · 16:32 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1206244001,
+    "total": 1206780102,
     "item_count": 2191,
     "code_count": 25,
     "alois_groups": [
@@ -250,15 +250,15 @@
         "rows": [
           {
             "code": "A1",
-            "val": 216841208,
-            "pct": 17.98,
-            "qty": 2322
+            "val": 216768473,
+            "pct": 17.96,
+            "qty": 2321
           },
           {
             "code": "A2",
-            "val": 15071209,
+            "val": 15130688,
             "pct": 1.25,
-            "qty": 1184
+            "qty": 1186
           },
           {
             "code": "A3",
@@ -268,15 +268,15 @@
           },
           {
             "code": "A4",
-            "val": 45934386,
-            "pct": 3.81,
-            "qty": 1896
+            "val": 46197897,
+            "pct": 3.83,
+            "qty": 1898
           },
           {
             "code": "A5",
-            "val": 73284665,
-            "pct": 6.08,
-            "qty": 1321
+            "val": 73570511,
+            "pct": 6.1,
+            "qty": 1323
           },
           {
             "code": "A6",
@@ -285,9 +285,9 @@
             "qty": 1514
           }
         ],
-        "subtotal_val": 474848965,
-        "subtotal_qty": 8706,
-        "subtotal_pct": 39.37
+        "subtotal_val": 475385066,
+        "subtotal_qty": 8711,
+        "subtotal_pct": 39.39
       },
       {
         "code": "L",
@@ -339,7 +339,7 @@
         ],
         "subtotal_val": 141956385,
         "subtotal_qty": 4321,
-        "subtotal_pct": 11.77
+        "subtotal_pct": 11.76
       },
       {
         "code": "O",
@@ -361,7 +361,7 @@
           {
             "code": "OE",
             "val": 304248766,
-            "pct": 25.22,
+            "pct": 25.21,
             "qty": 1145
           },
           {
@@ -379,7 +379,7 @@
         ],
         "subtotal_val": 430774136,
         "subtotal_qty": 2722,
-        "subtotal_pct": 35.71
+        "subtotal_pct": 35.7
       },
       {
         "code": "I",
@@ -435,7 +435,7 @@
           {
             "code": "SZ",
             "val": 85714948,
-            "pct": 7.11,
+            "pct": 7.1,
             "qty": 284
           }
         ],
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58959984,
-    "inv_total": 1206244001,
+    "inv_total": 1206780102,
     "pct": 4.89,
     "oa_val": 38566400,
     "ov_val": 20393584,
@@ -2114,10 +2114,10 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 21218054,
-    "cost": 21461887,
-    "lines": 200,
-    "invoices_count": 115,
+    "total": 21511384,
+    "cost": 21755217,
+    "lines": 203,
+    "invoices_count": 117,
     "by_type": [
       {
         "code": "3",
@@ -2134,11 +2134,27 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 124,
-        "val": 11962624
+        "lines": 127,
+        "val": 12255954
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2609002007",
+        "num": "RO2609001021",
+        "cust": "성도경",
+        "dt": "2026-09-18 16:27",
+        "amt": 293330,
+        "cost": 293330
+      },
+      {
+        "inv": "IV2609002006",
+        "num": "RO2609001021",
+        "cust": "성도경",
+        "dt": "2026-09-18 16:23",
+        "amt": 0,
+        "cost": 0
+      },
       {
         "inv": "AR2609003759",
         "num": "SP2609000073",
@@ -2162,22 +2178,6 @@
         "dt": "2026-09-18 14:29",
         "amt": 70160,
         "cost": 68369
-      },
-      {
-        "inv": "IV2609001959",
-        "num": "RO2609001033",
-        "cust": "김도열",
-        "dt": "2026-09-18 14:09",
-        "amt": 0,
-        "cost": 7080
-      },
-      {
-        "inv": "IV2609001955",
-        "num": "RO2609001151",
-        "cust": "박세훈",
-        "dt": "2026-09-18 13:53",
-        "amt": 171850,
-        "cost": 189035
       }
     ]
   },
@@ -6604,10 +6604,58 @@
         "val": 23808,
         "sa": "이정환",
         "dday": "D+0일"
+      },
+      {
+        "item": "99985B94ED5",
+        "name": "BMW ART BOLT(NEW)",
+        "alois": "OE",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001208",
+        "req_qty": 1,
+        "crt_qty": 18,
+        "avail_qty": 17,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 16:23:18",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 9000,
+        "sa": "박영묵",
+        "dday": "D+0일"
+      },
+      {
+        "item": "34116896652",
+        "name": "Brake disc F10",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001212",
+        "req_qty": 2,
+        "crt_qty": 6,
+        "avail_qty": 4,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 16:31:46",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 320372,
+        "sa": "우종훈",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51129852168",
+        "name": "Grill front",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001210",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 16:33:46",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 263268,
+        "sa": "염진아",
+        "dday": "D+0일"
       }
     ],
-    "count": 124,
-    "total_val": 33794156,
+    "count": 127,
+    "total_val": 34386796,
     "groups": [
       {
         "code": "RO",
@@ -7267,11 +7315,59 @@
             "val": 23808,
             "sa": "이정환",
             "dday": "D+0일"
+          },
+          {
+            "item": "99985B94ED5",
+            "name": "BMW ART BOLT(NEW)",
+            "alois": "OE",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001208",
+            "req_qty": 1,
+            "crt_qty": 18,
+            "avail_qty": 17,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 16:23:18",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 9000,
+            "sa": "박영묵",
+            "dday": "D+0일"
+          },
+          {
+            "item": "34116896652",
+            "name": "Brake disc F10",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001212",
+            "req_qty": 2,
+            "crt_qty": 6,
+            "avail_qty": 4,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 16:31:46",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 320372,
+            "sa": "우종훈",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51129852168",
+            "name": "Grill front",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001210",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 16:33:46",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 263268,
+            "sa": "염진아",
+            "dday": "D+0일"
           }
         ],
-        "count": 41,
-        "qty_sum": 53,
-        "val": 8335280
+        "count": 44,
+        "qty_sum": 57,
+        "val": 8927920
       },
       {
         "code": "SB",
@@ -8910,14 +9006,6 @@
         "val": 971124
       },
       {
-        "item": "34116896652",
-        "name": "Brake disc F10",
-        "alois": "O8",
-        "qty": 6,
-        "avail_qty": 6,
-        "val": 961116
-      },
-      {
         "item": "90200007525",
         "name": "P-ZERO(*)(MO",
         "alois": "OE",
@@ -9004,6 +9092,14 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 669630
+      },
+      {
+        "item": "34116896652",
+        "name": "Brake disc F10",
+        "alois": "O8",
+        "qty": 6,
+        "avail_qty": 4,
+        "val": 640744
       },
       {
         "item": "34108842390",
@@ -9638,14 +9734,6 @@
         "val": 162008
       },
       {
-        "item": "99985B94ED5",
-        "name": "BMW ART BOLT(NEW)",
-        "alois": "OE",
-        "qty": 18,
-        "avail_qty": 18,
-        "val": 162000
-      },
-      {
         "item": "51472473480",
         "name": "Fitted lugga",
         "alois": "OV",
@@ -9684,6 +9772,14 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 153900
+      },
+      {
+        "item": "99985B94ED5",
+        "name": "BMW ART BOLT(NEW)",
+        "alois": "OE",
+        "qty": 18,
+        "avail_qty": 17,
+        "val": 153000
       },
       {
         "item": "51135A3D031",
@@ -12519,7 +12615,7 @@
       }
     ],
     "count": 487,
-    "total_val": 356746867
+    "total_val": 356417495
   },
   "oflow": {
     "rows": [
