@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 12:57 기준",
+    "generated_at": "9월 18일 (금) · 13:09 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1212455522,
+    "total": 1212390587,
     "item_count": 2207,
     "code_count": 25,
     "alois_groups": [
@@ -250,9 +250,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 217565142,
+            "val": 217500207,
             "pct": 17.94,
-            "qty": 2339
+            "qty": 2338
           },
           {
             "code": "A2",
@@ -285,9 +285,9 @@
             "qty": 1516
           }
         ],
-        "subtotal_val": 476703149,
-        "subtotal_qty": 8761,
-        "subtotal_pct": 39.32
+        "subtotal_val": 476638214,
+        "subtotal_qty": 8760,
+        "subtotal_pct": 39.31
       },
       {
         "code": "L",
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58956888,
-    "inv_total": 1212455522,
+    "inv_total": 1212390587,
     "pct": 4.86,
     "oa_val": 38566400,
     "ov_val": 20390488,
@@ -6475,10 +6475,58 @@
         "val": 85760,
         "sa": "김민규",
         "dday": "D+0일"
+      },
+      {
+        "item": "34106884002",
+        "name": "Brake disc,",
+        "alois": "O8",
+        "ref_tp": "SB",
+        "ref_no": "SB2609001385",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 13:00:42",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 220020,
+        "sa": "최민수",
+        "dday": "D+0일"
+      },
+      {
+        "item": "34106884001",
+        "name": "Brake disc,",
+        "alois": "O8",
+        "ref_tp": "SB",
+        "ref_no": "SB2609001385",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 13:00:42",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 220020,
+        "sa": "최민수",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51219491462",
+        "name": "Door handle,",
+        "alois": "O8",
+        "ref_tp": "SB",
+        "ref_no": "SB2607001204",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 13:05:40",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 89829,
+        "sa": "최민수",
+        "dday": "D+0일"
       }
     ],
-    "count": 116,
-    "total_val": 33659849,
+    "count": 119,
+    "total_val": 34189718,
     "groups": [
       {
         "code": "RO",
@@ -7674,11 +7722,59 @@
             "val": 258804,
             "sa": "강충성",
             "dday": "D+0일"
+          },
+          {
+            "item": "34106884002",
+            "name": "Brake disc,",
+            "alois": "O8",
+            "ref_tp": "SB",
+            "ref_no": "SB2609001385",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 13:00:42",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 220020,
+            "sa": "최민수",
+            "dday": "D+0일"
+          },
+          {
+            "item": "34106884001",
+            "name": "Brake disc,",
+            "alois": "O8",
+            "ref_tp": "SB",
+            "ref_no": "SB2609001385",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 13:00:42",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 220020,
+            "sa": "최민수",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51219491462",
+            "name": "Door handle,",
+            "alois": "O8",
+            "ref_tp": "SB",
+            "ref_no": "SB2607001204",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 13:05:40",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 89829,
+            "sa": "최민수",
+            "dday": "D+0일"
           }
         ],
-        "count": 42,
-        "qty_sum": 72,
-        "val": 15791580
+        "count": 45,
+        "qty_sum": 75,
+        "val": 16321449
       },
       {
         "code": "SP",
@@ -12371,19 +12467,19 @@
       {
         "date": "09-18",
         "in_val": 6457516,
-        "out_val": 0,
-        "net": 6457516
+        "out_val": 3340209,
+        "net": 3117307
       }
     ],
     "total_in": 170516132,
-    "total_out": 148180500,
-    "net": 22335632,
+    "total_out": 151520709,
+    "net": 18995423,
     "by_code": [
       {
         "code": "O8",
         "in_val": 146230422,
-        "out_val": 119309910,
-        "net": 26920512
+        "out_val": 122413869,
+        "net": 23816553
       },
       {
         "code": "OA",
@@ -12400,8 +12496,8 @@
       {
         "code": "OV",
         "in_val": 8498897,
-        "out_val": 1882541,
-        "net": 6616356
+        "out_val": 2118791,
+        "net": 6380106
       }
     ],
     "in_days": 13,
