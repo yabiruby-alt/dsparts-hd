@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 12:00 기준",
+    "generated_at": "9월 18일 (금) · 12:12 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -5204,7 +5204,7 @@
         "ref_no": "SB2608001800",
         "req_qty": 1,
         "crt_qty": 14,
-        "avail_qty": 13,
+        "avail_qty": 12,
         "req_dt": "08-26",
         "req_dt_full": "2026-08-26 17:15:37",
         "req_brch": "AS_부산(해운중동)",
@@ -6459,10 +6459,26 @@
         "val": 258804,
         "sa": "강충성",
         "dday": "D+0일"
+      },
+      {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "alois": "OE",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001182",
+        "req_qty": 1,
+        "crt_qty": 14,
+        "avail_qty": 12,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 12:06:58",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 85760,
+        "sa": "김민규",
+        "dday": "D+0일"
       }
     ],
-    "count": 115,
-    "total_val": 33574089,
+    "count": 116,
+    "total_val": 33659849,
     "groups": [
       {
         "code": "RO",
@@ -6962,11 +6978,27 @@
             "val": 746130,
             "sa": "박영묵",
             "dday": "D+0일"
+          },
+          {
+            "item": "64119382886",
+            "name": "MICROFILTER/",
+            "alois": "OE",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001182",
+            "req_qty": 1,
+            "crt_qty": 14,
+            "avail_qty": 12,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 12:06:58",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 85760,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 31,
-        "qty_sum": 56,
-        "val": 8028012
+        "count": 32,
+        "qty_sum": 57,
+        "val": 8113772
       },
       {
         "code": "SB",
@@ -7427,7 +7459,7 @@
             "ref_no": "SB2608001800",
             "req_qty": 1,
             "crt_qty": 14,
-            "avail_qty": 13,
+            "avail_qty": 12,
             "req_dt": "08-26",
             "req_dt_full": "2026-08-26 17:15:37",
             "req_brch": "AS_부산(해운중동)",
@@ -8573,14 +8605,6 @@
         "val": 1129436
       },
       {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "alois": "OE",
-        "qty": 14,
-        "avail_qty": 13,
-        "val": 1114880
-      },
-      {
         "item": "63115A7F385",
         "name": "Headlight ba",
         "alois": "OA",
@@ -8603,6 +8627,14 @@
         "qty": 150,
         "avail_qty": 150,
         "val": 1042500
+      },
+      {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "alois": "OE",
+        "qty": 14,
+        "avail_qty": 12,
+        "val": 1029120
       },
       {
         "item": "90200006496",
@@ -12230,7 +12262,7 @@
       }
     ],
     "count": 487,
-    "total_val": 357689627
+    "total_val": 357603867
   },
   "oflow": {
     "rows": [
