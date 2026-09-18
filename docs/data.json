@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 14:37 기준",
+    "generated_at": "9월 18일 (금) · 14:51 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1207439670,
-    "item_count": 2201,
+    "total": 1207196014,
+    "item_count": 2200,
     "code_count": 25,
     "alois_groups": [
       {
@@ -269,7 +269,7 @@
           {
             "code": "A4",
             "val": 45934386,
-            "pct": 3.8,
+            "pct": 3.81,
             "qty": 1896
           },
           {
@@ -296,9 +296,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 26378787,
-            "pct": 2.18,
-            "qty": 1781
+            "val": 26401471,
+            "pct": 2.19,
+            "qty": 1783
           },
           {
             "code": "L2",
@@ -332,14 +332,14 @@
           },
           {
             "code": "L7",
-            "val": 56892384,
-            "pct": 4.71,
-            "qty": 1348
+            "val": 56626044,
+            "pct": 4.69,
+            "qty": 1347
           }
         ],
-        "subtotal_val": 142564705,
-        "subtotal_qty": 4321,
-        "subtotal_pct": 11.81
+        "subtotal_val": 142321049,
+        "subtotal_qty": 4322,
+        "subtotal_pct": 11.79
       },
       {
         "code": "O",
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58965684,
-    "inv_total": 1207439670,
+    "inv_total": 1207196014,
     "pct": 4.88,
     "oa_val": 38566400,
     "ov_val": 20399284,
@@ -2121,10 +2121,10 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 20977204,
-    "cost": 21203852,
-    "lines": 197,
-    "invoices_count": 113,
+    "total": 21046204,
+    "cost": 21272852,
+    "lines": 198,
+    "invoices_count": 114,
     "by_type": [
       {
         "code": "3",
@@ -2141,11 +2141,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 123,
-        "val": 11893624
+        "lines": 124,
+        "val": 11962624
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2609001984",
+        "num": "RO2609000868",
+        "cust": "김종만",
+        "dt": "2026-09-18 14:43",
+        "amt": 69000,
+        "cost": 69000
+      },
       {
         "inv": "AR2609003758",
         "num": "SP2609000074",
@@ -2177,14 +2185,6 @@
         "dt": "2026-09-18 13:36",
         "amt": 2959761,
         "cost": 3391813
-      },
-      {
-        "inv": "IV2609001938",
-        "num": "RO2609001088",
-        "cust": "원병용",
-        "dt": "2026-09-18 13:20",
-        "amt": 0,
-        "cost": 7080
       }
     ]
   },
