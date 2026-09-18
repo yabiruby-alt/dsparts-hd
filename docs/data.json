@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 13:57 기준",
+    "generated_at": "9월 18일 (금) · 14:09 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1208036189,
+    "total": 1208032006,
     "item_count": 2203,
     "code_count": 25,
     "alois_groups": [
@@ -268,9 +268,9 @@
           },
           {
             "code": "A4",
-            "val": 45942069,
+            "val": 45937886,
             "pct": 3.8,
-            "qty": 1901
+            "qty": 1900
           },
           {
             "code": "A5",
@@ -285,8 +285,8 @@
             "qty": 1518
           }
         ],
-        "subtotal_val": 475531667,
-        "subtotal_qty": 8729,
+        "subtotal_val": 475527484,
+        "subtotal_qty": 8728,
         "subtotal_pct": 39.36
       },
       {
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58965684,
-    "inv_total": 1208036189,
+    "inv_total": 1208032006,
     "pct": 4.88,
     "oa_val": 38566400,
     "ov_val": 20399284,
@@ -2114,9 +2114,9 @@
   },
   "acc": {
     "total": 20907044,
-    "cost": 21128403,
-    "lines": 195,
-    "invoices_count": 111,
+    "cost": 21135483,
+    "lines": 196,
+    "invoices_count": 112,
     "by_type": [
       {
         "code": "3",
@@ -2133,11 +2133,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 122,
+        "lines": 123,
         "val": 11893624
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2609001959",
+        "num": "RO2609001033",
+        "cust": "김도열",
+        "dt": "2026-09-18 14:09",
+        "amt": 0,
+        "cost": 7080
+      },
       {
         "inv": "IV2609001955",
         "num": "RO2609001151",
@@ -2167,14 +2175,6 @@
         "num": "RO2609001093",
         "cust": "박창희",
         "dt": "2026-09-18 08:38",
-        "amt": 0,
-        "cost": 7080
-      },
-      {
-        "inv": "IV2609001878",
-        "num": "RO2609001092",
-        "cust": "임옥예",
-        "dt": "2026-09-17 18:52",
         "amt": 0,
         "cost": 7080
       }
