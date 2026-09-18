@@ -481,9 +481,11 @@ def build_o_daily_flow(recv_rows, turnover_rows, month_start, today_str):
 
     total_in = round(sum(r["in_val"] for r in rows))
     total_out = round(sum(r["out_val"] for r in rows))
+    in_days = sum(1 for r in rows if r["in_val"] > 0)
+    avg_in = round(total_in / in_days) if in_days else 0
     return {
         "rows": rows, "total_in": total_in, "total_out": total_out, "net": total_in - total_out,
-        "by_code": by_code,
+        "by_code": by_code, "in_days": in_days, "avg_in": avg_in,
     }
 
 

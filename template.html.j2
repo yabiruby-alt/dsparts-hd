@@ -686,10 +686,11 @@
           <span class="rank">01</span>
           <span class="eyebrow">이번달 O계열 입고(원가)</span>
           <span class="value">₩{{ '{:,}'.format(oflow.total_in) }}</span>
+          <span class="foot">일평균 ₩{{ '{:,}'.format(oflow.avg_in) }} (입고일 {{ oflow.in_days }}일 기준)</span>
         </div>
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
-          <span class="eyebrow">이번달 O계열 출고(원가)</span>
+          <span class="eyebrow">이번달 O계열 인보이스금액(원가)</span>
           <span class="value">₩{{ '{:,}'.format(oflow.total_out) }}</span>
           <span class="foot">순증감 {{ '+' if oflow.net >= 0 else '' }}₩{{ '{:,}'.format(oflow.net) }}</span>
         </div>
@@ -702,7 +703,7 @@
         </div>
         <div class="tablewrap">
           <table>
-            <thead><tr><th>등급</th><th class="num">입고금액</th><th class="num">출고금액</th><th class="num">순증감</th></tr></thead>
+            <thead><tr><th>등급</th><th class="num">입고금액</th><th class="num">인보이스금액</th><th class="num">순증감</th></tr></thead>
             <tbody>
               {% for r in oflow.by_code %}
               <tr><td><span class="aloistag oseries">{{ r.code }}</span></td><td class="num">{{ '{:,}'.format(r.in_val) }}</td><td class="num">{{ '{:,}'.format(r.out_val) }}</td><td class="num{{ ' neg' if r.net < 0 else '' }}">{{ '{:,}'.format(r.net) }}</td></tr>
@@ -722,7 +723,7 @@
         </div>
         <div class="tablewrap">
           <table>
-            <thead><tr><th>일자</th><th class="num">입고금액</th><th class="num">출고금액</th><th class="num">순증감</th></tr></thead>
+            <thead><tr><th>일자</th><th class="num">입고금액</th><th class="num">인보이스금액</th><th class="num">순증감</th></tr></thead>
             <tbody>
               {% for r in oflow.rows %}
               <tr><td class="mono">{{ r.date }}</td><td class="num">{{ '{:,}'.format(r.in_val) }}</td><td class="num">{{ '{:,}'.format(r.out_val) }}</td><td class="num{{ ' neg' if r.net < 0 else '' }}">{{ '{:,}'.format(r.net) }}</td></tr>

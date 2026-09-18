@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 10:11 기준",
+    "generated_at": "9월 18일 (금) · 10:18 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1222275078,
-    "item_count": 2243,
+    "total": 1221375152,
+    "item_count": 2242,
     "code_count": 25,
     "alois_groups": [
       {
@@ -250,21 +250,21 @@
         "rows": [
           {
             "code": "A1",
-            "val": 218347181,
-            "pct": 17.86,
-            "qty": 2351
+            "val": 218206261,
+            "pct": 17.87,
+            "qty": 2349
           },
           {
             "code": "A2",
-            "val": 15324459,
+            "val": 15300344,
             "pct": 1.25,
-            "qty": 1227
+            "qty": 1226
           },
           {
             "code": "A3",
-            "val": 30110509,
+            "val": 30041219,
             "pct": 2.46,
-            "qty": 478
+            "qty": 477
           },
           {
             "code": "A4",
@@ -285,9 +285,9 @@
             "qty": 1519
           }
         ],
-        "subtotal_val": 477460571,
-        "subtotal_qty": 8831,
-        "subtotal_pct": 39.06
+        "subtotal_val": 477226246,
+        "subtotal_qty": 8827,
+        "subtotal_pct": 39.07
       },
       {
         "code": "L",
@@ -296,9 +296,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 27343611,
+            "val": 27298243,
             "pct": 2.24,
-            "qty": 1846
+            "qty": 1842
           },
           {
             "code": "L2",
@@ -337,8 +337,8 @@
             "qty": 1354
           }
         ],
-        "subtotal_val": 144803383,
-        "subtotal_qty": 4400,
+        "subtotal_val": 144758015,
+        "subtotal_qty": 4396,
         "subtotal_pct": 11.85
       },
       {
@@ -360,9 +360,9 @@
           },
           {
             "code": "OE",
-            "val": 304813815,
-            "pct": 24.94,
-            "qty": 1146
+            "val": 304938000,
+            "pct": 24.97,
+            "qty": 1147
           },
           {
             "code": "ON",
@@ -377,9 +377,9 @@
             "qty": 203
           }
         ],
-        "subtotal_val": 434097611,
-        "subtotal_qty": 2750,
-        "subtotal_pct": 35.52
+        "subtotal_val": 434221796,
+        "subtotal_qty": 2751,
+        "subtotal_pct": 35.55
       },
       {
         "code": "I",
@@ -388,14 +388,14 @@
         "rows": [
           {
             "code": "II",
-            "val": 21896752,
-            "pct": 1.79,
-            "qty": 87
+            "val": 21159414,
+            "pct": 1.73,
+            "qty": 85
           }
         ],
-        "subtotal_val": 21896752,
-        "subtotal_qty": 87,
-        "subtotal_pct": 1.79
+        "subtotal_val": 21159414,
+        "subtotal_qty": 85,
+        "subtotal_pct": 1.73
       },
       {
         "code": "S",
@@ -422,9 +422,9 @@
           },
           {
             "code": "SX",
-            "val": 9123066,
+            "val": 9115986,
             "pct": 0.75,
-            "qty": 248
+            "qty": 247
           },
           {
             "code": "SY",
@@ -435,20 +435,20 @@
           {
             "code": "SZ",
             "val": 85857721,
-            "pct": 7.02,
+            "pct": 7.03,
             "qty": 287
           }
         ],
-        "subtotal_val": 134951906,
-        "subtotal_qty": 1483,
-        "subtotal_pct": 11.04
+        "subtotal_val": 134944826,
+        "subtotal_qty": 1482,
+        "subtotal_pct": 11.05
       }
     ]
   },
   "oaov": {
     "total": 58956888,
-    "inv_total": 1222275078,
-    "pct": 4.82,
+    "inv_total": 1221375152,
+    "pct": 4.83,
     "oa_val": 38566400,
     "ov_val": 20390488,
     "oa_lines": 104,
@@ -4139,7 +4139,7 @@
     ],
     "m12_val": 63837215,
     "m12_count": 224,
-    "m12_pct": 5.22,
+    "m12_pct": 5.23,
     "m24_items": [
       {
         "item": "24008741536",
@@ -8309,6 +8309,8 @@
         "out_val": 1882541,
         "net": 6616356
       }
-    ]
+    ],
+    "in_days": 13,
+    "avg_in": 13116626
   }
 }
