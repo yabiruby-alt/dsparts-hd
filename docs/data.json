@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 15:49 기준",
+    "generated_at": "9월 18일 (금) · 16:03 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1206866989,
-    "item_count": 2196,
+    "total": 1206393246,
+    "item_count": 2192,
     "code_count": 25,
     "alois_groups": [
       {
@@ -287,7 +287,7 @@
         ],
         "subtotal_val": 474998210,
         "subtotal_qty": 8717,
-        "subtotal_pct": 39.36
+        "subtotal_pct": 39.37
       },
       {
         "code": "L",
@@ -332,14 +332,14 @@
           },
           {
             "code": "L7",
-            "val": 56626044,
-            "pct": 4.69,
-            "qty": 1347
+            "val": 56261380,
+            "pct": 4.66,
+            "qty": 1346
           }
         ],
-        "subtotal_val": 142321049,
-        "subtotal_qty": 4322,
-        "subtotal_pct": 11.79
+        "subtotal_val": 141956385,
+        "subtotal_qty": 4321,
+        "subtotal_pct": 11.77
       },
       {
         "code": "O",
@@ -348,9 +348,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 65748614,
-            "pct": 5.45,
-            "qty": 1137
+            "val": 65644117,
+            "pct": 5.44,
+            "qty": 1135
           },
           {
             "code": "OA",
@@ -361,7 +361,7 @@
           {
             "code": "OE",
             "val": 304248766,
-            "pct": 25.21,
+            "pct": 25.22,
             "qty": 1145
           },
           {
@@ -377,9 +377,9 @@
             "qty": 203
           }
         ],
-        "subtotal_val": 430878633,
-        "subtotal_qty": 2724,
-        "subtotal_pct": 35.7
+        "subtotal_val": 430774136,
+        "subtotal_qty": 2722,
+        "subtotal_pct": 35.71
       },
       {
         "code": "I",
@@ -434,20 +434,20 @@
           },
           {
             "code": "SZ",
-            "val": 85719530,
-            "pct": 7.1,
-            "qty": 285
+            "val": 85714948,
+            "pct": 7.11,
+            "qty": 284
           }
         ],
-        "subtotal_val": 133065542,
-        "subtotal_qty": 1466,
+        "subtotal_val": 133060960,
+        "subtotal_qty": 1465,
         "subtotal_pct": 11.03
       }
     ]
   },
   "oaov": {
     "total": 58959984,
-    "inv_total": 1206866989,
+    "inv_total": 1206393246,
     "pct": 4.89,
     "oa_val": 38566400,
     "ov_val": 20393584,
@@ -6572,10 +6572,42 @@
         "val": 4599,
         "sa": "최민수",
         "dday": "D+0일"
+      },
+      {
+        "item": "90200006264",
+        "name": "275/40R18 99Y Cintu P7 r-f * MOE",
+        "alois": "OE",
+        "ref_tp": "SB",
+        "ref_no": "SB2609001414",
+        "req_qty": 2,
+        "crt_qty": 4,
+        "avail_qty": 2,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 15:54:21",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 857000,
+        "sa": "김민규",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51127389890",
+        "name": "Panel for bu",
+        "alois": "OA",
+        "ref_tp": "RO",
+        "ref_no": "RO2609000869",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 16:01:34",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 141723,
+        "sa": "강충성",
+        "dday": "D+0일"
       }
     ],
-    "count": 122,
-    "total_val": 32913348,
+    "count": 124,
+    "total_val": 33912071,
     "groups": [
       {
         "code": "RO",
@@ -7219,11 +7251,27 @@
             "val": 4599,
             "sa": "최민수",
             "dday": "D+0일"
+          },
+          {
+            "item": "51127389890",
+            "name": "Panel for bu",
+            "alois": "OA",
+            "ref_tp": "RO",
+            "ref_no": "RO2609000869",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 16:01:34",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 141723,
+            "sa": "강충성",
+            "dday": "D+0일"
           }
         ],
-        "count": 40,
-        "qty_sum": 52,
-        "val": 8311472
+        "count": 41,
+        "qty_sum": 53,
+        "val": 8453195
       },
       {
         "code": "SB",
@@ -7867,11 +7915,27 @@
             "val": 220020,
             "sa": "최민수",
             "dday": "D+0일"
+          },
+          {
+            "item": "90200006264",
+            "name": "275/40R18 99Y Cintu P7 r-f * MOE",
+            "alois": "OE",
+            "ref_tp": "SB",
+            "ref_no": "SB2609001414",
+            "req_qty": 2,
+            "crt_qty": 4,
+            "avail_qty": 2,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 15:54:21",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 857000,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 40,
-        "qty_sum": 70,
-        "val": 14847379
+        "count": 41,
+        "qty_sum": 72,
+        "val": 15704379
       },
       {
         "code": "SP",
@@ -8654,14 +8718,6 @@
         "val": 2364399
       },
       {
-        "item": "90200006264",
-        "name": "275/40R18 99Y Cintu P7 r-f * MOE",
-        "alois": "OE",
-        "qty": 4,
-        "avail_qty": 4,
-        "val": 1714000
-      },
-      {
         "item": "90200005796",
         "name": "275/40R18 99Y Cintu P7 r-f *",
         "alois": "OE",
@@ -8884,6 +8940,14 @@
         "qty": 2,
         "avail_qty": 2,
         "val": 860000
+      },
+      {
+        "item": "90200006264",
+        "name": "275/40R18 99Y Cintu P7 r-f * MOE",
+        "alois": "OE",
+        "qty": 4,
+        "avail_qty": 2,
+        "val": 857000
       },
       {
         "item": "51165A841A2",
@@ -12455,7 +12519,7 @@
       }
     ],
     "count": 487,
-    "total_val": 357603867
+    "total_val": 356746867
   },
   "oflow": {
     "rows": [
