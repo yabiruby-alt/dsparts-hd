@@ -435,6 +435,26 @@ def build_o_parts(rows, now):
     return {"items": items, "count": len(items), "total_val": round(sum(i["val"] for i in items)), "groups": groups}
 
 
+def build_o_available(pw_rows, committed_item_codes):
+    """ALOIS O계열 중 RO/SB/SP 어디에도 안 걸려있는 순수 가용재고 리스트."""
+    def val_fn(r):
+        return num(r.get("crtQty")) * num(r.get("movPrc"))
+
+    o_rows = [
+        r for r in pw_rows
+        if str(r.get("aloisCd") or "").startswith("O")
+        and num(r.get("crtQty")) > 0
+        and r.get("itemCd") not in committed_item_codes
+    ]
+    parts = sorted([{
+        "item": r.get("itemCd"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
+        "qty": int(num(r.get("crtQty"))), "avail_qty": int(num(r.get("ableQty"))),
+        "val": round(val_fn(r)),
+    } for r in o_rows], key=lambda i: i["val"], reverse=True)
+
+    return {"rows": parts, "count": len(parts), "total_val": round(sum(i["val"] for i in parts))}
+
+
 def build_o_daily_flow(recv_rows, turnover_rows, month_start, today_str):
     """이번달 O계열 파트 일자별 + 등급(ALOIS 코드)별 입고/출고 금액(원가 기준)."""
     in_by_day = defaultdict(float)
@@ -740,6 +760,8 @@ def run_cycle(page: Page) -> None:
     acc, tire = build_acc_tire(to_rows)
     longstock = build_longstock(pw_rows, inv["total"], now)
     opart = build_o_parts(req_rows, now)
+    o_committed = {i["item"] for i in opart["items"]}
+    oavail = build_o_available(pw_rows, o_committed)
     oflow = build_o_daily_flow(recv_month_rows, to_rows, month_start, today_str)
     calendar_image = next((f for f in CALENDAR_IMAGE_CANDIDATES if (DOCS_DIR / f).exists()), None)
 
@@ -747,7 +769,7 @@ def run_cycle(page: Page) -> None:
         "meta": {"branch_name": BRANCH_NAME, "brch_code": f"BRCH {BRCH_CD}", "generated_at": generated_at,
                  "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
-        "longstock": longstock, "opart": opart, "oflow": oflow,
+        "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow,
     }
 
     html = render(data)
