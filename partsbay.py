@@ -435,16 +435,16 @@ def build_o_parts(rows, now):
     return {"items": items, "count": len(items), "total_val": round(sum(i["val"] for i in items)), "groups": groups}
 
 
-def build_o_available(pw_rows, committed_item_codes):
-    """ALOIS O계열 중 RO/SB/SP 어디에도 안 걸려있는 순수 가용재고 리스트."""
+def build_o_available(pw_rows):
+    """ALOIS O계열 중 DMS 가용재고(ableQty) 기준 순수 가용분만.
+    ableQty는 DMS가 RO/SB/SP 등 모든 홀드를 이미 반영해 계산한 값이라, 이걸 직접 써야
+    "현재고 > 가용재고인데 전체수량이 가용으로 잡히는" 모순이 안 생김. 금액도 가용수량 기준."""
     def val_fn(r):
-        return num(r.get("crtQty")) * num(r.get("movPrc"))
+        return num(r.get("ableQty")) * num(r.get("movPrc"))
 
     o_rows = [
         r for r in pw_rows
-        if str(r.get("aloisCd") or "").startswith("O")
-        and num(r.get("crtQty")) > 0
-        and r.get("itemCd") not in committed_item_codes
+        if str(r.get("aloisCd") or "").startswith("O") and num(r.get("ableQty")) > 0
     ]
     parts = sorted([{
         "item": r.get("itemCd"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
@@ -760,8 +760,7 @@ def run_cycle(page: Page) -> None:
     acc, tire = build_acc_tire(to_rows)
     longstock = build_longstock(pw_rows, inv["total"], now)
     opart = build_o_parts(req_rows, now)
-    o_committed = {i["item"] for i in opart["items"]}
-    oavail = build_o_available(pw_rows, o_committed)
+    oavail = build_o_available(pw_rows)
     oflow = build_o_daily_flow(recv_month_rows, to_rows, month_start, today_str)
     calendar_image = next((f for f in CALENDAR_IMAGE_CANDIDATES if (DOCS_DIR / f).exists()), None)
 

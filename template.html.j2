@@ -711,16 +711,16 @@
         <div class="viewer-head">
           <span class="lbl">O파트 가용리스트</span>
           <span class="val">{{ oavail.count }}건</span>
-          <span class="foot">RO/SB/SP 어디에도 안 걸린 순수 가용재고 · ₩{{ '{:,}'.format(oavail.total_val) }} · 금액 큰 순</span>
+          <span class="foot">DMS 가용재고(ableQty) 기준 · 금액도 가용수량×원가 · ₩{{ '{:,}'.format(oavail.total_val) }} · 금액 큰 순</span>
         </div>
         <div class="tablewrap">
           <table>
-            <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">재고금액(원가)</th></tr></thead>
+            <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">가용재고금액(원가)</th></tr></thead>
             <tbody>
               {% for r in oavail.rows %}
               <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ r.avail_qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
               {% else %}
-              <tr><td colspan="6" class="empty-note">RO/SB/SP에 안 걸린 O계열 가용재고 없음</td></tr>
+              <tr><td colspan="6" class="empty-note">O계열 가용재고 없음</td></tr>
               {% endfor %}
             </tbody>
           </table>
