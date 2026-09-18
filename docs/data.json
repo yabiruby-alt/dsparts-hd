@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 14:23 기준",
+    "generated_at": "9월 18일 (금) · 14:37 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1207774498,
+    "total": 1207439670,
     "item_count": 2201,
     "code_count": 25,
     "alois_groups": [
@@ -251,7 +251,7 @@
           {
             "code": "A1",
             "val": 216934171,
-            "pct": 17.96,
+            "pct": 17.97,
             "qty": 2324
           },
           {
@@ -268,9 +268,9 @@
           },
           {
             "code": "A4",
-            "val": 45937886,
+            "val": 45934386,
             "pct": 3.8,
-            "qty": 1900
+            "qty": 1896
           },
           {
             "code": "A5",
@@ -280,14 +280,14 @@
           },
           {
             "code": "A6",
-            "val": 94077003,
+            "val": 94008634,
             "pct": 7.79,
-            "qty": 1516
+            "qty": 1515
           }
         ],
-        "subtotal_val": 475265714,
-        "subtotal_qty": 8725,
-        "subtotal_pct": 39.35
+        "subtotal_val": 475193845,
+        "subtotal_qty": 8720,
+        "subtotal_pct": 39.36
       },
       {
         "code": "L",
@@ -326,20 +326,20 @@
           },
           {
             "code": "L6",
-            "val": 29067355,
-            "pct": 2.41,
-            "qty": 267
+            "val": 28801015,
+            "pct": 2.39,
+            "qty": 266
           },
           {
             "code": "L7",
-            "val": 56894720,
+            "val": 56892384,
             "pct": 4.71,
-            "qty": 1349
+            "qty": 1348
           }
         ],
-        "subtotal_val": 142833381,
-        "subtotal_qty": 4323,
-        "subtotal_pct": 11.83
+        "subtotal_val": 142564705,
+        "subtotal_qty": 4321,
+        "subtotal_pct": 11.81
       },
       {
         "code": "O",
@@ -349,7 +349,7 @@
           {
             "code": "O8",
             "val": 65758950,
-            "pct": 5.44,
+            "pct": 5.45,
             "qty": 1141
           },
           {
@@ -361,7 +361,7 @@
           {
             "code": "OE",
             "val": 304248766,
-            "pct": 25.19,
+            "pct": 25.2,
             "qty": 1145
           },
           {
@@ -379,7 +379,7 @@
         ],
         "subtotal_val": 430894669,
         "subtotal_qty": 2730,
-        "subtotal_pct": 35.68
+        "subtotal_pct": 35.69
       },
       {
         "code": "I",
@@ -388,13 +388,13 @@
         "rows": [
           {
             "code": "II",
-            "val": 16532983,
+            "val": 16538700,
             "pct": 1.37,
-            "qty": 53
+            "qty": 54
           }
         ],
-        "subtotal_val": 16532983,
-        "subtotal_qty": 53,
+        "subtotal_val": 16538700,
+        "subtotal_qty": 54,
         "subtotal_pct": 1.37
       },
       {
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58965684,
-    "inv_total": 1207774498,
+    "inv_total": 1207439670,
     "pct": 4.88,
     "oa_val": 38566400,
     "ov_val": 20399284,
@@ -2012,13 +2012,21 @@
   },
   "ext": {
     "period": "2026-09-01 ~ 2026-09-18",
-    "total": 3395220,
-    "cost": 2484967,
-    "margin": 910253,
-    "valid_count": 9,
+    "total": 3465380,
+    "cost": 2553336,
+    "margin": 912044,
+    "valid_count": 10,
     "cancelled_count": 2,
-    "lines": 26,
+    "lines": 27,
     "top5": [
+      {
+        "inv": "AR2609003758",
+        "num": "SP2609000074",
+        "cust": "박태강(직원)",
+        "dt": "2026-09-18 14:29",
+        "amt": 70160,
+        "cost": 68369
+      },
       {
         "inv": "AR2609003754",
         "num": "SP2609000067",
@@ -2113,16 +2121,16 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 20907044,
-    "cost": 21135483,
-    "lines": 196,
-    "invoices_count": 112,
+    "total": 20977204,
+    "cost": 21203852,
+    "lines": 197,
+    "invoices_count": 113,
     "by_type": [
       {
         "code": "3",
         "label": "Car Accessories",
-        "lines": 73,
-        "val": 9013420
+        "lines": 74,
+        "val": 9083580
       },
       {
         "code": "5",
@@ -2138,6 +2146,14 @@
       }
     ],
     "recent5": [
+      {
+        "inv": "AR2609003758",
+        "num": "SP2609000074",
+        "cust": "박태강(직원)",
+        "dt": "2026-09-18 14:29",
+        "amt": 70160,
+        "cost": 68369
+      },
       {
         "inv": "IV2609001959",
         "num": "RO2609001033",
@@ -2167,14 +2183,6 @@
         "num": "RO2609001088",
         "cust": "원병용",
         "dt": "2026-09-18 13:20",
-        "amt": 0,
-        "cost": 7080
-      },
-      {
-        "inv": "IV2609001892",
-        "num": "RO2609001093",
-        "cust": "박창희",
-        "dt": "2026-09-18 08:38",
         "amt": 0,
         "cost": 7080
       }
@@ -6541,24 +6549,56 @@
         "dday": "D+0일"
       },
       {
-        "item": "13717645645",
-        "name": "Air-intake d",
+        "item": "11117587168",
+        "name": "Shaft seal",
         "alois": "O8",
         "ref_tp": "RO",
-        "ref_no": "RO2609001185",
+        "ref_no": "RO2609001076",
         "req_qty": 1,
         "crt_qty": 0,
         "avail_qty": 0,
         "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 14:18:22",
+        "req_dt_full": "2026-09-18 14:25:46",
         "req_brch": "AS_부산(해운중동)",
-        "val": 128691,
-        "sa": "이정환",
+        "val": 31947,
+        "sa": "최민수",
+        "dday": "D+0일"
+      },
+      {
+        "item": "11132210959",
+        "name": "Alu. screw",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001076",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:25:46",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 41099,
+        "sa": "최민수",
+        "dday": "D+0일"
+      },
+      {
+        "item": "11137559537",
+        "name": "Screw",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001076",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 14:25:46",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 4599,
+        "sa": "최민수",
         "dday": "D+0일"
       }
     ],
-    "count": 121,
-    "total_val": 32970094,
+    "count": 123,
+    "total_val": 32919048,
     "groups": [
       {
         "code": "RO",
@@ -7172,25 +7212,57 @@
             "dday": "D+0일"
           },
           {
-            "item": "13717645645",
-            "name": "Air-intake d",
+            "item": "11117587168",
+            "name": "Shaft seal",
             "alois": "O8",
             "ref_tp": "RO",
-            "ref_no": "RO2609001185",
+            "ref_no": "RO2609001076",
             "req_qty": 1,
             "crt_qty": 0,
             "avail_qty": 0,
             "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 14:18:22",
+            "req_dt_full": "2026-09-18 14:25:46",
             "req_brch": "AS_부산(해운중동)",
-            "val": 128691,
-            "sa": "이정환",
+            "val": 31947,
+            "sa": "최민수",
+            "dday": "D+0일"
+          },
+          {
+            "item": "11132210959",
+            "name": "Alu. screw",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001076",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:25:46",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 41099,
+            "sa": "최민수",
+            "dday": "D+0일"
+          },
+          {
+            "item": "11137559537",
+            "name": "Screw",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001076",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 14:25:46",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 4599,
+            "sa": "최민수",
             "dday": "D+0일"
           }
         ],
-        "count": 39,
-        "qty_sum": 52,
-        "val": 8368218
+        "count": 41,
+        "qty_sum": 54,
+        "val": 8317172
       },
       {
         "code": "SB",
@@ -12531,19 +12603,19 @@
       {
         "date": "09-18",
         "in_val": 6457516,
-        "out_val": 5043174,
-        "net": 1414342
+        "out_val": 7599470,
+        "net": -1141954
       }
     ],
     "total_in": 170516132,
-    "total_out": 152678958,
-    "net": 17837174,
+    "total_out": 155235254,
+    "net": 15280878,
     "by_code": [
       {
         "code": "O8",
         "in_val": 146230422,
-        "out_val": 123572118,
-        "net": 22658304
+        "out_val": 126128414,
+        "net": 20102008
       },
       {
         "code": "OA",
