@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 17:15 기준",
+    "generated_at": "9월 18일 (금) · 17:30 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1204837639,
+    "total": 1204609065,
     "item_count": 2182,
     "code_count": 25,
     "alois_groups": [
@@ -250,9 +250,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 216768473,
-            "pct": 17.99,
-            "qty": 2321
+            "val": 216635916,
+            "pct": 17.98,
+            "qty": 2319
           },
           {
             "code": "A2",
@@ -285,9 +285,9 @@
             "qty": 1511
           }
         ],
-        "subtotal_val": 474889033,
-        "subtotal_qty": 8698,
-        "subtotal_pct": 39.42
+        "subtotal_val": 474756476,
+        "subtotal_qty": 8696,
+        "subtotal_pct": 39.41
       },
       {
         "code": "L",
@@ -296,9 +296,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 26401471,
-            "pct": 2.19,
-            "qty": 1783
+            "val": 26305454,
+            "pct": 2.18,
+            "qty": 1777
           },
           {
             "code": "L2",
@@ -337,9 +337,9 @@
             "qty": 1344
           }
         ],
-        "subtotal_val": 141761209,
-        "subtotal_qty": 4318,
-        "subtotal_pct": 11.77
+        "subtotal_val": 141665192,
+        "subtotal_qty": 4312,
+        "subtotal_pct": 11.76
       },
       {
         "code": "O",
@@ -361,7 +361,7 @@
           {
             "code": "OE",
             "val": 304248766,
-            "pct": 25.25,
+            "pct": 25.26,
             "qty": 1145
           },
           {
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58959984,
-    "inv_total": 1204837639,
+    "inv_total": 1204609065,
     "pct": 4.89,
     "oa_val": 38566400,
     "ov_val": 20393584,
@@ -6636,10 +6636,42 @@
         "val": 56417,
         "sa": "김민규",
         "dday": "D+0일"
+      },
+      {
+        "item": "22116860496",
+        "name": "Engine mount",
+        "alois": "O8",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000075",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 17:31:02",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 162150,
+        "sa": "박태강",
+        "dday": "D+0일"
+      },
+      {
+        "item": "22116860495",
+        "name": "Engine mount",
+        "alois": "O8",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000075",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 17:31:02",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 162150,
+        "sa": "박태강",
+        "dday": "D+0일"
       }
     ],
-    "count": 126,
-    "total_val": 34099033,
+    "count": 128,
+    "total_val": 34423333,
     "groups": [
       {
         "code": "RO",
@@ -8675,11 +8707,43 @@
             "val": 137553,
             "sa": "김창열",
             "dday": "D+2일"
+          },
+          {
+            "item": "22116860496",
+            "name": "Engine mount",
+            "alois": "O8",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000075",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 17:31:02",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 162150,
+            "sa": "박태강",
+            "dday": "D+0일"
+          },
+          {
+            "item": "22116860495",
+            "name": "Engine mount",
+            "alois": "O8",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000075",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 17:31:02",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 162150,
+            "sa": "박태강",
+            "dday": "D+0일"
           }
         ],
-        "count": 42,
-        "qty_sum": 88,
-        "val": 9754497
+        "count": 44,
+        "qty_sum": 90,
+        "val": 10078797
       }
     ]
   },
