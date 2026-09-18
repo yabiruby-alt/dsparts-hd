@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 16:32 기준",
+    "generated_at": "9월 18일 (금) · 16:46 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1206780102,
+    "total": 1206675567,
     "item_count": 2191,
     "code_count": 25,
     "alois_groups": [
@@ -274,9 +274,9 @@
           },
           {
             "code": "A5",
-            "val": 73570511,
-            "pct": 6.1,
-            "qty": 1323
+            "val": 73465976,
+            "pct": 6.09,
+            "qty": 1322
           },
           {
             "code": "A6",
@@ -285,8 +285,8 @@
             "qty": 1514
           }
         ],
-        "subtotal_val": 475385066,
-        "subtotal_qty": 8711,
+        "subtotal_val": 475280531,
+        "subtotal_qty": 8710,
         "subtotal_pct": 39.39
       },
       {
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58959984,
-    "inv_total": 1206780102,
+    "inv_total": 1206675567,
     "pct": 4.89,
     "oa_val": 38566400,
     "ov_val": 20393584,
@@ -6652,10 +6652,26 @@
         "val": 263268,
         "sa": "염진아",
         "dday": "D+0일"
+      },
+      {
+        "item": "34356791960",
+        "name": "Sensor",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2608001644",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 16:45:22",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 56417,
+        "sa": "김민규",
+        "dday": "D+0일"
       }
     ],
-    "count": 127,
-    "total_val": 34386796,
+    "count": 128,
+    "total_val": 34443213,
     "groups": [
       {
         "code": "RO",
@@ -7363,11 +7379,27 @@
             "val": 263268,
             "sa": "염진아",
             "dday": "D+0일"
+          },
+          {
+            "item": "34356791960",
+            "name": "Sensor",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2608001644",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 16:45:22",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 56417,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 44,
-        "qty_sum": 57,
-        "val": 8927920
+        "count": 45,
+        "qty_sum": 58,
+        "val": 8984337
       },
       {
         "code": "SB",
@@ -10846,14 +10878,6 @@
         "val": 56780
       },
       {
-        "item": "34356791960",
-        "name": "Sensor",
-        "alois": "O8",
-        "qty": 1,
-        "avail_qty": 1,
-        "val": 56417
-      },
-      {
         "item": "63147323185",
         "name": "Rear fog lam",
         "alois": "O8",
@@ -12614,8 +12638,8 @@
         "val": 0
       }
     ],
-    "count": 487,
-    "total_val": 356417495
+    "count": 486,
+    "total_val": 356361078
   },
   "oflow": {
     "rows": [
