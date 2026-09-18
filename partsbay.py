@@ -181,7 +181,7 @@ def extract_receiving_range(page: Page, start_str: str, end_str: str) -> list:
     click_menu(page, "icon-parts", "입고현황")
     frame = wait_for_frame(page, "selectWhStatusMain")
     body = {
-        "recordCountPerPage": 20000, "pageIndex": 1,
+        "recordCountPerPage": 200000, "pageIndex": 1,
         "sRealWhDtFrom": start_str, "sRealWhDtTo": end_str,
         "sBpNm": "", "sItemCd": "", "sWhNo": "", "sPurcOrderNo": "",
         "sAloisCd": "", "sWhTp": "", "sWhStat": "", "sGrnNoFrom": "", "sGrnNoTo": "",
@@ -200,13 +200,11 @@ def extract_inventory(page: Page) -> list:
     return fetch_rows(frame, "/parts/inventory/selectInventoryList.do", body)
 
 
-def extract_turnover(page: Page, month_start: str, today_str: str) -> list:
-    click_menu(page, "icon-report", "Turn Over 리포트")
-    frame = wait_for_frame(page, "selectDLRTurnOver")
-    body = {
-        "recordCountPerPage": 20000, "pageIndex": 1,
-        "sSearchStartDt": f"{month_start}T00:00:00.000Z",
-        "sSearchEndDt": f"{today_str}T23:59:59.000Z",
+def _turnover_body(start_str: str, end_str: str) -> dict:
+    return {
+        "recordCountPerPage": 200000, "pageIndex": 1,
+        "sSearchStartDt": f"{start_str}T00:00:00.000Z",
+        "sSearchEndDt": f"{end_str}T23:59:59.000Z",
         "sBrands": [], "sSeriesList": [], "sCarNo": "", "sVinNo": "",
         "sCustTp": "", "sCustNo": "", "sCustNm": "",
         "sDlrCd": DEALER_CD, "sBrchCdList": [BRCH_CD], "sSaList": [], "sRoDocNo": "",
@@ -214,7 +212,12 @@ def extract_turnover(page: Page, month_start: str, today_str: str) -> list:
         "sIctTradeYn": "", "sItemTpCd": "", "sItemCd": "", "sItemNm": "", "sProdType": "전체",
         "sAloiscd": "", "sRclCampnCdYn": "", "sCampnYn": "", "sCupnCdYn": "", "sSvcTypess": [],
     }
-    return fetch_rows(frame, "/rpt/raw/selectDLRTurnOver.do", body)
+
+
+def extract_turnover(page: Page, month_start: str, today_str: str) -> list:
+    click_menu(page, "icon-report", "Turn Over 리포트")
+    frame = wait_for_frame(page, "selectDLRTurnOver")
+    return fetch_rows(frame, "/rpt/raw/selectDLRTurnOver.do", _turnover_body(month_start, today_str))
 
 
 def extract_part_requests(page: Page) -> list:
