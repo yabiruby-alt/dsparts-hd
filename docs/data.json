@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 11:49 기준",
+    "generated_at": "9월 18일 (금) · 12:00 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1212535568,
-    "item_count": 2209,
+    "total": 1212455522,
+    "item_count": 2207,
     "code_count": 25,
     "alois_groups": [
       {
@@ -287,7 +287,7 @@
         ],
         "subtotal_val": 476703149,
         "subtotal_qty": 8761,
-        "subtotal_pct": 39.31
+        "subtotal_pct": 39.32
       },
       {
         "code": "L",
@@ -326,19 +326,19 @@
           },
           {
             "code": "L6",
-            "val": 29659447,
+            "val": 29647855,
             "pct": 2.45,
-            "qty": 270
+            "qty": 269
           },
           {
             "code": "L7",
-            "val": 57104787,
+            "val": 57054802,
             "pct": 4.71,
-            "qty": 1352
+            "qty": 1351
           }
         ],
-        "subtotal_val": 144178486,
-        "subtotal_qty": 4360,
+        "subtotal_val": 144116909,
+        "subtotal_qty": 4358,
         "subtotal_pct": 11.89
       },
       {
@@ -348,9 +348,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 66796033,
+            "val": 66777564,
             "pct": 5.51,
-            "qty": 1142
+            "qty": 1141
           },
           {
             "code": "OA",
@@ -377,8 +377,8 @@
             "qty": 203
           }
         ],
-        "subtotal_val": 432008716,
-        "subtotal_qty": 2730,
+        "subtotal_val": 431990247,
+        "subtotal_qty": 2729,
         "subtotal_pct": 35.63
       },
       {
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58956888,
-    "inv_total": 1212535568,
+    "inv_total": 1212455522,
     "pct": 4.86,
     "oa_val": 38566400,
     "ov_val": 20390488,
@@ -4139,7 +4139,7 @@
     ],
     "m12_val": 63837215,
     "m12_count": 224,
-    "m12_pct": 5.26,
+    "m12_pct": 5.27,
     "m24_items": [
       {
         "item": "24008741536",
@@ -10965,14 +10965,6 @@
         "val": 38475
       },
       {
-        "item": "11628519885",
-        "name": "Clamp",
-        "alois": "O8",
-        "qty": 2,
-        "avail_qty": 2,
-        "val": 36938
-      },
-      {
         "item": "51115A32348",
         "name": "Impact absor",
         "alois": "O8",
@@ -11637,6 +11629,14 @@
         "val": 18557
       },
       {
+        "item": "11628519885",
+        "name": "Clamp",
+        "alois": "O8",
+        "qty": 1,
+        "avail_qty": 1,
+        "val": 18469
+      },
+      {
         "item": "71215B6CB18",
         "name": "Sign, RESCUE",
         "alois": "O8",
@@ -12230,7 +12230,7 @@
       }
     ],
     "count": 487,
-    "total_val": 357708096
+    "total_val": 357689627
   },
   "oflow": {
     "rows": [
@@ -12350,8 +12350,8 @@
       {
         "code": "O8",
         "in_val": 146230422,
-        "out_val": 119291441,
-        "net": 26938981
+        "out_val": 119309910,
+        "net": 26920512
       },
       {
         "code": "OA",
