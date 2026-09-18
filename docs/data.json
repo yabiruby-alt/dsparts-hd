@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 17:30 기준",
+    "generated_at": "9월 18일 (금) · 17:46 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1204609065,
+    "total": 1204589473,
     "item_count": 2182,
     "code_count": 25,
     "alois_groups": [
@@ -296,9 +296,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 26305454,
+            "val": 26285862,
             "pct": 2.18,
-            "qty": 1777
+            "qty": 1775
           },
           {
             "code": "L2",
@@ -337,8 +337,8 @@
             "qty": 1344
           }
         ],
-        "subtotal_val": 141665192,
-        "subtotal_qty": 4312,
+        "subtotal_val": 141645600,
+        "subtotal_qty": 4310,
         "subtotal_pct": 11.76
       },
       {
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58959984,
-    "inv_total": 1204609065,
+    "inv_total": 1204589473,
     "pct": 4.89,
     "oa_val": 38566400,
     "ov_val": 20393584,
@@ -6668,10 +6668,42 @@
         "val": 162150,
         "sa": "박태강",
         "dday": "D+0일"
+      },
+      {
+        "item": "51118068939",
+        "name": "Trim cover,",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001215",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 17:35:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 1083673,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "66209270495",
+        "name": "PDC sensor",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001215",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 17:35:07",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 152154,
+        "sa": "강충성",
+        "dday": "D+0일"
       }
     ],
-    "count": 128,
-    "total_val": 34423333,
+    "count": 130,
+    "total_val": 35659160,
     "groups": [
       {
         "code": "RO",
@@ -7363,11 +7395,43 @@
             "val": 56417,
             "sa": "김민규",
             "dday": "D+0일"
+          },
+          {
+            "item": "51118068939",
+            "name": "Trim cover,",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001215",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 17:35:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 1083673,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "66209270495",
+            "name": "PDC sensor",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001215",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 17:35:07",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 152154,
+            "sa": "강충성",
+            "dday": "D+0일"
           }
         ],
-        "count": 43,
-        "qty_sum": 55,
-        "val": 8640157
+        "count": 45,
+        "qty_sum": 57,
+        "val": 9875984
       },
       {
         "code": "SB",
