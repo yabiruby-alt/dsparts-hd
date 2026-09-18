@@ -28,7 +28,7 @@ try:
 except Exception:
     pass
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -170,6 +170,19 @@ def extract_receiving(page: Page, today_str: str) -> list:
     body = {
         "recordCountPerPage": 5000, "pageIndex": 1,
         "sRealWhDtFrom": today_str, "sRealWhDtTo": today_str,
+        "sBpNm": "", "sItemCd": "", "sWhNo": "", "sPurcOrderNo": "",
+        "sAloisCd": "", "sWhTp": "", "sWhStat": "", "sGrnNoFrom": "", "sGrnNoTo": "",
+    }
+    return fetch_rows(frame, "/parts/whmng/selectWhStatusMain.do", body)
+
+
+def extract_receiving_range(page: Page, start_str: str, end_str: str) -> list:
+    """입고현황을 날짜 범위(예: 이번달 1일~오늘)로 조회. O파트 입출고 내역 메뉴용."""
+    click_menu(page, "icon-parts", "입고현황")
+    frame = wait_for_frame(page, "selectWhStatusMain")
+    body = {
+        "recordCountPerPage": 20000, "pageIndex": 1,
+        "sRealWhDtFrom": start_str, "sRealWhDtTo": end_str,
         "sBpNm": "", "sItemCd": "", "sWhNo": "", "sPurcOrderNo": "",
         "sAloisCd": "", "sWhTp": "", "sWhStat": "", "sGrnNoFrom": "", "sGrnNoTo": "",
     }
@@ -419,6 +432,43 @@ def build_o_parts(rows, now):
     return {"items": items, "count": len(items), "total_val": round(sum(i["val"] for i in items)), "groups": groups}
 
 
+def build_o_daily_flow(recv_rows, turnover_rows, month_start, today_str):
+    """이번달 O계열 파트 일자별 입고/출고 금액(원가 기준)."""
+    in_by_day = defaultdict(float)
+    for r in recv_rows:
+        if not str(r.get("aloisCd") or "").startswith("O"):
+            continue
+        d = (r.get("realWhDt") or "")[:10]
+        if d:
+            in_by_day[d] += num(r.get("purcAmt"))
+
+    out_by_day = defaultdict(float)
+    for r in turnover_rows:
+        if not str(r.get("aloisCd") or "").startswith("O"):
+            continue
+        d = (r.get("invDt") or "")[:10]
+        if d:
+            out_by_day[d] += num(r.get("oriSumAmt"))
+
+    start_d = datetime.strptime(month_start, "%Y-%m-%d").date()
+    end_d = datetime.strptime(today_str, "%Y-%m-%d").date()
+    all_days = []
+    d = start_d
+    while d <= end_d:
+        all_days.append(d.strftime("%Y-%m-%d"))
+        d += timedelta(days=1)
+
+    rows = []
+    for d in all_days:
+        in_val = round(in_by_day.get(d, 0.0))
+        out_val = round(out_by_day.get(d, 0.0))
+        rows.append({"date": d[5:10], "in_val": in_val, "out_val": out_val, "net": in_val - out_val})
+
+    total_in = round(sum(r["in_val"] for r in rows))
+    total_out = round(sum(r["out_val"] for r in rows))
+    return {"rows": rows, "total_in": total_in, "total_out": total_out, "net": total_in - total_out}
+
+
 def _num_of(r):
     return r.get("parInvNo") or r.get("roNo") or ""
 
@@ -656,6 +706,8 @@ def run_cycle(page: Page) -> None:
     to_rows = extract_turnover(page, month_start, today_str)
     print(" - 출고요청관리 (O계열 RO/SB/SP)")
     req_rows = extract_part_requests(page)
+    print(" - 입고현황 (당월, O파트 입출고 내역용)")
+    recv_month_rows = extract_receiving_range(page, month_start, today_str)
 
     print("집계 중...")
     recv = build_recv(recv_rows, today_str)
@@ -665,13 +717,14 @@ def run_cycle(page: Page) -> None:
     acc, tire = build_acc_tire(to_rows)
     longstock = build_longstock(pw_rows, inv["total"], now)
     opart = build_o_parts(req_rows, now)
+    oflow = build_o_daily_flow(recv_month_rows, to_rows, month_start, today_str)
     calendar_image = next((f for f in CALENDAR_IMAGE_CANDIDATES if (DOCS_DIR / f).exists()), None)
 
     data = {
         "meta": {"branch_name": BRANCH_NAME, "brch_code": f"BRCH {BRCH_CD}", "generated_at": generated_at,
                  "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
-        "longstock": longstock, "opart": opart,
+        "longstock": longstock, "opart": opart, "oflow": oflow,
     }
 
     html = render(data)

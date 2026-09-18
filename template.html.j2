@@ -250,6 +250,10 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9h12M9 3v12"/><circle cx="9" cy="9" r="7"/></svg>
         O파트 현황
       </button>
+      <button class="sb-item" id="nav-oflow" aria-current="false" onclick="selectPage('oflow')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12 7 7l3 3 5-6"/><path d="M12 4h3v3"/></svg>
+        O파트 입출고 내역
+      </button>
       <button class="sb-item" id="nav-calendar" aria-current="false" onclick="selectPage('calendar')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="14" height="13" rx="1.5"/><path d="M2 7h14"/><path d="M6 2v3M12 2v3"/></svg>
         팀 캘린더
@@ -670,6 +674,46 @@
       </div>
     </section>
 
+    <section id="page-oflow" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>O파트 입출고 내역</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 이번달 · 원가 기준</div>
+      </div>
+
+      <div class="kpistrip">
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">01</span>
+          <span class="eyebrow">이번달 O계열 입고(원가)</span>
+          <span class="value">₩{{ '{:,}'.format(oflow.total_in) }}</span>
+        </div>
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">02</span>
+          <span class="eyebrow">이번달 O계열 출고(원가)</span>
+          <span class="value">₩{{ '{:,}'.format(oflow.total_out) }}</span>
+          <span class="foot">순증감 {{ '+' if oflow.net >= 0 else '' }}₩{{ '{:,}'.format(oflow.net) }}</span>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">일자별 O계열 입출고 세부</span>
+          <span class="foot">원가(구매금액/품목원가합계) 기준 · 이번달 1일~오늘</span>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>일자</th><th class="num">입고금액</th><th class="num">출고금액</th><th class="num">순증감</th></tr></thead>
+            <tbody>
+              {% for r in oflow.rows %}
+              <tr><td class="mono">{{ r.date }}</td><td class="num">{{ '{:,}'.format(r.in_val) }}</td><td class="num">{{ '{:,}'.format(r.out_val) }}</td><td class="num{{ ' neg' if r.net < 0 else '' }}">{{ '{:,}'.format(r.net) }}</td></tr>
+              {% endfor %}
+              <tr class="subtotal"><td>합계</td><td class="num">{{ '{:,}'.format(oflow.total_in) }}</td><td class="num">{{ '{:,}'.format(oflow.total_out) }}</td><td class="num{{ ' neg' if oflow.net < 0 else '' }}">{{ '{:,}'.format(oflow.net) }}</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section id="page-calendar" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>팀 캘린더</b></span>
@@ -694,7 +738,7 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  function selectPage(key){ ['today','external','accessory','oaov','longstock','opart','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); document.querySelector('.maininner').classList.toggle('wide', key==='calendar'); }
+  function selectPage(key){ ['today','external','accessory','oaov','longstock','opart','oflow','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); document.querySelector('.maininner').classList.toggle('wide', key==='calendar'); }
   function toggleAloisGroup(headEl){
     var key = headEl.getAttribute('data-group');
     var table = headEl.closest('table');

@@ -221,6 +221,10 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9h12M9 3v12"/><circle cx="9" cy="9" r="7"/></svg>
         O파트 현황
       </button>
+      <button class="sb-item" id="nav-oflow" aria-current="false" onclick="selectPage('oflow')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12 7 7l3 3 5-6"/><path d="M12 4h3v3"/></svg>
+        O파트 입출고 내역
+      </button>
       <button class="sb-item" id="nav-calendar" aria-current="false" onclick="selectPage('calendar')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="14" height="13" rx="1.5"/><path d="M2 7h14"/><path d="M6 2v3M12 2v3"/></svg>
         팀 캘린더
@@ -228,7 +232,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 18일 (금) · 09:35 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 18일 (금) · 09:46 기준</div>
   </nav>
 
   <main class="main">
@@ -237,7 +241,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 18일 (금) · 09:35 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 18일 (금) · 09:46 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -251,8 +255,8 @@
         <button class="kpitile" id="tile-inv" onclick="selectKpi('inv')" aria-pressed="false">
           <span class="rank">02</span>
           <span class="eyebrow">재고금액 · 부품창고</span>
-          <span class="value">₩1,224,817,416</span>
-          <span class="foot">2256품목 · 25개 코드</span>
+          <span class="value">₩1,223,345,341</span>
+          <span class="foot">2250품목 · 25개 코드</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
       </div>
@@ -477,8 +481,8 @@
         <div id="detail-inv" hidden>
           <div class="viewer-head">
             <span class="lbl">재고금액 세부</span>
-            <span class="val">₩1,224,817,416</span>
-            <span class="foot">2256품목 · 부품창고</span>
+            <span class="val">₩1,223,345,341</span>
+            <span class="foot">2250품목 · 부품창고</span>
           </div>
           <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
           <div class="tablewrap"><table>
@@ -495,9 +499,9 @@
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A1</span></td>
-      <td class="num">2,357</td>
-      <td class="num">218,654,293</td>
-      <td class="num">17.85%</td>
+      <td class="num">2,356</td>
+      <td class="num">218,647,565</td>
+      <td class="num">17.87%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
@@ -523,23 +527,23 @@
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A5</span></td>
-      <td class="num">1,334</td>
-      <td class="num">74,445,060</td>
-      <td class="num">6.08%</td>
+      <td class="num">1,333</td>
+      <td class="num">74,118,529</td>
+      <td class="num">6.06%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A6</span></td>
-      <td class="num">1,527</td>
-      <td class="num">94,055,967</td>
-      <td class="num">7.68%</td>
+      <td class="num">1,526</td>
+      <td class="num">93,111,150</td>
+      <td class="num">7.61%</td>
     </tr>
     
     <tr class="subtotal">
       <td>A 합계</td>
-      <td class="num">8,849</td>
-      <td class="num">479,273,288</td>
-      <td class="num">39.13%</td>
+      <td class="num">8,846</td>
+      <td class="num">477,995,212</td>
+      <td class="num">39.07%</td>
     </tr>
     
     
@@ -549,14 +553,14 @@
       <td><span class="aloistag">L1</span></td>
       <td class="num">1,863</td>
       <td class="num">27,593,503</td>
-      <td class="num">2.25%</td>
+      <td class="num">2.26%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L2</span></td>
       <td class="num">224</td>
       <td class="num">8,870,806</td>
-      <td class="num">0.72%</td>
+      <td class="num">0.73%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
@@ -589,16 +593,16 @@
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L7</span></td>
-      <td class="num">1,356</td>
-      <td class="num">58,398,710</td>
-      <td class="num">4.77%</td>
+      <td class="num">1,355</td>
+      <td class="num">57,280,685</td>
+      <td class="num">4.68%</td>
     </tr>
     
     <tr class="subtotal">
       <td>L 합계</td>
-      <td class="num">4,419</td>
-      <td class="num">146,246,683</td>
-      <td class="num">11.94%</td>
+      <td class="num">4,418</td>
+      <td class="num">145,128,658</td>
+      <td class="num">11.86%</td>
     </tr>
     
     
@@ -606,8 +610,8 @@
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">O8</span></td>
-      <td class="num">1,172</td>
-      <td class="num">68,576,401</td>
+      <td class="num">1,171</td>
+      <td class="num">68,528,527</td>
       <td class="num">5.60%</td>
     </tr>
     
@@ -622,7 +626,7 @@
       <td><span class="aloistag oseries">OE</span></td>
       <td class="num">1,147</td>
       <td class="num">304,899,575</td>
-      <td class="num">24.89%</td>
+      <td class="num">24.92%</td>
     </tr>
     
     <tr data-group="inv-3" hidden class="oseries">
@@ -634,16 +638,16 @@
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">OV</span></td>
-      <td class="num">204</td>
-      <td class="num">20,697,564</td>
-      <td class="num">1.69%</td>
+      <td class="num">203</td>
+      <td class="num">20,390,488</td>
+      <td class="num">1.67%</td>
     </tr>
     
     <tr class="subtotal oseries">
       <td>O 합계</td>
-      <td class="num">2,762</td>
-      <td class="num">434,661,209</td>
-      <td class="num">35.49%</td>
+      <td class="num">2,760</td>
+      <td class="num">434,306,259</td>
+      <td class="num">35.50%</td>
     </tr>
     
     
@@ -651,15 +655,15 @@
     
     <tr data-group="inv-4" hidden>
       <td><span class="aloistag">II</span></td>
-      <td class="num">89</td>
-      <td class="num">21,949,879</td>
+      <td class="num">87</td>
+      <td class="num">21,896,752</td>
       <td class="num">1.79%</td>
     </tr>
     
     <tr class="subtotal">
       <td>I 합계</td>
-      <td class="num">89</td>
-      <td class="num">21,949,879</td>
+      <td class="num">87</td>
+      <td class="num">21,896,752</td>
       <td class="num">1.79%</td>
     </tr>
     
@@ -682,16 +686,16 @@
     
     <tr data-group="inv-5" hidden>
       <td><span class="aloistag">SK</span></td>
-      <td class="num">854</td>
-      <td class="num">33,206,249</td>
-      <td class="num">2.71%</td>
+      <td class="num">853</td>
+      <td class="num">32,882,297</td>
+      <td class="num">2.69%</td>
     </tr>
     
     <tr data-group="inv-5" hidden>
       <td><span class="aloistag">SX</span></td>
       <td class="num">248</td>
       <td class="num">9,123,066</td>
-      <td class="num">0.74%</td>
+      <td class="num">0.75%</td>
     </tr>
     
     <tr data-group="inv-5" hidden>
@@ -705,14 +709,14 @@
       <td><span class="aloistag">SZ</span></td>
       <td class="num">287</td>
       <td class="num">85,857,721</td>
-      <td class="num">7.01%</td>
+      <td class="num">7.02%</td>
     </tr>
     
     <tr class="subtotal">
       <td>S 합계</td>
-      <td class="num">1,485</td>
-      <td class="num">135,277,557</td>
-      <td class="num">11.04%</td>
+      <td class="num">1,484</td>
+      <td class="num">134,953,605</td>
+      <td class="num">11.03%</td>
     </tr>
     
   </tbody>
@@ -959,16 +963,16 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">전체재고 대비 OA+OV 비율</span>
-          <span class="value">4.84%</span>
-          <span class="foot">OA+OV 재고금액 ₩59,263,964 · 전체재고 ₩1,224,817,416</span>
+          <span class="value">4.82%</span>
+          <span class="foot">OA+OV 재고금액 ₩58,956,888 · 전체재고 ₩1,223,345,341</span>
         </div>
       </div>
 
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">OA / OV 재고 세부</span>
-          <span class="val">₩59,263,964</span>
-          <span class="foot">OA ₩38,566,400(104라인·228개) · OV ₩20,697,564(108라인·204개)</span>
+          <span class="val">₩58,956,888</span>
+          <span class="foot">OA ₩38,566,400(104라인·228개) · OV ₩20,390,488(107라인·203개)</span>
         </div>
         <p class="subttl">OA+OV 품목 TOP 10 <span class="n">금액 큰 순</span></p>
         <div class="tablewrap">
@@ -1001,7 +1005,7 @@
           </table>
         </div>
 
-        <p class="subttl" style="margin-top:20px">OA+OV 품목 전체 <span class="n">그룹 클릭해서 펼치기 · 전체 212개</span></p>
+        <p class="subttl" style="margin-top:20px">OA+OV 품목 전체 <span class="n">그룹 클릭해서 펼치기 · 전체 211개</span></p>
         <div class="tablewrap">
           <table>
             <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
@@ -1258,8 +1262,6 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51337466962</td><td>Side window,</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">312,708</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">11618572859</td><td>Charge air l</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">307,076</td></tr>
-              
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">63212450107</td><td>M Performanc</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">306,768</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">34116888458</td><td>Repair kit,</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">303,050</td></tr>
@@ -1436,7 +1438,7 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">07119906681</td><td>Hexagon scre</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1,836</td></tr>
               
-              <tr class="subtotal oseries"><td colspan="4">OV 합계 (108개)</td><td class="num">20,697,564</td></tr>
+              <tr class="subtotal oseries"><td colspan="4">OV 합계 (107개)</td><td class="num">20,390,488</td></tr>
             </tbody>
           </table>
         </div>
@@ -2081,15 +2083,15 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">O계열 · RO/SB/SP 묶인 재고</span>
-          <span class="value">119건</span>
-          <span class="foot">요청수량×원가 합계 ₩34,732,039</span>
+          <span class="value">121건</span>
+          <span class="foot">요청수량×원가 합계 ₩35,606,035</span>
         </div>
       </div>
 
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">참조문서별 O계열 요청 세부</span>
-          <span class="val">119건</span>
+          <span class="val">121건</span>
           <span class="foot">그룹 클릭해서 펼치기 · 요청일 오래된순</span>
         </div>
         <div class="tablewrap">
@@ -2097,7 +2099,7 @@
             <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>참조문서번호</th><th>요청일</th><th>경과일</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가금액</th><th>담당SA</th></tr></thead>
             <tbody>
               
-              <tr class="grouphead oseries" data-group="opart-RO" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>RO (38건)<span class="hint"></span></td></tr>
+              <tr class="grouphead oseries" data-group="opart-RO" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>RO (40건)<span class="hint"></span></td></tr>
               
               <tr class="oseries" data-group="opart-RO" hidden>
                 <td class="mono">16119455463</td><td>Supply modul</td><td><span class="aloistag oseries">OV</span></td>
@@ -2365,7 +2367,21 @@
                 <td class="num">85,760</td><td>이정환</td>
               </tr>
               
-              <tr class="subtotal oseries"><td colspan="6">RO 합계</td><td class="num">71</td><td class="num"></td><td class="num"></td><td class="num">10,532,463</td><td></td></tr>
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51357491331</td><td>Molding, sid</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001144</td><td class="mono">09-18</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">61,146</td><td>강충성</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">41007430879</td><td>LEFT REAR SI</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001144</td><td class="mono">09-18</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">812,850</td><td>강충성</td>
+              </tr>
+              
+              <tr class="subtotal oseries"><td colspan="6">RO 합계</td><td class="num">73</td><td class="num"></td><td class="num"></td><td class="num">11,406,459</td><td></td></tr>
               
               <tr class="grouphead oseries" data-group="opart-SB" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>SB (39건)<span class="hint"></span></td></tr>
               
@@ -2948,6 +2964,80 @@
       </div>
     </section>
 
+    <section id="page-oflow" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>O파트 입출고 내역</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>AS_부산(해운중동) · 이번달 · 원가 기준</div>
+      </div>
+
+      <div class="kpistrip">
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">01</span>
+          <span class="eyebrow">이번달 O계열 입고(원가)</span>
+          <span class="value">₩170,516,132</span>
+        </div>
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">02</span>
+          <span class="eyebrow">이번달 O계열 출고(원가)</span>
+          <span class="value">₩28,709,575</span>
+          <span class="foot">순증감 +₩141,806,557</span>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">일자별 O계열 입출고 세부</span>
+          <span class="foot">원가(구매금액/품목원가합계) 기준 · 이번달 1일~오늘</span>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>일자</th><th class="num">입고금액</th><th class="num">출고금액</th><th class="num">순증감</th></tr></thead>
+            <tbody>
+              
+              <tr><td class="mono">09-01</td><td class="num">0</td><td class="num">404,610</td><td class="num neg">-404,610</td></tr>
+              
+              <tr><td class="mono">09-02</td><td class="num">15,925,043</td><td class="num">929,164</td><td class="num">14,995,879</td></tr>
+              
+              <tr><td class="mono">09-03</td><td class="num">7,181,215</td><td class="num">1,012,160</td><td class="num">6,169,055</td></tr>
+              
+              <tr><td class="mono">09-04</td><td class="num">26,908,674</td><td class="num">721,930</td><td class="num">26,186,744</td></tr>
+              
+              <tr><td class="mono">09-05</td><td class="num">18,495,444</td><td class="num">0</td><td class="num">18,495,444</td></tr>
+              
+              <tr><td class="mono">09-06</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+              
+              <tr><td class="mono">09-07</td><td class="num">0</td><td class="num">3,941,608</td><td class="num neg">-3,941,608</td></tr>
+              
+              <tr><td class="mono">09-08</td><td class="num">18,003,583</td><td class="num">607,740</td><td class="num">17,395,843</td></tr>
+              
+              <tr><td class="mono">09-09</td><td class="num">5,794,964</td><td class="num">1,846,120</td><td class="num">3,948,844</td></tr>
+              
+              <tr><td class="mono">09-10</td><td class="num">21,055,482</td><td class="num">4,486,249</td><td class="num">16,569,233</td></tr>
+              
+              <tr><td class="mono">09-11</td><td class="num">6,558,052</td><td class="num">445,715</td><td class="num">6,112,337</td></tr>
+              
+              <tr><td class="mono">09-12</td><td class="num">5,820,857</td><td class="num">3,984,834</td><td class="num">1,836,023</td></tr>
+              
+              <tr><td class="mono">09-13</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+              
+              <tr><td class="mono">09-14</td><td class="num">0</td><td class="num">511,368</td><td class="num neg">-511,368</td></tr>
+              
+              <tr><td class="mono">09-15</td><td class="num">19,743,903</td><td class="num">130,052</td><td class="num">19,613,851</td></tr>
+              
+              <tr><td class="mono">09-16</td><td class="num">13,474,283</td><td class="num">7,794,401</td><td class="num">5,679,882</td></tr>
+              
+              <tr><td class="mono">09-17</td><td class="num">5,097,116</td><td class="num">1,893,624</td><td class="num">3,203,492</td></tr>
+              
+              <tr><td class="mono">09-18</td><td class="num">6,457,516</td><td class="num">0</td><td class="num">6,457,516</td></tr>
+              
+              <tr class="subtotal"><td>합계</td><td class="num">170,516,132</td><td class="num">28,709,575</td><td class="num">141,806,557</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section id="page-calendar" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>팀 캘린더</b></span>
@@ -2970,7 +3060,7 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  function selectPage(key){ ['today','external','accessory','oaov','longstock','opart','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); document.querySelector('.maininner').classList.toggle('wide', key==='calendar'); }
+  function selectPage(key){ ['today','external','accessory','oaov','longstock','opart','oflow','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); document.querySelector('.maininner').classList.toggle('wide', key==='calendar'); }
   function toggleAloisGroup(headEl){
     var key = headEl.getAttribute('data-group');
     var table = headEl.closest('table');
