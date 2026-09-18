@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 15:06 기준",
+    "generated_at": "9월 18일 (금) · 15:20 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1207196014,
-    "item_count": 2200,
+    "total": 1206937178,
+    "item_count": 2196,
     "code_count": 25,
     "alois_groups": [
       {
@@ -250,9 +250,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 216934171,
+            "val": 216906143,
             "pct": 17.97,
-            "qty": 2324
+            "qty": 2323
           },
           {
             "code": "A2",
@@ -262,9 +262,9 @@
           },
           {
             "code": "A3",
-            "val": 29951290,
-            "pct": 2.48,
-            "qty": 470
+            "val": 29848618,
+            "pct": 2.47,
+            "qty": 469
           },
           {
             "code": "A4",
@@ -285,8 +285,8 @@
             "qty": 1515
           }
         ],
-        "subtotal_val": 475193845,
-        "subtotal_qty": 8720,
+        "subtotal_val": 475063145,
+        "subtotal_qty": 8718,
         "subtotal_pct": 39.36
       },
       {
@@ -348,20 +348,20 @@
         "rows": [
           {
             "code": "O8",
-            "val": 65758950,
+            "val": 65753868,
             "pct": 5.45,
-            "qty": 1141
+            "qty": 1138
           },
           {
             "code": "OA",
             "val": 38566400,
-            "pct": 3.19,
+            "pct": 3.2,
             "qty": 228
           },
           {
             "code": "OE",
             "val": 304248766,
-            "pct": 25.2,
+            "pct": 25.21,
             "qty": 1145
           },
           {
@@ -372,14 +372,14 @@
           },
           {
             "code": "OV",
-            "val": 20399284,
+            "val": 20393584,
             "pct": 1.69,
-            "qty": 205
+            "qty": 203
           }
         ],
-        "subtotal_val": 430894669,
-        "subtotal_qty": 2730,
-        "subtotal_pct": 35.69
+        "subtotal_val": 430883887,
+        "subtotal_qty": 2725,
+        "subtotal_pct": 35.7
       },
       {
         "code": "I",
@@ -422,9 +422,9 @@
           },
           {
             "code": "SX",
-            "val": 9039077,
+            "val": 9024917,
             "pct": 0.75,
-            "qty": 242
+            "qty": 240
           },
           {
             "code": "SY",
@@ -434,28 +434,28 @@
           },
           {
             "code": "SZ",
-            "val": 85822724,
-            "pct": 7.11,
-            "qty": 286
+            "val": 85719530,
+            "pct": 7.1,
+            "qty": 285
           }
         ],
-        "subtotal_val": 133182896,
-        "subtotal_qty": 1469,
+        "subtotal_val": 133065542,
+        "subtotal_qty": 1466,
         "subtotal_pct": 11.03
       }
     ]
   },
   "oaov": {
-    "total": 58965684,
-    "inv_total": 1207196014,
-    "pct": 4.88,
+    "total": 58959984,
+    "inv_total": 1206937178,
+    "pct": 4.89,
     "oa_val": 38566400,
-    "ov_val": 20399284,
+    "ov_val": 20393584,
     "oa_lines": 104,
-    "ov_lines": 107,
+    "ov_lines": 106,
     "oa_qty": 228,
-    "ov_qty": 205,
-    "item_count": 211,
+    "ov_qty": 203,
+    "item_count": 210,
     "oa_items": [
       {
         "item": "63119850411",
@@ -1914,13 +1914,6 @@
         "alois": "OV",
         "qty": 6,
         "val": 8550
-      },
-      {
-        "item": "61130056962",
-        "name": "Contact bush",
-        "alois": "OV",
-        "qty": 2,
-        "val": 5700
       },
       {
         "item": "61138727250",
@@ -6357,22 +6350,6 @@
         "dday": "D+0일"
       },
       {
-        "item": "61130056962",
-        "name": "Contact bush",
-        "alois": "OV",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001196",
-        "req_qty": 2,
-        "crt_qty": 2,
-        "avail_qty": 0,
-        "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 14:14:20",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 5700,
-        "sa": "김민규",
-        "dday": "D+0일"
-      },
-      {
         "item": "51775A73F00",
         "name": "Rocker panel",
         "alois": "O8",
@@ -6597,8 +6574,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 123,
-    "total_val": 32919048,
+    "count": 122,
+    "total_val": 32913348,
     "groups": [
       {
         "code": "RO",
@@ -7020,22 +6997,6 @@
             "dday": "D+0일"
           },
           {
-            "item": "61130056962",
-            "name": "Contact bush",
-            "alois": "OV",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001196",
-            "req_qty": 2,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 14:14:20",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 5700,
-            "sa": "김민규",
-            "dday": "D+0일"
-          },
-          {
             "item": "51775A73F00",
             "name": "Rocker panel",
             "alois": "O8",
@@ -7260,9 +7221,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 41,
-        "qty_sum": 54,
-        "val": 8317172
+        "count": 40,
+        "qty_sum": 52,
+        "val": 8311472
       },
       {
         "code": "SB",
@@ -12603,19 +12564,19 @@
       {
         "date": "09-18",
         "in_val": 6457516,
-        "out_val": 7599470,
-        "net": -1141954
+        "out_val": 9858108,
+        "net": -3400592
       }
     ],
     "total_in": 170516132,
-    "total_out": 155235254,
-    "net": 15280878,
+    "total_out": 157493892,
+    "net": 13022240,
     "by_code": [
       {
         "code": "O8",
         "in_val": 146230422,
-        "out_val": 126128414,
-        "net": 20102008
+        "out_val": 128387052,
+        "net": 17843370
       },
       {
         "code": "OA",
