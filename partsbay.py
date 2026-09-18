@@ -452,7 +452,16 @@ def build_o_available(pw_rows):
         "val": round(val_fn(r)),
     } for r in o_rows], key=lambda i: i["val"], reverse=True)
 
-    return {"rows": parts, "count": len(parts), "total_val": round(sum(i["val"] for i in parts))}
+    by_code = {}
+    for p in parts:
+        by_code.setdefault(p["alois"], []).append(p)
+    groups = [{
+        "code": code, "rows": rs, "count": len(rs),
+        "qty_sum": sum(i["qty"] for i in rs), "avail_sum": sum(i["avail_qty"] for i in rs),
+        "val": round(sum(i["val"] for i in rs)),
+    } for code, rs in sorted(by_code.items())]
+
+    return {"rows": parts, "groups": groups, "count": len(parts), "total_val": round(sum(i["val"] for i in parts))}
 
 
 def build_o_daily_flow(recv_rows, turnover_rows, month_start, today_str):
