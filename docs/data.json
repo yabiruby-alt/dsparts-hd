@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 10:05 기준",
+    "generated_at": "9월 18일 (금) · 10:11 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1222567582,
-    "item_count": 2246,
+    "total": 1222275078,
+    "item_count": 2243,
     "code_count": 25,
     "alois_groups": [
       {
@@ -256,9 +256,9 @@
           },
           {
             "code": "A2",
-            "val": 15346689,
-            "pct": 1.26,
-            "qty": 1228
+            "val": 15324459,
+            "pct": 1.25,
+            "qty": 1227
           },
           {
             "code": "A3",
@@ -269,25 +269,25 @@
           {
             "code": "A4",
             "val": 46630285,
-            "pct": 3.81,
+            "pct": 3.82,
             "qty": 1924
           },
           {
             "code": "A5",
-            "val": 74118529,
+            "val": 74046899,
             "pct": 6.06,
-            "qty": 1333
+            "qty": 1332
           },
           {
             "code": "A6",
-            "val": 93071115,
+            "val": 93001238,
             "pct": 7.61,
-            "qty": 1521
+            "qty": 1519
           }
         ],
-        "subtotal_val": 477624308,
-        "subtotal_qty": 8835,
-        "subtotal_pct": 39.07
+        "subtotal_val": 477460571,
+        "subtotal_qty": 8831,
+        "subtotal_pct": 39.06
       },
       {
         "code": "L",
@@ -296,9 +296,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 27434638,
+            "val": 27343611,
             "pct": 2.24,
-            "qty": 1852
+            "qty": 1846
           },
           {
             "code": "L2",
@@ -337,8 +337,8 @@
             "qty": 1354
           }
         ],
-        "subtotal_val": 144894410,
-        "subtotal_qty": 4406,
+        "subtotal_val": 144803383,
+        "subtotal_qty": 4400,
         "subtotal_pct": 11.85
       },
       {
@@ -348,20 +348,20 @@
         "rows": [
           {
             "code": "O8",
-            "val": 68443379,
+            "val": 68405639,
             "pct": 5.6,
-            "qty": 1163
+            "qty": 1162
           },
           {
             "code": "OA",
             "val": 38566400,
-            "pct": 3.15,
+            "pct": 3.16,
             "qty": 228
           },
           {
             "code": "OE",
             "val": 304813815,
-            "pct": 24.93,
+            "pct": 24.94,
             "qty": 1146
           },
           {
@@ -377,9 +377,9 @@
             "qty": 203
           }
         ],
-        "subtotal_val": 434135351,
-        "subtotal_qty": 2751,
-        "subtotal_pct": 35.51
+        "subtotal_val": 434097611,
+        "subtotal_qty": 2750,
+        "subtotal_pct": 35.52
       },
       {
         "code": "I",
@@ -447,7 +447,7 @@
   },
   "oaov": {
     "total": 58956888,
-    "inv_total": 1222567582,
+    "inv_total": 1222275078,
     "pct": 4.82,
     "oa_val": 38566400,
     "ov_val": 20390488,
@@ -4616,7 +4616,7 @@
     ],
     "m24_val": 20720697,
     "m24_count": 59,
-    "m24_pct": 1.69
+    "m24_pct": 1.7
   },
   "opart": {
     "items": [
@@ -6205,22 +6205,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "51758074612",
-        "name": "Underhood sh",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609000840",
-        "req_qty": 1,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-17",
-        "req_dt_full": "2026-09-17 14:44:03",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 228921,
-        "sa": "우종훈",
-        "dday": "D+1일"
-      },
-      {
         "item": "07149502134",
         "name": "Multi-purpos",
         "alois": "O8",
@@ -6266,22 +6250,6 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 50735,
         "sa": "염진아",
-        "dday": "D+1일"
-      },
-      {
-        "item": "07129904865",
-        "name": "Hex nut",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001085",
-        "req_qty": 2,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-17",
-        "req_dt_full": "2026-09-17 15:42:24",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 3300,
-        "sa": "김민규",
         "dday": "D+1일"
       },
       {
@@ -6381,102 +6349,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "11427808443",
-        "name": "Filt.Element",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609000918",
-        "req_qty": 1,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 07:00:34",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 20670,
-        "sa": "우종훈",
-        "dday": "D+0일"
-      },
-      {
-        "item": "33326760374",
-        "name": "Nut",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609000918",
-        "req_qty": 2,
-        "crt_qty": 4,
-        "avail_qty": 4,
-        "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 07:00:34",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 9782,
-        "sa": "우종훈",
-        "dday": "D+0일"
-      },
-      {
-        "item": "31356859651",
-        "name": "Swing suppor",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609000918",
-        "req_qty": 1,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 07:00:34",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 59364,
-        "sa": "우종훈",
-        "dday": "D+0일"
-      },
-      {
-        "item": "61278877427",
-        "name": "Cell module,",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001026",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 09:19:28",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 3299360,
-        "sa": "최민수",
-        "dday": "D+0일"
-      },
-      {
-        "item": "61278848677",
-        "name": "Electronic m",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001026",
-        "req_qty": 1,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 09:23:50",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 269110,
-        "sa": "최민수",
-        "dday": "D+0일"
-      },
-      {
-        "item": "61278843416",
-        "name": "Cell monitor",
-        "alois": "O8",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001026",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 09:23:50",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 110055,
-        "sa": "최민수",
-        "dday": "D+0일"
-      },
-      {
         "item": "51357491331",
         "name": "Molding, sid",
         "alois": "O8",
@@ -6509,8 +6381,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 118,
-    "total_val": 35425597,
+    "count": 110,
+    "total_val": 31425035,
     "groups": [
       {
         "code": "RO",
@@ -6900,22 +6772,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "51758074612",
-            "name": "Underhood sh",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609000840",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-17",
-            "req_dt_full": "2026-09-17 14:44:03",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 228921,
-            "sa": "우종훈",
-            "dday": "D+1일"
-          },
-          {
             "item": "07149502134",
             "name": "Multi-purpos",
             "alois": "O8",
@@ -6964,22 +6820,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "07129904865",
-            "name": "Hex nut",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001085",
-            "req_qty": 2,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-17",
-            "req_dt_full": "2026-09-17 15:42:24",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 3300,
-            "sa": "김민규",
-            "dday": "D+1일"
-          },
-          {
             "item": "51247266241",
             "name": "Buffer",
             "alois": "O8",
@@ -6994,102 +6834,6 @@
             "val": 34456,
             "sa": "염진아",
             "dday": "D+1일"
-          },
-          {
-            "item": "11427808443",
-            "name": "Filt.Element",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609000918",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 07:00:34",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 20670,
-            "sa": "우종훈",
-            "dday": "D+0일"
-          },
-          {
-            "item": "33326760374",
-            "name": "Nut",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609000918",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 4,
-            "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 07:00:34",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 9782,
-            "sa": "우종훈",
-            "dday": "D+0일"
-          },
-          {
-            "item": "31356859651",
-            "name": "Swing suppor",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609000918",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 07:00:34",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 59364,
-            "sa": "우종훈",
-            "dday": "D+0일"
-          },
-          {
-            "item": "61278877427",
-            "name": "Cell module,",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001026",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 09:19:28",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 3299360,
-            "sa": "최민수",
-            "dday": "D+0일"
-          },
-          {
-            "item": "61278848677",
-            "name": "Electronic m",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001026",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 09:23:50",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 269110,
-            "sa": "최민수",
-            "dday": "D+0일"
-          },
-          {
-            "item": "61278843416",
-            "name": "Cell monitor",
-            "alois": "O8",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001026",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 09:23:50",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 110055,
-            "sa": "최민수",
-            "dday": "D+0일"
           },
           {
             "item": "51357491331",
@@ -7124,9 +6868,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 38,
-        "qty_sum": 65,
-        "val": 11263761
+        "count": 30,
+        "qty_sum": 55,
+        "val": 7263199
       },
       {
         "code": "SB",
@@ -8431,26 +8175,26 @@
       {
         "date": "09-01",
         "in_val": 0,
-        "out_val": 404610,
-        "net": -404610
+        "out_val": 8202917,
+        "net": -8202917
       },
       {
         "date": "09-02",
         "in_val": 15925043,
-        "out_val": 929164,
-        "net": 14995879
+        "out_val": 3525031,
+        "net": 12400012
       },
       {
         "date": "09-03",
         "in_val": 7181215,
-        "out_val": 1012160,
-        "net": 6169055
+        "out_val": 6978091,
+        "net": 203124
       },
       {
         "date": "09-04",
         "in_val": 26908674,
-        "out_val": 721930,
-        "net": 26186744
+        "out_val": 2303899,
+        "net": 24604775
       },
       {
         "date": "09-05",
@@ -8467,38 +8211,38 @@
       {
         "date": "09-07",
         "in_val": 0,
-        "out_val": 3941608,
-        "net": -3941608
+        "out_val": 14509681,
+        "net": -14509681
       },
       {
         "date": "09-08",
         "in_val": 18003583,
-        "out_val": 607740,
-        "net": 17395843
+        "out_val": 3626013,
+        "net": 14377570
       },
       {
         "date": "09-09",
         "in_val": 5794964,
-        "out_val": 1846120,
-        "net": 3948844
+        "out_val": 18380568,
+        "net": -12585604
       },
       {
         "date": "09-10",
         "in_val": 21055482,
-        "out_val": 4486249,
-        "net": 16569233
+        "out_val": 13102219,
+        "net": 7953263
       },
       {
         "date": "09-11",
         "in_val": 6558052,
-        "out_val": 445715,
-        "net": 6112337
+        "out_val": 5271216,
+        "net": 1286836
       },
       {
         "date": "09-12",
         "in_val": 5820857,
-        "out_val": 3984834,
-        "net": 1836023
+        "out_val": 4131008,
+        "net": 1689849
       },
       {
         "date": "09-13",
@@ -8509,26 +8253,26 @@
       {
         "date": "09-14",
         "in_val": 0,
-        "out_val": 511368,
-        "net": -511368
+        "out_val": 9539989,
+        "net": -9539989
       },
       {
         "date": "09-15",
         "in_val": 19743903,
-        "out_val": 130052,
-        "net": 19613851
+        "out_val": 31402144,
+        "net": -11658241
       },
       {
         "date": "09-16",
         "in_val": 13474283,
-        "out_val": 7794401,
-        "net": 5679882
+        "out_val": 8935945,
+        "net": 4538338
       },
       {
         "date": "09-17",
         "in_val": 5097116,
-        "out_val": 1893624,
-        "net": 3203492
+        "out_val": 18271779,
+        "net": -13174663
       },
       {
         "date": "09-18",
@@ -8538,14 +8282,14 @@
       }
     ],
     "total_in": 170516132,
-    "total_out": 28709575,
-    "net": 141806557,
+    "total_out": 148180500,
+    "net": 22335632,
     "by_code": [
       {
         "code": "O8",
         "in_val": 146230422,
-        "out_val": 25715845,
-        "net": 120514577
+        "out_val": 119243059,
+        "net": 26987363
       },
       {
         "code": "OA",
@@ -8556,14 +8300,14 @@
       {
         "code": "OE",
         "in_val": 7327140,
-        "out_val": 2309654,
-        "net": 5017486
+        "out_val": 14079008,
+        "net": -6751868
       },
       {
         "code": "OV",
         "in_val": 8498897,
-        "out_val": 642076,
-        "net": 7856821
+        "out_val": 1882541,
+        "net": 6616356
       }
     ]
   }

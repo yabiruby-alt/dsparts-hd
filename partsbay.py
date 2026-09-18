@@ -210,7 +210,7 @@ def extract_turnover(page: Page, month_start: str, today_str: str) -> list:
         "sBrands": [], "sSeriesList": [], "sCarNo": "", "sVinNo": "",
         "sCustTp": "", "sCustNo": "", "sCustNm": "",
         "sDlrCd": DEALER_CD, "sBrchCdList": [BRCH_CD], "sSaList": [], "sRoDocNo": "",
-        "sCalcTpCds": ["C", "I"], "sInvcNum": "", "sInvStatCd": "", "sCalcNo": "",
+        "sCalcTpCds": [], "sInvcNum": "", "sInvStatCd": "", "sCalcNo": "",  # 빈 배열 = 전체 정산유형(C/I/W/S/CP/WS 등)
         "sIctTradeYn": "", "sItemTpCd": "", "sItemCd": "", "sItemNm": "", "sProdType": "전체",
         "sAloiscd": "", "sRclCampnCdYn": "", "sCampnYn": "", "sCupnCdYn": "", "sSvcTypess": [],
     }
