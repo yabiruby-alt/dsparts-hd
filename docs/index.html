@@ -7,145 +7,160 @@
 <meta http-equiv="refresh" content="600">
 <title>동성모터스 PARTS</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600;700&display=swap');
 
   :root{
     color-scheme: light;
-    --page:#f9f9f7; --surface:#fcfcfb; --surface-2:#f1f1ee; --sidebar:#ffffff;
-    --line:#e1e0d9; --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
-    --accent:#0066b1; --accent-strong:#003d7c; --accent-wash:#e5f0fa;
+    --page:#f5f5f7; --surface:#ffffff; --surface-2:#f5f5f7; --sidebar:#fbfbfd;
+    --line:#e5e5ea; --ink:#1d1d1f; --ink-2:#48484a; --muted:#86868b;
+    --accent:#0066b1; --accent-strong:#004d8a; --accent-wash:#eaf3fb;
     --m-blue:#1e5aa8; --m-violet:#5a287d; --m-red:#e2231a;
-    --good:#0ca30c; --critical:#c8372a; --critical-wash:#fbeae8;
-    --font-display:'Big Shoulders Display',system-ui,sans-serif;
-    --font-body:'Public Sans',system-ui,-apple-system,sans-serif;
-    --font-mono:'IBM Plex Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+    --good:#1fa34d; --critical:#d0342c; --critical-wash:#fdeeed;
+    --font-display:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+    --font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,'SF Mono','SFMono-Regular',Menlo,monospace;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.04), 0 1px 10px rgba(0,0,0,.035);
+    --shadow-md: 0 4px 10px rgba(0,0,0,.05), 0 10px 28px rgba(0,0,0,.06);
+    --shadow-card: 0 0 0 1px rgba(0,0,0,.04), 0 1px 2px rgba(0,0,0,.04), 0 8px 20px rgba(0,0,0,.04);
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
       color-scheme: dark;
-      --page:#0d0d0d; --surface:#1a1a19; --surface-2:#212120; --sidebar:#141414;
-      --line:#2c2c2a; --ink:#ffffff; --ink-2:#c3c2b7; --muted:#8f8d87;
-      --accent:#3f96e0; --accent-strong:#8ec3f2; --accent-wash:#122236;
+      --page:#000000; --surface:#1c1c1e; --surface-2:#242426; --sidebar:#111113;
+      --line:#333335; --ink:#f5f5f7; --ink-2:#c7c7cc; --muted:#8e8e93;
+      --accent:#409cff; --accent-strong:#8ec3f2; --accent-wash:#122236;
       --m-blue:#3f7fc7; --m-violet:#8a5aae; --m-red:#ff5b47;
-      --good:#0ca30c; --critical:#e2695c; --critical-wash:#301715;
+      --good:#30d158; --critical:#e2695c; --critical-wash:#301715;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,.3), 0 1px 10px rgba(0,0,0,.25);
+      --shadow-md: 0 4px 10px rgba(0,0,0,.35), 0 10px 28px rgba(0,0,0,.35);
+      --shadow-card: 0 0 0 1px rgba(255,255,255,.06), 0 8px 20px rgba(0,0,0,.35);
     }
   }
   :root[data-theme="dark"]{
     color-scheme: dark;
-    --page:#0d0d0d; --surface:#1a1a19; --surface-2:#212120; --sidebar:#141414;
-    --line:#2c2c2a; --ink:#ffffff; --ink-2:#c3c2b7; --muted:#8f8d87;
-    --accent:#3f96e0; --accent-strong:#8ec3f2; --accent-wash:#122236;
+    --page:#000000; --surface:#1c1c1e; --surface-2:#242426; --sidebar:#111113;
+    --line:#333335; --ink:#f5f5f7; --ink-2:#c7c7cc; --muted:#8e8e93;
+    --accent:#409cff; --accent-strong:#8ec3f2; --accent-wash:#122236;
     --m-blue:#3f7fc7; --m-violet:#8a5aae; --m-red:#ff5b47;
-    --good:#0ca30c; --critical:#e2695c; --critical-wash:#301715;
+    --good:#30d158; --critical:#e2695c; --critical-wash:#301715;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.3), 0 1px 10px rgba(0,0,0,.25);
+    --shadow-md: 0 4px 10px rgba(0,0,0,.35), 0 10px 28px rgba(0,0,0,.35);
+    --shadow-card: 0 0 0 1px rgba(255,255,255,.06), 0 8px 20px rgba(0,0,0,.35);
   }
 
   *{box-sizing:border-box;}
   html, body{ height:100%; margin:0; }
-  body{ background:var(--page); color:var(--ink); font-family:var(--font-body); }
+  body{ background:var(--page); color:var(--ink); font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
 
   .app{ display:flex; height:100%; min-height:100vh; }
 
   /* ============ SIDEBAR ============ */
-  .sidebar{ width:248px; flex:none; background:var(--sidebar); border-right:1px solid var(--line);
-    display:flex; flex-direction:column; padding:18px 14px; gap:18px; overflow-y:auto; }
-  .sb-brand{ display:flex; align-items:center; gap:10px; padding:2px 6px; cursor:pointer; border-radius:8px; }
+  .sidebar{ width:256px; flex:none; background:var(--sidebar); box-shadow:inset -1px 0 0 var(--line);
+    display:flex; flex-direction:column; padding:22px 16px; gap:22px; overflow-y:auto; }
+  .sb-brand{ display:flex; align-items:center; gap:10px; padding:4px 8px; cursor:pointer; border-radius:10px; transition:background .12s ease; }
   .sb-brand:hover{ background:var(--surface-2); }
-  .sb-brand .mark{ width:32px; height:32px; border-radius:8px; background:var(--accent); color:#fff; flex:none;
-    display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; font-size:15px; }
-  .sb-brand .name{ font-family:var(--font-display); font-weight:800; font-size:22.5px; letter-spacing:.01em; }
-  .sb-mstripe{ height:2.5px; border-radius:2px; margin:-6px 6px 0;
+  .sb-brand .mark{ width:30px; height:30px; border-radius:9px; background:var(--accent); color:#fff; flex:none;
+    display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; font-size:13.5px; box-shadow:var(--shadow-sm); }
+  .sb-brand .name{ font-family:var(--font-display); font-weight:700; font-size:18.5px; letter-spacing:-.015em; }
+  .sb-mstripe{ height:2px; border-radius:2px; margin:-10px 8px 0; opacity:.85;
     background:linear-gradient(90deg, var(--m-blue) 0 33.33%, var(--m-violet) 33.33% 66.66%, var(--m-red) 66.66% 100%); }
 
-  .sb-workspace{ display:flex; align-items:center; gap:10px; padding:10px 10px; border:1px solid var(--line); border-radius:10px; }
-  .sb-workspace .ico{ width:26px; height:26px; border-radius:7px; background:var(--surface-2); flex:none; display:flex; align-items:center; justify-content:center; color:var(--ink-2); }
+  .sb-workspace{ display:flex; align-items:center; gap:10px; padding:10px 12px; background:var(--surface-2); border-radius:12px; }
+  .sb-workspace .ico{ width:26px; height:26px; border-radius:8px; background:var(--surface); flex:none; display:flex; align-items:center; justify-content:center; color:var(--ink-2); box-shadow:var(--shadow-sm); }
   .sb-workspace .tt{ display:flex; flex-direction:column; line-height:1.25; min-width:0; }
-  .sb-workspace .tt b{ font-size:15.5px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-  .sb-workspace .tt span{ font-size:13px; color:var(--muted); font-family:var(--font-mono); }
+  .sb-workspace .tt b{ font-size:14.5px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .sb-workspace .tt span{ font-size:12.5px; color:var(--muted); font-family:var(--font-mono); }
 
   .sb-section{ display:flex; flex-direction:column; gap:2px; }
-  .sb-label{ font-family:var(--font-display); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); padding:0 10px; margin-bottom:4px; }
-  .sb-item{ all:unset; box-sizing:border-box; display:flex; align-items:center; gap:10px; padding:8px 10px; border-radius:8px; font-size:16px; font-weight:600; color:var(--ink-2); cursor:pointer; }
-  .sb-item svg{ flex:none; opacity:.85; }
+  .sb-label{ font-family:var(--font-display); font-weight:600; font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); padding:0 12px; margin-bottom:6px; }
+  .sb-item{ all:unset; box-sizing:border-box; display:flex; align-items:center; gap:10px; padding:8.5px 12px; border-radius:10px; font-size:14.5px; font-weight:500; color:var(--ink-2); cursor:pointer; transition:background .12s ease, color .12s ease; }
+  .sb-item svg{ flex:none; opacity:.8; }
   .sb-item:hover{ background:var(--surface-2); color:var(--ink); }
-  .sb-item[aria-current="page"]{ background:var(--accent-wash); color:var(--accent-strong); }
+  .sb-item[aria-current="page"]{ background:var(--accent-wash); color:var(--accent-strong); font-weight:600; }
   .sb-item[aria-current="page"] svg{ opacity:1; }
   .sb-item.soon{ cursor:default; }
   .sb-item.soon:hover{ background:transparent; color:var(--ink-2); }
-  .sb-item.soon .tag{ margin-left:auto; font-family:var(--font-mono); font-size:12px; color:var(--muted); background:var(--surface-2); border-radius:5px; padding:1px 5px; }
+  .sb-item.soon .tag{ margin-left:auto; font-family:var(--font-mono); font-size:11px; color:var(--muted); background:var(--surface-2); border-radius:6px; padding:1px 6px; }
 
   .sb-spacer{ flex:1 1 auto; }
-  .sb-foot{ font-family:var(--font-mono); font-size:13px; color:var(--muted); padding:0 10px; }
+  .sb-foot{ font-family:var(--font-mono); font-size:12px; color:var(--muted); padding:0 12px; }
 
   /* ============ MAIN ============ */
   .main{ flex:1 1 auto; min-width:0; overflow-y:auto; height:100%; }
-  .maininner{ max-width:1000px; margin:0 auto; padding:20px 28px 64px; display:flex; flex-direction:column; gap:20px; transition:max-width .15s ease; }
+  .maininner{ max-width:1020px; margin:0 auto; padding:28px 32px 72px; display:flex; flex-direction:column; gap:22px; transition:max-width .15s ease; }
   .maininner.wide{ max-width:1600px; }
 
   .crumbbar{ display:flex; align-items:center; gap:8px; }
-  .crumb{ font-size:15.5px; color:var(--muted); }
+  .crumb{ font-size:14.5px; color:var(--muted); }
   .crumb b{ color:var(--ink); font-weight:600; }
   .crumbbar .spacer{ flex:1 1 auto; }
-  .freshness{ display:flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:15px; color:var(--ink-2); }
-  .dot{ width:8px; height:8px; border-radius:50%; background:var(--good); box-shadow:0 0 0 3px rgba(12,163,12,.18); }
+  .freshness{ display:flex; align-items:center; gap:7px; font-family:var(--font-mono); font-size:13.5px; color:var(--ink-2); }
+  .dot{ width:7px; height:7px; border-radius:50%; background:var(--good); box-shadow:0 0 0 3px rgba(31,163,77,.16); }
 
-  .kpistrip{ display:flex; gap:12px; flex-wrap:wrap; }
+  .kpistrip{ display:flex; gap:14px; flex-wrap:wrap; }
   .kpitile{ all:unset; box-sizing:border-box; flex:1 1 240px; cursor:pointer;
-    background:var(--surface); border:1.5px solid var(--line); border-radius:12px; padding:16px 18px;
-    display:flex; flex-direction:column; gap:5px; transition:border-color .12s ease, background .12s ease; }
-  .kpitile:hover{ border-color: var(--accent); }
+    background:var(--surface); border-radius:18px; padding:18px 20px; box-shadow:var(--shadow-card);
+    display:flex; flex-direction:column; gap:6px; transition:box-shadow .18s ease, transform .18s ease; }
+  .kpitile:hover{ box-shadow:var(--shadow-md); transform:translateY(-1px); }
   .kpitile:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
-  .kpitile[aria-pressed="true"]{ border-color:var(--accent); background:var(--accent-wash); }
-  .kpitile .rank{ font-family:var(--font-mono); font-size:13px; color:var(--muted); }
-  .kpitile .eyebrow{ font-family:var(--font-display); font-weight:700; font-size:17px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-2); }
-  .kpitile .value{ font-family:var(--font-mono); font-weight:700; font-variant-numeric:tabular-nums; letter-spacing:-.01em; font-size:32.5px; color:var(--accent-strong); }
-  .kpitile .foot{ font-size:14.5px; color:var(--muted); }
-  .kpitile .tapln{ font-family:var(--font-mono); font-size:13px; color:var(--accent); margin-top:2px; }
+  .kpitile[aria-pressed="true"]{ box-shadow:0 0 0 2px var(--accent), var(--shadow-md); background:var(--accent-wash); }
+  .kpitile .rank{ font-family:var(--font-mono); font-size:12px; color:var(--muted); }
+  .kpitile .eyebrow{ font-family:var(--font-display); font-weight:600; font-size:14.5px; letter-spacing:-.005em; color:var(--ink-2); }
+  .kpitile .value{ font-family:var(--font-mono); font-weight:700; font-variant-numeric:tabular-nums; letter-spacing:-.02em; font-size:30px; color:var(--ink); }
+  .kpitile .foot{ font-size:13.5px; color:var(--muted); }
+  .kpitile .tapln{ font-family:var(--font-body); font-weight:600; font-size:12.5px; color:var(--accent); margin-top:2px; }
 
-  .viewer{ background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:20px 22px; }
-  .viewer-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line); flex-wrap:wrap; }
-  .viewer-head .lbl{ font-family:var(--font-display); font-weight:800; font-size:21px; text-transform:uppercase; letter-spacing:.03em; }
-  .viewer-head .val{ font-family:var(--font-mono); font-weight:700; font-size:22.5px; color:var(--accent-strong); font-variant-numeric:tabular-nums; }
-  .viewer-head .foot{ font-size:15px; color:var(--muted); margin-left:auto; }
+  .viewer{ background:var(--surface); border-radius:18px; padding:24px 26px; box-shadow:var(--shadow-card); }
+  .viewer-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:18px; padding-bottom:16px; border-bottom:1px solid var(--line); flex-wrap:wrap; }
+  .viewer-head .lbl{ font-family:var(--font-display); font-weight:700; font-size:18px; letter-spacing:-.01em; }
+  .viewer-head .val{ font-family:var(--font-mono); font-weight:700; font-size:20px; color:var(--ink); font-variant-numeric:tabular-nums; }
+  .viewer-head .foot{ font-size:13.5px; color:var(--muted); margin-left:auto; }
 
   .subgrid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:18px; }
 
   .tablewrap{ overflow-x:auto; }
-  table{ width:100%; border-collapse:collapse; font-size:15.5px; }
-  thead th{ text-align:left; font-family:var(--font-display); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.04em;
-    color:var(--muted); padding:0 8px 7px; border-bottom:1px solid var(--line); white-space:nowrap; }
-  tbody td{ padding:6px 8px; border-bottom:1px solid var(--line); white-space:nowrap; }
-  table.opart-table td, table.opart-table th{ padding-left:5px; padding-right:5px; }
+  table{ width:100%; border-collapse:collapse; font-size:14.5px; }
+  thead th{ text-align:left; font-family:var(--font-body); font-weight:600; font-size:12px; text-transform:none; letter-spacing:0;
+    color:var(--muted); padding:0 10px 9px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  tbody td{ padding:9px 10px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  table.opart-table td, table.opart-table th{ padding-left:6px; padding-right:6px; }
   table.opart-table td:nth-child(2){ white-space:normal; max-width:160px; }
   tbody tr:last-child td{ border-bottom:none; }
+  tbody tr{ transition:background .1s ease; }
+  tbody tr:hover td{ background:var(--surface-2); }
   td.num, th.num{ text-align:right; font-family:var(--font-mono); font-variant-numeric:tabular-nums; }
-  td.mono{ font-family:var(--font-mono); font-size:15px; }
-  .aloistag{ display:inline-block; font-family:var(--font-mono); font-size:14px; font-weight:600; padding:1px 6px; border-radius:5px; background:var(--surface-2); color:var(--ink-2); }
-  .subttl{ font-family:var(--font-display); font-weight:700; font-size:15px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-2); margin:0 0 8px; display:flex; justify-content:space-between; }
+  td.mono{ font-family:var(--font-mono); font-size:13.5px; }
+  .aloistag{ display:inline-block; font-family:var(--font-mono); font-size:12.5px; font-weight:600; padding:2px 7px; border-radius:7px; background:var(--surface-2); color:var(--ink-2); }
+  .subttl{ font-family:var(--font-display); font-weight:600; font-size:14px; text-transform:none; letter-spacing:0; color:var(--ink); margin:0 0 10px; display:flex; justify-content:space-between; }
   .subttl .n{ font-family:var(--font-mono); color:var(--muted); font-weight:500; text-transform:none; letter-spacing:0; }
   tbody tr.top1 td{ background:var(--accent-wash); }
 
-  .grouphead td{ margin-top:10px; padding:9px 12px; border-bottom:none; border-radius:8px;
-    background:var(--accent-wash); border:1px solid var(--line);
-    font-family:var(--font-display); font-weight:700; font-size:13.5px;
-    text-transform:uppercase; letter-spacing:.06em; color:var(--accent-strong); cursor:pointer; user-select:none; }
-  .grouphead:hover td{ border-color:var(--accent); background:var(--accent-wash); filter:brightness(0.97); }
-  .grouphead .caret{ display:inline-block; margin-right:8px; font-size:13px; font-weight:800; color:var(--accent); transition:transform .15s ease; }
+  .grouphead td{ margin-top:12px; padding:10px 14px; border-bottom:none; border-radius:10px;
+    background:var(--accent-wash); border:none;
+    font-family:var(--font-body); font-weight:600; font-size:13px;
+    text-transform:none; letter-spacing:0; color:var(--accent-strong); cursor:pointer; user-select:none; transition:filter .12s ease; }
+  .grouphead:hover td{ filter:brightness(0.97); }
+  .grouphead .caret{ display:inline-block; margin-right:8px; font-size:12px; font-weight:800; color:var(--accent); transition:transform .15s ease; }
   .grouphead.open .caret{ transform:rotate(90deg); }
-  .grouphead .hint{ float:right; font-family:var(--font-mono); font-size:11.5px; text-transform:none; letter-spacing:0; color:var(--accent); opacity:.75; }
+  .grouphead .hint{ float:right; font-family:var(--font-mono); font-size:11px; text-transform:none; letter-spacing:0; color:var(--accent); opacity:.75; }
   .grouphead.open .hint::before{ content:"접기 ▲"; }
   .grouphead:not(.open) .hint::before{ content:"펼치기 ▾"; }
   tbody tr.grouphead:first-child td{ margin-top:0; }
+  tbody tr.grouphead:hover td{ background:var(--accent-wash); }
   tbody tr.grouphead + tr td{ border-top:none; }
   tbody tr.subtotal td{ border-top:1px solid var(--line); border-bottom:1.5px solid var(--line); font-weight:700; }
+  tbody tr.subtotal:hover td{ background:transparent; }
   td.num.neg{ color:var(--critical); }
 
   .aloistag.oseries{ background:var(--critical-wash); color:var(--critical); font-weight:700; }
   tbody tr.oseries td.num, tbody tr.oseries td.mono{ color:var(--critical); }
   tbody tr.subtotal.oseries td{ color:var(--critical); }
   .grouphead.oseries td{ background:var(--critical-wash); color:var(--critical); }
+  .grouphead.oseries:hover td{ background:var(--critical-wash); }
   .grouphead.oseries .caret, .grouphead.oseries .hint{ color:var(--critical); }
   tr.cancelled{ opacity:.55; }
-  .empty-note{ font-size:15.5px; color:var(--muted); padding:12px 4px; }
+  .empty-note{ font-size:14.5px; color:var(--muted); padding:12px 4px; }
 
   @media (max-width:900px){
     .app{ flex-direction:column; }
@@ -213,7 +228,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 18일 (금) · 09:02 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 18일 (금) · 09:13 기준</div>
   </nav>
 
   <main class="main">
@@ -222,7 +237,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 18일 (금) · 09:02 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 18일 (금) · 09:13 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -236,8 +251,8 @@
         <button class="kpitile" id="tile-inv" onclick="selectKpi('inv')" aria-pressed="false">
           <span class="rank">02</span>
           <span class="eyebrow">재고금액 · 부품창고</span>
-          <span class="value">₩1,232,275,550</span>
-          <span class="foot">2285품목 · 25개 코드</span>
+          <span class="value">₩1,225,888,333</span>
+          <span class="foot">2259품목 · 25개 코드</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
       </div>
@@ -462,8 +477,8 @@
         <div id="detail-inv" hidden>
           <div class="viewer-head">
             <span class="lbl">재고금액 세부</span>
-            <span class="val">₩1,232,275,550</span>
-            <span class="foot">2285품목 · 부품창고</span>
+            <span class="val">₩1,225,888,333</span>
+            <span class="foot">2259품목 · 부품창고</span>
           </div>
           <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
           <div class="tablewrap"><table>
@@ -482,49 +497,49 @@
       <td><span class="aloistag">A1</span></td>
       <td class="num">2,362</td>
       <td class="num">218,945,774</td>
-      <td class="num">17.77%</td>
+      <td class="num">17.86%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A2</span></td>
-      <td class="num">1,242</td>
-      <td class="num">15,358,887</td>
+      <td class="num">1,228</td>
+      <td class="num">15,346,689</td>
       <td class="num">1.25%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A3</span></td>
-      <td class="num">481</td>
-      <td class="num">30,169,258</td>
-      <td class="num">2.45%</td>
+      <td class="num">478</td>
+      <td class="num">30,110,509</td>
+      <td class="num">2.46%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A4</span></td>
-      <td class="num">1,930</td>
-      <td class="num">46,723,176</td>
-      <td class="num">3.79%</td>
+      <td class="num">1,925</td>
+      <td class="num">46,660,770</td>
+      <td class="num">3.81%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A5</span></td>
-      <td class="num">1,335</td>
-      <td class="num">74,536,095</td>
-      <td class="num">6.05%</td>
+      <td class="num">1,334</td>
+      <td class="num">74,445,060</td>
+      <td class="num">6.07%</td>
     </tr>
     
     <tr data-group="inv-1" hidden>
       <td><span class="aloistag">A6</span></td>
-      <td class="num">1,532</td>
-      <td class="num">94,317,028</td>
-      <td class="num">7.65%</td>
+      <td class="num">1,528</td>
+      <td class="num">94,280,884</td>
+      <td class="num">7.69%</td>
     </tr>
     
     <tr class="subtotal">
       <td>A 합계</td>
-      <td class="num">8,882</td>
-      <td class="num">480,050,218</td>
-      <td class="num">38.96%</td>
+      <td class="num">8,855</td>
+      <td class="num">479,789,686</td>
+      <td class="num">39.14%</td>
     </tr>
     
     
@@ -534,13 +549,13 @@
       <td><span class="aloistag">L1</span></td>
       <td class="num">1,878</td>
       <td class="num">27,791,715</td>
-      <td class="num">2.26%</td>
+      <td class="num">2.27%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L2</span></td>
-      <td class="num">227</td>
-      <td class="num">8,984,886</td>
+      <td class="num">226</td>
+      <td class="num">8,977,406</td>
       <td class="num">0.73%</td>
     </tr>
     
@@ -548,13 +563,13 @@
       <td><span class="aloistag">L3</span></td>
       <td class="num">86</td>
       <td class="num">5,839,704</td>
-      <td class="num">0.47%</td>
+      <td class="num">0.48%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L4</span></td>
-      <td class="num">554</td>
-      <td class="num">12,930,085</td>
+      <td class="num">548</td>
+      <td class="num">12,903,643</td>
       <td class="num">1.05%</td>
     </tr>
     
@@ -569,21 +584,21 @@
       <td><span class="aloistag">L6</span></td>
       <td class="num">272</td>
       <td class="num">29,663,547</td>
-      <td class="num">2.41%</td>
+      <td class="num">2.42%</td>
     </tr>
     
     <tr data-group="inv-2" hidden>
       <td><span class="aloistag">L7</span></td>
-      <td class="num">1,363</td>
-      <td class="num">58,726,345</td>
-      <td class="num">4.77%</td>
+      <td class="num">1,357</td>
+      <td class="num">58,408,491</td>
+      <td class="num">4.76%</td>
     </tr>
     
     <tr class="subtotal">
       <td>L 합계</td>
-      <td class="num">4,450</td>
-      <td class="num">146,913,052</td>
-      <td class="num">11.92%</td>
+      <td class="num">4,437</td>
+      <td class="num">146,561,276</td>
+      <td class="num">11.96%</td>
     </tr>
     
     
@@ -591,23 +606,23 @@
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">O8</span></td>
-      <td class="num">1,180</td>
-      <td class="num">70,992,547</td>
-      <td class="num">5.76%</td>
+      <td class="num">1,173</td>
+      <td class="num">68,612,932</td>
+      <td class="num">5.60%</td>
     </tr>
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">OA</span></td>
-      <td class="num">231</td>
-      <td class="num">38,976,331</td>
-      <td class="num">3.16%</td>
+      <td class="num">228</td>
+      <td class="num">38,566,400</td>
+      <td class="num">3.15%</td>
     </tr>
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">OE</span></td>
-      <td class="num">1,150</td>
-      <td class="num">305,018,415</td>
-      <td class="num">24.75%</td>
+      <td class="num">1,149</td>
+      <td class="num">305,009,415</td>
+      <td class="num">24.88%</td>
     </tr>
     
     <tr data-group="inv-3" hidden class="oseries">
@@ -619,16 +634,16 @@
     
     <tr data-group="inv-3" hidden class="oseries">
       <td><span class="aloistag oseries">OV</span></td>
-      <td class="num">209</td>
-      <td class="num">21,695,634</td>
-      <td class="num">1.76%</td>
+      <td class="num">205</td>
+      <td class="num">20,791,119</td>
+      <td class="num">1.70%</td>
     </tr>
     
     <tr class="subtotal oseries">
       <td>O 합계</td>
-      <td class="num">2,781</td>
-      <td class="num">438,604,196</td>
-      <td class="num">35.59%</td>
+      <td class="num">2,766</td>
+      <td class="num">434,901,135</td>
+      <td class="num">35.48%</td>
     </tr>
     
     
@@ -636,16 +651,16 @@
     
     <tr data-group="inv-4" hidden>
       <td><span class="aloistag">II</span></td>
-      <td class="num">94</td>
-      <td class="num">23,236,166</td>
-      <td class="num">1.89%</td>
+      <td class="num">89</td>
+      <td class="num">21,949,879</td>
+      <td class="num">1.79%</td>
     </tr>
     
     <tr class="subtotal">
       <td>I 합계</td>
-      <td class="num">94</td>
-      <td class="num">23,236,166</td>
-      <td class="num">1.89%</td>
+      <td class="num">89</td>
+      <td class="num">21,949,879</td>
+      <td class="num">1.79%</td>
     </tr>
     
     
@@ -669,7 +684,7 @@
       <td><span class="aloistag">SK</span></td>
       <td class="num">854</td>
       <td class="num">33,206,249</td>
-      <td class="num">2.69%</td>
+      <td class="num">2.71%</td>
     </tr>
     
     <tr data-group="inv-5" hidden>
@@ -681,22 +696,22 @@
     
     <tr data-group="inv-5" hidden>
       <td><span class="aloistag">SY</span></td>
-      <td class="num">69</td>
-      <td class="num">6,269,035</td>
+      <td class="num">68</td>
+      <td class="num">6,211,565</td>
       <td class="num">0.51%</td>
     </tr>
     
     <tr data-group="inv-5" hidden>
       <td><span class="aloistag">SZ</span></td>
-      <td class="num">290</td>
-      <td class="num">86,585,812</td>
-      <td class="num">7.03%</td>
+      <td class="num">287</td>
+      <td class="num">85,857,721</td>
+      <td class="num">7.00%</td>
     </tr>
     
     <tr class="subtotal">
       <td>S 합계</td>
-      <td class="num">1,489</td>
-      <td class="num">136,063,118</td>
+      <td class="num">1,485</td>
+      <td class="num">135,277,557</td>
       <td class="num">11.04%</td>
     </tr>
     
@@ -944,16 +959,16 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">전체재고 대비 OA+OV 비율</span>
-          <span class="value">4.92%</span>
-          <span class="foot">OA+OV 재고금액 ₩60,671,965 · 전체재고 ₩1,232,275,550</span>
+          <span class="value">4.84%</span>
+          <span class="foot">OA+OV 재고금액 ₩59,357,519 · 전체재고 ₩1,225,888,333</span>
         </div>
       </div>
 
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">OA / OV 재고 세부</span>
-          <span class="val">₩60,671,965</span>
-          <span class="foot">OA ₩38,976,331(107라인·231개) · OV ₩21,695,634(112라인·209개)</span>
+          <span class="val">₩59,357,519</span>
+          <span class="foot">OA ₩38,566,400(104라인·228개) · OV ₩20,791,119(109라인·205개)</span>
         </div>
         <p class="subttl">OA+OV 품목 TOP 10 <span class="n">금액 큰 순</span></p>
         <div class="tablewrap">
@@ -986,7 +1001,7 @@
           </table>
         </div>
 
-        <p class="subttl" style="margin-top:20px">OA+OV 품목 전체 <span class="n">그룹 클릭해서 펼치기 · 전체 219개</span></p>
+        <p class="subttl" style="margin-top:20px">OA+OV 품목 전체 <span class="n">그룹 클릭해서 펼치기 · 전체 213개</span></p>
         <div class="tablewrap">
           <table>
             <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
@@ -1044,8 +1059,6 @@
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">61612458349</td><td>Set of flat</td><td><span class="aloistag oseries">OA</span></td><td class="num">9</td><td class="num">275,598</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">13718509032</td><td>Filter elmnt</td><td><span class="aloistag oseries">OA</span></td><td class="num">8</td><td class="num">264,416</td></tr>
-              
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51757185112</td><td>Shielding</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">259,199</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">11288479241</td><td>Belt tension REPO</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">250,608</td></tr>
               
@@ -1105,8 +1118,6 @@
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51129451025</td><td>Mount, bumpe</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">89,505</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51647397473</td><td>Air duct, bo</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">88,717</td></tr>
-              
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51337446194</td><td>Finisher win</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">85,547</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">41008494434</td><td>Side panel b</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">83,810</td></tr>
@@ -1128,8 +1139,6 @@
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">11317617474</td><td>Slide rail</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">64,218</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">82292355518</td><td>Key case, M</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">63,799</td></tr>
-              
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51142456203</td><td>Foil wrap bl</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">62,015</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51117422212</td><td>Shock absorb</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">61,904</td></tr>
               
@@ -1207,7 +1216,7 @@
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">32106788407</td><td>Hex nut</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">2,859</td></tr>
               
-              <tr class="subtotal oseries"><td colspan="4">OA 합계 (107개)</td><td class="num">38,976,331</td></tr>
+              <tr class="subtotal oseries"><td colspan="4">OA 합계 (104개)</td><td class="num">38,566,400</td></tr>
 
               <tr class="grouphead oseries" data-group="oaov-ov" onclick="toggleAloisGroup(this)"><td colspan="5"><span class="caret">▸</span>OV<span class="hint"></span></td></tr>
               
@@ -1235,15 +1244,11 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">54107391797</td><td>Blind, panor</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">476,085</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51129501839</td><td>Trim panel,</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">472,500</td></tr>
-              
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">52107310847</td><td>Seat mechani</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">468,270</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">41007431627</td><td>INTERIOR TAI</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">468,083</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">16119455463</td><td>Supply modul</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">441,738</td></tr>
-              
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51357437857</td><td>Window frame</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">436,663</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">13718519138</td><td>Intake muffl</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">343,039</td></tr>
               
@@ -1274,6 +1279,8 @@
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">63217376486</td><td>Tail light t</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">261,170</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51117379435</td><td>Black band s</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">238,212</td></tr>
+              
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51129501839</td><td>Trim panel,</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">236,250</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">34116789544</td><td>Brake disc</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">235,500</td></tr>
               
@@ -1326,10 +1333,6 @@
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">61357928662</td><td>Receiver rad</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">123,954</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">12638638551</td><td>Integrated s</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">121,512</td></tr>
-              
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51138469959</td><td>Grille, fron</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">115,801</td></tr>
-              
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51138469960</td><td>Grille, fron</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">115,801</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">31126851693</td><td>Rubber Mount</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">109,980</td></tr>
               
@@ -1435,7 +1438,7 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">07119906681</td><td>Hexagon scre</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1,836</td></tr>
               
-              <tr class="subtotal oseries"><td colspan="4">OV 합계 (112개)</td><td class="num">21,695,634</td></tr>
+              <tr class="subtotal oseries"><td colspan="4">OV 합계 (109개)</td><td class="num">20,791,119</td></tr>
             </tbody>
           </table>
         </div>
@@ -1454,14 +1457,14 @@
           <span class="rank">01</span>
           <span class="eyebrow">입고 12개월+ 장기재고</span>
           <span class="value">₩63,894,153</span>
-          <span class="foot">전체재고 대비 5.19% · 225품목</span>
+          <span class="foot">전체재고 대비 5.21% · 225품목</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
         <button class="kpitile" id="tile-m24" onclick="selectLongKpi('m24')" aria-pressed="false">
           <span class="rank">02</span>
           <span class="eyebrow">입고 24개월+ 장기재고</span>
           <span class="value">₩20,720,697</span>
-          <span class="foot">전체재고 대비 1.68% · 59품목</span>
+          <span class="foot">전체재고 대비 1.69% · 59품목</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
       </div>
@@ -2080,15 +2083,15 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">O계열 · RO/SB/SP 묶인 재고</span>
-          <span class="value">119건</span>
-          <span class="foot">요청수량×원가 합계 ₩31,112,433</span>
+          <span class="value">117건</span>
+          <span class="foot">요청수량×원가 합계 ₩31,077,594</span>
         </div>
       </div>
 
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">참조문서별 O계열 요청 세부</span>
-          <span class="val">119건</span>
+          <span class="val">117건</span>
           <span class="foot">그룹 클릭해서 펼치기 · 요청일 오래된순</span>
         </div>
         <div class="tablewrap">
@@ -2096,7 +2099,7 @@
             <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>참조문서번호</th><th>요청일</th><th>경과일</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가금액</th><th>담당SA</th></tr></thead>
             <tbody>
               
-              <tr class="grouphead oseries" data-group="opart-RO" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>RO (38건)<span class="hint"></span></td></tr>
+              <tr class="grouphead oseries" data-group="opart-RO" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>RO (36건)<span class="hint"></span></td></tr>
               
               <tr class="oseries" data-group="opart-RO" hidden>
                 <td class="mono">16119455463</td><td>Supply modul</td><td><span class="aloistag oseries">OV</span></td>
@@ -2225,24 +2228,10 @@
               </tr>
               
               <tr class="oseries" data-group="opart-RO" hidden>
-                <td class="mono">99985B94ED5</td><td>BMW ART BOLT(NEW)</td><td><span class="aloistag oseries">OE</span></td>
-                <td class="mono">RO2609000916</td><td class="mono">09-14</td><td class="mono">D+4일</td>
-                <td class="num">1</td><td class="num">19</td><td class="num">18</td>
-                <td class="num">9,000</td><td>염진아</td>
-              </tr>
-              
-              <tr class="oseries" data-group="opart-RO" hidden>
                 <td class="mono">51115A1BCB8</td><td>Carrier, bum</td><td><span class="aloistag oseries">O8</span></td>
                 <td class="mono">RO2609000962</td><td class="mono">09-15</td><td class="mono">D+3일</td>
                 <td class="num">1</td><td class="num">1</td><td class="num">0</td>
                 <td class="num">579,675</td><td>염진아</td>
-              </tr>
-              
-              <tr class="oseries" data-group="opart-RO" hidden>
-                <td class="mono">63147400207</td><td>Reflector, r</td><td><span class="aloistag oseries">O8</span></td>
-                <td class="mono">RO2609000996</td><td class="mono">09-15</td><td class="mono">D+3일</td>
-                <td class="num">1</td><td class="num">1</td><td class="num">0</td>
-                <td class="num">25,839</td><td>염진아</td>
               </tr>
               
               <tr class="oseries" data-group="opart-RO" hidden>
@@ -2364,7 +2353,7 @@
                 <td class="num">59,364</td><td>우종훈</td>
               </tr>
               
-              <tr class="subtotal oseries"><td colspan="6">RO 합계</td><td class="num">71</td><td class="num"></td><td class="num"></td><td class="num">6,912,857</td><td></td></tr>
+              <tr class="subtotal oseries"><td colspan="6">RO 합계</td><td class="num">69</td><td class="num"></td><td class="num"></td><td class="num">6,878,018</td><td></td></tr>
               
               <tr class="grouphead oseries" data-group="opart-SB" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>SB (39건)<span class="hint"></span></td></tr>
               
