@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 09:46 기준",
+    "generated_at": "9월 18일 (금) · 09:54 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1223345341,
-    "item_count": 2250,
+    "total": 1222946395,
+    "item_count": 2248,
     "code_count": 25,
     "alois_groups": [
       {
@@ -250,9 +250,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 218647565,
+            "val": 218559715,
             "pct": 17.87,
-            "qty": 2356
+            "qty": 2354
           },
           {
             "code": "A2",
@@ -268,9 +268,9 @@
           },
           {
             "code": "A4",
-            "val": 46660770,
+            "val": 46630285,
             "pct": 3.81,
-            "qty": 1925
+            "qty": 1924
           },
           {
             "code": "A5",
@@ -280,13 +280,13 @@
           },
           {
             "code": "A6",
-            "val": 93111150,
+            "val": 93071115,
             "pct": 7.61,
-            "qty": 1526
+            "qty": 1521
           }
         ],
-        "subtotal_val": 477995212,
-        "subtotal_qty": 8846,
+        "subtotal_val": 477836842,
+        "subtotal_qty": 8838,
         "subtotal_pct": 39.07
       },
       {
@@ -296,9 +296,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 27593503,
-            "pct": 2.26,
-            "qty": 1863
+            "val": 27514070,
+            "pct": 2.25,
+            "qty": 1858
           },
           {
             "code": "L2",
@@ -315,7 +315,7 @@
           {
             "code": "L4",
             "val": 12903643,
-            "pct": 1.05,
+            "pct": 1.06,
             "qty": 548
           },
           {
@@ -327,19 +327,19 @@
           {
             "code": "L6",
             "val": 29663547,
-            "pct": 2.42,
+            "pct": 2.43,
             "qty": 272
           },
           {
             "code": "L7",
-            "val": 57280685,
+            "val": 57205302,
             "pct": 4.68,
-            "qty": 1355
+            "qty": 1354
           }
         ],
-        "subtotal_val": 145128658,
-        "subtotal_qty": 4418,
-        "subtotal_pct": 11.86
+        "subtotal_val": 144973842,
+        "subtotal_qty": 4412,
+        "subtotal_pct": 11.85
       },
       {
         "code": "O",
@@ -360,9 +360,9 @@
           },
           {
             "code": "OE",
-            "val": 304899575,
+            "val": 304813815,
             "pct": 24.92,
-            "qty": 1147
+            "qty": 1146
           },
           {
             "code": "ON",
@@ -377,9 +377,9 @@
             "qty": 203
           }
         ],
-        "subtotal_val": 434306259,
-        "subtotal_qty": 2760,
-        "subtotal_pct": 35.5
+        "subtotal_val": 434220499,
+        "subtotal_qty": 2759,
+        "subtotal_pct": 35.51
       },
       {
         "code": "I",
@@ -441,13 +441,13 @@
         ],
         "subtotal_val": 134953605,
         "subtotal_qty": 1484,
-        "subtotal_pct": 11.03
+        "subtotal_pct": 11.04
       }
     ]
   },
   "oaov": {
     "total": 58956888,
-    "inv_total": 1223345341,
+    "inv_total": 1222946395,
     "pct": 4.82,
     "oa_val": 38566400,
     "ov_val": 20390488,
@@ -5211,7 +5211,7 @@
         "ref_tp": "SB",
         "ref_no": "SB2608001800",
         "req_qty": 1,
-        "crt_qty": 15,
+        "crt_qty": 14,
         "avail_qty": 13,
         "req_dt": "08-26",
         "req_dt_full": "2026-08-26 17:15:37",
@@ -6517,22 +6517,6 @@
         "dday": "D+0일"
       },
       {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "alois": "OE",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001155",
-        "req_qty": 1,
-        "crt_qty": 15,
-        "avail_qty": 13,
-        "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 09:32:37",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 85760,
-        "sa": "이정환",
-        "dday": "D+0일"
-      },
-      {
         "item": "51357491331",
         "name": "Molding, sid",
         "alois": "O8",
@@ -6563,10 +6547,26 @@
         "val": 812850,
         "sa": "강충성",
         "dday": "D+0일"
+      },
+      {
+        "item": "34356791961",
+        "name": "Sensor",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609000814",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 09:50:40",
+        "req_brch": "AS_부산(전포)",
+        "val": 28210,
+        "sa": "김법룡",
+        "dday": "D+0일"
       }
     ],
     "count": 121,
-    "total_val": 35606035,
+    "total_val": 35548485,
     "groups": [
       {
         "code": "RO",
@@ -7164,22 +7164,6 @@
             "dday": "D+0일"
           },
           {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001155",
-            "req_qty": 1,
-            "crt_qty": 15,
-            "avail_qty": 13,
-            "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 09:32:37",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 85760,
-            "sa": "이정환",
-            "dday": "D+0일"
-          },
-          {
             "item": "51357491331",
             "name": "Molding, sid",
             "alois": "O8",
@@ -7210,11 +7194,27 @@
             "val": 812850,
             "sa": "강충성",
             "dday": "D+0일"
+          },
+          {
+            "item": "34356791961",
+            "name": "Sensor",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609000814",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 09:50:40",
+            "req_brch": "AS_부산(전포)",
+            "val": 28210,
+            "sa": "김법룡",
+            "dday": "D+0일"
           }
         ],
         "count": 40,
         "qty_sum": 73,
-        "val": 11406459
+        "val": 11348909
       },
       {
         "code": "SB",
@@ -7674,7 +7674,7 @@
             "ref_tp": "SB",
             "ref_no": "SB2608001800",
             "req_qty": 1,
-            "crt_qty": 15,
+            "crt_qty": 14,
             "avail_qty": 13,
             "req_dt": "08-26",
             "req_dt_full": "2026-08-26 17:15:37",
@@ -8643,6 +8643,32 @@
     ],
     "total_in": 170516132,
     "total_out": 28709575,
-    "net": 141806557
+    "net": 141806557,
+    "by_code": [
+      {
+        "code": "O8",
+        "in_val": 146230422,
+        "out_val": 25715845,
+        "net": 120514577
+      },
+      {
+        "code": "OA",
+        "in_val": 8459673,
+        "out_val": 0,
+        "net": 8459673
+      },
+      {
+        "code": "OE",
+        "in_val": 7327140,
+        "out_val": 2309654,
+        "net": 5017486
+      },
+      {
+        "code": "OV",
+        "in_val": 8498897,
+        "out_val": 642076,
+        "net": 7856821
+      }
+    ]
   }
 }

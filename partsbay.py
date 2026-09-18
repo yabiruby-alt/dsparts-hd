@@ -433,22 +433,30 @@ def build_o_parts(rows, now):
 
 
 def build_o_daily_flow(recv_rows, turnover_rows, month_start, today_str):
-    """이번달 O계열 파트 일자별 입고/출고 금액(원가 기준)."""
+    """이번달 O계열 파트 일자별 + 등급(ALOIS 코드)별 입고/출고 금액(원가 기준)."""
     in_by_day = defaultdict(float)
+    in_by_code = defaultdict(float)
     for r in recv_rows:
-        if not str(r.get("aloisCd") or "").startswith("O"):
+        code = str(r.get("aloisCd") or "")
+        if not code.startswith("O"):
             continue
+        amt = num(r.get("purcAmt"))
         d = (r.get("realWhDt") or "")[:10]
         if d:
-            in_by_day[d] += num(r.get("purcAmt"))
+            in_by_day[d] += amt
+        in_by_code[code] += amt
 
     out_by_day = defaultdict(float)
+    out_by_code = defaultdict(float)
     for r in turnover_rows:
-        if not str(r.get("aloisCd") or "").startswith("O"):
+        code = str(r.get("aloisCd") or "")
+        if not code.startswith("O"):
             continue
+        amt = num(r.get("oriSumAmt"))
         d = (r.get("invDt") or "")[:10]
         if d:
-            out_by_day[d] += num(r.get("oriSumAmt"))
+            out_by_day[d] += amt
+        out_by_code[code] += amt
 
     start_d = datetime.strptime(month_start, "%Y-%m-%d").date()
     end_d = datetime.strptime(today_str, "%Y-%m-%d").date()
@@ -464,9 +472,19 @@ def build_o_daily_flow(recv_rows, turnover_rows, month_start, today_str):
         out_val = round(out_by_day.get(d, 0.0))
         rows.append({"date": d[5:10], "in_val": in_val, "out_val": out_val, "net": in_val - out_val})
 
+    codes = sorted(set(in_by_code) | set(out_by_code))
+    by_code = []
+    for c in codes:
+        in_val = round(in_by_code.get(c, 0.0))
+        out_val = round(out_by_code.get(c, 0.0))
+        by_code.append({"code": c, "in_val": in_val, "out_val": out_val, "net": in_val - out_val})
+
     total_in = round(sum(r["in_val"] for r in rows))
     total_out = round(sum(r["out_val"] for r in rows))
-    return {"rows": rows, "total_in": total_in, "total_out": total_out, "net": total_in - total_out}
+    return {
+        "rows": rows, "total_in": total_in, "total_out": total_out, "net": total_in - total_out,
+        "by_code": by_code,
+    }
 
 
 def _num_of(r):

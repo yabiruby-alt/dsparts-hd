@@ -697,6 +697,26 @@
 
       <div class="viewer">
         <div class="viewer-head">
+          <span class="lbl">등급(ALOIS)별 O계열 입출고</span>
+          <span class="foot">원가 기준 · 이번달 누계</span>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>등급</th><th class="num">입고금액</th><th class="num">출고금액</th><th class="num">순증감</th></tr></thead>
+            <tbody>
+              {% for r in oflow.by_code %}
+              <tr><td><span class="aloistag oseries">{{ r.code }}</span></td><td class="num">{{ '{:,}'.format(r.in_val) }}</td><td class="num">{{ '{:,}'.format(r.out_val) }}</td><td class="num{{ ' neg' if r.net < 0 else '' }}">{{ '{:,}'.format(r.net) }}</td></tr>
+              {% else %}
+              <tr><td colspan="4" class="empty-note">이번달 O계열 입출고 없음</td></tr>
+              {% endfor %}
+              <tr class="subtotal"><td>합계</td><td class="num">{{ '{:,}'.format(oflow.total_in) }}</td><td class="num">{{ '{:,}'.format(oflow.total_out) }}</td><td class="num{{ ' neg' if oflow.net < 0 else '' }}">{{ '{:,}'.format(oflow.net) }}</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
           <span class="lbl">일자별 O계열 입출고 세부</span>
           <span class="foot">원가(구매금액/품목원가합계) 기준 · 이번달 1일~오늘</span>
         </div>
