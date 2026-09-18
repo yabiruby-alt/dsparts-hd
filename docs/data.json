@@ -2,22 +2,275 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 19일 (토) · 07:23 기준",
+    "generated_at": "9월 19일 (토) · 07:34 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
-    "total": 0,
+    "total": 49164229,
     "date": "2026-09-19",
-    "grn_count": 0,
-    "lines": 0,
-    "qty": 0,
-    "alois_groups": [],
-    "grn_rows": [],
-    "top5": []
+    "grn_count": 17,
+    "lines": 140,
+    "qty": 1241,
+    "alois_groups": [
+      {
+        "code": "A",
+        "label": "상시재고",
+        "oseries": false,
+        "rows": [
+          {
+            "code": "A1",
+            "val": 4123600,
+            "pct": 8.39
+          },
+          {
+            "code": "A2",
+            "val": 677304,
+            "pct": 1.38
+          },
+          {
+            "code": "A4",
+            "val": 3311722,
+            "pct": 6.74
+          },
+          {
+            "code": "A5",
+            "val": 431500,
+            "pct": 0.88
+          },
+          {
+            "code": "A6",
+            "val": 3836996,
+            "pct": 7.8
+          }
+        ],
+        "subtotal_val": 12381122,
+        "subtotal_qty": 0,
+        "subtotal_pct": 25.18
+      },
+      {
+        "code": "L",
+        "label": "로컬조달",
+        "oseries": false,
+        "rows": [
+          {
+            "code": "L1",
+            "val": 8776800,
+            "pct": 17.85
+          },
+          {
+            "code": "L5",
+            "val": 127755,
+            "pct": 0.26
+          },
+          {
+            "code": "L6",
+            "val": 311855,
+            "pct": 0.63
+          },
+          {
+            "code": "L7",
+            "val": 957147,
+            "pct": 1.95
+          }
+        ],
+        "subtotal_val": 10173557,
+        "subtotal_qty": 0,
+        "subtotal_pct": 20.69
+      },
+      {
+        "code": "O",
+        "label": "특수/단종계열",
+        "oseries": true,
+        "rows": [
+          {
+            "code": "O8",
+            "val": 4343567,
+            "pct": 8.83
+          }
+        ],
+        "subtotal_val": 4343567,
+        "subtotal_qty": 0,
+        "subtotal_pct": 8.83
+      },
+      {
+        "code": "I",
+        "label": "비이동성",
+        "oseries": false,
+        "rows": [
+          {
+            "code": "II",
+            "val": 5183944,
+            "pct": 10.54
+          }
+        ],
+        "subtotal_val": 5183944,
+        "subtotal_qty": 0,
+        "subtotal_pct": 10.54
+      },
+      {
+        "code": "S",
+        "label": "특수발주",
+        "oseries": false,
+        "rows": [
+          {
+            "code": "SK",
+            "val": 206163,
+            "pct": 0.42
+          },
+          {
+            "code": "SY",
+            "val": 175540,
+            "pct": 0.36
+          },
+          {
+            "code": "SZ",
+            "val": 13735176,
+            "pct": 27.94
+          }
+        ],
+        "subtotal_val": 14116879,
+        "subtotal_qty": 0,
+        "subtotal_pct": 28.71
+      }
+    ],
+    "grn_rows": [
+      {
+        "grn": "2281058",
+        "val": 14323518,
+        "is_top": true
+      },
+      {
+        "grn": "2281033",
+        "val": 662000,
+        "is_top": false
+      },
+      {
+        "grn": "2280961",
+        "val": 8776800,
+        "is_top": false
+      },
+      {
+        "grn": "2280852",
+        "val": 1153184,
+        "is_top": false
+      },
+      {
+        "grn": "2280827",
+        "val": 1051345,
+        "is_top": false
+      },
+      {
+        "grn": "2280779",
+        "val": 201656,
+        "is_top": false
+      },
+      {
+        "grn": "2280778",
+        "val": 5317784,
+        "is_top": false
+      },
+      {
+        "grn": "2280754",
+        "val": 317654,
+        "is_top": false
+      },
+      {
+        "grn": "2280741",
+        "val": 1459846,
+        "is_top": false
+      },
+      {
+        "grn": "2280703",
+        "val": 1002443,
+        "is_top": false
+      },
+      {
+        "grn": "2280672",
+        "val": 514230,
+        "is_top": false
+      },
+      {
+        "grn": "2280604",
+        "val": 179010,
+        "is_top": false
+      },
+      {
+        "grn": "2280597",
+        "val": 812812,
+        "is_top": false
+      },
+      {
+        "grn": "2280357",
+        "val": 142923,
+        "is_top": false
+      },
+      {
+        "grn": "2280230",
+        "val": 37157,
+        "is_top": false
+      },
+      {
+        "grn": "2279445",
+        "val": 10384715,
+        "is_top": false
+      },
+      {
+        "grn": "2278786",
+        "val": 2827152,
+        "is_top": false
+      }
+    ],
+    "top5": [
+      {
+        "item": "83215A65B99",
+        "name": "LL-22FE++ 0W12",
+        "alois": "L1",
+        "grn": "2280961",
+        "qty": 360,
+        "val": 5155920,
+        "oseries": false
+      },
+      {
+        "item": "99995BA3BA9",
+        "name": "P-C-30(Clear",
+        "alois": "SZ",
+        "grn": "2281058",
+        "qty": 15,
+        "val": 4302150,
+        "oseries": false
+      },
+      {
+        "item": "12122455258",
+        "name": "Spark plug B38x,46x,48x",
+        "alois": "A1",
+        "grn": "2279445",
+        "qty": 200,
+        "val": 4123600,
+        "oseries": false
+      },
+      {
+        "item": "83215B49DD6",
+        "name": "LL-17FE+ 0W-20",
+        "alois": "L1",
+        "grn": "2280961",
+        "qty": 240,
+        "val": 3620880,
+        "oseries": false
+      },
+      {
+        "item": "61315B37155",
+        "name": "Repair kit c",
+        "alois": "SZ",
+        "grn": "2280778",
+        "qty": 1,
+        "val": 1821300,
+        "oseries": false
+      }
+    ]
   },
   "inv": {
-    "total": 1204589473,
-    "item_count": 2182,
+    "total": 1239429831,
+    "item_count": 2249,
     "code_count": 25,
     "alois_groups": [
       {
@@ -27,44 +280,44 @@
         "rows": [
           {
             "code": "A1",
-            "val": 216635916,
-            "pct": 17.98,
-            "qty": 2319
+            "val": 220759542,
+            "pct": 17.81,
+            "qty": 2519
           },
           {
             "code": "A2",
-            "val": 15130688,
-            "pct": 1.26,
-            "qty": 1186
+            "val": 15807985,
+            "pct": 1.28,
+            "qty": 1194
           },
           {
             "code": "A3",
             "val": 29848618,
-            "pct": 2.48,
+            "pct": 2.41,
             "qty": 469
           },
           {
             "code": "A4",
-            "val": 46251165,
-            "pct": 3.84,
-            "qty": 1908
+            "val": 49562895,
+            "pct": 4.0,
+            "qty": 1928
           },
           {
             "code": "A5",
-            "val": 72635980,
-            "pct": 6.03,
-            "qty": 1313
+            "val": 73067480,
+            "pct": 5.9,
+            "qty": 1346
           },
           {
             "code": "A6",
-            "val": 94313901,
-            "pct": 7.83,
-            "qty": 1515
+            "val": 98150897,
+            "pct": 7.92,
+            "qty": 1529
           }
         ],
-        "subtotal_val": 474816268,
-        "subtotal_qty": 8710,
-        "subtotal_pct": 39.42
+        "subtotal_val": 487197417,
+        "subtotal_qty": 8985,
+        "subtotal_pct": 39.31
       },
       {
         "code": "L",
@@ -73,50 +326,50 @@
         "rows": [
           {
             "code": "L1",
-            "val": 26285862,
-            "pct": 2.18,
-            "qty": 1775
+            "val": 35062306,
+            "pct": 2.83,
+            "qty": 2375
           },
           {
             "code": "L2",
             "val": 8832853,
-            "pct": 0.73,
+            "pct": 0.71,
             "qty": 223
           },
           {
             "code": "L3",
             "val": 5839704,
-            "pct": 0.48,
+            "pct": 0.47,
             "qty": 86
           },
           {
             "code": "L4",
             "val": 12798224,
-            "pct": 1.06,
+            "pct": 1.03,
             "qty": 540
           },
           {
             "code": "L5",
-            "val": 2976770,
+            "val": 3104525,
             "pct": 0.25,
-            "qty": 70
+            "qty": 71
           },
           {
             "code": "L6",
-            "val": 28889264,
-            "pct": 2.4,
-            "qty": 262
+            "val": 29158750,
+            "pct": 2.35,
+            "qty": 354
           },
           {
             "code": "L7",
-            "val": 55963131,
-            "pct": 4.65,
-            "qty": 1340
+            "val": 56920278,
+            "pct": 4.59,
+            "qty": 1344
           }
         ],
-        "subtotal_val": 141585808,
-        "subtotal_qty": 4296,
-        "subtotal_pct": 11.75
+        "subtotal_val": 151716639,
+        "subtotal_qty": 4993,
+        "subtotal_pct": 12.24
       },
       {
         "code": "O",
@@ -125,20 +378,20 @@
         "rows": [
           {
             "code": "O8",
-            "val": 65541361,
-            "pct": 5.44,
-            "qty": 1120
+            "val": 69884928,
+            "pct": 5.64,
+            "qty": 1152
           },
           {
             "code": "OA",
             "val": 38895536,
-            "pct": 3.23,
+            "pct": 3.14,
             "qty": 232
           },
           {
             "code": "OE",
             "val": 304795366,
-            "pct": 25.3,
+            "pct": 24.59,
             "qty": 1157
           },
           {
@@ -150,13 +403,13 @@
           {
             "code": "OV",
             "val": 21577375,
-            "pct": 1.79,
+            "pct": 1.74,
             "qty": 204
           }
         ],
-        "subtotal_val": 432730907,
-        "subtotal_qty": 2724,
-        "subtotal_pct": 35.92
+        "subtotal_val": 437074474,
+        "subtotal_qty": 2756,
+        "subtotal_pct": 35.26
       },
       {
         "code": "I",
@@ -165,14 +418,14 @@
         "rows": [
           {
             "code": "II",
-            "val": 13694056,
-            "pct": 1.14,
-            "qty": 42
+            "val": 18878000,
+            "pct": 1.52,
+            "qty": 69
           }
         ],
-        "subtotal_val": 13694056,
-        "subtotal_qty": 42,
-        "subtotal_pct": 1.14
+        "subtotal_val": 18878000,
+        "subtotal_qty": 69,
+        "subtotal_pct": 1.52
       },
       {
         "code": "S",
@@ -193,39 +446,39 @@
           },
           {
             "code": "SK",
-            "val": 31161574,
-            "pct": 2.59,
-            "qty": 844
+            "val": 31367763,
+            "pct": 2.53,
+            "qty": 906
           },
           {
             "code": "SX",
             "val": 9024917,
-            "pct": 0.75,
+            "pct": 0.73,
             "qty": 240
           },
           {
             "code": "SY",
             "val": 6280565,
-            "pct": 0.52,
+            "pct": 0.51,
             "qty": 69
           },
           {
             "code": "SZ",
-            "val": 94452422,
-            "pct": 7.84,
-            "qty": 764
+            "val": 97047100,
+            "pct": 7.83,
+            "qty": 780
           }
         ],
-        "subtotal_val": 141762434,
-        "subtotal_qty": 1937,
-        "subtotal_pct": 11.77
+        "subtotal_val": 144563301,
+        "subtotal_qty": 2015,
+        "subtotal_pct": 11.66
       }
     ]
   },
   "oaov": {
     "total": 60472911,
-    "inv_total": 1204589473,
-    "pct": 5.02,
+    "inv_total": 1239429831,
+    "pct": 4.88,
     "oa_val": 38895536,
     "ov_val": 21577375,
     "oa_lines": 108,
@@ -3966,7 +4219,7 @@
     ],
     "m12_val": 63837215,
     "m12_count": 224,
-    "m12_pct": 5.3,
+    "m12_pct": 5.15,
     "m24_items": [
       {
         "item": "24008741536",
@@ -4443,7 +4696,7 @@
     ],
     "m24_val": 20720697,
     "m24_count": 59,
-    "m24_pct": 1.72
+    "m24_pct": 1.67
   },
   "opart": {
     "items": [
@@ -16658,20 +16911,20 @@
       },
       {
         "date": "09-19",
-        "in_val": 0,
+        "in_val": 4343567,
         "out_val": 0,
-        "net": 0
+        "net": 4343567
       }
     ],
-    "total_in": 176819073,
+    "total_in": 181162640,
     "total_out": 170761780,
-    "net": 6057293,
+    "net": 10400860,
     "by_code": [
       {
         "code": "O8",
-        "in_val": 152516137,
+        "in_val": 156859704,
         "out_val": 140688281,
-        "net": 11827856
+        "net": 16171423
       },
       {
         "code": "OA",
@@ -16692,7 +16945,7 @@
         "net": 7342028
       }
     ],
-    "in_days": 13,
-    "avg_in": 13601467
+    "in_days": 14,
+    "avg_in": 12940189
   }
 }
