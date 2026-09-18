@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 18일 (금) · 09:24 기준",
+    "generated_at": "9월 18일 (금) · 09:35 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1225512603,
-    "item_count": 2259,
+    "total": 1224817416,
+    "item_count": 2256,
     "code_count": 25,
     "alois_groups": [
       {
@@ -250,9 +250,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 218786850,
+            "val": 218654293,
             "pct": 17.85,
-            "qty": 2359
+            "qty": 2357
           },
           {
             "code": "A2",
@@ -275,19 +275,19 @@
           {
             "code": "A5",
             "val": 74445060,
-            "pct": 6.07,
+            "pct": 6.08,
             "qty": 1334
           },
           {
             "code": "A6",
-            "val": 94280884,
-            "pct": 7.69,
-            "qty": 1528
+            "val": 94055967,
+            "pct": 7.68,
+            "qty": 1527
           }
         ],
-        "subtotal_val": 479630762,
-        "subtotal_qty": 8852,
-        "subtotal_pct": 39.14
+        "subtotal_val": 479273288,
+        "subtotal_qty": 8849,
+        "subtotal_pct": 39.13
       },
       {
         "code": "L",
@@ -296,15 +296,15 @@
         "rows": [
           {
             "code": "L1",
-            "val": 27684749,
-            "pct": 2.26,
-            "qty": 1870
+            "val": 27593503,
+            "pct": 2.25,
+            "qty": 1863
           },
           {
             "code": "L2",
-            "val": 8977406,
-            "pct": 0.73,
-            "qty": 226
+            "val": 8870806,
+            "pct": 0.72,
+            "qty": 224
           },
           {
             "code": "L3",
@@ -332,14 +332,14 @@
           },
           {
             "code": "L7",
-            "val": 58408491,
+            "val": 58398710,
             "pct": 4.77,
-            "qty": 1357
+            "qty": 1356
           }
         ],
-        "subtotal_val": 146454310,
-        "subtotal_qty": 4429,
-        "subtotal_pct": 11.95
+        "subtotal_val": 146246683,
+        "subtotal_qty": 4419,
+        "subtotal_pct": 11.94
       },
       {
         "code": "O",
@@ -348,9 +348,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 68612932,
+            "val": 68576401,
             "pct": 5.6,
-            "qty": 1173
+            "qty": 1172
           },
           {
             "code": "OA",
@@ -361,7 +361,7 @@
           {
             "code": "OE",
             "val": 304899575,
-            "pct": 24.88,
+            "pct": 24.89,
             "qty": 1147
           },
           {
@@ -372,14 +372,14 @@
           },
           {
             "code": "OV",
-            "val": 20791119,
-            "pct": 1.7,
-            "qty": 205
+            "val": 20697564,
+            "pct": 1.69,
+            "qty": 204
           }
         ],
-        "subtotal_val": 434791295,
-        "subtotal_qty": 2764,
-        "subtotal_pct": 35.48
+        "subtotal_val": 434661209,
+        "subtotal_qty": 2762,
+        "subtotal_pct": 35.49
       },
       {
         "code": "I",
@@ -446,16 +446,16 @@
     ]
   },
   "oaov": {
-    "total": 59357519,
-    "inv_total": 1225512603,
+    "total": 59263964,
+    "inv_total": 1224817416,
     "pct": 4.84,
     "oa_val": 38566400,
-    "ov_val": 20791119,
+    "ov_val": 20697564,
     "oa_lines": 104,
-    "ov_lines": 109,
+    "ov_lines": 108,
     "oa_qty": 228,
-    "ov_qty": 205,
-    "item_count": 213,
+    "ov_qty": 204,
+    "item_count": 212,
     "oa_items": [
       {
         "item": "63119850411",
@@ -1613,13 +1613,6 @@
         "alois": "OV",
         "qty": 4,
         "val": 95344
-      },
-      {
-        "item": "64229343389",
-        "name": "Fresh air gr",
-        "alois": "OV",
-        "qty": 1,
-        "val": 93555
       },
       {
         "item": "32300430403",
@@ -4161,7 +4154,7 @@
     ],
     "m12_val": 63894153,
     "m12_count": 225,
-    "m12_pct": 5.21,
+    "m12_pct": 5.22,
     "m24_items": [
       {
         "item": "24008741536",
@@ -5226,7 +5219,7 @@
         "ref_no": "SB2608001800",
         "req_qty": 1,
         "crt_qty": 15,
-        "avail_qty": 14,
+        "avail_qty": 13,
         "req_dt": "08-26",
         "req_dt_full": "2026-08-26 17:15:37",
         "req_brch": "AS_부산(해운중동)",
@@ -6529,10 +6522,26 @@
         "val": 110055,
         "sa": "최민수",
         "dday": "D+0일"
+      },
+      {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "alois": "OE",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001155",
+        "req_qty": 1,
+        "crt_qty": 15,
+        "avail_qty": 13,
+        "req_dt": "09-18",
+        "req_dt_full": "2026-09-18 09:32:37",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 85760,
+        "sa": "이정환",
+        "dday": "D+0일"
       }
     ],
-    "count": 118,
-    "total_val": 34646279,
+    "count": 119,
+    "total_val": 34732039,
     "groups": [
       {
         "code": "RO",
@@ -7128,11 +7137,27 @@
             "val": 110055,
             "sa": "최민수",
             "dday": "D+0일"
+          },
+          {
+            "item": "64119382886",
+            "name": "MICROFILTER/",
+            "alois": "OE",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001155",
+            "req_qty": 1,
+            "crt_qty": 15,
+            "avail_qty": 13,
+            "req_dt": "09-18",
+            "req_dt_full": "2026-09-18 09:32:37",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 85760,
+            "sa": "이정환",
+            "dday": "D+0일"
           }
         ],
-        "count": 37,
-        "qty_sum": 70,
-        "val": 10446703
+        "count": 38,
+        "qty_sum": 71,
+        "val": 10532463
       },
       {
         "code": "SB",
@@ -7593,7 +7618,7 @@
             "ref_no": "SB2608001800",
             "req_qty": 1,
             "crt_qty": 15,
-            "avail_qty": 14,
+            "avail_qty": 13,
             "req_dt": "08-26",
             "req_dt_full": "2026-08-26 17:15:37",
             "req_brch": "AS_부산(해운중동)",
