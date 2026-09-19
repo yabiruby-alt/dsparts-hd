@@ -382,6 +382,10 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><path d="M6 6l6 6M12 6l-6 6"/></svg>
         노쇼 SB부품
       </button>
+      <button class="sb-item" id="nav-sbresv" aria-current="false" onclick="selectPage('sbresv')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="12" height="12" rx="2"/><path d="M6 9.5l2 2 4-4.5"/></svg>
+        SB 예약접수 부품
+      </button>
     </div>
 
     <div class="sb-section">
@@ -559,7 +563,7 @@
         <div class="viewer-head">
           <span class="lbl">노쇼 SB별 부품 세부</span>
           <span class="val">{{ noshow.sb_count }}건</span>
-          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 노쇼 {{ noshow.noshow_total }}건 중 미처리 부품요청이 남은 SB</span>
+          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 노쇼 {{ noshow.resv_total }}건 중 미처리 부품요청이 남은 SB</span>
         </div>
         <div class="tablewrap">
           <table>
@@ -573,6 +577,53 @@
               <tr class="subtotal"><td colspan="3">{{ g.code }} 합계</td><td class="num">{{ g.qty_sum }}</td><td class="num"></td><td class="num"></td><td class="num">{{ '{:,}'.format(g.val) }}</td></tr>
               {% else %}
               <tr><td colspan="7" class="empty-note">노쇼 SB에 남은 미처리 부품요청 없음</td></tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-sbresv" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>SB 예약접수 부품</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 예약접수 상태 SB에 걸린 미처리 부품요청 · 오늘부터 예약일 빠른순</div>
+      </div>
+
+      <div class="kpistrip">
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">01</span>
+          <span class="eyebrow">부품이 들어있는 예약접수 SB</span>
+          <span class="value">{{ sbresv.sb_count }}건</span>
+          <span class="foot">{{ sbresv.line_count }}라인 · 요청수량×원가 합계 ₩{{ '{:,}'.format(sbresv.total_val) }}</span>
+        </div>
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">02</span>
+          <span class="eyebrow">그 중 O계열 부품</span>
+          <span class="value">₩{{ '{:,}'.format(sbresv.o_val) }}</span>
+          <span class="foot">{{ sbresv.o_lines }}라인 (원가 기준)</span>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">예약접수 SB별 부품 세부</span>
+          <span class="val">{{ sbresv.sb_count }}건</span>
+          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 예약접수(오늘 이후) {{ sbresv.resv_total }}건 중 미처리 부품요청이 걸린 SB</span>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가금액</th></tr></thead>
+            <tbody>
+              {% for g in sbresv.groups %}
+              <tr class="grouphead open" data-group="sr-{{ g.code }}" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>{{ g.code }} · 예약일 {{ g.resv }} · {{ g.dday }} · SA {{ g.sa }} ({{ g.count }}라인)<span class="hint"></span></td></tr>
+              {% for r in g.rows %}
+              <tr data-group="sr-{{ g.code }}"><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="num">{{ r.req_qty }}</td><td class="num">{{ r.crt_qty }}</td><td class="num">{{ r.avail_qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+              {% endfor %}
+              <tr class="subtotal"><td colspan="3">{{ g.code }} 합계</td><td class="num">{{ g.qty_sum }}</td><td class="num"></td><td class="num"></td><td class="num">{{ '{:,}'.format(g.val) }}</td></tr>
+              {% else %}
+              <tr><td colspan="7" class="empty-note">부품이 들어있는 예약접수 SB 없음</td></tr>
               {% endfor %}
             </tbody>
           </table>
@@ -1020,7 +1071,7 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  var PAGES = ['today','openro','noshow','external','accessory','oaov','longstock','opart','oflow','calendar'];
+  var PAGES = ['today','openro','noshow','sbresv','external','accessory','oaov','longstock','opart','oflow','calendar'];
   function selectPage(key){
     PAGES.forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); });
     document.querySelector('.maininner').classList.toggle('wide', key==='calendar');
