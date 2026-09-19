@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 19일 (토) · 14:08 기준",
+    "generated_at": "9월 19일 (토) · 14:17 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1227276219,
+    "total": 1227066861,
     "item_count": 2227,
     "code_count": 25,
     "alois_groups": [
@@ -372,9 +372,9 @@
           },
           {
             "code": "A2",
-            "val": 15219398,
-            "pct": 1.24,
-            "qty": 1174,
+            "val": 15130485,
+            "pct": 1.23,
+            "qty": 1171,
             "parts": [
               {
                 "item": "34216890353",
@@ -439,8 +439,8 @@
               {
                 "item": "61610040534",
                 "name": "Set of wiper F55,56,57",
-                "qty": 10,
-                "val": 422510
+                "qty": 9,
+                "val": 380259
               },
               {
                 "item": "34356890791",
@@ -449,16 +449,16 @@
                 "val": 327129
               },
               {
-                "item": "34356865612",
+                "item": "34356870354",
                 "name": "Brake pad we",
                 "qty": 12,
                 "val": 321264
               },
               {
-                "item": "34356870354",
+                "item": "34356865612",
                 "name": "Brake pad we",
-                "qty": 12,
-                "val": 321264
+                "qty": 11,
+                "val": 294492
               },
               {
                 "item": "61615A576A9",
@@ -521,12 +521,6 @@
                 "val": 182491
               },
               {
-                "item": "61617411249",
-                "name": "WIPER BLADE MINI F60,F55 LCI",
-                "qty": 9,
-                "val": 179010
-              },
-              {
                 "item": "61629478894",
                 "name": "Wiper blade",
                 "qty": 7,
@@ -537,6 +531,12 @@
                 "name": "Nut",
                 "qty": 41,
                 "val": 161253
+              },
+              {
+                "item": "61617411249",
+                "name": "WIPER BLADE MINI F60,F55 LCI",
+                "qty": 8,
+                "val": 159120
               },
               {
                 "item": "37106789678",
@@ -748,9 +748,9 @@
           },
           {
             "code": "A4",
-            "val": 49081285,
-            "pct": 4.0,
-            "qty": 1915,
+            "val": 48978514,
+            "pct": 3.99,
+            "qty": 1914,
             "parts": [
               {
                 "item": "63117214962",
@@ -951,12 +951,6 @@
                 "val": 311542
               },
               {
-                "item": "34216885529",
-                "name": "Repair kit, MINI",
-                "qty": 3,
-                "val": 308313
-              },
-              {
                 "item": "31508860349",
                 "name": "Repair kit o",
                 "qty": 8,
@@ -1093,6 +1087,12 @@
                 "name": "LEFT FINISHE",
                 "qty": 3,
                 "val": 209601
+              },
+              {
+                "item": "34216885529",
+                "name": "Repair kit, MINI",
+                "qty": 2,
+                "val": 205542
               },
               {
                 "item": "61615A0B571",
@@ -4839,9 +4839,9 @@
             ]
           }
         ],
-        "subtotal_val": 483306787,
-        "subtotal_qty": 8888,
-        "subtotal_pct": 39.38
+        "subtotal_val": 483115103,
+        "subtotal_qty": 8884,
+        "subtotal_pct": 39.37
       },
       {
         "code": "L",
@@ -4850,9 +4850,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 33806477,
+            "val": 33788803,
             "pct": 2.75,
-            "qty": 2288,
+            "qty": 2286,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4899,14 +4899,14 @@
               {
                 "item": "83135A82511",
                 "name": "Brake fluid",
-                "qty": 56,
-                "val": 635152
+                "qty": 55,
+                "val": 623810
               },
               {
                 "item": "99995A2A668",
                 "name": "Windshield w",
-                "qty": 60,
-                "val": 383086
+                "qty": 59,
+                "val": 376754
               },
               {
                 "item": "66126912985",
@@ -5607,7 +5607,7 @@
           {
             "code": "L7",
             "val": 56510643,
-            "pct": 4.6,
+            "pct": 4.61,
             "qty": 1340,
             "parts": [
               {
@@ -7797,8 +7797,8 @@
             ]
           }
         ],
-        "subtotal_val": 149155536,
-        "subtotal_qty": 4895,
+        "subtotal_val": 149137862,
+        "subtotal_qty": 4893,
         "subtotal_pct": 12.15
       },
       {
@@ -10717,7 +10717,7 @@
           {
             "code": "OE",
             "val": 304404650,
-            "pct": 24.8,
+            "pct": 24.81,
             "qty": 1151,
             "parts": [
               {
@@ -13889,7 +13889,7 @@
   },
   "oaov": {
     "total": 59487380,
-    "inv_total": 1227276219,
+    "inv_total": 1227066861,
     "pct": 4.85,
     "oa_val": 38895536,
     "ov_val": 20591844,
@@ -33322,10 +33322,21 @@
         "pub_full": "2026-09-19 13:51",
         "dday": "D+0일",
         "amt": 799582
+      },
+      {
+        "ro": "RO2609001253",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-09-19",
+        "pub_full": "2026-09-19 14:11",
+        "dday": "D+0일",
+        "amt": 513408
       }
     ],
-    "count": 290,
-    "total_amt": 703497582,
+    "count": 291,
+    "total_amt": 704010990,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -33334,8 +33345,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 136,
-        "amt": 473530970
+        "count": 137,
+        "amt": 474044378
       },
       {
         "stat": "정비시작",
@@ -34683,8 +34694,8 @@
             "name": "Brake pad we",
             "alois": "A2",
             "req_qty": 1,
-            "crt_qty": 12,
-            "avail_qty": 10,
+            "crt_qty": 11,
+            "avail_qty": 9,
             "val": 26772
           }
         ],
