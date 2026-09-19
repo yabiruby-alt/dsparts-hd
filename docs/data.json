@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 19일 (토) · 11:55 기준",
+    "generated_at": "9월 19일 (토) · 12:07 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -4623,22 +4623,6 @@
         "dday": "D+512일"
       },
       {
-        "item": "34505B69D63",
-        "name": "Power brake XM,X5,6,7",
-        "alois": "OE",
-        "ref_tp": "SB",
-        "ref_no": "SB2505001546",
-        "req_qty": 1,
-        "crt_qty": 3,
-        "avail_qty": 2,
-        "req_dt": "05-26",
-        "req_dt_full": "2025-05-26 09:25:50",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 1655202,
-        "sa": "우상만",
-        "dday": "D+481일"
-      },
-      {
         "item": "12638638551",
         "name": "Integrated s",
         "alois": "OV",
@@ -6671,8 +6655,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 133,
-    "total_val": 35529458,
+    "count": 132,
+    "total_val": 33874256,
     "groups": [
       {
         "code": "RO",
@@ -7534,22 +7518,6 @@
             "dday": "D+512일"
           },
           {
-            "item": "34505B69D63",
-            "name": "Power brake XM,X5,6,7",
-            "alois": "OE",
-            "ref_tp": "SB",
-            "ref_no": "SB2505001546",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 2,
-            "req_dt": "05-26",
-            "req_dt_full": "2025-05-26 09:25:50",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 1655202,
-            "sa": "우상만",
-            "dday": "D+481일"
-          },
-          {
             "item": "12638638551",
             "name": "Integrated s",
             "alois": "OV",
@@ -8110,9 +8078,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 41,
-        "qty_sum": 70,
-        "val": 15370587
+        "count": 40,
+        "qty_sum": 69,
+        "val": 13715385
       },
       {
         "code": "SP",
@@ -8871,6 +8839,14 @@
         "val": 5769666
       },
       {
+        "item": "34505B69D63",
+        "name": "Power brake XM,X5,6,7",
+        "alois": "OE",
+        "qty": 3,
+        "avail_qty": 3,
+        "val": 4965606
+      },
+      {
         "item": "63215B52B73",
         "name": "Retrofit kit",
         "alois": "OA",
@@ -8893,14 +8869,6 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 3583359
-      },
-      {
-        "item": "34505B69D63",
-        "name": "Power brake XM,X5,6,7",
-        "alois": "OE",
-        "qty": 3,
-        "avail_qty": 2,
-        "val": 3310404
       },
       {
         "item": "63115A0E603",
@@ -15494,6 +15462,14 @@
             "val": 10175949
           },
           {
+            "item": "34505B69D63",
+            "name": "Power brake XM,X5,6,7",
+            "alois": "OE",
+            "qty": 3,
+            "avail_qty": 3,
+            "val": 4965606
+          },
+          {
             "item": "32105B4D1A3",
             "name": "Steering gea",
             "alois": "OE",
@@ -15508,14 +15484,6 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 3583359
-          },
-          {
-            "item": "34505B69D63",
-            "name": "Power brake XM,X5,6,7",
-            "alois": "OE",
-            "qty": 3,
-            "avail_qty": 2,
-            "val": 3310404
           },
           {
             "item": "66325A7A559",
@@ -16184,8 +16152,8 @@
         ],
         "count": 89,
         "qty_sum": 760,
-        "avail_sum": 741,
-        "val": 288994658
+        "avail_sum": 742,
+        "val": 290649860
       },
       {
         "code": "ON",
@@ -16671,7 +16639,7 @@
       }
     ],
     "count": 487,
-    "total_val": 356092122
+    "total_val": 357747324
   },
   "oflow": {
     "rows": [
@@ -19554,8 +19522,8 @@
       },
       {
         "ro": "RO2609001205",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-18",
@@ -19719,8 +19687,8 @@
       },
       {
         "ro": "RO2609001224",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
@@ -19752,8 +19720,8 @@
       },
       {
         "ro": "RO2609001227",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
@@ -19785,8 +19753,8 @@
       },
       {
         "ro": "RO2609001230",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
@@ -19818,8 +19786,8 @@
       },
       {
         "ro": "RO2609001233",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
@@ -19924,11 +19892,11 @@
         "pub": "2026-09-19",
         "pub_full": "2026-09-19 11:50",
         "dday": "D+0일",
-        "amt": 460682
+        "amt": 294082
       }
     ],
     "count": 282,
-    "total_amt": 700232334,
+    "total_amt": 700065734,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -19938,17 +19906,17 @@
       {
         "stat": "상담완료",
         "count": 138,
-        "amt": 476790192
+        "amt": 476623592
       },
       {
         "stat": "정비시작",
-        "count": 34,
-        "amt": 34013741
+        "count": 29,
+        "amt": 32729677
       },
       {
         "stat": "End Control 요청",
-        "count": 43,
-        "amt": 60914846
+        "count": 48,
+        "amt": 62198910
       },
       {
         "stat": "공정마감",
@@ -20071,45 +20039,6 @@
         "val": 585311
       },
       {
-        "code": "SB2505001546",
-        "resv_full": "2025-05-29 09:00",
-        "resv": "05-29",
-        "dday": "D+478일",
-        "sa": "우상만",
-        "rows": [
-          {
-            "item": "34505B69D63",
-            "name": "Power brake XM,X5,6,7",
-            "alois": "OE",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 2,
-            "val": 1655202
-          },
-          {
-            "item": "34516893390",
-            "name": "Seal, brake",
-            "alois": "SK",
-            "req_qty": 1,
-            "crt_qty": 175,
-            "avail_qty": 171,
-            "val": 10301
-          },
-          {
-            "item": "07146890655",
-            "name": "P180305Bking",
-            "alois": "SK",
-            "req_qty": 2,
-            "crt_qty": 158,
-            "avail_qty": 152,
-            "val": 5392
-          }
-        ],
-        "count": 3,
-        "qty_sum": 4,
-        "val": 1670895
-      },
-      {
         "code": "SB2508000339",
         "resv_full": "2025-08-05 13:20",
         "resv": "08-05",
@@ -20194,7 +20123,7 @@
             "alois": "SK",
             "req_qty": 1,
             "crt_qty": 10,
-            "avail_qty": 6,
+            "avail_qty": 9,
             "val": 1699
           }
         ],
@@ -20224,72 +20153,6 @@
         "val": 668052
       },
       {
-        "code": "SB2605001699",
-        "resv_full": "2026-06-04 09:00",
-        "resv": "06-04",
-        "dday": "D+107일",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "34505B77C23",
-            "name": "Power brake",
-            "alois": "SK",
-            "req_qty": 1,
-            "crt_qty": 11,
-            "avail_qty": 8,
-            "val": 1655202
-          },
-          {
-            "item": "51648076922",
-            "name": "Hex bolt wit",
-            "alois": "SK",
-            "req_qty": 4,
-            "crt_qty": 120,
-            "avail_qty": 112,
-            "val": 15764
-          },
-          {
-            "item": "34516893390",
-            "name": "Seal, brake",
-            "alois": "SK",
-            "req_qty": 1,
-            "crt_qty": 175,
-            "avail_qty": 171,
-            "val": 10301
-          },
-          {
-            "item": "07146890655",
-            "name": "P180305Bking",
-            "alois": "SK",
-            "req_qty": 2,
-            "crt_qty": 158,
-            "avail_qty": 152,
-            "val": 5392
-          },
-          {
-            "item": "07119904295",
-            "name": "Nut",
-            "alois": "SK",
-            "req_qty": 2,
-            "crt_qty": 38,
-            "avail_qty": 32,
-            "val": 1766
-          },
-          {
-            "item": "61139200225",
-            "name": "Cable strap",
-            "alois": "SK",
-            "req_qty": 1,
-            "crt_qty": 10,
-            "avail_qty": 6,
-            "val": 1699
-          }
-        ],
-        "count": 6,
-        "qty_sum": 11,
-        "val": 1690124
-      },
-      {
         "code": "SB2608000231",
         "resv_full": "2026-08-06 09:40",
         "resv": "08-06",
@@ -20309,90 +20172,6 @@
         "count": 1,
         "qty_sum": 1,
         "val": 612588
-      },
-      {
-        "code": "SB2608000928",
-        "resv_full": "2026-08-19 09:20",
-        "resv": "08-19",
-        "dday": "D+31일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "34505B77C23",
-            "name": "Power brake",
-            "alois": "SK",
-            "req_qty": 1,
-            "crt_qty": 11,
-            "avail_qty": 8,
-            "val": 1655202
-          },
-          {
-            "item": "51716966566",
-            "name": "Hexagon scre",
-            "alois": "A3",
-            "req_qty": 4,
-            "crt_qty": 38,
-            "avail_qty": 33,
-            "val": 29528
-          },
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 2,
-            "crt_qty": 58,
-            "avail_qty": 54,
-            "val": 22684
-          },
-          {
-            "item": "51648076922",
-            "name": "Hex bolt wit",
-            "alois": "SK",
-            "req_qty": 4,
-            "crt_qty": 120,
-            "avail_qty": 112,
-            "val": 15764
-          },
-          {
-            "item": "34516893390",
-            "name": "Seal, brake",
-            "alois": "SK",
-            "req_qty": 1,
-            "crt_qty": 175,
-            "avail_qty": 171,
-            "val": 10301
-          },
-          {
-            "item": "07146890655",
-            "name": "P180305Bking",
-            "alois": "SK",
-            "req_qty": 2,
-            "crt_qty": 158,
-            "avail_qty": 152,
-            "val": 5392
-          },
-          {
-            "item": "07119904295",
-            "name": "Nut",
-            "alois": "SK",
-            "req_qty": 2,
-            "crt_qty": 38,
-            "avail_qty": 32,
-            "val": 1766
-          },
-          {
-            "item": "61139200225",
-            "name": "Cable strap",
-            "alois": "SK",
-            "req_qty": 1,
-            "crt_qty": 10,
-            "avail_qty": 6,
-            "val": 1699
-          }
-        ],
-        "count": 8,
-        "qty_sum": 17,
-        "val": 1742336
       },
       {
         "code": "SB2607001585",
@@ -20453,54 +20232,6 @@
         "count": 3,
         "qty_sum": 5,
         "val": 1860500
-      },
-      {
-        "code": "SB2608001687",
-        "resv_full": "2026-08-27 10:20",
-        "resv": "08-27",
-        "dday": "D+23일",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "34505B77C23",
-            "name": "Power brake",
-            "alois": "SK",
-            "req_qty": 1,
-            "crt_qty": 11,
-            "avail_qty": 8,
-            "val": 1655202
-          },
-          {
-            "item": "34516893390",
-            "name": "Seal, brake",
-            "alois": "SK",
-            "req_qty": 1,
-            "crt_qty": 175,
-            "avail_qty": 171,
-            "val": 10301
-          },
-          {
-            "item": "07119904295",
-            "name": "Nut",
-            "alois": "SK",
-            "req_qty": 2,
-            "crt_qty": 38,
-            "avail_qty": 32,
-            "val": 1766
-          },
-          {
-            "item": "61139200225",
-            "name": "Cable strap",
-            "alois": "SK",
-            "req_qty": 1,
-            "crt_qty": 10,
-            "avail_qty": 6,
-            "val": 1699
-          }
-        ],
-        "count": 4,
-        "qty_sum": 5,
-        "val": 1668968
       },
       {
         "code": "SB2608001572",
@@ -20632,11 +20363,11 @@
         "val": 662157
       }
     ],
-    "sb_count": 21,
-    "line_count": 46,
-    "total_val": 16335851,
-    "o_lines": 12,
-    "o_val": 6284953,
+    "sb_count": 17,
+    "line_count": 25,
+    "total_val": 9563528,
+    "o_lines": 11,
+    "o_val": 4629751,
     "noshow_total": 12008
   }
 }
