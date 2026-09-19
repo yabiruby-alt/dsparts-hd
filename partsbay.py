@@ -15,6 +15,7 @@
 동시에 두 개를 띄우면 DMS가 세션을 끊어버리므로 절대 두 인스턴스를 같이 실행하지 마세요(잠금 파일로 방지됨).
 """
 import json
+import mimetypes
 import os
 import re
 import subprocess
@@ -952,13 +953,32 @@ class ReasonHandler(BaseHTTPRequestHandler):
     def do_OPTIONS(self):
         self._send(204)
 
+    def _send_file(self, path: Path) -> None:
+        data = path.read_bytes()
+        ctype = mimetypes.guess_type(str(path))[0] or "application/octet-stream"
+        if ctype.startswith("text/"):
+            ctype += "; charset=utf-8"
+        self.send_response(200)
+        self.send_header("Content-Type", ctype)
+        self.send_header("Content-Length", str(len(data)))
+        self.send_header("Cache-Control", "no-store")
+        self.end_headers()
+        self.wfile.write(data)
+
     def do_GET(self):
-        if self.path.startswith("/ping"):
+        route = self.path.split("?", 1)[0]
+        if route.startswith("/ping"):
             self._send(200, {"ok": True})
-        elif self.path.startswith("/reasons"):
+        elif route.startswith("/reasons"):
             self._send(200, load_reasons())
         else:
-            self._send(404, {"ok": False})
+            # 이 PC 전용 로컬 대시보드: docs 폴더(=깃허브에 올라가는 것과 동일)를 그대로 서빙 + 사유 편집 활성화
+            rel = "index.html" if route in ("/", "") else route.lstrip("/")
+            target = (DOCS_DIR / rel).resolve()
+            if DOCS_DIR.resolve() in target.parents and target.is_file():
+                self._send_file(target)
+            else:
+                self._send(404, {"ok": False})
 
     def do_POST(self):
         if not self.path.startswith("/reasons"):
@@ -988,7 +1008,7 @@ def start_reason_server() -> None:
         print(f"[사유 입력 서버 시작 실패] 포트 {REASON_PORT}: {e}")
         return
     threading.Thread(target=server.serve_forever, daemon=True).start()
-    print(f"진행RO 사유 입력 서버 시작 (이 PC 전용, 127.0.0.1:{REASON_PORT})")
+    print(f"진행RO 사유 입력 서버 시작 - 이 PC에서 http://127.0.0.1:{REASON_PORT} 로 접속하면 사유 입력/수정 가능")
 
 
 def run_cycle(page: Page) -> None:

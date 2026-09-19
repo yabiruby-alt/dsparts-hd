@@ -366,7 +366,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 19일 (토) · 13:25 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 19일 (토) · 13:32 기준</div>
   </nav>
 
   <main class="main">
@@ -375,7 +375,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 19일 (토) · 13:25 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 19일 (토) · 13:32 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -1056,14 +1056,14 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">진행 RO (인보이스 미완료)</span>
-          <span class="value">288건</span>
+          <span class="value">289건</span>
           <span class="foot">금액 합계 ₩700,597,226 · 가장 오래된 RO D+515일</span>
         </div>
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
           <span class="eyebrow">상태별 건수</span>
           <span class="foot" style="line-height:1.7">
-            상담시작 <b>12</b> · 상담완료 <b>136</b> · 정비시작 <b>35</b> · End Control 요청 <b>48</b> · 공정마감 <b>1</b> · 가정산 완료 <b>56</b>
+            상담시작 <b>13</b> · 상담완료 <b>136</b> · 정비시작 <b>35</b> · End Control 요청 <b>48</b> · 공정마감 <b>1</b> · 가정산 완료 <b>56</b>
           </span>
         </div>
       </div>
@@ -1071,8 +1071,8 @@
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">진행 RO 리스트</span>
-          <span class="val">288건</span>
-          <span class="foot">금액 = 부품+공임 판매가 · 사유는 대시보드 PC에서 입력·수정하고, 폰/다른 기기에서는 조회만 됩니다</span>
+          <span class="val">289건</span>
+          <span class="foot">금액 = 부품+공임 판매가 · 사유는 대시보드 PC의 로컬 주소(127.0.0.1:8765)에서 입력·수정하고, 그 외 기기는 조회만 됩니다</span>
         </div>
         <div class="tablewrap">
           <table class="openro-table">
@@ -3383,6 +3383,14 @@
                 <td><div class="reason-cell" data-ro="RO2609001249" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
+              <tr>
+                <td class="mono">RO2609001250</td><td>Maintenance</td><td>김민규</td>
+                <td><span class="aloistag">상담시작</span></td>
+                <td class="mono">2026-09-19</td><td class="mono dday-cell" data-days="0">D+0일</td>
+                <td class="num">0</td>
+                <td><div class="reason-cell" data-ro="RO2609001250" data-saved=""><span class="reason-text"></span></div></td>
+              </tr>
+              
             </tbody>
           </table>
         </div>
@@ -3415,7 +3423,7 @@
         <div class="viewer-head">
           <span class="lbl">노쇼 SB별 부품 세부</span>
           <span class="val">17건</span>
-          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 노쇼 12007건 중 미처리 부품요청이 남은 SB</span>
+          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 노쇼 12009건 중 미처리 부품요청이 남은 SB</span>
         </div>
         <div class="tablewrap">
           <table>
@@ -7044,9 +7052,11 @@
 
   // 진행RO 사유: 대시보드 PC(로컬 서버가 켜져 있는 곳)에서만 입력/수정, 그 외 기기는 조회 전용
   (function(){
-    var API = 'http://127.0.0.1:8765';
+    var API = '';
     var cells = document.querySelectorAll('.reason-cell');
     if(!cells.length) return;
+    // 사유 편집은 대시보드 PC의 로컬 주소(http://127.0.0.1:8765)로 접속했을 때만 활성화. 그 외(깃허브 주소/폰)는 조회 전용.
+    if(!((location.hostname === '127.0.0.1' || location.hostname === 'localhost') && location.port === '8765')) return;
     function el(tag, cls, txt){ var e = document.createElement(tag); if(cls) e.className = cls; if(txt != null) e.textContent = txt; return e; }
     function render(cell, editing){
       var saved = cell.getAttribute('data-saved') || '';
