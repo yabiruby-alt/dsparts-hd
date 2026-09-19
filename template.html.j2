@@ -422,7 +422,7 @@
               <tr>
                 <td class="mono">{{ r.ro }}</td><td>{{ r.svc }}</td><td>{{ r.sa }}</td>
                 <td><span class="aloistag">{{ r.stat }}</span></td>
-                <td class="mono">{{ r.pub }}</td><td class="mono">{{ r.dday }}</td>
+                <td class="mono">{{ r.pub }}</td><td class="mono dday-cell" data-days="{{ r.dday[2:-1] }}">{{ r.dday }}</td>
                 <td class="num">{{ '{:,}'.format(r.amt) }}</td>
                 <td><input class="reason-input" type="text" data-ro="{{ r.ro }}" placeholder="사유 입력" autocomplete="off"></td>
               </tr>
@@ -883,6 +883,16 @@
   }
   // 10분 자동새로고침 후에도 보던 화면 유지
   try{ var savedPage = sessionStorage.getItem('dsparts-page'); if(savedPage && PAGES.indexOf(savedPage)>=0 && savedPage!=='today'){ selectPage(savedPage); } }catch(e){}
+
+  // 진행RO 경과일: 30일 이상은 붉은색, 오래될수록 진하게
+  document.querySelectorAll('.dday-cell').forEach(function(td){
+    var d = parseInt(td.getAttribute('data-days'), 10);
+    if(isNaN(d) || d < 30) return;
+    var a = Math.min(0.9, 0.10 + (d - 30) / 300 * 0.8);
+    td.style.background = 'rgba(208,52,44,' + a.toFixed(2) + ')';
+    td.style.color = a > 0.5 ? '#fff' : '#b02a22';
+    td.style.fontWeight = '700';
+  });
 
   // 진행RO 사유: 입력하는 즉시 이 브라우저(localStorage)에 저장, 새로고침/재접속해도 그 RO 옆에 계속 표시
   (function(){
