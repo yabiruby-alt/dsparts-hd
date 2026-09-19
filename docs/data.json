@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 19일 (토) · 14:25 기준",
+    "generated_at": "9월 19일 (토) · 14:47 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1227073193,
+    "total": 1226976091,
     "item_count": 2227,
     "code_count": 25,
     "alois_groups": [
@@ -281,7 +281,7 @@
           {
             "code": "A1",
             "val": 219091766,
-            "pct": 17.85,
+            "pct": 17.86,
             "qty": 2475,
             "parts": [
               {
@@ -578,9 +578,9 @@
           },
           {
             "code": "A3",
-            "val": 29691770,
-            "pct": 2.42,
-            "qty": 459,
+            "val": 29588999,
+            "pct": 2.41,
+            "qty": 458,
             "parts": [
               {
                 "item": "63117214961",
@@ -609,8 +609,8 @@
               {
                 "item": "34218867488",
                 "name": "Repair kit,",
-                "qty": 9,
-                "val": 924939
+                "qty": 8,
+                "val": 822168
               },
               {
                 "item": "61359856157",
@@ -748,9 +748,9 @@
           },
           {
             "code": "A4",
-            "val": 48978514,
-            "pct": 3.99,
-            "qty": 1914,
+            "val": 49081285,
+            "pct": 4.0,
+            "qty": 1915,
             "parts": [
               {
                 "item": "63117214962",
@@ -951,6 +951,12 @@
                 "val": 311542
               },
               {
+                "item": "34216885529",
+                "name": "Repair kit, MINI",
+                "qty": 3,
+                "val": 308313
+              },
+              {
                 "item": "31508860349",
                 "name": "Repair kit o",
                 "qty": 8,
@@ -1087,12 +1093,6 @@
                 "name": "LEFT FINISHE",
                 "qty": 3,
                 "val": 209601
-              },
-              {
-                "item": "34216885529",
-                "name": "Repair kit, MINI",
-                "qty": 2,
-                "val": 205542
               },
               {
                 "item": "61615A0B571",
@@ -4850,9 +4850,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 33795135,
+            "val": 33783793,
             "pct": 2.75,
-            "qty": 2287,
+            "qty": 2286,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4899,8 +4899,8 @@
               {
                 "item": "83135A82511",
                 "name": "Brake fluid",
-                "qty": 55,
-                "val": 623810
+                "qty": 54,
+                "val": 612468
               },
               {
                 "item": "99995A2A668",
@@ -7797,8 +7797,8 @@
             ]
           }
         ],
-        "subtotal_val": 149144194,
-        "subtotal_qty": 4894,
+        "subtotal_val": 149132852,
+        "subtotal_qty": 4893,
         "subtotal_pct": 12.15
       },
       {
@@ -10716,9 +10716,9 @@
           },
           {
             "code": "OE",
-            "val": 304404650,
-            "pct": 24.81,
-            "qty": 1151,
+            "val": 304318890,
+            "pct": 24.8,
+            "qty": 1150,
             "parts": [
               {
                 "item": "34505B6F947",
@@ -10895,12 +10895,6 @@
                 "val": 908751
               },
               {
-                "item": "64119382886",
-                "name": "MICROFILTER/",
-                "qty": 9,
-                "val": 771840
-              },
-              {
                 "item": "90200006221",
                 "name": "315/35R21 111Y XL P ZERO r-f *",
                 "qty": 1,
@@ -10917,6 +10911,12 @@
                 "name": "Instrument c",
                 "qty": 1,
                 "val": 708027
+              },
+              {
+                "item": "64119382886",
+                "name": "MICROFILTER/",
+                "qty": 8,
+                "val": 686080
               },
               {
                 "item": "63115A408A8",
@@ -12077,8 +12077,8 @@
             ]
           }
         ],
-        "subtotal_val": 434061123,
-        "subtotal_qty": 2741,
+        "subtotal_val": 433975363,
+        "subtotal_qty": 2740,
         "subtotal_pct": 35.37
       },
       {
@@ -13889,7 +13889,7 @@
   },
   "oaov": {
     "total": 59487380,
-    "inv_total": 1227073193,
+    "inv_total": 1226976091,
     "pct": 4.85,
     "oa_val": 38895536,
     "ov_val": 20591844,
@@ -15570,10 +15570,10 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 21580384,
-    "cost": 21838377,
-    "lines": 206,
-    "invoices_count": 120,
+    "total": 21587464,
+    "cost": 21852537,
+    "lines": 208,
+    "invoices_count": 122,
     "by_type": [
       {
         "code": "3",
@@ -15590,11 +15590,27 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 130,
-        "val": 12324954
+        "lines": 132,
+        "val": 12332034
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2609002055",
+        "num": "RO2609001227",
+        "sa": "안준영",
+        "dt": "2026-09-19 14:42",
+        "amt": 7080,
+        "cost": 7080
+      },
+      {
+        "inv": "IV2609002053",
+        "num": "RO2609001230",
+        "sa": "안준영",
+        "dt": "2026-09-19 14:40",
+        "amt": 0,
+        "cost": 7080
+      },
       {
         "inv": "IV2609002041",
         "num": "RO2609001075",
@@ -15618,22 +15634,6 @@
         "dt": "2026-09-18 18:30",
         "amt": 0,
         "cost": 7080
-      },
-      {
-        "inv": "IV2609002007",
-        "num": "RO2609001021",
-        "sa": "이정환",
-        "dt": "2026-09-18 16:27",
-        "amt": 293330,
-        "cost": 293330
-      },
-      {
-        "inv": "IV2609002006",
-        "num": "RO2609001021",
-        "sa": "이정환",
-        "dt": "2026-09-18 16:23",
-        "amt": 0,
-        "cost": 0
       }
     ]
   },
@@ -22460,14 +22460,6 @@
         "val": 835468
       },
       {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "alois": "OE",
-        "qty": 9,
-        "avail_qty": 9,
-        "val": 771840
-      },
-      {
         "item": "34117847241",
         "name": "Caliper hous",
         "alois": "OA",
@@ -22506,6 +22498,14 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 708027
+      },
+      {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "alois": "OE",
+        "qty": 8,
+        "avail_qty": 8,
+        "val": 686080
       },
       {
         "item": "63115A408A8",
@@ -28971,14 +28971,6 @@
             "val": 857000
           },
           {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "qty": 9,
-            "avail_qty": 9,
-            "val": 771840
-          },
-          {
             "item": "90200007293",
             "name": "BMW Caddy M",
             "alois": "OE",
@@ -29009,6 +29001,14 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 708027
+          },
+          {
+            "item": "64119382886",
+            "name": "MICROFILTER/",
+            "alois": "OE",
+            "qty": 8,
+            "avail_qty": 8,
+            "val": 686080
           },
           {
             "item": "63115A408A8",
@@ -29492,9 +29492,9 @@
           }
         ],
         "count": 89,
-        "qty_sum": 759,
-        "avail_sum": 742,
-        "val": 290649860
+        "qty_sum": 758,
+        "avail_sum": 741,
+        "val": 290564100
       },
       {
         "code": "ON",
@@ -29980,7 +29980,7 @@
       }
     ],
     "count": 487,
-    "total_val": 357747324
+    "total_val": 357661564
   },
   "oflow": {
     "rows": [
@@ -31895,8 +31895,8 @@
       },
       {
         "ro": "RO2609001058",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-16",
@@ -33028,8 +33028,8 @@
       },
       {
         "ro": "RO2609001224",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
@@ -33061,8 +33061,8 @@
       },
       {
         "ro": "RO2609001227",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
@@ -33094,14 +33094,14 @@
       },
       {
         "ro": "RO2609001230",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
         "pub_full": "2026-09-19 10:06",
         "dday": "D+0일",
-        "amt": 133724
+        "amt": 121724
       },
       {
         "ro": "RO2609001231",
@@ -33127,8 +33127,8 @@
       },
       {
         "ro": "RO2609001233",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
@@ -33325,8 +33325,8 @@
       },
       {
         "ro": "RO2609001253",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
@@ -33336,38 +33336,49 @@
       },
       {
         "ro": "RO2609001254",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
-        "sa": "최민수",
+        "sa": "이정환",
         "pub": "2026-09-19",
         "pub_full": "2026-09-19 14:23",
         "dday": "D+0일",
-        "amt": 112884
+        "amt": 397684
+      },
+      {
+        "ro": "RO2609001255",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-09-19",
+        "pub_full": "2026-09-19 14:31",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 292,
-    "total_amt": 704113574,
+    "count": 293,
+    "total_amt": 704386374,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 13,
-        "amt": 6293484
+        "count": 12,
+        "amt": 6180600
       },
       {
         "stat": "상담완료",
-        "count": 135,
-        "amt": 473236888
+        "count": 137,
+        "amt": 473739996
       },
       {
         "stat": "정비시작",
         "count": 38,
-        "amt": 36309415
+        "amt": 36203991
       },
       {
         "stat": "End Control 요청",
-        "count": 49,
-        "amt": 65940832
+        "count": 44,
+        "amt": 61286586
       },
       {
         "stat": "공정마감",
@@ -33376,8 +33387,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 56,
-        "amt": 121830055
+        "count": 61,
+        "amt": 126472301
       }
     ],
     "oldest": "D+515일"
@@ -34696,8 +34707,8 @@
             "name": "Repair kit,",
             "alois": "A3",
             "req_qty": 1,
-            "crt_qty": 9,
-            "avail_qty": 7,
+            "crt_qty": 8,
+            "avail_qty": 6,
             "val": 102771
           },
           {
@@ -35537,7 +35548,7 @@
     "total_val": 988297,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10374
+    "resv_total": 10375
   },
   "reasons": {}
 }
