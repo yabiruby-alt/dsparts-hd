@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 19일 (토) · 14:01 기준",
+    "generated_at": "9월 19일 (토) · 14:08 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1227579604,
+    "total": 1227276219,
     "item_count": 2227,
     "code_count": 25,
     "alois_groups": [
@@ -280,9 +280,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 219182502,
+            "val": 219091766,
             "pct": 17.85,
-            "qty": 2477,
+            "qty": 2475,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -317,8 +317,8 @@
               {
                 "item": "64316835405",
                 "name": "MICROFILTER/",
-                "qty": 58,
-                "val": 4122118
+                "qty": 57,
+                "val": 4051047
               },
               {
                 "item": "61612447932",
@@ -359,8 +359,8 @@
               {
                 "item": "11428570590",
                 "name": "Set oil-filt",
-                "qty": 22,
-                "val": 432630
+                "qty": 21,
+                "val": 412965
               },
               {
                 "item": "33117525064",
@@ -372,9 +372,9 @@
           },
           {
             "code": "A2",
-            "val": 15254656,
+            "val": 15219398,
             "pct": 1.24,
-            "qty": 1175,
+            "qty": 1174,
             "parts": [
               {
                 "item": "34216890353",
@@ -419,16 +419,16 @@
                 "val": 641720
               },
               {
-                "item": "13718513944",
-                "name": "Air filter e",
-                "qty": 17,
-                "val": 599386
-              },
-              {
                 "item": "51767288752",
                 "name": "Plaque",
                 "qty": 10,
                 "val": 578970
+              },
+              {
+                "item": "13718513944",
+                "name": "Air filter e",
+                "qty": 16,
+                "val": 564128
               },
               {
                 "item": "13718577171",
@@ -748,9 +748,9 @@
           },
           {
             "code": "A4",
-            "val": 49156565,
+            "val": 49081285,
             "pct": 4.0,
-            "qty": 1919,
+            "qty": 1915,
             "parts": [
               {
                 "item": "63117214962",
@@ -767,8 +767,8 @@
               {
                 "item": "12120040551",
                 "name": "Spark plug B46,48,58",
-                "qty": 110,
-                "val": 2070200
+                "qty": 106,
+                "val": 1994920
               },
               {
                 "item": "51118069072",
@@ -4839,9 +4839,9 @@
             ]
           }
         ],
-        "subtotal_val": 483508061,
-        "subtotal_qty": 8895,
-        "subtotal_pct": 39.39
+        "subtotal_val": 483306787,
+        "subtotal_qty": 8888,
+        "subtotal_pct": 39.38
       },
       {
         "code": "L",
@@ -4850,15 +4850,15 @@
         "rows": [
           {
             "code": "L1",
-            "val": 33908588,
-            "pct": 2.76,
-            "qty": 2296,
+            "val": 33806477,
+            "pct": 2.75,
+            "qty": 2288,
             "parts": [
               {
                 "item": "83215B49DD6",
                 "name": "LL-17FE+ 0W-20",
-                "qty": 705,
-                "val": 10783154
+                "qty": 700,
+                "val": 10702940
               },
               {
                 "item": "83212469985",
@@ -4899,20 +4899,20 @@
               {
                 "item": "83135A82511",
                 "name": "Brake fluid",
-                "qty": 57,
-                "val": 646494
+                "qty": 56,
+                "val": 635152
               },
               {
                 "item": "99995A2A668",
                 "name": "Windshield w",
-                "qty": 61,
-                "val": 389418
+                "qty": 60,
+                "val": 383086
               },
               {
                 "item": "66126912985",
                 "name": "Key Battery",
-                "qty": 75,
-                "val": 316650
+                "qty": 74,
+                "val": 312428
               }
             ]
           },
@@ -7797,9 +7797,9 @@
             ]
           }
         ],
-        "subtotal_val": 149257647,
-        "subtotal_qty": 4903,
-        "subtotal_pct": 12.16
+        "subtotal_val": 149155536,
+        "subtotal_qty": 4895,
+        "subtotal_pct": 12.15
       },
       {
         "code": "O",
@@ -12079,7 +12079,7 @@
         ],
         "subtotal_val": 434061123,
         "subtotal_qty": 2741,
-        "subtotal_pct": 35.36
+        "subtotal_pct": 35.37
       },
       {
         "code": "I",
@@ -13883,13 +13883,13 @@
         ],
         "subtotal_val": 143413776,
         "subtotal_qty": 1999,
-        "subtotal_pct": 11.68
+        "subtotal_pct": 11.69
       }
     ]
   },
   "oaov": {
     "total": 59487380,
-    "inv_total": 1227579604,
+    "inv_total": 1227276219,
     "pct": 4.85,
     "oa_val": 38895536,
     "ov_val": 20591844,
@@ -33303,14 +33303,14 @@
       },
       {
         "ro": "RO2609001251",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
         "pub_full": "2026-09-19 13:42",
         "dday": "D+0일",
-        "amt": 486974
+        "amt": 497274
       },
       {
         "ro": "RO2609001252",
@@ -33325,7 +33325,7 @@
       }
     ],
     "count": 290,
-    "total_amt": 703487282,
+    "total_amt": 703497582,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -33334,13 +33334,13 @@
       },
       {
         "stat": "상담완료",
-        "count": 135,
-        "amt": 473033696
+        "count": 136,
+        "amt": 473530970
       },
       {
         "stat": "정비시작",
-        "count": 38,
-        "amt": 39741121
+        "count": 37,
+        "amt": 39254147
       },
       {
         "stat": "End Control 요청",
@@ -35406,7 +35406,7 @@
     "total_val": 24103114,
     "o_lines": 27,
     "o_val": 8799370,
-    "resv_total": 303
+    "resv_total": 302
   },
   "reasons": {}
 }
