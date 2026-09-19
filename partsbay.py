@@ -220,6 +220,28 @@ def extract_turnover(page: Page, month_start: str, today_str: str) -> list:
     return fetch_rows(frame, "/rpt/raw/selectDLRTurnOver.do", _turnover_body(month_start, today_str))
 
 
+OPEN_RO_STAT_CODES = ("01", "02", "03", "08", "04", "05")  # 06=인보이스 완료, 07=RO취소 제외
+
+
+def extract_open_ros(page: Page, today_str: str) -> list:
+    """RO 리포트에서 2000-01-01~오늘 발행된 RO 중 인보이스 안 된 것(상태별로 나눠 조회)."""
+    click_menu(page, "icon-report", "RO 리포트")
+    frame = wait_for_frame(page, "selectRawRptByRoRptMain")
+    rows = []
+    for stat in OPEN_RO_STAT_CODES:
+        body = {
+            "recordCountPerPage": 200000, "pageIndex": 1, "firstIndex": 0, "lastIndex": 200000,
+            "sSelectDt": "csltEndDt", "sSearchStartDt": "2000-01-01", "sSearchEndDt": today_str,
+            "sBrands": [], "sVinNo": "", "sCarNo": "", "sSeriesList": [], "sCustTp": "", "sCustNo": "", "sCustNm": "",
+            "sDlrCd": DEALER_CD, "sBrchCdList": [BRCH_CD], "sSaList": [], "sTechNms": [], "sRoNo": "",
+            "sRoStat": stat, "sSvcTypes": [], "sCustCarYn": "", "sDqRcrNoti": "", "sCalcTpCd": "", "sCalcTpCds": [],
+            "sRclTcApply": "", "sCampnApply": "", "sCupnApply": "", "sLeadTimeUnit": "D", "sExcludeCaseTargetYn": "N",
+            "totCnt": 0,
+        }
+        rows += fetch_rows(frame, "/rpt/raw/selectRawRoRptList.do", body)
+    return rows
+
+
 def extract_part_requests(page: Page) -> list:
     """출고요청관리: 미처리 부품 출고요청(어떤 RO/SB/SP에 재고가 묶여있는지 참조문서번호 포함)."""
     click_menu(page, "icon-parts", "출고요청관리")
@@ -433,6 +455,45 @@ def build_o_parts(rows, now):
         g["val"] = round(sum(i["val"] for i in g["rows"]))
 
     return {"items": items, "count": len(items), "total_val": round(sum(i["val"] for i in items)), "groups": groups}
+
+
+def build_open_ro(rows, now):
+    """인보이스 안 된 진행 RO 리스트(오래된 순). 금액 = 부품+공임 판매가 - 할인. 고객정보는 공개사이트라 제외."""
+    def amt(r):
+        return (num(r.get("itemSumSalePrice")) + num(r.get("lbrSaleAmt"))
+                - num(r.get("itemDcAmt")) - num(r.get("lblDcPrice")))
+
+    def dday_of(dt_str):
+        if not dt_str:
+            return "-"
+        d = datetime.strptime(dt_str[:10], "%Y-%m-%d")
+        return f"D+{(now.date() - d.date()).days}일"
+
+    seen, items = set(), []
+    for r in rows:
+        ro = r.get("roNm")
+        if not ro or ro in seen or r.get("roStatCd") in ("06", "07"):
+            continue
+        seen.add(ro)
+        pub = r.get("publishDt") or r.get("csltStartDt") or ""
+        items.append({
+            "ro": ro, "stat": r.get("roStat") or "-", "stat_cd": r.get("roStatCd") or "",
+            "svc": r.get("svcType") or "-", "sa": r.get("chrgSaNm") or "-",
+            "pub": pub[:10], "pub_full": pub, "dday": dday_of(pub), "amt": round(amt(r)),
+        })
+    items.sort(key=lambda i: i["pub_full"])
+
+    by_stat = {}
+    for i in items:
+        by_stat.setdefault(i["stat_cd"], {"stat": i["stat"], "count": 0, "amt": 0})
+        by_stat[i["stat_cd"]]["count"] += 1
+        by_stat[i["stat_cd"]]["amt"] += i["amt"]
+    stat_list = [by_stat[c] for c in OPEN_RO_STAT_CODES if c in by_stat]
+
+    return {
+        "rows": items, "count": len(items), "total_amt": sum(i["amt"] for i in items),
+        "by_stat": stat_list, "oldest": items[0]["dday"] if items else "-",
+    }
 
 
 def build_o_available(pw_rows):
@@ -758,6 +819,8 @@ def run_cycle(page: Page) -> None:
     to_rows = extract_turnover(page, month_start, today_str)
     print(" - 출고요청관리 (O계열 RO/SB/SP)")
     req_rows = extract_part_requests(page)
+    print(" - RO 리포트 (진행 RO: 인보이스 미완료)")
+    open_ro_rows = extract_open_ros(page, today_str)
     print(" - 입고현황 (당월, O파트 입출고 내역용)")
     recv_month_rows = extract_receiving_range(page, month_start, today_str)
 
@@ -770,6 +833,7 @@ def run_cycle(page: Page) -> None:
     longstock = build_longstock(pw_rows, inv["total"], now)
     opart = build_o_parts(req_rows, now)
     oavail = build_o_available(pw_rows)
+    openro = build_open_ro(open_ro_rows, now)
     oflow = build_o_daily_flow(recv_month_rows, to_rows, month_start, today_str)
     calendar_image = next((f for f in CALENDAR_IMAGE_CANDIDATES if (DOCS_DIR / f).exists()), None)
 
@@ -777,7 +841,7 @@ def run_cycle(page: Page) -> None:
         "meta": {"branch_name": BRANCH_NAME, "brch_code": f"BRCH {BRCH_CD}", "generated_at": generated_at,
                  "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
-        "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow,
+        "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro,
     }
 
     html = render(data)

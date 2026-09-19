@@ -130,6 +130,10 @@
   thead th{ text-align:left; font-family:var(--font-body); font-weight:600; font-size:12px; text-transform:none; letter-spacing:0;
     color:var(--muted); padding:0 10px 9px; border-bottom:1px solid var(--line); white-space:nowrap; }
   tbody td{ padding:9px 10px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  .reason-input{ width:280px; max-width:100%; box-sizing:border-box; border:1px solid var(--line); border-radius:8px; padding:6px 10px;
+    font:inherit; font-size:13.5px; background:var(--surface); color:var(--ink); transition:border-color .12s ease, box-shadow .12s ease; }
+  .reason-input:focus{ outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-wash); }
+  .reason-input.filled{ background:var(--accent-wash); border-color:var(--accent); }
   table.opart-table td, table.opart-table th{ padding-left:6px; padding-right:6px; }
   table.opart-table td:nth-child(2){ white-space:normal; max-width:160px; }
   tbody tr:last-child td{ border-bottom:none; }
@@ -260,6 +264,10 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="10" y="2" width="6" height="6" rx="1"/><rect x="2" y="10" width="6" height="6" rx="1"/><rect x="10" y="10" width="6" height="6" rx="1"/></svg>
         오늘 현황
       </button>
+      <button class="sb-item" id="nav-openro" aria-current="false" onclick="selectPage('openro')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="2" width="12" height="14" rx="1.5"/><path d="M6 6h6M6 9h6M6 12h3"/></svg>
+        진행RO
+      </button>
       <button class="sb-item" id="nav-external" aria-current="false" onclick="selectPage('external')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 3h2l1.6 8.4a1.5 1.5 0 0 0 1.5 1.2h5.6a1.5 1.5 0 0 0 1.5-1.2L15 6H5"/><circle cx="7" cy="15.5" r="1"/><circle cx="13" cy="15.5" r="1"/><path d="M13 2.5 15.5 5M15.5 2.5 13 5"/></svg>
         외부 판매 현황
@@ -373,6 +381,56 @@
           </div>
           <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
           <div class="tablewrap">{{ alois_table(inv.alois_groups, ['qty','val','pct'], 'inv') }}</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-openro" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>진행RO</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 인보이스 미완료 RO · RO발행일 오래된순</div>
+      </div>
+
+      <div class="kpistrip">
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">01</span>
+          <span class="eyebrow">진행 RO (인보이스 미완료)</span>
+          <span class="value">{{ openro.count }}건</span>
+          <span class="foot">금액 합계 ₩{{ '{:,}'.format(openro.total_amt) }} · 가장 오래된 RO {{ openro.oldest }}</span>
+        </div>
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">02</span>
+          <span class="eyebrow">상태별 건수</span>
+          <span class="foot" style="line-height:1.7">
+            {% for s in openro.by_stat %}{{ s.stat }} <b>{{ s.count }}</b>{{ ' · ' if not loop.last else '' }}{% endfor %}
+          </span>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">진행 RO 리스트</span>
+          <span class="val">{{ openro.count }}건</span>
+          <span class="foot">금액 = 부품+공임 판매가 · 사유는 입력하면 이 브라우저에 자동 저장돼 계속 표시됩니다</span>
+        </div>
+        <div class="tablewrap">
+          <table class="openro-table">
+            <thead><tr><th>RO번호</th><th>서비스유형</th><th>SA</th><th>RO상태</th><th>발행일</th><th>경과일</th><th class="num">금액</th><th>사유</th></tr></thead>
+            <tbody>
+              {% for r in openro.rows %}
+              <tr>
+                <td class="mono">{{ r.ro }}</td><td>{{ r.svc }}</td><td>{{ r.sa }}</td>
+                <td><span class="aloistag">{{ r.stat }}</span></td>
+                <td class="mono">{{ r.pub }}</td><td class="mono">{{ r.dday }}</td>
+                <td class="num">{{ '{:,}'.format(r.amt) }}</td>
+                <td><input class="reason-input" type="text" data-ro="{{ r.ro }}" placeholder="사유 입력" autocomplete="off"></td>
+              </tr>
+              {% else %}
+              <tr><td colspan="8" class="empty-note">진행 중인 RO 없음</td></tr>
+              {% endfor %}
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -817,7 +875,31 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  function selectPage(key){ ['today','external','accessory','oaov','longstock','opart','oflow','calendar'].forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); }); document.querySelector('.maininner').classList.toggle('wide', key==='calendar'); }
+  var PAGES = ['today','openro','external','accessory','oaov','longstock','opart','oflow','calendar'];
+  function selectPage(key){
+    PAGES.forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); });
+    document.querySelector('.maininner').classList.toggle('wide', key==='calendar');
+    try{ sessionStorage.setItem('dsparts-page', key); }catch(e){}
+  }
+  // 10분 자동새로고침 후에도 보던 화면 유지
+  try{ var savedPage = sessionStorage.getItem('dsparts-page'); if(savedPage && PAGES.indexOf(savedPage)>=0 && savedPage!=='today'){ selectPage(savedPage); } }catch(e){}
+
+  // 진행RO 사유: 입력하는 즉시 이 브라우저(localStorage)에 저장, 새로고침/재접속해도 그 RO 옆에 계속 표시
+  (function(){
+    var KEY = 'dsparts-ro-reasons';
+    function load(){ try{ return JSON.parse(localStorage.getItem(KEY) || '{}'); }catch(e){ return {}; } }
+    function save(map){ try{ localStorage.setItem(KEY, JSON.stringify(map)); }catch(e){} }
+    var map = load();
+    document.querySelectorAll('.reason-input').forEach(function(inp){
+      var ro = inp.getAttribute('data-ro');
+      if(map[ro]){ inp.value = map[ro]; inp.classList.add('filled'); }
+      inp.addEventListener('input', function(){
+        var m = load(); var v = inp.value.trim();
+        if(v){ m[ro] = inp.value; } else { delete m[ro]; }
+        save(m); inp.classList.toggle('filled', !!v);
+      });
+    });
+  })();
   function toggleAloisGroup(headEl){
     var key = headEl.getAttribute('data-group');
     var table = headEl.closest('table');
