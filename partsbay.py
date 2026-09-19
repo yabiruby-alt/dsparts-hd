@@ -363,6 +363,18 @@ def build_inventory(rows):
     total = round(sum(val_fn(r) for r in pw))
     groups = group_alois(pw, val_fn, qty_fn)
     codes = {r.get("aloisCd") for r in pw if r.get("aloisCd")}
+
+    parts_by_code = defaultdict(list)
+    for r in pw:
+        if r.get("aloisCd") and num(r.get("crtQty")) > 0:
+            parts_by_code[r["aloisCd"]].append({
+                "item": r.get("itemCd"), "name": r.get("itemNm"),
+                "qty": int(num(r.get("crtQty"))), "val": round(val_fn(r)),
+            })
+    for g in groups:
+        for row in g["rows"]:
+            row["parts"] = sorted(parts_by_code.get(row["code"], []), key=lambda p: -p["val"])
+
     inv = {"total": total, "item_count": len(pw), "code_count": len(codes), "alois_groups": groups}
     return inv, pw
 

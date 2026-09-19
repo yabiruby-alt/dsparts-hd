@@ -134,6 +134,15 @@
   .reason-input{ width:280px; max-width:100%; box-sizing:border-box; border:1px solid var(--line); border-radius:8px; padding:6px 10px;
     font:inherit; font-size:13.5px; background:var(--surface); color:var(--ink); transition:border-color .12s ease, box-shadow .12s ease; }
   .dday-badge{ display:inline-block; padding:1px 8px; border-radius:6px; }
+  .coderow{ cursor:pointer; }
+  .coderow .caret{ display:inline-block; margin-right:6px; font-size:11px; color:var(--accent); transition:transform .15s ease; }
+  .coderow.open .caret{ transform:rotate(90deg); }
+  .pcount{ margin-left:8px; font-size:12px; color:var(--muted); font-family:var(--font-body); }
+  .partslist{ max-height:360px; overflow:auto; margin:4px 0 12px 22px; padding-left:12px; border-left:2px solid var(--line); }
+  table.partsub{ font-size:13.5px; }
+  table.partsub thead th{ padding:4px 8px; position:sticky; top:0; background:var(--surface); }
+  .partsrow td{ border-bottom:none; white-space:normal; }
+  tbody tr.partsrow:hover td{ background:transparent; }
   .reason-input:focus{ outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-wash); }
   .reason-input.filled{ background:var(--accent-wash); border-color:var(--accent); }
   table.opart-table td, table.opart-table th{ padding-left:6px; padding-right:6px; }
@@ -242,6 +251,7 @@
     .aloistag{ font-size:9.5px; padding:1px 5px; }
     .reason-input{ width:100%; min-width:120px; border:none !important; background:transparent !important; padding:0; box-shadow:none !important; font-size:10.5px; }
     .reason-input::placeholder{ color:transparent; }
+    .partslist{ max-height:none; overflow:visible; }
     .grouphead .hint{ display:none; }
     tr{ break-inside:avoid; page-break-inside:avoid; }
     tbody tr:hover td{ background:transparent; }
@@ -265,12 +275,18 @@
     {% set gkey = prefix ~ '-' ~ loop.index %}
     <tr class="grouphead{{ ' oseries' if g.oseries else '' }}" data-group="{{ gkey }}" onclick="toggleAloisGroup(this)"><td colspan="{{ cols|length + 1 }}"><span class="caret">▸</span>{{ g.code }}<span class="hint"></span></td></tr>
     {% for r in g.rows %}
-    <tr data-group="{{ gkey }}" hidden{{ ' class="oseries"'|safe if g.oseries else '' }}>
-      <td><span class="aloistag{{ ' oseries' if g.oseries else '' }}">{{ r.code }}</span></td>
+    <tr data-group="{{ gkey }}" hidden class="{{ 'coderow' if r.parts is defined else '' }}{{ ' oseries' if g.oseries else '' }}"{% if r.parts is defined %} onclick="toggleCodeRow(this)"{% endif %}>
+      <td>{% if r.parts is defined %}<span class="caret">▸</span>{% endif %}<span class="aloistag{{ ' oseries' if g.oseries else '' }}">{{ r.code }}</span>{% if r.parts is defined %}<span class="pcount">{{ r.parts|length }}종</span>{% endif %}</td>
       {% if 'qty' in cols %}<td class="num">{{ '{:,}'.format(r.qty) }}</td>{% endif %}
       <td class="num">{{ '{:,}'.format(r.val) }}</td>
       {% if 'pct' in cols %}<td class="num">{{ '%.2f'|format(r.pct) }}%</td>{% endif %}
     </tr>
+    {% if r.parts is defined %}
+    <tr class="partsrow" data-group="{{ gkey }}" hidden><td colspan="{{ cols|length + 1 }}"><div class="partslist"><table class="partsub">
+      <thead><tr><th>부품번호</th><th>품명</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
+      <tbody>{% for p in r.parts %}<tr><td class="mono">{{ p.item }}</td><td>{{ p.name }}</td><td class="num">{{ p.qty }}</td><td class="num">{{ '{:,}'.format(p.val) }}</td></tr>{% else %}<tr><td colspan="4" class="empty-note">재고 있는 부품 없음</td></tr>{% endfor %}</tbody>
+    </table></div></td></tr>
+    {% endif %}
     {% endfor %}
     <tr class="subtotal{{ ' oseries' if g.oseries else '' }}">
       <td{% if 'qty' not in cols and 'pct' not in cols %} colspan="1"{% endif %}>{{ g.code }} 합계</td>
@@ -1009,13 +1025,27 @@
   // 현재 화면의 표들을 엑셀(.xlsx)로 저장 (접힌 그룹 안 행 + 진행RO 사유 포함)
   function exportExcel(){
     var sec = PAGES.map(function(k){ return document.getElementById('page-'+k); }).filter(function(e){ return !e.hidden; })[0];
-    var tables = sec ? sec.querySelectorAll('table') : [];
+    var tables = sec ? sec.querySelectorAll('table:not(.partsub)') : [];
     if(!tables.length){ alert('이 화면에는 저장할 표가 없습니다.'); return; }
     function run(){
       var wb = XLSX.utils.book_new(), used = {};
       tables.forEach(function(t, idx){
         var rows = [];
         t.querySelectorAll('tr').forEach(function(tr){
+          if(tr.closest('table') !== t) return;
+          var sub = tr.querySelector('table.partsub');
+          if(sub){
+            sub.querySelectorAll('tr').forEach(function(sr){
+              var pl = ['  ↳'];
+              sr.querySelectorAll('th,td').forEach(function(c){
+                var v = c.textContent.replace(/\s+/g,' ').trim();
+                if(c.classList.contains('num') && /^-?[\d,]+$/.test(v)){ v = Number(v.replace(/,/g,'')); }
+                pl.push(v);
+              });
+              rows.push(pl);
+            });
+            return;
+          }
           var line = [];
           tr.querySelectorAll('th,td').forEach(function(c){
             var v;
@@ -1086,7 +1116,17 @@
     var table = headEl.closest('table');
     var open = !headEl.classList.contains('open');
     headEl.classList.toggle('open', open);
-    table.querySelectorAll('tr[data-group="'+key+'"]').forEach(function(tr){ if(tr!==headEl){ tr.hidden = !open; } });
+    table.querySelectorAll('tr[data-group="'+key+'"]').forEach(function(tr){
+      if(tr===headEl) return;
+      if(tr.classList.contains('partsrow')){ tr.hidden = !(open && tr.previousElementSibling && tr.previousElementSibling.classList.contains('open')); }
+      else { tr.hidden = !open; }
+    });
+    if(!open){ table.querySelectorAll('tr.coderow[data-group="'+key+'"]').forEach(function(t){ t.classList.remove('open'); }); }
+  }
+  function toggleCodeRow(tr){
+    tr.classList.toggle('open');
+    var d = tr.nextElementSibling;
+    if(d && d.classList.contains('partsrow')){ d.hidden = !tr.classList.contains('open'); }
   }
 </script>
 </body>

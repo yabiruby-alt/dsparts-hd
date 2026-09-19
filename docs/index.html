@@ -134,6 +134,15 @@
   .reason-input{ width:280px; max-width:100%; box-sizing:border-box; border:1px solid var(--line); border-radius:8px; padding:6px 10px;
     font:inherit; font-size:13.5px; background:var(--surface); color:var(--ink); transition:border-color .12s ease, box-shadow .12s ease; }
   .dday-badge{ display:inline-block; padding:1px 8px; border-radius:6px; }
+  .coderow{ cursor:pointer; }
+  .coderow .caret{ display:inline-block; margin-right:6px; font-size:11px; color:var(--accent); transition:transform .15s ease; }
+  .coderow.open .caret{ transform:rotate(90deg); }
+  .pcount{ margin-left:8px; font-size:12px; color:var(--muted); font-family:var(--font-body); }
+  .partslist{ max-height:360px; overflow:auto; margin:4px 0 12px 22px; padding-left:12px; border-left:2px solid var(--line); }
+  table.partsub{ font-size:13.5px; }
+  table.partsub thead th{ padding:4px 8px; position:sticky; top:0; background:var(--surface); }
+  .partsrow td{ border-bottom:none; white-space:normal; }
+  tbody tr.partsrow:hover td{ background:transparent; }
   .reason-input:focus{ outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-wash); }
   .reason-input.filled{ background:var(--accent-wash); border-color:var(--accent); }
   table.opart-table td, table.opart-table th{ padding-left:6px; padding-right:6px; }
@@ -242,6 +251,7 @@
     .aloistag{ font-size:9.5px; padding:1px 5px; }
     .reason-input{ width:100%; min-width:120px; border:none !important; background:transparent !important; padding:0; box-shadow:none !important; font-size:10.5px; }
     .reason-input::placeholder{ color:transparent; }
+    .partslist{ max-height:none; overflow:visible; }
     .grouphead .hint{ display:none; }
     tr{ break-inside:avoid; page-break-inside:avoid; }
     tbody tr:hover td{ background:transparent; }
@@ -347,7 +357,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 19일 (토) · 12:37 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 19일 (토) · 12:49 기준</div>
   </nav>
 
   <main class="main">
@@ -356,7 +366,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 19일 (토) · 12:37 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 19일 (토) · 12:49 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -370,7 +380,7 @@
         <button class="kpitile" id="tile-inv" onclick="selectKpi('inv')" aria-pressed="false">
           <span class="rank">02</span>
           <span class="eyebrow">재고금액 · 부품창고</span>
-          <span class="value">₩1,229,873,939</span>
+          <span class="value">₩1,229,774,059</span>
           <span class="foot">2234품목 · 25개 코드</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
@@ -398,40 +408,45 @@
     
     <tr class="grouphead" data-group="recv-1" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>A<span class="hint"></span></td></tr>
     
-    <tr data-group="recv-1" hidden>
+    <tr data-group="recv-1" hidden class="">
       <td><span class="aloistag">A1</span></td>
       
       <td class="num">4,123,600</td>
       
     </tr>
     
-    <tr data-group="recv-1" hidden>
+    
+    <tr data-group="recv-1" hidden class="">
       <td><span class="aloistag">A2</span></td>
       
       <td class="num">677,304</td>
       
     </tr>
     
-    <tr data-group="recv-1" hidden>
+    
+    <tr data-group="recv-1" hidden class="">
       <td><span class="aloistag">A4</span></td>
       
       <td class="num">3,311,722</td>
       
     </tr>
     
-    <tr data-group="recv-1" hidden>
+    
+    <tr data-group="recv-1" hidden class="">
       <td><span class="aloistag">A5</span></td>
       
       <td class="num">431,500</td>
       
     </tr>
     
-    <tr data-group="recv-1" hidden>
+    
+    <tr data-group="recv-1" hidden class="">
       <td><span class="aloistag">A6</span></td>
       
       <td class="num">3,836,996</td>
       
     </tr>
+    
     
     <tr class="subtotal">
       <td colspan="1">A 합계</td>
@@ -443,33 +458,37 @@
     
     <tr class="grouphead" data-group="recv-2" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>L<span class="hint"></span></td></tr>
     
-    <tr data-group="recv-2" hidden>
+    <tr data-group="recv-2" hidden class="">
       <td><span class="aloistag">L1</span></td>
       
       <td class="num">8,776,800</td>
       
     </tr>
     
-    <tr data-group="recv-2" hidden>
+    
+    <tr data-group="recv-2" hidden class="">
       <td><span class="aloistag">L5</span></td>
       
       <td class="num">127,755</td>
       
     </tr>
     
-    <tr data-group="recv-2" hidden>
+    
+    <tr data-group="recv-2" hidden class="">
       <td><span class="aloistag">L6</span></td>
       
       <td class="num">311,855</td>
       
     </tr>
     
-    <tr data-group="recv-2" hidden>
+    
+    <tr data-group="recv-2" hidden class="">
       <td><span class="aloistag">L7</span></td>
       
       <td class="num">957,147</td>
       
     </tr>
+    
     
     <tr class="subtotal">
       <td colspan="1">L 합계</td>
@@ -481,12 +500,13 @@
     
     <tr class="grouphead oseries" data-group="recv-3" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>O<span class="hint"></span></td></tr>
     
-    <tr data-group="recv-3" hidden class="oseries">
+    <tr data-group="recv-3" hidden class=" oseries">
       <td><span class="aloistag oseries">O8</span></td>
       
       <td class="num">4,343,567</td>
       
     </tr>
+    
     
     <tr class="subtotal oseries">
       <td colspan="1">O 합계</td>
@@ -498,12 +518,13 @@
     
     <tr class="grouphead" data-group="recv-4" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>I<span class="hint"></span></td></tr>
     
-    <tr data-group="recv-4" hidden>
+    <tr data-group="recv-4" hidden class="">
       <td><span class="aloistag">II</span></td>
       
       <td class="num">5,183,944</td>
       
     </tr>
+    
     
     <tr class="subtotal">
       <td colspan="1">I 합계</td>
@@ -515,26 +536,29 @@
     
     <tr class="grouphead" data-group="recv-5" onclick="toggleAloisGroup(this)"><td colspan="2"><span class="caret">▸</span>S<span class="hint"></span></td></tr>
     
-    <tr data-group="recv-5" hidden>
+    <tr data-group="recv-5" hidden class="">
       <td><span class="aloistag">SK</span></td>
       
       <td class="num">206,163</td>
       
     </tr>
     
-    <tr data-group="recv-5" hidden>
+    
+    <tr data-group="recv-5" hidden class="">
       <td><span class="aloistag">SY</span></td>
       
       <td class="num">175,540</td>
       
     </tr>
     
-    <tr data-group="recv-5" hidden>
+    
+    <tr data-group="recv-5" hidden class="">
       <td><span class="aloistag">SZ</span></td>
       
       <td class="num">13,735,176</td>
       
     </tr>
+    
     
     <tr class="subtotal">
       <td colspan="1">S 합계</td>
@@ -618,7 +642,7 @@
         <div id="detail-inv" hidden>
           <div class="viewer-head">
             <span class="lbl">재고금액 세부</span>
-            <span class="val">₩1,229,873,939</span>
+            <span class="val">₩1,229,774,059</span>
             <span class="foot">2234품목 · 부품창고</span>
           </div>
           <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
@@ -634,151 +658,169 @@
     
     <tr class="grouphead" data-group="inv-1" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>A<span class="hint"></span></td></tr>
     
-    <tr data-group="inv-1" hidden>
+    <tr data-group="inv-1" hidden class="">
       <td><span class="aloistag">A1</span></td>
-      <td class="num">2,482</td>
-      <td class="num">219,329,350</td>
+      <td class="num">2,481</td>
+      <td class="num">219,309,685</td>
       <td class="num">17.83%</td>
     </tr>
     
-    <tr data-group="inv-1" hidden>
+    
+    <tr data-group="inv-1" hidden class="">
       <td><span class="aloistag">A2</span></td>
       <td class="num">1,178</td>
       <td class="num">15,447,810</td>
       <td class="num">1.26%</td>
     </tr>
     
-    <tr data-group="inv-1" hidden>
+    
+    <tr data-group="inv-1" hidden class="">
       <td><span class="aloistag">A3</span></td>
       <td class="num">461</td>
       <td class="num">29,839,034</td>
       <td class="num">2.43%</td>
     </tr>
     
-    <tr data-group="inv-1" hidden>
+    
+    <tr data-group="inv-1" hidden class="">
       <td><span class="aloistag">A4</span></td>
       <td class="num">1,921</td>
       <td class="num">49,164,931</td>
       <td class="num">4.00%</td>
     </tr>
     
-    <tr data-group="inv-1" hidden>
+    
+    <tr data-group="inv-1" hidden class="">
       <td><span class="aloistag">A5</span></td>
       <td class="num">1,342</td>
       <td class="num">72,539,449</td>
       <td class="num">5.90%</td>
     </tr>
     
-    <tr data-group="inv-1" hidden>
+    
+    <tr data-group="inv-1" hidden class="">
       <td><span class="aloistag">A6</span></td>
       <td class="num">1,527</td>
       <td class="num">97,974,228</td>
       <td class="num">7.97%</td>
     </tr>
     
+    
     <tr class="subtotal">
       <td>A 합계</td>
-      <td class="num">8,911</td>
-      <td class="num">484,294,802</td>
+      <td class="num">8,910</td>
+      <td class="num">484,275,137</td>
       <td class="num">39.38%</td>
     </tr>
     
     
     <tr class="grouphead" data-group="inv-2" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>L<span class="hint"></span></td></tr>
     
-    <tr data-group="inv-2" hidden>
+    <tr data-group="inv-2" hidden class="">
       <td><span class="aloistag">L1</span></td>
-      <td class="num">2,324</td>
-      <td class="num">34,333,035</td>
+      <td class="num">2,319</td>
+      <td class="num">34,252,821</td>
       <td class="num">2.79%</td>
     </tr>
     
-    <tr data-group="inv-2" hidden>
+    
+    <tr data-group="inv-2" hidden class="">
       <td><span class="aloistag">L2</span></td>
       <td class="num">222</td>
       <td class="num">8,772,326</td>
       <td class="num">0.71%</td>
     </tr>
     
-    <tr data-group="inv-2" hidden>
+    
+    <tr data-group="inv-2" hidden class="">
       <td><span class="aloistag">L3</span></td>
       <td class="num">86</td>
       <td class="num">5,839,704</td>
       <td class="num">0.47%</td>
     </tr>
     
-    <tr data-group="inv-2" hidden>
+    
+    <tr data-group="inv-2" hidden class="">
       <td><span class="aloistag">L4</span></td>
       <td class="num">538</td>
       <td class="num">12,684,424</td>
       <td class="num">1.03%</td>
     </tr>
     
-    <tr data-group="inv-2" hidden>
+    
+    <tr data-group="inv-2" hidden class="">
       <td><span class="aloistag">L5</span></td>
       <td class="num">70</td>
       <td class="num">3,035,180</td>
       <td class="num">0.25%</td>
     </tr>
     
-    <tr data-group="inv-2" hidden>
+    
+    <tr data-group="inv-2" hidden class="">
       <td><span class="aloistag">L6</span></td>
       <td class="num">351</td>
       <td class="num">28,506,782</td>
       <td class="num">2.32%</td>
     </tr>
     
-    <tr data-group="inv-2" hidden>
+    
+    <tr data-group="inv-2" hidden class="">
       <td><span class="aloistag">L7</span></td>
       <td class="num">1,344</td>
       <td class="num">56,920,278</td>
       <td class="num">4.63%</td>
     </tr>
     
+    
     <tr class="subtotal">
       <td>L 합계</td>
-      <td class="num">4,935</td>
-      <td class="num">150,091,729</td>
+      <td class="num">4,930</td>
+      <td class="num">150,011,514</td>
       <td class="num">12.20%</td>
     </tr>
     
     
     <tr class="grouphead oseries" data-group="inv-3" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>O<span class="hint"></span></td></tr>
     
-    <tr data-group="inv-3" hidden class="oseries">
+    <tr data-group="inv-3" hidden class=" oseries">
       <td><span class="aloistag oseries">O8</span></td>
       <td class="num">1,147</td>
       <td class="num">68,282,486</td>
       <td class="num">5.55%</td>
     </tr>
     
-    <tr data-group="inv-3" hidden class="oseries">
+    
+    <tr data-group="inv-3" hidden class=" oseries">
       <td><span class="aloistag oseries">OA</span></td>
       <td class="num">232</td>
       <td class="num">38,895,536</td>
       <td class="num">3.16%</td>
     </tr>
     
-    <tr data-group="inv-3" hidden class="oseries">
+    
+    <tr data-group="inv-3" hidden class=" oseries">
       <td><span class="aloistag oseries">OE</span></td>
       <td class="num">1,152</td>
       <td class="num">304,490,410</td>
       <td class="num">24.76%</td>
     </tr>
     
-    <tr data-group="inv-3" hidden class="oseries">
+    
+    <tr data-group="inv-3" hidden class=" oseries">
       <td><span class="aloistag oseries">ON</span></td>
       <td class="num">11</td>
       <td class="num">1,921,269</td>
       <td class="num">0.16%</td>
     </tr>
     
-    <tr data-group="inv-3" hidden class="oseries">
+    
+    <tr data-group="inv-3" hidden class=" oseries">
       <td><span class="aloistag oseries">OV</span></td>
       <td class="num">202</td>
       <td class="num">21,051,819</td>
       <td class="num">1.71%</td>
     </tr>
+    
     
     <tr class="subtotal oseries">
       <td>O 합계</td>
@@ -790,12 +832,13 @@
     
     <tr class="grouphead" data-group="inv-4" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>I<span class="hint"></span></td></tr>
     
-    <tr data-group="inv-4" hidden>
+    <tr data-group="inv-4" hidden class="">
       <td><span class="aloistag">II</span></td>
       <td class="num">58</td>
       <td class="num">17,363,112</td>
       <td class="num">1.41%</td>
     </tr>
+    
     
     <tr class="subtotal">
       <td>I 합계</td>
@@ -807,47 +850,53 @@
     
     <tr class="grouphead" data-group="inv-5" onclick="toggleAloisGroup(this)"><td colspan="4"><span class="caret">▸</span>S<span class="hint"></span></td></tr>
     
-    <tr data-group="inv-5" hidden>
+    <tr data-group="inv-5" hidden class="">
       <td><span class="aloistag">SC</span></td>
       <td class="num">3</td>
       <td class="num">195,096</td>
       <td class="num">0.02%</td>
     </tr>
     
-    <tr data-group="inv-5" hidden>
+    
+    <tr data-group="inv-5" hidden class="">
       <td><span class="aloistag">SE</span></td>
       <td class="num">17</td>
       <td class="num">647,860</td>
       <td class="num">0.05%</td>
     </tr>
     
-    <tr data-group="inv-5" hidden>
+    
+    <tr data-group="inv-5" hidden class="">
       <td><span class="aloistag">SK</span></td>
       <td class="num">901</td>
       <td class="num">31,258,814</td>
       <td class="num">2.54%</td>
     </tr>
     
-    <tr data-group="inv-5" hidden>
+    
+    <tr data-group="inv-5" hidden class="">
       <td><span class="aloistag">SX</span></td>
       <td class="num">234</td>
       <td class="num">8,831,372</td>
       <td class="num">0.72%</td>
     </tr>
     
-    <tr data-group="inv-5" hidden>
+    
+    <tr data-group="inv-5" hidden class="">
       <td><span class="aloistag">SY</span></td>
       <td class="num">67</td>
       <td class="num">5,823,905</td>
       <td class="num">0.47%</td>
     </tr>
     
-    <tr data-group="inv-5" hidden>
+    
+    <tr data-group="inv-5" hidden class="">
       <td><span class="aloistag">SZ</span></td>
       <td class="num">778</td>
       <td class="num">96,725,729</td>
-      <td class="num">7.86%</td>
+      <td class="num">7.87%</td>
     </tr>
+    
     
     <tr class="subtotal">
       <td>S 합계</td>
@@ -3184,7 +3233,7 @@
         <div class="viewer-head">
           <span class="lbl">노쇼 SB별 부품 세부</span>
           <span class="val">17건</span>
-          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 노쇼 12008건 중 미처리 부품요청이 남은 SB</span>
+          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 노쇼 12007건 중 미처리 부품요청이 남은 SB</span>
         </div>
         <div class="tablewrap">
           <table>
@@ -3560,7 +3609,7 @@
           <span class="rank">01</span>
           <span class="eyebrow">전체재고 대비 OA+OV 비율</span>
           <span class="value">4.87%</span>
-          <span class="foot">OA+OV 재고금액 ₩59,947,355 · 전체재고 ₩1,229,873,939</span>
+          <span class="foot">OA+OV 재고금액 ₩59,947,355 · 전체재고 ₩1,229,774,059</span>
         </div>
       </div>
 
@@ -6750,13 +6799,27 @@
   // 현재 화면의 표들을 엑셀(.xlsx)로 저장 (접힌 그룹 안 행 + 진행RO 사유 포함)
   function exportExcel(){
     var sec = PAGES.map(function(k){ return document.getElementById('page-'+k); }).filter(function(e){ return !e.hidden; })[0];
-    var tables = sec ? sec.querySelectorAll('table') : [];
+    var tables = sec ? sec.querySelectorAll('table:not(.partsub)') : [];
     if(!tables.length){ alert('이 화면에는 저장할 표가 없습니다.'); return; }
     function run(){
       var wb = XLSX.utils.book_new(), used = {};
       tables.forEach(function(t, idx){
         var rows = [];
         t.querySelectorAll('tr').forEach(function(tr){
+          if(tr.closest('table') !== t) return;
+          var sub = tr.querySelector('table.partsub');
+          if(sub){
+            sub.querySelectorAll('tr').forEach(function(sr){
+              var pl = ['  ↳'];
+              sr.querySelectorAll('th,td').forEach(function(c){
+                var v = c.textContent.replace(/\s+/g,' ').trim();
+                if(c.classList.contains('num') && /^-?[\d,]+$/.test(v)){ v = Number(v.replace(/,/g,'')); }
+                pl.push(v);
+              });
+              rows.push(pl);
+            });
+            return;
+          }
           var line = [];
           tr.querySelectorAll('th,td').forEach(function(c){
             var v;
@@ -6827,7 +6890,17 @@
     var table = headEl.closest('table');
     var open = !headEl.classList.contains('open');
     headEl.classList.toggle('open', open);
-    table.querySelectorAll('tr[data-group="'+key+'"]').forEach(function(tr){ if(tr!==headEl){ tr.hidden = !open; } });
+    table.querySelectorAll('tr[data-group="'+key+'"]').forEach(function(tr){
+      if(tr===headEl) return;
+      if(tr.classList.contains('partsrow')){ tr.hidden = !(open && tr.previousElementSibling && tr.previousElementSibling.classList.contains('open')); }
+      else { tr.hidden = !open; }
+    });
+    if(!open){ table.querySelectorAll('tr.coderow[data-group="'+key+'"]').forEach(function(t){ t.classList.remove('open'); }); }
+  }
+  function toggleCodeRow(tr){
+    tr.classList.toggle('open');
+    var d = tr.nextElementSibling;
+    if(d && d.classList.contains('partsrow')){ d.hidden = !tr.classList.contains('open'); }
   }
 </script>
 </body>
