@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 19일 (토) · 14:17 기준",
+    "generated_at": "9월 19일 (토) · 14:25 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1227066861,
+    "total": 1227073193,
     "item_count": 2227,
     "code_count": 25,
     "alois_groups": [
@@ -4850,9 +4850,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 33788803,
+            "val": 33795135,
             "pct": 2.75,
-            "qty": 2286,
+            "qty": 2287,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4905,8 +4905,8 @@
               {
                 "item": "99995A2A668",
                 "name": "Windshield w",
-                "qty": 59,
-                "val": 376754
+                "qty": 60,
+                "val": 383086
               },
               {
                 "item": "66126912985",
@@ -7797,8 +7797,8 @@
             ]
           }
         ],
-        "subtotal_val": 149137862,
-        "subtotal_qty": 4893,
+        "subtotal_val": 149144194,
+        "subtotal_qty": 4894,
         "subtotal_pct": 12.15
       },
       {
@@ -13889,7 +13889,7 @@
   },
   "oaov": {
     "total": 59487380,
-    "inv_total": 1227066861,
+    "inv_total": 1227073193,
     "pct": 4.85,
     "oa_val": 38895536,
     "ov_val": 20591844,
@@ -31895,8 +31895,8 @@
       },
       {
         "ro": "RO2609001058",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-16",
@@ -33226,8 +33226,8 @@
       },
       {
         "ro": "RO2609001243",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
@@ -33325,38 +33325,49 @@
       },
       {
         "ro": "RO2609001253",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
         "pub_full": "2026-09-19 14:11",
         "dday": "D+0일",
-        "amt": 513408
+        "amt": 503108
+      },
+      {
+        "ro": "RO2609001254",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-09-19",
+        "pub_full": "2026-09-19 14:23",
+        "dday": "D+0일",
+        "amt": 112884
       }
     ],
-    "count": 291,
-    "total_amt": 704010990,
+    "count": 292,
+    "total_amt": 704113574,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 12,
-        "amt": 6180600
+        "count": 13,
+        "amt": 6293484
       },
       {
         "stat": "상담완료",
-        "count": 137,
-        "amt": 474044378
+        "count": 135,
+        "amt": 473236888
       },
       {
         "stat": "정비시작",
-        "count": 37,
-        "amt": 39254147
+        "count": 38,
+        "amt": 36309415
       },
       {
         "stat": "End Control 요청",
-        "count": 48,
-        "amt": 62198910
+        "count": 49,
+        "amt": 65940832
       },
       {
         "stat": "공정마감",
@@ -35417,7 +35428,116 @@
     "total_val": 24103114,
     "o_lines": 27,
     "o_val": 8799370,
-    "resv_total": 302
+    "resv_total": 301
+  },
+  "sbcar": {
+    "groups": [
+      {
+        "code": "SB2607000498",
+        "resv_full": "2026-07-08 09:12",
+        "resv": "07-08",
+        "dday": "D+73일",
+        "sa": "우종훈",
+        "rows": [
+          {
+            "item": "51118084683",
+            "name": "Front orname",
+            "alois": "A4",
+            "req_qty": 1,
+            "crt_qty": 3,
+            "avail_qty": 2,
+            "val": 601115
+          },
+          {
+            "item": "51119879296",
+            "name": "Bumper guide",
+            "alois": "A5",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 3,
+            "val": 44337
+          },
+          {
+            "item": "51119879295",
+            "name": "Bumper guide",
+            "alois": "A5",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 3,
+            "val": 43890
+          }
+        ],
+        "count": 3,
+        "qty_sum": 3,
+        "val": 689342
+      },
+      {
+        "code": "SB2608000328",
+        "resv_full": "2026-08-10 10:48",
+        "resv": "08-10",
+        "dday": "D+40일",
+        "sa": "최민수",
+        "rows": [
+          {
+            "item": "61615A85266",
+            "name": "Kit wiper bl",
+            "alois": "A1",
+            "req_qty": 1,
+            "crt_qty": 76,
+            "avail_qty": 74,
+            "val": 72735
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 72735
+      },
+      {
+        "code": "SB2609000194",
+        "resv_full": "2026-09-16 09:36",
+        "resv": "09-16",
+        "dday": "D+3일",
+        "sa": "최민수",
+        "rows": [
+          {
+            "item": "64115A1BDB6",
+            "name": "Set, microfi",
+            "alois": "A1",
+            "req_qty": 1,
+            "crt_qty": 1598,
+            "avail_qty": 1596,
+            "val": 112892
+          },
+          {
+            "item": "90200006494",
+            "name": "Hypoid Axle REPO",
+            "alois": "L2",
+            "req_qty": 2,
+            "crt_qty": 81,
+            "avail_qty": 68,
+            "val": 106600
+          },
+          {
+            "item": "33117525064",
+            "name": "Screw plug",
+            "alois": "A1",
+            "req_qty": 1,
+            "crt_qty": 55,
+            "avail_qty": 37,
+            "val": 6728
+          }
+        ],
+        "count": 3,
+        "qty_sum": 4,
+        "val": 226220
+      }
+    ],
+    "sb_count": 3,
+    "line_count": 7,
+    "total_val": 988297,
+    "o_lines": 0,
+    "o_val": 0,
+    "resv_total": 10374
   },
   "reasons": {}
 }

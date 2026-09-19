@@ -351,6 +351,10 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="12" height="12" rx="2"/><path d="M6 9.5l2 2 4-4.5"/></svg>
         SB 예약접수 부품
       </button>
+      <button class="sb-item" id="nav-sbcar" aria-current="false" onclick="selectPage('sbcar')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 11l1.5-4.5A2 2 0 0 1 5.4 5h7.2a2 2 0 0 1 1.9 1.5L16 11"/><rect x="2" y="11" width="14" height="4" rx="1.2"/><circle cx="5.5" cy="13" r=".6"/><circle cx="12.5" cy="13" r=".6"/></svg>
+        SB 차량접수 부품
+      </button>
     </div>
 
     <div class="sb-section">
@@ -370,7 +374,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 19일 (토) · 14:17 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 19일 (토) · 14:25 기준</div>
   </nav>
 
   <main class="main">
@@ -379,7 +383,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 19일 (토) · 14:17 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 19일 (토) · 14:25 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -393,7 +397,7 @@
         <button class="kpitile" id="tile-inv" onclick="selectKpi('inv')" aria-pressed="false">
           <span class="rank">02</span>
           <span class="eyebrow">재고금액 · 부품창고</span>
-          <span class="value">₩1,227,066,861</span>
+          <span class="value">₩1,227,073,193</span>
           <span class="foot">2227품목 · 25개 코드</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
@@ -655,7 +659,7 @@
         <div id="detail-inv" hidden>
           <div class="viewer-head">
             <span class="lbl">재고금액 세부</span>
-            <span class="val">₩1,227,066,861</span>
+            <span class="val">₩1,227,073,193</span>
             <span class="foot">2227품목 · 부품창고</span>
           </div>
           <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
@@ -761,14 +765,14 @@
     
     <tr data-group="inv-2" hidden class="coderow" onclick="toggleCodeRow(this)">
       <td><span class="caret">▸</span><span class="aloistag">L1</span><span class="pcount">10종</span></td>
-      <td class="num">2,286</td>
-      <td class="num">33,788,803</td>
+      <td class="num">2,287</td>
+      <td class="num">33,795,135</td>
       <td class="num">2.75%</td>
     </tr>
     
     <tr class="partsrow" data-group="inv-2" hidden><td colspan="4"><div class="partslist"><table class="partsub">
       <thead><tr><th>부품번호</th><th>품명</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
-      <tbody><tr><td class="mono">83215B49DD6</td><td>LL-17FE+ 0W-20</td><td class="num">700</td><td class="num">10,702,940</td></tr><tr><td class="mono">83212469985</td><td>LL-12FE 0W-30</td><td class="num">409</td><td class="num">6,277,477</td></tr><tr><td class="mono">83215A65B99</td><td>LL-22FE++ 0W12</td><td class="num">404</td><td class="num">5,844,502</td></tr><tr><td class="mono">83215A7EDA5</td><td>LL-01FE 0W-30</td><td class="num">286</td><td class="num">4,379,232</td></tr><tr><td class="mono">11425B4C845</td><td>Set oil-filt</td><td class="num">111</td><td class="num">2,227,104</td></tr><tr><td class="mono">83515A6CDD7</td><td>Radiator ant</td><td class="num">106</td><td class="num">1,748,957</td></tr><tr><td class="mono">83195A42DF3</td><td>HT-12 Anti-freeze</td><td class="num">79</td><td class="num">1,295,600</td></tr><tr><td class="mono">83135A82511</td><td>Brake fluid</td><td class="num">55</td><td class="num">623,810</td></tr><tr><td class="mono">99995A2A668</td><td>Windshield w</td><td class="num">59</td><td class="num">376,754</td></tr><tr><td class="mono">66126912985</td><td>Key Battery</td><td class="num">74</td><td class="num">312,428</td></tr></tbody>
+      <tbody><tr><td class="mono">83215B49DD6</td><td>LL-17FE+ 0W-20</td><td class="num">700</td><td class="num">10,702,940</td></tr><tr><td class="mono">83212469985</td><td>LL-12FE 0W-30</td><td class="num">409</td><td class="num">6,277,477</td></tr><tr><td class="mono">83215A65B99</td><td>LL-22FE++ 0W12</td><td class="num">404</td><td class="num">5,844,502</td></tr><tr><td class="mono">83215A7EDA5</td><td>LL-01FE 0W-30</td><td class="num">286</td><td class="num">4,379,232</td></tr><tr><td class="mono">11425B4C845</td><td>Set oil-filt</td><td class="num">111</td><td class="num">2,227,104</td></tr><tr><td class="mono">83515A6CDD7</td><td>Radiator ant</td><td class="num">106</td><td class="num">1,748,957</td></tr><tr><td class="mono">83195A42DF3</td><td>HT-12 Anti-freeze</td><td class="num">79</td><td class="num">1,295,600</td></tr><tr><td class="mono">83135A82511</td><td>Brake fluid</td><td class="num">55</td><td class="num">623,810</td></tr><tr><td class="mono">99995A2A668</td><td>Windshield w</td><td class="num">60</td><td class="num">383,086</td></tr><tr><td class="mono">66126912985</td><td>Key Battery</td><td class="num">74</td><td class="num">312,428</td></tr></tbody>
     </table></div></td></tr>
     
     
@@ -852,8 +856,8 @@
     
     <tr class="subtotal">
       <td>L 합계</td>
-      <td class="num">4,893</td>
-      <td class="num">149,137,862</td>
+      <td class="num">4,894</td>
+      <td class="num">149,144,194</td>
       <td class="num">12.15%</td>
     </tr>
     
@@ -1060,14 +1064,14 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">진행 RO (인보이스 미완료)</span>
-          <span class="value">291건</span>
-          <span class="foot">금액 합계 ₩704,010,990 · 가장 오래된 RO D+515일</span>
+          <span class="value">292건</span>
+          <span class="foot">금액 합계 ₩704,113,574 · 가장 오래된 RO D+515일</span>
         </div>
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
           <span class="eyebrow">상태별 건수</span>
           <span class="foot" style="line-height:1.7">
-            상담시작 <b>12</b> · 상담완료 <b>137</b> · 정비시작 <b>37</b> · End Control 요청 <b>48</b> · 공정마감 <b>1</b> · 가정산 완료 <b>56</b>
+            상담시작 <b>13</b> · 상담완료 <b>135</b> · 정비시작 <b>38</b> · End Control 요청 <b>49</b> · 공정마감 <b>1</b> · 가정산 완료 <b>56</b>
           </span>
         </div>
       </div>
@@ -1075,7 +1079,7 @@
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">진행 RO 리스트</span>
-          <span class="val">291건</span>
+          <span class="val">292건</span>
           <span class="foot">금액 = 부품+공임 판매가 · 사유는 대시보드 PC의 로컬 주소(127.0.0.1:8765)에서 입력·수정하고, 그 외 기기는 조회만 됩니다</span>
         </div>
         <div class="tablewrap">
@@ -2365,7 +2369,7 @@
               
               <tr>
                 <td class="mono">RO2609001058</td><td>Maintenance</td><td>안준영</td>
-                <td><span class="aloistag">정비시작</span></td>
+                <td><span class="aloistag">End Control 요청</span></td>
                 <td class="mono">2026-09-16</td><td class="mono dday-cell" data-days="3">D+3일</td>
                 <td class="num">3,741,922</td>
                 <td><div class="reason-cell" data-ro="RO2609001058" data-saved=""><span class="reason-text"></span></div></td>
@@ -3333,7 +3337,7 @@
               
               <tr>
                 <td class="mono">RO2609001243</td><td>Maintenance</td><td>안준영</td>
-                <td><span class="aloistag">상담완료</span></td>
+                <td><span class="aloistag">정비시작</span></td>
                 <td class="mono">2026-09-19</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">294,082</td>
                 <td><div class="reason-cell" data-ro="RO2609001243" data-saved=""><span class="reason-text"></span></div></td>
@@ -3405,10 +3409,18 @@
               
               <tr>
                 <td class="mono">RO2609001253</td><td>Maintenance</td><td>안준영</td>
-                <td><span class="aloistag">상담완료</span></td>
+                <td><span class="aloistag">정비시작</span></td>
                 <td class="mono">2026-09-19</td><td class="mono dday-cell" data-days="0">D+0일</td>
-                <td class="num">513,408</td>
+                <td class="num">503,108</td>
                 <td><div class="reason-cell" data-ro="RO2609001253" data-saved=""><span class="reason-text"></span></div></td>
+              </tr>
+              
+              <tr>
+                <td class="mono">RO2609001254</td><td>Maintenance</td><td>최민수</td>
+                <td><span class="aloistag">상담시작</span></td>
+                <td class="mono">2026-09-19</td><td class="mono dday-cell" data-days="0">D+0일</td>
+                <td class="num">112,884</td>
+                <td><div class="reason-cell" data-ro="RO2609001254" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
             </tbody>
@@ -3574,6 +3586,71 @@
       </div>
     </section>
 
+    <section id="page-sbcar" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>SB 차량접수 부품</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>AS_부산(해운중동) · 차량접수했는데 RO가 아직 없는 SB의 미처리 부품요청 · 차량접수일 오래된순</div>
+      </div>
+
+      <div class="kpistrip">
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">01</span>
+          <span class="eyebrow">RO 없이 부품만 남은 차량접수 SB</span>
+          <span class="value">3건</span>
+          <span class="foot">7라인 · 요청수량×원가 합계 ₩988,297</span>
+        </div>
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">02</span>
+          <span class="eyebrow">그 중 O계열 부품</span>
+          <span class="value">₩0</span>
+          <span class="foot">0라인 (원가 기준)</span>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">차량접수 SB별 부품 세부</span>
+          <span class="val">3건</span>
+          <span class="foot">SB 클릭해서 펼치기 · 차량접수 SB(최근 180일) 10374건 중 RO 미발행 + 미처리 부품요청이 걸린 SB</span>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가금액</th></tr></thead>
+            <tbody>
+              
+              <tr class="grouphead open" data-group="sc-SB2607000498" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2607000498 · 차량접수 07-08 · <span class="dday-cell dday-badge" data-days="73">D+73일</span> · SA 우종훈 (3라인)<span class="hint"></span></td></tr>
+              
+              <tr data-group="sc-SB2607000498"><td class="mono">51118084683</td><td>Front orname</td><td><span class="aloistag">A4</span></td><td class="num">1</td><td class="num">3</td><td class="num">2</td><td class="num">601,115</td></tr>
+              
+              <tr data-group="sc-SB2607000498"><td class="mono">51119879296</td><td>Bumper guide</td><td><span class="aloistag">A5</span></td><td class="num">1</td><td class="num">4</td><td class="num">3</td><td class="num">44,337</td></tr>
+              
+              <tr data-group="sc-SB2607000498"><td class="mono">51119879295</td><td>Bumper guide</td><td><span class="aloistag">A5</span></td><td class="num">1</td><td class="num">4</td><td class="num">3</td><td class="num">43,890</td></tr>
+              
+              <tr class="subtotal"><td colspan="3">SB2607000498 합계</td><td class="num">3</td><td class="num"></td><td class="num"></td><td class="num">689,342</td></tr>
+              
+              <tr class="grouphead open" data-group="sc-SB2608000328" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2608000328 · 차량접수 08-10 · <span class="dday-cell dday-badge" data-days="40">D+40일</span> · SA 최민수 (1라인)<span class="hint"></span></td></tr>
+              
+              <tr data-group="sc-SB2608000328"><td class="mono">61615A85266</td><td>Kit wiper bl</td><td><span class="aloistag">A1</span></td><td class="num">1</td><td class="num">76</td><td class="num">74</td><td class="num">72,735</td></tr>
+              
+              <tr class="subtotal"><td colspan="3">SB2608000328 합계</td><td class="num">1</td><td class="num"></td><td class="num"></td><td class="num">72,735</td></tr>
+              
+              <tr class="grouphead open" data-group="sc-SB2609000194" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609000194 · 차량접수 09-16 · <span class="dday-cell dday-badge" data-days="3">D+3일</span> · SA 최민수 (3라인)<span class="hint"></span></td></tr>
+              
+              <tr data-group="sc-SB2609000194"><td class="mono">64115A1BDB6</td><td>Set, microfi</td><td><span class="aloistag">A1</span></td><td class="num">1</td><td class="num">1598</td><td class="num">1596</td><td class="num">112,892</td></tr>
+              
+              <tr data-group="sc-SB2609000194"><td class="mono">90200006494</td><td>Hypoid Axle REPO</td><td><span class="aloistag">L2</span></td><td class="num">2</td><td class="num">81</td><td class="num">68</td><td class="num">106,600</td></tr>
+              
+              <tr data-group="sc-SB2609000194"><td class="mono">33117525064</td><td>Screw plug</td><td><span class="aloistag">A1</span></td><td class="num">1</td><td class="num">55</td><td class="num">37</td><td class="num">6,728</td></tr>
+              
+              <tr class="subtotal"><td colspan="3">SB2609000194 합계</td><td class="num">4</td><td class="num"></td><td class="num"></td><td class="num">226,220</td></tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section id="page-sbresv" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>SB 예약접수 부품</b></span>
@@ -3600,7 +3677,7 @@
         <div class="viewer-head">
           <span class="lbl">예약접수 SB별 부품 세부</span>
           <span class="val">38건</span>
-          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 예약접수(오늘 이후) 302건 중 미처리 부품요청이 걸린 SB</span>
+          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 예약접수(오늘 이후) 301건 중 미처리 부품요청이 걸린 SB</span>
         </div>
         <div class="tablewrap">
           <table>
@@ -4264,7 +4341,7 @@
           <span class="rank">01</span>
           <span class="eyebrow">전체재고 대비 OA+OV 비율</span>
           <span class="value">4.85%</span>
-          <span class="foot">OA+OV 재고금액 ₩59,487,380 · 전체재고 ₩1,227,066,861</span>
+          <span class="foot">OA+OV 재고금액 ₩59,487,380 · 전체재고 ₩1,227,073,193</span>
         </div>
       </div>
 
@@ -7424,7 +7501,7 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  var PAGES = ['today','openro','noshow','sbresv','external','accessory','oaov','longstock','opart','oflow','calendar'];
+  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','oaov','longstock','opart','oflow','calendar'];
   function selectPage(key){
     PAGES.forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); });
     document.querySelector('.maininner').classList.toggle('wide', key==='calendar');

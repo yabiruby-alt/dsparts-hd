@@ -245,6 +245,39 @@ def extract_resv_sbs(page: Page, stat: str, start_str: str) -> list:
     return fetch_rows(frame, "/ser/resvAcpt/selectResvAcptStatus.do", body)
 
 
+def extract_carin_sbs_without_ro(page: Page, req_rows: list, today) -> tuple:
+    """차량접수 상태 SB 중 미처리 부품요청이 걸려있고 RO가 아직 없는 SB. (해당 SB 행 리스트, 최근 180일 차량접수 SB 총수)"""
+    start = (today - timedelta(days=180)).strftime("%Y-%m-%d")
+    sbs = extract_resv_sbs(page, "02", start)
+    cand_ids = {r.get("refDocNo") for r in req_rows if r.get("refDocTp") == "SB"}
+    cand = [r for r in sbs if r.get("resvNo") in cand_ids]
+    if not cand:
+        return [], len(sbs)
+
+    ro_from = min(((r.get("carAcptDtime") or r.get("resvDtime") or "")[:10] or start) for r in cand)
+    cur = datetime.strptime(ro_from, "%Y-%m-%d").date() - timedelta(days=2)
+    click_menu(page, "icon-report", "RO 리포트")
+    frame = wait_for_frame(page, "selectRawRptByRoRptMain")
+    resv_with_ro = set()
+    while cur <= today:  # RO 리포트는 길게 조회하면 느려서 월 단위로 쪼갬
+        nxt = (cur.replace(day=28) + timedelta(days=4)).replace(day=1)
+        end = min(nxt - timedelta(days=1), today)
+        body = {
+            "recordCountPerPage": 200000, "pageIndex": 1, "firstIndex": 0, "lastIndex": 200000,
+            "sSelectDt": "csltEndDt", "sSearchStartDt": cur.strftime("%Y-%m-%d"), "sSearchEndDt": end.strftime("%Y-%m-%d"),
+            "sBrands": [], "sVinNo": "", "sCarNo": "", "sSeriesList": [], "sCustTp": "", "sCustNo": "", "sCustNm": "",
+            "sDlrCd": DEALER_CD, "sBrchCdList": [BRCH_CD], "sSaList": [], "sTechNms": [], "sRoNo": "",
+            "sRoStat": "", "sSvcTypes": [], "sCustCarYn": "", "sDqRcrNoti": "", "sCalcTpCd": "", "sCalcTpCds": [],
+            "sRclTcApply": "", "sCampnApply": "", "sCupnApply": "", "sLeadTimeUnit": "D", "sExcludeCaseTargetYn": "N",
+            "totCnt": 0,
+        }
+        for r in fetch_rows(frame, "/rpt/raw/selectRawRoRptList.do", body):
+            if r.get("resvNo"):
+                resv_with_ro.add(r["resvNo"])
+        cur = nxt
+    return [r for r in cand if r.get("resvNo") not in resv_with_ro], len(sbs)
+
+
 OPEN_RO_STAT_CODES = ("01", "02", "03", "08", "04", "05")  # 06=인보이스 완료, 07=RO취소 제외
 
 
@@ -496,7 +529,7 @@ def build_o_parts(rows, now):
     return {"items": items, "count": len(items), "total_val": round(sum(i["val"] for i in items)), "groups": groups}
 
 
-def build_sb_parts(req_rows, resv_rows, now, farthest_first=False):
+def build_sb_parts(req_rows, resv_rows, now, farthest_first=False, date_field="resvDtime"):
     """주어진 예약(SB) 목록 중 미처리 부품 요청이 걸려있는 부품. SB별 그룹, 예약일 빠른(오래된) 순. 원가=요청수량×이동평균단가."""
     resv = {r.get("resvNo"): r for r in resv_rows if r.get("resvNo")}
     by_sb = {}
@@ -517,7 +550,7 @@ def build_sb_parts(req_rows, resv_rows, now, farthest_first=False):
     groups = []
     for sb, rs in by_sb.items():
         info = resv[sb]
-        resv_dt = info.get("resvDtime") or ""
+        resv_dt = info.get(date_field) or info.get("resvDtime") or ""
         parts = sorted([{
             "item": r.get("partNo"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
             "req_qty": int(num(r.get("reqQty"))), "crt_qty": int(num(r.get("crtQty"))),
@@ -1035,6 +1068,8 @@ def run_cycle(page: Page) -> None:
     noshow_rows = extract_resv_sbs(page, "04", "2020-01-01")
     print(" - 서비스예약현황 (예약접수 SB, 오늘~)")
     sbresv_rows = extract_resv_sbs(page, "01", today_str)
+    print(" - 차량접수 SB 중 RO 미발행 + 부품 (서비스예약현황 + RO 리포트)")
+    sbcar_rows, sbcar_total = extract_carin_sbs_without_ro(page, req_rows, datetime.now(ZoneInfo("Asia/Seoul")).date())
     print(" - 입고현황 (당월, O파트 입출고 내역용)")
     recv_month_rows = extract_receiving_range(page, month_start, today_str)
 
@@ -1050,6 +1085,8 @@ def run_cycle(page: Page) -> None:
     openro = build_open_ro(open_ro_rows, now)
     noshow = build_sb_parts(req_rows, noshow_rows, now)
     sbresv = build_sb_parts(req_rows, sbresv_rows, now, farthest_first=True)
+    sbcar = build_sb_parts(req_rows, sbcar_rows, now, date_field="carAcptDtime")
+    sbcar["resv_total"] = sbcar_total
     oflow = build_o_daily_flow(recv_month_rows, to_rows, month_start, today_str)
     calendar_image = next((f for f in CALENDAR_IMAGE_CANDIDATES if (DOCS_DIR / f).exists()), None)
 
@@ -1057,7 +1094,7 @@ def run_cycle(page: Page) -> None:
         "meta": {"branch_name": BRANCH_NAME, "brch_code": f"BRCH {BRCH_CD}", "generated_at": generated_at,
                  "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
-        "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro, "noshow": noshow, "sbresv": sbresv,
+        "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro, "noshow": noshow, "sbresv": sbresv, "sbcar": sbcar,
     }
 
     global LAST_DATA
