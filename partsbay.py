@@ -714,7 +714,7 @@ def build_acc_tire(rows):
     acc_codes = {"3", "5", "7"}
 
     def group_by_invoice(codes):
-        grp = defaultdict(lambda: {"invTot": 0.0, "cost": 0.0, "num": None, "cust": None, "dt": None})
+        grp = defaultdict(lambda: {"invTot": 0.0, "cost": 0.0, "num": None, "sa": None, "dt": None})
         for r in ci_rows:
             if _prod_code(r) not in codes:
                 continue
@@ -725,7 +725,7 @@ def build_acc_tire(rows):
             g["invTot"] += num(r.get("invTotAmt"))
             g["cost"] += num(r.get("oriSumAmt"))
             g["num"] = g["num"] or _num_of(r)
-            g["cust"] = g["cust"] or r.get("custNm")
+            g["sa"] = g["sa"] or r.get("emplNm")
             g["dt"] = g["dt"] or r.get("invDt")
         return grp
 
@@ -734,7 +734,7 @@ def build_acc_tire(rows):
 
     def sorted_items(grp):
         return sorted(
-            [{"inv": k, "num": g["num"], "cust": g["cust"], "dt": (g["dt"] or "")[:16],
+            [{"inv": k, "num": g["num"], "sa": g["sa"] or "-", "dt": (g["dt"] or "")[:16],
               "amt": round(g["invTot"]), "cost": round(g["cost"])} for k, g in grp.items()],
             key=lambda i: i["dt"], reverse=True,
         )

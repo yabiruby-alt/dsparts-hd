@@ -677,10 +677,10 @@
           <p class="subttl" style="margin-top:16px">인보이스 최근 5건 <span class="n">최신일순 · RO 또는 SP번호</span></p>
           <div class="tablewrap">
             <table>
-              <thead><tr><th>RO/SP번호</th><th>인보이스번호</th><th>거래처</th><th>일시</th><th class="num">인보이스금액</th><th class="num">원가</th></tr></thead>
+              <thead><tr><th>RO/SP번호</th><th>인보이스번호</th><th>담당SA</th><th>일시</th><th class="num">인보이스금액</th><th class="num">원가</th></tr></thead>
               <tbody>
                 {% for r in acc.recent5 %}
-                <tr><td class="mono">{{ r.num }}</td><td class="mono">{{ r.inv }}</td><td>{{ r.cust }}</td><td class="mono">{{ r.dt }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td class="num">{{ '{:,}'.format(r.cost) }}</td></tr>
+                <tr><td class="mono">{{ r.num }}</td><td class="mono">{{ r.inv }}</td><td>{{ r.sa }}</td><td class="mono">{{ r.dt }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td class="num">{{ '{:,}'.format(r.cost) }}</td></tr>
                 {% endfor %}
               </tbody>
             </table>
@@ -708,10 +708,10 @@
           <p class="subttl" style="margin-top:16px">인보이스 전체 {{ tire.invoices_count }}건 <span class="n">최신일순</span></p>
           <div class="tablewrap">
             <table>
-              <thead><tr><th>RO/SP번호</th><th>인보이스번호</th><th>거래처</th><th>일시</th><th class="num">인보이스금액</th><th class="num">원가</th></tr></thead>
+              <thead><tr><th>RO/SP번호</th><th>인보이스번호</th><th>담당SA</th><th>일시</th><th class="num">인보이스금액</th><th class="num">원가</th></tr></thead>
               <tbody>
                 {% for r in tire.all_invoices %}
-                <tr><td class="mono">{{ r.num }}</td><td class="mono">{{ r.inv }}</td><td>{{ r.cust }}</td><td class="mono">{{ r.dt }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td class="num">{{ '{:,}'.format(r.cost) }}</td></tr>
+                <tr><td class="mono">{{ r.num }}</td><td class="mono">{{ r.inv }}</td><td>{{ r.sa }}</td><td class="mono">{{ r.dt }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td class="num">{{ '{:,}'.format(r.cost) }}</td></tr>
                 {% endfor %}
               </tbody>
             </table>
