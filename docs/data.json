@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 19일 (토) · 11:27 기준",
+    "generated_at": "9월 19일 (토) · 11:50 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -5263,22 +5263,6 @@
         "dday": "D+24일"
       },
       {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "alois": "OE",
-        "ref_tp": "SB",
-        "ref_no": "SB2608001800",
-        "req_qty": 1,
-        "crt_qty": 10,
-        "avail_qty": 8,
-        "req_dt": "08-26",
-        "req_dt_full": "2026-08-26 17:15:37",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 85760,
-        "sa": "정용환",
-        "dday": "D+24일"
-      },
-      {
         "item": "07119907357",
         "name": "Hex bolt",
         "alois": "O8",
@@ -6790,7 +6774,7 @@
         "ref_no": "SB2609000769",
         "req_qty": 1,
         "crt_qty": 10,
-        "avail_qty": 8,
+        "avail_qty": 9,
         "req_dt": "09-19",
         "req_dt_full": "2026-09-19 08:49:43",
         "req_brch": "AS_부산(해운중동)",
@@ -6813,10 +6797,26 @@
         "val": 667584,
         "sa": "최민수",
         "dday": "D+0일"
+      },
+      {
+        "item": "07129905516",
+        "name": "Bolt",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001052",
+        "req_qty": 4,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-19",
+        "req_dt_full": "2026-09-19 11:46:59",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 10500,
+        "sa": "김민규",
+        "dday": "D+0일"
       }
     ],
     "count": 133,
-    "total_val": 35604718,
+    "total_val": 35529458,
     "groups": [
       {
         "code": "RO",
@@ -7572,11 +7572,27 @@
             "val": 103194,
             "sa": "우종훈",
             "dday": "D+1일"
+          },
+          {
+            "item": "07129905516",
+            "name": "Bolt",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001052",
+            "req_qty": 4,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-19",
+            "req_dt_full": "2026-09-19 11:46:59",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 10500,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 47,
-        "qty_sum": 59,
-        "val": 10069574
+        "count": 48,
+        "qty_sum": 63,
+        "val": 10080074
       },
       {
         "code": "SB",
@@ -8030,22 +8046,6 @@
             "dday": "D+24일"
           },
           {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "ref_tp": "SB",
-            "ref_no": "SB2608001800",
-            "req_qty": 1,
-            "crt_qty": 10,
-            "avail_qty": 8,
-            "req_dt": "08-26",
-            "req_dt_full": "2026-08-26 17:15:37",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 85760,
-            "sa": "정용환",
-            "dday": "D+24일"
-          },
-          {
             "item": "51317422806",
             "name": "Cover, winds",
             "alois": "O8",
@@ -8229,7 +8229,7 @@
             "ref_no": "SB2609000769",
             "req_qty": 1,
             "crt_qty": 10,
-            "avail_qty": 8,
+            "avail_qty": 9,
             "req_dt": "09-19",
             "req_dt_full": "2026-09-19 08:49:43",
             "req_brch": "AS_부산(해운중동)",
@@ -8254,9 +8254,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 42,
-        "qty_sum": 71,
-        "val": 15456347
+        "count": 41,
+        "qty_sum": 70,
+        "val": 15370587
       },
       {
         "code": "SP",
@@ -9295,6 +9295,14 @@
         "val": 835468
       },
       {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "alois": "OE",
+        "qty": 10,
+        "avail_qty": 9,
+        "val": 771840
+      },
+      {
         "item": "34117847241",
         "name": "Caliper hous",
         "alois": "OA",
@@ -9333,14 +9341,6 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 708027
-      },
-      {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "alois": "OE",
-        "qty": 10,
-        "avail_qty": 8,
-        "val": 686080
       },
       {
         "item": "63115A408A8",
@@ -15806,6 +15806,14 @@
             "val": 857000
           },
           {
+            "item": "64119382886",
+            "name": "MICROFILTER/",
+            "alois": "OE",
+            "qty": 10,
+            "avail_qty": 9,
+            "val": 771840
+          },
+          {
             "item": "90200007293",
             "name": "BMW Caddy M",
             "alois": "OE",
@@ -15836,14 +15844,6 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 708027
-          },
-          {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "qty": 10,
-            "avail_qty": 8,
-            "val": 686080
           },
           {
             "item": "63115A408A8",
@@ -16328,8 +16328,8 @@
         ],
         "count": 89,
         "qty_sum": 760,
-        "avail_sum": 740,
-        "val": 288908898
+        "avail_sum": 741,
+        "val": 288994658
       },
       {
         "code": "ON",
@@ -16815,7 +16815,7 @@
       }
     ],
     "count": 487,
-    "total_val": 356006362
+    "total_val": 356092122
   },
   "oflow": {
     "rows": [
@@ -18715,7 +18715,7 @@
         "pub": "2026-09-16",
         "pub_full": "2026-09-16 14:12",
         "dday": "D+3일",
-        "amt": 3273600
+        "amt": 3282400
       },
       {
         "ro": "RO2609001055",
@@ -19749,7 +19749,7 @@
         "pub": "2026-09-18",
         "pub_full": "2026-09-18 15:55",
         "dday": "D+1일",
-        "amt": 1083900
+        "amt": 1127900
       },
       {
         "ro": "RO2609001210",
@@ -20035,7 +20035,7 @@
         "pub": "2026-09-19",
         "pub_full": "2026-09-19 10:52",
         "dday": "D+0일",
-        "amt": 56000
+        "amt": 188800
       },
       {
         "ro": "RO2609001241",
@@ -20058,25 +20058,36 @@
         "pub_full": "2026-09-19 11:05",
         "dday": "D+0일",
         "amt": 372250
+      },
+      {
+        "ro": "RO2609001243",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-09-19",
+        "pub_full": "2026-09-19 11:50",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 281,
-    "total_amt": 699586052,
+    "count": 282,
+    "total_amt": 699771652,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 10,
+        "count": 11,
         "amt": 6180600
       },
       {
         "stat": "상담완료",
         "count": 138,
-        "amt": 476620684
+        "amt": 476762284
       },
       {
         "stat": "정비시작",
         "count": 33,
-        "amt": 33536967
+        "amt": 33580967
       },
       {
         "stat": "End Control 요청",
@@ -20423,219 +20434,6 @@
         "val": 1690124
       },
       {
-        "code": "SB2607000564",
-        "resv_full": "2026-07-08 16:20",
-        "resv": "07-08",
-        "dday": "D+73일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "64316835405",
-            "name": "MICROFILTER/",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 58,
-            "avail_qty": 56,
-            "val": 71071
-          },
-          {
-            "item": "83215B49DD6",
-            "name": "LL-17FE+ 0W-20",
-            "alois": "L1",
-            "req_qty": 4,
-            "crt_qty": 722,
-            "avail_qty": 690,
-            "val": 68756
-          },
-          {
-            "item": "12122455258",
-            "name": "Spark plug B38x,46x,48x",
-            "alois": "A1",
-            "req_qty": 3,
-            "crt_qty": 274,
-            "avail_qty": 271,
-            "val": 61857
-          },
-          {
-            "item": "13718513944",
-            "name": "Air filter e",
-            "alois": "A2",
-            "req_qty": 1,
-            "crt_qty": 17,
-            "avail_qty": 16,
-            "val": 35258
-          },
-          {
-            "item": "11428593186",
-            "name": "Set oil-filt",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 25,
-            "avail_qty": 22,
-            "val": 19668
-          },
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 1,
-            "crt_qty": 58,
-            "avail_qty": 39,
-            "val": 11342
-          }
-        ],
-        "count": 6,
-        "qty_sum": 11,
-        "val": 267952
-      },
-      {
-        "code": "SB2607000768",
-        "resv_full": "2026-07-10 10:20",
-        "resv": "07-10",
-        "dday": "D+71일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 1,
-            "crt_qty": 58,
-            "avail_qty": 39,
-            "val": 11342
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 11342
-      },
-      {
-        "code": "SB2604000915",
-        "resv_full": "2026-07-10 13:00",
-        "resv": "07-10",
-        "dday": "D+71일",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "61615A85266",
-            "name": "Kit wiper bl",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 76,
-            "avail_qty": 71,
-            "val": 72735
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 72735
-      },
-      {
-        "code": "SB2607000602",
-        "resv_full": "2026-07-15 10:00",
-        "resv": "07-15",
-        "dday": "D+66일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 2,
-            "crt_qty": 58,
-            "avail_qty": 39,
-            "val": 22684
-          }
-        ],
-        "count": 1,
-        "qty_sum": 2,
-        "val": 22684
-      },
-      {
-        "code": "SB2607001108",
-        "resv_full": "2026-07-15 16:20",
-        "resv": "07-15",
-        "dday": "D+66일",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "61615A85266",
-            "name": "Kit wiper bl",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 76,
-            "avail_qty": 71,
-            "val": 72735
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 72735
-      },
-      {
-        "code": "SB2607001697",
-        "resv_full": "2026-07-24 14:00",
-        "resv": "07-24",
-        "dday": "D+57일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 1,
-            "crt_qty": 58,
-            "avail_qty": 39,
-            "val": 11342
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 11342
-      },
-      {
-        "code": "SB2607001533",
-        "resv_full": "2026-07-28 15:00",
-        "resv": "07-28",
-        "dday": "D+53일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "61615A43610",
-            "name": "Set of wiper G70",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 19,
-            "avail_qty": 17,
-            "val": 72735
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 72735
-      },
-      {
-        "code": "SB2607002182",
-        "resv_full": "2026-08-05 09:00",
-        "resv": "08-05",
-        "dday": "D+45일",
-        "sa": "우종훈",
-        "rows": [
-          {
-            "item": "61135B68D04",
-            "name": "Splash prote",
-            "alois": "SK",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 2,
-            "val": 700
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 700
-      },
-      {
         "code": "SB2608000231",
         "resv_full": "2026-08-06 09:40",
         "resv": "08-06",
@@ -20655,153 +20453,6 @@
         "count": 1,
         "qty_sum": 1,
         "val": 612588
-      },
-      {
-        "code": "SB2608000245",
-        "resv_full": "2026-08-06 12:00",
-        "resv": "08-06",
-        "dday": "D+44일",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "61615A43610",
-            "name": "Set of wiper G70",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 19,
-            "avail_qty": 17,
-            "val": 72735
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 72735
-      },
-      {
-        "code": "SB2608000336",
-        "resv_full": "2026-08-13 09:20",
-        "resv": "08-13",
-        "dday": "D+37일",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "34106860019",
-            "name": "Repair kit, 1,2,MI",
-            "alois": "A4",
-            "req_qty": 1,
-            "crt_qty": 8,
-            "avail_qty": 5,
-            "val": 144843
-          },
-          {
-            "item": "34218867488",
-            "name": "Repair kit,",
-            "alois": "A3",
-            "req_qty": 1,
-            "crt_qty": 9,
-            "avail_qty": 6,
-            "val": 102771
-          },
-          {
-            "item": "34356865612",
-            "name": "Brake pad we",
-            "alois": "A2",
-            "req_qty": 1,
-            "crt_qty": 12,
-            "avail_qty": 9,
-            "val": 26772
-          },
-          {
-            "item": "34356888167",
-            "name": "Brake pad we",
-            "alois": "A4",
-            "req_qty": 1,
-            "crt_qty": 6,
-            "avail_qty": 4,
-            "val": 25220
-          }
-        ],
-        "count": 4,
-        "qty_sum": 4,
-        "val": 299606
-      },
-      {
-        "code": "SB2608000921",
-        "resv_full": "2026-08-18 10:20",
-        "resv": "08-18",
-        "dday": "D+32일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "99975BA1A04",
-            "name": "BMWFoldingUm",
-            "alois": "SX",
-            "req_qty": 1,
-            "crt_qty": 58,
-            "avail_qty": 50,
-            "val": 7080
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 7080
-      },
-      {
-        "code": "SB2608000967",
-        "resv_full": "2026-08-19 09:20",
-        "resv": "08-19",
-        "dday": "D+31일",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "64115A1BDB6",
-            "name": "Set, microfi",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 1598,
-            "avail_qty": 1594,
-            "val": 112892
-          },
-          {
-            "item": "83212469985",
-            "name": "LL-12FE 0W-30",
-            "alois": "L1",
-            "req_qty": 6,
-            "crt_qty": 414,
-            "avail_qty": 370,
-            "val": 99606
-          },
-          {
-            "item": "64115A13762",
-            "name": "Fine-dust fi",
-            "alois": "A2",
-            "req_qty": 1,
-            "crt_qty": 15,
-            "avail_qty": 14,
-            "val": 84663
-          },
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 2,
-            "crt_qty": 58,
-            "avail_qty": 39,
-            "val": 22684
-          },
-          {
-            "item": "11425B95014",
-            "name": "Set oil-filt",
-            "alois": "SX",
-            "req_qty": 1,
-            "crt_qty": 48,
-            "avail_qty": 45,
-            "val": 20134
-          }
-        ],
-        "count": 5,
-        "qty_sum": 11,
-        "val": 339979
       },
       {
         "code": "SB2608000928",
@@ -20834,7 +20485,7 @@
             "alois": "L1",
             "req_qty": 2,
             "crt_qty": 58,
-            "avail_qty": 39,
+            "avail_qty": 54,
             "val": 22684
           },
           {
@@ -20902,68 +20553,11 @@
             "crt_qty": 4,
             "avail_qty": 0,
             "val": 33280
-          },
-          {
-            "item": "11128511814",
-            "name": "Gasket set",
-            "alois": "L7",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 31991
-          },
-          {
-            "item": "13532247156",
-            "name": "Gasket ring",
-            "alois": "A4",
-            "req_qty": 4,
-            "crt_qty": 32,
-            "avail_qty": 18,
-            "val": 26908
           }
         ],
-        "count": 3,
-        "qty_sum": 9,
-        "val": 92179
-      },
-      {
-        "code": "SB2608001068",
-        "resv_full": "2026-08-20 10:40",
-        "resv": "08-20",
-        "dday": "D+30일",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "64316835405",
-            "name": "MICROFILTER/",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 58,
-            "avail_qty": 56,
-            "val": 71071
-          },
-          {
-            "item": "83215B49DD6",
-            "name": "LL-17FE+ 0W-20",
-            "alois": "L1",
-            "req_qty": 4,
-            "crt_qty": 722,
-            "avail_qty": 690,
-            "val": 68756
-          },
-          {
-            "item": "11428593186",
-            "name": "Set oil-filt",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 25,
-            "avail_qty": 22,
-            "val": 19668
-          }
-        ],
-        "count": 3,
-        "qty_sum": 6,
-        "val": 159495
+        "count": 1,
+        "qty_sum": 4,
+        "val": 33280
       },
       {
         "code": "SB2608000389",
@@ -21003,87 +20597,6 @@
         "count": 3,
         "qty_sum": 5,
         "val": 1860500
-      },
-      {
-        "code": "SB2607002213",
-        "resv_full": "2026-08-21 17:20",
-        "resv": "08-21",
-        "dday": "D+29일",
-        "sa": "우종훈",
-        "rows": [
-          {
-            "item": "33316767586",
-            "name": "Bolt",
-            "alois": "A4",
-            "req_qty": 2,
-            "crt_qty": 20,
-            "avail_qty": 11,
-            "val": 24100
-          },
-          {
-            "item": "07146875114",
-            "name": "Hexagon nut",
-            "alois": "A2",
-            "req_qty": 2,
-            "crt_qty": 46,
-            "avail_qty": 23,
-            "val": 10538
-          },
-          {
-            "item": "33306760349",
-            "name": "Nut",
-            "alois": "A2",
-            "req_qty": 2,
-            "crt_qty": 41,
-            "avail_qty": 24,
-            "val": 7866
-          }
-        ],
-        "count": 3,
-        "qty_sum": 6,
-        "val": 42504
-      },
-      {
-        "code": "SB2608001397",
-        "resv_full": "2026-08-24 10:20",
-        "resv": "08-24",
-        "dday": "D+26일",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "11425B95013",
-            "name": "Oil filter c",
-            "alois": "SX",
-            "req_qty": 1,
-            "crt_qty": 33,
-            "avail_qty": 32,
-            "val": 34365
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 34365
-      },
-      {
-        "code": "SB2608001187",
-        "resv_full": "2026-08-27 09:00",
-        "resv": "08-27",
-        "dday": "D+23일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 1,
-            "crt_qty": 58,
-            "avail_qty": 39,
-            "val": 11342
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 11342
       },
       {
         "code": "SB2608001687",
@@ -21134,213 +20647,6 @@
         "val": 1668968
       },
       {
-        "code": "SB2608001800",
-        "resv_full": "2026-08-27 16:00",
-        "resv": "08-27",
-        "dday": "D+23일",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "req_qty": 1,
-            "crt_qty": 10,
-            "avail_qty": 8,
-            "val": 85760
-          },
-          {
-            "item": "83215B49DD6",
-            "name": "LL-17FE+ 0W-20",
-            "alois": "L1",
-            "req_qty": 5,
-            "crt_qty": 722,
-            "avail_qty": 690,
-            "val": 80215
-          },
-          {
-            "item": "61618492538",
-            "name": "Set of wiper",
-            "alois": "A4",
-            "req_qty": 1,
-            "crt_qty": 9,
-            "avail_qty": 8,
-            "val": 64935
-          },
-          {
-            "item": "11428575211",
-            "name": "Set oil-filt",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 105,
-            "avail_qty": 103,
-            "val": 19665
-          }
-        ],
-        "count": 4,
-        "qty_sum": 8,
-        "val": 250575
-      },
-      {
-        "code": "SB2606000556",
-        "resv_full": "2026-08-28 09:00",
-        "resv": "08-28",
-        "dday": "D+22일",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "61615A85266",
-            "name": "Kit wiper bl",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 76,
-            "avail_qty": 71,
-            "val": 72735
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 72735
-      },
-      {
-        "code": "SB2608001953",
-        "resv_full": "2026-08-31 15:00",
-        "resv": "08-31",
-        "dday": "D+19일",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "34106860019",
-            "name": "Repair kit, 1,2,MI",
-            "alois": "A4",
-            "req_qty": 1,
-            "crt_qty": 8,
-            "avail_qty": 5,
-            "val": 144843
-          },
-          {
-            "item": "34356887827",
-            "name": "Brake pad we MINI",
-            "alois": "A3",
-            "req_qty": 1,
-            "crt_qty": 8,
-            "avail_qty": 5,
-            "val": 25220
-          },
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 1,
-            "crt_qty": 58,
-            "avail_qty": 39,
-            "val": 11342
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 181405
-      },
-      {
-        "code": "SB2608001702",
-        "resv_full": "2026-09-01 09:00",
-        "resv": "09-01",
-        "dday": "D+18일",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 2,
-            "crt_qty": 58,
-            "avail_qty": 39,
-            "val": 22684
-          }
-        ],
-        "count": 1,
-        "qty_sum": 2,
-        "val": 22684
-      },
-      {
-        "code": "SB2608001927",
-        "resv_full": "2026-09-03 10:40",
-        "resv": "09-03",
-        "dday": "D+16일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "83215A7EDA5",
-            "name": "LL-01FE 0W-30",
-            "alois": "L1",
-            "req_qty": 10,
-            "crt_qty": 286,
-            "avail_qty": 249,
-            "val": 164604
-          },
-          {
-            "item": "64115A1BDB6",
-            "name": "Set, microfi",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 1598,
-            "avail_qty": 1594,
-            "val": 112892
-          },
-          {
-            "item": "61615A5C9C2",
-            "name": "Set of wiper",
-            "alois": "A5",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 1,
-            "val": 68259
-          },
-          {
-            "item": "11425A33C43",
-            "name": "Set oil-filt",
-            "alois": "A3",
-            "req_qty": 1,
-            "crt_qty": 15,
-            "avail_qty": 14,
-            "val": 25228
-          },
-          {
-            "item": "07145A38759",
-            "name": "Oil drain pl",
-            "alois": "A3",
-            "req_qty": 1,
-            "crt_qty": 10,
-            "avail_qty": 9,
-            "val": 9219
-          }
-        ],
-        "count": 5,
-        "qty_sum": 14,
-        "val": 380202
-      },
-      {
-        "code": "SB2609000168",
-        "resv_full": "2026-09-03 11:00",
-        "resv": "09-03",
-        "dday": "D+16일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "61610003090",
-            "name": "Set of wiper 6GT",
-            "alois": "A2",
-            "req_qty": 1,
-            "crt_qty": 22,
-            "avail_qty": 21,
-            "val": 64935
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 64935
-      },
-      {
         "code": "SB2608001572",
         "resv_full": "2026-09-04 15:00",
         "resv": "09-04",
@@ -21369,27 +20675,6 @@
         "count": 2,
         "qty_sum": 2,
         "val": 662157
-      },
-      {
-        "code": "SB2609000671",
-        "resv_full": "2026-09-10 14:20",
-        "resv": "09-10",
-        "dday": "D+9일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 2,
-            "crt_qty": 58,
-            "avail_qty": 39,
-            "val": 22684
-          }
-        ],
-        "count": 1,
-        "qty_sum": 2,
-        "val": 22684
       },
       {
         "code": "SB2609000560",
@@ -21422,229 +20707,13 @@
             "alois": "L4",
             "req_qty": 1,
             "crt_qty": 63,
-            "avail_qty": 60,
+            "avail_qty": 61,
             "val": 1124
           }
         ],
         "count": 3,
         "qty_sum": 3,
         "val": 663281
-      },
-      {
-        "code": "SB2609000396",
-        "resv_full": "2026-09-11 09:00",
-        "resv": "09-11",
-        "dday": "D+8일",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 1,
-            "crt_qty": 58,
-            "avail_qty": 39,
-            "val": 11342
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 11342
-      },
-      {
-        "code": "SB2609000792",
-        "resv_full": "2026-09-11 09:20",
-        "resv": "09-11",
-        "dday": "D+8일",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 1,
-            "crt_qty": 58,
-            "avail_qty": 39,
-            "val": 11342
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 11342
-      },
-      {
-        "code": "SB2608002052",
-        "resv_full": "2026-09-12 09:00",
-        "resv": "09-12",
-        "dday": "D+7일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L4",
-            "req_qty": 1,
-            "crt_qty": 63,
-            "avail_qty": 60,
-            "val": 1124
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 1124
-      },
-      {
-        "code": "SB2609000806",
-        "resv_full": "2026-09-15 09:20",
-        "resv": "09-15",
-        "dday": "D+4일",
-        "sa": "이정환",
-        "rows": [
-          {
-            "item": "31108866773",
-            "name": "Tension stru",
-            "alois": "A6",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 1,
-            "val": 332778
-          },
-          {
-            "item": "31108866774",
-            "name": "Tension stru",
-            "alois": "A6",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "val": 329199
-          },
-          {
-            "item": "07146885653",
-            "name": "LOCKING NUT",
-            "alois": "A4",
-            "req_qty": 2,
-            "crt_qty": 6,
-            "avail_qty": 0,
-            "val": 20942
-          },
-          {
-            "item": "07146885389",
-            "name": "Star-socket",
-            "alois": "A4",
-            "req_qty": 2,
-            "crt_qty": 7,
-            "avail_qty": 1,
-            "val": 12848
-          },
-          {
-            "item": "07146875114",
-            "name": "Hexagon nut",
-            "alois": "A2",
-            "req_qty": 2,
-            "crt_qty": 46,
-            "avail_qty": 23,
-            "val": 10538
-          }
-        ],
-        "count": 5,
-        "qty_sum": 8,
-        "val": 706305
-      },
-      {
-        "code": "SB2609000450",
-        "resv_full": "2026-09-15 14:00",
-        "resv": "09-15",
-        "dday": "D+4일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "83212469985",
-            "name": "LL-12FE 0W-30",
-            "alois": "L1",
-            "req_qty": 5,
-            "crt_qty": 414,
-            "avail_qty": 370,
-            "val": 80451
-          },
-          {
-            "item": "13327822497",
-            "name": "Fuel filter Fx 1,2,3,4",
-            "alois": "A4",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 2,
-            "val": 59230
-          },
-          {
-            "item": "64119237555",
-            "name": "Filter",
-            "alois": "A3",
-            "req_qty": 1,
-            "crt_qty": 11,
-            "avail_qty": 10,
-            "val": 56598
-          },
-          {
-            "item": "13718511668",
-            "name": "Filter elmnt",
-            "alois": "A4",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 4,
-            "val": 45811
-          },
-          {
-            "item": "11428507683",
-            "name": "Filt.Element",
-            "alois": "A2",
-            "req_qty": 1,
-            "crt_qty": 11,
-            "avail_qty": 10,
-            "val": 22230
-          }
-        ],
-        "count": 5,
-        "qty_sum": 9,
-        "val": 264320
-      },
-      {
-        "code": "SB2609001107",
-        "resv_full": "2026-09-16 09:00",
-        "resv": "09-16",
-        "dday": "D+3일",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "83212469985",
-            "name": "LL-12FE 0W-30",
-            "alois": "L1",
-            "req_qty": 8,
-            "crt_qty": 414,
-            "avail_qty": 370,
-            "val": 127189
-          },
-          {
-            "item": "64115A547D4",
-            "name": "Mikrofilter/",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 40,
-            "avail_qty": 39,
-            "val": 120134
-          },
-          {
-            "item": "11425B95014",
-            "name": "Set oil-filt",
-            "alois": "SX",
-            "req_qty": 1,
-            "crt_qty": 48,
-            "avail_qty": 45,
-            "val": 20134
-          }
-        ],
-        "count": 3,
-        "qty_sum": 10,
-        "val": 267457
       },
       {
         "code": "SB2609000523",
@@ -21698,48 +20767,6 @@
         "val": 64935
       },
       {
-        "code": "SB2609001112",
-        "resv_full": "2026-09-16 17:00",
-        "resv": "09-16",
-        "dday": "D+3일",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "61619478361",
-            "name": "SET OF WIPER 3/4 series",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 79,
-            "avail_qty": 77,
-            "val": 68185
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 68185
-      },
-      {
-        "code": "SB2609000991",
-        "resv_full": "2026-09-17 09:00",
-        "resv": "09-17",
-        "dday": "D+2일",
-        "sa": "이정환",
-        "rows": [
-          {
-            "item": "33127607158",
-            "name": "Repair kit i",
-            "alois": "A4",
-            "req_qty": 1,
-            "crt_qty": 10,
-            "avail_qty": 7,
-            "val": 30485
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 30485
-      },
-      {
         "code": "SB2609000534",
         "resv_full": "2026-09-17 09:20",
         "resv": "09-17",
@@ -21770,11 +20797,11 @@
         "val": 662157
       }
     ],
-    "sb_count": 53,
-    "line_count": 115,
-    "total_val": 20314796,
-    "o_lines": 13,
-    "o_val": 6370713,
-    "noshow_total": 12007
+    "sb_count": 22,
+    "line_count": 47,
+    "total_val": 16400786,
+    "o_lines": 12,
+    "o_val": 6284953,
+    "noshow_total": 12008
   }
 }
