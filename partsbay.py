@@ -19,6 +19,7 @@ import os
 import re
 import subprocess
 import sys
+import threading
 import time
 import webbrowser
 
@@ -29,6 +30,7 @@ except Exception:
     pass
 from collections import defaultdict
 from datetime import datetime, timedelta
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -55,6 +57,14 @@ PUBLISH_TO_GITHUB = True
 # 로그인 세션 저장 폴더는 항상 ASCII 전용 경로(사용자 홈 폴더 아래)에 둔다.
 AUTH_DIR = Path.home() / "AppData" / "Local" / "PartsBayDMS" / "authdata"
 TEMPLATE_NAME = "template.html.j2"
+
+# 진행RO 사유: 이 PC에서만 입력(로컬 서버) -> reasons.json 저장 -> 사이트에 반영해 폰/다른 기기는 조회 전용
+REASONS_FILE = BASE_DIR / "reasons.json"
+REASON_PORT = 8765
+ALLOWED_ORIGINS = {"https://yabiruby-alt.github.io", "http://127.0.0.1:8765", "http://localhost:8765"}
+REASONS_LOCK = threading.Lock()   # reasons.json 읽기/쓰기
+PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
+LAST_DATA = {}                    # 마지막 갱신 데이터(사유만 바뀌었을 때 DMS 재조회 없이 재렌더용)
 
 WEEKDAYS_KO = ["월", "화", "수", "목", "금", "토", "일"]
 
@@ -874,6 +884,113 @@ def _acquire_lock() -> bool:
     return True
 
 
+def load_reasons() -> dict:
+    with REASONS_LOCK:
+        try:
+            return json.loads(REASONS_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            return {}
+
+
+def _open_reasons(data: dict) -> dict:
+    """현재 진행RO 목록에 있는 RO의 사유만 사이트에 실음."""
+    ros = {r["ro"] for r in data.get("openro", {}).get("rows", [])}
+    return {k: v for k, v in load_reasons().items() if k in ros}
+
+
+def update_reasons(changes: dict) -> dict:
+    """{RO번호: 사유} 반영(빈 문자열이면 삭제). 잘못된 항목은 무시."""
+    with REASONS_LOCK:
+        try:
+            cur = json.loads(REASONS_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            cur = {}
+        for ro, text in changes.items():
+            if not isinstance(ro, str) or not re.fullmatch(r"RO\d{6,14}", ro) or not isinstance(text, str):
+                continue
+            text = text.strip()[:300]
+            if text:
+                cur[ro] = text
+            else:
+                cur.pop(ro, None)
+        REASONS_FILE.write_text(json.dumps(cur, ensure_ascii=False, indent=2), encoding="utf-8")
+        return cur
+
+
+def republish_reasons() -> None:
+    """사유만 바뀐 경우: 마지막 데이터로 다시 렌더해서 docs에 쓰고 push."""
+    with PUBLISH_LOCK:
+        if not LAST_DATA:
+            return
+        data = dict(LAST_DATA)
+        data["reasons"] = _open_reasons(data)
+        html = render(data)
+        DOCS_DIR.mkdir(parents=True, exist_ok=True)
+        (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
+        (DOCS_DIR / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        if PUBLISH_TO_GITHUB:
+            publish_to_github("진행RO 사유 갱신")
+
+
+class ReasonHandler(BaseHTTPRequestHandler):
+    def _send(self, code: int, body: dict | None = None) -> None:
+        payload = json.dumps(body, ensure_ascii=False).encode("utf-8") if body is not None else b""
+        self.send_response(code)
+        origin = self.headers.get("Origin", "")
+        if origin in ALLOWED_ORIGINS:
+            self.send_header("Access-Control-Allow-Origin", origin)
+            self.send_header("Vary", "Origin")
+            self.send_header("Access-Control-Allow-Headers", "Content-Type")
+            self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+            self.send_header("Access-Control-Allow-Private-Network", "true")
+        if body is not None:
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(payload)))
+        self.end_headers()
+        self.wfile.write(payload)
+
+    def do_OPTIONS(self):
+        self._send(204)
+
+    def do_GET(self):
+        if self.path.startswith("/ping"):
+            self._send(200, {"ok": True})
+        elif self.path.startswith("/reasons"):
+            self._send(200, load_reasons())
+        else:
+            self._send(404, {"ok": False})
+
+    def do_POST(self):
+        if not self.path.startswith("/reasons"):
+            self._send(404, {"ok": False})
+            return
+        try:
+            length = min(int(self.headers.get("Content-Length", "0")), 200_000)
+            body = json.loads(self.rfile.read(length).decode("utf-8"))
+            changes = body.get("set", {})
+            if not isinstance(changes, dict):
+                raise ValueError("set must be object")
+        except Exception:
+            self._send(400, {"ok": False})
+            return
+        cur = update_reasons(changes)
+        threading.Thread(target=republish_reasons, daemon=True).start()
+        self._send(200, {"ok": True, "reasons": cur})
+
+    def log_message(self, *args):
+        pass
+
+
+def start_reason_server() -> None:
+    try:
+        server = ThreadingHTTPServer(("127.0.0.1", REASON_PORT), ReasonHandler)
+    except OSError as e:
+        print(f"[사유 입력 서버 시작 실패] 포트 {REASON_PORT}: {e}")
+        return
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    print(f"진행RO 사유 입력 서버 시작 (이 PC 전용, 127.0.0.1:{REASON_PORT})")
+
+
 def run_cycle(page: Page) -> None:
     """이미 로그인된 page로 데이터 한 번 뽑아서 대시보드 생성 + 깃허브 push."""
     now = datetime.now(ZoneInfo("Asia/Seoul"))
@@ -918,24 +1035,28 @@ def run_cycle(page: Page) -> None:
         "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro, "noshow": noshow,
     }
 
-    html = render(data)
-    stamp = now.strftime("%Y%m%d_%H%M")
-    out_path = OUTPUT_DIR / f"dashboard_{stamp}.html"
-    out_path.write_text(html, encoding="utf-8")
-    (OUTPUT_DIR / "latest.html").write_text(html, encoding="utf-8")
-    data_json = json.dumps(data, ensure_ascii=False, indent=2)
-    (OUTPUT_DIR / "latest.json").write_text(data_json, encoding="utf-8")
+    global LAST_DATA
+    with PUBLISH_LOCK:
+        LAST_DATA = dict(data)
+        data["reasons"] = _open_reasons(data)
+        html = render(data)
+        stamp = now.strftime("%Y%m%d_%H%M")
+        out_path = OUTPUT_DIR / f"dashboard_{stamp}.html"
+        out_path.write_text(html, encoding="utf-8")
+        (OUTPUT_DIR / "latest.html").write_text(html, encoding="utf-8")
+        data_json = json.dumps(data, ensure_ascii=False, indent=2)
+        (OUTPUT_DIR / "latest.json").write_text(data_json, encoding="utf-8")
 
-    DOCS_DIR.mkdir(parents=True, exist_ok=True)
-    (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
-    (DOCS_DIR / "data.json").write_text(data_json, encoding="utf-8")
+        DOCS_DIR.mkdir(parents=True, exist_ok=True)
+        (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
+        (DOCS_DIR / "data.json").write_text(data_json, encoding="utf-8")
 
-    print(f"완료: {out_path}")
-    if ONCE:
-        webbrowser.open(out_path.resolve().as_uri())
+        print(f"완료: {out_path}")
+        if ONCE:
+            webbrowser.open(out_path.resolve().as_uri())
 
-    if PUBLISH_TO_GITHUB:
-        publish_to_github(f"대시보드 갱신 {generated_at}")
+        if PUBLISH_TO_GITHUB:
+            publish_to_github(f"대시보드 갱신 {generated_at}")
 
 
 def main():
@@ -944,6 +1065,7 @@ def main():
         return
     AUTH_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    start_reason_server()
     try:
         print("동성모터스 PARTS — DMS 접속 중...")
         with sync_playwright() as p:

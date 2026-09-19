@@ -144,7 +144,16 @@
   .partsrow td{ border-bottom:none; white-space:normal; }
   tbody tr.partsrow:hover td{ background:transparent; }
   .reason-input:focus{ outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-wash); }
-  .reason-input.filled{ background:var(--accent-wash); border-color:var(--accent); }
+  .reason-cell{ display:flex; align-items:center; gap:8px; min-width:240px; flex-wrap:wrap; }
+  .reason-text{ font-size:14px; color:var(--ink); white-space:normal; word-break:break-all; }
+  .reason-cell .reason-input{ width:220px; }
+  .rbtn{ all:unset; box-sizing:border-box; cursor:pointer; font-size:12.5px; font-weight:600; padding:4px 10px; border-radius:8px;
+    background:var(--surface-2); color:var(--ink-2); transition:background .12s ease; }
+  .rbtn:hover{ background:var(--accent-wash); color:var(--accent-strong); }
+  .rbtn-primary{ background:var(--accent); color:#fff; }
+  .rbtn-primary:hover{ background:var(--accent-strong); color:#fff; }
+  .rbtn:disabled{ opacity:.5; cursor:default; }
+  .rmsg{ font-size:12px; color:var(--muted); }
   table.opart-table td, table.opart-table th{ padding-left:6px; padding-right:6px; }
   table.opart-table td:nth-child(2){ white-space:normal; max-width:160px; }
   tbody tr:last-child td{ border-bottom:none; }
@@ -250,7 +259,7 @@
     td.mono{ font-size:10px; }
     .aloistag{ font-size:9.5px; padding:1px 5px; }
     .reason-input{ width:100%; min-width:120px; border:none !important; background:transparent !important; padding:0; box-shadow:none !important; font-size:10.5px; }
-    .reason-input::placeholder{ color:transparent; }
+    .rbtn, .rmsg, .reason-cell .reason-input{ display:none !important; }
     .partslist{ max-height:none; overflow:visible; }
     .grouphead .hint{ display:none; }
     tr{ break-inside:avoid; page-break-inside:avoid; }
@@ -501,7 +510,7 @@
         <div class="viewer-head">
           <span class="lbl">진행 RO 리스트</span>
           <span class="val">{{ openro.count }}건</span>
-          <span class="foot">금액 = 부품+공임 판매가 · 사유는 입력하면 이 브라우저에 자동 저장돼 계속 표시됩니다</span>
+          <span class="foot">금액 = 부품+공임 판매가 · 사유는 대시보드 PC에서 입력·수정하고, 폰/다른 기기에서는 조회만 됩니다</span>
         </div>
         <div class="tablewrap">
           <table class="openro-table">
@@ -513,7 +522,7 @@
                 <td><span class="aloistag">{{ r.stat }}</span></td>
                 <td class="mono">{{ r.pub }}</td><td class="mono dday-cell" data-days="{{ r.dday[2:-1] }}">{{ r.dday }}</td>
                 <td class="num">{{ '{:,}'.format(r.amt) }}</td>
-                <td><input class="reason-input" type="text" data-ro="{{ r.ro }}" placeholder="사유 입력" autocomplete="off"></td>
+                <td><div class="reason-cell" data-ro="{{ r.ro }}" data-saved="{{ (reasons or {}).get(r.ro, '')|e }}"><span class="reason-text">{{ (reasons or {}).get(r.ro, '')|e }}</span></div></td>
               </tr>
               {% else %}
               <tr><td colspan="8" class="empty-note">진행 중인 RO 없음</td></tr>
@@ -1049,8 +1058,8 @@
           var line = [];
           tr.querySelectorAll('th,td').forEach(function(c){
             var v;
-            var inp = c.querySelector('input');
-            if(inp){ v = inp.value; }
+            var rc = c.querySelector('.reason-cell');
+            if(rc){ v = rc.getAttribute('data-saved') || ''; }
             else {
               v = c.textContent.replace(/\s+/g,' ').trim().replace(/^▸\s*/, '');
               if(c.classList.contains('num') && /^-?[\d,]+(\.\d+)?%?$/.test(v) && v.indexOf('%')<0){ v = Number(v.replace(/,/g,'')); }
@@ -1095,21 +1104,57 @@
     td.style.fontWeight = '700';
   });
 
-  // 진행RO 사유: 입력하는 즉시 이 브라우저(localStorage)에 저장, 새로고침/재접속해도 그 RO 옆에 계속 표시
+  // 진행RO 사유: 대시보드 PC(로컬 서버가 켜져 있는 곳)에서만 입력/수정, 그 외 기기는 조회 전용
   (function(){
-    var KEY = 'dsparts-ro-reasons';
-    function load(){ try{ return JSON.parse(localStorage.getItem(KEY) || '{}'); }catch(e){ return {}; } }
-    function save(map){ try{ localStorage.setItem(KEY, JSON.stringify(map)); }catch(e){} }
-    var map = load();
-    document.querySelectorAll('.reason-input').forEach(function(inp){
-      var ro = inp.getAttribute('data-ro');
-      if(map[ro]){ inp.value = map[ro]; inp.classList.add('filled'); }
-      inp.addEventListener('input', function(){
-        var m = load(); var v = inp.value.trim();
-        if(v){ m[ro] = inp.value; } else { delete m[ro]; }
-        save(m); inp.classList.toggle('filled', !!v);
-      });
-    });
+    var API = 'http://127.0.0.1:8765';
+    var cells = document.querySelectorAll('.reason-cell');
+    if(!cells.length) return;
+    function el(tag, cls, txt){ var e = document.createElement(tag); if(cls) e.className = cls; if(txt != null) e.textContent = txt; return e; }
+    function render(cell, editing){
+      var saved = cell.getAttribute('data-saved') || '';
+      cell.innerHTML = '';
+      if(!editing && saved){
+        cell.appendChild(el('span', 'reason-text', saved));
+        var eb = el('button', 'rbtn', '수정'); eb.type = 'button';
+        eb.onclick = function(){ render(cell, true); };
+        cell.appendChild(eb);
+        return;
+      }
+      var inp = el('input', 'reason-input'); inp.type = 'text'; inp.value = saved; inp.placeholder = '사유 입력'; inp.maxLength = 300;
+      var sb = el('button', 'rbtn rbtn-primary', '저장'); sb.type = 'button';
+      var msg = el('span', 'rmsg', '');
+      function doSave(){
+        var v = inp.value.trim(), ro = cell.getAttribute('data-ro'), body = {}; body[ro] = v;
+        sb.disabled = true; msg.textContent = '저장 중...';
+        fetch(API + '/reasons', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({set: body})})
+          .then(function(r){ if(!r.ok) throw new Error('save'); return r.json(); })
+          .then(function(){ cell.setAttribute('data-saved', v); render(cell, false); })
+          .catch(function(){ sb.disabled = false; msg.textContent = '저장 실패 (대시보드 프로그램이 켜져 있는지 확인)'; });
+      }
+      sb.onclick = doSave;
+      inp.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ doSave(); } });
+      cell.appendChild(inp); cell.appendChild(sb);
+      if(saved){ var cb = el('button', 'rbtn', '취소'); cb.type = 'button'; cb.onclick = function(){ render(cell, false); }; cell.appendChild(cb); }
+      cell.appendChild(msg);
+    }
+    function enable(){
+      fetch(API + '/reasons').then(function(r){ return r.json(); }).then(function(server){
+        var mig = {}, local = {};
+        try{ local = JSON.parse(localStorage.getItem('dsparts-ro-reasons') || '{}'); }catch(e){}
+        cells.forEach(function(c){
+          var ro = c.getAttribute('data-ro');
+          if(server[ro] != null){ c.setAttribute('data-saved', server[ro]); }
+          else if(local[ro]){ mig[ro] = local[ro]; c.setAttribute('data-saved', local[ro]); }
+          else { c.setAttribute('data-saved', ''); }
+        });
+        if(Object.keys(mig).length){
+          fetch(API + '/reasons', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({set: mig})})
+            .then(function(r){ if(r.ok){ try{ localStorage.removeItem('dsparts-ro-reasons'); }catch(e){} } });
+        }
+        cells.forEach(function(c){ render(c, false); });
+      }).catch(function(){});
+    }
+    fetch(API + '/ping').then(function(r){ if(r.ok) enable(); }).catch(function(){});
   })();
   function toggleAloisGroup(headEl){
     var key = headEl.getAttribute('data-group');
