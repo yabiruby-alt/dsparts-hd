@@ -588,7 +588,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>SB 예약접수 부품</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 예약접수 상태 SB에 걸린 미처리 부품요청 · 오늘부터 예약일 빠른순</div>
+        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 예약접수 상태 SB에 걸린 미처리 부품요청 · 예약일 먼 날짜 먼저 · D-30일 이상은 붉은색</div>
       </div>
 
       <div class="kpistrip">
@@ -617,7 +617,7 @@
             <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가금액</th></tr></thead>
             <tbody>
               {% for g in sbresv.groups %}
-              <tr class="grouphead open" data-group="sr-{{ g.code }}" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>{{ g.code }} · 예약일 {{ g.resv }} · {{ g.dday }} · SA {{ g.sa }} ({{ g.count }}라인)<span class="hint"></span></td></tr>
+              <tr class="grouphead open" data-group="sr-{{ g.code }}" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>{{ g.code }} · 예약일 {{ g.resv }} · <span class="dday-cell dday-badge"{% if g.dday.startswith('D-') %} data-days="{{ g.dday[2:-1] }}"{% endif %}>{{ g.dday }}</span> · SA {{ g.sa }} ({{ g.count }}라인)<span class="hint"></span></td></tr>
               {% for r in g.rows %}
               <tr data-group="sr-{{ g.code }}"><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="num">{{ r.req_qty }}</td><td class="num">{{ r.crt_qty }}</td><td class="num">{{ r.avail_qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
               {% endfor %}

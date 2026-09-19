@@ -496,7 +496,7 @@ def build_o_parts(rows, now):
     return {"items": items, "count": len(items), "total_val": round(sum(i["val"] for i in items)), "groups": groups}
 
 
-def build_sb_parts(req_rows, resv_rows, now):
+def build_sb_parts(req_rows, resv_rows, now, farthest_first=False):
     """주어진 예약(SB) 목록 중 미처리 부품 요청이 걸려있는 부품. SB별 그룹, 예약일 빠른(오래된) 순. 원가=요청수량×이동평균단가."""
     resv = {r.get("resvNo"): r for r in resv_rows if r.get("resvNo")}
     by_sb = {}
@@ -529,7 +529,7 @@ def build_sb_parts(req_rows, resv_rows, now):
             "sa": info.get("chrgSaNm") or "-", "rows": parts, "count": len(parts),
             "qty_sum": sum(p["req_qty"] for p in parts), "val": sum(p["val"] for p in parts),
         })
-    groups.sort(key=lambda g: g["resv_full"])
+    groups.sort(key=lambda g: g["resv_full"], reverse=farthest_first)
 
     all_parts = [p for g in groups for p in g["rows"]]
     o_parts = [p for p in all_parts if str(p["alois"] or "").startswith("O")]
@@ -1049,7 +1049,7 @@ def run_cycle(page: Page) -> None:
     oavail = build_o_available(pw_rows)
     openro = build_open_ro(open_ro_rows, now)
     noshow = build_sb_parts(req_rows, noshow_rows, now)
-    sbresv = build_sb_parts(req_rows, sbresv_rows, now)
+    sbresv = build_sb_parts(req_rows, sbresv_rows, now, farthest_first=True)
     oflow = build_o_daily_flow(recv_month_rows, to_rows, month_start, today_str)
     calendar_image = next((f for f in CALENDAR_IMAGE_CANDIDATES if (DOCS_DIR / f).exists()), None)
 
