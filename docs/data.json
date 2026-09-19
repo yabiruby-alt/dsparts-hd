@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 19일 (토) · 13:49 기준",
+    "generated_at": "9월 19일 (토) · 14:01 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -33248,8 +33248,8 @@
       },
       {
         "ro": "RO2609001245",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
@@ -33259,8 +33259,8 @@
       },
       {
         "ro": "RO2609001247",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-09-19",
@@ -33303,18 +33303,29 @@
       },
       {
         "ro": "RO2609001251",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-19",
         "pub_full": "2026-09-19 13:42",
         "dday": "D+0일",
         "amt": 486974
+      },
+      {
+        "ro": "RO2609001252",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-09-19",
+        "pub_full": "2026-09-19 13:51",
+        "dday": "D+0일",
+        "amt": 799582
       }
     ],
-    "count": 289,
-    "total_amt": 702687700,
+    "count": 290,
+    "total_amt": 703487282,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -33323,13 +33334,13 @@
       },
       {
         "stat": "상담완료",
-        "count": 137,
-        "amt": 473133173
+        "count": 135,
+        "amt": 473033696
       },
       {
         "stat": "정비시작",
-        "count": 35,
-        "amt": 38842062
+        "count": 38,
+        "amt": 39741121
       },
       {
         "stat": "End Control 요청",
@@ -33937,38 +33948,11 @@
             "crt_qty": 1,
             "avail_qty": 0,
             "val": 71280
-          },
-          {
-            "item": "33316767586",
-            "name": "Bolt",
-            "alois": "A4",
-            "req_qty": 1,
-            "crt_qty": 20,
-            "avail_qty": 13,
-            "val": 12050
-          },
-          {
-            "item": "07146875114",
-            "name": "Hexagon nut",
-            "alois": "A2",
-            "req_qty": 1,
-            "crt_qty": 46,
-            "avail_qty": 27,
-            "val": 5269
-          },
-          {
-            "item": "33306760349",
-            "name": "Nut",
-            "alois": "A2",
-            "req_qty": 1,
-            "crt_qty": 41,
-            "avail_qty": 26,
-            "val": 3933
           }
         ],
-        "count": 9,
-        "qty_sum": 9,
-        "val": 2322836
+        "count": 6,
+        "qty_sum": 6,
+        "val": 2301584
       },
       {
         "code": "SB2607001706",
@@ -34739,7 +34723,7 @@
             "alois": "A2",
             "req_qty": 2,
             "crt_qty": 46,
-            "avail_qty": 27,
+            "avail_qty": 28,
             "val": 10538
           },
           {
@@ -34748,7 +34732,7 @@
             "alois": "A2",
             "req_qty": 2,
             "crt_qty": 41,
-            "avail_qty": 26,
+            "avail_qty": 27,
             "val": 7866
           }
         ],
@@ -35418,8 +35402,8 @@
       }
     ],
     "sb_count": 38,
-    "line_count": 130,
-    "total_val": 24124366,
+    "line_count": 127,
+    "total_val": 24103114,
     "o_lines": 27,
     "o_val": 8799370,
     "resv_total": 303
