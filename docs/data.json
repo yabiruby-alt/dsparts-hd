@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 19일 (토) · 09:11 기준",
+    "generated_at": "9월 19일 (토) · 09:22 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1233464361,
+    "total": 1232535069,
     "item_count": 2238,
     "code_count": 25,
     "alois_groups": [
@@ -280,15 +280,15 @@
         "rows": [
           {
             "code": "A1",
-            "val": 220515473,
-            "pct": 17.88,
-            "qty": 2511
+            "val": 220102793,
+            "pct": 17.86,
+            "qty": 2498
           },
           {
             "code": "A2",
-            "val": 15781213,
-            "pct": 1.28,
-            "qty": 1193
+            "val": 15651727,
+            "pct": 1.27,
+            "qty": 1189
           },
           {
             "code": "A3",
@@ -305,19 +305,19 @@
           {
             "code": "A5",
             "val": 72539449,
-            "pct": 5.88,
+            "pct": 5.89,
             "qty": 1342
           },
           {
             "code": "A6",
             "val": 97974228,
-            "pct": 7.94,
+            "pct": 7.95,
             "qty": 1527
           }
         ],
-        "subtotal_val": 485836288,
-        "subtotal_qty": 8956,
-        "subtotal_pct": 39.39
+        "subtotal_val": 485294122,
+        "subtotal_qty": 8939,
+        "subtotal_pct": 39.37
       },
       {
         "code": "L",
@@ -326,9 +326,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 34882787,
-            "pct": 2.83,
-            "qty": 2362
+            "val": 34683312,
+            "pct": 2.81,
+            "qty": 2350
           },
           {
             "code": "L2",
@@ -363,13 +363,13 @@
           {
             "code": "L7",
             "val": 56920278,
-            "pct": 4.61,
+            "pct": 4.62,
             "qty": 1344
           }
         ],
-        "subtotal_val": 150710826,
-        "subtotal_qty": 4974,
-        "subtotal_pct": 12.22
+        "subtotal_val": 150511351,
+        "subtotal_qty": 4961,
+        "subtotal_pct": 12.21
       },
       {
         "code": "O",
@@ -385,14 +385,14 @@
           {
             "code": "OA",
             "val": 38895536,
-            "pct": 3.15,
+            "pct": 3.16,
             "qty": 232
           },
           {
             "code": "OE",
-            "val": 304795366,
-            "pct": 24.71,
-            "qty": 1157
+            "val": 304771770,
+            "pct": 24.73,
+            "qty": 1156
           },
           {
             "code": "ON",
@@ -407,9 +407,9 @@
             "qty": 202
           }
         ],
-        "subtotal_val": 434946476,
-        "subtotal_qty": 2749,
-        "subtotal_pct": 35.26
+        "subtotal_val": 434922880,
+        "subtotal_qty": 2748,
+        "subtotal_pct": 35.29
       },
       {
         "code": "I",
@@ -452,9 +452,9 @@
           },
           {
             "code": "SX",
-            "val": 9024917,
-            "pct": 0.73,
-            "qty": 240
+            "val": 8860862,
+            "pct": 0.72,
+            "qty": 238
           },
           {
             "code": "SY",
@@ -465,19 +465,19 @@
           {
             "code": "SZ",
             "val": 96987929,
-            "pct": 7.86,
+            "pct": 7.87,
             "qty": 779
           }
         ],
-        "subtotal_val": 144047470,
-        "subtotal_qty": 2012,
-        "subtotal_pct": 11.68
+        "subtotal_val": 143883415,
+        "subtotal_qty": 2010,
+        "subtotal_pct": 11.67
       }
     ]
   },
   "oaov": {
     "total": 59947355,
-    "inv_total": 1233464361,
+    "inv_total": 1232535069,
     "pct": 4.86,
     "oa_val": 38895536,
     "ov_val": 21051819,
@@ -6829,26 +6829,10 @@
         "val": 667584,
         "sa": "최민수",
         "dday": "D+0일"
-      },
-      {
-        "item": "61627442093",
-        "name": "Wiper blade F40 G05 Rear",
-        "alois": "OE",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001225",
-        "req_qty": 1,
-        "crt_qty": 13,
-        "avail_qty": 12,
-        "req_dt": "09-19",
-        "req_dt_full": "2026-09-19 09:12:33",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 23596,
-        "sa": "안준영",
-        "dday": "D+0일"
       }
     ],
-    "count": 135,
-    "total_val": 35714074,
+    "count": 134,
+    "total_val": 35690478,
     "groups": [
       {
         "code": "RO",
@@ -7604,27 +7588,11 @@
             "val": 103194,
             "sa": "우종훈",
             "dday": "D+1일"
-          },
-          {
-            "item": "61627442093",
-            "name": "Wiper blade F40 G05 Rear",
-            "alois": "OE",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001225",
-            "req_qty": 1,
-            "crt_qty": 13,
-            "avail_qty": 12,
-            "req_dt": "09-19",
-            "req_dt_full": "2026-09-19 09:12:33",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 23596,
-            "sa": "안준영",
-            "dday": "D+0일"
           }
         ],
-        "count": 48,
-        "qty_sum": 60,
-        "val": 10093170
+        "count": 47,
+        "qty_sum": 59,
+        "val": 10069574
       },
       {
         "code": "SB",
@@ -9695,14 +9663,6 @@
         "val": 306768
       },
       {
-        "item": "61627442093",
-        "name": "Wiper blade F40 G05 Rear",
-        "alois": "OE",
-        "qty": 13,
-        "avail_qty": 13,
-        "val": 306748
-      },
-      {
         "item": "34116888458",
         "name": "Repair kit,",
         "alois": "OV",
@@ -9757,6 +9717,14 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 285430
+      },
+      {
+        "item": "61627442093",
+        "name": "Wiper blade F40 G05 Rear",
+        "alois": "OE",
+        "qty": 12,
+        "avail_qty": 12,
+        "val": 283152
       },
       {
         "item": "90200005996",
@@ -16065,9 +16033,9 @@
             "item": "61627442093",
             "name": "Wiper blade F40 G05 Rear",
             "alois": "OE",
-            "qty": 13,
-            "avail_qty": 13,
-            "val": 306748
+            "qty": 12,
+            "avail_qty": 12,
+            "val": 283152
           },
           {
             "item": "90200005996",
@@ -16391,9 +16359,9 @@
           }
         ],
         "count": 89,
-        "qty_sum": 765,
-        "avail_sum": 744,
-        "val": 289128094
+        "qty_sum": 764,
+        "avail_sum": 743,
+        "val": 289104498
       },
       {
         "code": "ON",
@@ -16879,7 +16847,7 @@
       }
     ],
     "count": 487,
-    "total_val": 356225558
+    "total_val": 356201962
   },
   "oflow": {
     "rows": [
