@@ -504,9 +504,9 @@
             <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가금액</th></tr></thead>
             <tbody>
               {% for g in noshow.groups %}
-              <tr class="grouphead" data-group="ns-{{ g.code }}" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>{{ g.code }} · 예약일 {{ g.resv }} · <span class="dday-cell dday-badge"{% if g.dday.startswith('D+') %} data-days="{{ g.dday[2:-1] }}"{% endif %}>{{ g.dday }}</span> · SA {{ g.sa }} ({{ g.count }}라인)<span class="hint"></span></td></tr>
+              <tr class="grouphead open" data-group="ns-{{ g.code }}" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>{{ g.code }} · 예약일 {{ g.resv }} · <span class="dday-cell dday-badge"{% if g.dday.startswith('D+') %} data-days="{{ g.dday[2:-1] }}"{% endif %}>{{ g.dday }}</span> · SA {{ g.sa }} ({{ g.count }}라인)<span class="hint"></span></td></tr>
               {% for r in g.rows %}
-              <tr data-group="ns-{{ g.code }}" hidden><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="num">{{ r.req_qty }}</td><td class="num">{{ r.crt_qty }}</td><td class="num">{{ r.avail_qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+              <tr data-group="ns-{{ g.code }}"><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="num">{{ r.req_qty }}</td><td class="num">{{ r.crt_qty }}</td><td class="num">{{ r.avail_qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
               {% endfor %}
               <tr class="subtotal"><td colspan="3">{{ g.code }} 합계</td><td class="num">{{ g.qty_sum }}</td><td class="num"></td><td class="num"></td><td class="num">{{ '{:,}'.format(g.val) }}</td></tr>
               {% else %}

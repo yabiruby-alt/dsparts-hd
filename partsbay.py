@@ -415,6 +415,8 @@ def build_longstock(pw_rows, inv_total, now):
     m12_rows, m24_rows = [], []
     for r in pw_rows:
         months = months_since(r.get("lastPurcDt"))
+        if months is None and val_fn(r) == 0:
+            continue  # 입고이력 없고 금액도 0원인 품목은 리스트에서 제외
         if months is None or months >= 12:
             m12_rows.append(r)
         if months is None or months >= 24:
