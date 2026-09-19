@@ -220,6 +220,20 @@ def extract_turnover(page: Page, month_start: str, today_str: str) -> list:
     return fetch_rows(frame, "/rpt/raw/selectDLRTurnOver.do", _turnover_body(month_start, today_str))
 
 
+def extract_noshow_sbs(page: Page) -> list:
+    """서비스예약현황에서 예약상태 04(No Show)인 SB 전체."""
+    click_menu(page, "icon-service", "서비스예약현황")
+    frame = wait_for_frame(page, "selectResvAcptStatusMain")
+    body = {
+        "recordCountPerPage": 200000, "pageIndex": 1, "firstIndex": 0, "lastIndex": 200000,
+        "sDlrCd": DEALER_CD, "sBizAreaCd": BIZ_AREA_CD, "sBrchCd": BRCH_CD,
+        "sResvStartDt": "2020-01-01", "sResvEndDt": "2099-12-31", "sResvNo": "", "sChrgSaNm": "",
+        "sSvcType": "", "sAcptDstin": "", "sCarRegNo": "", "sVinNo": "", "sCustNm": "", "sCustNo": "",
+        "sOnCheckInYn": "", "sResvStat": "04",
+    }
+    return fetch_rows(frame, "/ser/resvAcpt/selectResvAcptStatus.do", body)
+
+
 OPEN_RO_STAT_CODES = ("01", "02", "03", "08", "04", "05")  # 06=인보이스 완료, 07=RO취소 제외
 
 
@@ -455,6 +469,49 @@ def build_o_parts(rows, now):
         g["val"] = round(sum(i["val"] for i in g["rows"]))
 
     return {"items": items, "count": len(items), "total_val": round(sum(i["val"] for i in items)), "groups": groups}
+
+
+def build_noshow_sb(req_rows, noshow_rows, now):
+    """노쇼 처리된 SB인데 미처리 부품 요청이 남아있는 부품. SB별 그룹, 예약일 오래된 순. 원가=요청수량×이동평균단가."""
+    resv = {r.get("resvNo"): r for r in noshow_rows if r.get("resvNo")}
+    by_sb = {}
+    for r in req_rows:
+        if r.get("refDocTp") != "SB" or r.get("refDocNo") not in resv:
+            continue
+        by_sb.setdefault(r["refDocNo"], []).append(r)
+
+    def dday_of(dt_str):
+        if not dt_str:
+            return "-"
+        d = datetime.strptime(dt_str[:10], "%Y-%m-%d")
+        days = (now.date() - d.date()).days
+        return f"D+{days}일" if days >= 0 else f"D-{-days}일"
+
+    groups = []
+    for sb, rs in by_sb.items():
+        info = resv[sb]
+        resv_dt = info.get("resvDtime") or ""
+        parts = sorted([{
+            "item": r.get("partNo"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
+            "req_qty": int(num(r.get("reqQty"))), "crt_qty": int(num(r.get("crtQty"))),
+            "avail_qty": int(num(r.get("availQty"))),
+            "val": round(num(r.get("reqQty")) * num(r.get("movPrc"))),
+        } for r in rs], key=lambda i: -i["val"])
+        groups.append({
+            "code": sb, "resv_full": resv_dt, "resv": resv_dt[5:10], "dday": dday_of(resv_dt),
+            "sa": info.get("chrgSaNm") or "-", "rows": parts, "count": len(parts),
+            "qty_sum": sum(p["req_qty"] for p in parts), "val": sum(p["val"] for p in parts),
+        })
+    groups.sort(key=lambda g: g["resv_full"])
+
+    all_parts = [p for g in groups for p in g["rows"]]
+    o_parts = [p for p in all_parts if str(p["alois"] or "").startswith("O")]
+    return {
+        "groups": groups, "sb_count": len(groups), "line_count": len(all_parts),
+        "total_val": sum(p["val"] for p in all_parts),
+        "o_lines": len(o_parts), "o_val": sum(p["val"] for p in o_parts),
+        "noshow_total": len(resv),
+    }
 
 
 def build_open_ro(rows, now):
@@ -821,6 +878,8 @@ def run_cycle(page: Page) -> None:
     req_rows = extract_part_requests(page)
     print(" - RO 리포트 (진행 RO: 인보이스 미완료)")
     open_ro_rows = extract_open_ros(page, today_str)
+    print(" - 서비스예약현황 (노쇼 SB)")
+    noshow_rows = extract_noshow_sbs(page)
     print(" - 입고현황 (당월, O파트 입출고 내역용)")
     recv_month_rows = extract_receiving_range(page, month_start, today_str)
 
@@ -834,6 +893,7 @@ def run_cycle(page: Page) -> None:
     opart = build_o_parts(req_rows, now)
     oavail = build_o_available(pw_rows)
     openro = build_open_ro(open_ro_rows, now)
+    noshow = build_noshow_sb(req_rows, noshow_rows, now)
     oflow = build_o_daily_flow(recv_month_rows, to_rows, month_start, today_str)
     calendar_image = next((f for f in CALENDAR_IMAGE_CANDIDATES if (DOCS_DIR / f).exists()), None)
 
@@ -841,7 +901,7 @@ def run_cycle(page: Page) -> None:
         "meta": {"branch_name": BRANCH_NAME, "brch_code": f"BRCH {BRCH_CD}", "generated_at": generated_at,
                  "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
-        "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro,
+        "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro, "noshow": noshow,
     }
 
     html = render(data)
