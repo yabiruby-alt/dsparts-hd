@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 19일 (토) · 10:42 기준",
+    "generated_at": "9월 19일 (토) · 10:54 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1230668698,
+    "total": 1230225833,
     "item_count": 2234,
     "code_count": 25,
     "alois_groups": [
@@ -280,9 +280,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 219687041,
-            "pct": 17.85,
-            "qty": 2490
+            "val": 219349015,
+            "pct": 17.83,
+            "qty": 2483
           },
           {
             "code": "A2",
@@ -293,19 +293,19 @@
           {
             "code": "A3",
             "val": 29839034,
-            "pct": 2.42,
+            "pct": 2.43,
             "qty": 461
           },
           {
             "code": "A4",
-            "val": 49186891,
+            "val": 49164931,
             "pct": 4.0,
-            "qty": 1922
+            "qty": 1921
           },
           {
             "code": "A5",
             "val": 72539449,
-            "pct": 5.89,
+            "pct": 5.9,
             "qty": 1342
           },
           {
@@ -315,9 +315,9 @@
             "qty": 1527
           }
         ],
-        "subtotal_val": 484674453,
-        "subtotal_qty": 8920,
-        "subtotal_pct": 39.38
+        "subtotal_val": 484314467,
+        "subtotal_qty": 8912,
+        "subtotal_pct": 39.37
       },
       {
         "code": "L",
@@ -326,9 +326,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 34500198,
+            "val": 34424399,
             "pct": 2.8,
-            "qty": 2337
+            "qty": 2332
           },
           {
             "code": "L2",
@@ -367,9 +367,9 @@
             "qty": 1344
           }
         ],
-        "subtotal_val": 150328237,
-        "subtotal_qty": 4949,
-        "subtotal_pct": 12.22
+        "subtotal_val": 150252438,
+        "subtotal_qty": 4944,
+        "subtotal_pct": 12.21
       },
       {
         "code": "O",
@@ -409,7 +409,7 @@
         ],
         "subtotal_val": 434813040,
         "subtotal_qty": 2746,
-        "subtotal_pct": 35.33
+        "subtotal_pct": 35.34
       },
       {
         "code": "I",
@@ -452,9 +452,9 @@
           },
           {
             "code": "SX",
-            "val": 8838452,
+            "val": 8831372,
             "pct": 0.72,
-            "qty": 235
+            "qty": 234
           },
           {
             "code": "SY",
@@ -469,15 +469,15 @@
             "qty": 778
           }
         ],
-        "subtotal_val": 143489856,
-        "subtotal_qty": 2001,
+        "subtotal_val": 143482776,
+        "subtotal_qty": 2000,
         "subtotal_pct": 11.66
       }
     ]
   },
   "oaov": {
     "total": 59947355,
-    "inv_total": 1230668698,
+    "inv_total": 1230225833,
     "pct": 4.87,
     "oa_val": 38895536,
     "ov_val": 21051819,
@@ -18740,14 +18740,14 @@
       },
       {
         "ro": "RO2609001052",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "소음",
         "sa": "김민규",
         "pub": "2026-09-16",
         "pub_full": "2026-09-16 14:12",
         "dday": "D+3일",
-        "amt": 3249600
+        "amt": 3273600
       },
       {
         "ro": "RO2609001055",
@@ -18762,8 +18762,8 @@
       },
       {
         "ro": "RO2609001058",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-16",
@@ -20005,8 +20005,8 @@
       },
       {
         "ro": "RO2609001234",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-09-19",
@@ -20049,33 +20049,44 @@
       },
       {
         "ro": "RO2609001239",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
-        "sa": "최민수",
+        "sa": "이정환",
         "pub": "2026-09-19",
         "pub_full": "2026-09-19 10:43",
         "dday": "D+0일",
         "amt": 432774
+      },
+      {
+        "ro": "RO2609001240",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-09-19",
+        "pub_full": "2026-09-19 10:52",
+        "dday": "D+0일",
+        "amt": 56000
       }
     ],
-    "count": 278,
-    "total_amt": 698809406,
+    "count": 279,
+    "total_amt": 698889406,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 11,
-        "amt": 6613374
+        "count": 10,
+        "amt": 6180600
       },
       {
         "stat": "상담완료",
-        "count": 138,
-        "amt": 477978298
+        "count": 139,
+        "amt": 476980202
       },
       {
         "stat": "정비시작",
-        "count": 29,
-        "amt": 30969933
+        "count": 30,
+        "amt": 32480803
       },
       {
         "stat": "End Control 요청",
