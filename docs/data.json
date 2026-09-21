@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 22일 (화) · 07:29 기준",
+    "generated_at": "9월 22일 (화) · 07:41 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -34499,8 +34499,8 @@
       },
       {
         "ro": "RO2609001268",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "정용환",
         "pub": "2026-09-21",
@@ -35107,13 +35107,13 @@
       },
       {
         "stat": "정비시작",
-        "count": 31,
-        "amt": 33710047
+        "count": 30,
+        "amt": 33661419
       },
       {
         "stat": "End Control 요청",
-        "count": 51,
-        "amt": 94238761
+        "count": 52,
+        "amt": 94287389
       },
       {
         "stat": "공정마감",
@@ -37058,6 +37058,27 @@
         "val": 68185
       },
       {
+        "code": "SB2609001226",
+        "resv_full": "2026-09-22 11:20",
+        "resv": "09-22",
+        "dday": "오늘",
+        "sa": "안준영",
+        "rows": [
+          {
+            "item": "83135A82511",
+            "name": "Brake fluid",
+            "alois": "L1",
+            "req_qty": 2,
+            "crt_qty": 41,
+            "avail_qty": 35,
+            "val": 22684
+          }
+        ],
+        "count": 1,
+        "qty_sum": 2,
+        "val": 22684
+      },
+      {
         "code": "SB2609001433",
         "resv_full": "2026-09-22 10:00",
         "resv": "09-22",
@@ -37166,7 +37187,7 @@
             "alois": "L1",
             "req_qty": 2,
             "crt_qty": 41,
-            "avail_qty": 37,
+            "avail_qty": 35,
             "val": 22684
           },
           {
@@ -37274,9 +37295,9 @@
         "val": 80867
       }
     ],
-    "sb_count": 42,
-    "line_count": 141,
-    "total_val": 27743112,
+    "sb_count": 43,
+    "line_count": 142,
+    "total_val": 27765796,
     "o_lines": 26,
     "o_val": 7531366,
     "resv_total": 315
@@ -37288,7 +37309,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10239
+    "resv_total": 10238
   },
   "nonmng": {
     "rows": [
