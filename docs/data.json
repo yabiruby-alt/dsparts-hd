@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 21일 (월) · 12:22 기준",
+    "generated_at": "9월 21일 (월) · 12:35 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -14611,13 +14611,21 @@
   },
   "ext": {
     "period": "2026-09-01 ~ 2026-09-21",
-    "total": 3465380,
-    "cost": 2553336,
-    "margin": 912044,
-    "valid_count": 10,
+    "total": 6165762,
+    "cost": 5253336,
+    "margin": 912426,
+    "valid_count": 11,
     "cancelled_count": 2,
-    "lines": 27,
+    "lines": 28,
     "top5": [
+      {
+        "inv": "AR2609003765",
+        "num": "SP2608000033",
+        "cust": "주식회사 케이스바이케이스",
+        "dt": "2026-09-21 12:28",
+        "amt": 2700382,
+        "cost": 2700000
+      },
       {
         "inv": "AR2609003758",
         "num": "SP2609000074",
@@ -14720,10 +14728,10 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 22919696,
-    "cost": 22781037,
-    "lines": 235,
-    "invoices_count": 130,
+    "total": 25620078,
+    "cost": 25481037,
+    "lines": 236,
+    "invoices_count": 131,
     "by_type": [
       {
         "code": "3",
@@ -14740,11 +14748,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 143,
-        "val": 13232214
+        "lines": 144,
+        "val": 15932596
       }
     ],
     "recent5": [
+      {
+        "inv": "AR2609003765",
+        "num": "SP2608000033",
+        "sa": "조재완",
+        "dt": "2026-09-21 12:28",
+        "amt": 2700382,
+        "cost": 2700000
+      },
       {
         "inv": "AR2609003764",
         "num": "SP2609000057",
@@ -14774,14 +14790,6 @@
         "num": "RO2609001197",
         "sa": "최민수",
         "dt": "2026-09-21 11:49",
-        "amt": 0,
-        "cost": 0
-      },
-      {
-        "inv": "AR2609003763",
-        "num": "SP2609000058",
-        "sa": "박진호",
-        "dt": "2026-09-21 11:44",
         "amt": 0,
         "cost": 0
       }
@@ -28857,13 +28865,13 @@
       {
         "date": "09-21",
         "in_val": 0,
-        "out_val": 1974943,
-        "net": -1974943
+        "out_val": 4674943,
+        "net": -4674943
       }
     ],
     "total_in": 181795022,
-    "total_out": 171190631,
-    "net": 10604391,
+    "total_out": 173890631,
+    "net": 7904391,
     "by_code": [
       {
         "code": "O8",
@@ -28880,8 +28888,8 @@
       {
         "code": "OE",
         "in_val": 7837740,
-        "out_val": 15836868,
-        "net": -7999128
+        "out_val": 18536868,
+        "net": -10699128
       },
       {
         "code": "OV",
@@ -31086,8 +31094,8 @@
       },
       {
         "ro": "RO2609001142",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-18",
@@ -32153,8 +32161,8 @@
       },
       {
         "ro": "RO2609001269",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-21",
@@ -32219,8 +32227,8 @@
       },
       {
         "ro": "RO2609001274",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "이정환",
         "pub": "2026-09-21",
@@ -32263,8 +32271,8 @@
       },
       {
         "ro": "RO2609001279",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-21",
@@ -32296,8 +32304,8 @@
       },
       {
         "ro": "RO2609001282",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-21",
@@ -32373,8 +32381,8 @@
       },
       {
         "ro": "RO2609001290",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-09-21",
@@ -32406,8 +32414,8 @@
       },
       {
         "ro": "RO2609001293",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-21",
@@ -32516,8 +32524,8 @@
       },
       {
         "ro": "RO2609001304",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-09-21",
@@ -32557,14 +32565,25 @@
         "pub_full": "2026-09-21 12:07",
         "dday": "D+0일",
         "amt": 0
+      },
+      {
+        "ro": "RO2609001310",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "염진아",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 12:26",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 333,
+    "count": 334,
     "total_amt": 762862308,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 13,
+        "count": 14,
         "amt": 6180600
       },
       {
@@ -32574,13 +32593,13 @@
       },
       {
         "stat": "정비시작",
-        "count": 34,
-        "amt": 52896563
+        "count": 26,
+        "amt": 51782689
       },
       {
         "stat": "End Control 요청",
-        "count": 49,
-        "amt": 67584020
+        "count": 57,
+        "amt": 68697894
       },
       {
         "stat": "공정마감",
@@ -34464,7 +34483,7 @@
     "total_val": 24873114,
     "o_lines": 29,
     "o_val": 11029014,
-    "resv_total": 308
+    "resv_total": 307
   },
   "sbcar": {
     "groups": [
@@ -34630,7 +34649,7 @@
     "total_val": 1354573,
     "o_lines": 1,
     "o_val": 23596,
-    "resv_total": 10302
+    "resv_total": 10304
   },
   "reasons": {}
 }
