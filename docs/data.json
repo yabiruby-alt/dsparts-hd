@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 21일 (월) · 15:07 기준",
+    "generated_at": "9월 21일 (월) · 15:26 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,7 +16,7 @@
     "top5": []
   },
   "inv": {
-    "total": 1196937602,
+    "total": 1196926300,
     "item_count": 2118,
     "code_count": 25,
     "alois_groups": [
@@ -4561,9 +4561,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 32668632,
+            "val": 32664410,
             "pct": 2.73,
-            "qty": 2208,
+            "qty": 2207,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4622,8 +4622,8 @@
               {
                 "item": "66126912985",
                 "name": "Key Battery",
-                "qty": 73,
-                "val": 308206
+                "qty": 72,
+                "val": 303984
               }
             ]
           },
@@ -7478,8 +7478,8 @@
             ]
           }
         ],
-        "subtotal_val": 146548450,
-        "subtotal_qty": 4778,
+        "subtotal_val": 146544228,
+        "subtotal_qty": 4777,
         "subtotal_pct": 12.24
       },
       {
@@ -12279,9 +12279,9 @@
           },
           {
             "code": "SX",
-            "val": 8224324,
+            "val": 8217244,
             "pct": 0.69,
-            "qty": 221,
+            "qty": 220,
             "parts": [
               {
                 "item": "64115B78AA5",
@@ -12310,8 +12310,8 @@
               {
                 "item": "99975BA1A04",
                 "name": "BMWFoldingUm",
-                "qty": 54,
-                "val": 382320
+                "qty": 53,
+                "val": 375240
               },
               {
                 "item": "99975BA0896",
@@ -12974,15 +12974,15 @@
             ]
           }
         ],
-        "subtotal_val": 135140465,
-        "subtotal_qty": 1903,
+        "subtotal_val": 135133385,
+        "subtotal_qty": 1902,
         "subtotal_pct": 11.29
       }
     ]
   },
   "oaov": {
     "total": 61232312,
-    "inv_total": 1196937602,
+    "inv_total": 1196926300,
     "pct": 5.12,
     "oa_val": 38925303,
     "ov_val": 22307009,
@@ -29706,8 +29706,8 @@
       },
       {
         "ro": "RO2609000627",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "최민수",
         "pub": "2026-09-09",
@@ -29871,8 +29871,8 @@
       },
       {
         "ro": "RO2609000748",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "소음",
         "sa": "정용환",
         "pub": "2026-09-11",
@@ -29948,8 +29948,8 @@
       },
       {
         "ro": "RO2609000844",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-14",
@@ -31400,8 +31400,8 @@
       },
       {
         "ro": "RO2609001223",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-09-19",
@@ -31828,17 +31828,6 @@
         "amt": 37628
       },
       {
-        "ro": "RO2609001272",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "최민수",
-        "pub": "2026-09-21",
-        "pub_full": "2026-09-21 09:18",
-        "dday": "D+0일",
-        "amt": 0
-      },
-      {
         "ro": "RO2609001271",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -31848,6 +31837,17 @@
         "pub_full": "2026-09-21 09:18",
         "dday": "D+0일",
         "amt": 2819940
+      },
+      {
+        "ro": "RO2609001272",
+        "stat": "정비시작",
+        "stat_cd": "03",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 09:18",
+        "dday": "D+0일",
+        "amt": 0
       },
       {
         "ro": "RO2609001273",
@@ -31862,8 +31862,8 @@
       },
       {
         "ro": "RO2609001275",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "안준영",
         "pub": "2026-09-21",
@@ -32104,8 +32104,8 @@
       },
       {
         "ro": "RO2609001299",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-21",
@@ -32137,8 +32137,8 @@
       },
       {
         "ro": "RO2609001302",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-21",
@@ -32423,8 +32423,8 @@
       },
       {
         "ro": "RO2609001333",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-21",
@@ -32465,18 +32465,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 153,
-        "amt": 502055694
+        "count": 148,
+        "amt": 493885399
       },
       {
         "stat": "정비시작",
-        "count": 35,
-        "amt": 63145172
+        "count": 38,
+        "amt": 63432185
       },
       {
         "stat": "End Control 요청",
-        "count": 54,
-        "amt": 66030176
+        "count": 55,
+        "amt": 63470658
       },
       {
         "stat": "공정마감",
@@ -32485,8 +32485,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 93,
-        "amt": 146162101
+        "count": 94,
+        "amt": 156604901
       }
     ],
     "oldest": "D+517일"
@@ -32898,7 +32898,7 @@
     "total_val": 8901371,
     "o_lines": 11,
     "o_val": 4629751,
-    "resv_total": 12011
+    "resv_total": 12013
   },
   "sbresv": {
     "groups": [
@@ -33687,6 +33687,15 @@
             "val": 153120
           },
           {
+            "item": "64119272642",
+            "name": "Microfilter",
+            "alois": "A3",
+            "req_qty": 1,
+            "crt_qty": 5,
+            "avail_qty": 3,
+            "val": 102672
+          },
+          {
             "item": "83222365988",
             "name": "FINAL-DRIVE",
             "alois": "O8",
@@ -33741,9 +33750,9 @@
             "val": 0
           }
         ],
-        "count": 10,
-        "qty_sum": 40,
-        "val": 1487665
+        "count": 11,
+        "qty_sum": 41,
+        "val": 1590337
       },
       {
         "code": "SB2609000195",
@@ -34434,11 +34443,11 @@
       }
     ],
     "sb_count": 36,
-    "line_count": 122,
-    "total_val": 22629381,
+    "line_count": 123,
+    "total_val": 22732053,
     "o_lines": 26,
     "o_val": 7531366,
-    "resv_total": 304
+    "resv_total": 305
   },
   "sbcar": {
     "groups": [],
