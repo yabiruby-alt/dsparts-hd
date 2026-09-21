@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 21일 (월) · 11:57 기준",
+    "generated_at": "9월 21일 (월) · 12:10 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,8 +16,8 @@
     "top5": []
   },
   "inv": {
-    "total": 1202238000,
-    "item_count": 2124,
+    "total": 1202532975,
+    "item_count": 2125,
     "code_count": 25,
     "alois_groups": [
       {
@@ -2456,7 +2456,7 @@
           {
             "code": "A6",
             "val": 96602121,
-            "pct": 8.04,
+            "pct": 8.03,
             "qty": 1518,
             "parts": [
               {
@@ -4552,7 +4552,7 @@
         ],
         "subtotal_val": 477316244,
         "subtotal_qty": 8823,
-        "subtotal_pct": 39.7
+        "subtotal_pct": 39.69
       },
       {
         "code": "L",
@@ -5305,9 +5305,9 @@
           },
           {
             "code": "L7",
-            "val": 56570402,
-            "pct": 4.71,
-            "qty": 1323,
+            "val": 56865377,
+            "pct": 4.73,
+            "qty": 1324,
             "parts": [
               {
                 "item": "11419895359",
@@ -5470,6 +5470,12 @@
                 "name": "Mount, bumpe",
                 "qty": 1,
                 "val": 296496
+              },
+              {
+                "item": "61218720722",
+                "name": "Original BMW",
+                "qty": 1,
+                "val": 294975
               },
               {
                 "item": "63115A73785",
@@ -7472,9 +7478,9 @@
             ]
           }
         ],
-        "subtotal_val": 147105282,
-        "subtotal_qty": 4827,
-        "subtotal_pct": 12.24
+        "subtotal_val": 147400257,
+        "subtotal_qty": 4828,
+        "subtotal_pct": 12.26
       },
       {
         "code": "O",
@@ -13018,7 +13024,7 @@
   },
   "oaov": {
     "total": 62053922,
-    "inv_total": 1202238000,
+    "inv_total": 1202532975,
     "pct": 5.16,
     "oa_val": 39699433,
     "ov_val": 22354489,
@@ -31592,8 +31598,8 @@
       },
       {
         "ro": "RO2609001205",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-18",
@@ -31713,8 +31719,8 @@
       },
       {
         "ro": "RO2609001220",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-19",
@@ -31724,8 +31730,8 @@
       },
       {
         "ro": "RO2609001221",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-19",
@@ -31834,14 +31840,14 @@
       },
       {
         "ro": "RO2609001232",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-19",
         "pub_full": "2026-09-19 10:13",
         "dday": "D+2일",
-        "amt": 133724
+        "amt": 121724
       },
       {
         "ro": "RO2609001233",
@@ -32494,14 +32500,14 @@
       },
       {
         "ro": "RO2609001301",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "박영묵",
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 10:48",
         "dday": "D+0일",
-        "amt": 15049800
+        "amt": 17245600
       },
       {
         "ro": "RO2609001302",
@@ -32535,20 +32541,42 @@
         "pub_full": "2026-09-21 11:15",
         "dday": "D+0일",
         "amt": 3916000
+      },
+      {
+        "ro": "RO2609001308",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "입고 Proactive-RITA",
+        "sa": "최민수",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 12:00",
+        "dday": "D+0일",
+        "amt": 28221
+      },
+      {
+        "ro": "RO2609001309",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "강충성",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 12:07",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 331,
-    "total_amt": 760650287,
+    "count": 333,
+    "total_amt": 762862308,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 13,
-        "amt": 21230400
+        "amt": 6180600
       },
       {
         "stat": "상담완료",
-        "count": 151,
-        "amt": 477535672
+        "count": 153,
+        "amt": 494809493
       },
       {
         "stat": "정비시작",
@@ -32557,8 +32585,8 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 54,
-        "amt": 72932780
+        "count": 50,
+        "amt": 67908416
       },
       {
         "stat": "공정마감",
@@ -32567,8 +32595,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 78,
-        "amt": 135551972
+        "count": 82,
+        "amt": 140564336
       }
     ],
     "oldest": "D+517일"
@@ -34499,7 +34527,7 @@
     "total_val": 25239390,
     "o_lines": 30,
     "o_val": 11052610,
-    "resv_total": 308
+    "resv_total": 309
   },
   "sbcar": {
     "groups": [
@@ -34608,7 +34636,7 @@
     "total_val": 988297,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10300
+    "resv_total": 10301
   },
   "reasons": {}
 }
