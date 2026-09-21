@@ -354,10 +354,6 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 3h2l1.6 8.4a1.5 1.5 0 0 0 1.5 1.2h5.6a1.5 1.5 0 0 0 1.5-1.2L15 6H5"/><circle cx="7" cy="15.5" r="1"/><circle cx="13" cy="15.5" r="1"/><path d="M13 2.5 15.5 5M15.5 2.5 13 5"/></svg>
         외부 판매 현황
       </button>
-      <button class="sb-item" id="nav-longstock" aria-current="false" onclick="selectPage('longstock')">
-        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><path d="M9 5v4l3 2"/></svg>
-        장기 재고 현황
-      </button>
       <button class="sb-item" id="nav-calendar" aria-current="false" onclick="selectPage('calendar')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="14" height="13" rx="1.5"/><path d="M2 7h14"/><path d="M6 2v3M12 2v3"/></svg>
         팀 캘린더
@@ -369,6 +365,18 @@
       <button class="sb-item" id="nav-accessory" aria-current="false" onclick="selectPage('accessory')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><circle cx="9" cy="9" r="2.4"/><path d="M9 2v2M9 14v2M2 9h2M14 9h2"/></svg>
         악세사리&amp;타이어
+      </button>
+    </div>
+
+    <div class="sb-section">
+      <span class="sb-label">재고 관리</span>
+      <button class="sb-item" id="nav-longstock" aria-current="false" onclick="selectPage('longstock')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><path d="M9 5v4l3 2"/></svg>
+        장기 재고 현황
+      </button>
+      <button class="sb-item" id="nav-nonmng" aria-current="false" onclick="selectPage('nonmng')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="4" width="13" height="10" rx="1.5"/><path d="M6 7.5h6M6 10.5h3.5"/><path d="M13.5 2.5l2 2"/></svg>
+        비관리부품 현황
       </button>
     </div>
 
@@ -1098,6 +1106,50 @@
       </div>
     </section>
 
+    <section id="page-nonmng" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>비관리부품 현황</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 현재고리스트 · 부품창고 · 비관리부품 체크 품목</div>
+      </div>
+
+      <div class="kpistrip">
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">01</span>
+          <span class="eyebrow">비관리부품 재고금액(원가)</span>
+          <span class="value">₩{{ '{:,}'.format(nonmng.total_val) }}</span>
+          <span class="foot">{{ nonmng.count }}품목 · 재고수량 {{ '{:,}'.format(nonmng.qty_sum) }}개</span>
+        </div>
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">02</span>
+          <span class="eyebrow">전체재고 대비 비율</span>
+          <span class="value">{{ '%.2f'|format(nonmng.pct) }}%</span>
+          <span class="foot">부품창고 전체재고 ₩{{ '{:,}'.format(inv.total) }} 기준</span>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">비관리부품 리스트</span>
+          <span class="val">{{ nonmng.count }}건</span>
+          <span class="foot">재고금액 큰 순 · 금액=현재고×이동평균단가(원가)</span>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가단가</th><th class="num">재고금액</th><th>최종입고일</th><th>최종판매일</th></tr></thead>
+            <tbody>
+              {% for r in nonmng.rows %}
+              <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ r.avail_qty }}</td><td class="num">{{ '{:,}'.format(r.prc) }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td><td class="mono">{{ r.last_in }}</td><td class="mono">{{ r.last_sale }}</td></tr>
+              {% else %}
+              <tr><td colspan="9" class="empty-note">비관리부품으로 체크된 재고 없음</td></tr>
+              {% endfor %}
+              <tr class="subtotal"><td colspan="3">합계</td><td class="num">{{ '{:,}'.format(nonmng.qty_sum) }}</td><td class="num"></td><td class="num"></td><td class="num">{{ '{:,}'.format(nonmng.total_val) }}</td><td></td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section id="page-calendar" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>팀 캘린더</b></span>
@@ -1122,7 +1174,7 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','oaov','longstock','opart','oflow','calendar'];
+  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','oaov','longstock','nonmng','opart','oflow','calendar'];
   function selectPage(key){
     PAGES.forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); });
     document.querySelector('.maininner').classList.toggle('wide', key==='calendar');

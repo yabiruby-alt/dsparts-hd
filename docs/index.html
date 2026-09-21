@@ -319,10 +319,6 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 3h2l1.6 8.4a1.5 1.5 0 0 0 1.5 1.2h5.6a1.5 1.5 0 0 0 1.5-1.2L15 6H5"/><circle cx="7" cy="15.5" r="1"/><circle cx="13" cy="15.5" r="1"/><path d="M13 2.5 15.5 5M15.5 2.5 13 5"/></svg>
         외부 판매 현황
       </button>
-      <button class="sb-item" id="nav-longstock" aria-current="false" onclick="selectPage('longstock')">
-        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><path d="M9 5v4l3 2"/></svg>
-        장기 재고 현황
-      </button>
       <button class="sb-item" id="nav-calendar" aria-current="false" onclick="selectPage('calendar')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="14" height="13" rx="1.5"/><path d="M2 7h14"/><path d="M6 2v3M12 2v3"/></svg>
         팀 캘린더
@@ -334,6 +330,18 @@
       <button class="sb-item" id="nav-accessory" aria-current="false" onclick="selectPage('accessory')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><circle cx="9" cy="9" r="2.4"/><path d="M9 2v2M9 14v2M2 9h2M14 9h2"/></svg>
         악세사리&amp;타이어
+      </button>
+    </div>
+
+    <div class="sb-section">
+      <span class="sb-label">재고 관리</span>
+      <button class="sb-item" id="nav-longstock" aria-current="false" onclick="selectPage('longstock')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><path d="M9 5v4l3 2"/></svg>
+        장기 재고 현황
+      </button>
+      <button class="sb-item" id="nav-nonmng" aria-current="false" onclick="selectPage('nonmng')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="4" width="13" height="10" rx="1.5"/><path d="M6 7.5h6M6 10.5h3.5"/><path d="M13.5 2.5l2 2"/></svg>
+        비관리부품 현황
       </button>
     </div>
 
@@ -374,7 +382,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 21일 (월) · 13:52 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 21일 (월) · 14:00 기준</div>
   </nav>
 
   <main class="main">
@@ -383,7 +391,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 21일 (월) · 13:52 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 21일 (월) · 14:00 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -397,7 +405,7 @@
         <button class="kpitile" id="tile-inv" onclick="selectKpi('inv')" aria-pressed="false">
           <span class="rank">02</span>
           <span class="eyebrow">재고금액 · 부품창고</span>
-          <span class="value">₩1,198,011,393</span>
+          <span class="value">₩1,197,829,097</span>
           <span class="foot">2118품목 · 25개 코드</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
@@ -453,7 +461,7 @@
         <div id="detail-inv" hidden>
           <div class="viewer-head">
             <span class="lbl">재고금액 세부</span>
-            <span class="val">₩1,198,011,393</span>
+            <span class="val">₩1,197,829,097</span>
             <span class="foot">2118품목 · 부품창고</span>
           </div>
           <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
@@ -471,14 +479,14 @@
     
     <tr data-group="inv-1" hidden class="coderow" onclick="toggleCodeRow(this)">
       <td><span class="caret">▸</span><span class="aloistag">A1</span><span class="pcount">14종</span></td>
-      <td class="num">2,457</td>
-      <td class="num">218,093,569</td>
+      <td class="num">2,455</td>
+      <td class="num">218,002,830</td>
       <td class="num">18.20%</td>
     </tr>
     
     <tr class="partsrow" data-group="inv-1" hidden><td colspan="4"><div class="partslist"><table class="partsub">
       <thead><tr><th>부품번호</th><th>품명</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
-      <tbody><tr><td class="mono">64115A1BDB6</td><td>Set, microfi</td><td class="num">1597</td><td class="num">180,288,524</td></tr><tr><td class="mono">12122455258</td><td>Spark plug B38x,46x,48x</td><td class="num">274</td><td class="num">5,649,606</td></tr><tr><td class="mono">61619478361</td><td>SET OF WIPER 3/4 series</td><td class="num">78</td><td class="num">5,318,430</td></tr><tr><td class="mono">61615A85266</td><td>Kit wiper bl</td><td class="num">73</td><td class="num">5,309,655</td></tr><tr><td class="mono">64115A547D4</td><td>Mikrofilter/</td><td class="num">38</td><td class="num">4,565,092</td></tr><tr><td class="mono">64316835405</td><td>MICROFILTER/</td><td class="num">57</td><td class="num">4,051,047</td></tr><tr><td class="mono">61612447932</td><td>Set of wiper G30</td><td class="num">58</td><td class="num">3,766,230</td></tr><tr><td class="mono">61617469820</td><td>Set of wiper X3,X4 front</td><td class="num">34</td><td class="num">2,318,290</td></tr><tr><td class="mono">61619466377</td><td>Set of wiper X5,6,7</td><td class="num">33</td><td class="num">2,250,105</td></tr><tr><td class="mono">11428575211</td><td>Set oil-filt</td><td class="num">100</td><td class="num">1,966,500</td></tr><tr><td class="mono">61615A43610</td><td>Set of wiper G70</td><td class="num">19</td><td class="num">1,381,965</td></tr><tr><td class="mono">11428593186</td><td>Set oil-filt</td><td class="num">24</td><td class="num">472,032</td></tr><tr><td class="mono">11428570590</td><td>Set oil-filt</td><td class="num">21</td><td class="num">412,965</td></tr><tr><td class="mono">33117525064</td><td>Screw plug</td><td class="num">51</td><td class="num">343,128</td></tr></tbody>
+      <tbody><tr><td class="mono">64115A1BDB6</td><td>Set, microfi</td><td class="num">1597</td><td class="num">180,288,524</td></tr><tr><td class="mono">12122455258</td><td>Spark plug B38x,46x,48x</td><td class="num">274</td><td class="num">5,649,606</td></tr><tr><td class="mono">61619478361</td><td>SET OF WIPER 3/4 series</td><td class="num">78</td><td class="num">5,318,430</td></tr><tr><td class="mono">61615A85266</td><td>Kit wiper bl</td><td class="num">73</td><td class="num">5,309,655</td></tr><tr><td class="mono">64115A547D4</td><td>Mikrofilter/</td><td class="num">38</td><td class="num">4,565,092</td></tr><tr><td class="mono">64316835405</td><td>MICROFILTER/</td><td class="num">56</td><td class="num">3,979,976</td></tr><tr><td class="mono">61612447932</td><td>Set of wiper G30</td><td class="num">58</td><td class="num">3,766,230</td></tr><tr><td class="mono">61617469820</td><td>Set of wiper X3,X4 front</td><td class="num">34</td><td class="num">2,318,290</td></tr><tr><td class="mono">61619466377</td><td>Set of wiper X5,6,7</td><td class="num">33</td><td class="num">2,250,105</td></tr><tr><td class="mono">11428575211</td><td>Set oil-filt</td><td class="num">100</td><td class="num">1,966,500</td></tr><tr><td class="mono">61615A43610</td><td>Set of wiper G70</td><td class="num">19</td><td class="num">1,381,965</td></tr><tr><td class="mono">11428593186</td><td>Set oil-filt</td><td class="num">23</td><td class="num">452,364</td></tr><tr><td class="mono">11428570590</td><td>Set oil-filt</td><td class="num">21</td><td class="num">412,965</td></tr><tr><td class="mono">33117525064</td><td>Screw plug</td><td class="num">51</td><td class="num">343,128</td></tr></tbody>
     </table></div></td></tr>
     
     
@@ -549,8 +557,8 @@
     
     <tr class="subtotal">
       <td>A 합계</td>
-      <td class="num">8,800</td>
-      <td class="num">477,430,753</td>
+      <td class="num">8,798</td>
+      <td class="num">477,340,014</td>
       <td class="num">39.85%</td>
     </tr>
     
@@ -559,14 +567,14 @@
     
     <tr data-group="inv-2" hidden class="coderow" onclick="toggleCodeRow(this)">
       <td><span class="caret">▸</span><span class="aloistag">L1</span><span class="pcount">10종</span></td>
-      <td class="num">2,226</td>
-      <td class="num">32,931,612</td>
-      <td class="num">2.75%</td>
+      <td class="num">2,220</td>
+      <td class="num">32,840,055</td>
+      <td class="num">2.74%</td>
     </tr>
     
     <tr class="partsrow" data-group="inv-2" hidden><td colspan="4"><div class="partslist"><table class="partsub">
       <thead><tr><th>부품번호</th><th>품명</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
-      <tbody><tr><td class="mono">83215B49DD6</td><td>LL-17FE+ 0W-20</td><td class="num">694</td><td class="num">10,603,626</td></tr><tr><td class="mono">83212469985</td><td>LL-12FE 0W-30</td><td class="num">397</td><td class="num">6,093,589</td></tr><tr><td class="mono">83215A65B99</td><td>LL-22FE++ 0W12</td><td class="num">380</td><td class="num">5,497,990</td></tr><tr><td class="mono">83215A7EDA5</td><td>LL-01FE 0W-30</td><td class="num">284</td><td class="num">4,348,608</td></tr><tr><td class="mono">11425B4C845</td><td>Set oil-filt</td><td class="num">109</td><td class="num">2,186,976</td></tr><tr><td class="mono">83515A6CDD7</td><td>Radiator ant</td><td class="num">106</td><td class="num">1,748,957</td></tr><tr><td class="mono">83195A42DF3</td><td>HT-12 Anti-freeze</td><td class="num">78</td><td class="num">1,279,200</td></tr><tr><td class="mono">83135A82511</td><td>Brake fluid</td><td class="num">43</td><td class="num">487,706</td></tr><tr><td class="mono">99995A2A668</td><td>Windshield w</td><td class="num">59</td><td class="num">376,754</td></tr><tr><td class="mono">66126912985</td><td>Key Battery</td><td class="num">73</td><td class="num">308,206</td></tr></tbody>
+      <tbody><tr><td class="mono">83215B49DD6</td><td>LL-17FE+ 0W-20</td><td class="num">688</td><td class="num">10,523,411</td></tr><tr><td class="mono">83212469985</td><td>LL-12FE 0W-30</td><td class="num">397</td><td class="num">6,093,589</td></tr><tr><td class="mono">83215A65B99</td><td>LL-22FE++ 0W12</td><td class="num">380</td><td class="num">5,497,990</td></tr><tr><td class="mono">83215A7EDA5</td><td>LL-01FE 0W-30</td><td class="num">284</td><td class="num">4,348,608</td></tr><tr><td class="mono">11425B4C845</td><td>Set oil-filt</td><td class="num">109</td><td class="num">2,186,976</td></tr><tr><td class="mono">83515A6CDD7</td><td>Radiator ant</td><td class="num">106</td><td class="num">1,748,957</td></tr><tr><td class="mono">83195A42DF3</td><td>HT-12 Anti-freeze</td><td class="num">78</td><td class="num">1,279,200</td></tr><tr><td class="mono">83135A82511</td><td>Brake fluid</td><td class="num">42</td><td class="num">476,364</td></tr><tr><td class="mono">99995A2A668</td><td>Windshield w</td><td class="num">59</td><td class="num">376,754</td></tr><tr><td class="mono">66126912985</td><td>Key Battery</td><td class="num">73</td><td class="num">308,206</td></tr></tbody>
     </table></div></td></tr>
     
     
@@ -650,8 +658,8 @@
     
     <tr class="subtotal">
       <td>L 합계</td>
-      <td class="num">4,796</td>
-      <td class="num">146,797,448</td>
+      <td class="num">4,790</td>
+      <td class="num">146,705,891</td>
       <td class="num">12.25%</td>
     </tr>
     
@@ -688,7 +696,7 @@
       <td><span class="caret">▸</span><span class="aloistag oseries">OE</span><span class="pcount">99종</span></td>
       <td class="num">833</td>
       <td class="num">300,019,591</td>
-      <td class="num">25.04%</td>
+      <td class="num">25.05%</td>
     </tr>
     
     <tr class="partsrow" data-group="inv-3" hidden><td colspan="4"><div class="partslist"><table class="partsub">
@@ -838,7 +846,7 @@
       <td>S 합계</td>
       <td class="num">1,906</td>
       <td class="num">135,309,258</td>
-      <td class="num">11.29%</td>
+      <td class="num">11.30%</td>
     </tr>
     
   </tbody>
@@ -858,14 +866,14 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">진행 RO (인보이스 미완료)</span>
-          <span class="value">345건</span>
-          <span class="foot">금액 합계 ₩774,253,605 · 가장 오래된 RO D+517일</span>
+          <span class="value">348건</span>
+          <span class="foot">금액 합계 ₩780,746,131 · 가장 오래된 RO D+517일</span>
         </div>
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
           <span class="eyebrow">상태별 건수</span>
           <span class="foot" style="line-height:1.7">
-            상담시작 <b>15</b> · 상담완료 <b>154</b> · 정비시작 <b>35</b> · End Control 요청 <b>54</b> · 공정마감 <b>1</b> · 가정산 완료 <b>86</b>
+            상담시작 <b>15</b> · 상담완료 <b>156</b> · 정비시작 <b>31</b> · End Control 요청 <b>59</b> · 공정마감 <b>1</b> · 가정산 완료 <b>86</b>
           </span>
         </div>
       </div>
@@ -873,7 +881,7 @@
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">진행 RO 리스트</span>
-          <span class="val">345건</span>
+          <span class="val">348건</span>
           <span class="foot">금액 = 부품+공임 판매가 · 사유는 대시보드 PC의 로컬 주소(127.0.0.1:8765)에서 입력·수정하고, 그 외 기기는 조회만 됩니다</span>
         </div>
         <div class="tablewrap">
@@ -3178,19 +3186,19 @@
               </tr>
               
               <tr>
-                <td class="mono">RO2609001262</td><td>사고수리</td><td>박영묵</td>
-                <td><span class="aloistag">상담완료</span></td>
-                <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
-                <td class="num">1,549,200</td>
-                <td><div class="reason-cell" data-ro="RO2609001262" data-saved=""><span class="reason-text"></span></div></td>
-              </tr>
-              
-              <tr>
                 <td class="mono">RO2609001261</td><td>사고수리</td><td>강충성</td>
                 <td><span class="aloistag">상담완료</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">2,108,000</td>
                 <td><div class="reason-cell" data-ro="RO2609001261" data-saved=""><span class="reason-text"></span></div></td>
+              </tr>
+              
+              <tr>
+                <td class="mono">RO2609001262</td><td>사고수리</td><td>박영묵</td>
+                <td><span class="aloistag">End Control 요청</span></td>
+                <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
+                <td class="num">1,549,200</td>
+                <td><div class="reason-cell" data-ro="RO2609001262" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
               <tr>
@@ -3339,7 +3347,7 @@
               
               <tr>
                 <td class="mono">RO2609001283</td><td>입고 Proactive-RITA</td><td>김민규</td>
-                <td><span class="aloistag">정비시작</span></td>
+                <td><span class="aloistag">End Control 요청</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">169,652</td>
                 <td><div class="reason-cell" data-ro="RO2609001283" data-saved=""><span class="reason-text"></span></div></td>
@@ -3451,7 +3459,7 @@
               
               <tr>
                 <td class="mono">RO2609001298</td><td>Maintenance</td><td>정용환</td>
-                <td><span class="aloistag">정비시작</span></td>
+                <td><span class="aloistag">End Control 요청</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">554,498</td>
                 <td><div class="reason-cell" data-ro="RO2609001298" data-saved=""><span class="reason-text"></span></div></td>
@@ -3587,7 +3595,7 @@
               
               <tr>
                 <td class="mono">RO2609001317</td><td>Maintenance</td><td>우종훈</td>
-                <td><span class="aloistag">정비시작</span></td>
+                <td><span class="aloistag">End Control 요청</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">175,548</td>
                 <td><div class="reason-cell" data-ro="RO2609001317" data-saved=""><span class="reason-text"></span></div></td>
@@ -3595,7 +3603,7 @@
               
               <tr>
                 <td class="mono">RO2609001319</td><td>입고 Proactive-RITA</td><td>이정환</td>
-                <td><span class="aloistag">정비시작</span></td>
+                <td><span class="aloistag">End Control 요청</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">28,000</td>
                 <td><div class="reason-cell" data-ro="RO2609001319" data-saved=""><span class="reason-text"></span></div></td>
@@ -3635,10 +3643,34 @@
               
               <tr>
                 <td class="mono">RO2609001325</td><td>진단</td><td>우종훈</td>
+                <td><span class="aloistag">상담완료</span></td>
+                <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
+                <td class="num">37,628</td>
+                <td><div class="reason-cell" data-ro="RO2609001325" data-saved=""><span class="reason-text"></span></div></td>
+              </tr>
+              
+              <tr>
+                <td class="mono">RO2609001326</td><td>경수리</td><td>우상만</td>
+                <td><span class="aloistag">상담완료</span></td>
+                <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
+                <td class="num">5,900,400</td>
+                <td><div class="reason-cell" data-ro="RO2609001326" data-saved=""><span class="reason-text"></span></div></td>
+              </tr>
+              
+              <tr>
+                <td class="mono">RO2609001327</td><td>Maintenance</td><td>안준영</td>
+                <td><span class="aloistag">상담완료</span></td>
+                <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
+                <td class="num">554,498</td>
+                <td><div class="reason-cell" data-ro="RO2609001327" data-saved=""><span class="reason-text"></span></div></td>
+              </tr>
+              
+              <tr>
+                <td class="mono">RO2609001328</td><td>경수리</td><td>최민수</td>
                 <td><span class="aloistag">상담시작</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">0</td>
-                <td><div class="reason-cell" data-ro="RO2609001325" data-saved=""><span class="reason-text"></span></div></td>
+                <td><div class="reason-cell" data-ro="RO2609001328" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
             </tbody>
@@ -3830,7 +3862,7 @@
         <div class="viewer-head">
           <span class="lbl">차량접수 SB별 부품 세부</span>
           <span class="val">0건</span>
-          <span class="foot">SB 클릭해서 펼치기 · 차량접수 SB(최근 180일) 10317건 중 RO 미발행 + 미처리 부품요청이 걸린 SB</span>
+          <span class="foot">SB 클릭해서 펼치기 · 차량접수 SB(최근 180일) 10320건 중 RO 미발행 + 미처리 부품요청이 걸린 SB</span>
         </div>
         <div class="tablewrap">
           <table>
@@ -3857,13 +3889,13 @@
           <span class="rank">01</span>
           <span class="eyebrow">부품이 들어있는 예약접수 SB</span>
           <span class="value">33건</span>
-          <span class="foot">108라인 · 요청수량×원가 합계 ₩20,401,628</span>
+          <span class="foot">113라인 · 요청수량×원가 합계 ₩21,647,144</span>
         </div>
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
           <span class="eyebrow">그 중 O계열 부품</span>
-          <span class="value">₩6,834,746</span>
-          <span class="foot">23라인 (원가 기준)</span>
+          <span class="value">₩7,531,366</span>
+          <span class="foot">26라인 (원가 기준)</span>
         </div>
       </div>
 
@@ -3871,7 +3903,7 @@
         <div class="viewer-head">
           <span class="lbl">예약접수 SB별 부품 세부</span>
           <span class="val">33건</span>
-          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 예약접수(오늘 이후) 303건 중 미처리 부품요청이 걸린 SB</span>
+          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 예약접수(오늘 이후) 301건 중 미처리 부품요청이 걸린 SB</span>
         </div>
         <div class="tablewrap">
           <table>
@@ -4064,15 +4096,25 @@
               
               <tr class="subtotal"><td colspan="3">SB2609000664 합계</td><td class="num">4</td><td class="num"></td><td class="num"></td><td class="num">425,299</td></tr>
               
-              <tr class="grouphead open" data-group="sr-SB2609001547" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609001547 · 예약일 10-06 · <span class="dday-cell dday-badge" data-days="15">D-15일</span> · SA M GARAGE (3라인)<span class="hint"></span></td></tr>
+              <tr class="grouphead open" data-group="sr-SB2609001547" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609001547 · 예약일 10-06 · <span class="dday-cell dday-badge" data-days="15">D-15일</span> · SA M GARAGE (8라인)<span class="hint"></span></td></tr>
+              
+              <tr data-group="sr-SB2609001547"><td class="mono">12138647689</td><td>Ignition coi</td><td><span class="aloistag">II</span></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">548,896</td></tr>
+              
+              <tr data-group="sr-SB2609001547"><td class="mono">90200005955</td><td>BMW DCTF 1 +</td><td><span class="aloistag oseries">O8</span></td><td class="num">7</td><td class="num">3</td><td class="num">3</td><td class="num">450,800</td></tr>
+              
+              <tr data-group="sr-SB2609001547"><td class="mono">12120039634</td><td>Spark plug</td><td><span class="aloistag oseries">O8</span></td><td class="num">8</td><td class="num">5</td><td class="num">5</td><td class="num">193,528</td></tr>
               
               <tr data-group="sr-SB2609001547"><td class="mono">83215A7EDA5</td><td>LL-01FE 0W-30</td><td><span class="aloistag">L1</span></td><td class="num">10</td><td class="num">284</td><td class="num">248</td><td class="num">153,120</td></tr>
+              
+              <tr data-group="sr-SB2609001547"><td class="mono">83222365988</td><td>FINAL-DRIVE</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">52,292</td></tr>
               
               <tr data-group="sr-SB2609001547"><td class="mono">11427848321</td><td>Filt.Element</td><td><span class="aloistag">A6</span></td><td class="num">1</td><td class="num">10</td><td class="num">9</td><td class="num">24,261</td></tr>
               
               <tr data-group="sr-SB2609001547"><td class="mono">33117525064</td><td>Screw plug</td><td><span class="aloistag">A1</span></td><td class="num">2</td><td class="num">51</td><td class="num">36</td><td class="num">13,456</td></tr>
               
-              <tr class="subtotal"><td colspan="3">SB2609001547 합계</td><td class="num">13</td><td class="num"></td><td class="num"></td><td class="num">190,837</td></tr>
+              <tr data-group="sr-SB2609001547"><td class="mono">28005B43141</td><td>Oil filter k</td><td><span class="aloistag">None</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+              
+              <tr class="subtotal"><td colspan="3">SB2609001547 합계</td><td class="num">38</td><td class="num"></td><td class="num"></td><td class="num">1,436,353</td></tr>
               
               <tr class="grouphead open" data-group="sr-SB2609000195" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609000195 · 예약일 10-02 · <span class="dday-cell dday-badge" data-days="11">D-11일</span> · SA 안준영 (2라인)<span class="hint"></span></td></tr>
               
@@ -4479,7 +4521,7 @@
           <span class="rank">01</span>
           <span class="eyebrow">전체재고 대비 OA+OV 비율</span>
           <span class="value">5.14%</span>
-          <span class="foot">OA+OV 재고금액 ₩61,542,427 · 전체재고 ₩1,198,011,393</span>
+          <span class="foot">OA+OV 재고금액 ₩61,542,427 · 전체재고 ₩1,197,829,097</span>
         </div>
       </div>
 
@@ -5550,15 +5592,15 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">O계열 · RO/SB/SP 묶인 재고</span>
-          <span class="value">99건</span>
-          <span class="foot">요청수량×원가 합계 ₩26,133,743</span>
+          <span class="value">102건</span>
+          <span class="foot">요청수량×원가 합계 ₩26,830,363</span>
         </div>
       </div>
 
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">참조문서별 O계열 요청 세부</span>
-          <span class="val">99건</span>
+          <span class="val">102건</span>
           <span class="foot">그룹 클릭해서 펼치기 · 요청일 오래된순</span>
         </div>
         <div class="tablewrap">
@@ -5773,7 +5815,7 @@
               
               <tr class="subtotal oseries"><td colspan="6">RO 합계</td><td class="num">38</td><td class="num"></td><td class="num"></td><td class="num">6,535,901</td><td></td></tr>
               
-              <tr class="grouphead oseries" data-group="opart-SB" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>SB (35건)<span class="hint"></span></td></tr>
+              <tr class="grouphead oseries" data-group="opart-SB" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>SB (38건)<span class="hint"></span></td></tr>
               
               <tr class="oseries" data-group="opart-SB" hidden>
                 <td class="mono">51477326338</td><td>FLOOR COVERI</td><td><span class="aloistag oseries">OV</span></td>
@@ -6020,7 +6062,28 @@
                 <td class="num">681,360</td><td>M GARAGE</td>
               </tr>
               
-              <tr class="subtotal oseries"><td colspan="6">SB 합계</td><td class="num">60</td><td class="num"></td><td class="num"></td><td class="num">11,665,001</td><td></td></tr>
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">90200005955</td><td>BMW DCTF 1 +</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2609001547</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">7</td><td class="num">3</td><td class="num">3</td>
+                <td class="num">450,800</td><td>M GARAGE</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">12120039634</td><td>Spark plug</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2609001547</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">8</td><td class="num">5</td><td class="num">5</td>
+                <td class="num">193,528</td><td>M GARAGE</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">83222365988</td><td>FINAL-DRIVE</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2609001547</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">52,292</td><td>M GARAGE</td>
+              </tr>
+              
+              <tr class="subtotal oseries"><td colspan="6">SB 합계</td><td class="num">76</td><td class="num"></td><td class="num"></td><td class="num">12,361,621</td><td></td></tr>
               
               <tr class="grouphead oseries" data-group="opart-SP" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>SP (35건)<span class="hint"></span></td></tr>
               
@@ -7376,6 +7439,104 @@
       </div>
     </section>
 
+    <section id="page-nonmng" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>비관리부품 현황</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>AS_부산(해운중동) · 현재고리스트 · 부품창고 · 비관리부품 체크 품목</div>
+      </div>
+
+      <div class="kpistrip">
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">01</span>
+          <span class="eyebrow">비관리부품 재고금액(원가)</span>
+          <span class="value">₩12,260,236</span>
+          <span class="foot">29품목 · 재고수량 33개</span>
+        </div>
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">02</span>
+          <span class="eyebrow">전체재고 대비 비율</span>
+          <span class="value">1.02%</span>
+          <span class="foot">부품창고 전체재고 ₩1,197,829,097 기준</span>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">비관리부품 리스트</span>
+          <span class="val">29건</span>
+          <span class="foot">재고금액 큰 순 · 금액=현재고×이동평균단가(원가)</span>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가단가</th><th class="num">재고금액</th><th>최종입고일</th><th>최종판매일</th></tr></thead>
+            <tbody>
+              
+              <tr><td class="mono">18308572487</td><td>RP-exhaust p</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">2,808,894</td><td class="num">2,808,894</td><td class="mono">2026-09-18</td><td class="mono">2021-10-08</td></tr>
+              
+              <tr><td class="mono">41517386744</td><td>Door rear ri</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">2,019,618</td><td class="num">2,019,618</td><td class="mono">2026-09-15</td><td class="mono">2026-09-12</td></tr>
+              
+              <tr><td class="mono">31608683331</td><td>Exchange out</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">1,432,990</td><td class="num">1,432,990</td><td class="mono">2026-09-18</td><td class="mono">2019-05-03</td></tr>
+              
+              <tr><td class="mono">18308593765</td><td>Rear muffler</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">808,473</td><td class="num">808,473</td><td class="mono">2026-09-17</td><td class="mono">2021-06-18</td></tr>
+              
+              <tr><td class="mono">51128078840</td><td>Bumper trim</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">798,537</td><td class="num">798,537</td><td class="mono">2026-09-17</td><td class="mono">2023-02-09</td></tr>
+              
+              <tr><td class="mono">41007378123</td><td>Trunk lid, b</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">731,533</td><td class="num">731,533</td><td class="mono">2026-09-18</td><td class="mono">2021-11-23</td></tr>
+              
+              <tr><td class="mono">51162446821</td><td>Outside mirr</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">540,771</td><td class="num">540,771</td><td class="mono">2026-09-16</td><td class="mono">2023-04-10</td></tr>
+              
+              <tr><td class="mono">51127294396</td><td>Carrier, bum</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">529,396</td><td class="num">529,396</td><td class="mono">2026-09-18</td><td class="mono">2020-11-03</td></tr>
+              
+              <tr><td class="mono">41008494439</td><td>Side panel,</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">423,108</td><td class="num">423,108</td><td class="mono">2026-08-19</td><td class="mono">2024-11-12</td></tr>
+              
+              <tr><td class="mono">31126777739</td><td>Wishbone</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">352,308</td><td class="num">352,308</td><td class="mono">2026-09-18</td><td class="mono">2020-07-07</td></tr>
+              
+              <tr><td class="mono">31126777740</td><td>Wishbone</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">352,308</td><td class="num">352,308</td><td class="mono">2026-09-18</td><td class="mono">2019-04-29</td></tr>
+              
+              <tr><td class="mono">51745A29C48</td><td>Air flaps, l</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">316,313</td><td class="num">316,313</td><td class="mono">2026-09-19</td><td class="mono">2023-01-26</td></tr>
+              
+              <tr><td class="mono">51128075300</td><td>Trim panel,</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">256,736</td><td class="num">256,736</td><td class="mono">2026-09-16</td><td class="mono">2023-02-07</td></tr>
+              
+              <tr><td class="mono">32106787472</td><td>Tie rod</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">212,802</td><td class="num">212,802</td><td class="mono">2026-09-17</td><td class="mono">2021-09-01</td></tr>
+              
+              <tr><td class="mono">34216885187</td><td>Repair kit,</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">188,268</td><td class="num">188,268</td><td class="mono">2026-09-18</td><td class="mono">2026-08-05</td></tr>
+              
+              <tr><td class="mono">51128098690</td><td>Guide, rear</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">173,721</td><td class="num">173,721</td><td class="mono">2026-09-19</td><td class="mono">2023-02-10</td></tr>
+              
+              <tr><td class="mono">32106870519</td><td>Repair kit b</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">115,725</td><td class="num">115,725</td><td class="mono">2026-09-17</td><td class="mono">2020-08-12</td></tr>
+              
+              <tr><td class="mono">51117421805</td><td>Grill, air i</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">85,200</td><td class="num">85,200</td><td class="mono">2026-09-19</td><td class="mono">2021-07-14</td></tr>
+              
+              <tr><td class="mono">51758049042</td><td>Cover</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">77,439</td><td class="num">77,439</td><td class="mono">2026-09-18</td><td class="mono">2026-01-13</td></tr>
+              
+              <tr><td class="mono">32106889834</td><td>Gasket, bulk</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">0</td><td class="num">16,617</td><td class="num">16,617</td><td class="mono">2026-09-16</td><td class="mono">2025-05-30</td></tr>
+              
+              <tr><td class="mono">07146888411</td><td>ASA-Bolt</td><td><span class="aloistag">II</span></td><td class="num">3</td><td class="num">0</td><td class="num">5,325</td><td class="num">15,975</td><td class="mono">2026-09-16</td><td class="mono">2023-01-27</td></tr>
+              
+              <tr><td class="mono">07146961019</td><td>Torx screw w</td><td><span class="aloistag">II</span></td><td class="num">3</td><td class="num">0</td><td class="num">1,168</td><td class="num">3,504</td><td class="mono">2026-09-11</td><td class="mono">2023-02-02</td></tr>
+              
+              <tr><td class="mono">Z2000KM</td><td>2,000km 길들이기(엔진오일 교환 포함)</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="mono">-</td><td class="mono">-</td></tr>
+              
+              <tr><td class="mono">Z2000KM_M</td><td>2,000km 길들이기(엔진오일 교환 포함)</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="mono">-</td><td class="mono">2020-11-25</td></tr>
+              
+              <tr><td class="mono">Z202102</td><td>one-two pack giveaway</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="mono">-</td><td class="mono">-</td></tr>
+              
+              <tr><td class="mono">Z30COU250ADD</td><td>G30 Base_AS 쿠폰(Customer care</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="mono">-</td><td class="mono">-</td></tr>
+              
+              <tr><td class="mono">ZENGINEBELT_M</td><td>엔진벨트 2EA 교환권</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="mono">-</td><td class="mono">-</td></tr>
+              
+              <tr><td class="mono">ZI3_2020_TIRE_DS</td><td>I3_COPORATE SALES_2020_TIRE_DS</td><td><span class="aloistag">II</span></td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="mono">-</td><td class="mono">-</td></tr>
+              
+              <tr><td class="mono">ZMINICOUNTRYMAN</td><td>MINI Countryman Roof box</td><td><span class="aloistag">SZ</span></td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="mono">-</td><td class="mono">-</td></tr>
+              
+              <tr class="subtotal"><td colspan="3">합계</td><td class="num">33</td><td class="num"></td><td class="num"></td><td class="num">12,260,236</td><td></td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section id="page-calendar" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>팀 캘린더</b></span>
@@ -7398,7 +7559,7 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','oaov','longstock','opart','oflow','calendar'];
+  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','oaov','longstock','nonmng','opart','oflow','calendar'];
   function selectPage(key){
     PAGES.forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); });
     document.querySelector('.maininner').classList.toggle('wide', key==='calendar');

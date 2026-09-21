@@ -613,6 +613,27 @@ def build_open_ro(rows, now):
     }
 
 
+def build_nonmng(pw_rows, inv_total):
+    """현재고리스트(부품창고) 중 비관리부품(nonMngItemAtcYn=Y)으로 체크된 부품. 금액=현재고×이동평균단가(원가)."""
+    def val_fn(r):
+        return num(r.get("crtQty")) * num(r.get("movPrc"))
+
+    rows = sorted([{
+        "item": r.get("itemCd"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
+        "qty": int(num(r.get("crtQty"))), "avail_qty": int(num(r.get("ableQty"))),
+        "prc": round(num(r.get("movPrc"))), "val": round(val_fn(r)),
+        "last_in": (r.get("lastPurcDt") or "")[:10] or "-",
+        "last_sale": (r.get("lastSaleDt") or "")[:10] or "-",
+    } for r in pw_rows if r.get("nonMngItemAtcYn") == "Y"], key=lambda i: -i["val"])
+
+    total_val = sum(i["val"] for i in rows)
+    return {
+        "rows": rows, "count": len(rows), "total_val": total_val,
+        "qty_sum": sum(i["qty"] for i in rows),
+        "pct": round(100 * total_val / inv_total, 2) if inv_total else 0,
+    }
+
+
 def build_o_available(pw_rows):
     """ALOIS O계열 중 DMS 가용재고(ableQty) 기준 순수 가용분만.
     ableQty는 DMS가 RO/SB/SP 등 모든 홀드를 이미 반영해 계산한 값이라, 이걸 직접 써야
@@ -1082,6 +1103,7 @@ def run_cycle(page: Page) -> None:
     longstock = build_longstock(pw_rows, inv["total"], now)
     opart = build_o_parts(req_rows, now)
     oavail = build_o_available(pw_rows)
+    nonmng = build_nonmng(pw_rows, inv["total"])
     openro = build_open_ro(open_ro_rows, now)
     noshow = build_sb_parts(req_rows, noshow_rows, now)
     sbresv = build_sb_parts(req_rows, sbresv_rows, now, farthest_first=True)
@@ -1094,7 +1116,7 @@ def run_cycle(page: Page) -> None:
         "meta": {"branch_name": BRANCH_NAME, "brch_code": f"BRCH {BRCH_CD}", "generated_at": generated_at,
                  "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
-        "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro, "noshow": noshow, "sbresv": sbresv, "sbcar": sbcar,
+        "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro, "noshow": noshow, "sbresv": sbresv, "sbcar": sbcar, "nonmng": nonmng,
     }
 
     global LAST_DATA

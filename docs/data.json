@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 21일 (월) · 13:52 기준",
+    "generated_at": "9월 21일 (월) · 14:00 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,7 +16,7 @@
     "top5": []
   },
   "inv": {
-    "total": 1198011393,
+    "total": 1197829097,
     "item_count": 2118,
     "code_count": 25,
     "alois_groups": [
@@ -27,9 +27,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 218093569,
+            "val": 218002830,
             "pct": 18.2,
-            "qty": 2457,
+            "qty": 2455,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -64,8 +64,8 @@
               {
                 "item": "64316835405",
                 "name": "MICROFILTER/",
-                "qty": 57,
-                "val": 4051047
+                "qty": 56,
+                "val": 3979976
               },
               {
                 "item": "61612447932",
@@ -100,8 +100,8 @@
               {
                 "item": "11428593186",
                 "name": "Set oil-filt",
-                "qty": 24,
-                "val": 472032
+                "qty": 23,
+                "val": 452364
               },
               {
                 "item": "11428570590",
@@ -4550,8 +4550,8 @@
             ]
           }
         ],
-        "subtotal_val": 477430753,
-        "subtotal_qty": 8800,
+        "subtotal_val": 477340014,
+        "subtotal_qty": 8798,
         "subtotal_pct": 39.85
       },
       {
@@ -4561,15 +4561,15 @@
         "rows": [
           {
             "code": "L1",
-            "val": 32931612,
-            "pct": 2.75,
-            "qty": 2226,
+            "val": 32840055,
+            "pct": 2.74,
+            "qty": 2220,
             "parts": [
               {
                 "item": "83215B49DD6",
                 "name": "LL-17FE+ 0W-20",
-                "qty": 694,
-                "val": 10603626
+                "qty": 688,
+                "val": 10523411
               },
               {
                 "item": "83212469985",
@@ -4610,8 +4610,8 @@
               {
                 "item": "83135A82511",
                 "name": "Brake fluid",
-                "qty": 43,
-                "val": 487706
+                "qty": 42,
+                "val": 476364
               },
               {
                 "item": "99995A2A668",
@@ -7478,8 +7478,8 @@
             ]
           }
         ],
-        "subtotal_val": 146797448,
-        "subtotal_qty": 4796,
+        "subtotal_val": 146705891,
+        "subtotal_qty": 4790,
         "subtotal_pct": 12.25
       },
       {
@@ -10308,7 +10308,7 @@
           {
             "code": "OE",
             "val": 300019591,
-            "pct": 25.04,
+            "pct": 25.05,
             "qty": 833,
             "parts": [
               {
@@ -12976,13 +12976,13 @@
         ],
         "subtotal_val": 135309258,
         "subtotal_qty": 1906,
-        "subtotal_pct": 11.29
+        "subtotal_pct": 11.3
       }
     ]
   },
   "oaov": {
     "total": 61542427,
-    "inv_total": 1198011393,
+    "inv_total": 1197829097,
     "pct": 5.14,
     "oa_val": 39235418,
     "ov_val": 22307009,
@@ -18583,10 +18583,58 @@
         "val": 36693,
         "sa": "박영묵",
         "dday": "D+0일"
+      },
+      {
+        "item": "90200005955",
+        "name": "BMW DCTF 1 +",
+        "alois": "O8",
+        "ref_tp": "SB",
+        "ref_no": "SB2609001547",
+        "req_qty": 7,
+        "crt_qty": 3,
+        "avail_qty": 3,
+        "req_dt": "09-21",
+        "req_dt_full": "2026-09-21 14:00:59",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 450800,
+        "sa": "M GARAGE",
+        "dday": "D+0일"
+      },
+      {
+        "item": "12120039634",
+        "name": "Spark plug",
+        "alois": "O8",
+        "ref_tp": "SB",
+        "ref_no": "SB2609001547",
+        "req_qty": 8,
+        "crt_qty": 5,
+        "avail_qty": 5,
+        "req_dt": "09-21",
+        "req_dt_full": "2026-09-21 14:00:59",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 193528,
+        "sa": "M GARAGE",
+        "dday": "D+0일"
+      },
+      {
+        "item": "83222365988",
+        "name": "FINAL-DRIVE",
+        "alois": "O8",
+        "ref_tp": "SB",
+        "ref_no": "SB2609001547",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-21",
+        "req_dt_full": "2026-09-21 14:00:59",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 52292,
+        "sa": "M GARAGE",
+        "dday": "D+0일"
       }
     ],
-    "count": 99,
-    "total_val": 26133743,
+    "count": 102,
+    "total_val": 26830363,
     "groups": [
       {
         "code": "RO",
@@ -19622,11 +19670,59 @@
             "val": 681360,
             "sa": "M GARAGE",
             "dday": "D+4일"
+          },
+          {
+            "item": "90200005955",
+            "name": "BMW DCTF 1 +",
+            "alois": "O8",
+            "ref_tp": "SB",
+            "ref_no": "SB2609001547",
+            "req_qty": 7,
+            "crt_qty": 3,
+            "avail_qty": 3,
+            "req_dt": "09-21",
+            "req_dt_full": "2026-09-21 14:00:59",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 450800,
+            "sa": "M GARAGE",
+            "dday": "D+0일"
+          },
+          {
+            "item": "12120039634",
+            "name": "Spark plug",
+            "alois": "O8",
+            "ref_tp": "SB",
+            "ref_no": "SB2609001547",
+            "req_qty": 8,
+            "crt_qty": 5,
+            "avail_qty": 5,
+            "req_dt": "09-21",
+            "req_dt_full": "2026-09-21 14:00:59",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 193528,
+            "sa": "M GARAGE",
+            "dday": "D+0일"
+          },
+          {
+            "item": "83222365988",
+            "name": "FINAL-DRIVE",
+            "alois": "O8",
+            "ref_tp": "SB",
+            "ref_no": "SB2609001547",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-21",
+            "req_dt_full": "2026-09-21 14:00:59",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 52292,
+            "sa": "M GARAGE",
+            "dday": "D+0일"
           }
         ],
-        "count": 35,
-        "qty_sum": 60,
-        "val": 11665001
+        "count": 38,
+        "qty_sum": 76,
+        "val": 12361621
       },
       {
         "code": "SP",
@@ -31236,17 +31332,6 @@
         "amt": 5228200
       },
       {
-        "ro": "RO2609001262",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "사고수리",
-        "sa": "박영묵",
-        "pub": "2026-09-21",
-        "pub_full": "2026-09-21 08:45",
-        "dday": "D+0일",
-        "amt": 1549200
-      },
-      {
         "ro": "RO2609001261",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -31256,6 +31341,17 @@
         "pub_full": "2026-09-21 08:45",
         "dday": "D+0일",
         "amt": 2108000
+      },
+      {
+        "ro": "RO2609001262",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 08:45",
+        "dday": "D+0일",
+        "amt": 1549200
       },
       {
         "ro": "RO2609001263",
@@ -31457,8 +31553,8 @@
       },
       {
         "ro": "RO2609001283",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-09-21",
@@ -31611,8 +31707,8 @@
       },
       {
         "ro": "RO2609001298",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-21",
@@ -31798,8 +31894,8 @@
       },
       {
         "ro": "RO2609001317",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-21",
@@ -31809,8 +31905,8 @@
       },
       {
         "ro": "RO2609001319",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "이정환",
         "pub": "2026-09-21",
@@ -31864,18 +31960,51 @@
       },
       {
         "ro": "RO2609001325",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 13:55",
         "dday": "D+0일",
+        "amt": 37628
+      },
+      {
+        "ro": "RO2609001326",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "우상만",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 13:58",
+        "dday": "D+0일",
+        "amt": 5900400
+      },
+      {
+        "ro": "RO2609001327",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 13:59",
+        "dday": "D+0일",
+        "amt": 554498
+      },
+      {
+        "ro": "RO2609001328",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "경수리",
+        "sa": "최민수",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 14:01",
+        "dday": "D+0일",
         "amt": 0
       }
     ],
-    "count": 345,
-    "total_amt": 774253605,
+    "count": 348,
+    "total_amt": 780746131,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -31884,18 +32013,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 154,
-        "amt": 489745994
+        "count": 156,
+        "amt": 494689320
       },
       {
         "stat": "정비시작",
-        "count": 35,
-        "amt": 65333055
+        "count": 31,
+        "amt": 64405357
       },
       {
         "stat": "End Control 요청",
-        "count": 54,
-        "amt": 67088562
+        "count": 59,
+        "amt": 69565460
       },
       {
         "stat": "공정마감",
@@ -33100,6 +33229,33 @@
         "sa": "M GARAGE",
         "rows": [
           {
+            "item": "12138647689",
+            "name": "Ignition coi",
+            "alois": "II",
+            "req_qty": 8,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 548896
+          },
+          {
+            "item": "90200005955",
+            "name": "BMW DCTF 1 +",
+            "alois": "O8",
+            "req_qty": 7,
+            "crt_qty": 3,
+            "avail_qty": 3,
+            "val": 450800
+          },
+          {
+            "item": "12120039634",
+            "name": "Spark plug",
+            "alois": "O8",
+            "req_qty": 8,
+            "crt_qty": 5,
+            "avail_qty": 5,
+            "val": 193528
+          },
+          {
             "item": "83215A7EDA5",
             "name": "LL-01FE 0W-30",
             "alois": "L1",
@@ -33107,6 +33263,15 @@
             "crt_qty": 284,
             "avail_qty": 248,
             "val": 153120
+          },
+          {
+            "item": "83222365988",
+            "name": "FINAL-DRIVE",
+            "alois": "O8",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 52292
           },
           {
             "item": "11427848321",
@@ -33125,11 +33290,20 @@
             "crt_qty": 51,
             "avail_qty": 36,
             "val": 13456
+          },
+          {
+            "item": "28005B43141",
+            "name": "Oil filter k",
+            "alois": null,
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 0
           }
         ],
-        "count": 3,
-        "qty_sum": 13,
-        "val": 190837
+        "count": 8,
+        "qty_sum": 38,
+        "val": 1436353
       },
       {
         "code": "SB2609000195",
@@ -33721,11 +33895,11 @@
       }
     ],
     "sb_count": 33,
-    "line_count": 108,
-    "total_val": 20401628,
-    "o_lines": 23,
-    "o_val": 6834746,
-    "resv_total": 303
+    "line_count": 113,
+    "total_val": 21647144,
+    "o_lines": 26,
+    "o_val": 7531366,
+    "resv_total": 301
   },
   "sbcar": {
     "groups": [],
@@ -33734,7 +33908,334 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10317
+    "resv_total": 10320
+  },
+  "nonmng": {
+    "rows": [
+      {
+        "item": "18308572487",
+        "name": "RP-exhaust p",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 2808894,
+        "val": 2808894,
+        "last_in": "2026-09-18",
+        "last_sale": "2021-10-08"
+      },
+      {
+        "item": "41517386744",
+        "name": "Door rear ri",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 2019618,
+        "val": 2019618,
+        "last_in": "2026-09-15",
+        "last_sale": "2026-09-12"
+      },
+      {
+        "item": "31608683331",
+        "name": "Exchange out",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 1432990,
+        "val": 1432990,
+        "last_in": "2026-09-18",
+        "last_sale": "2019-05-03"
+      },
+      {
+        "item": "18308593765",
+        "name": "Rear muffler",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 808473,
+        "val": 808473,
+        "last_in": "2026-09-17",
+        "last_sale": "2021-06-18"
+      },
+      {
+        "item": "51128078840",
+        "name": "Bumper trim",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 798537,
+        "val": 798537,
+        "last_in": "2026-09-17",
+        "last_sale": "2023-02-09"
+      },
+      {
+        "item": "41007378123",
+        "name": "Trunk lid, b",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 731533,
+        "val": 731533,
+        "last_in": "2026-09-18",
+        "last_sale": "2021-11-23"
+      },
+      {
+        "item": "51162446821",
+        "name": "Outside mirr",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 540771,
+        "val": 540771,
+        "last_in": "2026-09-16",
+        "last_sale": "2023-04-10"
+      },
+      {
+        "item": "51127294396",
+        "name": "Carrier, bum",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 529396,
+        "val": 529396,
+        "last_in": "2026-09-18",
+        "last_sale": "2020-11-03"
+      },
+      {
+        "item": "41008494439",
+        "name": "Side panel,",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 423108,
+        "val": 423108,
+        "last_in": "2026-08-19",
+        "last_sale": "2024-11-12"
+      },
+      {
+        "item": "31126777739",
+        "name": "Wishbone",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 352308,
+        "val": 352308,
+        "last_in": "2026-09-18",
+        "last_sale": "2020-07-07"
+      },
+      {
+        "item": "31126777740",
+        "name": "Wishbone",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 352308,
+        "val": 352308,
+        "last_in": "2026-09-18",
+        "last_sale": "2019-04-29"
+      },
+      {
+        "item": "51745A29C48",
+        "name": "Air flaps, l",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 316313,
+        "val": 316313,
+        "last_in": "2026-09-19",
+        "last_sale": "2023-01-26"
+      },
+      {
+        "item": "51128075300",
+        "name": "Trim panel,",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 256736,
+        "val": 256736,
+        "last_in": "2026-09-16",
+        "last_sale": "2023-02-07"
+      },
+      {
+        "item": "32106787472",
+        "name": "Tie rod",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 212802,
+        "val": 212802,
+        "last_in": "2026-09-17",
+        "last_sale": "2021-09-01"
+      },
+      {
+        "item": "34216885187",
+        "name": "Repair kit,",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 188268,
+        "val": 188268,
+        "last_in": "2026-09-18",
+        "last_sale": "2026-08-05"
+      },
+      {
+        "item": "51128098690",
+        "name": "Guide, rear",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 173721,
+        "val": 173721,
+        "last_in": "2026-09-19",
+        "last_sale": "2023-02-10"
+      },
+      {
+        "item": "32106870519",
+        "name": "Repair kit b",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 115725,
+        "val": 115725,
+        "last_in": "2026-09-17",
+        "last_sale": "2020-08-12"
+      },
+      {
+        "item": "51117421805",
+        "name": "Grill, air i",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 85200,
+        "val": 85200,
+        "last_in": "2026-09-19",
+        "last_sale": "2021-07-14"
+      },
+      {
+        "item": "51758049042",
+        "name": "Cover",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 77439,
+        "val": 77439,
+        "last_in": "2026-09-18",
+        "last_sale": "2026-01-13"
+      },
+      {
+        "item": "32106889834",
+        "name": "Gasket, bulk",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 16617,
+        "val": 16617,
+        "last_in": "2026-09-16",
+        "last_sale": "2025-05-30"
+      },
+      {
+        "item": "07146888411",
+        "name": "ASA-Bolt",
+        "alois": "II",
+        "qty": 3,
+        "avail_qty": 0,
+        "prc": 5325,
+        "val": 15975,
+        "last_in": "2026-09-16",
+        "last_sale": "2023-01-27"
+      },
+      {
+        "item": "07146961019",
+        "name": "Torx screw w",
+        "alois": "II",
+        "qty": 3,
+        "avail_qty": 0,
+        "prc": 1168,
+        "val": 3504,
+        "last_in": "2026-09-11",
+        "last_sale": "2023-02-02"
+      },
+      {
+        "item": "Z2000KM",
+        "name": "2,000km 길들이기(엔진오일 교환 포함)",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 1,
+        "prc": 0,
+        "val": 0,
+        "last_in": "-",
+        "last_sale": "-"
+      },
+      {
+        "item": "Z2000KM_M",
+        "name": "2,000km 길들이기(엔진오일 교환 포함)",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 1,
+        "prc": 0,
+        "val": 0,
+        "last_in": "-",
+        "last_sale": "2020-11-25"
+      },
+      {
+        "item": "Z202102",
+        "name": "one-two pack giveaway",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 1,
+        "prc": 0,
+        "val": 0,
+        "last_in": "-",
+        "last_sale": "-"
+      },
+      {
+        "item": "Z30COU250ADD",
+        "name": "G30 Base_AS 쿠폰(Customer care",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 1,
+        "prc": 0,
+        "val": 0,
+        "last_in": "-",
+        "last_sale": "-"
+      },
+      {
+        "item": "ZENGINEBELT_M",
+        "name": "엔진벨트 2EA 교환권",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 1,
+        "prc": 0,
+        "val": 0,
+        "last_in": "-",
+        "last_sale": "-"
+      },
+      {
+        "item": "ZI3_2020_TIRE_DS",
+        "name": "I3_COPORATE SALES_2020_TIRE_DS",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 1,
+        "prc": 0,
+        "val": 0,
+        "last_in": "-",
+        "last_sale": "-"
+      },
+      {
+        "item": "ZMINICOUNTRYMAN",
+        "name": "MINI Countryman Roof box",
+        "alois": "SZ",
+        "qty": 1,
+        "avail_qty": 1,
+        "prc": 0,
+        "val": 0,
+        "last_in": "-",
+        "last_sale": "-"
+      }
+    ],
+    "count": 29,
+    "total_val": 12260236,
+    "qty_sum": 33,
+    "pct": 1.02
   },
   "reasons": {}
 }
