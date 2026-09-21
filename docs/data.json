@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 21일 (월) · 14:00 기준",
+    "generated_at": "9월 21일 (월) · 14:12 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,8 +16,8 @@
     "top5": []
   },
   "inv": {
-    "total": 1197829097,
-    "item_count": 2118,
+    "total": 1198107483,
+    "item_count": 2120,
     "code_count": 25,
     "alois_groups": [
       {
@@ -4552,7 +4552,7 @@
         ],
         "subtotal_val": 477340014,
         "subtotal_qty": 8798,
-        "subtotal_pct": 39.85
+        "subtotal_pct": 39.84
       },
       {
         "code": "L",
@@ -4561,9 +4561,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 32840055,
+            "val": 32828713,
             "pct": 2.74,
-            "qty": 2220,
+            "qty": 2218,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4610,8 +4610,8 @@
               {
                 "item": "83135A82511",
                 "name": "Brake fluid",
-                "qty": 42,
-                "val": 476364
+                "qty": 41,
+                "val": 465022
               },
               {
                 "item": "99995A2A668",
@@ -7478,9 +7478,9 @@
             ]
           }
         ],
-        "subtotal_val": 146705891,
-        "subtotal_qty": 4790,
-        "subtotal_pct": 12.25
+        "subtotal_val": 146694549,
+        "subtotal_qty": 4789,
+        "subtotal_pct": 12.24
       },
       {
         "code": "O",
@@ -7489,9 +7489,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 62636307,
-            "pct": 5.23,
-            "qty": 1133,
+            "val": 62926035,
+            "pct": 5.25,
+            "qty": 1135,
             "parts": [
               {
                 "item": "17425A18806",
@@ -7914,10 +7914,22 @@
                 "val": 152904
               },
               {
+                "item": "66209270495",
+                "name": "PDC sensor",
+                "qty": 1,
+                "val": 148302
+              },
+              {
                 "item": "51359447509",
                 "name": "Shaft cover",
                 "qty": 1,
                 "val": 148282
+              },
+              {
+                "item": "63147442281",
+                "name": "Rear reflect",
+                "qty": 1,
+                "val": 141426
               },
               {
                 "item": "36135A37E40",
@@ -9652,7 +9664,7 @@
           {
             "code": "OA",
             "val": 39235418,
-            "pct": 3.28,
+            "pct": 3.27,
             "qty": 232,
             "parts": [
               {
@@ -10308,7 +10320,7 @@
           {
             "code": "OE",
             "val": 300019591,
-            "pct": 25.05,
+            "pct": 25.04,
             "qty": 833,
             "parts": [
               {
@@ -11614,9 +11626,9 @@
             ]
           }
         ],
-        "subtotal_val": 426119594,
-        "subtotal_qty": 2407,
-        "subtotal_pct": 35.57
+        "subtotal_val": 426409322,
+        "subtotal_qty": 2409,
+        "subtotal_pct": 35.59
       },
       {
         "code": "I",
@@ -12976,13 +12988,13 @@
         ],
         "subtotal_val": 135309258,
         "subtotal_qty": 1906,
-        "subtotal_pct": 11.3
+        "subtotal_pct": 11.29
       }
     ]
   },
   "oaov": {
     "total": 61542427,
-    "inv_total": 1197829097,
+    "inv_total": 1198107483,
     "pct": 5.14,
     "oa_val": 39235418,
     "ov_val": 22307009,
@@ -14671,10 +14683,10 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 25974258,
-    "cost": 25835217,
-    "lines": 239,
-    "invoices_count": 133,
+    "total": 26043258,
+    "cost": 25904217,
+    "lines": 240,
+    "invoices_count": 134,
     "by_type": [
       {
         "code": "3",
@@ -14691,11 +14703,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 147,
-        "val": 16286776
+        "lines": 148,
+        "val": 16355776
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2609002148",
+        "num": "RO2609001159",
+        "sa": "이정환",
+        "dt": "2026-09-21 14:12",
+        "amt": 69000,
+        "cost": 69000
+      },
       {
         "inv": "AR2609003766",
         "num": "SP2609000080",
@@ -14727,14 +14747,6 @@
         "dt": "2026-09-21 12:18",
         "amt": 900180,
         "cost": 900180
-      },
-      {
-        "inv": "IV2609002124",
-        "num": "RO2609001232",
-        "sa": "최민수",
-        "dt": "2026-09-21 12:11",
-        "amt": 0,
-        "cost": 7080
       }
     ]
   },
@@ -18631,10 +18643,122 @@
         "val": 52292,
         "sa": "M GARAGE",
         "dday": "D+0일"
+      },
+      {
+        "item": "51117421820",
+        "name": "Support, fog",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001258",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-21",
+        "req_dt_full": "2026-09-21 14:03:04",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 113839,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51747421700",
+        "name": "Air duct, br",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001258",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-21",
+        "req_dt_full": "2026-09-21 14:03:05",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 29260,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51779464325",
+        "name": "Chrome strip",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001309",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-21",
+        "req_dt_full": "2026-09-21 14:05:12",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 95418,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51359447509",
+        "name": "Shaft cover",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001309",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-21",
+        "req_dt_full": "2026-09-21 14:05:12",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 148282,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51769447437",
+        "name": "Seal, B-pill",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001309",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-21",
+        "req_dt_full": "2026-09-21 14:05:12",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 22842,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "34116886478",
+        "name": "Brake disc,",
+        "alois": "OE",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001285",
+        "req_qty": 2,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-21",
+        "req_dt_full": "2026-09-21 14:09:26",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 277362,
+        "sa": "이정환",
+        "dday": "D+0일"
+      },
+      {
+        "item": "34216868940",
+        "name": "Brake disc,",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001285",
+        "req_qty": 2,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-21",
+        "req_dt_full": "2026-09-21 14:09:26",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 248640,
+        "sa": "이정환",
+        "dday": "D+0일"
       }
     ],
-    "count": 102,
-    "total_val": 26830363,
+    "count": 109,
+    "total_val": 27766006,
     "groups": [
       {
         "code": "RO",
@@ -19102,11 +19226,123 @@
             "val": 36693,
             "sa": "박영묵",
             "dday": "D+0일"
+          },
+          {
+            "item": "51117421820",
+            "name": "Support, fog",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001258",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-21",
+            "req_dt_full": "2026-09-21 14:03:04",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 113839,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51747421700",
+            "name": "Air duct, br",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001258",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-21",
+            "req_dt_full": "2026-09-21 14:03:05",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 29260,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51779464325",
+            "name": "Chrome strip",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001309",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-21",
+            "req_dt_full": "2026-09-21 14:05:12",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 95418,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51359447509",
+            "name": "Shaft cover",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001309",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-21",
+            "req_dt_full": "2026-09-21 14:05:12",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 148282,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51769447437",
+            "name": "Seal, B-pill",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001309",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-21",
+            "req_dt_full": "2026-09-21 14:05:12",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 22842,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "34116886478",
+            "name": "Brake disc,",
+            "alois": "OE",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001285",
+            "req_qty": 2,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-21",
+            "req_dt_full": "2026-09-21 14:09:26",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 277362,
+            "sa": "이정환",
+            "dday": "D+0일"
+          },
+          {
+            "item": "34216868940",
+            "name": "Brake disc,",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001285",
+            "req_qty": 2,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-21",
+            "req_dt_full": "2026-09-21 14:09:26",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 248640,
+            "sa": "이정환",
+            "dday": "D+0일"
           }
         ],
-        "count": 29,
-        "qty_sum": 38,
-        "val": 6535901
+        "count": 36,
+        "qty_sum": 47,
+        "val": 7471544
       },
       {
         "code": "SB",
@@ -21369,14 +21605,6 @@
         "val": 149577
       },
       {
-        "item": "51359447509",
-        "name": "Shaft cover",
-        "alois": "O8",
-        "qty": 1,
-        "avail_qty": 1,
-        "val": 148282
-      },
-      {
         "item": "90200005551",
         "name": "MINI Wallet",
         "alois": "OE",
@@ -21695,14 +21923,6 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 95526
-      },
-      {
-        "item": "51779464325",
-        "name": "Chrome strip",
-        "alois": "O8",
-        "qty": 1,
-        "avail_qty": 1,
-        "val": 95418
       },
       {
         "item": "80272454659",
@@ -23385,14 +23605,6 @@
         "val": 22905
       },
       {
-        "item": "51769447437",
-        "name": "Seal, B-pill",
-        "alois": "O8",
-        "qty": 1,
-        "avail_qty": 1,
-        "val": 22842
-      },
-      {
         "item": "11287618848",
         "name": "RIBBED V-BEL",
         "alois": "O8",
@@ -24358,14 +24570,6 @@
             "val": 152904
           },
           {
-            "item": "51359447509",
-            "name": "Shaft cover",
-            "alois": "O8",
-            "qty": 1,
-            "avail_qty": 1,
-            "val": 148282
-          },
-          {
             "item": "36135A37E40",
             "name": "Hub cap 50 Y",
             "alois": "O8",
@@ -24516,14 +24720,6 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 95632
-          },
-          {
-            "item": "51779464325",
-            "name": "Chrome strip",
-            "alois": "O8",
-            "qty": 1,
-            "avail_qty": 1,
-            "val": 95418
           },
           {
             "item": "51359451529",
@@ -25654,14 +25850,6 @@
             "val": 23214
           },
           {
-            "item": "51769447437",
-            "name": "Seal, B-pill",
-            "alois": "O8",
-            "qty": 1,
-            "avail_qty": 1,
-            "val": 22842
-          },
-          {
             "item": "11287618848",
             "name": "RIBBED V-BEL",
             "alois": "O8",
@@ -26262,10 +26450,10 @@
             "val": 432
           }
         ],
-        "count": 266,
-        "qty_sum": 982,
-        "avail_sum": 963,
-        "val": 31451533
+        "count": 263,
+        "qty_sum": 979,
+        "avail_sum": 960,
+        "val": 31184991
       },
       {
         "code": "OA",
@@ -28008,8 +28196,8 @@
         "val": 7266141
       }
     ],
-    "count": 479,
-    "total_val": 357971443
+    "count": 476,
+    "total_val": 357704901
   },
   "oflow": {
     "rows": [
@@ -28136,19 +28324,19 @@
       {
         "date": "09-21",
         "in_val": 0,
-        "out_val": 4674943,
-        "net": -4674943
+        "out_val": 4696195,
+        "net": -4696195
       }
     ],
     "total_in": 181795022,
-    "total_out": 173890631,
-    "net": 7904391,
+    "total_out": 173911883,
+    "net": 7883139,
     "by_code": [
       {
         "code": "O8",
         "in_val": 155386645,
-        "out_val": 140470948,
-        "net": 14915697
+        "out_val": 140492200,
+        "net": 14894445
       },
       {
         "code": "OA",
@@ -29815,8 +30003,8 @@
       },
       {
         "ro": "RO2609001003",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "공정마감",
+        "stat_cd": "04",
         "svc": "경수리",
         "sa": "이정환",
         "pub": "2026-09-16",
@@ -30483,17 +30671,6 @@
         "pub_full": "2026-09-18 09:36",
         "dday": "D+3일",
         "amt": 75256
-      },
-      {
-        "ro": "RO2609001159",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "이정환",
-        "pub": "2026-09-18",
-        "pub_full": "2026-09-18 09:38",
-        "dday": "D+3일",
-        "amt": 2354845
       },
       {
         "ro": "RO2609001158",
@@ -31285,7 +31462,7 @@
         "pub": "2026-09-19",
         "pub_full": "2026-09-19 14:31",
         "dday": "D+2일",
-        "amt": 3037000
+        "amt": 2086924
       },
       {
         "ro": "RO2609001257",
@@ -31300,14 +31477,14 @@
       },
       {
         "ro": "RO2609001258",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 08:39",
         "dday": "D+0일",
-        "amt": 3629800
+        "amt": 3930900
       },
       {
         "ro": "RO2609001260",
@@ -31582,7 +31759,7 @@
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 09:48",
         "dday": "D+0일",
-        "amt": 672607
+        "amt": 1573607
       },
       {
         "ro": "RO2609001286",
@@ -31802,7 +31979,7 @@
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 12:07",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 9538900
       },
       {
         "ro": "RO2609001310",
@@ -31850,8 +32027,8 @@
       },
       {
         "ro": "RO2609001314",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-09-21",
@@ -31861,8 +32038,8 @@
       },
       {
         "ro": "RO2609001315",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-21",
@@ -31993,33 +32170,55 @@
       },
       {
         "ro": "RO2609001328",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "경수리",
         "sa": "최민수",
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 14:01",
         "dday": "D+0일",
+        "amt": 44000
+      },
+      {
+        "ro": "RO2609001329",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "진단",
+        "sa": "최민수",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 14:12",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2609001330",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "김민규",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 14:13",
+        "dday": "D+0일",
         "amt": 0
       }
     ],
-    "count": 348,
-    "total_amt": 780746131,
+    "count": 349,
+    "total_amt": 788226210,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 15,
-        "amt": 7759100
+        "count": 16,
+        "amt": 17298000
       },
       {
         "stat": "상담완료",
-        "count": 156,
-        "amt": 494689320
+        "count": 153,
+        "amt": 494127031
       },
       {
         "stat": "정비시작",
-        "count": 31,
-        "amt": 64405357
+        "count": 33,
+        "amt": 61122525
       },
       {
         "stat": "End Control 요청",
@@ -32028,8 +32227,8 @@
       },
       {
         "stat": "공정마감",
-        "count": 1,
-        "amt": 502900
+        "count": 2,
+        "amt": 2289200
       },
       {
         "stat": "가정산 완료",
@@ -33908,252 +34107,10 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10320
+    "resv_total": 10321
   },
   "nonmng": {
     "rows": [
-      {
-        "item": "18308572487",
-        "name": "RP-exhaust p",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 2808894,
-        "val": 2808894,
-        "last_in": "2026-09-18",
-        "last_sale": "2021-10-08"
-      },
-      {
-        "item": "41517386744",
-        "name": "Door rear ri",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 2019618,
-        "val": 2019618,
-        "last_in": "2026-09-15",
-        "last_sale": "2026-09-12"
-      },
-      {
-        "item": "31608683331",
-        "name": "Exchange out",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 1432990,
-        "val": 1432990,
-        "last_in": "2026-09-18",
-        "last_sale": "2019-05-03"
-      },
-      {
-        "item": "18308593765",
-        "name": "Rear muffler",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 808473,
-        "val": 808473,
-        "last_in": "2026-09-17",
-        "last_sale": "2021-06-18"
-      },
-      {
-        "item": "51128078840",
-        "name": "Bumper trim",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 798537,
-        "val": 798537,
-        "last_in": "2026-09-17",
-        "last_sale": "2023-02-09"
-      },
-      {
-        "item": "41007378123",
-        "name": "Trunk lid, b",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 731533,
-        "val": 731533,
-        "last_in": "2026-09-18",
-        "last_sale": "2021-11-23"
-      },
-      {
-        "item": "51162446821",
-        "name": "Outside mirr",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 540771,
-        "val": 540771,
-        "last_in": "2026-09-16",
-        "last_sale": "2023-04-10"
-      },
-      {
-        "item": "51127294396",
-        "name": "Carrier, bum",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 529396,
-        "val": 529396,
-        "last_in": "2026-09-18",
-        "last_sale": "2020-11-03"
-      },
-      {
-        "item": "41008494439",
-        "name": "Side panel,",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 423108,
-        "val": 423108,
-        "last_in": "2026-08-19",
-        "last_sale": "2024-11-12"
-      },
-      {
-        "item": "31126777739",
-        "name": "Wishbone",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 352308,
-        "val": 352308,
-        "last_in": "2026-09-18",
-        "last_sale": "2020-07-07"
-      },
-      {
-        "item": "31126777740",
-        "name": "Wishbone",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 352308,
-        "val": 352308,
-        "last_in": "2026-09-18",
-        "last_sale": "2019-04-29"
-      },
-      {
-        "item": "51745A29C48",
-        "name": "Air flaps, l",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 316313,
-        "val": 316313,
-        "last_in": "2026-09-19",
-        "last_sale": "2023-01-26"
-      },
-      {
-        "item": "51128075300",
-        "name": "Trim panel,",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 256736,
-        "val": 256736,
-        "last_in": "2026-09-16",
-        "last_sale": "2023-02-07"
-      },
-      {
-        "item": "32106787472",
-        "name": "Tie rod",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 212802,
-        "val": 212802,
-        "last_in": "2026-09-17",
-        "last_sale": "2021-09-01"
-      },
-      {
-        "item": "34216885187",
-        "name": "Repair kit,",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 188268,
-        "val": 188268,
-        "last_in": "2026-09-18",
-        "last_sale": "2026-08-05"
-      },
-      {
-        "item": "51128098690",
-        "name": "Guide, rear",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 173721,
-        "val": 173721,
-        "last_in": "2026-09-19",
-        "last_sale": "2023-02-10"
-      },
-      {
-        "item": "32106870519",
-        "name": "Repair kit b",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 115725,
-        "val": 115725,
-        "last_in": "2026-09-17",
-        "last_sale": "2020-08-12"
-      },
-      {
-        "item": "51117421805",
-        "name": "Grill, air i",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 85200,
-        "val": 85200,
-        "last_in": "2026-09-19",
-        "last_sale": "2021-07-14"
-      },
-      {
-        "item": "51758049042",
-        "name": "Cover",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 77439,
-        "val": 77439,
-        "last_in": "2026-09-18",
-        "last_sale": "2026-01-13"
-      },
-      {
-        "item": "32106889834",
-        "name": "Gasket, bulk",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 16617,
-        "val": 16617,
-        "last_in": "2026-09-16",
-        "last_sale": "2025-05-30"
-      },
-      {
-        "item": "07146888411",
-        "name": "ASA-Bolt",
-        "alois": "II",
-        "qty": 3,
-        "avail_qty": 0,
-        "prc": 5325,
-        "val": 15975,
-        "last_in": "2026-09-16",
-        "last_sale": "2023-01-27"
-      },
-      {
-        "item": "07146961019",
-        "name": "Torx screw w",
-        "alois": "II",
-        "qty": 3,
-        "avail_qty": 0,
-        "prc": 1168,
-        "val": 3504,
-        "last_in": "2026-09-11",
-        "last_sale": "2023-02-02"
-      },
       {
         "item": "Z2000KM",
         "name": "2,000km 길들이기(엔진오일 교환 포함)",
@@ -34232,10 +34189,10 @@
         "last_sale": "-"
       }
     ],
-    "count": 29,
-    "total_val": 12260236,
-    "qty_sum": 33,
-    "pct": 1.02
+    "count": 7,
+    "total_val": 0,
+    "qty_sum": 7,
+    "pct": 0.0
   },
   "reasons": {}
 }

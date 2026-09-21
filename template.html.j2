@@ -80,7 +80,11 @@
   .sb-print svg{ flex:none; opacity:.85; }
 
   .sb-section{ display:flex; flex-direction:column; gap:2px; }
-  .sb-label{ font-family:var(--font-display); font-weight:600; font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); padding:0 12px; margin-bottom:6px; }
+  .sb-label{ all:unset; box-sizing:border-box; display:flex; align-items:center; justify-content:space-between; cursor:pointer; font-family:var(--font-display); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); padding:6px 12px; margin-bottom:2px; border-radius:8px; transition:background .12s ease, color .12s ease; }
+  .sb-label:hover{ background:var(--surface-2); color:var(--ink); }
+  .sb-label .chev{ flex:none; transition:transform .18s ease; }
+  .sb-section.collapsed .sb-label .chev{ transform:rotate(-90deg); }
+  .sb-section.collapsed .sb-item{ display:none; }
   .sb-item{ all:unset; box-sizing:border-box; display:flex; align-items:center; gap:10px; padding:8.5px 12px; border-radius:10px; font-size:14.5px; font-weight:500; color:var(--ink-2); cursor:pointer; transition:background .12s ease, color .12s ease; }
   .sb-item svg{ flex:none; opacity:.8; }
   .sb-item:hover{ background:var(--surface-2); color:var(--ink); }
@@ -345,7 +349,7 @@
     </div>
 
     <div class="sb-section">
-      <span class="sb-label">Workspace</span>
+      <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">Workspace<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
       <button class="sb-item" id="nav-today" aria-current="page" onclick="selectPage('today')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="10" y="2" width="6" height="6" rx="1"/><rect x="2" y="10" width="6" height="6" rx="1"/><rect x="10" y="10" width="6" height="6" rx="1"/></svg>
         오늘 현황
@@ -361,7 +365,7 @@
     </div>
 
     <div class="sb-section">
-      <span class="sb-label">KPI 관리</span>
+      <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">KPI 관리<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
       <button class="sb-item" id="nav-accessory" aria-current="false" onclick="selectPage('accessory')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><circle cx="9" cy="9" r="2.4"/><path d="M9 2v2M9 14v2M2 9h2M14 9h2"/></svg>
         악세사리&amp;타이어
@@ -369,7 +373,7 @@
     </div>
 
     <div class="sb-section">
-      <span class="sb-label">재고 관리</span>
+      <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">재고 관리<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
       <button class="sb-item" id="nav-longstock" aria-current="false" onclick="selectPage('longstock')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><path d="M9 5v4l3 2"/></svg>
         장기 재고 현황
@@ -381,7 +385,7 @@
     </div>
 
     <div class="sb-section">
-      <span class="sb-label">진행 작업 관리</span>
+      <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">진행 작업 관리<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
       <button class="sb-item" id="nav-openro" aria-current="false" onclick="selectPage('openro')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="2" width="12" height="14" rx="1.5"/><path d="M6 6h6M6 9h6M6 12h3"/></svg>
         진행RO
@@ -401,7 +405,7 @@
     </div>
 
     <div class="sb-section">
-      <span class="sb-label">O파트 관리</span>
+      <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">O파트 관리<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
       <button class="sb-item" id="nav-opart" aria-current="false" onclick="selectPage('opart')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9h12M9 3v12"/><circle cx="9" cy="9" r="7"/></svg>
         O파트 PR현황
@@ -1181,9 +1185,28 @@
     try{ sessionStorage.setItem('dsparts-page', key); }catch(e){}
     var nb = document.getElementById('nav-'+key), mt = document.getElementById('m-title');
     if(nb && mt){ mt.textContent = nb.textContent.replace(/\s+/g,' ').trim(); }
+    if(nb){ var sc = nb.closest('.sb-section'); if(sc && sc.classList.contains('collapsed')) toggleSection(sc, true); }
     document.body.classList.remove('menu-open');
     window.scrollTo(0,0);
   }
+  function toggleSection(sec, force){
+    var c = (force===undefined) ? !sec.classList.contains('collapsed') : !force;
+    sec.classList.toggle('collapsed', c);
+    var b = sec.querySelector('.sb-label'); if(b) b.setAttribute('aria-expanded', c?'false':'true');
+    try{
+      var st = JSON.parse(localStorage.getItem('dsparts-collapsed')||'{}');
+      st[b.textContent.trim()] = c; localStorage.setItem('dsparts-collapsed', JSON.stringify(st));
+    }catch(e){}
+  }
+  (function(){
+    try{
+      var st = JSON.parse(localStorage.getItem('dsparts-collapsed')||'{}');
+      document.querySelectorAll('.sb-section').forEach(function(sec){
+        var b = sec.querySelector('.sb-label');
+        if(b && st[b.textContent.trim()]) toggleSection(sec, false);
+      });
+    }catch(e){}
+  })();
   function toggleMenu(force){ document.body.classList.toggle('menu-open', force); }
   // 현재 화면의 표들을 엑셀(.xlsx)로 저장 (접힌 그룹 안 행 + 진행RO 사유 포함)
   function exportExcel(){
