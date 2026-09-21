@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 21일 (월) · 12:35 기준",
+    "generated_at": "9월 21일 (월) · 12:47 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -18786,22 +18786,6 @@
         "dday": "D+0일"
       },
       {
-        "item": "61627442093",
-        "name": "Wiper blade F40 G05 Rear",
-        "alois": "OE",
-        "ref_tp": "SB",
-        "ref_no": "SB2609000949",
-        "req_qty": 1,
-        "crt_qty": 12,
-        "avail_qty": 11,
-        "req_dt": "09-21",
-        "req_dt_full": "2026-09-21 08:50:35",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 23596,
-        "sa": "최민수",
-        "dday": "D+0일"
-      },
-      {
         "item": "64319313519",
         "name": "Filter",
         "alois": "O8",
@@ -19023,6 +19007,22 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 144918,
         "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "61627442093",
+        "name": "Wiper blade F40 G05 Rear",
+        "alois": "OE",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001311",
+        "req_qty": 1,
+        "crt_qty": 12,
+        "avail_qty": 11,
+        "req_dt": "09-21",
+        "req_dt_full": "2026-09-21 12:42:13",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 23596,
+        "sa": "최민수",
         "dday": "D+0일"
       }
     ],
@@ -19703,11 +19703,27 @@
             "val": 144918,
             "sa": "염진아",
             "dday": "D+0일"
+          },
+          {
+            "item": "61627442093",
+            "name": "Wiper blade F40 G05 Rear",
+            "alois": "OE",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001311",
+            "req_qty": 1,
+            "crt_qty": 12,
+            "avail_qty": 11,
+            "req_dt": "09-21",
+            "req_dt_full": "2026-09-21 12:42:13",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 23596,
+            "sa": "최민수",
+            "dday": "D+0일"
           }
         ],
-        "count": 42,
-        "qty_sum": 55,
-        "val": 10151828
+        "count": 43,
+        "qty_sum": 56,
+        "val": 10175424
       },
       {
         "code": "SB",
@@ -20321,22 +20337,6 @@
             "dday": "D+3일"
           },
           {
-            "item": "61627442093",
-            "name": "Wiper blade F40 G05 Rear",
-            "alois": "OE",
-            "ref_tp": "SB",
-            "ref_no": "SB2609000949",
-            "req_qty": 1,
-            "crt_qty": 12,
-            "avail_qty": 11,
-            "req_dt": "09-21",
-            "req_dt_full": "2026-09-21 08:50:35",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 23596,
-            "sa": "최민수",
-            "dday": "D+0일"
-          },
-          {
             "item": "51777374895",
             "name": "[15] FRONT ENTRAN",
             "alois": "OV",
@@ -20417,9 +20417,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 44,
-        "qty_sum": 70,
-        "val": 15951102
+        "count": 43,
+        "qty_sum": 69,
+        "val": 15927506
       },
       {
         "code": "SP",
@@ -31093,17 +31093,6 @@
         "amt": 454460
       },
       {
-        "ro": "RO2609001142",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "Maintenance",
-        "sa": "최민수",
-        "pub": "2026-09-18",
-        "pub_full": "2026-09-18 08:36",
-        "dday": "D+3일",
-        "amt": 296400
-      },
-      {
         "ro": "RO2609001144",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -32575,21 +32564,54 @@
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 12:26",
         "dday": "D+0일",
+        "amt": 3231700
+      },
+      {
+        "ro": "RO2609001311",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "입고 Proactive-RITA",
+        "sa": "최민수",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 12:42",
+        "dday": "D+0일",
+        "amt": 693093
+      },
+      {
+        "ro": "RO2609001312",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "안준영",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 12:45",
+        "dday": "D+0일",
+        "amt": 285983
+      },
+      {
+        "ro": "RO2609001313",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 12:46",
+        "dday": "D+0일",
         "amt": 0
       }
     ],
-    "count": 334,
-    "total_amt": 762862308,
+    "count": 336,
+    "total_amt": 766776684,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 14,
-        "amt": 6180600
+        "count": 15,
+        "amt": 9412300
       },
       {
         "stat": "상담완료",
-        "count": 154,
-        "amt": 495133889
+        "count": 156,
+        "amt": 496112965
       },
       {
         "stat": "정비시작",
@@ -32598,8 +32620,8 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 57,
-        "amt": 68697894
+        "count": 56,
+        "amt": 68401494
       },
       {
         "stat": "공정마감",
@@ -34483,7 +34505,7 @@
     "total_val": 24873114,
     "o_lines": 29,
     "o_val": 11029014,
-    "resv_total": 307
+    "resv_total": 306
   },
   "sbcar": {
     "groups": [
@@ -34585,71 +34607,14 @@
         "count": 3,
         "qty_sum": 4,
         "val": 226220
-      },
-      {
-        "code": "SB2609000949",
-        "resv_full": "2026-09-21 12:18",
-        "resv": "09-21",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "64115B78AA5",
-            "name": "Set nanopart",
-            "alois": "SX",
-            "req_qty": 1,
-            "crt_qty": 36,
-            "avail_qty": 35,
-            "val": 156975
-          },
-          {
-            "item": "83215A65B99",
-            "name": "LL-22FE++ 0W12",
-            "alois": "L1",
-            "req_qty": 6,
-            "crt_qty": 392,
-            "avail_qty": 380,
-            "val": 97456
-          },
-          {
-            "item": "61619466377",
-            "name": "Set of wiper X5,6,7",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 35,
-            "avail_qty": 34,
-            "val": 68185
-          },
-          {
-            "item": "61627442093",
-            "name": "Wiper blade F40 G05 Rear",
-            "alois": "OE",
-            "req_qty": 1,
-            "crt_qty": 12,
-            "avail_qty": 11,
-            "val": 23596
-          },
-          {
-            "item": "11425B4C845",
-            "name": "Set oil-filt",
-            "alois": "L1",
-            "req_qty": 1,
-            "crt_qty": 111,
-            "avail_qty": 109,
-            "val": 20064
-          }
-        ],
-        "count": 5,
-        "qty_sum": 10,
-        "val": 366276
       }
     ],
-    "sb_count": 4,
-    "line_count": 12,
-    "total_val": 1354573,
-    "o_lines": 1,
-    "o_val": 23596,
-    "resv_total": 10304
+    "sb_count": 3,
+    "line_count": 7,
+    "total_val": 988297,
+    "o_lines": 0,
+    "o_val": 0,
+    "resv_total": 10307
   },
   "reasons": {}
 }
