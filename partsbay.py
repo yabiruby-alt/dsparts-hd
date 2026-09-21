@@ -625,6 +625,8 @@ def build_nonmng(pw_rows, inv_total):
         "last_in": (r.get("lastPurcDt") or "")[:10] or "-",
         "last_sale": (r.get("lastSaleDt") or "")[:10] or "-",
     } for r in pw_rows if r.get("nonMngItemAtcYn") == "Y"], key=lambda i: -i["val"])
+    # 원가 0원이면서 최종입고일 조회가 안 되는 부품은 제외
+    rows = [i for i in rows if not (i["val"] == 0 and i["last_in"] == "-")]
 
     total_val = sum(i["val"] for i in rows)
     return {
