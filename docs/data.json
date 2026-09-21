@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 21일 (월) · 19:36 기준",
+    "generated_at": "9월 21일 (월) · 19:48 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -33034,8 +33034,8 @@
       },
       {
         "ro": "RO2609001325",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-09-21",
@@ -33224,13 +33224,13 @@
       },
       {
         "stat": "정비시작",
-        "count": 34,
-        "amt": 60467975
+        "count": 33,
+        "amt": 60430347
       },
       {
         "stat": "End Control 요청",
-        "count": 57,
-        "amt": 76200672
+        "count": 58,
+        "amt": 76238300
       },
       {
         "stat": "공정마감",
@@ -35396,7 +35396,7 @@
     "total_val": 27742221,
     "o_lines": 26,
     "o_val": 7531366,
-    "resv_total": 311
+    "resv_total": 312
   },
   "sbcar": {
     "groups": [],
