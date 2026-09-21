@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 21일 (월) · 15:26 기준",
+    "generated_at": "9월 21일 (월) · 15:41 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,8 +16,8 @@
     "top5": []
   },
   "inv": {
-    "total": 1196926300,
-    "item_count": 2118,
+    "total": 1197129439,
+    "item_count": 2119,
     "code_count": 25,
     "alois_groups": [
       {
@@ -28,7 +28,7 @@
           {
             "code": "A1",
             "val": 217564776,
-            "pct": 18.18,
+            "pct": 18.17,
             "qty": 2448,
             "parts": [
               {
@@ -1253,9 +1253,9 @@
           },
           {
             "code": "A5",
-            "val": 71431240,
+            "val": 71512234,
             "pct": 5.97,
-            "qty": 1323,
+            "qty": 1324,
             "parts": [
               {
                 "item": "66325A84CF7",
@@ -1564,6 +1564,12 @@
                 "val": 256200
               },
               {
+                "item": "51952449251",
+                "name": "Coat hanger",
+                "qty": 3,
+                "val": 242982
+              },
+              {
                 "item": "66205A1A268",
                 "name": "Ultrasonic s",
                 "qty": 1,
@@ -1688,12 +1694,6 @@
                 "name": "Adapter bump",
                 "qty": 1,
                 "val": 167025
-              },
-              {
-                "item": "51952449251",
-                "name": "Coat hanger",
-                "qty": 2,
-                "val": 161988
               },
               {
                 "item": "12120039664",
@@ -2456,7 +2456,7 @@
           {
             "code": "A6",
             "val": 95940144,
-            "pct": 8.02,
+            "pct": 8.01,
             "qty": 1516,
             "parts": [
               {
@@ -4550,8 +4550,8 @@
             ]
           }
         ],
-        "subtotal_val": 476898660,
-        "subtotal_qty": 8788,
+        "subtotal_val": 476979654,
+        "subtotal_qty": 8789,
         "subtotal_pct": 39.84
       },
       {
@@ -4629,9 +4629,9 @@
           },
           {
             "code": "L2",
-            "val": 8429324,
-            "pct": 0.7,
-            "qty": 216,
+            "val": 8498559,
+            "pct": 0.71,
+            "qty": 217,
             "parts": [
               {
                 "item": "90200006494",
@@ -4660,8 +4660,8 @@
               {
                 "item": "83192289285",
                 "name": "Repair flat",
-                "qty": 4,
-                "val": 277100
+                "qty": 5,
+                "val": 346335
               },
               {
                 "item": "90200006490",
@@ -7478,9 +7478,9 @@
             ]
           }
         ],
-        "subtotal_val": 146544228,
-        "subtotal_qty": 4777,
-        "subtotal_pct": 12.24
+        "subtotal_val": 146613463,
+        "subtotal_qty": 4778,
+        "subtotal_pct": 12.25
       },
       {
         "code": "O",
@@ -11622,7 +11622,7 @@
         ],
         "subtotal_val": 425995687,
         "subtotal_qty": 2408,
-        "subtotal_pct": 35.59
+        "subtotal_pct": 35.58
       },
       {
         "code": "I",
@@ -12397,9 +12397,9 @@
           },
           {
             "code": "SZ",
-            "val": 89961908,
+            "val": 90014818,
             "pct": 7.52,
-            "qty": 732,
+            "qty": 734,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -12900,6 +12900,12 @@
                 "val": 55350
               },
               {
+                "item": "34356770996",
+                "name": "Brake pad we",
+                "qty": 2,
+                "val": 52910
+              },
+              {
                 "item": "51215B5C255",
                 "name": "Trim outside",
                 "qty": 1,
@@ -12974,16 +12980,16 @@
             ]
           }
         ],
-        "subtotal_val": 135133385,
-        "subtotal_qty": 1902,
+        "subtotal_val": 135186295,
+        "subtotal_qty": 1904,
         "subtotal_pct": 11.29
       }
     ]
   },
   "oaov": {
     "total": 61232312,
-    "inv_total": 1196926300,
-    "pct": 5.12,
+    "inv_total": 1197129439,
+    "pct": 5.11,
     "oa_val": 38925303,
     "ov_val": 22307009,
     "oa_lines": 107,
@@ -30197,7 +30203,7 @@
         "pub": "2026-09-15",
         "pub_full": "2026-09-15 10:01",
         "dday": "D+6일",
-        "amt": 1144400
+        "amt": 1508300
       },
       {
         "ro": "RO2609000962",
@@ -32335,8 +32341,8 @@
       },
       {
         "ro": "RO2609001324",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-21",
@@ -32346,8 +32352,8 @@
       },
       {
         "ro": "RO2609001325",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-09-21",
@@ -32453,30 +32459,41 @@
         "pub_full": "2026-09-21 15:12",
         "dday": "D+0일",
         "amt": 103477
+      },
+      {
+        "ro": "RO2609001338",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 15:44",
+        "dday": "D+0일",
+        "amt": 554498
       }
     ],
-    "count": 349,
-    "total_amt": 785655143,
+    "count": 350,
+    "total_amt": 786573541,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 13,
-        "amt": 7759100
+        "amt": 8123000
       },
       {
         "stat": "상담완료",
         "count": 148,
-        "amt": 493885399
+        "amt": 494402269
       },
       {
         "stat": "정비시작",
-        "count": 38,
-        "amt": 63432185
+        "count": 39,
+        "amt": 63469813
       },
       {
         "stat": "End Control 요청",
-        "count": 55,
-        "amt": 63470658
+        "count": 54,
+        "amt": 63390314
       },
       {
         "stat": "공정마감",
@@ -32485,8 +32502,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 94,
-        "amt": 156604901
+        "count": 95,
+        "amt": 156685245
       }
     ],
     "oldest": "D+517일"
@@ -33455,7 +33472,7 @@
             "alois": "A3",
             "req_qty": 1,
             "crt_qty": 14,
-            "avail_qty": 10,
+            "avail_qty": 9,
             "val": 43055
           },
           {
@@ -33473,7 +33490,7 @@
             "alois": "A3",
             "req_qty": 6,
             "crt_qty": 93,
-            "avail_qty": 67,
+            "avail_qty": 61,
             "val": 14886
           }
         ],
@@ -33916,9 +33933,9 @@
             "name": "Repair flat",
             "alois": "L2",
             "req_qty": 1,
-            "crt_qty": 4,
+            "crt_qty": 5,
             "avail_qty": 0,
-            "val": 69275
+            "val": 69267
           },
           {
             "item": "61359856157",
@@ -33926,7 +33943,7 @@
             "alois": "A3",
             "req_qty": 1,
             "crt_qty": 14,
-            "avail_qty": 10,
+            "avail_qty": 9,
             "val": 43055
           },
           {
@@ -33935,13 +33952,13 @@
             "alois": "A3",
             "req_qty": 2,
             "crt_qty": 93,
-            "avail_qty": 67,
+            "avail_qty": 61,
             "val": 4962
           }
         ],
         "count": 3,
         "qty_sum": 4,
-        "val": 117292
+        "val": 117284
       },
       {
         "code": "SB2609000275",
@@ -34196,6 +34213,63 @@
         "val": 20616
       },
       {
+        "code": "SB2609001558",
+        "resv_full": "2026-09-28 09:00",
+        "resv": "09-28",
+        "dday": "D-7일",
+        "sa": "박영묵",
+        "rows": [
+          {
+            "item": "51319466316",
+            "name": "Windshield,",
+            "alois": "A6",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 739765
+          },
+          {
+            "item": "51485A0D970",
+            "name": "Sound insula",
+            "alois": "A5",
+            "req_qty": 2,
+            "crt_qty": 4,
+            "avail_qty": 2,
+            "val": 135996
+          },
+          {
+            "item": "61359856157",
+            "name": "Silicone rep",
+            "alois": "A3",
+            "req_qty": 1,
+            "crt_qty": 14,
+            "avail_qty": 9,
+            "val": 43055
+          },
+          {
+            "item": "51317388713",
+            "name": "Cover, winds",
+            "alois": "A5",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 37157
+          },
+          {
+            "item": "51317288462",
+            "name": "Bump stop",
+            "alois": "A3",
+            "req_qty": 6,
+            "crt_qty": 93,
+            "avail_qty": 61,
+            "val": 14886
+          }
+        ],
+        "count": 5,
+        "qty_sum": 11,
+        "val": 970859
+      },
+      {
         "code": "SB2609001385",
         "resv_full": "2026-09-23 09:40",
         "resv": "09-23",
@@ -34415,7 +34489,7 @@
             "alois": "A3",
             "req_qty": 1,
             "crt_qty": 14,
-            "avail_qty": 10,
+            "avail_qty": 9,
             "val": 43055
           },
           {
@@ -34433,7 +34507,7 @@
             "alois": "A3",
             "req_qty": 2,
             "crt_qty": 93,
-            "avail_qty": 67,
+            "avail_qty": 61,
             "val": 4962
           }
         ],
@@ -34442,12 +34516,12 @@
         "val": 80867
       }
     ],
-    "sb_count": 36,
-    "line_count": 123,
-    "total_val": 22732053,
+    "sb_count": 37,
+    "line_count": 128,
+    "total_val": 23702904,
     "o_lines": 26,
     "o_val": 7531366,
-    "resv_total": 305
+    "resv_total": 308
   },
   "sbcar": {
     "groups": [],
@@ -34456,7 +34530,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10326
+    "resv_total": 10327
   },
   "nonmng": {
     "rows": [],
