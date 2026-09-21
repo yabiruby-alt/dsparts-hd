@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 21일 (월) · 12:47 기준",
+    "generated_at": "9월 21일 (월) · 13:00 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -18578,22 +18578,6 @@
         "dday": "D+3일"
       },
       {
-        "item": "90200006264",
-        "name": "275/40R18 99Y Cintu P7 r-f * MOE",
-        "alois": "OE",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001414",
-        "req_qty": 2,
-        "crt_qty": 4,
-        "avail_qty": 2,
-        "req_dt": "09-18",
-        "req_dt_full": "2026-09-18 15:54:21",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 857000,
-        "sa": "김민규",
-        "dday": "D+3일"
-      },
-      {
         "item": "99985B94ED5",
         "name": "BMW ART BOLT(NEW)",
         "alois": "OE",
@@ -19026,8 +19010,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 123,
-    "total_val": 34360071,
+    "count": 122,
+    "total_val": 33503071,
     "groups": [
       {
         "code": "RO",
@@ -20321,22 +20305,6 @@
             "dday": "D+3일"
           },
           {
-            "item": "90200006264",
-            "name": "275/40R18 99Y Cintu P7 r-f * MOE",
-            "alois": "OE",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001414",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 2,
-            "req_dt": "09-18",
-            "req_dt_full": "2026-09-18 15:54:21",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 857000,
-            "sa": "김민규",
-            "dday": "D+3일"
-          },
-          {
             "item": "51777374895",
             "name": "[15] FRONT ENTRAN",
             "alois": "OV",
@@ -20417,9 +20385,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 43,
-        "qty_sum": 69,
-        "val": 15927506
+        "count": 42,
+        "qty_sum": 67,
+        "val": 15070506
       },
       {
         "code": "SP",
@@ -21122,6 +21090,14 @@
         "val": 2364399
       },
       {
+        "item": "90200006264",
+        "name": "275/40R18 99Y Cintu P7 r-f * MOE",
+        "alois": "OE",
+        "qty": 4,
+        "avail_qty": 4,
+        "val": 1714000
+      },
+      {
         "item": "90200005796",
         "name": "275/40R18 99Y Cintu P7 r-f *",
         "alois": "OE",
@@ -21328,14 +21304,6 @@
         "qty": 2,
         "avail_qty": 2,
         "val": 860000
-      },
-      {
-        "item": "90200006264",
-        "name": "275/40R18 99Y Cintu P7 r-f * MOE",
-        "alois": "OE",
-        "qty": 4,
-        "avail_qty": 2,
-        "val": 857000
       },
       {
         "item": "51165A841A2",
@@ -27625,6 +27593,14 @@
             "val": 2364399
           },
           {
+            "item": "90200006264",
+            "name": "275/40R18 99Y Cintu P7 r-f * MOE",
+            "alois": "OE",
+            "qty": 4,
+            "avail_qty": 4,
+            "val": 1714000
+          },
+          {
             "item": "90200005796",
             "name": "275/40R18 99Y Cintu P7 r-f *",
             "alois": "OE",
@@ -27751,14 +27727,6 @@
             "qty": 3,
             "avail_qty": 3,
             "val": 908751
-          },
-          {
-            "item": "90200006264",
-            "name": "275/40R18 99Y Cintu P7 r-f * MOE",
-            "alois": "OE",
-            "qty": 4,
-            "avail_qty": 2,
-            "val": 857000
           },
           {
             "item": "90200007293",
@@ -28259,8 +28227,8 @@
         ],
         "count": 86,
         "qty_sum": 750,
-        "avail_sum": 732,
-        "val": 290183420
+        "avail_sum": 734,
+        "val": 291040420
       },
       {
         "code": "ON",
@@ -28738,7 +28706,7 @@
       }
     ],
     "count": 479,
-    "total_val": 356711088
+    "total_val": 357568088
   },
   "oflow": {
     "rows": [
@@ -32586,7 +32554,7 @@
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 12:45",
         "dday": "D+0일",
-        "amt": 285983
+        "amt": 281390
       },
       {
         "ro": "RO2609001313",
@@ -32597,21 +32565,32 @@
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 12:46",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 1578500
+      },
+      {
+        "ro": "RO2609001314",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "안준영",
+        "pub": "2026-09-21",
+        "pub_full": "2026-09-21 12:55",
+        "dday": "D+0일",
+        "amt": 212800
       }
     ],
-    "count": 336,
-    "total_amt": 766776684,
+    "count": 337,
+    "total_amt": 768563391,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 15,
-        "amt": 9412300
+        "amt": 10990800
       },
       {
         "stat": "상담완료",
-        "count": 156,
-        "amt": 496112965
+        "count": 157,
+        "amt": 496321172
       },
       {
         "stat": "정비시작",
@@ -34477,35 +34456,14 @@
         "count": 2,
         "qty_sum": 2,
         "val": 611796
-      },
-      {
-        "code": "SB2609001414",
-        "resv_full": "2026-09-21 15:00",
-        "resv": "09-21",
-        "dday": "오늘",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "90200006264",
-            "name": "275/40R18 99Y Cintu P7 r-f * MOE",
-            "alois": "OE",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 2,
-            "val": 857000
-          }
-        ],
-        "count": 1,
-        "qty_sum": 2,
-        "val": 857000
       }
     ],
-    "sb_count": 33,
-    "line_count": 114,
-    "total_val": 24873114,
-    "o_lines": 29,
-    "o_val": 11029014,
-    "resv_total": 306
+    "sb_count": 32,
+    "line_count": 113,
+    "total_val": 24016114,
+    "o_lines": 28,
+    "o_val": 10172014,
+    "resv_total": 305
   },
   "sbcar": {
     "groups": [
@@ -34614,7 +34572,7 @@
     "total_val": 988297,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10307
+    "resv_total": 10310
   },
   "reasons": {}
 }
