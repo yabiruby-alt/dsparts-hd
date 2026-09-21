@@ -80,11 +80,14 @@
   .sb-print svg{ flex:none; opacity:.85; }
 
   .sb-section{ display:flex; flex-direction:column; gap:2px; }
-  .sb-label{ all:unset; box-sizing:border-box; display:flex; align-items:center; justify-content:space-between; cursor:pointer; font-family:var(--font-display); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); padding:6px 12px; margin-bottom:2px; border-radius:8px; transition:background .12s ease, color .12s ease; }
-  .sb-label:hover{ background:var(--surface-2); color:var(--ink); }
-  .sb-label .chev{ flex:none; transition:transform .18s ease; }
+  .sb-label{ all:unset; box-sizing:border-box; display:flex; align-items:center; gap:8px; cursor:pointer; font-family:var(--font-display); font-weight:700; font-size:14.5px; letter-spacing:-.005em; color:var(--ink); padding:9px 10px 9px 12px; margin-bottom:3px; border-radius:10px; background:var(--surface-2); box-shadow:inset 0 0 0 1px var(--line); transition:background .12s ease, box-shadow .12s ease; }
+  .sb-label:hover{ background:var(--accent-wash); box-shadow:inset 0 0 0 1px var(--accent-wash); }
+  .sb-label .cnt{ margin-left:auto; font-family:var(--font-mono); font-size:11px; font-weight:600; color:var(--muted); background:var(--surface); border-radius:999px; padding:1px 8px; }
+  .sb-label .chev{ flex:none; color:var(--ink-2); transition:transform .18s ease; }
   .sb-section.collapsed .sb-label .chev{ transform:rotate(-90deg); }
   .sb-section.collapsed .sb-item{ display:none; }
+  .sb-section .sb-item{ margin-left:14px; padding-left:14px; border-radius:0 10px 10px 0; box-shadow:inset 1.5px 0 0 var(--line); font-size:14px; font-weight:500; }
+  .sb-section .sb-item[aria-current="page"]{ box-shadow:inset 2.5px 0 0 var(--accent); }
   .sb-item{ all:unset; box-sizing:border-box; display:flex; align-items:center; gap:10px; padding:8.5px 12px; border-radius:10px; font-size:14.5px; font-weight:500; color:var(--ink-2); cursor:pointer; transition:background .12s ease, color .12s ease; }
   .sb-item svg{ flex:none; opacity:.8; }
   .sb-item:hover{ background:var(--surface-2); color:var(--ink); }
@@ -386,7 +389,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 21일 (월) · 14:12 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 21일 (월) · 14:25 기준</div>
   </nav>
 
   <main class="main">
@@ -395,7 +398,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 21일 (월) · 14:12 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 21일 (월) · 14:25 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -409,8 +412,8 @@
         <button class="kpitile" id="tile-inv" onclick="selectKpi('inv')" aria-pressed="false">
           <span class="rank">02</span>
           <span class="eyebrow">재고금액 · 부품창고</span>
-          <span class="value">₩1,198,107,483</span>
-          <span class="foot">2120품목 · 25개 코드</span>
+          <span class="value">₩1,197,803,904</span>
+          <span class="foot">2118품목 · 25개 코드</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
       </div>
@@ -465,8 +468,8 @@
         <div id="detail-inv" hidden>
           <div class="viewer-head">
             <span class="lbl">재고금액 세부</span>
-            <span class="val">₩1,198,107,483</span>
-            <span class="foot">2120품목 · 부품창고</span>
+            <span class="val">₩1,197,803,904</span>
+            <span class="foot">2118품목 · 부품창고</span>
           </div>
           <p class="subttl">ALOIS별 재고금액 <span class="n">A·L·O·I·S 그룹 · 코드 오름차순 · O계열 붉은색</span></p>
           <div class="tablewrap"><table>
@@ -483,14 +486,14 @@
     
     <tr data-group="inv-1" hidden class="coderow" onclick="toggleCodeRow(this)">
       <td><span class="caret">▸</span><span class="aloistag">A1</span><span class="pcount">14종</span></td>
-      <td class="num">2,455</td>
-      <td class="num">218,002,830</td>
-      <td class="num">18.20%</td>
+      <td class="num">2,452</td>
+      <td class="num">217,790,296</td>
+      <td class="num">18.18%</td>
     </tr>
     
     <tr class="partsrow" data-group="inv-1" hidden><td colspan="4"><div class="partslist"><table class="partsub">
       <thead><tr><th>부품번호</th><th>품명</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
-      <tbody><tr><td class="mono">64115A1BDB6</td><td>Set, microfi</td><td class="num">1597</td><td class="num">180,288,524</td></tr><tr><td class="mono">12122455258</td><td>Spark plug B38x,46x,48x</td><td class="num">274</td><td class="num">5,649,606</td></tr><tr><td class="mono">61619478361</td><td>SET OF WIPER 3/4 series</td><td class="num">78</td><td class="num">5,318,430</td></tr><tr><td class="mono">61615A85266</td><td>Kit wiper bl</td><td class="num">73</td><td class="num">5,309,655</td></tr><tr><td class="mono">64115A547D4</td><td>Mikrofilter/</td><td class="num">38</td><td class="num">4,565,092</td></tr><tr><td class="mono">64316835405</td><td>MICROFILTER/</td><td class="num">56</td><td class="num">3,979,976</td></tr><tr><td class="mono">61612447932</td><td>Set of wiper G30</td><td class="num">58</td><td class="num">3,766,230</td></tr><tr><td class="mono">61617469820</td><td>Set of wiper X3,X4 front</td><td class="num">34</td><td class="num">2,318,290</td></tr><tr><td class="mono">61619466377</td><td>Set of wiper X5,6,7</td><td class="num">33</td><td class="num">2,250,105</td></tr><tr><td class="mono">11428575211</td><td>Set oil-filt</td><td class="num">100</td><td class="num">1,966,500</td></tr><tr><td class="mono">61615A43610</td><td>Set of wiper G70</td><td class="num">19</td><td class="num">1,381,965</td></tr><tr><td class="mono">11428593186</td><td>Set oil-filt</td><td class="num">23</td><td class="num">452,364</td></tr><tr><td class="mono">11428570590</td><td>Set oil-filt</td><td class="num">21</td><td class="num">412,965</td></tr><tr><td class="mono">33117525064</td><td>Screw plug</td><td class="num">51</td><td class="num">343,128</td></tr></tbody>
+      <tbody><tr><td class="mono">64115A1BDB6</td><td>Set, microfi</td><td class="num">1597</td><td class="num">180,288,524</td></tr><tr><td class="mono">12122455258</td><td>Spark plug B38x,46x,48x</td><td class="num">274</td><td class="num">5,649,606</td></tr><tr><td class="mono">61619478361</td><td>SET OF WIPER 3/4 series</td><td class="num">78</td><td class="num">5,318,430</td></tr><tr><td class="mono">61615A85266</td><td>Kit wiper bl</td><td class="num">72</td><td class="num">5,236,920</td></tr><tr><td class="mono">64115A547D4</td><td>Mikrofilter/</td><td class="num">37</td><td class="num">4,444,958</td></tr><tr><td class="mono">64316835405</td><td>MICROFILTER/</td><td class="num">56</td><td class="num">3,979,976</td></tr><tr><td class="mono">61612447932</td><td>Set of wiper G30</td><td class="num">58</td><td class="num">3,766,230</td></tr><tr><td class="mono">61617469820</td><td>Set of wiper X3,X4 front</td><td class="num">34</td><td class="num">2,318,290</td></tr><tr><td class="mono">61619466377</td><td>Set of wiper X5,6,7</td><td class="num">33</td><td class="num">2,250,105</td></tr><tr><td class="mono">11428575211</td><td>Set oil-filt</td><td class="num">99</td><td class="num">1,946,835</td></tr><tr><td class="mono">61615A43610</td><td>Set of wiper G70</td><td class="num">19</td><td class="num">1,381,965</td></tr><tr><td class="mono">11428593186</td><td>Set oil-filt</td><td class="num">23</td><td class="num">452,364</td></tr><tr><td class="mono">11428570590</td><td>Set oil-filt</td><td class="num">21</td><td class="num">412,965</td></tr><tr><td class="mono">33117525064</td><td>Screw plug</td><td class="num">51</td><td class="num">343,128</td></tr></tbody>
     </table></div></td></tr>
     
     
@@ -561,9 +564,9 @@
     
     <tr class="subtotal">
       <td>A 합계</td>
-      <td class="num">8,798</td>
-      <td class="num">477,340,014</td>
-      <td class="num">39.84%</td>
+      <td class="num">8,795</td>
+      <td class="num">477,127,480</td>
+      <td class="num">39.83%</td>
     </tr>
     
     
@@ -571,14 +574,14 @@
     
     <tr data-group="inv-2" hidden class="coderow" onclick="toggleCodeRow(this)">
       <td><span class="caret">▸</span><span class="aloistag">L1</span><span class="pcount">10종</span></td>
-      <td class="num">2,218</td>
-      <td class="num">32,828,713</td>
-      <td class="num">2.74%</td>
+      <td class="num">2,213</td>
+      <td class="num">32,752,914</td>
+      <td class="num">2.73%</td>
     </tr>
     
     <tr class="partsrow" data-group="inv-2" hidden><td colspan="4"><div class="partslist"><table class="partsub">
       <thead><tr><th>부품번호</th><th>품명</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
-      <tbody><tr><td class="mono">83215B49DD6</td><td>LL-17FE+ 0W-20</td><td class="num">688</td><td class="num">10,523,411</td></tr><tr><td class="mono">83212469985</td><td>LL-12FE 0W-30</td><td class="num">397</td><td class="num">6,093,589</td></tr><tr><td class="mono">83215A65B99</td><td>LL-22FE++ 0W12</td><td class="num">380</td><td class="num">5,497,990</td></tr><tr><td class="mono">83215A7EDA5</td><td>LL-01FE 0W-30</td><td class="num">284</td><td class="num">4,348,608</td></tr><tr><td class="mono">11425B4C845</td><td>Set oil-filt</td><td class="num">109</td><td class="num">2,186,976</td></tr><tr><td class="mono">83515A6CDD7</td><td>Radiator ant</td><td class="num">106</td><td class="num">1,748,957</td></tr><tr><td class="mono">83195A42DF3</td><td>HT-12 Anti-freeze</td><td class="num">78</td><td class="num">1,279,200</td></tr><tr><td class="mono">83135A82511</td><td>Brake fluid</td><td class="num">41</td><td class="num">465,022</td></tr><tr><td class="mono">99995A2A668</td><td>Windshield w</td><td class="num">59</td><td class="num">376,754</td></tr><tr><td class="mono">66126912985</td><td>Key Battery</td><td class="num">73</td><td class="num">308,206</td></tr></tbody>
+      <tbody><tr><td class="mono">83215B49DD6</td><td>LL-17FE+ 0W-20</td><td class="num">688</td><td class="num">10,523,411</td></tr><tr><td class="mono">83212469985</td><td>LL-12FE 0W-30</td><td class="num">397</td><td class="num">6,093,589</td></tr><tr><td class="mono">83215A65B99</td><td>LL-22FE++ 0W12</td><td class="num">375</td><td class="num">5,422,191</td></tr><tr><td class="mono">83215A7EDA5</td><td>LL-01FE 0W-30</td><td class="num">284</td><td class="num">4,348,608</td></tr><tr><td class="mono">11425B4C845</td><td>Set oil-filt</td><td class="num">109</td><td class="num">2,186,976</td></tr><tr><td class="mono">83515A6CDD7</td><td>Radiator ant</td><td class="num">106</td><td class="num">1,748,957</td></tr><tr><td class="mono">83195A42DF3</td><td>HT-12 Anti-freeze</td><td class="num">78</td><td class="num">1,279,200</td></tr><tr><td class="mono">83135A82511</td><td>Brake fluid</td><td class="num">41</td><td class="num">465,022</td></tr><tr><td class="mono">99995A2A668</td><td>Windshield w</td><td class="num">59</td><td class="num">376,754</td></tr><tr><td class="mono">66126912985</td><td>Key Battery</td><td class="num">73</td><td class="num">308,206</td></tr></tbody>
     </table></div></td></tr>
     
     
@@ -635,15 +638,15 @@
     
     
     <tr data-group="inv-2" hidden class="coderow" onclick="toggleCodeRow(this)">
-      <td><span class="caret">▸</span><span class="aloistag">L6</span><span class="pcount">57종</span></td>
-      <td class="num">347</td>
-      <td class="num">27,653,367</td>
+      <td><span class="caret">▸</span><span class="aloistag">L6</span><span class="pcount">56종</span></td>
+      <td class="num">346</td>
+      <td class="num">27,642,859</td>
       <td class="num">2.31%</td>
     </tr>
     
     <tr class="partsrow" data-group="inv-2" hidden><td colspan="4"><div class="partslist"><table class="partsub">
       <thead><tr><th>부품번호</th><th>품명</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
-      <tbody><tr><td class="mono">11418646454</td><td>Oil pump</td><td class="num">23</td><td class="num">11,561,088</td></tr><tr><td class="mono">63119479262</td><td>Headlight, L</td><td class="num">1</td><td class="num">2,930,545</td></tr><tr><td class="mono">34118854273</td><td>Ventilated b</td><td class="num">12</td><td class="num">2,670,336</td></tr><tr><td class="mono">37105B69E22</td><td>Air spring s</td><td class="num">1</td><td class="num">2,297,456</td></tr><tr><td class="mono">51118099896</td><td>Trim cover,</td><td class="num">1</td><td class="num">734,160</td></tr><tr><td class="mono">51118067941</td><td>Panel</td><td class="num">1</td><td class="num">702,075</td></tr><tr><td class="mono">34108844368</td><td>Repair kit,</td><td class="num">3</td><td class="num">620,736</td></tr><tr><td class="mono">51117371816</td><td>Trim cover,</td><td class="num">1</td><td class="num">596,781</td></tr><tr><td class="mono">51125A01199</td><td>Carrier, bum</td><td class="num">1</td><td class="num">538,959</td></tr><tr><td class="mono">51239464341</td><td>Actuator</td><td class="num">2</td><td class="num">513,378</td></tr><tr><td class="mono">54107485602</td><td>Gasket</td><td class="num">10</td><td class="num">364,980</td></tr><tr><td class="mono">31108881403</td><td>Tension stru</td><td class="num">1</td><td class="num">344,931</td></tr><tr><td class="mono">51239880005</td><td>Lock active</td><td class="num">1</td><td class="num">317,842</td></tr><tr><td class="mono">51239880006</td><td>Lock active</td><td class="num">1</td><td class="num">317,842</td></tr><tr><td class="mono">33406899175</td><td>Wheel hub wi</td><td class="num">1</td><td class="num">289,815</td></tr><tr><td class="mono">52107485998</td><td>Repair kit,</td><td class="num">2</td><td class="num">278,460</td></tr><tr><td class="mono">61278677638</td><td>Hexagon bolt</td><td class="num">131</td><td class="num">267,764</td></tr><tr><td class="mono">31208836281</td><td>Collar screw</td><td class="num">8</td><td class="num">265,816</td></tr><tr><td class="mono">90200007560</td><td>SONAX Car A/</td><td class="num">24</td><td class="num">166,800</td></tr><tr><td class="mono">51118085473</td><td>Mount left</td><td class="num">1</td><td class="num">137,084</td></tr><tr><td class="mono">12371029163</td><td>Pressure com</td><td class="num">9</td><td class="num">117,594</td></tr><tr><td class="mono">90200005954</td><td>Hydraulic oil CHF 11 S</td><td class="num">6</td><td class="num">115,200</td></tr><tr><td class="mono">64319127516</td><td>Filter</td><td class="num">2</td><td class="num">102,544</td></tr><tr><td class="mono">51769465616</td><td>Gap seal A-p</td><td class="num">3</td><td class="num">102,303</td></tr><tr><td class="mono">65205A1D0B2</td><td>Outside ante</td><td class="num">1</td><td class="num">99,937</td></tr><tr><td class="mono">51128745743</td><td>Protective r</td><td class="num">1</td><td class="num">92,976</td></tr><tr><td class="mono">51125A3F532</td><td>Kit dummy tr</td><td class="num">2</td><td class="num">88,290</td></tr><tr><td class="mono">51475A87FF4</td><td>Floor liner</td><td class="num">1</td><td class="num">86,548</td></tr><tr><td class="mono">51135A3EA62</td><td>Molding, hoo</td><td class="num">1</td><td class="num">75,628</td></tr><tr><td class="mono">51767336044</td><td>Seal of B-pi</td><td class="num">1</td><td class="num">70,026</td></tr><tr><td class="mono">51125A011B7</td><td>Bumper guide</td><td class="num">1</td><td class="num">66,836</td></tr><tr><td class="mono">51315A8A8B0</td><td>Cover windsh</td><td class="num">1</td><td class="num">64,167</td></tr><tr><td class="mono">51117415585</td><td>Guide, bumpe</td><td class="num">5</td><td class="num">55,250</td></tr><tr><td class="mono">34206881294</td><td>BMW Design c</td><td class="num">2</td><td class="num">54,670</td></tr><tr><td class="mono">51745A015A2</td><td>Holder upper</td><td class="num">4</td><td class="num">54,180</td></tr><tr><td class="mono">51135A130D3</td><td>Trim camera</td><td class="num">1</td><td class="num">53,956</td></tr><tr><td class="mono">61278620917</td><td>Seal for HV</td><td class="num">2</td><td class="num">53,380</td></tr><tr><td class="mono">83192289286</td><td>Window adhes</td><td class="num">2</td><td class="num">41,236</td></tr><tr><td class="mono">51147418528</td><td>Inscription,</td><td class="num">1</td><td class="num">38,052</td></tr><tr><td class="mono">51767428706</td><td>Weatherstrip</td><td class="num">1</td><td class="num">34,101</td></tr><tr><td class="mono">31106890194</td><td>Hexagon nut</td><td class="num">6</td><td class="num">31,506</td></tr><tr><td class="mono">83125A7DC77</td><td>BMW Natural</td><td class="num">1</td><td class="num">29,566</td></tr><tr><td class="mono">26127536563</td><td>Nut</td><td class="num">17</td><td class="num">26,231</td></tr><tr><td class="mono">51137487650</td><td>Abrasion-res</td><td class="num">6</td><td class="num">25,788</td></tr><tr><td class="mono">13717823517</td><td>Pipe</td><td class="num">1</td><td class="num">23,870</td></tr><tr><td class="mono">11288580361</td><td>RIBBED V-BEL</td><td class="num">1</td><td class="num">23,691</td></tr><tr><td class="mono">51117331763</td><td>Rubber strip</td><td class="num">1</td><td class="num">17,978</td></tr><tr><td class="mono">33306780501</td><td>Heli-Coil th</td><td class="num">5</td><td class="num">17,440</td></tr><tr><td class="mono">11628597827</td><td>Flange nut</td><td class="num">14</td><td class="num">17,388</td></tr><tr><td class="mono">31106867397</td><td>SQUARE NUT</td><td class="num">2</td><td class="num">10,528</td></tr><tr><td class="mono">24148645681</td><td>Screw plug,</td><td class="num">1</td><td class="num">10,508</td></tr><tr><td class="mono">07147283890</td><td>Plug-in reta</td><td class="num">4</td><td class="num">7,088</td></tr><tr><td class="mono">51318269160</td><td>Velcro</td><td class="num">4</td><td class="num">7,008</td></tr><tr><td class="mono">51419118612</td><td>PLUG-IN NUT</td><td class="num">6</td><td class="num">6,642</td></tr><tr><td class="mono">61139331173</td><td>BRACKET PLUG</td><td class="num">1</td><td class="num">5,913</td></tr><tr><td class="mono">07119904956</td><td>Hex bolt</td><td class="num">3</td><td class="num">5,142</td></tr><tr><td class="mono">51117202885</td><td>Spring</td><td class="num">1</td><td class="num">3,358</td></tr></tbody>
+      <tbody><tr><td class="mono">11418646454</td><td>Oil pump</td><td class="num">23</td><td class="num">11,561,088</td></tr><tr><td class="mono">63119479262</td><td>Headlight, L</td><td class="num">1</td><td class="num">2,930,545</td></tr><tr><td class="mono">34118854273</td><td>Ventilated b</td><td class="num">12</td><td class="num">2,670,336</td></tr><tr><td class="mono">37105B69E22</td><td>Air spring s</td><td class="num">1</td><td class="num">2,297,456</td></tr><tr><td class="mono">51118099896</td><td>Trim cover,</td><td class="num">1</td><td class="num">734,160</td></tr><tr><td class="mono">51118067941</td><td>Panel</td><td class="num">1</td><td class="num">702,075</td></tr><tr><td class="mono">34108844368</td><td>Repair kit,</td><td class="num">3</td><td class="num">620,736</td></tr><tr><td class="mono">51117371816</td><td>Trim cover,</td><td class="num">1</td><td class="num">596,781</td></tr><tr><td class="mono">51125A01199</td><td>Carrier, bum</td><td class="num">1</td><td class="num">538,959</td></tr><tr><td class="mono">51239464341</td><td>Actuator</td><td class="num">2</td><td class="num">513,378</td></tr><tr><td class="mono">54107485602</td><td>Gasket</td><td class="num">10</td><td class="num">364,980</td></tr><tr><td class="mono">31108881403</td><td>Tension stru</td><td class="num">1</td><td class="num">344,931</td></tr><tr><td class="mono">51239880005</td><td>Lock active</td><td class="num">1</td><td class="num">317,842</td></tr><tr><td class="mono">51239880006</td><td>Lock active</td><td class="num">1</td><td class="num">317,842</td></tr><tr><td class="mono">33406899175</td><td>Wheel hub wi</td><td class="num">1</td><td class="num">289,815</td></tr><tr><td class="mono">52107485998</td><td>Repair kit,</td><td class="num">2</td><td class="num">278,460</td></tr><tr><td class="mono">61278677638</td><td>Hexagon bolt</td><td class="num">131</td><td class="num">267,764</td></tr><tr><td class="mono">31208836281</td><td>Collar screw</td><td class="num">8</td><td class="num">265,816</td></tr><tr><td class="mono">90200007560</td><td>SONAX Car A/</td><td class="num">24</td><td class="num">166,800</td></tr><tr><td class="mono">51118085473</td><td>Mount left</td><td class="num">1</td><td class="num">137,084</td></tr><tr><td class="mono">12371029163</td><td>Pressure com</td><td class="num">9</td><td class="num">117,594</td></tr><tr><td class="mono">90200005954</td><td>Hydraulic oil CHF 11 S</td><td class="num">6</td><td class="num">115,200</td></tr><tr><td class="mono">64319127516</td><td>Filter</td><td class="num">2</td><td class="num">102,544</td></tr><tr><td class="mono">51769465616</td><td>Gap seal A-p</td><td class="num">3</td><td class="num">102,303</td></tr><tr><td class="mono">65205A1D0B2</td><td>Outside ante</td><td class="num">1</td><td class="num">99,937</td></tr><tr><td class="mono">51128745743</td><td>Protective r</td><td class="num">1</td><td class="num">92,976</td></tr><tr><td class="mono">51125A3F532</td><td>Kit dummy tr</td><td class="num">2</td><td class="num">88,290</td></tr><tr><td class="mono">51475A87FF4</td><td>Floor liner</td><td class="num">1</td><td class="num">86,548</td></tr><tr><td class="mono">51135A3EA62</td><td>Molding, hoo</td><td class="num">1</td><td class="num">75,628</td></tr><tr><td class="mono">51767336044</td><td>Seal of B-pi</td><td class="num">1</td><td class="num">70,026</td></tr><tr><td class="mono">51125A011B7</td><td>Bumper guide</td><td class="num">1</td><td class="num">66,836</td></tr><tr><td class="mono">51315A8A8B0</td><td>Cover windsh</td><td class="num">1</td><td class="num">64,167</td></tr><tr><td class="mono">51117415585</td><td>Guide, bumpe</td><td class="num">5</td><td class="num">55,250</td></tr><tr><td class="mono">34206881294</td><td>BMW Design c</td><td class="num">2</td><td class="num">54,670</td></tr><tr><td class="mono">51745A015A2</td><td>Holder upper</td><td class="num">4</td><td class="num">54,180</td></tr><tr><td class="mono">51135A130D3</td><td>Trim camera</td><td class="num">1</td><td class="num">53,956</td></tr><tr><td class="mono">61278620917</td><td>Seal for HV</td><td class="num">2</td><td class="num">53,380</td></tr><tr><td class="mono">83192289286</td><td>Window adhes</td><td class="num">2</td><td class="num">41,236</td></tr><tr><td class="mono">51147418528</td><td>Inscription,</td><td class="num">1</td><td class="num">38,052</td></tr><tr><td class="mono">51767428706</td><td>Weatherstrip</td><td class="num">1</td><td class="num">34,101</td></tr><tr><td class="mono">31106890194</td><td>Hexagon nut</td><td class="num">6</td><td class="num">31,506</td></tr><tr><td class="mono">83125A7DC77</td><td>BMW Natural</td><td class="num">1</td><td class="num">29,566</td></tr><tr><td class="mono">26127536563</td><td>Nut</td><td class="num">17</td><td class="num">26,231</td></tr><tr><td class="mono">51137487650</td><td>Abrasion-res</td><td class="num">6</td><td class="num">25,788</td></tr><tr><td class="mono">13717823517</td><td>Pipe</td><td class="num">1</td><td class="num">23,870</td></tr><tr><td class="mono">11288580361</td><td>RIBBED V-BEL</td><td class="num">1</td><td class="num">23,691</td></tr><tr><td class="mono">51117331763</td><td>Rubber strip</td><td class="num">1</td><td class="num">17,978</td></tr><tr><td class="mono">33306780501</td><td>Heli-Coil th</td><td class="num">5</td><td class="num">17,440</td></tr><tr><td class="mono">11628597827</td><td>Flange nut</td><td class="num">14</td><td class="num">17,388</td></tr><tr><td class="mono">31106867397</td><td>SQUARE NUT</td><td class="num">2</td><td class="num">10,528</td></tr><tr><td class="mono">07147283890</td><td>Plug-in reta</td><td class="num">4</td><td class="num">7,088</td></tr><tr><td class="mono">51318269160</td><td>Velcro</td><td class="num">4</td><td class="num">7,008</td></tr><tr><td class="mono">51419118612</td><td>PLUG-IN NUT</td><td class="num">6</td><td class="num">6,642</td></tr><tr><td class="mono">61139331173</td><td>BRACKET PLUG</td><td class="num">1</td><td class="num">5,913</td></tr><tr><td class="mono">07119904956</td><td>Hex bolt</td><td class="num">3</td><td class="num">5,142</td></tr><tr><td class="mono">51117202885</td><td>Spring</td><td class="num">1</td><td class="num">3,358</td></tr></tbody>
     </table></div></td></tr>
     
     
@@ -662,8 +665,8 @@
     
     <tr class="subtotal">
       <td>L 합계</td>
-      <td class="num">4,789</td>
-      <td class="num">146,694,549</td>
+      <td class="num">4,783</td>
+      <td class="num">146,608,242</td>
       <td class="num">12.24%</td>
     </tr>
     
@@ -687,7 +690,7 @@
       <td><span class="caret">▸</span><span class="aloistag oseries">OA</span><span class="pcount">108종</span></td>
       <td class="num">232</td>
       <td class="num">39,235,418</td>
-      <td class="num">3.27%</td>
+      <td class="num">3.28%</td>
     </tr>
     
     <tr class="partsrow" data-group="inv-3" hidden><td colspan="4"><div class="partslist"><table class="partsub">
@@ -700,7 +703,7 @@
       <td><span class="caret">▸</span><span class="aloistag oseries">OE</span><span class="pcount">99종</span></td>
       <td class="num">833</td>
       <td class="num">300,019,591</td>
-      <td class="num">25.04%</td>
+      <td class="num">25.05%</td>
     </tr>
     
     <tr class="partsrow" data-group="inv-3" hidden><td colspan="4"><div class="partslist"><table class="partsub">
@@ -739,7 +742,7 @@
       <td>O 합계</td>
       <td class="num">2,409</td>
       <td class="num">426,409,322</td>
-      <td class="num">35.59%</td>
+      <td class="num">35.60%</td>
     </tr>
     
     
@@ -795,15 +798,15 @@
     
     
     <tr data-group="inv-5" hidden class="coderow" onclick="toggleCodeRow(this)">
-      <td><span class="caret">▸</span><span class="aloistag">SK</span><span class="pcount">68종</span></td>
-      <td class="num">877</td>
-      <td class="num">31,171,140</td>
+      <td><span class="caret">▸</span><span class="aloistag">SK</span><span class="pcount">67종</span></td>
+      <td class="num">876</td>
+      <td class="num">31,166,402</td>
       <td class="num">2.60%</td>
     </tr>
     
     <tr class="partsrow" data-group="inv-5" hidden><td colspan="4"><div class="partslist"><table class="partsub">
       <thead><tr><th>부품번호</th><th>품명</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
-      <tbody><tr><td class="mono">34505B77C23</td><td>Power brake</td><td class="num">11</td><td class="num">18,207,222</td></tr><tr><td class="mono">12415BA2AE4</td><td>Starter</td><td class="num">4</td><td class="num">2,615,340</td></tr><tr><td class="mono">34516893390</td><td>Seal, brake</td><td class="num">175</td><td class="num">1,802,675</td></tr><tr><td class="mono">13628477724</td><td>diesel parti</td><td class="num">5</td><td class="num">1,438,155</td></tr><tr><td class="mono">11715A7A498</td><td>Exhaust gas</td><td class="num">1</td><td class="num">864,017</td></tr><tr><td class="mono">63217420991</td><td>Tail light,</td><td class="num">3</td><td class="num">763,359</td></tr><tr><td class="mono">63217420992</td><td>Tail light,</td><td class="num">3</td><td class="num">763,359</td></tr><tr><td class="mono">34505A59585</td><td>Seal brake b</td><td class="num">49</td><td class="num">640,528</td></tr><tr><td class="mono">51648076922</td><td>Hex bolt wit</td><td class="num">120</td><td class="num">472,920</td></tr><tr><td class="mono">07146890655</td><td>P180305Bking</td><td class="num">158</td><td class="num">425,968</td></tr><tr><td class="mono">64119462114</td><td>Changeover v</td><td class="num">1</td><td class="num">421,826</td></tr><tr><td class="mono">37105A4A615</td><td>Air spring s</td><td class="num">1</td><td class="num">313,650</td></tr><tr><td class="mono">37105A4A666</td><td>Air spring s</td><td class="num">1</td><td class="num">313,650</td></tr><tr><td class="mono">37105A4A7B5</td><td>Air spring s</td><td class="num">1</td><td class="num">309,570</td></tr><tr><td class="mono">13718655835</td><td>Intake muffl</td><td class="num">1</td><td class="num">303,882</td></tr><tr><td class="mono">31106870648</td><td>Hex bolt wit</td><td class="num">40</td><td class="num">158,440</td></tr><tr><td class="mono">11318490219</td><td>Chain tensio</td><td class="num">2</td><td class="num">107,436</td></tr><tr><td class="mono">13539847174</td><td>Gasket ring</td><td class="num">10</td><td class="num">92,710</td></tr><tr><td class="mono">17125B3A997</td><td>Line, cylind</td><td class="num">2</td><td class="num">91,682</td></tr><tr><td class="mono">31206866022</td><td>Collar screw</td><td class="num">6</td><td class="num">80,946</td></tr><tr><td class="mono">12418571349</td><td>Acoustic plu</td><td class="num">8</td><td class="num">66,576</td></tr><tr><td class="mono">07147483888</td><td>Hex bolt</td><td class="num">12</td><td class="num">63,048</td></tr><tr><td class="mono">07146885922</td><td>MULTI-PURPOS</td><td class="num">10</td><td class="num">54,750</td></tr><tr><td class="mono">07146886617</td><td>Multi-purpos</td><td class="num">10</td><td class="num">52,540</td></tr><tr><td class="mono">07146958587</td><td>Heli-Coil th</td><td class="num">15</td><td class="num">49,650</td></tr><tr><td class="mono">31116899302</td><td>Multi-purpos</td><td class="num">10</td><td class="num">46,110</td></tr><tr><td class="mono">07149886429</td><td>Isa screw wi</td><td class="num">12</td><td class="num">44,364</td></tr><tr><td class="mono">11718490640</td><td>AGR small pa</td><td class="num">3</td><td class="num">42,330</td></tr><tr><td class="mono">18325A0BF72</td><td>Screw clamp</td><td class="num">1</td><td class="num">39,450</td></tr><tr><td class="mono">07119904295</td><td>Nut</td><td class="num">38</td><td class="num">33,554</td></tr><tr><td class="mono">31106872063</td><td>Hex bolt wit</td><td class="num">6</td><td class="num">32,946</td></tr><tr><td class="mono">11438490851</td><td>Oil dipstick</td><td class="num">1</td><td class="num">30,885</td></tr><tr><td class="mono">31206795249</td><td>Collar bolt</td><td class="num">2</td><td class="num">27,448</td></tr><tr><td class="mono">07119905147</td><td>Bolt</td><td class="num">13</td><td class="num">27,222</td></tr><tr><td class="mono">11715A9D336</td><td>Pipe union</td><td class="num">1</td><td class="num">26,864</td></tr><tr><td class="mono">34106864424</td><td>Torx screw w</td><td class="num">4</td><td class="num">23,360</td></tr><tr><td class="mono">07148837399</td><td>ASA-Bolt</td><td class="num">4</td><td class="num">22,568</td></tr><tr><td class="mono">07119906100</td><td>Hexagon coll</td><td class="num">4</td><td class="num">21,976</td></tr><tr><td class="mono">07119904161</td><td>Hex screw wi</td><td class="num">4</td><td class="num">20,732</td></tr><tr><td class="mono">33306760585</td><td>Combin.nut</td><td class="num">4</td><td class="num">19,856</td></tr><tr><td class="mono">07129952104</td><td>Clamp</td><td class="num">11</td><td class="num">19,734</td></tr><tr><td class="mono">18325A09490</td><td>Gasket exh.t</td><td class="num">1</td><td class="num">18,176</td></tr><tr><td class="mono">61139200225</td><td>Cable strap</td><td class="num">10</td><td class="num">16,990</td></tr><tr><td class="mono">61295B5BBE9</td><td>Repair kit</td><td class="num">2</td><td class="num">16,530</td></tr><tr><td class="mono">07119904670</td><td>Flange nut</td><td class="num">29</td><td class="num">15,080</td></tr><tr><td class="mono">11619888561</td><td>Gasket, thro</td><td class="num">1</td><td class="num">14,250</td></tr><tr><td class="mono">13538661716</td><td>Star-socket</td><td class="num">12</td><td class="num">14,016</td></tr><tr><td class="mono">07119905374</td><td>Nut</td><td class="num">13</td><td class="num">13,884</td></tr><tr><td class="mono">11718479905</td><td>Small-parts-kit N47</td><td class="num">1</td><td class="num">12,900</td></tr><tr><td class="mono">13538661715</td><td>Star-socket</td><td class="num">8</td><td class="num">10,776</td></tr><tr><td class="mono">07148835360</td><td>Combination</td><td class="num">2</td><td class="num">10,512</td></tr><tr><td class="mono">07147283812</td><td>PLUG-IN NUT</td><td class="num">2</td><td class="num">8,028</td></tr><tr><td class="mono">11289888617</td><td>Bush</td><td class="num">1</td><td class="num">7,908</td></tr><tr><td class="mono">07129908570</td><td>ISA screw</td><td class="num">4</td><td class="num">7,800</td></tr><tr><td class="mono">07119909691</td><td>Hex bolt</td><td class="num">3</td><td class="num">7,770</td></tr><tr><td class="mono">51475B6EE14</td><td>Screw</td><td class="num">2</td><td class="num">6,424</td></tr><tr><td class="mono">51475B65B62</td><td>Washer</td><td class="num">2</td><td class="num">5,268</td></tr><tr><td class="mono">07119906938</td><td>Hexagon scre</td><td class="num">1</td><td class="num">5,237</td></tr><tr><td class="mono">07145A67B87</td><td>Hexagon nut</td><td class="num">1</td><td class="num">4,738</td></tr><tr><td class="mono">07149390155</td><td>Hex bolt wit</td><td class="num">2</td><td class="num">4,588</td></tr><tr><td class="mono">13718652852</td><td>O-ring</td><td class="num">1</td><td class="num">3,478</td></tr><tr><td class="mono">32306778609</td><td>Torx bolt</td><td class="num">2</td><td class="num">2,936</td></tr><tr><td class="mono">07119908708</td><td>O-ring</td><td class="num">1</td><td class="num">2,499</td></tr><tr><td class="mono">13517632572</td><td>Isa screw wi</td><td class="num">2</td><td class="num">2,336</td></tr><tr><td class="mono">61135B68D04</td><td>Splash prote</td><td class="num">3</td><td class="num">2,100</td></tr><tr><td class="mono">07143413174</td><td>Flange nut</td><td class="num">2</td><td class="num">1,938</td></tr><tr><td class="mono">07119907243</td><td>TORX BOLT</td><td class="num">1</td><td class="num">1,023</td></tr><tr><td class="mono">07119905871</td><td>Hex bolt wit</td><td class="num">1</td><td class="num">657</td></tr></tbody>
+      <tbody><tr><td class="mono">34505B77C23</td><td>Power brake</td><td class="num">11</td><td class="num">18,207,222</td></tr><tr><td class="mono">12415BA2AE4</td><td>Starter</td><td class="num">4</td><td class="num">2,615,340</td></tr><tr><td class="mono">34516893390</td><td>Seal, brake</td><td class="num">175</td><td class="num">1,802,675</td></tr><tr><td class="mono">13628477724</td><td>diesel parti</td><td class="num">5</td><td class="num">1,438,155</td></tr><tr><td class="mono">11715A7A498</td><td>Exhaust gas</td><td class="num">1</td><td class="num">864,017</td></tr><tr><td class="mono">63217420991</td><td>Tail light,</td><td class="num">3</td><td class="num">763,359</td></tr><tr><td class="mono">63217420992</td><td>Tail light,</td><td class="num">3</td><td class="num">763,359</td></tr><tr><td class="mono">34505A59585</td><td>Seal brake b</td><td class="num">49</td><td class="num">640,528</td></tr><tr><td class="mono">51648076922</td><td>Hex bolt wit</td><td class="num">120</td><td class="num">472,920</td></tr><tr><td class="mono">07146890655</td><td>P180305Bking</td><td class="num">158</td><td class="num">425,968</td></tr><tr><td class="mono">64119462114</td><td>Changeover v</td><td class="num">1</td><td class="num">421,826</td></tr><tr><td class="mono">37105A4A615</td><td>Air spring s</td><td class="num">1</td><td class="num">313,650</td></tr><tr><td class="mono">37105A4A666</td><td>Air spring s</td><td class="num">1</td><td class="num">313,650</td></tr><tr><td class="mono">37105A4A7B5</td><td>Air spring s</td><td class="num">1</td><td class="num">309,570</td></tr><tr><td class="mono">13718655835</td><td>Intake muffl</td><td class="num">1</td><td class="num">303,882</td></tr><tr><td class="mono">31106870648</td><td>Hex bolt wit</td><td class="num">40</td><td class="num">158,440</td></tr><tr><td class="mono">11318490219</td><td>Chain tensio</td><td class="num">2</td><td class="num">107,436</td></tr><tr><td class="mono">13539847174</td><td>Gasket ring</td><td class="num">10</td><td class="num">92,710</td></tr><tr><td class="mono">17125B3A997</td><td>Line, cylind</td><td class="num">2</td><td class="num">91,682</td></tr><tr><td class="mono">31206866022</td><td>Collar screw</td><td class="num">6</td><td class="num">80,946</td></tr><tr><td class="mono">12418571349</td><td>Acoustic plu</td><td class="num">8</td><td class="num">66,576</td></tr><tr><td class="mono">07147483888</td><td>Hex bolt</td><td class="num">12</td><td class="num">63,048</td></tr><tr><td class="mono">07146885922</td><td>MULTI-PURPOS</td><td class="num">10</td><td class="num">54,750</td></tr><tr><td class="mono">07146886617</td><td>Multi-purpos</td><td class="num">10</td><td class="num">52,540</td></tr><tr><td class="mono">07146958587</td><td>Heli-Coil th</td><td class="num">15</td><td class="num">49,650</td></tr><tr><td class="mono">31116899302</td><td>Multi-purpos</td><td class="num">10</td><td class="num">46,110</td></tr><tr><td class="mono">07149886429</td><td>Isa screw wi</td><td class="num">12</td><td class="num">44,364</td></tr><tr><td class="mono">11718490640</td><td>AGR small pa</td><td class="num">3</td><td class="num">42,330</td></tr><tr><td class="mono">18325A0BF72</td><td>Screw clamp</td><td class="num">1</td><td class="num">39,450</td></tr><tr><td class="mono">07119904295</td><td>Nut</td><td class="num">38</td><td class="num">33,554</td></tr><tr><td class="mono">31106872063</td><td>Hex bolt wit</td><td class="num">6</td><td class="num">32,946</td></tr><tr><td class="mono">11438490851</td><td>Oil dipstick</td><td class="num">1</td><td class="num">30,885</td></tr><tr><td class="mono">31206795249</td><td>Collar bolt</td><td class="num">2</td><td class="num">27,448</td></tr><tr><td class="mono">07119905147</td><td>Bolt</td><td class="num">13</td><td class="num">27,222</td></tr><tr><td class="mono">11715A9D336</td><td>Pipe union</td><td class="num">1</td><td class="num">26,864</td></tr><tr><td class="mono">34106864424</td><td>Torx screw w</td><td class="num">4</td><td class="num">23,360</td></tr><tr><td class="mono">07148837399</td><td>ASA-Bolt</td><td class="num">4</td><td class="num">22,568</td></tr><tr><td class="mono">07119906100</td><td>Hexagon coll</td><td class="num">4</td><td class="num">21,976</td></tr><tr><td class="mono">07119904161</td><td>Hex screw wi</td><td class="num">4</td><td class="num">20,732</td></tr><tr><td class="mono">33306760585</td><td>Combin.nut</td><td class="num">4</td><td class="num">19,856</td></tr><tr><td class="mono">07129952104</td><td>Clamp</td><td class="num">11</td><td class="num">19,734</td></tr><tr><td class="mono">18325A09490</td><td>Gasket exh.t</td><td class="num">1</td><td class="num">18,176</td></tr><tr><td class="mono">61139200225</td><td>Cable strap</td><td class="num">10</td><td class="num">16,990</td></tr><tr><td class="mono">61295B5BBE9</td><td>Repair kit</td><td class="num">2</td><td class="num">16,530</td></tr><tr><td class="mono">07119904670</td><td>Flange nut</td><td class="num">29</td><td class="num">15,080</td></tr><tr><td class="mono">11619888561</td><td>Gasket, thro</td><td class="num">1</td><td class="num">14,250</td></tr><tr><td class="mono">13538661716</td><td>Star-socket</td><td class="num">12</td><td class="num">14,016</td></tr><tr><td class="mono">07119905374</td><td>Nut</td><td class="num">13</td><td class="num">13,884</td></tr><tr><td class="mono">11718479905</td><td>Small-parts-kit N47</td><td class="num">1</td><td class="num">12,900</td></tr><tr><td class="mono">13538661715</td><td>Star-socket</td><td class="num">8</td><td class="num">10,776</td></tr><tr><td class="mono">07148835360</td><td>Combination</td><td class="num">2</td><td class="num">10,512</td></tr><tr><td class="mono">07147283812</td><td>PLUG-IN NUT</td><td class="num">2</td><td class="num">8,028</td></tr><tr><td class="mono">11289888617</td><td>Bush</td><td class="num">1</td><td class="num">7,908</td></tr><tr><td class="mono">07129908570</td><td>ISA screw</td><td class="num">4</td><td class="num">7,800</td></tr><tr><td class="mono">07119909691</td><td>Hex bolt</td><td class="num">3</td><td class="num">7,770</td></tr><tr><td class="mono">51475B6EE14</td><td>Screw</td><td class="num">2</td><td class="num">6,424</td></tr><tr><td class="mono">51475B65B62</td><td>Washer</td><td class="num">2</td><td class="num">5,268</td></tr><tr><td class="mono">07119906938</td><td>Hexagon scre</td><td class="num">1</td><td class="num">5,237</td></tr><tr><td class="mono">07149390155</td><td>Hex bolt wit</td><td class="num">2</td><td class="num">4,588</td></tr><tr><td class="mono">13718652852</td><td>O-ring</td><td class="num">1</td><td class="num">3,478</td></tr><tr><td class="mono">32306778609</td><td>Torx bolt</td><td class="num">2</td><td class="num">2,936</td></tr><tr><td class="mono">07119908708</td><td>O-ring</td><td class="num">1</td><td class="num">2,499</td></tr><tr><td class="mono">13517632572</td><td>Isa screw wi</td><td class="num">2</td><td class="num">2,336</td></tr><tr><td class="mono">61135B68D04</td><td>Splash prote</td><td class="num">3</td><td class="num">2,100</td></tr><tr><td class="mono">07143413174</td><td>Flange nut</td><td class="num">2</td><td class="num">1,938</td></tr><tr><td class="mono">07119907243</td><td>TORX BOLT</td><td class="num">1</td><td class="num">1,023</td></tr><tr><td class="mono">07119905871</td><td>Hex bolt wit</td><td class="num">1</td><td class="num">657</td></tr></tbody>
     </table></div></td></tr>
     
     
@@ -848,9 +851,9 @@
     
     <tr class="subtotal">
       <td>S 합계</td>
-      <td class="num">1,906</td>
-      <td class="num">135,309,258</td>
-      <td class="num">11.29%</td>
+      <td class="num">1,905</td>
+      <td class="num">135,304,520</td>
+      <td class="num">11.30%</td>
     </tr>
     
   </tbody>
@@ -870,14 +873,14 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">진행 RO (인보이스 미완료)</span>
-          <span class="value">349건</span>
-          <span class="foot">금액 합계 ₩788,226,210 · 가장 오래된 RO D+517일</span>
+          <span class="value">348건</span>
+          <span class="foot">금액 합계 ₩786,746,648 · 가장 오래된 RO D+517일</span>
         </div>
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
           <span class="eyebrow">상태별 건수</span>
           <span class="foot" style="line-height:1.7">
-            상담시작 <b>16</b> · 상담완료 <b>153</b> · 정비시작 <b>33</b> · End Control 요청 <b>59</b> · 공정마감 <b>2</b> · 가정산 완료 <b>86</b>
+            상담시작 <b>13</b> · 상담완료 <b>154</b> · 정비시작 <b>33</b> · End Control 요청 <b>56</b> · 공정마감 <b>2</b> · 가정산 완료 <b>90</b>
           </span>
         </div>
       </div>
@@ -885,7 +888,7 @@
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">진행 RO 리스트</span>
-          <span class="val">349건</span>
+          <span class="val">348건</span>
           <span class="foot">금액 = 부품+공임 판매가 · 사유는 대시보드 PC의 로컬 주소(127.0.0.1:8765)에서 입력·수정하고, 그 외 기기는 조회만 됩니다</span>
         </div>
         <div class="tablewrap">
@@ -2086,14 +2089,6 @@
               </tr>
               
               <tr>
-                <td class="mono">RO2609001003</td><td>경수리</td><td>이정환</td>
-                <td><span class="aloistag">공정마감</span></td>
-                <td class="mono">2026-09-16</td><td class="mono dday-cell" data-days="5">D+5일</td>
-                <td class="num">1,786,300</td>
-                <td><div class="reason-cell" data-ro="RO2609001003" data-saved=""><span class="reason-text"></span></div></td>
-              </tr>
-              
-              <tr>
                 <td class="mono">RO2609001004</td><td>Maintenance</td><td>우종훈</td>
                 <td><span class="aloistag">상담완료</span></td>
                 <td class="mono">2026-09-16</td><td class="mono dday-cell" data-days="5">D+5일</td>
@@ -2414,19 +2409,19 @@
               </tr>
               
               <tr>
-                <td class="mono">RO2609001130</td><td>사고수리</td><td>박영묵</td>
-                <td><span class="aloistag">상담완료</span></td>
-                <td class="mono">2026-09-17</td><td class="mono dday-cell" data-days="4">D+4일</td>
-                <td class="num">1,583,000</td>
-                <td><div class="reason-cell" data-ro="RO2609001130" data-saved=""><span class="reason-text"></span></div></td>
-              </tr>
-              
-              <tr>
                 <td class="mono">RO2609001129</td><td>Maintenance</td><td>이정환</td>
                 <td><span class="aloistag">상담완료</span></td>
                 <td class="mono">2026-09-17</td><td class="mono dday-cell" data-days="4">D+4일</td>
                 <td class="num">156,000</td>
                 <td><div class="reason-cell" data-ro="RO2609001129" data-saved=""><span class="reason-text"></span></div></td>
+              </tr>
+              
+              <tr>
+                <td class="mono">RO2609001130</td><td>사고수리</td><td>박영묵</td>
+                <td><span class="aloistag">End Control 요청</span></td>
+                <td class="mono">2026-09-17</td><td class="mono dday-cell" data-days="4">D+4일</td>
+                <td class="num">1,583,000</td>
+                <td><div class="reason-cell" data-ro="RO2609001130" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
               <tr>
@@ -2671,7 +2666,7 @@
               
               <tr>
                 <td class="mono">RO2609001175</td><td>Maintenance</td><td>안준영</td>
-                <td><span class="aloistag">상담완료</span></td>
+                <td><span class="aloistag">정비시작</span></td>
                 <td class="mono">2026-09-18</td><td class="mono dday-cell" data-days="3">D+3일</td>
                 <td class="num">1,133,692</td>
                 <td><div class="reason-cell" data-ro="RO2609001175" data-saved=""><span class="reason-text"></span></div></td>
@@ -2783,7 +2778,7 @@
               
               <tr>
                 <td class="mono">RO2609001195</td><td>진단</td><td>안준영</td>
-                <td><span class="aloistag">End Control 요청</span></td>
+                <td><span class="aloistag">공정마감</span></td>
                 <td class="mono">2026-09-18</td><td class="mono dday-cell" data-days="3">D+3일</td>
                 <td class="num">133,724</td>
                 <td><div class="reason-cell" data-ro="RO2609001195" data-saved=""><span class="reason-text"></span></div></td>
@@ -3038,14 +3033,6 @@
               </tr>
               
               <tr>
-                <td class="mono">RO2609001236</td><td>Maintenance</td><td>안준영</td>
-                <td><span class="aloistag">정비시작</span></td>
-                <td class="mono">2026-09-19</td><td class="mono dday-cell" data-days="2">D+2일</td>
-                <td class="num">688,082</td>
-                <td><div class="reason-cell" data-ro="RO2609001236" data-saved=""><span class="reason-text"></span></div></td>
-              </tr>
-              
-              <tr>
                 <td class="mono">RO2609001238</td><td>Maintenance</td><td>안준영</td>
                 <td><span class="aloistag">가정산 완료</span></td>
                 <td class="mono">2026-09-19</td><td class="mono dday-cell" data-days="2">D+2일</td>
@@ -3247,9 +3234,9 @@
               
               <tr>
                 <td class="mono">RO2609001269</td><td>Maintenance</td><td>안준영</td>
-                <td><span class="aloistag">End Control 요청</span></td>
+                <td><span class="aloistag">가정산 완료</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
-                <td class="num">216,320</td>
+                <td class="num">204,320</td>
                 <td><div class="reason-cell" data-ro="RO2609001269" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
@@ -3367,7 +3354,7 @@
               
               <tr>
                 <td class="mono">RO2609001286</td><td>Maintenance</td><td>안준영</td>
-                <td><span class="aloistag">End Control 요청</span></td>
+                <td><span class="aloistag">가정산 완료</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">650,492</td>
                 <td><div class="reason-cell" data-ro="RO2609001286" data-saved=""><span class="reason-text"></span></div></td>
@@ -3447,7 +3434,7 @@
               
               <tr>
                 <td class="mono">RO2609001297</td><td>Maintenance</td><td>정용환</td>
-                <td><span class="aloistag">End Control 요청</span></td>
+                <td><span class="aloistag">가정산 완료</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">90,168</td>
                 <td><div class="reason-cell" data-ro="RO2609001297" data-saved=""><span class="reason-text"></span></div></td>
@@ -3455,7 +3442,7 @@
               
               <tr>
                 <td class="mono">RO2609001298</td><td>Maintenance</td><td>정용환</td>
-                <td><span class="aloistag">End Control 요청</span></td>
+                <td><span class="aloistag">가정산 완료</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">554,498</td>
                 <td><div class="reason-cell" data-ro="RO2609001298" data-saved=""><span class="reason-text"></span></div></td>
@@ -3519,9 +3506,9 @@
               
               <tr>
                 <td class="mono">RO2609001309</td><td>사고수리</td><td>강충성</td>
-                <td><span class="aloistag">상담시작</span></td>
+                <td><span class="aloistag">상담완료</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
-                <td class="num">9,538,900</td>
+                <td class="num">9,572,100</td>
                 <td><div class="reason-cell" data-ro="RO2609001309" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
@@ -3535,7 +3522,7 @@
               
               <tr>
                 <td class="mono">RO2609001311</td><td>입고 Proactive-RITA</td><td>최민수</td>
-                <td><span class="aloistag">정비시작</span></td>
+                <td><span class="aloistag">End Control 요청</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">693,093</td>
                 <td><div class="reason-cell" data-ro="RO2609001311" data-saved=""><span class="reason-text"></span></div></td>
@@ -3615,7 +3602,7 @@
               
               <tr>
                 <td class="mono">RO2609001321</td><td>Maintenance</td><td>우종훈</td>
-                <td><span class="aloistag">상담완료</span></td>
+                <td><span class="aloistag">정비시작</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">422,370</td>
                 <td><div class="reason-cell" data-ro="RO2609001321" data-saved=""><span class="reason-text"></span></div></td>
@@ -3671,18 +3658,26 @@
               
               <tr>
                 <td class="mono">RO2609001329</td><td>진단</td><td>최민수</td>
-                <td><span class="aloistag">상담시작</span></td>
+                <td><span class="aloistag">상담완료</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
-                <td class="num">0</td>
+                <td class="num">604,092</td>
                 <td><div class="reason-cell" data-ro="RO2609001329" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
               <tr>
                 <td class="mono">RO2609001330</td><td>Maintenance</td><td>김민규</td>
-                <td><span class="aloistag">상담시작</span></td>
+                <td><span class="aloistag">상담완료</span></td>
                 <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
-                <td class="num">0</td>
+                <td class="num">196,980</td>
                 <td><div class="reason-cell" data-ro="RO2609001330" data-saved=""><span class="reason-text"></span></div></td>
+              </tr>
+              
+              <tr>
+                <td class="mono">RO2609001331</td><td>Maintenance</td><td>정용환</td>
+                <td><span class="aloistag">상담완료</span></td>
+                <td class="mono">2026-09-21</td><td class="mono dday-cell" data-days="0">D+0일</td>
+                <td class="num">172,548</td>
+                <td><div class="reason-cell" data-ro="RO2609001331" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
             </tbody>
@@ -3874,7 +3869,7 @@
         <div class="viewer-head">
           <span class="lbl">차량접수 SB별 부품 세부</span>
           <span class="val">0건</span>
-          <span class="foot">SB 클릭해서 펼치기 · 차량접수 SB(최근 180일) 10321건 중 RO 미발행 + 미처리 부품요청이 걸린 SB</span>
+          <span class="foot">SB 클릭해서 펼치기 · 차량접수 SB(최근 180일) 10322건 중 RO 미발행 + 미처리 부품요청이 걸린 SB</span>
         </div>
         <div class="tablewrap">
           <table>
@@ -3900,8 +3895,8 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">부품이 들어있는 예약접수 SB</span>
-          <span class="value">33건</span>
-          <span class="foot">113라인 · 요청수량×원가 합계 ₩21,647,144</span>
+          <span class="value">35건</span>
+          <span class="foot">118라인 · 요청수량×원가 합계 ₩21,915,912</span>
         </div>
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
@@ -3914,7 +3909,7 @@
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">예약접수 SB별 부품 세부</span>
-          <span class="val">33건</span>
+          <span class="val">35건</span>
           <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 예약접수(오늘 이후) 301건 중 미처리 부품요청이 걸린 SB</span>
         </div>
         <div class="tablewrap">
@@ -4136,6 +4131,12 @@
               
               <tr class="subtotal"><td colspan="3">SB2609000195 합계</td><td class="num">2</td><td class="num"></td><td class="num"></td><td class="num">611,796</td></tr>
               
+              <tr class="grouphead open" data-group="sr-SB2609001481" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609001481 · 예약일 10-01 · <span class="dday-cell dday-badge" data-days="10">D-10일</span> · SA 김도현 (1라인)<span class="hint"></span></td></tr>
+              
+              <tr data-group="sr-SB2609001481"><td class="mono">33127607158</td><td>Repair kit i</td><td><span class="aloistag">A4</span></td><td class="num">1</td><td class="num">10</td><td class="num">7</td><td class="num">30,485</td></tr>
+              
+              <tr class="subtotal"><td colspan="3">SB2609001481 합계</td><td class="num">1</td><td class="num"></td><td class="num"></td><td class="num">30,485</td></tr>
+              
               <tr class="grouphead open" data-group="sr-SB2607002070" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2607002070 · 예약일 10-01 · <span class="dday-cell dday-badge" data-days="10">D-10일</span> · SA 김민규 (1라인)<span class="hint"></span></td></tr>
               
               <tr data-group="sr-SB2607002070"><td class="mono">11719887735</td><td>Valve pushro</td><td><span class="aloistag">SY</span></td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">21,945</td></tr>
@@ -4256,11 +4257,31 @@
               
               <tr class="subtotal"><td colspan="3">SB2608001608 합계</td><td class="num">3</td><td class="num"></td><td class="num"></td><td class="num">62,309</td></tr>
               
+              <tr class="grouphead open" data-group="sr-SB2609001192" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609001192 · 예약일 09-22 · <span class="dday-cell dday-badge" data-days="1">D-1일</span> · SA 안준영 (4라인)<span class="hint"></span></td></tr>
+              
+              <tr data-group="sr-SB2609001192"><td class="mono">64115A547D4</td><td>Mikrofilter/</td><td><span class="aloistag">A1</span></td><td class="num">1</td><td class="num">37</td><td class="num">36</td><td class="num">120,134</td></tr>
+              
+              <tr data-group="sr-SB2609001192"><td class="mono">83215A65B99</td><td>LL-22FE++ 0W12</td><td><span class="aloistag">L1</span></td><td class="num">5</td><td class="num">375</td><td class="num">370</td><td class="num">75,800</td></tr>
+              
+              <tr data-group="sr-SB2609001192"><td class="mono">83135A82511</td><td>Brake fluid</td><td><span class="aloistag">L1</span></td><td class="num">2</td><td class="num">41</td><td class="num">37</td><td class="num">22,684</td></tr>
+              
+              <tr data-group="sr-SB2609001192"><td class="mono">11428575211</td><td>Set oil-filt</td><td><span class="aloistag">A1</span></td><td class="num">1</td><td class="num">99</td><td class="num">97</td><td class="num">19,665</td></tr>
+              
+              <tr class="subtotal"><td colspan="3">SB2609001192 합계</td><td class="num">9</td><td class="num"></td><td class="num"></td><td class="num">238,283</td></tr>
+              
               <tr class="grouphead open" data-group="sr-SB2609000250" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609000250 · 예약일 09-22 · <span class="dday-cell dday-badge" data-days="1">D-1일</span> · SA 김민규 (1라인)<span class="hint"></span></td></tr>
               
               <tr data-group="sr-SB2609000250"><td class="mono">07149890645</td><td>Torx screw,</td><td><span class="aloistag">L4</span></td><td class="num">1</td><td class="num">5</td><td class="num">4</td><td class="num">5,180</td></tr>
               
               <tr class="subtotal"><td colspan="3">SB2609000250 합계</td><td class="num">1</td><td class="num"></td><td class="num"></td><td class="num">5,180</td></tr>
+              
+              <tr class="grouphead open" data-group="sr-SB2609000480" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609000480 · 예약일 09-22 · <span class="dday-cell dday-badge" data-days="1">D-1일</span> · SA 안준영 (2라인)<span class="hint"></span></td></tr>
+              
+              <tr data-group="sr-SB2609000480"><td class="mono">12415B913B8</td><td>Starter</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">2</td><td class="num">0</td><td class="num">603,474</td></tr>
+              
+              <tr data-group="sr-SB2609000480"><td class="mono">12418571349</td><td>Acoustic plu</td><td><span class="aloistag">SK</span></td><td class="num">1</td><td class="num">8</td><td class="num">2</td><td class="num">8,322</td></tr>
+              
+              <tr class="subtotal"><td colspan="3">SB2609000480 합계</td><td class="num">2</td><td class="num"></td><td class="num"></td><td class="num">611,796</td></tr>
               
               <tr class="grouphead open" data-group="sr-SB2609000908" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609000908 · 예약일 09-22 · <span class="dday-cell dday-badge" data-days="1">D-1일</span> · SA 강충성 (3라인)<span class="hint"></span></td></tr>
               
@@ -4271,14 +4292,6 @@
               <tr data-group="sr-SB2609000908"><td class="mono">51317288462</td><td>Bump stop</td><td><span class="aloistag">A3</span></td><td class="num">2</td><td class="num">93</td><td class="num">67</td><td class="num">4,962</td></tr>
               
               <tr class="subtotal"><td colspan="3">SB2609000908 합계</td><td class="num">4</td><td class="num"></td><td class="num"></td><td class="num">80,867</td></tr>
-              
-              <tr class="grouphead open" data-group="sr-SB2609000480" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609000480 · 예약일 09-22 · <span class="dday-cell dday-badge" data-days="1">D-1일</span> · SA 안준영 (2라인)<span class="hint"></span></td></tr>
-              
-              <tr data-group="sr-SB2609000480"><td class="mono">12415B913B8</td><td>Starter</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">2</td><td class="num">0</td><td class="num">603,474</td></tr>
-              
-              <tr data-group="sr-SB2609000480"><td class="mono">12418571349</td><td>Acoustic plu</td><td><span class="aloistag">SK</span></td><td class="num">1</td><td class="num">8</td><td class="num">2</td><td class="num">8,322</td></tr>
-              
-              <tr class="subtotal"><td colspan="3">SB2609000480 합계</td><td class="num">2</td><td class="num"></td><td class="num"></td><td class="num">611,796</td></tr>
               
             </tbody>
           </table>
@@ -4533,7 +4546,7 @@
           <span class="rank">01</span>
           <span class="eyebrow">전체재고 대비 OA+OV 비율</span>
           <span class="value">5.14%</span>
-          <span class="foot">OA+OV 재고금액 ₩61,542,427 · 전체재고 ₩1,198,107,483</span>
+          <span class="foot">OA+OV 재고금액 ₩61,542,427 · 전체재고 ₩1,197,803,904</span>
         </div>
       </div>
 
@@ -5604,15 +5617,15 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">O계열 · RO/SB/SP 묶인 재고</span>
-          <span class="value">109건</span>
-          <span class="foot">요청수량×원가 합계 ₩27,766,006</span>
+          <span class="value">117건</span>
+          <span class="foot">요청수량×원가 합계 ₩31,739,319</span>
         </div>
       </div>
 
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">참조문서별 O계열 요청 세부</span>
-          <span class="val">109건</span>
+          <span class="val">117건</span>
           <span class="foot">그룹 클릭해서 펼치기 · 요청일 오래된순</span>
         </div>
         <div class="tablewrap">
@@ -5620,7 +5633,7 @@
             <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>참조문서번호</th><th>요청일</th><th>경과일</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가금액</th><th>담당SA</th></tr></thead>
             <tbody>
               
-              <tr class="grouphead oseries" data-group="opart-RO" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>RO (36건)<span class="hint"></span></td></tr>
+              <tr class="grouphead oseries" data-group="opart-RO" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>RO (44건)<span class="hint"></span></td></tr>
               
               <tr class="oseries" data-group="opart-RO" hidden>
                 <td class="mono">16119455463</td><td>Supply modul</td><td><span class="aloistag oseries">OV</span></td>
@@ -5826,20 +5839,6 @@
               </tr>
               
               <tr class="oseries" data-group="opart-RO" hidden>
-                <td class="mono">51117421820</td><td>Support, fog</td><td><span class="aloistag oseries">O8</span></td>
-                <td class="mono">RO2609001258</td><td class="mono">09-21</td><td class="mono">D+0일</td>
-                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
-                <td class="num">113,839</td><td>강충성</td>
-              </tr>
-              
-              <tr class="oseries" data-group="opart-RO" hidden>
-                <td class="mono">51747421700</td><td>Air duct, br</td><td><span class="aloistag oseries">O8</span></td>
-                <td class="mono">RO2609001258</td><td class="mono">09-21</td><td class="mono">D+0일</td>
-                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
-                <td class="num">29,260</td><td>강충성</td>
-              </tr>
-              
-              <tr class="oseries" data-group="opart-RO" hidden>
                 <td class="mono">51779464325</td><td>Chrome strip</td><td><span class="aloistag oseries">O8</span></td>
                 <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
                 <td class="num">1</td><td class="num">1</td><td class="num">0</td>
@@ -5861,20 +5860,90 @@
               </tr>
               
               <tr class="oseries" data-group="opart-RO" hidden>
-                <td class="mono">34116886478</td><td>Brake disc,</td><td><span class="aloistag oseries">OE</span></td>
-                <td class="mono">RO2609001285</td><td class="mono">09-21</td><td class="mono">D+0일</td>
-                <td class="num">2</td><td class="num">0</td><td class="num">0</td>
-                <td class="num">277,362</td><td>이정환</td>
+                <td class="mono">51775A62B49</td><td>Kit acoustic</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">43,292</td><td>강충성</td>
               </tr>
               
               <tr class="oseries" data-group="opart-RO" hidden>
-                <td class="mono">34216868940</td><td>Brake disc,</td><td><span class="aloistag oseries">O8</span></td>
-                <td class="mono">RO2609001285</td><td class="mono">09-21</td><td class="mono">D+0일</td>
-                <td class="num">2</td><td class="num">0</td><td class="num">0</td>
-                <td class="num">248,640</td><td>이정환</td>
+                <td class="mono">51775A62B37</td><td>Rocker panel</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">300,911</td><td>강충성</td>
               </tr>
               
-              <tr class="subtotal oseries"><td colspan="6">RO 합계</td><td class="num">47</td><td class="num"></td><td class="num"></td><td class="num">7,471,544</td><td></td></tr>
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51769447441</td><td>Seal, entran</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">26,477</td><td>강충성</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51215A33F91</td><td>Dichtung Ble</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">17,181</td><td>강충성</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51225A33F93</td><td>Seal trim ou</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">16,362</td><td>강충성</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51225A2A675</td><td>Trim, outsid</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">41,417</td><td>강충성</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51215A2A671</td><td>Trim, outsid</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">42,662</td><td>강충성</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">51769447439</td><td>Dichtung Ein</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">26,477</td><td>강충성</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">01299883231</td><td>Set, templat</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">10,353</td><td>강충성</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">41525A32D57</td><td>Door aluminu</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">1,505,700</td><td>강충성</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">41515A6C473</td><td>Door aluminu</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">1,519,170</td><td>강충성</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-RO" hidden>
+                <td class="mono">36115A19DF6</td><td>Disc wheel l</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">RO2609001309</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">1,092,412</td><td>강충성</td>
+              </tr>
+              
+              <tr class="subtotal oseries"><td colspan="6">RO 합계</td><td class="num">53</td><td class="num"></td><td class="num"></td><td class="num">11,444,857</td><td></td></tr>
               
               <tr class="grouphead oseries" data-group="opart-SB" onclick="toggleAloisGroup(this)"><td colspan="11"><span class="caret">▸</span>SB (38건)<span class="hint"></span></td></tr>
               
@@ -6076,13 +6145,6 @@
               
               <tr class="oseries" data-group="opart-SB" hidden>
                 <td class="mono">12415B913B8</td><td>Starter</td><td><span class="aloistag oseries">OE</span></td>
-                <td class="mono">SB2609000480</td><td class="mono">09-07</td><td class="mono">D+14일</td>
-                <td class="num">1</td><td class="num">2</td><td class="num">0</td>
-                <td class="num">603,474</td><td>안준영</td>
-              </tr>
-              
-              <tr class="oseries" data-group="opart-SB" hidden>
-                <td class="mono">12415B913B8</td><td>Starter</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SB2609000195</td><td class="mono">09-07</td><td class="mono">D+14일</td>
                 <td class="num">1</td><td class="num">2</td><td class="num">0</td>
                 <td class="num">603,474</td><td>안준영</td>
@@ -6142,6 +6204,13 @@
                 <td class="mono">SB2609001547</td><td class="mono">09-21</td><td class="mono">D+0일</td>
                 <td class="num">1</td><td class="num">0</td><td class="num">0</td>
                 <td class="num">52,292</td><td>M GARAGE</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">12415B913B8</td><td>Starter</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">SB2609000480</td><td class="mono">09-21</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">2</td><td class="num">0</td>
+                <td class="num">603,474</td><td>안준영</td>
               </tr>
               
               <tr class="subtotal oseries"><td colspan="6">SB 합계</td><td class="num">76</td><td class="num"></td><td class="num"></td><td class="num">12,361,621</td><td></td></tr>
@@ -7406,8 +7475,8 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
           <span class="eyebrow">이번달 O계열 인보이스금액(원가)</span>
-          <span class="value">₩173,911,883</span>
-          <span class="foot">순증감 +₩7,883,139</span>
+          <span class="value">₩174,008,009</span>
+          <span class="foot">순증감 +₩7,787,013</span>
         </div>
       </div>
 
@@ -7421,7 +7490,7 @@
             <thead><tr><th>등급</th><th class="num">입고금액</th><th class="num">인보이스금액</th><th class="num">순증감</th></tr></thead>
             <tbody>
               
-              <tr><td><span class="aloistag oseries">O8</span></td><td class="num">155,386,645</td><td class="num">140,492,200</td><td class="num">14,894,445</td></tr>
+              <tr><td><span class="aloistag oseries">O8</span></td><td class="num">155,386,645</td><td class="num">140,588,326</td><td class="num">14,798,319</td></tr>
               
               <tr><td><span class="aloistag oseries">OA</span></td><td class="num">9,087,809</td><td class="num">0</td><td class="num">9,087,809</td></tr>
               
@@ -7429,7 +7498,7 @@
               
               <tr><td><span class="aloistag oseries">OV</span></td><td class="num">9,482,828</td><td class="num">1,393,643</td><td class="num">8,089,185</td></tr>
               
-              <tr class="subtotal"><td>합계</td><td class="num">181,795,022</td><td class="num">173,911,883</td><td class="num">7,883,139</td></tr>
+              <tr class="subtotal"><td>합계</td><td class="num">181,795,022</td><td class="num">174,008,009</td><td class="num">7,787,013</td></tr>
             </tbody>
           </table>
         </div>
@@ -7485,9 +7554,9 @@
               
               <tr><td class="mono">09-20</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
               
-              <tr><td class="mono">09-21</td><td class="num">0</td><td class="num">4,696,195</td><td class="num neg">-4,696,195</td></tr>
+              <tr><td class="mono">09-21</td><td class="num">0</td><td class="num">4,792,321</td><td class="num neg">-4,792,321</td></tr>
               
-              <tr class="subtotal"><td>합계</td><td class="num">181,795,022</td><td class="num">173,911,883</td><td class="num">7,883,139</td></tr>
+              <tr class="subtotal"><td>합계</td><td class="num">181,795,022</td><td class="num">174,008,009</td><td class="num">7,787,013</td></tr>
             </tbody>
           </table>
         </div>
@@ -7512,7 +7581,7 @@
           <span class="rank">02</span>
           <span class="eyebrow">전체재고 대비 비율</span>
           <span class="value">0.00%</span>
-          <span class="foot">부품창고 전체재고 ₩1,198,107,483 기준</span>
+          <span class="foot">부품창고 전체재고 ₩1,197,803,904 기준</span>
         </div>
       </div>
 
@@ -7587,7 +7656,7 @@
     var b = sec.querySelector('.sb-label'); if(b) b.setAttribute('aria-expanded', c?'false':'true');
     try{
       var st = JSON.parse(localStorage.getItem('dsparts-collapsed')||'{}');
-      st[b.textContent.trim()] = c; localStorage.setItem('dsparts-collapsed', JSON.stringify(st));
+      st[b.firstChild.textContent.trim()] = c; localStorage.setItem('dsparts-collapsed', JSON.stringify(st));
     }catch(e){}
   }
   (function(){
@@ -7595,10 +7664,14 @@
       var st = JSON.parse(localStorage.getItem('dsparts-collapsed')||'{}');
       document.querySelectorAll('.sb-section').forEach(function(sec){
         var b = sec.querySelector('.sb-label');
-        if(b && st[b.textContent.trim()]) toggleSection(sec, false);
+        if(b && st[b.firstChild.textContent.trim()]) toggleSection(sec, false);
       });
     }catch(e){}
   })();
+  document.querySelectorAll('.sb-section').forEach(function(sec){
+    var b = sec.querySelector('.sb-label'), n = sec.querySelectorAll('.sb-item').length;
+    if(b && n){ var c = document.createElement('span'); c.className='cnt'; c.textContent=n; b.insertBefore(c, b.querySelector('.chev')); }
+  });
   function toggleMenu(force){ document.body.classList.toggle('menu-open', force); }
   // 현재 화면의 표들을 엑셀(.xlsx)로 저장 (접힌 그룹 안 행 + 진행RO 사유 포함)
   function exportExcel(){
