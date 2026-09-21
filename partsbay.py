@@ -429,7 +429,7 @@ def build_oaov(pw_rows, inv_total):
 
     def items_of(rows):
         return sorted([{
-            "item": r.get("itemCd"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
+            "item": r.get("itemCd"), "name": r.get("itemNm"), "pgrp": r.get("prodGroup") or "-", "alois": r.get("aloisCd"),
             "qty": int(num(r.get("crtQty"))), "val": round(val_fn(r)),
         } for r in rows], key=lambda i: i["val"], reverse=True)
 
@@ -489,7 +489,7 @@ def build_longstock(pw_rows, inv_total, now):
     }
 
 
-def build_o_parts(rows, now):
+def build_o_parts(rows, now, pgrp_map=None):
     """ALOIS O계열 중 미처리 출고요청(RO/SB/SP)에 걸려있는 재고. 요청수량×이동평균단가 = 원가."""
     def val_fn(r):
         return num(r.get("reqQty")) * num(r.get("movPrc"))
@@ -504,6 +504,7 @@ def build_o_parts(rows, now):
     o_rows = [r for r in rows if str(r.get("aloisCd") or "").startswith("O")]
     items = sorted([{
         "item": r.get("partNo"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
+        "pgrp": (pgrp_map or {}).get(r.get("partNo")) or "-",
         "ref_tp": r.get("refDocTp") or "기타", "ref_no": r.get("refDocNo") or "-",
         "req_qty": int(num(r.get("reqQty"))), "crt_qty": int(num(r.get("crtQty"))),
         "avail_qty": int(num(r.get("availQty"))), "req_dt": (r.get("reqDt") or "")[5:10],
@@ -648,7 +649,7 @@ def build_o_available(pw_rows):
         if str(r.get("aloisCd") or "").startswith("O") and num(r.get("ableQty")) > 0
     ]
     parts = sorted([{
-        "item": r.get("itemCd"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
+        "item": r.get("itemCd"), "name": r.get("itemNm"), "pgrp": r.get("prodGroup") or "-", "alois": r.get("aloisCd"),
         "qty": int(num(r.get("crtQty"))), "avail_qty": int(num(r.get("ableQty"))),
         "val": round(val_fn(r)),
     } for r in o_rows], key=lambda i: i["val"], reverse=True)
@@ -1103,7 +1104,8 @@ def run_cycle(page: Page) -> None:
     ext, shop = build_ext_shop(to_rows, period_label)
     acc, tire = build_acc_tire(to_rows)
     longstock = build_longstock(pw_rows, inv["total"], now)
-    opart = build_o_parts(req_rows, now)
+    pgrp_map = {r.get("itemCd"): r.get("prodGroup") for r in inv_rows if r.get("prodGroup")}
+    opart = build_o_parts(req_rows, now, pgrp_map)
     oavail = build_o_available(pw_rows)
     nonmng = build_nonmng(pw_rows, inv["total"])
     openro = build_open_ro(open_ro_rows, now)
