@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 21일 (월) · 16:33 기준",
+    "generated_at": "9월 21일 (월) · 16:49 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,8 +16,8 @@
     "top5": []
   },
   "inv": {
-    "total": 1187683575,
-    "item_count": 2104,
+    "total": 1187659320,
+    "item_count": 2103,
     "code_count": 25,
     "alois_groups": [
       {
@@ -5299,9 +5299,9 @@
           },
           {
             "code": "L7",
-            "val": 55725164,
+            "val": 55700909,
             "pct": 4.69,
-            "qty": 1322,
+            "qty": 1321,
             "parts": [
               {
                 "item": "11419895359",
@@ -6894,12 +6894,6 @@
                 "val": 24382
               },
               {
-                "item": "51119477051",
-                "name": "Trim air duc",
-                "qty": 1,
-                "val": 24255
-              },
-              {
                 "item": "13717810772",
                 "name": "Pipe",
                 "qty": 1,
@@ -7472,8 +7466,8 @@
             ]
           }
         ],
-        "subtotal_val": 145334696,
-        "subtotal_qty": 4771,
+        "subtotal_val": 145310441,
+        "subtotal_qty": 4770,
         "subtotal_pct": 12.24
       },
       {
@@ -12898,7 +12892,7 @@
   },
   "oaov": {
     "total": 60668301,
-    "inv_total": 1187683575,
+    "inv_total": 1187659320,
     "pct": 5.11,
     "oa_val": 38854073,
     "ov_val": 21814228,
@@ -18823,10 +18817,26 @@
         "val": 43505,
         "sa": "정영철",
         "dday": "D+0일"
+      },
+      {
+        "item": "34356790304",
+        "name": "Sensor",
+        "alois": "O8",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001341",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-21",
+        "req_dt_full": "2026-09-21 16:48:09",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 28015,
+        "sa": "김민규",
+        "dday": "D+0일"
       }
     ],
-    "count": 121,
-    "total_val": 34420338,
+    "count": 122,
+    "total_val": 34448353,
     "groups": [
       {
         "code": "RO",
@@ -19582,11 +19592,27 @@
             "val": 43505,
             "sa": "정영철",
             "dday": "D+0일"
+          },
+          {
+            "item": "34356790304",
+            "name": "Sensor",
+            "alois": "O8",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001341",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-21",
+            "req_dt_full": "2026-09-21 16:48:09",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 28015,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 47,
-        "qty_sum": 56,
-        "val": 14059661
+        "count": 48,
+        "qty_sum": 57,
+        "val": 14087676
       },
       {
         "code": "SB",
@@ -22249,14 +22275,6 @@
         "val": 89165
       },
       {
-        "item": "51145A4B372",
-        "name": "M logos side",
-        "alois": "O8",
-        "qty": 2,
-        "avail_qty": 2,
-        "val": 87010
-      },
-      {
         "item": "51142472836",
         "name": "Lettering, b",
         "alois": "O8",
@@ -23175,6 +23193,14 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 43600
+      },
+      {
+        "item": "51145A4B372",
+        "name": "M logos side",
+        "alois": "O8",
+        "qty": 2,
+        "avail_qty": 1,
+        "val": 43505
       },
       {
         "item": "51465A43810",
@@ -25014,14 +25040,6 @@
             "val": 90015
           },
           {
-            "item": "51145A4B372",
-            "name": "M logos side",
-            "alois": "O8",
-            "qty": 2,
-            "avail_qty": 2,
-            "val": 87010
-          },
-          {
             "item": "51142472836",
             "name": "Lettering, b",
             "alois": "O8",
@@ -25604,6 +25622,14 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 43890
+          },
+          {
+            "item": "51145A4B372",
+            "name": "M logos side",
+            "alois": "O8",
+            "qty": 2,
+            "avail_qty": 1,
+            "val": 43505
           },
           {
             "item": "51767390138",
@@ -26696,8 +26722,8 @@
         ],
         "count": 262,
         "qty_sum": 979,
-        "avail_sum": 960,
-        "val": 31038852
+        "avail_sum": 959,
+        "val": 30995347
       },
       {
         "code": "OA",
@@ -28441,7 +28467,7 @@
       }
     ],
     "count": 475,
-    "total_val": 357535166
+    "total_val": 357491661
   },
   "oflow": {
     "rows": [
@@ -28956,7 +28982,7 @@
         "pub": "2026-08-19",
         "pub_full": "2026-08-19 14:13",
         "dday": "D+33일",
-        "amt": 4871477
+        "amt": 4875326
       },
       {
         "ro": "RO2608001134",
@@ -30001,7 +30027,7 @@
         "pub": "2026-09-14",
         "pub_full": "2026-09-14 14:45",
         "dday": "D+7일",
-        "amt": 4147060
+        "amt": 3923660
       },
       {
         "ro": "RO2609000918",
@@ -30434,8 +30460,8 @@
       },
       {
         "ro": "RO2609001091",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-09-17",
@@ -31236,17 +31262,6 @@
         "amt": 2108000
       },
       {
-        "ro": "RO2609001262",
-        "stat": "공정마감",
-        "stat_cd": "04",
-        "svc": "사고수리",
-        "sa": "박영묵",
-        "pub": "2026-09-21",
-        "pub_full": "2026-09-21 08:45",
-        "dday": "D+0일",
-        "amt": 1563200
-      },
-      {
         "ro": "RO2609001263",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -31908,8 +31923,8 @@
       },
       {
         "ro": "RO2609001338",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-21",
@@ -31930,14 +31945,14 @@
       },
       {
         "ro": "RO2609001341",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "경수리",
         "sa": "김민규",
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 16:07",
         "dday": "D+0일",
-        "amt": 280000
+        "amt": 1070100
       },
       {
         "ro": "RO2609001342",
@@ -31951,8 +31966,8 @@
         "amt": 7710200
       }
     ],
-    "count": 304,
-    "total_amt": 732978217,
+    "count": 303,
+    "total_amt": 731985566,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -31962,22 +31977,22 @@
       {
         "stat": "상담완료",
         "count": 145,
-        "amt": 498967449
+        "amt": 498771958
       },
       {
         "stat": "정비시작",
-        "count": 40,
-        "amt": 55567581
+        "count": 38,
+        "amt": 54733083
       },
       {
         "stat": "End Control 요청",
-        "count": 58,
-        "amt": 76361666
+        "count": 60,
+        "amt": 77962204
       },
       {
         "stat": "공정마감",
-        "count": 2,
-        "amt": 2066100
+        "count": 1,
+        "amt": 502900
       },
       {
         "stat": "가정산 완료",
@@ -32394,7 +32409,7 @@
     "total_val": 8901371,
     "o_lines": 11,
     "o_val": 4629751,
-    "resv_total": 12016
+    "resv_total": 12015
   },
   "sbresv": {
     "groups": [
@@ -32477,7 +32492,7 @@
             "alois": "A3",
             "req_qty": 24,
             "crt_qty": 59,
-            "avail_qty": 31,
+            "avail_qty": 29,
             "val": 28752
           }
         ],
@@ -34060,7 +34075,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10329
+    "resv_total": 10331
   },
   "nonmng": {
     "rows": [],
