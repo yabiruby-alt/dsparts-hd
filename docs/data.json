@@ -2,22 +2,275 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 07:09 기준",
+    "generated_at": "9월 23일 (수) · 07:24 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
-    "total": 0,
+    "total": 58430955,
     "date": "2026-09-23",
-    "grn_count": 0,
-    "lines": 0,
-    "qty": 0,
-    "alois_groups": [],
-    "grn_rows": [],
-    "top5": []
+    "grn_count": 16,
+    "lines": 154,
+    "qty": 658,
+    "alois_groups": [
+      {
+        "code": "A",
+        "label": "상시재고",
+        "oseries": false,
+        "rows": [
+          {
+            "code": "A2",
+            "val": 1608583,
+            "pct": 2.75
+          },
+          {
+            "code": "A3",
+            "val": 863798,
+            "pct": 1.48
+          },
+          {
+            "code": "A4",
+            "val": 2183523,
+            "pct": 3.74
+          },
+          {
+            "code": "A5",
+            "val": 959138,
+            "pct": 1.64
+          },
+          {
+            "code": "A6",
+            "val": 4090029,
+            "pct": 7.0
+          }
+        ],
+        "subtotal_val": 9705071,
+        "subtotal_qty": 0,
+        "subtotal_pct": 16.61
+      },
+      {
+        "code": "L",
+        "label": "로컬조달",
+        "oseries": false,
+        "rows": [
+          {
+            "code": "L1",
+            "val": 2446280,
+            "pct": 4.19
+          },
+          {
+            "code": "L5",
+            "val": 100156,
+            "pct": 0.17
+          },
+          {
+            "code": "L7",
+            "val": 1480320,
+            "pct": 2.53
+          }
+        ],
+        "subtotal_val": 4026756,
+        "subtotal_qty": 0,
+        "subtotal_pct": 6.89
+      },
+      {
+        "code": "O",
+        "label": "특수/단종계열",
+        "oseries": true,
+        "rows": [
+          {
+            "code": "O8",
+            "val": 8987938,
+            "pct": 15.38
+          },
+          {
+            "code": "ON",
+            "val": 2428710,
+            "pct": 4.16
+          },
+          {
+            "code": "OV",
+            "val": 1168,
+            "pct": 0.0
+          }
+        ],
+        "subtotal_val": 11417816,
+        "subtotal_qty": 0,
+        "subtotal_pct": 19.54
+      },
+      {
+        "code": "I",
+        "label": "비이동성",
+        "oseries": false,
+        "rows": [
+          {
+            "code": "II",
+            "val": 12256722,
+            "pct": 20.98
+          }
+        ],
+        "subtotal_val": 12256722,
+        "subtotal_qty": 0,
+        "subtotal_pct": 20.98
+      },
+      {
+        "code": "S",
+        "label": "특수발주",
+        "oseries": false,
+        "rows": [
+          {
+            "code": "SC",
+            "val": 1021690,
+            "pct": 1.75
+          },
+          {
+            "code": "SK",
+            "val": 6394235,
+            "pct": 10.94
+          },
+          {
+            "code": "SZ",
+            "val": 13608665,
+            "pct": 23.29
+          }
+        ],
+        "subtotal_val": 21024590,
+        "subtotal_qty": 0,
+        "subtotal_pct": 35.98
+      }
+    ],
+    "grn_rows": [
+      {
+        "grn": "2282945",
+        "val": 1870000,
+        "is_top": false
+      },
+      {
+        "grn": "2282891",
+        "val": 1021690,
+        "is_top": false
+      },
+      {
+        "grn": "2282831",
+        "val": 775130,
+        "is_top": false
+      },
+      {
+        "grn": "2282738",
+        "val": 620430,
+        "is_top": false
+      },
+      {
+        "grn": "2282710",
+        "val": 923710,
+        "is_top": false
+      },
+      {
+        "grn": "2282677",
+        "val": 8155078,
+        "is_top": false
+      },
+      {
+        "grn": "2282635",
+        "val": 585525,
+        "is_top": false
+      },
+      {
+        "grn": "2282559",
+        "val": 2709906,
+        "is_top": false
+      },
+      {
+        "grn": "2282558",
+        "val": 5266839,
+        "is_top": false
+      },
+      {
+        "grn": "2282506",
+        "val": 212194,
+        "is_top": false
+      },
+      {
+        "grn": "2282413",
+        "val": 693077,
+        "is_top": false
+      },
+      {
+        "grn": "2282204",
+        "val": 6117960,
+        "is_top": false
+      },
+      {
+        "grn": "2282084",
+        "val": 2239622,
+        "is_top": false
+      },
+      {
+        "grn": "2281115",
+        "val": 7750284,
+        "is_top": false
+      },
+      {
+        "grn": "2280411",
+        "val": 1256449,
+        "is_top": false
+      },
+      {
+        "grn": "2280410",
+        "val": 18233061,
+        "is_top": true
+      }
+    ],
+    "top5": [
+      {
+        "item": "12415BA2AE5",
+        "name": "Starter",
+        "alois": "SK",
+        "grn": "2282204",
+        "qty": 10,
+        "val": 6034740,
+        "oseries": false
+      },
+      {
+        "item": "65505A42087",
+        "name": "Central info",
+        "alois": "II",
+        "grn": "2280410",
+        "qty": 1,
+        "val": 4252635,
+        "oseries": false
+      },
+      {
+        "item": "61278877428",
+        "name": "Cell module,",
+        "alois": "O8",
+        "grn": "2282558",
+        "qty": 1,
+        "val": 3299360,
+        "oseries": true
+      },
+      {
+        "item": "18329887747",
+        "name": "RP diesel pa",
+        "alois": "SZ",
+        "grn": "2282677",
+        "qty": 1,
+        "val": 2846607,
+        "oseries": false
+      },
+      {
+        "item": "37105B69E20",
+        "name": "Air spring s",
+        "alois": "SZ",
+        "grn": "2280410",
+        "qty": 1,
+        "val": 2428710,
+        "oseries": false
+      }
+    ]
   },
   "inv": {
-    "total": 1176408007,
-    "item_count": 2168,
+    "total": 1230760225,
+    "item_count": 2260,
     "code_count": 25,
     "alois_groups": [
       {
@@ -27,9 +280,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 216107321,
-            "pct": 18.37,
-            "qty": 2439,
+            "val": 215914452,
+            "pct": 17.54,
+            "qty": 2437,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -58,8 +311,8 @@
               {
                 "item": "64115A547D4",
                 "name": "Mikrofilter/",
-                "qty": 35,
-                "val": 4204690
+                "qty": 34,
+                "val": 4084556
               },
               {
                 "item": "64316835405",
@@ -94,8 +347,8 @@
               {
                 "item": "61615A43610",
                 "name": "Set of wiper G70",
-                "qty": 19,
-                "val": 1381965
+                "qty": 18,
+                "val": 1309230
               },
               {
                 "item": "33117525064",
@@ -119,9 +372,9 @@
           },
           {
             "code": "A2",
-            "val": 15083021,
-            "pct": 1.28,
-            "qty": 1149,
+            "val": 16633634,
+            "pct": 1.35,
+            "qty": 1203,
             "parts": [
               {
                 "item": "34216890353",
@@ -140,6 +393,12 @@
                 "name": "Set of wiper 6GT",
                 "qty": 22,
                 "val": 1428570
+              },
+              {
+                "item": "61610040534",
+                "name": "Set of wiper F55,56,57",
+                "qty": 30,
+                "val": 1267500
               },
               {
                 "item": "64115A547D8",
@@ -175,7 +434,13 @@
                 "item": "51767288752",
                 "name": "Plaque",
                 "qty": 10,
-                "val": 578970
+                "val": 579560
+              },
+              {
+                "item": "61617411249",
+                "name": "WIPER BLADE MINI F60,F55 LCI",
+                "qty": 29,
+                "val": 576810
               },
               {
                 "item": "13718513944",
@@ -190,10 +455,10 @@
                 "val": 481290
               },
               {
-                "item": "61610040534",
-                "name": "Set of wiper F55,56,57",
-                "qty": 9,
-                "val": 380259
+                "item": "61629478894",
+                "name": "Wiper blade",
+                "qty": 15,
+                "val": 361725
               },
               {
                 "item": "34356890791",
@@ -268,12 +533,6 @@
                 "val": 160435
               },
               {
-                "item": "61617411249",
-                "name": "WIPER BLADE MINI F60,F55 LCI",
-                "qty": 8,
-                "val": 159120
-              },
-              {
                 "item": "33306787062",
                 "name": "Combin.nut",
                 "qty": 33,
@@ -286,16 +545,10 @@
                 "val": 137655
               },
               {
-                "item": "61629478894",
-                "name": "Wiper blade",
-                "qty": 5,
-                "val": 120575
-              },
-              {
                 "item": "37106789678",
                 "name": "Hex nut",
-                "qty": 40,
-                "val": 78840
+                "qty": 42,
+                "val": 82782
               },
               {
                 "item": "51111908077",
@@ -331,9 +584,9 @@
           },
           {
             "code": "A3",
-            "val": 21298302,
-            "pct": 1.81,
-            "qty": 409,
+            "val": 22162100,
+            "pct": 1.8,
+            "qty": 468,
             "parts": [
               {
                 "item": "63117214961",
@@ -358,6 +611,18 @@
                 "name": "Spark plug,",
                 "qty": 46,
                 "val": 965264
+              },
+              {
+                "item": "34106884263",
+                "name": "Repair kit UKL1,2",
+                "qty": 7,
+                "val": 854280
+              },
+              {
+                "item": "61615A974B1",
+                "name": "Set wiper bl",
+                "qty": 9,
+                "val": 623610
               },
               {
                 "item": "64119237555",
@@ -402,22 +667,10 @@
                 "val": 378420
               },
               {
-                "item": "34106884263",
-                "name": "Repair kit UKL1,2",
-                "qty": 3,
-                "val": 366132
-              },
-              {
                 "item": "34356870352",
                 "name": "Brake pad sen X5,6,7 (G)",
                 "qty": 11,
                 "val": 294492
-              },
-              {
-                "item": "61615A974B1",
-                "name": "Set wiper bl",
-                "qty": 4,
-                "val": 277160
               },
               {
                 "item": "51716966566",
@@ -486,24 +739,24 @@
                 "val": 65890
               },
               {
+                "item": "51141807495",
+                "name": "Grommet",
+                "qty": 55,
+                "val": 32120
+              },
+              {
                 "item": "07147265039",
                 "name": "Nut",
                 "qty": 20,
                 "val": 23380
-              },
-              {
-                "item": "51141807495",
-                "name": "Grommet",
-                "qty": 5,
-                "val": 2920
               }
             ]
           },
           {
             "code": "A4",
-            "val": 40788317,
-            "pct": 3.47,
-            "qty": 1861,
+            "val": 42971837,
+            "pct": 3.49,
+            "qty": 1879,
             "parts": [
               {
                 "item": "63117214962",
@@ -522,6 +775,12 @@
                 "name": "Spark plug B46,48,58",
                 "qty": 106,
                 "val": 1994920
+              },
+              {
+                "item": "51125A5A721",
+                "name": "Bumper cover",
+                "qty": 2,
+                "val": 1821400
               },
               {
                 "item": "34116889585",
@@ -554,6 +813,12 @@
                 "val": 1028097
               },
               {
+                "item": "34106884492",
+                "name": "Repair kit G30,X3,4",
+                "qty": 7,
+                "val": 1005081
+              },
+              {
                 "item": "51118069072",
                 "name": "Trim cover, G30 front",
                 "qty": 1,
@@ -564,12 +829,6 @@
                 "name": "Trim panel,",
                 "qty": 4,
                 "val": 898364
-              },
-              {
-                "item": "51125A5A721",
-                "name": "Bumper cover",
-                "qty": 1,
-                "val": 897690
               },
               {
                 "item": "51115A6A424",
@@ -614,6 +873,12 @@
                 "val": 547805
               },
               {
+                "item": "22118835572",
+                "name": "Engine mount",
+                "qty": 3,
+                "val": 546210
+              },
+              {
                 "item": "34106874034",
                 "name": "Repair kit, UKL",
                 "qty": 4,
@@ -630,6 +895,12 @@
                 "name": "LED module,",
                 "qty": 3,
                 "val": 524832
+              },
+              {
+                "item": "51147463684",
+                "name": "Badge",
+                "qty": 9,
+                "val": 516654
               },
               {
                 "item": "34216885451",
@@ -654,12 +925,6 @@
                 "name": "Brake disc,",
                 "qty": 2,
                 "val": 472140
-              },
-              {
-                "item": "34106884492",
-                "name": "Repair kit G30,X3,4",
-                "qty": 3,
-                "val": 430749
               },
               {
                 "item": "64115A56378",
@@ -770,12 +1035,6 @@
                 "val": 230808
               },
               {
-                "item": "51147463684",
-                "name": "Badge",
-                "qty": 4,
-                "val": 230632
-              },
-              {
                 "item": "13718511668",
                 "name": "Filter elmnt",
                 "qty": 5,
@@ -852,12 +1111,6 @@
                 "name": "Kit, dummy t",
                 "qty": 4,
                 "val": 183488
-              },
-              {
-                "item": "22118835572",
-                "name": "Engine mount",
-                "qty": 1,
-                "val": 182378
               },
               {
                 "item": "13532247156",
@@ -1040,6 +1293,12 @@
                 "val": 65880
               },
               {
+                "item": "07146885653",
+                "name": "LOCKING NUT",
+                "qty": 6,
+                "val": 63054
+              },
+              {
                 "item": "22116858061",
                 "name": "ASA-Bolt",
                 "qty": 12,
@@ -1070,16 +1329,16 @@
                 "val": 45810
               },
               {
+                "item": "07146885389",
+                "name": "Star-socket",
+                "qty": 7,
+                "val": 44387
+              },
+              {
                 "item": "33176760342",
                 "name": "Bolt",
                 "qty": 4,
                 "val": 44156
-              },
-              {
-                "item": "07146885653",
-                "name": "LOCKING NUT",
-                "qty": 4,
-                "val": 41884
               },
               {
                 "item": "07129908650",
@@ -1140,12 +1399,6 @@
                 "name": "Guide, bumpe",
                 "qty": 3,
                 "val": 33162
-              },
-              {
-                "item": "07146885389",
-                "name": "Star-socket",
-                "qty": 5,
-                "val": 32120
               },
               {
                 "item": "51337140714",
@@ -1234,8 +1487,8 @@
               {
                 "item": "33326760668",
                 "name": "Nut",
-                "qty": 7,
-                "val": 7749
+                "qty": 9,
+                "val": 9936
               },
               {
                 "item": "07147378241",
@@ -1259,9 +1512,9 @@
           },
           {
             "code": "A5",
-            "val": 70381381,
-            "pct": 5.98,
-            "qty": 1346,
+            "val": 71340520,
+            "pct": 5.8,
+            "qty": 1359,
             "parts": [
               {
                 "item": "66325A84CF7",
@@ -1396,6 +1649,12 @@
                 "val": 678333
               },
               {
+                "item": "13628589665",
+                "name": "Oxygen senso",
+                "qty": 2,
+                "val": 655248
+              },
+              {
                 "item": "41008499868",
                 "name": "Hood",
                 "qty": 1,
@@ -1478,12 +1737,6 @@
                 "name": "Vibration ge",
                 "qty": 2,
                 "val": 327782
-              },
-              {
-                "item": "13628589665",
-                "name": "Oxygen senso",
-                "qty": 1,
-                "val": 326531
               },
               {
                 "item": "31108864693",
@@ -1606,6 +1859,12 @@
                 "val": 221920
               },
               {
+                "item": "64319312318",
+                "name": "Filter",
+                "qty": 3,
+                "val": 214890
+              },
+              {
                 "item": "51265A681A8",
                 "name": "Door pin Cry",
                 "qty": 2,
@@ -1616,6 +1875,12 @@
                 "name": "Filter E70,71(X5,6)",
                 "qty": 2,
                 "val": 210794
+              },
+              {
+                "item": "36122455268",
+                "name": "Hub cap fixe",
+                "qty": 2,
+                "val": 209070
               },
               {
                 "item": "51777300819",
@@ -1810,12 +2075,6 @@
                 "val": 115420
               },
               {
-                "item": "36122455268",
-                "name": "Hub cap fixe",
-                "qty": 1,
-                "val": 104535
-              },
-              {
                 "item": "18308512137",
                 "name": "Clamp",
                 "qty": 3,
@@ -1850,6 +2109,12 @@
                 "name": "Bumper guide",
                 "qty": 2,
                 "val": 92004
+              },
+              {
+                "item": "66316877219",
+                "name": "Radome",
+                "qty": 1,
+                "val": 91035
               },
               {
                 "item": "07147460560",
@@ -1954,6 +2219,12 @@
                 "val": 68400
               },
               {
+                "item": "18305A09B63",
+                "name": "Screw clamp",
+                "qty": 2,
+                "val": 67784
+              },
+              {
                 "item": "51118083177",
                 "name": "Air Curtain",
                 "qty": 2,
@@ -2008,6 +2279,12 @@
                 "val": 61060
               },
               {
+                "item": "51148132375",
+                "name": "Plaque",
+                "qty": 1,
+                "val": 57205
+              },
+              {
                 "item": "51149498988",
                 "name": "Badge",
                 "qty": 1,
@@ -2038,10 +2315,22 @@
                 "val": 55155
               },
               {
+                "item": "11658585233",
+                "name": "Clamp",
+                "qty": 2,
+                "val": 52392
+              },
+              {
                 "item": "07145A7A846",
                 "name": "Screw plug",
                 "qty": 5,
                 "val": 51735
+              },
+              {
+                "item": "18308590002",
+                "name": "Screw clamp",
+                "qty": 2,
+                "val": 48000
               },
               {
                 "item": "51117385347",
@@ -2122,12 +2411,6 @@
                 "val": 33700
               },
               {
-                "item": "18305A09B63",
-                "name": "Screw clamp",
-                "qty": 1,
-                "val": 33434
-              },
-              {
                 "item": "13718480400",
                 "name": "Air filter e",
                 "qty": 1,
@@ -2174,6 +2457,12 @@
                 "name": "Side light",
                 "qty": 1,
                 "val": 28933
+              },
+              {
+                "item": "34356791958",
+                "name": "Sensor",
+                "qty": 1,
+                "val": 28015
               },
               {
                 "item": "34356792567",
@@ -2455,9 +2744,9 @@
           },
           {
             "code": "A6",
-            "val": 92846646,
-            "pct": 7.89,
-            "qty": 1493,
+            "val": 96899699,
+            "pct": 7.87,
+            "qty": 1519,
             "parts": [
               {
                 "item": "63119450229",
@@ -2524,6 +2813,12 @@
                 "name": "Windshield g",
                 "qty": 2,
                 "val": 1419990
+              },
+              {
+                "item": "11717822347",
+                "name": "Abgas-K#hler",
+                "qty": 2,
+                "val": 1386154
               },
               {
                 "item": "63115A9CF85",
@@ -2610,6 +2905,12 @@
                 "val": 998334
               },
               {
+                "item": "51128048594",
+                "name": "Trim panel",
+                "qty": 1,
+                "val": 944817
+              },
+              {
                 "item": "34106898192",
                 "name": "Repair kit,",
                 "qty": 7,
@@ -2688,6 +2989,12 @@
                 "val": 781974
               },
               {
+                "item": "31108837712",
+                "name": "Control arm",
+                "qty": 2,
+                "val": 779740
+              },
+              {
                 "item": "51119854248",
                 "name": "Trim cover,",
                 "qty": 1,
@@ -2710,12 +3017,6 @@
                 "name": "Side panel,",
                 "qty": 1,
                 "val": 709251
-              },
-              {
-                "item": "11717822347",
-                "name": "Abgas-K#hler",
-                "qty": 1,
-                "val": 693077
               },
               {
                 "item": "34106880072",
@@ -2826,10 +3127,10 @@
                 "val": 394611
               },
               {
-                "item": "31108837712",
-                "name": "Control arm",
-                "qty": 1,
-                "val": 389870
+                "item": "34116866295",
+                "name": "Brake disc,",
+                "qty": 4,
+                "val": 388448
               },
               {
                 "item": "07147133425",
@@ -2860,6 +3161,12 @@
                 "name": "Radome high-",
                 "qty": 1,
                 "val": 361420
+              },
+              {
+                "item": "51775A5A706",
+                "name": "Rocker panel",
+                "qty": 1,
+                "val": 355432
               },
               {
                 "item": "51129464148",
@@ -2992,6 +3299,12 @@
                 "name": "Cover, engin",
                 "qty": 2,
                 "val": 237818
+              },
+              {
+                "item": "51778098807",
+                "name": "Trim, wheel",
+                "qty": 1,
+                "val": 224917
               },
               {
                 "item": "66209261587",
@@ -3210,6 +3523,24 @@
                 "val": 145860
               },
               {
+                "item": "51125A011C1",
+                "name": "Mount corner",
+                "qty": 2,
+                "val": 142932
+              },
+              {
+                "item": "51129464257",
+                "name": "Guide for bu",
+                "qty": 1,
+                "val": 141064
+              },
+              {
+                "item": "51778093565",
+                "name": "Wheel arch t",
+                "qty": 1,
+                "val": 139755
+              },
+              {
                 "item": "51119464050",
                 "name": "Bumper guide",
                 "qty": 3,
@@ -3228,6 +3559,12 @@
                 "val": 136965
               },
               {
+                "item": "82292355519",
+                "name": "Key case, M",
+                "qty": 2,
+                "val": 135898
+              },
+              {
                 "item": "51125A011B7",
                 "name": "Bumper guide",
                 "qty": 2,
@@ -3238,6 +3575,12 @@
                 "name": "Pulse genera",
                 "qty": 1,
                 "val": 131652
+              },
+              {
+                "item": "64119237159",
+                "name": "Microfilter",
+                "qty": 3,
+                "val": 130002
               },
               {
                 "item": "51118078809",
@@ -3330,6 +3673,12 @@
                 "val": 108989
               },
               {
+                "item": "34218847062",
+                "name": "Repair kit,",
+                "qty": 1,
+                "val": 108756
+              },
+              {
                 "item": "51115A3C7E3",
                 "name": "Trim, wheel",
                 "qty": 1,
@@ -3370,6 +3719,12 @@
                 "name": "Floor liner",
                 "qty": 1,
                 "val": 103153
+              },
+              {
+                "item": "51475A87FF0",
+                "name": "Kit all-weat",
+                "qty": 1,
+                "val": 102487
               },
               {
                 "item": "07148867263",
@@ -3430,6 +3785,12 @@
                 "name": "Air filter i",
                 "qty": 3,
                 "val": 89946
+              },
+              {
+                "item": "51475A87FF2",
+                "name": "Kit all-weat",
+                "qty": 1,
+                "val": 86548
               },
               {
                 "item": "51137449209",
@@ -3534,12 +3895,6 @@
                 "val": 70664
               },
               {
-                "item": "51125A011C1",
-                "name": "Mount corner",
-                "qty": 1,
-                "val": 70635
-              },
-              {
                 "item": "51125A011C2",
                 "name": "Mount corner",
                 "qty": 1,
@@ -3556,12 +3911,6 @@
                 "name": "MICROFILTER",
                 "qty": 1,
                 "val": 68495
-              },
-              {
-                "item": "82292355519",
-                "name": "Key case, M",
-                "qty": 1,
-                "val": 68369
               },
               {
                 "item": "07119905696",
@@ -3642,6 +3991,12 @@
                 "val": 57645
               },
               {
+                "item": "31106859809",
+                "name": "Torx screw w",
+                "qty": 12,
+                "val": 57024
+              },
+              {
                 "item": "51112467370",
                 "name": "Set of mount",
                 "qty": 1,
@@ -3658,12 +4013,6 @@
                 "name": "Cover for mi",
                 "qty": 1,
                 "val": 55991
-              },
-              {
-                "item": "31106859809",
-                "name": "Torx screw w",
-                "qty": 12,
-                "val": 55884
               },
               {
                 "item": "51119852172",
@@ -3712,6 +4061,12 @@
                 "name": "Deflection p",
                 "qty": 1,
                 "val": 51543
+              },
+              {
+                "item": "51147219542",
+                "name": "Lettering",
+                "qty": 1,
+                "val": 51510
               },
               {
                 "item": "51147415345",
@@ -3792,12 +4147,6 @@
                 "val": 45124
               },
               {
-                "item": "64119237159",
-                "name": "Microfilter",
-                "qty": 1,
-                "val": 43162
-              },
-              {
                 "item": "13517804377",
                 "name": "O-ring",
                 "qty": 5,
@@ -3810,6 +4159,12 @@
                 "val": 40970
               },
               {
+                "item": "63137498159",
+                "name": "Auxiliary tu",
+                "qty": 1,
+                "val": 40158
+              },
+              {
                 "item": "51125A3F540",
                 "name": "Kit dummy tr",
                 "qty": 1,
@@ -3819,7 +4174,7 @@
                 "item": "51619908657",
                 "name": "Hex bolt",
                 "qty": 10,
-                "val": 39420
+                "val": 39600
               },
               {
                 "item": "61357391043",
@@ -3876,6 +4231,12 @@
                 "val": 36716
               },
               {
+                "item": "51767390135",
+                "name": "Weatherstrip",
+                "qty": 1,
+                "val": 36531
+              },
+              {
                 "item": "11288573415",
                 "name": "RIBBED V-BEL REPO",
                 "qty": 1,
@@ -3886,6 +4247,12 @@
                 "name": "Hex Bolt",
                 "qty": 31,
                 "val": 35991
+              },
+              {
+                "item": "18307803853",
+                "name": "Gasket",
+                "qty": 2,
+                "val": 35840
               },
               {
                 "item": "07119908592",
@@ -3990,6 +4357,12 @@
                 "val": 30537
               },
               {
+                "item": "66535A77DA7",
+                "name": "Dummy trim,",
+                "qty": 1,
+                "val": 30213
+              },
+              {
                 "item": "13718580429",
                 "name": "Air filter e",
                 "qty": 1,
@@ -4078,6 +4451,18 @@
                 "name": "Adjuster",
                 "qty": 6,
                 "val": 26826
+              },
+              {
+                "item": "34356790303",
+                "name": "Sensor",
+                "qty": 1,
+                "val": 26715
+              },
+              {
+                "item": "34356791962",
+                "name": "Sensor",
+                "qty": 1,
+                "val": 26715
               },
               {
                 "item": "07147296886",
@@ -4362,6 +4747,12 @@
                 "val": 7732
               },
               {
+                "item": "51767412895",
+                "name": "Clip",
+                "qty": 9,
+                "val": 6813
+              },
+              {
                 "item": "51718259788",
                 "name": "RIVET",
                 "qty": 3,
@@ -4416,12 +4807,6 @@
                 "val": 5183
               },
               {
-                "item": "51767412895",
-                "name": "Clip",
-                "qty": 9,
-                "val": 4599
-              },
-              {
                 "item": "51717154239",
                 "name": "Clip",
                 "qty": 4,
@@ -4466,9 +4851,9 @@
             ]
           }
         ],
-        "subtotal_val": 456504988,
-        "subtotal_qty": 8697,
-        "subtotal_pct": 38.8
+        "subtotal_val": 465922242,
+        "subtotal_qty": 8865,
+        "subtotal_pct": 37.86
       },
       {
         "code": "L",
@@ -4477,9 +4862,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 29828869,
-            "pct": 2.54,
-            "qty": 2018,
+            "val": 32157595,
+            "pct": 2.61,
+            "qty": 2190,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4496,8 +4881,8 @@
               {
                 "item": "83215A65B99",
                 "name": "LL-22FE++ 0W12",
-                "qty": 346,
-                "val": 4999879
+                "qty": 339,
+                "val": 4902423
               },
               {
                 "item": "83215A7EDA5",
@@ -4506,34 +4891,34 @@
                 "val": 2679600
               },
               {
-                "item": "11425B4C845",
-                "name": "Set oil-filt",
-                "qty": 107,
-                "val": 2146848
-              },
-              {
                 "item": "83515A6CDD7",
                 "name": "Radiator ant",
-                "qty": 103,
-                "val": 1699829
+                "qty": 143,
+                "val": 2355875
+              },
+              {
+                "item": "11425B4C845",
+                "name": "Set oil-filt",
+                "qty": 106,
+                "val": 2126784
               },
               {
                 "item": "83195A42DF3",
                 "name": "HT-12 Anti-freeze",
-                "qty": 75,
-                "val": 1230000
+                "qty": 115,
+                "val": 1886000
+              },
+              {
+                "item": "83135A82511",
+                "name": "Brake fluid",
+                "qty": 132,
+                "val": 1497144
               },
               {
                 "item": "99995A2A668",
                 "name": "Windshield w",
                 "qty": 58,
                 "val": 370422
-              },
-              {
-                "item": "83135A82511",
-                "name": "Brake fluid",
-                "qty": 32,
-                "val": 362944
               },
               {
                 "item": "66126912985",
@@ -4546,7 +4931,7 @@
           {
             "code": "L2",
             "val": 10578697,
-            "pct": 0.9,
+            "pct": 0.86,
             "qty": 214,
             "parts": [
               {
@@ -4602,7 +4987,7 @@
           {
             "code": "L3",
             "val": 4877948,
-            "pct": 0.41,
+            "pct": 0.4,
             "qty": 81,
             "parts": [
               {
@@ -4628,7 +5013,7 @@
           {
             "code": "L4",
             "val": 12459882,
-            "pct": 1.06,
+            "pct": 1.01,
             "qty": 520,
             "parts": [
               {
@@ -4761,9 +5146,9 @@
           },
           {
             "code": "L5",
-            "val": 3668226,
+            "val": 3768382,
             "pct": 0.31,
-            "qty": 165,
+            "qty": 214,
             "parts": [
               {
                 "item": "90200005957",
@@ -4782,6 +5167,12 @@
                 "name": "Kit hub cap",
                 "qty": 2,
                 "val": 366804
+              },
+              {
+                "item": "61278677638",
+                "name": "Hexagon bolt",
+                "qty": 131,
+                "val": 267764
               },
               {
                 "item": "90200006988",
@@ -4812,12 +5203,6 @@
                 "name": "Brake pads",
                 "qty": 1,
                 "val": 169070
-              },
-              {
-                "item": "61278677638",
-                "name": "Hexagon bolt",
-                "qty": 82,
-                "val": 167608
               },
               {
                 "item": "83225A28F03",
@@ -4890,7 +5275,7 @@
           {
             "code": "L6",
             "val": 31462896,
-            "pct": 2.67,
+            "pct": 2.56,
             "qty": 253,
             "parts": [
               {
@@ -5251,9 +5636,9 @@
           },
           {
             "code": "L7",
-            "val": 63550007,
-            "pct": 5.4,
-            "qty": 1426,
+            "val": 64735353,
+            "pct": 5.26,
+            "qty": 1432,
             "parts": [
               {
                 "item": "11419895359",
@@ -5278,6 +5663,12 @@
                 "name": "LED headligh",
                 "qty": 1,
                 "val": 1850960
+              },
+              {
+                "item": "11717822346",
+                "name": "Exhaust gas",
+                "qty": 2,
+                "val": 1751596
               },
               {
                 "item": "84105B41AC7",
@@ -5344,12 +5735,6 @@
                 "name": "Reciever dry",
                 "qty": 1,
                 "val": 964330
-              },
-              {
-                "item": "11717822346",
-                "name": "Exhaust gas",
-                "qty": 1,
-                "val": 875798
               },
               {
                 "item": "51335B597F0",
@@ -5424,6 +5809,12 @@
                 "val": 423108
               },
               {
+                "item": "51125A011C3",
+                "name": "Mount, bumpe",
+                "qty": 2,
+                "val": 360512
+              },
+              {
                 "item": "13647852362",
                 "name": "Injector",
                 "qty": 1,
@@ -5448,16 +5839,16 @@
                 "val": 329475
               },
               {
+                "item": "51777300822",
+                "name": "Cover, wheel",
+                "qty": 3,
+                "val": 318291
+              },
+              {
                 "item": "07148838288",
                 "name": "Seal screw",
                 "qty": 60,
                 "val": 297840
-              },
-              {
-                "item": "61218720722",
-                "name": "Original BMW",
-                "qty": 1,
-                "val": 294975
               },
               {
                 "item": "63115A73785",
@@ -5568,12 +5959,6 @@
                 "val": 185639
               },
               {
-                "item": "51125A011C3",
-                "name": "Mount, bumpe",
-                "qty": 1,
-                "val": 178160
-              },
-              {
                 "item": "51129464134",
                 "name": "Mount, bumpe",
                 "qty": 1,
@@ -5620,6 +6005,12 @@
                 "name": "Trim panel,",
                 "qty": 1,
                 "val": 152076
+              },
+              {
+                "item": "51119450550",
+                "name": "Ornamental g",
+                "qty": 2,
+                "val": 149566
               },
               {
                 "item": "41009629222",
@@ -5754,12 +6145,6 @@
                 "val": 106659
               },
               {
-                "item": "51777300822",
-                "name": "Cover, wheel",
-                "qty": 1,
-                "val": 106097
-              },
-              {
                 "item": "54105B32973",
                 "name": "Seal, glass",
                 "qty": 2,
@@ -5776,6 +6161,12 @@
                 "name": "Trim strip,",
                 "qty": 2,
                 "val": 104682
+              },
+              {
+                "item": "51489881741",
+                "name": "Heat insulat",
+                "qty": 1,
+                "val": 104497
               },
               {
                 "item": "11148490575",
@@ -6042,12 +6433,6 @@
                 "val": 75922
               },
               {
-                "item": "51119450550",
-                "name": "Ornamental g",
-                "qty": 1,
-                "val": 75543
-              },
-              {
                 "item": "41007492366",
                 "name": "Side panel b",
                 "qty": 1,
@@ -6244,6 +6629,12 @@
                 "name": "Hex bolt",
                 "qty": 11,
                 "val": 62634
+              },
+              {
+                "item": "51125A011D3",
+                "name": "Absorber fun",
+                "qty": 2,
+                "val": 62156
               },
               {
                 "item": "51115A63969",
@@ -7030,12 +7421,6 @@
                 "name": "Side panel b",
                 "qty": 1,
                 "val": 30770
-              },
-              {
-                "item": "51125A011D3",
-                "name": "Absorber fun",
-                "qty": 1,
-                "val": 30699
               },
               {
                 "item": "51125A011D4",
@@ -7952,9 +8337,9 @@
             ]
           }
         ],
-        "subtotal_val": 156426525,
-        "subtotal_qty": 4677,
-        "subtotal_pct": 13.3
+        "subtotal_val": 160040753,
+        "subtotal_qty": 4904,
+        "subtotal_pct": 13.0
       },
       {
         "code": "O",
@@ -7963,15 +8348,21 @@
         "rows": [
           {
             "code": "O8",
-            "val": 61286325,
-            "pct": 5.21,
-            "qty": 1131,
+            "val": 67523190,
+            "pct": 5.49,
+            "qty": 1156,
             "parts": [
               {
                 "item": "17425A18806",
                 "name": "Fan cowl wit",
                 "qty": 10,
                 "val": 7063970
+              },
+              {
+                "item": "61278877428",
+                "name": "Cell module,",
+                "qty": 1,
+                "val": 3299360
               },
               {
                 "item": "37105B64ED1",
@@ -8124,6 +8515,18 @@
                 "val": 612588
               },
               {
+                "item": "41519644732",
+                "name": "Door front r",
+                "qty": 1,
+                "val": 590762
+              },
+              {
+                "item": "41529644734",
+                "name": "Door rear ri",
+                "qty": 1,
+                "val": 585525
+              },
+              {
                 "item": "51115A1BCB8",
                 "name": "Carrier, bum",
                 "qty": 1,
@@ -8268,10 +8671,22 @@
                 "val": 272629
               },
               {
+                "item": "61278848677",
+                "name": "Electronic m",
+                "qty": 1,
+                "val": 269110
+              },
+              {
                 "item": "51129852168",
                 "name": "Grill front",
                 "qty": 1,
                 "val": 263268
+              },
+              {
+                "item": "11518650988",
+                "name": "Coolant pump",
+                "qty": 1,
+                "val": 256428
               },
               {
                 "item": "66205A44D01",
@@ -8310,6 +8725,18 @@
                 "val": 232200
               },
               {
+                "item": "51489881745",
+                "name": "Heat insulat",
+                "qty": 1,
+                "val": 229827
+              },
+              {
+                "item": "51758074612",
+                "name": "Underhood sh",
+                "qty": 1,
+                "val": 228921
+              },
+              {
                 "item": "51125A35F11",
                 "name": "Trim cover,",
                 "qty": 1,
@@ -8340,6 +8767,12 @@
                 "val": 214599
               },
               {
+                "item": "34206868936",
+                "name": "Brake disc,",
+                "qty": 2,
+                "val": 203490
+              },
+              {
                 "item": "51127384332",
                 "name": "Trim panel,",
                 "qty": 1,
@@ -8368,6 +8801,12 @@
                 "name": "Strut brace",
                 "qty": 4,
                 "val": 190792
+              },
+              {
+                "item": "34216885187",
+                "name": "Repair kit,",
+                "qty": 1,
+                "val": 188268
               },
               {
                 "item": "90200007250",
@@ -8484,6 +8923,12 @@
                 "val": 132096
               },
               {
+                "item": "51647383858",
+                "name": "Mount for he",
+                "qty": 1,
+                "val": 131772
+              },
+              {
                 "item": "11287810807",
                 "name": "Tensioner REPO",
                 "qty": 1,
@@ -8548,6 +8993,12 @@
                 "name": "Trim, wheel",
                 "qty": 1,
                 "val": 108416
+              },
+              {
+                "item": "61278843416",
+                "name": "Cell monitor",
+                "qty": 1,
+                "val": 107525
               },
               {
                 "item": "16137300683",
@@ -8970,6 +9421,12 @@
                 "val": 56780
               },
               {
+                "item": "31356859651",
+                "name": "Swing suppor",
+                "qty": 1,
+                "val": 56745
+              },
+              {
                 "item": "63147323185",
                 "name": "Rear fog lam",
                 "qty": 1,
@@ -9100,6 +9557,12 @@
                 "name": "Door hinge,",
                 "qty": 1,
                 "val": 48202
+              },
+              {
+                "item": "18307926575",
+                "name": "Seal",
+                "qty": 2,
+                "val": 47616
               },
               {
                 "item": "51165A45B48",
@@ -9378,6 +9841,12 @@
                 "val": 32265
               },
               {
+                "item": "07146878392",
+                "name": "Multi-purpos",
+                "qty": 6,
+                "val": 31950
+              },
+              {
                 "item": "51118081204",
                 "name": "Air Curtain",
                 "qty": 1,
@@ -9448,6 +9917,12 @@
                 "name": "Bracket, sid",
                 "qty": 1,
                 "val": 30175
+              },
+              {
+                "item": "33326760374",
+                "name": "Nut",
+                "qty": 6,
+                "val": 30078
               },
               {
                 "item": "13718632502",
@@ -9606,12 +10081,6 @@
                 "val": 24115
               },
               {
-                "item": "18307926575",
-                "name": "Seal",
-                "qty": 1,
-                "val": 23808
-              },
-              {
                 "item": "07147474006",
                 "name": "Clip with se",
                 "qty": 12,
@@ -9660,6 +10129,12 @@
                 "val": 20732
               },
               {
+                "item": "11427808443",
+                "name": "Filt.Element",
+                "qty": 1,
+                "val": 20670
+              },
+              {
                 "item": "51767327314",
                 "name": "Joint seal,",
                 "qty": 1,
@@ -9676,12 +10151,6 @@
                 "name": "Joint seal,",
                 "qty": 1,
                 "val": 19602
-              },
-              {
-                "item": "33326760374",
-                "name": "Nut",
-                "qty": 4,
-                "val": 19564
               },
               {
                 "item": "07132757821",
@@ -10062,6 +10531,12 @@
                 "val": 2415
               },
               {
+                "item": "07129904865",
+                "name": "Hex nut",
+                "qty": 2,
+                "val": 2190
+              },
+              {
                 "item": "51497207958",
                 "name": "Clip strip",
                 "qty": 1,
@@ -10108,7 +10583,7 @@
           {
             "code": "OA",
             "val": 38398488,
-            "pct": 3.26,
+            "pct": 3.12,
             "qty": 230,
             "parts": [
               {
@@ -10745,9 +11220,9 @@
           },
           {
             "code": "OE",
-            "val": 300026223,
-            "pct": 25.5,
-            "qty": 842,
+            "val": 299902038,
+            "pct": 24.37,
+            "qty": 841,
             "parts": [
               {
                 "item": "34505B6F947",
@@ -11176,12 +11651,6 @@
                 "val": 124200
               },
               {
-                "item": "34106859182",
-                "name": "Brake pads",
-                "qty": 1,
-                "val": 124185
-              },
-              {
                 "item": "51337444092",
                 "name": "Shaft cover",
                 "qty": 1,
@@ -11359,10 +11828,16 @@
           },
           {
             "code": "ON",
-            "val": 1921269,
-            "pct": 0.16,
-            "qty": 11,
+            "val": 4349979,
+            "pct": 0.35,
+            "qty": 12,
             "parts": [
+              {
+                "item": "37105B69E19",
+                "name": "Air spring s",
+                "qty": 1,
+                "val": 2428710
+              },
               {
                 "item": "13627926310",
                 "name": "NOx sensor",
@@ -11433,9 +11908,9 @@
           },
           {
             "code": "OV",
-            "val": 32611824,
-            "pct": 2.77,
-            "qty": 202,
+            "val": 32612992,
+            "pct": 2.65,
+            "qty": 203,
             "parts": [
               {
                 "item": "18308572487",
@@ -12100,8 +12575,8 @@
               {
                 "item": "07146961019",
                 "name": "Torx screw w",
-                "qty": 3,
-                "val": 3504
+                "qty": 4,
+                "val": 4672
               },
               {
                 "item": "61138727250",
@@ -12112,9 +12587,9 @@
             ]
           }
         ],
-        "subtotal_val": 434244129,
-        "subtotal_qty": 2416,
-        "subtotal_pct": 36.91
+        "subtotal_val": 442786687,
+        "subtotal_qty": 2442,
+        "subtotal_pct": 35.98
       },
       {
         "code": "I",
@@ -12123,15 +12598,213 @@
         "rows": [
           {
             "code": "II",
-            "val": 94104,
-            "pct": 0.01,
-            "qty": 7,
+            "val": 12273657,
+            "pct": 1.0,
+            "qty": 120,
             "parts": [
+              {
+                "item": "65505A42087",
+                "name": "Central info",
+                "qty": 1,
+                "val": 4252635
+              },
+              {
+                "item": "36108746990",
+                "name": "DISC WHEEL",
+                "qty": 2,
+                "val": 2239622
+              },
+              {
+                "item": "63117441314",
+                "name": "Headlight wi",
+                "qty": 1,
+                "val": 1642038
+              },
+              {
+                "item": "12120050948",
+                "name": "Spark plug,",
+                "qty": 60,
+                "val": 1159200
+              },
+              {
+                "item": "31356774737",
+                "name": "Stabilizer f",
+                "qty": 2,
+                "val": 627550
+              },
+              {
+                "item": "41009627295",
+                "name": "Side panel,",
+                "qty": 1,
+                "val": 509772
+              },
+              {
+                "item": "31336788776",
+                "name": "Supp.bearing",
+                "qty": 2,
+                "val": 219700
+              },
+              {
+                "item": "66209274428",
+                "name": "Ultrasonic c",
+                "qty": 1,
+                "val": 159817
+              },
+              {
+                "item": "66209274429",
+                "name": "Ultrasonic c",
+                "qty": 1,
+                "val": 159817
+              },
+              {
+                "item": "51647378746",
+                "name": "Mount for he",
+                "qty": 1,
+                "val": 130429
+              },
+              {
+                "item": "13717811026",
+                "name": "Filter elmnt",
+                "qty": 1,
+                "val": 105315
+              },
+              {
+                "item": "51758056068",
+                "name": "M Cover, low",
+                "qty": 1,
+                "val": 94288
+              },
               {
                 "item": "83302409646",
                 "name": "Removal tool",
                 "qty": 1,
                 "val": 94104
+              },
+              {
+                "item": "51777318830",
+                "name": "Cover, wheel",
+                "qty": 1,
+                "val": 84846
+              },
+              {
+                "item": "31336776554",
+                "name": "Duct with su",
+                "qty": 2,
+                "val": 77154
+              },
+              {
+                "item": "51777329032",
+                "name": "Trim cover,",
+                "qty": 1,
+                "val": 63674
+              },
+              {
+                "item": "31336782871",
+                "name": "Additional s",
+                "qty": 2,
+                "val": 62926
+              },
+              {
+                "item": "51217296458",
+                "name": "Carrier, out",
+                "qty": 1,
+                "val": 62331
+              },
+              {
+                "item": "51337322514",
+                "name": "Decorative s",
+                "qty": 1,
+                "val": 62031
+              },
+              {
+                "item": "51357322526",
+                "name": "Decorative s",
+                "qty": 1,
+                "val": 62031
+              },
+              {
+                "item": "51137388117",
+                "name": "Trim ring, h",
+                "qty": 1,
+                "val": 59843
+              },
+              {
+                "item": "51137388118",
+                "name": "Trim ring, h",
+                "qty": 1,
+                "val": 59843
+              },
+              {
+                "item": "31356859652",
+                "name": "Swing suppor",
+                "qty": 1,
+                "val": 56745
+              },
+              {
+                "item": "41009627301",
+                "name": "Side panel b",
+                "qty": 1,
+                "val": 45305
+              },
+              {
+                "item": "07146888357",
+                "name": "MULTI-PURPOS",
+                "qty": 8,
+                "val": 41464
+              },
+              {
+                "item": "51767322456",
+                "name": "Seal, A-pill",
+                "qty": 1,
+                "val": 35192
+              },
+              {
+                "item": "51767322458",
+                "name": "Sealing, B-c",
+                "qty": 1,
+                "val": 35192
+              },
+              {
+                "item": "51377491333",
+                "name": "Mount rail,",
+                "qty": 1,
+                "val": 27643
+              },
+              {
+                "item": "31336776389",
+                "name": "Guide suppor",
+                "qty": 1,
+                "val": 13000
+              },
+              {
+                "item": "07119908024",
+                "name": "Torx-bolt wi",
+                "qty": 2,
+                "val": 10950
+              },
+              {
+                "item": "07119907517",
+                "name": "Countersunk",
+                "qty": 5,
+                "val": 8250
+              },
+              {
+                "item": "32411131373",
+                "name": "Hose clamp",
+                "qty": 2,
+                "val": 4950
+              },
+              {
+                "item": "51337162282",
+                "name": "Clip",
+                "qty": 4,
+                "val": 4500
+              },
+              {
+                "item": "51117490268",
+                "name": "Clip",
+                "qty": 1,
+                "val": 1500
               },
               {
                 "item": "Z2000KM",
@@ -12172,9 +12845,9 @@
             ]
           }
         ],
-        "subtotal_val": 94104,
-        "subtotal_qty": 7,
-        "subtotal_pct": 0.01
+        "subtotal_val": 12273657,
+        "subtotal_qty": 120,
+        "subtotal_pct": 1.0
       },
       {
         "code": "S",
@@ -12183,10 +12856,22 @@
         "rows": [
           {
             "code": "SC",
-            "val": 195096,
-            "pct": 0.02,
-            "qty": 3,
+            "val": 1216786,
+            "pct": 0.1,
+            "qty": 6,
             "parts": [
+              {
+                "item": "61355B5DA68",
+                "name": "Control unit",
+                "qty": 1,
+                "val": 541950
+              },
+              {
+                "item": "66128723572",
+                "name": "Radio remote",
+                "qty": 1,
+                "val": 416743
+              },
               {
                 "item": "61355B5AF76",
                 "name": "Service Card",
@@ -12198,6 +12883,12 @@
                 "name": "Key Card",
                 "qty": 1,
                 "val": 65072
+              },
+              {
+                "item": "51217268293",
+                "name": "Key",
+                "qty": 1,
+                "val": 62997
               },
               {
                 "item": "61357927727",
@@ -12229,15 +12920,21 @@
           },
           {
             "code": "SK",
-            "val": 31266910,
-            "pct": 2.66,
-            "qty": 853,
+            "val": 37661139,
+            "pct": 3.06,
+            "qty": 929,
             "parts": [
               {
                 "item": "34505B77C23",
                 "name": "Power brake",
                 "qty": 11,
                 "val": 18207222
+              },
+              {
+                "item": "12415BA2AE5",
+                "name": "Starter",
+                "qty": 10,
+                "val": 6034740
               },
               {
                 "item": "12415BA2AE4",
@@ -12336,6 +13033,18 @@
                 "val": 148336
               },
               {
+                "item": "12418571349",
+                "name": "Acoustic plu",
+                "qty": 17,
+                "val": 141474
+              },
+              {
+                "item": "07147483888",
+                "name": "Hex bolt",
+                "qty": 22,
+                "val": 115610
+              },
+              {
                 "item": "31106870648",
                 "name": "Hex bolt wit",
                 "qty": 28,
@@ -12348,22 +13057,22 @@
                 "val": 107436
               },
               {
+                "item": "31116899302",
+                "name": "Multi-purpos",
+                "qty": 22,
+                "val": 101904
+              },
+              {
                 "item": "17125B3A997",
                 "name": "Line, cylind",
                 "qty": 2,
                 "val": 91682
               },
               {
-                "item": "07147483888",
-                "name": "Hex bolt",
-                "qty": 12,
-                "val": 62928
-              },
-              {
-                "item": "12418571349",
-                "name": "Acoustic plu",
-                "qty": 7,
-                "val": 58254
+                "item": "31206795249",
+                "name": "Collar bolt",
+                "qty": 4,
+                "val": 54896
               },
               {
                 "item": "07146885922",
@@ -12390,12 +13099,6 @@
                 "val": 49650
               },
               {
-                "item": "31116899302",
-                "name": "Multi-purpos",
-                "qty": 10,
-                "val": 46110
-              },
-              {
                 "item": "07149886429",
                 "name": "Isa screw wi",
                 "qty": 12,
@@ -12420,16 +13123,34 @@
                 "val": 33150
               },
               {
+                "item": "07119906100",
+                "name": "Hexagon coll",
+                "qty": 6,
+                "val": 32928
+              },
+              {
+                "item": "11289888617",
+                "name": "Bush",
+                "qty": 4,
+                "val": 31800
+              },
+              {
+                "item": "07119904161",
+                "name": "Hex screw wi",
+                "qty": 6,
+                "val": 31098
+              },
+              {
+                "item": "31306893691",
+                "name": "Hex screw wi",
+                "qty": 6,
+                "val": 31098
+              },
+              {
                 "item": "11438490851",
                 "name": "Oil dipstick",
                 "qty": 1,
                 "val": 30885
-              },
-              {
-                "item": "31206795249",
-                "name": "Collar bolt",
-                "qty": 2,
-                "val": 27448
               },
               {
                 "item": "11715A9D336",
@@ -12456,16 +13177,10 @@
                 "val": 22568
               },
               {
-                "item": "07119906100",
-                "name": "Hexagon coll",
+                "item": "07148835360",
+                "name": "Combination",
                 "qty": 4,
-                "val": 21976
-              },
-              {
-                "item": "07119904161",
-                "name": "Hex screw wi",
-                "qty": 4,
-                "val": 20732
+                "val": 21024
               },
               {
                 "item": "07129952104",
@@ -12498,6 +13213,12 @@
                 "val": 15080
               },
               {
+                "item": "11619888561",
+                "name": "Gasket, thro",
+                "qty": 1,
+                "val": 14592
+              },
+              {
                 "item": "11718490640",
                 "name": "AGR small pa",
                 "qty": 1,
@@ -12528,22 +13249,34 @@
                 "val": 10776
               },
               {
-                "item": "07148835360",
-                "name": "Combination",
-                "qty": 2,
-                "val": 10512
-              },
-              {
                 "item": "33306760585",
                 "name": "Combin.nut",
                 "qty": 2,
                 "val": 9928
               },
               {
+                "item": "07129908570",
+                "name": "ISA screw",
+                "qty": 5,
+                "val": 9540
+              },
+              {
+                "item": "07119905862",
+                "name": "Hex Bolt",
+                "qty": 2,
+                "val": 9230
+              },
+              {
                 "item": "07147283812",
                 "name": "PLUG-IN NUT",
                 "qty": 2,
                 "val": 8028
+              },
+              {
+                "item": "07119909691",
+                "name": "Hex bolt",
+                "qty": 3,
+                "val": 7875
               },
               {
                 "item": "51475B6EE14",
@@ -12570,6 +13303,12 @@
                 "val": 4588
               },
               {
+                "item": "07119906089",
+                "name": "Collar nut",
+                "qty": 4,
+                "val": 4380
+              },
+              {
                 "item": "13718652852",
                 "name": "O-ring",
                 "qty": 1,
@@ -12594,9 +13333,9 @@
                 "val": 2100
               },
               {
-                "item": "07129908570",
-                "name": "ISA screw",
-                "qty": 1,
+                "item": "07143413174",
+                "name": "Flange nut",
+                "qty": 2,
                 "val": 1950
               },
               {
@@ -12622,7 +13361,7 @@
           {
             "code": "SX",
             "val": 7945481,
-            "pct": 0.68,
+            "pct": 0.65,
             "qty": 214,
             "parts": [
               {
@@ -12672,7 +13411,7 @@
           {
             "code": "SY",
             "val": 4849335,
-            "pct": 0.41,
+            "pct": 0.39,
             "qty": 55,
             "parts": [
               {
@@ -12739,9 +13478,9 @@
           },
           {
             "code": "SZ",
-            "val": 84073810,
-            "pct": 7.15,
-            "qty": 726,
+            "val": 97256516,
+            "pct": 7.9,
+            "qty": 739,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -12786,6 +13525,18 @@
                 "val": 3511095
               },
               {
+                "item": "18329887747",
+                "name": "RP diesel pa",
+                "qty": 1,
+                "val": 2846607
+              },
+              {
+                "item": "37105B69E20",
+                "name": "Air spring s",
+                "qty": 1,
+                "val": 2428710
+              },
+              {
                 "item": "61215B80875",
                 "name": "48-V battery",
                 "qty": 1,
@@ -12796,6 +13547,18 @@
                 "name": "Propeller sh",
                 "qty": 1,
                 "val": 2006442
+              },
+              {
+                "item": "37105B69E33",
+                "name": "Air spring s",
+                "qty": 1,
+                "val": 1820634
+              },
+              {
+                "item": "37105B69E34",
+                "name": "Air spring s",
+                "qty": 1,
+                "val": 1820634
               },
               {
                 "item": "61278855826",
@@ -12828,6 +13591,12 @@
                 "val": 1248900
               },
               {
+                "item": "51115B33487",
+                "name": "Verkleidung",
+                "qty": 1,
+                "val": 1196253
+              },
+              {
                 "item": "51319447333",
                 "name": "Front windsh",
                 "qty": 1,
@@ -12852,6 +13621,12 @@
                 "val": 1036660
               },
               {
+                "item": "99985BA37D7",
+                "name": "P-ZEROr-f_ne",
+                "qty": 2,
+                "val": 970000
+              },
+              {
                 "item": "99985BA3536",
                 "name": "PotenzaS001R",
                 "qty": 2,
@@ -12862,6 +13637,18 @@
                 "name": "Door trim pa",
                 "qty": 1,
                 "val": 930495
+              },
+              {
+                "item": "99985BA37D8",
+                "name": "P-ZEROr-f245",
+                "qty": 2,
+                "val": 900000
+              },
+              {
+                "item": "64115B3A5D8",
+                "name": "Evaporator",
+                "qty": 1,
+                "val": 888191
               },
               {
                 "item": "99985BA3534",
@@ -13032,6 +13819,12 @@
                 "val": 179655
               },
               {
+                "item": "51115B33481",
+                "name": "Reinforcemen",
+                "qty": 1,
+                "val": 178160
+              },
+              {
                 "item": "51477377722",
                 "name": "Trim, luggag",
                 "qty": 1,
@@ -13164,6 +13957,12 @@
                 "val": 79212
               },
               {
+                "item": "52107444269",
+                "name": "Support for",
+                "qty": 1,
+                "val": 77077
+              },
+              {
                 "item": "80145B6D554",
                 "name": "W PUMA I BMW",
                 "qty": 1,
@@ -13186,6 +13985,12 @@
                 "name": "PUMA I BMW M",
                 "qty": 1,
                 "val": 65000
+              },
+              {
+                "item": "51475B50A84",
+                "name": "Set of all-w",
+                "qty": 1,
+                "val": 56440
               },
               {
                 "item": "41007437611",
@@ -13274,22 +14079,22 @@
             ]
           }
         ],
-        "subtotal_val": 129138261,
-        "subtotal_qty": 1853,
-        "subtotal_pct": 10.98
+        "subtotal_val": 149736886,
+        "subtotal_qty": 1945,
+        "subtotal_pct": 12.17
       }
     ]
   },
   "oaov": {
-    "total": 71010312,
-    "inv_total": 1176408007,
-    "pct": 6.04,
+    "total": 71011480,
+    "inv_total": 1230760225,
+    "pct": 5.77,
     "oa_val": 38398488,
-    "ov_val": 32611824,
+    "ov_val": 32612992,
     "oa_lines": 105,
     "ov_lines": 112,
     "oa_qty": 230,
-    "ov_qty": 202,
+    "ov_qty": 203,
     "item_count": 217,
     "oa_items": [
       {
@@ -15019,8 +15824,8 @@
         "name": "Torx screw w",
         "pgrp": "B1",
         "alois": "OV",
-        "qty": 3,
-        "val": 3504
+        "qty": 4,
+        "val": 4672
       },
       {
         "item": "61138727250",
@@ -17388,7 +18193,7 @@
     ],
     "m12_val": 62413255,
     "m12_count": 211,
-    "m12_pct": 5.31,
+    "m12_pct": 5.07,
     "m24_items": [
       {
         "item": "24008741536",
@@ -17834,7 +18639,7 @@
     ],
     "m24_val": 20607097,
     "m24_count": 49,
-    "m24_pct": 1.75
+    "m24_pct": 1.67
   },
   "opart": {
     "items": [
@@ -19610,16 +20415,16 @@
         "item": "51489881745",
         "name": "Heat insulat",
         "alois": "O8",
-        "pgrp": "-",
+        "pgrp": "B1",
         "ref_tp": "RO",
         "ref_no": "RO2609001301",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "09-22",
         "req_dt_full": "2026-09-22 15:02:21",
         "req_brch": "AS_부산(해운중동)",
-        "val": 224289,
+        "val": 229827,
         "sa": "박영묵",
         "dday": "D+1일"
       },
@@ -19831,16 +20636,16 @@
         "item": "07129904865",
         "name": "Hex nut",
         "alois": "O8",
-        "pgrp": "-",
+        "pgrp": "B1",
         "ref_tp": "RO",
         "ref_no": "RO2608001599",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 2,
         "avail_qty": 0,
         "req_dt": "09-22",
         "req_dt_full": "2026-09-22 16:12:15",
         "req_brch": "AS_부산(해운중동)",
-        "val": 1650,
+        "val": 1095,
         "sa": "우상만",
         "dday": "D+1일"
       },
@@ -20220,7 +21025,7 @@
       }
     ],
     "count": 140,
-    "total_val": 39648997,
+    "total_val": 39653980,
     "groups": [
       {
         "code": "RO",
@@ -20875,16 +21680,16 @@
             "item": "51489881745",
             "name": "Heat insulat",
             "alois": "O8",
-            "pgrp": "-",
+            "pgrp": "B1",
             "ref_tp": "RO",
             "ref_no": "RO2609001301",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "09-22",
             "req_dt_full": "2026-09-22 15:02:21",
             "req_brch": "AS_부산(해운중동)",
-            "val": 224289,
+            "val": 229827,
             "sa": "박영묵",
             "dday": "D+1일"
           },
@@ -21028,16 +21833,16 @@
             "item": "07129904865",
             "name": "Hex nut",
             "alois": "O8",
-            "pgrp": "-",
+            "pgrp": "B1",
             "ref_tp": "RO",
             "ref_no": "RO2608001599",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 2,
             "avail_qty": 0,
             "req_dt": "09-22",
             "req_dt_full": "2026-09-22 16:12:15",
             "req_brch": "AS_부산(해운중동)",
-            "val": 1650,
+            "val": 1095,
             "sa": "우상만",
             "dday": "D+1일"
           },
@@ -21418,7 +22223,7 @@
         ],
         "count": 70,
         "qty_sum": 116,
-        "val": 20381231
+        "val": 20386214
       },
       {
         "code": "SB",
@@ -26096,6 +26901,15 @@
         "val": 20732
       },
       {
+        "item": "33326760374",
+        "name": "Nut",
+        "pgrp": "B1",
+        "alois": "O8",
+        "qty": 6,
+        "avail_qty": 4,
+        "val": 20052
+      },
+      {
         "item": "16129426343",
         "name": "Wire clip, d",
         "pgrp": "B1",
@@ -26121,15 +26935,6 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 19602
-      },
-      {
-        "item": "33326760374",
-        "name": "Nut",
-        "pgrp": "B1",
-        "alois": "O8",
-        "qty": 4,
-        "avail_qty": 4,
-        "val": 19564
       },
       {
         "item": "07132757821",
@@ -28612,6 +29417,15 @@
             "val": 20732
           },
           {
+            "item": "33326760374",
+            "name": "Nut",
+            "pgrp": "B1",
+            "alois": "O8",
+            "qty": 6,
+            "avail_qty": 4,
+            "val": 20052
+          },
+          {
             "item": "16129426343",
             "name": "Wire clip, d",
             "pgrp": "B1",
@@ -28628,15 +29442,6 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 19602
-          },
-          {
-            "item": "33326760374",
-            "name": "Nut",
-            "pgrp": "B1",
-            "alois": "O8",
-            "qty": 4,
-            "avail_qty": 4,
-            "val": 19564
           },
           {
             "item": "07132757821",
@@ -29270,9 +30075,9 @@
           }
         ],
         "count": 261,
-        "qty_sum": 1003,
+        "qty_sum": 1005,
         "avail_sum": 982,
-        "val": 29771961
+        "val": 29772449
       },
       {
         "code": "OA",
@@ -31247,7 +32052,7 @@
       }
     ],
     "count": 476,
-    "total_val": 356861311
+    "total_val": 356861799
   },
   "oflow": {
     "rows": [
@@ -31385,20 +32190,20 @@
       },
       {
         "date": "09-23",
-        "in_val": 0,
+        "in_val": 11417816,
         "out_val": 0,
-        "net": 0
+        "net": 11417816
       }
     ],
-    "total_in": 211080412,
+    "total_in": 222498228,
     "total_out": 203639877,
-    "net": 7440535,
+    "net": 18858351,
     "by_code": [
       {
         "code": "O8",
-        "in_val": 171875435,
+        "in_val": 180863373,
         "out_val": 162489394,
-        "net": 9386041
+        "net": 18373979
       },
       {
         "code": "OA",
@@ -31413,14 +32218,20 @@
         "net": -13093055
       },
       {
+        "code": "ON",
+        "in_val": 2428710,
+        "out_val": 0,
+        "net": 2428710
+      },
+      {
         "code": "OV",
-        "in_val": 23504339,
+        "in_val": 23505507,
         "out_val": 5209599,
-        "net": 18294740
+        "net": 18295908
       }
     ],
-    "in_days": 15,
-    "avg_in": 14072027
+    "in_days": 16,
+    "avg_in": 13906139
   },
   "openro": {
     "rows": [
@@ -34765,8 +35576,8 @@
             "name": "Acoustic plu",
             "alois": "SK",
             "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 0,
+            "crt_qty": 17,
+            "avail_qty": 10,
             "val": 8322
           }
         ],
@@ -34795,8 +35606,8 @@
             "name": "Acoustic plu",
             "alois": "SK",
             "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 0,
+            "crt_qty": 17,
+            "avail_qty": 10,
             "val": 8322
           }
         ],
@@ -34816,8 +35627,8 @@
             "name": "Brake fluid",
             "alois": "L1",
             "req_qty": 2,
-            "crt_qty": 32,
-            "avail_qty": 25,
+            "crt_qty": 132,
+            "avail_qty": 125,
             "val": 22684
           }
         ],
@@ -34867,8 +35678,8 @@
             "name": "Acoustic plu",
             "alois": "SK",
             "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 0,
+            "crt_qty": 17,
+            "avail_qty": 10,
             "val": 8322
           },
           {
@@ -35736,6 +36547,27 @@
         "val": 293563
       },
       {
+        "code": "SB2609001348",
+        "resv_full": "2026-10-06 09:00",
+        "resv": "10-06",
+        "dday": "D-13일",
+        "sa": "김민규",
+        "rows": [
+          {
+            "item": "61665A01640",
+            "name": "Filler chann",
+            "alois": null,
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 0
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 0
+      },
+      {
         "code": "SB2609001632",
         "resv_full": "2026-10-02 09:20",
         "resv": "10-02",
@@ -35867,8 +36699,8 @@
             "name": "Brake fluid",
             "alois": "L1",
             "req_qty": 2,
-            "crt_qty": 32,
-            "avail_qty": 25,
+            "crt_qty": 132,
+            "avail_qty": 125,
             "val": 22684
           },
           {
@@ -35915,8 +36747,8 @@
             "name": "Acoustic plu",
             "alois": "SK",
             "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 0,
+            "crt_qty": 17,
+            "avail_qty": 10,
             "val": 8322
           }
         ],
@@ -35996,8 +36828,8 @@
             "name": "HT-12 Anti-freeze",
             "alois": "L1",
             "req_qty": 1,
-            "crt_qty": 75,
-            "avail_qty": 70,
+            "crt_qty": 115,
+            "avail_qty": 110,
             "val": 16400
           },
           {
@@ -36044,8 +36876,8 @@
             "name": "Acoustic plu",
             "alois": "SK",
             "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 0,
+            "crt_qty": 17,
+            "avail_qty": 10,
             "val": 8322
           }
         ],
@@ -36392,9 +37224,9 @@
             "name": "Repair kit UKL1,2",
             "alois": "A3",
             "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 2,
-            "val": 122044
+            "crt_qty": 7,
+            "avail_qty": 6,
+            "val": 122040
           },
           {
             "item": "34356887827",
@@ -36408,7 +37240,7 @@
         ],
         "count": 2,
         "qty_sum": 2,
-        "val": 147264
+        "val": 147260
       },
       {
         "code": "SB2608001572",
@@ -36431,8 +37263,8 @@
             "name": "Acoustic plu",
             "alois": "SK",
             "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 0,
+            "crt_qty": 17,
+            "avail_qty": 10,
             "val": 8322
           }
         ],
@@ -36524,8 +37356,8 @@
             "name": "Acoustic plu",
             "alois": "SK",
             "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 0,
+            "crt_qty": 17,
+            "avail_qty": 10,
             "val": 8322
           }
         ],
@@ -36686,8 +37518,8 @@
             "name": "Brake fluid",
             "alois": "L1",
             "req_qty": 1,
-            "crt_qty": 32,
-            "avail_qty": 25,
+            "crt_qty": 132,
+            "avail_qty": 125,
             "val": 11342
           }
         ],
@@ -36737,7 +37569,7 @@
             "name": "LL-22FE++ 0W12",
             "alois": "L1",
             "req_qty": 6,
-            "crt_qty": 346,
+            "crt_qty": 339,
             "avail_qty": 332,
             "val": 97456
           },
@@ -36806,8 +37638,8 @@
             "name": "Brake fluid",
             "alois": "L1",
             "req_qty": 1,
-            "crt_qty": 32,
-            "avail_qty": 25,
+            "crt_qty": 132,
+            "avail_qty": 125,
             "val": 11342
           }
         ],
@@ -36837,12 +37669,12 @@
         "val": 5180
       }
     ],
-    "sb_count": 47,
-    "line_count": 153,
-    "total_val": 21519489,
+    "sb_count": 48,
+    "line_count": 154,
+    "total_val": 21519485,
     "o_lines": 26,
     "o_val": 6937869,
-    "resv_total": 341
+    "resv_total": 342
   },
   "sbcar": {
     "groups": [],
@@ -36854,11 +37686,287 @@
     "resv_total": 10228
   },
   "nonmng": {
-    "rows": [],
-    "count": 0,
-    "total_val": 0,
-    "qty_sum": 0,
-    "pct": 0.0
+    "rows": [
+      {
+        "item": "12120050948",
+        "name": "Spark plug,",
+        "alois": "II",
+        "qty": 60,
+        "avail_qty": 0,
+        "prc": 19320,
+        "val": 1159200,
+        "last_in": "2026-09-23",
+        "last_sale": "2026-08-07"
+      },
+      {
+        "item": "31356774737",
+        "name": "Stabilizer f",
+        "alois": "II",
+        "qty": 2,
+        "avail_qty": 0,
+        "prc": 313775,
+        "val": 627550,
+        "last_in": "2026-09-23",
+        "last_sale": "2015-07-04"
+      },
+      {
+        "item": "31336788776",
+        "name": "Supp.bearing",
+        "alois": "II",
+        "qty": 2,
+        "avail_qty": 0,
+        "prc": 109850,
+        "val": 219700,
+        "last_in": "2026-09-23",
+        "last_sale": "2021-10-21"
+      },
+      {
+        "item": "66209274428",
+        "name": "Ultrasonic c",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 159817,
+        "val": 159817,
+        "last_in": "2026-09-23",
+        "last_sale": "2024-05-24"
+      },
+      {
+        "item": "66209274429",
+        "name": "Ultrasonic c",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 159817,
+        "val": 159817,
+        "last_in": "2026-09-23",
+        "last_sale": "2025-12-04"
+      },
+      {
+        "item": "51647378746",
+        "name": "Mount for he",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 130429,
+        "val": 130429,
+        "last_in": "2026-09-23",
+        "last_sale": "2023-02-22"
+      },
+      {
+        "item": "51758056068",
+        "name": "M Cover, low",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 94288,
+        "val": 94288,
+        "last_in": "2026-09-23",
+        "last_sale": "2021-12-16"
+      },
+      {
+        "item": "51777318830",
+        "name": "Cover, wheel",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 84846,
+        "val": 84846,
+        "last_in": "2026-09-23",
+        "last_sale": "2026-04-29"
+      },
+      {
+        "item": "31336776554",
+        "name": "Duct with su",
+        "alois": "II",
+        "qty": 2,
+        "avail_qty": 0,
+        "prc": 38577,
+        "val": 77154,
+        "last_in": "2026-09-23",
+        "last_sale": "2021-10-21"
+      },
+      {
+        "item": "51777329032",
+        "name": "Trim cover,",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 63674,
+        "val": 63674,
+        "last_in": "2026-09-23",
+        "last_sale": "2022-12-22"
+      },
+      {
+        "item": "31336782871",
+        "name": "Additional s",
+        "alois": "II",
+        "qty": 2,
+        "avail_qty": 0,
+        "prc": 31463,
+        "val": 62926,
+        "last_in": "2026-09-23",
+        "last_sale": "2020-05-28"
+      },
+      {
+        "item": "51337322514",
+        "name": "Decorative s",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 62031,
+        "val": 62031,
+        "last_in": "2026-09-23",
+        "last_sale": "2026-05-27"
+      },
+      {
+        "item": "51357322526",
+        "name": "Decorative s",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 62031,
+        "val": 62031,
+        "last_in": "2026-09-23",
+        "last_sale": "2026-09-19"
+      },
+      {
+        "item": "51137388117",
+        "name": "Trim ring, h",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 59843,
+        "val": 59843,
+        "last_in": "2026-09-23",
+        "last_sale": "2025-09-30"
+      },
+      {
+        "item": "51137388118",
+        "name": "Trim ring, h",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 59843,
+        "val": 59843,
+        "last_in": "2026-09-23",
+        "last_sale": "2026-03-13"
+      },
+      {
+        "item": "31356859652",
+        "name": "Swing suppor",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 56745,
+        "val": 56745,
+        "last_in": "2026-09-23",
+        "last_sale": "2021-09-24"
+      },
+      {
+        "item": "07146888357",
+        "name": "MULTI-PURPOS",
+        "alois": "II",
+        "qty": 8,
+        "avail_qty": 0,
+        "prc": 5183,
+        "val": 41464,
+        "last_in": "2026-09-23",
+        "last_sale": "2023-02-24"
+      },
+      {
+        "item": "51767322456",
+        "name": "Seal, A-pill",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 35192,
+        "val": 35192,
+        "last_in": "2026-09-23",
+        "last_sale": "2026-05-27"
+      },
+      {
+        "item": "51767322458",
+        "name": "Sealing, B-c",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 35192,
+        "val": 35192,
+        "last_in": "2026-09-23",
+        "last_sale": "2025-09-30"
+      },
+      {
+        "item": "51377491333",
+        "name": "Mount rail,",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 27643,
+        "val": 27643,
+        "last_in": "2026-09-23",
+        "last_sale": "2023-02-07"
+      },
+      {
+        "item": "31336776389",
+        "name": "Guide suppor",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 13000,
+        "val": 13000,
+        "last_in": "2026-09-23",
+        "last_sale": "2021-10-21"
+      },
+      {
+        "item": "07119908024",
+        "name": "Torx-bolt wi",
+        "alois": "II",
+        "qty": 2,
+        "avail_qty": 0,
+        "prc": 5475,
+        "val": 10950,
+        "last_in": "2026-09-23",
+        "last_sale": "2022-12-01"
+      },
+      {
+        "item": "07119907517",
+        "name": "Countersunk",
+        "alois": "II",
+        "qty": 5,
+        "avail_qty": 0,
+        "prc": 1650,
+        "val": 8250,
+        "last_in": "2026-09-23",
+        "last_sale": "2026-08-12"
+      },
+      {
+        "item": "51337162282",
+        "name": "Clip",
+        "alois": "II",
+        "qty": 4,
+        "avail_qty": 0,
+        "prc": 1125,
+        "val": 4500,
+        "last_in": "2026-09-23",
+        "last_sale": "2026-09-12"
+      },
+      {
+        "item": "51117490268",
+        "name": "Clip",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 1500,
+        "val": 1500,
+        "last_in": "2026-09-23",
+        "last_sale": "2026-07-21"
+      }
+    ],
+    "count": 25,
+    "total_val": 3317585,
+    "qty_sum": 103,
+    "pct": 0.27
   },
   "reasons": {}
 }
