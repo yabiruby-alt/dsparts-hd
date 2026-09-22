@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 07:36 기준",
+    "generated_at": "9월 23일 (수) · 07:53 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -35209,9 +35209,20 @@
         "pub_full": "2026-09-22 18:00",
         "dday": "D+1일",
         "amt": 596693
+      },
+      {
+        "ro": "RO2609001409",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 07:53",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 271,
+    "count": 272,
     "total_amt": 728508306,
     "by_stat": [
       {
@@ -35221,7 +35232,7 @@
       },
       {
         "stat": "상담완료",
-        "count": 127,
+        "count": 128,
         "amt": 500792032
       },
       {
@@ -35622,7 +35633,7 @@
             "alois": "L1",
             "req_qty": 2,
             "crt_qty": 132,
-            "avail_qty": 125,
+            "avail_qty": 124,
             "val": 22684
           }
         ],
@@ -36694,7 +36705,7 @@
             "alois": "L1",
             "req_qty": 2,
             "crt_qty": 132,
-            "avail_qty": 125,
+            "avail_qty": 124,
             "val": 22684
           },
           {
@@ -37513,7 +37524,7 @@
             "alois": "L1",
             "req_qty": 1,
             "crt_qty": 132,
-            "avail_qty": 125,
+            "avail_qty": 124,
             "val": 11342
           }
         ],
@@ -37591,6 +37602,36 @@
         "val": 359228
       },
       {
+        "code": "SB2609001682",
+        "resv_full": "2026-09-23 11:20",
+        "resv": "09-23",
+        "dday": "오늘",
+        "sa": "안준영",
+        "rows": [
+          {
+            "item": "64115A547D4",
+            "name": "Mikrofilter/",
+            "alois": "A1",
+            "req_qty": 1,
+            "crt_qty": 34,
+            "avail_qty": 33,
+            "val": 120134
+          },
+          {
+            "item": "83135A82511",
+            "name": "Brake fluid",
+            "alois": "L1",
+            "req_qty": 1,
+            "crt_qty": 132,
+            "avail_qty": 124,
+            "val": 11342
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 131476
+      },
+      {
         "code": "SB2609001385",
         "resv_full": "2026-09-23 09:40",
         "resv": "09-23",
@@ -37633,7 +37674,7 @@
             "alois": "L1",
             "req_qty": 1,
             "crt_qty": 132,
-            "avail_qty": 125,
+            "avail_qty": 124,
             "val": 11342
           }
         ],
@@ -37663,9 +37704,9 @@
         "val": 5180
       }
     ],
-    "sb_count": 48,
-    "line_count": 154,
-    "total_val": 21519485,
+    "sb_count": 49,
+    "line_count": 156,
+    "total_val": 21650961,
     "o_lines": 26,
     "o_val": 6937869,
     "resv_total": 342
@@ -37677,7 +37718,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10228
+    "resv_total": 10229
   },
   "nonmng": {
     "rows": [
