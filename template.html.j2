@@ -193,6 +193,7 @@
   .aloistag.oseries{ background:var(--critical-wash); color:var(--critical); font-weight:700; }
   tbody tr.oseries td.num, tbody tr.oseries td.mono{ color:var(--critical); }
   .pgrp-pill{ display:inline-block; background:var(--accent); color:#fff !important; font-weight:700; padding:2px 8px; border-radius:6px; }
+  th.pgrpcol, td.pgrpcol{ text-align:center; }
   tbody tr.subtotal.oseries td{ color:var(--critical); }
   .grouphead.oseries td{ background:var(--critical-wash); color:var(--critical); }
   .grouphead.oseries:hover td{ background:var(--critical-wash); }
@@ -888,10 +889,10 @@
         <p class="subttl">OA+OV 품목 TOP 10 <span class="n">금액 큰 순</span></p>
         <div class="tablewrap">
           <table>
-            <thead><tr><th>부품번호</th><th>품명</th><th>제품그룹</th><th>ALOIS</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
+            <thead><tr><th>부품번호</th><th>품명</th><th class="pgrpcol">제품그룹</th><th>ALOIS</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
             <tbody>
               {% for r in oaov.top_items %}
-              <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+              <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono pgrpcol">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
               {% endfor %}
               <tr class="subtotal"><td colspan="5">TOP {{ oaov.top_items|length }}개 소계</td><td class="num">{{ '{:,}'.format(oaov.top_items|sum(attribute='val')) }}</td></tr>
             </tbody>
@@ -901,17 +902,17 @@
         <p class="subttl" style="margin-top:20px">OA+OV 품목 전체 <span class="n">그룹 클릭해서 펼치기 · 전체 {{ oaov.item_count }}개</span></p>
         <div class="tablewrap">
           <table>
-            <thead><tr><th>부품번호</th><th>품명</th><th>제품그룹</th><th>ALOIS</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
+            <thead><tr><th>부품번호</th><th>품명</th><th class="pgrpcol">제품그룹</th><th>ALOIS</th><th class="num">수량</th><th class="num">재고금액</th></tr></thead>
             <tbody>
               <tr class="grouphead oseries" data-group="oaov-oa" onclick="toggleAloisGroup(this)"><td colspan="6"><span class="caret">▸</span>OA<span class="hint"></span></td></tr>
               {% for r in oaov.oa_items %}
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono pgrpcol">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
               {% endfor %}
               <tr class="subtotal oseries"><td colspan="5">OA 합계 ({{ oaov.oa_items|length }}개)</td><td class="num">{{ '{:,}'.format(oaov.oa_val) }}</td></tr>
 
               <tr class="grouphead oseries" data-group="oaov-ov" onclick="toggleAloisGroup(this)"><td colspan="6"><span class="caret">▸</span>OV<span class="hint"></span></td></tr>
               {% for r in oaov.ov_items %}
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono pgrpcol">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
               {% endfor %}
               <tr class="subtotal oseries"><td colspan="5">OV 합계 ({{ oaov.ov_items|length }}개)</td><td class="num">{{ '{:,}'.format(oaov.ov_val) }}</td></tr>
             </tbody>
@@ -953,10 +954,10 @@
           </div>
           <div class="tablewrap">
             <table>
-              <thead><tr><th>부품번호</th><th>품명</th><th>제품그룹</th><th>ALOIS</th><th>최종입고일</th><th class="num">수량</th><th class="num">재고금액(원가)</th></tr></thead>
+              <thead><tr><th>부품번호</th><th>품명</th><th class="pgrpcol">제품그룹</th><th>ALOIS</th><th>최종입고일</th><th class="num">수량</th><th class="num">재고금액(원가)</th></tr></thead>
               <tbody>
                 {% for r in longstock.m12_items %}
-                <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.last_in }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+                <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono pgrpcol">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.last_in }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
                 {% endfor %}
               </tbody>
             </table>
@@ -971,10 +972,10 @@
           </div>
           <div class="tablewrap">
             <table>
-              <thead><tr><th>부품번호</th><th>품명</th><th>제품그룹</th><th>ALOIS</th><th>최종입고일</th><th class="num">수량</th><th class="num">재고금액(원가)</th></tr></thead>
+              <thead><tr><th>부품번호</th><th>품명</th><th class="pgrpcol">제품그룹</th><th>ALOIS</th><th>최종입고일</th><th class="num">수량</th><th class="num">재고금액(원가)</th></tr></thead>
               <tbody>
                 {% for r in longstock.m24_items %}
-                <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.last_in }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+                <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono pgrpcol">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.last_in }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
                 {% endfor %}
               </tbody>
             </table>
@@ -1007,13 +1008,13 @@
         </div>
         <div class="tablewrap">
           <table class="opart-table">
-            <thead><tr><th>부품번호</th><th>품명</th><th>제품그룹</th><th>ALOIS</th><th>참조문서번호</th><th>요청일</th><th>경과일</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가금액</th><th>담당SA</th></tr></thead>
+            <thead><tr><th>부품번호</th><th>품명</th><th class="pgrpcol">제품그룹</th><th>ALOIS</th><th>참조문서번호</th><th>요청일</th><th>경과일</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가금액</th><th>담당SA</th></tr></thead>
             <tbody>
               {% for g in opart.groups %}
               <tr class="grouphead oseries" data-group="opart-{{ g.code }}" onclick="toggleAloisGroup(this)"><td colspan="12"><span class="caret">▸</span>{{ g.code }} ({{ g.count }}건)<span class="hint"></span></td></tr>
               {% for r in g.rows %}
               <tr class="oseries" data-group="opart-{{ g.code }}" hidden>
-                <td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td>
+                <td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono pgrpcol">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td>
                 <td class="mono">{{ r.ref_no }}</td><td class="mono">{{ r.req_dt }}</td><td class="mono">{{ r.dday }}</td>
                 <td class="num">{{ r.req_qty }}</td><td class="num">{{ r.crt_qty }}</td><td class="num">{{ r.avail_qty }}</td>
                 <td class="num">{{ '{:,}'.format(r.val) }}</td><td>{{ r.sa }}</td>
@@ -1036,12 +1037,12 @@
         </div>
         <div class="tablewrap">
           <table>
-            <thead><tr><th>부품번호</th><th>품명</th><th>제품그룹</th><th>ALOIS</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">가용재고금액(원가)</th></tr></thead>
+            <thead><tr><th>부품번호</th><th>품명</th><th class="pgrpcol">제품그룹</th><th>ALOIS</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">가용재고금액(원가)</th></tr></thead>
             <tbody>
               {% for g in oavail.groups %}
               <tr class="grouphead oseries" data-group="oavail-{{ g.code }}" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>{{ g.code }} ({{ g.count }}건)<span class="hint"></span></td></tr>
               {% for r in g.rows %}
-              <tr class="oseries" data-group="oavail-{{ g.code }}" hidden><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ r.avail_qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+              <tr class="oseries" data-group="oavail-{{ g.code }}" hidden><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono pgrpcol">{% if r.pgrp and r.pgrp[-1] in ('3','5','7') %}<span class="pgrp-pill">{{ r.pgrp }}</span>{% else %}{{ r.pgrp }}{% endif %}</td><td><span class="aloistag oseries">{{ r.alois }}</span></td><td class="num">{{ r.qty }}</td><td class="num">{{ r.avail_qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
               {% endfor %}
               <tr class="subtotal oseries"><td colspan="4">{{ g.code }} 합계</td><td class="num">{{ g.qty_sum }}</td><td class="num">{{ g.avail_sum }}</td><td class="num">{{ '{:,}'.format(g.val) }}</td></tr>
               {% else %}
