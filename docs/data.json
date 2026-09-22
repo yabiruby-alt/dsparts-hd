@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 22일 (화) · 12:25 기준",
+    "generated_at": "9월 22일 (화) · 12:41 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -34417,19 +34417,41 @@
         "pub_full": "2026-09-22 11:46",
         "dday": "D+0일",
         "amt": 3588200
+      },
+      {
+        "ro": "RO2609001384",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "안준영",
+        "pub": "2026-09-22",
+        "pub_full": "2026-09-22 12:40",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2609001385",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-09-22",
+        "pub_full": "2026-09-22 12:44",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 308,
+    "count": 310,
     "total_amt": 744772457,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 12,
+        "count": 13,
         "amt": 7943900
       },
       {
         "stat": "상담완료",
-        "count": 138,
+        "count": 139,
         "amt": 505186178
       },
       {
@@ -34865,7 +34887,7 @@
     "total_val": 8265954,
     "o_lines": 11,
     "o_val": 4629751,
-    "resv_total": 12023
+    "resv_total": 12022
   },
   "sbresv": {
     "groups": [
@@ -36558,7 +36580,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10275
+    "resv_total": 10277
   },
   "nonmng": {
     "rows": [],
