@@ -192,6 +192,7 @@
 
   .aloistag.oseries{ background:var(--critical-wash); color:var(--critical); font-weight:700; }
   tbody tr.oseries td.num, tbody tr.oseries td.mono{ color:var(--critical); }
+  td.mono.pgrp-blue{ color:var(--accent-strong) !important; font-weight:700; }
   tbody tr.subtotal.oseries td{ color:var(--critical); }
   .grouphead.oseries td{ background:var(--critical-wash); color:var(--critical); }
   .grouphead.oseries:hover td{ background:var(--critical-wash); }
@@ -389,7 +390,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 22일 (화) · 15:38 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 22일 (화) · 15:45 기준</div>
   </nav>
 
   <main class="main">
@@ -398,7 +399,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 22일 (화) · 15:38 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 22일 (화) · 15:45 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -1107,14 +1108,14 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">진행 RO (인보이스 미완료)</span>
-          <span class="value">321건</span>
-          <span class="foot">금액 합계 ₩755,018,280 · 가장 오래된 RO D+518일</span>
+          <span class="value">319건</span>
+          <span class="foot">금액 합계 ₩751,784,980 · 가장 오래된 RO D+518일</span>
         </div>
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
           <span class="eyebrow">상태별 건수</span>
           <span class="foot" style="line-height:1.7">
-            상담시작 <b>13</b> · 상담완료 <b>135</b> · 정비시작 <b>45</b> · End Control 요청 <b>52</b> · 공정마감 <b>3</b> · 가정산 완료 <b>73</b>
+            상담시작 <b>13</b> · 상담완료 <b>134</b> · 정비시작 <b>46</b> · End Control 요청 <b>51</b> · 공정마감 <b>3</b> · 가정산 완료 <b>72</b>
           </span>
         </div>
       </div>
@@ -1122,7 +1123,7 @@
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">진행 RO 리스트</span>
-          <span class="val">321건</span>
+          <span class="val">319건</span>
           <span class="foot">금액 = 부품+공임 판매가 · 사유는 대시보드 PC의 로컬 주소(127.0.0.1:8765)에서 입력·수정하고, 그 외 기기는 조회만 됩니다</span>
         </div>
         <div class="tablewrap">
@@ -2059,14 +2060,6 @@
               </tr>
               
               <tr>
-                <td class="mono">RO2609000869</td><td>사고수리</td><td>강충성</td>
-                <td><span class="aloistag">가정산 완료</span></td>
-                <td class="mono">2026-09-14</td><td class="mono dday-cell" data-days="8">D+8일</td>
-                <td class="num">3,205,300</td>
-                <td><div class="reason-cell" data-ro="RO2609000869" data-saved=""><span class="reason-text"></span></div></td>
-              </tr>
-              
-              <tr>
                 <td class="mono">RO2609000879</td><td>사고수리</td><td>강충성</td>
                 <td><span class="aloistag">상담완료</span></td>
                 <td class="mono">2026-09-14</td><td class="mono dday-cell" data-days="8">D+8일</td>
@@ -2680,14 +2673,6 @@
                 <td class="mono">2026-09-18</td><td class="mono dday-cell" data-days="4">D+4일</td>
                 <td class="num">98,000</td>
                 <td><div class="reason-cell" data-ro="RO2609001189" data-saved=""><span class="reason-text"></span></div></td>
-              </tr>
-              
-              <tr>
-                <td class="mono">RO2609001194</td><td>사고수리</td><td>강충성</td>
-                <td><span class="aloistag">End Control 요청</span></td>
-                <td class="mono">2026-09-18</td><td class="mono dday-cell" data-days="4">D+4일</td>
-                <td class="num">28,000</td>
-                <td><div class="reason-cell" data-ro="RO2609001194" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
               <tr>
@@ -3612,7 +3597,7 @@
               
               <tr>
                 <td class="mono">RO2609001391</td><td>Maintenance</td><td>정용환</td>
-                <td><span class="aloistag">상담완료</span></td>
+                <td><span class="aloistag">정비시작</span></td>
                 <td class="mono">2026-09-22</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">126,884</td>
                 <td><div class="reason-cell" data-ro="RO2609001391" data-saved=""><span class="reason-text"></span></div></td>
@@ -3907,22 +3892,22 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">부품이 들어있는 예약접수 SB</span>
-          <span class="value">42건</span>
-          <span class="foot">140라인 · 요청수량×원가 합계 ₩20,822,592</span>
+          <span class="value">43건</span>
+          <span class="foot">144라인 · 요청수량×원가 합계 ₩21,425,812</span>
         </div>
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
           <span class="eyebrow">그 중 O계열 부품</span>
-          <span class="value">₩6,341,849</span>
-          <span class="foot">24라인 (원가 기준)</span>
+          <span class="value">₩6,937,869</span>
+          <span class="foot">26라인 (원가 기준)</span>
         </div>
       </div>
 
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">예약접수 SB별 부품 세부</span>
-          <span class="val">42건</span>
-          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 예약접수(오늘 이후) 318건 중 미처리 부품요청이 걸린 SB</span>
+          <span class="val">43건</span>
+          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 예약접수(오늘 이후) 319건 중 미처리 부품요청이 걸린 SB</span>
         </div>
         <div class="tablewrap">
           <table>
@@ -4223,6 +4208,18 @@
               
               <tr class="subtotal"><td colspan="3">SB2609000240 합계</td><td class="num">2</td><td class="num"></td><td class="num"></td><td class="num">129,543</td></tr>
               
+              <tr class="grouphead open" data-group="sr-SB2609001571" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609001571 · 예약일 09-30 · <span class="dday-cell dday-badge" data-days="8">D-8일</span> · SA 정용환 (4라인)<span class="hint"></span></td></tr>
+              
+              <tr data-group="sr-SB2609001571"><td class="mono">51217444677</td><td>Drive soft-c</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">550,156</td></tr>
+              
+              <tr data-group="sr-SB2609001571"><td class="mono">07149465451</td><td>Clip</td><td><span class="aloistag oseries">OA</span></td><td class="num">8</td><td class="num">10</td><td class="num">2</td><td class="num">45,864</td></tr>
+              
+              <tr data-group="sr-SB2609001571"><td class="mono">07147187828</td><td>Fillister he</td><td><span class="aloistag">SK</span></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">7,200</td></tr>
+              
+              <tr data-group="sr-SB2609001571"><td class="mono">51217447653</td><td>Seal, outer</td><td><span class="aloistag">None</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+              
+              <tr class="subtotal"><td colspan="3">SB2609001571 합계</td><td class="num">16</td><td class="num"></td><td class="num"></td><td class="num">603,220</td></tr>
+              
               <tr class="grouphead open" data-group="sr-SB2609001212" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609001212 · 예약일 09-30 · <span class="dday-cell dday-badge" data-days="8">D-8일</span> · SA 최민수 (4라인)<span class="hint"></span></td></tr>
               
               <tr data-group="sr-SB2609001212"><td class="mono">31108837711</td><td>Control arm</td><td><span class="aloistag">A6</span></td><td class="num">1</td><td class="num">3</td><td class="num">2</td><td class="num">389,870</td></tr>
@@ -4349,7 +4346,7 @@
               
               <tr class="grouphead open" data-group="sr-SB2609000250" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>SB2609000250 · 예약일 09-23 · <span class="dday-cell dday-badge" data-days="1">D-1일</span> · SA 김민규 (1라인)<span class="hint"></span></td></tr>
               
-              <tr data-group="sr-SB2609000250"><td class="mono">07149890645</td><td>Torx screw,</td><td><span class="aloistag">L4</span></td><td class="num">1</td><td class="num">5</td><td class="num">4</td><td class="num">5,180</td></tr>
+              <tr data-group="sr-SB2609000250"><td class="mono">07149890645</td><td>Torx screw,</td><td><span class="aloistag">L4</span></td><td class="num">1</td><td class="num">5</td><td class="num">3</td><td class="num">5,180</td></tr>
               
               <tr class="subtotal"><td colspan="3">SB2609000250 합계</td><td class="num">1</td><td class="num"></td><td class="num"></td><td class="num">5,180</td></tr>
               
@@ -4650,13 +4647,13 @@
               
               <tr><td class="mono">63119850411</td><td>Headlight, L</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">5,769,666</td></tr>
               
-              <tr><td class="mono">63215B52B73</td><td>Retrofit kit</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">4,493,566</td></tr>
+              <tr><td class="mono">63215B52B73</td><td>Retrofit kit</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">4,493,566</td></tr>
               
               <tr><td class="mono">18308572487</td><td>RP-exhaust p</td><td class="mono">B2</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">2,808,894</td></tr>
               
               <tr><td class="mono">63115A0E603</td><td>LED headligh</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">2,674,554</td></tr>
               
-              <tr><td class="mono">36118090014</td><td>Disc wheel l</td><td class="mono">B5</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">2,550,120</td></tr>
+              <tr><td class="mono">36118090014</td><td>Disc wheel l</td><td class="mono pgrp-blue">B5</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">2,550,120</td></tr>
               
               <tr><td class="mono">51459476396</td><td>Instrument p</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">2,256,325</td></tr>
               
@@ -4682,23 +4679,23 @@
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">63119850411</td><td>Headlight, L</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">5,769,666</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">63215B52B73</td><td>Retrofit kit</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">4,493,566</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">63215B52B73</td><td>Retrofit kit</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">4,493,566</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">63115A0E603</td><td>LED headligh</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">2,674,554</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">36118090014</td><td>Disc wheel l</td><td class="mono">B5</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">2,550,120</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">36118090014</td><td>Disc wheel l</td><td class="mono pgrp-blue">B5</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">2,550,120</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51459476396</td><td>Instrument p</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">2,256,325</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51168738349</td><td>Heated outsi</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1,252,826</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51955A42425</td><td>Interior tri</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1,129,436</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51955A42425</td><td>Interior tri</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1,129,436</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">63115A7F385</td><td>Headlight ba</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1,076,185</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51448079197</td><td>Headlining,</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1,074,708</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51195A36997</td><td>Rear spoiler</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">971,124</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51195A36997</td><td>Rear spoiler</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">971,124</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">34117847241</td><td>Caliper hous</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">744,265</td></tr>
               
@@ -4724,7 +4721,7 @@
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">34116792689</td><td>Caliper hous</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">384,934</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">36116891824</td><td>Light alloy</td><td class="mono">M5</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">338,400</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">36116891824</td><td>Light alloy</td><td class="mono pgrp-blue">M5</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">338,400</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">83222355599</td><td>ATF 6</td><td class="mono">B9</td><td><span class="aloistag oseries">OA</span></td><td class="num">9</td><td class="num">330,795</td></tr>
               
@@ -4756,11 +4753,11 @@
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">34116864439</td><td>Brake disc,</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">190,560</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">36115A96C26</td><td>Valve caps J</td><td class="mono">M3</td><td><span class="aloistag oseries">OA</span></td><td class="num">8</td><td class="num">180,456</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">36115A96C26</td><td>Valve caps J</td><td class="mono pgrp-blue">M3</td><td><span class="aloistag oseries">OA</span></td><td class="num">8</td><td class="num">180,456</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">80435A51948</td><td>BMW Miniatur G80 M3 green metallic</td><td class="mono">B7</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">179,400</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">80435A51948</td><td>BMW Miniatur G80 M3 green metallic</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">179,400</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">80435A51949</td><td>BMW Miniatur G82 M4 yellow</td><td class="mono">B7</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">179,400</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">80435A51949</td><td>BMW Miniatur G82 M4 yellow</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">179,400</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51377446224</td><td>Finisher, si</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">176,484</td></tr>
               
@@ -4768,7 +4765,7 @@
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51477445471</td><td>Loading sill</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">155,040</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">90200007123</td><td>23Y BMW FW S</td><td class="mono">B7</td><td><span class="aloistag oseries">OA</span></td><td class="num">4</td><td class="num">152,000</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">90200007123</td><td>23Y BMW FW S</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OA</span></td><td class="num">4</td><td class="num">152,000</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">63177216885</td><td>Fog lights</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">136,823</td></tr>
               
@@ -4794,7 +4791,7 @@
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51337446194</td><td>Finisher win</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">85,547</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51472450512</td><td>Floor mats,</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">81,697</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51472450512</td><td>Floor mats,</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">81,697</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51357446214</td><td>Trim window</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">81,235</td></tr>
               
@@ -4810,7 +4807,7 @@
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">11317617474</td><td>Slide rail</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">64,218</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">82292355518</td><td>Key case, M</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">63,799</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">82292355518</td><td>Key case, M</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">63,799</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51117422212</td><td>Shock absorb</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">61,904</td></tr>
               
@@ -4852,7 +4849,7 @@
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51165A64CE3</td><td>Set of cover</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">34,425</td></tr>
               
-              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51145A76513</td><td>Lettering, b</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">33,649</td></tr>
+              <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51145A76513</td><td>Lettering, b</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">33,649</td></tr>
               
               <tr class="oseries" data-group="oaov-oa" hidden><td class="mono">51317380731</td><td>Cover, winds</td><td class="mono">M1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">32,339</td></tr>
               
@@ -4908,7 +4905,7 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51477326338</td><td>FLOOR COVERI</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">762,734</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">82732223388</td><td>roof contain</td><td class="mono">M3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">762,146</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">82732223388</td><td>roof contain</td><td class="mono pgrp-blue">M3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">762,146</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">41007378123</td><td>Trunk lid, b</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">731,533</td></tr>
               
@@ -4920,9 +4917,9 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">72117469953</td><td>UPPER BELT F</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">541,425</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51162446821</td><td>Outside mirr</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">540,771</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51162446821</td><td>Outside mirr</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">540,771</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51162446822</td><td>Outside mirr</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">540,771</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51162446822</td><td>Outside mirr</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">540,771</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51127294396</td><td>Carrier, bum</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">529,396</td></tr>
               
@@ -4940,11 +4937,11 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51337466962</td><td>Side window,</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">312,708</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">63212450107</td><td>M Performanc</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">306,768</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">63212450107</td><td>M Performanc</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">306,768</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">34116888458</td><td>Repair kit,</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">303,050</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51138077305</td><td>Grill front</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">301,047</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51138077305</td><td>Grill front</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">301,047</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">16117400693</td><td>Supply modul</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">292,686</td></tr>
               
@@ -4974,19 +4971,19 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51337435427</td><td>Channel cove</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">190,095</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51472473486</td><td>Floor mats,</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">189,112</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51472473486</td><td>Floor mats,</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">189,112</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">11652411444</td><td>Installation</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">179,069</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51128098690</td><td>Guide, rear</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">173,721</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51472465482</td><td>Sill trim ca</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">171,746</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51472465482</td><td>Sill trim ca</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">171,746</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">22116860471</td><td>Engine mount</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">162,525</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">22116860472</td><td>Engine mount</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">162,525</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51472473480</td><td>Fitted lugga</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">159,626</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51472473480</td><td>Fitted lugga</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">159,626</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">32306877590</td><td>HUB CAP, AIR</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">155,527</td></tr>
               
@@ -5014,21 +5011,21 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51127436843</td><td>Guide, cente</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">99,715</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51472450511</td><td>Floor mats,</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">96,712</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51472450511</td><td>Floor mats,</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">96,712</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">80272454659</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">4</td><td class="num">95,344</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">80272454659</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">4</td><td class="num">95,344</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">32300430403</td><td>Cover</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">89,165</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">32300430403</td><td>Cover</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">89,165</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">13627808013</td><td>Sensor</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">86,265</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">83125A7DCA3</td><td>BMW Natural</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="num">6</td><td class="num">79,308</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">82292469991</td><td>Door pin</td><td class="mono">M3</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">76,230</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">82292469991</td><td>Door pin</td><td class="mono pgrp-blue">M3</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">76,230</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">83222344206</td><td>atf 4</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">73,416</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">80272454658</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">3</td><td class="num">71,508</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">80272454658</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">3</td><td class="num">71,508</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51135A6EF13</td><td>Adhesive tap</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">68,693</td></tr>
               
@@ -5040,7 +5037,7 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51777374896</td><td>FRONT ENTRAN</td><td class="mono">M1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">63,744</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">36122447403</td><td>Set of valve(White)</td><td class="mono">M3</td><td><span class="aloistag oseries">OV</span></td><td class="num">3</td><td class="num">62,196</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">36122447403</td><td>Set of valve(White)</td><td class="mono pgrp-blue">M3</td><td><span class="aloistag oseries">OV</span></td><td class="num">3</td><td class="num">62,196</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">31336865131</td><td>Auxiliary da</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">61,174</td></tr>
               
@@ -5072,7 +5069,7 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">11128621958</td><td>Profile seal</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">36,594</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51142472842</td><td>Lettering, b</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">33,649</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51142472842</td><td>Lettering, b</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">33,649</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">51717376341</td><td>Service cove</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">31,789</td></tr>
               
@@ -5080,9 +5077,9 @@
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">83125A16457</td><td>Leather care</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">24,747</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">80272454650</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">23,836</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">80272454650</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">23,836</td></tr>
               
-              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">80272454660</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">23,836</td></tr>
+              <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">80272454660</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">23,836</td></tr>
               
               <tr class="oseries" data-group="oaov-ov" hidden><td class="mono">83125A16146</td><td>Hard wax wit</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">22,484</td></tr>
               
@@ -5147,7 +5144,7 @@
                 
                 <tr><td class="mono">24008741536</td><td>RP REMAN aut</td><td class="mono">B2</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-05-14</td><td class="num">1</td><td class="num">10,175,949</td></tr>
                 
-                <tr><td class="mono">63215B52B73</td><td>Retrofit kit</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-04-04</td><td class="num">2</td><td class="num">4,493,566</td></tr>
+                <tr><td class="mono">63215B52B73</td><td>Retrofit kit</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-04-04</td><td class="num">2</td><td class="num">4,493,566</td></tr>
                 
                 <tr><td class="mono">32105B4D1A3</td><td>Steering gea</td><td class="mono">E1</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-02-25</td><td class="num">1</td><td class="num">3,760,020</td></tr>
                 
@@ -5167,7 +5164,7 @@
                 
                 <tr><td class="mono">90200007561</td><td>SONAX Car A/</td><td class="mono">B9</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2025-04-30</td><td class="num">150</td><td class="num">1,042,500</td></tr>
                 
-                <tr><td class="mono">51195A36997</td><td>Rear spoiler</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2024-10-31</td><td class="num">1</td><td class="num">971,124</td></tr>
+                <tr><td class="mono">51195A36997</td><td>Rear spoiler</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2024-10-31</td><td class="num">1</td><td class="num">971,124</td></tr>
                 
                 <tr><td class="mono">90200007525</td><td>P-ZERO(*)(MO</td><td class="mono">B8</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-01-17</td><td class="num">2</td><td class="num">950,000</td></tr>
                 
@@ -5207,7 +5204,7 @@
                 
                 <tr><td class="mono">66555A63731</td><td>Rearview cam</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">434,520</td></tr>
                 
-                <tr><td class="mono">80262463269</td><td>BMW M watch,</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">1</td><td class="num">432,454</td></tr>
+                <tr><td class="mono">80262463269</td><td>BMW M watch,</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">1</td><td class="num">432,454</td></tr>
                 
                 <tr><td class="mono">90200006217</td><td>245/45R20 103W XL P ZERO r-f *</td><td class="mono">B8</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-10-31</td><td class="num">1</td><td class="num">417,000</td></tr>
                 
@@ -5217,13 +5214,13 @@
                 
                 <tr><td class="mono">90200005809</td><td>245/40R20 99Y P Zero r-f *</td><td class="mono">B8</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">390,000</td></tr>
                 
-                <tr><td class="mono">90200008123</td><td>MINI Portabl</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-08-21</td><td class="num">28</td><td class="num">386,400</td></tr>
+                <tr><td class="mono">90200008123</td><td>MINI Portabl</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-08-21</td><td class="num">28</td><td class="num">386,400</td></tr>
                 
                 <tr><td class="mono">34116792689</td><td>Caliper hous</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">384,934</td></tr>
                 
-                <tr><td class="mono">90200005997</td><td>BMW Design P</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">100</td><td class="num">340,000</td></tr>
+                <tr><td class="mono">90200005997</td><td>BMW Design P</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">100</td><td class="num">340,000</td></tr>
                 
-                <tr><td class="mono">90200007565</td><td>BMW Magsafe</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-02-07</td><td class="num">7</td><td class="num">313,950</td></tr>
+                <tr><td class="mono">90200007565</td><td>BMW Magsafe</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-02-07</td><td class="num">7</td><td class="num">313,950</td></tr>
                 
                 <tr><td class="mono">37105A4A615</td><td>Air spring s</td><td class="mono">B1</td><td><span class="aloistag">SK</span></td><td class="mono">2025-07-23</td><td class="num">1</td><td class="num">313,650</td></tr>
                 
@@ -5231,15 +5228,15 @@
                 
                 <tr><td class="mono">51419115533</td><td>Trim</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-11-06</td><td class="num">1</td><td class="num">313,389</td></tr>
                 
-                <tr><td class="mono">90200007303</td><td>BMW Iron Club Cover Black</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-01-31</td><td class="num">4</td><td class="num">309,200</td></tr>
+                <tr><td class="mono">90200007303</td><td>BMW Iron Club Cover Black</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-01-31</td><td class="num">4</td><td class="num">309,200</td></tr>
                 
-                <tr><td class="mono">90200007322</td><td>BMW Iron Club Cover Olive</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-01-31</td><td class="num">4</td><td class="num">309,200</td></tr>
+                <tr><td class="mono">90200007322</td><td>BMW Iron Club Cover Olive</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-01-31</td><td class="num">4</td><td class="num">309,200</td></tr>
                 
-                <tr><td class="mono">63212450107</td><td>M Performanc</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-04-06</td><td class="num">1</td><td class="num">306,768</td></tr>
+                <tr><td class="mono">63212450107</td><td>M Performanc</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-04-06</td><td class="num">1</td><td class="num">306,768</td></tr>
                 
                 <tr><td class="mono">13718655835</td><td>Intake muffl</td><td class="mono">B1</td><td><span class="aloistag">SK</span></td><td class="mono">2025-08-11</td><td class="num">1</td><td class="num">303,882</td></tr>
                 
-                <tr><td class="mono">51138077305</td><td>Grill front</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-10-31</td><td class="num">1</td><td class="num">301,047</td></tr>
+                <tr><td class="mono">51138077305</td><td>Grill front</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-10-31</td><td class="num">1</td><td class="num">301,047</td></tr>
                 
                 <tr><td class="mono">16117400693</td><td>Supply modul</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">292,686</td></tr>
                 
@@ -5247,7 +5244,7 @@
                 
                 <tr><td class="mono">13629887656</td><td>diesel parti</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-08-28</td><td class="num">1</td><td class="num">287,631</td></tr>
                 
-                <tr><td class="mono">90200005996</td><td>BMW Design P</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">83</td><td class="num">282,200</td></tr>
+                <tr><td class="mono">90200005996</td><td>BMW Design P</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">83</td><td class="num">282,200</td></tr>
                 
                 <tr><td class="mono">33406891921</td><td>Wheel hub wi</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-05-03</td><td class="num">1</td><td class="num">281,089</td></tr>
                 
@@ -5263,7 +5260,7 @@
                 
                 <tr><td class="mono">34116789543</td><td>Brake disc</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2025-06-30</td><td class="num">1</td><td class="num">232,020</td></tr>
                 
-                <tr><td class="mono">90200007304</td><td>BMW Iron Club Cover White</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-01-31</td><td class="num">3</td><td class="num">231,900</td></tr>
+                <tr><td class="mono">90200007304</td><td>BMW Iron Club Cover White</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-01-31</td><td class="num">3</td><td class="num">231,900</td></tr>
                 
                 <tr><td class="mono">63145A923C2</td><td>Light module</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-07-16</td><td class="num">1</td><td class="num">231,450</td></tr>
                 
@@ -5285,31 +5282,31 @@
                 
                 <tr><td class="mono">34116864439</td><td>Brake disc,</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-03-06</td><td class="num">2</td><td class="num">190,560</td></tr>
                 
-                <tr><td class="mono">51472473486</td><td>Floor mats,</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">2</td><td class="num">189,112</td></tr>
+                <tr><td class="mono">51472473486</td><td>Floor mats,</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">2</td><td class="num">189,112</td></tr>
                 
-                <tr><td class="mono">36115A96C26</td><td>Valve caps J</td><td class="mono">M3</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-07-04</td><td class="num">8</td><td class="num">180,456</td></tr>
+                <tr><td class="mono">36115A96C26</td><td>Valve caps J</td><td class="mono pgrp-blue">M3</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-07-04</td><td class="num">8</td><td class="num">180,456</td></tr>
                 
-                <tr><td class="mono">90200007566</td><td>MINI Magsafe</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-02-07</td><td class="num">4</td><td class="num">179,400</td></tr>
+                <tr><td class="mono">90200007566</td><td>MINI Magsafe</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-02-07</td><td class="num">4</td><td class="num">179,400</td></tr>
                 
                 <tr><td class="mono">11652411444</td><td>Installation</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-12-19</td><td class="num">1</td><td class="num">179,069</td></tr>
                 
                 <tr><td class="mono">51377446224</td><td>Finisher, si</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-06-30</td><td class="num">1</td><td class="num">176,484</td></tr>
                 
-                <tr><td class="mono">51472465482</td><td>Sill trim ca</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">171,746</td></tr>
+                <tr><td class="mono">51472465482</td><td>Sill trim ca</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">171,746</td></tr>
                 
                 <tr><td class="mono">51437496417</td><td>Cover, B-col</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-02-21</td><td class="num">1</td><td class="num">171,530</td></tr>
                 
-                <tr><td class="mono">51472473480</td><td>Fitted lugga</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">159,626</td></tr>
+                <tr><td class="mono">51472473480</td><td>Fitted lugga</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">159,626</td></tr>
                 
                 <tr><td class="mono">32306877590</td><td>HUB CAP, AIR</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-04-23</td><td class="num">1</td><td class="num">155,527</td></tr>
                 
-                <tr><td class="mono">80932864212</td><td>BMW Baby Rac</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-01-31</td><td class="num">1</td><td class="num">153,900</td></tr>
+                <tr><td class="mono">80932864212</td><td>BMW Baby Rac</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2025-01-31</td><td class="num">1</td><td class="num">153,900</td></tr>
                 
                 <tr><td class="mono">51127368453</td><td>Gasket</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-06-15</td><td class="num">58</td><td class="num">151,670</td></tr>
                 
                 <tr><td class="mono">22117935148</td><td>Engine mount</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2025-06-14</td><td class="num">1</td><td class="num">149,577</td></tr>
                 
-                <tr><td class="mono">90200005551</td><td>MINI Wallet</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-07-24</td><td class="num">8</td><td class="num">145,072</td></tr>
+                <tr><td class="mono">90200005551</td><td>MINI Wallet</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-07-24</td><td class="num">8</td><td class="num">145,072</td></tr>
                 
                 <tr><td class="mono">34208842966</td><td>Repair kit b</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2025-01-31</td><td class="num">1</td><td class="num">139,814</td></tr>
                 
@@ -5327,7 +5324,7 @@
                 
                 <tr><td class="mono">51487067242</td><td>SOUND INSULA</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2025-04-30</td><td class="num">2</td><td class="num">124,780</td></tr>
                 
-                <tr><td class="mono">80932413782</td><td>BMW Baby Rac</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-12-21</td><td class="num">1</td><td class="num">124,500</td></tr>
+                <tr><td class="mono">80932413782</td><td>BMW Baby Rac</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-12-21</td><td class="num">1</td><td class="num">124,500</td></tr>
                 
                 <tr><td class="mono">12638638551</td><td>Integrated s</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2025-07-18</td><td class="num">1</td><td class="num">121,512</td></tr>
                 
@@ -5335,9 +5332,9 @@
                 
                 <tr><td class="mono">61126946211</td><td>Cable gray</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-09-05</td><td class="num">30</td><td class="num">116,640</td></tr>
                 
-                <tr><td class="mono">90200007607</td><td>MINI Fire ex</td><td class="mono">B3</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-09-14</td><td class="num">2</td><td class="num">115,340</td></tr>
+                <tr><td class="mono">90200007607</td><td>MINI Fire ex</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-09-14</td><td class="num">2</td><td class="num">115,340</td></tr>
                 
-                <tr><td class="mono">90200007025</td><td>M50th Number</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-10-15</td><td class="num">10</td><td class="num">112,270</td></tr>
+                <tr><td class="mono">90200007025</td><td>M50th Number</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-10-15</td><td class="num">10</td><td class="num">112,270</td></tr>
                 
                 <tr><td class="mono">31126851693</td><td>Rubber Mount</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2025-07-19</td><td class="num">2</td><td class="num">109,980</td></tr>
                 
@@ -5349,7 +5346,7 @@
                 
                 <tr><td class="mono">51769451490</td><td>Seal, C-pill</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-09-05</td><td class="num">2</td><td class="num">97,200</td></tr>
                 
-                <tr><td class="mono">51472450511</td><td>Floor mats,</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2025-04-30</td><td class="num">1</td><td class="num">96,712</td></tr>
+                <tr><td class="mono">51472450511</td><td>Floor mats,</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2025-04-30</td><td class="num">1</td><td class="num">96,712</td></tr>
                 
                 <tr><td class="mono">32105A1F919</td><td>Ball joint,</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-07-29</td><td class="num">1</td><td class="num">95,526</td></tr>
                 
@@ -5361,11 +5358,11 @@
                 
                 <tr><td class="mono">51129451025</td><td>Mount, bumpe</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-07-23</td><td class="num">1</td><td class="num">89,505</td></tr>
                 
-                <tr><td class="mono">32300430403</td><td>Cover</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">89,165</td></tr>
+                <tr><td class="mono">32300430403</td><td>Cover</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">89,165</td></tr>
                 
                 <tr><td class="mono">51337446194</td><td>Finisher win</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-06-20</td><td class="num">1</td><td class="num">85,547</td></tr>
                 
-                <tr><td class="mono">51472450512</td><td>Floor mats,</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-04-30</td><td class="num">1</td><td class="num">81,697</td></tr>
+                <tr><td class="mono">51472450512</td><td>Floor mats,</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-04-30</td><td class="num">1</td><td class="num">81,697</td></tr>
                 
                 <tr><td class="mono">11137720999</td><td>Screw plug,</td><td class="mono">N1</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2024-10-31</td><td class="num">9</td><td class="num">81,351</td></tr>
                 
@@ -5373,19 +5370,19 @@
                 
                 <tr><td class="mono">83125A7DCA3</td><td>BMW Natural</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2025-04-17</td><td class="num">6</td><td class="num">79,308</td></tr>
                 
-                <tr><td class="mono">90200007300</td><td>BMW Iron Club Cover Cognac</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-10-15</td><td class="num">1</td><td class="num">79,200</td></tr>
+                <tr><td class="mono">90200007300</td><td>BMW Iron Club Cover Cognac</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-10-15</td><td class="num">1</td><td class="num">79,200</td></tr>
                 
                 <tr><td class="mono">83125A7DCA4</td><td>BMW Natural</td><td class="mono">B9</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2024-06-07</td><td class="num">6</td><td class="num">78,540</td></tr>
                 
-                <tr><td class="mono">90200007302</td><td>BMW Iron Club Cover M</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-10-15</td><td class="num">1</td><td class="num">78,200</td></tr>
+                <tr><td class="mono">90200007302</td><td>BMW Iron Club Cover M</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-10-15</td><td class="num">1</td><td class="num">78,200</td></tr>
                 
-                <tr><td class="mono">82292469991</td><td>Door pin</td><td class="mono">M3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-08-09</td><td class="num">2</td><td class="num">76,230</td></tr>
+                <tr><td class="mono">82292469991</td><td>Door pin</td><td class="mono pgrp-blue">M3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-08-09</td><td class="num">2</td><td class="num">76,230</td></tr>
                 
                 <tr><td class="mono">83222344206</td><td>atf 4</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">2</td><td class="num">73,416</td></tr>
                 
                 <tr><td class="mono">51487394802</td><td>eat insulati</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-08-28</td><td class="num">1</td><td class="num">71,523</td></tr>
                 
-                <tr><td class="mono">80272454658</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-11-29</td><td class="num">3</td><td class="num">71,508</td></tr>
+                <tr><td class="mono">80272454658</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-11-29</td><td class="num">3</td><td class="num">71,508</td></tr>
                 
                 <tr><td class="mono">51135A6EF13</td><td>Adhesive tap</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2025-04-30</td><td class="num">1</td><td class="num">68,693</td></tr>
                 
@@ -5405,9 +5402,9 @@
                 
                 <tr><td class="mono">11628509072</td><td>HEAT PROTECT</td><td class="mono">M1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">63,975</td></tr>
                 
-                <tr><td class="mono">82292355518</td><td>Key case, M</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-03-07</td><td class="num">1</td><td class="num">63,799</td></tr>
+                <tr><td class="mono">82292355518</td><td>Key case, M</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-03-07</td><td class="num">1</td><td class="num">63,799</td></tr>
                 
-                <tr><td class="mono">36122447403</td><td>Set of valve(White)</td><td class="mono">M3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2025-04-30</td><td class="num">3</td><td class="num">62,196</td></tr>
+                <tr><td class="mono">36122447403</td><td>Set of valve(White)</td><td class="mono pgrp-blue">M3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2025-04-30</td><td class="num">3</td><td class="num">62,196</td></tr>
                 
                 <tr><td class="mono">51117422212</td><td>Shock absorb</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-09-05</td><td class="num">1</td><td class="num">61,904</td></tr>
                 
@@ -5443,7 +5440,7 @@
                 
                 <tr><td class="mono">51118084909</td><td>Deflector li</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2025-01-31</td><td class="num">2</td><td class="num">48,438</td></tr>
                 
-                <tr><td class="mono">80272454656</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-11-29</td><td class="num">2</td><td class="num">47,672</td></tr>
+                <tr><td class="mono">80272454656</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-11-29</td><td class="num">2</td><td class="num">47,672</td></tr>
                 
                 <tr><td class="mono">51339891448</td><td>Cover, windo</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2024-11-26</td><td class="num">1</td><td class="num">47,432</td></tr>
                 
@@ -5463,7 +5460,7 @@
                 
                 <tr><td class="mono">83125A7DCA6</td><td>MINI Natural</td><td class="mono">B9</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2024-06-20</td><td class="num">3</td><td class="num">39,270</td></tr>
                 
-                <tr><td class="mono">82292408819</td><td>Key case wit</td><td class="mono">B3</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2024-03-20</td><td class="num">1</td><td class="num">39,088</td></tr>
+                <tr><td class="mono">82292408819</td><td>Key case wit</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2024-03-20</td><td class="num">1</td><td class="num">39,088</td></tr>
                 
                 <tr><td class="mono">11128621958</td><td>Profile seal</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2025-07-03</td><td class="num">1</td><td class="num">36,594</td></tr>
                 
@@ -5477,13 +5474,13 @@
                 
                 <tr><td class="mono">51165A64CE3</td><td>Set of cover</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-06-25</td><td class="num">1</td><td class="num">34,425</td></tr>
                 
-                <tr><td class="mono">51142472842</td><td>Lettering, b</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-11-29</td><td class="num">1</td><td class="num">33,649</td></tr>
+                <tr><td class="mono">51142472842</td><td>Lettering, b</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-11-29</td><td class="num">1</td><td class="num">33,649</td></tr>
                 
-                <tr><td class="mono">51145A76513</td><td>Lettering, b</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2024-12-10</td><td class="num">1</td><td class="num">33,649</td></tr>
+                <tr><td class="mono">51145A76513</td><td>Lettering, b</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2024-12-10</td><td class="num">1</td><td class="num">33,649</td></tr>
                 
                 <tr><td class="mono">51317380731</td><td>Cover, winds</td><td class="mono">M1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-08-29</td><td class="num">1</td><td class="num">32,339</td></tr>
                 
-                <tr><td class="mono">80272463141</td><td>BMW Classic</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-10-31</td><td class="num">1</td><td class="num">32,273</td></tr>
+                <tr><td class="mono">80272463141</td><td>BMW Classic</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-10-31</td><td class="num">1</td><td class="num">32,273</td></tr>
                 
                 <tr><td class="mono">51247453423</td><td>Trim, drip r</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-09-13</td><td class="num">1</td><td class="num">31,872</td></tr>
                 
@@ -5491,7 +5488,7 @@
                 
                 <tr><td class="mono">11438490851</td><td>Oil dipstick</td><td class="mono">B1</td><td><span class="aloistag">SK</span></td><td class="mono">2025-04-30</td><td class="num">1</td><td class="num">30,885</td></tr>
                 
-                <tr><td class="mono">80292454754</td><td>BMW M USB st</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">1</td><td class="num">30,109</td></tr>
+                <tr><td class="mono">80292454754</td><td>BMW M USB st</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">1</td><td class="num">30,109</td></tr>
                 
                 <tr><td class="mono">07129908628</td><td>Torx-bolt wi</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-04-30</td><td class="num">10</td><td class="num">28,640</td></tr>
                 
@@ -5511,11 +5508,11 @@
                 
                 <tr><td class="mono">07147443710</td><td>Clip with se</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2024-10-30</td><td class="num">12</td><td class="num">24,528</td></tr>
                 
-                <tr><td class="mono">80272454650</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-11-29</td><td class="num">1</td><td class="num">23,836</td></tr>
+                <tr><td class="mono">80272454650</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-11-29</td><td class="num">1</td><td class="num">23,836</td></tr>
                 
-                <tr><td class="mono">80272454651</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-11-29</td><td class="num">1</td><td class="num">23,836</td></tr>
+                <tr><td class="mono">80272454651</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-11-29</td><td class="num">1</td><td class="num">23,836</td></tr>
                 
-                <tr><td class="mono">80272454660</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-11-29</td><td class="num">1</td><td class="num">23,836</td></tr>
+                <tr><td class="mono">80272454660</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-11-29</td><td class="num">1</td><td class="num">23,836</td></tr>
                 
                 <tr><td class="mono">11427840594</td><td>Filt.Element</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2025-06-30</td><td class="num">1</td><td class="num">22,905</td></tr>
                 
@@ -5593,7 +5590,7 @@
                 
                 <tr><td class="mono">66555A63731</td><td>Rearview cam</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">434,520</td></tr>
                 
-                <tr><td class="mono">80262463269</td><td>BMW M watch,</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">1</td><td class="num">432,454</td></tr>
+                <tr><td class="mono">80262463269</td><td>BMW M watch,</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">1</td><td class="num">432,454</td></tr>
                 
                 <tr><td class="mono">51148087198</td><td>BMW emblem 5</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2024-07-24</td><td class="num">7</td><td class="num">397,460</td></tr>
                 
@@ -5601,9 +5598,9 @@
                 
                 <tr><td class="mono">34116792689</td><td>Caliper hous</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">384,934</td></tr>
                 
-                <tr><td class="mono">90200005997</td><td>BMW Design P</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">100</td><td class="num">340,000</td></tr>
+                <tr><td class="mono">90200005997</td><td>BMW Design P</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">100</td><td class="num">340,000</td></tr>
                 
-                <tr><td class="mono">63212450107</td><td>M Performanc</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-04-06</td><td class="num">1</td><td class="num">306,768</td></tr>
+                <tr><td class="mono">63212450107</td><td>M Performanc</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-04-06</td><td class="num">1</td><td class="num">306,768</td></tr>
                 
                 <tr><td class="mono">16117400693</td><td>Supply modul</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">292,686</td></tr>
                 
@@ -5611,7 +5608,7 @@
                 
                 <tr><td class="mono">13629887656</td><td>diesel parti</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-08-28</td><td class="num">1</td><td class="num">287,631</td></tr>
                 
-                <tr><td class="mono">90200005996</td><td>BMW Design P</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">83</td><td class="num">282,200</td></tr>
+                <tr><td class="mono">90200005996</td><td>BMW Design P</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">83</td><td class="num">282,200</td></tr>
                 
                 <tr><td class="mono">33406891921</td><td>Wheel hub wi</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-05-03</td><td class="num">1</td><td class="num">281,089</td></tr>
                 
@@ -5619,27 +5616,27 @@
                 
                 <tr><td class="mono">12517641652</td><td>Wiring harne</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">195,102</td></tr>
                 
-                <tr><td class="mono">51472473486</td><td>Floor mats,</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">2</td><td class="num">189,112</td></tr>
+                <tr><td class="mono">51472473486</td><td>Floor mats,</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">2</td><td class="num">189,112</td></tr>
                 
-                <tr><td class="mono">51472465482</td><td>Sill trim ca</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">171,746</td></tr>
+                <tr><td class="mono">51472465482</td><td>Sill trim ca</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">171,746</td></tr>
                 
-                <tr><td class="mono">51472473480</td><td>Fitted lugga</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">159,626</td></tr>
+                <tr><td class="mono">51472473480</td><td>Fitted lugga</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">159,626</td></tr>
                 
                 <tr><td class="mono">32306877590</td><td>HUB CAP, AIR</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-04-23</td><td class="num">1</td><td class="num">155,527</td></tr>
                 
                 <tr><td class="mono">51127368453</td><td>Gasket</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-06-15</td><td class="num">58</td><td class="num">151,670</td></tr>
                 
-                <tr><td class="mono">90200005551</td><td>MINI Wallet</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-07-24</td><td class="num">8</td><td class="num">145,072</td></tr>
+                <tr><td class="mono">90200005551</td><td>MINI Wallet</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-07-24</td><td class="num">8</td><td class="num">145,072</td></tr>
                 
                 <tr><td class="mono">83125A7DCA9</td><td>MINI Natural</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-06-20</td><td class="num">10</td><td class="num">130,900</td></tr>
                 
-                <tr><td class="mono">90200007607</td><td>MINI Fire ex</td><td class="mono">B3</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-09-14</td><td class="num">2</td><td class="num">115,340</td></tr>
+                <tr><td class="mono">90200007607</td><td>MINI Fire ex</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-09-14</td><td class="num">2</td><td class="num">115,340</td></tr>
                 
-                <tr><td class="mono">32300430403</td><td>Cover</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">89,165</td></tr>
+                <tr><td class="mono">32300430403</td><td>Cover</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">1</td><td class="num">89,165</td></tr>
                 
                 <tr><td class="mono">83125A7DCA4</td><td>BMW Natural</td><td class="mono">B9</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2024-06-07</td><td class="num">6</td><td class="num">78,540</td></tr>
                 
-                <tr><td class="mono">82292469991</td><td>Door pin</td><td class="mono">M3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-08-09</td><td class="num">2</td><td class="num">76,230</td></tr>
+                <tr><td class="mono">82292469991</td><td>Door pin</td><td class="mono pgrp-blue">M3</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-08-09</td><td class="num">2</td><td class="num">76,230</td></tr>
                 
                 <tr><td class="mono">83222344206</td><td>atf 4</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="mono">2024-07-24</td><td class="num">2</td><td class="num">73,416</td></tr>
                 
@@ -5653,9 +5650,9 @@
                 
                 <tr><td class="mono">83125A7DCA6</td><td>MINI Natural</td><td class="mono">B9</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2024-06-20</td><td class="num">3</td><td class="num">39,270</td></tr>
                 
-                <tr><td class="mono">82292408819</td><td>Key case wit</td><td class="mono">B3</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2024-03-20</td><td class="num">1</td><td class="num">39,088</td></tr>
+                <tr><td class="mono">82292408819</td><td>Key case wit</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2024-03-20</td><td class="num">1</td><td class="num">39,088</td></tr>
                 
-                <tr><td class="mono">80292454754</td><td>BMW M USB st</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">1</td><td class="num">30,109</td></tr>
+                <tr><td class="mono">80292454754</td><td>BMW M USB st</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="mono">2024-08-30</td><td class="num">1</td><td class="num">30,109</td></tr>
                 
                 <tr><td class="mono">33306786186</td><td>Washer</td><td class="mono">M1</td><td><span class="aloistag oseries">O8</span></td><td class="mono">2024-08-14</td><td class="num">8</td><td class="num">26,864</td></tr>
                 
@@ -5695,15 +5692,15 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">O계열 · RO/SB/SP 묶인 재고</span>
-          <span class="value">114건</span>
-          <span class="foot">요청수량×원가 합계 ₩32,598,491</span>
+          <span class="value">116건</span>
+          <span class="foot">요청수량×원가 합계 ₩33,194,511</span>
         </div>
       </div>
 
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">참조문서별 O계열 요청 세부</span>
-          <span class="val">114건</span>
+          <span class="val">116건</span>
           <span class="foot">그룹 클릭해서 펼치기 · 요청일 오래된순</span>
         </div>
         <div class="tablewrap">
@@ -5735,7 +5732,7 @@
               </tr>
               
               <tr class="oseries" data-group="opart-RO" hidden>
-                <td class="mono">36116891824</td><td>Light alloy</td><td class="mono">M5</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">36116891824</td><td>Light alloy</td><td class="mono pgrp-blue">M5</td><td><span class="aloistag oseries">OA</span></td>
                 <td class="mono">RO2608001747</td><td class="mono">08-28</td><td class="mono">D+25일</td>
                 <td class="num">1</td><td class="num">1</td><td class="num">0</td>
                 <td class="num">338,400</td><td>박영묵</td>
@@ -5931,7 +5928,7 @@
               </tr>
               
               <tr class="oseries" data-group="opart-RO" hidden>
-                <td class="mono">99985B94ED5</td><td>BMW ART BOLT(NEW)</td><td class="mono">B3</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">99985B94ED5</td><td>BMW ART BOLT(NEW)</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">RO2609001388</td><td class="mono">09-22</td><td class="mono">D+0일</td>
                 <td class="num">1</td><td class="num">17</td><td class="num">16</td>
                 <td class="num">9,000</td><td>염진아</td>
@@ -6037,7 +6034,7 @@
               
               <tr class="subtotal oseries"><td colspan="7">RO 합계</td><td class="num">68</td><td class="num"></td><td class="num"></td><td class="num">13,926,745</td><td></td></tr>
               
-              <tr class="grouphead oseries" data-group="opart-SB" onclick="toggleAloisGroup(this)"><td colspan="12"><span class="caret">▸</span>SB (36건)<span class="hint"></span></td></tr>
+              <tr class="grouphead oseries" data-group="opart-SB" onclick="toggleAloisGroup(this)"><td colspan="12"><span class="caret">▸</span>SB (38건)<span class="hint"></span></td></tr>
               
               <tr class="oseries" data-group="opart-SB" hidden>
                 <td class="mono">51477326338</td><td>FLOOR COVERI</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td>
@@ -6291,40 +6288,54 @@
                 <td class="num">24,080</td><td>우종훈</td>
               </tr>
               
-              <tr class="subtotal oseries"><td colspan="7">SB 합계</td><td class="num">61</td><td class="num"></td><td class="num"></td><td class="num">11,172,104</td><td></td></tr>
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">07149465451</td><td>Clip</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">SB2609001571</td><td class="mono">09-22</td><td class="mono">D+0일</td>
+                <td class="num">8</td><td class="num">10</td><td class="num">2</td>
+                <td class="num">45,864</td><td>정용환</td>
+              </tr>
+              
+              <tr class="oseries" data-group="opart-SB" hidden>
+                <td class="mono">51217444677</td><td>Drive soft-c</td><td class="mono">-</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">SB2609001571</td><td class="mono">09-22</td><td class="mono">D+0일</td>
+                <td class="num">1</td><td class="num">0</td><td class="num">0</td>
+                <td class="num">550,156</td><td>정용환</td>
+              </tr>
+              
+              <tr class="subtotal oseries"><td colspan="7">SB 합계</td><td class="num">70</td><td class="num"></td><td class="num"></td><td class="num">11,768,124</td><td></td></tr>
               
               <tr class="grouphead oseries" data-group="opart-SP" onclick="toggleAloisGroup(this)"><td colspan="12"><span class="caret">▸</span>SP (32건)<span class="hint"></span></td></tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007123</td><td>23Y BMW FW S</td><td class="mono">B7</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">90200007123</td><td>23Y BMW FW S</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OA</span></td>
                 <td class="mono">SP2605000092</td><td class="mono">05-27</td><td class="mono">D+118일</td>
                 <td class="num">4</td><td class="num">4</td><td class="num">0</td>
                 <td class="num">152,000</td><td>조재완</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007365</td><td>24Y BMW SS G</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007365</td><td>24Y BMW SS G</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2605000092</td><td class="mono">05-27</td><td class="mono">D+118일</td>
                 <td class="num">8</td><td class="num">8</td><td class="num">0</td>
                 <td class="num">360,000</td><td>조재완</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007250</td><td>23Y BMW FW G</td><td class="mono">B7</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">90200007250</td><td>23Y BMW FW G</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">O8</span></td>
                 <td class="mono">SP2605000092</td><td class="mono">05-27</td><td class="mono">D+118일</td>
                 <td class="num">4</td><td class="num">4</td><td class="num">0</td>
                 <td class="num">180,000</td><td>조재완</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007299</td><td>BMW Boston Black</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007299</td><td>BMW Boston Black</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2608000084</td><td class="mono">08-26</td><td class="mono">D+27일</td>
                 <td class="num">1</td><td class="num">26</td><td class="num">0</td>
                 <td class="num">58,800</td><td>조재완</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2608000084</td><td class="mono">08-26</td><td class="mono">D+27일</td>
                 <td class="num">1</td><td class="num">16</td><td class="num">0</td>
                 <td class="num">170,600</td><td>조재완</td>
@@ -6345,7 +6356,7 @@
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007299</td><td>BMW Boston Black</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007299</td><td>BMW Boston Black</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000001</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">26</td><td class="num">0</td>
                 <td class="num">58,800</td><td>김창열</td>
@@ -6359,161 +6370,161 @@
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007291</td><td>BMW Caddy Cognac</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007291</td><td>BMW Caddy Cognac</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">1</td><td class="num">0</td>
                 <td class="num">258,800</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007566</td><td>MINI Magsafe</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007566</td><td>MINI Magsafe</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">4</td><td class="num">3</td>
                 <td class="num">44,850</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007565</td><td>BMW Magsafe</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007565</td><td>BMW Magsafe</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">7</td><td class="num">6</td>
                 <td class="num">44,850</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200008123</td><td>MINI Portabl</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200008123</td><td>MINI Portabl</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">28</td><td class="num">27</td>
                 <td class="num">13,800</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007607</td><td>MINI Fire ex</td><td class="mono">B3</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007607</td><td>MINI Fire ex</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">2</td><td class="num">1</td>
                 <td class="num">57,670</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007605</td><td>BMW Fire ext</td><td class="mono">B3</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007605</td><td>BMW Fire ext</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">9</td><td class="num">8</td>
                 <td class="num">58,393</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">80292454754</td><td>BMW M USB st</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">80292454754</td><td>BMW M USB st</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">1</td><td class="num">0</td>
                 <td class="num">30,109</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">80272463141</td><td>BMW Classic</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">80272463141</td><td>BMW Classic</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">1</td><td class="num">0</td>
                 <td class="num">32,273</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">80262463269</td><td>BMW M watch,</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">80262463269</td><td>BMW M watch,</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">1</td><td class="num">0</td>
                 <td class="num">432,454</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007068</td><td>BMW GOLFING</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007068</td><td>BMW GOLFING</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">1</td><td class="num">0</td>
                 <td class="num">34,273</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">82292355518</td><td>Key case, M</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td>
+                <td class="mono">82292355518</td><td>Key case, M</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">1</td><td class="num">0</td>
                 <td class="num">63,799</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">82292408819</td><td>Key case wit</td><td class="mono">B3</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">82292408819</td><td>Key case wit</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">O8</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">1</td><td class="num">0</td>
                 <td class="num">39,088</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200008205</td><td>MINI Brick T</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200008205</td><td>MINI Brick T</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">13</td><td class="num">12</td>
                 <td class="num">13,200</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200008204</td><td>BMW Brick To</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200008204</td><td>BMW Brick To</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">6</td><td class="num">5</td>
                 <td class="num">13,200</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007293</td><td>BMW Caddy M</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007293</td><td>BMW Caddy M</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">4</td><td class="num">3</td>
                 <td class="num">247,100</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007292</td><td>BMW Caddy Beige &amp;amp; Grey</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007292</td><td>BMW Caddy Beige &amp;amp; Grey</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000016</td><td class="mono">09-02</td><td class="mono">D+20일</td>
                 <td class="num">1</td><td class="num">6</td><td class="num">5</td>
                 <td class="num">247,100</td><td>박태강</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007299</td><td>BMW Boston Black</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007299</td><td>BMW Boston Black</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000022</td><td class="mono">09-03</td><td class="mono">D+19일</td>
                 <td class="num">1</td><td class="num">26</td><td class="num">0</td>
                 <td class="num">58,800</td><td>조재완</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000022</td><td class="mono">09-03</td><td class="mono">D+19일</td>
                 <td class="num">1</td><td class="num">16</td><td class="num">0</td>
                 <td class="num">170,600</td><td>조재완</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007299</td><td>BMW Boston Black</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007299</td><td>BMW Boston Black</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000023</td><td class="mono">09-03</td><td class="mono">D+19일</td>
                 <td class="num">1</td><td class="num">26</td><td class="num">0</td>
                 <td class="num">58,800</td><td>조재완</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2609000023</td><td class="mono">09-03</td><td class="mono">D+19일</td>
                 <td class="num">1</td><td class="num">16</td><td class="num">0</td>
                 <td class="num">170,600</td><td>조재완</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">51952449252</td><td>Klapptisch s</td><td class="mono">B3</td><td><span class="aloistag oseries">O8</span></td>
+                <td class="mono">51952449252</td><td>Klapptisch s</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">O8</span></td>
                 <td class="mono">SP2609000001</td><td class="mono">09-16</td><td class="mono">D+6일</td>
                 <td class="num">1</td><td class="num">2</td><td class="num">0</td>
                 <td class="num">137,553</td><td>김창열</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007299</td><td>BMW Boston Black</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007299</td><td>BMW Boston Black</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2608000036</td><td class="mono">09-22</td><td class="mono">D+0일</td>
                 <td class="num">22</td><td class="num">26</td><td class="num">0</td>
                 <td class="num">1,293,600</td><td>조재완</td>
               </tr>
               
               <tr class="oseries" data-group="opart-SP" hidden>
-                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td>
+                <td class="mono">90200007294</td><td>BMW Caddy Black</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td>
                 <td class="mono">SP2608000036</td><td class="mono">09-22</td><td class="mono">D+0일</td>
                 <td class="num">13</td><td class="num">16</td><td class="num">0</td>
                 <td class="num">2,217,800</td><td>조재완</td>
@@ -6530,7 +6541,7 @@
         <div class="viewer-head">
           <span class="lbl">O파트 가용리스트</span>
           <span class="val">477건</span>
-          <span class="foot">계열 클릭해서 펼치기 · DMS 가용재고(ableQty) 기준 · ₩357,011,710 · 금액 큰 순</span>
+          <span class="foot">계열 클릭해서 펼치기 · DMS 가용재고(ableQty) 기준 · ₩356,965,846 · 금액 큰 순</span>
         </div>
         <div class="tablewrap">
           <table>
@@ -6639,7 +6650,7 @@
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51127331599</td><td>Adapter</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">90,015</td></tr>
               
-              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51142472836</td><td>Lettering, b</td><td class="mono">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">2</td><td class="num">2</td><td class="num">86,580</td></tr>
+              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51142472836</td><td>Lettering, b</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">2</td><td class="num">2</td><td class="num">86,580</td></tr>
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51357392369</td><td>Duct cover,</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">85,680</td></tr>
               
@@ -6695,13 +6706,13 @@
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">11127583138</td><td>Washer</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="num">8</td><td class="num">8</td><td class="num">65,408</td></tr>
               
-              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51265B35B63</td><td>Lock button,</td><td class="mono">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">64,622</td></tr>
+              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51265B35B63</td><td>Lock button,</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">64,622</td></tr>
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">61625A1A445</td><td>Set of wiper</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">64,035</td></tr>
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">07146881461</td><td>Hexagon nut</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="num">12</td><td class="num">12</td><td class="num">62,052</td></tr>
               
-              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">61615A12195</td><td>BMW WaterBla</td><td class="mono">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">62,037</td></tr>
+              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">61615A12195</td><td>BMW WaterBla</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">62,037</td></tr>
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">31356881807</td><td>Swing suppor</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">61,425</td></tr>
               
@@ -6791,11 +6802,11 @@
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51117478846</td><td>Bumper guide</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">43,890</td></tr>
               
-              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51145A4B372</td><td>M logos side</td><td class="mono">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">43,505</td></tr>
+              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51145A4B372</td><td>M logos side</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">43,505</td></tr>
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51767390138</td><td>Gap seal doo</td><td class="mono">M1</td><td><span class="aloistag oseries">O8</span></td><td class="num">2</td><td class="num">2</td><td class="num">42,930</td></tr>
               
-              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51142472840</td><td>Lettering, b</td><td class="mono">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">42,735</td></tr>
+              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51142472840</td><td>Lettering, b</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">42,735</td></tr>
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51317412653</td><td>Cover, winds</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">42,048</td></tr>
               
@@ -6807,7 +6818,7 @@
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">63148089776</td><td>Holder, lamp</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">40,630</td></tr>
               
-              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">61615A121A0</td><td>BMW WaterBla</td><td class="mono">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">40,321</td></tr>
+              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">61615A121A0</td><td>BMW WaterBla</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">40,321</td></tr>
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">51117450395</td><td>Bumper guide</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">39,886</td></tr>
               
@@ -7021,7 +7032,7 @@
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">34206867544</td><td>Hex bolt wit</td><td class="mono">B1</td><td><span class="aloistag oseries">O8</span></td><td class="num">1</td><td class="num">1</td><td class="num">5,183</td></tr>
               
-              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">61138364566</td><td>Connector</td><td class="mono">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">2</td><td class="num">2</td><td class="num">4,774</td></tr>
+              <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">61138364566</td><td>Connector</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">O8</span></td><td class="num">2</td><td class="num">2</td><td class="num">4,774</td></tr>
               
               <tr class="oseries" data-group="oavail-O8" hidden><td class="mono">07119963252</td><td>Gasket ring</td><td class="mono">N1</td><td><span class="aloistag oseries">O8</span></td><td class="num">4</td><td class="num">4</td><td class="num">4,224</td></tr>
               
@@ -7073,17 +7084,17 @@
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">63119850411</td><td>Headlight, L</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">2</td><td class="num">5,769,666</td></tr>
               
-              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">63215B52B73</td><td>Retrofit kit</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">2</td><td class="num">4,493,566</td></tr>
+              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">63215B52B73</td><td>Retrofit kit</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">2</td><td class="num">4,493,566</td></tr>
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">63115A0E603</td><td>LED headligh</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">2,674,554</td></tr>
               
-              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">36118090014</td><td>Disc wheel l</td><td class="mono">B5</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">2</td><td class="num">2,550,120</td></tr>
+              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">36118090014</td><td>Disc wheel l</td><td class="mono pgrp-blue">B5</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">2</td><td class="num">2,550,120</td></tr>
               
-              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51955A42425</td><td>Interior tri</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">1,129,436</td></tr>
+              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51955A42425</td><td>Interior tri</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">1,129,436</td></tr>
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">63115A7F385</td><td>Headlight ba</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">1,076,185</td></tr>
               
-              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51195A36997</td><td>Rear spoiler</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">971,124</td></tr>
+              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51195A36997</td><td>Rear spoiler</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">971,124</td></tr>
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">34117847241</td><td>Caliper hous</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">744,265</td></tr>
               
@@ -7119,11 +7130,11 @@
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">34116864439</td><td>Brake disc,</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">2</td><td class="num">2</td><td class="num">190,560</td></tr>
               
-              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">36115A96C26</td><td>Valve caps J</td><td class="mono">M3</td><td><span class="aloistag oseries">OA</span></td><td class="num">8</td><td class="num">8</td><td class="num">180,456</td></tr>
+              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">36115A96C26</td><td>Valve caps J</td><td class="mono pgrp-blue">M3</td><td><span class="aloistag oseries">OA</span></td><td class="num">8</td><td class="num">8</td><td class="num">180,456</td></tr>
               
-              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">80435A51948</td><td>BMW Miniatur G80 M3 green metallic</td><td class="mono">B7</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">179,400</td></tr>
+              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">80435A51948</td><td>BMW Miniatur G80 M3 green metallic</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">179,400</td></tr>
               
-              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">80435A51949</td><td>BMW Miniatur G82 M4 yellow</td><td class="mono">B7</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">179,400</td></tr>
+              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">80435A51949</td><td>BMW Miniatur G82 M4 yellow</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">179,400</td></tr>
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51377446224</td><td>Finisher, si</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">176,484</td></tr>
               
@@ -7147,7 +7158,7 @@
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51337446194</td><td>Finisher win</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">85,547</td></tr>
               
-              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51472450512</td><td>Floor mats,</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">81,697</td></tr>
+              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51472450512</td><td>Floor mats,</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">81,697</td></tr>
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51357446214</td><td>Trim window</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">81,235</td></tr>
               
@@ -7166,8 +7177,6 @@
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51117422212</td><td>Shock absorb</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">61,904</td></tr>
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51118069946</td><td>Grill, side,</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">58,765</td></tr>
-              
-              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">07149465451</td><td>Clip</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">10</td><td class="num">10</td><td class="num">57,330</td></tr>
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51779881804</td><td>Door trim pi</td><td class="mono">M1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">55,404</td></tr>
               
@@ -7189,7 +7198,7 @@
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51165A64CE3</td><td>Set of cover</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">34,425</td></tr>
               
-              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51145A76513</td><td>Lettering, b</td><td class="mono">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">33,649</td></tr>
+              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51145A76513</td><td>Lettering, b</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">33,649</td></tr>
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">51317380731</td><td>Cover, winds</td><td class="mono">M1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">32,339</td></tr>
               
@@ -7211,7 +7220,9 @@
               
               <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">11137852272</td><td>Gasket, oil</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">1</td><td class="num">1</td><td class="num">14,518</td></tr>
               
-              <tr class="subtotal oseries"><td colspan="4">OA 합계</td><td class="num">178</td><td class="num">178</td><td class="num">27,564,518</td></tr>
+              <tr class="oseries" data-group="oavail-OA" hidden><td class="mono">07149465451</td><td>Clip</td><td class="mono">B1</td><td><span class="aloistag oseries">OA</span></td><td class="num">10</td><td class="num">2</td><td class="num">11,466</td></tr>
+              
+              <tr class="subtotal oseries"><td colspan="4">OA 합계</td><td class="num">178</td><td class="num">170</td><td class="num">27,518,654</td></tr>
               
               <tr class="grouphead oseries" data-group="oavail-OE" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>OE (86건)<span class="hint"></span></td></tr>
               
@@ -7253,7 +7264,7 @@
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200005788</td><td>225/50R18 95W Cintu P7 r-f *</td><td class="mono">B8</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">4</td><td class="num">1,236,000</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007292</td><td>BMW Caddy Beige &amp; Grey</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">6</td><td class="num">5</td><td class="num">1,235,500</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007292</td><td>BMW Caddy Beige &amp; Grey</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">6</td><td class="num">5</td><td class="num">1,235,500</td></tr>
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200005787</td><td>225/45R18 91Y Cintu P7 r-f *</td><td class="mono">B8</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">4</td><td class="num">1,136,000</td></tr>
               
@@ -7265,7 +7276,7 @@
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200005970</td><td>245/45R18 100Y Cintu P7 r-f * MOE</td><td class="mono">B8</td><td><span class="aloistag oseries">OE</span></td><td class="num">3</td><td class="num">3</td><td class="num">908,751</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007293</td><td>BMW Caddy M</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">3</td><td class="num">741,300</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007293</td><td>BMW Caddy M</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">3</td><td class="num">741,300</td></tr>
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200006221</td><td>315/35R21 111Y XL P ZERO r-f *</td><td class="mono">B8</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">734,000</td></tr>
               
@@ -7281,13 +7292,13 @@
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">83125A7DCA5</td><td>MINI Natural</td><td class="mono">B9</td><td><span class="aloistag oseries">OE</span></td><td class="num">20</td><td class="num">20</td><td class="num">500,360</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007630</td><td>RR Fire Exti</td><td class="mono">B3</td><td><span class="aloistag oseries">OE</span></td><td class="num">5</td><td class="num">5</td><td class="num">500,000</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007630</td><td>RR Fire Exti</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OE</span></td><td class="num">5</td><td class="num">5</td><td class="num">500,000</td></tr>
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">64115A80BA3</td><td>Control unit</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="num">3</td><td class="num">3</td><td class="num">482,397</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007312</td><td>MINI Caddy Bag</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">2</td><td class="num">2</td><td class="num">470,600</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007312</td><td>MINI Caddy Bag</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">2</td><td class="num">2</td><td class="num">470,600</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007605</td><td>BMW Fire ext</td><td class="mono">B3</td><td><span class="aloistag oseries">OE</span></td><td class="num">9</td><td class="num">8</td><td class="num">467,144</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007605</td><td>BMW Fire ext</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OE</span></td><td class="num">9</td><td class="num">8</td><td class="num">467,144</td></tr>
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">34208834998</td><td>Repair kit,</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">4</td><td class="num">443,928</td></tr>
               
@@ -7295,27 +7306,27 @@
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200006217</td><td>245/45R20 103W XL P ZERO r-f *</td><td class="mono">B8</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">417,000</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200008123</td><td>MINI Portabl</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">28</td><td class="num">27</td><td class="num">372,600</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200008123</td><td>MINI Portabl</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">28</td><td class="num">27</td><td class="num">372,600</td></tr>
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">61315A9BF13</td><td>Touch contro</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">365,146</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007313</td><td>BMW Caddy Olive</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">2</td><td class="num">2</td><td class="num">341,200</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007313</td><td>BMW Caddy Olive</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">2</td><td class="num">2</td><td class="num">341,200</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200005997</td><td>BMW Design P</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">100</td><td class="num">100</td><td class="num">340,000</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200005997</td><td>BMW Design P</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">100</td><td class="num">100</td><td class="num">340,000</td></tr>
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">61627474264</td><td>Wiper blade G07 rear</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="num">13</td><td class="num">13</td><td class="num">318,240</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007303</td><td>BMW Iron Club Cover Black</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">4</td><td class="num">309,200</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007303</td><td>BMW Iron Club Cover Black</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">4</td><td class="num">309,200</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007322</td><td>BMW Iron Club Cover Olive</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">4</td><td class="num">309,200</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007322</td><td>BMW Iron Club Cover Olive</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">4</td><td class="num">309,200</td></tr>
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">61627407273</td><td>WIPER BLADE X3 Rear</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="num">13</td><td class="num">12</td><td class="num">288,960</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200005996</td><td>BMW Design P</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">83</td><td class="num">83</td><td class="num">282,200</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200005996</td><td>BMW Design P</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">83</td><td class="num">83</td><td class="num">282,200</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007565</td><td>BMW Magsafe</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">7</td><td class="num">6</td><td class="num">269,100</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007565</td><td>BMW Magsafe</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">7</td><td class="num">6</td><td class="num">269,100</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007304</td><td>BMW Iron Club Cover White</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">3</td><td class="num">3</td><td class="num">231,900</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007304</td><td>BMW Iron Club Cover White</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">3</td><td class="num">3</td><td class="num">231,900</td></tr>
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">61627442093</td><td>Wiper blade F40 G05 Rear</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="num">9</td><td class="num">9</td><td class="num">212,364</td></tr>
               
@@ -7323,77 +7334,77 @@
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">83192350550</td><td>Diesel addit MINI</td><td class="mono">M9</td><td><span class="aloistag oseries">OE</span></td><td class="num">17</td><td class="num">17</td><td class="num">191,913</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200006978</td><td>MINI Folding</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">18</td><td class="num">18</td><td class="num">180,000</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200006978</td><td>MINI Folding</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">18</td><td class="num">18</td><td class="num">180,000</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200008205</td><td>MINI Brick T</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">13</td><td class="num">12</td><td class="num">158,400</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200008205</td><td>MINI Brick T</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">13</td><td class="num">12</td><td class="num">158,400</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">80932864212</td><td>BMW Baby Rac</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">153,900</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">80932864212</td><td>BMW Baby Rac</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">153,900</td></tr>
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">51127368453</td><td>Gasket</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="num">58</td><td class="num">58</td><td class="num">151,670</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200005551</td><td>MINI Wallet</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">8</td><td class="num">8</td><td class="num">145,072</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200005551</td><td>MINI Wallet</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">8</td><td class="num">8</td><td class="num">145,072</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">99985B94ED5</td><td>BMW ART BOLT(NEW)</td><td class="mono">B3</td><td><span class="aloistag oseries">OE</span></td><td class="num">17</td><td class="num">16</td><td class="num">144,000</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">99985B94ED5</td><td>BMW ART BOLT(NEW)</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OE</span></td><td class="num">17</td><td class="num">16</td><td class="num">144,000</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007566</td><td>MINI Magsafe</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">3</td><td class="num">134,550</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007566</td><td>MINI Magsafe</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">3</td><td class="num">134,550</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">80932413782</td><td>BMW Baby Rac</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">124,500</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">80932413782</td><td>BMW Baby Rac</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">124,500</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007310</td><td>BMW Golf Gift Set</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">2</td><td class="num">2</td><td class="num">124,200</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007310</td><td>BMW Golf Gift Set</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">2</td><td class="num">2</td><td class="num">124,200</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007650</td><td>BMW Golfspor</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">116,000</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007650</td><td>BMW Golfspor</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">116,000</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007598</td><td>MINI ready b</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">4</td><td class="num">115,800</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007598</td><td>MINI ready b</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">4</td><td class="num">115,800</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007025</td><td>M50th Number</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">10</td><td class="num">10</td><td class="num">112,270</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007025</td><td>M50th Number</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">10</td><td class="num">10</td><td class="num">112,270</td></tr>
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">51115A41F67</td><td>Cover, air d</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">103,584</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007300</td><td>BMW Iron Club Cover Cognac</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">79,200</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007300</td><td>BMW Iron Club Cover Cognac</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">79,200</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007302</td><td>BMW Iron Club Cover M</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">78,200</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007302</td><td>BMW Iron Club Cover M</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">78,200</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">80272454649</td><td>BMW keyring</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">3</td><td class="num">3</td><td class="num">71,682</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">80272454649</td><td>BMW keyring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">3</td><td class="num">3</td><td class="num">71,682</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200008204</td><td>BMW Brick To</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">6</td><td class="num">5</td><td class="num">66,000</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200008204</td><td>BMW Brick To</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">6</td><td class="num">5</td><td class="num">66,000</td></tr>
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">67329180626</td><td>Fan</td><td class="mono">B1</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">63,665</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007607</td><td>MINI Fire ex</td><td class="mono">B3</td><td><span class="aloistag oseries">OE</span></td><td class="num">2</td><td class="num">1</td><td class="num">57,670</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007607</td><td>MINI Fire ex</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OE</span></td><td class="num">2</td><td class="num">1</td><td class="num">57,670</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">80272454656</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">2</td><td class="num">2</td><td class="num">47,672</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">80272454656</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">2</td><td class="num">2</td><td class="num">47,672</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007628</td><td>BMW Golfspor</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">2</td><td class="num">2</td><td class="num">47,400</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007628</td><td>BMW Golfspor</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">2</td><td class="num">2</td><td class="num">47,400</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007307</td><td>BMW Pouch M</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">43,600</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007307</td><td>BMW Pouch M</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">43,600</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007021</td><td>M50th Paper</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">9</td><td class="num">9</td><td class="num">42,552</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007021</td><td>M50th Paper</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">9</td><td class="num">9</td><td class="num">42,552</td></tr>
               
               <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">83195B3C6E7</td><td>Betaclean 33</td><td class="mono">B9</td><td><span class="aloistag oseries">OE</span></td><td class="num">5</td><td class="num">5</td><td class="num">41,600</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">99975B94ED3</td><td>MINI Power B</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">3</td><td class="num">3</td><td class="num">41,400</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">99975B94ED3</td><td>MINI Power B</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">3</td><td class="num">3</td><td class="num">41,400</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007689</td><td>BMW Reusable</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">8</td><td class="num">8</td><td class="num">36,000</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007689</td><td>BMW Reusable</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">8</td><td class="num">8</td><td class="num">36,000</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007281</td><td>M Car wash b</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">26,346</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007281</td><td>M Car wash b</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">26,346</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">80272454651</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">23,836</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">80272454651</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">23,836</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007690</td><td>BMW Reusable</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">4</td><td class="num">20,000</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007690</td><td>BMW Reusable</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">4</td><td class="num">4</td><td class="num">20,000</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200006456</td><td>BMW M Keyrin</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">3</td><td class="num">3</td><td class="num">13,500</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200006456</td><td>BMW M Keyrin</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">3</td><td class="num">3</td><td class="num">13,500</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007688</td><td>BMW Reusable</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">3</td><td class="num">3</td><td class="num">12,000</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007688</td><td>BMW Reusable</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">3</td><td class="num">3</td><td class="num">12,000</td></tr>
               
-              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007674</td><td>BMW Mug Tumb</td><td class="mono">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">9,180</td></tr>
+              <tr class="oseries" data-group="oavail-OE" hidden><td class="mono">90200007674</td><td>BMW Mug Tumb</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OE</span></td><td class="num">1</td><td class="num">1</td><td class="num">9,180</td></tr>
               
               <tr class="subtotal oseries"><td colspan="4">OE 합계</td><td class="num">752</td><td class="num">740</td><td class="num">292,018,079</td></tr>
               
               <tr class="grouphead oseries" data-group="oavail-ON" onclick="toggleAloisGroup(this)"><td colspan="7"><span class="caret">▸</span>ON (4건)<span class="hint"></span></td></tr>
               
-              <tr class="oseries" data-group="oavail-ON" hidden><td class="mono">51475A59C29</td><td>Floor liner</td><td class="mono">B3</td><td><span class="aloistag oseries">ON</span></td><td class="num">1</td><td class="num">1</td><td class="num">142,373</td></tr>
+              <tr class="oseries" data-group="oavail-ON" hidden><td class="mono">51475A59C29</td><td>Floor liner</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">ON</span></td><td class="num">1</td><td class="num">1</td><td class="num">142,373</td></tr>
               
-              <tr class="oseries" data-group="oavail-ON" hidden><td class="mono">51475A59C30</td><td>Floor liner</td><td class="mono">B3</td><td><span class="aloistag oseries">ON</span></td><td class="num">1</td><td class="num">1</td><td class="num">103,103</td></tr>
+              <tr class="oseries" data-group="oavail-ON" hidden><td class="mono">51475A59C30</td><td>Floor liner</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">ON</span></td><td class="num">1</td><td class="num">1</td><td class="num">103,103</td></tr>
               
               <tr class="oseries" data-group="oavail-ON" hidden><td class="mono">Z_SCSVC30000</td><td>SC SVC COUPON 30,000</td><td class="mono">N</td><td><span class="aloistag oseries">ON</span></td><td class="num">1</td><td class="num">1</td><td class="num">0</td></tr>
               
@@ -7405,11 +7416,11 @@
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">41617228974</td><td>Hood</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">1,353,828</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">63212450107</td><td>M Performanc</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">306,768</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">63212450107</td><td>M Performanc</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">306,768</td></tr>
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">34116888458</td><td>Repair kit,</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">303,050</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51138077305</td><td>Grill front</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">301,047</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51138077305</td><td>Grill front</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">301,047</td></tr>
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">16117400693</td><td>Supply modul</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">292,686</td></tr>
               
@@ -7427,13 +7438,13 @@
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">12517641652</td><td>Wiring harne</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">195,102</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51472473486</td><td>Floor mats,</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">2</td><td class="num">189,112</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51472473486</td><td>Floor mats,</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">2</td><td class="num">189,112</td></tr>
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">11652411444</td><td>Installation</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">179,069</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51472465482</td><td>Sill trim ca</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">171,746</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51472465482</td><td>Sill trim ca</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">171,746</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51472473480</td><td>Fitted lugga</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">159,626</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51472473480</td><td>Fitted lugga</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">159,626</td></tr>
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">32306877590</td><td>HUB CAP, AIR</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">155,527</td></tr>
               
@@ -7445,21 +7456,21 @@
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">83125A7DCA9</td><td>MINI Natural</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="num">10</td><td class="num">10</td><td class="num">130,900</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51472450511</td><td>Floor mats,</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">96,712</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51472450511</td><td>Floor mats,</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">96,712</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">80272454659</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">4</td><td class="num">4</td><td class="num">95,344</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">80272454659</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">4</td><td class="num">4</td><td class="num">95,344</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">32300430403</td><td>Cover</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">89,165</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">32300430403</td><td>Cover</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">89,165</td></tr>
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">13627808013</td><td>Sensor</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">86,265</td></tr>
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">83125A7DCA3</td><td>BMW Natural</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="num">6</td><td class="num">6</td><td class="num">79,308</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">82292469991</td><td>Door pin</td><td class="mono">M3</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">2</td><td class="num">76,230</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">82292469991</td><td>Door pin</td><td class="mono pgrp-blue">M3</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">2</td><td class="num">76,230</td></tr>
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">83222344206</td><td>atf 4</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">2</td><td class="num">73,416</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">80272454658</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">3</td><td class="num">3</td><td class="num">71,508</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">80272454658</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">3</td><td class="num">3</td><td class="num">71,508</td></tr>
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51135A6EF13</td><td>Adhesive tap</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">68,693</td></tr>
               
@@ -7471,7 +7482,7 @@
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51777374896</td><td>FRONT ENTRAN</td><td class="mono">M1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">63,744</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">36122447403</td><td>Set of valve(White)</td><td class="mono">M3</td><td><span class="aloistag oseries">OV</span></td><td class="num">3</td><td class="num">3</td><td class="num">62,196</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">36122447403</td><td>Set of valve(White)</td><td class="mono pgrp-blue">M3</td><td><span class="aloistag oseries">OV</span></td><td class="num">3</td><td class="num">3</td><td class="num">62,196</td></tr>
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">31336865131</td><td>Auxiliary da</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">2</td><td class="num">2</td><td class="num">61,174</td></tr>
               
@@ -7487,15 +7498,15 @@
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">11128621958</td><td>Profile seal</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">36,594</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51142472842</td><td>Lettering, b</td><td class="mono">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">33,649</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">51142472842</td><td>Lettering, b</td><td class="mono pgrp-blue">B3</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">33,649</td></tr>
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">64119237553</td><td>Gasket, vent</td><td class="mono">B1</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">25,256</td></tr>
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">83125A16457</td><td>Leather care</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">24,747</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">80272454650</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">23,836</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">80272454650</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">23,836</td></tr>
               
-              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">80272454660</td><td>BMW Key ring</td><td class="mono">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">23,836</td></tr>
+              <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">80272454660</td><td>BMW Key ring</td><td class="mono pgrp-blue">B7</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">23,836</td></tr>
               
               <tr class="oseries" data-group="oavail-OV" hidden><td class="mono">83125A16146</td><td>Hard wax wit</td><td class="mono">B9</td><td><span class="aloistag oseries">OV</span></td><td class="num">1</td><td class="num">1</td><td class="num">22,484</td></tr>
               
@@ -7534,8 +7545,8 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
           <span class="eyebrow">이번달 O계열 인보이스금액(원가)</span>
-          <span class="value">₩190,669,018</span>
-          <span class="foot">순증감 +₩17,771,086</span>
+          <span class="value">₩192,073,026</span>
+          <span class="foot">순증감 +₩16,367,078</span>
         </div>
       </div>
 
@@ -7549,7 +7560,7 @@
             <thead><tr><th>등급</th><th class="num">입고금액</th><th class="num">인보이스금액</th><th class="num">순증감</th></tr></thead>
             <tbody>
               
-              <tr><td><span class="aloistag oseries">O8</span></td><td class="num">168,809,898</td><td class="num">154,091,276</td><td class="num">14,718,622</td></tr>
+              <tr><td><span class="aloistag oseries">O8</span></td><td class="num">168,809,898</td><td class="num">155,495,284</td><td class="num">13,314,614</td></tr>
               
               <tr><td><span class="aloistag oseries">OA</span></td><td class="num">8,051,823</td><td class="num">317,240</td><td class="num">7,734,583</td></tr>
               
@@ -7557,7 +7568,7 @@
               
               <tr><td><span class="aloistag oseries">OV</span></td><td class="num">22,452,918</td><td class="num">1,667,892</td><td class="num">20,785,026</td></tr>
               
-              <tr class="subtotal"><td>합계</td><td class="num">208,440,104</td><td class="num">190,669,018</td><td class="num">17,771,086</td></tr>
+              <tr class="subtotal"><td>합계</td><td class="num">208,440,104</td><td class="num">192,073,026</td><td class="num">16,367,078</td></tr>
             </tbody>
           </table>
         </div>
@@ -7615,9 +7626,9 @@
               
               <tr><td class="mono">09-21</td><td class="num">0</td><td class="num">15,861,236</td><td class="num neg">-15,861,236</td></tr>
               
-              <tr><td class="mono">09-22</td><td class="num">16,549,241</td><td class="num">5,230,193</td><td class="num">11,319,048</td></tr>
+              <tr><td class="mono">09-22</td><td class="num">16,549,241</td><td class="num">6,634,201</td><td class="num">9,915,040</td></tr>
               
-              <tr class="subtotal"><td>합계</td><td class="num">208,440,104</td><td class="num">190,669,018</td><td class="num">17,771,086</td></tr>
+              <tr class="subtotal"><td>합계</td><td class="num">208,440,104</td><td class="num">192,073,026</td><td class="num">16,367,078</td></tr>
             </tbody>
           </table>
         </div>

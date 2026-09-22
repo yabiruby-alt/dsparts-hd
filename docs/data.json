@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 22일 (화) · 15:38 기준",
+    "generated_at": "9월 22일 (화) · 15:45 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -20109,10 +20109,44 @@
         "val": 2217800,
         "sa": "조재완",
         "dday": "D+0일"
+      },
+      {
+        "item": "07149465451",
+        "name": "Clip",
+        "alois": "OA",
+        "pgrp": "B1",
+        "ref_tp": "SB",
+        "ref_no": "SB2609001571",
+        "req_qty": 8,
+        "crt_qty": 10,
+        "avail_qty": 2,
+        "req_dt": "09-22",
+        "req_dt_full": "2026-09-22 15:43:22",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 45864,
+        "sa": "정용환",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51217444677",
+        "name": "Drive soft-c",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SB",
+        "ref_no": "SB2609001571",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-22",
+        "req_dt_full": "2026-09-22 15:43:22",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 550156,
+        "sa": "정용환",
+        "dday": "D+0일"
       }
     ],
-    "count": 114,
-    "total_val": 32598491,
+    "count": 116,
+    "total_val": 33194511,
     "groups": [
       {
         "code": "RO",
@@ -21518,11 +21552,45 @@
             "val": 24080,
             "sa": "우종훈",
             "dday": "D+0일"
+          },
+          {
+            "item": "07149465451",
+            "name": "Clip",
+            "alois": "OA",
+            "pgrp": "B1",
+            "ref_tp": "SB",
+            "ref_no": "SB2609001571",
+            "req_qty": 8,
+            "crt_qty": 10,
+            "avail_qty": 2,
+            "req_dt": "09-22",
+            "req_dt_full": "2026-09-22 15:43:22",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 45864,
+            "sa": "정용환",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51217444677",
+            "name": "Drive soft-c",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SB",
+            "ref_no": "SB2609001571",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-22",
+            "req_dt_full": "2026-09-22 15:43:22",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 550156,
+            "sa": "정용환",
+            "dday": "D+0일"
           }
         ],
-        "count": 36,
-        "qty_sum": 61,
-        "val": 11172104
+        "count": 38,
+        "qty_sum": 70,
+        "val": 11768124
       },
       {
         "code": "SP",
@@ -24340,15 +24408,6 @@
         "val": 57670
       },
       {
-        "item": "07149465451",
-        "name": "Clip",
-        "pgrp": "B1",
-        "alois": "OA",
-        "qty": 10,
-        "avail_qty": 10,
-        "val": 57330
-      },
-      {
         "item": "07129909551",
         "name": "ASA-Bolt",
         "pgrp": "B1",
@@ -25886,6 +25945,15 @@
         "qty": 9,
         "avail_qty": 9,
         "val": 11700
+      },
+      {
+        "item": "07149465451",
+        "name": "Clip",
+        "pgrp": "B1",
+        "alois": "OA",
+        "qty": 10,
+        "avail_qty": 2,
+        "val": 11466
       },
       {
         "item": "16119494196",
@@ -29196,15 +29264,6 @@
             "val": 58765
           },
           {
-            "item": "07149465451",
-            "name": "Clip",
-            "pgrp": "B1",
-            "alois": "OA",
-            "qty": 10,
-            "avail_qty": 10,
-            "val": 57330
-          },
-          {
             "item": "51779881804",
             "name": "Door trim pi",
             "pgrp": "M1",
@@ -29392,12 +29451,21 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 14518
+          },
+          {
+            "item": "07149465451",
+            "name": "Clip",
+            "pgrp": "B1",
+            "alois": "OA",
+            "qty": 10,
+            "avail_qty": 2,
+            "val": 11466
           }
         ],
         "count": 70,
         "qty_sum": 178,
-        "avail_sum": 178,
-        "val": 27564518
+        "avail_sum": 170,
+        "val": 27518654
       },
       {
         "code": "OE",
@@ -30715,7 +30783,7 @@
       }
     ],
     "count": 477,
-    "total_val": 357011710
+    "total_val": 356965846
   },
   "oflow": {
     "rows": [
@@ -30848,19 +30916,19 @@
       {
         "date": "09-22",
         "in_val": 16549241,
-        "out_val": 5230193,
-        "net": 11319048
+        "out_val": 6634201,
+        "net": 9915040
       }
     ],
     "total_in": 208440104,
-    "total_out": 190669018,
-    "net": 17771086,
+    "total_out": 192073026,
+    "net": 16367078,
     "by_code": [
       {
         "code": "O8",
         "in_val": 168809898,
-        "out_val": 154091276,
-        "net": 14718622
+        "out_val": 155495284,
+        "net": 13314614
       },
       {
         "code": "OA",
@@ -32163,17 +32231,6 @@
         "amt": 1720700
       },
       {
-        "ro": "RO2609000869",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "사고수리",
-        "sa": "강충성",
-        "pub": "2026-09-14",
-        "pub_full": "2026-09-14 09:43",
-        "dday": "D+8일",
-        "amt": 3205300
-      },
-      {
         "ro": "RO2609000879",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -33019,17 +33076,6 @@
         "pub_full": "2026-09-18 13:13",
         "dday": "D+4일",
         "amt": 98000
-      },
-      {
-        "ro": "RO2609001194",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "사고수리",
-        "sa": "강충성",
-        "pub": "2026-09-18",
-        "pub_full": "2026-09-18 13:49",
-        "dday": "D+4일",
-        "amt": 28000
       },
       {
         "ro": "RO2609001196",
@@ -34298,8 +34344,8 @@
       },
       {
         "ro": "RO2609001391",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-22",
@@ -34418,8 +34464,8 @@
         "amt": 1792708
       }
     ],
-    "count": 321,
-    "total_amt": 755018280,
+    "count": 319,
+    "total_amt": 751784980,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -34428,18 +34474,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 135,
-        "amt": 490282215
+        "count": 134,
+        "amt": 490155331
       },
       {
         "stat": "정비시작",
-        "count": 45,
-        "amt": 58605110
+        "count": 46,
+        "amt": 58731994
       },
       {
         "stat": "End Control 요청",
-        "count": 52,
-        "amt": 84675695
+        "count": 51,
+        "amt": 84647695
       },
       {
         "stat": "공정마감",
@@ -34448,8 +34494,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 73,
-        "amt": 107944620
+        "count": 72,
+        "amt": 104739320
       }
     ],
     "oldest": "D+518일"
@@ -36036,6 +36082,54 @@
         "val": 129543
       },
       {
+        "code": "SB2609001571",
+        "resv_full": "2026-09-30 09:00",
+        "resv": "09-30",
+        "dday": "D-8일",
+        "sa": "정용환",
+        "rows": [
+          {
+            "item": "51217444677",
+            "name": "Drive soft-c",
+            "alois": "O8",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 550156
+          },
+          {
+            "item": "07149465451",
+            "name": "Clip",
+            "alois": "OA",
+            "req_qty": 8,
+            "crt_qty": 10,
+            "avail_qty": 2,
+            "val": 45864
+          },
+          {
+            "item": "07147187828",
+            "name": "Fillister he",
+            "alois": "SK",
+            "req_qty": 6,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 7200
+          },
+          {
+            "item": "51217447653",
+            "name": "Seal, outer",
+            "alois": null,
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 0
+          }
+        ],
+        "count": 4,
+        "qty_sum": 16,
+        "val": 603220
+      },
+      {
         "code": "SB2609001212",
         "resv_full": "2026-09-30 09:00",
         "resv": "09-30",
@@ -36528,7 +36622,7 @@
             "alois": "L4",
             "req_qty": 1,
             "crt_qty": 5,
-            "avail_qty": 4,
+            "avail_qty": 3,
             "val": 5180
           }
         ],
@@ -36633,12 +36727,12 @@
         "val": 663281
       }
     ],
-    "sb_count": 42,
-    "line_count": 140,
-    "total_val": 20822592,
-    "o_lines": 24,
-    "o_val": 6341849,
-    "resv_total": 318
+    "sb_count": 43,
+    "line_count": 144,
+    "total_val": 21425812,
+    "o_lines": 26,
+    "o_val": 6937869,
+    "resv_total": 319
   },
   "sbcar": {
     "groups": [],
