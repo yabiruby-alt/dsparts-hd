@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 22일 (화) · 15:22 기준",
+    "generated_at": "9월 22일 (화) · 15:38 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -294,7 +294,7 @@
     ]
   },
   "inv": {
-    "total": 1188632317,
+    "total": 1188538957,
     "item_count": 2191,
     "code_count": 25,
     "alois_groups": [
@@ -773,9 +773,9 @@
           },
           {
             "code": "A4",
-            "val": 41726357,
+            "val": 41724597,
             "pct": 3.51,
-            "qty": 1904,
+            "qty": 1902,
             "parts": [
               {
                 "item": "63117214962",
@@ -1480,16 +1480,16 @@
                 "val": 15020
               },
               {
-                "item": "07147378241",
-                "name": "Blind compre",
-                "qty": 16,
-                "val": 14080
-              },
-              {
                 "item": "07147248303",
                 "name": "ASA screw",
                 "qty": 9,
                 "val": 13311
+              },
+              {
+                "item": "07147378241",
+                "name": "Blind compre",
+                "qty": 14,
+                "val": 12320
               },
               {
                 "item": "51252753575",
@@ -4720,8 +4720,8 @@
             ]
           }
         ],
-        "subtotal_val": 463925596,
-        "subtotal_qty": 8752,
+        "subtotal_val": 463923836,
+        "subtotal_qty": 8750,
         "subtotal_pct": 39.03
       },
       {
@@ -4731,9 +4731,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 29943801,
+            "val": 29911001,
             "pct": 2.52,
-            "qty": 2026,
+            "qty": 2024,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4774,8 +4774,8 @@
               {
                 "item": "83195A42DF3",
                 "name": "HT-12 Anti-freeze",
-                "qty": 77,
-                "val": 1262800
+                "qty": 75,
+                "val": 1230000
               },
               {
                 "item": "99995A2A668",
@@ -8242,8 +8242,8 @@
             ]
           }
         ],
-        "subtotal_val": 161183276,
-        "subtotal_qty": 4734,
+        "subtotal_val": 161150476,
+        "subtotal_qty": 4732,
         "subtotal_pct": 13.56
       },
       {
@@ -13131,9 +13131,9 @@
           },
           {
             "code": "SZ",
-            "val": 84476953,
-            "pct": 7.11,
-            "qty": 731,
+            "val": 84418153,
+            "pct": 7.1,
+            "qty": 730,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -13328,12 +13328,6 @@
                 "val": 477333
               },
               {
-                "item": "99975BA1A30",
-                "name": "BMW Boston Olive (New)",
-                "qty": 8,
-                "val": 470400
-              },
-              {
                 "item": "31208095663",
                 "name": "Carrier, lef",
                 "qty": 1,
@@ -13350,6 +13344,12 @@
                 "name": "Brake disc v",
                 "qty": 2,
                 "val": 435708
+              },
+              {
+                "item": "99975BA1A30",
+                "name": "BMW Boston Olive (New)",
+                "qty": 7,
+                "val": 411600
               },
               {
                 "item": "51145B4C7B3",
@@ -13690,15 +13690,15 @@
             ]
           }
         ],
-        "subtotal_val": 129891713,
-        "subtotal_qty": 1902,
-        "subtotal_pct": 10.93
+        "subtotal_val": 129832913,
+        "subtotal_qty": 1901,
+        "subtotal_pct": 10.92
       }
     ]
   },
   "oaov": {
     "total": 67722658,
-    "inv_total": 1188632317,
+    "inv_total": 1188538957,
     "pct": 5.7,
     "oa_val": 37827612,
     "ov_val": 29895046,
@@ -15593,10 +15593,10 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 27044622,
-    "cost": 26937477,
-    "lines": 259,
-    "invoices_count": 150,
+    "total": 27103722,
+    "cost": 26996277,
+    "lines": 260,
+    "invoices_count": 151,
     "by_type": [
       {
         "code": "3",
@@ -15613,11 +15613,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 160,
-        "val": 16771159
+        "lines": 161,
+        "val": 16830259
       }
     ],
     "recent5": [
+      {
+        "inv": "AR2609003773",
+        "num": "SP2609000088",
+        "sa": "박태강",
+        "dt": "2026-09-22 15:32",
+        "amt": 59100,
+        "cost": 58800
+      },
       {
         "inv": "AR2609003772",
         "num": "SP2609000060",
@@ -15649,14 +15657,6 @@
         "dt": "2026-09-22 13:06",
         "amt": 91680,
         "cost": 77391
-      },
-      {
-        "inv": "IV2609002278",
-        "num": "RO2609001191",
-        "sa": "이정환",
-        "dt": "2026-09-22 11:16",
-        "amt": 8250,
-        "cost": 8250
       }
     ]
   },
@@ -31383,8 +31383,8 @@
       },
       {
         "ro": "RO2608001644",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "경수리",
         "sa": "김민규",
         "pub": "2026-08-26",
@@ -32164,14 +32164,14 @@
       },
       {
         "ro": "RO2609000869",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-09-14",
         "pub_full": "2026-09-14 09:43",
         "dday": "D+8일",
-        "amt": 3368200
+        "amt": 3205300
       },
       {
         "ro": "RO2609000879",
@@ -32282,17 +32282,6 @@
         "pub_full": "2026-09-14 17:23",
         "dday": "D+8일",
         "amt": 3235345
-      },
-      {
-        "ro": "RO2609000940",
-        "stat": "정비시작",
-        "stat_cd": "03",
-        "svc": "진단",
-        "sa": "정용환",
-        "pub": "2026-09-15",
-        "pub_full": "2026-09-15 08:44",
-        "dday": "D+7일",
-        "amt": 48628
       },
       {
         "ro": "RO2609000944",
@@ -33593,17 +33582,6 @@
         "amt": 1763700
       },
       {
-        "ro": "RO2609001300",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "진단",
-        "sa": "정용환",
-        "pub": "2026-09-21",
-        "pub_full": "2026-09-21 10:41",
-        "dday": "D+1일",
-        "amt": 48628
-      },
-      {
         "ro": "RO2609001301",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -34089,8 +34067,8 @@
       },
       {
         "ro": "RO2609001365",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-22",
@@ -34430,38 +34408,38 @@
       },
       {
         "ro": "RO2609001401",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-22",
         "pub_full": "2026-09-22 15:18",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 1792708
       }
     ],
-    "count": 323,
-    "total_amt": 753485728,
+    "count": 321,
+    "total_amt": 755018280,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 14,
+        "count": 13,
         "amt": 7943900
       },
       {
         "stat": "상담완료",
-        "count": 137,
-        "amt": 506231939
+        "count": 135,
+        "amt": 490282215
       },
       {
         "stat": "정비시작",
         "count": 45,
-        "amt": 45185268
+        "amt": 58605110
       },
       {
         "stat": "End Control 요청",
         "count": 52,
-        "amt": 83818561
+        "amt": 84675695
       },
       {
         "stat": "공정마감",
@@ -34470,8 +34448,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 72,
-        "amt": 104739320
+        "count": 73,
+        "amt": 107944620
       }
     ],
     "oldest": "D+518일"
@@ -35970,7 +35948,7 @@
             "name": "HT-12 Anti-freeze",
             "alois": "L1",
             "req_qty": 1,
-            "crt_qty": 77,
+            "crt_qty": 75,
             "avail_qty": 70,
             "val": 16400
           },
@@ -36660,7 +36638,7 @@
     "total_val": 20822592,
     "o_lines": 24,
     "o_val": 6341849,
-    "resv_total": 319
+    "resv_total": 318
   },
   "sbcar": {
     "groups": [],
@@ -36669,7 +36647,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10293
+    "resv_total": 10295
   },
   "nonmng": {
     "rows": [],
