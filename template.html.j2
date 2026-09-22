@@ -952,10 +952,10 @@
           </div>
           <div class="tablewrap">
             <table>
-              <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>최종입고일</th><th class="num">수량</th><th class="num">재고금액(원가)</th></tr></thead>
+              <thead><tr><th>부품번호</th><th>품명</th><th>제품그룹</th><th>ALOIS</th><th>최종입고일</th><th class="num">수량</th><th class="num">재고금액(원가)</th></tr></thead>
               <tbody>
                 {% for r in longstock.m12_items %}
-                <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.last_in }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+                <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono">{{ r.pgrp }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.last_in }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
                 {% endfor %}
               </tbody>
             </table>
@@ -970,10 +970,10 @@
           </div>
           <div class="tablewrap">
             <table>
-              <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>최종입고일</th><th class="num">수량</th><th class="num">재고금액(원가)</th></tr></thead>
+              <thead><tr><th>부품번호</th><th>품명</th><th>제품그룹</th><th>ALOIS</th><th>최종입고일</th><th class="num">수량</th><th class="num">재고금액(원가)</th></tr></thead>
               <tbody>
                 {% for r in longstock.m24_items %}
-                <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.last_in }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
+                <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono">{{ r.pgrp }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.last_in }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td></tr>
                 {% endfor %}
               </tbody>
             </table>

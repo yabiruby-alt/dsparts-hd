@@ -463,7 +463,7 @@ def build_longstock(pw_rows, inv_total, now):
 
     def items_of(rows):
         return sorted([{
-            "item": r.get("itemCd"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
+            "item": r.get("itemCd"), "name": r.get("itemNm"), "pgrp": r.get("prodGroup") or "-", "alois": r.get("aloisCd"),
             "qty": int(num(r.get("crtQty"))), "val": round(val_fn(r)),
             "last_in": (r.get("lastPurcDt") or "")[:10] or "입고이력 없음",
         } for r in rows], key=lambda i: i["val"], reverse=True)
