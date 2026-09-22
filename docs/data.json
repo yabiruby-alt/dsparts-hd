@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 08:18 기준",
+    "generated_at": "9월 23일 (수) · 08:30 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,8 +269,8 @@
     ]
   },
   "inv": {
-    "total": 1228520603,
-    "item_count": 2259,
+    "total": 1228487953,
+    "item_count": 2258,
     "code_count": 25,
     "alois_groups": [
       {
@@ -12914,9 +12914,9 @@
           },
           {
             "code": "SK",
-            "val": 37661139,
-            "pct": 3.07,
-            "qty": 929,
+            "val": 37650089,
+            "pct": 3.06,
+            "qty": 927,
             "parts": [
               {
                 "item": "34505B77C23",
@@ -13111,12 +13111,6 @@
                 "val": 33554
               },
               {
-                "item": "31106872063",
-                "name": "Hex bolt wit",
-                "qty": 6,
-                "val": 33150
-              },
-              {
                 "item": "07119906100",
                 "name": "Hexagon coll",
                 "qty": 6,
@@ -13169,6 +13163,12 @@
                 "name": "ASA-Bolt",
                 "qty": 4,
                 "val": 22568
+              },
+              {
+                "item": "31106872063",
+                "name": "Hex bolt wit",
+                "qty": 4,
+                "val": 22100
               },
               {
                 "item": "07148835360",
@@ -13472,9 +13472,9 @@
           },
           {
             "code": "SZ",
-            "val": 97256516,
+            "val": 97234916,
             "pct": 7.92,
-            "qty": 739,
+            "qty": 735,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -14047,12 +14047,6 @@
                 "val": 24495
               },
               {
-                "item": "07148838843",
-                "name": "Hexagon nut",
-                "qty": 4,
-                "val": 21600
-              },
-              {
                 "item": "13715A1BC57",
                 "name": "Bracket. int",
                 "qty": 1,
@@ -14073,15 +14067,15 @@
             ]
           }
         ],
-        "subtotal_val": 149736886,
-        "subtotal_qty": 1945,
+        "subtotal_val": 149704236,
+        "subtotal_qty": 1939,
         "subtotal_pct": 12.19
       }
     ]
   },
   "oaov": {
     "total": 71011480,
-    "inv_total": 1228520603,
+    "inv_total": 1228487953,
     "pct": 5.78,
     "oa_val": 38398488,
     "ov_val": 32612992,
@@ -16041,9 +16035,9 @@
   },
   "acc": {
     "total": 27241722,
-    "cost": 27163767,
-    "lines": 268,
-    "invoices_count": 158,
+    "cost": 27170847,
+    "lines": 269,
+    "invoices_count": 159,
     "by_type": [
       {
         "code": "3",
@@ -16060,11 +16054,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 169,
+        "lines": 170,
         "val": 16968259
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2609002400",
+        "num": "RO2609001387",
+        "sa": "최민수",
+        "dt": "2026-09-23 08:29",
+        "amt": 0,
+        "cost": 7080
+      },
       {
         "inv": "IV2609002387",
         "num": "RO2609001123",
@@ -16096,14 +16098,6 @@
         "dt": "2026-09-22 18:15",
         "amt": 69000,
         "cost": 69000
-      },
-      {
-        "inv": "IV2609002344",
-        "num": "RO2609001395",
-        "sa": "정용환",
-        "dt": "2026-09-22 17:53",
-        "amt": 0,
-        "cost": 7080
       }
     ]
   },
@@ -24330,6 +24324,15 @@
         "val": 226113
       },
       {
+        "item": "13718587573",
+        "name": "Filtered air",
+        "pgrp": "B1",
+        "alois": "O8",
+        "qty": 1,
+        "avail_qty": 1,
+        "val": 224289
+      },
+      {
         "item": "11428512283",
         "name": "Oil filter",
         "pgrp": "B1",
@@ -27899,6 +27902,15 @@
             "val": 226113
           },
           {
+            "item": "13718587573",
+            "name": "Filtered air",
+            "pgrp": "B1",
+            "alois": "O8",
+            "qty": 1,
+            "avail_qty": 1,
+            "val": 224289
+          },
+          {
             "item": "61612458006",
             "name": "Set of wiper F07, F01/02",
             "pgrp": "B1",
@@ -30068,10 +30080,10 @@
             "val": 432
           }
         ],
-        "count": 261,
-        "qty_sum": 1005,
-        "avail_sum": 982,
-        "val": 29772449
+        "count": 262,
+        "qty_sum": 1006,
+        "avail_sum": 983,
+        "val": 29996738
       },
       {
         "code": "OA",
@@ -32045,8 +32057,8 @@
         "val": 7266141
       }
     ],
-    "count": 476,
-    "total_val": 356861799
+    "count": 477,
+    "total_val": 357086088
   },
   "oflow": {
     "rows": [
@@ -32440,8 +32452,8 @@
       },
       {
         "ro": "RO2608000225",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "최민수",
         "pub": "2026-08-05",
@@ -33031,17 +33043,6 @@
         "pub_full": "2026-09-07 13:03",
         "dday": "D+16일",
         "amt": 3191900
-      },
-      {
-        "ro": "RO2609000447",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "진단",
-        "sa": "최민수",
-        "pub": "2026-09-07",
-        "pub_full": "2026-09-07 14:06",
-        "dday": "D+16일",
-        "amt": 4109348
       },
       {
         "ro": "RO2609000451",
@@ -34210,17 +34211,6 @@
         "amt": 188800
       },
       {
-        "ro": "RO2609001241",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "최민수",
-        "pub": "2026-09-19",
-        "pub_full": "2026-09-19 11:03",
-        "dday": "D+4일",
-        "amt": 324396
-      },
-      {
         "ro": "RO2609001242",
         "stat": "End Control 요청",
         "stat_cd": "08",
@@ -34617,17 +34607,6 @@
         "amt": 44000
       },
       {
-        "ro": "RO2609001329",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "진단",
-        "sa": "최민수",
-        "pub": "2026-09-21",
-        "pub_full": "2026-09-21 14:12",
-        "dday": "D+2일",
-        "amt": 604092
-      },
-      {
         "ro": "RO2609001330",
         "stat": "가정산 완료",
         "stat_cd": "05",
@@ -34760,17 +34739,6 @@
         "amt": 37628
       },
       {
-        "ro": "RO2609001356",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "Maintenance",
-        "sa": "최민수",
-        "pub": "2026-09-22",
-        "pub_full": "2026-09-22 09:03",
-        "dday": "D+1일",
-        "amt": 465000
-      },
-      {
         "ro": "RO2609001357",
         "stat": "가정산 완료",
         "stat_cd": "05",
@@ -34849,8 +34817,8 @@
       },
       {
         "ro": "RO2609001369",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "입고 Proactive-RITA",
         "sa": "최민수",
         "pub": "2026-09-22",
@@ -34925,17 +34893,6 @@
         "amt": 216368
       },
       {
-        "ro": "RO2609001376",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "진단",
-        "sa": "안준영",
-        "pub": "2026-09-22",
-        "pub_full": "2026-09-22 10:54",
-        "dday": "D+1일",
-        "amt": 388900
-      },
-      {
         "ro": "RO2609001379",
         "stat": "End Control 요청",
         "stat_cd": "08",
@@ -34992,14 +34949,14 @@
       },
       {
         "ro": "RO2609001387",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-22",
         "pub_full": "2026-09-22 13:08",
         "dday": "D+1일",
-        "amt": 133724
+        "amt": 121724
       },
       {
         "ro": "RO2609001388",
@@ -35046,17 +35003,6 @@
         "amt": 0
       },
       {
-        "ro": "RO2609001394",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "진단",
-        "sa": "최민수",
-        "pub": "2026-09-22",
-        "pub_full": "2026-09-22 13:44",
-        "dday": "D+1일",
-        "amt": 65849
-      },
-      {
         "ro": "RO2609001393",
         "stat": "가정산 완료",
         "stat_cd": "05",
@@ -35079,20 +35025,9 @@
         "amt": 121724
       },
       {
-        "ro": "RO2609001396",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "진단",
-        "sa": "최민수",
-        "pub": "2026-09-22",
-        "pub_full": "2026-09-22 14:20",
-        "dday": "D+1일",
-        "amt": 44000
-      },
-      {
         "ro": "RO2609001397",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-22",
@@ -35233,8 +35168,8 @@
         "amt": 1049400
       }
     ],
-    "count": 273,
-    "total_amt": 731557454,
+    "count": 266,
+    "total_amt": 725543869,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -35244,17 +35179,17 @@
       {
         "stat": "상담완료",
         "count": 128,
-        "amt": 502360706
+        "amt": 502715467
       },
       {
         "stat": "정비시작",
-        "count": 26,
-        "amt": 35602626
+        "count": 25,
+        "amt": 34122152
       },
       {
         "stat": "End Control 요청",
-        "count": 28,
-        "amt": 72153576
+        "count": 23,
+        "amt": 72029464
       },
       {
         "stat": "공정마감",
@@ -35263,8 +35198,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 74,
-        "amt": 104964190
+        "count": 73,
+        "amt": 100200430
       }
     ],
     "oldest": "D+519일"
@@ -35778,36 +35713,6 @@
         "count": 5,
         "qty_sum": 14,
         "val": 2565640
-      },
-      {
-        "code": "SB2608001814",
-        "resv_full": "2029-12-31 09:00",
-        "resv": "12-31",
-        "dday": "D-1195일",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "34106898192",
-            "name": "Repair kit,",
-            "alois": "A6",
-            "req_qty": 4,
-            "crt_qty": 7,
-            "avail_qty": 0,
-            "val": 534028
-          },
-          {
-            "item": "34211161806",
-            "name": "Bolt",
-            "alois": "A3",
-            "req_qty": 24,
-            "crt_qty": 55,
-            "avail_qty": 21,
-            "val": 28752
-          }
-        ],
-        "count": 2,
-        "qty_sum": 28,
-        "val": 562780
       },
       {
         "code": "SB2607001204",
@@ -36644,7 +36549,7 @@
             "alois": "A6",
             "req_qty": 1,
             "crt_qty": 7,
-            "avail_qty": 0,
+            "avail_qty": 4,
             "val": 133507
           },
           {
@@ -36725,7 +36630,7 @@
             "alois": "A3",
             "req_qty": 2,
             "crt_qty": 55,
-            "avail_qty": 21,
+            "avail_qty": 45,
             "val": 2396
           },
           {
@@ -36734,7 +36639,7 @@
             "alois": "A3",
             "req_qty": 2,
             "crt_qty": 55,
-            "avail_qty": 21,
+            "avail_qty": 45,
             "val": 2396
           }
         ],
@@ -37808,9 +37713,9 @@
         "val": 5180
       }
     ],
-    "sb_count": 50,
-    "line_count": 165,
-    "total_val": 22512869,
+    "sb_count": 49,
+    "line_count": 163,
+    "total_val": 21950089,
     "o_lines": 26,
     "o_val": 6937869,
     "resv_total": 342
@@ -37825,287 +37730,11 @@
     "resv_total": 10230
   },
   "nonmng": {
-    "rows": [
-      {
-        "item": "12120050948",
-        "name": "Spark plug,",
-        "alois": "II",
-        "qty": 60,
-        "avail_qty": 0,
-        "prc": 19320,
-        "val": 1159200,
-        "last_in": "2026-09-23",
-        "last_sale": "2026-08-07"
-      },
-      {
-        "item": "31356774737",
-        "name": "Stabilizer f",
-        "alois": "II",
-        "qty": 2,
-        "avail_qty": 0,
-        "prc": 313775,
-        "val": 627550,
-        "last_in": "2026-09-23",
-        "last_sale": "2015-07-04"
-      },
-      {
-        "item": "31336788776",
-        "name": "Supp.bearing",
-        "alois": "II",
-        "qty": 2,
-        "avail_qty": 0,
-        "prc": 109850,
-        "val": 219700,
-        "last_in": "2026-09-23",
-        "last_sale": "2021-10-21"
-      },
-      {
-        "item": "66209274428",
-        "name": "Ultrasonic c",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 159817,
-        "val": 159817,
-        "last_in": "2026-09-23",
-        "last_sale": "2024-05-24"
-      },
-      {
-        "item": "66209274429",
-        "name": "Ultrasonic c",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 159817,
-        "val": 159817,
-        "last_in": "2026-09-23",
-        "last_sale": "2025-12-04"
-      },
-      {
-        "item": "51647378746",
-        "name": "Mount for he",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 130429,
-        "val": 130429,
-        "last_in": "2026-09-23",
-        "last_sale": "2023-02-22"
-      },
-      {
-        "item": "51758056068",
-        "name": "M Cover, low",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 94288,
-        "val": 94288,
-        "last_in": "2026-09-23",
-        "last_sale": "2021-12-16"
-      },
-      {
-        "item": "51777318830",
-        "name": "Cover, wheel",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 84846,
-        "val": 84846,
-        "last_in": "2026-09-23",
-        "last_sale": "2026-04-29"
-      },
-      {
-        "item": "31336776554",
-        "name": "Duct with su",
-        "alois": "II",
-        "qty": 2,
-        "avail_qty": 0,
-        "prc": 38577,
-        "val": 77154,
-        "last_in": "2026-09-23",
-        "last_sale": "2021-10-21"
-      },
-      {
-        "item": "51777329032",
-        "name": "Trim cover,",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 63674,
-        "val": 63674,
-        "last_in": "2026-09-23",
-        "last_sale": "2022-12-22"
-      },
-      {
-        "item": "31336782871",
-        "name": "Additional s",
-        "alois": "II",
-        "qty": 2,
-        "avail_qty": 0,
-        "prc": 31463,
-        "val": 62926,
-        "last_in": "2026-09-23",
-        "last_sale": "2020-05-28"
-      },
-      {
-        "item": "51337322514",
-        "name": "Decorative s",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 62031,
-        "val": 62031,
-        "last_in": "2026-09-23",
-        "last_sale": "2026-05-27"
-      },
-      {
-        "item": "51357322526",
-        "name": "Decorative s",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 62031,
-        "val": 62031,
-        "last_in": "2026-09-23",
-        "last_sale": "2026-09-19"
-      },
-      {
-        "item": "51137388117",
-        "name": "Trim ring, h",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 59843,
-        "val": 59843,
-        "last_in": "2026-09-23",
-        "last_sale": "2025-09-30"
-      },
-      {
-        "item": "51137388118",
-        "name": "Trim ring, h",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 59843,
-        "val": 59843,
-        "last_in": "2026-09-23",
-        "last_sale": "2026-03-13"
-      },
-      {
-        "item": "31356859652",
-        "name": "Swing suppor",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 56745,
-        "val": 56745,
-        "last_in": "2026-09-23",
-        "last_sale": "2021-09-24"
-      },
-      {
-        "item": "07146888357",
-        "name": "MULTI-PURPOS",
-        "alois": "II",
-        "qty": 8,
-        "avail_qty": 0,
-        "prc": 5183,
-        "val": 41464,
-        "last_in": "2026-09-23",
-        "last_sale": "2023-02-24"
-      },
-      {
-        "item": "51767322456",
-        "name": "Seal, A-pill",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 35192,
-        "val": 35192,
-        "last_in": "2026-09-23",
-        "last_sale": "2026-05-27"
-      },
-      {
-        "item": "51767322458",
-        "name": "Sealing, B-c",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 35192,
-        "val": 35192,
-        "last_in": "2026-09-23",
-        "last_sale": "2025-09-30"
-      },
-      {
-        "item": "51377491333",
-        "name": "Mount rail,",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 27643,
-        "val": 27643,
-        "last_in": "2026-09-23",
-        "last_sale": "2023-02-07"
-      },
-      {
-        "item": "31336776389",
-        "name": "Guide suppor",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 13000,
-        "val": 13000,
-        "last_in": "2026-09-23",
-        "last_sale": "2021-10-21"
-      },
-      {
-        "item": "07119908024",
-        "name": "Torx-bolt wi",
-        "alois": "II",
-        "qty": 2,
-        "avail_qty": 0,
-        "prc": 5475,
-        "val": 10950,
-        "last_in": "2026-09-23",
-        "last_sale": "2022-12-01"
-      },
-      {
-        "item": "07119907517",
-        "name": "Countersunk",
-        "alois": "II",
-        "qty": 5,
-        "avail_qty": 0,
-        "prc": 1650,
-        "val": 8250,
-        "last_in": "2026-09-23",
-        "last_sale": "2026-08-12"
-      },
-      {
-        "item": "51337162282",
-        "name": "Clip",
-        "alois": "II",
-        "qty": 4,
-        "avail_qty": 0,
-        "prc": 1125,
-        "val": 4500,
-        "last_in": "2026-09-23",
-        "last_sale": "2026-09-12"
-      },
-      {
-        "item": "51117490268",
-        "name": "Clip",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 1500,
-        "val": 1500,
-        "last_in": "2026-09-23",
-        "last_sale": "2026-07-21"
-      }
-    ],
-    "count": 25,
-    "total_val": 3317585,
-    "qty_sum": 103,
-    "pct": 0.27
+    "rows": [],
+    "count": 0,
+    "total_val": 0,
+    "qty_sum": 0,
+    "pct": 0.0
   },
   "reasons": {}
 }
