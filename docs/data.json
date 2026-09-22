@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 08:06 기준",
+    "generated_at": "9월 23일 (수) · 08:18 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -32440,8 +32440,8 @@
       },
       {
         "ro": "RO2608000225",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "최민수",
         "pub": "2026-08-05",
@@ -33221,8 +33221,8 @@
       },
       {
         "ro": "RO2609000664",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-09-10",
@@ -35220,10 +35220,21 @@
         "pub_full": "2026-09-23 07:53",
         "dday": "D+0일",
         "amt": 1999748
+      },
+      {
+        "ro": "RO2609001410",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 08:17",
+        "dday": "D+0일",
+        "amt": 1049400
       }
     ],
-    "count": 272,
-    "total_amt": 730508054,
+    "count": 273,
+    "total_amt": 731557454,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -35233,17 +35244,17 @@
       {
         "stat": "상담완료",
         "count": 128,
-        "amt": 502791780
+        "amt": 502360706
       },
       {
         "stat": "정비시작",
-        "count": 25,
-        "amt": 34122152
+        "count": 26,
+        "amt": 35602626
       },
       {
         "stat": "End Control 요청",
-        "count": 29,
-        "amt": 72970538
+        "count": 28,
+        "amt": 72153576
       },
       {
         "stat": "공정마감",
@@ -35252,8 +35263,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 73,
-        "amt": 104147228
+        "count": 74,
+        "amt": 104964190
       }
     ],
     "oldest": "D+519일"
@@ -35919,7 +35930,7 @@
             "alois": "A4",
             "req_qty": 1,
             "crt_qty": 7,
-            "avail_qty": 4,
+            "avail_qty": 3,
             "val": 47740
           },
           {
@@ -35928,7 +35939,7 @@
             "alois": "A4",
             "req_qty": 1,
             "crt_qty": 9,
-            "avail_qty": 5,
+            "avail_qty": 3,
             "val": 11565
           },
           {
@@ -35937,7 +35948,7 @@
             "alois": "A4",
             "req_qty": 1,
             "crt_qty": 4,
-            "avail_qty": 1,
+            "avail_qty": 0,
             "val": 3004
           }
         ],
@@ -36168,7 +36179,7 @@
             "alois": "A4",
             "req_qty": 0,
             "crt_qty": 7,
-            "avail_qty": 4,
+            "avail_qty": 3,
             "val": 23870
           },
           {
@@ -36186,7 +36197,7 @@
             "alois": "A4",
             "req_qty": 1,
             "crt_qty": 9,
-            "avail_qty": 5,
+            "avail_qty": 3,
             "val": 11565
           },
           {
@@ -36213,7 +36224,7 @@
             "alois": "A4",
             "req_qty": 1,
             "crt_qty": 4,
-            "avail_qty": 1,
+            "avail_qty": 0,
             "val": 3004
           }
         ],
@@ -37173,7 +37184,7 @@
             "alois": "A4",
             "req_qty": 1,
             "crt_qty": 7,
-            "avail_qty": 4,
+            "avail_qty": 3,
             "val": 47740
           },
           {
@@ -37182,7 +37193,7 @@
             "alois": "A4",
             "req_qty": 2,
             "crt_qty": 9,
-            "avail_qty": 5,
+            "avail_qty": 3,
             "val": 23130
           },
           {
@@ -37191,7 +37202,7 @@
             "alois": "A5",
             "req_qty": 1,
             "crt_qty": 2,
-            "avail_qty": 1,
+            "avail_qty": 0,
             "val": 7209
           },
           {
@@ -37200,7 +37211,7 @@
             "alois": "A5",
             "req_qty": 1,
             "crt_qty": 2,
-            "avail_qty": 1,
+            "avail_qty": 0,
             "val": 3465
           },
           {
@@ -37209,7 +37220,7 @@
             "alois": "A4",
             "req_qty": 1,
             "crt_qty": 4,
-            "avail_qty": 1,
+            "avail_qty": 0,
             "val": 3004
           }
         ],
@@ -37683,6 +37694,99 @@
         "val": 11342
       },
       {
+        "code": "SB2608000474",
+        "resv_full": "2026-09-23 09:00",
+        "resv": "09-23",
+        "dday": "오늘",
+        "sa": "우종훈",
+        "rows": [
+          {
+            "item": "11717822347",
+            "name": "Abgas-K#hler",
+            "alois": "A6",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 693077
+          },
+          {
+            "item": "11148490575",
+            "name": "Acoustic cov",
+            "alois": "L7",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 51921
+          },
+          {
+            "item": "11658595650",
+            "name": "Vacuum hose",
+            "alois": "A4",
+            "req_qty": 1,
+            "crt_qty": 7,
+            "avail_qty": 3,
+            "val": 47740
+          },
+          {
+            "item": "11717799853",
+            "name": "Pipe union",
+            "alois": "A4",
+            "req_qty": 2,
+            "crt_qty": 9,
+            "avail_qty": 3,
+            "val": 23130
+          },
+          {
+            "item": "83515A6CDD7",
+            "name": "Radiator ant",
+            "alois": "L1",
+            "req_qty": 1,
+            "crt_qty": 143,
+            "avail_qty": 142,
+            "val": 21298
+          },
+          {
+            "item": "07149886429",
+            "name": "Isa screw wi",
+            "alois": "SK",
+            "req_qty": 3,
+            "crt_qty": 12,
+            "avail_qty": 0,
+            "val": 11064
+          },
+          {
+            "item": "11618512681",
+            "name": "O-ring",
+            "alois": "A5",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 7209
+          },
+          {
+            "item": "11657803012",
+            "name": "Connection p",
+            "alois": "A5",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 3465
+          },
+          {
+            "item": "61131369832",
+            "name": "Holder",
+            "alois": "A4",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "val": 3004
+          }
+        ],
+        "count": 9,
+        "qty_sum": 12,
+        "val": 861908
+      },
+      {
         "code": "SB2609000250",
         "resv_full": "2026-09-23 09:00",
         "resv": "09-23",
@@ -37704,9 +37808,9 @@
         "val": 5180
       }
     ],
-    "sb_count": 49,
-    "line_count": 156,
-    "total_val": 21650961,
+    "sb_count": 50,
+    "line_count": 165,
+    "total_val": 22512869,
     "o_lines": 26,
     "o_val": 6937869,
     "resv_total": 342
@@ -37718,7 +37822,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10229
+    "resv_total": 10230
   },
   "nonmng": {
     "rows": [
