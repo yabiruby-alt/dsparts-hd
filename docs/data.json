@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 22일 (화) · 14:24 기준",
+    "generated_at": "9월 22일 (화) · 14:40 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -19911,10 +19911,44 @@
         "val": 9000,
         "sa": "염진아",
         "dday": "D+0일"
+      },
+      {
+        "item": "51219491462",
+        "name": "Door handle,",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609000256",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-22",
+        "req_dt_full": "2026-09-22 14:27:51",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 92047,
+        "sa": "최민수",
+        "dday": "D+0일"
+      },
+      {
+        "item": "12369896874",
+        "name": "Multi-purpos",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2608000474",
+        "req_qty": 5,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-22",
+        "req_dt_full": "2026-09-22 14:38:19",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 6935,
+        "sa": "김민규",
+        "dday": "D+0일"
       }
     ],
-    "count": 102,
-    "total_val": 30803214,
+    "count": 104,
+    "total_val": 30902196,
     "groups": [
       {
         "code": "RO",
@@ -20462,11 +20496,45 @@
             "val": 9000,
             "sa": "염진아",
             "dday": "D+0일"
+          },
+          {
+            "item": "51219491462",
+            "name": "Door handle,",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609000256",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-22",
+            "req_dt_full": "2026-09-22 14:27:51",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 92047,
+            "sa": "최민수",
+            "dday": "D+0일"
+          },
+          {
+            "item": "12369896874",
+            "name": "Multi-purpos",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2608000474",
+            "req_qty": 5,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-22",
+            "req_dt_full": "2026-09-22 14:38:19",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 6935,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 32,
-        "qty_sum": 44,
-        "val": 11902068
+        "count": 34,
+        "qty_sum": 50,
+        "val": 12001050
       },
       {
         "code": "SB",
@@ -31428,7 +31496,7 @@
         "pub": "2026-09-08",
         "pub_full": "2026-09-08 10:50",
         "dday": "D+14일",
-        "amt": 837712
+        "amt": 788592
       },
       {
         "ro": "RO2609000527",
@@ -31594,17 +31662,6 @@
         "pub_full": "2026-09-10 09:30",
         "dday": "D+12일",
         "amt": 3044300
-      },
-      {
-        "ro": "RO2609000683",
-        "stat": "정비시작",
-        "stat_cd": "03",
-        "svc": "Maintenance",
-        "sa": "정용환",
-        "pub": "2026-09-10",
-        "pub_full": "2026-09-10 10:05",
-        "dday": "D+12일",
-        "amt": 103700
       },
       {
         "ro": "RO2609000685",
@@ -32741,14 +32798,14 @@
       },
       {
         "ro": "RO2609001210",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-18",
         "pub_full": "2026-09-18 16:02",
         "dday": "D+4일",
-        "amt": 7137300
+        "amt": 7304100
       },
       {
         "ro": "RO2609001214",
@@ -32991,17 +33048,6 @@
         "pub_full": "2026-09-21 09:06",
         "dday": "D+1일",
         "amt": 581399
-      },
-      {
-        "ro": "RO2609001268",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "진단",
-        "sa": "정용환",
-        "pub": "2026-09-21",
-        "pub_full": "2026-09-21 09:11",
-        "dday": "D+1일",
-        "amt": 48628
       },
       {
         "ro": "RO2609001270",
@@ -33544,8 +33590,8 @@
       },
       {
         "ro": "RO2609001346",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-21",
@@ -33599,8 +33645,8 @@
       },
       {
         "ro": "RO2609001353",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Recall/TC",
         "sa": "안준영",
         "pub": "2026-09-22",
@@ -33874,8 +33920,8 @@
       },
       {
         "ro": "RO2609001384",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-09-22",
@@ -33984,8 +34030,8 @@
       },
       {
         "ro": "RO2609001395",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-22",
@@ -34014,10 +34060,21 @@
         "pub_full": "2026-09-22 14:25",
         "dday": "D+0일",
         "amt": 743661
+      },
+      {
+        "ro": "RO2609001398",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "최민수",
+        "pub": "2026-09-22",
+        "pub_full": "2026-09-22 14:36",
+        "dday": "D+0일",
+        "amt": 80344
       }
     ],
-    "count": 321,
-    "total_amt": 751321000,
+    "count": 320,
+    "total_amt": 751366696,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -34026,18 +34083,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 138,
-        "amt": 496278672
+        "count": 139,
+        "amt": 503529392
       },
       {
         "stat": "정비시작",
-        "count": 46,
-        "amt": 52826539
+        "count": 43,
+        "amt": 45675263
       },
       {
         "stat": "End Control 요청",
-        "count": 51,
-        "amt": 85654988
+        "count": 52,
+        "amt": 85030750
       },
       {
         "stat": "공정마감",
@@ -34047,7 +34104,7 @@
       {
         "stat": "가정산 완료",
         "count": 69,
-        "amt": 100935001
+        "amt": 101505491
       }
     ],
     "oldest": "D+518일"
@@ -34415,27 +34472,6 @@
         "val": 662157
       },
       {
-        "code": "SB2609000250",
-        "resv_full": "2026-09-22 09:20",
-        "resv": "09-22",
-        "dday": "오늘",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "07149890645",
-            "name": "Torx screw,",
-            "alois": "L4",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 4,
-            "val": 5180
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 5180
-      },
-      {
         "code": "SB2609001226",
         "resv_full": "2026-09-22 11:20",
         "resv": "09-22",
@@ -34448,7 +34484,7 @@
             "alois": "L1",
             "req_qty": 2,
             "crt_qty": 33,
-            "avail_qty": 28,
+            "avail_qty": 27,
             "val": 22684
           }
         ],
@@ -34478,12 +34514,12 @@
         "val": 68185
       }
     ],
-    "sb_count": 18,
-    "line_count": 23,
-    "total_val": 8334139,
+    "sb_count": 17,
+    "line_count": 22,
+    "total_val": 8328959,
     "o_lines": 11,
     "o_val": 4629751,
-    "resv_total": 12021
+    "resv_total": 12022
   },
   "sbresv": {
     "groups": [
@@ -34600,6 +34636,15 @@
             "val": 508300
           },
           {
+            "item": "66123456369",
+            "name": "Radio",
+            "alois": "SC",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 223187
+          },
+          {
             "item": "52106927192",
             "name": "Heating elem",
             "alois": "SZ",
@@ -34634,11 +34679,20 @@
             "crt_qty": 1,
             "avail_qty": 0,
             "val": 71280
+          },
+          {
+            "item": "51212756061",
+            "name": "Key",
+            "alois": "SC",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 48223
           }
         ],
-        "count": 6,
-        "qty_sum": 6,
-        "val": 2301584
+        "count": 8,
+        "qty_sum": 8,
+        "val": 2572994
       },
       {
         "code": "SB2607001706",
@@ -35388,7 +35442,7 @@
             "alois": "L1",
             "req_qty": 2,
             "crt_qty": 33,
-            "avail_qty": 28,
+            "avail_qty": 27,
             "val": 22684
           },
           {
@@ -36144,6 +36198,27 @@
         "val": 168292
       },
       {
+        "code": "SB2609000250",
+        "resv_full": "2026-09-23 09:00",
+        "resv": "09-23",
+        "dday": "D-1일",
+        "sa": "김민규",
+        "rows": [
+          {
+            "item": "07149890645",
+            "name": "Torx screw,",
+            "alois": "L4",
+            "req_qty": 1,
+            "crt_qty": 5,
+            "avail_qty": 4,
+            "val": 5180
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 5180
+      },
+      {
         "code": "SB2609001195",
         "resv_full": "2026-09-22 16:00",
         "resv": "09-22",
@@ -36240,12 +36315,12 @@
         "val": 663281
       }
     ],
-    "sb_count": 41,
-    "line_count": 140,
-    "total_val": 20608311,
+    "sb_count": 42,
+    "line_count": 143,
+    "total_val": 20884901,
     "o_lines": 24,
     "o_val": 6341849,
-    "resv_total": 308
+    "resv_total": 306
   },
   "sbcar": {
     "groups": [],
@@ -36254,7 +36329,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10289
+    "resv_total": 10290
   },
   "nonmng": {
     "rows": [],
