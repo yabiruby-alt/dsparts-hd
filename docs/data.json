@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 09:58 기준",
+    "generated_at": "9월 23일 (수) · 10:09 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1213524668,
+    "total": 1213440713,
     "item_count": 2228,
     "code_count": 25,
     "alois_groups": [
@@ -4988,9 +4988,9 @@
           },
           {
             "code": "L4",
-            "val": 12446724,
-            "pct": 1.03,
-            "qty": 517,
+            "val": 12777556,
+            "pct": 1.05,
+            "qty": 520,
             "parts": [
               {
                 "item": "83215A65BF4",
@@ -5017,6 +5017,12 @@
                 "val": 1081100
               },
               {
+                "item": "83225A12A00",
+                "name": "Automatic tr",
+                "qty": 12,
+                "val": 1008036
+              },
+              {
                 "item": "51487458549",
                 "name": "Sound insula",
                 "qty": 12,
@@ -5027,12 +5033,6 @@
                 "name": "Set of valve(M)",
                 "qty": 31,
                 "val": 685100
-              },
-              {
-                "item": "83225A12A00",
-                "name": "Automatic tr",
-                "qty": 8,
-                "val": 672024
               },
               {
                 "item": "83192289287",
@@ -5085,8 +5085,8 @@
               {
                 "item": "07149890645",
                 "name": "Torx screw,",
-                "qty": 5,
-                "val": 25900
+                "qty": 4,
+                "val": 20720
               },
               {
                 "item": "07147429950",
@@ -5606,9 +5606,9 @@
           },
           {
             "code": "L7",
-            "val": 64716822,
-            "pct": 5.33,
-            "qty": 1431,
+            "val": 64977504,
+            "pct": 5.35,
+            "qty": 1432,
             "parts": [
               {
                 "item": "11419895359",
@@ -5843,6 +5843,12 @@
                 "name": "Set of valve(BMW)",
                 "qty": 12,
                 "val": 262284
+              },
+              {
+                "item": "63217217509",
+                "name": "Lamp",
+                "qty": 1,
+                "val": 260682
               },
               {
                 "item": "11427807177",
@@ -8301,9 +8307,9 @@
             ]
           }
         ],
-        "subtotal_val": 156118746,
-        "subtotal_qty": 4865,
-        "subtotal_pct": 12.86
+        "subtotal_val": 156710260,
+        "subtotal_qty": 4869,
+        "subtotal_pct": 12.91
       },
       {
         "code": "O",
@@ -13310,9 +13316,9 @@
           },
           {
             "code": "SZ",
-            "val": 94303496,
-            "pct": 7.77,
-            "qty": 730,
+            "val": 93628027,
+            "pct": 7.72,
+            "qty": 729,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -13487,12 +13493,6 @@
                 "name": "Control unit",
                 "qty": 1,
                 "val": 692076
-              },
-              {
-                "item": "61315A56474",
-                "name": "Switch unit",
-                "qty": 1,
-                "val": 675469
               },
               {
                 "item": "51165B4B432",
@@ -13887,15 +13887,15 @@
             ]
           }
         ],
-        "subtotal_val": 146437795,
-        "subtotal_qty": 1895,
-        "subtotal_pct": 12.07
+        "subtotal_val": 145762326,
+        "subtotal_qty": 1894,
+        "subtotal_pct": 12.01
       }
     ]
   },
   "oaov": {
     "total": 70758010,
-    "inv_total": 1213524668,
+    "inv_total": 1213440713,
     "pct": 5.83,
     "oa_val": 38398488,
     "ov_val": 32359522,
@@ -24120,10 +24120,27 @@
         "val": 8624,
         "sa": "박영묵",
         "dday": "D+0일"
+      },
+      {
+        "item": "33506883897",
+        "name": "Hex nut",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001431",
+        "req_qty": 1,
+        "crt_qty": 3,
+        "avail_qty": 2,
+        "req_dt": "09-23",
+        "req_dt_full": "2026-09-23 10:10:09",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 1387,
+        "sa": "김민규",
+        "dday": "D+0일"
       }
     ],
-    "count": 334,
-    "total_val": 104793273,
+    "count": 335,
+    "total_val": 104794660,
     "groups": [
       {
         "code": "RO",
@@ -27578,11 +27595,28 @@
             "val": 8624,
             "sa": "박영묵",
             "dday": "D+0일"
+          },
+          {
+            "item": "33506883897",
+            "name": "Hex nut",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001431",
+            "req_qty": 1,
+            "crt_qty": 3,
+            "avail_qty": 2,
+            "req_dt": "09-23",
+            "req_dt_full": "2026-09-23 10:10:09",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 1387,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 203,
-        "qty_sum": 291,
-        "val": 69499295
+        "count": 204,
+        "qty_sum": 292,
+        "val": 69500682
       },
       {
         "code": "SB",
@@ -39329,15 +39363,15 @@
         "amt": 94070
       },
       {
-        "ro": "RO2609001335",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
+        "ro": "RO2609001431",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-03",
         "pub_full": "2026-09-03 09:40",
         "dday": "D+20일",
-        "amt": 8008650
+        "amt": 2170856
       },
       {
         "ro": "RO2609000256",
@@ -39846,6 +39880,17 @@
         "amt": 350324
       },
       {
+        "ro": "RO2609001430",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "소음",
+        "sa": "최민수",
+        "pub": "2026-09-15",
+        "pub_full": "2026-09-15 10:01",
+        "dday": "D+8일",
+        "amt": 1111600
+      },
+      {
         "ro": "RO2609000958",
         "stat": "가정산 완료",
         "stat_cd": "05",
@@ -39854,7 +39899,7 @@
         "pub": "2026-09-15",
         "pub_full": "2026-09-15 10:01",
         "dday": "D+8일",
-        "amt": 1596800
+        "amt": 1498800
       },
       {
         "ro": "RO2609000962",
@@ -41618,8 +41663,8 @@
       },
       {
         "ro": "RO2609001419",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-23",
@@ -41629,8 +41674,8 @@
       },
       {
         "ro": "RO2609001420",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "입고 Proactive-RITA",
         "sa": "우종훈",
         "pub": "2026-09-23",
@@ -41680,7 +41725,7 @@
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 09:40",
         "dday": "D+0일",
-        "amt": 1015143
+        "amt": 765312
       },
       {
         "ro": "RO2609001425",
@@ -41706,38 +41751,60 @@
       },
       {
         "ro": "RO2609001428",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 09:52",
         "dday": "D+0일",
+        "amt": 294440
+      },
+      {
+        "ro": "RO2609001429",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 10:00",
+        "dday": "D+0일",
+        "amt": 386100
+      },
+      {
+        "ro": "RO2609001432",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "입고 Proactive-RITA",
+        "sa": "이정환",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 10:10",
+        "dday": "D+0일",
         "amt": 0
       }
     ],
-    "count": 282,
-    "total_amt": 729211627,
+    "count": 285,
+    "total_amt": 724818142,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 16,
-        "amt": 10613300
+        "count": 17,
+        "amt": 10999400
       },
       {
         "stat": "상담완료",
-        "count": 131,
-        "amt": 501554010
+        "count": 133,
+        "amt": 504287250
       },
       {
         "stat": "정비시작",
         "count": 27,
-        "amt": 38967651
+        "amt": 39074502
       },
       {
         "stat": "End Control 요청",
-        "count": 24,
-        "amt": 70355234
+        "count": 25,
+        "amt": 70842208
       },
       {
         "stat": "공정마감",
@@ -41746,8 +41813,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 82,
-        "amt": 107162532
+        "count": 81,
+        "amt": 99055882
       }
     ],
     "oldest": "D+519일"
@@ -44435,6 +44502,27 @@
         "val": 1021690
       },
       {
+        "code": "SB2607002208",
+        "resv_full": "2026-09-30 10:20",
+        "resv": "09-30",
+        "dday": "D-7일",
+        "sa": "M GARAGE",
+        "rows": [
+          {
+            "item": "32305A67BB4",
+            "name": "Airbag modul",
+            "alois": "SZ",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 0
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 0
+      },
+      {
         "code": "SB2609001622",
         "resv_full": "2026-09-30 09:40",
         "resv": "09-30",
@@ -45542,7 +45630,7 @@
             "alois": "L1",
             "req_qty": 5,
             "crt_qty": 364,
-            "avail_qty": 352,
+            "avail_qty": 347,
             "val": 76620
           },
           {
@@ -45663,27 +45751,6 @@
         "count": 2,
         "qty_sum": 2,
         "val": 131476
-      },
-      {
-        "code": "SB2607002208",
-        "resv_full": "2026-09-23 09:40",
-        "resv": "09-23",
-        "dday": "오늘",
-        "sa": "M GARAGE",
-        "rows": [
-          {
-            "item": "32305A67BB4",
-            "name": "Airbag modul",
-            "alois": "SZ",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "val": 0
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 0
       }
     ],
     "sb_count": 56,
@@ -45691,7 +45758,7 @@
     "total_val": 45989643,
     "o_lines": 50,
     "o_val": 16255388,
-    "resv_total": 330
+    "resv_total": 328
   },
   "sbcar": {
     "groups": [],
@@ -45700,7 +45767,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10248
+    "resv_total": 10250
   },
   "nonmng": {
     "rows": [],
@@ -45715,6 +45782,7 @@
         "loc": "A030110",
         "item": "83135A82511",
         "name": "Brake fluid",
+        "alois": "L1",
         "qty": 132,
         "no": 1
       },
@@ -45722,6 +45790,7 @@
         "loc": "A030130",
         "item": "83515A6CDD7",
         "name": "Radiator ant",
+        "alois": "L1",
         "qty": 143,
         "no": 2
       },
@@ -45729,6 +45798,7 @@
         "loc": "A030320",
         "item": "83195A42DF3",
         "name": "HT-12 Anti-freeze",
+        "alois": "L1",
         "qty": 112,
         "no": 3
       },
@@ -45736,6 +45806,7 @@
         "loc": "A050226",
         "item": "61278677638",
         "name": "Hexagon bolt",
+        "alois": "L5",
         "qty": 131,
         "no": 4
       },
@@ -45743,6 +45814,7 @@
         "loc": "A050435",
         "item": "18308590002",
         "name": "Screw clamp",
+        "alois": "A5",
         "qty": 2,
         "no": 5
       },
@@ -45750,6 +45822,7 @@
         "loc": "A050633",
         "item": "18305A09B63",
         "name": "Screw clamp",
+        "alois": "A5",
         "qty": 2,
         "no": 6
       },
@@ -45757,6 +45830,7 @@
         "loc": "A050634",
         "item": "31206795249",
         "name": "Collar bolt",
+        "alois": "SK",
         "qty": 4,
         "no": 7
       },
@@ -45764,6 +45838,7 @@
         "loc": "A050643",
         "item": "31306893691",
         "name": "Hex screw wi",
+        "alois": "SK",
         "qty": 6,
         "no": 8
       },
@@ -45771,6 +45846,7 @@
         "loc": "A050656",
         "item": "51141807495",
         "name": "Grommet",
+        "alois": "A3",
         "qty": 53,
         "no": 9
       },
@@ -45778,6 +45854,7 @@
         "loc": "A050856",
         "item": "07119904161",
         "name": "Hex screw wi",
+        "alois": "SK",
         "qty": 4,
         "no": 10
       },
@@ -45785,6 +45862,7 @@
         "loc": "A050922",
         "item": "13628589665",
         "name": "Oxygen senso",
+        "alois": "A5",
         "qty": 2,
         "no": 11
       },
@@ -45792,6 +45870,7 @@
         "loc": "A070354",
         "item": "07119906100",
         "name": "Hexagon coll",
+        "alois": "SK",
         "qty": 6,
         "no": 12
       },
@@ -45799,6 +45878,7 @@
         "loc": "A070371",
         "item": "34356791958",
         "name": "Sensor",
+        "alois": "A5",
         "qty": 1,
         "no": 13
       },
@@ -45806,6 +45886,7 @@
         "loc": "A070372",
         "item": "34356791962",
         "name": "Sensor",
+        "alois": "A6",
         "qty": 1,
         "no": 14
       },
@@ -45813,6 +45894,7 @@
         "loc": "A070442",
         "item": "07147483888",
         "name": "Hex bolt",
+        "alois": "SK",
         "qty": 20,
         "no": 15
       },
@@ -45820,6 +45902,7 @@
         "loc": "A070444",
         "item": "31116899302",
         "name": "Multi-purpos",
+        "alois": "SK",
         "qty": 22,
         "no": 16
       },
@@ -45827,6 +45910,7 @@
         "loc": "A070521",
         "item": "07119906089",
         "name": "Collar nut",
+        "alois": "SK",
         "qty": 4,
         "no": 17
       },
@@ -45834,6 +45918,7 @@
         "loc": "A070662",
         "item": "34356790303",
         "name": "Sensor",
+        "alois": "A6",
         "qty": 1,
         "no": 18
       },
@@ -45841,6 +45926,7 @@
         "loc": "A070742",
         "item": "51148132375",
         "name": "Plaque",
+        "alois": "A5",
         "qty": 1,
         "no": 19
       },
@@ -45848,6 +45934,7 @@
         "loc": "A070751",
         "item": "07119905862",
         "name": "Hex Bolt",
+        "alois": "SK",
         "qty": 2,
         "no": 20
       },
@@ -45855,6 +45942,7 @@
         "loc": "A070752",
         "item": "51767288752",
         "name": "Plaque",
+        "alois": "A2",
         "qty": 10,
         "no": 21
       },
@@ -45862,6 +45950,7 @@
         "loc": "A070756",
         "item": "37106789678",
         "name": "Hex nut",
+        "alois": "A2",
         "qty": 40,
         "no": 22
       },
@@ -45869,6 +45958,7 @@
         "loc": "A070811",
         "item": "11658585233",
         "name": "Clamp",
+        "alois": "A5",
         "qty": 2,
         "no": 23
       },
@@ -45876,6 +45966,7 @@
         "loc": "A070843",
         "item": "61629478894",
         "name": "Wiper blade",
+        "alois": "A2",
         "qty": 15,
         "no": 24
       },
@@ -45883,6 +45974,7 @@
         "loc": "A070845",
         "item": "07146878392",
         "name": "Multi-purpos",
+        "alois": "O8",
         "qty": 6,
         "no": 25
       },
@@ -45890,6 +45982,7 @@
         "loc": "A070863",
         "item": "07129908570",
         "name": "ISA screw",
+        "alois": "SK",
         "qty": 5,
         "no": 26
       },
@@ -45897,6 +45990,7 @@
         "loc": "A090641",
         "item": "11427808443",
         "name": "Filt.Element",
+        "alois": "O8",
         "qty": 1,
         "no": 27
       },
@@ -45904,6 +45998,7 @@
         "loc": "A090771",
         "item": "34116866295",
         "name": "Brake disc,",
+        "alois": "A6",
         "qty": 4,
         "no": 28
       },
@@ -45911,6 +46006,7 @@
         "loc": "A110111",
         "item": "34106884492",
         "name": "Repair kit G30,X3,4",
+        "alois": "A4",
         "qty": 7,
         "no": 29
       },
@@ -45918,6 +46014,7 @@
         "loc": "A110411",
         "item": "64319312318",
         "name": "Filter",
+        "alois": "A5",
         "qty": 2,
         "no": 30
       },
@@ -45925,6 +46022,7 @@
         "loc": "A110642",
         "item": "64119237159",
         "name": "Microfilter",
+        "alois": "A6",
         "qty": 2,
         "no": 31
       },
@@ -45932,6 +46030,7 @@
         "loc": "A110721",
         "item": "34106884263",
         "name": "Repair kit UKL1,2",
+        "alois": "A3",
         "qty": 7,
         "no": 32
       },
@@ -45939,6 +46038,7 @@
         "loc": "A130132",
         "item": "51147463684",
         "name": "Badge",
+        "alois": "A4",
         "qty": 8,
         "no": 33
       },
@@ -45946,6 +46046,7 @@
         "loc": "A130173",
         "item": "12418571349",
         "name": "Acoustic plu",
+        "alois": "SK",
         "qty": 17,
         "no": 34
       },
@@ -45953,6 +46054,7 @@
         "loc": "A140202",
         "item": "31108837712",
         "name": "Control arm",
+        "alois": "A6",
         "qty": 2,
         "no": 35
       },
@@ -45960,6 +46062,7 @@
         "loc": "A140222",
         "item": "51377491333",
         "name": "Mount rail,",
+        "alois": "II",
         "qty": 1,
         "no": 36
       },
@@ -45967,6 +46070,7 @@
         "loc": "A140222",
         "item": "63137498159",
         "name": "Auxiliary tu",
+        "alois": "A6",
         "qty": 1,
         "no": 37
       },
@@ -45974,6 +46078,7 @@
         "loc": "A140231",
         "item": "51767322458",
         "name": "Sealing, B-c",
+        "alois": "II",
         "qty": 1,
         "no": 38
       },
@@ -45981,6 +46086,7 @@
         "loc": "A140232",
         "item": "31336788776",
         "name": "Supp.bearing",
+        "alois": "II",
         "qty": 2,
         "no": 39
       },
@@ -45988,6 +46094,7 @@
         "loc": "A140232",
         "item": "51125A011C1",
         "name": "Mount corner",
+        "alois": "A6",
         "qty": 2,
         "no": 40
       },
@@ -45995,6 +46102,7 @@
         "loc": "A140232",
         "item": "51647378746",
         "name": "Mount for he",
+        "alois": "II",
         "qty": 1,
         "no": 41
       },
@@ -46002,6 +46110,7 @@
         "loc": "A140232",
         "item": "51767390135",
         "name": "Weatherstrip",
+        "alois": "A6",
         "qty": 1,
         "no": 42
       },
@@ -46009,6 +46118,7 @@
         "loc": "A140241",
         "item": "61278843416",
         "name": "Cell monitor",
+        "alois": "O8",
         "qty": 1,
         "no": 43
       },
@@ -46016,6 +46126,7 @@
         "loc": "A140252",
         "item": "11518650988",
         "name": "Coolant pump",
+        "alois": "O8",
         "qty": 1,
         "no": 44
       },
@@ -46023,6 +46134,7 @@
         "loc": "A140271",
         "item": "51217268293",
         "name": "Key",
+        "alois": "SC",
         "qty": 1,
         "no": 45
       },
@@ -46030,6 +46142,7 @@
         "loc": "A140271",
         "item": "66128723572",
         "name": "Radio remote",
+        "alois": "SC",
         "qty": 1,
         "no": 46
       },
@@ -46037,6 +46150,7 @@
         "loc": "A140313",
         "item": "61610040534",
         "name": "Set of wiper F55,56,57",
+        "alois": "A2",
         "qty": 30,
         "no": 47
       },
@@ -46044,6 +46158,7 @@
         "loc": "A140364",
         "item": "61617411249",
         "name": "WIPER BLADE MINI F60,F55 LCI",
+        "alois": "A2",
         "qty": 29,
         "no": 48
       },
@@ -46051,6 +46166,7 @@
         "loc": "A140432",
         "item": "51777329032",
         "name": "Trim cover,",
+        "alois": "II",
         "qty": 1,
         "no": 49
       },
@@ -46058,6 +46174,7 @@
         "loc": "A140441",
         "item": "41009627301",
         "name": "Side panel b",
+        "alois": "II",
         "qty": 1,
         "no": 50
       },
@@ -46065,6 +46182,7 @@
         "loc": "A140501",
         "item": "61615A974B1",
         "name": "Set wiper bl",
+        "alois": "A3",
         "qty": 9,
         "no": 51
       },
@@ -46072,6 +46190,7 @@
         "loc": "A140632",
         "item": "33326760374",
         "name": "Nut",
+        "alois": "O8",
         "qty": 6,
         "no": 52
       },
@@ -46079,6 +46198,7 @@
         "loc": "A140633",
         "item": "66535A77DA7",
         "name": "Dummy trim,",
+        "alois": "A6",
         "qty": 1,
         "no": 53
       },
@@ -46086,6 +46206,7 @@
         "loc": "A140641",
         "item": "51619908657",
         "name": "Hex bolt",
+        "alois": "A6",
         "qty": 10,
         "no": 54
       },
@@ -46093,6 +46214,7 @@
         "loc": "A140641",
         "item": "51767322456",
         "name": "Seal, A-pill",
+        "alois": "II",
         "qty": 1,
         "no": 55
       },
@@ -46100,6 +46222,7 @@
         "loc": "A140661",
         "item": "31106859809",
         "name": "Torx screw w",
+        "alois": "A6",
         "qty": 12,
         "no": 56
       },
@@ -46107,6 +46230,7 @@
         "loc": "A140731",
         "item": "22118835572",
         "name": "Engine mount",
+        "alois": "A4",
         "qty": 3,
         "no": 57
       },
@@ -46114,6 +46238,7 @@
         "loc": "A140772",
         "item": "66316877219",
         "name": "Radome",
+        "alois": "A5",
         "qty": 1,
         "no": 58
       },
@@ -46121,6 +46246,7 @@
         "loc": "A140811",
         "item": "18307926575",
         "name": "Seal",
+        "alois": "O8",
         "qty": 2,
         "no": 59
       },
@@ -46128,6 +46254,7 @@
         "loc": "A140811",
         "item": "31336782871",
         "name": "Additional s",
+        "alois": "II",
         "qty": 2,
         "no": 60
       },
@@ -46135,6 +46262,7 @@
         "loc": "A140811",
         "item": "51217296458",
         "name": "Carrier, out",
+        "alois": "II",
         "qty": 1,
         "no": 61
       },
@@ -46142,6 +46270,7 @@
         "loc": "A140813",
         "item": "52107444269",
         "name": "Support for",
+        "alois": "SZ",
         "qty": 1,
         "no": 62
       },
@@ -46149,6 +46278,7 @@
         "loc": "A140823",
         "item": "31336776554",
         "name": "Duct with su",
+        "alois": "II",
         "qty": 2,
         "no": 63
       },
@@ -46156,6 +46286,7 @@
         "loc": "A140823",
         "item": "32411131373",
         "name": "Hose clamp",
+        "alois": "II",
         "qty": 2,
         "no": 64
       },
@@ -46163,6 +46294,7 @@
         "loc": "A140832",
         "item": "07146888357",
         "name": "MULTI-PURPOS",
+        "alois": "II",
         "qty": 8,
         "no": 65
       },
@@ -46170,6 +46302,7 @@
         "loc": "A140832",
         "item": "31356859652",
         "name": "Swing suppor",
+        "alois": "II",
         "qty": 1,
         "no": 66
       },
@@ -46177,6 +46310,7 @@
         "loc": "A140832",
         "item": "66209274429",
         "name": "Ultrasonic c",
+        "alois": "II",
         "qty": 1,
         "no": 67
       },
@@ -46184,6 +46318,7 @@
         "loc": "A140842",
         "item": "07119908024",
         "name": "Torx-bolt wi",
+        "alois": "II",
         "qty": 2,
         "no": 68
       },
@@ -46191,6 +46326,7 @@
         "loc": "A140842",
         "item": "07146961019",
         "name": "Torx screw w",
+        "alois": "OV",
         "qty": 4,
         "no": 69
       },
@@ -46198,6 +46334,7 @@
         "loc": "A140843",
         "item": "07129904865",
         "name": "Hex nut",
+        "alois": "O8",
         "qty": 2,
         "no": 70
       },
@@ -46205,6 +46342,7 @@
         "loc": "A140843",
         "item": "51337162282",
         "name": "Clip",
+        "alois": "II",
         "qty": 4,
         "no": 71
       },
@@ -46212,6 +46350,7 @@
         "loc": "A140852",
         "item": "31356859651",
         "name": "Swing suppor",
+        "alois": "O8",
         "qty": 1,
         "no": 72
       },
@@ -46219,6 +46358,7 @@
         "loc": "A140852",
         "item": "51117490268",
         "name": "Clip",
+        "alois": "II",
         "qty": 1,
         "no": 73
       },
@@ -46226,6 +46366,7 @@
         "loc": "A140853",
         "item": "07148835360",
         "name": "Combination",
+        "alois": "SK",
         "qty": 4,
         "no": 74
       },
@@ -46233,6 +46374,7 @@
         "loc": "A140853",
         "item": "31336776389",
         "name": "Guide suppor",
+        "alois": "II",
         "qty": 1,
         "no": 75
       },
@@ -46240,6 +46382,7 @@
         "loc": "A140853",
         "item": "66209274428",
         "name": "Ultrasonic c",
+        "alois": "II",
         "qty": 1,
         "no": 76
       },
@@ -46247,6 +46390,7 @@
         "loc": "A140872",
         "item": "07119907517",
         "name": "Countersunk",
+        "alois": "II",
         "qty": 5,
         "no": 77
       },
@@ -46254,6 +46398,7 @@
         "loc": "A141030",
         "item": "51137388117",
         "name": "Trim ring, h",
+        "alois": "II",
         "qty": 1,
         "no": 78
       },
@@ -46261,6 +46406,7 @@
         "loc": "A141030",
         "item": "51137388118",
         "name": "Trim ring, h",
+        "alois": "II",
         "qty": 1,
         "no": 79
       },
@@ -46268,6 +46414,7 @@
         "loc": "A141030",
         "item": "61278848677",
         "name": "Electronic m",
+        "alois": "O8",
         "qty": 1,
         "no": 80
       },
@@ -46275,6 +46422,7 @@
         "loc": "A160240",
         "item": "51758074612",
         "name": "Underhood sh",
+        "alois": "O8",
         "qty": 1,
         "no": 81
       },
@@ -46282,6 +46430,7 @@
         "loc": "A160310",
         "item": "65505A42087",
         "name": "Central info",
+        "alois": "II",
         "qty": 1,
         "no": 82
       },
@@ -46289,6 +46438,7 @@
         "loc": "A160320",
         "item": "51129464257",
         "name": "Guide for bu",
+        "alois": "A6",
         "qty": 1,
         "no": 83
       },
@@ -46296,6 +46446,7 @@
         "loc": "A160520",
         "item": "51489881745",
         "name": "Heat insulat",
+        "alois": "O8",
         "qty": 1,
         "no": 84
       },
@@ -46303,6 +46454,7 @@
         "loc": "A160530",
         "item": "51489881741",
         "name": "Heat insulat",
+        "alois": "L7",
         "qty": 1,
         "no": 85
       },
@@ -46310,6 +46462,7 @@
         "loc": "A160630",
         "item": "37105B69E19",
         "name": "Air spring s",
+        "alois": "ON",
         "qty": 1,
         "no": 86
       },
@@ -46317,6 +46470,7 @@
         "loc": "A160640",
         "item": "37105B69E20",
         "name": "Air spring s",
+        "alois": "SZ",
         "qty": 1,
         "no": 87
       },
@@ -46324,6 +46478,7 @@
         "loc": "A160640",
         "item": "37105B69E33",
         "name": "Air spring s",
+        "alois": "SZ",
         "qty": 1,
         "no": 88
       },
@@ -46331,6 +46486,7 @@
         "loc": "A160640",
         "item": "37105B69E34",
         "name": "Air spring s",
+        "alois": "SZ",
         "qty": 1,
         "no": 89
       },
@@ -46338,6 +46494,7 @@
         "loc": "A160840",
         "item": "51475A87FF0",
         "name": "Kit all-weat",
+        "alois": "A6",
         "qty": 1,
         "no": 90
       },
@@ -46345,6 +46502,7 @@
         "loc": "A160840",
         "item": "51475A87FF2",
         "name": "Kit all-weat",
+        "alois": "A6",
         "qty": 1,
         "no": 91
       },
@@ -46352,6 +46510,7 @@
         "loc": "A160930",
         "item": "64115B3A5D8",
         "name": "Evaporator",
+        "alois": "SZ",
         "qty": 1,
         "no": 92
       },
@@ -46359,6 +46518,7 @@
         "loc": "A161020",
         "item": "51125A011C3",
         "name": "Mount, bumpe",
+        "alois": "L7",
         "qty": 2,
         "no": 93
       },
@@ -46366,6 +46526,7 @@
         "loc": "A940120",
         "item": "51337322514",
         "name": "Decorative s",
+        "alois": "II",
         "qty": 1,
         "no": 94
       },
@@ -46373,6 +46534,7 @@
         "loc": "A940120",
         "item": "51357322526",
         "name": "Decorative s",
+        "alois": "II",
         "qty": 1,
         "no": 95
       },
@@ -46380,6 +46542,7 @@
         "loc": "B050213",
         "item": "82292355519",
         "name": "Key case, M",
+        "alois": "A6",
         "qty": 2,
         "no": 96
       },
@@ -46387,6 +46550,7 @@
         "loc": "B050433",
         "item": "36122455268",
         "name": "Hub cap fixe",
+        "alois": "A5",
         "qty": 2,
         "no": 97
       },
@@ -46394,6 +46558,7 @@
         "loc": "B070116",
         "item": "51125A011D3",
         "name": "Absorber fun",
+        "alois": "L7",
         "qty": 2,
         "no": 98
       },
@@ -46401,6 +46566,7 @@
         "loc": "B070306",
         "item": "51767412895",
         "name": "Clip",
+        "alois": "A6",
         "qty": 9,
         "no": 99
       },
@@ -46408,6 +46574,7 @@
         "loc": "B070622",
         "item": "18307803853",
         "name": "Gasket",
+        "alois": "A6",
         "qty": 2,
         "no": 100
       },
@@ -46415,6 +46582,7 @@
         "loc": "B070843",
         "item": "33326760668",
         "name": "Nut",
+        "alois": "A4",
         "qty": 9,
         "no": 101
       },
@@ -46422,6 +46590,7 @@
         "loc": "B110141",
         "item": "11717822347",
         "name": "Abgas-K#hler",
+        "alois": "A6",
         "qty": 2,
         "no": 102
       },
@@ -46429,6 +46598,7 @@
         "loc": "B110321",
         "item": "11717822346",
         "name": "Exhaust gas",
+        "alois": "L7",
         "qty": 2,
         "no": 103
       },
@@ -46436,6 +46606,7 @@
         "loc": "B110401",
         "item": "13717811026",
         "name": "Filter elmnt",
+        "alois": "II",
         "qty": 1,
         "no": 104
       },
@@ -46443,6 +46614,7 @@
         "loc": "B140311",
         "item": "07146885389",
         "name": "Star-socket",
+        "alois": "A4",
         "qty": 7,
         "no": 105
       },
@@ -46450,6 +46622,7 @@
         "loc": "B140612",
         "item": "07146885653",
         "name": "LOCKING NUT",
+        "alois": "A4",
         "qty": 6,
         "no": 106
       },
@@ -46457,6 +46630,7 @@
         "loc": "B140713",
         "item": "51147219542",
         "name": "Lettering",
+        "alois": "A6",
         "qty": 1,
         "no": 107
       },
@@ -46464,6 +46638,7 @@
         "loc": "C000000",
         "item": "51125A5A721",
         "name": "Bumper cover",
+        "alois": "A4",
         "qty": 2,
         "no": 108
       },
@@ -46471,6 +46646,7 @@
         "loc": "C000000",
         "item": "51128048594",
         "name": "Trim panel",
+        "alois": "A6",
         "qty": 1,
         "no": 109
       },
@@ -46478,6 +46654,7 @@
         "loc": "C000001",
         "item": "41519644732",
         "name": "Door front r",
+        "alois": "O8",
         "qty": 1,
         "no": 110
       },
@@ -46485,6 +46662,7 @@
         "loc": "C000001",
         "item": "41529644734",
         "name": "Door rear ri",
+        "alois": "O8",
         "qty": 1,
         "no": 111
       },
@@ -46492,6 +46670,7 @@
         "loc": "C000002",
         "item": "18329887747",
         "name": "RP diesel pa",
+        "alois": "SZ",
         "qty": 1,
         "no": 112
       },
@@ -46499,6 +46678,7 @@
         "loc": "C000002",
         "item": "51115B33481",
         "name": "Reinforcemen",
+        "alois": "SZ",
         "qty": 1,
         "no": 113
       },
@@ -46506,6 +46686,7 @@
         "loc": "C000002",
         "item": "51115B33487",
         "name": "Verkleidung",
+        "alois": "SZ",
         "qty": 1,
         "no": 114
       },
@@ -46513,6 +46694,7 @@
         "loc": "C000002",
         "item": "51119450550",
         "name": "Ornamental g",
+        "alois": "L7",
         "qty": 2,
         "no": 115
       },
@@ -46520,6 +46702,7 @@
         "loc": "C000002",
         "item": "51775A5A706",
         "name": "Rocker panel",
+        "alois": "A6",
         "qty": 1,
         "no": 116
       },
@@ -46527,6 +46710,7 @@
         "loc": "C000002",
         "item": "51777300822",
         "name": "Cover, wheel",
+        "alois": "L7",
         "qty": 3,
         "no": 117
       },
@@ -46534,6 +46718,7 @@
         "loc": "C000002",
         "item": "51777318830",
         "name": "Cover, wheel",
+        "alois": "II",
         "qty": 1,
         "no": 118
       },
@@ -46541,6 +46726,7 @@
         "loc": "C000002",
         "item": "51778093565",
         "name": "Wheel arch t",
+        "alois": "A6",
         "qty": 1,
         "no": 119
       },
@@ -46548,6 +46734,7 @@
         "loc": "C000002",
         "item": "51778098807",
         "name": "Trim, wheel",
+        "alois": "A6",
         "qty": 1,
         "no": 120
       },
@@ -46555,6 +46742,7 @@
         "loc": "C000003",
         "item": "41009627295",
         "name": "Side panel,",
+        "alois": "II",
         "qty": 1,
         "no": 121
       },
@@ -46562,6 +46750,7 @@
         "loc": "C000003",
         "item": "63117441314",
         "name": "Headlight wi",
+        "alois": "II",
         "qty": 1,
         "no": 122
       },
@@ -46569,6 +46758,7 @@
         "loc": "N/STK",
         "item": "31356774737",
         "name": "Stabilizer f",
+        "alois": "II",
         "qty": 2,
         "no": 123
       },
@@ -46576,6 +46766,7 @@
         "loc": "-",
         "item": "12415BA2AE5",
         "name": "Starter",
+        "alois": "SK",
         "qty": 10,
         "no": 124
       },
@@ -46583,6 +46774,7 @@
         "loc": "-",
         "item": "51475B50A84",
         "name": "Set of all-w",
+        "alois": "SZ",
         "qty": 1,
         "no": 125
       },
@@ -46590,6 +46782,7 @@
         "loc": "-",
         "item": "61278877428",
         "name": "Cell module,",
+        "alois": "O8",
         "qty": 1,
         "no": 126
       },
@@ -46597,6 +46790,7 @@
         "loc": "-",
         "item": "61355B5DA68",
         "name": "Control unit",
+        "alois": "SC",
         "qty": 1,
         "no": 127
       }

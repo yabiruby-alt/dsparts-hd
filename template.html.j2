@@ -171,6 +171,19 @@
   .aloistag{ display:inline-block; font-family:var(--font-mono); font-size:12.5px; font-weight:600; padding:2px 7px; border-radius:7px; background:var(--surface-2); color:var(--ink-2); }
   .subttl{ font-family:var(--font-display); font-weight:600; font-size:15px; text-transform:none; letter-spacing:0; color:var(--ink); margin:0 0 10px; display:flex; justify-content:space-between; }
   .subttl .n{ font-family:var(--font-mono); color:var(--muted); font-weight:500; text-transform:none; letter-spacing:0; }
+
+  .report-head{ display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin:18px 0 16px; }
+  .report-title h2{ margin:0 0 6px; font-family:var(--font-display); font-weight:700; font-size:20px; letter-spacing:-.01em; color:var(--ink); }
+  .report-meta{ font-family:var(--font-mono); font-size:12.5px; color:var(--muted); }
+  .approval-table{ border-collapse:collapse; flex:none; }
+  .approval-table th, .approval-table td{ border:1px solid var(--ink-2); padding:5px 14px; font-size:12px; text-align:center; white-space:nowrap; }
+  .approval-table th{ font-weight:600; background:var(--surface-2); color:var(--ink-2); }
+  .approval-table td{ height:16mm; min-width:20mm; }
+
+  .stockcheck-table{ border-collapse:collapse; }
+  .stockcheck-table th, .stockcheck-table td{ border:1px solid var(--line); white-space:normal; }
+  .stockcheck-table thead th{ text-align:center; background:var(--surface-2); }
+  .stockcheck-table td.alois, .stockcheck-table th.alois{ text-align:center; }
   tbody tr.top1 td{ background:var(--accent-wash); }
 
   .grouphead td{ margin-top:12px; padding:10px 14px; border-bottom:none; border-radius:10px;
@@ -242,6 +255,7 @@
     @page{ size:A4 landscape; margin:10mm; }
     @page stockcheck{ size:A4 portrait; margin:9mm 10mm; }
     #page-stockcheck{ page:stockcheck; }
+    #page-stockcheck > .crumbbar{ display:none; }
     html, body{ height:auto !important; background:#fff; }
     body{ font-size:11px; }
     .app{ display:block !important; height:auto !important; min-height:0 !important; }
@@ -277,10 +291,14 @@
     tbody tr:hover td{ background:transparent; }
     .aloistag, .aloistag.oseries, .grouphead td, .grouphead.oseries td, .dday-cell, .subtotal td{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
     .kpitile[aria-pressed="true"]{ box-shadow:none; }
-    .stockcheck-table th, .stockcheck-table td{ padding:4px 6px; font-size:10px; }
-    .stockcheck-table thead th{ font-weight:700; border-bottom:1.2px solid #999; }
-    .stockcheck-table tbody tr{ border-bottom:0.6px solid #ddd; }
-    .stockcheck-table th.chk, .stockcheck-table td.chk{ width:26mm; border-left:0.6px solid #999; }
+    .report-head{ margin:4px 0 8px; align-items:center; }
+    .report-title h2{ font-size:15px; margin-bottom:3px; }
+    .report-meta{ font-size:9.5px; }
+    .approval-table th, .approval-table td{ padding:2px 9px; font-size:9.5px; border-color:#333; }
+    .approval-table td{ height:9mm; min-width:16mm; }
+    .stockcheck-table th, .stockcheck-table td{ padding:2.6px 6px; font-size:9.5px; border-color:#999; }
+    .stockcheck-table thead th{ font-weight:700; border-color:#333; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .stockcheck-table th.chk, .stockcheck-table td.chk{ width:24mm; }
   }
 </style>
 </head>
@@ -1176,20 +1194,26 @@
         <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · {{ stockcheck.date }} 입고분</div>
       </div>
 
-      <div class="viewer">
-        <div class="viewer-head">
-          <span class="lbl">당일 입고 재고조사 리스트</span>
-          <span class="val">{{ stockcheck.count }}건</span>
-          <span class="foot">{{ stockcheck.date }} 입고 · 현재고 0(출고완료) 제외 · LOCATION 오름차순 · 인쇄해서 실수량 기재</span>
+      <div class="report-head">
+        <div class="report-title">
+          <h2>일일 재고조사표</h2>
+          <div class="report-meta">{{ meta.branch_name }} &nbsp;·&nbsp; 조사대상: {{ stockcheck.date }} 입고분 &nbsp;·&nbsp; 총 {{ stockcheck.count }}건 &nbsp;·&nbsp; LOCATION 오름차순</div>
         </div>
+        <table class="approval-table">
+          <thead><tr><th>날짜</th><th>담당</th><th>부서장</th><th>지점장</th></tr></thead>
+          <tbody><tr><td></td><td></td><td></td><td></td></tr></tbody>
+        </table>
+      </div>
+
+      <div class="viewer">
         <div class="tablewrap">
           <table class="stockcheck-table">
-            <thead><tr><th class="num">NO.</th><th>LOCATION</th><th>부품번호</th><th>부품명</th><th class="num">현재고</th><th class="num chk">실수량</th></tr></thead>
+            <thead><tr><th class="num">NO.</th><th>LOCATION</th><th>부품번호</th><th>부품명</th><th class="alois">ALOIS</th><th class="num">현재고</th><th class="num chk">실수량</th></tr></thead>
             <tbody>
               {% for r in stockcheck.rows %}
-              <tr><td class="num">{{ r.no }}</td><td class="mono">{{ r.loc }}</td><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="num">{{ r.qty }}</td><td class="num chk"></td></tr>
+              <tr><td class="num">{{ r.no }}</td><td class="mono">{{ r.loc }}</td><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="alois mono">{{ r.alois }}</td><td class="num">{{ r.qty }}</td><td class="num chk"></td></tr>
               {% else %}
-              <tr><td colspan="6" class="empty-note">오늘 입고된 부품 중 현재고가 남아있는 품목 없음</td></tr>
+              <tr><td colspan="7" class="empty-note">오늘 입고된 부품 중 현재고가 남아있는 품목 없음</td></tr>
               {% endfor %}
             </tbody>
           </table>

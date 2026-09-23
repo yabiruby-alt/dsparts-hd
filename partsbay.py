@@ -504,7 +504,8 @@ def build_daily_stockcheck(recv_rows, pw_rows, today_str):
         if qty <= 0:
             continue  # 출고돼서 재고 0이 된 부품은 제외
         rows.append({
-            "loc": r.get("lctCd") or "-", "item": item, "name": r.get("itemNm"), "qty": qty,
+            "loc": r.get("lctCd") or "-", "item": item, "name": r.get("itemNm"),
+            "alois": r.get("aloisCd") or "-", "qty": qty,
         })
     rows.sort(key=lambda x: (x["loc"] == "-", x["loc"], x["item"]))
     for i, r in enumerate(rows, 1):
