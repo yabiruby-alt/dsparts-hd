@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 11:56 기준",
+    "generated_at": "9월 23일 (수) · 12:10 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,8 +269,8 @@
     ]
   },
   "inv": {
-    "total": 1208649070,
-    "item_count": 2220,
+    "total": 1208566174,
+    "item_count": 2218,
     "code_count": 25,
     "alois_groups": [
       {
@@ -8300,9 +8300,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 64525255,
-            "pct": 5.34,
-            "qty": 1129,
+            "val": 64442359,
+            "pct": 5.33,
+            "qty": 1126,
             "parts": [
               {
                 "item": "17425A18806",
@@ -9649,12 +9649,6 @@
                 "val": 35688
               },
               {
-                "item": "51115A45EE1",
-                "name": "Cover for to",
-                "qty": 1,
-                "val": 35100
-              },
-              {
                 "item": "51337299997",
                 "name": "Joint seal,",
                 "qty": 1,
@@ -9671,12 +9665,6 @@
                 "name": "Screw",
                 "qty": 4,
                 "val": 34456
-              },
-              {
-                "item": "18308581218",
-                "name": "MUFFLER CLAM",
-                "qty": 1,
-                "val": 34350
               },
               {
                 "item": "54107379623",
@@ -9881,12 +9869,6 @@
                 "name": "Side panel b",
                 "qty": 1,
                 "val": 27348
-              },
-              {
-                "item": "33205A31900",
-                "name": "Dust guard r",
-                "qty": 2,
-                "val": 26892
               },
               {
                 "item": "33306786186",
@@ -10103,6 +10085,12 @@
                 "name": "O-ring",
                 "qty": 1,
                 "val": 14308
+              },
+              {
+                "item": "33205A31900",
+                "name": "Dust guard r",
+                "qty": 1,
+                "val": 13446
               },
               {
                 "item": "11618506782",
@@ -12437,8 +12425,8 @@
             ]
           }
         ],
-        "subtotal_val": 439105434,
-        "subtotal_qty": 2392,
+        "subtotal_val": 439022538,
+        "subtotal_qty": 2389,
         "subtotal_pct": 36.33
       },
       {
@@ -13847,7 +13835,7 @@
   },
   "oaov": {
     "total": 70533827,
-    "inv_total": 1208649070,
+    "inv_total": 1208566174,
     "pct": 5.84,
     "oa_val": 38398488,
     "ov_val": 32135339,
@@ -17528,15 +17516,6 @@
         "last_in": "2025-01-31"
       },
       {
-        "item": "51115A45EE1",
-        "name": "Cover for to",
-        "pgrp": "B1",
-        "alois": "O8",
-        "qty": 1,
-        "val": 35100,
-        "last_in": "2025-08-19"
-      },
-      {
         "item": "51217489341",
         "name": "PRIME COATED",
         "pgrp": "B1",
@@ -17951,8 +17930,8 @@
         "last_in": "2025-06-24"
       }
     ],
-    "m12_val": 62413255,
-    "m12_count": 211,
+    "m12_val": 62378155,
+    "m12_count": 210,
     "m12_pct": 5.16,
     "m24_items": [
       {
@@ -18399,7 +18378,7 @@
     ],
     "m24_val": 20607097,
     "m24_count": 49,
-    "m24_pct": 1.7
+    "m24_pct": 1.71
   },
   "opart": {
     "items": [
@@ -33241,7 +33220,7 @@
         "name": "Dust guard r",
         "pgrp": "B1",
         "alois": "O8",
-        "qty": 2,
+        "qty": 1,
         "avail_qty": 1,
         "val": 13446
       },
@@ -35658,7 +35637,7 @@
             "name": "Dust guard r",
             "pgrp": "B1",
             "alois": "O8",
-            "qty": 2,
+            "qty": 1,
             "avail_qty": 1,
             "val": 13446
           },
@@ -36123,7 +36102,7 @@
           }
         ],
         "count": 259,
-        "qty_sum": 1001,
+        "qty_sum": 1000,
         "avail_sum": 982,
         "val": 29939877
       },
@@ -38250,8 +38229,8 @@
       {
         "code": "O8",
         "in_val": 180863373,
-        "out_val": 162680699,
-        "net": 18182674
+        "out_val": 162763595,
+        "net": 18099778
       },
       {
         "code": "OA",
@@ -40892,8 +40871,8 @@
       },
       {
         "ro": "RO2609001375",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-22",
@@ -41450,10 +41429,21 @@
         "pub_full": "2026-09-23 11:52",
         "dday": "D+0일",
         "amt": 82200
+      },
+      {
+        "ro": "RO2609001444",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "최민수",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 12:04",
+        "dday": "D+0일",
+        "amt": 264900
       }
     ],
-    "count": 288,
-    "total_amt": 740925739,
+    "count": 289,
+    "total_amt": 741190639,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -41463,7 +41453,7 @@
       {
         "stat": "상담완료",
         "count": 130,
-        "amt": 502961627
+        "amt": 503010159
       },
       {
         "stat": "정비시작",
@@ -41482,8 +41472,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 89,
-        "amt": 143679766
+        "count": 90,
+        "amt": 143896134
       }
     ],
     "oldest": "D+519일"
@@ -42639,7 +42629,7 @@
     "total_val": 12368568,
     "o_lines": 29,
     "o_val": 5959432,
-    "resv_total": 12028
+    "resv_total": 12029
   },
   "sbresv": {
     "groups": [
@@ -45427,7 +45417,7 @@
     "total_val": 45126378,
     "o_lines": 50,
     "o_val": 16255388,
-    "resv_total": 343
+    "resv_total": 341
   },
   "sbcar": {
     "groups": [],
@@ -45436,7 +45426,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10258
+    "resv_total": 10259
   },
   "nonmng": {
     "rows": [],
