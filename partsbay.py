@@ -301,7 +301,8 @@ def extract_open_ros(page: Page, today_str: str) -> list:
 
 
 def extract_part_requests(page: Page) -> list:
-    """출고요청관리: 미처리 부품 출고요청(어떤 RO/SB/SP에 재고가 묶여있는지 참조문서번호 포함)."""
+    """출고요청관리: 미처리 부품 출고요청(어떤 RO/SB/SP에 재고가 묶여있는지 참조문서번호 포함).
+    sNotProcQty(처리잔여수량 존재여부) 필터를 걸면 partStatCd=R("가용(입고)") 건이 빠지므로 필터를 풀어서(빈 값) 전체를 가져온다."""
     click_menu(page, "icon-parts", "출고요청관리")
     frame = wait_for_frame(page, "selectDlvReqMngMain")
     rows = []
@@ -310,7 +311,7 @@ def extract_part_requests(page: Page) -> list:
             "recordCountPerPage": 5000, "pageIndex": 1, "firstIndex": 0, "lastIndex": 5000,
             "sRefDocNo": "", "sReqStartDt": "2020-01-01", "sReqEndDt": "2099-12-31",  # SB 등 미래 예약분도 놓치지 않게 상한을 사실상 무제한으로
             "sStatCd": "01", "sReqDocNo": "", "sReqUsrId": "", "sPartNo": "",
-            "sPartStatCd": "", "sReqBrchCd": "", "sNotProcQty": "01", "sPurcTp": "", "sReqTp": req_tp,
+            "sPartStatCd": "", "sReqBrchCd": "", "sNotProcQty": "", "sPurcTp": "", "sReqTp": req_tp,
         }
         rows += fetch_rows(frame, "/parts/dlv/dlvReq/selectPartReqInfo.do", body)
     return rows
