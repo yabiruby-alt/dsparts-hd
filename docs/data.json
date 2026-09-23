@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 10:32 기준",
+    "generated_at": "9월 23일 (수) · 10:41 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1210135601,
+    "total": 1210128971,
     "item_count": 2224,
     "code_count": 25,
     "alois_groups": [
@@ -5594,9 +5594,9 @@
           },
           {
             "code": "L7",
-            "val": 63823328,
+            "val": 63816698,
             "pct": 5.27,
-            "qty": 1431,
+            "qty": 1425,
             "parts": [
               {
                 "item": "11419895359",
@@ -8125,12 +8125,6 @@
                 "val": 7884
               },
               {
-                "item": "07119905848",
-                "name": "Hex Bolt",
-                "qty": 7,
-                "val": 7735
-              },
-              {
                 "item": "11618579883",
                 "name": "O-ring",
                 "qty": 1,
@@ -8285,12 +8279,18 @@
                 "name": "Blind plug",
                 "qty": 3,
                 "val": 1314
+              },
+              {
+                "item": "07119905848",
+                "name": "Hex Bolt",
+                "qty": 1,
+                "val": 1105
               }
             ]
           }
         ],
-        "subtotal_val": 154955441,
-        "subtotal_qty": 4848,
+        "subtotal_val": 154948811,
+        "subtotal_qty": 4842,
         "subtotal_pct": 12.8
       },
       {
@@ -13871,7 +13871,7 @@
   },
   "oaov": {
     "total": 70533827,
-    "inv_total": 1210135601,
+    "inv_total": 1210128971,
     "pct": 5.83,
     "oa_val": 38398488,
     "ov_val": 32135339,
@@ -24088,10 +24088,61 @@
         "val": 2774,
         "sa": "김민규",
         "dday": "D+0일"
+      },
+      {
+        "item": "51128081713",
+        "name": "Accent moldi",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001429",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-23",
+        "req_dt_full": "2026-09-23 10:38:03",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 49491,
+        "sa": "박영묵",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51128096492",
+        "name": "Trim panel,",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001429",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-23",
+        "req_dt_full": "2026-09-23 10:38:03",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 130427,
+        "sa": "박영묵",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51125A1F365",
+        "name": "Cover, bumpe",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001429",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-23",
+        "req_dt_full": "2026-09-23 10:38:03",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 113730,
+        "sa": "박영묵",
+        "dday": "D+0일"
       }
     ],
-    "count": 334,
-    "total_val": 104571864,
+    "count": 337,
+    "total_val": 104865512,
     "groups": [
       {
         "code": "RO",
@@ -27546,11 +27597,62 @@
             "val": 2774,
             "sa": "김민규",
             "dday": "D+0일"
+          },
+          {
+            "item": "51128081713",
+            "name": "Accent moldi",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001429",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-23",
+            "req_dt_full": "2026-09-23 10:38:03",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 49491,
+            "sa": "박영묵",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51128096492",
+            "name": "Trim panel,",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001429",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-23",
+            "req_dt_full": "2026-09-23 10:38:03",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 130427,
+            "sa": "박영묵",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51125A1F365",
+            "name": "Cover, bumpe",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001429",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-23",
+            "req_dt_full": "2026-09-23 10:38:03",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 113730,
+            "sa": "박영묵",
+            "dday": "D+0일"
           }
         ],
-        "count": 203,
-        "qty_sum": 292,
-        "val": 69277886
+        "count": 206,
+        "qty_sum": 295,
+        "val": 69571534
       },
       {
         "code": "SB",
@@ -41410,7 +41512,7 @@
         "pub": "2026-09-22",
         "pub_full": "2026-09-22 16:32",
         "dday": "D+1일",
-        "amt": 546498
+        "amt": 477730
       },
       {
         "ro": "RO2609001405",
@@ -41498,7 +41600,7 @@
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 08:59",
         "dday": "D+0일",
-        "amt": 1594000
+        "amt": 1848095
       },
       {
         "ro": "RO2609001413",
@@ -41722,7 +41824,7 @@
       }
     ],
     "count": 287,
-    "total_amt": 740951855,
+    "total_amt": 741137182,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -41732,7 +41834,7 @@
       {
         "stat": "상담완료",
         "count": 132,
-        "amt": 497688180
+        "amt": 497942275
       },
       {
         "stat": "정비시작",
@@ -41752,7 +41854,7 @@
       {
         "stat": "가정산 완료",
         "count": 83,
-        "amt": 103244459
+        "amt": 103175691
       }
     ],
     "oldest": "D+519일"
@@ -44035,7 +44137,7 @@
             "alois": "L1",
             "req_qty": 10,
             "crt_qty": 175,
-            "avail_qty": 136,
+            "avail_qty": 129,
             "val": 153120
           },
           {
@@ -44950,7 +45052,7 @@
             "alois": "L1",
             "req_qty": 10,
             "crt_qty": 175,
-            "avail_qty": 136,
+            "avail_qty": 129,
             "val": 160776
           },
           {
