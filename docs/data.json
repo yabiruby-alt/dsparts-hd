@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 12:40 기준",
+    "generated_at": "9월 23일 (수) · 12:52 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,8 +269,8 @@
     ]
   },
   "inv": {
-    "total": 1208497174,
-    "item_count": 2217,
+    "total": 1209368486,
+    "item_count": 2218,
     "code_count": 25,
     "alois_groups": [
       {
@@ -281,7 +281,7 @@
           {
             "code": "A1",
             "val": 215083577,
-            "pct": 17.8,
+            "pct": 17.78,
             "qty": 2421,
             "parts": [
               {
@@ -2721,7 +2721,7 @@
           {
             "code": "A6",
             "val": 96429185,
-            "pct": 7.98,
+            "pct": 7.97,
             "qty": 1499,
             "parts": [
               {
@@ -4817,7 +4817,7 @@
         ],
         "subtotal_val": 460586145,
         "subtotal_qty": 8752,
-        "subtotal_pct": 38.11
+        "subtotal_pct": 38.08
       },
       {
         "code": "L",
@@ -5238,9 +5238,9 @@
           },
           {
             "code": "L6",
-            "val": 28059495,
-            "pct": 2.32,
-            "qty": 246,
+            "val": 28930807,
+            "pct": 2.39,
+            "qty": 247,
             "parts": [
               {
                 "item": "11418646454",
@@ -5265,6 +5265,12 @@
                 "name": "Ventilated b",
                 "qty": 10,
                 "val": 2225280
+              },
+              {
+                "item": "51125A1DB03",
+                "name": "Bumper trim",
+                "qty": 1,
+                "val": 871312
               },
               {
                 "item": "51118099896",
@@ -8289,9 +8295,9 @@
             ]
           }
         ],
-        "subtotal_val": 154594009,
-        "subtotal_qty": 4808,
-        "subtotal_pct": 12.79
+        "subtotal_val": 155465321,
+        "subtotal_qty": 4809,
+        "subtotal_pct": 12.86
       },
       {
         "code": "O",
@@ -11077,7 +11083,7 @@
           {
             "code": "OE",
             "val": 299696373,
-            "pct": 24.8,
+            "pct": 24.78,
             "qty": 821,
             "parts": [
               {
@@ -12427,7 +12433,7 @@
         ],
         "subtotal_val": 439022538,
         "subtotal_qty": 2389,
-        "subtotal_pct": 36.33
+        "subtotal_pct": 36.3
       },
       {
         "code": "I",
@@ -13145,7 +13151,7 @@
           {
             "code": "SX",
             "val": 7675856,
-            "pct": 0.64,
+            "pct": 0.63,
             "qty": 206,
             "parts": [
               {
@@ -13823,14 +13829,14 @@
         ],
         "subtotal_val": 145513935,
         "subtotal_qty": 1884,
-        "subtotal_pct": 12.04
+        "subtotal_pct": 12.03
       }
     ]
   },
   "oaov": {
     "total": 70533827,
-    "inv_total": 1208497174,
-    "pct": 5.84,
+    "inv_total": 1209368486,
+    "pct": 5.83,
     "oa_val": 38398488,
     "ov_val": 32135339,
     "oa_lines": 105,
@@ -18372,7 +18378,7 @@
     ],
     "m24_val": 20607097,
     "m24_count": 49,
-    "m24_pct": 1.71
+    "m24_pct": 1.7
   },
   "opart": {
     "items": [
@@ -38496,7 +38502,7 @@
         "pub": "2026-08-10",
         "pub_full": "2026-08-10 08:42",
         "dday": "D+44일",
-        "amt": 13950307
+        "amt": 14050307
       },
       {
         "ro": "RO2608000665",
@@ -38716,7 +38722,7 @@
         "pub": "2026-08-26",
         "pub_full": "2026-08-26 15:46",
         "dday": "D+28일",
-        "amt": 13619970
+        "amt": 13719970
       },
       {
         "ro": "RO2608001646",
@@ -38863,14 +38869,14 @@
       },
       {
         "ro": "RO2608001840",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-08-31",
         "pub_full": "2026-08-31 07:17",
         "dday": "D+23일",
-        "amt": 3104290
+        "amt": 3103674
       },
       {
         "ro": "RO2608001841",
@@ -39555,17 +39561,6 @@
         "amt": 4466700
       },
       {
-        "ro": "RO2609001034",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "이정환",
-        "pub": "2026-09-16",
-        "pub_full": "2026-09-16 11:21",
-        "dday": "D+7일",
-        "amt": 3485700
-      },
-      {
         "ro": "RO2609001040",
         "stat": "상담시작",
         "stat_cd": "01",
@@ -39586,17 +39581,6 @@
         "pub_full": "2026-09-16 14:12",
         "dday": "D+7일",
         "amt": 3539052
-      },
-      {
-        "ro": "RO2609001055",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "Maintenance",
-        "sa": "김민규",
-        "pub": "2026-09-16",
-        "pub_full": "2026-09-16 14:39",
-        "dday": "D+7일",
-        "amt": 149400
       },
       {
         "ro": "RO2609001058",
@@ -40466,17 +40450,6 @@
         "pub_full": "2026-09-21 10:48",
         "dday": "D+2일",
         "amt": 17745500
-      },
-      {
-        "ro": "RO2609001302",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "진단",
-        "sa": "김민규",
-        "pub": "2026-09-21",
-        "pub_full": "2026-09-21 10:51",
-        "dday": "D+2일",
-        "amt": 611500
       },
       {
         "ro": "RO2609001305",
@@ -41425,8 +41398,8 @@
         "amt": 264900
       }
     ],
-    "count": 288,
-    "total_amt": 738057539,
+    "count": 285,
+    "total_amt": 734010323,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -41435,8 +41408,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 130,
-        "amt": 502899259
+        "count": 128,
+        "amt": 496509269
       },
       {
         "stat": "정비시작",
@@ -41445,8 +41418,8 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 24,
-        "amt": 40246600
+        "count": 22,
+        "amt": 39485700
       },
       {
         "stat": "공정마감",
@@ -41455,8 +41428,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 89,
-        "amt": 140873934
+        "count": 90,
+        "amt": 143977608
       }
     ],
     "oldest": "D+519일"
@@ -45345,10 +45318,20 @@
         "count": 5,
         "qty_sum": 9,
         "val": 213956
-      },
+      }
+    ],
+    "sb_count": 55,
+    "line_count": 230,
+    "total_val": 44767150,
+    "o_lines": 50,
+    "o_val": 16255388,
+    "resv_total": 341
+  },
+  "sbcar": {
+    "groups": [
       {
         "code": "SB2609001679",
-        "resv_full": "2026-09-23 13:00",
+        "resv_full": "2026-09-23 12:56",
         "resv": "09-23",
         "dday": "오늘",
         "sa": "정용환",
@@ -45395,21 +45378,12 @@
         "val": 359228
       }
     ],
-    "sb_count": 56,
-    "line_count": 234,
-    "total_val": 45126378,
-    "o_lines": 50,
-    "o_val": 16255388,
-    "resv_total": 343
-  },
-  "sbcar": {
-    "groups": [],
-    "sb_count": 0,
-    "line_count": 0,
-    "total_val": 0,
+    "sb_count": 1,
+    "line_count": 4,
+    "total_val": 359228,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10259
+    "resv_total": 10262
   },
   "nonmng": {
     "rows": [],
@@ -46405,7 +46379,7 @@
         "no": 123
       },
       {
-        "loc": "N/STK",
+        "loc": "C000005",
         "item": "31356774737",
         "name": "Stabilizer f",
         "alois": "II",
