@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 11:03 기준",
+    "generated_at": "9월 23일 (수) · 11:10 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1209973089,
+    "total": 1209716890,
     "item_count": 2224,
     "code_count": 25,
     "alois_groups": [
@@ -280,15 +280,15 @@
         "rows": [
           {
             "code": "A1",
-            "val": 215409003,
+            "val": 215276446,
             "pct": 17.8,
-            "qty": 2425,
+            "qty": 2423,
             "parts": [
               {
                 "item": "64115A1BDB6",
                 "name": "Set, microfi",
-                "qty": 1594,
-                "val": 179949848
+                "qty": 1593,
+                "val": 179836956
               },
               {
                 "item": "12122455258",
@@ -341,8 +341,8 @@
               {
                 "item": "11428575211",
                 "name": "Set oil-filt",
-                "qty": 88,
-                "val": 1730520
+                "qty": 87,
+                "val": 1710855
               },
               {
                 "item": "61615A43610",
@@ -372,9 +372,9 @@
           },
           {
             "code": "A2",
-            "val": 16400169,
-            "pct": 1.36,
-            "qty": 1189,
+            "val": 16368083,
+            "pct": 1.35,
+            "qty": 1188,
             "parts": [
               {
                 "item": "34216890353",
@@ -425,16 +425,16 @@
                 "val": 719397
               },
               {
-                "item": "13718691835",
-                "name": "ir filter el",
-                "qty": 19,
-                "val": 609634
-              },
-              {
                 "item": "51767288752",
                 "name": "Plaque",
                 "qty": 10,
                 "val": 579560
+              },
+              {
+                "item": "13718691835",
+                "name": "ir filter el",
+                "qty": 18,
+                "val": 577548
               },
               {
                 "item": "61617411249",
@@ -2721,7 +2721,7 @@
           {
             "code": "A6",
             "val": 96482708,
-            "pct": 7.97,
+            "pct": 7.98,
             "qty": 1500,
             "parts": [
               {
@@ -4815,8 +4815,8 @@
             ]
           }
         ],
-        "subtotal_val": 461027665,
-        "subtotal_qty": 8759,
+        "subtotal_val": 460863022,
+        "subtotal_qty": 8756,
         "subtotal_pct": 38.1
       },
       {
@@ -4826,15 +4826,15 @@
         "rows": [
           {
             "code": "L1",
-            "val": 31412620,
-            "pct": 2.6,
-            "qty": 2141,
+            "val": 31321063,
+            "pct": 2.59,
+            "qty": 2135,
             "parts": [
               {
                 "item": "83215B49DD6",
                 "name": "LL-17FE+ 0W-20",
-                "qty": 667,
-                "val": 10198732
+                "qty": 662,
+                "val": 10118518
               },
               {
                 "item": "83212469985",
@@ -4875,8 +4875,8 @@
               {
                 "item": "83135A82511",
                 "name": "Brake fluid",
-                "qty": 132,
-                "val": 1497144
+                "qty": 131,
+                "val": 1485802
               },
               {
                 "item": "99995A2A668",
@@ -5595,7 +5595,7 @@
           {
             "code": "L7",
             "val": 63816698,
-            "pct": 5.27,
+            "pct": 5.28,
             "qty": 1425,
             "parts": [
               {
@@ -8289,9 +8289,9 @@
             ]
           }
         ],
-        "subtotal_val": 154829219,
-        "subtotal_qty": 4835,
-        "subtotal_pct": 12.8
+        "subtotal_val": 154737663,
+        "subtotal_qty": 4829,
+        "subtotal_pct": 12.79
       },
       {
         "code": "O",
@@ -12457,7 +12457,7 @@
         ],
         "subtotal_val": 439627283,
         "subtotal_qty": 2426,
-        "subtotal_pct": 36.33
+        "subtotal_pct": 36.34
       },
       {
         "code": "I",
@@ -13871,7 +13871,7 @@
   },
   "oaov": {
     "total": 70533827,
-    "inv_total": 1209973089,
+    "inv_total": 1209716890,
     "pct": 5.83,
     "oa_val": 38398488,
     "ov_val": 32135339,
@@ -40077,17 +40077,6 @@
         "amt": 318285
       },
       {
-        "ro": "RO2609001004",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "우종훈",
-        "pub": "2026-09-16",
-        "pub_full": "2026-09-16 08:48",
-        "dday": "D+7일",
-        "amt": 56000
-      },
-      {
         "ro": "RO2609001026",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -40617,25 +40606,14 @@
       },
       {
         "ro": "RO2609001437",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-18",
         "pub_full": "2026-09-18 12:48",
         "dday": "D+5일",
         "amt": 649068
-      },
-      {
-        "ro": "RO2609001184",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "우종훈",
-        "pub": "2026-09-18",
-        "pub_full": "2026-09-18 12:48",
-        "dday": "D+5일",
-        "amt": 1051700
       },
       {
         "ro": "RO2609001198",
@@ -41771,17 +41749,6 @@
         "amt": 233600
       },
       {
-        "ro": "RO2609001417",
-        "stat": "상담시작",
-        "stat_cd": "01",
-        "svc": "입고 Proactive-RITA",
-        "sa": "우종훈",
-        "pub": "2026-09-23",
-        "pub_full": "2026-09-23 09:13",
-        "dday": "D+0일",
-        "amt": 0
-      },
-      {
         "ro": "RO2609001418",
         "stat": "정비시작",
         "stat_cd": "03",
@@ -41805,8 +41772,8 @@
       },
       {
         "ro": "RO2609001420",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "입고 Proactive-RITA",
         "sa": "우종훈",
         "pub": "2026-09-23",
@@ -41945,20 +41912,42 @@
         "pub_full": "2026-09-23 10:26",
         "dday": "D+0일",
         "amt": 105813
+      },
+      {
+        "ro": "RO2609001439",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "진단",
+        "sa": "우종훈",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 11:07",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2609001440",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "진단",
+        "sa": "안준영",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 11:11",
+        "dday": "D+0일",
+        "amt": 405500
       }
     ],
-    "count": 289,
-    "total_amt": 743551436,
+    "count": 288,
+    "total_amt": 742849236,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 14,
-        "amt": 10613300
+        "count": 15,
+        "amt": 11018800
       },
       {
         "stat": "상담완료",
         "count": 131,
-        "amt": 509269165
+        "amt": 509862233
       },
       {
         "stat": "정비시작",
@@ -41967,8 +41956,8 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 28,
-        "amt": 76450827
+        "count": 26,
+        "amt": 75207934
       },
       {
         "stat": "공정마감",
@@ -41978,7 +41967,7 @@
       {
         "stat": "가정산 완료",
         "count": 84,
-        "amt": 104192995
+        "amt": 103735120
       }
     ],
     "oldest": "D+519일"
@@ -42945,7 +42934,7 @@
             "name": "Brake fluid",
             "alois": "L1",
             "req_qty": 2,
-            "crt_qty": 132,
+            "crt_qty": 131,
             "avail_qty": 122,
             "val": 22684
           }
@@ -43119,7 +43108,7 @@
             "name": "Brake fluid",
             "alois": "L1",
             "req_qty": 1,
-            "crt_qty": 132,
+            "crt_qty": 131,
             "avail_qty": 122,
             "val": 11342
           }
@@ -44506,7 +44495,7 @@
             "name": "Brake fluid",
             "alois": "L1",
             "req_qty": 2,
-            "crt_qty": 132,
+            "crt_qty": 131,
             "avail_qty": 122,
             "val": 22684
           },
@@ -45484,7 +45473,7 @@
             "name": "Brake fluid",
             "alois": "L1",
             "req_qty": 1,
-            "crt_qty": 132,
+            "crt_qty": 131,
             "avail_qty": 122,
             "val": 11342
           },
@@ -45823,7 +45812,7 @@
             "name": "LL-17FE+ 0W-20",
             "alois": "L1",
             "req_qty": 5,
-            "crt_qty": 667,
+            "crt_qty": 662,
             "avail_qty": 652,
             "val": 80215
           },
@@ -45832,7 +45821,7 @@
             "name": "ir filter el",
             "alois": "A2",
             "req_qty": 1,
-            "crt_qty": 19,
+            "crt_qty": 18,
             "avail_qty": 17,
             "val": 32086
           },
@@ -45841,7 +45830,7 @@
             "name": "Set oil-filt",
             "alois": "A1",
             "req_qty": 1,
-            "crt_qty": 88,
+            "crt_qty": 87,
             "avail_qty": 86,
             "val": 19665
           }
@@ -45898,7 +45887,7 @@
             "name": "Brake fluid",
             "alois": "L1",
             "req_qty": 1,
-            "crt_qty": 132,
+            "crt_qty": 131,
             "avail_qty": 122,
             "val": 11342
           }
@@ -45954,41 +45943,11 @@
         "count": 4,
         "qty_sum": 9,
         "val": 359228
-      },
-      {
-        "code": "SB2609001682",
-        "resv_full": "2026-09-23 11:20",
-        "resv": "09-23",
-        "dday": "오늘",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "64115A547D4",
-            "name": "Mikrofilter/",
-            "alois": "A1",
-            "req_qty": 1,
-            "crt_qty": 33,
-            "avail_qty": 32,
-            "val": 120134
-          },
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "req_qty": 1,
-            "crt_qty": 132,
-            "avail_qty": 122,
-            "val": 11342
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 131476
       }
     ],
-    "sb_count": 58,
-    "line_count": 239,
-    "total_val": 46279544,
+    "sb_count": 57,
+    "line_count": 237,
+    "total_val": 46148068,
     "o_lines": 50,
     "o_val": 16255388,
     "resv_total": 337
@@ -46000,7 +45959,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10253
+    "resv_total": 10255
   },
   "nonmng": {
     "rows": [],
@@ -46016,7 +45975,7 @@
         "item": "83135A82511",
         "name": "Brake fluid",
         "alois": "L1",
-        "qty": 132,
+        "qty": 131,
         "no": 1
       },
       {
