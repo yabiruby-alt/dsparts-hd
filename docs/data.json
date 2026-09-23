@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 14:29 기준",
+    "generated_at": "9월 23일 (수) · 14:40 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1202169633,
+    "total": 1201942791,
     "item_count": 2204,
     "code_count": 25,
     "alois_groups": [
@@ -4817,7 +4817,7 @@
         ],
         "subtotal_val": 459251831,
         "subtotal_qty": 8721,
-        "subtotal_pct": 38.2
+        "subtotal_pct": 38.21
       },
       {
         "code": "L",
@@ -4977,7 +4977,7 @@
           {
             "code": "L4",
             "val": 12441544,
-            "pct": 1.03,
+            "pct": 1.04,
             "qty": 516,
             "parts": [
               {
@@ -8285,7 +8285,7 @@
         ],
         "subtotal_val": 152709514,
         "subtotal_qty": 4751,
-        "subtotal_pct": 12.7
+        "subtotal_pct": 12.71
       },
       {
         "code": "O",
@@ -12397,7 +12397,7 @@
         ],
         "subtotal_val": 437732368,
         "subtotal_qty": 2380,
-        "subtotal_pct": 36.41
+        "subtotal_pct": 36.42
       },
       {
         "code": "I",
@@ -13178,9 +13178,9 @@
           },
           {
             "code": "SZ",
-            "val": 93495973,
-            "pct": 7.78,
-            "qty": 727,
+            "val": 93269131,
+            "pct": 7.76,
+            "qty": 724,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -13405,12 +13405,6 @@
                 "val": 459108
               },
               {
-                "item": "51145B75F93",
-                "name": "Adhesive fil",
-                "qty": 6,
-                "val": 453684
-              },
-              {
                 "item": "34108842578",
                 "name": "Brake disc v",
                 "qty": 2,
@@ -13421,6 +13415,12 @@
                 "name": "BMW Boston Olive (New)",
                 "qty": 7,
                 "val": 411600
+              },
+              {
+                "item": "51145B75F93",
+                "name": "Adhesive fil",
+                "qty": 5,
+                "val": 378070
               },
               {
                 "item": "24115A86559",
@@ -13441,18 +13441,6 @@
                 "val": 304000
               },
               {
-                "item": "51145B4C7B3",
-                "name": "Adhesive fil",
-                "qty": 4,
-                "val": 302456
-              },
-              {
-                "item": "51145B75F80",
-                "name": "Adhesive fil",
-                "qty": 4,
-                "val": 302456
-              },
-              {
                 "item": "99975BA3D55",
                 "name": "24YBMWSSRece",
                 "qty": 7,
@@ -13469,6 +13457,18 @@
                 "name": "BMW Boston M (New)",
                 "qty": 3,
                 "val": 234600
+              },
+              {
+                "item": "51145B4C7B3",
+                "name": "Adhesive fil",
+                "qty": 3,
+                "val": 226842
+              },
+              {
+                "item": "51145B75F80",
+                "name": "Adhesive fil",
+                "qty": 3,
+                "val": 226842
               },
               {
                 "item": "61355A5C898",
@@ -13743,16 +13743,16 @@
             ]
           }
         ],
-        "subtotal_val": 143821988,
-        "subtotal_qty": 1875,
-        "subtotal_pct": 11.96
+        "subtotal_val": 143595146,
+        "subtotal_qty": 1872,
+        "subtotal_pct": 11.95
       }
     ]
   },
   "oaov": {
     "total": 70259178,
-    "inv_total": 1202169633,
-    "pct": 5.84,
+    "inv_total": 1201942791,
+    "pct": 5.85,
     "oa_val": 38297560,
     "ov_val": 31961618,
     "oa_lines": 104,
@@ -29525,15 +29525,6 @@
         "val": 1674000
       },
       {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "pgrp": "B1",
-        "alois": "OE",
-        "qty": 19,
-        "avail_qty": 18,
-        "val": 1556946
-      },
-      {
         "item": "63115A7F387",
         "name": "Headlight, L",
         "pgrp": "B1",
@@ -29541,6 +29532,15 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 1537310
+      },
+      {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "pgrp": "B1",
+        "alois": "OE",
+        "qty": 19,
+        "avail_qty": 17,
+        "val": 1470449
       },
       {
         "item": "61278880208",
@@ -36708,8 +36708,8 @@
             "pgrp": "B1",
             "alois": "OE",
             "qty": 19,
-            "avail_qty": 18,
-            "val": 1556946
+            "avail_qty": 17,
+            "val": 1470449
           },
           {
             "item": "61278880208",
@@ -37407,8 +37407,8 @@
         ],
         "count": 87,
         "qty_sum": 755,
-        "avail_sum": 743,
-        "val": 291685889
+        "avail_sum": 742,
+        "val": 291599392
       },
       {
         "code": "ON",
@@ -37943,7 +37943,7 @@
       }
     ],
     "count": 472,
-    "total_val": 356623493
+    "total_val": 356536996
   },
   "oflow": {
     "rows": [
@@ -38436,8 +38436,8 @@
       },
       {
         "ro": "RO2608001110",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "최민수",
         "pub": "2026-08-19",
@@ -39734,8 +39734,8 @@
       },
       {
         "ro": "RO2609001150",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-09-18",
@@ -40537,8 +40537,8 @@
       },
       {
         "ro": "RO2609001361",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "경수리",
         "sa": "정용환",
         "pub": "2026-09-22",
@@ -40878,8 +40878,8 @@
       },
       {
         "ro": "RO2609001406",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-22",
@@ -41186,8 +41186,8 @@
       },
       {
         "ro": "RO2609001441",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-23",
@@ -41414,10 +41414,65 @@
         "pub_full": "2026-09-23 14:23",
         "dday": "D+0일",
         "amt": 56000
+      },
+      {
+        "ro": "RO2609001465",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "우종훈",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 14:31",
+        "dday": "D+0일",
+        "amt": 159660
+      },
+      {
+        "ro": "RO2609001466",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "우종훈",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 14:36",
+        "dday": "D+0일",
+        "amt": 183040
+      },
+      {
+        "ro": "RO2609001468",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 14:38",
+        "dday": "D+0일",
+        "amt": 90000
+      },
+      {
+        "ro": "RO2609001467",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "우종훈",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 14:38",
+        "dday": "D+0일",
+        "amt": 183040
+      },
+      {
+        "ro": "RO2609001469",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "우종훈",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 14:40",
+        "dday": "D+0일",
+        "amt": 171420
       }
     ],
-    "count": 299,
-    "total_amt": 733323911,
+    "count": 304,
+    "total_amt": 734111071,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -41426,18 +41481,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 135,
-        "amt": 485509498
+        "count": 136,
+        "amt": 472292580
       },
       {
         "stat": "정비시작",
-        "count": 28,
-        "amt": 49436168
+        "count": 30,
+        "amt": 57074868
       },
       {
         "stat": "End Control 요청",
-        "count": 28,
-        "amt": 41760068
+        "count": 30,
+        "amt": 48125446
       },
       {
         "stat": "공정마감",
@@ -45524,7 +45579,7 @@
     "total_val": 44181777,
     "o_lines": 50,
     "o_val": 16255388,
-    "resv_total": 332
+    "resv_total": 333
   },
   "sbcar": {
     "groups": [],
@@ -45533,7 +45588,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10280
+    "resv_total": 10284
   },
   "nonmng": {
     "rows": [],
