@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 10:50 기준",
+    "generated_at": "9월 23일 (수) · 11:03 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1210128971,
+    "total": 1209973089,
     "item_count": 2224,
     "code_count": 25,
     "alois_groups": [
@@ -754,9 +754,9 @@
           },
           {
             "code": "A4",
-            "val": 42489490,
+            "val": 42488600,
             "pct": 3.51,
-            "qty": 1845,
+            "qty": 1844,
             "parts": [
               {
                 "item": "63117214962",
@@ -1505,8 +1505,8 @@
               {
                 "item": "07149191219",
                 "name": "Blind rivet",
-                "qty": 3,
-                "val": 2670
+                "qty": 2,
+                "val": 1780
               }
             ]
           },
@@ -4815,8 +4815,8 @@
             ]
           }
         ],
-        "subtotal_val": 461028555,
-        "subtotal_qty": 8760,
+        "subtotal_val": 461027665,
+        "subtotal_qty": 8759,
         "subtotal_pct": 38.1
       },
       {
@@ -4826,9 +4826,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 31532212,
-            "pct": 2.61,
-            "qty": 2148,
+            "val": 31412620,
+            "pct": 2.6,
+            "qty": 2141,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4851,8 +4851,8 @@
               {
                 "item": "83215A7EDA5",
                 "name": "LL-01FE 0W-30",
-                "qty": 175,
-                "val": 2679600
+                "qty": 168,
+                "val": 2580072
               },
               {
                 "item": "83515A6CDD7",
@@ -4863,8 +4863,8 @@
               {
                 "item": "11425B4C845",
                 "name": "Set oil-filt",
-                "qty": 106,
-                "val": 2126784
+                "qty": 105,
+                "val": 2106720
               },
               {
                 "item": "83195A42DF3",
@@ -8289,8 +8289,8 @@
             ]
           }
         ],
-        "subtotal_val": 154948811,
-        "subtotal_qty": 4842,
+        "subtotal_val": 154829219,
+        "subtotal_qty": 4835,
         "subtotal_pct": 12.8
       },
       {
@@ -13174,9 +13174,9 @@
           },
           {
             "code": "SX",
-            "val": 7780256,
+            "val": 7744856,
             "pct": 0.64,
-            "qty": 212,
+            "qty": 207,
             "parts": [
               {
                 "item": "64115B78AA5",
@@ -13205,8 +13205,8 @@
               {
                 "item": "99975BA1A04",
                 "name": "BMWFoldingUm",
-                "qty": 49,
-                "val": 346920
+                "qty": 44,
+                "val": 311520
               },
               {
                 "item": "99975BBD7D3",
@@ -13863,15 +13863,15 @@
             ]
           }
         ],
-        "subtotal_val": 145743775,
-        "subtotal_qty": 1892,
+        "subtotal_val": 145708375,
+        "subtotal_qty": 1887,
         "subtotal_pct": 12.04
       }
     ]
   },
   "oaov": {
     "total": 70533827,
-    "inv_total": 1210128971,
+    "inv_total": 1209973089,
     "pct": 5.83,
     "oa_val": 38398488,
     "ov_val": 32135339,
@@ -15806,10 +15806,10 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 27241722,
-    "cost": 27170847,
-    "lines": 269,
-    "invoices_count": 159,
+    "total": 27277122,
+    "cost": 27206247,
+    "lines": 270,
+    "invoices_count": 160,
     "by_type": [
       {
         "code": "3",
@@ -15826,11 +15826,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 170,
-        "val": 16968259
+        "lines": 171,
+        "val": 17003659
       }
     ],
     "recent5": [
+      {
+        "inv": "AR2609003776",
+        "num": "SP2609000089",
+        "sa": "박태강",
+        "dt": "2026-09-23 10:56",
+        "amt": 35400,
+        "cost": 35400
+      },
       {
         "inv": "IV2609002400",
         "num": "RO2609001387",
@@ -15862,14 +15870,6 @@
         "dt": "2026-09-22 19:44",
         "amt": 0,
         "cost": 7080
-      },
-      {
-        "inv": "IV2609002347",
-        "num": "RO2609001377",
-        "sa": "안준영",
-        "dt": "2026-09-22 18:15",
-        "amt": 69000,
-        "cost": 69000
       }
     ]
   },
@@ -24139,10 +24139,61 @@
         "val": 113730,
         "sa": "박영묵",
         "dday": "D+0일"
+      },
+      {
+        "item": "34206868936",
+        "name": "Brake disc,",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001341",
+        "req_qty": 2,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-23",
+        "req_dt_full": "2026-09-23 10:59:44",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 203490,
+        "sa": "김민규",
+        "dday": "D+0일"
+      },
+      {
+        "item": "34356790304",
+        "name": "Sensor",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001341",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-23",
+        "req_dt_full": "2026-09-23 10:59:44",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 27762,
+        "sa": "김민규",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51135A71492",
+        "name": "Halter iCAM",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001427",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-23",
+        "req_dt_full": "2026-09-23 11:03:22",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 20003,
+        "sa": "염진아",
+        "dday": "D+0일"
       }
     ],
-    "count": 337,
-    "total_val": 104865512,
+    "count": 340,
+    "total_val": 105116767,
     "groups": [
       {
         "code": "RO",
@@ -27648,11 +27699,62 @@
             "val": 113730,
             "sa": "박영묵",
             "dday": "D+0일"
+          },
+          {
+            "item": "34206868936",
+            "name": "Brake disc,",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001341",
+            "req_qty": 2,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-23",
+            "req_dt_full": "2026-09-23 10:59:44",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 203490,
+            "sa": "김민규",
+            "dday": "D+0일"
+          },
+          {
+            "item": "34356790304",
+            "name": "Sensor",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001341",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-23",
+            "req_dt_full": "2026-09-23 10:59:44",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 27762,
+            "sa": "김민규",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51135A71492",
+            "name": "Halter iCAM",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001427",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-23",
+            "req_dt_full": "2026-09-23 11:03:22",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 20003,
+            "sa": "염진아",
+            "dday": "D+0일"
           }
         ],
-        "count": 206,
-        "qty_sum": 295,
-        "val": 69571534
+        "count": 209,
+        "qty_sum": 299,
+        "val": 69822789
       },
       {
         "code": "SB",
@@ -39073,6 +39175,17 @@
         "amt": 799630
       },
       {
+        "ro": "RO2608001481",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-08-24",
+        "pub_full": "2026-08-24 13:59",
+        "dday": "D+30일",
+        "amt": 1086072
+      },
+      {
         "ro": "RO2608001575",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -39899,8 +40012,8 @@
       },
       {
         "ro": "RO2609001430",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "소음",
         "sa": "최민수",
         "pub": "2026-09-15",
@@ -40577,7 +40690,7 @@
         "pub": "2026-09-18",
         "pub_full": "2026-09-18 16:02",
         "dday": "D+5일",
-        "amt": 7304100
+        "amt": 7305300
       },
       {
         "ro": "RO2609001214",
@@ -41252,8 +41365,8 @@
       },
       {
         "ro": "RO2609001370",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "중수리",
         "sa": "김민규",
         "pub": "2026-09-22",
@@ -41725,8 +41838,8 @@
       },
       {
         "ro": "RO2609001423",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-09-23",
@@ -41758,8 +41871,8 @@
       },
       {
         "ro": "RO2609001427",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-23",
@@ -41780,8 +41893,8 @@
       },
       {
         "ro": "RO2609001429",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "박영묵",
         "pub": "2026-09-23",
@@ -41802,14 +41915,14 @@
       },
       {
         "ro": "RO2609001433",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "최민수",
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 10:16",
         "dday": "D+0일",
-        "amt": 44000
+        "amt": 144000
       },
       {
         "ro": "RO2609001434",
@@ -41834,28 +41947,28 @@
         "amt": 105813
       }
     ],
-    "count": 288,
-    "total_amt": 742364164,
+    "count": 289,
+    "total_amt": 743551436,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 16,
-        "amt": 25441100
+        "count": 14,
+        "amt": 10613300
       },
       {
         "stat": "상담완료",
         "count": 131,
-        "amt": 496507262
+        "amt": 509269165
       },
       {
         "stat": "정비시작",
-        "count": 30,
-        "amt": 41466752
+        "count": 31,
+        "amt": 42522249
       },
       {
         "stat": "End Control 요청",
-        "count": 27,
-        "amt": 75339227
+        "count": 28,
+        "amt": 76450827
       },
       {
         "stat": "공정마감",
@@ -41864,8 +41977,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 83,
-        "amt": 103106923
+        "count": 84,
+        "amt": 104192995
       }
     ],
     "oldest": "D+519일"
@@ -42833,7 +42946,7 @@
             "alois": "L1",
             "req_qty": 2,
             "crt_qty": 132,
-            "avail_qty": 123,
+            "avail_qty": 122,
             "val": 22684
           }
         ],
@@ -43007,7 +43120,7 @@
             "alois": "L1",
             "req_qty": 1,
             "crt_qty": 132,
-            "avail_qty": 123,
+            "avail_qty": 122,
             "val": 11342
           }
         ],
@@ -44394,7 +44507,7 @@
             "alois": "L1",
             "req_qty": 2,
             "crt_qty": 132,
-            "avail_qty": 123,
+            "avail_qty": 122,
             "val": 22684
           },
           {
@@ -45342,6 +45455,54 @@
         "val": 662157
       },
       {
+        "code": "SB2609001713",
+        "resv_full": "2026-09-28 10:20",
+        "resv": "09-28",
+        "dday": "D-5일",
+        "sa": "김민규",
+        "rows": [
+          {
+            "item": "22118835572",
+            "name": "Engine mount",
+            "alois": "A4",
+            "req_qty": 1,
+            "crt_qty": 3,
+            "avail_qty": 2,
+            "val": 182070
+          },
+          {
+            "item": "22116858061",
+            "name": "ASA-Bolt",
+            "alois": "A4",
+            "req_qty": 4,
+            "crt_qty": 12,
+            "avail_qty": 8,
+            "val": 20744
+          },
+          {
+            "item": "83135A82511",
+            "name": "Brake fluid",
+            "alois": "L1",
+            "req_qty": 1,
+            "crt_qty": 132,
+            "avail_qty": 122,
+            "val": 11342
+          },
+          {
+            "item": "31106868038",
+            "name": "ASA-Bolt",
+            "alois": "A4",
+            "req_qty": 1,
+            "crt_qty": 7,
+            "avail_qty": 6,
+            "val": 5185
+          }
+        ],
+        "count": 4,
+        "qty_sum": 7,
+        "val": 219341
+      },
+      {
         "code": "SB2609000797",
         "resv_full": "2026-09-28 10:00",
         "resv": "09-28",
@@ -45738,7 +45899,7 @@
             "alois": "L1",
             "req_qty": 1,
             "crt_qty": 132,
-            "avail_qty": 123,
+            "avail_qty": 122,
             "val": 11342
           }
         ],
@@ -45816,7 +45977,7 @@
             "alois": "L1",
             "req_qty": 1,
             "crt_qty": 132,
-            "avail_qty": 123,
+            "avail_qty": 122,
             "val": 11342
           }
         ],
@@ -45825,12 +45986,12 @@
         "val": 131476
       }
     ],
-    "sb_count": 57,
-    "line_count": 235,
-    "total_val": 46060203,
+    "sb_count": 58,
+    "line_count": 239,
+    "total_val": 46279544,
     "o_lines": 50,
     "o_val": 16255388,
-    "resv_total": 334
+    "resv_total": 337
   },
   "sbcar": {
     "groups": [],
@@ -45839,7 +46000,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10252
+    "resv_total": 10253
   },
   "nonmng": {
     "rows": [],
