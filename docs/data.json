@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 08:43 기준",
+    "generated_at": "9월 23일 (수) · 08:59 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -33623,8 +33623,8 @@
       },
       {
         "ro": "RO2609001055",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-09-16",
@@ -33832,8 +33832,8 @@
       },
       {
         "ro": "RO2609001116",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-17",
@@ -34426,8 +34426,8 @@
       },
       {
         "ro": "RO2609001285",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-09-21",
@@ -34602,8 +34602,8 @@
       },
       {
         "ro": "RO2609001327",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-21",
@@ -34635,8 +34635,8 @@
       },
       {
         "ro": "RO2609001334",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-09-21",
@@ -34734,8 +34734,8 @@
       },
       {
         "ro": "RO2609001352",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "안준영",
         "pub": "2026-09-22",
@@ -34800,8 +34800,8 @@
       },
       {
         "ro": "RO2609001364",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-22",
@@ -35075,8 +35075,8 @@
       },
       {
         "ro": "RO2609001400",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-09-22",
@@ -35182,30 +35182,63 @@
         "pub_full": "2026-09-23 08:17",
         "dday": "D+0일",
         "amt": 1049400
+      },
+      {
+        "ro": "RO2609001411",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 08:56",
+        "dday": "D+0일",
+        "amt": 1582782
+      },
+      {
+        "ro": "RO2609001412",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "중수리",
+        "sa": "이정환",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 08:59",
+        "dday": "D+0일",
+        "amt": 1538000
+      },
+      {
+        "ro": "RO2609001413",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Recall/TC",
+        "sa": "이정환",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 09:03",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 266,
-    "total_amt": 725543869,
+    "count": 269,
+    "total_amt": 728664651,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 13,
+        "count": 14,
         "amt": 10613300
       },
       {
         "stat": "상담완료",
-        "count": 128,
-        "amt": 502052150
+        "count": 127,
+        "amt": 499671725
       },
       {
         "stat": "정비시작",
-        "count": 24,
-        "amt": 31302212
+        "count": 22,
+        "amt": 32597433
       },
       {
         "stat": "End Control 요청",
-        "count": 23,
-        "amt": 74769060
+        "count": 28,
+        "amt": 78975046
       },
       {
         "stat": "공정마감",
@@ -37564,36 +37597,6 @@
         "val": 131476
       },
       {
-        "code": "SB2609001385",
-        "resv_full": "2026-09-23 09:40",
-        "resv": "09-23",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "34106889266",
-            "name": "Repair kit,",
-            "alois": "A5",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "val": 143072
-          },
-          {
-            "item": "34356888167",
-            "name": "Brake pad we",
-            "alois": "A4",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 4,
-            "val": 25220
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 168292
-      },
-      {
         "code": "SB2609001609",
         "resv_full": "2026-09-23 09:20",
         "resv": "09-23",
@@ -37729,12 +37732,12 @@
         "val": 5180
       }
     ],
-    "sb_count": 49,
-    "line_count": 163,
-    "total_val": 21950089,
+    "sb_count": 48,
+    "line_count": 161,
+    "total_val": 21781797,
     "o_lines": 26,
     "o_val": 6937869,
-    "resv_total": 340
+    "resv_total": 338
   },
   "sbcar": {
     "groups": [],
@@ -37743,7 +37746,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10233
+    "resv_total": 10235
   },
   "nonmng": {
     "rows": [],
