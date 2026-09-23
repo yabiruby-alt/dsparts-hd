@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 14:53 기준",
+    "generated_at": "9월 23일 (수) · 14:58 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1201489107,
+    "total": 1201151502,
     "item_count": 2203,
     "code_count": 25,
     "alois_groups": [
@@ -280,9 +280,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 214343542,
+            "val": 214323877,
             "pct": 17.84,
-            "qty": 2404,
+            "qty": 2403,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -341,8 +341,8 @@
               {
                 "item": "11428575211",
                 "name": "Set oil-filt",
-                "qty": 83,
-                "val": 1632195
+                "qty": 82,
+                "val": 1612530
               },
               {
                 "item": "61615A43610",
@@ -1513,7 +1513,7 @@
           {
             "code": "A5",
             "val": 68055047,
-            "pct": 5.66,
+            "pct": 5.67,
             "qty": 1345,
             "parts": [
               {
@@ -4815,9 +4815,9 @@
             ]
           }
         ],
-        "subtotal_val": 459251831,
-        "subtotal_qty": 8721,
-        "subtotal_pct": 38.22
+        "subtotal_val": 459232166,
+        "subtotal_qty": 8720,
+        "subtotal_pct": 38.23
       },
       {
         "code": "L",
@@ -4826,15 +4826,15 @@
         "rows": [
           {
             "code": "L1",
-            "val": 30494954,
-            "pct": 2.54,
-            "qty": 2078,
+            "val": 30414739,
+            "pct": 2.53,
+            "qty": 2073,
             "parts": [
               {
                 "item": "83215B49DD6",
                 "name": "LL-17FE+ 0W-20",
-                "qty": 642,
-                "val": 9809118
+                "qty": 636,
+                "val": 9728903
               },
               {
                 "item": "83212469985",
@@ -8283,8 +8283,8 @@
             ]
           }
         ],
-        "subtotal_val": 152709514,
-        "subtotal_qty": 4751,
+        "subtotal_val": 152629299,
+        "subtotal_qty": 4746,
         "subtotal_pct": 12.71
       },
       {
@@ -11052,9 +11052,9 @@
           },
           {
             "code": "OE",
-            "val": 299415680,
+            "val": 299329183,
             "pct": 24.92,
-            "qty": 818,
+            "qty": 817,
             "parts": [
               {
                 "item": "34505B6F947",
@@ -11119,8 +11119,8 @@
               {
                 "item": "64119382886",
                 "name": "MICROFILTER/",
-                "qty": 19,
-                "val": 1643443
+                "qty": 18,
+                "val": 1556946
               },
               {
                 "item": "90200007299",
@@ -12395,9 +12395,9 @@
             ]
           }
         ],
-        "subtotal_val": 437732368,
-        "subtotal_qty": 2380,
-        "subtotal_pct": 36.43
+        "subtotal_val": 437645871,
+        "subtotal_qty": 2379,
+        "subtotal_pct": 36.44
       },
       {
         "code": "I",
@@ -13178,9 +13178,9 @@
           },
           {
             "code": "SZ",
-            "val": 92815447,
-            "pct": 7.73,
-            "qty": 718,
+            "val": 92664219,
+            "pct": 7.71,
+            "qty": 716,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -13453,18 +13453,6 @@
                 "val": 234600
               },
               {
-                "item": "51145B4C7B3",
-                "name": "Adhesive fil",
-                "qty": 3,
-                "val": 226842
-              },
-              {
-                "item": "51145B75F93",
-                "name": "Adhesive fil",
-                "qty": 3,
-                "val": 226842
-              },
-              {
                 "item": "61355A5C898",
                 "name": "Drive power",
                 "qty": 1,
@@ -13513,7 +13501,19 @@
                 "val": 158081
               },
               {
+                "item": "51145B4C7B3",
+                "name": "Adhesive fil",
+                "qty": 2,
+                "val": 151228
+              },
+              {
                 "item": "51145B75F80",
+                "name": "Adhesive fil",
+                "qty": 2,
+                "val": 151228
+              },
+              {
+                "item": "51145B75F93",
                 "name": "Adhesive fil",
                 "qty": 2,
                 "val": 151228
@@ -13737,15 +13737,15 @@
             ]
           }
         ],
-        "subtotal_val": 143141462,
-        "subtotal_qty": 1866,
-        "subtotal_pct": 11.91
+        "subtotal_val": 142990234,
+        "subtotal_qty": 1864,
+        "subtotal_pct": 11.9
       }
     ]
   },
   "oaov": {
     "total": 70259178,
-    "inv_total": 1201489107,
+    "inv_total": 1201151502,
     "pct": 5.85,
     "oa_val": 38297560,
     "ov_val": 31961618,
@@ -22704,7 +22704,7 @@
         "ref_tp": "SB",
         "ref_no": "SB2609001591",
         "req_qty": 1,
-        "crt_qty": 19,
+        "crt_qty": 18,
         "avail_qty": 17,
         "req_dt": "09-22",
         "req_dt_full": "2026-09-22 09:06:30",
@@ -23802,25 +23802,25 @@
         "dday": "D+0일"
       },
       {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "alois": "OE",
+        "item": "11138592611",
+        "name": "ASA-Bolt",
+        "alois": "O8",
         "pgrp": "B1",
         "ref_tp": "RO",
-        "ref_no": "RO2609001462",
-        "req_qty": 1,
-        "crt_qty": 19,
-        "avail_qty": 17,
+        "ref_no": "RO2608001599",
+        "req_qty": 22,
+        "crt_qty": 9,
+        "avail_qty": 9,
         "req_dt": "09-23",
-        "req_dt_full": "2026-09-23 14:30:00",
+        "req_dt_full": "2026-09-23 14:57:11",
         "req_brch": "AS_부산(해운중동)",
-        "val": 86497,
-        "sa": "정용환",
+        "val": 29282,
+        "sa": "우상만",
         "dday": "D+0일"
       }
     ],
     "count": 326,
-    "total_val": 104089904,
+    "total_val": 104032689,
     "groups": [
       {
         "code": "RO",
@@ -27192,26 +27192,26 @@
             "dday": "D+0일"
           },
           {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
+            "item": "11138592611",
+            "name": "ASA-Bolt",
+            "alois": "O8",
             "pgrp": "B1",
             "ref_tp": "RO",
-            "ref_no": "RO2609001462",
-            "req_qty": 1,
-            "crt_qty": 19,
-            "avail_qty": 17,
+            "ref_no": "RO2608001599",
+            "req_qty": 22,
+            "crt_qty": 9,
+            "avail_qty": 9,
             "req_dt": "09-23",
-            "req_dt_full": "2026-09-23 14:30:00",
+            "req_dt_full": "2026-09-23 14:57:11",
             "req_brch": "AS_부산(해운중동)",
-            "val": 86497,
-            "sa": "정용환",
+            "val": 29282,
+            "sa": "우상만",
             "dday": "D+0일"
           }
         ],
         "count": 199,
-        "qty_sum": 251,
-        "val": 68997990
+        "qty_sum": 272,
+        "val": 68940775
       },
       {
         "code": "SB",
@@ -28516,7 +28516,7 @@
             "ref_tp": "SB",
             "ref_no": "SB2609001591",
             "req_qty": 1,
-            "crt_qty": 19,
+            "crt_qty": 18,
             "avail_qty": 17,
             "req_dt": "09-22",
             "req_dt_full": "2026-09-22 09:06:30",
@@ -29532,7 +29532,7 @@
         "name": "MICROFILTER/",
         "pgrp": "B1",
         "alois": "OE",
-        "qty": 19,
+        "qty": 18,
         "avail_qty": 17,
         "val": 1470449
       },
@@ -36701,7 +36701,7 @@
             "name": "MICROFILTER/",
             "pgrp": "B1",
             "alois": "OE",
-            "qty": 19,
+            "qty": 18,
             "avail_qty": 17,
             "val": 1470449
           },
@@ -37400,7 +37400,7 @@
           }
         ],
         "count": 87,
-        "qty_sum": 755,
+        "qty_sum": 754,
         "avail_sum": 742,
         "val": 291599392
       },
@@ -38547,7 +38547,7 @@
         "pub": "2026-08-26",
         "pub_full": "2026-08-26 09:36",
         "dday": "D+28일",
-        "amt": 5606249
+        "amt": 3423259
       },
       {
         "ro": "RO2608001605",
@@ -41521,28 +41521,50 @@
       },
       {
         "ro": "RO2609001475",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "경수리",
         "sa": "우종훈",
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 14:55",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 183040
+      },
+      {
+        "ro": "RO2609001476",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "우종훈",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 14:57",
+        "dday": "D+0일",
+        "amt": 159660
+      },
+      {
+        "ro": "RO2609001477",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "우종훈",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 14:59",
+        "dday": "D+0일",
+        "amt": 159660
       }
     ],
-    "count": 310,
-    "total_amt": 734739910,
+    "count": 312,
+    "total_amt": 733059280,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 16,
+        "count": 15,
         "amt": 10695500
       },
       {
         "stat": "상담완료",
-        "count": 138,
-        "amt": 472000392
+        "count": 141,
+        "amt": 470319762
       },
       {
         "stat": "정비시작",
@@ -42537,7 +42559,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 17,
-            "avail_qty": 10,
+            "avail_qty": 7,
             "val": 8322
           }
         ],
@@ -42569,7 +42591,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 17,
-            "avail_qty": 10,
+            "avail_qty": 7,
             "val": 8322
           }
         ],
@@ -44122,6 +44144,28 @@
         "val": 25515
       },
       {
+        "code": "SB2609001756",
+        "resv_full": "2026-10-02 10:00",
+        "resv": "10-02",
+        "dday": "D-9일",
+        "sa": "이정환",
+        "rows": [
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 17,
+            "avail_qty": 7,
+            "val": 8322
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 8322
+      },
+      {
         "code": "SB2609001632",
         "resv_full": "2026-10-02 09:20",
         "resv": "10-02",
@@ -44206,7 +44250,7 @@
             "alois": "OE",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 19,
+            "crt_qty": 18,
             "avail_qty": 17,
             "val": 86497
           },
@@ -44319,7 +44363,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 17,
-            "avail_qty": 10,
+            "avail_qty": 7,
             "val": 8322
           }
         ],
@@ -44348,6 +44392,28 @@
         "count": 1,
         "qty_sum": 1,
         "val": 218133
+      },
+      {
+        "code": "SB2609001758",
+        "resv_full": "2026-10-01 10:20",
+        "resv": "10-01",
+        "dday": "D-8일",
+        "sa": "우종훈",
+        "rows": [
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 17,
+            "avail_qty": 7,
+            "val": 8322
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 8322
       },
       {
         "code": "SB2609001481",
@@ -44531,7 +44597,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 17,
-            "avail_qty": 10,
+            "avail_qty": 7,
             "val": 8322
           }
         ],
@@ -44915,7 +44981,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 17,
-            "avail_qty": 10,
+            "avail_qty": 7,
             "val": 8322
           },
           {
@@ -45160,6 +45226,28 @@
         "val": 840610
       },
       {
+        "code": "SB2609001755",
+        "resv_full": "2026-09-29 09:00",
+        "resv": "09-29",
+        "dday": "D-6일",
+        "sa": "우종훈",
+        "rows": [
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 17,
+            "avail_qty": 7,
+            "val": 8322
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 8322
+      },
+      {
         "code": "SB2609001703",
         "resv_full": "2026-09-28 16:20",
         "resv": "09-28",
@@ -45281,7 +45369,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 17,
-            "avail_qty": 10,
+            "avail_qty": 7,
             "val": 8322
           }
         ],
@@ -45553,7 +45641,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 17,
-            "avail_qty": 10,
+            "avail_qty": 7,
             "val": 8322
           }
         ],
@@ -45656,12 +45744,12 @@
         "val": 648678
       }
     ],
-    "sb_count": 55,
-    "line_count": 224,
-    "total_val": 45184283,
+    "sb_count": 58,
+    "line_count": 227,
+    "total_val": 45209249,
     "o_lines": 50,
     "o_val": 16255388,
-    "resv_total": 333
+    "resv_total": 335
   },
   "sbcar": {
     "groups": [],
@@ -45670,7 +45758,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10290
+    "resv_total": 10292
   },
   "nonmng": {
     "rows": [],
@@ -47996,7 +48084,7 @@
         "item": "64119382886",
         "name": "MICROFILTER/",
         "alois": "OE",
-        "qty": 19,
+        "qty": 18,
         "no": 175
       },
       {
@@ -48148,7 +48236,7 @@
         "item": "11428575211",
         "name": "Set oil-filt",
         "alois": "A1",
-        "qty": 83,
+        "qty": 82,
         "no": 194
       },
       {
@@ -50636,7 +50724,7 @@
         "item": "83215B49DD6",
         "name": "LL-17FE+ 0W-20",
         "alois": "L1",
-        "qty": 642,
+        "qty": 636,
         "no": 505
       }
     ],

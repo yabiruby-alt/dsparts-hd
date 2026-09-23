@@ -610,7 +610,7 @@
         </div>
         <div class="tablewrap">
           <table>
-            <thead><tr><th>SB</th><th>부품번호</th><th>품명</th><th>ALOIS</th><th>담당SA</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가금액</th><th>디데이</th></tr></thead>
+            <thead><tr><th>SB</th><th>부품번호</th><th>품명</th><th>ALOIS</th><th>담당SA</th><th class="num">요청수량</th><th class="num">현재고</th><th class="num">가용재고</th><th class="num">원가금액</th><th>경과일</th></tr></thead>
             <tbody>
               {% for g in noshow.groups %}
               <tr class="grouphead open" data-group="ns-{{ g.code }}" onclick="toggleAloisGroup(this)"><td colspan="10"><span class="caret">▸</span>{{ g.code }} · 예약일 {{ g.resv }} · <span class="dday-cell dday-badge"{% if g.dday.startswith('D+') %} data-days="{{ g.dday[2:-1] }}"{% endif %}>{{ g.dday }}</span> · SA {{ g.sa }} ({{ g.count }}라인)<span class="hint"></span></td></tr>
