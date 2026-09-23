@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 10:41 기준",
+    "generated_at": "9월 23일 (수) · 10:50 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -38615,14 +38615,14 @@
       {
         "date": "09-22",
         "in_val": 20781039,
-        "out_val": 14450524,
-        "net": 6330515
+        "out_val": 14275700,
+        "net": 6505339
       },
       {
         "date": "09-23",
         "in_val": 11417816,
-        "out_val": 189655,
-        "net": 11228161
+        "out_val": 364479,
+        "net": 11053337
       }
     ],
     "total_in": 222498228,
@@ -40503,6 +40503,17 @@
         "amt": 687762
       },
       {
+        "ro": "RO2609001437",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-09-18",
+        "pub_full": "2026-09-18 12:48",
+        "dday": "D+5일",
+        "amt": 649068
+      },
+      {
         "ro": "RO2609001184",
         "stat": "가정산 완료",
         "stat_cd": "05",
@@ -40511,7 +40522,7 @@
         "pub": "2026-09-18",
         "pub_full": "2026-09-18 12:48",
         "dday": "D+5일",
-        "amt": 1120468
+        "amt": 1051700
       },
       {
         "ro": "RO2609001198",
@@ -41593,8 +41604,8 @@
       },
       {
         "ro": "RO2609001412",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "중수리",
         "sa": "이정환",
         "pub": "2026-09-23",
@@ -41637,8 +41648,8 @@
       },
       {
         "ro": "RO2609001416",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "입고 Proactive-RITA",
         "sa": "이정환",
         "pub": "2026-09-23",
@@ -41802,14 +41813,14 @@
       },
       {
         "ro": "RO2609001434",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
-        "sa": "김도현",
+        "sa": "이정환",
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 10:20",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 646682
       },
       {
         "ro": "RO2609001435",
@@ -41823,28 +41834,28 @@
         "amt": 105813
       }
     ],
-    "count": 287,
-    "total_amt": 741137182,
+    "count": 288,
+    "total_amt": 742364164,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 17,
+        "count": 16,
         "amt": 25441100
       },
       {
         "stat": "상담완료",
-        "count": 132,
-        "amt": 497942275
+        "count": 131,
+        "amt": 496507262
       },
       {
         "stat": "정비시작",
-        "count": 28,
-        "amt": 39385057
+        "count": 30,
+        "amt": 41466752
       },
       {
         "stat": "End Control 요청",
-        "count": 26,
-        "amt": 74690159
+        "count": 27,
+        "amt": 75339227
       },
       {
         "stat": "공정마감",
@@ -41854,7 +41865,7 @@
       {
         "stat": "가정산 완료",
         "count": 83,
-        "amt": 103175691
+        "amt": 103106923
       }
     ],
     "oldest": "D+519일"
@@ -42822,7 +42833,7 @@
             "alois": "L1",
             "req_qty": 2,
             "crt_qty": 132,
-            "avail_qty": 124,
+            "avail_qty": 123,
             "val": 22684
           }
         ],
@@ -42996,7 +43007,7 @@
             "alois": "L1",
             "req_qty": 1,
             "crt_qty": 132,
-            "avail_qty": 124,
+            "avail_qty": 123,
             "val": 11342
           }
         ],
@@ -43010,7 +43021,7 @@
     "total_val": 12368568,
     "o_lines": 29,
     "o_val": 5959432,
-    "resv_total": 12027
+    "resv_total": 12028
   },
   "sbresv": {
     "groups": [
@@ -44136,7 +44147,7 @@
             "name": "LL-01FE 0W-30",
             "alois": "L1",
             "req_qty": 10,
-            "crt_qty": 175,
+            "crt_qty": 168,
             "avail_qty": 129,
             "val": 153120
           },
@@ -44383,7 +44394,7 @@
             "alois": "L1",
             "req_qty": 2,
             "crt_qty": 132,
-            "avail_qty": 124,
+            "avail_qty": 123,
             "val": 22684
           },
           {
@@ -45051,7 +45062,7 @@
             "name": "LL-01FE 0W-30",
             "alois": "L1",
             "req_qty": 10,
-            "crt_qty": 175,
+            "crt_qty": 168,
             "avail_qty": 129,
             "val": 160776
           },
@@ -45652,7 +45663,7 @@
             "alois": "L1",
             "req_qty": 5,
             "crt_qty": 667,
-            "avail_qty": 658,
+            "avail_qty": 652,
             "val": 80215
           },
           {
@@ -45661,7 +45672,7 @@
             "alois": "A2",
             "req_qty": 1,
             "crt_qty": 19,
-            "avail_qty": 18,
+            "avail_qty": 17,
             "val": 32086
           },
           {
@@ -45670,7 +45681,7 @@
             "alois": "A1",
             "req_qty": 1,
             "crt_qty": 88,
-            "avail_qty": 87,
+            "avail_qty": 86,
             "val": 19665
           }
         ],
@@ -45727,7 +45738,7 @@
             "alois": "L1",
             "req_qty": 1,
             "crt_qty": 132,
-            "avail_qty": 124,
+            "avail_qty": 123,
             "val": 11342
           }
         ],
@@ -45805,7 +45816,7 @@
             "alois": "L1",
             "req_qty": 1,
             "crt_qty": 132,
-            "avail_qty": 124,
+            "avail_qty": 123,
             "val": 11342
           }
         ],
@@ -45819,7 +45830,7 @@
     "total_val": 46060203,
     "o_lines": 50,
     "o_val": 16255388,
-    "resv_total": 332
+    "resv_total": 334
   },
   "sbcar": {
     "groups": [],
