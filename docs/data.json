@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 15:35 기준",
+    "generated_at": "9월 23일 (수) · 15:49 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1200309957,
+    "total": 1200240957,
     "item_count": 2193,
     "code_count": 25,
     "alois_groups": [
@@ -13048,9 +13048,9 @@
           },
           {
             "code": "SX",
-            "val": 7184797,
-            "pct": 0.6,
-            "qty": 202,
+            "val": 7115797,
+            "pct": 0.59,
+            "qty": 201,
             "parts": [
               {
                 "item": "64115B78AA5",
@@ -13085,8 +13085,8 @@
               {
                 "item": "99975BBD7D3",
                 "name": "BMW AMBERNES",
-                "qty": 3,
-                "val": 207000
+                "qty": 2,
+                "val": 138000
               },
               {
                 "item": "99975BA0896",
@@ -13677,15 +13677,15 @@
             ]
           }
         ],
-        "subtotal_val": 142065541,
-        "subtotal_qty": 1854,
-        "subtotal_pct": 11.84
+        "subtotal_val": 141996541,
+        "subtotal_qty": 1853,
+        "subtotal_pct": 11.83
       }
     ]
   },
   "oaov": {
     "total": 70259178,
-    "inv_total": 1200309957,
+    "inv_total": 1200240957,
     "pct": 5.85,
     "oa_val": 38297560,
     "ov_val": 31961618,
@@ -40929,8 +40929,8 @@
       },
       {
         "ro": "RO2609001415",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-23",
@@ -41138,8 +41138,8 @@
       },
       {
         "ro": "RO2609001441",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-23",
@@ -41244,7 +41244,7 @@
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 13:24",
         "dday": "D+0일",
-        "amt": 506900
+        "amt": 1013500
       },
       {
         "ro": "RO2609001453",
@@ -41390,17 +41390,6 @@
         "amt": 183040
       },
       {
-        "ro": "RO2609001468",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "안준영",
-        "pub": "2026-09-23",
-        "pub_full": "2026-09-23 14:38",
-        "dday": "D+0일",
-        "amt": 90000
-      },
-      {
         "ro": "RO2609001467",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -41410,6 +41399,17 @@
         "pub_full": "2026-09-23 14:38",
         "dday": "D+0일",
         "amt": 183040
+      },
+      {
+        "ro": "RO2609001468",
+        "stat": "정비시작",
+        "stat_cd": "03",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 14:38",
+        "dday": "D+0일",
+        "amt": 90000
       },
       {
         "ro": "RO2609001469",
@@ -41599,39 +41599,50 @@
         "amt": 183040
       },
       {
+        "ro": "RO2609001487",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "김민규",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 15:37",
+        "dday": "D+0일",
+        "amt": 37628
+      },
+      {
         "ro": "RO2609001486",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "경수리",
         "sa": "우종훈",
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 15:37",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 171420
       }
     ],
-    "count": 321,
-    "total_amt": 742731005,
+    "count": 322,
+    "total_amt": 743446653,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 16,
+        "count": 15,
         "amt": 10695500
       },
       {
         "stat": "상담완료",
-        "count": 148,
-        "amt": 479203166
+        "count": 149,
+        "amt": 479828814
       },
       {
         "stat": "정비시작",
         "count": 34,
-        "amt": 53038493
+        "amt": 51629893
       },
       {
         "stat": "End Control 요청",
         "count": 30,
-        "amt": 53974646
+        "amt": 55434516
       },
       {
         "stat": "공정마감",
@@ -41640,8 +41651,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 91,
-        "amt": 141373400
+        "count": 92,
+        "amt": 141412130
       }
     ],
     "oldest": "D+519일"
@@ -45804,7 +45815,7 @@
     "total_val": 46713483,
     "o_lines": 50,
     "o_val": 16255388,
-    "resv_total": 350
+    "resv_total": 352
   },
   "sbcar": {
     "groups": [],
@@ -48587,7 +48598,7 @@
         "item": "99975BBD7D3",
         "name": "BMW AMBERNES",
         "alois": "SX",
-        "qty": 3,
+        "qty": 2,
         "no": 232
       },
       {
