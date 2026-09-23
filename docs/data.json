@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 12:52 기준",
+    "generated_at": "9월 23일 (수) · 13:10 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,8 +269,8 @@
     ]
   },
   "inv": {
-    "total": 1209368486,
-    "item_count": 2218,
+    "total": 1209774050,
+    "item_count": 2219,
     "code_count": 25,
     "alois_groups": [
       {
@@ -372,9 +372,9 @@
           },
           {
             "code": "A2",
-            "val": 16368083,
+            "val": 16365422,
             "pct": 1.35,
-            "qty": 1188,
+            "qty": 1185,
             "parts": [
               {
                 "item": "34216890353",
@@ -571,8 +571,8 @@
               {
                 "item": "51161881149",
                 "name": "RIVET",
-                "qty": 40,
-                "val": 35480
+                "qty": 37,
+                "val": 32819
               },
               {
                 "item": "07149807127",
@@ -1513,7 +1513,7 @@
           {
             "code": "A5",
             "val": 68160444,
-            "pct": 5.64,
+            "pct": 5.63,
             "qty": 1346,
             "parts": [
               {
@@ -4815,9 +4815,9 @@
             ]
           }
         ],
-        "subtotal_val": 460586145,
-        "subtotal_qty": 8752,
-        "subtotal_pct": 38.08
+        "subtotal_val": 460583484,
+        "subtotal_qty": 8749,
+        "subtotal_pct": 38.07
       },
       {
         "code": "L",
@@ -5601,7 +5601,7 @@
           {
             "code": "L7",
             "val": 63679328,
-            "pct": 5.27,
+            "pct": 5.26,
             "qty": 1405,
             "parts": [
               {
@@ -8297,7 +8297,7 @@
         ],
         "subtotal_val": 155465321,
         "subtotal_qty": 4809,
-        "subtotal_pct": 12.86
+        "subtotal_pct": 12.85
       },
       {
         "code": "O",
@@ -10445,7 +10445,7 @@
           {
             "code": "OA",
             "val": 38398488,
-            "pct": 3.18,
+            "pct": 3.17,
             "qty": 230,
             "parts": [
               {
@@ -11083,7 +11083,7 @@
           {
             "code": "OE",
             "val": 299696373,
-            "pct": 24.78,
+            "pct": 24.77,
             "qty": 821,
             "parts": [
               {
@@ -12433,7 +12433,7 @@
         ],
         "subtotal_val": 439022538,
         "subtotal_qty": 2389,
-        "subtotal_pct": 36.3
+        "subtotal_pct": 36.29
       },
       {
         "code": "I",
@@ -12442,9 +12442,9 @@
         "rows": [
           {
             "code": "II",
-            "val": 8780547,
-            "pct": 0.73,
-            "qty": 57,
+            "val": 9188772,
+            "pct": 0.76,
+            "qty": 58,
             "parts": [
               {
                 "item": "65505A42087",
@@ -12469,6 +12469,12 @@
                 "name": "Side panel,",
                 "qty": 1,
                 "val": 509772
+              },
+              {
+                "item": "63217421114",
+                "name": "Tail light L",
+                "qty": 1,
+                "val": 408225
               },
               {
                 "item": "31336788776",
@@ -12671,9 +12677,9 @@
             ]
           }
         ],
-        "subtotal_val": 8780547,
-        "subtotal_qty": 57,
-        "subtotal_pct": 0.73
+        "subtotal_val": 9188772,
+        "subtotal_qty": 58,
+        "subtotal_pct": 0.76
       },
       {
         "code": "S",
@@ -13263,7 +13269,7 @@
           {
             "code": "SZ",
             "val": 93571587,
-            "pct": 7.74,
+            "pct": 7.73,
             "qty": 728,
             "parts": [
               {
@@ -13835,7 +13841,7 @@
   },
   "oaov": {
     "total": 70533827,
-    "inv_total": 1209368486,
+    "inv_total": 1209774050,
     "pct": 5.83,
     "oa_val": 38398488,
     "ov_val": 32135339,
@@ -15786,16 +15792,16 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 27653176,
-    "cost": 27555756,
-    "lines": 279,
-    "invoices_count": 163,
+    "total": 27826711,
+    "cost": 27729291,
+    "lines": 281,
+    "invoices_count": 164,
     "by_type": [
       {
         "code": "3",
         "label": "Car Accessories",
-        "lines": 100,
-        "val": 10356463
+        "lines": 101,
+        "val": 10460998
       },
       {
         "code": "5",
@@ -15806,11 +15812,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 179,
-        "val": 17296713
+        "lines": 180,
+        "val": 17365713
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2609002460",
+        "num": "RO2609001034",
+        "sa": "이정환",
+        "dt": "2026-09-23 12:55",
+        "amt": 173535,
+        "cost": 173535
+      },
       {
         "inv": "AR2609003779",
         "num": "SP2609000090",
@@ -15842,14 +15856,6 @@
         "dt": "2026-09-23 10:56",
         "amt": 35400,
         "cost": 35400
-      },
-      {
-        "inv": "IV2609002400",
-        "num": "RO2609001387",
-        "sa": "최민수",
-        "dt": "2026-09-23 08:29",
-        "amt": 0,
-        "cost": 7080
       }
     ]
   },
@@ -23923,10 +23929,27 @@
         "val": 104535,
         "sa": "김민규",
         "dday": "D+0일"
+      },
+      {
+        "item": "61627442093",
+        "name": "Wiper blade F40 G05 Rear",
+        "alois": "OE",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001447",
+        "req_qty": 1,
+        "crt_qty": 9,
+        "avail_qty": 8,
+        "req_dt": "09-23",
+        "req_dt_full": "2026-09-23 13:08:15",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 23596,
+        "sa": "우상만",
+        "dday": "D+0일"
       }
     ],
-    "count": 326,
-    "total_val": 104402131,
+    "count": 327,
+    "total_val": 104425727,
     "groups": [
       {
         "code": "RO",
@@ -27313,11 +27336,28 @@
             "val": 104535,
             "sa": "김민규",
             "dday": "D+0일"
+          },
+          {
+            "item": "61627442093",
+            "name": "Wiper blade F40 G05 Rear",
+            "alois": "OE",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001447",
+            "req_qty": 1,
+            "crt_qty": 9,
+            "avail_qty": 8,
+            "req_dt": "09-23",
+            "req_dt_full": "2026-09-23 13:08:15",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 23596,
+            "sa": "우상만",
+            "dday": "D+0일"
           }
         ],
-        "count": 199,
-        "qty_sum": 250,
-        "val": 69310217
+        "count": 200,
+        "qty_sum": 251,
+        "val": 69333813
       },
       {
         "code": "SB",
@@ -30444,15 +30484,6 @@
         "val": 217456
       },
       {
-        "item": "61627442093",
-        "name": "Wiper blade F40 G05 Rear",
-        "pgrp": "B1",
-        "alois": "OE",
-        "qty": 9,
-        "avail_qty": 9,
-        "val": 212364
-      },
-      {
         "item": "34116858652",
         "name": "Brake disc,",
         "pgrp": "M1",
@@ -30550,6 +30581,15 @@
         "qty": 2,
         "avail_qty": 2,
         "val": 189112
+      },
+      {
+        "item": "61627442093",
+        "name": "Wiper blade F40 G05 Rear",
+        "pgrp": "B1",
+        "alois": "OE",
+        "qty": 9,
+        "avail_qty": 8,
+        "val": 188768
       },
       {
         "item": "36115A96C26",
@@ -37217,15 +37257,6 @@
             "val": 231900
           },
           {
-            "item": "61627442093",
-            "name": "Wiper blade F40 G05 Rear",
-            "pgrp": "B1",
-            "alois": "OE",
-            "qty": 9,
-            "avail_qty": 9,
-            "val": 212364
-          },
-          {
             "item": "61315A98D96",
             "name": "Touch contro",
             "pgrp": "B1",
@@ -37242,6 +37273,15 @@
             "qty": 17,
             "avail_qty": 17,
             "val": 191913
+          },
+          {
+            "item": "61627442093",
+            "name": "Wiper blade F40 G05 Rear",
+            "pgrp": "B1",
+            "alois": "OE",
+            "qty": 9,
+            "avail_qty": 8,
+            "val": 188768
           },
           {
             "item": "90200006978",
@@ -37543,8 +37583,8 @@
         ],
         "count": 87,
         "qty_sum": 758,
-        "avail_sum": 746,
-        "val": 291966582
+        "avail_sum": 745,
+        "val": 291942986
       },
       {
         "code": "ON",
@@ -38079,7 +38119,7 @@
       }
     ],
     "count": 474,
-    "total_val": 356942730
+    "total_val": 356919134
   },
   "oflow": {
     "rows": [
@@ -38218,19 +38258,19 @@
       {
         "date": "09-23",
         "in_val": 11417816,
-        "out_val": 485297,
-        "net": 10932519
+        "out_val": 2401646,
+        "net": 9016170
       }
     ],
     "total_in": 222498228,
-    "total_out": 203950350,
-    "net": 18547878,
+    "total_out": 205866699,
+    "net": 16631529,
     "by_code": [
       {
         "code": "O8",
         "in_val": 180863373,
-        "out_val": 162763595,
-        "net": 18099778
+        "out_val": 164679944,
+        "net": 16183429
       },
       {
         "code": "OA",
@@ -38868,17 +38908,6 @@
         "amt": 949400
       },
       {
-        "ro": "RO2608001840",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "우종훈",
-        "pub": "2026-08-31",
-        "pub_full": "2026-08-31 07:17",
-        "dday": "D+23일",
-        "amt": 3103674
-      },
-      {
         "ro": "RO2608001841",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -39122,8 +39151,8 @@
       },
       {
         "ro": "RO2609000545",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-08",
@@ -40497,8 +40526,8 @@
       },
       {
         "ro": "RO2609001318",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "사고수리",
         "sa": "박영묵",
         "pub": "2026-09-21",
@@ -41003,8 +41032,8 @@
       },
       {
         "ro": "RO2609001400",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-09-22",
@@ -41396,10 +41425,43 @@
         "pub_full": "2026-09-23 12:04",
         "dday": "D+0일",
         "amt": 264900
+      },
+      {
+        "ro": "RO2609001446",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 13:02",
+        "dday": "D+0일",
+        "amt": 56000
+      },
+      {
+        "ro": "RO2609001445",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 13:02",
+        "dday": "D+0일",
+        "amt": 743661
+      },
+      {
+        "ro": "RO2609001447",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우상만",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 13:03",
+        "dday": "D+0일",
+        "amt": 188769
       }
     ],
-    "count": 285,
-    "total_amt": 734010323,
+    "count": 287,
+    "total_amt": 731895079,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -41408,18 +41470,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 128,
-        "amt": 496509269
+        "count": 130,
+        "amt": 492221161
       },
       {
         "stat": "정비시작",
-        "count": 28,
-        "amt": 38896446
+        "count": 29,
+        "amt": 44789646
       },
       {
         "stat": "End Control 요청",
-        "count": 22,
-        "amt": 39485700
+        "count": 21,
+        "amt": 38162186
       },
       {
         "stat": "공정마감",
@@ -41429,7 +41491,7 @@
       {
         "stat": "가정산 완료",
         "count": 90,
-        "amt": 143977608
+        "amt": 141580786
       }
     ],
     "oldest": "D+519일"
@@ -44417,7 +44479,7 @@
             "alois": "A2",
             "req_qty": 2,
             "crt_qty": 42,
-            "avail_qty": 28,
+            "avail_qty": 32,
             "val": 10538
           },
           {
@@ -45325,65 +45387,16 @@
     "total_val": 44767150,
     "o_lines": 50,
     "o_val": 16255388,
-    "resv_total": 341
+    "resv_total": 340
   },
   "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609001679",
-        "resv_full": "2026-09-23 12:56",
-        "resv": "09-23",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "64115B78AA5",
-            "name": "Set nanopart",
-            "alois": "SX",
-            "req_qty": 1,
-            "crt_qty": 30,
-            "avail_qty": 28,
-            "val": 156975
-          },
-          {
-            "item": "83215A65B99",
-            "name": "LL-22FE++ 0W12",
-            "alois": "L1",
-            "req_qty": 6,
-            "crt_qty": 329,
-            "avail_qty": 322,
-            "val": 97456
-          },
-          {
-            "item": "64115A13762",
-            "name": "Fine-dust fi",
-            "alois": "A2",
-            "req_qty": 1,
-            "crt_qty": 14,
-            "avail_qty": 13,
-            "val": 84663
-          },
-          {
-            "item": "11425B95014",
-            "name": "Set oil-filt",
-            "alois": "SX",
-            "req_qty": 1,
-            "crt_qty": 44,
-            "avail_qty": 43,
-            "val": 20134
-          }
-        ],
-        "count": 4,
-        "qty_sum": 9,
-        "val": 359228
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 4,
-    "total_val": 359228,
+    "groups": [],
+    "sb_count": 0,
+    "line_count": 0,
+    "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10262
+    "resv_total": 10265
   },
   "nonmng": {
     "rows": [],
@@ -47397,7 +47410,7 @@
         "item": "51161881149",
         "name": "RIVET",
         "alois": "A2",
-        "qty": 40,
+        "qty": 37,
         "no": 125
       },
       {
