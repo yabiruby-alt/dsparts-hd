@@ -1196,12 +1196,12 @@
         </div>
         <div class="tablewrap">
           <table class="stockcheck-table">
-            <thead><tr><th class="num">NO.</th><th>LOCATION</th><th>부품번호</th><th>부품명</th><th class="num">현재고</th><th class="num chk">실수량</th></tr></thead>
+            <thead><tr><th class="num">NO.</th><th>LOCATION</th><th>부품번호</th><th>부품명</th><th>ALOIS</th><th class="num">현재고</th><th class="num chk">실수량</th></tr></thead>
             <tbody>
               {% for r in stockcheck.rows %}
-              <tr><td class="num">{{ r.no }}</td><td class="mono">{{ r.loc }}</td><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="num">{{ r.qty }}</td><td class="num chk"></td></tr>
+              <tr><td class="num">{{ r.no }}</td><td class="mono">{{ r.loc }}</td><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono">{{ r.alois }}</td><td class="num">{{ r.qty }}</td><td class="num chk"></td></tr>
               {% else %}
-              <tr><td colspan="6" class="empty-note">오늘 입고된 부품 중 현재고가 남아있는 품목 없음</td></tr>
+              <tr><td colspan="7" class="empty-note">오늘 입고된 부품 중 현재고가 남아있는 품목 없음</td></tr>
               {% endfor %}
             </tbody>
           </table>
@@ -1224,12 +1224,12 @@
         </div>
         <div class="tablewrap">
           <table class="stockcheck-table">
-            <thead><tr><th class="num">NO.</th><th>LOCATION</th><th>부품번호</th><th>부품명</th><th class="num">현재고</th><th class="num chk">실수량</th></tr></thead>
+            <thead><tr><th class="num">NO.</th><th>LOCATION</th><th>부품번호</th><th>부품명</th><th>ALOIS</th><th class="num">현재고</th><th class="num chk">실수량</th></tr></thead>
             <tbody>
               {% for r in stockcheck_week.rows %}
-              <tr><td class="num">{{ r.no }}</td><td class="mono">{{ r.loc }}</td><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="num">{{ r.qty }}</td><td class="num chk"></td></tr>
+              <tr><td class="num">{{ r.no }}</td><td class="mono">{{ r.loc }}</td><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td class="mono">{{ r.alois }}</td><td class="num">{{ r.qty }}</td><td class="num chk"></td></tr>
               {% else %}
-              <tr><td colspan="6" class="empty-note">지난주 출고된 부품 중 현재고가 남아있는 품목 없음</td></tr>
+              <tr><td colspan="7" class="empty-note">지난주 출고된 부품 중 현재고가 남아있는 품목 없음</td></tr>
               {% endfor %}
             </tbody>
           </table>
