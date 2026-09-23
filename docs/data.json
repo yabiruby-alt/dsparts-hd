@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 11:34 기준",
+    "generated_at": "9월 23일 (수) · 11:56 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,8 +269,8 @@
     ]
   },
   "inv": {
-    "total": 1208790728,
-    "item_count": 2221,
+    "total": 1208649070,
+    "item_count": 2220,
     "code_count": 25,
     "alois_groups": [
       {
@@ -281,7 +281,7 @@
           {
             "code": "A1",
             "val": 215083577,
-            "pct": 17.79,
+            "pct": 17.8,
             "qty": 2421,
             "parts": [
               {
@@ -2720,9 +2720,9 @@
           },
           {
             "code": "A6",
-            "val": 96482708,
+            "val": 96429185,
             "pct": 7.98,
-            "qty": 1500,
+            "qty": 1499,
             "parts": [
               {
                 "item": "63119450229",
@@ -3649,12 +3649,6 @@
                 "val": 108416
               },
               {
-                "item": "13717800151",
-                "name": "Filter elmnt",
-                "qty": 2,
-                "val": 107046
-              },
-              {
                 "item": "34206885600",
                 "name": "Repair kit,",
                 "qty": 1,
@@ -3977,6 +3971,12 @@
                 "name": "Right finish",
                 "qty": 1,
                 "val": 55553
+              },
+              {
+                "item": "13717800151",
+                "name": "Filter elmnt",
+                "qty": 1,
+                "val": 53523
               },
               {
                 "item": "24115A13225",
@@ -4815,8 +4815,8 @@
             ]
           }
         ],
-        "subtotal_val": 460639668,
-        "subtotal_qty": 8753,
+        "subtotal_val": 460586145,
+        "subtotal_qty": 8752,
         "subtotal_pct": 38.11
       },
       {
@@ -4826,9 +4826,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 31298379,
+            "val": 31314779,
             "pct": 2.59,
-            "qty": 2133,
+            "qty": 2134,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4869,8 +4869,8 @@
               {
                 "item": "83195A42DF3",
                 "name": "HT-12 Anti-freeze",
-                "qty": 112,
-                "val": 1836800
+                "qty": 113,
+                "val": 1853200
               },
               {
                 "item": "83135A82511",
@@ -8289,8 +8289,8 @@
             ]
           }
         ],
-        "subtotal_val": 154577609,
-        "subtotal_qty": 4807,
+        "subtotal_val": 154594009,
+        "subtotal_qty": 4808,
         "subtotal_pct": 12.79
       },
       {
@@ -8300,9 +8300,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 64629790,
-            "pct": 5.35,
-            "qty": 1130,
+            "val": 64525255,
+            "pct": 5.34,
+            "qty": 1129,
             "parts": [
               {
                 "item": "17425A18806",
@@ -8891,12 +8891,6 @@
                 "name": "Venting line",
                 "qty": 1,
                 "val": 105300
-              },
-              {
-                "item": "36122455269",
-                "name": "Hub cap fixe",
-                "qty": 1,
-                "val": 104535
               },
               {
                 "item": "11148490570",
@@ -11095,7 +11089,7 @@
           {
             "code": "OE",
             "val": 299696373,
-            "pct": 24.79,
+            "pct": 24.8,
             "qty": 821,
             "parts": [
               {
@@ -12443,8 +12437,8 @@
             ]
           }
         ],
-        "subtotal_val": 439209969,
-        "subtotal_qty": 2393,
+        "subtotal_val": 439105434,
+        "subtotal_qty": 2392,
         "subtotal_pct": 36.33
       },
       {
@@ -13847,13 +13841,13 @@
         ],
         "subtotal_val": 145582935,
         "subtotal_qty": 1885,
-        "subtotal_pct": 12.04
+        "subtotal_pct": 12.05
       }
     ]
   },
   "oaov": {
     "total": 70533827,
-    "inv_total": 1208790728,
+    "inv_total": 1208649070,
     "pct": 5.84,
     "oa_val": 38398488,
     "ov_val": 32135339,
@@ -15663,13 +15657,21 @@
   },
   "ext": {
     "period": "2026-09-01 ~ 2026-09-23",
-    "total": 6340442,
-    "cost": 5387167,
-    "margin": 953275,
-    "valid_count": 13,
+    "total": 6633496,
+    "cost": 5680236,
+    "margin": 953260,
+    "valid_count": 14,
     "cancelled_count": 2,
-    "lines": 30,
+    "lines": 32,
     "top5": [
+      {
+        "inv": "AR2609003779",
+        "num": "SP2609000090",
+        "cust": "무인아이스빨래방",
+        "dt": "2026-09-23 11:38",
+        "amt": 293054,
+        "cost": 293069
+      },
       {
         "inv": "AR2609003777",
         "num": "SP2609000085",
@@ -15796,10 +15798,10 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 27360122,
-    "cost": 27262687,
-    "lines": 271,
-    "invoices_count": 161,
+    "total": 27653176,
+    "cost": 27555756,
+    "lines": 279,
+    "invoices_count": 163,
     "by_type": [
       {
         "code": "3",
@@ -15816,11 +15818,27 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 171,
-        "val": 17003659
+        "lines": 179,
+        "val": 17296713
       }
     ],
     "recent5": [
+      {
+        "inv": "AR2609003779",
+        "num": "SP2609000090",
+        "sa": "조재완",
+        "dt": "2026-09-23 11:38",
+        "amt": 293054,
+        "cost": 293069
+      },
+      {
+        "inv": "AR2609003778",
+        "num": "SP2609000021",
+        "sa": "박태강",
+        "dt": "2026-09-23 11:36",
+        "amt": 0,
+        "cost": 0
+      },
       {
         "inv": "AR2609003777",
         "num": "SP2609000085",
@@ -15844,22 +15862,6 @@
         "dt": "2026-09-23 08:29",
         "amt": 0,
         "cost": 7080
-      },
-      {
-        "inv": "IV2609002387",
-        "num": "RO2609001123",
-        "sa": "김민규",
-        "dt": "2026-09-22 20:23",
-        "amt": 0,
-        "cost": 8250
-      },
-      {
-        "inv": "IV2609002374",
-        "num": "RO2608001682",
-        "sa": "김민규",
-        "dt": "2026-09-22 19:56",
-        "amt": 69000,
-        "cost": 69000
       }
     ]
   },
@@ -19531,8 +19533,8 @@
         "ref_tp": "SB",
         "ref_no": "SB2608001868",
         "req_qty": 4,
-        "crt_qty": 23,
-        "avail_qty": 19,
+        "crt_qty": 4,
+        "avail_qty": 0,
         "req_dt": "08-27",
         "req_dt_full": "2026-08-27 14:14:01",
         "req_brch": "AS_부산(해운중동)",
@@ -22975,23 +22977,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "11617633493",
-        "name": "Seal for int",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001334",
-        "req_qty": 3,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 09:14:01",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 24084,
-        "sa": "우종훈",
-        "dday": "D+1일"
-      },
-      {
         "item": "51777475350",
         "name": "Trim, wheel",
         "alois": "O8",
@@ -23074,57 +23059,6 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 49192,
         "sa": "박영묵",
-        "dday": "D+1일"
-      },
-      {
-        "item": "51115A45EE1",
-        "name": "Cover for to",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001969",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 09:54:05",
-        "req_brch": "AS_창원",
-        "val": 35100,
-        "sa": "김민주",
-        "dday": "D+1일"
-      },
-      {
-        "item": "18308581218",
-        "name": "MUFFLER CLAM",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001284",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 09:55:10",
-        "req_brch": "AS_창원",
-        "val": 34350,
-        "sa": "박선묵",
-        "dday": "D+1일"
-      },
-      {
-        "item": "33205A31900",
-        "name": "Dust guard r",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609002012",
-        "req_qty": 1,
-        "crt_qty": 2,
-        "avail_qty": 1,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 09:56:01",
-        "req_brch": "AS_창원",
-        "val": 13446,
-        "sa": "김길성",
         "dday": "D+1일"
       },
       {
@@ -23553,125 +23487,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "07119905529",
-        "name": "Bolt",
-        "alois": "O8",
-        "pgrp": "-",
-        "ref_tp": "RO",
-        "ref_no": "RO2608001599",
-        "req_qty": 2,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 16:12:15",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 2628,
-        "sa": "우상만",
-        "dday": "D+1일"
-      },
-      {
-        "item": "07129904865",
-        "name": "Hex nut",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2608001599",
-        "req_qty": 1,
-        "crt_qty": 2,
-        "avail_qty": 0,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 16:12:15",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 1095,
-        "sa": "우상만",
-        "dday": "D+1일"
-      },
-      {
-        "item": "17227613656",
-        "name": "O-ring",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2608001599",
-        "req_qty": 4,
-        "crt_qty": 6,
-        "avail_qty": 2,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 16:12:15",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 15476,
-        "sa": "우상만",
-        "dday": "D+1일"
-      },
-      {
-        "item": "26117540333",
-        "name": "Hex bolt",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2608001599",
-        "req_qty": 3,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 16:12:15",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 15762,
-        "sa": "우상만",
-        "dday": "D+1일"
-      },
-      {
-        "item": "11148664904",
-        "name": "Shaft seal",
-        "alois": "O8",
-        "pgrp": "-",
-        "ref_tp": "RO",
-        "ref_no": "RO2608001599",
-        "req_qty": 1,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 16:12:15",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 31595,
-        "sa": "우상만",
-        "dday": "D+1일"
-      },
-      {
-        "item": "07149229516",
-        "name": "bolt",
-        "alois": "O8",
-        "pgrp": "-",
-        "ref_tp": "RO",
-        "ref_no": "RO2608001599",
-        "req_qty": 18,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 16:12:16",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 59400,
-        "sa": "우상만",
-        "dday": "D+1일"
-      },
-      {
-        "item": "18308053348",
-        "name": "Gasket",
-        "alois": "O8",
-        "pgrp": "-",
-        "ref_tp": "RO",
-        "ref_no": "RO2608001599",
-        "req_qty": 3,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 16:12:16",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 64386,
-        "sa": "우상만",
-        "dday": "D+1일"
-      },
-      {
         "item": "51115A1BFC8",
         "name": "Trim air inl",
         "alois": "O8",
@@ -23961,23 +23776,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "36122455269",
-        "name": "Hub cap fixe",
-        "alois": "O8",
-        "pgrp": "B3",
-        "ref_tp": "RO",
-        "ref_no": "RO2608001644",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-23",
-        "req_dt_full": "2026-09-23 07:21:38",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 104535,
-        "sa": "김민규",
-        "dday": "D+0일"
-      },
-      {
         "item": "07145A445B0",
         "name": "Clip ball at",
         "alois": "O8",
@@ -24129,10 +23927,27 @@
         "val": 20003,
         "sa": "염진아",
         "dday": "D+0일"
+      },
+      {
+        "item": "36122455269",
+        "name": "Hub cap fixe",
+        "alois": "O8",
+        "pgrp": "B3",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001442",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-23",
+        "req_dt_full": "2026-09-23 11:55:57",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 104535,
+        "sa": "김민규",
+        "dday": "D+0일"
       }
     ],
-    "count": 337,
-    "total_val": 104699453,
+    "count": 326,
+    "total_val": 104402131,
     "groups": [
       {
         "code": "RO",
@@ -26654,23 +26469,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "11617633493",
-            "name": "Seal for int",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001334",
-            "req_qty": 3,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 09:14:01",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 24084,
-            "sa": "우종훈",
-            "dday": "D+1일"
-          },
-          {
             "item": "51777475350",
             "name": "Trim, wheel",
             "alois": "O8",
@@ -27079,125 +26877,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "07119905529",
-            "name": "Bolt",
-            "alois": "O8",
-            "pgrp": "-",
-            "ref_tp": "RO",
-            "ref_no": "RO2608001599",
-            "req_qty": 2,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 16:12:15",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 2628,
-            "sa": "우상만",
-            "dday": "D+1일"
-          },
-          {
-            "item": "07129904865",
-            "name": "Hex nut",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2608001599",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 16:12:15",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 1095,
-            "sa": "우상만",
-            "dday": "D+1일"
-          },
-          {
-            "item": "17227613656",
-            "name": "O-ring",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2608001599",
-            "req_qty": 4,
-            "crt_qty": 6,
-            "avail_qty": 2,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 16:12:15",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 15476,
-            "sa": "우상만",
-            "dday": "D+1일"
-          },
-          {
-            "item": "26117540333",
-            "name": "Hex bolt",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2608001599",
-            "req_qty": 3,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 16:12:15",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 15762,
-            "sa": "우상만",
-            "dday": "D+1일"
-          },
-          {
-            "item": "11148664904",
-            "name": "Shaft seal",
-            "alois": "O8",
-            "pgrp": "-",
-            "ref_tp": "RO",
-            "ref_no": "RO2608001599",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 16:12:15",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 31595,
-            "sa": "우상만",
-            "dday": "D+1일"
-          },
-          {
-            "item": "07149229516",
-            "name": "bolt",
-            "alois": "O8",
-            "pgrp": "-",
-            "ref_tp": "RO",
-            "ref_no": "RO2608001599",
-            "req_qty": 18,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 16:12:16",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 59400,
-            "sa": "우상만",
-            "dday": "D+1일"
-          },
-          {
-            "item": "18308053348",
-            "name": "Gasket",
-            "alois": "O8",
-            "pgrp": "-",
-            "ref_tp": "RO",
-            "ref_no": "RO2608001599",
-            "req_qty": 3,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 16:12:16",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 64386,
-            "sa": "우상만",
-            "dday": "D+1일"
-          },
-          {
             "item": "51115A1BFC8",
             "name": "Trim air inl",
             "alois": "O8",
@@ -27487,23 +27166,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "36122455269",
-            "name": "Hub cap fixe",
-            "alois": "O8",
-            "pgrp": "B3",
-            "ref_tp": "RO",
-            "ref_no": "RO2608001644",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-23",
-            "req_dt_full": "2026-09-23 07:21:38",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 104535,
-            "sa": "김민규",
-            "dday": "D+0일"
-          },
-          {
             "item": "07145A445B0",
             "name": "Clip ball at",
             "alois": "O8",
@@ -27655,11 +27317,28 @@
             "val": 20003,
             "sa": "염진아",
             "dday": "D+0일"
+          },
+          {
+            "item": "36122455269",
+            "name": "Hub cap fixe",
+            "alois": "O8",
+            "pgrp": "B3",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001442",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-23",
+            "req_dt_full": "2026-09-23 11:55:57",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 104535,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 207,
-        "qty_sum": 285,
-        "val": 69524643
+        "count": 199,
+        "qty_sum": 250,
+        "val": 69310217
       },
       {
         "code": "SB",
@@ -28454,8 +28133,8 @@
             "ref_tp": "SB",
             "ref_no": "SB2608001868",
             "req_qty": 4,
-            "crt_qty": 23,
-            "avail_qty": 19,
+            "crt_qty": 4,
+            "avail_qty": 0,
             "req_dt": "08-27",
             "req_dt_full": "2026-08-27 14:14:01",
             "req_brch": "AS_부산(해운중동)",
@@ -28991,57 +28670,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "51115A45EE1",
-            "name": "Cover for to",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001969",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 09:54:05",
-            "req_brch": "AS_창원",
-            "val": 35100,
-            "sa": "김민주",
-            "dday": "D+1일"
-          },
-          {
-            "item": "18308581218",
-            "name": "MUFFLER CLAM",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001284",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 09:55:10",
-            "req_brch": "AS_창원",
-            "val": 34350,
-            "sa": "박선묵",
-            "dday": "D+1일"
-          },
-          {
-            "item": "33205A31900",
-            "name": "Dust guard r",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609002012",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 09:56:01",
-            "req_brch": "AS_창원",
-            "val": 13446,
-            "sa": "김길성",
-            "dday": "D+1일"
-          },
-          {
             "item": "11518650988",
             "name": "Coolant pump",
             "alois": "O8",
@@ -29110,9 +28738,9 @@
             "dday": "D+1일"
           }
         ],
-        "count": 85,
-        "qty_sum": 138,
-        "val": 22561964
+        "count": 82,
+        "qty_sum": 135,
+        "val": 22479068
       },
       {
         "code": "SP",
@@ -33294,6 +32922,15 @@
         "val": 23652
       },
       {
+        "item": "17227613656",
+        "name": "O-ring",
+        "pgrp": "B1",
+        "alois": "O8",
+        "qty": 6,
+        "avail_qty": 6,
+        "val": 23214
+      },
+      {
         "item": "11427840594",
         "name": "Filt.Element",
         "pgrp": "B1",
@@ -33814,15 +33451,6 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 8322
-      },
-      {
-        "item": "17227613656",
-        "name": "O-ring",
-        "pgrp": "B1",
-        "alois": "O8",
-        "qty": 6,
-        "avail_qty": 2,
-        "val": 7738
       },
       {
         "item": "07119905544",
@@ -35810,6 +35438,15 @@
             "val": 23652
           },
           {
+            "item": "17227613656",
+            "name": "O-ring",
+            "pgrp": "B1",
+            "alois": "O8",
+            "qty": 6,
+            "avail_qty": 6,
+            "val": 23214
+          },
+          {
             "item": "11287618848",
             "name": "RIBBED V-BEL",
             "pgrp": "B1",
@@ -36179,15 +35816,6 @@
             "val": 8322
           },
           {
-            "item": "17227613656",
-            "name": "O-ring",
-            "pgrp": "B1",
-            "alois": "O8",
-            "qty": 6,
-            "avail_qty": 2,
-            "val": 7738
-          },
-          {
             "item": "07119905544",
             "name": "Hex nut",
             "pgrp": "B1",
@@ -36496,8 +36124,8 @@
         ],
         "count": 259,
         "qty_sum": 1001,
-        "avail_sum": 978,
-        "val": 29924401
+        "avail_sum": 982,
+        "val": 29939877
       },
       {
         "code": "OA",
@@ -38472,7 +38100,7 @@
       }
     ],
     "count": 474,
-    "total_val": 356927254
+    "total_val": 356942730
   },
   "oflow": {
     "rows": [
@@ -38611,19 +38239,19 @@
       {
         "date": "09-23",
         "in_val": 11417816,
-        "out_val": 364479,
-        "net": 11053337
+        "out_val": 485297,
+        "net": 10932519
       }
     ],
     "total_in": 222498228,
-    "total_out": 203829532,
-    "net": 18668696,
+    "total_out": 203950350,
+    "net": 18547878,
     "by_code": [
       {
         "code": "O8",
         "in_val": 180863373,
-        "out_val": 162679049,
-        "net": 18184324
+        "out_val": 162680699,
+        "net": 18182674
       },
       {
         "code": "OA",
@@ -38634,8 +38262,8 @@
       {
         "code": "OE",
         "in_val": 9125465,
-        "out_val": 22218520,
-        "net": -13093055
+        "out_val": 22337688,
+        "net": -13212223
       },
       {
         "code": "ON",
@@ -38852,17 +38480,6 @@
         "pub_full": "2026-07-27 16:56",
         "dday": "D+58일",
         "amt": 2910800
-      },
-      {
-        "ro": "RO2608000211",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "진단",
-        "sa": "우종훈",
-        "pub": "2026-08-05",
-        "pub_full": "2026-08-05 07:49",
-        "dday": "D+49일",
-        "amt": 3950702
       },
       {
         "ro": "RO2608000225",
@@ -39280,7 +38897,7 @@
         "pub": "2026-08-31",
         "pub_full": "2026-08-31 07:17",
         "dday": "D+23일",
-        "amt": 2793790
+        "amt": 3104290
       },
       {
         "ro": "RO2608001841",
@@ -39449,8 +39066,8 @@
       },
       {
         "ro": "RO2609001339",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "진단",
         "sa": "최민수",
         "pub": "2026-09-07",
@@ -39635,17 +39252,6 @@
         "amt": 816962
       },
       {
-        "ro": "RO2609000679",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "우종훈",
-        "pub": "2026-09-10",
-        "pub_full": "2026-09-10 09:30",
-        "dday": "D+13일",
-        "amt": 3044300
-      },
-      {
         "ro": "RO2609000685",
         "stat": "정비시작",
         "stat_cd": "03",
@@ -39735,8 +39341,8 @@
       },
       {
         "ro": "RO2609000753",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-11",
@@ -39779,8 +39385,8 @@
       },
       {
         "ro": "RO2609000860",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "우상만",
         "pub": "2026-09-14",
@@ -40230,8 +39836,8 @@
       },
       {
         "ro": "RO2609001116",
-        "stat": "공정마감",
-        "stat_cd": "04",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-17",
@@ -40560,8 +40166,8 @@
       },
       {
         "ro": "RO2609001214",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-18",
@@ -40670,8 +40276,8 @@
       },
       {
         "ro": "RO2609001258",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "공정마감",
+        "stat_cd": "04",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-09-21",
@@ -41022,19 +40628,19 @@
       },
       {
         "ro": "RO2609001334",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 14:42",
         "dday": "D+2일",
-        "amt": 965000
+        "amt": 926000
       },
       {
         "ro": "RO2609001337",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-21",
@@ -41286,8 +40892,8 @@
       },
       {
         "ro": "RO2609001375",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-22",
@@ -41348,7 +40954,7 @@
         "pub": "2026-09-22",
         "pub_full": "2026-09-22 13:03",
         "dday": "D+1일",
-        "amt": 147352
+        "amt": 962152
       },
       {
         "ro": "RO2609001387",
@@ -41833,40 +41439,51 @@
         "pub_full": "2026-09-23 11:29",
         "dday": "D+0일",
         "amt": 1498600
+      },
+      {
+        "ro": "RO2609001443",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "경수리",
+        "sa": "우종훈",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 11:52",
+        "dday": "D+0일",
+        "amt": 82200
       }
     ],
-    "count": 289,
-    "total_amt": 746752241,
+    "count": 288,
+    "total_amt": 740925739,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 14,
-        "amt": 10613300
+        "count": 15,
+        "amt": 10695500
       },
       {
         "stat": "상담완료",
-        "count": 131,
-        "amt": 510853049
+        "count": 130,
+        "amt": 502961627
       },
       {
         "stat": "정비시작",
-        "count": 30,
-        "amt": 39131054
+        "count": 28,
+        "amt": 38896446
       },
       {
         "stat": "End Control 요청",
         "count": 24,
-        "amt": 43210160
+        "amt": 40246600
       },
       {
         "stat": "공정마감",
         "count": 2,
-        "amt": 3525100
+        "amt": 4445800
       },
       {
         "stat": "가정산 완료",
-        "count": 88,
-        "amt": 139419578
+        "count": 89,
+        "amt": 143679766
       }
     ],
     "oldest": "D+519일"
@@ -42695,8 +42312,8 @@
             "name": "MINI Cooper",
             "alois": "OE",
             "req_qty": 4,
-            "crt_qty": 23,
-            "avail_qty": 19,
+            "crt_qty": 4,
+            "avail_qty": 0,
             "val": 25088
           }
         ],
@@ -44583,8 +44200,8 @@
             "name": "HT-12 Anti-freeze",
             "alois": "L1",
             "req_qty": 1,
-            "crt_qty": 112,
-            "avail_qty": 110,
+            "crt_qty": 113,
+            "avail_qty": 111,
             "val": 16400
           },
           {
@@ -45478,7 +45095,7 @@
             "alois": "A5",
             "req_qty": 3,
             "crt_qty": 15,
-            "avail_qty": 6,
+            "avail_qty": 9,
             "val": 11031
           },
           {
@@ -45487,7 +45104,7 @@
             "alois": "L6",
             "req_qty": 3,
             "crt_qty": 17,
-            "avail_qty": 5,
+            "avail_qty": 8,
             "val": 4629
           },
           {
@@ -45496,7 +45113,7 @@
             "alois": "L6",
             "req_qty": 3,
             "crt_qty": 17,
-            "avail_qty": 5,
+            "avail_qty": 8,
             "val": 4629
           }
         ],
@@ -45810,7 +45427,7 @@
     "total_val": 45126378,
     "o_lines": 50,
     "o_val": 16255388,
-    "resv_total": 338
+    "resv_total": 343
   },
   "sbcar": {
     "groups": [],
@@ -45819,7 +45436,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10257
+    "resv_total": 10258
   },
   "nonmng": {
     "rows": [],
@@ -45848,7 +45465,7 @@
         "loc": "A030320",
         "item": "83195A42DF3",
         "name": "HT-12 Anti-freeze",
-        "qty": 112,
+        "qty": 113,
         "no": 3
       },
       {
@@ -46771,7 +46388,7 @@
         "loc": "A030320",
         "item": "83195A42DF3",
         "name": "HT-12 Anti-freeze",
-        "qty": 112,
+        "qty": 113,
         "no": 9
       },
       {
@@ -47947,7 +47564,7 @@
         "loc": "A090610",
         "item": "13717800151",
         "name": "Filter elmnt",
-        "qty": 2,
+        "qty": 1,
         "no": 177
       },
       {
