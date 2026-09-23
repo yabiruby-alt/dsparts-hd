@@ -489,6 +489,29 @@ def build_longstock(pw_rows, inv_total, now):
     }
 
 
+def build_daily_stockcheck(recv_rows, pw_rows, today_str):
+    """당일 입고된 부품 중 현재고>0인 것만 LOCATION 오름차순으로 나열 (일일 재고조사용 인쇄 리스트)."""
+    today_items = {r.get("itemCd") for r in recv_rows if r.get("itemCd")}
+    inv_by_item = {r.get("itemCd"): r for r in pw_rows}
+
+    rows = []
+    for item in today_items:
+        r = inv_by_item.get(item)
+        if not r:
+            continue
+        qty = int(num(r.get("crtQty")))
+        if qty <= 0:
+            continue  # 출고돼서 재고 0이 된 부품은 제외
+        rows.append({
+            "loc": r.get("lctCd") or "-", "item": item, "name": r.get("itemNm"), "qty": qty,
+        })
+    rows.sort(key=lambda x: (x["loc"] == "-", x["loc"], x["item"]))
+    for i, r in enumerate(rows, 1):
+        r["no"] = i
+
+    return {"rows": rows, "count": len(rows), "date": today_str}
+
+
 def build_o_parts(rows, now, pgrp_map=None):
     """ALOIS O계열 중 미처리 출고요청(RO/SB/SP)에 걸려있는 재고. 요청수량×이동평균단가 = 원가."""
     def val_fn(r):
@@ -1104,6 +1127,7 @@ def run_cycle(page: Page) -> None:
     ext, shop = build_ext_shop(to_rows, period_label)
     acc, tire = build_acc_tire(to_rows)
     longstock = build_longstock(pw_rows, inv["total"], now)
+    stockcheck = build_daily_stockcheck(recv_rows, pw_rows, today_str)
     pgrp_map = {r.get("itemCd"): r.get("prodGroup") for r in inv_rows if r.get("prodGroup")}
     opart = build_o_parts(req_rows, now, pgrp_map)
     oavail = build_o_available(pw_rows)
@@ -1121,6 +1145,7 @@ def run_cycle(page: Page) -> None:
                  "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
         "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro, "noshow": noshow, "sbresv": sbresv, "sbcar": sbcar, "nonmng": nonmng,
+        "stockcheck": stockcheck,
     }
 
     global LAST_DATA
