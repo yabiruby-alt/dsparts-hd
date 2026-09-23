@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 23일 (수) · 10:09 기준",
+    "generated_at": "9월 23일 (수) · 10:15 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -269,7 +269,7 @@
     ]
   },
   "inv": {
-    "total": 1213440713,
+    "total": 1213002786,
     "item_count": 2228,
     "code_count": 25,
     "alois_groups": [
@@ -281,7 +281,7 @@
           {
             "code": "A1",
             "val": 215541560,
-            "pct": 17.76,
+            "pct": 17.77,
             "qty": 2427,
             "parts": [
               {
@@ -372,9 +372,9 @@
           },
           {
             "code": "A2",
-            "val": 16583466,
+            "val": 16561236,
             "pct": 1.37,
-            "qty": 1192,
+            "qty": 1191,
             "parts": [
               {
                 "item": "34216890353",
@@ -491,12 +491,6 @@
                 "val": 228384
               },
               {
-                "item": "11428507683",
-                "name": "Filt.Element",
-                "qty": 10,
-                "val": 222300
-              },
-              {
                 "item": "07146875114",
                 "name": "Hexagon nut",
                 "qty": 42,
@@ -507,6 +501,12 @@
                 "name": "Plug",
                 "qty": 243,
                 "val": 212139
+              },
+              {
+                "item": "11428507683",
+                "name": "Filt.Element",
+                "qty": 9,
+                "val": 200070
               },
               {
                 "item": "11428092620",
@@ -4827,9 +4827,9 @@
             ]
           }
         ],
-        "subtotal_val": 462336114,
-        "subtotal_qty": 8768,
-        "subtotal_pct": 38.1
+        "subtotal_val": 462313884,
+        "subtotal_qty": 8767,
+        "subtotal_pct": 38.11
       },
       {
         "code": "L",
@@ -4838,9 +4838,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 31696178,
+            "val": 31616494,
             "pct": 2.61,
-            "qty": 2159,
+            "qty": 2154,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4851,8 +4851,8 @@
               {
                 "item": "83212469985",
                 "name": "LL-12FE 0W-30",
-                "qty": 364,
-                "val": 5580235
+                "qty": 358,
+                "val": 5500550
               },
               {
                 "item": "83215A65B99",
@@ -4988,9 +4988,9 @@
           },
           {
             "code": "L4",
-            "val": 12777556,
-            "pct": 1.05,
-            "qty": 520,
+            "val": 12441544,
+            "pct": 1.03,
+            "qty": 516,
             "parts": [
               {
                 "item": "83215A65BF4",
@@ -5017,12 +5017,6 @@
                 "val": 1081100
               },
               {
-                "item": "83225A12A00",
-                "name": "Automatic tr",
-                "qty": 12,
-                "val": 1008036
-              },
-              {
                 "item": "51487458549",
                 "name": "Sound insula",
                 "qty": 12,
@@ -5033,6 +5027,12 @@
                 "name": "Set of valve(M)",
                 "qty": 31,
                 "val": 685100
+              },
+              {
+                "item": "83225A12A00",
+                "name": "Automatic tr",
+                "qty": 8,
+                "val": 672024
               },
               {
                 "item": "83192289287",
@@ -5251,7 +5251,7 @@
           {
             "code": "L6",
             "val": 28087295,
-            "pct": 2.31,
+            "pct": 2.32,
             "qty": 250,
             "parts": [
               {
@@ -5607,7 +5607,7 @@
           {
             "code": "L7",
             "val": 64977504,
-            "pct": 5.35,
+            "pct": 5.36,
             "qty": 1432,
             "parts": [
               {
@@ -8307,9 +8307,9 @@
             ]
           }
         ],
-        "subtotal_val": 156710260,
-        "subtotal_qty": 4869,
-        "subtotal_pct": 12.91
+        "subtotal_val": 156294563,
+        "subtotal_qty": 4860,
+        "subtotal_pct": 12.88
       },
       {
         "code": "O",
@@ -10487,7 +10487,7 @@
           {
             "code": "OA",
             "val": 38398488,
-            "pct": 3.16,
+            "pct": 3.17,
             "qty": 230,
             "parts": [
               {
@@ -11125,7 +11125,7 @@
           {
             "code": "OE",
             "val": 299815541,
-            "pct": 24.71,
+            "pct": 24.72,
             "qty": 840,
             "parts": [
               {
@@ -12481,7 +12481,7 @@
         ],
         "subtotal_val": 439851466,
         "subtotal_qty": 2427,
-        "subtotal_pct": 36.25
+        "subtotal_pct": 36.26
       },
       {
         "code": "I",
@@ -13889,13 +13889,13 @@
         ],
         "subtotal_val": 145762326,
         "subtotal_qty": 1894,
-        "subtotal_pct": 12.01
+        "subtotal_pct": 12.02
       }
     ]
   },
   "oaov": {
     "total": 70758010,
-    "inv_total": 1213440713,
+    "inv_total": 1213002786,
     "pct": 5.83,
     "oa_val": 38398488,
     "ov_val": 32359522,
@@ -17993,7 +17993,7 @@
     ],
     "m12_val": 62413255,
     "m12_count": 211,
-    "m12_pct": 5.14,
+    "m12_pct": 5.15,
     "m24_items": [
       {
         "item": "24008741536",
@@ -24120,27 +24120,10 @@
         "val": 8624,
         "sa": "박영묵",
         "dday": "D+0일"
-      },
-      {
-        "item": "33506883897",
-        "name": "Hex nut",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001431",
-        "req_qty": 1,
-        "crt_qty": 3,
-        "avail_qty": 2,
-        "req_dt": "09-23",
-        "req_dt_full": "2026-09-23 10:10:09",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 1387,
-        "sa": "김민규",
-        "dday": "D+0일"
       }
     ],
-    "count": 335,
-    "total_val": 104794660,
+    "count": 334,
+    "total_val": 104793273,
     "groups": [
       {
         "code": "RO",
@@ -27595,28 +27578,11 @@
             "val": 8624,
             "sa": "박영묵",
             "dday": "D+0일"
-          },
-          {
-            "item": "33506883897",
-            "name": "Hex nut",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001431",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 2,
-            "req_dt": "09-23",
-            "req_dt_full": "2026-09-23 10:10:09",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 1387,
-            "sa": "김민규",
-            "dday": "D+0일"
           }
         ],
-        "count": 204,
-        "qty_sum": 292,
-        "val": 69500682
+        "count": 203,
+        "qty_sum": 291,
+        "val": 69499295
       },
       {
         "code": "SB",
@@ -38603,19 +38569,19 @@
       {
         "date": "09-23",
         "in_val": 11417816,
-        "out_val": 188268,
-        "net": 11229548
+        "out_val": 189655,
+        "net": 11228161
       }
     ],
     "total_in": 222498228,
-    "total_out": 203828145,
-    "net": 18670083,
+    "total_out": 203829532,
+    "net": 18668696,
     "by_code": [
       {
         "code": "O8",
         "in_val": 180863373,
-        "out_val": 162677662,
-        "net": 18185711
+        "out_val": 162679049,
+        "net": 18184324
       },
       {
         "code": "OA",
@@ -39430,8 +39396,8 @@
       },
       {
         "ro": "RO2609001339",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "최민수",
         "pub": "2026-09-07",
@@ -41769,32 +41735,43 @@
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 10:00",
         "dday": "D+0일",
-        "amt": 386100
+        "amt": 414100
       },
       {
         "ro": "RO2609001432",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "입고 Proactive-RITA",
         "sa": "이정환",
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 10:10",
         "dday": "D+0일",
+        "amt": 547700
+      },
+      {
+        "ro": "RO2609001433",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "진단",
+        "sa": "최민수",
+        "pub": "2026-09-23",
+        "pub_full": "2026-09-23 10:16",
+        "dday": "D+0일",
         "amt": 0
       }
     ],
-    "count": 285,
-    "total_amt": 724818142,
+    "count": 286,
+    "total_amt": 725393842,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 17,
-        "amt": 10999400
+        "amt": 11027400
       },
       {
         "stat": "상담완료",
         "count": 133,
-        "amt": 504287250
+        "amt": 501093850
       },
       {
         "stat": "정비시작",
@@ -41803,8 +41780,8 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 25,
-        "amt": 70842208
+        "count": 26,
+        "amt": 74583308
       },
       {
         "stat": "공정마감",
@@ -45609,7 +45586,7 @@
             "alois": "A1",
             "req_qty": 1,
             "crt_qty": 89,
-            "avail_qty": 88,
+            "avail_qty": 87,
             "val": 19665
           }
         ],
@@ -45629,8 +45606,8 @@
             "name": "LL-12FE 0W-30",
             "alois": "L1",
             "req_qty": 5,
-            "crt_qty": 364,
-            "avail_qty": 347,
+            "crt_qty": 358,
+            "avail_qty": 341,
             "val": 76620
           },
           {
@@ -45758,7 +45735,7 @@
     "total_val": 45989643,
     "o_lines": 50,
     "o_val": 16255388,
-    "resv_total": 328
+    "resv_total": 327
   },
   "sbcar": {
     "groups": [],
@@ -45767,7 +45744,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10250
+    "resv_total": 10251
   },
   "nonmng": {
     "rows": [],
