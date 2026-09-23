@@ -579,12 +579,15 @@ def build_o_parts(rows, now, pgrp_map=None):
     return {"items": items, "count": len(items), "total_val": round(sum(i["val"] for i in items)), "groups": groups}
 
 
-def build_sb_parts(req_rows, resv_rows, now, farthest_first=False, date_field="resvDtime"):
-    """주어진 예약(SB) 목록 중 미처리 부품 요청이 걸려있는 부품. SB별 그룹, 예약일 빠른(오래된) 순. 원가=요청수량×이동평균단가."""
+def build_sb_parts(req_rows, resv_rows, now, farthest_first=False, date_field="resvDtime", exclude_zero_stock=False):
+    """주어진 예약(SB) 목록 중 미처리 부품 요청이 걸려있는 부품. SB별 그룹, 예약일 빠른(오래된) 순. 원가=요청수량×이동평균단가.
+    exclude_zero_stock=True면 현재고 0(아직 입고 안 되고 주문 중인 파트)인 라인은 제외."""
     resv = {r.get("resvNo"): r for r in resv_rows if r.get("resvNo")}
     by_sb = {}
     for r in req_rows:
         if r.get("refDocTp") != "SB" or r.get("refDocNo") not in resv:
+            continue
+        if exclude_zero_stock and num(r.get("crtQty")) <= 0:
             continue
         by_sb.setdefault(r["refDocNo"], []).append(r)
 
@@ -1168,7 +1171,7 @@ def run_cycle(page: Page) -> None:
     oavail = build_o_available(pw_rows)
     nonmng = build_nonmng(pw_rows, inv["total"])
     openro = build_open_ro(open_ro_rows, now)
-    noshow = build_sb_parts(req_rows, noshow_rows, now)
+    noshow = build_sb_parts(req_rows, noshow_rows, now, exclude_zero_stock=True)
     sbresv = build_sb_parts(req_rows, sbresv_rows, now, farthest_first=True)
     sbcar = build_sb_parts(req_rows, sbcar_rows, now, date_field="carAcptDtime")
     sbcar["resv_total"] = sbcar_total
