@@ -504,14 +504,36 @@ def build_daily_stockcheck(recv_rows, pw_rows, today_str):
         if qty <= 0:
             continue  # 출고돼서 재고 0이 된 부품은 제외
         rows.append({
-            "loc": r.get("lctCd") or "-", "item": item, "name": r.get("itemNm"),
-            "alois": r.get("aloisCd") or "-", "qty": qty,
+            "loc": r.get("lctCd") or "-", "item": item, "name": r.get("itemNm"), "qty": qty,
         })
     rows.sort(key=lambda x: (x["loc"] == "-", x["loc"], x["item"]))
     for i, r in enumerate(rows, 1):
         r["no"] = i
 
     return {"rows": rows, "count": len(rows), "date": today_str}
+
+
+def build_weekly_stockcheck(turnover_rows, pw_rows, start_str, end_str):
+    """지난주 월~토 출고(인보이스)된 부품 중 현재고>0인 것만 LOCATION 오름차순으로 나열 (이번주 월요일 주간 재고조사용)."""
+    week_items = {r.get("itemCd") for r in turnover_rows if r.get("itemCd")}
+    inv_by_item = {r.get("itemCd"): r for r in pw_rows}
+
+    rows = []
+    for item in week_items:
+        r = inv_by_item.get(item)
+        if not r:
+            continue
+        qty = int(num(r.get("crtQty")))
+        if qty <= 0:
+            continue  # 재고가 0인 부품은 제외
+        rows.append({
+            "loc": r.get("lctCd") or "-", "item": item, "name": r.get("itemNm"), "qty": qty,
+        })
+    rows.sort(key=lambda x: (x["loc"] == "-", x["loc"], x["item"]))
+    for i, r in enumerate(rows, 1):
+        r["no"] = i
+
+    return {"rows": rows, "count": len(rows), "start": start_str, "end": end_str}
 
 
 def build_o_parts(rows, now, pgrp_map=None):
@@ -1102,6 +1124,11 @@ def run_cycle(page: Page) -> None:
     month_start = now.strftime("%Y-%m-01")
     period_label = f"{month_start} ~ {today_str}"
     generated_at = f"{now.month}월 {now.day}일 ({WEEKDAYS_KO[now.weekday()]}) · {now.strftime('%H:%M')} 기준"
+    this_monday = now.date() - timedelta(days=now.weekday())
+    last_monday = this_monday - timedelta(days=7)
+    last_saturday = last_monday + timedelta(days=5)
+    last_week_start_str = last_monday.strftime("%Y-%m-%d")
+    last_week_end_str = last_saturday.strftime("%Y-%m-%d")
 
     print(" - 오늘 입고현황")
     recv_rows = extract_receiving(page, today_str)
@@ -1121,6 +1148,8 @@ def run_cycle(page: Page) -> None:
     sbcar_rows, sbcar_total = extract_carin_sbs_without_ro(page, req_rows, datetime.now(ZoneInfo("Asia/Seoul")).date())
     print(" - 입고현황 (당월, O파트 입출고 내역용)")
     recv_month_rows = extract_receiving_range(page, month_start, today_str)
+    print(" - Turn Over 리포트 (지난주 월~토, 주간 재고조사용)")
+    to_lastweek_rows = extract_turnover(page, last_week_start_str, last_week_end_str)
 
     print("집계 중...")
     recv = build_recv(recv_rows, today_str)
@@ -1130,6 +1159,7 @@ def run_cycle(page: Page) -> None:
     acc, tire = build_acc_tire(to_rows)
     longstock = build_longstock(pw_rows, inv["total"], now)
     stockcheck = build_daily_stockcheck(recv_rows, pw_rows, today_str)
+    stockcheck_week = build_weekly_stockcheck(to_lastweek_rows, pw_rows, last_week_start_str, last_week_end_str)
     pgrp_map = {r.get("itemCd"): r.get("prodGroup") for r in inv_rows if r.get("prodGroup")}
     opart = build_o_parts(req_rows, now, pgrp_map)
     oavail = build_o_available(pw_rows)
@@ -1147,7 +1177,7 @@ def run_cycle(page: Page) -> None:
                  "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
         "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro, "noshow": noshow, "sbresv": sbresv, "sbcar": sbcar, "nonmng": nonmng,
-        "stockcheck": stockcheck,
+        "stockcheck": stockcheck, "stockcheck_week": stockcheck_week,
     }
 
     global LAST_DATA
