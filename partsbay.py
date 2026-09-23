@@ -603,6 +603,7 @@ def build_sb_parts(req_rows, resv_rows, now, farthest_first=False, date_field="r
         resv_dt = info.get(date_field) or info.get("resvDtime") or ""
         parts = sorted([{
             "item": r.get("partNo"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
+            "sa": info.get("chrgSaNm") or "-",
             "req_qty": int(num(r.get("reqQty"))), "crt_qty": int(num(r.get("crtQty"))),
             "avail_qty": int(num(r.get("availQty"))),
             "val": round(num(r.get("reqQty")) * num(r.get("movPrc"))),
