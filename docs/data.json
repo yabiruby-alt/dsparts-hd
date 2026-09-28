@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 28일 (월) · 17:36 기준",
+    "generated_at": "9월 28일 (월) · 17:50 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -234,7 +234,7 @@
     ]
   },
   "inv": {
-    "total": 1252073320,
+    "total": 1251569695,
     "item_count": 2194,
     "code_count": 25,
     "alois_groups": [
@@ -245,9 +245,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 226224397,
+            "val": 226122437,
             "pct": 18.07,
-            "qty": 2609,
+            "qty": 2603,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -270,8 +270,8 @@
               {
                 "item": "61619478361",
                 "name": "SET OF WIPER 3/4 series",
-                "qty": 84,
-                "val": 5727540
+                "qty": 83,
+                "val": 5659355
               },
               {
                 "item": "12122455258",
@@ -324,8 +324,8 @@
               {
                 "item": "33117525064",
                 "name": "Screw plug",
-                "qty": 68,
-                "val": 459340
+                "qty": 63,
+                "val": 425565
               },
               {
                 "item": "11428570590",
@@ -337,9 +337,9 @@
           },
           {
             "code": "A2",
-            "val": 16371390,
+            "val": 16350720,
             "pct": 1.31,
-            "qty": 1138,
+            "qty": 1137,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -468,12 +468,6 @@
                 "val": 206901
               },
               {
-                "item": "11428092620",
-                "name": "Set oil-filt",
-                "qty": 9,
-                "val": 186030
-              },
-              {
                 "item": "51777171004",
                 "name": "Rivet",
                 "qty": 196,
@@ -484,6 +478,12 @@
                 "name": "Filt.Element",
                 "qty": 8,
                 "val": 177840
+              },
+              {
+                "item": "11428092620",
+                "name": "Set oil-filt",
+                "qty": 8,
+                "val": 165360
               },
               {
                 "item": "33306760349",
@@ -4696,8 +4696,8 @@
             ]
           }
         ],
-        "subtotal_val": 472099263,
-        "subtotal_qty": 9015,
+        "subtotal_val": 471976633,
+        "subtotal_qty": 9008,
         "subtotal_pct": 37.71
       },
       {
@@ -4707,9 +4707,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 28420794,
-            "pct": 2.27,
-            "qty": 1934,
+            "val": 28313526,
+            "pct": 2.26,
+            "qty": 1927,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4720,8 +4720,8 @@
               {
                 "item": "83212469985",
                 "name": "LL-12FE 0W-30",
-                "qty": 306,
-                "val": 4702169
+                "qty": 299,
+                "val": 4594901
               },
               {
                 "item": "83215A65B99",
@@ -4775,15 +4775,15 @@
           },
           {
             "code": "L2",
-            "val": 10014977,
-            "pct": 0.8,
-            "qty": 207,
+            "val": 9741250,
+            "pct": 0.78,
+            "qty": 202,
             "parts": [
               {
                 "item": "90200006494",
                 "name": "Hypoid Axle REPO",
-                "qty": 72,
-                "val": 3837600
+                "qty": 70,
+                "val": 3731000
               },
               {
                 "item": "61216806755",
@@ -4794,14 +4794,14 @@
               {
                 "item": "90200006413",
                 "name": "Hypoid Axle REPO",
-                "qty": 40,
-                "val": 2132000
+                "qty": 38,
+                "val": 2025400
               },
               {
                 "item": "83225A4F016",
                 "name": "Dtf 1",
-                "qty": 13,
-                "val": 786851
+                "qty": 12,
+                "val": 726324
               },
               {
                 "item": "90200006986",
@@ -8176,9 +8176,9 @@
             ]
           }
         ],
-        "subtotal_val": 164103313,
-        "subtotal_qty": 4607,
-        "subtotal_pct": 13.11
+        "subtotal_val": 163722318,
+        "subtotal_qty": 4595,
+        "subtotal_pct": 13.08
       },
       {
         "code": "O",
@@ -12392,7 +12392,7 @@
         ],
         "subtotal_val": 436558363,
         "subtotal_qty": 2394,
-        "subtotal_pct": 34.87
+        "subtotal_pct": 34.88
       },
       {
         "code": "I",
@@ -13650,14 +13650,14 @@
         ],
         "subtotal_val": 176909525,
         "subtotal_qty": 2005,
-        "subtotal_pct": 14.13
+        "subtotal_pct": 14.14
       }
     ]
   },
   "oaov": {
     "total": 71920792,
-    "inv_total": 1252073320,
-    "pct": 5.74,
+    "inv_total": 1251569695,
+    "pct": 5.75,
     "oa_val": 43230277,
     "ov_val": 28690515,
     "oa_lines": 108,
@@ -17824,7 +17824,7 @@
     ],
     "m12_val": 62268175,
     "m12_count": 209,
-    "m12_pct": 4.97,
+    "m12_pct": 4.98,
     "m24_items": [
       {
         "item": "24008741536",
@@ -22345,7 +22345,7 @@
         "ref_tp": "SB",
         "ref_no": "SB2609001591",
         "req_qty": 1,
-        "crt_qty": 15,
+        "crt_qty": 14,
         "avail_qty": 13,
         "req_dt": "09-22",
         "req_dt_full": "2026-09-22 09:06:30",
@@ -23473,23 +23473,6 @@
         "req_dt_full": "2026-09-23 18:19:42",
         "req_brch": "AS_부산(해운중동)",
         "val": 64386,
-        "sa": "우상만",
-        "dday": "D+5일"
-      },
-      {
-        "item": "07119905544",
-        "name": "Hex nut",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2608001599",
-        "req_qty": 3,
-        "crt_qty": 9,
-        "avail_qty": 6,
-        "req_dt": "09-23",
-        "req_dt_full": "2026-09-23 18:19:42",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 2409,
         "sa": "우상만",
         "dday": "D+5일"
       },
@@ -25075,57 +25058,6 @@
         "dday": "D+0일"
       },
       {
-        "item": "51162446821",
-        "name": "Outside mirr",
-        "alois": "OV",
-        "pgrp": "B3",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001618",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-28",
-        "req_dt_full": "2026-09-28 16:50:21",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 540771,
-        "sa": "우상만",
-        "dday": "D+0일"
-      },
-      {
-        "item": "51162446822",
-        "name": "Outside mirr",
-        "alois": "OV",
-        "pgrp": "B3",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001618",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-28",
-        "req_dt_full": "2026-09-28 16:50:21",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 540771,
-        "sa": "우상만",
-        "dday": "D+0일"
-      },
-      {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "alois": "OE",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001620",
-        "req_qty": 1,
-        "crt_qty": 15,
-        "avail_qty": 13,
-        "req_dt": "09-28",
-        "req_dt_full": "2026-09-28 17:00:04",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 86497,
-        "sa": "우상만",
-        "dday": "D+0일"
-      },
-      {
         "item": "22119488383",
         "name": "Engine mount",
         "alois": "O8",
@@ -25194,8 +25126,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 407,
-    "total_val": 119939101,
+    "count": 403,
+    "total_val": 118768653,
     "groups": [
       {
         "code": "RO",
@@ -28346,23 +28278,6 @@
             "dday": "D+5일"
           },
           {
-            "item": "07119905544",
-            "name": "Hex nut",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2608001599",
-            "req_qty": 3,
-            "crt_qty": 9,
-            "avail_qty": 6,
-            "req_dt": "09-23",
-            "req_dt_full": "2026-09-23 18:19:42",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 2409,
-            "sa": "우상만",
-            "dday": "D+5일"
-          },
-          {
             "item": "07119906292",
             "name": "Hex bolt",
             "alois": "O8",
@@ -29449,62 +29364,11 @@
             "val": 8320,
             "sa": "최민수",
             "dday": "D+0일"
-          },
-          {
-            "item": "51162446821",
-            "name": "Outside mirr",
-            "alois": "OV",
-            "pgrp": "B3",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001618",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-28",
-            "req_dt_full": "2026-09-28 16:50:21",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 540771,
-            "sa": "우상만",
-            "dday": "D+0일"
-          },
-          {
-            "item": "51162446822",
-            "name": "Outside mirr",
-            "alois": "OV",
-            "pgrp": "B3",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001618",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-28",
-            "req_dt_full": "2026-09-28 16:50:21",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 540771,
-            "sa": "우상만",
-            "dday": "D+0일"
-          },
-          {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001620",
-            "req_qty": 1,
-            "crt_qty": 15,
-            "avail_qty": 13,
-            "req_dt": "09-28",
-            "req_dt_full": "2026-09-28 17:00:04",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 86497,
-            "sa": "우상만",
-            "dday": "D+0일"
           }
         ],
-        "count": 253,
-        "qty_sum": 359,
-        "val": 83293945
+        "count": 249,
+        "qty_sum": 353,
+        "val": 82123497
       },
       {
         "code": "SB",
@@ -30622,7 +30486,7 @@
             "ref_tp": "SB",
             "ref_no": "SB2609001591",
             "req_qty": 1,
-            "crt_qty": 15,
+            "crt_qty": 14,
             "avail_qty": 13,
             "req_dt": "09-22",
             "req_dt_full": "2026-09-22 09:06:30",
@@ -43196,8 +43060,8 @@
       },
       {
         "ro": "RO2609001518",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-28",
@@ -43284,8 +43148,8 @@
       },
       {
         "ro": "RO2609001533",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-28",
@@ -43413,17 +43277,6 @@
         "pub_full": "2026-09-28 10:43",
         "dday": "D+0일",
         "amt": 3451400
-      },
-      {
-        "ro": "RO2609001553",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "Maintenance",
-        "sa": "정용환",
-        "pub": "2026-09-28",
-        "pub_full": "2026-09-28 10:43",
-        "dday": "D+0일",
-        "amt": 79300
       },
       {
         "ro": "RO2609001555",
@@ -43756,17 +43609,6 @@
         "amt": 678378
       },
       {
-        "ro": "RO2609001590",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "Maintenance",
-        "sa": "정용환",
-        "pub": "2026-09-28",
-        "pub_full": "2026-09-28 13:40",
-        "dday": "D+0일",
-        "amt": 196980
-      },
-      {
         "ro": "RO2609001592",
         "stat": "End Control 요청",
         "stat_cd": "08",
@@ -43977,8 +43819,8 @@
       },
       {
         "ro": "RO2609001612",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-28",
@@ -44043,8 +43885,8 @@
       },
       {
         "ro": "RO2609001617",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "최민수",
         "pub": "2026-09-28",
@@ -44083,11 +43925,11 @@
         "pub": "2026-09-28",
         "pub_full": "2026-09-28 16:58",
         "dday": "D+0일",
-        "amt": 536292
+        "amt": 546592
       }
     ],
-    "count": 291,
-    "total_amt": 751685458,
+    "count": 289,
+    "total_amt": 751419478,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -44096,18 +43938,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 146,
-        "amt": 522210810
+        "count": 145,
+        "amt": 522068758
       },
       {
         "stat": "정비시작",
         "count": 38,
-        "amt": 45812654
+        "amt": 45787510
       },
       {
         "stat": "End Control 요청",
-        "count": 44,
-        "amt": 55484299
+        "count": 41,
+        "amt": 53272976
       },
       {
         "stat": "공정마감",
@@ -44116,8 +43958,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 49,
-        "amt": 119020988
+        "count": 51,
+        "amt": 121133527
       }
     ],
     "oldest": "D+524일"
@@ -44895,7 +44737,7 @@
             "alois": "A1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 84,
+            "crt_qty": 82,
             "avail_qty": 81,
             "val": 68185
           }
@@ -47003,7 +46845,7 @@
             "alois": "L1",
             "sa": "M GARAGE",
             "req_qty": 10,
-            "crt_qty": 157,
+            "crt_qty": 140,
             "avail_qty": 111,
             "val": 153120
           },
@@ -47063,7 +46905,7 @@
             "alois": "A1",
             "sa": "M GARAGE",
             "req_qty": 2,
-            "crt_qty": 68,
+            "crt_qty": 57,
             "avail_qty": 40,
             "val": 13510
           },
@@ -47693,7 +47535,7 @@
             "alois": "L2",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 13,
+            "crt_qty": 11,
             "avail_qty": 8,
             "val": 60527
           },
@@ -47703,7 +47545,7 @@
             "alois": "A1",
             "sa": "최민수",
             "req_qty": 2,
-            "crt_qty": 68,
+            "crt_qty": 57,
             "avail_qty": 40,
             "val": 13510
           },
@@ -47713,7 +47555,7 @@
             "alois": "A1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 57,
             "avail_qty": 40,
             "val": 6755
           },
@@ -47723,7 +47565,7 @@
             "alois": "A1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 57,
             "avail_qty": 40,
             "val": 6755
           }
@@ -48099,7 +47941,7 @@
             "alois": "OE",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 15,
+            "crt_qty": 14,
             "avail_qty": 13,
             "val": 86497
           },
@@ -48853,7 +48695,7 @@
             "alois": "L2",
             "sa": "M GARAGE",
             "req_qty": 2,
-            "crt_qty": 40,
+            "crt_qty": 33,
             "avail_qty": 29,
             "val": 106600
           },
@@ -48883,7 +48725,7 @@
             "alois": "A1",
             "sa": "M GARAGE",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 57,
             "avail_qty": 40,
             "val": 6755
           }
@@ -49419,7 +49261,7 @@
             "alois": "A1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 57,
             "avail_qty": 40,
             "val": 6755
           },
@@ -50607,7 +50449,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10152
+    "resv_total": 10153
   },
   "nonmng": {
     "rows": [],
@@ -50911,7 +50753,7 @@
         "item": "61619478361",
         "name": "SET OF WIPER 3/4 series",
         "alois": "A1",
-        "qty": 84,
+        "qty": 83,
         "no": 37
       },
       {
@@ -51653,7 +51495,7 @@
         "item": "90200006494",
         "name": "Hypoid Axle REPO",
         "alois": "L2",
-        "qty": 72,
+        "qty": 70,
         "no": 9
       },
       {
@@ -51685,7 +51527,7 @@
         "item": "33117525064",
         "name": "Screw plug",
         "alois": "A1",
-        "qty": 68,
+        "qty": 63,
         "no": 13
       },
       {
@@ -53165,7 +53007,7 @@
         "item": "61619478361",
         "name": "SET OF WIPER 3/4 series",
         "alois": "A1",
-        "qty": 84,
+        "qty": 83,
         "no": 198
       },
       {
@@ -54429,7 +54271,7 @@
         "item": "83212469985",
         "name": "LL-12FE 0W-30",
         "alois": "L1",
-        "qty": 306,
+        "qty": 299,
         "no": 356
       },
       {
