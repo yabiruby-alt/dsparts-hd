@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 28일 (월) · 11:27 기준",
+    "generated_at": "9월 28일 (월) · 11:40 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -24722,10 +24722,27 @@
         "val": 518227,
         "sa": "이정환",
         "dday": "D+0일"
+      },
+      {
+        "item": "51118062631",
+        "name": "Grill, bumpe",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001554",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 11:36:38",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 56475,
+        "sa": "염진아",
+        "dday": "D+0일"
       }
     ],
-    "count": 358,
-    "total_val": 114412676,
+    "count": 359,
+    "total_val": 114469151,
     "groups": [
       {
         "code": "RO",
@@ -28503,11 +28520,28 @@
             "val": 518227,
             "sa": "이정환",
             "dday": "D+0일"
+          },
+          {
+            "item": "51118062631",
+            "name": "Grill, bumpe",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001554",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 11:36:38",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 56475,
+            "sa": "염진아",
+            "dday": "D+0일"
           }
         ],
-        "count": 222,
-        "qty_sum": 329,
-        "val": 81248330
+        "count": 223,
+        "qty_sum": 330,
+        "val": 81304805
       },
       {
         "code": "SB",
@@ -41385,8 +41419,8 @@
       },
       {
         "ro": "RO2609001305",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-21",
@@ -42375,8 +42409,8 @@
       },
       {
         "ro": "RO2609001518",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-28",
@@ -42562,8 +42596,8 @@
       },
       {
         "ro": "RO2609001542",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-28",
@@ -42628,8 +42662,8 @@
       },
       {
         "ro": "RO2609001554",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-28",
@@ -42704,17 +42738,6 @@
         "amt": 387600
       },
       {
-        "ro": "RO2609001561",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "입고 Proactive-RITA",
-        "sa": "최민수",
-        "pub": "2026-09-28",
-        "pub_full": "2026-09-28 11:03",
-        "dday": "D+0일",
-        "amt": 75256
-      },
-      {
         "ro": "RO2609001560",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -42735,6 +42758,17 @@
         "pub_full": "2026-09-28 11:03",
         "dday": "D+0일",
         "amt": 380000
+      },
+      {
+        "ro": "RO2609001561",
+        "stat": "정비시작",
+        "stat_cd": "03",
+        "svc": "입고 Proactive-RITA",
+        "sa": "최민수",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 11:03",
+        "dday": "D+0일",
+        "amt": 75256
       },
       {
         "ro": "RO2609001564",
@@ -42781,17 +42815,6 @@
         "amt": 37628
       },
       {
-        "ro": "RO2609001567",
-        "stat": "상담시작",
-        "stat_cd": "01",
-        "svc": "사고수리",
-        "sa": "강충성",
-        "pub": "2026-09-28",
-        "pub_full": "2026-09-28 11:21",
-        "dday": "D+0일",
-        "amt": 0
-      },
-      {
         "ro": "RO2609001568",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -42801,30 +42824,74 @@
         "pub_full": "2026-09-28 11:21",
         "dday": "D+0일",
         "amt": 44000
+      },
+      {
+        "ro": "RO2609001567",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "강충성",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 11:21",
+        "dday": "D+0일",
+        "amt": 1407700
+      },
+      {
+        "ro": "RO2609001570",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "우종훈",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 11:29",
+        "dday": "D+0일",
+        "amt": 56000
+      },
+      {
+        "ro": "RO2609001571",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "강충성",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 11:33",
+        "dday": "D+0일",
+        "amt": 5012400
+      },
+      {
+        "ro": "RO2609001572",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "강충성",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 11:37",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 283,
-    "total_amt": 730226434,
+    "count": 286,
+    "total_amt": 736702534,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 22,
-        "amt": 21060800
+        "count": 21,
+        "amt": 17609400
       },
       {
         "stat": "상담완료",
-        "count": 135,
-        "amt": 483711920
+        "count": 136,
+        "amt": 491762496
       },
       {
         "stat": "정비시작",
-        "count": 24,
-        "amt": 27387795
+        "count": 26,
+        "amt": 25348719
       },
       {
         "stat": "End Control 요청",
-        "count": 28,
-        "amt": 54433583
+        "count": 29,
+        "amt": 58349583
       },
       {
         "stat": "공정마감",
@@ -43872,7 +43939,7 @@
             "alois": "A3",
             "sa": "최민수",
             "req_qty": 2,
-            "crt_qty": 47,
+            "crt_qty": 45,
             "avail_qty": 31,
             "val": 2396
           },
@@ -43882,7 +43949,7 @@
             "alois": "A3",
             "sa": "최민수",
             "req_qty": 2,
-            "crt_qty": 47,
+            "crt_qty": 45,
             "avail_qty": 31,
             "val": 2396
           }
@@ -43897,7 +43964,7 @@
     "total_val": 11892401,
     "o_lines": 24,
     "o_val": 5767763,
-    "resv_total": 12038
+    "resv_total": 12039
   },
   "sbresv": {
     "groups": [
@@ -45840,7 +45907,7 @@
             "alois": "A3",
             "sa": "우종훈",
             "req_qty": 2,
-            "crt_qty": 47,
+            "crt_qty": 45,
             "avail_qty": 31,
             "val": 2396
           },
@@ -45850,7 +45917,7 @@
             "alois": "A3",
             "sa": "우종훈",
             "req_qty": 2,
-            "crt_qty": 47,
+            "crt_qty": 45,
             "avail_qty": 31,
             "val": 2396
           }
@@ -47032,7 +47099,7 @@
             "alois": "A3",
             "sa": "우종훈",
             "req_qty": 2,
-            "crt_qty": 47,
+            "crt_qty": 45,
             "avail_qty": 31,
             "val": 2396
           },
@@ -47042,7 +47109,7 @@
             "alois": "A3",
             "sa": "우종훈",
             "req_qty": 2,
-            "crt_qty": 47,
+            "crt_qty": 45,
             "avail_qty": 31,
             "val": 2396
           }
@@ -47116,10 +47183,20 @@
         "count": 1,
         "qty_sum": 1,
         "val": 72735
-      },
+      }
+    ],
+    "sb_count": 63,
+    "line_count": 246,
+    "total_val": 41023253,
+    "o_lines": 53,
+    "o_val": 14368729,
+    "resv_total": 375
+  },
+  "sbcar": {
+    "groups": [
       {
         "code": "SB2609000639",
-        "resv_full": "2026-09-28 11:20",
+        "resv_full": "2026-09-28 11:42",
         "resv": "09-28",
         "dday": "오늘",
         "sa": "안준영",
@@ -47140,21 +47217,12 @@
         "val": 692076
       }
     ],
-    "sb_count": 64,
-    "line_count": 247,
-    "total_val": 41715329,
-    "o_lines": 53,
-    "o_val": 14368729,
-    "resv_total": 377
-  },
-  "sbcar": {
-    "groups": [],
-    "sb_count": 0,
-    "line_count": 0,
-    "total_val": 0,
+    "sb_count": 1,
+    "line_count": 1,
+    "total_val": 692076,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10105
+    "resv_total": 10108
   },
   "nonmng": {
     "rows": [],
@@ -47894,12 +47962,20 @@
         "no": 91
       },
       {
+        "loc": "A160440",
+        "item": "11137556664",
+        "name": "Oil Pan",
+        "alois": "SZ",
+        "qty": 1,
+        "no": 92
+      },
+      {
         "loc": "A160710",
         "item": "51745A22C64",
         "name": "Air duct wit",
         "alois": "O8",
         "qty": 1,
-        "no": 92
+        "no": 93
       },
       {
         "loc": "A161010",
@@ -47907,7 +47983,7 @@
         "name": "Front orname",
         "alois": "A5",
         "qty": 4,
-        "no": 93
+        "no": 94
       },
       {
         "loc": "A940150",
@@ -47915,7 +47991,7 @@
         "name": "Starter",
         "alois": "SK",
         "qty": 17,
-        "no": 94
+        "no": 95
       },
       {
         "loc": "B070101",
@@ -47923,7 +47999,7 @@
         "name": "Blind compre",
         "alois": "A4",
         "qty": 108,
-        "no": 95
+        "no": 96
       },
       {
         "loc": "B070544",
@@ -47931,7 +48007,7 @@
         "name": "Bolt",
         "alois": "A4",
         "qty": 9,
-        "no": 96
+        "no": 97
       },
       {
         "loc": "B070805",
@@ -47939,7 +48015,7 @@
         "name": "ASA screw, s",
         "alois": "A5",
         "qty": 11,
-        "no": 97
+        "no": 98
       },
       {
         "loc": "B090403",
@@ -47947,7 +48023,7 @@
         "name": "Trim exhaust",
         "alois": "A4",
         "qty": 4,
-        "no": 98
+        "no": 99
       },
       {
         "loc": "B090631",
@@ -47955,7 +48031,7 @@
         "name": "Wheel center",
         "alois": "L7",
         "qty": 4,
-        "no": 99
+        "no": 100
       },
       {
         "loc": "B140432",
@@ -47963,7 +48039,7 @@
         "name": "Trim, exhaus",
         "alois": "A4",
         "qty": 4,
-        "no": 100
+        "no": 101
       },
       {
         "loc": "B140612",
@@ -47971,7 +48047,7 @@
         "name": "LOCKING NUT",
         "alois": "A4",
         "qty": 11,
-        "no": 101
+        "no": 102
       },
       {
         "loc": "C000000",
@@ -47979,7 +48055,7 @@
         "name": "Trim cover,",
         "alois": "A3",
         "qty": 2,
-        "no": 102
+        "no": 103
       },
       {
         "loc": "C000000",
@@ -47987,7 +48063,7 @@
         "name": "Trim cover,",
         "alois": "A4",
         "qty": 2,
-        "no": 103
+        "no": 104
       },
       {
         "loc": "C000000",
@@ -47995,7 +48071,7 @@
         "name": "Bumper trim",
         "alois": "L6",
         "qty": 1,
-        "no": 104
+        "no": 105
       },
       {
         "loc": "C000000",
@@ -48003,7 +48079,7 @@
         "name": "Bumper trim",
         "alois": "A5",
         "qty": 1,
-        "no": 105
+        "no": 106
       },
       {
         "loc": "C000000",
@@ -48011,7 +48087,7 @@
         "name": "Bumper cover",
         "alois": "A4",
         "qty": 4,
-        "no": 106
+        "no": 107
       },
       {
         "loc": "C000000",
@@ -48019,7 +48095,7 @@
         "name": "Trim panel",
         "alois": "A6",
         "qty": 1,
-        "no": 107
+        "no": 108
       },
       {
         "loc": "C000001",
@@ -48027,7 +48103,7 @@
         "name": "Hood",
         "alois": "O8",
         "qty": 1,
-        "no": 108
+        "no": 109
       },
       {
         "loc": "C000002",
@@ -48035,7 +48111,7 @@
         "name": "Bumper cover",
         "alois": "A4",
         "qty": 5,
-        "no": 109
+        "no": 110
       },
       {
         "loc": "C000002",
@@ -48043,7 +48119,7 @@
         "name": "Trim cover,",
         "alois": "A5",
         "qty": 2,
-        "no": 110
+        "no": 111
       },
       {
         "loc": "C000002",
@@ -48051,7 +48127,7 @@
         "name": "Trim panel,",
         "alois": "A4",
         "qty": 6,
-        "no": 111
+        "no": 112
       },
       {
         "loc": "C000002",
@@ -48059,7 +48135,7 @@
         "name": "Cover",
         "alois": "A6",
         "qty": 1,
-        "no": 112
+        "no": 113
       },
       {
         "loc": "C000002",
@@ -48067,7 +48143,7 @@
         "name": "Trim panel,",
         "alois": "O8",
         "qty": 1,
-        "no": 113
+        "no": 114
       },
       {
         "loc": "C000002",
@@ -48075,7 +48151,7 @@
         "name": "Rocker panel",
         "alois": "O8",
         "qty": 1,
-        "no": 114
+        "no": 115
       },
       {
         "loc": "C000003",
@@ -48083,7 +48159,7 @@
         "name": "ide panel, a",
         "alois": "A5",
         "qty": 1,
-        "no": 115
+        "no": 116
       },
       {
         "loc": "C000003",
@@ -48091,7 +48167,7 @@
         "name": "Side panel,",
         "alois": "O8",
         "qty": 1,
-        "no": 116
+        "no": 117
       },
       {
         "loc": "C000003",
@@ -48099,7 +48175,7 @@
         "name": "Side panel,",
         "alois": "L7",
         "qty": 2,
-        "no": 117
+        "no": 118
       },
       {
         "loc": "C000003",
@@ -48107,7 +48183,7 @@
         "name": "Windshield,",
         "alois": "A6",
         "qty": 1,
-        "no": 118
+        "no": 119
       },
       {
         "loc": "C000003",
@@ -48115,7 +48191,7 @@
         "name": "LED headligh",
         "alois": "O8",
         "qty": 1,
-        "no": 119
+        "no": 120
       },
       {
         "loc": "C000003",
@@ -48123,7 +48199,7 @@
         "name": "LED headligh",
         "alois": "A5",
         "qty": 1,
-        "no": 120
+        "no": 121
       },
       {
         "loc": "C000003",
@@ -48131,7 +48207,7 @@
         "name": "LED headligh",
         "alois": "A5",
         "qty": 3,
-        "no": 121
+        "no": 122
       },
       {
         "loc": "C000003",
@@ -48139,7 +48215,7 @@
         "name": "Headlight, L",
         "alois": "L6",
         "qty": 1,
-        "no": 122
+        "no": 123
       },
       {
         "loc": "C000004",
@@ -48147,21 +48223,13 @@
         "name": "Carrier, bum",
         "alois": "O8",
         "qty": 1,
-        "no": 123
+        "no": 124
       },
       {
         "loc": "C000005",
         "item": "36105A72870",
         "name": "Scheibenrad",
         "alois": "O8",
-        "qty": 1,
-        "no": 124
-      },
-      {
-        "loc": "-",
-        "item": "11137556664",
-        "name": "Oil Pan",
-        "alois": "SZ",
         "qty": 1,
         "no": 125
       },
