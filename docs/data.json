@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 28일 (월) · 14:08 기준",
+    "generated_at": "9월 28일 (월) · 14:21 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -234,8 +234,8 @@
     ]
   },
   "inv": {
-    "total": 1272437264,
-    "item_count": 2223,
+    "total": 1271779218,
+    "item_count": 2222,
     "code_count": 25,
     "alois_groups": [
       {
@@ -245,9 +245,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 226474132,
+            "val": 226401397,
             "pct": 17.8,
-            "qty": 2614,
+            "qty": 2613,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -264,8 +264,8 @@
               {
                 "item": "61615A85266",
                 "name": "Kit wiper bl",
-                "qty": 87,
-                "val": 6327945
+                "qty": 86,
+                "val": 6255210
               },
               {
                 "item": "61619478361",
@@ -1466,7 +1466,7 @@
           {
             "code": "A5",
             "val": 74500781,
-            "pct": 5.85,
+            "pct": 5.86,
             "qty": 1362,
             "parts": [
               {
@@ -2692,7 +2692,7 @@
           {
             "code": "A6",
             "val": 93182416,
-            "pct": 7.32,
+            "pct": 7.33,
             "qty": 1459,
             "parts": [
               {
@@ -4714,9 +4714,9 @@
             ]
           }
         ],
-        "subtotal_val": 476661616,
-        "subtotal_qty": 9053,
-        "subtotal_pct": 37.46
+        "subtotal_val": 476588881,
+        "subtotal_qty": 9052,
+        "subtotal_pct": 37.47
       },
       {
         "code": "L",
@@ -5518,7 +5518,7 @@
           {
             "code": "L7",
             "val": 70656204,
-            "pct": 5.55,
+            "pct": 5.56,
             "qty": 1413,
             "parts": [
               {
@@ -8214,7 +8214,7 @@
         ],
         "subtotal_val": 166067654,
         "subtotal_qty": 4648,
-        "subtotal_pct": 13.05
+        "subtotal_pct": 13.06
       },
       {
         "code": "O",
@@ -11078,7 +11078,7 @@
           {
             "code": "OE",
             "val": 299021709,
-            "pct": 23.5,
+            "pct": 23.51,
             "qty": 812,
             "parts": [
               {
@@ -11765,9 +11765,9 @@
           },
           {
             "code": "OV",
-            "val": 30790848,
-            "pct": 2.42,
-            "qty": 230,
+            "val": 30205537,
+            "pct": 2.38,
+            "qty": 229,
             "parts": [
               {
                 "item": "18308572487",
@@ -11840,12 +11840,6 @@
                 "name": "Starter",
                 "qty": 1,
                 "val": 653900
-              },
-              {
-                "item": "51249482804",
-                "name": "Spindle driv",
-                "qty": 1,
-                "val": 585311
               },
               {
                 "item": "51627481774",
@@ -12516,9 +12510,9 @@
             ]
           }
         ],
-        "subtotal_val": 443625994,
-        "subtotal_qty": 2415,
-        "subtotal_pct": 34.86
+        "subtotal_val": 443040683,
+        "subtotal_qty": 2414,
+        "subtotal_pct": 34.84
       },
       {
         "code": "I",
@@ -13240,7 +13234,7 @@
           {
             "code": "SZ",
             "val": 89479470,
-            "pct": 7.03,
+            "pct": 7.04,
             "qty": 748,
             "parts": [
               {
@@ -13824,21 +13818,21 @@
         ],
         "subtotal_val": 183613969,
         "subtotal_qty": 2020,
-        "subtotal_pct": 14.43
+        "subtotal_pct": 14.44
       }
     ]
   },
   "oaov": {
-    "total": 74021125,
-    "inv_total": 1272437264,
-    "pct": 5.82,
+    "total": 73435814,
+    "inv_total": 1271779218,
+    "pct": 5.77,
     "oa_val": 43230277,
-    "ov_val": 30790848,
+    "ov_val": 30205537,
     "oa_lines": 108,
-    "ov_lines": 124,
+    "ov_lines": 123,
     "oa_qty": 234,
-    "ov_qty": 230,
-    "item_count": 232,
+    "ov_qty": 229,
+    "item_count": 231,
     "oa_items": [
       {
         "item": "63119850411",
@@ -14801,14 +14795,6 @@
         "alois": "OV",
         "qty": 1,
         "val": 653900
-      },
-      {
-        "item": "51249482804",
-        "name": "Spindle driv",
-        "pgrp": "B1",
-        "alois": "OV",
-        "qty": 1,
-        "val": 585311
       },
       {
         "item": "51627481774",
@@ -22873,7 +22859,7 @@
         "ref_no": "SB2609001591",
         "req_qty": 1,
         "crt_qty": 16,
-        "avail_qty": 15,
+        "avail_qty": 14,
         "req_dt": "09-22",
         "req_dt_full": "2026-09-22 09:06:30",
         "req_brch": "AS_부산(해운중동)",
@@ -24886,10 +24872,27 @@
         "val": 59250,
         "sa": "박영묵",
         "dday": "D+0일"
+      },
+      {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "alois": "OE",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001596",
+        "req_qty": 1,
+        "crt_qty": 16,
+        "avail_qty": 14,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:20:31",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 86497,
+        "sa": "김민규",
+        "dday": "D+0일"
       }
     ],
-    "count": 374,
-    "total_val": 115935660,
+    "count": 375,
+    "total_val": 116022157,
     "groups": [
       {
         "code": "RO",
@@ -28956,11 +28959,28 @@
             "val": 59250,
             "sa": "박영묵",
             "dday": "D+0일"
+          },
+          {
+            "item": "64119382886",
+            "name": "MICROFILTER/",
+            "alois": "OE",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001596",
+            "req_qty": 1,
+            "crt_qty": 16,
+            "avail_qty": 14,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:20:31",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 86497,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 239,
-        "qty_sum": 346,
-        "val": 83356625
+        "count": 240,
+        "qty_sum": 347,
+        "val": 83443122
       },
       {
         "code": "SB",
@@ -30147,7 +30167,7 @@
             "ref_no": "SB2609001591",
             "req_qty": 1,
             "crt_qty": 16,
-            "avail_qty": 15,
+            "avail_qty": 14,
             "req_dt": "09-22",
             "req_dt_full": "2026-09-22 09:06:30",
             "req_brch": "AS_부산(해운중동)",
@@ -31467,15 +31487,6 @@
         "val": 1317562
       },
       {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "pgrp": "B1",
-        "alois": "OE",
-        "qty": 16,
-        "avail_qty": 15,
-        "val": 1297455
-      },
-      {
         "item": "34527916191",
         "name": "Repair kit,",
         "pgrp": "B1",
@@ -31519,6 +31530,15 @@
         "qty": 6,
         "avail_qty": 5,
         "val": 1235500
+      },
+      {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "pgrp": "B1",
+        "alois": "OE",
+        "qty": 16,
+        "avail_qty": 14,
+        "val": 1210958
       },
       {
         "item": "61615A43587",
@@ -38672,15 +38692,6 @@
             "val": 1317562
           },
           {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "pgrp": "B1",
-            "alois": "OE",
-            "qty": 16,
-            "avail_qty": 15,
-            "val": 1297455
-          },
-          {
             "item": "34527916191",
             "name": "Repair kit,",
             "pgrp": "B1",
@@ -38724,6 +38735,15 @@
             "qty": 6,
             "avail_qty": 5,
             "val": 1235500
+          },
+          {
+            "item": "64119382886",
+            "name": "MICROFILTER/",
+            "pgrp": "B1",
+            "alois": "OE",
+            "qty": 16,
+            "avail_qty": 14,
+            "val": 1210958
           },
           {
             "item": "90200005787",
@@ -39322,8 +39342,8 @@
         ],
         "count": 86,
         "qty_sum": 748,
-        "avail_sum": 725,
-        "val": 291205538
+        "avail_sum": 724,
+        "val": 291119041
       },
       {
         "code": "ON",
@@ -39858,7 +39878,7 @@
       }
     ],
     "count": 474,
-    "total_val": 356144396
+    "total_val": 356057899
   },
   "oflow": {
     "rows": [
@@ -40062,8 +40082,8 @@
       {
         "code": "OV",
         "in_val": 25169570,
-        "out_val": 4820470,
-        "net": 20349100
+        "out_val": 5405781,
+        "net": 19763789
       }
     ],
     "in_days": 17,
@@ -42610,7 +42630,7 @@
         "pub": "2026-09-28",
         "pub_full": "2026-09-28 08:49",
         "dday": "D+0일",
-        "amt": 47035
+        "amt": 84663
       },
       {
         "ro": "RO2609001504",
@@ -43032,14 +43052,14 @@
       },
       {
         "ro": "RO2609001556",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-28",
         "pub_full": "2026-09-28 10:49",
         "dday": "D+0일",
-        "amt": 56000
+        "amt": 1108600
       },
       {
         "ro": "RO2609001557",
@@ -43425,20 +43445,53 @@
         "pub_full": "2026-09-28 14:01",
         "dday": "D+0일",
         "amt": 1242700
+      },
+      {
+        "ro": "RO2609001595",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "강충성",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 14:20",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2609001596",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "김민규",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 14:20",
+        "dday": "D+0일",
+        "amt": 720411
+      },
+      {
+        "ro": "RO2609001597",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 14:23",
+        "dday": "D+0일",
+        "amt": 1950140
       }
     ],
-    "count": 305,
-    "total_amt": 760152462,
+    "count": 308,
+    "total_amt": 763913241,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 16,
-        "amt": 12874200
+        "count": 18,
+        "amt": 14824340
       },
       {
         "stat": "상담완료",
-        "count": 140,
-        "amt": 503953033
+        "count": 142,
+        "amt": 505819672
       },
       {
         "stat": "정비시작",
@@ -43447,8 +43500,8 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 38,
-        "amt": 48503759
+        "count": 37,
+        "amt": 48447759
       },
       {
         "stat": "공정마감",
@@ -46194,6 +46247,38 @@
         "val": 8322
       },
       {
+        "code": "SB2609001902",
+        "resv_full": "2026-10-02 09:20",
+        "resv": "10-02",
+        "dday": "D-4일",
+        "sa": "최민수",
+        "rows": [
+          {
+            "item": "12125A523E0",
+            "name": "Spark plug,",
+            "alois": "A3",
+            "sa": "최민수",
+            "req_qty": 6,
+            "crt_qty": 106,
+            "avail_qty": 100,
+            "val": 125904
+          },
+          {
+            "item": "33127607158",
+            "name": "Repair kit i",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 6,
+            "avail_qty": 3,
+            "val": 30485
+          }
+        ],
+        "count": 2,
+        "qty_sum": 7,
+        "val": 156389
+      },
+      {
         "code": "SB2609001899",
         "resv_full": "2026-10-02 09:20",
         "resv": "10-02",
@@ -46224,28 +46309,6 @@
         "count": 2,
         "qty_sum": 2,
         "val": 662157
-      },
-      {
-        "code": "SB2609001632",
-        "resv_full": "2026-10-02 09:20",
-        "resv": "10-02",
-        "dday": "D-4일",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "13627828769",
-            "name": "diesel parti",
-            "alois": "A5",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 297108
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 297108
       },
       {
         "code": "SB2609000806",
@@ -46373,7 +46436,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 16,
-            "avail_qty": 15,
+            "avail_qty": 14,
             "val": 86497
           },
           {
@@ -46635,7 +46698,7 @@
             "sa": "김도현",
             "req_qty": 1,
             "crt_qty": 6,
-            "avail_qty": 4,
+            "avail_qty": 3,
             "val": 30485
           }
         ],
@@ -47699,11 +47762,11 @@
       }
     ],
     "sb_count": 62,
-    "line_count": 245,
-    "total_val": 40950518,
+    "line_count": 246,
+    "total_val": 40809799,
     "o_lines": 53,
     "o_val": 14368729,
-    "resv_total": 382
+    "resv_total": 386
   },
   "sbcar": {
     "groups": [],
@@ -47712,7 +47775,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10127
+    "resv_total": 10131
   },
   "nonmng": {
     "rows": [],
@@ -48040,7 +48103,7 @@
         "item": "61615A85266",
         "name": "Kit wiper bl",
         "alois": "A1",
-        "qty": 87,
+        "qty": 86,
         "no": 40
       },
       {
@@ -50350,7 +50413,7 @@
         "item": "61615A85266",
         "name": "Kit wiper bl",
         "alois": "A1",
-        "qty": 87,
+        "qty": 86,
         "no": 204
       },
       {
