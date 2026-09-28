@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 28일 (월) · 12:07 기준",
+    "generated_at": "9월 28일 (월) · 12:20 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -43035,10 +43035,21 @@
         "pub_full": "2026-09-28 12:03",
         "dday": "D+0일",
         "amt": 28000
+      },
+      {
+        "ro": "RO2609001580",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 12:09",
+        "dday": "D+0일",
+        "amt": 227300
       }
     ],
-    "count": 293,
-    "total_amt": 747857703,
+    "count": 294,
+    "total_amt": 748085003,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -43047,8 +43058,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 144,
-        "amt": 504675586
+        "count": 145,
+        "amt": 504902886
       },
       {
         "stat": "정비시작",
@@ -44953,7 +44964,7 @@
             "sa": "염진아",
             "req_qty": 3,
             "crt_qty": 45,
-            "avail_qty": 39,
+            "avail_qty": 36,
             "val": 3522
           },
           {
@@ -47357,7 +47368,7 @@
     "total_val": 41023253,
     "o_lines": 53,
     "o_val": 14368729,
-    "resv_total": 380
+    "resv_total": 379
   },
   "sbcar": {
     "groups": [],
@@ -47366,7 +47377,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10112
+    "resv_total": 10114
   },
   "nonmng": {
     "rows": [],
