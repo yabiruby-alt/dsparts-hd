@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 28일 (월) · 14:35 기준",
+    "generated_at": "9월 28일 (월) · 14:48 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -234,8 +234,8 @@
     ]
   },
   "inv": {
-    "total": 1271291666,
-    "item_count": 2221,
+    "total": 1271225029,
+    "item_count": 2222,
     "code_count": 25,
     "alois_groups": [
       {
@@ -2685,9 +2685,9 @@
           },
           {
             "code": "A6",
-            "val": 93182416,
+            "val": 93205089,
             "pct": 7.33,
-            "qty": 1459,
+            "qty": 1460,
             "parts": [
               {
                 "item": "63119450229",
@@ -4370,6 +4370,12 @@
                 "val": 22800
               },
               {
+                "item": "34356854168",
+                "name": "Sensor E70,71,F16",
+                "qty": 1,
+                "val": 22673
+              },
+              {
                 "item": "18308631988",
                 "name": "Rubber Mount",
                 "qty": 1,
@@ -4708,9 +4714,9 @@
             ]
           }
         ],
-        "subtotal_val": 476272108,
-        "subtotal_qty": 9050,
-        "subtotal_pct": 37.46
+        "subtotal_val": 476294781,
+        "subtotal_qty": 9051,
+        "subtotal_pct": 37.47
       },
       {
         "code": "L",
@@ -8217,9 +8223,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 66233181,
+            "val": 66253851,
             "pct": 5.21,
-            "qty": 1127,
+            "qty": 1128,
             "parts": [
               {
                 "item": "17425A18806",
@@ -9938,6 +9944,12 @@
                 "val": 20732
               },
               {
+                "item": "11427808443",
+                "name": "Filt.Element",
+                "qty": 1,
+                "val": 20670
+              },
+              {
                 "item": "51767327314",
                 "name": "Joint seal,",
                 "qty": 1,
@@ -11072,7 +11084,7 @@
           {
             "code": "OE",
             "val": 298935212,
-            "pct": 23.51,
+            "pct": 23.52,
             "qty": 811,
             "parts": [
               {
@@ -11759,9 +11771,9 @@
           },
           {
             "code": "OV",
-            "val": 30205537,
-            "pct": 2.38,
-            "qty": 229,
+            "val": 30095557,
+            "pct": 2.37,
+            "qty": 227,
             "parts": [
               {
                 "item": "18308572487",
@@ -12122,12 +12134,6 @@
                 "name": "Integrated s",
                 "qty": 1,
                 "val": 121512
-              },
-              {
-                "item": "31126851693",
-                "name": "Rubber Mount",
-                "qty": 2,
-                "val": 109980
               },
               {
                 "item": "51127436843",
@@ -12504,8 +12510,8 @@
             ]
           }
         ],
-        "subtotal_val": 442954186,
-        "subtotal_qty": 2413,
+        "subtotal_val": 442864876,
+        "subtotal_qty": 2412,
         "subtotal_pct": 34.84
       },
       {
@@ -13817,16 +13823,16 @@
     ]
   },
   "oaov": {
-    "total": 73435814,
-    "inv_total": 1271291666,
-    "pct": 5.78,
+    "total": 73325834,
+    "inv_total": 1271225029,
+    "pct": 5.77,
     "oa_val": 43230277,
-    "ov_val": 30205537,
+    "ov_val": 30095557,
     "oa_lines": 108,
-    "ov_lines": 123,
+    "ov_lines": 122,
     "oa_qty": 234,
-    "ov_qty": 229,
-    "item_count": 231,
+    "ov_qty": 227,
+    "item_count": 230,
     "oa_items": [
       {
         "item": "63119850411",
@@ -15173,14 +15179,6 @@
         "alois": "OV",
         "qty": 1,
         "val": 121512
-      },
-      {
-        "item": "31126851693",
-        "name": "Rubber Mount",
-        "pgrp": "B1",
-        "alois": "OV",
-        "qty": 2,
-        "val": 109980
       },
       {
         "item": "51127436843",
@@ -17049,15 +17047,6 @@
         "last_in": "2024-10-15"
       },
       {
-        "item": "31126851693",
-        "name": "Rubber Mount",
-        "pgrp": "B1",
-        "alois": "OV",
-        "qty": 2,
-        "val": 109980,
-        "last_in": "2025-07-19"
-      },
-      {
         "item": "51139880520",
         "name": "Primed drip",
         "pgrp": "B1",
@@ -18057,9 +18046,9 @@
         "last_in": "2025-06-24"
       }
     ],
-    "m12_val": 62378155,
-    "m12_count": 210,
-    "m12_pct": 4.91,
+    "m12_val": 62268175,
+    "m12_count": 209,
+    "m12_pct": 4.9,
     "m24_items": [
       {
         "item": "24008741536",
@@ -24858,7 +24847,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2609001597",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "09-28",
         "req_dt_full": "2026-09-28 14:26:46",
@@ -24900,10 +24889,384 @@
         "val": 2044,
         "sa": "이정환",
         "dday": "D+0일"
+      },
+      {
+        "item": "51119451810",
+        "name": "Absorber rig",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:24",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 66300,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "41355A2F564",
+        "name": "Side panel b",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:24",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 47676,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "41145A37988",
+        "name": "Bracket, def",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:24",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 56855,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "41008495775",
+        "name": "Bracket side",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 1,
+        "crt_qty": 2,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:24",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 27880,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "07147147513",
+        "name": "Bolt",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 8,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:24",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 9344,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51719628915",
+        "name": "Abrasion pro",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:24",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 4345,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "41215A37B78",
+        "name": "Column A ext",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:24",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 1312740,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "66209274428",
+        "name": "Ultrasonic c",
+        "alois": "OV",
+        "pgrp": "B1",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:24",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 159817,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51138739351",
+        "name": "Trim ring, h",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:24",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 55485,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51139463250",
+        "name": "Front orname",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:24",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 472292,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51117386362",
+        "name": "Support, fog",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:25",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 60010,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51117397616",
+        "name": "Air inlet fi",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:25",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 28993,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "63117419634",
+        "name": "Headlight wi",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:25",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 1864566,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "07129907535",
+        "name": "Screw",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000003",
+        "req_qty": 3,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:44:25",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 2700,
+        "sa": "박진호",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51139464219",
+        "name": "Grill front",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001598",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:46:47",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 263268,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51747359788",
+        "name": "Covering cro",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001598",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:46:47",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 62252,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51119463487",
+        "name": "Impact absor",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001598",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:46:47",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 95411,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51119463477",
+        "name": "Rubber strip",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001598",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:46:47",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 35358,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51139498599",
+        "name": "Grill, air i",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001598",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:46:47",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 54150,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "66207927954",
+        "name": "Ultrasonic s",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001598",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:46:47",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 237790,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51139463474",
+        "name": "Grid, center",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001598",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:46:47",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 81150,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51119498603",
+        "name": "Cover, grill",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001598",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 14:46:47",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 49575,
+        "sa": "염진아",
+        "dday": "D+0일"
       }
     ],
-    "count": 376,
-    "total_val": 115901392,
+    "count": 398,
+    "total_val": 120949349,
     "groups": [
       {
         "code": "RO",
@@ -28979,7 +29342,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2609001597",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "09-28",
             "req_dt_full": "2026-09-28 14:26:46",
@@ -29021,11 +29384,147 @@
             "val": 2044,
             "sa": "이정환",
             "dday": "D+0일"
+          },
+          {
+            "item": "51139464219",
+            "name": "Grill front",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001598",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:46:47",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 263268,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51747359788",
+            "name": "Covering cro",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001598",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:46:47",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 62252,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51119463487",
+            "name": "Impact absor",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001598",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:46:47",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 95411,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51119463477",
+            "name": "Rubber strip",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001598",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:46:47",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 35358,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51139498599",
+            "name": "Grill, air i",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001598",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:46:47",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 54150,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "66207927954",
+            "name": "Ultrasonic s",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001598",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:46:47",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 237790,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51139463474",
+            "name": "Grid, center",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001598",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:46:47",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 81150,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51119498603",
+            "name": "Cover, grill",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001598",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:46:47",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 49575,
+            "sa": "염진아",
+            "dday": "D+0일"
           }
         ],
-        "count": 242,
-        "qty_sum": 350,
-        "val": 83432337
+        "count": 250,
+        "qty_sum": 358,
+        "val": 84311291
       },
       {
         "code": "SB",
@@ -31315,11 +31814,249 @@
             "val": 8000,
             "sa": "조재완",
             "dday": "D+0일"
+          },
+          {
+            "item": "51119451810",
+            "name": "Absorber rig",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:24",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 66300,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "41355A2F564",
+            "name": "Side panel b",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:24",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 47676,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "41145A37988",
+            "name": "Bracket, def",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:24",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 56855,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "41008495775",
+            "name": "Bracket side",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:24",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 27880,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "07147147513",
+            "name": "Bolt",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 8,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:24",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 9344,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51719628915",
+            "name": "Abrasion pro",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:24",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 4345,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "41215A37B78",
+            "name": "Column A ext",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:24",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 1312740,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "66209274428",
+            "name": "Ultrasonic c",
+            "alois": "OV",
+            "pgrp": "B1",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:24",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 159817,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51138739351",
+            "name": "Trim ring, h",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:24",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 55485,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51139463250",
+            "name": "Front orname",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:24",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 472292,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51117386362",
+            "name": "Support, fog",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:25",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 60010,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51117397616",
+            "name": "Air inlet fi",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:25",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 28993,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "63117419634",
+            "name": "Headlight wi",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:25",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 1864566,
+            "sa": "박진호",
+            "dday": "D+0일"
+          },
+          {
+            "item": "07129907535",
+            "name": "Screw",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000003",
+            "req_qty": 3,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 14:44:25",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 2700,
+            "sa": "박진호",
+            "dday": "D+0일"
           }
         ],
-        "count": 54,
-        "qty_sum": 123,
-        "val": 12763606
+        "count": 68,
+        "qty_sum": 146,
+        "val": 16932609
       }
     ]
   },
@@ -32766,15 +33503,6 @@
         "val": 112270
       },
       {
-        "item": "31126851693",
-        "name": "Rubber Mount",
-        "pgrp": "B1",
-        "alois": "OV",
-        "qty": 2,
-        "avail_qty": 2,
-        "val": 109980
-      },
-      {
         "item": "51139880520",
         "name": "Primed drip",
         "pgrp": "B1",
@@ -33505,15 +34233,6 @@
       },
       {
         "item": "51117293799",
-        "name": "Support, fog",
-        "pgrp": "B1",
-        "alois": "O8",
-        "qty": 1,
-        "avail_qty": 1,
-        "val": 60010
-      },
-      {
-        "item": "51117386362",
         "name": "Support, fog",
         "pgrp": "B1",
         "alois": "O8",
@@ -36362,15 +37081,6 @@
             "val": 60010
           },
           {
-            "item": "51117386362",
-            "name": "Support, fog",
-            "pgrp": "B1",
-            "alois": "O8",
-            "qty": 1,
-            "avail_qty": 1,
-            "val": 60010
-          },
-          {
             "item": "51217296457",
             "name": "Carrier, out",
             "pgrp": "M1",
@@ -37928,10 +38638,10 @@
             "val": 432
           }
         ],
-        "count": 259,
-        "qty_sum": 994,
-        "avail_sum": 976,
-        "val": 29849589
+        "count": 258,
+        "qty_sum": 993,
+        "avail_sum": 975,
+        "val": 29789579
       },
       {
         "code": "OA",
@@ -39602,15 +40312,6 @@
             "val": 130900
           },
           {
-            "item": "31126851693",
-            "name": "Rubber Mount",
-            "pgrp": "B1",
-            "alois": "OV",
-            "qty": 2,
-            "avail_qty": 2,
-            "val": 109980
-          },
-          {
             "item": "51472450511",
             "name": "Floor mats,",
             "pgrp": "B3",
@@ -39899,14 +40600,14 @@
             "val": 8906
           }
         ],
-        "count": 54,
-        "qty_sum": 120,
-        "avail_sum": 120,
-        "val": 7376121
+        "count": 53,
+        "qty_sum": 118,
+        "avail_sum": 118,
+        "val": 7266141
       }
     ],
-    "count": 474,
-    "total_val": 356114881
+    "count": 472,
+    "total_val": 355944891
   },
   "oflow": {
     "rows": [
@@ -40110,8 +40811,8 @@
       {
         "code": "OV",
         "in_val": 25169570,
-        "out_val": 5405781,
-        "net": 19763789
+        "out_val": 5515761,
+        "net": 19653809
       }
     ],
     "in_days": 17,
@@ -41705,14 +42406,14 @@
       },
       {
         "ro": "RO2609001263",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 08:46",
         "dday": "D+7일",
-        "amt": 1086200
+        "amt": 1100200
       },
       {
         "ro": "RO2609001266",
@@ -41925,8 +42626,8 @@
       },
       {
         "ro": "RO2609001350",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-22",
@@ -42350,7 +43051,7 @@
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 13:22",
         "dday": "D+5일",
-        "amt": 504700
+        "amt": 649200
       },
       {
         "ro": "RO2609001451",
@@ -42823,7 +43524,7 @@
         "pub": "2026-09-28",
         "pub_full": "2026-09-28 09:24",
         "dday": "D+0일",
-        "amt": 2097300
+        "amt": 4214300
       },
       {
         "ro": "RO2609001520",
@@ -43417,7 +44118,7 @@
         "pub": "2026-09-28",
         "pub_full": "2026-09-28 13:33",
         "dday": "D+0일",
-        "amt": 56000
+        "amt": 1025900
       },
       {
         "ro": "RO2609001591",
@@ -43517,30 +44218,52 @@
         "pub_full": "2026-09-28 14:25",
         "dday": "D+0일",
         "amt": 3298500
+      },
+      {
+        "ro": "RO2609001599",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "강충성",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 14:45",
+        "dday": "D+0일",
+        "amt": 28000
+      },
+      {
+        "ro": "RO2609001600",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 14:48",
+        "dday": "D+0일",
+        "amt": 2124600
       }
     ],
-    "count": 309,
-    "total_amt": 770181141,
+    "count": 311,
+    "total_amt": 775579141,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 16,
-        "amt": 16172700
+        "count": 17,
+        "amt": 18297300
       },
       {
         "stat": "상담완료",
-        "count": 142,
-        "amt": 507559358
+        "count": 143,
+        "amt": 508283689
       },
       {
         "stat": "정비시작",
-        "count": 36,
-        "amt": 39779628
+        "count": 37,
+        "amt": 43414897
       },
       {
         "stat": "End Control 요청",
-        "count": 38,
-        "amt": 50803155
+        "count": 37,
+        "amt": 49716955
       },
       {
         "stat": "공정마감",
@@ -47783,7 +48506,7 @@
     "total_val": 40809799,
     "o_lines": 53,
     "o_val": 14368729,
-    "resv_total": 389
+    "resv_total": 396
   },
   "sbcar": {
     "groups": [],
@@ -47792,7 +48515,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10132
+    "resv_total": 10134
   },
   "nonmng": {
     "rows": [],
