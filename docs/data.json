@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 28일 (월) · 12:33 기준",
+    "generated_at": "9월 28일 (월) · 12:50 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -42564,17 +42564,6 @@
         "amt": 4109500
       },
       {
-        "ro": "RO2609001524",
-        "stat": "상담시작",
-        "stat_cd": "01",
-        "svc": "진단",
-        "sa": "김도현",
-        "pub": "2026-09-28",
-        "pub_full": "2026-09-28 09:35",
-        "dday": "D+0일",
-        "amt": 0
-      },
-      {
         "ro": "RO2609001525",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -43034,7 +43023,7 @@
         "pub": "2026-09-28",
         "pub_full": "2026-09-28 12:03",
         "dday": "D+0일",
-        "amt": 28000
+        "amt": 334440
       },
       {
         "ro": "RO2609001580",
@@ -43046,10 +43035,21 @@
         "pub_full": "2026-09-28 12:09",
         "dday": "D+0일",
         "amt": 227300
+      },
+      {
+        "ro": "RO2609001581",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "김민규",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 12:50",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
     "count": 294,
-    "total_amt": 748085003,
+    "total_amt": 748391443,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -43059,7 +43059,7 @@
       {
         "stat": "상담완료",
         "count": 143,
-        "amt": 504814886
+        "amt": 505121326
       },
       {
         "stat": "정비시작",
@@ -47368,7 +47368,7 @@
     "total_val": 41023253,
     "o_lines": 53,
     "o_val": 14368729,
-    "resv_total": 379
+    "resv_total": 380
   },
   "sbcar": {
     "groups": [],
@@ -47377,7 +47377,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10114
+    "resv_total": 10115
   },
   "nonmng": {
     "rows": [],
