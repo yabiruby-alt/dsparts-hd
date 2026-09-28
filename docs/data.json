@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 28일 (월) · 15:28 기준",
+    "generated_at": "9월 28일 (월) · 15:35 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -44391,10 +44391,21 @@
         "pub_full": "2026-09-28 15:20",
         "dday": "D+0일",
         "amt": 216361
+      },
+      {
+        "ro": "RO2609001608",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 15:32",
+        "dday": "D+0일",
+        "amt": 83000
       }
     ],
-    "count": 318,
-    "total_amt": 786322338,
+    "count": 319,
+    "total_amt": 786405338,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -44403,8 +44414,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 146,
-        "amt": 516525478
+        "count": 147,
+        "amt": 516608478
       },
       {
         "stat": "정비시작",
@@ -48657,7 +48668,7 @@
     "total_val": 40809799,
     "o_lines": 53,
     "o_val": 14368729,
-    "resv_total": 408
+    "resv_total": 411
   },
   "sbcar": {
     "groups": [],
@@ -52575,6 +52586,44 @@
     "count": 362,
     "start": "2026-09-21",
     "end": "2026-09-26"
+  },
+  "noloc": {
+    "rows": [
+      {
+        "item": "61278855826",
+        "name": "Housing uppe",
+        "alois": "SZ",
+        "loc": "(공란)",
+        "qty": 1,
+        "prc": 1656055,
+        "val": 1656055,
+        "last_purc": "2026-09-18"
+      },
+      {
+        "item": "99985BA3536",
+        "name": "PotenzaS001R",
+        "alois": "SZ",
+        "loc": "(공란)",
+        "qty": 2,
+        "prc": 483500,
+        "val": 967000,
+        "last_purc": "2026-08-25"
+      },
+      {
+        "item": "99985BA3534",
+        "name": "PotenzaS001R",
+        "alois": "SZ",
+        "loc": "(공란)",
+        "qty": 2,
+        "prc": 435700,
+        "val": 871400,
+        "last_purc": "2026-08-25"
+      }
+    ],
+    "count": 3,
+    "total_val": 3494455,
+    "qty_sum": 5,
+    "pct": 0.28
   },
   "reasons": {}
 }

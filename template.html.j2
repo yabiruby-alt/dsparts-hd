@@ -412,6 +412,10 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="2" width="12" height="14" rx="1.5"/><path d="M6.5 6.5 8 8l3-3"/><path d="M6 12h6"/><path d="M3 6h12" stroke-dasharray="1.6 1.6"/></svg>
         주간 재고조사
       </button>
+      <button class="sb-item" id="nav-noloc" aria-current="false" onclick="selectPage('noloc')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2a5.5 5.5 0 0 1 5.5 5.5C14.5 11.5 9 16 9 16S3.5 11.5 3.5 7.5A5.5 5.5 0 0 1 9 2Z"/><path d="M6 6.5 12 12M12 6.5 6 12"/></svg>
+        NO LOCATION 파트
+      </button>
     </div>
 
     <div class="sb-section">
@@ -1184,6 +1188,50 @@
       </div>
     </section>
 
+    <section id="page-noloc" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>NO LOCATION 파트</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 현재고리스트 · 부품창고 · LOCATION 공란/N-STK</div>
+      </div>
+
+      <div class="kpistrip">
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">01</span>
+          <span class="eyebrow">NO LOCATION 재고금액(원가)</span>
+          <span class="value">₩{{ '{:,}'.format(noloc.total_val) }}</span>
+          <span class="foot">{{ noloc.count }}품목 · 재고수량 {{ '{:,}'.format(noloc.qty_sum) }}개</span>
+        </div>
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">02</span>
+          <span class="eyebrow">전체재고 대비 비율</span>
+          <span class="value">{{ '%.2f'|format(noloc.pct) }}%</span>
+          <span class="foot">부품창고 전체재고 ₩{{ '{:,}'.format(inv.total) }} 기준</span>
+        </div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">NO LOCATION 파트 리스트</span>
+          <span class="val">{{ noloc.count }}건</span>
+          <span class="foot">LOCATION 공란 또는 N/STK · 이동평균가 0원 제외 · 재고금액 큰 순</span>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>부품번호</th><th>품명</th><th>ALOIS</th><th>LOCATION</th><th class="num">현재고</th><th class="num">이동평균가</th><th class="num">재고금액</th><th>최종구매일자</th></tr></thead>
+            <tbody>
+              {% for r in noloc.rows %}
+              <tr><td class="mono">{{ r.item }}</td><td>{{ r.name }}</td><td><span class="aloistag{{ ' oseries' if r.alois and r.alois.startswith('O') else '' }}">{{ r.alois }}</span></td><td class="mono">{{ r.loc }}</td><td class="num">{{ r.qty }}</td><td class="num">{{ '{:,}'.format(r.prc) }}</td><td class="num">{{ '{:,}'.format(r.val) }}</td><td class="mono">{{ r.last_purc }}</td></tr>
+              {% else %}
+              <tr><td colspan="8" class="empty-note">LOCATION 공란/N-STK 재고 없음</td></tr>
+              {% endfor %}
+              <tr class="subtotal"><td colspan="4">합계</td><td class="num">{{ '{:,}'.format(noloc.qty_sum) }}</td><td class="num"></td><td class="num">{{ '{:,}'.format(noloc.total_val) }}</td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section id="page-stockcheck" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>일일 재고조사</b></span>
@@ -1264,7 +1312,7 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','oaov','longstock','nonmng','stockcheck','stockcheckweek','opart','oflow','calendar'];
+  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','oaov','longstock','nonmng','stockcheck','stockcheckweek','noloc','opart','oflow','calendar'];
   function selectPage(key){
     PAGES.forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); });
     document.querySelector('.maininner').classList.toggle('wide', key==='calendar');

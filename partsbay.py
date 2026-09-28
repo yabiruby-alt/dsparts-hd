@@ -690,6 +690,30 @@ def build_nonmng(pw_rows, inv_total):
     }
 
 
+def build_no_location(pw_rows, inv_total):
+    """현재고리스트(부품창고) 중 재고는 있는데 LOCATION이 공란이거나 N/STK로 찍힌 부품. 이동평균가 0원은 제외. 금액=현재고×이동평균단가(원가)."""
+    def val_fn(r):
+        return num(r.get("crtQty")) * num(r.get("movPrc"))
+
+    def is_no_loc(r):
+        loc = (r.get("lctCd") or "").strip()
+        return loc == "" or loc.upper() == "N/STK"
+
+    rows = sorted([{
+        "item": r.get("itemCd"), "name": r.get("itemNm"), "alois": r.get("aloisCd"),
+        "loc": (r.get("lctCd") or "").strip() or "(공란)",
+        "qty": int(num(r.get("crtQty"))), "prc": round(num(r.get("movPrc"))), "val": round(val_fn(r)),
+        "last_purc": (r.get("lastPurcDt") or "")[:10] or "-",
+    } for r in pw_rows if is_no_loc(r) and num(r.get("crtQty")) > 0 and num(r.get("movPrc")) > 0], key=lambda i: -i["val"])
+
+    total_val = sum(i["val"] for i in rows)
+    return {
+        "rows": rows, "count": len(rows), "total_val": total_val,
+        "qty_sum": sum(i["qty"] for i in rows),
+        "pct": round(100 * total_val / inv_total, 2) if inv_total else 0,
+    }
+
+
 def build_o_available(pw_rows):
     """ALOIS O계열 중 DMS 가용재고(ableQty) 기준 순수 가용분만.
     ableQty는 DMS가 RO/SB/SP 등 모든 홀드를 이미 반영해 계산한 값이라, 이걸 직접 써야
@@ -1170,6 +1194,7 @@ def run_cycle(page: Page) -> None:
     opart = build_o_parts(req_rows, now, pgrp_map)
     oavail = build_o_available(pw_rows)
     nonmng = build_nonmng(pw_rows, inv["total"])
+    noloc = build_no_location(pw_rows, inv["total"])
     openro = build_open_ro(open_ro_rows, now)
     noshow = build_sb_parts(req_rows, noshow_rows, now, exclude_zero_stock=True)
     sbresv = build_sb_parts(req_rows, sbresv_rows, now, farthest_first=True)
@@ -1183,7 +1208,7 @@ def run_cycle(page: Page) -> None:
                  "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
         "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro, "noshow": noshow, "sbresv": sbresv, "sbcar": sbcar, "nonmng": nonmng,
-        "stockcheck": stockcheck, "stockcheck_week": stockcheck_week,
+        "stockcheck": stockcheck, "stockcheck_week": stockcheck_week, "noloc": noloc,
     }
 
     global LAST_DATA
