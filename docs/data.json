@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 29일 (화) · 08:19 기준",
+    "generated_at": "9월 29일 (화) · 08:32 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -44986,28 +44986,28 @@
       },
       {
         "ro": "RO2609001625",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-09-29",
         "pub_full": "2026-09-29 08:20",
         "dday": "D+0일",
-        "amt": 887500
+        "amt": 796137
       }
     ],
     "count": 270,
-    "total_amt": 712956145,
+    "total_amt": 712864782,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 12,
-        "amt": 5991900
+        "count": 11,
+        "amt": 5104400
       },
       {
         "stat": "상담완료",
-        "count": 143,
-        "amt": 506537239
+        "count": 144,
+        "amt": 507333376
       },
       {
         "stat": "정비시작",
@@ -49037,7 +49037,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 30,
-            "avail_qty": 29,
+            "avail_qty": 28,
             "val": 68185
           },
           {
@@ -51692,10 +51692,20 @@
         "count": 3,
         "qty_sum": 3,
         "val": 577936
-      },
+      }
+    ],
+    "sb_count": 118,
+    "line_count": 421,
+    "total_val": 74667497,
+    "o_lines": 54,
+    "o_val": 12284748,
+    "resv_total": 429
+  },
+  "sbcar": {
+    "groups": [
       {
         "code": "SB2608000399",
-        "resv_full": "2026-09-29 09:00",
+        "resv_full": "2026-09-29 08:30",
         "resv": "09-29",
         "dday": "오늘",
         "sa": "우종훈",
@@ -51806,21 +51816,12 @@
         "val": 1058220
       }
     ],
-    "sb_count": 119,
-    "line_count": 431,
-    "total_val": 75725717,
-    "o_lines": 54,
-    "o_val": 12284748,
-    "resv_total": 430
-  },
-  "sbcar": {
-    "groups": [],
-    "sb_count": 0,
-    "line_count": 0,
-    "total_val": 0,
+    "sb_count": 1,
+    "line_count": 10,
+    "total_val": 1058220,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10082
+    "resv_total": 10083
   },
   "nonmng": {
     "rows": [
