@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 28일 (월) · 13:29 기준",
+    "generated_at": "9월 28일 (월) · 13:42 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -234,7 +234,7 @@
     ]
   },
   "inv": {
-    "total": 1276726288,
+    "total": 1276652909,
     "item_count": 2231,
     "code_count": 25,
     "alois_groups": [
@@ -337,9 +337,9 @@
           },
           {
             "code": "A2",
-            "val": 16651230,
+            "val": 16586295,
             "pct": 1.3,
-            "qty": 1145,
+            "qty": 1144,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -362,8 +362,8 @@
               {
                 "item": "61610003090",
                 "name": "Set of wiper 6GT",
-                "qty": 20,
-                "val": 1298700
+                "qty": 19,
+                "val": 1233765
               },
               {
                 "item": "61610040534",
@@ -4726,8 +4726,8 @@
             ]
           }
         ],
-        "subtotal_val": 477091871,
-        "subtotal_qty": 9065,
+        "subtotal_val": 477026936,
+        "subtotal_qty": 9064,
         "subtotal_pct": 37.37
       },
       {
@@ -4737,9 +4737,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 28734368,
+            "val": 28725924,
             "pct": 2.25,
-            "qty": 1957,
+            "qty": 1955,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4798,8 +4798,8 @@
               {
                 "item": "66126912985",
                 "name": "Key Battery",
-                "qty": 65,
-                "val": 274430
+                "qty": 63,
+                "val": 265986
               }
             ]
           },
@@ -8224,8 +8224,8 @@
             ]
           }
         ],
-        "subtotal_val": 166018095,
-        "subtotal_qty": 4650,
+        "subtotal_val": 166009651,
+        "subtotal_qty": 4648,
         "subtotal_pct": 13.0
       },
       {
@@ -13878,7 +13878,7 @@
   },
   "oaov": {
     "total": 74026075,
-    "inv_total": 1276726288,
+    "inv_total": 1276652909,
     "pct": 5.8,
     "oa_val": 43235227,
     "ov_val": 30790848,
@@ -24009,23 +24009,6 @@
         "dday": "D+5일"
       },
       {
-        "item": "61278843416",
-        "name": "Cell monitor",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609000978",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-23",
-        "req_dt_full": "2026-09-23 16:43:52",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 107525,
-        "sa": "우종훈",
-        "dday": "D+5일"
-      },
-      {
         "item": "34111123072",
         "name": "BOLT",
         "alois": "O8",
@@ -24789,10 +24772,180 @@
         "val": 154103,
         "sa": "염진아",
         "dday": "D+0일"
+      },
+      {
+        "item": "11538654390",
+        "name": "Coolant line",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001389",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 13:42:41",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 95985,
+        "sa": "이정환",
+        "dday": "D+0일"
+      },
+      {
+        "item": "11538654392",
+        "name": "Coolant line",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001389",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 13:42:41",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 74023,
+        "sa": "이정환",
+        "dday": "D+0일"
+      },
+      {
+        "item": "07129952102",
+        "name": "Clamp",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001389",
+        "req_qty": 2,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 13:42:41",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 3650,
+        "sa": "이정환",
+        "dday": "D+0일"
+      },
+      {
+        "item": "11287549873",
+        "name": "Tensioner",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001389",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 13:42:41",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 131445,
+        "sa": "이정환",
+        "dday": "D+0일"
+      },
+      {
+        "item": "11538654391",
+        "name": "Coolant line",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001389",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 13:42:42",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 120633,
+        "sa": "이정환",
+        "dday": "D+0일"
+      },
+      {
+        "item": "11537586885",
+        "name": "THERMOSTAT",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001389",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 13:42:42",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 93365,
+        "sa": "이정환",
+        "dday": "D+0일"
+      },
+      {
+        "item": "11518657274",
+        "name": "Coolant pump",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001389",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 13:42:42",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 329052,
+        "sa": "이정환",
+        "dday": "D+0일"
+      },
+      {
+        "item": "17128602732",
+        "name": "Coolant pipe",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001389",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 13:42:42",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 40527,
+        "sa": "이정환",
+        "dday": "D+0일"
+      },
+      {
+        "item": "17128602730",
+        "name": "Hose for cyl",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001389",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 13:42:42",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 47874,
+        "sa": "이정환",
+        "dday": "D+0일"
+      },
+      {
+        "item": "61278843416",
+        "name": "Cell monitor",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609000978",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 13:42:43",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 107525,
+        "sa": "우종훈",
+        "dday": "D+0일"
       }
     ],
-    "count": 365,
-    "total_val": 115466941,
+    "count": 374,
+    "total_val": 116403495,
     "groups": [
       {
         "code": "RO",
@@ -28130,23 +28283,6 @@
             "dday": "D+5일"
           },
           {
-            "item": "61278843416",
-            "name": "Cell monitor",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609000978",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-23",
-            "req_dt_full": "2026-09-23 16:43:52",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 107525,
-            "sa": "우종훈",
-            "dday": "D+5일"
-          },
-          {
             "item": "22117582317",
             "name": "Engine mount",
             "alois": "O8",
@@ -28689,11 +28825,181 @@
             "val": 154103,
             "sa": "염진아",
             "dday": "D+0일"
+          },
+          {
+            "item": "11538654390",
+            "name": "Coolant line",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001389",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 13:42:41",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 95985,
+            "sa": "이정환",
+            "dday": "D+0일"
+          },
+          {
+            "item": "11538654392",
+            "name": "Coolant line",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001389",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 13:42:41",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 74023,
+            "sa": "이정환",
+            "dday": "D+0일"
+          },
+          {
+            "item": "07129952102",
+            "name": "Clamp",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001389",
+            "req_qty": 2,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 13:42:41",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 3650,
+            "sa": "이정환",
+            "dday": "D+0일"
+          },
+          {
+            "item": "11287549873",
+            "name": "Tensioner",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001389",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 13:42:41",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 131445,
+            "sa": "이정환",
+            "dday": "D+0일"
+          },
+          {
+            "item": "11538654391",
+            "name": "Coolant line",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001389",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 13:42:42",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 120633,
+            "sa": "이정환",
+            "dday": "D+0일"
+          },
+          {
+            "item": "11537586885",
+            "name": "THERMOSTAT",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001389",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 13:42:42",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 93365,
+            "sa": "이정환",
+            "dday": "D+0일"
+          },
+          {
+            "item": "11518657274",
+            "name": "Coolant pump",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001389",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 13:42:42",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 329052,
+            "sa": "이정환",
+            "dday": "D+0일"
+          },
+          {
+            "item": "17128602732",
+            "name": "Coolant pipe",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001389",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 13:42:42",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 40527,
+            "sa": "이정환",
+            "dday": "D+0일"
+          },
+          {
+            "item": "17128602730",
+            "name": "Hose for cyl",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001389",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 13:42:42",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 47874,
+            "sa": "이정환",
+            "dday": "D+0일"
+          },
+          {
+            "item": "61278843416",
+            "name": "Cell monitor",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609000978",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 13:42:43",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 107525,
+            "sa": "우종훈",
+            "dday": "D+0일"
           }
         ],
-        "count": 229,
-        "qty_sum": 336,
-        "val": 82302595
+        "count": 238,
+        "qty_sum": 346,
+        "val": 83239149
       },
       {
         "code": "SB",
@@ -41017,7 +41323,7 @@
         "pub": "2026-09-16",
         "pub_full": "2026-09-16 17:11",
         "dday": "D+12일",
-        "amt": 222394
+        "amt": 214731
       },
       {
         "ro": "RO2609001069",
@@ -41809,7 +42115,7 @@
         "pub": "2026-09-22",
         "pub_full": "2026-09-22 13:18",
         "dday": "D+6일",
-        "amt": 811260
+        "amt": 9427460
       },
       {
         "ro": "RO2609001392",
@@ -42825,8 +43131,8 @@
       },
       {
         "ro": "RO2609001555",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-09-28",
@@ -42836,8 +43142,8 @@
       },
       {
         "ro": "RO2609001556",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-28",
@@ -43056,8 +43362,8 @@
       },
       {
         "ro": "RO2609001578",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-09-28",
@@ -43122,8 +43428,8 @@
       },
       {
         "ro": "RO2609001585",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-09-28",
@@ -43163,10 +43469,43 @@
         "pub_full": "2026-09-28 13:22",
         "dday": "D+0일",
         "amt": 42000
+      },
+      {
+        "ro": "RO2609001589",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 13:33",
+        "dday": "D+0일",
+        "amt": 56000
+      },
+      {
+        "ro": "RO2609001591",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "최민수",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 13:40",
+        "dday": "D+0일",
+        "amt": 678378
+      },
+      {
+        "ro": "RO2609001590",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 13:40",
+        "dday": "D+0일",
+        "amt": 196980
       }
     ],
-    "count": 299,
-    "total_amt": 750699874,
+    "count": 302,
+    "total_amt": 760239769,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -43175,18 +43514,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 139,
-        "amt": 498628046
+        "count": 140,
+        "amt": 507269404
       },
       {
         "stat": "정비시작",
         "count": 33,
-        "amt": 36158218
+        "amt": 36886494
       },
       {
         "stat": "End Control 요청",
-        "count": 33,
-        "amt": 47165447
+        "count": 35,
+        "amt": 47343371
       },
       {
         "stat": "공정마감",
@@ -43196,7 +43535,7 @@
       {
         "stat": "가정산 완료",
         "count": 76,
-        "amt": 151931063
+        "amt": 151923400
       }
     ],
     "oldest": "D+524일"
@@ -43943,7 +44282,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -43975,7 +44314,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -45879,7 +46218,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -45945,7 +46284,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -45977,7 +46316,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -46245,7 +46584,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -46277,7 +46616,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -46321,7 +46660,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -46439,7 +46778,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -46483,7 +46822,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -46505,7 +46844,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -46527,7 +46866,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -46651,7 +46990,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -47035,7 +47374,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           },
           {
@@ -47045,7 +47384,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 59,
-            "avail_qty": 57,
+            "avail_qty": 56,
             "val": 1124
           }
         ],
@@ -47201,7 +47540,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -47427,7 +47766,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 90,
-            "avail_qty": 74,
+            "avail_qty": 73,
             "val": 8322
           }
         ],
@@ -47456,36 +47795,14 @@
         "count": 1,
         "qty_sum": 4,
         "val": 70560
-      },
-      {
-        "code": "SB2609001593",
-        "resv_full": "2026-09-28 14:00",
-        "resv": "09-28",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "61615A85266",
-            "name": "Kit wiper bl",
-            "alois": "A1",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 87,
-            "avail_qty": 86,
-            "val": 72735
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 72735
       }
     ],
-    "sb_count": 63,
-    "line_count": 246,
-    "total_val": 41023253,
+    "sb_count": 62,
+    "line_count": 245,
+    "total_val": 40950518,
     "o_lines": 53,
     "o_val": 14368729,
-    "resv_total": 380
+    "resv_total": 378
   },
   "sbcar": {
     "groups": [],
@@ -47494,7 +47811,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10122
+    "resv_total": 10126
   },
   "nonmng": {
     "rows": [],
@@ -48900,7 +49217,7 @@
         "item": "66126912985",
         "name": "Key Battery",
         "alois": "L1",
-        "qty": 65,
+        "qty": 63,
         "no": 50
       },
       {
@@ -50092,7 +50409,7 @@
         "item": "61610003090",
         "name": "Set of wiper 6GT",
         "alois": "A2",
-        "qty": 20,
+        "qty": 19,
         "no": 199
       },
       {
