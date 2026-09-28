@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 28일 (월) · 15:14 기준",
+    "generated_at": "9월 28일 (월) · 15:28 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -234,7 +234,7 @@
     ]
   },
   "inv": {
-    "total": 1267692287,
+    "total": 1267682107,
     "item_count": 2213,
     "code_count": 25,
     "alois_groups": [
@@ -725,9 +725,9 @@
           },
           {
             "code": "A4",
-            "val": 41826751,
+            "val": 41816571,
             "pct": 3.3,
-            "qty": 1961,
+            "qty": 1951,
             "parts": [
               {
                 "item": "63117214962",
@@ -1282,12 +1282,6 @@
                 "val": 49808
               },
               {
-                "item": "51418224768",
-                "name": "Clip",
-                "qty": 45,
-                "val": 45810
-              },
-              {
                 "item": "07146885389",
                 "name": "Star-socket",
                 "qty": 7,
@@ -1334,6 +1328,12 @@
                 "name": "Blind rivet",
                 "qty": 41,
                 "val": 35875
+              },
+              {
+                "item": "51418224768",
+                "name": "Clip",
+                "qty": 35,
+                "val": 35630
               },
               {
                 "item": "07147468919",
@@ -4708,8 +4708,8 @@
             ]
           }
         ],
-        "subtotal_val": 476005994,
-        "subtotal_qty": 9046,
+        "subtotal_val": 475995814,
+        "subtotal_qty": 9036,
         "subtotal_pct": 37.55
       },
       {
@@ -13770,7 +13770,7 @@
   },
   "oaov": {
     "total": 72319897,
-    "inv_total": 1267692287,
+    "inv_total": 1267682107,
     "pct": 5.7,
     "oa_val": 43230277,
     "ov_val": 29089620,
@@ -19976,7 +19976,7 @@
         "ref_no": "SP2609000016",
         "req_qty": 1,
         "crt_qty": 4,
-        "avail_qty": 3,
+        "avail_qty": 2,
         "req_dt": "09-02",
         "req_dt_full": "2026-09-02 13:36:20",
         "req_brch": "AS_부산(해운중동)",
@@ -19993,7 +19993,7 @@
         "ref_no": "SP2609000016",
         "req_qty": 1,
         "crt_qty": 6,
-        "avail_qty": 5,
+        "avail_qty": 4,
         "req_dt": "09-02",
         "req_dt_full": "2026-09-02 13:36:20",
         "req_brch": "AS_부산(해운중동)",
@@ -25202,10 +25202,78 @@
         "val": 174234,
         "sa": "박영묵",
         "dday": "D+0일"
+      },
+      {
+        "item": "90200007292",
+        "name": "BMW Caddy Beige &amp;amp; Grey",
+        "alois": "OE",
+        "pgrp": "B7",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000102",
+        "req_qty": 1,
+        "crt_qty": 6,
+        "avail_qty": 4,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 15:27:01",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 247100,
+        "sa": "김창열",
+        "dday": "D+0일"
+      },
+      {
+        "item": "90200007293",
+        "name": "BMW Caddy M",
+        "alois": "OE",
+        "pgrp": "B7",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000102",
+        "req_qty": 1,
+        "crt_qty": 4,
+        "avail_qty": 2,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 15:27:01",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 247100,
+        "sa": "김창열",
+        "dday": "D+0일"
+      },
+      {
+        "item": "90200007312",
+        "name": "MINI Caddy Bag",
+        "alois": "OE",
+        "pgrp": "B7",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000102",
+        "req_qty": 1,
+        "crt_qty": 2,
+        "avail_qty": 1,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 15:27:01",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 235300,
+        "sa": "김창열",
+        "dday": "D+0일"
+      },
+      {
+        "item": "90200007313",
+        "name": "BMW Caddy Olive",
+        "alois": "OE",
+        "pgrp": "B7",
+        "ref_tp": "SP",
+        "ref_no": "SP2609000102",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-28",
+        "req_dt_full": "2026-09-28 15:27:01",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 170600,
+        "sa": "김창열",
+        "dday": "D+0일"
       }
     ],
-    "count": 399,
-    "total_val": 120509566,
+    "count": 403,
+    "total_val": 121409666,
     "groups": [
       {
         "code": "RO",
@@ -31304,7 +31372,7 @@
             "ref_no": "SP2609000016",
             "req_qty": 1,
             "crt_qty": 4,
-            "avail_qty": 3,
+            "avail_qty": 2,
             "req_dt": "09-02",
             "req_dt_full": "2026-09-02 13:36:20",
             "req_brch": "AS_부산(해운중동)",
@@ -31321,7 +31389,7 @@
             "ref_no": "SP2609000016",
             "req_qty": 1,
             "crt_qty": 6,
-            "avail_qty": 5,
+            "avail_qty": 4,
             "req_dt": "09-02",
             "req_dt_full": "2026-09-02 13:36:20",
             "req_brch": "AS_부산(해운중동)",
@@ -32008,11 +32076,79 @@
             "val": 2700,
             "sa": "박진호",
             "dday": "D+0일"
+          },
+          {
+            "item": "90200007292",
+            "name": "BMW Caddy Beige &amp;amp; Grey",
+            "alois": "OE",
+            "pgrp": "B7",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000102",
+            "req_qty": 1,
+            "crt_qty": 6,
+            "avail_qty": 4,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 15:27:01",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 247100,
+            "sa": "김창열",
+            "dday": "D+0일"
+          },
+          {
+            "item": "90200007293",
+            "name": "BMW Caddy M",
+            "alois": "OE",
+            "pgrp": "B7",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000102",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 2,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 15:27:01",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 247100,
+            "sa": "김창열",
+            "dday": "D+0일"
+          },
+          {
+            "item": "90200007312",
+            "name": "MINI Caddy Bag",
+            "alois": "OE",
+            "pgrp": "B7",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000102",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 15:27:01",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 235300,
+            "sa": "김창열",
+            "dday": "D+0일"
+          },
+          {
+            "item": "90200007313",
+            "name": "BMW Caddy Olive",
+            "alois": "OE",
+            "pgrp": "B7",
+            "ref_tp": "SP",
+            "ref_no": "SP2609000102",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-28",
+            "req_dt_full": "2026-09-28 15:27:01",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 170600,
+            "sa": "김창열",
+            "dday": "D+0일"
           }
         ],
-        "count": 68,
-        "qty_sum": 146,
-        "val": 16932609
+        "count": 72,
+        "qty_sum": 150,
+        "val": 17832709
       }
     ]
   },
@@ -32244,15 +32380,6 @@
         "val": 1236000
       },
       {
-        "item": "90200007292",
-        "name": "BMW Caddy Beige &amp; Grey",
-        "pgrp": "B7",
-        "alois": "OE",
-        "qty": 6,
-        "avail_qty": 5,
-        "val": 1235500
-      },
-      {
         "item": "64119382886",
         "name": "MICROFILTER/",
         "pgrp": "B1",
@@ -32325,6 +32452,15 @@
         "val": 1005000
       },
       {
+        "item": "90200007292",
+        "name": "BMW Caddy Beige &amp; Grey",
+        "pgrp": "B7",
+        "alois": "OE",
+        "qty": 6,
+        "avail_qty": 4,
+        "val": 988400
+      },
+      {
         "item": "61315A0A259",
         "name": "Rep. kit for",
         "pgrp": "B1",
@@ -32386,15 +32522,6 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 744265
-      },
-      {
-        "item": "90200007293",
-        "name": "BMW Caddy M",
-        "pgrp": "B7",
-        "alois": "OE",
-        "qty": 4,
-        "avail_qty": 3,
-        "val": 741300
       },
       {
         "item": "90200006221",
@@ -32487,6 +32614,15 @@
         "val": 500360
       },
       {
+        "item": "90200007293",
+        "name": "BMW Caddy M",
+        "pgrp": "B7",
+        "alois": "OE",
+        "qty": 4,
+        "avail_qty": 2,
+        "val": 494200
+      },
+      {
         "item": "64115A80BA3",
         "name": "Control unit",
         "pgrp": "B1",
@@ -32494,15 +32630,6 @@
         "qty": 3,
         "avail_qty": 3,
         "val": 482397
-      },
-      {
-        "item": "90200007312",
-        "name": "MINI Caddy Bag",
-        "pgrp": "B7",
-        "alois": "OE",
-        "qty": 2,
-        "avail_qty": 2,
-        "val": 470600
       },
       {
         "item": "90200007605",
@@ -32874,6 +33001,15 @@
         "val": 235500
       },
       {
+        "item": "90200007312",
+        "name": "MINI Caddy Bag",
+        "pgrp": "B7",
+        "alois": "OE",
+        "qty": 2,
+        "avail_qty": 1,
+        "val": 235300
+      },
+      {
         "item": "34116789543",
         "name": "Brake disc",
         "pgrp": "B1",
@@ -33124,15 +33260,6 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 170952
-      },
-      {
-        "item": "90200007313",
-        "name": "BMW Caddy Olive",
-        "pgrp": "B7",
-        "alois": "OE",
-        "qty": 1,
-        "avail_qty": 1,
-        "val": 170600
       },
       {
         "item": "90200006978",
@@ -39413,15 +39540,6 @@
             "val": 1236000
           },
           {
-            "item": "90200007292",
-            "name": "BMW Caddy Beige &amp; Grey",
-            "pgrp": "B7",
-            "alois": "OE",
-            "qty": 6,
-            "avail_qty": 5,
-            "val": 1235500
-          },
-          {
             "item": "64119382886",
             "name": "MICROFILTER/",
             "pgrp": "B1",
@@ -39449,6 +39567,15 @@
             "val": 1005000
           },
           {
+            "item": "90200007292",
+            "name": "BMW Caddy Beige &amp; Grey",
+            "pgrp": "B7",
+            "alois": "OE",
+            "qty": 6,
+            "avail_qty": 4,
+            "val": 988400
+          },
+          {
             "item": "61315A0A259",
             "name": "Rep. kit for",
             "pgrp": "B1",
@@ -39474,15 +39601,6 @@
             "qty": 3,
             "avail_qty": 3,
             "val": 908751
-          },
-          {
-            "item": "90200007293",
-            "name": "BMW Caddy M",
-            "pgrp": "B7",
-            "alois": "OE",
-            "qty": 4,
-            "avail_qty": 3,
-            "val": 741300
           },
           {
             "item": "90200006221",
@@ -39548,6 +39666,15 @@
             "val": 500360
           },
           {
+            "item": "90200007293",
+            "name": "BMW Caddy M",
+            "pgrp": "B7",
+            "alois": "OE",
+            "qty": 4,
+            "avail_qty": 2,
+            "val": 494200
+          },
+          {
             "item": "64115A80BA3",
             "name": "Control unit",
             "pgrp": "B1",
@@ -39555,15 +39682,6 @@
             "qty": 3,
             "avail_qty": 3,
             "val": 482397
-          },
-          {
-            "item": "90200007312",
-            "name": "MINI Caddy Bag",
-            "pgrp": "B7",
-            "alois": "OE",
-            "qty": 2,
-            "avail_qty": 2,
-            "val": 470600
           },
           {
             "item": "90200007605",
@@ -39692,6 +39810,15 @@
             "val": 269100
           },
           {
+            "item": "90200007312",
+            "name": "MINI Caddy Bag",
+            "pgrp": "B7",
+            "alois": "OE",
+            "qty": 2,
+            "avail_qty": 1,
+            "val": 235300
+          },
+          {
             "item": "90200007304",
             "name": "BMW Iron Club Cover White",
             "pgrp": "B7",
@@ -39726,15 +39853,6 @@
             "qty": 8,
             "avail_qty": 8,
             "val": 188768
-          },
-          {
-            "item": "90200007313",
-            "name": "BMW Caddy Olive",
-            "pgrp": "B7",
-            "alois": "OE",
-            "qty": 1,
-            "avail_qty": 1,
-            "val": 170600
           },
           {
             "item": "90200006978",
@@ -40025,10 +40143,10 @@
             "val": 4000
           }
         ],
-        "count": 86,
-        "qty_sum": 747,
-        "avail_sum": 724,
-        "val": 291119041
+        "count": 85,
+        "qty_sum": 746,
+        "avail_sum": 720,
+        "val": 290218941
       },
       {
         "code": "ON",
@@ -40562,8 +40680,8 @@
         "val": 7266141
       }
     ],
-    "count": 472,
-    "total_val": 355944891
+    "count": 471,
+    "total_val": 355044791
   },
   "oflow": {
     "rows": [
@@ -41394,14 +41512,14 @@
       },
       {
         "ro": "RO2609000256",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-03",
         "pub_full": "2026-09-03 14:57",
         "dday": "D+25일",
-        "amt": 4565100
+        "amt": 4579100
       },
       {
         "ro": "RO2609000345",
@@ -42340,8 +42458,8 @@
       },
       {
         "ro": "RO2609001259",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-21",
@@ -43957,8 +44075,8 @@
       },
       {
         "ro": "RO2609001578",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-09-28",
@@ -43968,8 +44086,8 @@
       },
       {
         "ro": "RO2609001579",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-09-28",
@@ -44045,8 +44163,8 @@
       },
       {
         "ro": "RO2609001587",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-28",
@@ -44210,8 +44328,8 @@
       },
       {
         "ro": "RO2609001602",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "안준영",
         "pub": "2026-09-28",
@@ -44239,31 +44357,64 @@
         "pub": "2026-09-28",
         "pub_full": "2026-09-28 15:10",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 3562000
+      },
+      {
+        "ro": "RO2609001605",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 15:19",
+        "dday": "D+0일",
+        "amt": 44000
+      },
+      {
+        "ro": "RO2609001607",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "강충성",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 15:20",
+        "dday": "D+0일",
+        "amt": 2296500
+      },
+      {
+        "ro": "RO2609001606",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "우종훈",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 15:20",
+        "dday": "D+0일",
+        "amt": 216361
       }
     ],
-    "count": 315,
-    "total_amt": 780189477,
+    "count": 318,
+    "total_amt": 786322338,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 17,
-        "amt": 14998800
+        "amt": 18560800
       },
       {
         "stat": "상담완료",
-        "count": 144,
-        "amt": 510468435
+        "count": 146,
+        "amt": 516525478
       },
       {
         "stat": "정비시작",
-        "count": 38,
-        "amt": 48954449
+        "count": 35,
+        "amt": 39411589
       },
       {
         "stat": "End Control 요청",
-        "count": 39,
-        "amt": 49957935
+        "count": 43,
+        "amt": 56014613
       },
       {
         "stat": "공정마감",
@@ -48506,7 +48657,7 @@
     "total_val": 40809799,
     "o_lines": 53,
     "o_val": 14368729,
-    "resv_total": 406
+    "resv_total": 408
   },
   "sbcar": {
     "groups": [],
@@ -48515,7 +48666,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10137
+    "resv_total": 10140
   },
   "nonmng": {
     "rows": [],
