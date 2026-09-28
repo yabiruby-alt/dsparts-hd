@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 28일 (월) · 12:20 기준",
+    "generated_at": "9월 28일 (월) · 12:33 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -42873,8 +42873,8 @@
       },
       {
         "ro": "RO2609001563",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-28",
@@ -42905,17 +42905,6 @@
         "amt": 37628
       },
       {
-        "ro": "RO2609001568",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "최민수",
-        "pub": "2026-09-28",
-        "pub_full": "2026-09-28 11:21",
-        "dday": "D+0일",
-        "amt": 44000
-      },
-      {
         "ro": "RO2609001567",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -42925,6 +42914,17 @@
         "pub_full": "2026-09-28 11:21",
         "dday": "D+0일",
         "amt": 1407700
+      },
+      {
+        "ro": "RO2609001568",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-09-28",
+        "pub_full": "2026-09-28 11:21",
+        "dday": "D+0일",
+        "amt": 44000
       },
       {
         "ro": "RO2609001570",
@@ -43058,8 +43058,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 145,
-        "amt": 504902886
+        "count": 143,
+        "amt": 504814886
       },
       {
         "stat": "정비시작",
@@ -43068,8 +43068,8 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 31,
-        "amt": 58504139
+        "count": 33,
+        "amt": 58592139
       },
       {
         "stat": "공정마감",
