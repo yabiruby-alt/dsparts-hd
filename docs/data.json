@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 29일 (화) · 11:15 기준",
+    "generated_at": "9월 29일 (화) · 11:28 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -294,7 +294,7 @@
     ]
   },
   "inv": {
-    "total": 1283128304,
+    "total": 1283047319,
     "item_count": 2251,
     "code_count": 25,
     "alois_groups": [
@@ -305,9 +305,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 225079612,
+            "val": 225006877,
             "pct": 17.54,
-            "qty": 2622,
+            "qty": 2621,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -324,8 +324,8 @@
               {
                 "item": "61615A85266",
                 "name": "Kit wiper bl",
-                "qty": 82,
-                "val": 5964270
+                "qty": 81,
+                "val": 5891535
               },
               {
                 "item": "61619478361",
@@ -4852,8 +4852,8 @@
             ]
           }
         ],
-        "subtotal_val": 483212668,
-        "subtotal_qty": 9070,
+        "subtotal_val": 483139933,
+        "subtotal_qty": 9069,
         "subtotal_pct": 37.66
       },
       {
@@ -8242,7 +8242,7 @@
           {
             "code": "O8",
             "val": 75510328,
-            "pct": 5.88,
+            "pct": 5.89,
             "qty": 1171,
             "parts": [
               {
@@ -12632,7 +12632,7 @@
         ],
         "subtotal_val": 449411190,
         "subtotal_qty": 2482,
-        "subtotal_pct": 35.02
+        "subtotal_pct": 35.03
       },
       {
         "code": "I",
@@ -13301,9 +13301,9 @@
           },
           {
             "code": "SX",
-            "val": 11024088,
+            "val": 11015838,
             "pct": 0.86,
-            "qty": 217,
+            "qty": 216,
             "parts": [
               {
                 "item": "64115B78AA5",
@@ -13326,8 +13326,8 @@
               {
                 "item": "99975BA1A07",
                 "name": "BMWLongUmbre (New)",
-                "qty": 50,
-                "val": 412500
+                "qty": 49,
+                "val": 404250
               },
               {
                 "item": "99975BA1A04",
@@ -14050,15 +14050,15 @@
             ]
           }
         ],
-        "subtotal_val": 180510026,
-        "subtotal_qty": 2043,
+        "subtotal_val": 180501776,
+        "subtotal_qty": 2042,
         "subtotal_pct": 14.07
       }
     ]
   },
   "oaov": {
     "total": 67817655,
-    "inv_total": 1283128304,
+    "inv_total": 1283047319,
     "pct": 5.29,
     "oa_val": 39398414,
     "ov_val": 28419241,
@@ -24987,10 +24987,44 @@
         "val": 2664070,
         "sa": "강충성",
         "dday": "D+0일"
+      },
+      {
+        "item": "51129498619",
+        "name": "Reinforcemen",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001662",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-29",
+        "req_dt_full": "2026-09-29 11:27:03",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 138678,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51137255411",
+        "name": "Grille",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001669",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-29",
+        "req_dt_full": "2026-09-29 11:30:32",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 79488,
+        "sa": "박영묵",
+        "dday": "D+0일"
       }
     ],
-    "count": 367,
-    "total_val": 113419542,
+    "count": 369,
+    "total_val": 113637708,
     "groups": [
       {
         "code": "RO",
@@ -28921,11 +28955,45 @@
             "val": 2664070,
             "sa": "강충성",
             "dday": "D+0일"
+          },
+          {
+            "item": "51129498619",
+            "name": "Reinforcemen",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001662",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-29",
+            "req_dt_full": "2026-09-29 11:27:03",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 138678,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51137255411",
+            "name": "Grille",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001669",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-29",
+            "req_dt_full": "2026-09-29 11:30:32",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 79488,
+            "sa": "박영묵",
+            "dday": "D+0일"
           }
         ],
-        "count": 231,
-        "qty_sum": 311,
-        "val": 78241419
+        "count": 233,
+        "qty_sum": 313,
+        "val": 78459585
       },
       {
         "code": "SB",
@@ -42454,17 +42522,6 @@
         "amt": 2673700
       },
       {
-        "ro": "RO2609001562",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "정용환",
-        "pub": "2026-09-28",
-        "pub_full": "2026-09-28 11:03",
-        "dday": "D+1일",
-        "amt": 44000
-      },
-      {
         "ro": "RO2609001561",
         "stat": "가정산 완료",
         "stat_cd": "05",
@@ -42872,17 +42929,6 @@
         "amt": 255161
       },
       {
-        "ro": "RO2609001608",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "정용환",
-        "pub": "2026-09-28",
-        "pub_full": "2026-09-28 15:32",
-        "dday": "D+1일",
-        "amt": 83000
-      },
-      {
         "ro": "RO2609001610",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -43027,8 +43073,8 @@
       },
       {
         "ro": "RO2609001624",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-29",
@@ -43302,8 +43348,8 @@
       },
       {
         "ro": "RO2609001649",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-09-29",
@@ -43324,8 +43370,8 @@
       },
       {
         "ro": "RO2609001651",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "안준영",
         "pub": "2026-09-29",
@@ -43412,8 +43458,8 @@
       },
       {
         "ro": "RO2609001660",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-29",
@@ -43508,35 +43554,46 @@
         "pub_full": "2026-09-29 11:05",
         "dday": "D+0일",
         "amt": 478882
+      },
+      {
+        "ro": "RO2609001669",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 11:28",
+        "dday": "D+0일",
+        "amt": 1815800
       }
     ],
-    "count": 312,
-    "total_amt": 746731020,
+    "count": 311,
+    "total_amt": 748419820,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 12,
-        "amt": 8293500
+        "count": 13,
+        "amt": 10109300
       },
       {
         "stat": "상담완료",
-        "count": 153,
-        "amt": 512848198
+        "count": 149,
+        "amt": 511625382
       },
       {
         "stat": "정비시작",
-        "count": 32,
-        "amt": 43046161
+        "count": 34,
+        "amt": 44101977
       },
       {
         "stat": "End Control 요청",
-        "count": 47,
-        "amt": 61401475
+        "count": 48,
+        "amt": 61485475
       },
       {
         "stat": "가정산 완료",
-        "count": 68,
-        "amt": 121141686
+        "count": 67,
+        "amt": 121097686
       }
     ],
     "oldest": "D+525일"
@@ -44679,7 +44736,7 @@
     "total_val": 12402899,
     "o_lines": 23,
     "o_val": 5423544,
-    "resv_total": 12040
+    "resv_total": 12041
   },
   "sbresv": {
     "groups": [
@@ -49707,7 +49764,7 @@
     "total_val": 68399748,
     "o_lines": 54,
     "o_val": 12284748,
-    "resv_total": 402
+    "resv_total": 400
   },
   "sbcar": {
     "groups": [],
@@ -49716,7 +49773,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10126
+    "resv_total": 10127
   },
   "nonmng": {
     "rows": [],
@@ -52602,7 +52659,7 @@
         "item": "61615A85266",
         "name": "Kit wiper bl",
         "alois": "A1",
-        "qty": 82,
+        "qty": 81,
         "no": 209
       },
       {
@@ -53202,7 +53259,7 @@
         "item": "99975BA1A07",
         "name": "BMWLongUmbre (New)",
         "alois": "SX",
-        "qty": 50,
+        "qty": 49,
         "no": 284
       },
       {
