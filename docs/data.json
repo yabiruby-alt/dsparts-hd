@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 29일 (화) · 15:55 기준",
+    "generated_at": "9월 29일 (화) · 16:01 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -294,7 +294,7 @@
     ]
   },
   "inv": {
-    "total": 1257687113,
+    "total": 1257680033,
     "item_count": 2203,
     "code_count": 25,
     "alois_groups": [
@@ -13025,9 +13025,9 @@
           },
           {
             "code": "SX",
-            "val": 10850613,
+            "val": 10843533,
             "pct": 0.86,
-            "qty": 214,
+            "qty": 213,
             "parts": [
               {
                 "item": "64115B78AA5",
@@ -13056,8 +13056,8 @@
               {
                 "item": "99975BA1A04",
                 "name": "BMWFoldingUm",
-                "qty": 37,
-                "val": 261960
+                "qty": 36,
+                "val": 254880
               },
               {
                 "item": "99975BBD7D3",
@@ -13762,15 +13762,15 @@
             ]
           }
         ],
-        "subtotal_val": 178698585,
-        "subtotal_qty": 2035,
+        "subtotal_val": 178691505,
+        "subtotal_qty": 2034,
         "subtotal_pct": 14.21
       }
     ]
   },
   "oaov": {
     "total": 65175268,
-    "inv_total": 1257687113,
+    "inv_total": 1257680033,
     "pct": 5.18,
     "oa_val": 39322726,
     "ov_val": 25852542,
@@ -39431,13 +39431,13 @@
       {
         "date": "09-29",
         "in_val": 21090214,
-        "out_val": 5785863,
-        "net": 15304351
+        "out_val": 5920920,
+        "net": 15169294
       }
     ],
     "total_in": 262066105,
-    "total_out": 240776542,
-    "net": 21289563,
+    "total_out": 240911599,
+    "net": 21154506,
     "by_code": [
       {
         "code": "O8",
@@ -39454,8 +39454,8 @@
       {
         "code": "OE",
         "in_val": 11679845,
-        "out_val": 23756786,
-        "net": -12076941
+        "out_val": 23891843,
+        "net": -12211998
       },
       {
         "code": "ON",
@@ -40093,8 +40093,8 @@
       },
       {
         "ro": "RO2609000470",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-08",
@@ -41160,8 +41160,8 @@
       },
       {
         "ro": "RO2609001429",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "공정마감",
+        "stat_cd": "04",
         "svc": "사고수리",
         "sa": "박영묵",
         "pub": "2026-09-23",
@@ -42513,8 +42513,8 @@
       },
       {
         "ro": "RO2609001667",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-29",
@@ -42799,8 +42799,8 @@
       },
       {
         "ro": "RO2609001698",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "입고 Proactive-RITA",
         "sa": "최민수",
         "pub": "2026-09-29",
@@ -42829,30 +42829,57 @@
         "pub_full": "2026-09-29 15:53",
         "dday": "D+0일",
         "amt": 513552
+      },
+      {
+        "ro": "RO2609001701",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "김민규",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 15:59",
+        "dday": "D+0일",
+        "amt": 131127
+      },
+      {
+        "ro": "RO2609001702",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "진단",
+        "sa": "김민규",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 16:03",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 305,
-    "total_amt": 723478956,
+    "count": 307,
+    "total_amt": 723610083,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 13,
+        "count": 14,
         "amt": 5209800
       },
       {
         "stat": "상담완료",
-        "count": 146,
-        "amt": 503038586
+        "count": 144,
+        "amt": 501392339
       },
       {
         "stat": "정비시작",
-        "count": 46,
-        "amt": 39624311
+        "count": 47,
+        "amt": 39136121
       },
       {
         "stat": "End Control 요청",
-        "count": 57,
-        "amt": 71134800
+        "count": 58,
+        "amt": 71759064
+      },
+      {
+        "stat": "공정마감",
+        "count": 1,
+        "amt": 1641300
       },
       {
         "stat": "가정산 완료",
@@ -45587,6 +45614,48 @@
         "val": 648678
       },
       {
+        "code": "SB2609001957",
+        "resv_full": "2026-10-10 10:00",
+        "resv": "10-10",
+        "dday": "D-11일",
+        "sa": "우종훈",
+        "rows": [
+          {
+            "item": "12415BA2AE6",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 48,
+            "avail_qty": 0,
+            "val": 568490
+          },
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 78,
+            "avail_qty": 22,
+            "val": 8322
+          },
+          {
+            "item": "51337025635",
+            "name": "Clip",
+            "alois": "L4",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 48,
+            "avail_qty": 0,
+            "val": 1124
+          }
+        ],
+        "count": 3,
+        "qty_sum": 3,
+        "val": 577936
+      },
+      {
         "code": "SB2609001781",
         "resv_full": "2026-10-10 09:00",
         "resv": "10-10",
@@ -46397,48 +46466,6 @@
         "count": 1,
         "qty_sum": 1,
         "val": 25515
-      },
-      {
-        "code": "SB2609001957",
-        "resv_full": "2026-10-02 15:00",
-        "resv": "10-02",
-        "dday": "D-3일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "안준영",
-            "req_qty": 1,
-            "crt_qty": 48,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "안준영",
-            "req_qty": 1,
-            "crt_qty": 78,
-            "avail_qty": 22,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L4",
-            "sa": "안준영",
-            "req_qty": 1,
-            "crt_qty": 48,
-            "avail_qty": 0,
-            "val": 1124
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 577936
       },
       {
         "code": "SB2609001666",
@@ -48568,7 +48595,7 @@
             "sa": "안준영",
             "req_qty": 4,
             "crt_qty": 554,
-            "avail_qty": 529,
+            "avail_qty": 528,
             "val": 68756
           },
           {
@@ -48758,7 +48785,7 @@
             "sa": "안준영",
             "req_qty": 6,
             "crt_qty": 554,
-            "avail_qty": 529,
+            "avail_qty": 528,
             "val": 99314
           },
           {
@@ -49581,7 +49608,7 @@
             "alois": "SX",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 37,
+            "crt_qty": 36,
             "avail_qty": 25,
             "val": 7080
           }
@@ -49596,69 +49623,16 @@
     "total_val": 71704596,
     "o_lines": 62,
     "o_val": 13882344,
-    "resv_total": 408
+    "resv_total": 407
   },
   "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609001807",
-        "resv_full": "2026-09-29 15:57",
-        "resv": "09-29",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "64316835405",
-            "name": "MICROFILTER/",
-            "alois": "A1",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 50,
-            "avail_qty": 48,
-            "val": 71071
-          },
-          {
-            "item": "83215B49DD6",
-            "name": "LL-17FE+ 0W-20",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 4,
-            "crt_qty": 554,
-            "avail_qty": 529,
-            "val": 68756
-          },
-          {
-            "item": "13718513944",
-            "name": "Air filter e",
-            "alois": "A2",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 15,
-            "avail_qty": 14,
-            "val": 35258
-          },
-          {
-            "item": "11428593186",
-            "name": "Set oil-filt",
-            "alois": "A1",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 47,
-            "avail_qty": 45,
-            "val": 19666
-          }
-        ],
-        "count": 4,
-        "qty_sum": 7,
-        "val": 194751
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 4,
-    "total_val": 194751,
+    "groups": [],
+    "sb_count": 0,
+    "line_count": 0,
+    "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10157
+    "resv_total": 10160
   },
   "nonmng": {
     "rows": [],
@@ -53088,7 +53062,7 @@
         "item": "99975BA1A04",
         "name": "BMWFoldingUm",
         "alois": "SX",
-        "qty": 37,
+        "qty": 36,
         "no": 292
       },
       {
