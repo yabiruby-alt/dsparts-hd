@@ -878,7 +878,7 @@ _RO_LABOR_EXEMPT_KEYWORDS = (
 
 def build_ext_audit(rows, today_str):
     """외부판매(할인가) 오분류 의심 건 자동 적발 — '외부검증' 엑셀 매크로의 9단계 체크리스트를 그대로 룰로 옮긴 것.
-    정산유형 C(고객) & 품목유형 부품/공임만 대상. 차대번호(VIN) 유무로 RO(정비연계)/SP(카운터 단독판매) 구분."""
+    정산유형 C(고객) & 품목유형 부품/공임만 대상. 차대번호(VIN) 유무로 RO(정비연계)/SP(부품판매) 구분."""
     def is_staff_name(nm):
         return bool(_STAFF_NAME_RE.search((nm or "").strip()))
 
@@ -928,7 +928,7 @@ def build_ext_audit(rows, today_str):
         has_ro = bool(r.get("roNo"))
 
         if not has_ro:
-            # ---- SP (카운터 단독 부품판매) ----
+            # ---- SP (부품판매) ----
             if pgrp != "7":
                 if not vin and detl == "고객":
                     sp_violations.append(base_of(r, "차대 없는 일반부품인데 정산상세유형이 '고객' — 원래 외부판매 대상 (BMW 타 딜러 판매는 예외)"))
