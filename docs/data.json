@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 30일 (수) · 08:11 기준",
+    "generated_at": "9월 30일 (수) · 08:24 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -22672,57 +22672,6 @@
         "dday": "D+8일"
       },
       {
-        "item": "07119907517",
-        "name": "Countersunk",
-        "alois": "OV",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001622",
-        "req_qty": 5,
-        "crt_qty": 5,
-        "avail_qty": 0,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 12:56:29",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 8250,
-        "sa": "최민수",
-        "dday": "D+8일"
-      },
-      {
-        "item": "11518650988",
-        "name": "Coolant pump",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001622",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 12:56:29",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 256428,
-        "sa": "최민수",
-        "dday": "D+8일"
-      },
-      {
-        "item": "11288650740",
-        "name": "RIBBED V-BEL REPO",
-        "alois": "OV",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001622",
-        "req_qty": 1,
-        "crt_qty": 2,
-        "avail_qty": 0,
-        "req_dt": "09-22",
-        "req_dt_full": "2026-09-22 13:03:08",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 26390,
-        "sa": "최민수",
-        "dday": "D+8일"
-      },
-      {
         "item": "12369896874",
         "name": "Multi-purpos",
         "alois": "O8",
@@ -25066,6 +25015,57 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 131989,
         "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "07119907517",
+        "name": "Countersunk",
+        "alois": "OV",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001717",
+        "req_qty": 5,
+        "crt_qty": 5,
+        "avail_qty": 0,
+        "req_dt": "09-30",
+        "req_dt_full": "2026-09-30 08:24:43",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 8250,
+        "sa": "최민수",
+        "dday": "D+0일"
+      },
+      {
+        "item": "11518650988",
+        "name": "Coolant pump",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001717",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-30",
+        "req_dt_full": "2026-09-30 08:24:43",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 256428,
+        "sa": "최민수",
+        "dday": "D+0일"
+      },
+      {
+        "item": "11288650740",
+        "name": "RIBBED V-BEL REPO",
+        "alois": "OV",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001717",
+        "req_qty": 1,
+        "crt_qty": 2,
+        "avail_qty": 0,
+        "req_dt": "09-30",
+        "req_dt_full": "2026-09-30 08:24:43",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 26390,
+        "sa": "최민수",
         "dday": "D+0일"
       }
     ],
@@ -28865,11 +28865,62 @@
             "val": 131989,
             "sa": "강충성",
             "dday": "D+0일"
+          },
+          {
+            "item": "07119907517",
+            "name": "Countersunk",
+            "alois": "OV",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001717",
+            "req_qty": 5,
+            "crt_qty": 5,
+            "avail_qty": 0,
+            "req_dt": "09-30",
+            "req_dt_full": "2026-09-30 08:24:43",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 8250,
+            "sa": "최민수",
+            "dday": "D+0일"
+          },
+          {
+            "item": "11518650988",
+            "name": "Coolant pump",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001717",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-30",
+            "req_dt_full": "2026-09-30 08:24:43",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 256428,
+            "sa": "최민수",
+            "dday": "D+0일"
+          },
+          {
+            "item": "11288650740",
+            "name": "RIBBED V-BEL REPO",
+            "alois": "OV",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001717",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "req_dt": "09-30",
+            "req_dt_full": "2026-09-30 08:24:43",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 26390,
+            "sa": "최민수",
+            "dday": "D+0일"
           }
         ],
-        "count": 223,
-        "qty_sum": 317,
-        "val": 69602382
+        "count": 226,
+        "qty_sum": 324,
+        "val": 69893450
       },
       {
         "code": "SB",
@@ -30065,57 +30116,6 @@
             "dday": "D+8일"
           },
           {
-            "item": "07119907517",
-            "name": "Countersunk",
-            "alois": "OV",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001622",
-            "req_qty": 5,
-            "crt_qty": 5,
-            "avail_qty": 0,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 12:56:29",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 8250,
-            "sa": "최민수",
-            "dday": "D+8일"
-          },
-          {
-            "item": "11518650988",
-            "name": "Coolant pump",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001622",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 12:56:29",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 256428,
-            "sa": "최민수",
-            "dday": "D+8일"
-          },
-          {
-            "item": "11288650740",
-            "name": "RIBBED V-BEL REPO",
-            "alois": "OV",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001622",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "req_dt": "09-22",
-            "req_dt_full": "2026-09-22 13:03:08",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 26390,
-            "sa": "최민수",
-            "dday": "D+8일"
-          },
-          {
             "item": "07149465451",
             "name": "Clip",
             "alois": "OA",
@@ -30405,9 +30405,9 @@
             "dday": "D+1일"
           }
         ],
-        "count": 90,
-        "qty_sum": 153,
-        "val": 19473286
+        "count": 87,
+        "qty_sum": 146,
+        "val": 19182218
       },
       {
         "code": "SP",
@@ -43167,10 +43167,32 @@
         "pub_full": "2026-09-30 06:41",
         "dday": "D+0일",
         "amt": 3727100
+      },
+      {
+        "ro": "RO2609001715",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "우종훈",
+        "pub": "2026-09-30",
+        "pub_full": "2026-09-30 08:18",
+        "dday": "D+0일",
+        "amt": 672006
+      },
+      {
+        "ro": "RO2609001717",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "최민수",
+        "pub": "2026-09-30",
+        "pub_full": "2026-09-30 08:24",
+        "dday": "D+0일",
+        "amt": 1592100
       }
     ],
-    "count": 285,
-    "total_amt": 720586992,
+    "count": 287,
+    "total_amt": 722851098,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -43179,8 +43201,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 140,
-        "amt": 507816990
+        "count": 142,
+        "amt": 510081096
       },
       {
         "stat": "정비시작",
@@ -48484,7 +48506,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 18,
-            "avail_qty": 15,
+            "avail_qty": 14,
             "val": 26772
           },
           {
@@ -48694,7 +48716,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 10,
-            "avail_qty": 8,
+            "avail_qty": 7,
             "val": 102771
           },
           {
@@ -48704,7 +48726,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 18,
-            "avail_qty": 15,
+            "avail_qty": 14,
             "val": 26772
           }
         ],
@@ -49511,6 +49533,38 @@
         "val": 577937
       },
       {
+        "code": "SB2609001901",
+        "resv_full": "2026-09-30 10:40",
+        "resv": "09-30",
+        "dday": "오늘",
+        "sa": "이정환",
+        "rows": [
+          {
+            "item": "34218867488",
+            "name": "Repair kit,",
+            "alois": "A2",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 10,
+            "avail_qty": 7,
+            "val": 102771
+          },
+          {
+            "item": "34356865612",
+            "name": "Brake pad we",
+            "alois": "A2",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 18,
+            "avail_qty": 14,
+            "val": 26772
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 129543
+      },
+      {
         "code": "SB2608001395",
         "resv_full": "2026-09-30 10:20",
         "resv": "09-30",
@@ -49551,48 +49605,6 @@
         "count": 3,
         "qty_sum": 3,
         "val": 100485
-      },
-      {
-        "code": "SB2609001777",
-        "resv_full": "2026-09-30 10:20",
-        "resv": "09-30",
-        "dday": "오늘",
-        "sa": "우종훈",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 48,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 77,
-            "avail_qty": 22,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L4",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 147,
-            "avail_qty": 100,
-            "val": 1125
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 577937
       },
       {
         "code": "SB2609001636",
@@ -49857,108 +49869,6 @@
         "val": 577937
       },
       {
-        "code": "SB2609001622",
-        "resv_full": "2026-09-30 09:40",
-        "resv": "09-30",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "11518650988",
-            "name": "Coolant pump",
-            "alois": "O8",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 256428
-          },
-          {
-            "item": "90200005957",
-            "name": "Hypoid axle",
-            "alois": "L5",
-            "sa": "최민수",
-            "req_qty": 2,
-            "crt_qty": 17,
-            "avail_qty": 9,
-            "val": 113800
-          },
-          {
-            "item": "11538650984",
-            "name": "Line from co",
-            "alois": "L7",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 91561
-          },
-          {
-            "item": "11288650740",
-            "name": "RIBBED V-BEL REPO",
-            "alois": "OV",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 26390
-          },
-          {
-            "item": "83195A42DF3",
-            "name": "HT-12 Anti-freeze",
-            "alois": "L1",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 101,
-            "avail_qty": 95,
-            "val": 16400
-          },
-          {
-            "item": "11538678045",
-            "name": "Gasket",
-            "alois": "L7",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 8357
-          },
-          {
-            "item": "07119907517",
-            "name": "Countersunk",
-            "alois": "OV",
-            "sa": "최민수",
-            "req_qty": 5,
-            "crt_qty": 5,
-            "avail_qty": 0,
-            "val": 8250
-          },
-          {
-            "item": "33117525064",
-            "name": "Screw plug",
-            "alois": "A1",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 103,
-            "avail_qty": 81,
-            "val": 6703
-          },
-          {
-            "item": "11538674931",
-            "name": "O-ring",
-            "alois": "L7",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 3066
-          }
-        ],
-        "count": 9,
-        "qty_sum": 14,
-        "val": 530955
-      },
-      {
         "code": "SB2609001135",
         "resv_full": "2026-09-30 09:20",
         "resv": "09-30",
@@ -50192,7 +50102,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 10,
-            "avail_qty": 8,
+            "avail_qty": 7,
             "val": 102771
           },
           {
@@ -50202,7 +50112,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 18,
-            "avail_qty": 15,
+            "avail_qty": 14,
             "val": 26772
           }
         ],
@@ -50397,12 +50307,12 @@
         "val": 841692
       }
     ],
-    "sb_count": 122,
-    "line_count": 459,
-    "total_val": 75497221,
-    "o_lines": 63,
-    "o_val": 13785494,
-    "resv_total": 428
+    "sb_count": 121,
+    "line_count": 449,
+    "total_val": 74517872,
+    "o_lines": 60,
+    "o_val": 13494426,
+    "resv_total": 426
   },
   "sbcar": {
     "groups": [],
@@ -50411,7 +50321,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10093
+    "resv_total": 10095
   },
   "nonmng": {
     "rows": [
