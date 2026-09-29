@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 29일 (화) · 13:08 기준",
+    "generated_at": "9월 29일 (화) · 13:21 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -294,8 +294,8 @@
     ]
   },
   "inv": {
-    "total": 1278439259,
-    "item_count": 2247,
+    "total": 1278926244,
+    "item_count": 2250,
     "code_count": 25,
     "alois_groups": [
       {
@@ -305,9 +305,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 224941942,
-            "pct": 17.6,
-            "qty": 2620,
+            "val": 225010127,
+            "pct": 17.59,
+            "qty": 2621,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -330,8 +330,8 @@
               {
                 "item": "61619478361",
                 "name": "SET OF WIPER 3/4 series",
-                "qty": 81,
-                "val": 5522985
+                "qty": 82,
+                "val": 5591170
               },
               {
                 "item": "12122455258",
@@ -4840,9 +4840,9 @@
             ]
           }
         ],
-        "subtotal_val": 480398432,
-        "subtotal_qty": 9064,
-        "subtotal_pct": 37.58
+        "subtotal_val": 480466617,
+        "subtotal_qty": 9065,
+        "subtotal_pct": 37.57
       },
       {
         "code": "L",
@@ -8220,7 +8220,7 @@
         ],
         "subtotal_val": 163125434,
         "subtotal_qty": 4670,
-        "subtotal_pct": 12.76
+        "subtotal_pct": 12.75
       },
       {
         "code": "O",
@@ -8229,9 +8229,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 74275947,
-            "pct": 5.81,
-            "qty": 1169,
+            "val": 74669010,
+            "pct": 5.84,
+            "qty": 1172,
             "parts": [
               {
                 "item": "17425A18806",
@@ -8490,6 +8490,12 @@
                 "name": "Deliv.module",
                 "qty": 1,
                 "val": 400752
+              },
+              {
+                "item": "51745A35715",
+                "name": "Air duct wit",
+                "qty": 1,
+                "val": 369603
               },
               {
                 "item": "66315A076D4",
@@ -10016,6 +10022,12 @@
                 "val": 23652
               },
               {
+                "item": "51115A13108",
+                "name": "Holder Z sup",
+                "qty": 2,
+                "val": 23460
+              },
+              {
                 "item": "17227613656",
                 "name": "O-ring",
                 "qty": 6,
@@ -11192,7 +11204,7 @@
           {
             "code": "OE",
             "val": 300973414,
-            "pct": 23.54,
+            "pct": 23.53,
             "qty": 832,
             "parts": [
               {
@@ -12606,9 +12618,9 @@
             ]
           }
         ],
-        "subtotal_val": 448076248,
-        "subtotal_qty": 2478,
-        "subtotal_pct": 35.05
+        "subtotal_val": 448469311,
+        "subtotal_qty": 2481,
+        "subtotal_pct": 35.07
       },
       {
         "code": "I",
@@ -12617,9 +12629,9 @@
         "rows": [
           {
             "code": "II",
-            "val": 6439746,
-            "pct": 0.5,
-            "qty": 41,
+            "val": 6465483,
+            "pct": 0.51,
+            "qty": 42,
             "parts": [
               {
                 "item": "36108093841",
@@ -12760,6 +12772,12 @@
                 "val": 29963
               },
               {
+                "item": "51117207931",
+                "name": "Spacer",
+                "qty": 1,
+                "val": 25737
+              },
+              {
                 "item": "13727843283",
                 "name": "Filter elmnt",
                 "qty": 1,
@@ -12816,9 +12834,9 @@
             ]
           }
         ],
-        "subtotal_val": 6439746,
-        "subtotal_qty": 41,
-        "subtotal_pct": 0.5
+        "subtotal_val": 6465483,
+        "subtotal_qty": 42,
+        "subtotal_pct": 0.51
       },
       {
         "code": "S",
@@ -12874,7 +12892,7 @@
           {
             "code": "SK",
             "val": 74870235,
-            "pct": 5.86,
+            "pct": 5.85,
             "qty": 986,
             "parts": [
               {
@@ -14034,7 +14052,7 @@
   },
   "oaov": {
     "total": 67774764,
-    "inv_total": 1278439259,
+    "inv_total": 1278926244,
     "pct": 5.3,
     "oa_val": 39398414,
     "ov_val": 28376350,
@@ -16107,13 +16125,13 @@
   "acc": {
     "total": 42438539,
     "cost": 43731280,
-    "lines": 339,
-    "invoices_count": 206,
+    "lines": 341,
+    "invoices_count": 207,
     "by_type": [
       {
         "code": "3",
         "label": "Car Accessories",
-        "lines": 140,
+        "lines": 142,
         "val": 15629101
       },
       {
@@ -16130,6 +16148,14 @@
       }
     ],
     "recent5": [
+      {
+        "inv": "AR2609003791",
+        "num": "SP2609000059",
+        "sa": "박진호",
+        "dt": "2026-09-29 13:16",
+        "amt": 0,
+        "cost": 0
+      },
       {
         "inv": "IV2609002746",
         "num": "RO2609001285",
@@ -16161,14 +16187,6 @@
         "dt": "2026-09-28 18:32",
         "amt": 124945,
         "cost": 173535
-      },
-      {
-        "inv": "IV2609002713",
-        "num": "RO2609001612",
-        "sa": "정용환",
-        "dt": "2026-09-28 17:56",
-        "amt": 0,
-        "cost": 7080
       }
     ]
   },
@@ -22415,7 +22433,7 @@
         "ref_no": "SB2609001591",
         "req_qty": 1,
         "crt_qty": 42,
-        "avail_qty": 40,
+        "avail_qty": 39,
         "req_dt": "09-22",
         "req_dt_full": "2026-09-22 09:06:30",
         "req_brch": "AS_부산(해운중동)",
@@ -24727,7 +24745,7 @@
         "ref_no": "RO2609001668",
         "req_qty": 1,
         "crt_qty": 42,
-        "avail_qty": 40,
+        "avail_qty": 39,
         "req_dt": "09-29",
         "req_dt_full": "2026-09-29 11:08:28",
         "req_brch": "AS_부산(해운중동)",
@@ -24923,23 +24941,6 @@
         "dday": "D+0일"
       },
       {
-        "item": "34208852761",
-        "name": "Repair kit r",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001667",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-29",
-        "req_dt_full": "2026-09-29 11:50:43",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 73876,
-        "sa": "안준영",
-        "dday": "D+0일"
-      },
-      {
         "item": "07119909702",
         "name": "Hex bolt",
         "alois": "O8",
@@ -25074,10 +25075,61 @@
         "val": 24080,
         "sa": "정용환",
         "dday": "D+0일"
+      },
+      {
+        "item": "51115A13108",
+        "name": "Holder Z sup",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001427",
+        "req_qty": 2,
+        "crt_qty": 2,
+        "avail_qty": 0,
+        "req_dt": "09-29",
+        "req_dt_full": "2026-09-29 13:14:34",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 23460,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51745A35715",
+        "name": "Air duct wit",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001427",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "09-29",
+        "req_dt_full": "2026-09-29 13:14:34",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 369603,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "alois": "OE",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001680",
+        "req_qty": 1,
+        "crt_qty": 42,
+        "avail_qty": 39,
+        "req_dt": "09-29",
+        "req_dt_full": "2026-09-29 13:19:52",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 85576,
+        "sa": "정용환",
+        "dday": "D+0일"
       }
     ],
-    "count": 374,
-    "total_val": 112591207,
+    "count": 376,
+    "total_val": 112995970,
     "groups": [
       {
         "code": "RO",
@@ -28916,7 +28968,7 @@
             "ref_no": "RO2609001668",
             "req_qty": 1,
             "crt_qty": 42,
-            "avail_qty": 40,
+            "avail_qty": 39,
             "req_dt": "09-29",
             "req_dt_full": "2026-09-29 11:08:28",
             "req_brch": "AS_부산(해운중동)",
@@ -29078,23 +29130,6 @@
             "dday": "D+0일"
           },
           {
-            "item": "34208852761",
-            "name": "Repair kit r",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001667",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-29",
-            "req_dt_full": "2026-09-29 11:50:43",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 73876,
-            "sa": "안준영",
-            "dday": "D+0일"
-          },
-          {
             "item": "07119909702",
             "name": "Hex bolt",
             "alois": "O8",
@@ -29229,11 +29264,62 @@
             "val": 24080,
             "sa": "정용환",
             "dday": "D+0일"
+          },
+          {
+            "item": "51115A13108",
+            "name": "Holder Z sup",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001427",
+            "req_qty": 2,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "req_dt": "09-29",
+            "req_dt_full": "2026-09-29 13:14:34",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 23460,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51745A35715",
+            "name": "Air duct wit",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001427",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "09-29",
+            "req_dt_full": "2026-09-29 13:14:34",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 369603,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "64119382886",
+            "name": "MICROFILTER/",
+            "alois": "OE",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001680",
+            "req_qty": 1,
+            "crt_qty": 42,
+            "avail_qty": 39,
+            "req_dt": "09-29",
+            "req_dt_full": "2026-09-29 13:19:52",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 85576,
+            "sa": "정용환",
+            "dday": "D+0일"
           }
         ],
-        "count": 244,
-        "qty_sum": 339,
-        "val": 77731263
+        "count": 246,
+        "qty_sum": 342,
+        "val": 78136026
       },
       {
         "code": "SB",
@@ -30352,7 +30438,7 @@
             "ref_no": "SB2609001591",
             "req_qty": 1,
             "crt_qty": 42,
-            "avail_qty": 40,
+            "avail_qty": 39,
             "req_dt": "09-22",
             "req_dt_full": "2026-09-22 09:06:30",
             "req_brch": "AS_부산(해운중동)",
@@ -31552,8 +31638,8 @@
         "pgrp": "B1",
         "alois": "OE",
         "qty": 42,
-        "avail_qty": 40,
-        "val": 3423040
+        "avail_qty": 39,
+        "val": 3337464
       },
       {
         "item": "63115A0E603",
@@ -32150,6 +32236,15 @@
         "val": 320625
       },
       {
+        "item": "90200007565",
+        "name": "BMW Magsafe",
+        "pgrp": "B7",
+        "alois": "OE",
+        "qty": 7,
+        "avail_qty": 7,
+        "val": 313950
+      },
+      {
         "item": "90200007303",
         "name": "BMW Iron Club Cover Black",
         "pgrp": "B7",
@@ -32265,15 +32360,6 @@
         "qty": 9,
         "avail_qty": 9,
         "val": 275598
-      },
-      {
-        "item": "90200007565",
-        "name": "BMW Magsafe",
-        "pgrp": "B7",
-        "alois": "OE",
-        "qty": 7,
-        "avail_qty": 6,
-        "val": 269100
       },
       {
         "item": "13718509032",
@@ -32402,15 +32488,6 @@
         "val": 217456
       },
       {
-        "item": "61627407273",
-        "name": "WIPER BLADE X3 Rear",
-        "pgrp": "B1",
-        "alois": "OE",
-        "qty": 10,
-        "avail_qty": 9,
-        "val": 216720
-      },
-      {
         "item": "34116858652",
         "name": "Brake disc,",
         "pgrp": "M1",
@@ -32472,6 +32549,15 @@
         "qty": 10,
         "avail_qty": 3,
         "val": 193200
+      },
+      {
+        "item": "61627407273",
+        "name": "WIPER BLADE X3 Rear",
+        "pgrp": "B1",
+        "alois": "OE",
+        "qty": 10,
+        "avail_qty": 8,
+        "val": 192640
       },
       {
         "item": "83192350550",
@@ -32543,6 +32629,15 @@
         "alois": "OA",
         "qty": 1,
         "avail_qty": 1,
+        "val": 179400
+      },
+      {
+        "item": "90200007566",
+        "name": "MINI Magsafe",
+        "pgrp": "B7",
+        "alois": "OE",
+        "qty": 4,
+        "avail_qty": 4,
         "val": 179400
       },
       {
@@ -32733,15 +32828,6 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 136823
-      },
-      {
-        "item": "90200007566",
-        "name": "MINI Magsafe",
-        "pgrp": "B7",
-        "alois": "OE",
-        "qty": 4,
-        "avail_qty": 3,
-        "val": 134550
       },
       {
         "item": "12139453463",
@@ -38838,8 +38924,8 @@
             "pgrp": "B1",
             "alois": "OE",
             "qty": 42,
-            "avail_qty": 40,
-            "val": 3423040
+            "avail_qty": 39,
+            "val": 3337464
           },
           {
             "item": "66325A7A559",
@@ -39166,6 +39252,15 @@
             "val": 340000
           },
           {
+            "item": "90200007565",
+            "name": "BMW Magsafe",
+            "pgrp": "B7",
+            "alois": "OE",
+            "qty": 7,
+            "avail_qty": 7,
+            "val": 313950
+          },
+          {
             "item": "90200007303",
             "name": "BMW Iron Club Cover Black",
             "pgrp": "B7",
@@ -39202,15 +39297,6 @@
             "val": 282200
           },
           {
-            "item": "90200007565",
-            "name": "BMW Magsafe",
-            "pgrp": "B7",
-            "alois": "OE",
-            "qty": 7,
-            "avail_qty": 6,
-            "val": 269100
-          },
-          {
             "item": "90200007304",
             "name": "BMW Iron Club Cover White",
             "pgrp": "B7",
@@ -39220,15 +39306,6 @@
             "val": 231900
           },
           {
-            "item": "61627407273",
-            "name": "WIPER BLADE X3 Rear",
-            "pgrp": "B1",
-            "alois": "OE",
-            "qty": 10,
-            "avail_qty": 9,
-            "val": 216720
-          },
-          {
             "item": "61315A98D96",
             "name": "Touch contro",
             "pgrp": "B1",
@@ -39236,6 +39313,15 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 203775
+          },
+          {
+            "item": "61627407273",
+            "name": "WIPER BLADE X3 Rear",
+            "pgrp": "B1",
+            "alois": "OE",
+            "qty": 10,
+            "avail_qty": 8,
+            "val": 192640
           },
           {
             "item": "83192350550",
@@ -39254,6 +39340,15 @@
             "qty": 8,
             "avail_qty": 8,
             "val": 188768
+          },
+          {
+            "item": "90200007566",
+            "name": "MINI Magsafe",
+            "pgrp": "B7",
+            "alois": "OE",
+            "qty": 4,
+            "avail_qty": 4,
+            "val": 179400
           },
           {
             "item": "90200007313",
@@ -39317,15 +39412,6 @@
             "qty": 16,
             "avail_qty": 16,
             "val": 144000
-          },
-          {
-            "item": "90200007566",
-            "name": "MINI Magsafe",
-            "pgrp": "B7",
-            "alois": "OE",
-            "qty": 4,
-            "avail_qty": 3,
-            "val": 134550
           },
           {
             "item": "80932413782",
@@ -39565,7 +39651,7 @@
         "count": 87,
         "qty_sum": 770,
         "avail_sum": 750,
-        "val": 293365349
+        "val": 293345393
       },
       {
         "code": "ON",
@@ -40100,7 +40186,7 @@
       }
     ],
     "count": 477,
-    "total_val": 358866515
+    "total_val": 358846559
   },
   "oflow": {
     "rows": [
@@ -41134,6 +41220,17 @@
         "amt": 3518400
       },
       {
+        "ro": "RO2609001679",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-09-11",
+        "pub_full": "2026-09-11 09:20",
+        "dday": "D+18일",
+        "amt": 3349252
+      },
+      {
         "ro": "RO2609000744",
         "stat": "가정산 완료",
         "stat_cd": "05",
@@ -41142,7 +41239,7 @@
         "pub": "2026-09-11",
         "pub_full": "2026-09-11 09:20",
         "dday": "D+18일",
-        "amt": 3338952
+        "amt": 2944300
       },
       {
         "ro": "RO2609000796",
@@ -41399,8 +41496,8 @@
       },
       {
         "ro": "RO2609001079",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-17",
@@ -43533,8 +43630,8 @@
       },
       {
         "ro": "RO2609001652",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-29",
@@ -43610,14 +43707,14 @@
       },
       {
         "ro": "RO2609001660",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-29",
         "pub_full": "2026-09-29 10:07",
         "dday": "D+0일",
-        "amt": 284524
+        "amt": 303338
       },
       {
         "ro": "RO2609001661",
@@ -43672,7 +43769,7 @@
         "pub": "2026-09-29",
         "pub_full": "2026-09-29 10:36",
         "dday": "D+0일",
-        "amt": 686661
+        "amt": 696961
       },
       {
         "ro": "RO2609001666",
@@ -43698,8 +43795,8 @@
       },
       {
         "ro": "RO2609001668",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-29",
@@ -43753,14 +43850,14 @@
       },
       {
         "ro": "RO2609001673",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-29",
         "pub_full": "2026-09-29 12:53",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 330682
       },
       {
         "ro": "RO2609001674",
@@ -43771,7 +43868,7 @@
         "pub": "2026-09-29",
         "pub_full": "2026-09-29 13:03",
         "dday": "D+0일",
-        "amt": 596693
+        "amt": 606993
       },
       {
         "ro": "RO2609001675",
@@ -43794,35 +43891,90 @@
         "pub_full": "2026-09-29 13:08",
         "dday": "D+0일",
         "amt": 804333
+      },
+      {
+        "ro": "RO2609001677",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "입고 Proactive-RITA",
+        "sa": "김민규",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 13:10",
+        "dday": "D+0일",
+        "amt": 300000
+      },
+      {
+        "ro": "RO2609001678",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "최민수",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 13:15",
+        "dday": "D+0일",
+        "amt": 44000
+      },
+      {
+        "ro": "RO2609001680",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 13:16",
+        "dday": "D+0일",
+        "amt": 616904
+      },
+      {
+        "ro": "RO2609001681",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "염진아",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 13:19",
+        "dday": "D+0일",
+        "amt": 105400
+      },
+      {
+        "ro": "RO2609001682",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "진단",
+        "sa": "우종훈",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 13:23",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 316,
-    "total_amt": 746888320,
+    "count": 322,
+    "total_amt": 751279320,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 14,
-        "amt": 8987100
+        "count": 15,
+        "amt": 9092500
       },
       {
         "stat": "상담완료",
-        "count": 151,
-        "amt": 513516782
+        "count": 155,
+        "amt": 514653424
       },
       {
         "stat": "정비시작",
-        "count": 38,
-        "amt": 49852723
+        "count": 36,
+        "amt": 45569160
       },
       {
         "stat": "End Control 요청",
-        "count": 48,
-        "amt": 58278271
+        "count": 51,
+        "amt": 66105444
       },
       {
         "stat": "가정산 완료",
         "count": 65,
-        "amt": 116253444
+        "amt": 115858792
       }
     ],
     "oldest": "D+525일"
@@ -44600,8 +44752,8 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 2,
-            "crt_qty": 106,
-            "avail_qty": 98,
+            "crt_qty": 104,
+            "avail_qty": 97,
             "val": 22684
           }
         ],
@@ -44746,8 +44898,8 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 106,
-            "avail_qty": 98,
+            "crt_qty": 104,
+            "avail_qty": 97,
             "val": 11342
           }
         ],
@@ -44839,7 +44991,7 @@
             "sa": "최민수",
             "req_qty": 2,
             "crt_qty": 39,
-            "avail_qty": 29,
+            "avail_qty": 25,
             "val": 2396
           },
           {
@@ -44849,7 +45001,7 @@
             "sa": "최민수",
             "req_qty": 2,
             "crt_qty": 39,
-            "avail_qty": 29,
+            "avail_qty": 25,
             "val": 2396
           }
         ],
@@ -44965,7 +45117,7 @@
     "total_val": 12402899,
     "o_lines": 23,
     "o_val": 5423544,
-    "resv_total": 12041
+    "resv_total": 12040
   },
   "sbresv": {
     "groups": [
@@ -47085,7 +47237,7 @@
             "sa": "김민규",
             "req_qty": 2,
             "crt_qty": 25,
-            "avail_qty": 16,
+            "avail_qty": 14,
             "val": 8902
           },
           {
@@ -48191,7 +48343,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 42,
-            "avail_qty": 40,
+            "avail_qty": 39,
             "val": 85576
           },
           {
@@ -48201,7 +48353,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 26,
-            "avail_qty": 24,
+            "avail_qty": 23,
             "val": 68185
           },
           {
@@ -48250,8 +48402,8 @@
             "alois": "L1",
             "sa": "우종훈",
             "req_qty": 2,
-            "crt_qty": 106,
-            "avail_qty": 98,
+            "crt_qty": 104,
+            "avail_qty": 97,
             "val": 22684
           },
           {
@@ -48261,7 +48413,7 @@
             "sa": "우종훈",
             "req_qty": 2,
             "crt_qty": 39,
-            "avail_qty": 29,
+            "avail_qty": 25,
             "val": 2396
           },
           {
@@ -48271,7 +48423,7 @@
             "sa": "우종훈",
             "req_qty": 2,
             "crt_qty": 39,
-            "avail_qty": 29,
+            "avail_qty": 25,
             "val": 2396
           }
         ],
@@ -49069,7 +49221,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 6,
-            "avail_qty": 4,
+            "avail_qty": 2,
             "val": 5185
           }
         ],
@@ -50149,7 +50301,7 @@
             "sa": "정용환",
             "req_qty": 4,
             "crt_qty": 577,
-            "avail_qty": 553,
+            "avail_qty": 540,
             "val": 68756
           },
           {
@@ -50205,7 +50357,7 @@
     "total_val": 68889828,
     "o_lines": 56,
     "o_val": 12323292,
-    "resv_total": 401
+    "resv_total": 399
   },
   "sbcar": {
     "groups": [],
@@ -50214,13 +50366,25 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10136
+    "resv_total": 10140
   },
   "nonmng": {
-    "rows": [],
-    "count": 0,
-    "total_val": 0,
-    "qty_sum": 0,
+    "rows": [
+      {
+        "item": "51117207931",
+        "name": "Spacer",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 25737,
+        "val": 25737,
+        "last_in": "2026-09-29",
+        "last_sale": "2026-09-29"
+      }
+    ],
+    "count": 1,
+    "total_val": 25737,
+    "qty_sum": 1,
     "pct": 0.0
   },
   "stockcheck": {
@@ -53068,7 +53232,7 @@
         "item": "61619478361",
         "name": "SET OF WIPER 3/4 series",
         "alois": "A1",
-        "qty": 81,
+        "qty": 82,
         "no": 205
       },
       {
