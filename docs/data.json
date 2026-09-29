@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 29일 (화) · 15:11 기준",
+    "generated_at": "9월 29일 (화) · 15:17 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -294,7 +294,7 @@
     ]
   },
   "inv": {
-    "total": 1264137155,
+    "total": 1264064420,
     "item_count": 2215,
     "code_count": 25,
     "alois_groups": [
@@ -305,9 +305,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 224411491,
+            "val": 224338756,
             "pct": 17.75,
-            "qty": 2611,
+            "qty": 2610,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -324,8 +324,8 @@
               {
                 "item": "61615A85266",
                 "name": "Kit wiper bl",
-                "qty": 80,
-                "val": 5818800
+                "qty": 79,
+                "val": 5746065
               },
               {
                 "item": "61619478361",
@@ -4804,8 +4804,8 @@
             ]
           }
         ],
-        "subtotal_val": 472790819,
-        "subtotal_qty": 9014,
+        "subtotal_val": 472718084,
+        "subtotal_qty": 9013,
         "subtotal_pct": 37.4
       },
       {
@@ -13222,7 +13222,7 @@
           {
             "code": "SZ",
             "val": 87162159,
-            "pct": 6.89,
+            "pct": 6.9,
             "qty": 759,
             "parts": [
               {
@@ -13842,7 +13842,7 @@
   },
   "oaov": {
     "total": 65175268,
-    "inv_total": 1264137155,
+    "inv_total": 1264064420,
     "pct": 5.16,
     "oa_val": 39322726,
     "ov_val": 25852542,
@@ -39721,19 +39721,19 @@
       {
         "date": "09-29",
         "in_val": 21090214,
-        "out_val": 2741791,
-        "net": 18348423
+        "out_val": 5785863,
+        "net": 15304351
       }
     ],
     "total_in": 262066105,
-    "total_out": 237732470,
-    "net": 24333635,
+    "total_out": 240776542,
+    "net": 21289563,
     "by_code": [
       {
         "code": "O8",
         "in_val": 214163595,
-        "out_val": 194871885,
-        "net": 19291710
+        "out_val": 195653478,
+        "net": 18510117
       },
       {
         "code": "OA",
@@ -39756,8 +39756,8 @@
       {
         "code": "OV",
         "in_val": 19969805,
-        "out_val": 5492089,
-        "net": 14477716
+        "out_val": 7754568,
+        "net": 12215237
       }
     ],
     "in_days": 18,
@@ -43155,8 +43155,8 @@
       },
       {
         "ro": "RO2609001672",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-29",
@@ -43276,8 +43276,8 @@
       },
       {
         "ro": "RO2609001684",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "경수리",
         "sa": "이정환",
         "pub": "2026-09-29",
@@ -43372,10 +43372,21 @@
         "pub_full": "2026-09-29 15:10",
         "dday": "D+0일",
         "amt": 121724
+      },
+      {
+        "ro": "RO2609001697",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "김민규",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 15:14",
+        "dday": "D+0일",
+        "amt": 84000
       }
     ],
-    "count": 328,
-    "total_amt": 735249691,
+    "count": 329,
+    "total_amt": 735333691,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -43384,18 +43395,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 148,
-        "amt": 503815413
+        "count": 147,
+        "amt": 503680121
       },
       {
         "stat": "정비시작",
-        "count": 42,
-        "amt": 37748265
+        "count": 43,
+        "amt": 37869657
       },
       {
         "stat": "End Control 요청",
-        "count": 56,
-        "amt": 73848618
+        "count": 57,
+        "amt": 73946518
       },
       {
         "stat": "가정산 완료",
@@ -46404,28 +46415,6 @@
         "count": 4,
         "qty_sum": 4,
         "val": 485467
-      },
-      {
-        "code": "SB2609001750",
-        "resv_full": "2026-10-06 10:40",
-        "resv": "10-06",
-        "dday": "D-7일",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "61315A71209",
-            "name": "Switch seat",
-            "alois": "OA",
-            "sa": "안준영",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 358125
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 358125
       },
       {
         "code": "SB2609001826",
@@ -49486,6 +49475,28 @@
         "val": 609615
       },
       {
+        "code": "SB2609001750",
+        "resv_full": "2026-09-30 09:20",
+        "resv": "09-30",
+        "dday": "D-1일",
+        "sa": "안준영",
+        "rows": [
+          {
+            "item": "61315A71209",
+            "name": "Switch seat",
+            "alois": "OA",
+            "sa": "안준영",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 358125
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 358125
+      },
+      {
         "code": "SB2609000240",
         "resv_full": "2026-09-30 09:20",
         "resv": "09-30",
@@ -49884,7 +49895,7 @@
             "alois": "A1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 80,
+            "crt_qty": 79,
             "avail_qty": 78,
             "val": 72735
           },
@@ -49961,7 +49972,7 @@
     "total_val": 70493360,
     "o_lines": 57,
     "o_val": 13286562,
-    "resv_total": 408
+    "resv_total": 409
   },
   "sbcar": {
     "groups": [],
@@ -52752,7 +52763,7 @@
         "item": "61615A85266",
         "name": "Kit wiper bl",
         "alois": "A1",
-        "qty": 80,
+        "qty": 79,
         "no": 208
       },
       {

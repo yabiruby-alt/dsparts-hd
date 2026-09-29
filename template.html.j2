@@ -923,15 +923,15 @@
         </div>
       </div>
 
-      {% macro audit_table(rows, gkey, empty_msg) -%}
+      {% macro audit_table(rows, kind, empty_msg) -%}
       <div class="tablewrap">
         <table>
-          <thead><tr><th>일자</th><th>인보이스</th><th>RO번호</th><th>고객명</th><th>차대번호</th><th>부품그룹</th><th>정산상세유형</th><th>품목</th><th class="num">금액</th><th>사유</th></tr></thead>
+          <thead><tr><th>일자</th>{% if kind == 'sp' %}<th>SP번호</th>{% else %}<th>인보이스</th><th>RO번호</th>{% endif %}<th>고객명</th><th>차대번호</th><th>부품그룹</th><th>정산상세유형</th><th>품목</th><th class="num">금액</th><th>사유</th></tr></thead>
           <tbody>
             {% for r in rows %}
-            <tr><td class="mono">{{ r.dt }}</td><td class="mono">{{ r.inv }}</td><td class="mono">{{ r.ro }}</td><td>{{ r.cust }}</td><td class="mono">{{ r.vin }}</td><td class="mono">{{ r.pgrp }}</td><td>{{ r.detl }}</td><td>{{ r.item }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td>{{ r.reason }}</td></tr>
+            <tr><td class="mono">{{ r.dt }}</td>{% if kind == 'sp' %}<td class="mono">{{ r.inv }}</td>{% else %}<td class="mono">{{ r.inv }}</td><td class="mono">{{ r.ro }}</td>{% endif %}<td>{{ r.cust }}</td><td class="mono">{{ r.vin }}</td><td class="mono">{{ r.pgrp }}</td><td>{{ r.detl }}</td><td>{{ r.item }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td>{{ r.reason }}</td></tr>
             {% else %}
-            <tr><td colspan="10" class="empty-note">{{ empty_msg }}</td></tr>
+            <tr><td colspan="{{ 9 if kind == 'sp' else 10 }}" class="empty-note">{{ empty_msg }}</td></tr>
             {% endfor %}
           </tbody>
         </table>
@@ -944,7 +944,7 @@
           <span class="val">{{ extaudit.sp_v_count }}건</span>
           <span class="foot">차대 유무 × 정산상세유형 조합이 규정과 맞지 않는 건</span>
         </div>
-        {{ audit_table(extaudit.sp_violations, 'sp-v', 'SP 위반 의심 건 없음') }}
+        {{ audit_table(extaudit.sp_violations, 'sp', 'SP 위반 의심 건 없음') }}
       </div>
 
       <div class="viewer">
@@ -953,7 +953,7 @@
           <span class="val">{{ extaudit.sp_r_count }}건</span>
           <span class="foot">고객명이 직원/업체명 형식이 아니거나, 업체명으로 추정되는 '고객' 건</span>
         </div>
-        {{ audit_table(extaudit.sp_review, 'sp-r', 'SP 확인 필요 건 없음') }}
+        {{ audit_table(extaudit.sp_review, 'sp', 'SP 확인 필요 건 없음') }}
       </div>
 
       <div class="viewer">
@@ -962,7 +962,7 @@
           <span class="val">{{ extaudit.ro_v_count }}건</span>
           <span class="foot">RO 건인데 정산상세유형이 외부/외부공업사인 경우 (RO는 '고객' 유형만 가능)</span>
         </div>
-        {{ audit_table(extaudit.ro_violations, 'ro-v', 'RO 위반 의심 건 없음') }}
+        {{ audit_table(extaudit.ro_violations, 'ro', 'RO 위반 의심 건 없음') }}
       </div>
 
       <div class="viewer">
@@ -971,7 +971,7 @@
           <span class="val">{{ extaudit.ro_r_count }}건</span>
           <span class="foot">업체명으로 추정되는 고객 건, 또는 공임 0원+부품만 있는 건(오일/워셔액 등 예외 제외)</span>
         </div>
-        {{ audit_table(extaudit.ro_review, 'ro-r', 'RO 확인 필요 건 없음') }}
+        {{ audit_table(extaudit.ro_review, 'ro', 'RO 확인 필요 건 없음') }}
       </div>
     </section>
 
