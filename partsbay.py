@@ -887,6 +887,14 @@ def build_ext_audit(rows, today_str):
 
     c_rows = [r for r in rows if r.get("calcTpCd") == "C" and r.get("itemTpCdNm") in ("부품", "공임")]
 
+    # 인보이스번호 기준 합계금액이 0원(취소/반품으로 상쇄된 건)이면 애초에 분석 대상에서 제외
+    inv_totals = defaultdict(float)
+    for r in rows:
+        inv_no = r.get("invNo")
+        if inv_no:
+            inv_totals[inv_no] += num(r.get("invTotAmt"))
+    c_rows = [r for r in c_rows if round(inv_totals.get(r.get("invNo"), 1)) != 0]
+
     def base_of(r, reason):
         return {
             "inv": r.get("invNo") or "-", "ro": r.get("roNo") or "-", "cust": r.get("custNm") or "-",
