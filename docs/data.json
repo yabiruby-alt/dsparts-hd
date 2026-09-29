@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 29일 (화) · 12:55 기준",
+    "generated_at": "9월 29일 (화) · 13:08 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -294,7 +294,7 @@
     ]
   },
   "inv": {
-    "total": 1278496929,
+    "total": 1278439259,
     "item_count": 2247,
     "code_count": 25,
     "alois_groups": [
@@ -306,7 +306,7 @@
           {
             "code": "A1",
             "val": 224941942,
-            "pct": 17.59,
+            "pct": 17.6,
             "qty": 2620,
             "parts": [
               {
@@ -11191,9 +11191,9 @@
           },
           {
             "code": "OE",
-            "val": 301031084,
-            "pct": 23.55,
-            "qty": 833,
+            "val": 300973414,
+            "pct": 23.54,
+            "qty": 832,
             "parts": [
               {
                 "item": "34505B6F947",
@@ -11628,12 +11628,6 @@
                 "val": 115800
               },
               {
-                "item": "90200007607",
-                "name": "MINI Fire ex",
-                "qty": 2,
-                "val": 115340
-              },
-              {
                 "item": "90200007025",
                 "name": "M50th Number",
                 "qty": 10,
@@ -11680,6 +11674,12 @@
                 "name": "Fan",
                 "qty": 1,
                 "val": 63665
+              },
+              {
+                "item": "90200007607",
+                "name": "MINI Fire ex",
+                "qty": 1,
+                "val": 57670
               },
               {
                 "item": "80272454656",
@@ -12606,8 +12606,8 @@
             ]
           }
         ],
-        "subtotal_val": 448133918,
-        "subtotal_qty": 2479,
+        "subtotal_val": 448076248,
+        "subtotal_qty": 2478,
         "subtotal_pct": 35.05
       },
       {
@@ -14034,7 +14034,7 @@
   },
   "oaov": {
     "total": 67774764,
-    "inv_total": 1278496929,
+    "inv_total": 1278439259,
     "pct": 5.3,
     "oa_val": 39398414,
     "ov_val": 28376350,
@@ -17239,15 +17239,6 @@
         "last_in": "2025-09-05"
       },
       {
-        "item": "90200007607",
-        "name": "MINI Fire ex",
-        "pgrp": "B3",
-        "alois": "OE",
-        "qty": 2,
-        "val": 115340,
-        "last_in": "2024-09-14"
-      },
-      {
         "item": "90200007025",
         "name": "M50th Number",
         "pgrp": "B7",
@@ -17606,6 +17597,15 @@
         "qty": 1,
         "val": 58765,
         "last_in": "2025-07-11"
+      },
+      {
+        "item": "90200007607",
+        "name": "MINI Fire ex",
+        "pgrp": "B3",
+        "alois": "OE",
+        "qty": 1,
+        "val": 57670,
+        "last_in": "2024-09-14"
       },
       {
         "item": "07149465451",
@@ -18265,7 +18265,7 @@
         "last_in": "2025-06-24"
       }
     ],
-    "m12_val": 62304605,
+    "m12_val": 62246935,
     "m12_count": 210,
     "m12_pct": 4.87,
     "m24_items": [
@@ -18513,15 +18513,6 @@
         "last_in": "2024-06-20"
       },
       {
-        "item": "90200007607",
-        "name": "MINI Fire ex",
-        "pgrp": "B3",
-        "alois": "OE",
-        "qty": 2,
-        "val": 115340,
-        "last_in": "2024-09-14"
-      },
-      {
         "item": "32300430403",
         "name": "Cover",
         "pgrp": "B3",
@@ -18574,6 +18565,15 @@
         "qty": 1,
         "val": 60291,
         "last_in": "2024-07-24"
+      },
+      {
+        "item": "90200007607",
+        "name": "MINI Fire ex",
+        "pgrp": "B3",
+        "alois": "OE",
+        "qty": 1,
+        "val": 57670,
+        "last_in": "2024-09-14"
       },
       {
         "item": "51148087195",
@@ -18711,7 +18711,7 @@
         "last_in": "2024-08-02"
       }
     ],
-    "m24_val": 20607097,
+    "m24_val": 20549427,
     "m24_count": 49,
     "m24_pct": 1.61
   },
@@ -20027,91 +20027,6 @@
         "dday": "D+27일"
       },
       {
-        "item": "90200007566",
-        "name": "MINI Magsafe",
-        "alois": "OE",
-        "pgrp": "B7",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000016",
-        "req_qty": 1,
-        "crt_qty": 4,
-        "avail_qty": 3,
-        "req_dt": "09-02",
-        "req_dt_full": "2026-09-02 13:36:19",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 44850,
-        "sa": "박태강",
-        "dday": "D+27일"
-      },
-      {
-        "item": "90200007565",
-        "name": "BMW Magsafe",
-        "alois": "OE",
-        "pgrp": "B7",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000016",
-        "req_qty": 1,
-        "crt_qty": 7,
-        "avail_qty": 6,
-        "req_dt": "09-02",
-        "req_dt_full": "2026-09-02 13:36:19",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 44850,
-        "sa": "박태강",
-        "dday": "D+27일"
-      },
-      {
-        "item": "90200008123",
-        "name": "MINI Portabl",
-        "alois": "OE",
-        "pgrp": "B7",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000016",
-        "req_qty": 1,
-        "crt_qty": 28,
-        "avail_qty": 26,
-        "req_dt": "09-02",
-        "req_dt_full": "2026-09-02 13:36:19",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 13800,
-        "sa": "박태강",
-        "dday": "D+27일"
-      },
-      {
-        "item": "90200007607",
-        "name": "MINI Fire ex",
-        "alois": "OE",
-        "pgrp": "B3",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000016",
-        "req_qty": 1,
-        "crt_qty": 2,
-        "avail_qty": 1,
-        "req_dt": "09-02",
-        "req_dt_full": "2026-09-02 13:36:19",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 57670,
-        "sa": "박태강",
-        "dday": "D+27일"
-      },
-      {
-        "item": "90200007605",
-        "name": "BMW Fire ext",
-        "alois": "OE",
-        "pgrp": "B3",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000016",
-        "req_qty": 1,
-        "crt_qty": 9,
-        "avail_qty": 8,
-        "req_dt": "09-02",
-        "req_dt_full": "2026-09-02 13:36:19",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 58393,
-        "sa": "박태강",
-        "dday": "D+27일"
-      },
-      {
         "item": "80292454754",
         "name": "BMW M USB st",
         "alois": "OE",
@@ -20159,57 +20074,6 @@
         "req_dt_full": "2026-09-02 13:36:19",
         "req_brch": "AS_부산(해운중동)",
         "val": 432454,
-        "sa": "박태강",
-        "dday": "D+27일"
-      },
-      {
-        "item": "90200007068",
-        "name": "BMW GOLFING",
-        "alois": "OE",
-        "pgrp": "B7",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000016",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-02",
-        "req_dt_full": "2026-09-02 13:36:19",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 34273,
-        "sa": "박태강",
-        "dday": "D+27일"
-      },
-      {
-        "item": "82292355518",
-        "name": "Key case, M",
-        "alois": "OA",
-        "pgrp": "B3",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000016",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-02",
-        "req_dt_full": "2026-09-02 13:36:19",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 63799,
-        "sa": "박태강",
-        "dday": "D+27일"
-      },
-      {
-        "item": "82292408819",
-        "name": "Key case wit",
-        "alois": "O8",
-        "pgrp": "B3",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000016",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-02",
-        "req_dt_full": "2026-09-02 13:36:19",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 39088,
         "sa": "박태강",
         "dday": "D+27일"
       },
@@ -22568,7 +22432,7 @@
         "ref_no": "SB2609001591",
         "req_qty": 1,
         "crt_qty": 10,
-        "avail_qty": 9,
+        "avail_qty": 8,
         "req_dt": "09-22",
         "req_dt_full": "2026-09-22 09:06:30",
         "req_brch": "AS_부산(해운중동)",
@@ -23843,7 +23707,7 @@
         "ref_no": "SP2609000098",
         "req_qty": 1,
         "crt_qty": 28,
-        "avail_qty": 26,
+        "avail_qty": 27,
         "req_dt": "09-28",
         "req_dt_full": "2026-09-28 09:50:49",
         "req_brch": "AS_부산(해운중동)",
@@ -25193,10 +25057,27 @@
         "val": 26718,
         "sa": "안준영",
         "dday": "D+0일"
+      },
+      {
+        "item": "61627407273",
+        "name": "WIPER BLADE X3 Rear",
+        "alois": "OE",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001676",
+        "req_qty": 1,
+        "crt_qty": 10,
+        "avail_qty": 8,
+        "req_dt": "09-29",
+        "req_dt_full": "2026-09-29 13:08:47",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 24080,
+        "sa": "정용환",
+        "dday": "D+0일"
       }
     ],
-    "count": 381,
-    "total_val": 112923850,
+    "count": 374,
+    "total_val": 112591207,
     "groups": [
       {
         "code": "RO",
@@ -29331,11 +29212,28 @@
             "val": 26718,
             "sa": "안준영",
             "dday": "D+0일"
+          },
+          {
+            "item": "61627407273",
+            "name": "WIPER BLADE X3 Rear",
+            "alois": "OE",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001676",
+            "req_qty": 1,
+            "crt_qty": 10,
+            "avail_qty": 8,
+            "req_dt": "09-29",
+            "req_dt_full": "2026-09-29 13:08:47",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 24080,
+            "sa": "정용환",
+            "dday": "D+0일"
           }
         ],
-        "count": 243,
-        "qty_sum": 338,
-        "val": 77707183
+        "count": 244,
+        "qty_sum": 339,
+        "val": 77731263
       },
       {
         "code": "SB",
@@ -30471,7 +30369,7 @@
             "ref_no": "SB2609001591",
             "req_qty": 1,
             "crt_qty": 10,
-            "avail_qty": 9,
+            "avail_qty": 8,
             "req_dt": "09-22",
             "req_dt_full": "2026-09-22 09:06:30",
             "req_brch": "AS_부산(해운중동)",
@@ -30998,91 +30896,6 @@
             "dday": "D+27일"
           },
           {
-            "item": "90200007566",
-            "name": "MINI Magsafe",
-            "alois": "OE",
-            "pgrp": "B7",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000016",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 3,
-            "req_dt": "09-02",
-            "req_dt_full": "2026-09-02 13:36:19",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 44850,
-            "sa": "박태강",
-            "dday": "D+27일"
-          },
-          {
-            "item": "90200007565",
-            "name": "BMW Magsafe",
-            "alois": "OE",
-            "pgrp": "B7",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000016",
-            "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 6,
-            "req_dt": "09-02",
-            "req_dt_full": "2026-09-02 13:36:19",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 44850,
-            "sa": "박태강",
-            "dday": "D+27일"
-          },
-          {
-            "item": "90200008123",
-            "name": "MINI Portabl",
-            "alois": "OE",
-            "pgrp": "B7",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000016",
-            "req_qty": 1,
-            "crt_qty": 28,
-            "avail_qty": 26,
-            "req_dt": "09-02",
-            "req_dt_full": "2026-09-02 13:36:19",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 13800,
-            "sa": "박태강",
-            "dday": "D+27일"
-          },
-          {
-            "item": "90200007607",
-            "name": "MINI Fire ex",
-            "alois": "OE",
-            "pgrp": "B3",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000016",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "req_dt": "09-02",
-            "req_dt_full": "2026-09-02 13:36:19",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 57670,
-            "sa": "박태강",
-            "dday": "D+27일"
-          },
-          {
-            "item": "90200007605",
-            "name": "BMW Fire ext",
-            "alois": "OE",
-            "pgrp": "B3",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000016",
-            "req_qty": 1,
-            "crt_qty": 9,
-            "avail_qty": 8,
-            "req_dt": "09-02",
-            "req_dt_full": "2026-09-02 13:36:19",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 58393,
-            "sa": "박태강",
-            "dday": "D+27일"
-          },
-          {
             "item": "80292454754",
             "name": "BMW M USB st",
             "alois": "OE",
@@ -31130,57 +30943,6 @@
             "req_dt_full": "2026-09-02 13:36:19",
             "req_brch": "AS_부산(해운중동)",
             "val": 432454,
-            "sa": "박태강",
-            "dday": "D+27일"
-          },
-          {
-            "item": "90200007068",
-            "name": "BMW GOLFING",
-            "alois": "OE",
-            "pgrp": "B7",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000016",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-02",
-            "req_dt_full": "2026-09-02 13:36:19",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 34273,
-            "sa": "박태강",
-            "dday": "D+27일"
-          },
-          {
-            "item": "82292355518",
-            "name": "Key case, M",
-            "alois": "OA",
-            "pgrp": "B3",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000016",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-02",
-            "req_dt_full": "2026-09-02 13:36:19",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 63799,
-            "sa": "박태강",
-            "dday": "D+27일"
-          },
-          {
-            "item": "82292408819",
-            "name": "Key case wit",
-            "alois": "O8",
-            "pgrp": "B3",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000016",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-02",
-            "req_dt_full": "2026-09-02 13:36:19",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 39088,
             "sa": "박태강",
             "dday": "D+27일"
           },
@@ -31584,7 +31346,7 @@
             "ref_no": "SP2609000098",
             "req_qty": 1,
             "crt_qty": 28,
-            "avail_qty": 26,
+            "avail_qty": 27,
             "req_dt": "09-28",
             "req_dt_full": "2026-09-28 09:50:49",
             "req_brch": "AS_부산(해운중동)",
@@ -31695,9 +31457,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 55,
-        "qty_sum": 124,
-        "val": 17205583
+        "count": 47,
+        "qty_sum": 116,
+        "val": 16848860
       }
     ]
   },
@@ -32154,6 +31916,15 @@
         "val": 536613
       },
       {
+        "item": "90200007605",
+        "name": "BMW Fire ext",
+        "pgrp": "B3",
+        "alois": "OE",
+        "qty": 9,
+        "avail_qty": 9,
+        "val": 525537
+      },
+      {
         "item": "11717823316",
         "name": "EGR valve wi",
         "pgrp": "M1",
@@ -32188,15 +31959,6 @@
         "qty": 2,
         "avail_qty": 2,
         "val": 470600
-      },
-      {
-        "item": "90200007605",
-        "name": "BMW Fire ext",
-        "pgrp": "B3",
-        "alois": "OE",
-        "qty": 9,
-        "avail_qty": 8,
-        "val": 467144
       },
       {
         "item": "51148087197",
@@ -32316,6 +32078,15 @@
         "val": 384934
       },
       {
+        "item": "90200008123",
+        "name": "MINI Portabl",
+        "pgrp": "B7",
+        "alois": "OE",
+        "qty": 28,
+        "avail_qty": 27,
+        "val": 372600
+      },
+      {
         "item": "61315A9BF13",
         "name": "Touch contro",
         "pgrp": "B1",
@@ -32323,15 +32094,6 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 365146
-      },
-      {
-        "item": "90200008123",
-        "name": "MINI Portabl",
-        "pgrp": "B7",
-        "alois": "OE",
-        "qty": 28,
-        "avail_qty": 26,
-        "val": 358800
       },
       {
         "item": "66319500096",
@@ -33792,6 +33554,15 @@
         "val": 63975
       },
       {
+        "item": "82292355518",
+        "name": "Key case, M",
+        "pgrp": "B3",
+        "alois": "OA",
+        "qty": 1,
+        "avail_qty": 1,
+        "val": 63799
+      },
+      {
         "item": "51777374896",
         "name": "FRONT ENTRAN",
         "pgrp": "M1",
@@ -33958,7 +33729,7 @@
         "name": "MINI Fire ex",
         "pgrp": "B3",
         "alois": "OE",
-        "qty": 2,
+        "qty": 1,
         "avail_qty": 1,
         "val": 57670
       },
@@ -34530,6 +34301,15 @@
         "val": 39270
       },
       {
+        "item": "82292408819",
+        "name": "Key case wit",
+        "pgrp": "B3",
+        "alois": "O8",
+        "qty": 1,
+        "avail_qty": 1,
+        "val": 39088
+      },
+      {
         "item": "51135A3CDD4",
         "name": "Cover, nozzl",
         "pgrp": "B1",
@@ -34672,6 +34452,15 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 34425
+      },
+      {
+        "item": "90200007068",
+        "name": "BMW GOLFING",
+        "pgrp": "B7",
+        "alois": "OE",
+        "qty": 1,
+        "avail_qty": 1,
+        "val": 34273
       },
       {
         "item": "54107379623",
@@ -37208,6 +36997,15 @@
             "val": 39270
           },
           {
+            "item": "82292408819",
+            "name": "Key case wit",
+            "pgrp": "B3",
+            "alois": "O8",
+            "qty": 1,
+            "avail_qty": 1,
+            "val": 39088
+          },
+          {
             "item": "51135A3CDD4",
             "name": "Cover, nozzl",
             "pgrp": "B1",
@@ -38315,10 +38113,10 @@
             "val": 432
           }
         ],
-        "count": 260,
-        "qty_sum": 1021,
-        "avail_sum": 992,
-        "val": 30362008
+        "count": 261,
+        "qty_sum": 1022,
+        "avail_sum": 993,
+        "val": 30401096
       },
       {
         "code": "OA",
@@ -38738,6 +38536,15 @@
             "val": 64218
           },
           {
+            "item": "82292355518",
+            "name": "Key case, M",
+            "pgrp": "B3",
+            "alois": "OA",
+            "qty": 1,
+            "avail_qty": 1,
+            "val": 63799
+          },
+          {
             "item": "51117422212",
             "name": "Shock absorb",
             "pgrp": "B1",
@@ -38963,10 +38770,10 @@
             "val": 6000
           }
         ],
-        "count": 71,
-        "qty_sum": 183,
-        "avail_sum": 175,
-        "val": 27524654
+        "count": 72,
+        "qty_sum": 184,
+        "avail_sum": 176,
+        "val": 27588453
       },
       {
         "code": "OE",
@@ -39260,6 +39067,15 @@
             "val": 536613
           },
           {
+            "item": "90200007605",
+            "name": "BMW Fire ext",
+            "pgrp": "B3",
+            "alois": "OE",
+            "qty": 9,
+            "avail_qty": 9,
+            "val": 525537
+          },
+          {
             "item": "83125A7DCA5",
             "name": "MINI Natural",
             "pgrp": "B9",
@@ -39285,15 +39101,6 @@
             "qty": 2,
             "avail_qty": 2,
             "val": 470600
-          },
-          {
-            "item": "90200007605",
-            "name": "BMW Fire ext",
-            "pgrp": "B3",
-            "alois": "OE",
-            "qty": 9,
-            "avail_qty": 8,
-            "val": 467144
           },
           {
             "item": "34208834998",
@@ -39332,6 +39139,15 @@
             "val": 400000
           },
           {
+            "item": "90200008123",
+            "name": "MINI Portabl",
+            "pgrp": "B7",
+            "alois": "OE",
+            "qty": 28,
+            "avail_qty": 27,
+            "val": 372600
+          },
+          {
             "item": "61315A9BF13",
             "name": "Touch contro",
             "pgrp": "B1",
@@ -39339,15 +39155,6 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 365146
-          },
-          {
-            "item": "90200008123",
-            "name": "MINI Portabl",
-            "pgrp": "B7",
-            "alois": "OE",
-            "qty": 28,
-            "avail_qty": 26,
-            "val": 358800
           },
           {
             "item": "90200005997",
@@ -39615,7 +39422,7 @@
             "name": "MINI Fire ex",
             "pgrp": "B3",
             "alois": "OE",
-            "qty": 2,
+            "qty": 1,
             "avail_qty": 1,
             "val": 57670
           },
@@ -39683,6 +39490,15 @@
             "val": 41400
           },
           {
+            "item": "90200007068",
+            "name": "BMW GOLFING",
+            "pgrp": "B7",
+            "alois": "OE",
+            "qty": 1,
+            "avail_qty": 1,
+            "val": 34273
+          },
+          {
             "item": "90200007689",
             "name": "BMW Reusable",
             "pgrp": "B7",
@@ -39746,10 +39562,10 @@
             "val": 4000
           }
         ],
-        "count": 86,
+        "count": 87,
         "qty_sum": 770,
-        "avail_sum": 747,
-        "val": 293258883
+        "avail_sum": 750,
+        "val": 293365349
       },
       {
         "code": "ON",
@@ -40283,8 +40099,8 @@
         "val": 7266141
       }
     ],
-    "count": 474,
-    "total_val": 358657162
+    "count": 477,
+    "total_val": 358866515
   },
   "oflow": {
     "rows": [
@@ -40459,19 +40275,19 @@
       {
         "date": "09-29",
         "in_val": 21090214,
-        "out_val": 0,
-        "net": 21090214
+        "out_val": 389802,
+        "net": 20700412
       }
     ],
     "total_in": 262066105,
-    "total_out": 234990679,
-    "net": 27075426,
+    "total_out": 235380481,
+    "net": 26685624,
     "by_code": [
       {
         "code": "O8",
         "in_val": 214163595,
-        "out_val": 192107516,
-        "net": 22056079
+        "out_val": 192497318,
+        "net": 21666277
       },
       {
         "code": "OA",
@@ -40799,17 +40615,6 @@
         "pub_full": "2026-08-19 14:13",
         "dday": "D+41일",
         "amt": 4988878
-      },
-      {
-        "ro": "RO2608001135",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "우상만",
-        "pub": "2026-08-19",
-        "pub_full": "2026-08-19 17:21",
-        "dday": "D+41일",
-        "amt": 744964
       },
       {
         "ro": "RO2608001203",
@@ -41934,17 +41739,6 @@
         "amt": 17745500
       },
       {
-        "ro": "RO2609001305",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "사고수리",
-        "sa": "염진아",
-        "pub": "2026-09-21",
-        "pub_full": "2026-09-21 11:15",
-        "dday": "D+8일",
-        "amt": 3916000
-      },
-      {
         "ro": "RO2609001309",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -42283,7 +42077,7 @@
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 09:51",
         "dday": "D+6일",
-        "amt": 13642800
+        "amt": 13712100
       },
       {
         "ro": "RO2609001429",
@@ -43343,8 +43137,8 @@
       },
       {
         "ro": "RO2609001616",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-28",
@@ -43640,8 +43434,8 @@
       },
       {
         "ro": "RO2609001643",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "우종훈",
         "pub": "2026-09-29",
@@ -43717,8 +43511,8 @@
       },
       {
         "ro": "RO2609001650",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-09-29",
@@ -43805,8 +43599,8 @@
       },
       {
         "ro": "RO2609001659",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-09-29",
@@ -43967,10 +43761,43 @@
         "pub_full": "2026-09-29 12:53",
         "dday": "D+0일",
         "amt": 0
+      },
+      {
+        "ro": "RO2609001674",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 13:03",
+        "dday": "D+0일",
+        "amt": 596693
+      },
+      {
+        "ro": "RO2609001675",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "입고 Proactive-RITA",
+        "sa": "김민규",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 13:05",
+        "dday": "D+0일",
+        "amt": 124724
+      },
+      {
+        "ro": "RO2609001676",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "정용환",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 13:08",
+        "dday": "D+0일",
+        "amt": 804333
       }
     ],
-    "count": 315,
-    "total_amt": 749954234,
+    "count": 316,
+    "total_amt": 746888320,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -43979,13 +43806,13 @@
       },
       {
         "stat": "상담완료",
-        "count": 152,
-        "amt": 514500844
+        "count": 151,
+        "amt": 513516782
       },
       {
         "stat": "정비시작",
-        "count": 34,
-        "amt": 47273611
+        "count": 38,
+        "amt": 49852723
       },
       {
         "stat": "End Control 요청",
@@ -43994,8 +43821,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 67,
-        "amt": 120914408
+        "count": 65,
+        "amt": 116253444
       }
     ],
     "oldest": "D+525일"
@@ -44795,8 +44622,8 @@
             "alois": "A1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 81,
-            "avail_qty": 80,
+            "crt_qty": 82,
+            "avail_qty": 81,
             "val": 68185
           }
         ],
@@ -48374,7 +48201,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 26,
-            "avail_qty": 25,
+            "avail_qty": 24,
             "val": 68185
           },
           {
@@ -48414,7 +48241,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 10,
-            "avail_qty": 9,
+            "avail_qty": 8,
             "val": 24080
           },
           {
@@ -50371,53 +50198,11 @@
         "count": 1,
         "qty_sum": 1,
         "val": 18958
-      },
-      {
-        "code": "SB2609001782",
-        "resv_full": "2026-09-29 13:00",
-        "resv": "09-29",
-        "dday": "오늘",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "안준영",
-            "req_qty": 1,
-            "crt_qty": 49,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "안준영",
-            "req_qty": 1,
-            "crt_qty": 79,
-            "avail_qty": 22,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L4",
-            "sa": "안준영",
-            "req_qty": 1,
-            "crt_qty": 49,
-            "avail_qty": 0,
-            "val": 1124
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 577936
       }
     ],
-    "sb_count": 106,
-    "line_count": 400,
-    "total_val": 69467764,
+    "sb_count": 105,
+    "line_count": 397,
+    "total_val": 68889828,
     "o_lines": 56,
     "o_val": 12323292,
     "resv_total": 401
@@ -50429,7 +50214,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10132
+    "resv_total": 10136
   },
   "nonmng": {
     "rows": [],
