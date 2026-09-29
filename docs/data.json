@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 29일 (화) · 14:31 기준",
+    "generated_at": "9월 29일 (화) · 14:36 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -41915,14 +41915,14 @@
       },
       {
         "ro": "RO2609001496",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "박영묵",
         "pub": "2026-09-28",
         "pub_full": "2026-09-28 08:29",
         "dday": "D+1일",
-        "amt": 2690100
+        "amt": 1552000
       },
       {
         "ro": "RO2609001498",
@@ -43334,8 +43334,8 @@
       },
       {
         "ro": "RO2609001665",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-29",
@@ -43532,8 +43532,8 @@
       },
       {
         "ro": "RO2609001684",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "경수리",
         "sa": "이정환",
         "pub": "2026-09-29",
@@ -43587,18 +43587,29 @@
       },
       {
         "ro": "RO2609001691",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-09-29",
         "pub_full": "2026-09-29 14:32",
         "dday": "D+0일",
+        "amt": 427740
+      },
+      {
+        "ro": "RO2609001692",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "경수리",
+        "sa": "김민규",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 14:38",
+        "dday": "D+0일",
         "amt": 0
       }
     ],
-    "count": 327,
-    "total_amt": 742348639,
+    "count": 328,
+    "total_amt": 741638279,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -43608,17 +43619,17 @@
       {
         "stat": "상담완료",
         "count": 152,
-        "amt": 510915891
+        "amt": 512142670
       },
       {
         "stat": "정비시작",
-        "count": 37,
-        "amt": 38806028
+        "count": 39,
+        "amt": 39558989
       },
       {
         "stat": "End Control 요청",
-        "count": 59,
-        "amt": 74450690
+        "count": 58,
+        "amt": 71760590
       },
       {
         "stat": "가정산 완료",
@@ -50112,7 +50123,7 @@
     "total_val": 70178421,
     "o_lines": 57,
     "o_val": 13286562,
-    "resv_total": 403
+    "resv_total": 402
   },
   "sbcar": {
     "groups": [],
@@ -50121,25 +50132,13 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10146
+    "resv_total": 10148
   },
   "nonmng": {
-    "rows": [
-      {
-        "item": "51117207931",
-        "name": "Spacer",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 25737,
-        "val": 25737,
-        "last_in": "2026-09-29",
-        "last_sale": "2026-09-29"
-      }
-    ],
-    "count": 1,
-    "total_val": 25737,
-    "qty_sum": 1,
+    "rows": [],
+    "count": 0,
+    "total_val": 0,
+    "qty_sum": 0,
     "pct": 0.0
   },
   "stockcheck": {
@@ -51018,19 +51017,11 @@
       },
       {
         "loc": "C000000",
-        "item": "41515A6C473",
-        "name": "Door aluminu",
-        "alois": "O8",
-        "qty": 1,
-        "no": 110
-      },
-      {
-        "loc": "C000000",
         "item": "51115A6A3D3",
         "name": "Trim cover,",
         "alois": "A3",
         "qty": 3,
-        "no": 111
+        "no": 110
       },
       {
         "loc": "C000000",
@@ -51038,7 +51029,7 @@
         "name": "Front bumper",
         "alois": "SZ",
         "qty": 1,
-        "no": 112
+        "no": 111
       },
       {
         "loc": "C000000",
@@ -51046,15 +51037,7 @@
         "name": "Trim cover, G30LCI F",
         "alois": "A4",
         "qty": 1,
-        "no": 113
-      },
-      {
-        "loc": "C000000",
-        "item": "51119883454",
-        "name": "Centre inlay",
-        "alois": "A4",
-        "qty": 2,
-        "no": 114
+        "no": 112
       },
       {
         "loc": "C000001",
@@ -51062,7 +51045,15 @@
         "name": "ALUMINIUM EN",
         "alois": "A6",
         "qty": 1,
-        "no": 115
+        "no": 113
+      },
+      {
+        "loc": "C000001",
+        "item": "41515A6C473",
+        "name": "Door aluminu",
+        "alois": "O8",
+        "qty": 1,
+        "no": 114
       },
       {
         "loc": "C000001",
@@ -51070,7 +51061,7 @@
         "name": "Door aluminu",
         "alois": "O8",
         "qty": 1,
-        "no": 116
+        "no": 115
       },
       {
         "loc": "C000002",
@@ -51078,7 +51069,7 @@
         "name": "Side panel l",
         "alois": "SZ",
         "qty": 1,
-        "no": 117
+        "no": 116
       },
       {
         "loc": "C000002",
@@ -51086,7 +51077,7 @@
         "name": "Trim panel,",
         "alois": "A6",
         "qty": 1,
-        "no": 118
+        "no": 117
       },
       {
         "loc": "C000002",
@@ -51094,7 +51085,7 @@
         "name": "Trim panel",
         "alois": "II",
         "qty": 1,
-        "no": 119
+        "no": 118
       },
       {
         "loc": "C000002",
@@ -51102,6 +51093,14 @@
         "name": "Trim cover,",
         "alois": "II",
         "qty": 1,
+        "no": 119
+      },
+      {
+        "loc": "C000002",
+        "item": "51119883454",
+        "name": "Centre inlay",
+        "alois": "A4",
+        "qty": 2,
         "no": 120
       },
       {
@@ -55095,18 +55094,6 @@
     "ro_violations": [],
     "ro_review": [
       {
-        "inv": "IV2609002769",
-        "ro": "RO2609001585",
-        "cust": "김희경",
-        "vin": "WBA61CC03RCR92518",
-        "pgrp": "1",
-        "detl": "고객",
-        "item": "Key Battery",
-        "amt": 12200,
-        "dt": "2026-09-28",
-        "reason": "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"
-      },
-      {
         "inv": "IV2609002602",
         "ro": "RO2608001605",
         "cust": "김강민",
@@ -55311,18 +55298,6 @@
         "reason": "RO 건인데 고객명이 업체명으로 추정 — 외부업체라면 SP로 처리했어야 함"
       },
       {
-        "inv": "IV2609002394",
-        "ro": "RO2609001322",
-        "cust": "김필진",
-        "vin": "WBAJD3108JWC14192",
-        "pgrp": "1",
-        "detl": "고객",
-        "item": "Key Battery",
-        "amt": 6100,
-        "dt": "2026-09-22",
-        "reason": "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"
-      },
-      {
         "inv": "IV2609002340",
         "ro": "RO2609001373",
         "cust": "송성재",
@@ -55443,18 +55418,6 @@
         "reason": "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"
       },
       {
-        "inv": "IV2609000350",
-        "ro": "RO2609000165",
-        "cust": "김경자",
-        "vin": "WBACW2105N9M91655",
-        "pgrp": "1",
-        "detl": "고객",
-        "item": "Battery pack",
-        "amt": 139500,
-        "dt": "2026-09-03",
-        "reason": "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"
-      },
-      {
         "inv": "IV2609000233",
         "ro": "RO2609000098",
         "cust": "마니카",
@@ -55465,29 +55428,17 @@
         "amt": 643500,
         "dt": "2026-09-02",
         "reason": "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"
-      },
-      {
-        "inv": "IV2609000205",
-        "ro": "RO2609000158",
-        "cust": "지명숙",
-        "vin": "WBA6A8108FD968463",
-        "pgrp": "1",
-        "detl": "고객",
-        "item": "Key Battery",
-        "amt": 26800,
-        "dt": "2026-09-02",
-        "reason": "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"
       }
     ],
     "sp_v_count": 58,
     "sp_r_count": 9,
     "ro_v_count": 0,
-    "ro_r_count": 32,
-    "total_count": 99,
+    "ro_r_count": 28,
+    "total_count": 95,
     "violation_count": 58,
-    "review_count": 41,
+    "review_count": 37,
     "violation_amt": 6855372,
-    "review_amt": 8301364
+    "review_amt": 8116764
   },
   "reasons": {}
 }

@@ -870,7 +870,10 @@ def _prod_code(r):
 
 _STAFF_NAME_RE = re.compile(r"\((직원|영업사원)\)\s*$")
 _BIZ_NAME_KEYWORDS = ("모터스", "상사", "공업사", "센터", "딜러", "산업", "상회", "무역", "수출", "(주)", "주식회사", "카센터", "정비")
-_RO_LABOR_EXEMPT_KEYWORDS = ("오일", "워셔", "부동액", "요소수", "키", "배터리")
+_RO_LABOR_EXEMPT_KEYWORDS = (
+    "오일", "워셔", "부동액", "요소수", "키", "배터리",  # 품목명이 한글인 경우
+    "oil", "washer", "coolant", "antifreeze", "urea", "adblue", "key", "batter",  # 품목명이 영문인 경우 (DMS 기본 표기)
+)
 
 
 def build_ext_audit(rows, today_str):
@@ -940,7 +943,7 @@ def build_ext_audit(rows, today_str):
             g["sample"] = g["sample"] or r
     for ro, g in by_ro.items():
         if g["labor"] == 0 and g["parts"] > 0 and g["sample"] is not None:
-            if not all(any(k in nm for k in _RO_LABOR_EXEMPT_KEYWORDS) for nm in g["part_names"]):
+            if not all(any(k in nm.lower() for k in _RO_LABOR_EXEMPT_KEYWORDS) for nm in g["part_names"]):
                 b = base_of(g["sample"], "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요")
                 b["item"] = ", ".join(g["part_names"][:3])
                 b["amt"] = round(g["parts"])
