@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 29일 (화) · 12:42 기준",
+    "generated_at": "9월 29일 (화) · 12:55 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -43945,20 +43945,42 @@
         "pub_full": "2026-09-29 11:52",
         "dday": "D+0일",
         "amt": 112000
+      },
+      {
+        "ro": "RO2609001672",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 12:48",
+        "dday": "D+0일",
+        "amt": 121392
+      },
+      {
+        "ro": "RO2609001673",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-09-29",
+        "pub_full": "2026-09-29 12:53",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 313,
-    "total_amt": 749832842,
+    "count": 315,
+    "total_amt": 749954234,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 13,
+        "count": 14,
         "amt": 8987100
       },
       {
         "stat": "상담완료",
-        "count": 151,
-        "amt": 514379452
+        "count": 152,
+        "amt": 514500844
       },
       {
         "stat": "정비시작",
@@ -44752,7 +44774,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 106,
-            "avail_qty": 100,
+            "avail_qty": 98,
             "val": 22684
           }
         ],
@@ -44898,7 +44920,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 106,
-            "avail_qty": 100,
+            "avail_qty": 98,
             "val": 11342
           }
         ],
@@ -48402,7 +48424,7 @@
             "sa": "우종훈",
             "req_qty": 2,
             "crt_qty": 106,
-            "avail_qty": 100,
+            "avail_qty": 98,
             "val": 22684
           },
           {
@@ -50398,7 +50420,7 @@
     "total_val": 69467764,
     "o_lines": 56,
     "o_val": 12323292,
-    "resv_total": 403
+    "resv_total": 401
   },
   "sbcar": {
     "groups": [],
@@ -50407,7 +50429,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10129
+    "resv_total": 10132
   },
   "nonmng": {
     "rows": [],
