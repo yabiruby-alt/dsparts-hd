@@ -868,6 +868,101 @@ def _prod_code(r):
     return m.group(1) if m else None
 
 
+_STAFF_NAME_RE = re.compile(r"\((직원|영업사원)\)\s*$")
+_BIZ_NAME_KEYWORDS = ("모터스", "상사", "공업사", "센터", "딜러", "산업", "상회", "무역", "수출", "(주)", "주식회사", "카센터", "정비")
+_RO_LABOR_EXEMPT_KEYWORDS = ("오일", "워셔", "부동액", "요소수", "키", "배터리")
+
+
+def build_ext_audit(rows, today_str):
+    """외부판매(할인가) 오분류 의심 건 자동 적발 — '외부검증' 엑셀 매크로의 9단계 체크리스트를 그대로 룰로 옮긴 것.
+    정산유형 C(고객) & 품목유형 부품/공임만 대상. 차대번호(VIN) 유무로 RO(정비연계)/SP(카운터 단독판매) 구분."""
+    def is_staff_name(nm):
+        return bool(_STAFF_NAME_RE.search((nm or "").strip()))
+
+    def looks_like_business(nm):
+        return any(k in (nm or "") for k in _BIZ_NAME_KEYWORDS)
+
+    c_rows = [r for r in rows if r.get("calcTpCd") == "C" and r.get("itemTpCdNm") in ("부품", "공임")]
+
+    def base_of(r, reason):
+        return {
+            "inv": r.get("invNo") or "-", "ro": r.get("roNo") or "-", "cust": r.get("custNm") or "-",
+            "vin": r.get("vinNo") or "-", "pgrp": _prod_code(r) or "-", "detl": r.get("calcDetlTpNm") or "-",
+            "item": r.get("itemNm") or "-", "amt": round(num(r.get("invTotAmt"))),
+            "dt": (r.get("invDt") or "")[:10], "reason": reason,
+        }
+
+    sp_violations, sp_review, ro_violations, ro_review = [], [], [], []
+
+    for r in c_rows:
+        vin = (r.get("vinNo") or "").strip()
+        detl = r.get("calcDetlTpNm") or ""
+        cust = r.get("custNm") or ""
+        pgrp = _prod_code(r)
+        has_ro = bool(r.get("roNo"))
+
+        if not has_ro:
+            # ---- SP (카운터 단독 부품판매) ----
+            if pgrp != "7":
+                if not vin and detl == "고객":
+                    sp_violations.append(base_of(r, "차대 없는 일반부품인데 정산상세유형이 '고객' — 원래 외부판매 대상 (BMW 타 딜러 판매는 예외)"))
+                elif not vin and detl in ("외부", "외부공업사") and not is_staff_name(cust) and not looks_like_business(cust):
+                    sp_review.append(base_of(r, "차대 없는 외부/외부공업사 건인데 고객명이 직원/업체명 형식이 아님 — 확인 필요"))
+            else:
+                if not vin and detl == "고객" and not is_staff_name(cust):
+                    sp_violations.append(base_of(r, "라이프스타일(부품그룹7) 차대없음 '고객' 건인데 고객명이 직원 형식이 아님"))
+                elif not vin and detl in ("외부", "외부공업사") and not is_staff_name(cust):
+                    sp_violations.append(base_of(r, "라이프스타일(부품그룹7) 차대없음 외부/외부공업사 건인데 고객명이 직원 형식이 아님 (마케팅 에이전시 예외 확인)"))
+            if vin and detl in ("외부", "외부공업사"):
+                sp_violations.append(base_of(r, "차대(VIN) 있는 외부/외부공업사 건 — 외부업체는 차대정보가 있으면 안 됨"))
+            elif vin and detl == "고객" and looks_like_business(cust):
+                sp_review.append(base_of(r, "차대 있는 '고객' 건인데 고객명이 업체명으로 추정 — 외부업체 여부 확인"))
+        else:
+            # ---- RO (정비 연계) ----
+            if detl in ("외부", "외부공업사"):
+                ro_violations.append(base_of(r, "RO(정비연계) 건인데 정산상세유형이 외부/외부공업사 — RO는 '고객' 유형만 가능"))
+            elif detl == "고객" and looks_like_business(cust):
+                ro_review.append(base_of(r, "RO 건인데 고객명이 업체명으로 추정 — 외부업체라면 SP로 처리했어야 함"))
+
+    # RO 공임 0원 + 부품만 존재 (오일/워셔액 등 예외 제외)
+    by_ro = defaultdict(lambda: {"labor": 0.0, "parts": 0.0, "part_names": [], "sample": None})
+    for r in c_rows:
+        ro = r.get("roNo")
+        if not ro:
+            continue
+        g = by_ro[ro]
+        amt = num(r.get("invTotAmt"))
+        if r.get("itemTpCdNm") == "공임":
+            g["labor"] += amt
+        elif r.get("itemTpCdNm") == "부품":
+            g["parts"] += amt
+            g["part_names"].append(r.get("itemNm") or "")
+            g["sample"] = g["sample"] or r
+    for ro, g in by_ro.items():
+        if g["labor"] == 0 and g["parts"] > 0 and g["sample"] is not None:
+            if not all(any(k in nm for k in _RO_LABOR_EXEMPT_KEYWORDS) for nm in g["part_names"]):
+                b = base_of(g["sample"], "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요")
+                b["item"] = ", ".join(g["part_names"][:3])
+                b["amt"] = round(g["parts"])
+                ro_review.append(b)
+
+    for lst in (sp_violations, sp_review, ro_violations, ro_review):
+        lst.sort(key=lambda i: i["dt"], reverse=True)
+
+    return {
+        "date": today_str,
+        "sp_violations": sp_violations, "sp_review": sp_review,
+        "ro_violations": ro_violations, "ro_review": ro_review,
+        "sp_v_count": len(sp_violations), "sp_r_count": len(sp_review),
+        "ro_v_count": len(ro_violations), "ro_r_count": len(ro_review),
+        "total_count": len(sp_violations) + len(sp_review) + len(ro_violations) + len(ro_review),
+        "violation_count": len(sp_violations) + len(ro_violations),
+        "review_count": len(sp_review) + len(ro_review),
+        "violation_amt": round(sum(i["amt"] for i in sp_violations + ro_violations)),
+        "review_amt": round(sum(i["amt"] for i in sp_review + ro_review)),
+    }
+
+
 def build_acc_tire(rows):
     ci_rows = [r for r in rows if r.get("calcTpCd") in ("C", "I")]
     acc_codes = {"3", "5", "7"}
@@ -1186,6 +1281,7 @@ def run_cycle(page: Page) -> None:
     inv, pw_rows = build_inventory(inv_rows)
     oaov = build_oaov(pw_rows, inv["total"])
     ext, shop = build_ext_shop(to_rows, period_label)
+    extaudit = build_ext_audit(to_rows, today_str)
     acc, tire = build_acc_tire(to_rows)
     longstock = build_longstock(pw_rows, inv["total"], now)
     stockcheck = build_daily_stockcheck(recv_rows, pw_rows, today_str)
@@ -1208,7 +1304,7 @@ def run_cycle(page: Page) -> None:
                  "calendar_image": calendar_image},
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
         "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro, "noshow": noshow, "sbresv": sbresv, "sbcar": sbcar, "nonmng": nonmng,
-        "stockcheck": stockcheck, "stockcheck_week": stockcheck_week, "noloc": noloc,
+        "stockcheck": stockcheck, "stockcheck_week": stockcheck_week, "noloc": noloc, "extaudit": extaudit,
     }
 
     global LAST_DATA

@@ -395,6 +395,14 @@
     </div>
 
     <div class="sb-section">
+      <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">외부판매 검증<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
+      <button class="sb-item" id="nav-extaudit" aria-current="false" onclick="selectPage('extaudit')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2 2.5 5v4.5C2.5 13 5 15.5 9 16.5c4-1 6.5-3.5 6.5-7V5L9 2Z"/><path d="M6.5 9 8.2 10.8 11.7 7"/></svg>
+        외부판매 오분류 검증
+      </button>
+    </div>
+
+    <div class="sb-section">
       <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">재고 관리<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
       <button class="sb-item" id="nav-longstock" aria-current="false" onclick="selectPage('longstock')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="7"/><path d="M9 5v4l3 2"/></svg>
@@ -893,6 +901,80 @@
       </div>
     </section>
 
+    <section id="page-extaudit" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>외부판매 오분류 검증</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 이번 달 Turn Over(정산유형 C·고객) 기준 · {{ extaudit.date }} 갱신</div>
+      </div>
+
+      <div class="kpistrip">
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">01</span>
+          <span class="eyebrow">위반 의심 (명확한 룰 위반)</span>
+          <span class="value">{{ extaudit.violation_count }}건</span>
+          <span class="foot">SP {{ extaudit.sp_v_count }}건 · RO {{ extaudit.ro_v_count }}건 · 합계 ₩{{ '{:,}'.format(extaudit.violation_amt) }}</span>
+        </div>
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">02</span>
+          <span class="eyebrow">확인 필요 (예외 있을 수 있음)</span>
+          <span class="value">{{ extaudit.review_count }}건</span>
+          <span class="foot">SP {{ extaudit.sp_r_count }}건 · RO {{ extaudit.ro_r_count }}건 · 합계 ₩{{ '{:,}'.format(extaudit.review_amt) }}</span>
+        </div>
+      </div>
+
+      {% macro audit_table(rows, gkey, empty_msg) -%}
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>일자</th><th>인보이스</th><th>RO번호</th><th>고객명</th><th>차대번호</th><th>부품그룹</th><th>정산상세유형</th><th>품목</th><th class="num">금액</th><th>사유</th></tr></thead>
+          <tbody>
+            {% for r in rows %}
+            <tr><td class="mono">{{ r.dt }}</td><td class="mono">{{ r.inv }}</td><td class="mono">{{ r.ro }}</td><td>{{ r.cust }}</td><td class="mono">{{ r.vin }}</td><td class="mono">{{ r.pgrp }}</td><td>{{ r.detl }}</td><td>{{ r.item }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td>{{ r.reason }}</td></tr>
+            {% else %}
+            <tr><td colspan="10" class="empty-note">{{ empty_msg }}</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {%- endmacro %}
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">SP(카운터 단독판매) 위반 의심</span>
+          <span class="val">{{ extaudit.sp_v_count }}건</span>
+          <span class="foot">차대 유무 × 정산상세유형 조합이 규정과 맞지 않는 건</span>
+        </div>
+        {{ audit_table(extaudit.sp_violations, 'sp-v', 'SP 위반 의심 건 없음') }}
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">SP 확인 필요</span>
+          <span class="val">{{ extaudit.sp_r_count }}건</span>
+          <span class="foot">고객명이 직원/업체명 형식이 아니거나, 업체명으로 추정되는 '고객' 건</span>
+        </div>
+        {{ audit_table(extaudit.sp_review, 'sp-r', 'SP 확인 필요 건 없음') }}
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">RO(정비연계) 위반 의심</span>
+          <span class="val">{{ extaudit.ro_v_count }}건</span>
+          <span class="foot">RO 건인데 정산상세유형이 외부/외부공업사인 경우 (RO는 '고객' 유형만 가능)</span>
+        </div>
+        {{ audit_table(extaudit.ro_violations, 'ro-v', 'RO 위반 의심 건 없음') }}
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">RO 확인 필요</span>
+          <span class="val">{{ extaudit.ro_r_count }}건</span>
+          <span class="foot">업체명으로 추정되는 고객 건, 또는 공임 0원+부품만 있는 건(오일/워셔액 등 예외 제외)</span>
+        </div>
+        {{ audit_table(extaudit.ro_review, 'ro-r', 'RO 확인 필요 건 없음') }}
+      </div>
+    </section>
+
     <section id="page-oaov" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>OAOV 현황</b></span>
@@ -1312,7 +1394,7 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','oaov','longstock','nonmng','stockcheck','stockcheckweek','noloc','opart','oflow','calendar'];
+  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','extaudit','oaov','longstock','nonmng','stockcheck','stockcheckweek','noloc','opart','oflow','calendar'];
   function selectPage(key){
     PAGES.forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); });
     document.querySelector('.maininner').classList.toggle('wide', key==='calendar');
