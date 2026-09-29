@@ -903,6 +903,21 @@ def build_ext_audit(rows, today_str):
             "dt": (r.get("invDt") or "")[:10], "reason": reason,
         }
 
+    # RO(정비연계)별 공임/부품 합계 — 공임이 하나라도 있으면 그 RO는 "부품만 있는 건" 판정에서 제외
+    by_ro = defaultdict(lambda: {"labor": 0.0, "parts": 0.0, "part_names": [], "sample": None})
+    for r in c_rows:
+        ro = r.get("roNo")
+        if not ro:
+            continue
+        g = by_ro[ro]
+        amt = num(r.get("invTotAmt"))
+        if r.get("itemTpCdNm") == "공임":
+            g["labor"] += amt
+        elif r.get("itemTpCdNm") == "부품":
+            g["parts"] += amt
+            g["part_names"].append(r.get("itemNm") or "")
+            g["sample"] = g["sample"] or r
+
     sp_violations, sp_review, ro_violations, ro_review = [], [], [], []
 
     for r in c_rows:
@@ -932,23 +947,10 @@ def build_ext_audit(rows, today_str):
             # ---- RO (정비 연계) ----
             if detl in ("외부", "외부공업사"):
                 ro_violations.append(base_of(r, "RO(정비연계) 건인데 정산상세유형이 외부/외부공업사 — RO는 '고객' 유형만 가능"))
-            elif detl == "고객" and looks_like_business(cust):
-                ro_review.append(base_of(r, "RO 건인데 고객명이 업체명으로 추정 — 외부업체라면 SP로 처리했어야 함"))
+            elif detl == "고객" and looks_like_business(cust) and by_ro[r.get("roNo")]["labor"] == 0:
+                ro_review.append(base_of(r, "RO 건인데 공임 없이 부품만 존재 + 고객명이 업체명으로 추정 — 외부업체라면 SP로 처리했어야 함"))
 
     # RO 공임 0원 + 부품만 존재 (오일/워셔액 등 예외 제외)
-    by_ro = defaultdict(lambda: {"labor": 0.0, "parts": 0.0, "part_names": [], "sample": None})
-    for r in c_rows:
-        ro = r.get("roNo")
-        if not ro:
-            continue
-        g = by_ro[ro]
-        amt = num(r.get("invTotAmt"))
-        if r.get("itemTpCdNm") == "공임":
-            g["labor"] += amt
-        elif r.get("itemTpCdNm") == "부품":
-            g["parts"] += amt
-            g["part_names"].append(r.get("itemNm") or "")
-            g["sample"] = g["sample"] or r
     for ro, g in by_ro.items():
         if g["labor"] == 0 and g["parts"] > 0 and g["sample"] is not None:
             if not all(any(k in nm.lower() for k in _RO_LABOR_EXEMPT_KEYWORDS) for nm in g["part_names"]):
