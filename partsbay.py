@@ -897,7 +897,8 @@ def build_ext_audit(rows, today_str):
 
     def base_of(r, reason):
         return {
-            "inv": r.get("invNo") or "-", "ro": r.get("roNo") or "-", "cust": r.get("custNm") or "-",
+            "inv": r.get("invNo") or "-", "ro": r.get("roNo") or "-", "spno": r.get("parInvNo") or "-",
+            "cust": r.get("custNm") or "-",
             "vin": r.get("vinNo") or "-", "pgrp": _prod_code(r) or "-", "detl": r.get("calcDetlTpNm") or "-",
             "item": r.get("itemNm") or "-", "amt": round(num(r.get("invTotAmt"))),
             "dt": (r.get("invDt") or "")[:10], "reason": reason,
