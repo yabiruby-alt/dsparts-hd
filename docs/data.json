@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 29일 (화) · 14:45 기준",
+    "generated_at": "9월 29일 (화) · 14:55 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -294,7 +294,7 @@
     ]
   },
   "inv": {
-    "total": 1264347671,
+    "total": 1264188328,
     "item_count": 2218,
     "code_count": 25,
     "alois_groups": [
@@ -397,9 +397,9 @@
           },
           {
             "code": "A2",
-            "val": 16814311,
-            "pct": 1.33,
-            "qty": 1175,
+            "val": 16682983,
+            "pct": 1.32,
+            "qty": 1174,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -414,12 +414,6 @@
                 "val": 1438167
               },
               {
-                "item": "34216890353",
-                "name": "Repair kit,",
-                "qty": 10,
-                "val": 1313280
-              },
-              {
                 "item": "61610003090",
                 "name": "Set of wiper 6GT",
                 "qty": 19,
@@ -430,6 +424,12 @@
                 "name": "Set of wiper F55,56,57",
                 "qty": 29,
                 "val": 1225250
+              },
+              {
+                "item": "34216890353",
+                "name": "Repair kit,",
+                "qty": 9,
+                "val": 1181952
               },
               {
                 "item": "34218867488",
@@ -791,9 +791,9 @@
           },
           {
             "code": "A4",
-            "val": 45710766,
-            "pct": 3.62,
-            "qty": 1885,
+            "val": 45682751,
+            "pct": 3.61,
+            "qty": 1884,
             "parts": [
               {
                 "item": "63117214962",
@@ -1270,12 +1270,6 @@
                 "val": 87920
               },
               {
-                "item": "34216890792",
-                "name": "Brake pad we",
-                "qty": 3,
-                "val": 84045
-              },
-              {
                 "item": "51417325082",
                 "name": "Clip",
                 "qty": 76,
@@ -1334,6 +1328,12 @@
                 "name": "Torx screw,",
                 "qty": 11,
                 "val": 56969
+              },
+              {
+                "item": "34216890792",
+                "name": "Brake pad we",
+                "qty": 2,
+                "val": 56030
               },
               {
                 "item": "07119907857",
@@ -2770,7 +2770,7 @@
           {
             "code": "A6",
             "val": 83503419,
-            "pct": 6.6,
+            "pct": 6.61,
             "qty": 1431,
             "parts": [
               {
@@ -4804,9 +4804,9 @@
             ]
           }
         ],
-        "subtotal_val": 472950162,
-        "subtotal_qty": 9016,
-        "subtotal_pct": 37.41
+        "subtotal_val": 472790819,
+        "subtotal_qty": 9014,
+        "subtotal_pct": 37.4
       },
       {
         "code": "L",
@@ -12452,7 +12452,7 @@
         ],
         "subtotal_val": 444581136,
         "subtotal_qty": 2458,
-        "subtotal_pct": 35.16
+        "subtotal_pct": 35.17
       },
       {
         "code": "I",
@@ -13854,13 +13854,13 @@
         ],
         "subtotal_val": 178715063,
         "subtotal_qty": 2036,
-        "subtotal_pct": 14.13
+        "subtotal_pct": 14.14
       }
     ]
   },
   "oaov": {
     "total": 65188309,
-    "inv_total": 1264347671,
+    "inv_total": 1264188328,
     "pct": 5.16,
     "oa_val": 39335767,
     "ov_val": 25852542,
@@ -41246,8 +41246,8 @@
       },
       {
         "ro": "RO2609001310",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-21",
@@ -43061,8 +43061,8 @@
       },
       {
         "ro": "RO2609001656",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-29",
@@ -43094,8 +43094,8 @@
       },
       {
         "ro": "RO2609001660",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-29",
@@ -43358,8 +43358,8 @@
       },
       {
         "ro": "RO2609001685",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-29",
@@ -43433,18 +43433,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 153,
-        "amt": 514572509
+        "count": 149,
+        "amt": 510252392
       },
       {
         "stat": "정비시작",
-        "count": 38,
-        "amt": 36299289
+        "count": 41,
+        "amt": 37477006
       },
       {
         "stat": "End Control 요청",
-        "count": 58,
-        "amt": 71760590
+        "count": 59,
+        "amt": 74902990
       },
       {
         "stat": "가정산 완료",
@@ -46622,7 +46622,7 @@
             "sa": "M GARAGE",
             "req_qty": 2,
             "crt_qty": 107,
-            "avail_qty": 89,
+            "avail_qty": 85,
             "val": 13406
           }
         ],
@@ -46754,7 +46754,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 107,
-            "avail_qty": 89,
+            "avail_qty": 85,
             "val": 6703
           },
           {
@@ -47203,6 +47203,78 @@
         "val": 577936
       },
       {
+        "code": "SB2609002070",
+        "resv_full": "2026-10-02 12:00",
+        "resv": "10-02",
+        "dday": "D-3일",
+        "sa": "최민수",
+        "rows": [
+          {
+            "item": "90200005957",
+            "name": "Hypoid axle",
+            "alois": "L5",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 17,
+            "avail_qty": 9,
+            "val": 113800
+          },
+          {
+            "item": "90200005956",
+            "name": "Hypoid axle",
+            "alois": "L4",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 19,
+            "avail_qty": 11,
+            "val": 113800
+          },
+          {
+            "item": "83225A4F016",
+            "name": "Dtf 1",
+            "alois": "L2",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 11,
+            "avail_qty": 7,
+            "val": 60527
+          },
+          {
+            "item": "33117525064",
+            "name": "Screw plug",
+            "alois": "A1",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 107,
+            "avail_qty": 85,
+            "val": 13406
+          },
+          {
+            "item": "33117525064",
+            "name": "Screw plug",
+            "alois": "A1",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 107,
+            "avail_qty": 85,
+            "val": 6703
+          },
+          {
+            "item": "33117525064",
+            "name": "Screw plug",
+            "alois": "A1",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 107,
+            "avail_qty": 85,
+            "val": 6703
+          }
+        ],
+        "count": 6,
+        "qty_sum": 9,
+        "val": 314939
+      },
+      {
         "code": "SB2609001997",
         "resv_full": "2026-10-02 10:20",
         "resv": "10-02",
@@ -47414,7 +47486,7 @@
             "sa": "최민수",
             "req_qty": 2,
             "crt_qty": 17,
-            "avail_qty": 11,
+            "avail_qty": 9,
             "val": 113800
           },
           {
@@ -47424,7 +47496,7 @@
             "sa": "최민수",
             "req_qty": 2,
             "crt_qty": 19,
-            "avail_qty": 13,
+            "avail_qty": 11,
             "val": 113800
           },
           {
@@ -47434,7 +47506,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 11,
-            "avail_qty": 8,
+            "avail_qty": 7,
             "val": 60527
           },
           {
@@ -47444,7 +47516,7 @@
             "sa": "최민수",
             "req_qty": 2,
             "crt_qty": 107,
-            "avail_qty": 89,
+            "avail_qty": 85,
             "val": 13406
           },
           {
@@ -47454,7 +47526,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 107,
-            "avail_qty": 89,
+            "avail_qty": 85,
             "val": 6703
           },
           {
@@ -47464,7 +47536,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 107,
-            "avail_qty": 89,
+            "avail_qty": 85,
             "val": 6703
           }
         ],
@@ -48656,7 +48728,7 @@
             "sa": "M GARAGE",
             "req_qty": 1,
             "crt_qty": 107,
-            "avail_qty": 89,
+            "avail_qty": 85,
             "val": 6703
           }
         ],
@@ -49290,7 +49362,7 @@
             "sa": "최민수",
             "req_qty": 2,
             "crt_qty": 17,
-            "avail_qty": 11,
+            "avail_qty": 9,
             "val": 113800
           },
           {
@@ -49319,8 +49391,8 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 102,
-            "avail_qty": 98,
+            "crt_qty": 101,
+            "avail_qty": 97,
             "val": 16400
           },
           {
@@ -49350,7 +49422,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 107,
-            "avail_qty": 89,
+            "avail_qty": 85,
             "val": 6703
           },
           {
@@ -49933,12 +50005,12 @@
         "val": 194751
       }
     ],
-    "sb_count": 108,
-    "line_count": 404,
-    "total_val": 70178421,
+    "sb_count": 109,
+    "line_count": 410,
+    "total_val": 70493360,
     "o_lines": 57,
     "o_val": 13286562,
-    "resv_total": 402
+    "resv_total": 403
   },
   "sbcar": {
     "groups": [],
@@ -49947,7 +50019,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10148
+    "resv_total": 10151
   },
   "nonmng": {
     "rows": [],
@@ -51857,7 +51929,7 @@
         "item": "34216890792",
         "name": "Brake pad we",
         "alois": "A4",
-        "qty": 3,
+        "qty": 2,
         "no": 99
       },
       {
@@ -52329,7 +52401,7 @@
         "item": "34216890353",
         "name": "Repair kit,",
         "alois": "A2",
-        "qty": 10,
+        "qty": 9,
         "no": 158
       },
       {
@@ -54096,18 +54168,6 @@
         "reason": "라이프스타일(부품그룹7) 차대없음 외부/외부공업사 건인데 고객명이 직원 형식이 아님 (마케팅 에이전시 예외 확인)"
       },
       {
-        "inv": "AR2609003757",
-        "ro": "-",
-        "cust": "이태우(영업직원)",
-        "vin": "-",
-        "pgrp": "7",
-        "detl": "고객",
-        "item": "BMW Cushion",
-        "amt": 36604,
-        "dt": "2026-09-17",
-        "reason": "라이프스타일(부품그룹7) 차대없음 '고객' 건인데 고객명이 직원 형식이 아님"
-      },
-      {
         "inv": "AR2609003735",
         "ro": "-",
         "cust": "파라다이스호텔카지노",
@@ -54214,66 +54274,6 @@
         "amt": 1360000,
         "dt": "2026-09-12",
         "reason": "라이프스타일(부품그룹7) 차대없음 외부/외부공업사 건인데 고객명이 직원 형식이 아님 (마케팅 에이전시 예외 확인)"
-      },
-      {
-        "inv": "AR2609003706",
-        "ro": "-",
-        "cust": "오용주(영업직원)",
-        "vin": "-",
-        "pgrp": "7",
-        "detl": "고객",
-        "item": "BMW Caddy Olive (New)",
-        "amt": 400032,
-        "dt": "2026-09-02",
-        "reason": "라이프스타일(부품그룹7) 차대없음 '고객' 건인데 고객명이 직원 형식이 아님"
-      },
-      {
-        "inv": "AR2609003706",
-        "ro": "-",
-        "cust": "오용주(영업직원)",
-        "vin": "-",
-        "pgrp": "7",
-        "detl": "고객",
-        "item": "BMW Boston Olive (New)",
-        "amt": 177300,
-        "dt": "2026-09-02",
-        "reason": "라이프스타일(부품그룹7) 차대없음 '고객' 건인데 고객명이 직원 형식이 아님"
-      },
-      {
-        "inv": "AR2609003690",
-        "ro": "-",
-        "cust": "김기훈(영업직원)",
-        "vin": "-",
-        "pgrp": "7",
-        "detl": "고객",
-        "item": "BMW Miniatur",
-        "amt": 168000,
-        "dt": "2026-09-01",
-        "reason": "라이프스타일(부품그룹7) 차대없음 '고객' 건인데 고객명이 직원 형식이 아님"
-      },
-      {
-        "inv": "AR2609003690",
-        "ro": "-",
-        "cust": "김기훈(영업직원)",
-        "vin": "-",
-        "pgrp": "7",
-        "detl": "고객",
-        "item": "BMW Caddy Beige &amp; Grey",
-        "amt": 270000,
-        "dt": "2026-09-01",
-        "reason": "라이프스타일(부품그룹7) 차대없음 '고객' 건인데 고객명이 직원 형식이 아님"
-      },
-      {
-        "inv": "AR2609003690",
-        "ro": "-",
-        "cust": "김기훈(영업직원)",
-        "vin": "-",
-        "pgrp": "7",
-        "detl": "고객",
-        "item": "BMW Boston Beige &amp; Grey",
-        "amt": 87000,
-        "dt": "2026-09-01",
-        "reason": "라이프스타일(부품그룹7) 차대없음 '고객' 건인데 고객명이 직원 형식이 아님"
       }
     ],
     "sp_review": [
@@ -54311,30 +54311,6 @@
         "item": "Covering lef",
         "amt": 99300,
         "dt": "2026-09-17",
-        "reason": "차대 없는 외부/외부공업사 건인데 고객명이 직원/업체명 형식이 아님 — 확인 필요"
-      },
-      {
-        "inv": "AR2609003725",
-        "ro": "-",
-        "cust": "이희재(영업직원)",
-        "vin": "-",
-        "pgrp": "1",
-        "detl": "외부",
-        "item": "License-plat",
-        "amt": 67300,
-        "dt": "2026-09-09",
-        "reason": "차대 없는 외부/외부공업사 건인데 고객명이 직원/업체명 형식이 아님 — 확인 필요"
-      },
-      {
-        "inv": "AR2609003705",
-        "ro": "-",
-        "cust": "한서정(영업직원)",
-        "vin": "-",
-        "pgrp": "3",
-        "detl": "외부",
-        "item": "Set of floor",
-        "amt": 66400,
-        "dt": "2026-09-02",
         "reason": "차대 없는 외부/외부공업사 건인데 고객명이 직원/업체명 형식이 아님 — 확인 필요"
       }
     ],
@@ -54677,15 +54653,15 @@
         "reason": "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"
       }
     ],
-    "sp_v_count": 18,
-    "sp_r_count": 5,
+    "sp_v_count": 12,
+    "sp_r_count": 3,
     "ro_v_count": 0,
     "ro_r_count": 28,
-    "total_count": 51,
-    "violation_count": 18,
-    "review_count": 33,
-    "violation_amt": 6855372,
-    "review_amt": 8116764
+    "total_count": 43,
+    "violation_count": 12,
+    "review_count": 31,
+    "violation_amt": 5716436,
+    "review_amt": 7983064
   },
   "reasons": {}
 }

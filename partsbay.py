@@ -868,7 +868,7 @@ def _prod_code(r):
     return m.group(1) if m else None
 
 
-_STAFF_NAME_RE = re.compile(r"\((직원|영업사원)\)\s*$")
+_STAFF_NAME_RE = re.compile(r"\((직원|영업직원)\)\s*$")
 _BIZ_NAME_KEYWORDS = ("모터스", "상사", "공업사", "센터", "딜러", "산업", "상회", "무역", "수출", "(주)", "주식회사", "카센터", "정비")
 _RO_LABOR_EXEMPT_KEYWORDS = (
     "오일", "워셔", "부동액", "요소수", "키", "배터리",  # 품목명이 한글인 경우
