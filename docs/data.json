@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 30일 (수) · 16:21 기준",
+    "generated_at": "9월 30일 (수) · 16:40 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,8 +284,8 @@
     ]
   },
   "inv": {
-    "total": 1206813979,
-    "item_count": 2171,
+    "total": 1206905185,
+    "item_count": 2172,
     "code_count": 25,
     "alois_groups": [
       {
@@ -296,7 +296,7 @@
           {
             "code": "A1",
             "val": 221886709,
-            "pct": 18.39,
+            "pct": 18.38,
             "qty": 2577,
             "parts": [
               {
@@ -4736,7 +4736,7 @@
         ],
         "subtotal_val": 468682232,
         "subtotal_qty": 8930,
-        "subtotal_pct": 38.84
+        "subtotal_pct": 38.83
       },
       {
         "code": "L",
@@ -12133,9 +12133,9 @@
         "rows": [
           {
             "code": "II",
-            "val": 4615686,
-            "pct": 0.38,
-            "qty": 36,
+            "val": 4706892,
+            "pct": 0.39,
+            "qty": 37,
             "parts": [
               {
                 "item": "41349635248",
@@ -12220,6 +12220,12 @@
                 "name": "Cover F10 FL",
                 "qty": 1,
                 "val": 93378
+              },
+              {
+                "item": "51117379434",
+                "name": "Cover, bumpe",
+                "qty": 1,
+                "val": 91206
               },
               {
                 "item": "51115A0DEE6",
@@ -12338,9 +12344,9 @@
             ]
           }
         ],
-        "subtotal_val": 4615686,
-        "subtotal_qty": 36,
-        "subtotal_pct": 0.38
+        "subtotal_val": 4706892,
+        "subtotal_qty": 37,
+        "subtotal_pct": 0.39
       },
       {
         "code": "S",
@@ -13568,7 +13574,7 @@
   },
   "oaov": {
     "total": 35917911,
-    "inv_total": 1206813979,
+    "inv_total": 1206905185,
     "pct": 2.98,
     "oa_val": 19330422,
     "ov_val": 16587489,
@@ -15439,16 +15445,16 @@
     "foot_note": "발행 1건 · 전액 취소되어 순매출 없음"
   },
   "acc": {
-    "total": 49760325,
-    "cost": 50809239,
-    "lines": 363,
-    "invoices_count": 221,
+    "total": 50743545,
+    "cost": 51890781,
+    "lines": 365,
+    "invoices_count": 222,
     "by_type": [
       {
         "code": "3",
         "label": "Car Accessories",
-        "lines": 146,
-        "val": 18171025
+        "lines": 148,
+        "val": 19154245
       },
       {
         "code": "5",
@@ -15464,6 +15470,14 @@
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2609003046",
+        "num": "RO2609001618",
+        "sa": "우상만",
+        "dt": "2026-09-30 16:35",
+        "amt": 983220,
+        "cost": 1081542
+      },
       {
         "inv": "IV2609003021",
         "num": "RO2609001743",
@@ -15495,14 +15509,6 @@
         "dt": "2026-09-30 13:36",
         "amt": 69000,
         "cost": 69000
-      },
-      {
-        "inv": "AR2609003798",
-        "num": "SP2609000003",
-        "sa": "박진호",
-        "dt": "2026-09-30 09:59",
-        "amt": 3265506,
-        "cost": 2942345
       }
     ]
   },
@@ -37344,19 +37350,19 @@
       {
         "date": "09-30",
         "in_val": 3476699,
-        "out_val": 37804550,
-        "net": -34327851
+        "out_val": 38886092,
+        "net": -35409393
       }
     ],
     "total_in": 270918007,
-    "total_out": 284628385,
-    "net": -13710378,
+    "total_out": 285709927,
+    "net": -14791920,
     "by_code": [
       {
         "code": "O8",
         "in_val": 225477160,
-        "out_val": 239426342,
-        "net": -13949182
+        "out_val": 240507884,
+        "net": -15030724
       },
       {
         "code": "OA",
@@ -38324,17 +38330,6 @@
         "amt": 1458000
       },
       {
-        "ro": "RO2609001069",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "우상만",
-        "pub": "2026-09-16",
-        "pub_full": "2026-09-16 17:23",
-        "dday": "D+14일",
-        "amt": 187573
-      },
-      {
         "ro": "RO2609001070",
         "stat": "End Control 요청",
         "stat_cd": "08",
@@ -38424,14 +38419,14 @@
       },
       {
         "ro": "RO2609001135",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-17",
         "pub_full": "2026-09-17 16:43",
         "dday": "D+13일",
-        "amt": 287714
+        "amt": 228606
       },
       {
         "ro": "RO2609001154",
@@ -38929,20 +38924,9 @@
         "amt": 11918300
       },
       {
-        "ro": "RO2609001492",
-        "stat": "정비시작",
-        "stat_cd": "03",
-        "svc": "경수리",
-        "sa": "우상만",
-        "pub": "2026-09-23",
-        "pub_full": "2026-09-23 17:27",
-        "dday": "D+7일",
-        "amt": 384600
-      },
-      {
         "ro": "RO2609001494",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-23",
@@ -39392,19 +39376,19 @@
       },
       {
         "ro": "RO2609001615",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-28",
         "pub_full": "2026-09-28 16:42",
         "dday": "D+2일",
-        "amt": 989392
+        "amt": 938632
       },
       {
         "ro": "RO2609001616",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-28",
@@ -39413,20 +39397,9 @@
         "amt": 667232
       },
       {
-        "ro": "RO2609001618",
-        "stat": "정비시작",
-        "stat_cd": "03",
-        "svc": "경수리",
-        "sa": "우상만",
-        "pub": "2026-09-28",
-        "pub_full": "2026-09-28 16:50",
-        "dday": "D+2일",
-        "amt": 2721415
-      },
-      {
         "ro": "RO2609001620",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-28",
@@ -39622,17 +39595,6 @@
         "amt": 3189100
       },
       {
-        "ro": "RO2609001665",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "정용환",
-        "pub": "2026-09-29",
-        "pub_full": "2026-09-29 10:36",
-        "dday": "D+1일",
-        "amt": 696961
-      },
-      {
         "ro": "RO2609001669",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -39655,17 +39617,6 @@
         "amt": 693600
       },
       {
-        "ro": "RO2609001672",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "정용환",
-        "pub": "2026-09-29",
-        "pub_full": "2026-09-29 12:48",
-        "dday": "D+1일",
-        "amt": 121392
-      },
-      {
         "ro": "RO2609001675",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -39686,17 +39637,6 @@
         "pub_full": "2026-09-29 13:10",
         "dday": "D+1일",
         "amt": 240000
-      },
-      {
-        "ro": "RO2609001681",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "염진아",
-        "pub": "2026-09-29",
-        "pub_full": "2026-09-29 13:19",
-        "dday": "D+1일",
-        "amt": 105400
       },
       {
         "ro": "RO2609001683",
@@ -39744,8 +39684,8 @@
       },
       {
         "ro": "RO2609001690",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-29",
@@ -39843,8 +39783,8 @@
       },
       {
         "ro": "RO2609001713",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-29",
@@ -40040,20 +39980,9 @@
         "amt": 28000
       },
       {
-        "ro": "RO2609001736",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "입고 Proactive-RITA",
-        "sa": "정용환",
-        "pub": "2026-09-30",
-        "pub_full": "2026-09-30 09:39",
-        "dday": "D+0일",
-        "amt": 709635
-      },
-      {
         "ro": "RO2609001738",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-09-30",
@@ -40084,17 +40013,6 @@
         "amt": 405160
       },
       {
-        "ro": "RO2609001742",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Recall/TC",
-        "sa": "정용환",
-        "pub": "2026-09-30",
-        "pub_full": "2026-09-30 09:50",
-        "dday": "D+0일",
-        "amt": 75256
-      },
-      {
         "ro": "RO2609001744",
         "stat": "End Control 요청",
         "stat_cd": "08",
@@ -40104,17 +40022,6 @@
         "pub_full": "2026-09-30 10:05",
         "dday": "D+0일",
         "amt": 656718
-      },
-      {
-        "ro": "RO2609001743",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "정용환",
-        "pub": "2026-09-30",
-        "pub_full": "2026-09-30 10:05",
-        "dday": "D+0일",
-        "amt": 173648
       },
       {
         "ro": "RO2609001745",
@@ -40225,17 +40132,6 @@
         "pub_full": "2026-09-30 11:04",
         "dday": "D+0일",
         "amt": 709635
-      },
-      {
-        "ro": "RO2609001758",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "정용환",
-        "pub": "2026-09-30",
-        "pub_full": "2026-09-30 11:25",
-        "dday": "D+0일",
-        "amt": 160454
       },
       {
         "ro": "RO2609001760",
@@ -40393,21 +40289,21 @@
       },
       {
         "ro": "RO2609001774",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Recall/TC",
         "sa": "김민규",
         "pub": "2026-09-30",
         "pub_full": "2026-09-30 14:18",
         "dday": "D+0일",
-        "amt": 634379
+        "amt": 1616379
       },
       {
         "ro": "RO2609001776",
         "stat": "정비시작",
         "stat_cd": "03",
         "svc": "Maintenance",
-        "sa": "안준영",
+        "sa": "우종훈",
         "pub": "2026-09-30",
         "pub_full": "2026-09-30 14:37",
         "dday": "D+0일",
@@ -40426,8 +40322,8 @@
       },
       {
         "ro": "RO2609001777",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-30",
@@ -40448,8 +40344,8 @@
       },
       {
         "ro": "RO2609001779",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-30",
@@ -40466,7 +40362,7 @@
         "pub": "2026-09-30",
         "pub_full": "2026-09-30 15:28",
         "dday": "D+0일",
-        "amt": 1029800
+        "amt": 1043800
       },
       {
         "ro": "RO2609001781",
@@ -40503,8 +40399,8 @@
       },
       {
         "ro": "RO2609001784",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-30",
@@ -40513,8 +40409,8 @@
         "amt": 721138
       }
     ],
-    "count": 284,
-    "total_amt": 696907869,
+    "count": 274,
+    "total_amt": 692457667,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40523,23 +40419,23 @@
       },
       {
         "stat": "상담완료",
-        "count": 136,
-        "amt": 475025822
+        "count": 137,
+        "amt": 477234819
       },
       {
         "stat": "정비시작",
-        "count": 50,
-        "amt": 56346841
+        "count": 40,
+        "amt": 47243580
       },
       {
         "stat": "End Control 요청",
-        "count": 40,
-        "amt": 62938776
+        "count": 41,
+        "amt": 63543887
       },
       {
         "stat": "가정산 완료",
-        "count": 43,
-        "amt": 96394230
+        "count": 41,
+        "amt": 98233181
       }
     ],
     "oldest": "D+526일"
@@ -41842,7 +41738,7 @@
     "total_val": 14500192,
     "o_lines": 23,
     "o_val": 5423544,
-    "resv_total": 12050
+    "resv_total": 12051
   },
   "sbresv": {
     "groups": [
@@ -42509,108 +42405,6 @@
         "count": 7,
         "qty_sum": 8,
         "val": 1192173
-      },
-      {
-        "code": "SB2608001506",
-        "resv_full": "2026-11-02 09:00",
-        "resv": "11-02",
-        "dday": "D-33일",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "11717822346",
-            "name": "Exhaust gas",
-            "alois": "L7",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 875798
-          },
-          {
-            "item": "11148490570",
-            "name": "Acoustic cov",
-            "alois": "O8",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 51921
-          },
-          {
-            "item": "11537827841",
-            "name": "Coolant hose",
-            "alois": "O8",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 49129
-          },
-          {
-            "item": "11658595650",
-            "name": "Vacuum hose",
-            "alois": "A4",
-            "sa": "김민규",
-            "req_qty": 0,
-            "crt_qty": 7,
-            "avail_qty": 2,
-            "val": 23870
-          },
-          {
-            "item": "11718479905",
-            "name": "Small-parts-kit N47",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 12900
-          },
-          {
-            "item": "11717799853",
-            "name": "Pipe union",
-            "alois": "A4",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 9,
-            "avail_qty": 1,
-            "val": 11565
-          },
-          {
-            "item": "07149886429",
-            "name": "Isa screw wi",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 3,
-            "crt_qty": 12,
-            "avail_qty": 0,
-            "val": 11064
-          },
-          {
-            "item": "64218367179",
-            "name": "Clamp",
-            "alois": "A6",
-            "sa": "김민규",
-            "req_qty": 2,
-            "crt_qty": 5,
-            "avail_qty": 3,
-            "val": 4818
-          },
-          {
-            "item": "61131369832",
-            "name": "Holder",
-            "alois": "A4",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 8,
-            "avail_qty": 3,
-            "val": 3001
-          }
-        ],
-        "count": 9,
-        "qty_sum": 11,
-        "val": 1044066
       },
       {
         "code": "SB2609001799",
@@ -44287,6 +44081,108 @@
         "count": 11,
         "qty_sum": 41,
         "val": 2016606
+      },
+      {
+        "code": "SB2608001506",
+        "resv_full": "2026-10-06 10:00",
+        "resv": "10-06",
+        "dday": "D-6일",
+        "sa": "김민규",
+        "rows": [
+          {
+            "item": "11717822346",
+            "name": "Exhaust gas",
+            "alois": "L7",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 875798
+          },
+          {
+            "item": "11148490570",
+            "name": "Acoustic cov",
+            "alois": "O8",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 51921
+          },
+          {
+            "item": "11537827841",
+            "name": "Coolant hose",
+            "alois": "O8",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 49129
+          },
+          {
+            "item": "11658595650",
+            "name": "Vacuum hose",
+            "alois": "A4",
+            "sa": "김민규",
+            "req_qty": 0,
+            "crt_qty": 7,
+            "avail_qty": 2,
+            "val": 23870
+          },
+          {
+            "item": "11718479905",
+            "name": "Small-parts-kit N47",
+            "alois": "SK",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 12900
+          },
+          {
+            "item": "11717799853",
+            "name": "Pipe union",
+            "alois": "A4",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 9,
+            "avail_qty": 1,
+            "val": 11565
+          },
+          {
+            "item": "07149886429",
+            "name": "Isa screw wi",
+            "alois": "SK",
+            "sa": "김민규",
+            "req_qty": 3,
+            "crt_qty": 12,
+            "avail_qty": 0,
+            "val": 11064
+          },
+          {
+            "item": "64218367179",
+            "name": "Clamp",
+            "alois": "A6",
+            "sa": "김민규",
+            "req_qty": 2,
+            "crt_qty": 5,
+            "avail_qty": 3,
+            "val": 4818
+          },
+          {
+            "item": "61131369832",
+            "name": "Holder",
+            "alois": "A4",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 8,
+            "avail_qty": 3,
+            "val": 3001
+          }
+        ],
+        "count": 9,
+        "qty_sum": 11,
+        "val": 1044066
       },
       {
         "code": "SB2609002041",
@@ -47194,7 +47090,7 @@
     "total_val": 70745918,
     "o_lines": 67,
     "o_val": 17004947,
-    "resv_total": 400
+    "resv_total": 401
   },
   "sbcar": {
     "groups": [],
@@ -47206,11 +47102,23 @@
     "resv_total": 10162
   },
   "nonmng": {
-    "rows": [],
-    "count": 0,
-    "total_val": 0,
-    "qty_sum": 0,
-    "pct": 0.0
+    "rows": [
+      {
+        "item": "51117379434",
+        "name": "Cover, bumpe",
+        "alois": "II",
+        "qty": 1,
+        "avail_qty": 0,
+        "prc": 91206,
+        "val": 91206,
+        "last_in": "2026-09-30",
+        "last_sale": "2026-09-30"
+      }
+    ],
+    "count": 1,
+    "total_val": 91206,
+    "qty_sum": 1,
+    "pct": 0.01
   },
   "stockcheck": {
     "rows": [
@@ -51552,20 +51460,6 @@
     "ro_violations": [],
     "ro_review": [
       {
-        "inv": "IV2609003022",
-        "ro": "RO2609001743",
-        "spno": "-",
-        "cust": "최소론",
-        "vin": "WBA51EE03S5390961",
-        "pgrp": "9",
-        "detl": "고객",
-        "itemcd": "99995A2A668",
-        "item": "Windshield w",
-        "amt": 10300,
-        "dt": "2026-09-30",
-        "reason": "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"
-      },
-      {
         "inv": "IV2609003025",
         "ro": "RO2609001614",
         "spno": "-",
@@ -51867,12 +51761,12 @@
     "sp_v_count": 12,
     "sp_r_count": 0,
     "ro_v_count": 0,
-    "ro_r_count": 16,
-    "total_count": 28,
+    "ro_r_count": 15,
+    "total_count": 27,
     "violation_count": 12,
-    "review_count": 16,
+    "review_count": 15,
     "violation_amt": 5716436,
-    "review_amt": 3151830
+    "review_amt": 3141530
   },
   "reasons": {},
   "tires": {
