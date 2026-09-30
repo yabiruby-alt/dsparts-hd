@@ -874,6 +874,7 @@ _RO_LABOR_EXEMPT_KEYWORDS = (
     "오일", "워셔", "부동액", "요소수", "키", "배터리",  # 품목명이 한글인 경우
     "oil", "washer", "coolant", "antifreeze", "urea", "adblue", "key", "batter",  # 품목명이 영문인 경우 (DMS 기본 표기)
 )
+_EPC_EXCLUDE_ITEM_CODES = ("66126912985", "61319217643")  # 차량별 EPC 매칭이 필요 없는 범용 부품(키 배터리 등)
 
 
 def build_ext_audit(rows, today_str):
@@ -945,7 +946,7 @@ def build_ext_audit(rows, today_str):
                 sp_violations.append(base_of(r, "차대(VIN) 있는 외부/외부공업사 건 — 외부업체는 차대정보가 있으면 안 됨"))
             elif vin and detl == "고객" and looks_like_business(cust):
                 sp_review.append(base_of(r, "차대 있는 '고객' 건인데 고객명이 업체명으로 추정 — 외부업체 여부 확인"))
-            if vin and pgrp == "1" and detl == "고객" and r.get("itemTpCdNm") == "부품":
+            if vin and pgrp == "1" and detl == "고객" and r.get("itemTpCdNm") == "부품" and r.get("itemCd") not in _EPC_EXCLUDE_ITEM_CODES:
                 epc_check.append(base_of(r, "EPC 확인"))
         else:
             # ---- RO (정비 연계) ----
