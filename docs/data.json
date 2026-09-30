@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 30일 (수) · 14:10 기준",
+    "generated_at": "9월 30일 (수) · 14:25 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,7 +284,7 @@
     ]
   },
   "inv": {
-    "total": 1218908121,
+    "total": 1218901301,
     "item_count": 2198,
     "code_count": 25,
     "alois_groups": [
@@ -4937,9 +4937,9 @@
           },
           {
             "code": "L4",
-            "val": 16015062,
+            "val": 16008242,
             "pct": 1.31,
-            "qty": 634,
+            "qty": 633,
             "parts": [
               {
                 "item": "83215A65BF4",
@@ -5040,8 +5040,8 @@
               {
                 "item": "90200006491",
                 "name": "R02_Rear Pla new BMW",
-                "qty": 10,
-                "val": 68200
+                "qty": 9,
+                "val": 61380
               },
               {
                 "item": "90200007571",
@@ -8076,8 +8076,8 @@
             ]
           }
         ],
-        "subtotal_val": 162852914,
-        "subtotal_qty": 4639,
+        "subtotal_val": 162846094,
+        "subtotal_qty": 4638,
         "subtotal_pct": 13.36
       },
       {
@@ -13730,7 +13730,7 @@
   },
   "oaov": {
     "total": 36545461,
-    "inv_total": 1218908121,
+    "inv_total": 1218901301,
     "pct": 3.0,
     "oa_val": 19957972,
     "ov_val": 16587489,
@@ -39243,8 +39243,8 @@
       },
       {
         "ro": "RO2609001427",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-23",
@@ -39833,7 +39833,7 @@
         "pub": "2026-09-28",
         "pub_full": "2026-09-28 15:20",
         "dday": "D+2일",
-        "amt": 2315800
+        "amt": 2329800
       },
       {
         "ro": "RO2609001610",
@@ -40024,8 +40024,8 @@
       },
       {
         "ro": "RO2609001645",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "입고 Proactive-RITA",
         "sa": "최민수",
         "pub": "2026-09-29",
@@ -40299,8 +40299,8 @@
       },
       {
         "ro": "RO2609001700",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-09-29",
@@ -40705,17 +40705,6 @@
         "amt": 74000
       },
       {
-        "ro": "RO2609001748",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "진단",
-        "sa": "이정환",
-        "pub": "2026-09-30",
-        "pub_full": "2026-09-30 10:15",
-        "dday": "D+0일",
-        "amt": 47035
-      },
-      {
         "ro": "RO2609001749",
         "stat": "정비시작",
         "stat_cd": "03",
@@ -40904,8 +40893,8 @@
       },
       {
         "ro": "RO2609001769",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-30",
@@ -40956,10 +40945,21 @@
         "pub_full": "2026-09-30 13:55",
         "dday": "D+0일",
         "amt": 15000
+      },
+      {
+        "ro": "RO2609001774",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "김민규",
+        "pub": "2026-09-30",
+        "pub_full": "2026-09-30 14:18",
+        "dday": "D+0일",
+        "amt": 634379
       }
     ],
     "count": 295,
-    "total_amt": 726068015,
+    "total_amt": 726669359,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40968,23 +40968,23 @@
       },
       {
         "stat": "상담완료",
-        "count": 142,
-        "amt": 490943101
+        "count": 139,
+        "amt": 474884392
       },
       {
         "stat": "정비시작",
-        "count": 48,
-        "amt": 60745407
+        "count": 50,
+        "amt": 63216543
       },
       {
         "stat": "End Control 요청",
         "count": 40,
-        "amt": 51212058
+        "amt": 64877123
       },
       {
         "stat": "가정산 완료",
-        "count": 51,
-        "amt": 116965249
+        "count": 52,
+        "amt": 117489101
       }
     ],
     "oldest": "D+526일"
@@ -41708,7 +41708,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           }
@@ -41740,7 +41740,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           }
@@ -42198,7 +42198,7 @@
             "alois": "SK",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -42208,7 +42208,7 @@
             "alois": "SK",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -42218,7 +42218,7 @@
             "alois": "L4",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -42832,7 +42832,7 @@
             "alois": "SK",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -42842,7 +42842,7 @@
             "alois": "SK",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           }
@@ -43672,7 +43672,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -43692,7 +43692,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -43702,7 +43702,7 @@
             "alois": "L4",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -43724,7 +43724,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -43734,7 +43734,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -43744,7 +43744,7 @@
             "alois": "L4",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -43910,7 +43910,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -43920,7 +43920,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -43930,7 +43930,7 @@
             "alois": "L4",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -43952,7 +43952,7 @@
             "alois": "SK",
             "sa": "김도현",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -43962,7 +43962,7 @@
             "alois": "SK",
             "sa": "김도현",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           }
@@ -44120,7 +44120,7 @@
             "alois": "SK",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -44130,7 +44130,7 @@
             "alois": "SK",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           }
@@ -44152,7 +44152,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -44162,7 +44162,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           }
@@ -44184,7 +44184,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -44194,7 +44194,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           }
@@ -44280,7 +44280,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -44290,7 +44290,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           }
@@ -44364,7 +44364,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -44374,7 +44374,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           }
@@ -44519,7 +44519,7 @@
             "sa": "M GARAGE",
             "req_qty": 10,
             "crt_qty": 119,
-            "avail_qty": 84,
+            "avail_qty": 36,
             "val": 153120
           },
           {
@@ -44780,7 +44780,7 @@
             "alois": "L4",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -44802,7 +44802,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -44812,7 +44812,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -44822,7 +44822,7 @@
             "alois": "L4",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -44844,7 +44844,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -44854,7 +44854,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -44864,7 +44864,7 @@
             "alois": "L4",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -44930,7 +44930,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -44940,7 +44940,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -44950,7 +44950,7 @@
             "alois": "L4",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -44972,7 +44972,7 @@
             "alois": "SK",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -44982,7 +44982,7 @@
             "alois": "SK",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -44992,7 +44992,7 @@
             "alois": "L4",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -45014,7 +45014,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -45024,7 +45024,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -45034,7 +45034,7 @@
             "alois": "L4",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -45066,7 +45066,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -45076,7 +45076,7 @@
             "alois": "L4",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -45098,7 +45098,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -45108,7 +45108,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -45118,7 +45118,7 @@
             "alois": "L4",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -45284,7 +45284,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -45294,7 +45294,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -45304,7 +45304,7 @@
             "alois": "L4",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -45326,7 +45326,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -45336,7 +45336,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -45346,7 +45346,7 @@
             "alois": "L4",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -45368,7 +45368,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -45378,7 +45378,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -45388,7 +45388,7 @@
             "alois": "L4",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -45482,7 +45482,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -45492,7 +45492,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -45502,7 +45502,7 @@
             "alois": "L4",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -45534,7 +45534,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -45544,7 +45544,7 @@
             "alois": "L4",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -45566,7 +45566,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -45576,7 +45576,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -45586,7 +45586,7 @@
             "alois": "L4",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -45650,7 +45650,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -45660,7 +45660,7 @@
             "alois": "L4",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -45682,7 +45682,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -45692,7 +45692,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -45702,7 +45702,7 @@
             "alois": "L4",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46012,7 +46012,7 @@
             "alois": "SK",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46022,7 +46022,7 @@
             "alois": "SK",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46032,7 +46032,7 @@
             "alois": "L4",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46054,7 +46054,7 @@
             "alois": "SK",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46064,7 +46064,7 @@
             "alois": "SK",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46074,7 +46074,7 @@
             "alois": "L4",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46106,7 +46106,7 @@
             "alois": "SK",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46116,7 +46116,7 @@
             "alois": "L4",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46138,7 +46138,7 @@
             "alois": "SK",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46148,7 +46148,7 @@
             "alois": "SK",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46158,7 +46158,7 @@
             "alois": "L4",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46180,7 +46180,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46190,7 +46190,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46200,7 +46200,7 @@
             "alois": "L4",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46222,7 +46222,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46232,7 +46232,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46242,7 +46242,7 @@
             "alois": "L4",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46296,7 +46296,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46306,7 +46306,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46316,7 +46316,7 @@
             "alois": "L4",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46382,7 +46382,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46392,7 +46392,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46402,7 +46402,7 @@
             "alois": "L4",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46488,7 +46488,7 @@
             "alois": "SK",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46498,7 +46498,7 @@
             "alois": "SK",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46508,7 +46508,7 @@
             "alois": "L4",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46530,7 +46530,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46540,7 +46540,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46550,7 +46550,7 @@
             "alois": "L4",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46572,7 +46572,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46642,7 +46642,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46652,7 +46652,7 @@
             "alois": "L4",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46756,7 +46756,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46766,7 +46766,7 @@
             "alois": "L4",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46788,7 +46788,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46798,7 +46798,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46808,7 +46808,7 @@
             "alois": "L4",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46830,7 +46830,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46840,7 +46840,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46850,7 +46850,7 @@
             "alois": "L4",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -46914,7 +46914,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -46924,7 +46924,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -46934,7 +46934,7 @@
             "alois": "L4",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -47030,7 +47030,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -47040,7 +47040,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -47050,7 +47050,7 @@
             "alois": "L4",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -47290,7 +47290,7 @@
             "alois": "SK",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 39,
+            "crt_qty": 38,
             "avail_qty": 0,
             "val": 568490
           },
@@ -47300,7 +47300,7 @@
             "alois": "SK",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 68,
+            "crt_qty": 67,
             "avail_qty": 21,
             "val": 8322
           },
@@ -47310,7 +47310,7 @@
             "alois": "L4",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 137,
+            "crt_qty": 136,
             "avail_qty": 98,
             "val": 1125
           }
@@ -47547,56 +47547,13 @@
     "total_val": 67147604,
     "o_lines": 61,
     "o_val": 13295031,
-    "resv_total": 396
+    "resv_total": 399
   },
   "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609001763",
-        "resv_full": "2026-09-30 14:04",
-        "resv": "09-30",
-        "dday": "오늘",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 39,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 68,
-            "avail_qty": 21,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L4",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 137,
-            "avail_qty": 98,
-            "val": 1125
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 577937
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 3,
-    "total_val": 577937,
+    "groups": [],
+    "sb_count": 0,
+    "line_count": 0,
+    "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
     "resv_total": 10154
@@ -48007,7 +47964,7 @@
         "item": "90200006491",
         "name": "R02_Rear Pla new BMW",
         "alois": "L4",
-        "qty": 10,
+        "qty": 9,
         "no": 50
       },
       {
@@ -48315,20 +48272,12 @@
         "no": 88
       },
       {
-        "loc": "A141020",
-        "item": "41149635237",
-        "name": "Cargo area f",
-        "alois": "SZ",
-        "qty": 1,
-        "no": 89
-      },
-      {
         "loc": "A141030",
         "item": "51135B597D4",
         "name": "Cover column",
         "alois": "O8",
         "qty": 1,
-        "no": 90
+        "no": 89
       },
       {
         "loc": "A141030",
@@ -48336,7 +48285,7 @@
         "name": "Cover housin",
         "alois": "L7",
         "qty": 1,
-        "no": 91
+        "no": 90
       },
       {
         "loc": "A141040",
@@ -48344,7 +48293,7 @@
         "name": "SUPPORTING L",
         "alois": "O8",
         "qty": 1,
-        "no": 92
+        "no": 91
       },
       {
         "loc": "A141061",
@@ -48352,7 +48301,7 @@
         "name": "FRONT SPRING",
         "alois": "II",
         "qty": 2,
-        "no": 93
+        "no": 92
       },
       {
         "loc": "A160210",
@@ -48360,7 +48309,7 @@
         "name": "Suspension s",
         "alois": "SZ",
         "qty": 1,
-        "no": 94
+        "no": 93
       },
       {
         "loc": "A160220",
@@ -48368,7 +48317,7 @@
         "name": "Closed grid,",
         "alois": "II",
         "qty": 1,
-        "no": 95
+        "no": 94
       },
       {
         "loc": "A160220",
@@ -48376,7 +48325,7 @@
         "name": "Cover F10 FL",
         "alois": "O8",
         "qty": 1,
-        "no": 96
+        "no": 95
       },
       {
         "loc": "A160310",
@@ -48384,7 +48333,7 @@
         "name": "Grid, center",
         "alois": "II",
         "qty": 1,
-        "no": 97
+        "no": 96
       },
       {
         "loc": "A160310",
@@ -48392,7 +48341,7 @@
         "name": "Door weather",
         "alois": "L6",
         "qty": 1,
-        "no": 98
+        "no": 97
       },
       {
         "loc": "A160310",
@@ -48400,7 +48349,7 @@
         "name": "Retaining st",
         "alois": "L7",
         "qty": 1,
-        "no": 99
+        "no": 98
       },
       {
         "loc": "A160320",
@@ -48408,7 +48357,7 @@
         "name": "Mount, grill",
         "alois": "II",
         "qty": 1,
-        "no": 100
+        "no": 99
       },
       {
         "loc": "A160320",
@@ -48416,7 +48365,7 @@
         "name": "Heat insulat",
         "alois": "II",
         "qty": 1,
-        "no": 101
+        "no": 100
       },
       {
         "loc": "A160330",
@@ -48424,7 +48373,7 @@
         "name": "Mount left",
         "alois": "L6",
         "qty": 1,
-        "no": 102
+        "no": 101
       },
       {
         "loc": "A160410",
@@ -48432,7 +48381,7 @@
         "name": "Air duct",
         "alois": "O8",
         "qty": 1,
-        "no": 103
+        "no": 102
       },
       {
         "loc": "A160420",
@@ -48440,15 +48389,7 @@
         "name": "Drive soft-c",
         "alois": "O8",
         "qty": 1,
-        "no": 104
-      },
-      {
-        "loc": "A160430",
-        "item": "51117263478",
-        "name": "Insert",
-        "alois": "O8",
-        "qty": 1,
-        "no": 105
+        "no": 103
       },
       {
         "loc": "A160430",
@@ -48456,7 +48397,7 @@
         "name": "Air duct",
         "alois": "O8",
         "qty": 1,
-        "no": 106
+        "no": 104
       },
       {
         "loc": "A160520",
@@ -48464,7 +48405,7 @@
         "name": "Cover F10 FL",
         "alois": "II",
         "qty": 1,
-        "no": 107
+        "no": 105
       },
       {
         "loc": "A160610",
@@ -48472,7 +48413,7 @@
         "name": "Covering rig",
         "alois": "A6",
         "qty": 2,
-        "no": 108
+        "no": 106
       },
       {
         "loc": "A160630",
@@ -48480,7 +48421,7 @@
         "name": "Swivel beari",
         "alois": "II",
         "qty": 1,
-        "no": 109
+        "no": 107
       },
       {
         "loc": "A160810",
@@ -48488,7 +48429,7 @@
         "name": "Grill front",
         "alois": "SZ",
         "qty": 1,
-        "no": 110
+        "no": 108
       },
       {
         "loc": "A160810",
@@ -48496,7 +48437,7 @@
         "name": "Condenser",
         "alois": "II",
         "qty": 1,
-        "no": 111
+        "no": 109
       },
       {
         "loc": "A160910",
@@ -48504,7 +48445,7 @@
         "name": "Channel cove",
         "alois": "L7",
         "qty": 7,
-        "no": 112
+        "no": 110
       },
       {
         "loc": "A160910",
@@ -48512,7 +48453,7 @@
         "name": "Shaft cover",
         "alois": "SZ",
         "qty": 1,
-        "no": 113
+        "no": 111
       },
       {
         "loc": "A160910",
@@ -48520,7 +48461,15 @@
         "name": "Shaft cover",
         "alois": "SZ",
         "qty": 1,
-        "no": 114
+        "no": 112
+      },
+      {
+        "loc": "A161020",
+        "item": "41149635237",
+        "name": "Cargo area f",
+        "alois": "SZ",
+        "qty": 1,
+        "no": 113
       },
       {
         "loc": "A930150",
@@ -48528,7 +48477,7 @@
         "name": "Channel cove",
         "alois": "A6",
         "qty": 1,
-        "no": 115
+        "no": 114
       },
       {
         "loc": "A930160",
@@ -48536,7 +48485,7 @@
         "name": "Window well",
         "alois": "L7",
         "qty": 1,
-        "no": 116
+        "no": 115
       },
       {
         "loc": "A940120",
@@ -48544,7 +48493,7 @@
         "name": "Trim strip,",
         "alois": "L7",
         "qty": 1,
-        "no": 117
+        "no": 116
       },
       {
         "loc": "A940130",
@@ -48552,7 +48501,7 @@
         "name": "Shaft cover",
         "alois": "O8",
         "qty": 1,
-        "no": 118
+        "no": 117
       },
       {
         "loc": "A940130",
@@ -48560,7 +48509,7 @@
         "name": "Window well",
         "alois": "II",
         "qty": 1,
-        "no": 119
+        "no": 118
       },
       {
         "loc": "A940140",
@@ -48568,7 +48517,7 @@
         "name": "Shaft cover",
         "alois": "L7",
         "qty": 1,
-        "no": 120
+        "no": 119
       },
       {
         "loc": "B070503",
@@ -48576,7 +48525,7 @@
         "name": "Gasket",
         "alois": "O8",
         "qty": 1,
-        "no": 121
+        "no": 120
       },
       {
         "loc": "B070813",
@@ -48584,7 +48533,7 @@
         "name": "Hex bolt wit",
         "alois": "A6",
         "qty": 8,
-        "no": 122
+        "no": 121
       },
       {
         "loc": "B070815",
@@ -48592,7 +48541,7 @@
         "name": "Plug-in nut",
         "alois": "A5",
         "qty": 6,
-        "no": 123
+        "no": 122
       },
       {
         "loc": "B090633",
@@ -48600,7 +48549,7 @@
         "name": "Trim detaili",
         "alois": "A5",
         "qty": 1,
-        "no": 124
+        "no": 123
       },
       {
         "loc": "B110231",
@@ -48608,7 +48557,7 @@
         "name": "Body Adhesiv",
         "alois": "L5",
         "qty": 2,
-        "no": 125
+        "no": 124
       },
       {
         "loc": "B110401",
@@ -48616,7 +48565,7 @@
         "name": "Filter elmnt",
         "alois": "O8",
         "qty": 1,
-        "no": 126
+        "no": 125
       },
       {
         "loc": "B140121",
@@ -48624,7 +48573,7 @@
         "name": "Seal for HV",
         "alois": "L6",
         "qty": 2,
-        "no": 127
+        "no": 126
       },
       {
         "loc": "B140222",
@@ -48632,7 +48581,7 @@
         "name": "License-plat",
         "alois": "A5",
         "qty": 1,
-        "no": 128
+        "no": 127
       },
       {
         "loc": "B140232",
@@ -48640,7 +48589,7 @@
         "name": "Grille",
         "alois": "O8",
         "qty": 1,
-        "no": 129
+        "no": 128
       },
       {
         "loc": "B140733",
@@ -48648,7 +48597,7 @@
         "name": "Cover",
         "alois": "O8",
         "qty": 1,
-        "no": 130
+        "no": 129
       },
       {
         "loc": "C000000",
@@ -48656,7 +48605,7 @@
         "name": "Trim cover, G30 front",
         "alois": "A4",
         "qty": 1,
-        "no": 131
+        "no": 130
       },
       {
         "loc": "C000000",
@@ -48664,7 +48613,7 @@
         "name": "Trim cover, G30LCI F",
         "alois": "A4",
         "qty": 2,
-        "no": 132
+        "no": 131
       },
       {
         "loc": "C000000",
@@ -48672,7 +48621,7 @@
         "name": "Cover, bumpe",
         "alois": "A6",
         "qty": 1,
-        "no": 133
+        "no": 132
       },
       {
         "loc": "C000001",
@@ -48680,7 +48629,7 @@
         "name": "Rear silence",
         "alois": "L7",
         "qty": 1,
-        "no": 134
+        "no": 133
       },
       {
         "loc": "C000001",
@@ -48688,7 +48637,7 @@
         "name": "Steering gea",
         "alois": "OE",
         "qty": 1,
-        "no": 135
+        "no": 134
       },
       {
         "loc": "C000001",
@@ -48696,7 +48645,7 @@
         "name": "Door, alumin",
         "alois": "L7",
         "qty": 1,
-        "no": 136
+        "no": 135
       },
       {
         "loc": "C000001",
@@ -48704,7 +48653,7 @@
         "name": "Hood",
         "alois": "A6",
         "qty": 1,
-        "no": 137
+        "no": 136
       },
       {
         "loc": "C000001",
@@ -48712,7 +48661,7 @@
         "name": "Trunk lid, a",
         "alois": "L7",
         "qty": 1,
-        "no": 138
+        "no": 137
       },
       {
         "loc": "C000002",
@@ -48720,7 +48669,7 @@
         "name": "Complete tai",
         "alois": "II",
         "qty": 1,
-        "no": 139
+        "no": 138
       },
       {
         "loc": "C000002",
@@ -48728,7 +48677,7 @@
         "name": "Trim for bum",
         "alois": "II",
         "qty": 1,
-        "no": 140
+        "no": 139
       },
       {
         "loc": "C000002",
@@ -48736,7 +48685,7 @@
         "name": "Black band s",
         "alois": "OV",
         "qty": 1,
-        "no": 141
+        "no": 140
       },
       {
         "loc": "C000002",
@@ -48744,7 +48693,7 @@
         "name": "Bumper cover",
         "alois": "A6",
         "qty": 1,
-        "no": 142
+        "no": 141
       },
       {
         "loc": "C000002",
@@ -48752,7 +48701,7 @@
         "name": "Trim panel,",
         "alois": "L7",
         "qty": 1,
-        "no": 143
+        "no": 142
       },
       {
         "loc": "C000002",
@@ -48760,7 +48709,7 @@
         "name": "Grill front",
         "alois": "II",
         "qty": 1,
-        "no": 144
+        "no": 143
       },
       {
         "loc": "C000002",
@@ -48768,7 +48717,7 @@
         "name": "Air duct",
         "alois": "II",
         "qty": 1,
-        "no": 145
+        "no": 144
       },
       {
         "loc": "C000002",
@@ -48776,7 +48725,7 @@
         "name": "FRONT ENGINE",
         "alois": "II",
         "qty": 1,
-        "no": 146
+        "no": 145
       },
       {
         "loc": "C000002",
@@ -48784,7 +48733,7 @@
         "name": "Cover, wheel",
         "alois": "L7",
         "qty": 1,
-        "no": 147
+        "no": 146
       },
       {
         "loc": "C000002",
@@ -48792,7 +48741,7 @@
         "name": "Rocker panel",
         "alois": "L7",
         "qty": 1,
-        "no": 148
+        "no": 147
       },
       {
         "loc": "C000003",
@@ -48800,7 +48749,7 @@
         "name": "Side window,",
         "alois": "OA",
         "qty": 1,
-        "no": 149
+        "no": 148
       },
       {
         "loc": "C000003",
@@ -48808,7 +48757,7 @@
         "name": "Headlight, L",
         "alois": "A3",
         "qty": 4,
-        "no": 150
+        "no": 149
       },
       {
         "loc": "C000004",
@@ -48816,13 +48765,21 @@
         "name": "Bumper brack",
         "alois": "L7",
         "qty": 1,
-        "no": 151
+        "no": 150
       },
       {
         "loc": "C000004",
         "item": "51115A0DEE6",
         "name": "Impact absor",
         "alois": "II",
+        "qty": 1,
+        "no": 151
+      },
+      {
+        "loc": "C000004",
+        "item": "51117263478",
+        "name": "Insert",
+        "alois": "O8",
         "qty": 1,
         "no": 152
       },
