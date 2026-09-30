@@ -135,6 +135,7 @@
         <select id="tire-rft-select" class="reason-input">
           <option value="">STD/RFT 전체</option><option value="STD">STD</option><option value="RFT">RFT</option>
         </select>
+        <input type="text" id="tire-pn-input" class="reason-input" placeholder="부품번호 검색">
         <button class="rbtn" id="tire-reset-btn" type="button">초기화</button>
       </div>
       <div class="tablewrap">
@@ -160,6 +161,7 @@
     var sizeInput = document.getElementById('tire-size-input');
     var brandSelect = document.getElementById('tire-brand-select');
     var rftSelect = document.getElementById('tire-rft-select');
+    var pnInput = document.getElementById('tire-pn-input');
     var resetBtn = document.getElementById('tire-reset-btn');
 
     var brands = [];
@@ -178,10 +180,12 @@
       var q = normSize(sizeInput.value);
       var brand = brandSelect.value;
       var rft = rftSelect.value;
+      var pn = pnInput.value.trim().toUpperCase();
       var filtered = items.filter(function(t){
         if(q && (t.filter_key || '').indexOf(q) === -1) return false;
         if(brand && t.brand !== brand) return false;
         if(rft && t.std_rft !== rft) return false;
+        if(pn && (t.pn || '').toUpperCase().indexOf(pn) === -1) return false;
         return true;
       });
       filtered.sort(function(a,b){
@@ -206,8 +210,9 @@
     sizeInput.addEventListener('input', renderRows);
     brandSelect.addEventListener('change', renderRows);
     rftSelect.addEventListener('change', renderRows);
+    pnInput.addEventListener('input', renderRows);
     resetBtn.addEventListener('click', function(){
-      sizeInput.value = ''; brandSelect.value = ''; rftSelect.value = '';
+      sizeInput.value = ''; brandSelect.value = ''; rftSelect.value = ''; pnInput.value = '';
       renderRows();
     });
     renderRows();

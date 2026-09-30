@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 08:35 기준",
+    "generated_at": "10월 1일 (목) · 08:41 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -47045,38 +47045,6 @@
         "val": 79815
       },
       {
-        "code": "SB2609002008",
-        "resv_full": "2026-10-01 11:20",
-        "resv": "10-01",
-        "dday": "오늘",
-        "sa": "우종훈",
-        "rows": [
-          {
-            "item": "51127488293",
-            "name": "Holder I-CAM",
-            "alois": "OV",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 20750
-          },
-          {
-            "item": "51127216065",
-            "name": "Holder I-CAM",
-            "alois": "OV",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 20750
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 41500
-      },
-      {
         "code": "SB2609001644",
         "resv_full": "2026-10-01 11:20",
         "resv": "10-01",
@@ -48061,21 +48029,54 @@
         "val": 21945
       }
     ],
-    "sb_count": 108,
-    "line_count": 414,
-    "total_val": 73210621,
-    "o_lines": 77,
-    "o_val": 19039598,
-    "resv_total": 412
+    "sb_count": 107,
+    "line_count": 412,
+    "total_val": 73169121,
+    "o_lines": 75,
+    "o_val": 18998098,
+    "resv_total": 410
   },
   "sbcar": {
-    "groups": [],
-    "sb_count": 0,
-    "line_count": 0,
-    "total_val": 0,
-    "o_lines": 0,
-    "o_val": 0,
-    "resv_total": 10094
+    "groups": [
+      {
+        "code": "SB2609002008",
+        "resv_full": "2026-10-01 08:41",
+        "resv": "10-01",
+        "dday": "오늘",
+        "sa": "우종훈",
+        "rows": [
+          {
+            "item": "51127488293",
+            "name": "Holder I-CAM",
+            "alois": "OV",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 20750
+          },
+          {
+            "item": "51127216065",
+            "name": "Holder I-CAM",
+            "alois": "OV",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 20750
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 41500
+      }
+    ],
+    "sb_count": 1,
+    "line_count": 2,
+    "total_val": 41500,
+    "o_lines": 2,
+    "o_val": 41500,
+    "resv_total": 10096
   },
   "nonmng": {
     "rows": [
