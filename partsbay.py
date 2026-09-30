@@ -1233,7 +1233,7 @@ def import_tire_excel() -> dict | None:
         return None
     try:
         wb = openpyxl.load_workbook(TIRE_XLSX_PATH, data_only=True, read_only=True)
-        ws = wb["타이어 리스트"]
+        ws = wb["타이어 리스트"] if "타이어 리스트" in wb.sheetnames else wb.worksheets[0]
     except Exception as e:
         print(f"[타이어 엑셀 읽기 실패] {e}")
         return None
@@ -1245,18 +1245,21 @@ def import_tire_excel() -> dict | None:
             if not pn:
                 continue
             pn = str(pn).strip()
+            brand = row[3].value
             size = row[6].value  # G열: 사이즈
             price = row[11].value  # L열: 구매단가
             try:
                 price = round(float(price)) if price not in (None, "") else None
             except Exception:
                 price = None
+            # 판매유형(D+0/D+1)은 엑셀 칸 값이 브랜드 안에서도 뒤섞여 있어 믿을 수 없음 -> 브랜드 기준으로 고정
+            sale_tp = "D+1" if brand == "Yokohama" else "D+0"
             tires[pn] = {
-                "name": row[2].value, "brand": row[3].value,
-                "mat_no": row[4].value, "sale_tp": row[5].value, "size": size,
+                "name": row[2].value, "brand": brand,
+                "mat_no": row[4].value, "sale_tp": sale_tp, "size": size,
                 "std_rft": row[7].value, "sw": row[8].value,
                 "oe": row[9].value, "qr": row[10].value, "price": price,
-                "bridge": row[12].value or "", "filter_key": _norm_tire_size(size),
+                "bridge": (row[12].value or "") if len(row) > 12 else "", "filter_key": _norm_tire_size(size),
             }
     except Exception as e:
         print(f"[타이어 엑셀 파싱 실패] {e}")
