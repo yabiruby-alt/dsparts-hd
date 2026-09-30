@@ -180,18 +180,18 @@
   .tire-table th, .tire-table td{ text-align:center; padding:6px 5px; font-size:12.5px; white-space:normal; word-break:break-word; }
   .tire-table td.mono{ font-size:11.5px; }
   .tire-table th:nth-child(1){ width:3%; }
-  .tire-table th:nth-child(2){ width:9%; }
-  .tire-table th:nth-child(3){ width:14%; }
-  .tire-table th:nth-child(4){ width:7%; }
-  .tire-table th:nth-child(5){ width:6%; }
-  .tire-table th:nth-child(6){ width:5%; }
-  .tire-table th:nth-child(7){ width:10%; }
-  .tire-table th:nth-child(8){ width:5%; }
-  .tire-table th:nth-child(9){ width:4%; }
-  .tire-table th:nth-child(10){ width:5%; }
-  .tire-table th:nth-child(11){ width:24%; }
-  .tire-table th:nth-child(12){ width:8%; }
-  .tire-table td:nth-child(11){ white-space:nowrap; }
+  .tire-table th:nth-child(2){ width:7%; }
+  .tire-table th:nth-child(3){ width:22%; }
+  .tire-table th:nth-child(4){ width:6%; }
+  .tire-table th:nth-child(5){ width:5%; }
+  .tire-table th:nth-child(6){ width:3%; }
+  .tire-table th:nth-child(7){ width:9%; }
+  .tire-table th:nth-child(8){ width:4%; }
+  .tire-table th:nth-child(9){ width:2%; }
+  .tire-table th:nth-child(10){ width:3%; }
+  .tire-table th:nth-child(11){ width:29%; }
+  .tire-table th:nth-child(12){ width:7%; }
+  .tire-table td:nth-child(3), .tire-table td:nth-child(11){ white-space:nowrap; font-size:11.5px; }
   .tire-filters{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:16px; }
   .tire-filters .reason-input{ width:auto; min-width:150px; }
   .tire-filters #tire-size-input{ min-width:200px; }
@@ -451,7 +451,7 @@
     </div>
 
     <div class="sb-spacer"></div>
-    <div class="sb-foot">My DMS Console · 9월 30일 (수) · 15:28 기준</div>
+    <div class="sb-foot">My DMS Console · 9월 30일 (수) · 15:38 기준</div>
   </nav>
 
   <main class="main">
@@ -460,7 +460,7 @@
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>9월 30일 (수) · 15:28 기준</div>
+        <div class="freshness"><span class="dot"></span>9월 30일 (수) · 15:38 기준</div>
       </div>
 
       <div class="kpistrip">
@@ -1177,14 +1177,14 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">01</span>
           <span class="eyebrow">진행 RO (인보이스 미완료)</span>
-          <span class="value">286건</span>
-          <span class="foot">금액 합계 ₩713,467,843 · 가장 오래된 RO D+526일</span>
+          <span class="value">287건</span>
+          <span class="foot">금액 합계 ₩714,009,381 · 가장 오래된 RO D+526일</span>
         </div>
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
           <span class="eyebrow">상태별 건수</span>
           <span class="foot" style="line-height:1.7">
-            상담시작 <b>15</b> · 상담완료 <b>138</b> · 정비시작 <b>52</b> · End Control 요청 <b>43</b> · 가정산 완료 <b>38</b>
+            상담시작 <b>14</b> · 상담완료 <b>139</b> · 정비시작 <b>52</b> · End Control 요청 <b>37</b> · 가정산 완료 <b>45</b>
           </span>
         </div>
       </div>
@@ -1192,7 +1192,7 @@
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">진행 RO 리스트</span>
-          <span class="val">286건</span>
+          <span class="val">287건</span>
           <span class="foot">금액 = 부품+공임 판매가 · 사유는 대시보드 PC의 로컬 주소(127.0.0.1:8765)에서 입력·수정하고, 그 외 기기는 조회만 됩니다</span>
         </div>
         <div class="tablewrap">
@@ -2274,7 +2274,7 @@
               
               <tr>
                 <td class="mono">RO2609001427</td><td>사고수리</td><td>염진아</td>
-                <td><span class="aloistag">End Control 요청</span></td>
+                <td><span class="aloistag">가정산 완료</span></td>
                 <td class="mono">2026-09-23</td><td class="mono dday-cell" data-days="7">D+7일</td>
                 <td class="num">13,712,100</td>
                 <td><div class="reason-cell" data-ro="RO2609001427" data-saved=""><span class="reason-text"></span></div></td>
@@ -2922,7 +2922,7 @@
               
               <tr>
                 <td class="mono">RO2609001681</td><td>Maintenance</td><td>염진아</td>
-                <td><span class="aloistag">End Control 요청</span></td>
+                <td><span class="aloistag">가정산 완료</span></td>
                 <td class="mono">2026-09-29</td><td class="mono dday-cell" data-days="1">D+1일</td>
                 <td class="num">105,400</td>
                 <td><div class="reason-cell" data-ro="RO2609001681" data-saved=""><span class="reason-text"></span></div></td>
@@ -3050,7 +3050,7 @@
               
               <tr>
                 <td class="mono">RO2609001717</td><td>경수리</td><td>최민수</td>
-                <td><span class="aloistag">정비시작</span></td>
+                <td><span class="aloistag">상담완료</span></td>
                 <td class="mono">2026-09-30</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">1,592,100</td>
                 <td><div class="reason-cell" data-ro="RO2609001717" data-saved=""><span class="reason-text"></span></div></td>
@@ -3146,9 +3146,9 @@
               
               <tr>
                 <td class="mono">RO2609001732</td><td>Maintenance</td><td>정용환</td>
-                <td><span class="aloistag">End Control 요청</span></td>
+                <td><span class="aloistag">가정산 완료</span></td>
                 <td class="mono">2026-09-30</td><td class="mono dday-cell" data-days="0">D+0일</td>
-                <td class="num">149,400</td>
+                <td class="num">119,888</td>
                 <td><div class="reason-cell" data-ro="RO2609001732" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
@@ -3178,7 +3178,7 @@
               
               <tr>
                 <td class="mono">RO2609001736</td><td>입고 Proactive-RITA</td><td>정용환</td>
-                <td><span class="aloistag">End Control 요청</span></td>
+                <td><span class="aloistag">가정산 완료</span></td>
                 <td class="mono">2026-09-30</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">709,635</td>
                 <td><div class="reason-cell" data-ro="RO2609001736" data-saved=""><span class="reason-text"></span></div></td>
@@ -3210,7 +3210,7 @@
               
               <tr>
                 <td class="mono">RO2609001742</td><td>Recall/TC</td><td>정용환</td>
-                <td><span class="aloistag">End Control 요청</span></td>
+                <td><span class="aloistag">가정산 완료</span></td>
                 <td class="mono">2026-09-30</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">75,256</td>
                 <td><div class="reason-cell" data-ro="RO2609001742" data-saved=""><span class="reason-text"></span></div></td>
@@ -3226,9 +3226,9 @@
               
               <tr>
                 <td class="mono">RO2609001743</td><td>Maintenance</td><td>정용환</td>
-                <td><span class="aloistag">End Control 요청</span></td>
+                <td><span class="aloistag">가정산 완료</span></td>
                 <td class="mono">2026-09-30</td><td class="mono dday-cell" data-days="0">D+0일</td>
-                <td class="num">185,648</td>
+                <td class="num">173,648</td>
                 <td><div class="reason-cell" data-ro="RO2609001743" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
@@ -3314,7 +3314,7 @@
               
               <tr>
                 <td class="mono">RO2609001758</td><td>Maintenance</td><td>정용환</td>
-                <td><span class="aloistag">End Control 요청</span></td>
+                <td><span class="aloistag">가정산 완료</span></td>
                 <td class="mono">2026-09-30</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">160,454</td>
                 <td><div class="reason-cell" data-ro="RO2609001758" data-saved=""><span class="reason-text"></span></div></td>
@@ -3442,7 +3442,7 @@
               
               <tr>
                 <td class="mono">RO2609001776</td><td>Maintenance</td><td>안준영</td>
-                <td><span class="aloistag">상담완료</span></td>
+                <td><span class="aloistag">정비시작</span></td>
                 <td class="mono">2026-09-30</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">566,498</td>
                 <td><div class="reason-cell" data-ro="RO2609001776" data-saved=""><span class="reason-text"></span></div></td>
@@ -3466,7 +3466,7 @@
               
               <tr>
                 <td class="mono">RO2609001778</td><td>Maintenance</td><td>안준영</td>
-                <td><span class="aloistag">정비시작</span></td>
+                <td><span class="aloistag">End Control 요청</span></td>
                 <td class="mono">2026-09-30</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">28,000</td>
                 <td><div class="reason-cell" data-ro="RO2609001778" data-saved=""><span class="reason-text"></span></div></td>
@@ -3474,7 +3474,7 @@
               
               <tr>
                 <td class="mono">RO2609001779</td><td>Maintenance</td><td>정용환</td>
-                <td><span class="aloistag">상담완료</span></td>
+                <td><span class="aloistag">정비시작</span></td>
                 <td class="mono">2026-09-30</td><td class="mono dday-cell" data-days="0">D+0일</td>
                 <td class="num">554,498</td>
                 <td><div class="reason-cell" data-ro="RO2609001779" data-saved=""><span class="reason-text"></span></div></td>
@@ -3482,10 +3482,18 @@
               
               <tr>
                 <td class="mono">RO2609001780</td><td>Maintenance</td><td>안준영</td>
-                <td><span class="aloistag">상담시작</span></td>
+                <td><span class="aloistag">상담완료</span></td>
                 <td class="mono">2026-09-30</td><td class="mono dday-cell" data-days="0">D+0일</td>
-                <td class="num">477,000</td>
+                <td class="num">1,029,800</td>
                 <td><div class="reason-cell" data-ro="RO2609001780" data-saved=""><span class="reason-text"></span></div></td>
+              </tr>
+              
+              <tr>
+                <td class="mono">RO2609001781</td><td>경수리</td><td>김민규</td>
+                <td><span class="aloistag">상담완료</span></td>
+                <td class="mono">2026-09-30</td><td class="mono dday-cell" data-days="0">D+0일</td>
+                <td class="num">30,250</td>
+                <td><div class="reason-cell" data-ro="RO2609001781" data-saved=""><span class="reason-text"></span></div></td>
               </tr>
               
             </tbody>
@@ -3520,7 +3528,7 @@
         <div class="viewer-head">
           <span class="lbl">노쇼 SB별 부품 세부</span>
           <span class="val">40건</span>
-          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 노쇼 12055건 중 미처리 부품요청이 남은 SB</span>
+          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 노쇼 12056건 중 미처리 부품요청이 남은 SB</span>
         </div>
         <div class="tablewrap">
           <table>
@@ -3813,7 +3821,7 @@
               
               <tr data-group="ns-SB2609001142"><td class="mono">SB2609001142</td><td class="mono">61619466377</td><td>Set of wiper X5,6,7</td><td><span class="aloistag">A1</span></td><td>김민규</td><td class="num">1</td><td class="num">36</td><td class="num">35</td><td class="num">68,185</td><td class="mono dday-cell">오늘</td></tr>
               
-              <tr data-group="ns-SB2609001142"><td class="mono">SB2609001142</td><td class="mono">99975BA1A07</td><td>BMWLongUmbre (New)</td><td><span class="aloistag">SX</span></td><td>김민규</td><td class="num">1</td><td class="num">46</td><td class="num">43</td><td class="num">8,250</td><td class="mono dday-cell">오늘</td></tr>
+              <tr data-group="ns-SB2609001142"><td class="mono">SB2609001142</td><td class="mono">99975BA1A07</td><td>BMWLongUmbre (New)</td><td><span class="aloistag">SX</span></td><td>김민규</td><td class="num">1</td><td class="num">46</td><td class="num">42</td><td class="num">8,250</td><td class="mono dday-cell">오늘</td></tr>
               
               <tr class="subtotal"><td colspan="5">SB2609001142 합계</td><td class="num">2</td><td class="num"></td><td class="num"></td><td class="num">76,435</td><td></td></tr>
               
@@ -3881,7 +3889,7 @@
         <div class="viewer-head">
           <span class="lbl">차량접수 SB별 부품 세부</span>
           <span class="val">0건</span>
-          <span class="foot">SB 클릭해서 펼치기 · 차량접수 SB(최근 180일) 10159건 중 RO 미발행 + 미처리 부품요청이 걸린 SB</span>
+          <span class="foot">SB 클릭해서 펼치기 · 차량접수 SB(최근 180일) 10160건 중 RO 미발행 + 미처리 부품요청이 걸린 SB</span>
         </div>
         <div class="tablewrap">
           <table>
@@ -3922,7 +3930,7 @@
         <div class="viewer-head">
           <span class="lbl">예약접수 SB별 부품 세부</span>
           <span class="val">102건</span>
-          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 예약접수(오늘 이후) 398건 중 미처리 부품요청이 걸린 SB</span>
+          <span class="foot">SB 클릭해서 펼치기 · 서비스예약현황 예약접수(오늘 이후) 399건 중 미처리 부품요청이 걸린 SB</span>
         </div>
         <div class="tablewrap">
           <table>
@@ -5245,7 +5253,7 @@
           <span class="rank">01</span>
           <span class="eyebrow">악세사리 · 인보이스금액</span>
           <span class="value">₩49,760,325</span>
-          <span class="foot">원가 ₩50,802,159 · 220건 · 362라인</span>
+          <span class="foot">원가 ₩50,809,239 · 221건 · 363라인</span>
           <span class="tapln">눌러서 세부내역 보기 ↓</span>
         </button>
         <button class="kpitile" id="tile-tire" onclick="selectAccKpi('tire')" aria-pressed="false">
@@ -5262,7 +5270,7 @@
           <div class="viewer-head">
             <span class="lbl">악세사리 세부 (부품타입 3·5·7 합산)</span>
             <span class="val">₩49,760,325</span>
-            <span class="foot">원가 ₩50,802,159 · 정산유형 C(고객)+I(내부처리)</span>
+            <span class="foot">원가 ₩50,809,239 · 정산유형 C(고객)+I(내부처리)</span>
           </div>
           <p class="subttl">부품타입별 인보이스금액 <span class="n">코드순</span></p>
           <div class="tablewrap">
@@ -5274,9 +5282,9 @@
                 
                 <tr><td class="mono">5</td><td>Rims and Complete Wheels</td><td class="num">10</td><td class="num">13,421,386</td></tr>
                 
-                <tr><td class="mono">7</td><td>Accessories (Lifestyle)</td><td class="num">206</td><td class="num">18,167,914</td></tr>
+                <tr><td class="mono">7</td><td>Accessories (Lifestyle)</td><td class="num">207</td><td class="num">18,167,914</td></tr>
                 
-                <tr class="subtotal"><td colspan="2">3+5+7 합계</td><td class="num">362</td><td class="num">49,760,325</td></tr>
+                <tr class="subtotal"><td colspan="2">3+5+7 합계</td><td class="num">363</td><td class="num">49,760,325</td></tr>
               </tbody>
             </table>
           </div>
@@ -5286,6 +5294,8 @@
               <thead><tr><th>RO/SP번호</th><th>인보이스번호</th><th>담당SA</th><th>일시</th><th class="num">인보이스금액</th><th class="num">원가</th></tr></thead>
               <tbody>
                 
+                <tr><td class="mono">RO2609001743</td><td class="mono">IV2609003021</td><td>정용환</td><td class="mono">2026-09-30 15:37</td><td class="num">0</td><td class="num">7,080</td></tr>
+                
                 <tr><td class="mono">SP2609000117</td><td class="mono">AR2609003806</td><td>박태강</td><td class="mono">2026-09-30 15:25</td><td class="num">200,016</td><td class="num">176,500</td></tr>
                 
                 <tr><td class="mono">RO2609001493</td><td class="mono">IV2609003018</td><td>우상만</td><td class="mono">2026-09-30 15:20</td><td class="num">2,287,880</td><td class="num">2,516,668</td></tr>
@@ -5293,8 +5303,6 @@
                 <tr><td class="mono">RO2609001555</td><td class="mono">IV2609002985</td><td>이정환</td><td class="mono">2026-09-30 13:36</td><td class="num">69,000</td><td class="num">69,000</td></tr>
                 
                 <tr><td class="mono">SP2609000003</td><td class="mono">AR2609003798</td><td>박진호</td><td class="mono">2026-09-30 09:59</td><td class="num">3,265,506</td><td class="num">2,942,345</td></tr>
-                
-                <tr><td class="mono">SP2609000004</td><td class="mono">AR2609003799</td><td>박진호</td><td class="mono">2026-09-30 09:59</td><td class="num">1,307,544</td><td class="num">1,152,116</td></tr>
                 
               </tbody>
             </table>
@@ -5399,8 +5407,8 @@
         <div class="kpitile" style="cursor:default">
           <span class="rank">02</span>
           <span class="eyebrow">확인 필요 (예외 있을 수 있음)</span>
-          <span class="value">14건</span>
-          <span class="foot">SP 0건 · RO 14건 · 합계 ₩3,120,230</span>
+          <span class="value">15건</span>
+          <span class="foot">SP 0건 · RO 15건 · 합계 ₩3,130,530</span>
         </div>
         <div class="kpitile" style="cursor:default">
           <span class="rank">03</span>
@@ -5491,13 +5499,15 @@
       <div class="viewer">
         <div class="viewer-head">
           <span class="lbl">RO 확인 필요</span>
-          <span class="val">14건</span>
+          <span class="val">15건</span>
           <span class="foot">업체명으로 추정되는 고객 건, 또는 공임 0원+부품만 있는 건(오일/워셔액 등 예외 제외)</span>
         </div>
         <div class="tablewrap">
         <table>
           <thead><tr><th>일자</th><th>인보이스</th><th>RO번호</th><th>고객명</th><th>차대번호</th><th>부품그룹</th><th>정산상세유형</th><th>부품번호</th><th>품목</th><th class="num">금액</th><th>사유</th></tr></thead>
           <tbody>
+            
+            <tr><td class="mono">2026-09-30</td><td class="mono">IV2609003022</td><td class="mono">RO2609001743</td><td>최소론</td><td class="mono">WBA51EE03S5390961</td><td class="mono">9</td><td>고객</td><td class="mono">99995A2A668</td><td>Windshield w</td><td class="num">10,300</td><td>공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요</td></tr>
             
             <tr><td class="mono">2026-09-29</td><td class="mono">IV2609002897</td><td class="mono">RO2609001619</td><td>정진백</td><td class="mono">WBAJR9109LWW58542</td><td class="mono">9</td><td>고객</td><td class="mono">83215B49DD6</td><td>LL-17FE+ 0W-20</td><td class="num">27,730</td><td>공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요</td></tr>
             
