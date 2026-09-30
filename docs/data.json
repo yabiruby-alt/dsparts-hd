@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 30일 (수) · 14:25 기준",
+    "generated_at": "9월 30일 (수) · 14:33 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,7 +284,7 @@
     ]
   },
   "inv": {
-    "total": 1218901301,
+    "total": 1218250629,
     "item_count": 2198,
     "code_count": 25,
     "alois_groups": [
@@ -295,9 +295,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 222612152,
-            "pct": 18.26,
-            "qty": 2588,
+            "val": 222539417,
+            "pct": 18.27,
+            "qty": 2587,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -312,16 +312,16 @@
                 "val": 8769563
               },
               {
-                "item": "61615A85266",
-                "name": "Kit wiper bl",
-                "qty": 75,
-                "val": 5455125
-              },
-              {
                 "item": "61619478361",
                 "name": "SET OF WIPER 3/4 series",
                 "qty": 79,
                 "val": 5386615
+              },
+              {
+                "item": "61615A85266",
+                "name": "Kit wiper bl",
+                "qty": 74,
+                "val": 5382390
               },
               {
                 "item": "12122455258",
@@ -782,7 +782,7 @@
           {
             "code": "A4",
             "val": 47214899,
-            "pct": 3.87,
+            "pct": 3.88,
             "qty": 1893,
             "parts": [
               {
@@ -2778,7 +2778,7 @@
           {
             "code": "A6",
             "val": 78773116,
-            "pct": 6.46,
+            "pct": 6.47,
             "qty": 1408,
             "parts": [
               {
@@ -4764,9 +4764,9 @@
             ]
           }
         ],
-        "subtotal_val": 470668489,
-        "subtotal_qty": 8974,
-        "subtotal_pct": 38.61
+        "subtotal_val": 470595754,
+        "subtotal_qty": 8973,
+        "subtotal_pct": 38.63
       },
       {
         "code": "L",
@@ -4937,9 +4937,9 @@
           },
           {
             "code": "L4",
-            "val": 16008242,
+            "val": 16007117,
             "pct": 1.31,
-            "qty": 633,
+            "qty": 632,
             "parts": [
               {
                 "item": "83215A65BF4",
@@ -5010,8 +5010,8 @@
               {
                 "item": "51337025635",
                 "name": "Clip",
-                "qty": 137,
-                "val": 154125
+                "qty": 136,
+                "val": 153000
               },
               {
                 "item": "99995B99E54",
@@ -8076,9 +8076,9 @@
             ]
           }
         ],
-        "subtotal_val": 162846094,
-        "subtotal_qty": 4638,
-        "subtotal_pct": 13.36
+        "subtotal_val": 162844969,
+        "subtotal_qty": 4637,
+        "subtotal_pct": 13.37
       },
       {
         "code": "O",
@@ -10942,7 +10942,7 @@
           {
             "code": "OE",
             "val": 303943845,
-            "pct": 24.94,
+            "pct": 24.95,
             "qty": 824,
             "parts": [
               {
@@ -12250,7 +12250,7 @@
         ],
         "subtotal_val": 410883238,
         "subtotal_qty": 2438,
-        "subtotal_pct": 33.71
+        "subtotal_pct": 33.73
       },
       {
         "code": "I",
@@ -12539,15 +12539,15 @@
           },
           {
             "code": "SK",
-            "val": 68444000,
-            "pct": 5.62,
-            "qty": 1011,
+            "val": 67867188,
+            "pct": 5.57,
+            "qty": 1009,
             "parts": [
               {
                 "item": "12415BA2AE6",
                 "name": "Starter",
-                "qty": 39,
-                "val": 22171110
+                "qty": 38,
+                "val": 21602620
               },
               {
                 "item": "34505B77C23",
@@ -12612,8 +12612,8 @@
               {
                 "item": "12418571349",
                 "name": "Acoustic plu",
-                "qty": 68,
-                "val": 565896
+                "qty": 67,
+                "val": 557574
               },
               {
                 "item": "51648076922",
@@ -13080,7 +13080,7 @@
           {
             "code": "SZ",
             "val": 83299022,
-            "pct": 6.83,
+            "pct": 6.84,
             "qty": 763,
             "parts": [
               {
@@ -13722,15 +13722,15 @@
             ]
           }
         ],
-        "subtotal_val": 168176383,
-        "subtotal_qty": 2056,
-        "subtotal_pct": 13.8
+        "subtotal_val": 167599571,
+        "subtotal_qty": 2054,
+        "subtotal_pct": 13.76
       }
     ]
   },
   "oaov": {
     "total": 36545461,
-    "inv_total": 1218901301,
+    "inv_total": 1218250629,
     "pct": 3.0,
     "oa_val": 19957972,
     "ov_val": 16587489,
@@ -18180,7 +18180,7 @@
     ],
     "m24_val": 19195599,
     "m24_count": 48,
-    "m24_pct": 1.57
+    "m24_pct": 1.58
   },
   "opart": {
     "items": [
@@ -21619,23 +21619,6 @@
         "dday": "D+7일"
       },
       {
-        "item": "32106874222",
-        "name": "Hex nut",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001488",
-        "req_qty": 2,
-        "crt_qty": 4,
-        "avail_qty": 2,
-        "req_dt": "09-23",
-        "req_dt_full": "2026-09-23 16:20:44",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 10512,
-        "sa": "강충성",
-        "dday": "D+7일"
-      },
-      {
         "item": "51417056298",
         "name": "Clip, yellow",
         "alois": "O8",
@@ -22415,74 +22398,6 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 26390,
         "sa": "안준영",
-        "dday": "D+2일"
-      },
-      {
-        "item": "31108833037",
-        "name": "Control arm",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001488",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-28",
-        "req_dt_full": "2026-09-28 18:25:42",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 373932,
-        "sa": "강충성",
-        "dday": "D+2일"
-      },
-      {
-        "item": "31305A63527",
-        "name": "Guide suppor",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001488",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-28",
-        "req_dt_full": "2026-09-28 18:25:42",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 83200,
-        "sa": "강충성",
-        "dday": "D+2일"
-      },
-      {
-        "item": "32105B619D9",
-        "name": "Steering gea",
-        "alois": "OE",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001488",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-28",
-        "req_dt_full": "2026-09-28 18:25:42",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 4058036,
-        "sa": "강충성",
-        "dday": "D+2일"
-      },
-      {
-        "item": "31305A144B3",
-        "name": "Auxiliary da",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001488",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-28",
-        "req_dt_full": "2026-09-28 18:25:42",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 32400,
-        "sa": "강충성",
         "dday": "D+2일"
       },
       {
@@ -23557,8 +23472,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 316,
-    "total_val": 86775917,
+    "count": 311,
+    "total_val": 82217837,
     "groups": [
       {
         "code": "RO",
@@ -25485,23 +25400,6 @@
             "dday": "D+7일"
           },
           {
-            "item": "32106874222",
-            "name": "Hex nut",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001488",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 2,
-            "req_dt": "09-23",
-            "req_dt_full": "2026-09-23 16:20:44",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 10512,
-            "sa": "강충성",
-            "dday": "D+7일"
-          },
-          {
             "item": "22117582317",
             "name": "Engine mount",
             "alois": "O8",
@@ -26026,74 +25924,6 @@
             "req_brch": "AS_부산(해운중동)",
             "val": 8320,
             "sa": "최민수",
-            "dday": "D+2일"
-          },
-          {
-            "item": "31108833037",
-            "name": "Control arm",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001488",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-28",
-            "req_dt_full": "2026-09-28 18:25:42",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 373932,
-            "sa": "강충성",
-            "dday": "D+2일"
-          },
-          {
-            "item": "31305A63527",
-            "name": "Guide suppor",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001488",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-28",
-            "req_dt_full": "2026-09-28 18:25:42",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 83200,
-            "sa": "강충성",
-            "dday": "D+2일"
-          },
-          {
-            "item": "32105B619D9",
-            "name": "Steering gea",
-            "alois": "OE",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001488",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-28",
-            "req_dt_full": "2026-09-28 18:25:42",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 4058036,
-            "sa": "강충성",
-            "dday": "D+2일"
-          },
-          {
-            "item": "31305A144B3",
-            "name": "Auxiliary da",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001488",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-28",
-            "req_dt_full": "2026-09-28 18:25:42",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 32400,
-            "sa": "강충성",
             "dday": "D+2일"
           },
           {
@@ -26896,9 +26726,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 196,
-        "qty_sum": 281,
-        "val": 62480457
+        "count": 191,
+        "qty_sum": 275,
+        "val": 57922377
       },
       {
         "code": "SB",
@@ -29006,6 +28836,15 @@
         "val": 4965606
       },
       {
+        "item": "32105B619D9",
+        "name": "Steering gea",
+        "pgrp": "B1",
+        "alois": "OE",
+        "qty": 1,
+        "avail_qty": 1,
+        "val": 4058036
+      },
+      {
         "item": "32105B4D1A3",
         "name": "Steering gea",
         "pgrp": "E1",
@@ -29526,6 +29365,15 @@
         "qty": 7,
         "avail_qty": 6,
         "val": 382590
+      },
+      {
+        "item": "31108833037",
+        "name": "Control arm",
+        "pgrp": "B1",
+        "alois": "O8",
+        "qty": 1,
+        "avail_qty": 1,
+        "val": 373932
       },
       {
         "item": "90200008123",
@@ -30588,6 +30436,15 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 85316
+      },
+      {
+        "item": "31305A63527",
+        "name": "Guide suppor",
+        "pgrp": "B1",
+        "alois": "O8",
+        "qty": 1,
+        "avail_qty": 1,
+        "val": 83200
       },
       {
         "item": "51337392350",
@@ -31958,6 +31815,15 @@
         "val": 32724
       },
       {
+        "item": "31305A144B3",
+        "name": "Auxiliary da",
+        "pgrp": "B1",
+        "alois": "O8",
+        "qty": 1,
+        "avail_qty": 1,
+        "val": 32400
+      },
+      {
         "item": "51317380731",
         "name": "Cover, winds",
         "pgrp": "M1",
@@ -32399,6 +32265,15 @@
         "val": 22046
       },
       {
+        "item": "32106874222",
+        "name": "Hex nut",
+        "pgrp": "B1",
+        "alois": "O8",
+        "qty": 4,
+        "avail_qty": 4,
+        "val": 21024
+      },
+      {
         "item": "51647421728",
         "name": "Lock panel,",
         "pgrp": "B1",
@@ -32730,15 +32605,6 @@
         "qty": 6,
         "avail_qty": 6,
         "val": 10950
-      },
-      {
-        "item": "32106874222",
-        "name": "Hex nut",
-        "pgrp": "B1",
-        "alois": "O8",
-        "qty": 4,
-        "avail_qty": 2,
-        "val": 10512
       },
       {
         "item": "07129906293",
@@ -33331,6 +33197,15 @@
             "val": 400752
           },
           {
+            "item": "31108833037",
+            "name": "Control arm",
+            "pgrp": "B1",
+            "alois": "O8",
+            "qty": 1,
+            "avail_qty": 1,
+            "val": 373932
+          },
+          {
             "item": "66319500096",
             "name": "Radome",
             "pgrp": "B1",
@@ -33707,6 +33582,15 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 85316
+          },
+          {
+            "item": "31305A63527",
+            "name": "Guide suppor",
+            "pgrp": "B1",
+            "alois": "O8",
+            "qty": 1,
+            "avail_qty": 1,
+            "val": 83200
           },
           {
             "item": "51337392350",
@@ -34600,6 +34484,15 @@
             "val": 32724
           },
           {
+            "item": "31305A144B3",
+            "name": "Auxiliary da",
+            "pgrp": "B1",
+            "alois": "O8",
+            "qty": 1,
+            "avail_qty": 1,
+            "val": 32400
+          },
+          {
             "item": "07146893779",
             "name": "Multi-purpos",
             "pgrp": "E1",
@@ -34897,6 +34790,15 @@
             "val": 22046
           },
           {
+            "item": "32106874222",
+            "name": "Hex nut",
+            "pgrp": "B1",
+            "alois": "O8",
+            "qty": 4,
+            "avail_qty": 4,
+            "val": 21024
+          },
+          {
             "item": "51647421728",
             "name": "Lock panel,",
             "pgrp": "B1",
@@ -35138,15 +35040,6 @@
             "qty": 6,
             "avail_qty": 6,
             "val": 10950
-          },
-          {
-            "item": "32106874222",
-            "name": "Hex nut",
-            "pgrp": "B1",
-            "alois": "O8",
-            "qty": 4,
-            "avail_qty": 2,
-            "val": 10512
           },
           {
             "item": "07129906293",
@@ -35545,10 +35438,10 @@
             "val": 432
           }
         ],
-        "count": 260,
-        "qty_sum": 1031,
-        "avail_sum": 1003,
-        "val": 30579809
+        "count": 263,
+        "qty_sum": 1034,
+        "avail_sum": 1008,
+        "val": 31079853
       },
       {
         "code": "OA",
@@ -36164,6 +36057,15 @@
             "qty": 3,
             "avail_qty": 3,
             "val": 4965606
+          },
+          {
+            "item": "32105B619D9",
+            "name": "Steering gea",
+            "pgrp": "B1",
+            "alois": "OE",
+            "qty": 1,
+            "avail_qty": 1,
+            "val": 4058036
           },
           {
             "item": "32105B4D1A3",
@@ -36958,10 +36860,10 @@
             "val": 4000
           }
         ],
-        "count": 92,
-        "qty_sum": 806,
-        "avail_sum": 783,
-        "val": 296857821
+        "count": 93,
+        "qty_sum": 807,
+        "avail_sum": 784,
+        "val": 300915857
       },
       {
         "code": "ON",
@@ -37486,8 +37388,8 @@
         "val": 5912313
       }
     ],
-    "count": 471,
-    "total_val": 342147647
+    "count": 475,
+    "total_val": 346705727
   },
   "oflow": {
     "rows": [
@@ -42258,14 +42160,36 @@
         "count": 2,
         "qty_sum": 2,
         "val": 890881
+      },
+      {
+        "code": "SB2609002056",
+        "resv_full": "2026-09-30 14:00",
+        "resv": "09-30",
+        "dday": "오늘",
+        "sa": "강충성",
+        "rows": [
+          {
+            "item": "36105A72875",
+            "name": "Scheibenrad",
+            "alois": "SZ",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 476775
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 476775
       }
     ],
-    "sb_count": 39,
-    "line_count": 80,
-    "total_val": 14023417,
+    "sb_count": 40,
+    "line_count": 81,
+    "total_val": 14500192,
     "o_lines": 23,
     "o_val": 5423544,
-    "resv_total": 12054
+    "resv_total": 12055
   },
   "sbresv": {
     "groups": [
@@ -43846,7 +43770,7 @@
             "alois": "A2",
             "sa": "M GARAGE",
             "req_qty": 2,
-            "crt_qty": 40,
+            "crt_qty": 38,
             "avail_qty": 22,
             "val": 10538
           },
@@ -43856,7 +43780,7 @@
             "alois": "A2",
             "sa": "M GARAGE",
             "req_qty": 2,
-            "crt_qty": 33,
+            "crt_qty": 31,
             "avail_qty": 11,
             "val": 7866
           },
@@ -44660,7 +44584,7 @@
             "alois": "A2",
             "sa": "김민규",
             "req_qty": 4,
-            "crt_qty": 33,
+            "crt_qty": 31,
             "avail_qty": 11,
             "val": 15732
           },
@@ -44690,7 +44614,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 2,
-            "crt_qty": 3,
+            "crt_qty": 2,
             "avail_qty": 0,
             "val": 10018
           },
@@ -44700,7 +44624,7 @@
             "alois": "A2",
             "sa": "김민규",
             "req_qty": 2,
-            "crt_qty": 25,
+            "crt_qty": 22,
             "avail_qty": 14,
             "val": 8902
           },
@@ -44710,7 +44634,7 @@
             "alois": "A3",
             "sa": "김민규",
             "req_qty": 2,
-            "crt_qty": 19,
+            "crt_qty": 18,
             "avail_qty": 14,
             "val": 7026
           },
@@ -45764,7 +45688,7 @@
             "alois": "A2",
             "sa": "이정환",
             "req_qty": 2,
-            "crt_qty": 40,
+            "crt_qty": 38,
             "avail_qty": 22,
             "val": 10538
           }
@@ -46360,7 +46284,7 @@
             "alois": "A1",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 75,
+            "crt_qty": 74,
             "avail_qty": 73,
             "val": 72735
           }
@@ -47476,10 +47400,20 @@
         "count": 3,
         "qty_sum": 7,
         "val": 215596
-      },
+      }
+    ],
+    "sb_count": 104,
+    "line_count": 396,
+    "total_val": 66455233,
+    "o_lines": 61,
+    "o_val": 13295031,
+    "resv_total": 397
+  },
+  "sbcar": {
+    "groups": [
       {
         "code": "SB2609001720",
-        "resv_full": "2026-09-30 15:00",
+        "resv_full": "2026-09-30 14:34",
         "resv": "09-30",
         "dday": "오늘",
         "sa": "안준영",
@@ -47518,45 +47452,14 @@
         "count": 3,
         "qty_sum": 7,
         "val": 215596
-      },
-      {
-        "code": "SB2609002056",
-        "resv_full": "2026-09-30 14:00",
-        "resv": "09-30",
-        "dday": "오늘",
-        "sa": "강충성",
-        "rows": [
-          {
-            "item": "36105A72875",
-            "name": "Scheibenrad",
-            "alois": "SZ",
-            "sa": "강충성",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 476775
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 476775
       }
     ],
-    "sb_count": 106,
-    "line_count": 400,
-    "total_val": 67147604,
-    "o_lines": 61,
-    "o_val": 13295031,
-    "resv_total": 399
-  },
-  "sbcar": {
-    "groups": [],
-    "sb_count": 0,
-    "line_count": 0,
-    "total_val": 0,
+    "sb_count": 1,
+    "line_count": 3,
+    "total_val": 215596,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10154
+    "resv_total": 10156
   },
   "nonmng": {
     "rows": [],
@@ -47860,7 +47763,7 @@
         "item": "51337025635",
         "name": "Clip",
         "alois": "L4",
-        "qty": 137,
+        "qty": 136,
         "no": 37
       },
       {
@@ -50258,7 +50161,7 @@
         "item": "51337025635",
         "name": "Clip",
         "alois": "L4",
-        "qty": 137,
+        "qty": 136,
         "no": 177
       },
       {
@@ -50266,7 +50169,7 @@
         "item": "12418571349",
         "name": "Acoustic plu",
         "alois": "SK",
-        "qty": 68,
+        "qty": 67,
         "no": 178
       },
       {
@@ -50522,7 +50425,7 @@
         "item": "61615A85266",
         "name": "Kit wiper bl",
         "alois": "A1",
-        "qty": 75,
+        "qty": 74,
         "no": 210
       },
       {

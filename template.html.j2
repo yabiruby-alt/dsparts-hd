@@ -1364,7 +1364,7 @@
         <div id="tire-form-wrap" hidden></div>
         <div class="tablewrap">
           <table>
-            <thead><tr><th>부품번호</th><th>품명</th><th>브랜드</th><th>사이즈</th><th>STD/RFT</th><th>S/W</th><th class="num">구매단가</th><th>브리지코드</th><th id="tire-admin-th" hidden>관리</th></tr></thead>
+            <thead><tr><th>No.</th><th>부품번호</th><th>품명</th><th>브랜드</th><th>Mat Number</th><th>판매유형</th><th>사이즈</th><th>STD/RFT</th><th>S/W</th><th>OE Marking</th><th>QR Code</th><th class="num">구매단가</th><th>브리지코드</th><th id="tire-admin-th" hidden>관리</th></tr></thead>
             <tbody id="tire-tbody">
               <tr><td colspan="8" class="empty-note">불러오는 중...</td></tr>
             </tbody>
@@ -1663,12 +1663,12 @@
       countEl.textContent = filtered.length + '건';
       tbody.innerHTML = '';
       if(!filtered.length){
-        tbody.innerHTML = '<tr><td colspan="' + (isLocal?9:8) + '" class="empty-note">검색 결과 없음</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="' + (isLocal?14:13) + '" class="empty-note">검색 결과 없음</td></tr>';
         return;
       }
-      filtered.forEach(function(t){
+      filtered.forEach(function(t, i){
         var tr = document.createElement('tr');
-        tr.innerHTML = '<td class="mono">'+esc(t.pn)+'</td><td>'+esc(t.name)+'</td><td>'+esc(t.brand)+'</td><td class="mono">'+esc(t.size)+'</td><td>'+esc(t.std_rft)+'</td><td>'+esc(t.sw)+'</td><td class="num">'+fmtMoney(t.price)+'</td><td class="mono">'+esc(t.bridge)+'</td>';
+        tr.innerHTML = '<td class="num">'+(i+1)+'</td><td class="mono">'+esc(t.pn)+'</td><td>'+esc(t.name)+'</td><td>'+esc(t.brand)+'</td><td class="mono">'+esc(t.mat_no)+'</td><td class="mono">'+esc(t.sale_tp)+'</td><td class="mono">'+esc(t.size)+'</td><td>'+esc(t.std_rft)+'</td><td>'+esc(t.sw)+'</td><td>'+esc(t.oe)+'</td><td>'+esc(t.qr)+'</td><td class="num">'+fmtMoney(t.price)+'</td><td class="mono">'+esc(t.bridge)+'</td>';
         if(isLocal){
           var td = document.createElement('td');
           var eb = document.createElement('button'); eb.className='rbtn'; eb.type='button'; eb.textContent='수정';
@@ -1706,9 +1706,13 @@
         {k:'pn', label:'부품번호', type:'text'},
         {k:'name', label:'품명', type:'text'},
         {k:'brand', label:'브랜드', type:'text'},
+        {k:'mat_no', label:'Mat Number', type:'text'},
+        {k:'sale_tp', label:'판매유형', type:'text'},
         {k:'size', label:'사이즈', type:'text'},
         {k:'std_rft', label:'STD/RFT', type:'select', opts:['','STD','RFT']},
         {k:'sw', label:'S/W', type:'select', opts:['','S','W','AS']},
+        {k:'oe', label:'OE Marking', type:'text'},
+        {k:'qr', label:'QR Code', type:'text'},
         {k:'price', label:'구매단가', type:'number'},
         {k:'bridge', label:'브리지코드', type:'text'}
       ];
