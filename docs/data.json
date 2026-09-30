@@ -2,15 +2,15 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 30일 (수) · 12:19 기준",
+    "generated_at": "9월 30일 (수) · 12:32 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
-    "total": 53102166,
+    "total": 41559271,
     "date": "2026-09-30",
-    "grn_count": 15,
-    "lines": 225,
-    "qty": 636,
+    "grn_count": 16,
+    "lines": 239,
+    "qty": 621,
     "alois_groups": [
       {
         "code": "A",
@@ -20,37 +20,37 @@
           {
             "code": "A1",
             "val": 393300,
-            "pct": 0.74
+            "pct": 0.95
           },
           {
             "code": "A2",
             "val": 3222316,
-            "pct": 6.07
+            "pct": 7.75
           },
           {
             "code": "A3",
-            "val": 3661636,
-            "pct": 6.9
+            "val": 731091,
+            "pct": 1.76
           },
           {
             "code": "A4",
             "val": 2547343,
-            "pct": 4.8
+            "pct": 6.13
           },
           {
             "code": "A5",
             "val": 3697603,
-            "pct": 6.96
+            "pct": 8.9
           },
           {
             "code": "A6",
-            "val": 2184001,
-            "pct": 4.11
+            "val": 1225229,
+            "pct": 2.95
           }
         ],
-        "subtotal_val": 15706199,
+        "subtotal_val": 11816882,
         "subtotal_qty": 0,
-        "subtotal_pct": 29.58
+        "subtotal_pct": 28.43
       },
       {
         "code": "L",
@@ -60,32 +60,32 @@
           {
             "code": "L2",
             "val": 1118559,
-            "pct": 2.11
+            "pct": 2.69
           },
           {
             "code": "L4",
             "val": 3606488,
-            "pct": 6.79
+            "pct": 8.68
           },
           {
             "code": "L5",
             "val": 135782,
-            "pct": 0.26
+            "pct": 0.33
           },
           {
             "code": "L6",
             "val": 389649,
-            "pct": 0.73
+            "pct": 0.94
           },
           {
             "code": "L7",
-            "val": 6228844,
-            "pct": 11.73
+            "val": 5897025,
+            "pct": 14.19
           }
         ],
-        "subtotal_val": 11479322,
+        "subtotal_val": 11147503,
         "subtotal_qty": 0,
-        "subtotal_pct": 21.62
+        "subtotal_pct": 26.82
       },
       {
         "code": "O",
@@ -94,23 +94,28 @@
         "rows": [
           {
             "code": "O8",
-            "val": 7004432,
-            "pct": 13.19
+            "val": 2660189,
+            "pct": 6.4
+          },
+          {
+            "code": "OA",
+            "val": -321772,
+            "pct": -0.77
           },
           {
             "code": "OE",
             "val": 4123895,
-            "pct": 7.77
+            "pct": 9.92
           },
           {
             "code": "OV",
-            "val": 26390,
-            "pct": 0.05
+            "val": -2518039,
+            "pct": -6.06
           }
         ],
-        "subtotal_val": 11154717,
+        "subtotal_val": 3944273,
         "subtotal_qty": 0,
-        "subtotal_pct": 21.01
+        "subtotal_pct": 9.49
       },
       {
         "code": "I",
@@ -120,12 +125,12 @@
           {
             "code": "II",
             "val": 11353833,
-            "pct": 21.38
+            "pct": 27.32
           }
         ],
         "subtotal_val": 11353833,
         "subtotal_qty": 0,
-        "subtotal_pct": 21.38
+        "subtotal_pct": 27.32
       },
       {
         "code": "S",
@@ -135,27 +140,27 @@
           {
             "code": "SC",
             "val": 67396,
-            "pct": 0.13
+            "pct": 0.16
           },
           {
             "code": "SK",
             "val": 131062,
-            "pct": 0.25
+            "pct": 0.32
           },
           {
             "code": "SX",
             "val": 138000,
-            "pct": 0.26
+            "pct": 0.33
           },
           {
             "code": "SZ",
-            "val": 3071637,
-            "pct": 5.78
+            "val": 2960322,
+            "pct": 7.12
           }
         ],
-        "subtotal_val": 3408095,
+        "subtotal_val": 3296780,
         "subtotal_qty": 0,
-        "subtotal_pct": 6.42
+        "subtotal_pct": 7.93
       }
     ],
     "grn_rows": [
@@ -233,6 +238,11 @@
         "grn": "2283304",
         "val": 912552,
         "is_top": false
+      },
+      {
+        "grn": "(없음)",
+        "val": -11542895,
+        "is_top": false
       }
     ],
     "top5": [
@@ -284,8 +294,8 @@
     ]
   },
   "inv": {
-    "total": 1235377376,
-    "item_count": 2217,
+    "total": 1223838212,
+    "item_count": 2209,
     "code_count": 25,
     "alois_groups": [
       {
@@ -296,7 +306,7 @@
           {
             "code": "A1",
             "val": 222899554,
-            "pct": 18.04,
+            "pct": 18.21,
             "qty": 2595,
             "parts": [
               {
@@ -388,7 +398,7 @@
           {
             "code": "A2",
             "val": 19076000,
-            "pct": 1.54,
+            "pct": 1.56,
             "qty": 1206,
             "parts": [
               {
@@ -605,15 +615,15 @@
           },
           {
             "code": "A3",
-            "val": 29694099,
-            "pct": 2.4,
-            "qty": 481,
+            "val": 26763553,
+            "pct": 2.19,
+            "qty": 480,
             "parts": [
               {
                 "item": "63117214961",
                 "name": "Headlight, L",
-                "qty": 5,
-                "val": 14658010
+                "qty": 4,
+                "val": 11727464
               },
               {
                 "item": "12125A523E0",
@@ -782,7 +792,7 @@
           {
             "code": "A4",
             "val": 47214899,
-            "pct": 3.82,
+            "pct": 3.86,
             "qty": 1893,
             "parts": [
               {
@@ -1534,7 +1544,7 @@
           {
             "code": "A5",
             "val": 76738512,
-            "pct": 6.21,
+            "pct": 6.27,
             "qty": 1398,
             "parts": [
               {
@@ -2783,9 +2793,9 @@
           },
           {
             "code": "A6",
-            "val": 79861260,
-            "pct": 6.46,
-            "qty": 1411,
+            "val": 78902489,
+            "pct": 6.45,
+            "qty": 1409,
             "parts": [
               {
                 "item": "63117461884",
@@ -2810,12 +2820,6 @@
                 "name": "Electric a/c",
                 "qty": 1,
                 "val": 2004993
-              },
-              {
-                "item": "51125A50972",
-                "name": "Bumper cover",
-                "qty": 2,
-                "val": 1616300
               },
               {
                 "item": "11717822350",
@@ -2992,6 +2996,12 @@
                 "val": 800644
               },
               {
+                "item": "51125A50972",
+                "name": "Bumper cover",
+                "qty": 1,
+                "val": 796605
+              },
+              {
                 "item": "13628594553",
                 "name": "NOX sensor",
                 "qty": 1,
@@ -3106,12 +3116,6 @@
                 "val": 435591
               },
               {
-                "item": "51118081602",
-                "name": "Covering rig",
-                "qty": 3,
-                "val": 419808
-              },
-              {
                 "item": "11537644811",
                 "name": "Heat managem",
                 "qty": 1,
@@ -3188,6 +3192,12 @@
                 "name": "Tail light,",
                 "qty": 1,
                 "val": 286082
+              },
+              {
+                "item": "51118081602",
+                "name": "Covering rig",
+                "qty": 2,
+                "val": 280732
               },
               {
                 "item": "51127300788",
@@ -4776,9 +4786,9 @@
             ]
           }
         ],
-        "subtotal_val": 475484324,
-        "subtotal_qty": 8984,
-        "subtotal_pct": 38.49
+        "subtotal_val": 471595007,
+        "subtotal_qty": 8981,
+        "subtotal_pct": 38.53
       },
       {
         "code": "L",
@@ -4788,7 +4798,7 @@
           {
             "code": "L1",
             "val": 26451520,
-            "pct": 2.14,
+            "pct": 2.16,
             "qty": 1941,
             "parts": [
               {
@@ -4862,7 +4872,7 @@
           {
             "code": "L2",
             "val": 10721558,
-            "pct": 0.87,
+            "pct": 0.88,
             "qty": 217,
             "parts": [
               {
@@ -4924,7 +4934,7 @@
           {
             "code": "L3",
             "val": 9385028,
-            "pct": 0.76,
+            "pct": 0.77,
             "qty": 91,
             "parts": [
               {
@@ -4950,7 +4960,7 @@
           {
             "code": "L4",
             "val": 16346187,
-            "pct": 1.32,
+            "pct": 1.34,
             "qty": 638,
             "parts": [
               {
@@ -5218,7 +5228,7 @@
           {
             "code": "L6",
             "val": 31675456,
-            "pct": 2.56,
+            "pct": 2.59,
             "qty": 247,
             "parts": [
               {
@@ -5585,9 +5595,9 @@
           },
           {
             "code": "L7",
-            "val": 66327214,
-            "pct": 5.37,
-            "qty": 1344,
+            "val": 65995395,
+            "pct": 5.39,
+            "qty": 1341,
             "parts": [
               {
                 "item": "11419895359",
@@ -5786,12 +5796,6 @@
                 "name": "Nanoparticle",
                 "qty": 2,
                 "val": 333270
-              },
-              {
-                "item": "51777300822",
-                "name": "Cover, wheel",
-                "qty": 3,
-                "val": 318291
               },
               {
                 "item": "07148838288",
@@ -6022,12 +6026,6 @@
                 "val": 121986
               },
               {
-                "item": "51337444091",
-                "name": "Shaft cover",
-                "qty": 1,
-                "val": 119625
-              },
-              {
                 "item": "51168496624",
                 "name": "Cover cap, p",
                 "qty": 1,
@@ -6062,6 +6060,12 @@
                 "name": "Filt.Element",
                 "qty": 7,
                 "val": 106659
+              },
+              {
+                "item": "51777300822",
+                "name": "Cover, wheel",
+                "qty": 1,
+                "val": 106097
               },
               {
                 "item": "54105B32973",
@@ -8094,9 +8098,9 @@
             ]
           }
         ],
-        "subtotal_val": 164068954,
-        "subtotal_qty": 4683,
-        "subtotal_pct": 13.28
+        "subtotal_val": 163737135,
+        "subtotal_qty": 4680,
+        "subtotal_pct": 13.38
       },
       {
         "code": "O",
@@ -8105,21 +8109,15 @@
         "rows": [
           {
             "code": "O8",
-            "val": 69829674,
-            "pct": 5.65,
-            "qty": 1175,
+            "val": 65485431,
+            "pct": 5.35,
+            "qty": 1173,
             "parts": [
               {
                 "item": "17425A18806",
                 "name": "Fan cowl wit",
                 "qty": 10,
                 "val": 7063970
-              },
-              {
-                "item": "63115A783B4",
-                "name": "LED headligh",
-                "qty": 1,
-                "val": 3566043
               },
               {
                 "item": "61278877428",
@@ -8228,12 +8226,6 @@
                 "name": "Door front r",
                 "qty": 1,
                 "val": 779859
-              },
-              {
-                "item": "41007430880",
-                "name": "RIGHT REAR S",
-                "qty": 1,
-                "val": 778200
               },
               {
                 "item": "34107889661",
@@ -10363,9 +10355,9 @@
           },
           {
             "code": "OA",
-            "val": 20603696,
-            "pct": 1.67,
-            "qty": 224,
+            "val": 20281924,
+            "pct": 1.66,
+            "qty": 223,
             "parts": [
               {
                 "item": "51459476396",
@@ -10390,12 +10382,6 @@
                 "name": "Caliper hous",
                 "qty": 1,
                 "val": 744265
-              },
-              {
-                "item": "51337466961",
-                "name": "Side window,",
-                "qty": 2,
-                "val": 629948
               },
               {
                 "item": "31356774737",
@@ -10486,6 +10472,12 @@
                 "name": "Regulating l",
                 "qty": 1,
                 "val": 323952
+              },
+              {
+                "item": "51337466961",
+                "name": "Side window,",
+                "qty": 1,
+                "val": 308176
               },
               {
                 "item": "61612458349",
@@ -10978,7 +10970,7 @@
           {
             "code": "OE",
             "val": 303943845,
-            "pct": 24.6,
+            "pct": 24.84,
             "qty": 824,
             "parts": [
               {
@@ -11671,16 +11663,10 @@
           },
           {
             "code": "OV",
-            "val": 19890333,
-            "pct": 1.61,
-            "qty": 211,
+            "val": 17349635,
+            "pct": 1.42,
+            "qty": 207,
             "parts": [
-              {
-                "item": "41517386744",
-                "name": "Door rear ri",
-                "qty": 1,
-                "val": 2019618
-              },
               {
                 "item": "16117465279",
                 "name": "Plastic fuel",
@@ -11814,18 +11800,6 @@
                 "val": 281089
               },
               {
-                "item": "63217376486",
-                "name": "Tail light t",
-                "qty": 1,
-                "val": 261170
-              },
-              {
-                "item": "51117379435",
-                "name": "Black band s",
-                "qty": 2,
-                "val": 238212
-              },
-              {
                 "item": "34116789544",
                 "name": "Brake disc",
                 "qty": 1,
@@ -11904,12 +11878,6 @@
                 "val": 149577
               },
               {
-                "item": "51337364352",
-                "name": "Strip for do",
-                "qty": 1,
-                "val": 139277
-              },
-              {
                 "item": "22117855818",
                 "name": "Engine mount",
                 "qty": 1,
@@ -11950,6 +11918,12 @@
                 "name": "Integrated s",
                 "qty": 1,
                 "val": 121512
+              },
+              {
+                "item": "51117379435",
+                "name": "Black band s",
+                "qty": 1,
+                "val": 117579
               },
               {
                 "item": "83222295532",
@@ -12308,9 +12282,9 @@
             ]
           }
         ],
-        "subtotal_val": 419319671,
-        "subtotal_qty": 2448,
-        "subtotal_pct": 33.94
+        "subtotal_val": 412112958,
+        "subtotal_qty": 2441,
+        "subtotal_pct": 33.67
       },
       {
         "code": "I",
@@ -12320,7 +12294,7 @@
           {
             "code": "II",
             "val": 6454631,
-            "pct": 0.52,
+            "pct": 0.53,
             "qty": 43,
             "parts": [
               {
@@ -12562,7 +12536,7 @@
         ],
         "subtotal_val": 6454631,
         "subtotal_qty": 43,
-        "subtotal_pct": 0.52
+        "subtotal_pct": 0.53
       },
       {
         "code": "S",
@@ -12618,7 +12592,7 @@
           {
             "code": "SK",
             "val": 69597624,
-            "pct": 5.63,
+            "pct": 5.69,
             "qty": 1015,
             "parts": [
               {
@@ -13034,7 +13008,7 @@
           {
             "code": "SX",
             "val": 10677550,
-            "pct": 0.86,
+            "pct": 0.87,
             "qty": 206,
             "parts": [
               {
@@ -13157,9 +13131,9 @@
           },
           {
             "code": "SZ",
-            "val": 83944335,
-            "pct": 6.8,
-            "qty": 769,
+            "val": 83833020,
+            "pct": 6.85,
+            "qty": 767,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -13570,12 +13544,6 @@
                 "val": 90000
               },
               {
-                "item": "32309476134",
-                "name": "Steering whe",
-                "qty": 1,
-                "val": 86240
-              },
-              {
                 "item": "01405B62A10",
                 "name": "Operating in",
                 "qty": 1,
@@ -13714,12 +13682,6 @@
                 "val": 32400
               },
               {
-                "item": "65826995221",
-                "name": "Trim, contro",
-                "qty": 1,
-                "val": 25075
-              },
-              {
                 "item": "51719622340",
                 "name": "Mount, vehic",
                 "qty": 1,
@@ -13836,23 +13798,23 @@
             ]
           }
         ],
-        "subtotal_val": 170049796,
-        "subtotal_qty": 2068,
-        "subtotal_pct": 13.77
+        "subtotal_val": 169938481,
+        "subtotal_qty": 2066,
+        "subtotal_pct": 13.89
       }
     ]
   },
   "oaov": {
-    "total": 40494029,
-    "inv_total": 1235377376,
-    "pct": 3.28,
-    "oa_val": 20603696,
-    "ov_val": 19890333,
+    "total": 37631559,
+    "inv_total": 1223838212,
+    "pct": 3.07,
+    "oa_val": 20281924,
+    "ov_val": 17349635,
     "oa_lines": 101,
-    "ov_lines": 105,
-    "oa_qty": 224,
-    "ov_qty": 211,
-    "item_count": 206,
+    "ov_lines": 102,
+    "oa_qty": 223,
+    "ov_qty": 207,
+    "item_count": 203,
     "oa_items": [
       {
         "item": "51459476396",
@@ -13885,14 +13847,6 @@
         "alois": "OA",
         "qty": 1,
         "val": 744265
-      },
-      {
-        "item": "51337466961",
-        "name": "Side window,",
-        "pgrp": "B1",
-        "alois": "OA",
-        "qty": 2,
-        "val": 629948
       },
       {
         "item": "31356774737",
@@ -14013,6 +13967,14 @@
         "alois": "OA",
         "qty": 1,
         "val": 323952
+      },
+      {
+        "item": "51337466961",
+        "name": "Side window,",
+        "pgrp": "B1",
+        "alois": "OA",
+        "qty": 1,
+        "val": 308176
       },
       {
         "item": "61612458349",
@@ -14665,14 +14627,6 @@
     ],
     "ov_items": [
       {
-        "item": "41517386744",
-        "name": "Door rear ri",
-        "pgrp": "B1",
-        "alois": "OV",
-        "qty": 1,
-        "val": 2019618
-      },
-      {
         "item": "16117465279",
         "name": "Plastic fuel",
         "pgrp": "B1",
@@ -14849,22 +14803,6 @@
         "val": 281089
       },
       {
-        "item": "63217376486",
-        "name": "Tail light t",
-        "pgrp": "B1",
-        "alois": "OV",
-        "qty": 1,
-        "val": 261170
-      },
-      {
-        "item": "51117379435",
-        "name": "Black band s",
-        "pgrp": "M1",
-        "alois": "OV",
-        "qty": 2,
-        "val": 238212
-      },
-      {
         "item": "34116789544",
         "name": "Brake disc",
         "pgrp": "B1",
@@ -14969,14 +14907,6 @@
         "val": 149577
       },
       {
-        "item": "51337364352",
-        "name": "Strip for do",
-        "pgrp": "B1",
-        "alois": "OV",
-        "qty": 1,
-        "val": 139277
-      },
-      {
         "item": "22117855818",
         "name": "Engine mount",
         "pgrp": "B1",
@@ -15031,6 +14961,14 @@
         "alois": "OV",
         "qty": 1,
         "val": 121512
+      },
+      {
+        "item": "51117379435",
+        "name": "Black band s",
+        "pgrp": "M1",
+        "alois": "OV",
+        "qty": 1,
+        "val": 117579
       },
       {
         "item": "83222295532",
@@ -15515,14 +15453,6 @@
         "val": 2256325
       },
       {
-        "item": "41517386744",
-        "name": "Door rear ri",
-        "pgrp": "B1",
-        "alois": "OV",
-        "qty": 1,
-        "val": 2019618
-      },
-      {
         "item": "16117465279",
         "name": "Plastic fuel",
         "pgrp": "B1",
@@ -15585,6 +15515,14 @@
         "alois": "OA",
         "qty": 1,
         "val": 744265
+      },
+      {
+        "item": "12418490093",
+        "name": "Starter",
+        "pgrp": "B1",
+        "alois": "OV",
+        "qty": 1,
+        "val": 653900
       }
     ]
   },
@@ -17897,7 +17835,7 @@
     ],
     "m12_val": 54352232,
     "m12_count": 206,
-    "m12_pct": 4.4,
+    "m12_pct": 4.44,
     "m24_items": [
       {
         "item": "24008741536",
@@ -18334,7 +18272,7 @@
     ],
     "m24_val": 19195599,
     "m24_count": 48,
-    "m24_pct": 1.55
+    "m24_pct": 1.57
   },
   "opart": {
     "items": [
@@ -19529,23 +19467,6 @@
         "dday": "D+30일"
       },
       {
-        "item": "63115A783B4",
-        "name": "LED headligh 판금 클레임",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000006",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-01",
-        "req_dt_full": "2026-09-01 11:19:19",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 3566043,
-        "sa": "홍윤택",
-        "dday": "D+29일"
-      },
-      {
         "item": "16137404081",
         "name": "Venting line 9월 리타반납",
         "alois": "O8",
@@ -19594,23 +19515,6 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 58800,
         "sa": "김창열",
-        "dday": "D+28일"
-      },
-      {
-        "item": "51337466961",
-        "name": "Side window, m게러지 클레임",
-        "alois": "OA",
-        "pgrp": "B1",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000006",
-        "req_qty": 1,
-        "crt_qty": 2,
-        "avail_qty": 0,
-        "req_dt": "09-02",
-        "req_dt_full": "2026-09-02 09:46:47",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 314974,
-        "sa": "홍윤택",
         "dday": "D+28일"
       },
       {
@@ -19903,23 +19807,6 @@
         "dday": "D+27일"
       },
       {
-        "item": "41007430880",
-        "name": "RIGHT REAR S 도장 클레임",
-        "alois": "O8",
-        "pgrp": "M1",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000006",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-03",
-        "req_dt_full": "2026-09-03 09:40:18",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 778200,
-        "sa": "홍윤택",
-        "dday": "D+27일"
-      },
-      {
         "item": "90200007299",
         "name": "BMW Boston Black",
         "alois": "OE",
@@ -19985,23 +19872,6 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 170600,
         "sa": "조재완",
-        "dday": "D+27일"
-      },
-      {
-        "item": "63217376486",
-        "name": "Tail light t 판금 클레임",
-        "alois": "OV",
-        "pgrp": "B1",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000006",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-03",
-        "req_dt_full": "2026-09-03 13:47:11",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 261170,
-        "sa": "홍윤택",
         "dday": "D+27일"
       },
       {
@@ -20073,23 +19943,6 @@
         "dday": "D+26일"
       },
       {
-        "item": "51117379435",
-        "name": "Black band s 판금 클레임",
-        "alois": "OV",
-        "pgrp": "M1",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000006",
-        "req_qty": 1,
-        "crt_qty": 2,
-        "avail_qty": 0,
-        "req_dt": "09-04",
-        "req_dt_full": "2026-09-04 09:50:08",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 119106,
-        "sa": "홍윤택",
-        "dday": "D+26일"
-      },
-      {
         "item": "51317422806",
         "name": "Cover, winds",
         "alois": "O8",
@@ -20121,23 +19974,6 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 246927,
         "sa": "염진아",
-        "dday": "D+26일"
-      },
-      {
-        "item": "51337364352",
-        "name": "Strip for do 인터카스 클레임",
-        "alois": "OV",
-        "pgrp": "B1",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000006",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-04",
-        "req_dt_full": "2026-09-04 14:55:33",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 139277,
-        "sa": "홍윤택",
         "dday": "D+26일"
       },
       {
@@ -20566,23 +20402,6 @@
         "dday": "D+16일"
       },
       {
-        "item": "41517386744",
-        "name": "Door rear ri 9/14인터카스 클레임",
-        "alois": "OV",
-        "pgrp": "B1",
-        "ref_tp": "SP",
-        "ref_no": "SP2609000006",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-14",
-        "req_dt_full": "2026-09-14 14:27:04",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 2019618,
-        "sa": "홍윤택",
-        "dday": "D+16일"
-      },
-      {
         "item": "51115A1BCB8",
         "name": "Carrier, bum",
         "alois": "O8",
@@ -20641,12 +20460,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2609001063",
         "req_qty": 1,
-        "crt_qty": 2,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "09-16",
         "req_dt_full": "2026-09-16 16:50:26",
         "req_brch": "AS_부산(해운중동)",
-        "val": 119106,
+        "val": 117579,
         "sa": "강충성",
         "dday": "D+14일"
       },
@@ -21474,12 +21293,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2608000697",
         "req_qty": 1,
-        "crt_qty": 2,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "09-21",
         "req_dt_full": "2026-09-21 16:09:36",
         "req_brch": "AS_부산(해운중동)",
-        "val": 314974,
+        "val": 308176,
         "sa": "염진아",
         "dday": "D+9일"
       },
@@ -23796,8 +23615,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 321,
-    "total_val": 94658417,
+    "count": 314,
+    "total_val": 87451704,
     "groups": [
       {
         "code": "RO",
@@ -24745,12 +24564,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2609001063",
             "req_qty": 1,
-            "crt_qty": 2,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "09-16",
             "req_dt_full": "2026-09-16 16:50:26",
             "req_brch": "AS_부산(해운중동)",
-            "val": 119106,
+            "val": 117579,
             "sa": "강충성",
             "dday": "D+14일"
           },
@@ -25340,12 +25159,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2608000697",
             "req_qty": 1,
-            "crt_qty": 2,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "09-21",
             "req_dt_full": "2026-09-21 16:09:36",
             "req_brch": "AS_부산(해운중동)",
-            "val": 314974,
+            "val": 308176,
             "sa": "염진아",
             "dday": "D+9일"
           },
@@ -27086,7 +26905,7 @@
         ],
         "count": 193,
         "qty_sum": 278,
-        "val": 62095397
+        "val": 62087072
       },
       {
         "code": "SB",
@@ -28698,23 +28517,6 @@
             "dday": "D+35일"
           },
           {
-            "item": "63115A783B4",
-            "name": "LED headligh 판금 클레임",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000006",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-01",
-            "req_dt_full": "2026-09-01 11:19:19",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 3566043,
-            "sa": "홍윤택",
-            "dday": "D+29일"
-          },
-          {
             "item": "16137404081",
             "name": "Venting line 9월 리타반납",
             "alois": "O8",
@@ -28766,40 +28568,6 @@
             "dday": "D+28일"
           },
           {
-            "item": "51337466961",
-            "name": "Side window, m게러지 클레임",
-            "alois": "OA",
-            "pgrp": "B1",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000006",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "req_dt": "09-02",
-            "req_dt_full": "2026-09-02 09:46:47",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 314974,
-            "sa": "홍윤택",
-            "dday": "D+28일"
-          },
-          {
-            "item": "41007430880",
-            "name": "RIGHT REAR S 도장 클레임",
-            "alois": "O8",
-            "pgrp": "M1",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000006",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-03",
-            "req_dt_full": "2026-09-03 09:40:18",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 778200,
-            "sa": "홍윤택",
-            "dday": "D+27일"
-          },
-          {
             "item": "90200007299",
             "name": "BMW Boston Black",
             "alois": "OE",
@@ -28866,57 +28634,6 @@
             "val": 170600,
             "sa": "조재완",
             "dday": "D+27일"
-          },
-          {
-            "item": "63217376486",
-            "name": "Tail light t 판금 클레임",
-            "alois": "OV",
-            "pgrp": "B1",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000006",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-03",
-            "req_dt_full": "2026-09-03 13:47:11",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 261170,
-            "sa": "홍윤택",
-            "dday": "D+27일"
-          },
-          {
-            "item": "51117379435",
-            "name": "Black band s 판금 클레임",
-            "alois": "OV",
-            "pgrp": "M1",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000006",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "req_dt": "09-04",
-            "req_dt_full": "2026-09-04 09:50:08",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 119106,
-            "sa": "홍윤택",
-            "dday": "D+26일"
-          },
-          {
-            "item": "51337364352",
-            "name": "Strip for do 인터카스 클레임",
-            "alois": "OV",
-            "pgrp": "B1",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000006",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-04",
-            "req_dt_full": "2026-09-04 14:55:33",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 139277,
-            "sa": "홍윤택",
-            "dday": "D+26일"
           },
           {
             "item": "82732223388",
@@ -28951,23 +28668,6 @@
             "val": 359904,
             "sa": "김창열",
             "dday": "D+20일"
-          },
-          {
-            "item": "41517386744",
-            "name": "Door rear ri 9/14인터카스 클레임",
-            "alois": "OV",
-            "pgrp": "B1",
-            "ref_tp": "SP",
-            "ref_no": "SP2609000006",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-14",
-            "req_dt_full": "2026-09-14 14:27:04",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 2019618,
-            "sa": "홍윤택",
-            "dday": "D+16일"
           },
           {
             "item": "51952449252",
@@ -29276,9 +28976,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 42,
-        "qty_sum": 101,
-        "val": 13738927
+        "count": 35,
+        "qty_sum": 94,
+        "val": 6540539
       }
     ]
   },
@@ -38027,26 +37727,26 @@
       },
       {
         "date": "09-30",
-        "in_val": 11154717,
+        "in_val": 3944273,
         "out_val": 30370193,
-        "net": -19215476
+        "net": -26425920
       }
     ],
-    "total_in": 278596025,
+    "total_in": 271385581,
     "total_out": 277194028,
-    "net": 1401997,
+    "net": -5808447,
     "by_code": [
       {
         "code": "O8",
-        "in_val": 229965025,
+        "in_val": 225620782,
         "out_val": 232238792,
-        "net": -2273767
+        "net": -6618010
       },
       {
         "code": "OA",
-        "in_val": 10172904,
+        "in_val": 9851132,
         "out_val": 317240,
-        "net": 9855664
+        "net": 9533892
       },
       {
         "code": "OE",
@@ -38062,13 +37762,13 @@
       },
       {
         "code": "OV",
-        "in_val": 19523502,
+        "in_val": 16979073,
         "out_val": 7471076,
-        "net": 12052426
+        "net": 9507997
       }
     ],
     "in_days": 19,
-    "avg_in": 14662949
+    "avg_in": 14283452
   },
   "openro": {
     "rows": [
@@ -47663,49 +47363,16 @@
     "total_val": 65373841,
     "o_lines": 59,
     "o_val": 13136301,
-    "resv_total": 397
+    "resv_total": 399
   },
   "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609001932",
-        "resv_full": "2026-09-30 12:05",
-        "resv": "09-30",
-        "dday": "오늘",
-        "sa": "우종훈",
-        "rows": [
-          {
-            "item": "34108867484",
-            "name": "Repair kit,",
-            "alois": "A6",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 129373
-          },
-          {
-            "item": "34356887827",
-            "name": "Brake pad we MINI",
-            "alois": "A3",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 2,
-            "val": 25220
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 154593
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 2,
-    "total_val": 154593,
+    "groups": [],
+    "sb_count": 0,
+    "line_count": 0,
+    "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10138
+    "resv_total": 10139
   },
   "nonmng": {
     "rows": [],
@@ -48605,12 +48272,20 @@
         "no": 111
       },
       {
+        "loc": "A160610",
+        "item": "51118081602",
+        "name": "Covering rig",
+        "alois": "A6",
+        "qty": 2,
+        "no": 112
+      },
+      {
         "loc": "A160630",
         "item": "31216898327",
         "name": "Swivel beari",
         "alois": "II",
         "qty": 1,
-        "no": 112
+        "no": 113
       },
       {
         "loc": "A160810",
@@ -48618,7 +48293,7 @@
         "name": "Grill front",
         "alois": "SZ",
         "qty": 1,
-        "no": 113
+        "no": 114
       },
       {
         "loc": "A160810",
@@ -48626,7 +48301,7 @@
         "name": "Condenser",
         "alois": "II",
         "qty": 1,
-        "no": 114
+        "no": 115
       },
       {
         "loc": "A160910",
@@ -48634,7 +48309,7 @@
         "name": "Channel cove",
         "alois": "L7",
         "qty": 7,
-        "no": 115
+        "no": 116
       },
       {
         "loc": "A160910",
@@ -48642,7 +48317,7 @@
         "name": "Shaft cover",
         "alois": "SZ",
         "qty": 1,
-        "no": 116
+        "no": 117
       },
       {
         "loc": "A160910",
@@ -48650,7 +48325,7 @@
         "name": "Shaft cover",
         "alois": "SZ",
         "qty": 1,
-        "no": 117
+        "no": 118
       },
       {
         "loc": "A930150",
@@ -48658,7 +48333,7 @@
         "name": "Channel cove",
         "alois": "A6",
         "qty": 1,
-        "no": 118
+        "no": 119
       },
       {
         "loc": "A930160",
@@ -48666,7 +48341,7 @@
         "name": "Window well",
         "alois": "L7",
         "qty": 1,
-        "no": 119
+        "no": 120
       },
       {
         "loc": "A940120",
@@ -48674,7 +48349,7 @@
         "name": "Trim strip,",
         "alois": "L7",
         "qty": 1,
-        "no": 120
+        "no": 121
       },
       {
         "loc": "A940130",
@@ -48682,7 +48357,7 @@
         "name": "Shaft cover",
         "alois": "O8",
         "qty": 1,
-        "no": 121
+        "no": 122
       },
       {
         "loc": "A940130",
@@ -48690,7 +48365,7 @@
         "name": "Window well",
         "alois": "II",
         "qty": 1,
-        "no": 122
+        "no": 123
       },
       {
         "loc": "A940140",
@@ -48698,7 +48373,7 @@
         "name": "Shaft cover",
         "alois": "L7",
         "qty": 1,
-        "no": 123
+        "no": 124
       },
       {
         "loc": "B070503",
@@ -48706,7 +48381,7 @@
         "name": "Gasket",
         "alois": "O8",
         "qty": 1,
-        "no": 124
+        "no": 125
       },
       {
         "loc": "B070813",
@@ -48714,7 +48389,7 @@
         "name": "Hex bolt wit",
         "alois": "A6",
         "qty": 8,
-        "no": 125
+        "no": 126
       },
       {
         "loc": "B070815",
@@ -48722,7 +48397,7 @@
         "name": "Plug-in nut",
         "alois": "A5",
         "qty": 6,
-        "no": 126
+        "no": 127
       },
       {
         "loc": "B090633",
@@ -48730,7 +48405,7 @@
         "name": "Trim detaili",
         "alois": "A5",
         "qty": 1,
-        "no": 127
+        "no": 128
       },
       {
         "loc": "B110231",
@@ -48738,7 +48413,7 @@
         "name": "Body Adhesiv",
         "alois": "L5",
         "qty": 2,
-        "no": 128
+        "no": 129
       },
       {
         "loc": "B110401",
@@ -48746,7 +48421,7 @@
         "name": "Filter elmnt",
         "alois": "O8",
         "qty": 1,
-        "no": 129
+        "no": 130
       },
       {
         "loc": "B140121",
@@ -48754,7 +48429,7 @@
         "name": "Seal for HV",
         "alois": "L6",
         "qty": 2,
-        "no": 130
+        "no": 131
       },
       {
         "loc": "B140222",
@@ -48762,7 +48437,7 @@
         "name": "License-plat",
         "alois": "A5",
         "qty": 1,
-        "no": 131
+        "no": 132
       },
       {
         "loc": "B140232",
@@ -48770,7 +48445,7 @@
         "name": "Grille",
         "alois": "O8",
         "qty": 1,
-        "no": 132
+        "no": 133
       },
       {
         "loc": "B140733",
@@ -48778,7 +48453,7 @@
         "name": "Cover",
         "alois": "O8",
         "qty": 1,
-        "no": 133
+        "no": 134
       },
       {
         "loc": "C000000",
@@ -48786,7 +48461,7 @@
         "name": "Trim cover, G30 front",
         "alois": "A4",
         "qty": 1,
-        "no": 134
+        "no": 135
       },
       {
         "loc": "C000000",
@@ -48794,7 +48469,7 @@
         "name": "Trim cover, G30LCI F",
         "alois": "A4",
         "qty": 2,
-        "no": 135
+        "no": 136
       },
       {
         "loc": "C000000",
@@ -48802,7 +48477,7 @@
         "name": "Cover, bumpe",
         "alois": "A6",
         "qty": 1,
-        "no": 136
+        "no": 137
       },
       {
         "loc": "C000001",
@@ -48810,7 +48485,7 @@
         "name": "Rear silence",
         "alois": "L7",
         "qty": 1,
-        "no": 137
+        "no": 138
       },
       {
         "loc": "C000001",
@@ -48818,7 +48493,7 @@
         "name": "Steering gea",
         "alois": "OE",
         "qty": 1,
-        "no": 138
+        "no": 139
       },
       {
         "loc": "C000001",
@@ -48826,7 +48501,7 @@
         "name": "Door, alumin",
         "alois": "L7",
         "qty": 1,
-        "no": 139
+        "no": 140
       },
       {
         "loc": "C000001",
@@ -48834,7 +48509,7 @@
         "name": "Hood",
         "alois": "A6",
         "qty": 1,
-        "no": 140
+        "no": 141
       },
       {
         "loc": "C000001",
@@ -48842,7 +48517,7 @@
         "name": "Trunk lid, a",
         "alois": "L7",
         "qty": 1,
-        "no": 141
+        "no": 142
       },
       {
         "loc": "C000002",
@@ -48850,7 +48525,7 @@
         "name": "Complete tai",
         "alois": "II",
         "qty": 1,
-        "no": 142
+        "no": 143
       },
       {
         "loc": "C000002",
@@ -48858,7 +48533,23 @@
         "name": "Trim for bum",
         "alois": "II",
         "qty": 1,
-        "no": 143
+        "no": 144
+      },
+      {
+        "loc": "C000002",
+        "item": "51117379435",
+        "name": "Black band s",
+        "alois": "OV",
+        "qty": 1,
+        "no": 145
+      },
+      {
+        "loc": "C000002",
+        "item": "51125A50972",
+        "name": "Bumper cover",
+        "alois": "A6",
+        "qty": 1,
+        "no": 146
       },
       {
         "loc": "C000002",
@@ -48866,7 +48557,7 @@
         "name": "Trim panel,",
         "alois": "L7",
         "qty": 1,
-        "no": 144
+        "no": 147
       },
       {
         "loc": "C000002",
@@ -48874,7 +48565,7 @@
         "name": "Grill front",
         "alois": "II",
         "qty": 1,
-        "no": 145
+        "no": 148
       },
       {
         "loc": "C000002",
@@ -48882,7 +48573,15 @@
         "name": "Air duct",
         "alois": "II",
         "qty": 1,
-        "no": 146
+        "no": 149
+      },
+      {
+        "loc": "C000002",
+        "item": "51777300822",
+        "name": "Cover, wheel",
+        "alois": "L7",
+        "qty": 1,
+        "no": 150
       },
       {
         "loc": "C000002",
@@ -48890,7 +48589,7 @@
         "name": "Rocker panel",
         "alois": "L7",
         "qty": 1,
-        "no": 147
+        "no": 151
       },
       {
         "loc": "C000002",
@@ -48898,15 +48597,23 @@
         "name": "Railing carr",
         "alois": "SZ",
         "qty": 1,
-        "no": 148
+        "no": 152
+      },
+      {
+        "loc": "C000003",
+        "item": "51337466961",
+        "name": "Side window,",
+        "alois": "OA",
+        "qty": 1,
+        "no": 153
       },
       {
         "loc": "C000003",
         "item": "63117214961",
         "name": "Headlight, L",
         "alois": "A3",
-        "qty": 5,
-        "no": 149
+        "qty": 4,
+        "no": 154
       },
       {
         "loc": "C000004",
@@ -48914,7 +48621,7 @@
         "name": "Bumper brack",
         "alois": "L7",
         "qty": 1,
-        "no": 150
+        "no": 155
       },
       {
         "loc": "C000004",
@@ -48922,7 +48629,7 @@
         "name": "Carrier, bum",
         "alois": "II",
         "qty": 1,
-        "no": 151
+        "no": 156
       },
       {
         "loc": "C000004",
@@ -48930,7 +48637,7 @@
         "name": "Reinforcemen",
         "alois": "O8",
         "qty": 1,
-        "no": 152
+        "no": 157
       },
       {
         "loc": "C000005",
@@ -48938,7 +48645,7 @@
         "name": "Scheibenrad",
         "alois": "A5",
         "qty": 4,
-        "no": 153
+        "no": 158
       },
       {
         "loc": "C000005",
@@ -48946,7 +48653,7 @@
         "name": "Scheibenrad",
         "alois": "O8",
         "qty": 1,
-        "no": 154
+        "no": 159
       },
       {
         "loc": "C000005",
@@ -48954,7 +48661,7 @@
         "name": "Light alloy",
         "alois": "II",
         "qty": 1,
-        "no": 155
+        "no": 160
       },
       {
         "loc": "N/STK",
@@ -48962,7 +48669,7 @@
         "name": "Impact absor",
         "alois": "II",
         "qty": 1,
-        "no": 156
+        "no": 161
       },
       {
         "loc": "N/STK",
@@ -48970,7 +48677,7 @@
         "name": "Mount, bumpe",
         "alois": "II",
         "qty": 1,
-        "no": 157
+        "no": 162
       },
       {
         "loc": "N/STK",
@@ -48978,7 +48685,7 @@
         "name": "FRONT ENGINE",
         "alois": "II",
         "qty": 1,
-        "no": 158
+        "no": 163
       },
       {
         "loc": "-",
@@ -48986,10 +48693,10 @@
         "name": "Scheibenrad",
         "alois": "SZ",
         "qty": 1,
-        "no": 159
+        "no": 164
       }
     ],
-    "count": 159,
+    "count": 164,
     "date": "2026-09-30"
   },
   "stockcheck_week": {
@@ -51927,7 +51634,7 @@
         "item": "63117214961",
         "name": "Headlight, L",
         "alois": "A3",
-        "qty": 5,
+        "qty": 4,
         "no": 367
       },
       {
