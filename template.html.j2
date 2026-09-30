@@ -176,6 +176,13 @@
   .stockcheck-table td:nth-child(4){ font-family:var(--font-body); }
   .stockcheck-table tbody tr:nth-child(even) td{ background:var(--surface-2); }
   .stockcheck-table tbody tr:hover td{ background:var(--surface-2); }
+  .tire-filters{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:16px; }
+  .tire-filters .reason-input{ width:auto; min-width:150px; }
+  .tire-filters #tire-size-input{ min-width:200px; }
+  #tire-form-wrap{ background:var(--surface-2); border-radius:12px; padding:16px; margin-bottom:16px; display:flex; flex-wrap:wrap; gap:10px; align-items:flex-end; }
+  #tire-form-wrap .field{ display:flex; flex-direction:column; gap:4px; }
+  #tire-form-wrap .field label{ font-size:11.5px; color:var(--muted); font-weight:600; }
+  #tire-form-wrap .field input, #tire-form-wrap .field select{ width:150px; }
   .aloistag{ display:inline-block; font-family:var(--font-mono); font-size:12.5px; font-weight:600; padding:2px 7px; border-radius:7px; background:var(--surface-2); color:var(--ink-2); }
   .subttl{ font-family:var(--font-display); font-weight:600; font-size:15px; text-transform:none; letter-spacing:0; color:var(--ink); margin:0 0 10px; display:flex; justify-content:space-between; }
   .subttl .n{ font-family:var(--font-mono); color:var(--muted); font-weight:500; text-transform:none; letter-spacing:0; }
@@ -419,6 +426,14 @@
       <button class="sb-item" id="nav-noloc" aria-current="false" onclick="selectPage('noloc')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2a5.5 5.5 0 0 1 5.5 5.5C14.5 11.5 9 16 9 16S3.5 11.5 3.5 7.5A5.5 5.5 0 0 1 9 2Z"/><path d="M6 6.5 12 12M12 6.5 6 12"/></svg>
         NO LOCATION 파트
+      </button>
+    </div>
+
+    <div class="sb-section">
+      <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">타이어 조회<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
+      <button class="sb-item" id="nav-tire" aria-current="false" onclick="selectPage('tire')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="6.5"/><circle cx="9" cy="9" r="2.2"/><path d="M9 2.5v2M9 13.5v2M2.5 9h2M13.5 9h2M4.4 4.4l1.4 1.4M12.2 12.2l1.4 1.4M4.4 13.6l1.4-1.4M12.2 5.8l1.4-1.4"/></svg>
+        타이어 사이즈 조회
       </button>
     </div>
 
@@ -1325,6 +1340,39 @@
       </div>
     </section>
 
+    <section id="page-tire" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>타이어 사이즈 조회</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>타이어 마스터 · 추가/수정은 이 PC(127.0.0.1:8765)에서만 가능</div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">타이어 사이즈 검색</span>
+          <span class="val" id="tire-count">0건</span>
+          <span class="foot">사이즈는 "225/40R18"처럼 입력하면 자동으로 검색됩니다 · 브랜드/STD·RFT로 좁힐 수 있습니다</span>
+        </div>
+        <div class="tire-filters">
+          <input type="text" id="tire-size-input" class="reason-input" placeholder="사이즈 입력 (예: 225/40R18)">
+          <select id="tire-brand-select" class="reason-input"><option value="">브랜드 전체</option></select>
+          <select id="tire-rft-select" class="reason-input">
+            <option value="">STD/RFT 전체</option><option value="STD">STD</option><option value="RFT">RFT</option>
+          </select>
+          <button class="rbtn rbtn-primary" id="tire-add-btn" type="button" style="display:none">+ 새 타이어 추가</button>
+        </div>
+        <div id="tire-form-wrap" hidden></div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>부품번호</th><th>품명</th><th>브랜드</th><th>사이즈</th><th>STD/RFT</th><th>S/W</th><th class="num">구매단가</th><th>브리지코드</th><th id="tire-admin-th" hidden>관리</th></tr></thead>
+            <tbody id="tire-tbody">
+              <tr><td colspan="8" class="empty-note">불러오는 중...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section id="page-stockcheck" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>일일 재고조사</b></span>
@@ -1405,7 +1453,8 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','extaudit','oaov','longstock','nonmng','stockcheck','stockcheckweek','noloc','opart','oflow','calendar'];
+  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','extaudit','oaov','longstock','nonmng','stockcheck','stockcheckweek','noloc','tire','opart','oflow','calendar'];
+  var TIRE_DATA = {{ tires_json }};
   function selectPage(key){
     PAGES.forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); });
     document.querySelector('.maininner').classList.toggle('wide', key==='calendar');
@@ -1566,6 +1615,147 @@
     }
     fetch(API + '/ping').then(function(r){ if(r.ok) enable(); }).catch(function(){});
   })();
+
+  // 타이어 사이즈 조회: 검색은 누구나, 추가/수정/삭제는 이 PC(127.0.0.1:8765)에서만
+  (function(){
+    var tbody = document.getElementById('tire-tbody');
+    if(!tbody) return;
+    var raw = TIRE_DATA || {};
+    var items = Object.keys(raw).map(function(pn){ var o = Object.assign({pn: pn}, raw[pn]); return o; });
+    var countEl = document.getElementById('tire-count');
+    var sizeInput = document.getElementById('tire-size-input');
+    var brandSelect = document.getElementById('tire-brand-select');
+    var rftSelect = document.getElementById('tire-rft-select');
+    var addBtn = document.getElementById('tire-add-btn');
+    var formWrap = document.getElementById('tire-form-wrap');
+    var adminTh = document.getElementById('tire-admin-th');
+    var isLocal = (location.hostname === '127.0.0.1' || location.hostname === 'localhost') && location.port === '8765';
+
+    var brands = [];
+    function addBrandOption(b){
+      if(!b || brands.indexOf(b) >= 0) return;
+      brands.push(b); brands.sort();
+      brandSelect.innerHTML = '<option value="">브랜드 전체</option>';
+      brands.forEach(function(x){ var o = document.createElement('option'); o.value = x; o.textContent = x; brandSelect.appendChild(o); });
+    }
+    items.forEach(function(t){ if(t.brand && brands.indexOf(t.brand) < 0) brands.push(t.brand); });
+    brands.sort();
+    brands.forEach(function(b){ var o = document.createElement('option'); o.value = b; o.textContent = b; brandSelect.appendChild(o); });
+
+    function normSize(s){
+      s = (s || '').split(' ')[0];
+      return s.replace(/ZR/gi,'').replace(/R/gi,'').replace(/\//g,'').replace(/\s+/g,'');
+    }
+    function esc(s){ var d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
+    function fmtMoney(n){ if(n === null || n === undefined || n === '') return '-'; var v = Number(n); return isNaN(v) ? '-' : v.toLocaleString('ko-KR'); }
+
+    function renderRows(){
+      var q = normSize(sizeInput.value);
+      var brand = brandSelect.value;
+      var rft = rftSelect.value;
+      var filtered = items.filter(function(t){
+        if(q && (t.filter_key || '').indexOf(q) === -1) return false;
+        if(brand && t.brand !== brand) return false;
+        if(rft && t.std_rft !== rft) return false;
+        return true;
+      });
+      filtered.sort(function(a,b){ return (a.brand||'').localeCompare(b.brand||'') || (a.size||'').localeCompare(b.size||''); });
+      countEl.textContent = filtered.length + '건';
+      tbody.innerHTML = '';
+      if(!filtered.length){
+        tbody.innerHTML = '<tr><td colspan="' + (isLocal?9:8) + '" class="empty-note">검색 결과 없음</td></tr>';
+        return;
+      }
+      filtered.forEach(function(t){
+        var tr = document.createElement('tr');
+        tr.innerHTML = '<td class="mono">'+esc(t.pn)+'</td><td>'+esc(t.name)+'</td><td>'+esc(t.brand)+'</td><td class="mono">'+esc(t.size)+'</td><td>'+esc(t.std_rft)+'</td><td>'+esc(t.sw)+'</td><td class="num">'+fmtMoney(t.price)+'</td><td class="mono">'+esc(t.bridge)+'</td>';
+        if(isLocal){
+          var td = document.createElement('td');
+          var eb = document.createElement('button'); eb.className='rbtn'; eb.type='button'; eb.textContent='수정';
+          eb.onclick = function(){ openForm(t); };
+          var db = document.createElement('button'); db.className='rbtn'; db.type='button'; db.textContent='삭제'; db.style.marginLeft='6px';
+          db.onclick = function(){ if(confirm(t.pn + ' 삭제할까요?')) doSave(t.pn, null); };
+          td.appendChild(eb); td.appendChild(db);
+          tr.appendChild(td);
+        }
+        tbody.appendChild(tr);
+      });
+    }
+
+    function doSave(pn, rec){
+      var body = {}; body[pn] = rec;
+      return fetch('/tires', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({set: body})})
+        .then(function(r){ if(!r.ok) throw new Error('save'); return r.json(); })
+        .then(function(){
+          if(rec === null){
+            items = items.filter(function(t){ return t.pn !== pn; });
+          } else {
+            var merged = Object.assign({}, rec, {pn: pn});
+            var idx = items.findIndex(function(t){ return t.pn === pn; });
+            if(idx >= 0) items[idx] = merged; else items.push(merged);
+            addBrandOption(merged.brand);
+          }
+          renderRows();
+        });
+    }
+
+    function openForm(existing){
+      formWrap.hidden = false;
+      formWrap.innerHTML = '';
+      var fields = [
+        {k:'pn', label:'부품번호', type:'text'},
+        {k:'name', label:'품명', type:'text'},
+        {k:'brand', label:'브랜드', type:'text'},
+        {k:'size', label:'사이즈', type:'text'},
+        {k:'std_rft', label:'STD/RFT', type:'select', opts:['','STD','RFT']},
+        {k:'sw', label:'S/W', type:'select', opts:['','S','W','AS']},
+        {k:'price', label:'구매단가', type:'number'},
+        {k:'bridge', label:'브리지코드', type:'text'}
+      ];
+      var inputs = {};
+      fields.forEach(function(f){
+        var wrap = document.createElement('div'); wrap.className = 'field';
+        var lab = document.createElement('label'); lab.textContent = f.label;
+        var inp;
+        if(f.type === 'select'){
+          inp = document.createElement('select');
+          f.opts.forEach(function(o){ var op = document.createElement('option'); op.value = o; op.textContent = o || '(없음)'; inp.appendChild(op); });
+        } else {
+          inp = document.createElement('input'); inp.type = f.type;
+        }
+        inp.value = existing ? (existing[f.k] != null ? existing[f.k] : '') : '';
+        if(f.k === 'pn' && existing) inp.disabled = true;
+        wrap.appendChild(lab); wrap.appendChild(inp);
+        formWrap.appendChild(wrap);
+        inputs[f.k] = inp;
+      });
+      var saveBtn = document.createElement('button'); saveBtn.className='rbtn rbtn-primary'; saveBtn.type='button'; saveBtn.textContent='저장';
+      var cancelBtn = document.createElement('button'); cancelBtn.className='rbtn'; cancelBtn.type='button'; cancelBtn.textContent='취소';
+      var msg = document.createElement('span'); msg.className='rmsg';
+      cancelBtn.onclick = function(){ formWrap.hidden = true; };
+      saveBtn.onclick = function(){
+        var pn = inputs.pn.value.trim();
+        if(!pn){ msg.textContent = '부품번호를 입력하세요'; return; }
+        var rec = Object.assign({}, existing || {});
+        fields.forEach(function(f){ if(f.k !== 'pn') rec[f.k] = inputs[f.k].value; });
+        saveBtn.disabled = true; msg.textContent = '저장 중...';
+        doSave(pn, rec).then(function(){ formWrap.hidden = true; }).catch(function(){ saveBtn.disabled = false; msg.textContent = '저장 실패 (대시보드 프로그램이 켜져 있는지 확인)'; });
+      };
+      formWrap.appendChild(saveBtn); formWrap.appendChild(cancelBtn); formWrap.appendChild(msg);
+    }
+
+    if(isLocal){
+      addBtn.style.display = '';
+      adminTh.hidden = false;
+      addBtn.onclick = function(){ openForm(null); };
+    }
+
+    sizeInput.addEventListener('input', renderRows);
+    brandSelect.addEventListener('change', renderRows);
+    rftSelect.addEventListener('change', renderRows);
+    renderRows();
+  })();
+
   function toggleAloisGroup(headEl){
     var key = headEl.getAttribute('data-group');
     var table = headEl.closest('table');

@@ -64,6 +64,9 @@ REASONS_FILE = BASE_DIR / "reasons.json"
 REASON_PORT = 8765
 ALLOWED_ORIGINS = {"https://yabiruby-alt.github.io", "http://127.0.0.1:8765", "http://localhost:8765"}
 REASONS_LOCK = threading.Lock()   # reasons.json 읽기/쓰기
+# 타이어 사이즈 조회 마스터: DMS 자동 갱신과 무관하게 이 PC에서 직접 추가/수정 -> tire_master.json 저장
+TIRE_FILE = BASE_DIR / "tire_master.json"
+TIRE_LOCK = threading.Lock()
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
 LAST_DATA = {}                    # 마지막 갱신 데이터(사유만 바뀌었을 때 DMS 재조회 없이 재렌더용)
 
@@ -1107,6 +1110,9 @@ def publish_to_github(commit_message: str) -> bool:
 def render(data: dict) -> str:
     env = Environment(loader=FileSystemLoader(str(BASE_DIR)), autoescape=False)
     template = env.get_template(TEMPLATE_NAME)
+    data = dict(data)
+    data.setdefault("tires", {})
+    data["tires_json"] = json.dumps(data["tires"], ensure_ascii=False)
     return template.render(**data)
 
 
@@ -1181,12 +1187,81 @@ def republish_reasons() -> None:
             return
         data = dict(LAST_DATA)
         data["reasons"] = _open_reasons(data)
+        data["tires"] = load_tires()
         html = render(data)
         DOCS_DIR.mkdir(parents=True, exist_ok=True)
         (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
         (DOCS_DIR / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
         if PUBLISH_TO_GITHUB:
             publish_to_github("진행RO 사유 갱신")
+
+
+def _norm_tire_size(size) -> str:
+    """'225/40R18 92Y' -> '2254018' (엑셀 필터링 열과 동일한 정규화: 속도/하중지수 제거, ZR/R/슬래시 제거)"""
+    s = (str(size) if size else "").split(" ")[0]
+    s = s.replace("ZR", "").replace("R", "").replace("/", "")
+    return s
+
+
+def load_tires() -> dict:
+    with TIRE_LOCK:
+        try:
+            return json.loads(TIRE_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            return {}
+
+
+def update_tires(changes: dict) -> dict:
+    """{부품번호: {필드...}} 반영, 값이 null이면 삭제. 부품번호는 영숫자 6~14자만 허용."""
+    with TIRE_LOCK:
+        try:
+            cur = json.loads(TIRE_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            cur = {}
+        for pn, rec in changes.items():
+            if not isinstance(pn, str) or not re.fullmatch(r"[A-Za-z0-9]{4,20}", pn.strip()):
+                continue
+            pn = pn.strip()
+            if rec is None:
+                cur.pop(pn, None)
+                continue
+            if not isinstance(rec, dict):
+                continue
+
+            def s(key, maxlen):
+                return str(rec.get(key) or "").strip()[:maxlen]
+
+            price = rec.get("price")
+            try:
+                price = round(float(price)) if price not in (None, "") else None
+            except Exception:
+                price = None
+            size = s("size", 40)
+            cur[pn] = {
+                "name": s("name", 200), "brand": s("brand", 40), "size": size,
+                "std_rft": s("std_rft", 10), "sw": s("sw", 10), "price": price,
+                "bridge": s("bridge", 30), "mat_no": s("mat_no", 30),
+                "sale_tp": s("sale_tp", 20), "oe": s("oe", 10), "qr": s("qr", 60),
+                "filter_key": _norm_tire_size(size),
+            }
+        TIRE_FILE.write_text(json.dumps(cur, ensure_ascii=False, indent=2), encoding="utf-8")
+        return cur
+
+
+def republish_tires() -> None:
+    """타이어 마스터만 바뀐 경우: 마지막 데이터로 다시 렌더해서 docs에 쓰고 push."""
+    with PUBLISH_LOCK:
+        if not LAST_DATA:
+            return
+        data = dict(LAST_DATA)
+        data["reasons"] = _open_reasons(data)
+        data["tires"] = load_tires()
+        html = render(data)
+        DOCS_DIR.mkdir(parents=True, exist_ok=True)
+        (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
+        (DOCS_DIR / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        if PUBLISH_TO_GITHUB:
+            publish_to_github("타이어 마스터 갱신")
 
 
 class ReasonHandler(BaseHTTPRequestHandler):
@@ -1227,6 +1302,8 @@ class ReasonHandler(BaseHTTPRequestHandler):
             self._send(200, {"ok": True})
         elif route.startswith("/reasons"):
             self._send(200, load_reasons())
+        elif route.startswith("/tires"):
+            self._send(200, load_tires())
         else:
             # 이 PC 전용 로컬 대시보드: docs 폴더(=깃허브에 올라가는 것과 동일)를 그대로 서빙 + 사유 편집 활성화
             rel = "index.html" if route in ("/", "") else route.lstrip("/")
@@ -1237,6 +1314,20 @@ class ReasonHandler(BaseHTTPRequestHandler):
                 self._send(404, {"ok": False})
 
     def do_POST(self):
+        if self.path.startswith("/tires"):
+            try:
+                length = min(int(self.headers.get("Content-Length", "0")), 500_000)
+                body = json.loads(self.rfile.read(length).decode("utf-8"))
+                changes = body.get("set", {})
+                if not isinstance(changes, dict):
+                    raise ValueError("set must be object")
+            except Exception:
+                self._send(400, {"ok": False})
+                return
+            cur = update_tires(changes)
+            threading.Thread(target=republish_tires, daemon=True).start()
+            self._send(200, {"ok": True, "tires": cur})
+            return
         if not self.path.startswith("/reasons"):
             self._send(404, {"ok": False})
             return
@@ -1264,7 +1355,7 @@ def start_reason_server() -> None:
         print(f"[사유 입력 서버 시작 실패] 포트 {REASON_PORT}: {e}")
         return
     threading.Thread(target=server.serve_forever, daemon=True).start()
-    print(f"진행RO 사유 입력 서버 시작 - 이 PC에서 http://127.0.0.1:{REASON_PORT} 로 접속하면 사유 입력/수정 가능")
+    print(f"진행RO 사유 / 타이어 마스터 입력 서버 시작 - 이 PC에서 http://127.0.0.1:{REASON_PORT} 로 접속하면 입력/수정 가능")
 
 
 def run_cycle(page: Page) -> None:
@@ -1336,6 +1427,7 @@ def run_cycle(page: Page) -> None:
     with PUBLISH_LOCK:
         LAST_DATA = dict(data)
         data["reasons"] = _open_reasons(data)
+        data["tires"] = load_tires()
         html = render(data)
         stamp = now.strftime("%Y%m%d_%H%M")
         out_path = OUTPUT_DIR / f"dashboard_{stamp}.html"
