@@ -906,7 +906,7 @@ def build_ext_audit(rows, today_str):
         }
 
     # RO(정비연계)별 공임/부품 합계 — 공임이 하나라도 있으면 그 RO는 "부품만 있는 건" 판정에서 제외
-    by_ro = defaultdict(lambda: {"labor": 0.0, "parts": 0.0, "part_names": [], "part_codes": [], "sample": None})
+    by_ro = defaultdict(lambda: {"labor": 0.0, "parts": 0.0, "part_names": [], "part_rows": [], "sample": None})
     for r in c_rows:
         ro = r.get("roNo")
         if not ro:
@@ -918,7 +918,7 @@ def build_ext_audit(rows, today_str):
         elif r.get("itemTpCdNm") == "부품":
             g["parts"] += amt
             g["part_names"].append(r.get("itemNm") or "")
-            g["part_codes"].append(r.get("itemCd") or "")
+            g["part_rows"].append(r)
             g["sample"] = g["sample"] or r
 
     sp_violations, sp_review, ro_violations, ro_review, epc_check = [], [], [], [], []
@@ -959,11 +959,8 @@ def build_ext_audit(rows, today_str):
     for ro, g in by_ro.items():
         if g["labor"] == 0 and g["parts"] > 0 and g["sample"] is not None:
             if not all(any(k in nm.lower() for k in _RO_LABOR_EXEMPT_KEYWORDS) for nm in g["part_names"]):
-                b = base_of(g["sample"], "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요")
-                b["item"] = ", ".join(g["part_names"][:3])
-                b["itemcd"] = ", ".join(g["part_codes"][:3])
-                b["amt"] = round(g["parts"])
-                ro_review.append(b)
+                for pr in g["part_rows"]:
+                    ro_review.append(base_of(pr, "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"))
 
     for lst in (sp_violations, sp_review, ro_violations, ro_review, epc_check):
         lst.sort(key=lambda i: i["dt"], reverse=True)
