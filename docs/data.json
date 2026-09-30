@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 30일 (수) · 17:11 기준",
+    "generated_at": "9월 30일 (수) · 17:21 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,8 +284,8 @@
     ]
   },
   "inv": {
-    "total": 1205225629,
-    "item_count": 2172,
+    "total": 1204748854,
+    "item_count": 2171,
     "code_count": 25,
     "alois_groups": [
       {
@@ -296,7 +296,7 @@
           {
             "code": "A1",
             "val": 221671676,
-            "pct": 18.39,
+            "pct": 18.4,
             "qty": 2571,
             "parts": [
               {
@@ -4736,7 +4736,7 @@
         ],
         "subtotal_val": 467104379,
         "subtotal_qty": 8911,
-        "subtotal_pct": 38.76
+        "subtotal_pct": 38.77
       },
       {
         "code": "L",
@@ -8030,7 +8030,7 @@
         ],
         "subtotal_val": 161551996,
         "subtotal_qty": 4555,
-        "subtotal_pct": 13.4
+        "subtotal_pct": 13.41
       },
       {
         "code": "O",
@@ -8040,7 +8040,7 @@
           {
             "code": "O8",
             "val": 64162191,
-            "pct": 5.32,
+            "pct": 5.33,
             "qty": 1159,
             "parts": [
               {
@@ -12124,7 +12124,7 @@
         ],
         "subtotal_val": 404932458,
         "subtotal_qty": 2421,
-        "subtotal_pct": 33.6
+        "subtotal_pct": 33.61
       },
       {
         "code": "I",
@@ -12935,9 +12935,9 @@
           },
           {
             "code": "SZ",
-            "val": 82854762,
-            "pct": 6.87,
-            "qty": 761,
+            "val": 82377987,
+            "pct": 6.84,
+            "qty": 760,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -13136,12 +13136,6 @@
                 "name": "LOWER TAIL L",
                 "qty": 1,
                 "val": 477333
-              },
-              {
-                "item": "36105A72875",
-                "name": "Scheibenrad",
-                "qty": 1,
-                "val": 476775
               },
               {
                 "item": "31208095663",
@@ -13566,15 +13560,15 @@
             ]
           }
         ],
-        "subtotal_val": 166929904,
-        "subtotal_qty": 2043,
-        "subtotal_pct": 13.85
+        "subtotal_val": 166453129,
+        "subtotal_qty": 2042,
+        "subtotal_pct": 13.82
       }
     ]
   },
   "oaov": {
     "total": 35917911,
-    "inv_total": 1205225629,
+    "inv_total": 1204748854,
     "pct": 2.98,
     "oa_val": 19330422,
     "ov_val": 16587489,
@@ -19789,57 +19783,6 @@
         "dday": "D+23일"
       },
       {
-        "item": "51165A45B48",
-        "name": "Kit camera h",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609000451",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-07",
-        "req_dt_full": "2026-09-07 16:51:02",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 47201,
-        "sa": "염진아",
-        "dday": "D+23일"
-      },
-      {
-        "item": "51145A1DAF2",
-        "name": "Badge side p",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609000451",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-07",
-        "req_dt_full": "2026-09-07 16:51:02",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 66980,
-        "sa": "염진아",
-        "dday": "D+23일"
-      },
-      {
-        "item": "07146961019",
-        "name": "Torx screw w",
-        "alois": "OV",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609000451",
-        "req_qty": 3,
-        "crt_qty": 4,
-        "avail_qty": 0,
-        "req_dt": "09-07",
-        "req_dt_full": "2026-09-07 16:51:02",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 3504,
-        "sa": "염진아",
-        "dday": "D+23일"
-      },
-      {
         "item": "31108881404",
         "name": "Tension stru",
         "alois": "O8",
@@ -20143,23 +20086,6 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 518227,
         "sa": "김민규",
-        "dday": "D+14일"
-      },
-      {
-        "item": "51117379435",
-        "name": "Black band s",
-        "alois": "OV",
-        "pgrp": "M1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001063",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-16",
-        "req_dt_full": "2026-09-16 16:50:26",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 117579,
-        "sa": "강충성",
         "dday": "D+14일"
       },
       {
@@ -20765,7 +20691,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2609001101",
         "req_qty": 1,
-        "crt_qty": 4,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "09-18",
         "req_dt_full": "2026-09-18 19:05:45",
@@ -23325,8 +23251,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 312,
-    "total_val": 88718134,
+    "count": 308,
+    "total_val": 88482870,
     "groups": [
       {
         "code": "RO",
@@ -24063,57 +23989,6 @@
             "dday": "D+23일"
           },
           {
-            "item": "51165A45B48",
-            "name": "Kit camera h",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609000451",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-07",
-            "req_dt_full": "2026-09-07 16:51:02",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 47201,
-            "sa": "염진아",
-            "dday": "D+23일"
-          },
-          {
-            "item": "51145A1DAF2",
-            "name": "Badge side p",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609000451",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-07",
-            "req_dt_full": "2026-09-07 16:51:02",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 66980,
-            "sa": "염진아",
-            "dday": "D+23일"
-          },
-          {
-            "item": "07146961019",
-            "name": "Torx screw w",
-            "alois": "OV",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609000451",
-            "req_qty": 3,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "req_dt": "09-07",
-            "req_dt_full": "2026-09-07 16:51:02",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 3504,
-            "sa": "염진아",
-            "dday": "D+23일"
-          },
-          {
             "item": "31108881404",
             "name": "Tension stru",
             "alois": "O8",
@@ -24264,23 +24139,6 @@
             "req_brch": "AS_부산(해운중동)",
             "val": 518227,
             "sa": "김민규",
-            "dday": "D+14일"
-          },
-          {
-            "item": "51117379435",
-            "name": "Black band s",
-            "alois": "OV",
-            "pgrp": "M1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001063",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-16",
-            "req_dt_full": "2026-09-16 16:50:26",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 117579,
-            "sa": "강충성",
             "dday": "D+14일"
           },
           {
@@ -24750,7 +24608,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2609001101",
             "req_qty": 1,
-            "crt_qty": 4,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "09-18",
             "req_dt_full": "2026-09-18 19:05:45",
@@ -26494,9 +26352,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 186,
-        "qty_sum": 271,
-        "val": 60712758
+        "count": 182,
+        "qty_sum": 265,
+        "val": 60477494
       },
       {
         "code": "SB",
@@ -37350,13 +37208,13 @@
       {
         "date": "09-30",
         "in_val": 3476699,
-        "out_val": 39058165,
-        "net": -35581466
+        "out_val": 39143741,
+        "net": -35667042
       }
     ],
     "total_in": 270918007,
-    "total_out": 285882000,
-    "net": -14963993,
+    "total_out": 285967576,
+    "net": -15049569,
     "by_code": [
       {
         "code": "O8",
@@ -37373,8 +37231,8 @@
       {
         "code": "OE",
         "in_val": 15803740,
-        "out_val": 24638245,
-        "net": -8834505
+        "out_val": 24723821,
+        "net": -8920081
       },
       {
         "code": "ON",
@@ -38716,8 +38574,8 @@
       },
       {
         "ro": "RO2609001399",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-09-22",
@@ -38922,17 +38780,6 @@
         "pub_full": "2026-09-23 16:20",
         "dday": "D+7일",
         "amt": 11918300
-      },
-      {
-        "ro": "RO2609001495",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "입고 Proactive-RITA",
-        "sa": "우종훈",
-        "pub": "2026-09-28",
-        "pub_full": "2026-09-28 08:24",
-        "dday": "D+2일",
-        "amt": 633254
       },
       {
         "ro": "RO2609001501",
@@ -39727,17 +39574,6 @@
         "amt": 56000
       },
       {
-        "ro": "RO2609001713",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "우상만",
-        "pub": "2026-09-29",
-        "pub_full": "2026-09-29 17:39",
-        "dday": "D+1일",
-        "amt": 1226926
-      },
-      {
         "ro": "RO2609001714",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -39936,17 +39772,6 @@
         "amt": 428364
       },
       {
-        "ro": "RO2609001740",
-        "stat": "정비시작",
-        "stat_cd": "03",
-        "svc": "Maintenance",
-        "sa": "김민규",
-        "pub": "2026-09-30",
-        "pub_full": "2026-09-30 09:44",
-        "dday": "D+0일",
-        "amt": 647269
-      },
-      {
         "ro": "RO2609001739",
         "stat": "정비시작",
         "stat_cd": "03",
@@ -39956,6 +39781,17 @@
         "pub_full": "2026-09-30 09:44",
         "dday": "D+0일",
         "amt": 405160
+      },
+      {
+        "ro": "RO2609001740",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
+        "svc": "Maintenance",
+        "sa": "김민규",
+        "pub": "2026-09-30",
+        "pub_full": "2026-09-30 09:44",
+        "dday": "D+0일",
+        "amt": 647269
       },
       {
         "ro": "RO2609001744",
@@ -39981,8 +39817,8 @@
       },
       {
         "ro": "RO2609001746",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "김민규",
         "pub": "2026-09-30",
@@ -40036,8 +39872,8 @@
       },
       {
         "ro": "RO2609001754",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-30",
@@ -40124,8 +39960,8 @@
       },
       {
         "ro": "RO2609001764",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-30",
@@ -40168,8 +40004,8 @@
       },
       {
         "ro": "RO2609001768",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "최민수",
         "pub": "2026-09-30",
@@ -40211,17 +40047,6 @@
         "amt": 0
       },
       {
-        "ro": "RO2609001772",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "최민수",
-        "pub": "2026-09-30",
-        "pub_full": "2026-09-30 13:33",
-        "dday": "D+0일",
-        "amt": 28000
-      },
-      {
         "ro": "RO2609001773",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -40256,8 +40081,8 @@
       },
       {
         "ro": "RO2609001775",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-09-30",
@@ -40300,8 +40125,8 @@
       },
       {
         "ro": "RO2609001780",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-30",
@@ -40322,43 +40147,98 @@
       },
       {
         "ro": "RO2609001784",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-30",
         "pub_full": "2026-09-30 16:19",
         "dday": "D+0일",
         "amt": 721138
+      },
+      {
+        "ro": "RO2609001785",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "강충성",
+        "pub": "2026-09-30",
+        "pub_full": "2026-09-30 17:14",
+        "dday": "D+0일",
+        "amt": 649700
+      },
+      {
+        "ro": "RO2609001786",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우상만",
+        "pub": "2026-09-30",
+        "pub_full": "2026-09-30 17:15",
+        "dday": "D+0일",
+        "amt": 327400
+      },
+      {
+        "ro": "RO2609001787",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-09-30",
+        "pub_full": "2026-09-30 17:17",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2609001789",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우상만",
+        "pub": "2026-09-30",
+        "pub_full": "2026-09-30 17:21",
+        "dday": "D+0일",
+        "amt": 416700
+      },
+      {
+        "ro": "RO2609001788",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우상만",
+        "pub": "2026-09-30",
+        "pub_full": "2026-09-30 17:21",
+        "dday": "D+0일",
+        "amt": 196000
       }
     ],
-    "count": 267,
-    "total_amt": 688416173,
+    "count": 269,
+    "total_amt": 688117793,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 14,
+        "count": 15,
         "amt": 6202200
       },
       {
         "stat": "상담완료",
-        "count": 134,
-        "amt": 475661250
+        "count": 136,
+        "amt": 476263250
       },
       {
         "stat": "정비시작",
-        "count": 38,
-        "amt": 44737417
+        "count": 32,
+        "amt": 41212674
       },
       {
         "stat": "End Control 요청",
-        "count": 44,
-        "amt": 66195863
+        "count": 49,
+        "amt": 67985414
       },
       {
         "stat": "가정산 완료",
         "count": 37,
-        "amt": 95619443
+        "amt": 96454255
       }
     ],
     "oldest": "D+526일"
@@ -46588,58 +46468,6 @@
         "val": 577937
       },
       {
-        "code": "SB2609001866",
-        "resv_full": "2026-10-01 10:00",
-        "resv": "10-01",
-        "dday": "D-1일",
-        "sa": "M GARAGE",
-        "rows": [
-          {
-            "item": "90200006413",
-            "name": "Hypoid Axle REPO",
-            "alois": "L2",
-            "sa": "M GARAGE",
-            "req_qty": 2,
-            "crt_qty": 31,
-            "avail_qty": 27,
-            "val": 106600
-          },
-          {
-            "item": "51145A4B373",
-            "name": "M Logos Seit",
-            "alois": "A4",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 4,
-            "val": 43505
-          },
-          {
-            "item": "51142472849",
-            "name": "Lettering, b",
-            "alois": "A6",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 43013
-          },
-          {
-            "item": "33117525064",
-            "name": "Screw plug",
-            "alois": "A1",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 102,
-            "avail_qty": 79,
-            "val": 6703
-          }
-        ],
-        "count": 4,
-        "qty_sum": 5,
-        "val": 199821
-      },
-      {
         "code": "SB2609002019",
         "resv_full": "2026-10-01 09:40",
         "resv": "10-01",
@@ -46764,38 +46592,6 @@
         "count": 5,
         "qty_sum": 10,
         "val": 289166
-      },
-      {
-        "code": "SB2609002006",
-        "resv_full": "2026-10-01 09:40",
-        "resv": "10-01",
-        "dday": "D-1일",
-        "sa": "M GARAGE",
-        "rows": [
-          {
-            "item": "51145A4B373",
-            "name": "M Logos Seit",
-            "alois": "A4",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 4,
-            "val": 43505
-          },
-          {
-            "item": "51142472849",
-            "name": "Lettering, b",
-            "alois": "A6",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 43013
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 86518
       },
       {
         "code": "SB2609001282",
@@ -46986,9 +46782,9 @@
         "val": 21945
       }
     ],
-    "sb_count": 106,
-    "line_count": 407,
-    "total_val": 70745918,
+    "sb_count": 104,
+    "line_count": 401,
+    "total_val": 70459579,
     "o_lines": 67,
     "o_val": 17004947,
     "resv_total": 403
@@ -47000,7 +46796,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10164
+    "resv_total": 10167
   },
   "nonmng": {
     "rows": [],
@@ -48141,19 +47937,11 @@
       },
       {
         "loc": "C000005",
-        "item": "36105A72875",
-        "name": "Scheibenrad",
-        "alois": "SZ",
-        "qty": 1,
-        "no": 142
-      },
-      {
-        "loc": "C000005",
         "item": "36115A324E2",
         "name": "Scheibenrad",
         "alois": "A5",
         "qty": 4,
-        "no": 143
+        "no": 142
       },
       {
         "loc": "C000005",
@@ -48161,7 +47949,7 @@
         "name": "Scheibenrad",
         "alois": "O8",
         "qty": 1,
-        "no": 144
+        "no": 143
       },
       {
         "loc": "C000005",
@@ -48169,10 +47957,10 @@
         "name": "Light alloy",
         "alois": "II",
         "qty": 1,
-        "no": 145
+        "no": 144
       }
     ],
-    "count": 145,
+    "count": 144,
     "date": "2026-09-30"
   },
   "stockcheck_week": {
