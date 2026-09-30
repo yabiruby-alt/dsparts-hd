@@ -176,6 +176,7 @@
   .stockcheck-table td:nth-child(4){ font-family:var(--font-body); }
   .stockcheck-table tbody tr:nth-child(even) td{ background:var(--surface-2); }
   .stockcheck-table tbody tr:hover td{ background:var(--surface-2); }
+  .tire-table th, .tire-table td{ text-align:center; }
   .tire-filters{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:16px; }
   .tire-filters .reason-input{ width:auto; min-width:150px; }
   .tire-filters #tire-size-input{ min-width:200px; }
@@ -1363,7 +1364,7 @@
         </div>
         <div id="tire-form-wrap" hidden></div>
         <div class="tablewrap">
-          <table>
+          <table class="tire-table">
             <thead><tr><th>No.</th><th>부품번호</th><th>품명</th><th>브랜드</th><th>Mat Number</th><th>판매유형</th><th>사이즈</th><th>STD/RFT</th><th>S/W</th><th>OE Marking</th><th>QR Code</th><th class="num">구매단가</th><th>브리지코드</th><th id="tire-admin-th" hidden>관리</th></tr></thead>
             <tbody id="tire-tbody">
               <tr><td colspan="8" class="empty-note">불러오는 중...</td></tr>
