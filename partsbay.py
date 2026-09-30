@@ -905,17 +905,22 @@ def build_ext_audit(rows, today_str):
             "dt": (r.get("invDt") or "")[:10], "reason": reason,
         }
 
-    # RO(정비연계)별 공임/부품 합계 — 공임이 하나라도 있으면 그 RO는 "부품만 있는 건" 판정에서 제외
-    by_ro = defaultdict(lambda: {"labor": 0.0, "parts": 0.0, "part_names": [], "part_rows": [], "sample": None})
+    # RO(정비연계)별 공임 존재 여부 — 같은 RO라도 인보이스가 나뉘어 공임은 보증(I) 등 다른 정산유형으로,
+    # 부품만 고객(C)으로 청구되는 경우가 있어 정산유형 상관없이 전체 rows에서 공임 존재 여부를 확인해야 함
+    ro_labor_total = defaultdict(float)
+    for r in rows:
+        if r.get("itemTpCdNm") == "공임" and r.get("roNo"):
+            ro_labor_total[r.get("roNo")] += num(r.get("invTotAmt"))
+
+    # RO(정비연계)별 부품 합계 (고객 청구분만) — 공임이 하나라도 있으면 그 RO는 "부품만 있는 건" 판정에서 제외
+    by_ro = defaultdict(lambda: {"parts": 0.0, "part_names": [], "part_rows": [], "sample": None})
     for r in c_rows:
         ro = r.get("roNo")
         if not ro:
             continue
         g = by_ro[ro]
         amt = num(r.get("invTotAmt"))
-        if r.get("itemTpCdNm") == "공임":
-            g["labor"] += amt
-        elif r.get("itemTpCdNm") == "부품":
+        if r.get("itemTpCdNm") == "부품":
             g["parts"] += amt
             g["part_names"].append(r.get("itemNm") or "")
             g["part_rows"].append(r)
@@ -952,12 +957,12 @@ def build_ext_audit(rows, today_str):
             # ---- RO (정비 연계) ----
             if detl in ("외부", "외부공업사"):
                 ro_violations.append(base_of(r, "RO(정비연계) 건인데 정산상세유형이 외부/외부공업사 — RO는 '고객' 유형만 가능"))
-            elif detl == "고객" and looks_like_business(cust) and by_ro[r.get("roNo")]["labor"] == 0:
+            elif detl == "고객" and looks_like_business(cust) and round(ro_labor_total.get(r.get("roNo"), 0)) == 0:
                 ro_review.append(base_of(r, "RO 건인데 공임 없이 부품만 존재 + 고객명이 업체명으로 추정 — 외부업체라면 SP로 처리했어야 함"))
 
     # RO 공임 0원 + 부품만 존재 (오일/워셔액 등 예외 제외)
     for ro, g in by_ro.items():
-        if g["labor"] == 0 and g["parts"] > 0 and g["sample"] is not None:
+        if round(ro_labor_total.get(ro, 0)) == 0 and g["parts"] > 0 and g["sample"] is not None:
             if not all(any(k in nm.lower() for k in _RO_LABOR_EXEMPT_KEYWORDS) for nm in g["part_names"]):
                 for pr in g["part_rows"]:
                     ro_review.append(base_of(pr, "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"))
