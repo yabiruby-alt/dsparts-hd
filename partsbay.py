@@ -35,6 +35,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+import openpyxl
 from jinja2 import Environment, FileSystemLoader
 from playwright.sync_api import sync_playwright, Frame, Page
 
@@ -64,8 +65,9 @@ REASONS_FILE = BASE_DIR / "reasons.json"
 REASON_PORT = 8765
 ALLOWED_ORIGINS = {"https://yabiruby-alt.github.io", "http://127.0.0.1:8765", "http://localhost:8765"}
 REASONS_LOCK = threading.Lock()   # reasons.json 읽기/쓰기
-# 타이어 사이즈 조회 마스터: DMS 자동 갱신과 무관하게 이 PC에서 직접 추가/수정 -> tire_master.json 저장
-TIRE_FILE = BASE_DIR / "tire_master.json"
+# 타이어 사이즈 조회 마스터: 이 엑셀 파일을 저장하면 매 주기 자동으로 다시 읽어 반영 (사이트에서 직접 수정하지 않음)
+TIRE_XLSX_PATH = Path(r"C:\Users\BMW\Desktop\타이어 마스터\타이어_마스터파일.xlsx")
+TIRE_FILE = BASE_DIR / "tire_master.json"   # 엑셀을 못 읽을 때 쓸 마지막 성공본 캐시
 TIRE_LOCK = threading.Lock()
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
 LAST_DATA = {}                    # 마지막 갱신 데이터(사유만 바뀌었을 때 DMS 재조회 없이 재렌더용)
@@ -1204,6 +1206,7 @@ def _norm_tire_size(size) -> str:
 
 
 def load_tires() -> dict:
+    """엑셀을 못 읽었을 때 쓸 마지막 성공본(캐시)."""
     with TIRE_LOCK:
         try:
             return json.loads(TIRE_FILE.read_text(encoding="utf-8"))
@@ -1211,57 +1214,45 @@ def load_tires() -> dict:
             return {}
 
 
-def update_tires(changes: dict) -> dict:
-    """{부품번호: {필드...}} 반영, 값이 null이면 삭제. 부품번호는 영숫자 6~14자만 허용."""
-    with TIRE_LOCK:
-        try:
-            cur = json.loads(TIRE_FILE.read_text(encoding="utf-8"))
-        except Exception:
-            cur = {}
-        for pn, rec in changes.items():
-            if not isinstance(pn, str) or not re.fullmatch(r"[A-Za-z0-9]{4,20}", pn.strip()):
-                continue
-            pn = pn.strip()
-            if rec is None:
-                cur.pop(pn, None)
-                continue
-            if not isinstance(rec, dict):
-                continue
+def import_tire_excel() -> dict | None:
+    """타이어_마스터파일.xlsx의 '타이어 리스트' 시트를 읽어 tire_master.json 형식으로 변환.
+    실패(파일 없음/엑셀에서 편집 중이라 잠김 등)하면 None을 반환해 이전 값을 그대로 쓰게 한다."""
+    if not TIRE_XLSX_PATH.exists():
+        return None
+    try:
+        wb = openpyxl.load_workbook(TIRE_XLSX_PATH, data_only=True, read_only=True)
+        ws = wb["타이어 리스트"]
+    except Exception as e:
+        print(f"[타이어 엑셀 읽기 실패] {e}")
+        return None
 
-            def s(key, maxlen):
-                return str(rec.get(key) or "").strip()[:maxlen]
-
-            price = rec.get("price")
+    tires = {}
+    try:
+        for row in ws.iter_rows(min_row=2):
+            pn = row[1].value  # B열: 부품번호
+            if not pn:
+                continue
+            pn = str(pn).strip()
+            size = row[6].value  # G열: 사이즈
+            price = row[11].value  # L열: 구매단가
             try:
                 price = round(float(price)) if price not in (None, "") else None
             except Exception:
                 price = None
-            size = s("size", 40)
-            cur[pn] = {
-                "name": s("name", 200), "brand": s("brand", 40), "size": size,
-                "std_rft": s("std_rft", 10), "sw": s("sw", 10), "price": price,
-                "bridge": s("bridge", 30), "mat_no": s("mat_no", 30),
-                "sale_tp": s("sale_tp", 20), "oe": s("oe", 10), "qr": s("qr", 60),
-                "filter_key": _norm_tire_size(size),
+            tires[pn] = {
+                "name": row[2].value, "brand": row[3].value,
+                "mat_no": row[4].value, "sale_tp": row[5].value, "size": size,
+                "std_rft": row[7].value, "sw": row[8].value,
+                "oe": row[9].value, "qr": row[10].value, "price": price,
+                "bridge": row[12].value or "", "filter_key": _norm_tire_size(size),
             }
-        TIRE_FILE.write_text(json.dumps(cur, ensure_ascii=False, indent=2), encoding="utf-8")
-        return cur
+    except Exception as e:
+        print(f"[타이어 엑셀 파싱 실패] {e}")
+        return None
 
-
-def republish_tires() -> None:
-    """타이어 마스터만 바뀐 경우: 마지막 데이터로 다시 렌더해서 docs에 쓰고 push."""
-    with PUBLISH_LOCK:
-        if not LAST_DATA:
-            return
-        data = dict(LAST_DATA)
-        data["reasons"] = _open_reasons(data)
-        data["tires"] = load_tires()
-        html = render(data)
-        DOCS_DIR.mkdir(parents=True, exist_ok=True)
-        (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
-        (DOCS_DIR / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-        if PUBLISH_TO_GITHUB:
-            publish_to_github("타이어 마스터 갱신")
+    with TIRE_LOCK:
+        TIRE_FILE.write_text(json.dumps(tires, ensure_ascii=False, indent=2), encoding="utf-8")
+    return tires
 
 
 class ReasonHandler(BaseHTTPRequestHandler):
@@ -1302,8 +1293,6 @@ class ReasonHandler(BaseHTTPRequestHandler):
             self._send(200, {"ok": True})
         elif route.startswith("/reasons"):
             self._send(200, load_reasons())
-        elif route.startswith("/tires"):
-            self._send(200, load_tires())
         else:
             # 이 PC 전용 로컬 대시보드: docs 폴더(=깃허브에 올라가는 것과 동일)를 그대로 서빙 + 사유 편집 활성화
             rel = "index.html" if route in ("/", "") else route.lstrip("/")
@@ -1314,20 +1303,6 @@ class ReasonHandler(BaseHTTPRequestHandler):
                 self._send(404, {"ok": False})
 
     def do_POST(self):
-        if self.path.startswith("/tires"):
-            try:
-                length = min(int(self.headers.get("Content-Length", "0")), 500_000)
-                body = json.loads(self.rfile.read(length).decode("utf-8"))
-                changes = body.get("set", {})
-                if not isinstance(changes, dict):
-                    raise ValueError("set must be object")
-            except Exception:
-                self._send(400, {"ok": False})
-                return
-            cur = update_tires(changes)
-            threading.Thread(target=republish_tires, daemon=True).start()
-            self._send(200, {"ok": True, "tires": cur})
-            return
         if not self.path.startswith("/reasons"):
             self._send(404, {"ok": False})
             return
@@ -1427,7 +1402,9 @@ def run_cycle(page: Page) -> None:
     with PUBLISH_LOCK:
         LAST_DATA = dict(data)
         data["reasons"] = _open_reasons(data)
-        data["tires"] = load_tires()
+        data["tires"] = import_tire_excel()
+        if data["tires"] is None:
+            data["tires"] = load_tires()
         html = render(data)
         stamp = now.strftime("%Y%m%d_%H%M")
         out_path = OUTPUT_DIR / f"dashboard_{stamp}.html"
