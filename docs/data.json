@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 30일 (수) · 16:11 기준",
+    "generated_at": "9월 30일 (수) · 16:21 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,8 +284,8 @@
     ]
   },
   "inv": {
-    "total": 1207266674,
-    "item_count": 2174,
+    "total": 1206813979,
+    "item_count": 2171,
     "code_count": 25,
     "alois_groups": [
       {
@@ -296,7 +296,7 @@
           {
             "code": "A1",
             "val": 221886709,
-            "pct": 18.38,
+            "pct": 18.39,
             "qty": 2577,
             "parts": [
               {
@@ -606,7 +606,7 @@
           {
             "code": "A3",
             "val": 26734820,
-            "pct": 2.21,
+            "pct": 2.22,
             "qty": 478,
             "parts": [
               {
@@ -2771,9 +2771,9 @@
           },
           {
             "code": "A6",
-            "val": 77993033,
-            "pct": 6.46,
-            "qty": 1399,
+            "val": 77608890,
+            "pct": 6.43,
+            "qty": 1397,
             "parts": [
               {
                 "item": "63117461884",
@@ -3166,12 +3166,6 @@
                 "val": 286082
               },
               {
-                "item": "51118081602",
-                "name": "Covering rig",
-                "qty": 2,
-                "val": 280732
-              },
-              {
                 "item": "51127300788",
                 "name": "Carrier, bum",
                 "qty": 1,
@@ -3212,12 +3206,6 @@
                 "name": "Air flaps, t",
                 "qty": 1,
                 "val": 254259
-              },
-              {
-                "item": "51117418224",
-                "name": "Mount, bumpe",
-                "qty": 1,
-                "val": 243777
               },
               {
                 "item": "11427848321",
@@ -3482,6 +3470,12 @@
                 "name": "Guide for bu",
                 "qty": 1,
                 "val": 141064
+              },
+              {
+                "item": "51118081602",
+                "name": "Covering rig",
+                "qty": 1,
+                "val": 140366
               },
               {
                 "item": "51778093565",
@@ -4740,9 +4734,9 @@
             ]
           }
         ],
-        "subtotal_val": 469066375,
-        "subtotal_qty": 8932,
-        "subtotal_pct": 38.85
+        "subtotal_val": 468682232,
+        "subtotal_qty": 8930,
+        "subtotal_pct": 38.84
       },
       {
         "code": "L",
@@ -8045,9 +8039,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 64230743,
+            "val": 64162191,
             "pct": 5.32,
-            "qty": 1161,
+            "qty": 1159,
             "parts": [
               {
                 "item": "17425A18806",
@@ -9118,12 +9112,6 @@
                 "val": 53176
               },
               {
-                "item": "51119498610",
-                "name": "Impact absor",
-                "qty": 1,
-                "val": 52998
-              },
-              {
                 "item": "51147418516",
                 "name": "Label",
                 "qty": 1,
@@ -9830,12 +9818,6 @@
                 "name": "Wheel center",
                 "qty": 1,
                 "val": 15663
-              },
-              {
-                "item": "51717260397",
-                "name": "Cap",
-                "qty": 1,
-                "val": 15554
               },
               {
                 "item": "32106871896",
@@ -10840,7 +10822,7 @@
           {
             "code": "OE",
             "val": 299800233,
-            "pct": 24.83,
+            "pct": 24.84,
             "qty": 822,
             "parts": [
               {
@@ -12140,8 +12122,8 @@
             ]
           }
         ],
-        "subtotal_val": 405001010,
-        "subtotal_qty": 2423,
+        "subtotal_val": 404932458,
+        "subtotal_qty": 2421,
         "subtotal_pct": 33.55
       },
       {
@@ -12948,7 +12930,7 @@
           {
             "code": "SZ",
             "val": 82854762,
-            "pct": 6.86,
+            "pct": 6.87,
             "qty": 761,
             "parts": [
               {
@@ -13586,7 +13568,7 @@
   },
   "oaov": {
     "total": 35917911,
-    "inv_total": 1207266674,
+    "inv_total": 1206813979,
     "pct": 2.98,
     "oa_val": 19330422,
     "ov_val": 16587489,
@@ -22283,23 +22265,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "51119498610",
-        "name": "Impact absor",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001598",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-29",
-        "req_dt_full": "2026-09-29 10:36:43",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 52998,
-        "sa": "염진아",
-        "dday": "D+1일"
-      },
-      {
         "item": "63117352481",
         "name": "Headlight, L",
         "alois": "O8",
@@ -23218,23 +23183,6 @@
         "dday": "D+0일"
       },
       {
-        "item": "51717260397",
-        "name": "Cap",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609002176",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-30",
-        "req_dt_full": "2026-09-30 16:00:55",
-        "req_brch": "AS_창원",
-        "val": 15554,
-        "sa": "김성남",
-        "dday": "D+0일"
-      },
-      {
         "item": "07119906460",
         "name": "Bolt",
         "alois": "O8",
@@ -23284,10 +23232,95 @@
         "val": 4074057,
         "sa": "안준영",
         "dday": "D+0일"
+      },
+      {
+        "item": "51118738611",
+        "name": "Guide bumper",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SB",
+        "ref_no": "SB2609002181",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-30",
+        "req_dt_full": "2026-09-30 16:23:00",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 40922,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51118738613",
+        "name": "Bumper guide",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SB",
+        "ref_no": "SB2609002181",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-30",
+        "req_dt_full": "2026-09-30 16:23:00",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 40922,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51118078611",
+        "name": "Support left",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SB",
+        "ref_no": "SB2609002181",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-30",
+        "req_dt_full": "2026-09-30 16:23:00",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 170955,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "63119851041",
+        "name": "Headlight, l",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SB",
+        "ref_no": "SB2609002181",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-30",
+        "req_dt_full": "2026-09-30 16:23:01",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 3289500,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51148087190",
+        "name": "BMW emblem 5",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SB",
+        "ref_no": "SB2609002181",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "09-30",
+        "req_dt_full": "2026-09-30 16:23:01",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 82041,
+        "sa": "염진아",
+        "dday": "D+0일"
       }
     ],
-    "count": 309,
-    "total_val": 85162346,
+    "count": 312,
+    "total_val": 88718134,
     "groups": [
       {
         "code": "RO",
@@ -25775,23 +25808,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "51119498610",
-            "name": "Impact absor",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001598",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-29",
-            "req_dt_full": "2026-09-29 10:36:43",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 52998,
-            "sa": "염진아",
-            "dday": "D+1일"
-          },
-          {
             "item": "63117352481",
             "name": "Headlight, L",
             "alois": "O8",
@@ -26421,23 +26437,6 @@
             "dday": "D+0일"
           },
           {
-            "item": "51717260397",
-            "name": "Cap",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609002176",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-30",
-            "req_dt_full": "2026-09-30 16:00:55",
-            "req_brch": "AS_창원",
-            "val": 15554,
-            "sa": "김성남",
-            "dday": "D+0일"
-          },
-          {
             "item": "07119906460",
             "name": "Bolt",
             "alois": "O8",
@@ -26489,9 +26488,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 188,
-        "qty_sum": 273,
-        "val": 60781310
+        "count": 186,
+        "qty_sum": 271,
+        "val": 60712758
       },
       {
         "code": "SB",
@@ -28008,11 +28007,96 @@
             "val": 85576,
             "sa": "정용환",
             "dday": "D+0일"
+          },
+          {
+            "item": "51118738611",
+            "name": "Guide bumper",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SB",
+            "ref_no": "SB2609002181",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-30",
+            "req_dt_full": "2026-09-30 16:23:00",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 40922,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51118738613",
+            "name": "Bumper guide",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SB",
+            "ref_no": "SB2609002181",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-30",
+            "req_dt_full": "2026-09-30 16:23:00",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 40922,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51118078611",
+            "name": "Support left",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SB",
+            "ref_no": "SB2609002181",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-30",
+            "req_dt_full": "2026-09-30 16:23:00",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 170955,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "63119851041",
+            "name": "Headlight, l",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SB",
+            "ref_no": "SB2609002181",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-30",
+            "req_dt_full": "2026-09-30 16:23:01",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 3289500,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51148087190",
+            "name": "BMW emblem 5",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SB",
+            "ref_no": "SB2609002181",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "09-30",
+            "req_dt_full": "2026-09-30 16:23:01",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 82041,
+            "sa": "염진아",
+            "dday": "D+0일"
           }
         ],
-        "count": 89,
-        "qty_sum": 148,
-        "val": 19068399
+        "count": 94,
+        "qty_sum": 153,
+        "val": 22692739
       },
       {
         "code": "SP",
@@ -37271,8 +37355,8 @@
       {
         "code": "O8",
         "in_val": 225477160,
-        "out_val": 239410788,
-        "net": -13933628
+        "out_val": 239426342,
+        "net": -13949182
       },
       {
         "code": "OA",
@@ -38237,12 +38321,12 @@
         "pub": "2026-09-16",
         "pub_full": "2026-09-16 16:50",
         "dday": "D+14일",
-        "amt": 1345400
+        "amt": 1458000
       },
       {
         "ro": "RO2609001069",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-16",
@@ -38340,8 +38424,8 @@
       },
       {
         "ro": "RO2609001135",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-17",
@@ -39414,7 +39498,7 @@
         "pub": "2026-09-29",
         "pub_full": "2026-09-29 08:54",
         "dday": "D+1일",
-        "amt": 1455700
+        "amt": 0
       },
       {
         "ro": "RO2609001636",
@@ -40408,18 +40492,29 @@
       },
       {
         "ro": "RO2609001783",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-09-30",
         "pub_full": "2026-09-30 15:54",
         "dday": "D+0일",
         "amt": 44000
+      },
+      {
+        "ro": "RO2609001784",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-09-30",
+        "pub_full": "2026-09-30 16:19",
+        "dday": "D+0일",
+        "amt": 721138
       }
     ],
-    "count": 283,
-    "total_amt": 697529831,
+    "count": 284,
+    "total_amt": 696907869,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40428,23 +40523,23 @@
       },
       {
         "stat": "상담완료",
-        "count": 135,
-        "amt": 475647784
+        "count": 136,
+        "amt": 475025822
       },
       {
         "stat": "정비시작",
-        "count": 53,
-        "amt": 56866128
+        "count": 50,
+        "amt": 56346841
       },
       {
         "stat": "End Control 요청",
-        "count": 38,
-        "amt": 62607062
+        "count": 40,
+        "amt": 62938776
       },
       {
         "stat": "가정산 완료",
-        "count": 42,
-        "amt": 96206657
+        "count": 43,
+        "amt": 96394230
       }
     ],
     "oldest": "D+526일"
@@ -41533,7 +41628,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 2,
-            "avail_qty": 1,
+            "avail_qty": 0,
             "val": 14110
           },
           {
@@ -42738,6 +42833,28 @@
         "val": 1174327
       },
       {
+        "code": "SB2609002179",
+        "resv_full": "2026-10-26 09:00",
+        "resv": "10-26",
+        "dday": "D-26일",
+        "sa": "김민규",
+        "rows": [
+          {
+            "item": "72117414288",
+            "name": "LOWER BELT R",
+            "alois": null,
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 0
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 0
+      },
+      {
         "code": "SB2609002080",
         "resv_full": "2026-10-26 09:00",
         "resv": "10-26",
@@ -43192,6 +43309,108 @@
         "count": 4,
         "qty_sum": 4,
         "val": 609616
+      },
+      {
+        "code": "SB2609002181",
+        "resv_full": "2026-10-12 09:00",
+        "resv": "10-12",
+        "dday": "D-12일",
+        "sa": "염진아",
+        "rows": [
+          {
+            "item": "63119851041",
+            "name": "Headlight, l",
+            "alois": "O8",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 3289500
+          },
+          {
+            "item": "51115A0F333",
+            "name": "Trim cover,",
+            "alois": "A5",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 736713
+          },
+          {
+            "item": "51118078611",
+            "name": "Support left",
+            "alois": "O8",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 170955
+          },
+          {
+            "item": "51118082439",
+            "name": "Grill, air i",
+            "alois": "L7",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 91275
+          },
+          {
+            "item": "51148087190",
+            "name": "BMW emblem 5",
+            "alois": "O8",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 82041
+          },
+          {
+            "item": "51118081687",
+            "name": "Trim on gril",
+            "alois": "II",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 62999
+          },
+          {
+            "item": "51118738611",
+            "name": "Guide bumper",
+            "alois": "O8",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 40922
+          },
+          {
+            "item": "51118738613",
+            "name": "Bumper guide",
+            "alois": "O8",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 40922
+          },
+          {
+            "item": "51471911992",
+            "name": "Plug",
+            "alois": "A2",
+            "sa": "염진아",
+            "req_qty": 6,
+            "crt_qty": 217,
+            "avail_qty": 191,
+            "val": 5238
+          }
+        ],
+        "count": 9,
+        "qty_sum": 14,
+        "val": 4520565
       },
       {
         "code": "SB2609000705",
@@ -46463,6 +46682,16 @@
             "val": 23130
           },
           {
+            "item": "11718490640",
+            "name": "AGR small pa",
+            "alois": "SK",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 14110
+          },
+          {
             "item": "61131369832",
             "name": "Holder",
             "alois": "A4",
@@ -46473,9 +46702,9 @@
             "val": 3001
           }
         ],
-        "count": 3,
-        "qty_sum": 4,
-        "val": 73871
+        "count": 4,
+        "qty_sum": 5,
+        "val": 87981
       },
       {
         "code": "SB2609001800",
@@ -46960,81 +47189,18 @@
         "val": 21945
       }
     ],
-    "sb_count": 104,
-    "line_count": 396,
-    "total_val": 66211243,
-    "o_lines": 62,
-    "o_val": 13380607,
-    "resv_total": 398
+    "sb_count": 106,
+    "line_count": 407,
+    "total_val": 70745918,
+    "o_lines": 67,
+    "o_val": 17004947,
+    "resv_total": 400
   },
   "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609002012",
-        "resv_full": "2026-09-30 16:11",
-        "resv": "09-30",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "64115A1BDB6",
-            "name": "Set, microfi",
-            "alois": "A1",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 1590,
-            "avail_qty": 1589,
-            "val": 112892
-          },
-          {
-            "item": "12122455258",
-            "name": "Spark plug B38x,46x,48x",
-            "alois": "A1",
-            "sa": "정용환",
-            "req_qty": 4,
-            "crt_qty": 258,
-            "avail_qty": 250,
-            "val": 82476
-          },
-          {
-            "item": "83215B49DD6",
-            "name": "LL-17FE+ 0W-20",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 5,
-            "crt_qty": 517,
-            "avail_qty": 486,
-            "val": 80215
-          },
-          {
-            "item": "13718691835",
-            "name": "ir filter el",
-            "alois": "A2",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 19,
-            "avail_qty": 17,
-            "val": 32086
-          },
-          {
-            "item": "11428575211",
-            "name": "Set oil-filt",
-            "alois": "A1",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 154,
-            "avail_qty": 149,
-            "val": 19665
-          }
-        ],
-        "count": 5,
-        "qty_sum": 12,
-        "val": 327334
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 5,
-    "total_val": 327334,
+    "groups": [],
+    "sb_count": 0,
+    "line_count": 0,
+    "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
     "resv_total": 10162
@@ -47805,7 +47971,7 @@
         "item": "51118081602",
         "name": "Covering rig",
         "alois": "A6",
-        "qty": 2,
+        "qty": 1,
         "no": 95
       },
       {

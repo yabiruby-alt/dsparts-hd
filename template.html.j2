@@ -195,6 +195,7 @@
   .tire-filters{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:16px; }
   .tire-filters .reason-input{ width:auto; min-width:150px; }
   .tire-filters #tire-size-input{ min-width:200px; }
+  .rft-tag{ color:var(--accent); font-weight:600; }
   .aloistag{ display:inline-block; font-family:var(--font-mono); font-size:12.5px; font-weight:600; padding:2px 7px; border-radius:7px; background:var(--surface-2); color:var(--ink-2); }
   .subttl{ font-family:var(--font-display); font-weight:600; font-size:15px; text-transform:none; letter-spacing:0; color:var(--ink); margin:0 0 10px; display:flex; justify-content:space-between; }
   .subttl .n{ font-family:var(--font-mono); color:var(--muted); font-weight:500; text-transform:none; letter-spacing:0; }
@@ -1371,6 +1372,7 @@
           <select id="tire-rft-select" class="reason-input">
             <option value="">STD/RFT 전체</option><option value="STD">STD</option><option value="RFT">RFT</option>
           </select>
+          <button class="rbtn" id="tire-reset-btn" type="button">초기화</button>
         </div>
         <div class="tablewrap">
           <table class="tire-table">
@@ -1636,6 +1638,7 @@
     var sizeInput = document.getElementById('tire-size-input');
     var brandSelect = document.getElementById('tire-brand-select');
     var rftSelect = document.getElementById('tire-rft-select');
+    var resetBtn = document.getElementById('tire-reset-btn');
 
     var brands = [];
     items.forEach(function(t){ if(t.brand && brands.indexOf(t.brand) < 0) brands.push(t.brand); });
@@ -1668,7 +1671,8 @@
       }
       filtered.forEach(function(t, i){
         var tr = document.createElement('tr');
-        tr.innerHTML = '<td class="num">'+(i+1)+'</td><td class="mono">'+esc(t.pn)+'</td><td>'+esc(t.name)+'</td><td>'+esc(t.brand)+'</td><td class="mono">'+esc(t.mat_no)+'</td><td class="mono">'+esc(t.sale_tp)+'</td><td class="mono">'+esc(t.size)+'</td><td>'+esc(t.std_rft)+'</td><td>'+esc(t.sw)+'</td><td>'+esc(t.oe)+'</td><td>'+esc(t.qr)+'</td><td class="num">'+fmtMoney(t.price)+'</td>';
+        var rftHtml = t.std_rft === 'RFT' ? '<span class="rft-tag">RFT</span>' : esc(t.std_rft);
+        tr.innerHTML = '<td class="num">'+(i+1)+'</td><td class="mono">'+esc(t.pn)+'</td><td>'+esc(t.name)+'</td><td>'+esc(t.brand)+'</td><td class="mono">'+esc(t.mat_no)+'</td><td class="mono">'+esc(t.sale_tp)+'</td><td class="mono">'+esc(t.size)+'</td><td>'+rftHtml+'</td><td>'+esc(t.sw)+'</td><td>'+esc(t.oe)+'</td><td>'+esc(t.qr)+'</td><td class="num">'+fmtMoney(t.price)+'</td>';
         tbody.appendChild(tr);
       });
     }
@@ -1676,6 +1680,10 @@
     sizeInput.addEventListener('input', renderRows);
     brandSelect.addEventListener('change', renderRows);
     rftSelect.addEventListener('change', renderRows);
+    resetBtn.addEventListener('click', function(){
+      sizeInput.value = ''; brandSelect.value = ''; rftSelect.value = '';
+      renderRows();
+    });
     renderRows();
   })();
 
