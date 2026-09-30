@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 30일 (수) · 12:05 기준",
+    "generated_at": "9월 30일 (수) · 12:19 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,7 +284,7 @@
     ]
   },
   "inv": {
-    "total": 1235395626,
+    "total": 1235377376,
     "item_count": 2217,
     "code_count": 25,
     "alois_groups": [
@@ -10977,9 +10977,9 @@
           },
           {
             "code": "OE",
-            "val": 303953845,
+            "val": 303943845,
             "pct": 24.6,
-            "qty": 825,
+            "qty": 824,
             "parts": [
               {
                 "item": "34505B6F947",
@@ -11362,8 +11362,8 @@
               {
                 "item": "90200006978",
                 "name": "MINI Folding",
-                "qty": 17,
-                "val": 170000
+                "qty": 16,
+                "val": 160000
               },
               {
                 "item": "80932864212",
@@ -12308,8 +12308,8 @@
             ]
           }
         ],
-        "subtotal_val": 419329671,
-        "subtotal_qty": 2449,
+        "subtotal_val": 419319671,
+        "subtotal_qty": 2448,
         "subtotal_pct": 33.94
       },
       {
@@ -13033,9 +13033,9 @@
           },
           {
             "code": "SX",
-            "val": 10685800,
+            "val": 10677550,
             "pct": 0.86,
-            "qty": 207,
+            "qty": 206,
             "parts": [
               {
                 "item": "64115B78AA5",
@@ -13058,8 +13058,8 @@
               {
                 "item": "99975BA1A07",
                 "name": "BMWLongUmbre (New)",
-                "qty": 47,
-                "val": 387750
+                "qty": 46,
+                "val": 379500
               },
               {
                 "item": "99975BA1A04",
@@ -13158,7 +13158,7 @@
           {
             "code": "SZ",
             "val": 83944335,
-            "pct": 6.79,
+            "pct": 6.8,
             "qty": 769,
             "parts": [
               {
@@ -13836,15 +13836,15 @@
             ]
           }
         ],
-        "subtotal_val": 170058046,
-        "subtotal_qty": 2069,
+        "subtotal_val": 170049796,
+        "subtotal_qty": 2068,
         "subtotal_pct": 13.77
       }
     ]
   },
   "oaov": {
     "total": 40494029,
-    "inv_total": 1235395626,
+    "inv_total": 1235377376,
     "pct": 3.28,
     "oa_val": 20603696,
     "ov_val": 19890333,
@@ -30374,15 +30374,6 @@
         "val": 170600
       },
       {
-        "item": "90200006978",
-        "name": "MINI Folding",
-        "pgrp": "B7",
-        "alois": "OE",
-        "qty": 17,
-        "avail_qty": 17,
-        "val": 170000
-      },
-      {
         "item": "61627407273",
         "name": "WIPER BLADE X3 Rear",
         "pgrp": "B1",
@@ -30390,6 +30381,15 @@
         "qty": 8,
         "avail_qty": 7,
         "val": 168560
+      },
+      {
+        "item": "90200006978",
+        "name": "MINI Folding",
+        "pgrp": "B7",
+        "alois": "OE",
+        "qty": 16,
+        "avail_qty": 16,
+        "val": 160000
       },
       {
         "item": "51472473480",
@@ -37003,15 +37003,6 @@
             "val": 170600
           },
           {
-            "item": "90200006978",
-            "name": "MINI Folding",
-            "pgrp": "B7",
-            "alois": "OE",
-            "qty": 17,
-            "avail_qty": 17,
-            "val": 170000
-          },
-          {
             "item": "61627407273",
             "name": "WIPER BLADE X3 Rear",
             "pgrp": "B1",
@@ -37019,6 +37010,15 @@
             "qty": 8,
             "avail_qty": 7,
             "val": 168560
+          },
+          {
+            "item": "90200006978",
+            "name": "MINI Folding",
+            "pgrp": "B7",
+            "alois": "OE",
+            "qty": 16,
+            "avail_qty": 16,
+            "val": 160000
           },
           {
             "item": "90200008205",
@@ -37319,9 +37319,9 @@
           }
         ],
         "count": 92,
-        "qty_sum": 807,
-        "avail_sum": 785,
-        "val": 296953397
+        "qty_sum": 806,
+        "avail_sum": 784,
+        "val": 296943397
       },
       {
         "code": "ON",
@@ -37847,7 +37847,7 @@
       }
     ],
     "count": 473,
-    "total_val": 342551032
+    "total_val": 342541032
   },
   "oflow": {
     "rows": [
@@ -41150,7 +41150,7 @@
         "pub": "2026-09-30",
         "pub_full": "2026-09-30 10:27",
         "dday": "D+0일",
-        "amt": 1375900
+        "amt": 1403620
       },
       {
         "ro": "RO2609001752",
@@ -41253,7 +41253,7 @@
       }
     ],
     "count": 289,
-    "total_amt": 726818100,
+    "total_amt": 726845820,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -41263,7 +41263,7 @@
       {
         "stat": "상담완료",
         "count": 148,
-        "amt": 501472361
+        "amt": 501500081
       },
       {
         "stat": "정비시작",
@@ -42438,8 +42438,8 @@
             "alois": "SX",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 47,
-            "avail_qty": 46,
+            "crt_qty": 46,
+            "avail_qty": 45,
             "val": 8250
           }
         ],
@@ -42559,7 +42559,7 @@
     "total_val": 14023417,
     "o_lines": 23,
     "o_val": 5423544,
-    "resv_total": 12051
+    "resv_total": 12052
   },
   "sbresv": {
     "groups": [
@@ -47663,7 +47663,7 @@
     "total_val": 65373841,
     "o_lines": 59,
     "o_val": 13136301,
-    "resv_total": 398
+    "resv_total": 397
   },
   "sbcar": {
     "groups": [
@@ -51295,7 +51295,7 @@
         "item": "99975BA1A07",
         "name": "BMWLongUmbre (New)",
         "alois": "SX",
-        "qty": 47,
+        "qty": 46,
         "no": 288
       },
       {
