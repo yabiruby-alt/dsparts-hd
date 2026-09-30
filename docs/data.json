@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "9월 30일 (수) · 16:06 기준",
+    "generated_at": "9월 30일 (수) · 16:11 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -39132,8 +39132,8 @@
       },
       {
         "ro": "RO2609001583",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-09-28",
@@ -40408,8 +40408,8 @@
       },
       {
         "ro": "RO2609001783",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-09-30",
@@ -40428,18 +40428,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 137,
-        "amt": 477633184
+        "count": 135,
+        "amt": 475647784
       },
       {
         "stat": "정비시작",
-        "count": 52,
-        "amt": 56822128
+        "count": 53,
+        "amt": 56866128
       },
       {
         "stat": "End Control 요청",
-        "count": 37,
-        "amt": 60665662
+        "count": 38,
+        "amt": 62607062
       },
       {
         "stat": "가정산 완료",
@@ -41287,7 +41287,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 7,
-            "avail_qty": 3,
+            "avail_qty": 2,
             "val": 47740
           },
           {
@@ -41297,7 +41297,7 @@
             "sa": "우종훈",
             "req_qty": 2,
             "crt_qty": 9,
-            "avail_qty": 3,
+            "avail_qty": 1,
             "val": 23130
           },
           {
@@ -41347,7 +41347,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 8,
-            "avail_qty": 4,
+            "avail_qty": 3,
             "val": 3001
           }
         ],
@@ -41513,7 +41513,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 7,
-            "avail_qty": 3,
+            "avail_qty": 2,
             "val": 47740
           },
           {
@@ -41523,7 +41523,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 9,
-            "avail_qty": 3,
+            "avail_qty": 1,
             "val": 23130
           },
           {
@@ -41573,7 +41573,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 8,
-            "avail_qty": 4,
+            "avail_qty": 3,
             "val": 3001
           }
         ],
@@ -41747,7 +41747,7 @@
     "total_val": 14500192,
     "o_lines": 23,
     "o_val": 5423544,
-    "resv_total": 12049
+    "resv_total": 12050
   },
   "sbresv": {
     "groups": [
@@ -42057,7 +42057,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 7,
-            "avail_qty": 3,
+            "avail_qty": 2,
             "val": 47740
           },
           {
@@ -42067,7 +42067,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 9,
-            "avail_qty": 3,
+            "avail_qty": 1,
             "val": 11565
           },
           {
@@ -42087,7 +42087,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 8,
-            "avail_qty": 4,
+            "avail_qty": 3,
             "val": 3001
           }
         ],
@@ -42459,7 +42459,7 @@
             "sa": "김민규",
             "req_qty": 0,
             "crt_qty": 7,
-            "avail_qty": 3,
+            "avail_qty": 2,
             "val": 23870
           },
           {
@@ -42479,7 +42479,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 9,
-            "avail_qty": 3,
+            "avail_qty": 1,
             "val": 11565
           },
           {
@@ -42509,7 +42509,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 8,
-            "avail_qty": 4,
+            "avail_qty": 3,
             "val": 3001
           }
         ],
@@ -46436,6 +46436,48 @@
         "val": 577937
       },
       {
+        "code": "SB2609000811",
+        "resv_full": "2026-10-01 10:00",
+        "resv": "10-01",
+        "dday": "D-1일",
+        "sa": "정용환",
+        "rows": [
+          {
+            "item": "11658595650",
+            "name": "Vacuum hose",
+            "alois": "A4",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 7,
+            "avail_qty": 2,
+            "val": 47740
+          },
+          {
+            "item": "11717799853",
+            "name": "Pipe union",
+            "alois": "A4",
+            "sa": "정용환",
+            "req_qty": 2,
+            "crt_qty": 9,
+            "avail_qty": 1,
+            "val": 23130
+          },
+          {
+            "item": "61131369832",
+            "name": "Holder",
+            "alois": "A4",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 8,
+            "avail_qty": 3,
+            "val": 3001
+          }
+        ],
+        "count": 3,
+        "qty_sum": 4,
+        "val": 73871
+      },
+      {
         "code": "SB2609001800",
         "resv_full": "2026-10-01 10:00",
         "resv": "10-01",
@@ -46916,10 +46958,20 @@
         "count": 1,
         "qty_sum": 1,
         "val": 21945
-      },
+      }
+    ],
+    "sb_count": 104,
+    "line_count": 396,
+    "total_val": 66211243,
+    "o_lines": 62,
+    "o_val": 13380607,
+    "resv_total": 398
+  },
+  "sbcar": {
+    "groups": [
       {
         "code": "SB2609002012",
-        "resv_full": "2026-09-30 17:00",
+        "resv_full": "2026-09-30 16:11",
         "resv": "09-30",
         "dday": "오늘",
         "sa": "정용환",
@@ -46980,21 +47032,12 @@
         "val": 327334
       }
     ],
-    "sb_count": 104,
-    "line_count": 398,
-    "total_val": 66464706,
-    "o_lines": 62,
-    "o_val": 13380607,
-    "resv_total": 399
-  },
-  "sbcar": {
-    "groups": [],
-    "sb_count": 0,
-    "line_count": 0,
-    "total_val": 0,
+    "sb_count": 1,
+    "line_count": 5,
+    "total_val": 327334,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10161
+    "resv_total": 10162
   },
   "nonmng": {
     "rows": [],
