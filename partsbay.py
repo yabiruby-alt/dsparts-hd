@@ -66,7 +66,8 @@ REASON_PORT = 8765
 ALLOWED_ORIGINS = {"https://yabiruby-alt.github.io", "http://127.0.0.1:8765", "http://localhost:8765"}
 REASONS_LOCK = threading.Lock()   # reasons.json 읽기/쓰기
 # 타이어 사이즈 조회 마스터: 이 엑셀 파일을 저장하면 매 주기 자동으로 다시 읽어 반영 (사이트에서 직접 수정하지 않음)
-TIRE_XLSX_PATH = Path(r"C:\Users\BMW\Desktop\타이어 마스터\타이어_마스터파일.xlsx")
+# docs 폴더 안에 둬서 원본 파일(타이어 마스터 폴더)이 없어져도 안전하게 보관 — 깃허브에는 올라가지 않도록 .gitignore 처리됨
+TIRE_XLSX_PATH = BASE_DIR / "docs" / "타이어_마스터파일.xlsx"
 TIRE_FILE = BASE_DIR / "tire_master.json"   # 엑셀을 못 읽을 때 쓸 마지막 성공본 캐시
 TIRE_LOCK = threading.Lock()
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
