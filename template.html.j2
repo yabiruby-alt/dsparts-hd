@@ -922,12 +922,12 @@
       {% macro audit_table(rows, kind, empty_msg) -%}
       <div class="tablewrap">
         <table>
-          <thead><tr><th>일자</th><th>인보이스</th><th>{{ 'SP번호' if kind == 'sp' else 'RO번호' }}</th><th>고객명</th><th>차대번호</th><th>부품그룹</th><th>정산상세유형</th><th>품목</th><th class="num">금액</th><th>사유</th></tr></thead>
+          <thead><tr><th>일자</th><th>인보이스</th><th>{{ 'SP번호' if kind == 'sp' else 'RO번호' }}</th><th>고객명</th><th>차대번호</th><th>부품그룹</th><th>정산상세유형</th><th>부품번호</th><th>품목</th><th class="num">금액</th><th>사유</th></tr></thead>
           <tbody>
             {% for r in rows %}
-            <tr><td class="mono">{{ r.dt }}</td><td class="mono">{{ r.inv }}</td><td class="mono">{{ r.spno if kind == 'sp' else r.ro }}</td><td>{{ r.cust }}</td><td class="mono">{{ r.vin }}</td><td class="mono">{{ r.pgrp }}</td><td>{{ r.detl }}</td><td>{{ r.item }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td>{{ r.reason }}</td></tr>
+            <tr><td class="mono">{{ r.dt }}</td><td class="mono">{{ r.inv }}</td><td class="mono">{{ r.spno if kind == 'sp' else r.ro }}</td><td>{{ r.cust }}</td><td class="mono">{{ r.vin }}</td><td class="mono">{{ r.pgrp }}</td><td>{{ r.detl }}</td><td class="mono">{{ r.itemcd }}</td><td>{{ r.item }}</td><td class="num">{{ '{:,}'.format(r.amt) }}</td><td>{{ r.reason }}</td></tr>
             {% else %}
-            <tr><td colspan="10" class="empty-note">{{ empty_msg }}</td></tr>
+            <tr><td colspan="11" class="empty-note">{{ empty_msg }}</td></tr>
             {% endfor %}
           </tbody>
         </table>
