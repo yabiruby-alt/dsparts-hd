@@ -366,6 +366,8 @@ def group_alois(rows, val_fn, qty_fn=None):
 
 
 def build_recv(rows, today_str):
+    rows = [r for r in rows if r.get("whTp") == "일반입고"]  # 반품입고 제외 (금액 상쇄 방지)
+
     def val_fn(r):
         return num(r.get("purcAmt"))
 
