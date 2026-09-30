@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="600">
+<title>타이어 사이즈 조회 · 동성모터스 PARTS</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600;700&display=swap');
+
+  :root{
+    color-scheme: light;
+    --page:#f5f5f7; --surface:#ffffff; --surface-2:#f5f5f7; --sidebar:#fbfbfd;
+    --line:#e5e5ea; --ink:#1d1d1f; --ink-2:#48484a; --muted:#86868b;
+    --accent:#0066b1; --accent-strong:#004d8a; --accent-wash:#eaf3fb;
+    --good:#1fa34d; --critical:#d0342c; --critical-wash:#fdeeed;
+    --font-display:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+    --font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,'SF Mono','SFMono-Regular',Menlo,monospace;
+    --shadow-card: 0 0 0 1px rgba(0,0,0,.04), 0 1px 2px rgba(0,0,0,.04), 0 8px 20px rgba(0,0,0,.04);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme: dark;
+      --page:#000000; --surface:#1c1c1e; --surface-2:#242426; --sidebar:#111113;
+      --line:#333335; --ink:#f5f5f7; --ink-2:#c7c7cc; --muted:#8e8e93;
+      --accent:#409cff; --accent-strong:#8ec3f2; --accent-wash:#122236;
+      --good:#30d158; --critical:#e2695c; --critical-wash:#301715;
+      --shadow-card: 0 0 0 1px rgba(255,255,255,.06), 0 8px 20px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --page:#000000; --surface:#1c1c1e; --surface-2:#242426; --sidebar:#111113;
+    --line:#333335; --ink:#f5f5f7; --ink-2:#c7c7cc; --muted:#8e8e93;
+    --accent:#409cff; --accent-strong:#8ec3f2; --accent-wash:#122236;
+    --good:#30d158; --critical:#e2695c; --critical-wash:#301715;
+    --shadow-card: 0 0 0 1px rgba(255,255,255,.06), 0 8px 20px rgba(0,0,0,.35);
+  }
+
+  *{box-sizing:border-box;}
+  html, body{ margin:0; }
+  body{ background:var(--page); color:var(--ink); font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+
+  .wrap{ max-width:1120px; margin:0 auto; padding:28px 20px 60px; }
+  .pagehead{ display:flex; align-items:baseline; gap:10px; margin-bottom:18px; flex-wrap:wrap; }
+  .pagehead h1{ font-family:var(--font-display); font-weight:800; font-size:22px; letter-spacing:-.01em; margin:0; }
+  .freshness{ display:flex; align-items:center; gap:7px; font-family:var(--font-mono); font-size:13px; color:var(--ink-2); margin-left:auto; }
+  .dot{ width:7px; height:7px; border-radius:50%; background:var(--good); box-shadow:0 0 0 3px rgba(31,163,77,.16); flex:none; }
+
+  .viewer{ background:var(--surface); border-radius:18px; padding:24px 26px; box-shadow:var(--shadow-card); }
+  .viewer-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:18px; padding-bottom:16px; border-bottom:1px solid var(--line); flex-wrap:wrap; }
+  .viewer-head .lbl{ font-family:var(--font-display); font-weight:700; font-size:20px; letter-spacing:-.01em; }
+  .viewer-head .val{ font-family:var(--font-mono); font-weight:700; font-size:20px; color:var(--ink); font-variant-numeric:tabular-nums; }
+  .viewer-head .foot{ font-size:14.5px; color:var(--muted); margin-left:auto; }
+
+  .tire-filters{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:16px; }
+  .tire-filters .reason-input{ width:auto; min-width:150px; }
+  .tire-filters #tire-size-input{ min-width:200px; }
+  .reason-input{ width:280px; max-width:100%; box-sizing:border-box; border:1px solid var(--line); border-radius:8px; padding:6px 10px;
+    font:inherit; font-size:13.5px; background:var(--surface); color:var(--ink); transition:border-color .12s ease, box-shadow .12s ease; }
+  .reason-input:focus{ outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-wash); }
+  .rbtn{ all:unset; box-sizing:border-box; cursor:pointer; font-size:12.5px; font-weight:600; padding:4px 10px; border-radius:8px;
+    background:var(--surface-2); color:var(--ink-2); transition:background .12s ease; }
+  .rbtn:hover{ background:var(--accent-wash); color:var(--accent-strong); }
+
+  .tablewrap{ overflow-x:auto; }
+  table{ width:100%; border-collapse:collapse; font-size:15.5px; }
+  thead th{ text-align:left; font-family:var(--font-body); font-weight:600; font-size:13px;
+    color:var(--muted); padding:0 10px 9px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  tbody td{ padding:9px 10px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody tr{ transition:background .1s ease; }
+  tbody tr:hover td{ background:var(--surface-2); }
+  td.num, th.num{ text-align:right; font-family:var(--font-mono); font-variant-numeric:tabular-nums; }
+  td.mono{ font-family:var(--font-mono); font-size:14.5px; }
+  .empty-note{ font-size:14.5px; color:var(--muted); padding:12px 4px; }
+
+  .tire-table{ table-layout:fixed; }
+  .tire-table th, .tire-table td{ text-align:center; padding:6px 5px; font-size:12.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .tire-table td.mono{ font-size:11.5px; }
+  .tire-table thead th{ font-size:10px; white-space:nowrap; padding:6px 2px; overflow:hidden; text-overflow:ellipsis; }
+  .tire-table th:nth-child(1){ width:3%; }
+  .tire-table th:nth-child(2){ width:9%; }
+  .tire-table th:nth-child(3){ width:14%; }
+  .tire-table th:nth-child(4){ width:8%; }
+  .tire-table th:nth-child(5){ width:11%; }
+  .tire-table th:nth-child(6){ width:5%; }
+  .tire-table th:nth-child(7){ width:12%; }
+  .tire-table th:nth-child(8){ width:5%; }
+  .tire-table th:nth-child(9){ width:3%; }
+  .tire-table th:nth-child(10){ width:8%; }
+  .tire-table th:nth-child(11){ width:13%; }
+  .tire-table th:nth-child(12){ width:8%; }
+  .tire-table td:nth-child(3), .tire-table td:nth-child(11){ white-space:nowrap; font-size:11.5px; }
+  .rft-tag{ color:var(--accent); font-weight:600; }
+
+  @media (max-width:900px){
+    .wrap{ padding:16px 12px 40px; }
+    .pagehead h1{ font-size:19px; }
+    .freshness{ font-size:11px; }
+    .viewer{ padding:16px 12px; border-radius:16px; }
+    .viewer-head .lbl{ font-size:17px; }
+    .viewer-head .foot{ margin-left:0; width:100%; }
+    table{ font-size:13.5px; }
+    tbody td{ padding:8px 8px; }
+    .tablewrap{ -webkit-overflow-scrolling:touch; }
+    .tire-table{ table-layout:auto; min-width:820px; }
+    .tire-table th, .tire-table td{ overflow:visible; text-overflow:clip; }
+  }
+
+  @media print{
+    body{ background:#fff; }
+    .viewer{ box-shadow:none; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="pagehead">
+      <h1>타이어 사이즈 조회</h1>
+      <div class="freshness"><span class="dot"></span>{{ generated_at }} 기준 · 엑셀 저장 시 자동 반영</div>
+    </div>
+
+    <div class="viewer">
+      <div class="viewer-head">
+        <span class="lbl">타이어 사이즈 검색</span>
+        <span class="val" id="tire-count">0건</span>
+        <span class="foot">사이즈는 "225/40R18"처럼 입력하면 자동으로 검색됩니다 · 브랜드/STD·RFT로 좁힐 수 있습니다</span>
+      </div>
+      <div class="tire-filters">
+        <input type="text" id="tire-size-input" class="reason-input" placeholder="사이즈 입력 (예: 225/40R18)">
+        <select id="tire-brand-select" class="reason-input"><option value="">브랜드 전체</option></select>
+        <select id="tire-rft-select" class="reason-input">
+          <option value="">STD/RFT 전체</option><option value="STD">STD</option><option value="RFT">RFT</option>
+        </select>
+        <button class="rbtn" id="tire-reset-btn" type="button">초기화</button>
+      </div>
+      <div class="tablewrap">
+        <table class="tire-table">
+          <thead><tr><th>No.</th><th>부품번호</th><th>품명</th><th>브랜드</th><th>Mat No.</th><th>판매유형</th><th>사이즈</th><th>STD/RFT</th><th>S/W</th><th>OE</th><th>QR Code</th><th class="num">구매단가</th></tr></thead>
+          <tbody id="tire-tbody">
+            <tr><td colspan="12" class="empty-note">불러오는 중...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+<script>
+  var TIRE_DATA = {{ tires_json }};
+
+  (function(){
+    var tbody = document.getElementById('tire-tbody');
+    if(!tbody) return;
+    var raw = TIRE_DATA || {};
+    var items = Object.keys(raw).map(function(pn){ var o = Object.assign({pn: pn}, raw[pn]); return o; });
+    var countEl = document.getElementById('tire-count');
+    var sizeInput = document.getElementById('tire-size-input');
+    var brandSelect = document.getElementById('tire-brand-select');
+    var rftSelect = document.getElementById('tire-rft-select');
+    var resetBtn = document.getElementById('tire-reset-btn');
+
+    var brands = [];
+    items.forEach(function(t){ if(t.brand && brands.indexOf(t.brand) < 0) brands.push(t.brand); });
+    brands.sort();
+    brands.forEach(function(b){ var o = document.createElement('option'); o.value = b; o.textContent = b; brandSelect.appendChild(o); });
+
+    function normSize(s){
+      s = (s || '').split(' ')[0];
+      return s.replace(/ZR/gi,'').replace(/R/gi,'').replace(/\//g,'').replace(/\s+/g,'');
+    }
+    function esc(s){ var d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
+    function fmtMoney(n){ if(n === null || n === undefined || n === '') return '-'; var v = Number(n); return isNaN(v) ? '-' : v.toLocaleString('ko-KR'); }
+
+    function renderRows(){
+      var q = normSize(sizeInput.value);
+      var brand = brandSelect.value;
+      var rft = rftSelect.value;
+      var filtered = items.filter(function(t){
+        if(q && (t.filter_key || '').indexOf(q) === -1) return false;
+        if(brand && t.brand !== brand) return false;
+        if(rft && t.std_rft !== rft) return false;
+        return true;
+      });
+      filtered.sort(function(a,b){ return (a.brand||'').localeCompare(b.brand||'') || (a.size||'').localeCompare(b.size||''); });
+      countEl.textContent = filtered.length + '건';
+      tbody.innerHTML = '';
+      if(!filtered.length){
+        tbody.innerHTML = '<tr><td colspan="12" class="empty-note">검색 결과 없음</td></tr>';
+        return;
+      }
+      filtered.forEach(function(t, i){
+        var tr = document.createElement('tr');
+        var rftHtml = t.std_rft === 'RFT' ? '<span class="rft-tag">RFT</span>' : esc(t.std_rft);
+        tr.innerHTML = '<td class="num">'+(i+1)+'</td><td class="mono">'+esc(t.pn)+'</td><td>'+esc(t.name)+'</td><td>'+esc(t.brand)+'</td><td class="mono">'+esc(t.mat_no)+'</td><td class="mono">'+esc(t.sale_tp)+'</td><td class="mono">'+esc(t.size)+'</td><td>'+rftHtml+'</td><td>'+esc(t.sw)+'</td><td>'+esc(t.oe)+'</td><td>'+esc(t.qr)+'</td><td class="num">'+fmtMoney(t.price)+'</td>';
+        tbody.appendChild(tr);
+      });
+    }
+
+    sizeInput.addEventListener('input', renderRows);
+    brandSelect.addEventListener('change', renderRows);
+    rftSelect.addEventListener('change', renderRows);
+    resetBtn.addEventListener('click', function(){
+      sizeInput.value = ''; brandSelect.value = ''; rftSelect.value = '';
+      renderRows();
+    });
+    renderRows();
+  })();
+</script>
+</body>
+</html>

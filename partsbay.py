@@ -1083,7 +1083,7 @@ def publish_to_github(commit_message: str) -> bool:
         if not gitignore.exists():
             gitignore.write_text("__pycache__/\noutput/\n*.pyc\n", encoding="utf-8")
 
-    _git("add", "docs", ".gitignore", "partsbay.py", "template.html.j2", "requirements.txt", check=False)
+    _git("add", "docs", ".gitignore", "partsbay.py", "template.html.j2", "tire_page.html.j2", "requirements.txt", check=False)
     status = _git("status", "--porcelain")
     if not status.stdout.strip():
         print("깃허브에 올릴 변경사항이 없습니다 (이전과 동일한 데이터).")
@@ -1117,6 +1117,16 @@ def render(data: dict) -> str:
     data.setdefault("tires", {})
     data["tires_json"] = json.dumps(data["tires"], ensure_ascii=False)
     return template.render(**data)
+
+
+TIRE_TEMPLATE_NAME = "tire_page.html.j2"
+
+
+def render_tire_page(tires: dict, generated_at: str) -> str:
+    """타이어 사이즈 조회만 담은 독립 페이지 (다른 대시보드 데이터는 포함하지 않음)."""
+    env = Environment(loader=FileSystemLoader(str(BASE_DIR)), autoescape=False)
+    template = env.get_template(TIRE_TEMPLATE_NAME)
+    return template.render(tires_json=json.dumps(tires or {}, ensure_ascii=False), generated_at=generated_at)
 
 
 LOCK_FILE = BASE_DIR / ".partsbay.lock"
@@ -1195,6 +1205,7 @@ def republish_reasons() -> None:
         DOCS_DIR.mkdir(parents=True, exist_ok=True)
         (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
         (DOCS_DIR / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        (DOCS_DIR / "tire.html").write_text(render_tire_page(data["tires"], data.get("meta", {}).get("generated_at", "")), encoding="utf-8")
         if PUBLISH_TO_GITHUB:
             publish_to_github("진행RO 사유 갱신")
 
@@ -1417,6 +1428,7 @@ def run_cycle(page: Page) -> None:
         DOCS_DIR.mkdir(parents=True, exist_ok=True)
         (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
         (DOCS_DIR / "data.json").write_text(data_json, encoding="utf-8")
+        (DOCS_DIR / "tire.html").write_text(render_tire_page(data["tires"], generated_at), encoding="utf-8")
 
         print(f"완료: {out_path}")
         if ONCE:
