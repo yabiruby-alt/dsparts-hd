@@ -917,6 +917,12 @@
           <span class="value">{{ extaudit.review_count }}건</span>
           <span class="foot">SP {{ extaudit.sp_r_count }}건 · RO {{ extaudit.ro_r_count }}건 · 합계 ₩{{ '{:,}'.format(extaudit.review_amt) }}</span>
         </div>
+        <div class="kpitile" style="cursor:default">
+          <span class="rank">03</span>
+          <span class="eyebrow">EPC 매칭 확인</span>
+          <span class="value">{{ extaudit.epc_count }}건</span>
+          <span class="foot">차대 있는 SP 부품그룹1(Parts) · 합계 ₩{{ '{:,}'.format(extaudit.epc_amt) }}</span>
+        </div>
       </div>
 
       {% macro audit_table(rows, kind, empty_msg) -%}
