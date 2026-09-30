@@ -919,7 +919,7 @@ def build_ext_audit(rows, today_str):
             g["part_names"].append(r.get("itemNm") or "")
             g["sample"] = g["sample"] or r
 
-    sp_violations, sp_review, ro_violations, ro_review = [], [], [], []
+    sp_violations, sp_review, ro_violations, ro_review, epc_check = [], [], [], [], []
 
     for r in c_rows:
         vin = (r.get("vinNo") or "").strip()
@@ -944,6 +944,8 @@ def build_ext_audit(rows, today_str):
                 sp_violations.append(base_of(r, "차대(VIN) 있는 외부/외부공업사 건 — 외부업체는 차대정보가 있으면 안 됨"))
             elif vin and detl == "고객" and looks_like_business(cust):
                 sp_review.append(base_of(r, "차대 있는 '고객' 건인데 고객명이 업체명으로 추정 — 외부업체 여부 확인"))
+            if vin and pgrp == "1" and detl == "고객" and r.get("itemTpCdNm") == "부품":
+                epc_check.append(base_of(r, "EPC 확인"))
         else:
             # ---- RO (정비 연계) ----
             if detl in ("외부", "외부공업사"):
@@ -960,13 +962,15 @@ def build_ext_audit(rows, today_str):
                 b["amt"] = round(g["parts"])
                 ro_review.append(b)
 
-    for lst in (sp_violations, sp_review, ro_violations, ro_review):
+    for lst in (sp_violations, sp_review, ro_violations, ro_review, epc_check):
         lst.sort(key=lambda i: i["dt"], reverse=True)
 
     return {
         "date": today_str,
         "sp_violations": sp_violations, "sp_review": sp_review,
         "ro_violations": ro_violations, "ro_review": ro_review,
+        "epc_check": epc_check, "epc_count": len(epc_check),
+        "epc_amt": round(sum(i["amt"] for i in epc_check)),
         "sp_v_count": len(sp_violations), "sp_r_count": len(sp_review),
         "ro_v_count": len(ro_violations), "ro_r_count": len(ro_review),
         "total_count": len(sp_violations) + len(sp_review) + len(ro_violations) + len(ro_review),
