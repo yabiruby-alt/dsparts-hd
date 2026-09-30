@@ -1665,7 +1665,11 @@
         if(rft && t.std_rft !== rft) return false;
         return true;
       });
-      filtered.sort(function(a,b){ return (a.brand||'').localeCompare(b.brand||'') || (a.size||'').localeCompare(b.size||''); });
+      filtered.sort(function(a,b){
+        var pa = (a.price === null || a.price === undefined || a.price === '') ? Infinity : Number(a.price);
+        var pb = (b.price === null || b.price === undefined || b.price === '') ? Infinity : Number(b.price);
+        return pa - pb;
+      });
       countEl.textContent = filtered.length + '건';
       tbody.innerHTML = '';
       if(!filtered.length){

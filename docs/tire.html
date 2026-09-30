@@ -120,7 +120,7 @@
   <div class="wrap">
     <div class="pagehead">
       <h1>타이어 사이즈 조회</h1>
-      <div class="freshness"><span class="dot"></span>10월 1일 (목) · 08:25 기준 기준 · 엑셀 저장 시 자동 반영</div>
+      <div class="freshness"><span class="dot"></span>10월 1일 (목) · 08:35 기준 기준 · 엑셀 저장 시 자동 반영</div>
     </div>
 
     <div class="viewer">
@@ -184,7 +184,11 @@
         if(rft && t.std_rft !== rft) return false;
         return true;
       });
-      filtered.sort(function(a,b){ return (a.brand||'').localeCompare(b.brand||'') || (a.size||'').localeCompare(b.size||''); });
+      filtered.sort(function(a,b){
+        var pa = (a.price === null || a.price === undefined || a.price === '') ? Infinity : Number(a.price);
+        var pb = (b.price === null || b.price === undefined || b.price === '') ? Infinity : Number(b.price);
+        return pa - pb;
+      });
       countEl.textContent = filtered.length + '건';
       tbody.innerHTML = '';
       if(!filtered.length){
