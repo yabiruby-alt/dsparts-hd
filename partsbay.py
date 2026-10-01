@@ -81,7 +81,7 @@ DDAY_LOCK = threading.Lock()
 # 매출 대시보드 모듈 위치 (지점장 전용 — 파츠베이 공개 사이트와 별도 저장소로 배포)
 SALES_DIR = BASE_DIR.parent / "업무자동화 생성" / "매출데이터 사이트"
 SALES_ENABLED = (SALES_DIR / "sales.py").exists()
-RR_ENABLED = False   # 롤스로이스 DMS 연동 — 켜면 데몬 시작 시 RR 로그인 창이 하나 더 뜸
+RR_ENABLED = True   # 롤스로이스 DMS 연동 — 켜면 데몬 시작 시 RR 로그인 창이 하나 더 뜸
 RR_BASE_URL = "https://www.rrdms.co.kr"   # 롤스로이스 DMS (같은 My DMS 플랫폼, 별도 계정/세션)
 RR_AUTH_DIR = Path.home() / "AppData" / "Local" / "PartsBayDMS" / "authdata_rr"
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
