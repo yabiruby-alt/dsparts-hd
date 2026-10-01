@@ -1246,14 +1246,16 @@ def import_tire_excel() -> dict | None:
                 continue
             pn = str(pn).strip()
             brand = row[3].value
+            sale_tp = row[5].value  # F열: 판매유형
+            # D+1(특수주문/입고지연)인 품목은 Yokohama 제외하고는 재고조회 리스트에서 아예 제외
+            if sale_tp == "D+1" and brand != "Yokohama":
+                continue
             size = row[6].value  # G열: 사이즈
             price = row[11].value  # L열: 구매단가
             try:
                 price = round(float(price)) if price not in (None, "") else None
             except Exception:
                 price = None
-            # 판매유형(D+0/D+1)은 엑셀 칸 값이 브랜드 안에서도 뒤섞여 있어 믿을 수 없음 -> 브랜드 기준으로 고정
-            sale_tp = "D+1" if brand == "Yokohama" else "D+0"
             tires[pn] = {
                 "name": row[2].value, "brand": brand,
                 "mat_no": row[4].value, "sale_tp": sale_tp, "size": size,
