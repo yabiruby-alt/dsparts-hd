@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 13:43 기준",
+    "generated_at": "10월 1일 (목) · 13:51 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,7 +16,7 @@
     "top5": []
   },
   "inv": {
-    "total": 1007219227,
+    "total": 1007074926,
     "item_count": 2199,
     "code_count": 25,
     "alois_groups": [
@@ -27,9 +27,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 222734230,
+            "val": 222714310,
             "pct": 22.11,
-            "qty": 2614,
+            "qty": 2613,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -70,8 +70,8 @@
               {
                 "item": "11428575211",
                 "name": "Set oil-filt",
-                "qty": 195,
-                "val": 3884400
+                "qty": 194,
+                "val": 3864480
               },
               {
                 "item": "64316835405",
@@ -107,9 +107,9 @@
           },
           {
             "code": "A2",
-            "val": 20813690,
-            "pct": 2.07,
-            "qty": 1133,
+            "val": 20781604,
+            "pct": 2.06,
+            "qty": 1132,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -160,12 +160,6 @@
                 "val": 844220
               },
               {
-                "item": "13718691835",
-                "name": "ir filter el",
-                "qty": 17,
-                "val": 545462
-              },
-              {
                 "item": "61617411249",
                 "name": "WIPER BLADE MINI F60,F55 LCI",
                 "qty": 27,
@@ -176,6 +170,12 @@
                 "name": "Plaque",
                 "qty": 9,
                 "val": 522972
+              },
+              {
+                "item": "13718691835",
+                "name": "ir filter el",
+                "qty": 16,
+                "val": 513376
               },
               {
                 "item": "13718513944",
@@ -4514,8 +4514,8 @@
             ]
           }
         ],
-        "subtotal_val": 474705906,
-        "subtotal_qty": 9062,
+        "subtotal_val": 474653900,
+        "subtotal_qty": 9060,
         "subtotal_pct": 47.13
       },
       {
@@ -4525,15 +4525,15 @@
         "rows": [
           {
             "code": "L1",
-            "val": 26039309,
-            "pct": 2.59,
-            "qty": 1990,
+            "val": 25947014,
+            "pct": 2.58,
+            "qty": 1983,
             "parts": [
               {
                 "item": "83215B49DD6",
                 "name": "LL-17FE+ 0W-20",
-                "qty": 463,
-                "val": 7086400
+                "qty": 458,
+                "val": 7006185
               },
               {
                 "item": "83212469985",
@@ -4544,8 +4544,8 @@
               {
                 "item": "83135A82511",
                 "name": "Brake fluid",
-                "qty": 287,
-                "val": 3466960
+                "qty": 286,
+                "val": 3454880
               },
               {
                 "item": "83215A65B99",
@@ -7766,9 +7766,9 @@
             ]
           }
         ],
-        "subtotal_val": 164134165,
-        "subtotal_qty": 4745,
-        "subtotal_pct": 16.3
+        "subtotal_val": 164041870,
+        "subtotal_qty": 4738,
+        "subtotal_pct": 16.29
       },
       {
         "code": "O",
@@ -13462,13 +13462,13 @@
         ],
         "subtotal_val": 161603859,
         "subtotal_qty": 2056,
-        "subtotal_pct": 16.04
+        "subtotal_pct": 16.05
       }
     ]
   },
   "oaov": {
     "total": 45822808,
-    "inv_total": 1007219227,
+    "inv_total": 1007074926,
     "pct": 4.55,
     "oa_val": 26823981,
     "ov_val": 18998827,
@@ -40550,8 +40550,8 @@
       },
       {
         "ro": "RO2610000039",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-01",
@@ -40814,8 +40814,8 @@
       },
       {
         "ro": "RO2610000063",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-10-01",
@@ -40878,18 +40878,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 159,
-        "amt": 494364333
+        "count": 158,
+        "amt": 493720547
       },
       {
         "stat": "정비시작",
         "count": 46,
-        "amt": 49060466
+        "amt": 49352402
       },
       {
         "stat": "End Control 요청",
-        "count": 62,
-        "amt": 88846491
+        "count": 63,
+        "amt": 89198341
       },
       {
         "stat": "가정산 완료",
@@ -41672,7 +41672,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 2,
-            "crt_qty": 287,
+            "crt_qty": 286,
             "avail_qty": 79,
             "val": 24160
           }
@@ -41818,7 +41818,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 287,
+            "crt_qty": 286,
             "avail_qty": 79,
             "val": 12080
           }
@@ -42224,7 +42224,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 463,
+            "crt_qty": 458,
             "avail_qty": 427,
             "val": 80215
           },
@@ -45266,6 +45266,158 @@
         "val": 13783
       },
       {
+        "code": "SB2609001591",
+        "resv_full": "2026-10-06 09:00",
+        "resv": "10-06",
+        "dday": "D-5일",
+        "sa": "우종훈",
+        "rows": [
+          {
+            "item": "34118854273",
+            "name": "Ventilated b",
+            "alois": "L6",
+            "sa": "우종훈",
+            "req_qty": 2,
+            "crt_qty": 6,
+            "avail_qty": 0,
+            "val": 445056
+          },
+          {
+            "item": "34216882245",
+            "name": "Brake rotor",
+            "alois": "A5",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 5,
+            "avail_qty": 1,
+            "val": 142923
+          },
+          {
+            "item": "34216882246",
+            "name": "Brake rotor",
+            "alois": "A5",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 5,
+            "avail_qty": 1,
+            "val": 142923
+          },
+          {
+            "item": "34106898192",
+            "name": "Repair kit,",
+            "alois": "A6",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "val": 133507
+          },
+          {
+            "item": "34216892641",
+            "name": "Repair kit,",
+            "alois": "A4",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 6,
+            "avail_qty": 2,
+            "val": 114233
+          },
+          {
+            "item": "64119382886",
+            "name": "MICROFILTER/",
+            "alois": "OE",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 33,
+            "avail_qty": 29,
+            "val": 85576
+          },
+          {
+            "item": "61617469820",
+            "name": "Set of wiper X3,X4 front",
+            "alois": "A1",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 17,
+            "avail_qty": 15,
+            "val": 68185
+          },
+          {
+            "item": "34356870350",
+            "name": "Brake pad we X3,4 (G)",
+            "alois": "A4",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 7,
+            "avail_qty": 4,
+            "val": 25326
+          },
+          {
+            "item": "34356870351",
+            "name": "Brake pad we",
+            "alois": "A4",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 8,
+            "avail_qty": 5,
+            "val": 25220
+          },
+          {
+            "item": "34108838589",
+            "name": "Torx screw w",
+            "alois": "A6",
+            "sa": "우종훈",
+            "req_qty": 4,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "val": 24240
+          },
+          {
+            "item": "83135A82511",
+            "name": "Brake fluid",
+            "alois": "L1",
+            "sa": "우종훈",
+            "req_qty": 2,
+            "crt_qty": 286,
+            "avail_qty": 79,
+            "val": 24160
+          },
+          {
+            "item": "61627407273",
+            "name": "WIPER BLADE X3 Rear",
+            "alois": "OE",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 8,
+            "avail_qty": 6,
+            "val": 24080
+          },
+          {
+            "item": "34211161806",
+            "name": "Bolt",
+            "alois": "A3",
+            "sa": "우종훈",
+            "req_qty": 2,
+            "crt_qty": 33,
+            "avail_qty": 23,
+            "val": 2396
+          },
+          {
+            "item": "34211161806",
+            "name": "Bolt",
+            "alois": "A3",
+            "sa": "우종훈",
+            "req_qty": 2,
+            "crt_qty": 33,
+            "avail_qty": 23,
+            "val": 2396
+          }
+        ],
+        "count": 14,
+        "qty_sum": 21,
+        "val": 1260221
+      },
+      {
         "code": "SB2609001374",
         "resv_full": "2026-10-06 09:00",
         "resv": "10-06",
@@ -46144,158 +46296,6 @@
         "val": 706285
       },
       {
-        "code": "SB2609001591",
-        "resv_full": "2026-10-02 09:00",
-        "resv": "10-02",
-        "dday": "D-1일",
-        "sa": "우종훈",
-        "rows": [
-          {
-            "item": "34118854273",
-            "name": "Ventilated b",
-            "alois": "L6",
-            "sa": "우종훈",
-            "req_qty": 2,
-            "crt_qty": 6,
-            "avail_qty": 0,
-            "val": 445056
-          },
-          {
-            "item": "34216882245",
-            "name": "Brake rotor",
-            "alois": "A5",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 1,
-            "val": 142923
-          },
-          {
-            "item": "34216882246",
-            "name": "Brake rotor",
-            "alois": "A5",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 1,
-            "val": 142923
-          },
-          {
-            "item": "34106898192",
-            "name": "Repair kit,",
-            "alois": "A6",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "val": 133507
-          },
-          {
-            "item": "34216892641",
-            "name": "Repair kit,",
-            "alois": "A4",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 6,
-            "avail_qty": 2,
-            "val": 114233
-          },
-          {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 33,
-            "avail_qty": 29,
-            "val": 85576
-          },
-          {
-            "item": "61617469820",
-            "name": "Set of wiper X3,X4 front",
-            "alois": "A1",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 17,
-            "avail_qty": 15,
-            "val": 68185
-          },
-          {
-            "item": "34356870350",
-            "name": "Brake pad we X3,4 (G)",
-            "alois": "A4",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 4,
-            "val": 25326
-          },
-          {
-            "item": "34356870351",
-            "name": "Brake pad we",
-            "alois": "A4",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 8,
-            "avail_qty": 5,
-            "val": 25220
-          },
-          {
-            "item": "34108838589",
-            "name": "Torx screw w",
-            "alois": "A6",
-            "sa": "우종훈",
-            "req_qty": 4,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "val": 24240
-          },
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "sa": "우종훈",
-            "req_qty": 2,
-            "crt_qty": 287,
-            "avail_qty": 79,
-            "val": 24160
-          },
-          {
-            "item": "61627407273",
-            "name": "WIPER BLADE X3 Rear",
-            "alois": "OE",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 8,
-            "avail_qty": 6,
-            "val": 24080
-          },
-          {
-            "item": "34211161806",
-            "name": "Bolt",
-            "alois": "A3",
-            "sa": "우종훈",
-            "req_qty": 2,
-            "crt_qty": 33,
-            "avail_qty": 23,
-            "val": 2396
-          },
-          {
-            "item": "34211161806",
-            "name": "Bolt",
-            "alois": "A3",
-            "sa": "우종훈",
-            "req_qty": 2,
-            "crt_qty": 33,
-            "avail_qty": 23,
-            "val": 2396
-          }
-        ],
-        "count": 14,
-        "qty_sum": 21,
-        "val": 1260221
-      },
-      {
         "code": "SB2609002161",
         "resv_full": "2026-10-01 17:40",
         "resv": "10-01",
@@ -46476,7 +46476,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 5,
-            "crt_qty": 463,
+            "crt_qty": 458,
             "avail_qty": 427,
             "val": 80215
           },
@@ -46486,7 +46486,7 @@
             "alois": "A1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 195,
+            "crt_qty": 194,
             "avail_qty": 139,
             "val": 19920
           }
@@ -46562,7 +46562,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10161
+    "resv_total": 10162
   },
   "nonmng": {
     "rows": [],
@@ -46607,7 +46607,7 @@
         "item": "83135A82511",
         "name": "Brake fluid",
         "alois": "L1",
-        "qty": 287,
+        "qty": 286,
         "no": 4
       },
       {
@@ -47767,7 +47767,7 @@
         "item": "11428575211",
         "name": "Set oil-filt",
         "alois": "A1",
-        "qty": 195,
+        "qty": 194,
         "no": 149
       },
       {
@@ -48031,7 +48031,7 @@
         "item": "13718691835",
         "name": "ir filter el",
         "alois": "A2",
-        "qty": 17,
+        "qty": 16,
         "no": 182
       },
       {
@@ -49607,7 +49607,7 @@
         "item": "83215B49DD6",
         "name": "LL-17FE+ 0W-20",
         "alois": "L1",
-        "qty": 463,
+        "qty": 458,
         "no": 379
       }
     ],
