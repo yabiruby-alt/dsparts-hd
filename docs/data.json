@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 10:53 기준",
+    "generated_at": "10월 1일 (목) · 10:57 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -39930,8 +39930,8 @@
       },
       {
         "ro": "RO2610000017",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-01",
@@ -40268,25 +40268,58 @@
         "pub_full": "2026-10-01 10:47",
         "dday": "D+0일",
         "amt": 351850
+      },
+      {
+        "ro": "RO2610000049",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "최민수",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 10:54",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000051",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 10:57",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000050",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Recall/TC",
+        "sa": "우종훈",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 10:57",
+        "dday": "D+0일",
+        "amt": 887500
       }
     ],
-    "count": 313,
-    "total_amt": 723600234,
+    "count": 316,
+    "total_amt": 724487734,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 20,
-        "amt": 13740199
+        "count": 22,
+        "amt": 14627699
       },
       {
         "stat": "상담완료",
         "count": 157,
-        "amt": 471142357
+        "amt": 470454595
       },
       {
         "stat": "정비시작",
-        "count": 36,
-        "amt": 60328783
+        "count": 37,
+        "amt": 61016545
       },
       {
         "stat": "End Control 요청",
@@ -46271,48 +46304,6 @@
         "val": 663282
       },
       {
-        "code": "SB2609001758",
-        "resv_full": "2026-10-01 10:28",
-        "resv": "10-01",
-        "dday": "오늘",
-        "sa": "우종훈",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 34,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 63,
-            "avail_qty": 20,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L3",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 132,
-            "avail_qty": 98,
-            "val": 1125
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 577937
-      },
-      {
         "code": "SB2609001644",
         "resv_full": "2026-10-01 10:49",
         "resv": "10-01",
@@ -46355,9 +46346,9 @@
         "val": 577937
       }
     ],
-    "sb_count": 5,
-    "line_count": 14,
-    "total_val": 2476908,
+    "sb_count": 4,
+    "line_count": 11,
+    "total_val": 1898971,
     "o_lines": 0,
     "o_val": 0,
     "resv_total": 10151
