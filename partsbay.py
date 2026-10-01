@@ -75,7 +75,7 @@ TIRE_FILE = BASE_DIR / "tire_master.json"   # 엑셀을 못 읽을 때 쓸 마�
 TIRE_LOCK = threading.Lock()
 # 디데이 현황: 구글 폼(제목/목표일/메모) 응답 시트를 CSV로 내보낸 링크를 읽어와 매 주기 자동 반영
 # 설정 전까지는 빈 문자열로 두면 "연동 전" 상태로 표시됨
-DDAY_SHEET_CSV_URL = ""
+DDAY_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1OmZxvQjz1DutkjB1Jkm7JRPinr_7P60BXBLycYo0RU8/export?format=csv&gid=782790237"
 DDAY_FILE = BASE_DIR / "dday_items.json"   # 시트를 못 읽을 때 쓸 마지막 성공본 캐시
 DDAY_LOCK = threading.Lock()
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화

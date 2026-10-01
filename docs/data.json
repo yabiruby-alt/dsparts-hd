@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 09:51 기준",
+    "generated_at": "10월 1일 (목) · 09:57 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -40115,8 +40115,8 @@
       },
       {
         "ro": "RO2610000008",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "입고 Proactive-RITA",
         "sa": "최민수",
         "pub": "2026-10-01",
@@ -40290,7 +40290,7 @@
         "amt": 28000
       },
       {
-        "ro": "RO2610000025",
+        "ro": "RO2610000024",
         "stat": "상담시작",
         "stat_cd": "01",
         "svc": "사고수리",
@@ -40301,15 +40301,15 @@
         "amt": 0
       },
       {
-        "ro": "RO2610000024",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "ro": "RO2610000025",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 09:41",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 416900
       },
       {
         "ro": "RO2610000026",
@@ -40346,44 +40346,77 @@
       },
       {
         "ro": "RO2610000030",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 09:51",
+        "dday": "D+0일",
+        "amt": 250082
+      },
+      {
+        "ro": "RO2610000029",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 09:51",
+        "dday": "D+0일",
+        "amt": 642309
+      },
+      {
+        "ro": "RO2610000031",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 09:54",
         "dday": "D+0일",
         "amt": 0
       },
       {
-        "ro": "RO2610000029",
+        "ro": "RO2610000032",
         "stat": "상담시작",
         "stat_cd": "01",
         "svc": "Maintenance",
-        "sa": "정용환",
+        "sa": "우종훈",
         "pub": "2026-10-01",
-        "pub_full": "2026-10-01 09:51",
+        "pub_full": "2026-10-01 09:55",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 2046000
+      },
+      {
+        "ro": "RO2610000033",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 09:56",
+        "dday": "D+0일",
+        "amt": 455300
       }
     ],
-    "count": 296,
-    "total_amt": 704334685,
+    "count": 299,
+    "total_amt": 708145276,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 22,
-        "amt": 7609799
+        "amt": 10111099
       },
       {
         "stat": "상담완료",
-        "count": 149,
-        "amt": 480658451
+        "count": 151,
+        "amt": 479967994
       },
       {
         "stat": "정비시작",
-        "count": 28,
-        "amt": 38141967
+        "count": 29,
+        "amt": 40141715
       },
       {
         "stat": "End Control 요청",
@@ -41172,7 +41205,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 289,
-            "avail_qty": 82,
+            "avail_qty": 81,
             "val": 24160
           }
         ],
@@ -41318,7 +41351,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 289,
-            "avail_qty": 82,
+            "avail_qty": 81,
             "val": 12080
           }
         ],
@@ -41758,7 +41791,7 @@
     "total_val": 15018160,
     "o_lines": 23,
     "o_val": 5423544,
-    "resv_total": 12056
+    "resv_total": 12055
   },
   "sbresv": {
     "groups": [
@@ -45734,7 +45767,7 @@
             "sa": "우종훈",
             "req_qty": 2,
             "crt_qty": 289,
-            "avail_qty": 82,
+            "avail_qty": 81,
             "val": 24160
           },
           {
@@ -45954,7 +45987,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 491,
-            "avail_qty": 465,
+            "avail_qty": 453,
             "val": 80215
           },
           {
@@ -45964,7 +45997,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 199,
-            "avail_qty": 145,
+            "avail_qty": 144,
             "val": 19920
           }
         ],
@@ -46311,58 +46344,6 @@
         "val": 218133
       },
       {
-        "code": "SB2609001976",
-        "resv_full": "2026-10-01 10:40",
-        "resv": "10-01",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 37,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "61617469820",
-            "name": "Set of wiper X3,X4 front",
-            "alois": "A1",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 22,
-            "avail_qty": 19,
-            "val": 68185
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 66,
-            "avail_qty": 20,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L3",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 135,
-            "avail_qty": 98,
-            "val": 1125
-          }
-        ],
-        "count": 4,
-        "qty_sum": 4,
-        "val": 646122
-      },
-      {
         "code": "SB2609001862",
         "resv_full": "2026-10-01 10:40",
         "resv": "10-01",
@@ -46376,7 +46357,7 @@
             "sa": "안준영",
             "req_qty": 5,
             "crt_qty": 491,
-            "avail_qty": 465,
+            "avail_qty": 453,
             "val": 80215
           },
           {
@@ -46643,10 +46624,72 @@
         "count": 3,
         "qty_sum": 3,
         "val": 577937
+      }
+    ],
+    "sb_count": 95,
+    "line_count": 369,
+    "total_val": 68083582,
+    "o_lines": 75,
+    "o_val": 18998098,
+    "resv_total": 387
+  },
+  "sbcar": {
+    "groups": [
+      {
+        "code": "SB2609001976",
+        "resv_full": "2026-10-01 09:53",
+        "resv": "10-01",
+        "dday": "오늘",
+        "sa": "정용환",
+        "rows": [
+          {
+            "item": "12415BA2AE6",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 37,
+            "avail_qty": 0,
+            "val": 568490
+          },
+          {
+            "item": "61617469820",
+            "name": "Set of wiper X3,X4 front",
+            "alois": "A1",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 22,
+            "avail_qty": 19,
+            "val": 68185
+          },
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 66,
+            "avail_qty": 20,
+            "val": 8322
+          },
+          {
+            "item": "51337025635",
+            "name": "Clip",
+            "alois": "L3",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 135,
+            "avail_qty": 98,
+            "val": 1125
+          }
+        ],
+        "count": 4,
+        "qty_sum": 4,
+        "val": 646122
       },
       {
         "code": "SB2609001947",
-        "resv_full": "2026-10-01 09:40",
+        "resv_full": "2026-10-01 09:57",
         "resv": "10-01",
         "dday": "오늘",
         "sa": "안준영",
@@ -46687,64 +46730,12 @@
         "val": 577937
       }
     ],
-    "sb_count": 97,
-    "line_count": 376,
-    "total_val": 69307641,
-    "o_lines": 75,
-    "o_val": 18998098,
-    "resv_total": 389
-  },
-  "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609001800",
-        "resv_full": "2026-10-01 09:50",
-        "resv": "10-01",
-        "dday": "오늘",
-        "sa": "이정환",
-        "rows": [
-          {
-            "item": "34216799367",
-            "name": "REAR BRAKE D",
-            "alois": "A6",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 144082
-          },
-          {
-            "item": "34218867488",
-            "name": "Repair kit,",
-            "alois": "A3",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 8,
-            "avail_qty": 7,
-            "val": 102771
-          },
-          {
-            "item": "34356865612",
-            "name": "Brake pad we",
-            "alois": "A2",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 16,
-            "avail_qty": 14,
-            "val": 26772
-          }
-        ],
-        "count": 3,
-        "qty_sum": 4,
-        "val": 273625
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 3,
-    "total_val": 273625,
+    "sb_count": 2,
+    "line_count": 7,
+    "total_val": 1224059,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10125
+    "resv_total": 10128
   },
   "nonmng": {
     "rows": [],
@@ -57614,8 +57605,16 @@
     }
   },
   "dday": {
-    "rows": [],
-    "count": 0,
-    "linked": false
+    "rows": [
+      {
+        "title": "테스트 디데이",
+        "target": "2026-10-31",
+        "memo": "연동 테스트용 메모",
+        "dday": "D-30",
+        "sort_key": 30
+      }
+    ],
+    "count": 1,
+    "linked": true
   }
 }
