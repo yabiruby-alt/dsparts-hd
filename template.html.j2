@@ -206,18 +206,27 @@
   .home-hero-photo{ background:#0a0d12; }
   .home-hero-bg-anim, .home-hero-bg-static{ position:absolute; inset:0; background-image:url('home-bg.jpg');
     background-size:cover; background-position:center; background-repeat:no-repeat; }
-  .home-hero-bg-anim{ z-index:0; animation:heroDrift 14s ease-in-out infinite; will-change:transform; }
+  .home-hero-bg-anim{ z-index:0; animation:heroDrift 10s ease-in-out infinite; will-change:transform; }
   .home-hero-bg-static{ z-index:1;
     -webkit-mask-image:url('home-bg-mask.png'); mask-image:url('home-bg-mask.png');
     -webkit-mask-size:cover; mask-size:cover; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
     -webkit-mask-position:center; mask-position:center; }
   @keyframes heroDrift{
-    0%{ transform:scale(1.14) translate(-3%,-1.5%); }
-    50%{ transform:scale(1.24) translate(3%,1.5%); }
-    100%{ transform:scale(1.14) translate(-3%,-1.5%); }
+    0%{ transform:scale(1.18) translate(-5%,-2.5%); }
+    50%{ transform:scale(1.36) translate(5%,2.5%); }
+    100%{ transform:scale(1.18) translate(-5%,-2.5%); }
   }
   .home-hero-scrim{ position:absolute; inset:0; z-index:2;
     background:linear-gradient(100deg, rgba(5,8,14,.72) 0%, rgba(5,8,14,.42) 38%, rgba(5,8,14,.18) 62%, rgba(5,8,14,.5) 100%); }
+  .home-hero-lightning{ position:absolute; inset:0; z-index:2; pointer-events:none; background:#dce8ff; opacity:0;
+    mix-blend-mode:screen; animation:heroLightning 9s ease-in-out infinite; }
+  @keyframes heroLightning{
+    0%, 86%, 100%{ opacity:0; }
+    86.6%{ opacity:.65; }
+    87.2%{ opacity:.05; }
+    88%{ opacity:.45; }
+    89%{ opacity:0; }
+  }
   @keyframes homeFadeUp{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:translateY(0); } }
   .home-eyebrow{ font-family:var(--font-mono); font-size:13px; letter-spacing:.14em; text-transform:uppercase; opacity:0;
     color:rgba(255,255,255,.8); animation:homeFadeUp .7s ease .05s forwards; }
@@ -567,6 +576,7 @@
         <div class="home-hero-bg-anim"></div>
         <div class="home-hero-bg-static"></div>
         <div class="home-hero-scrim"></div>
+        <div class="home-hero-lightning"></div>
         <div class="home-hero-text">
           <div class="home-eyebrow">DONGSUNG MOTORS PARTS</div>
           <h1 class="home-title">{{ meta.branch_name }}</h1>
