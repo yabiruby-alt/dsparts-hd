@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 13:24 기준",
+    "generated_at": "10월 1일 (목) · 13:34 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -37789,8 +37789,8 @@
       },
       {
         "ro": "RO2609000451",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-07",
@@ -38009,8 +38009,8 @@
       },
       {
         "ro": "RO2609000879",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-09-14",
@@ -40682,8 +40682,8 @@
       },
       {
         "ro": "RO2610000050",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "우종훈",
         "pub": "2026-10-01",
@@ -40833,30 +40833,63 @@
         "pub_full": "2026-10-01 13:22",
         "dday": "D+0일",
         "amt": 377600
+      },
+      {
+        "ro": "RO2610000065",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 13:26",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000066",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "최민수",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 13:26",
+        "dday": "D+0일",
+        "amt": 943942
+      },
+      {
+        "ro": "RO2610000067",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "강충성",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 13:27",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 327,
-    "total_amt": 739555069,
+    "count": 330,
+    "total_amt": 740499011,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 19,
+        "count": 21,
         "amt": 8874899
       },
       {
         "stat": "상담완료",
         "count": 158,
-        "amt": 483008400
+        "amt": 494206332
       },
       {
         "stat": "정비시작",
         "count": 46,
-        "amt": 65274556
+        "amt": 49060466
       },
       {
         "stat": "End Control 요청",
-        "count": 61,
-        "amt": 82886391
+        "count": 62,
+        "amt": 88846491
       },
       {
         "stat": "가정산 완료",
@@ -42248,7 +42281,7 @@
     "total_val": 14833929,
     "o_lines": 24,
     "o_val": 5641677,
-    "resv_total": 12058
+    "resv_total": 12059
   },
   "sbresv": {
     "groups": [
@@ -46520,59 +46553,16 @@
     "total_val": 61647541,
     "o_lines": 74,
     "o_val": 18779965,
-    "resv_total": 372
+    "resv_total": 370
   },
   "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609001973",
-        "resv_full": "2026-10-01 13:13",
-        "resv": "10-01",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 27,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 55,
-            "avail_qty": 20,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L3",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 124,
-            "avail_qty": 98,
-            "val": 1125
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 577937
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 3,
-    "total_val": 577937,
+    "groups": [],
+    "sb_count": 0,
+    "line_count": 0,
+    "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10159
+    "resv_total": 10161
   },
   "nonmng": {
     "rows": [],
