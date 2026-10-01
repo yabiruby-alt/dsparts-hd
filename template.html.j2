@@ -454,6 +454,14 @@
     </div>
 
     <div class="sb-section">
+      <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">디데이 관리<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
+      <button class="sb-item" id="nav-dday" aria-current="false" onclick="selectPage('dday')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="12" height="12" rx="2"/><path d="M3 7h12M6.5 2v2.5M11.5 2v2.5"/></svg>
+        디데이 현황
+      </button>
+    </div>
+
+    <div class="sb-section">
       <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">진행 작업 관리<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
       <button class="sb-item" id="nav-openro" aria-current="false" onclick="selectPage('openro')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="2" width="12" height="14" rx="1.5"/><path d="M6 6h6M6 9h6M6 12h3"/></svg>
@@ -1389,6 +1397,40 @@
       </div>
     </section>
 
+    <section id="page-dday" hidden>
+      <div class="crumbbar">
+        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>디데이 현황</b></span>
+        <div class="spacer"></div>
+        <div class="freshness"><span class="dot"></span>{% if dday.linked %}구글 폼 응답 시트 · 10분마다 자동 반영{% else %}구글 폼 연동 전{% endif %}</div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-head">
+          <span class="lbl">디데이 리스트</span>
+          <span class="val">{{ dday.count }}건</span>
+          <span class="foot">목표일까지 D-N, 지난 항목은 D+N · 임박/경과 순</span>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>No.</th><th>제목</th><th>목표일</th><th>디데이</th><th>메모</th></tr></thead>
+            <tbody>
+              {% for r in dday.rows %}
+              <tr>
+                <td class="num">{{ loop.index }}</td>
+                <td>{{ r.title }}</td>
+                <td class="mono">{{ r.target }}</td>
+                <td class="mono"{% if r.sort_key <= 0 %} style="color:var(--critical);font-weight:700;"{% endif %}>{{ r.dday }}</td>
+                <td>{{ r.memo }}</td>
+              </tr>
+              {% else %}
+              <tr><td colspan="5" class="empty-note">{% if dday.linked %}등록된 디데이 항목이 없습니다{% else %}아직 구글 폼이 연동되지 않았습니다{% endif %}</td></tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section id="page-stockcheck" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>일일 재고조사</b></span>
@@ -1469,7 +1511,7 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','extaudit','oaov','longstock','nonmng','stockcheck','stockcheckweek','noloc','tire','opart','oflow','calendar'];
+  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','extaudit','oaov','longstock','nonmng','stockcheck','stockcheckweek','noloc','tire','dday','opart','oflow','calendar'];
   var TIRE_DATA = {{ tires_json }};
   function selectPage(key){
     PAGES.forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); });

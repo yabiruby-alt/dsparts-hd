@@ -14,6 +14,8 @@
 세션(쿠키)은 authdata 폴더에 저장되어, 프로그램을 재시작해도 세션이 유지되는 동안은 재로그인이 필요 없습니다.
 동시에 두 개를 띄우면 DMS가 세션을 끊어버리므로 절대 두 인스턴스를 같이 실행하지 마세요(잠금 파일로 방지됨).
 """
+import csv
+import io
 import json
 import mimetypes
 import os
@@ -22,6 +24,7 @@ import subprocess
 import sys
 import threading
 import time
+import urllib.request
 import webbrowser
 
 try:
@@ -70,6 +73,11 @@ REASONS_LOCK = threading.Lock()   # reasons.json 읽기/쓰기
 TIRE_XLSX_PATH = BASE_DIR / "docs" / "타이어_마스터파일.xlsx"
 TIRE_FILE = BASE_DIR / "tire_master.json"   # 엑셀을 못 읽을 때 쓸 마지막 성공본 캐시
 TIRE_LOCK = threading.Lock()
+# 디데이 현황: 구글 폼(제목/목표일/메모) 응답 시트를 CSV로 내보낸 링크를 읽어와 매 주기 자동 반영
+# 설정 전까지는 빈 문자열로 두면 "연동 전" 상태로 표시됨
+DDAY_SHEET_CSV_URL = ""
+DDAY_FILE = BASE_DIR / "dday_items.json"   # 시트를 못 읽을 때 쓸 마지막 성공본 캐시
+DDAY_LOCK = threading.Lock()
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
 LAST_DATA = {}                    # 마지막 갱신 데이터(사유만 바뀌었을 때 DMS 재조회 없이 재렌더용)
 
@@ -1201,6 +1209,7 @@ def republish_reasons() -> None:
         data = dict(LAST_DATA)
         data["reasons"] = _open_reasons(data)
         data["tires"] = load_tires()
+        data["dday"] = build_dday(load_dday_items(), datetime.now(ZoneInfo("Asia/Seoul")))
         html = render(data)
         DOCS_DIR.mkdir(parents=True, exist_ok=True)
         (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
@@ -1273,6 +1282,73 @@ def import_tire_excel() -> dict | None:
     with TIRE_LOCK:
         TIRE_FILE.write_text(json.dumps(tires, ensure_ascii=False, indent=2), encoding="utf-8")
     return tires
+
+
+def load_dday_items() -> list:
+    """구글 시트를 못 읽었을 때 쓸 마지막 성공본(캐시)."""
+    with DDAY_LOCK:
+        try:
+            return json.loads(DDAY_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            return []
+
+
+def import_dday_sheet() -> list | None:
+    """구글 폼 응답 시트(타임스탬프/제목/목표일/메모)를 CSV로 읽어와 디데이 항목으로 변환.
+    실패(연동 안 함/네트워크 오류 등)하면 None을 반환해 이전 값을 그대로 쓰게 한다."""
+    if not DDAY_SHEET_CSV_URL:
+        return None
+    try:
+        req = urllib.request.Request(DDAY_SHEET_CSV_URL, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            raw = resp.read().decode("utf-8-sig")
+    except Exception as e:
+        print(f"[디데이 시트 읽기 실패] {e}")
+        return None
+
+    items = []
+    try:
+        reader = csv.reader(io.StringIO(raw))
+        next(reader, None)  # 헤더(타임스탬프/제목/목표일/메모) 건너뜀
+        for r in reader:
+            if len(r) < 3:
+                continue
+            title = (r[1] or "").strip()
+            date_raw = (r[2] or "").strip()
+            memo = (r[3] if len(r) > 3 else "").strip()
+            if not title or not date_raw:
+                continue
+            nums = re.findall(r"\d+", date_raw)
+            if len(nums) < 3:
+                continue
+            try:
+                target = datetime(int(nums[0]), int(nums[1]), int(nums[2]))
+            except Exception:
+                continue
+            items.append({"title": title, "target": target.strftime("%Y-%m-%d"), "memo": memo})
+    except Exception as e:
+        print(f"[디데이 시트 파싱 실패] {e}")
+        return None
+
+    with DDAY_LOCK:
+        DDAY_FILE.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
+    return items
+
+
+def build_dday(items: list, today: datetime) -> dict:
+    """목표일까지 D-N(미래)/D-DAY(당일)/D+N(경과) 계산, 경과·임박 순으로 정렬."""
+    rows = []
+    for it in items:
+        try:
+            target = datetime.strptime(it["target"], "%Y-%m-%d")
+        except Exception:
+            continue
+        delta = (target.date() - today.date()).days
+        dday = f"D-{delta}" if delta > 0 else ("D-DAY" if delta == 0 else f"D+{-delta}")
+        rows.append({"title": it.get("title", ""), "target": it["target"], "memo": it.get("memo", ""),
+                      "dday": dday, "sort_key": delta})
+    rows.sort(key=lambda x: x["sort_key"])
+    return {"rows": rows, "count": len(rows), "linked": bool(DDAY_SHEET_CSV_URL)}
 
 
 class ReasonHandler(BaseHTTPRequestHandler):
@@ -1425,6 +1501,10 @@ def run_cycle(page: Page) -> None:
         data["tires"] = import_tire_excel()
         if data["tires"] is None:
             data["tires"] = load_tires()
+        dday_items = import_dday_sheet()
+        if dday_items is None:
+            dday_items = load_dday_items()
+        data["dday"] = build_dday(dday_items, now)
         html = render(data)
         stamp = now.strftime("%Y%m%d_%H%M")
         out_path = OUTPUT_DIR / f"dashboard_{stamp}.html"
