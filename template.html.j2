@@ -206,15 +206,15 @@
   .home-hero-photo{ background:#0a0d12; }
   .home-hero-bg-anim, .home-hero-bg-static{ position:absolute; inset:0; background-image:url('home-bg.jpg');
     background-size:cover; background-position:center; background-repeat:no-repeat; }
-  .home-hero-bg-anim{ z-index:0; animation:heroDrift 10s ease-in-out infinite; will-change:transform; }
+  .home-hero-bg-anim{ z-index:0; transform:scale(1.26); animation:heroDrift 12s ease-in-out infinite; will-change:transform; }
   .home-hero-bg-static{ z-index:1;
     -webkit-mask-image:url('home-bg-mask.png'); mask-image:url('home-bg-mask.png');
     -webkit-mask-size:cover; mask-size:cover; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
     -webkit-mask-position:center; mask-position:center; }
   @keyframes heroDrift{
-    0%{ transform:scale(1.18) translate(-5%,-2.5%); }
-    50%{ transform:scale(1.36) translate(5%,2.5%); }
-    100%{ transform:scale(1.18) translate(-5%,-2.5%); }
+    0%{ transform:scale(1.26) translate(-7%,-3.5%); }
+    50%{ transform:scale(1.26) translate(7%,3.5%); }
+    100%{ transform:scale(1.26) translate(-7%,-3.5%); }
   }
   .home-hero-scrim{ position:absolute; inset:0; z-index:2;
     background:linear-gradient(100deg, rgba(5,8,14,.72) 0%, rgba(5,8,14,.42) 38%, rgba(5,8,14,.18) 62%, rgba(5,8,14,.5) 100%); }
