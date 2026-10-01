@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 14:41 기준",
+    "generated_at": "10월 1일 (목) · 14:44 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -22075,40 +22075,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "11287594969",
-        "name": "Tensioner",
-        "alois": "O8",
-        "pgrp": "-",
-        "ref_tp": "SB",
-        "ref_no": "SB2609002161",
-        "req_qty": 1,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-30",
-        "req_dt_full": "2026-09-30 13:53:00",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 137970,
-        "sa": "이정환",
-        "dday": "D+1일"
-      },
-      {
-        "item": "11287618848",
-        "name": "RIBBED V-BEL",
-        "alois": "O8",
-        "pgrp": "-",
-        "ref_tp": "SB",
-        "ref_no": "SB2609002161",
-        "req_qty": 1,
-        "crt_qty": 0,
-        "avail_qty": 0,
-        "req_dt": "09-30",
-        "req_dt_full": "2026-09-30 13:53:00",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 22578,
-        "sa": "이정환",
-        "dday": "D+1일"
-      },
-      {
         "item": "07119906460",
         "name": "Bolt",
         "alois": "O8",
@@ -22990,6 +22956,40 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 48620,
         "sa": "박태강",
+        "dday": "D+0일"
+      },
+      {
+        "item": "11287594969",
+        "name": "Tensioner",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000074",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-01",
+        "req_dt_full": "2026-10-01 14:42:34",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 137970,
+        "sa": "이정환",
+        "dday": "D+0일"
+      },
+      {
+        "item": "11287618848",
+        "name": "RIBBED V-BEL",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000074",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-01",
+        "req_dt_full": "2026-10-01 14:42:34",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 22578,
+        "sa": "이정환",
         "dday": "D+0일"
       }
     ],
@@ -26245,11 +26245,45 @@
             "val": 40527,
             "sa": "안준영",
             "dday": "D+0일"
+          },
+          {
+            "item": "11287594969",
+            "name": "Tensioner",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000074",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-01",
+            "req_dt_full": "2026-10-01 14:42:34",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 137970,
+            "sa": "이정환",
+            "dday": "D+0일"
+          },
+          {
+            "item": "11287618848",
+            "name": "RIBBED V-BEL",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000074",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-01",
+            "req_dt_full": "2026-10-01 14:42:34",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 22578,
+            "sa": "이정환",
+            "dday": "D+0일"
           }
         ],
-        "count": 191,
-        "qty_sum": 260,
-        "val": 67013214
+        "count": 193,
+        "qty_sum": 262,
+        "val": 67173762
       },
       {
         "code": "SB",
@@ -27802,40 +27836,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "11287594969",
-            "name": "Tensioner",
-            "alois": "O8",
-            "pgrp": "-",
-            "ref_tp": "SB",
-            "ref_no": "SB2609002161",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-30",
-            "req_dt_full": "2026-09-30 13:53:00",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 137970,
-            "sa": "이정환",
-            "dday": "D+1일"
-          },
-          {
-            "item": "11287618848",
-            "name": "RIBBED V-BEL",
-            "alois": "O8",
-            "pgrp": "-",
-            "ref_tp": "SB",
-            "ref_no": "SB2609002161",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "req_dt": "09-30",
-            "req_dt_full": "2026-09-30 13:53:00",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 22578,
-            "sa": "이정환",
-            "dday": "D+1일"
-          },
-          {
             "item": "51118738611",
             "name": "Guide bumper",
             "alois": "O8",
@@ -27972,9 +27972,9 @@
             "dday": "D+1일"
           }
         ],
-        "count": 101,
-        "qty_sum": 160,
-        "val": 24600314
+        "count": 99,
+        "qty_sum": 158,
+        "val": 24439766
       },
       {
         "code": "SP",
@@ -38792,8 +38792,8 @@
       },
       {
         "ro": "RO2609001540",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "사고수리",
         "sa": "박영묵",
         "pub": "2026-09-28",
@@ -40845,11 +40845,33 @@
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 14:32",
         "dday": "D+0일",
-        "amt": 94070
+        "amt": 100170
+      },
+      {
+        "ro": "RO2610000074",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "이정환",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 14:42",
+        "dday": "D+0일",
+        "amt": 376400
+      },
+      {
+        "ro": "RO2610000075",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "최민수",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 14:43",
+        "dday": "D+0일",
+        "amt": 75256
       }
     ],
-    "count": 336,
-    "total_amt": 755668786,
+    "count": 338,
+    "total_amt": 756126542,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40858,8 +40880,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 157,
-        "amt": 497074695
+        "count": 158,
+        "amt": 497518451
       },
       {
         "stat": "정비시작",
@@ -40868,8 +40890,8 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 65,
-        "amt": 90521691
+        "count": 66,
+        "amt": 90535691
       },
       {
         "stat": "가정산 완료",
@@ -46472,55 +46494,12 @@
     "resv_total": 367
   },
   "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609002161",
-        "resv_full": "2026-10-01 14:12",
-        "resv": "10-01",
-        "dday": "오늘",
-        "sa": "이정환",
-        "rows": [
-          {
-            "item": "11287594969",
-            "name": "Tensioner",
-            "alois": "O8",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "val": 137970
-          },
-          {
-            "item": "11287618848",
-            "name": "RIBBED V-BEL",
-            "alois": "O8",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "val": 22578
-          },
-          {
-            "item": "07129903926",
-            "name": "ASA-Bolt",
-            "alois": "II",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "val": 1960
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 162508
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 3,
-    "total_val": 162508,
-    "o_lines": 2,
-    "o_val": 160548,
+    "groups": [],
+    "sb_count": 0,
+    "line_count": 0,
+    "total_val": 0,
+    "o_lines": 0,
+    "o_val": 0,
     "resv_total": 10171
   },
   "nonmng": {
