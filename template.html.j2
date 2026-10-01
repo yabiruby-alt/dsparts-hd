@@ -60,8 +60,9 @@
     display:flex; flex-direction:column; padding:22px 16px; gap:22px; overflow-y:auto; }
   .sb-brand{ display:flex; align-items:center; gap:10px; padding:4px 8px; cursor:pointer; border-radius:10px; transition:background .12s ease; }
   .sb-brand:hover{ background:var(--surface-2); }
-  .sb-brand .mark{ width:30px; height:30px; border-radius:9px; background:var(--accent); color:#fff; flex:none;
+  .sb-brand .mark{ width:30px; height:30px; border-radius:50%; background:var(--accent); color:#fff; flex:none;
     display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; font-size:13.5px; box-shadow:var(--shadow-sm); }
+  .sb-brand .mark img{ width:22px; height:22px; display:block; }
   .sb-brand .name{ font-family:var(--font-display); font-weight:700; font-size:18.5px; letter-spacing:-.015em; }
   .sb-mstripe{ height:2px; border-radius:2px; margin:-10px 8px 0; opacity:.85;
     background:linear-gradient(90deg, var(--m-blue) 0 33.33%, var(--m-violet) 33.33% 66.66%, var(--m-red) 66.66% 100%); }
@@ -201,32 +202,13 @@
     display:flex; align-items:center; gap:40px; flex-wrap:wrap;
     background:linear-gradient(120deg, var(--ink) 0%, var(--accent-strong) 55%, var(--accent) 100%);
     background-size:220% 220%; animation:homeGradient 16s ease infinite; color:#fff; box-shadow:var(--shadow-card); }
-  .home-hero-text{ position:relative; z-index:3; flex:1 1 340px; min-width:0; }
+  .home-hero-text{ position:relative; z-index:2; flex:1 1 340px; min-width:0; }
   @keyframes homeGradient{ 0%{background-position:0% 50%;} 50%{background-position:100% 50%;} 100%{background-position:0% 50%;} }
   .home-hero-photo{ background:#0a0d12; }
-  .home-hero-bg-anim, .home-hero-bg-static{ position:absolute; inset:0; background-image:url('home-bg.jpg');
+  .home-hero-bg{ position:absolute; inset:0; z-index:0; background-image:url('home-bg.jpg');
     background-size:cover; background-position:center; background-repeat:no-repeat; }
-  .home-hero-bg-anim{ z-index:0; transform:scale(1.26); animation:heroDrift 12s ease-in-out infinite; will-change:transform; }
-  .home-hero-bg-static{ z-index:1;
-    -webkit-mask-image:url('home-bg-mask.png'); mask-image:url('home-bg-mask.png');
-    -webkit-mask-size:cover; mask-size:cover; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
-    -webkit-mask-position:center; mask-position:center; }
-  @keyframes heroDrift{
-    0%{ transform:scale(1.26) translate(-7%,-3.5%); }
-    50%{ transform:scale(1.26) translate(7%,3.5%); }
-    100%{ transform:scale(1.26) translate(-7%,-3.5%); }
-  }
-  .home-hero-scrim{ position:absolute; inset:0; z-index:2;
+  .home-hero-scrim{ position:absolute; inset:0; z-index:1;
     background:linear-gradient(100deg, rgba(5,8,14,.72) 0%, rgba(5,8,14,.42) 38%, rgba(5,8,14,.18) 62%, rgba(5,8,14,.5) 100%); }
-  .home-hero-lightning{ position:absolute; inset:0; z-index:2; pointer-events:none; background:#dce8ff; opacity:0;
-    mix-blend-mode:screen; animation:heroLightning 9s ease-in-out infinite; }
-  @keyframes heroLightning{
-    0%, 86%, 100%{ opacity:0; }
-    86.6%{ opacity:.65; }
-    87.2%{ opacity:.05; }
-    88%{ opacity:.45; }
-    89%{ opacity:0; }
-  }
   @keyframes homeFadeUp{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:translateY(0); } }
   .home-eyebrow{ font-family:var(--font-mono); font-size:13px; letter-spacing:.14em; text-transform:uppercase; opacity:0;
     color:rgba(255,255,255,.8); animation:homeFadeUp .7s ease .05s forwards; }
@@ -459,7 +441,7 @@
   <div class="m-backdrop" onclick="toggleMenu(false)"></div>
 
   <nav class="sidebar" aria-label="동성모터스 PARTS 메뉴">
-    <div class="sb-brand" role="button" tabindex="0" onclick="selectPage('home')" onkeydown="if(event.key==='Enter'||event.key===' '){selectPage('home')}"><div class="mark">DS</div><span class="name">동성모터스 PARTS</span></div>
+    <div class="sb-brand" role="button" tabindex="0" onclick="selectPage('home')" onkeydown="if(event.key==='Enter'||event.key===' '){selectPage('home')}"><div class="mark"><img src="bmw-logo.svg" alt="BMW" width="22" height="22"></div><span class="name">동성모터스 PARTS</span></div>
     <div class="sb-mstripe"></div>
 
     <div class="sb-workspace">
@@ -590,10 +572,8 @@
     <div class="maininner">
     <section id="page-home">
       <div class="home-hero home-hero-photo">
-        <div class="home-hero-bg-anim"></div>
-        <div class="home-hero-bg-static"></div>
+        <div class="home-hero-bg"></div>
         <div class="home-hero-scrim"></div>
-        <div class="home-hero-lightning"></div>
         <div class="home-hero-text">
           <div class="home-eyebrow">DONGSUNG MOTORS PARTS</div>
           <h1 class="home-title">{{ meta.branch_name }}</h1>
