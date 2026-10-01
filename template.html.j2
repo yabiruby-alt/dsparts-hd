@@ -1679,16 +1679,24 @@
   }
   if(!document.getElementById('page-home').hidden) runHomeCountups();
   (function(){
-    var HERO_IMAGES = ['home-bg.jpg','home-bg-2.jpg','home-bg-3.jpg','home-bg-4.jpg','home-bg-5.jpg'];
+    var HERO_IMAGES = [
+      {src:'home-bg.jpg', pos:'center'},
+      {src:'home-bg-2.jpg', pos:'center 85%'},
+      {src:'home-bg-3.jpg', pos:'center'},
+      {src:'home-bg-4.jpg', pos:'center'},
+      {src:'home-bg-5.jpg', pos:'center'}
+    ];
     if(HERO_IMAGES.length < 2) return;
-    HERO_IMAGES.forEach(function(src){ (new Image()).src = src; });
+    HERO_IMAGES.forEach(function(item){ (new Image()).src = item.src; });
     var layers = [document.getElementById('heroBgA'), document.getElementById('heroBgB')];
     if(!layers[0] || !layers[1]) return;
+    layers[0].style.backgroundPosition = HERO_IMAGES[0].pos;
     var idx = 0, active = 0;
     setInterval(function(){
       idx = (idx + 1) % HERO_IMAGES.length;
       var incoming = layers[1 - active];
-      incoming.style.backgroundImage = "url('" + HERO_IMAGES[idx] + "')";
+      incoming.style.backgroundImage = "url('" + HERO_IMAGES[idx].src + "')";
+      incoming.style.backgroundPosition = HERO_IMAGES[idx].pos;
       incoming.style.opacity = 1;
       layers[active].style.opacity = 0;
       active = 1 - active;
