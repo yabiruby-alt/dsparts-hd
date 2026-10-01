@@ -237,7 +237,7 @@
   .home-freshness{ display:inline-flex; align-items:center; gap:7px; font-family:var(--font-mono); font-size:13px;
     color:rgba(255,255,255,.85); opacity:0; animation:homeFadeUp .7s ease .42s forwards; }
   .home-freshness .dot{ background:#fff; box-shadow:0 0 0 3px rgba(255,255,255,.25); }
-  .home-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .home-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:16px; }
   .home-card{ all:unset; box-sizing:border-box; cursor:pointer; background:var(--surface); border-radius:16px; padding:20px 20px 18px;
     box-shadow:var(--shadow-card); display:flex; flex-direction:column; gap:6px; transition:transform .15s ease, box-shadow .15s ease;
     opacity:0; animation:homeFadeUp .6s ease forwards; }
@@ -253,6 +253,18 @@
   .home-dday-item{ display:flex; align-items:baseline; gap:9px; }
   .home-dday-badge{ font-family:var(--font-mono); font-weight:700; font-size:16px; color:var(--ink); flex:none; min-width:42px; }
   .home-dday-title{ font-size:13.5px; color:var(--ink-2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; min-width:0; }
+
+  .home-dday-panel{ all:unset; display:block; box-sizing:border-box; cursor:pointer; width:100%; background:var(--surface);
+    border-radius:16px; padding:22px 26px 24px; box-shadow:var(--shadow-card); transition:transform .15s ease, box-shadow .15s ease;
+    opacity:0; animation:homeFadeUp .6s ease .4s forwards; }
+  .home-dday-panel:hover{ transform:translateY(-2px); box-shadow:var(--shadow-md); }
+  .home-dday-panel-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line); }
+  .home-dday-panel-count{ font-family:var(--font-mono); color:var(--muted); font-size:13px; margin-left:auto; }
+  .home-dday-list-lg{ gap:14px; }
+  .home-dday-item-lg{ gap:16px; align-items:baseline; }
+  .home-dday-badge-lg{ font-size:26px; min-width:72px; }
+  .home-dday-title-lg{ font-size:16px; white-space:normal; flex:1 1 auto; }
+  .home-dday-target{ font-family:var(--font-mono); font-size:13px; color:var(--muted); flex:none; }
   .aloistag{ display:inline-block; font-family:var(--font-mono); font-size:12.5px; font-weight:600; padding:2px 7px; border-radius:7px; background:var(--surface-2); color:var(--ink-2); }
   .subttl{ font-family:var(--font-display); font-weight:600; font-size:15px; text-transform:none; letter-spacing:0; color:var(--ink); margin:0 0 10px; display:flex; justify-content:space-between; }
   .subttl .n{ font-family:var(--font-mono); color:var(--muted); font-weight:500; text-transform:none; letter-spacing:0; }
@@ -327,6 +339,11 @@
     .home-grid{ grid-template-columns:1fr 1fr; gap:12px; }
     .home-card{ padding:16px 16px 14px; }
     .home-card-value{ font-size:22px; }
+    .home-dday-panel{ padding:18px 18px 20px; }
+    .home-dday-badge-lg{ font-size:21px; min-width:58px; }
+    .home-dday-title-lg{ font-size:14.5px; }
+    .home-dday-item-lg{ flex-wrap:wrap; gap:4px 12px; }
+    .home-dday-target{ flex-basis:100%; }
   }
   @media (max-width:560px){
     .home-grid{ grid-template-columns:1fr; }
@@ -601,23 +618,27 @@
           <span class="home-card-value">{{ '%.2f'|format(oaov.pct) }}%</span>
           <span class="home-card-foot">OA+OV ₩{{ '{:,}'.format(oaov.total) }}</span>
         </button>
-        <button class="home-card" onclick="selectPage('dday')">
-          <span class="home-card-eyebrow">다가오는 디데이{% if dday.count > 3 %} · 외 {{ dday.count - 3 }}건{% endif %}</span>
-          {% if dday.rows %}
-          <div class="home-dday-list">
-            {% for r in dday.rows[:3] %}
-            <div class="home-dday-item">
-              <span class="home-dday-badge"{% if r.sort_key <= 0 %} style="color:var(--critical);"{% endif %}>{{ r.dday }}</span>
-              <span class="home-dday-title">{{ r.title }}</span>
-            </div>
-            {% endfor %}
-          </div>
-          {% else %}
-          <span class="home-card-value">-</span>
-          <span class="home-card-foot">등록된 디데이 없음</span>
-          {% endif %}
-        </button>
       </div>
+
+      <button class="home-dday-panel" onclick="selectPage('dday')">
+        <div class="home-dday-panel-head">
+          <span class="home-card-eyebrow">다가오는 디데이</span>
+          <span class="home-dday-panel-count">{{ dday.count }}건{% if dday.count > 5 %} · 외 {{ dday.count - 5 }}건 더보기 →{% endif %}</span>
+        </div>
+        {% if dday.rows %}
+        <div class="home-dday-list home-dday-list-lg">
+          {% for r in dday.rows[:5] %}
+          <div class="home-dday-item home-dday-item-lg">
+            <span class="home-dday-badge home-dday-badge-lg"{% if r.sort_key <= 0 %} style="color:var(--critical);"{% endif %}>{{ r.dday }}</span>
+            <span class="home-dday-title home-dday-title-lg">{{ r.title }}</span>
+            <span class="home-dday-target">{{ r.target }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        {% else %}
+        <span class="home-card-foot">등록된 디데이가 없습니다</span>
+        {% endif %}
+      </button>
     </section>
 
     <section id="page-today" hidden>
