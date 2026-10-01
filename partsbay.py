@@ -81,6 +81,7 @@ DDAY_LOCK = threading.Lock()
 # 매출 대시보드 모듈 위치 (지점장 전용 — 파츠베이 공개 사이트와 별도 저장소로 배포)
 SALES_DIR = BASE_DIR.parent / "업무자동화 생성" / "매출데이터 사이트"
 SALES_ENABLED = (SALES_DIR / "sales.py").exists()
+RR_ENABLED = False   # 롤스로이스 DMS 연동 — 켜면 데몬 시작 시 RR 로그인 창이 하나 더 뜸
 RR_BASE_URL = "https://www.rrdms.co.kr"   # 롤스로이스 DMS (같은 My DMS 플랫폼, 별도 계정/세션)
 RR_AUTH_DIR = Path.home() / "AppData" / "Local" / "PartsBayDMS" / "authdata_rr"
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
@@ -1575,7 +1576,7 @@ def main():
             # 롤스로이스 DMS(매출 대시보드 RR 항목용) — 도메인이 달라 BMW 세션과 충돌하지 않음. 로그인은 그 창에서 직접,
             # 로그인 전이어도 BMW 갱신은 그대로 진행되고 매출 모듈이 매 주기 로그인 여부만 확인한다.
             rr_page = None
-            if SALES_ENABLED:
+            if SALES_ENABLED and RR_ENABLED:
                 try:
                     RR_AUTH_DIR.mkdir(parents=True, exist_ok=True)
                     rr_ctx = p.chromium.launch_persistent_context(
