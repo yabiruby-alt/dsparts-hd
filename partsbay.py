@@ -1336,7 +1336,7 @@ def import_dday_sheet() -> list | None:
 
 
 def build_dday(items: list, today: datetime) -> dict:
-    """목표일까지 D-N(미래)/D-DAY(당일)/D+N(경과) 계산, 경과·임박 순으로 정렬."""
+    """목표일까지 D-N(미래)/D-DAY(당일) 계산, 지난 디데이(D+1 이후)는 제외하고 임박 순으로 정렬."""
     rows = []
     for it in items:
         try:
@@ -1344,7 +1344,9 @@ def build_dday(items: list, today: datetime) -> dict:
         except Exception:
             continue
         delta = (target.date() - today.date()).days
-        dday = f"D-{delta}" if delta > 0 else ("D-DAY" if delta == 0 else f"D+{-delta}")
+        if delta < 0:
+            continue
+        dday = f"D-{delta}" if delta > 0 else "D-DAY"
         rows.append({"title": it.get("title", ""), "target": it["target"], "memo": it.get("memo", ""),
                       "dday": dday, "sort_key": delta})
     rows.sort(key=lambda x: x["sort_key"])
