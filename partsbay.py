@@ -1537,7 +1537,9 @@ def run_cycle(page: Page) -> None:
         try:
             if str(SALES_DIR) not in sys.path:
                 sys.path.insert(0, str(SALES_DIR))
+            import importlib
             import sales
+            importlib.reload(sales)  # sales.py 를 고쳐도 데몬 재시작(=DMS 재로그인) 없이 다음 주기부터 반영
             sales.run(to_rows, lambda s, e: extract_turnover(page, s, e), now, BRANCH_NAME, page=page)
         except Exception as e:
             print(f"   [매출 대시보드 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
