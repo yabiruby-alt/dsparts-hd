@@ -197,12 +197,27 @@
   .tire-filters #tire-size-input{ min-width:200px; }
   .rft-tag{ color:var(--accent); font-weight:600; }
 
-  .home-hero{ position:relative; overflow:hidden; margin:0 -40px 24px; padding:64px 56px; min-height:360px;
+  .home-hero{ position:relative; overflow:hidden; margin:0 -40px 24px; padding:64px 56px; min-height:480px;
     display:flex; align-items:center; gap:40px; flex-wrap:wrap;
     background:linear-gradient(120deg, var(--ink) 0%, var(--accent-strong) 55%, var(--accent) 100%);
     background-size:220% 220%; animation:homeGradient 16s ease infinite; color:#fff; box-shadow:var(--shadow-card); }
-  .home-hero-text{ flex:1 1 340px; min-width:0; }
+  .home-hero-text{ position:relative; z-index:3; flex:1 1 340px; min-width:0; }
   @keyframes homeGradient{ 0%{background-position:0% 50%;} 50%{background-position:100% 50%;} 100%{background-position:0% 50%;} }
+  .home-hero-photo{ background:#0a0d12; }
+  .home-hero-bg-anim, .home-hero-bg-static{ position:absolute; inset:0; background-image:url('home-bg.jpg');
+    background-size:cover; background-position:center; background-repeat:no-repeat; }
+  .home-hero-bg-anim{ z-index:0; animation:heroDrift 26s ease-in-out infinite alternate; }
+  .home-hero-bg-static{ z-index:1;
+    -webkit-mask-image:url('home-bg-mask.png'); mask-image:url('home-bg-mask.png');
+    -webkit-mask-size:cover; mask-size:cover; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+    -webkit-mask-position:center; mask-position:center; }
+  @keyframes heroDrift{
+    0%{ transform:scale(1.06) translate(0,0); }
+    50%{ transform:scale(1.11) translate(-1.2%,-0.8%); }
+    100%{ transform:scale(1.06) translate(1%,0.6%); }
+  }
+  .home-hero-scrim{ position:absolute; inset:0; z-index:2;
+    background:linear-gradient(100deg, rgba(5,8,14,.72) 0%, rgba(5,8,14,.42) 38%, rgba(5,8,14,.18) 62%, rgba(5,8,14,.5) 100%); }
   @keyframes homeFadeUp{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:translateY(0); } }
   .home-eyebrow{ font-family:var(--font-mono); font-size:13px; letter-spacing:.14em; text-transform:uppercase; opacity:0;
     color:rgba(255,255,255,.8); animation:homeFadeUp .7s ease .05s forwards; }
@@ -291,10 +306,11 @@
     .tablewrap{ -webkit-overflow-scrolling:touch; }
     .tire-table{ table-layout:auto; min-width:820px; }
     .tire-table th, .tire-table td{ overflow:visible; text-overflow:clip; }
-    .home-hero{ margin:0 -12px 18px; padding:36px 22px; min-height:0; flex-direction:column; text-align:center; gap:22px; }
+    .home-hero{ margin:0 -12px 18px; padding:36px 22px; min-height:320px; flex-direction:column; text-align:center; gap:22px; }
     .home-hero-text{ flex-basis:auto; }
     .home-title{ font-size:28px; }
     .home-freshness{ justify-content:center; }
+    .home-hero-scrim{ background:linear-gradient(180deg, rgba(5,8,14,.3) 0%, rgba(5,8,14,.45) 55%, rgba(5,8,14,.78) 100%); }
     .home-grid{ grid-template-columns:1fr 1fr; gap:12px; }
     .home-card{ padding:16px 16px 14px; }
     .home-card-value{ font-size:22px; }
@@ -547,7 +563,10 @@
   <main class="main">
     <div class="maininner">
     <section id="page-home">
-      <div class="home-hero">
+      <div class="home-hero home-hero-photo">
+        <div class="home-hero-bg-anim"></div>
+        <div class="home-hero-bg-static"></div>
+        <div class="home-hero-scrim"></div>
         <div class="home-hero-text">
           <div class="home-eyebrow">DONGSUNG MOTORS PARTS</div>
           <h1 class="home-title">{{ meta.branch_name }}</h1>
