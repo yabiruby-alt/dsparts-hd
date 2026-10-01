@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 14:24 기준",
+    "generated_at": "10월 1일 (목) · 14:29 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,7 +16,7 @@
     "top5": []
   },
   "inv": {
-    "total": 1005273373,
+    "total": 1005087662,
     "item_count": 2182,
     "code_count": 25,
     "alois_groups": [
@@ -27,9 +27,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 222646125,
+            "val": 222626205,
             "pct": 22.15,
-            "qty": 2612,
+            "qty": 2611,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -70,8 +70,8 @@
               {
                 "item": "11428575211",
                 "name": "Set oil-filt",
-                "qty": 194,
-                "val": 3864480
+                "qty": 193,
+                "val": 3844560
               },
               {
                 "item": "64316835405",
@@ -4484,9 +4484,9 @@
             ]
           }
         ],
-        "subtotal_val": 473915845,
-        "subtotal_qty": 9039,
-        "subtotal_pct": 47.14
+        "subtotal_val": 473895925,
+        "subtotal_qty": 9038,
+        "subtotal_pct": 47.15
       },
       {
         "code": "L",
@@ -4495,15 +4495,15 @@
         "rows": [
           {
             "code": "L1",
-            "val": 25947014,
-            "pct": 2.58,
-            "qty": 1983,
+            "val": 25866800,
+            "pct": 2.57,
+            "qty": 1978,
             "parts": [
               {
                 "item": "83215B49DD6",
                 "name": "LL-17FE+ 0W-20",
-                "qty": 458,
-                "val": 7006185
+                "qty": 453,
+                "val": 6925971
               },
               {
                 "item": "83212469985",
@@ -7730,8 +7730,8 @@
             ]
           }
         ],
-        "subtotal_val": 164006362,
-        "subtotal_qty": 4736,
+        "subtotal_val": 163926147,
+        "subtotal_qty": 4731,
         "subtotal_pct": 16.31
       },
       {
@@ -10631,9 +10631,9 @@
           },
           {
             "code": "OE",
-            "val": 85069975,
+            "val": 84984399,
             "pct": 8.46,
-            "qty": 677,
+            "qty": 676,
             "parts": [
               {
                 "item": "34505B72715",
@@ -10668,8 +10668,8 @@
               {
                 "item": "64119382886",
                 "name": "MICROFILTER/",
-                "qty": 33,
-                "val": 2824008
+                "qty": 32,
+                "val": 2738432
               },
               {
                 "item": "90200007294",
@@ -11950,9 +11950,9 @@
             ]
           }
         ],
-        "subtotal_val": 203639499,
-        "subtotal_qty": 2373,
-        "subtotal_pct": 20.26
+        "subtotal_val": 203553923,
+        "subtotal_qty": 2372,
+        "subtotal_pct": 20.25
       },
       {
         "code": "I",
@@ -13360,14 +13360,14 @@
         ],
         "subtotal_val": 161582559,
         "subtotal_qty": 2055,
-        "subtotal_pct": 16.07
+        "subtotal_pct": 16.08
       }
     ]
   },
   "oaov": {
     "total": 45383483,
-    "inv_total": 1005273373,
-    "pct": 4.51,
+    "inv_total": 1005087662,
+    "pct": 4.52,
     "oa_val": 26405907,
     "ov_val": 18977576,
     "oa_lines": 102,
@@ -20285,7 +20285,7 @@
         "ref_tp": "SB",
         "ref_no": "SB2609001591",
         "req_qty": 1,
-        "crt_qty": 33,
+        "crt_qty": 32,
         "avail_qty": 29,
         "req_dt": "09-22",
         "req_dt_full": "2026-09-22 09:06:30",
@@ -22053,7 +22053,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2609001763",
         "req_qty": 1,
-        "crt_qty": 33,
+        "crt_qty": 32,
         "avail_qty": 29,
         "req_dt": "09-30",
         "req_dt_full": "2026-09-30 12:38:34",
@@ -22393,7 +22393,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000032",
         "req_qty": 1,
-        "crt_qty": 33,
+        "crt_qty": 32,
         "avail_qty": 29,
         "req_dt": "10-01",
         "req_dt_full": "2026-10-01 10:30:49",
@@ -22743,23 +22743,6 @@
         "dday": "D+0일"
       },
       {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "alois": "OE",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2610000069",
-        "req_qty": 1,
-        "crt_qty": 33,
-        "avail_qty": 29,
-        "req_dt": "10-01",
-        "req_dt_full": "2026-10-01 14:04:22",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 85576,
-        "sa": "정용환",
-        "dday": "D+0일"
-      },
-      {
         "item": "51647434544",
         "name": "Crosslink, f",
         "alois": "O8",
@@ -22826,10 +22809,27 @@
         "val": 10115,
         "sa": "임채훈",
         "dday": "D+0일"
+      },
+      {
+        "item": "17128579334",
+        "name": "Pipe, radiat",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001766",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-01",
+        "req_dt_full": "2026-10-01 14:25:50",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 40527,
+        "sa": "안준영",
+        "dday": "D+0일"
       }
     ],
     "count": 316,
-    "total_val": 96935753,
+    "total_val": 96890704,
     "groups": [
       {
         "code": "RO",
@@ -25477,7 +25477,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2609001763",
             "req_qty": 1,
-            "crt_qty": 33,
+            "crt_qty": 32,
             "avail_qty": 29,
             "req_dt": "09-30",
             "req_dt_full": "2026-09-30 12:38:34",
@@ -25647,7 +25647,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000032",
             "req_qty": 1,
-            "crt_qty": 33,
+            "crt_qty": 32,
             "avail_qty": 29,
             "req_dt": "10-01",
             "req_dt_full": "2026-10-01 10:30:49",
@@ -25997,23 +25997,6 @@
             "dday": "D+0일"
           },
           {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2610000069",
-            "req_qty": 1,
-            "crt_qty": 33,
-            "avail_qty": 29,
-            "req_dt": "10-01",
-            "req_dt_full": "2026-10-01 14:04:22",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 85576,
-            "sa": "정용환",
-            "dday": "D+0일"
-          },
-          {
             "item": "51647434544",
             "name": "Crosslink, f",
             "alois": "O8",
@@ -26080,11 +26063,28 @@
             "val": 10115,
             "sa": "임채훈",
             "dday": "D+0일"
+          },
+          {
+            "item": "17128579334",
+            "name": "Pipe, radiat",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001766",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-01",
+            "req_dt_full": "2026-10-01 14:25:50",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 40527,
+            "sa": "안준영",
+            "dday": "D+0일"
           }
         ],
         "count": 191,
         "qty_sum": 260,
-        "val": 67058263
+        "val": 67013214
       },
       {
         "code": "SB",
@@ -27270,7 +27270,7 @@
             "ref_tp": "SB",
             "ref_no": "SB2609001591",
             "req_qty": 1,
-            "crt_qty": 33,
+            "crt_qty": 32,
             "avail_qty": 29,
             "req_dt": "09-22",
             "req_dt_full": "2026-09-22 09:06:30",
@@ -28290,7 +28290,7 @@
         "name": "MICROFILTER/",
         "pgrp": "B1",
         "alois": "OE",
-        "qty": 33,
+        "qty": 32,
         "avail_qty": 29,
         "val": 2481704
       },
@@ -35486,7 +35486,7 @@
             "name": "MICROFILTER/",
             "pgrp": "B1",
             "alois": "OE",
-            "qty": 33,
+            "qty": 32,
             "avail_qty": 29,
             "val": 2481704
           },
@@ -36257,7 +36257,7 @@
           }
         ],
         "count": 91,
-        "qty_sum": 660,
+        "qty_sum": 659,
         "avail_sum": 645,
         "val": 81058449
       },
@@ -39519,14 +39519,14 @@
       },
       {
         "ro": "RO2609001766",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "입고 Proactive-RITA",
         "sa": "안준영",
         "pub": "2026-09-30",
         "pub_full": "2026-09-30 12:59",
         "dday": "D+1일",
-        "amt": 18814
+        "amt": 72614
       },
       {
         "ro": "RO2610000001",
@@ -40461,7 +40461,7 @@
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 13:27",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 10128600
       },
       {
         "ro": "RO2610000068",
@@ -40487,33 +40487,44 @@
       },
       {
         "ro": "RO2610000070",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Recall/TC",
         "sa": "정용환",
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 14:25",
         "dday": "D+0일",
         "amt": 867071
+      },
+      {
+        "ro": "RO2610000071",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 14:30",
+        "dday": "D+0일",
+        "amt": 100000
       }
     ],
-    "count": 333,
-    "total_amt": 745109816,
+    "count": 334,
+    "total_amt": 755392216,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 21,
-        "amt": 9741970
+        "amt": 19103499
       },
       {
         "stat": "상담완료",
-        "count": 155,
-        "amt": 498497834
+        "count": 157,
+        "amt": 499437519
       },
       {
         "stat": "정비시작",
-        "count": 50,
-        "amt": 47189348
+        "count": 49,
+        "amt": 47170534
       },
       {
         "stat": "End Control 요청",
@@ -41853,7 +41864,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 458,
+            "crt_qty": 453,
             "avail_qty": 427,
             "val": 80215
           },
@@ -43378,6 +43389,16 @@
             "val": 739765
           },
           {
+            "item": "51485A0D970",
+            "name": "Sound insula",
+            "alois": "A5",
+            "sa": "박영묵",
+            "req_qty": 2,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 135996
+          },
+          {
             "item": "83192289285",
             "name": "Repair flat",
             "alois": "L2",
@@ -43418,9 +43439,9 @@
             "val": 14886
           }
         ],
-        "count": 5,
-        "qty_sum": 10,
-        "val": 905984
+        "count": 6,
+        "qty_sum": 12,
+        "val": 1041980
       },
       {
         "code": "SB2609000553",
@@ -45019,7 +45040,7 @@
             "alois": "OE",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 33,
+            "crt_qty": 32,
             "avail_qty": 29,
             "val": 85576
           },
@@ -46104,8 +46125,8 @@
       }
     ],
     "sb_count": 79,
-    "line_count": 324,
-    "total_val": 61477089,
+    "line_count": 325,
+    "total_val": 61613085,
     "o_lines": 71,
     "o_val": 18533841,
     "resv_total": 367
@@ -46160,7 +46181,7 @@
     "total_val": 162508,
     "o_lines": 2,
     "o_val": 160548,
-    "resv_total": 10169
+    "resv_total": 10170
   },
   "nonmng": {
     "rows": [],
@@ -47269,7 +47290,7 @@
         "item": "64119382886",
         "name": "MICROFILTER/",
         "alois": "OE",
-        "qty": 33,
+        "qty": 32,
         "no": 137
       },
       {
@@ -47365,7 +47386,7 @@
         "item": "11428575211",
         "name": "Set oil-filt",
         "alois": "A1",
-        "qty": 194,
+        "qty": 193,
         "no": 149
       },
       {
@@ -49205,7 +49226,7 @@
         "item": "83215B49DD6",
         "name": "LL-17FE+ 0W-20",
         "alois": "L1",
-        "qty": 458,
+        "qty": 453,
         "no": 379
       }
     ],
