@@ -60,9 +60,16 @@
     display:flex; flex-direction:column; padding:22px 16px; gap:22px; overflow-y:auto; }
   .sb-brand{ display:flex; align-items:center; gap:10px; padding:4px 8px; cursor:pointer; border-radius:10px; transition:background .12s ease; }
   .sb-brand:hover{ background:var(--surface-2); }
-  .sb-brand .mark{ width:30px; height:30px; flex:none;
+  .sb-brand .mark{ position:relative; width:30px; height:30px; flex:none;
     display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:700; font-size:13.5px; }
-  .sb-brand .mark img{ width:30px; height:30px; display:block; }
+  .sb-brand .mark img{ position:absolute; inset:0; width:30px; height:30px; display:block; }
+  .sb-brand .mark .mark-dark{ display:none; }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) .sb-brand .mark .mark-light{ display:none; }
+    :root:not([data-theme="light"]) .sb-brand .mark .mark-dark{ display:block; }
+  }
+  :root[data-theme="dark"] .sb-brand .mark .mark-light{ display:none; }
+  :root[data-theme="dark"] .sb-brand .mark .mark-dark{ display:block; }
   .sb-brand .name{ font-family:var(--font-display); font-weight:700; font-size:18.5px; letter-spacing:-.015em; }
   .sb-mstripe{ height:2px; border-radius:2px; margin:-10px 8px 0; opacity:.85;
     background:linear-gradient(90deg, var(--m-blue) 0 33.33%, var(--m-violet) 33.33% 66.66%, var(--m-red) 66.66% 100%); }
@@ -441,7 +448,7 @@
   <div class="m-backdrop" onclick="toggleMenu(false)"></div>
 
   <nav class="sidebar" aria-label="동성모터스 PARTS 메뉴">
-    <div class="sb-brand" role="button" tabindex="0" onclick="selectPage('home')" onkeydown="if(event.key==='Enter'||event.key===' '){selectPage('home')}"><div class="mark"><img src="bmw-logo-white.svg" alt="BMW"></div><span class="name">동성모터스 PARTS</span></div>
+    <div class="sb-brand" role="button" tabindex="0" onclick="selectPage('home')" onkeydown="if(event.key==='Enter'||event.key===' '){selectPage('home')}"><div class="mark"><img src="bmw-logo.svg" alt="BMW" class="mark-light"><img src="bmw-logo-white.svg" alt="BMW" class="mark-dark"></div><span class="name">동성모터스 PARTS</span></div>
     <div class="sb-mstripe"></div>
 
     <div class="sb-workspace">
