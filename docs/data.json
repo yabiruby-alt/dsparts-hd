@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 12:58 기준",
+    "generated_at": "10월 1일 (목) · 13:10 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,7 +16,7 @@
     "top5": []
   },
   "inv": {
-    "total": 1011120410,
+    "total": 1011099313,
     "item_count": 2195,
     "code_count": 25,
     "alois_groups": [
@@ -10071,9 +10071,9 @@
           },
           {
             "code": "OA",
-            "val": 26845078,
+            "val": 26823981,
             "pct": 2.65,
-            "qty": 225,
+            "qty": 224,
             "parts": [
               {
                 "item": "63119850426",
@@ -10556,12 +10556,6 @@
                 "val": 45122
               },
               {
-                "item": "18308617370",
-                "name": "Bracket for",
-                "qty": 2,
-                "val": 42194
-              },
-              {
                 "item": "51767391410",
                 "name": "Gasket, head",
                 "qty": 1,
@@ -10650,6 +10644,12 @@
                 "name": "Filt.Element",
                 "qty": 1,
                 "val": 22905
+              },
+              {
+                "item": "18308617370",
+                "name": "Bracket for",
+                "qty": 1,
+                "val": 21097
               },
               {
                 "item": "51137328384",
@@ -12028,8 +12028,8 @@
             ]
           }
         ],
-        "subtotal_val": 204261506,
-        "subtotal_qty": 2378,
+        "subtotal_val": 204240409,
+        "subtotal_qty": 2377,
         "subtotal_pct": 20.2
       },
       {
@@ -13438,19 +13438,19 @@
         ],
         "subtotal_val": 165064731,
         "subtotal_qty": 2068,
-        "subtotal_pct": 16.32
+        "subtotal_pct": 16.33
       }
     ]
   },
   "oaov": {
-    "total": 45843905,
-    "inv_total": 1011120410,
+    "total": 45822808,
+    "inv_total": 1011099313,
     "pct": 4.53,
-    "oa_val": 26845078,
+    "oa_val": 26823981,
     "ov_val": 18998827,
     "oa_lines": 104,
     "ov_lines": 106,
-    "oa_qty": 225,
+    "oa_qty": 224,
     "ov_qty": 210,
     "item_count": 210,
     "oa_items": [
@@ -14095,14 +14095,6 @@
         "val": 45122
       },
       {
-        "item": "18308617370",
-        "name": "Bracket for",
-        "pgrp": "B1",
-        "alois": "OA",
-        "qty": 2,
-        "val": 42194
-      },
-      {
         "item": "51767391410",
         "name": "Gasket, head",
         "pgrp": "M1",
@@ -14221,6 +14213,14 @@
         "alois": "OA",
         "qty": 1,
         "val": 22905
+      },
+      {
+        "item": "18308617370",
+        "name": "Bracket for",
+        "pgrp": "B1",
+        "alois": "OA",
+        "qty": 1,
+        "val": 21097
       },
       {
         "item": "51137328384",
@@ -16655,15 +16655,6 @@
         "last_in": "2024-07-24"
       },
       {
-        "item": "18308617370",
-        "name": "Bracket for",
-        "pgrp": "B1",
-        "alois": "OA",
-        "qty": 2,
-        "val": 42194,
-        "last_in": "2025-02-14"
-      },
-      {
         "item": "51767391410",
         "name": "Gasket, head",
         "pgrp": "M1",
@@ -17141,8 +17132,8 @@
         "last_in": "2025-06-24"
       }
     ],
-    "m12_val": 54338432,
-    "m12_count": 206,
+    "m12_val": 54296238,
+    "m12_count": 205,
     "m12_pct": 5.37,
     "m24_items": [
       {
@@ -22991,23 +22982,6 @@
         "dday": "D+0일"
       },
       {
-        "item": "18308617370",
-        "name": "Bracket for",
-        "alois": "OA",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2610000032",
-        "req_qty": 1,
-        "crt_qty": 2,
-        "avail_qty": 1,
-        "req_dt": "10-01",
-        "req_dt_full": "2026-10-01 11:32:41",
-        "req_brch": "AS_진주",
-        "val": 21097,
-        "sa": "심호연",
-        "dday": "D+0일"
-      },
-      {
         "item": "51122444864",
         "name": "Set of mount",
         "alois": "O8",
@@ -23040,10 +23014,27 @@
         "val": 347443,
         "sa": "박영묵",
         "dday": "D+0일"
+      },
+      {
+        "item": "51177391833",
+        "name": "Cover pot",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000062",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-01",
+        "req_dt_full": "2026-10-01 13:10:20",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 98496,
+        "sa": "박영묵",
+        "dday": "D+0일"
       }
     ],
     "count": 321,
-    "total_val": 97479443,
+    "total_val": 97556842,
     "groups": [
       {
         "code": "RO",
@@ -26313,23 +26304,6 @@
             "dday": "D+0일"
           },
           {
-            "item": "18308617370",
-            "name": "Bracket for",
-            "alois": "OA",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2610000032",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "req_dt": "10-01",
-            "req_dt_full": "2026-10-01 11:32:41",
-            "req_brch": "AS_진주",
-            "val": 21097,
-            "sa": "심호연",
-            "dday": "D+0일"
-          },
-          {
             "item": "51122444864",
             "name": "Set of mount",
             "alois": "O8",
@@ -26362,11 +26336,28 @@
             "val": 347443,
             "sa": "박영묵",
             "dday": "D+0일"
+          },
+          {
+            "item": "51177391833",
+            "name": "Cover pot",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000062",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-01",
+            "req_dt_full": "2026-10-01 13:10:20",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 98496,
+            "sa": "박영묵",
+            "dday": "D+0일"
           }
         ],
         "count": 195,
         "qty_sum": 263,
-        "val": 67516377
+        "val": 67593776
       },
       {
         "code": "SB",
@@ -32009,7 +32000,7 @@
         "name": "Bracket for",
         "pgrp": "B1",
         "alois": "OA",
-        "qty": 2,
+        "qty": 1,
         "avail_qty": 1,
         "val": 21097
       },
@@ -35749,7 +35740,7 @@
             "name": "Bracket for",
             "pgrp": "B1",
             "alois": "OA",
-            "qty": 2,
+            "qty": 1,
             "avail_qty": 1,
             "val": 21097
           },
@@ -35818,7 +35809,7 @@
           }
         ],
         "count": 62,
-        "qty_sum": 171,
+        "qty_sum": 170,
         "avail_sum": 161,
         "val": 8497482
       },
@@ -37203,6 +37194,12 @@
         "in_val": 0,
         "out_val": 628900,
         "net": -628900
+      },
+      {
+        "code": "OA",
+        "in_val": 0,
+        "out_val": 21097,
+        "net": -21097
       },
       {
         "code": "OV",
@@ -40517,17 +40514,6 @@
         "amt": 887500
       },
       {
-        "ro": "RO2610000039",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "정용환",
-        "pub": "2026-10-01",
-        "pub_full": "2026-10-01 10:09",
-        "dday": "D+0일",
-        "amt": 351850
-      },
-      {
         "ro": "RO2610000038",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -40537,6 +40523,17 @@
         "pub_full": "2026-10-01 10:09",
         "dday": "D+0일",
         "amt": 0
+      },
+      {
+        "ro": "RO2610000039",
+        "stat": "정비시작",
+        "stat_cd": "03",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 10:09",
+        "dday": "D+0일",
+        "amt": 351850
       },
       {
         "ro": "RO2610000041",
@@ -40705,8 +40702,8 @@
       },
       {
         "ro": "RO2610000055",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-01",
@@ -40774,30 +40771,41 @@
         "stat": "상담완료",
         "stat_cd": "02",
         "svc": "Recall/TC",
-        "sa": "이정환",
+        "sa": "우종훈",
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 12:53",
         "dday": "D+0일",
         "amt": 809951
+      },
+      {
+        "ro": "RO2610000062",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 13:07",
+        "dday": "D+0일",
+        "amt": 1623200
       }
     ],
-    "count": 324,
-    "total_amt": 736910481,
+    "count": 325,
+    "total_amt": 738533681,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 18,
-        "amt": 8497299
+        "count": 19,
+        "amt": 10120499
       },
       {
         "stat": "상담완료",
-        "count": 162,
-        "amt": 500908794
+        "count": 160,
+        "amt": 500451544
       },
       {
         "stat": "정비시작",
-        "count": 41,
-        "amt": 45278526
+        "count": 43,
+        "amt": 45735776
       },
       {
         "stat": "End Control 요청",
@@ -46560,7 +46568,7 @@
     "total_val": 577937,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10157
+    "resv_total": 10158
   },
   "nonmng": {
     "rows": [],
