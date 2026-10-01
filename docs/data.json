@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 14:57 기준",
+    "generated_at": "10월 1일 (목) · 15:02 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -37703,8 +37703,8 @@
       },
       {
         "ro": "RO2609000451",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-07",
@@ -38436,7 +38436,7 @@
         "pub": "2026-09-22",
         "pub_full": "2026-09-22 13:03",
         "dday": "D+9일",
-        "amt": 901261
+        "amt": 900041
       },
       {
         "ro": "RO2609001389",
@@ -40717,8 +40717,8 @@
       },
       {
         "ro": "RO2610000063",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-10-01",
@@ -40868,35 +40868,46 @@
         "pub_full": "2026-10-01 14:46",
         "dday": "D+0일",
         "amt": 126724
+      },
+      {
+        "ro": "RO2610000077",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "입고 Proactive-RITA",
+        "sa": "최민수",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 15:00",
+        "dday": "D+0일",
+        "amt": 887500
       }
     ],
-    "count": 338,
-    "total_amt": 756242271,
+    "count": 339,
+    "total_amt": 757128551,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 20,
-        "amt": 19003499
+        "count": 21,
+        "amt": 19890999
       },
       {
         "stat": "상담완료",
         "count": 158,
-        "amt": 497548180
+        "amt": 497546960
       },
       {
         "stat": "정비시작",
-        "count": 52,
-        "amt": 49658078
+        "count": 51,
+        "amt": 49014292
       },
       {
         "stat": "End Control 요청",
         "count": 65,
-        "amt": 90521691
+        "amt": 85205377
       },
       {
         "stat": "가정산 완료",
-        "count": 43,
-        "amt": 99510823
+        "count": 44,
+        "amt": 105470923
       }
     ],
     "oldest": "D+527일"
@@ -46452,53 +46463,10 @@
     "resv_total": 365
   },
   "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609001970",
-        "resv_full": "2026-10-01 14:50",
-        "resv": "10-01",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 25,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 52,
-            "avail_qty": 20,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L3",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 121,
-            "avail_qty": 98,
-            "val": 1125
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 577937
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 3,
-    "total_val": 577937,
+    "groups": [],
+    "sb_count": 0,
+    "line_count": 0,
+    "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
     "resv_total": 10174
