@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 12:36 기준",
+    "generated_at": "10월 1일 (목) · 12:47 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -46521,56 +46521,14 @@
         "count": 3,
         "qty_sum": 3,
         "val": 577937
-      },
-      {
-        "code": "SB2609001971",
-        "resv_full": "2026-10-01 13:00",
-        "resv": "10-01",
-        "dday": "오늘",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 31,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 59,
-            "avail_qty": 20,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L3",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 128,
-            "avail_qty": 98,
-            "val": 1125
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 577937
       }
     ],
-    "sb_count": 84,
-    "line_count": 338,
-    "total_val": 63381352,
+    "sb_count": 83,
+    "line_count": 335,
+    "total_val": 62803415,
     "o_lines": 74,
     "o_val": 18779965,
-    "resv_total": 374
+    "resv_total": 373
   },
   "sbcar": {
     "groups": [
@@ -46615,14 +46573,56 @@
         "count": 3,
         "qty_sum": 3,
         "val": 577937
+      },
+      {
+        "code": "SB2609001971",
+        "resv_full": "2026-10-01 12:41",
+        "resv": "10-01",
+        "dday": "오늘",
+        "sa": "김민규",
+        "rows": [
+          {
+            "item": "12415BA2AE6",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 31,
+            "avail_qty": 0,
+            "val": 568490
+          },
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 59,
+            "avail_qty": 20,
+            "val": 8322
+          },
+          {
+            "item": "51337025635",
+            "name": "Clip",
+            "alois": "L3",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 128,
+            "avail_qty": 98,
+            "val": 1125
+          }
+        ],
+        "count": 3,
+        "qty_sum": 3,
+        "val": 577937
       }
     ],
-    "sb_count": 1,
-    "line_count": 3,
-    "total_val": 577937,
+    "sb_count": 2,
+    "line_count": 6,
+    "total_val": 1155874,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10155
+    "resv_total": 10156
   },
   "nonmng": {
     "rows": [],
