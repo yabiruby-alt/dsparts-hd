@@ -197,20 +197,42 @@
   .tire-filters #tire-size-input{ min-width:200px; }
   .rft-tag{ color:var(--accent); font-weight:600; }
 
-  .home-hero{ position:relative; overflow:hidden; border-radius:20px; padding:56px 40px; margin-bottom:22px;
+  .home-hero{ position:relative; overflow:hidden; margin:0 -40px 24px; padding:64px 56px; min-height:360px;
+    display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap;
     background:linear-gradient(120deg, var(--ink) 0%, var(--accent-strong) 55%, var(--accent) 100%);
     background-size:220% 220%; animation:homeGradient 16s ease infinite; color:#fff; box-shadow:var(--shadow-card); }
+  .home-hero-text{ flex:1 1 340px; min-width:0; }
   @keyframes homeGradient{ 0%{background-position:0% 50%;} 50%{background-position:100% 50%;} 100%{background-position:0% 50%;} }
   @keyframes homeFadeUp{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:translateY(0); } }
   .home-eyebrow{ font-family:var(--font-mono); font-size:13px; letter-spacing:.14em; text-transform:uppercase; opacity:0;
     color:rgba(255,255,255,.8); animation:homeFadeUp .7s ease .05s forwards; }
-  .home-title{ font-family:var(--font-display); font-weight:800; font-size:40px; letter-spacing:-.02em; margin:10px 0 6px; opacity:0;
+  .home-title{ font-family:var(--font-display); font-weight:800; font-size:48px; letter-spacing:-.02em; margin:12px 0 8px; opacity:0;
     animation:homeFadeUp .7s ease .18s forwards; }
-  .home-tagline{ font-size:16px; color:rgba(255,255,255,.85); margin:0 0 18px; opacity:0;
+  .home-tagline{ font-size:17px; color:rgba(255,255,255,.85); margin:0 0 20px; opacity:0;
     animation:homeFadeUp .7s ease .3s forwards; }
   .home-freshness{ display:inline-flex; align-items:center; gap:7px; font-family:var(--font-mono); font-size:13px;
     color:rgba(255,255,255,.85); opacity:0; animation:homeFadeUp .7s ease .42s forwards; }
   .home-freshness .dot{ background:#fff; box-shadow:0 0 0 3px rgba(255,255,255,.25); }
+
+  .home-emblem{ position:relative; flex:none; width:220px; height:220px; opacity:0;
+    animation:homeEmblemIn 1s cubic-bezier(.2,.8,.2,1) .25s forwards, homeFloat 6s ease-in-out 1.25s infinite; }
+  @keyframes homeEmblemIn{ from{ opacity:0; transform:scale(.72) rotate(-14deg); } to{ opacity:1; transform:scale(1) rotate(0deg); } }
+  @keyframes homeFloat{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-10px); } }
+  .home-emblem::before{ content:''; position:absolute; inset:-26px; border-radius:50%;
+    background:radial-gradient(circle, rgba(255,255,255,.22), transparent 70%); opacity:0;
+    animation:homeFadeUp 1.2s ease 1s forwards; }
+  .emblem-svg{ position:relative; width:100%; height:100%; overflow:visible; }
+  .emblem-outer{ fill:#161618; }
+  .emblem-glowring{ fill:none; stroke:rgba(255,255,255,.12); stroke-width:10; }
+  .emblem-wordmark{ font-family:var(--font-display); font-weight:700; font-size:11.5px; letter-spacing:2.5px; fill:#f2f2f4; }
+  .emblem-white{ fill:#f5f5f7; }
+  .emblem-blue{ fill:var(--accent); }
+  .emblem-spin{ transform-origin:100px 100px; animation:emblemSpin 42s linear infinite; }
+  @keyframes emblemSpin{ to{ transform:rotate(360deg); } }
+  .emblem-ring-draw{ fill:none; stroke:#fff; stroke-width:1.5; stroke-linecap:round;
+    stroke-dasharray:578; stroke-dashoffset:578; transform-origin:100px 100px; transform:rotate(-90deg);
+    animation:emblemDraw 2.2s cubic-bezier(.2,.7,.2,1) .35s forwards; }
+  @keyframes emblemDraw{ to{ stroke-dashoffset:0; } }
   .home-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
   .home-card{ all:unset; box-sizing:border-box; cursor:pointer; background:var(--surface); border-radius:16px; padding:20px 20px 18px;
     box-shadow:var(--shadow-card); display:flex; flex-direction:column; gap:6px; transition:transform .15s ease, box-shadow .15s ease;
@@ -289,8 +311,11 @@
     .tablewrap{ -webkit-overflow-scrolling:touch; }
     .tire-table{ table-layout:auto; min-width:820px; }
     .tire-table th, .tire-table td{ overflow:visible; text-overflow:clip; }
-    .home-hero{ padding:32px 20px; border-radius:16px; }
-    .home-title{ font-size:26px; }
+    .home-hero{ margin:0 -12px 18px; padding:36px 22px; min-height:0; flex-direction:column; text-align:center; gap:22px; }
+    .home-hero-text{ flex-basis:auto; }
+    .home-title{ font-size:28px; }
+    .home-freshness{ justify-content:center; }
+    .home-emblem{ width:140px; height:140px; }
     .home-grid{ grid-template-columns:1fr 1fr; gap:12px; }
     .home-card{ padding:16px 16px 14px; }
     .home-card-value{ font-size:22px; }
@@ -544,10 +569,26 @@
     <div class="maininner">
     <section id="page-home">
       <div class="home-hero">
-        <div class="home-eyebrow">DONGSUNG MOTORS PARTS</div>
-        <h1 class="home-title">{{ meta.branch_name }}</h1>
-        <p class="home-tagline">오늘의 흐름을 한눈에.</p>
-        <div class="home-freshness"><span class="dot"></span>{{ meta.generated_at }}</div>
+        <div class="home-hero-text">
+          <div class="home-eyebrow">DONGSUNG MOTORS PARTS</div>
+          <h1 class="home-title">{{ meta.branch_name }}</h1>
+          <p class="home-tagline">오늘의 흐름을 한눈에.</p>
+          <div class="home-freshness"><span class="dot"></span>{{ meta.generated_at }}</div>
+        </div>
+        <div class="home-emblem" aria-hidden="true">
+          <svg class="emblem-svg" viewBox="0 0 200 200">
+            <path id="emblemTextPath" d="M 100,14 A 86,86 0 1 1 99.99,14" fill="none"></path>
+            <circle class="emblem-glowring" cx="100" cy="100" r="92"></circle>
+            <circle class="emblem-outer" cx="100" cy="100" r="96"></circle>
+            <text class="emblem-wordmark"><textPath href="#emblemTextPath" startOffset="5%">BMW · DONGSUNG MOTORS ·</textPath></text>
+            <g class="emblem-spin">
+              <circle class="emblem-white" cx="100" cy="100" r="72"></circle>
+              <path class="emblem-blue" d="M100,100 L36,100 A64,64 0 0 1 100,36 Z"></path>
+              <path class="emblem-blue" d="M100,100 L164,100 A64,64 0 0 1 100,164 Z"></path>
+            </g>
+            <circle class="emblem-ring-draw" cx="100" cy="100" r="92"></circle>
+          </svg>
+        </div>
       </div>
 
       <div class="home-grid">
