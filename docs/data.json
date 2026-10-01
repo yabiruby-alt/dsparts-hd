@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 10:37 기준",
+    "generated_at": "10월 1일 (목) · 10:42 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -4611,7 +4611,7 @@
             "parts": [
               {
                 "item": "90200006494",
-                "name": "Hypoid Axle REPO",
+                "name": "Hypoid Axle G5",
                 "qty": 66,
                 "val": 3517800
               },
@@ -4623,7 +4623,7 @@
               },
               {
                 "item": "90200006413",
-                "name": "Hypoid Axle REPO",
+                "name": "Hypoid Axle G4",
                 "qty": 59,
                 "val": 3155360
               },
@@ -4839,7 +4839,7 @@
             "parts": [
               {
                 "item": "90200005956",
-                "name": "Hypoid axle",
+                "name": "Hypoid axle G2",
                 "qty": 17,
                 "val": 967300
               },
@@ -40168,14 +40168,14 @@
       },
       {
         "ro": "RO2610000042",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 10:19",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 546498
       },
       {
         "ro": "RO2610000043",
@@ -40209,20 +40209,42 @@
         "pub_full": "2026-10-01 10:29",
         "dday": "D+0일",
         "amt": 634378
+      },
+      {
+        "ro": "RO2610000047",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 10:42",
+        "dday": "D+0일",
+        "amt": 1035200
+      },
+      {
+        "ro": "RO2610000046",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 10:42",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 310,
-    "total_amt": 717697275,
+    "count": 312,
+    "total_amt": 719278973,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 21,
-        "amt": 9794199
+        "count": 22,
+        "amt": 10829399
       },
       {
         "stat": "상담완료",
-        "count": 159,
-        "amt": 487226069
+        "count": 160,
+        "amt": 487772567
       },
       {
         "stat": "정비시작",
@@ -45766,7 +45788,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 198,
-            "avail_qty": 142,
+            "avail_qty": 141,
             "val": 19920
           }
         ],
@@ -46128,7 +46150,7 @@
     "total_val": 65003667,
     "o_lines": 75,
     "o_val": 18998098,
-    "resv_total": 374
+    "resv_total": 375
   },
   "sbcar": {
     "groups": [
@@ -46289,86 +46311,14 @@
         "count": 3,
         "qty_sum": 3,
         "val": 577937
-      },
-      {
-        "code": "SB2609002036",
-        "resv_full": "2026-10-01 10:36",
-        "resv": "10-01",
-        "dday": "오늘",
-        "sa": "이정환",
-        "rows": [
-          {
-            "item": "34116866295",
-            "name": "Brake disc,",
-            "alois": "A6",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 2,
-            "val": 194224
-          },
-          {
-            "item": "34216799383",
-            "name": "Brake disk",
-            "alois": "L7",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 134634
-          },
-          {
-            "item": "34106884263",
-            "name": "Repair kit UKL1,2",
-            "alois": "A3",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 6,
-            "avail_qty": 5,
-            "val": 122040
-          },
-          {
-            "item": "34218867491",
-            "name": "Repair kit,",
-            "alois": "A5",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 100117
-          },
-          {
-            "item": "34356865612",
-            "name": "Brake pad we",
-            "alois": "A2",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 16,
-            "avail_qty": 14,
-            "val": 26772
-          },
-          {
-            "item": "34356887827",
-            "name": "Brake pad we MINI",
-            "alois": "A3",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 2,
-            "val": 25220
-          }
-        ],
-        "count": 6,
-        "qty_sum": 8,
-        "val": 603007
       }
     ],
-    "sb_count": 5,
-    "line_count": 17,
-    "total_val": 2501978,
+    "sb_count": 4,
+    "line_count": 11,
+    "total_val": 1898971,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10148
+    "resv_total": 10149
   },
   "nonmng": {
     "rows": [],
@@ -46451,7 +46401,7 @@
       {
         "loc": "A030330",
         "item": "90200006494",
-        "name": "Hypoid Axle REPO",
+        "name": "Hypoid Axle G5",
         "alois": "L2",
         "qty": 66,
         "no": 9
