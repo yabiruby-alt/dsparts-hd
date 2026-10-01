@@ -81,6 +81,8 @@ DDAY_LOCK = threading.Lock()
 # 매출 대시보드 모듈 위치 (지점장 전용 — 파츠베이 공개 사이트와 별도 저장소로 배포)
 SALES_DIR = BASE_DIR.parent / "업무자동화 생성" / "매출데이터 사이트"
 SALES_ENABLED = (SALES_DIR / "sales.py").exists()
+RR_BASE_URL = "https://www.rrdms.co.kr"   # 롤스로이스 DMS (같은 My DMS 플랫폼, 별도 계정/세션)
+RR_AUTH_DIR = Path.home() / "AppData" / "Local" / "PartsBayDMS" / "authdata_rr"
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
 LAST_DATA = {}                    # 마지막 갱신 데이터(사유만 바뀌었을 때 DMS 재조회 없이 재렌더용)
 
@@ -1434,7 +1436,7 @@ def start_reason_server() -> None:
     print(f"진행RO 사유 / 타이어 마스터 입력 서버 시작 - 이 PC에서 http://127.0.0.1:{REASON_PORT} 로 접속하면 입력/수정 가능")
 
 
-def run_cycle(page: Page) -> None:
+def run_cycle(page: Page, rr_page: Page | None = None) -> None:
     """이미 로그인된 page로 데이터 한 번 뽑아서 대시보드 생성 + 깃허브 push."""
     now = datetime.now(ZoneInfo("Asia/Seoul"))
     today_str = now.strftime("%Y-%m-%d")
@@ -1540,7 +1542,7 @@ def run_cycle(page: Page) -> None:
             import importlib
             import sales
             importlib.reload(sales)  # sales.py 를 고쳐도 데몬 재시작(=DMS 재로그인) 없이 다음 주기부터 반영
-            sales.run(to_rows, lambda s, e: extract_turnover(page, s, e), now, BRANCH_NAME, page=page)
+            sales.run(to_rows, lambda s, e: extract_turnover(page, s, e), now, BRANCH_NAME, page=page, rr_page=rr_page)
         except Exception as e:
             print(f"   [매출 대시보드 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
 
@@ -1570,11 +1572,27 @@ def main():
                 ctx.close()
                 return
 
+            # 롤스로이스 DMS(매출 대시보드 RR 항목용) — 도메인이 달라 BMW 세션과 충돌하지 않음. 로그인은 그 창에서 직접,
+            # 로그인 전이어도 BMW 갱신은 그대로 진행되고 매출 모듈이 매 주기 로그인 여부만 확인한다.
+            rr_page = None
+            if SALES_ENABLED:
+                try:
+                    RR_AUTH_DIR.mkdir(parents=True, exist_ok=True)
+                    rr_ctx = p.chromium.launch_persistent_context(
+                        str(RR_AUTH_DIR), headless=False, viewport={"width": 1440, "height": 900},
+                        args=["--start-minimized"],
+                    )
+                    rr_page = rr_ctx.new_page()
+                    rr_page.goto(f"{RR_BASE_URL}/selectHome.do")
+                except Exception as e:
+                    print(f"[RR DMS 브라우저 시작 실패 — 매출 RR 항목만 빠짐] {type(e).__name__}: {e}")
+                    rr_page = None
+
             print(f"로그인 확인 완료. 상시 실행 시작 — {CYCLE_INTERVAL_SEC//60}분마다 자동 갱신합니다 (창은 계속 켜둔 채 백그라운드로 동작).")
             while True:
                 try:
                     ensure_logged_in(page)  # 그 사이 세션이 끊겼으면 재확인
-                    run_cycle(page)
+                    run_cycle(page, rr_page)
                 except Exception as e:
                     print(f"[이번 주기 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
                 print(f"다음 갱신까지 {CYCLE_INTERVAL_SEC}초 대기...")
