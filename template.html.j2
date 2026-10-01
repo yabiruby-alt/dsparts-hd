@@ -196,6 +196,33 @@
   .tire-filters .reason-input{ width:auto; min-width:150px; }
   .tire-filters #tire-size-input{ min-width:200px; }
   .rft-tag{ color:var(--accent); font-weight:600; }
+
+  .home-hero{ position:relative; overflow:hidden; border-radius:20px; padding:56px 40px; margin-bottom:22px;
+    background:linear-gradient(120deg, var(--ink) 0%, var(--accent-strong) 55%, var(--accent) 100%);
+    background-size:220% 220%; animation:homeGradient 16s ease infinite; color:#fff; box-shadow:var(--shadow-card); }
+  @keyframes homeGradient{ 0%{background-position:0% 50%;} 50%{background-position:100% 50%;} 100%{background-position:0% 50%;} }
+  @keyframes homeFadeUp{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:translateY(0); } }
+  .home-eyebrow{ font-family:var(--font-mono); font-size:13px; letter-spacing:.14em; text-transform:uppercase; opacity:0;
+    color:rgba(255,255,255,.8); animation:homeFadeUp .7s ease .05s forwards; }
+  .home-title{ font-family:var(--font-display); font-weight:800; font-size:40px; letter-spacing:-.02em; margin:10px 0 6px; opacity:0;
+    animation:homeFadeUp .7s ease .18s forwards; }
+  .home-tagline{ font-size:16px; color:rgba(255,255,255,.85); margin:0 0 18px; opacity:0;
+    animation:homeFadeUp .7s ease .3s forwards; }
+  .home-freshness{ display:inline-flex; align-items:center; gap:7px; font-family:var(--font-mono); font-size:13px;
+    color:rgba(255,255,255,.85); opacity:0; animation:homeFadeUp .7s ease .42s forwards; }
+  .home-freshness .dot{ background:#fff; box-shadow:0 0 0 3px rgba(255,255,255,.25); }
+  .home-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .home-card{ all:unset; box-sizing:border-box; cursor:pointer; background:var(--surface); border-radius:16px; padding:20px 20px 18px;
+    box-shadow:var(--shadow-card); display:flex; flex-direction:column; gap:6px; transition:transform .15s ease, box-shadow .15s ease;
+    opacity:0; animation:homeFadeUp .6s ease forwards; }
+  .home-card:hover{ transform:translateY(-2px); box-shadow:var(--shadow-md); }
+  .home-card:nth-child(1){ animation-delay:.1s; }
+  .home-card:nth-child(2){ animation-delay:.18s; }
+  .home-card:nth-child(3){ animation-delay:.26s; }
+  .home-card:nth-child(4){ animation-delay:.34s; }
+  .home-card-eyebrow{ font-family:var(--font-body); font-weight:600; font-size:13.5px; color:var(--muted); }
+  .home-card-value{ font-family:var(--font-mono); font-weight:700; font-size:28px; letter-spacing:-.02em; color:var(--ink); font-variant-numeric:tabular-nums; }
+  .home-card-foot{ font-size:13px; color:var(--muted); }
   .aloistag{ display:inline-block; font-family:var(--font-mono); font-size:12.5px; font-weight:600; padding:2px 7px; border-radius:7px; background:var(--surface-2); color:var(--ink-2); }
   .subttl{ font-family:var(--font-display); font-weight:600; font-size:15px; text-transform:none; letter-spacing:0; color:var(--ink); margin:0 0 10px; display:flex; justify-content:space-between; }
   .subttl .n{ font-family:var(--font-mono); color:var(--muted); font-weight:500; text-transform:none; letter-spacing:0; }
@@ -262,6 +289,14 @@
     .tablewrap{ -webkit-overflow-scrolling:touch; }
     .tire-table{ table-layout:auto; min-width:820px; }
     .tire-table th, .tire-table td{ overflow:visible; text-overflow:clip; }
+    .home-hero{ padding:32px 20px; border-radius:16px; }
+    .home-title{ font-size:26px; }
+    .home-grid{ grid-template-columns:1fr 1fr; gap:12px; }
+    .home-card{ padding:16px 16px 14px; }
+    .home-card-value{ font-size:22px; }
+  }
+  @media (max-width:560px){
+    .home-grid{ grid-template-columns:1fr; }
   }
   @media (max-width:820px){
     .subgrid{ grid-template-columns:1fr; }
@@ -507,7 +542,44 @@
 
   <main class="main">
     <div class="maininner">
-    <section id="page-today">
+    <section id="page-home">
+      <div class="home-hero">
+        <div class="home-eyebrow">DONGSUNG MOTORS PARTS</div>
+        <h1 class="home-title">{{ meta.branch_name }}</h1>
+        <p class="home-tagline">오늘의 흐름을 한눈에.</p>
+        <div class="home-freshness"><span class="dot"></span>{{ meta.generated_at }}</div>
+      </div>
+
+      <div class="home-grid">
+        <button class="home-card" onclick="selectPage('today')">
+          <span class="home-card-eyebrow">오늘 입고금액</span>
+          <span class="home-card-value" data-countup="{{ recv.total }}">₩0</span>
+          <span class="home-card-foot">{{ recv.date }} · GRN {{ recv.grn_count }}건</span>
+        </button>
+        <button class="home-card" onclick="selectPage('today')">
+          <span class="home-card-eyebrow">현재 재고금액</span>
+          <span class="home-card-value" data-countup="{{ inv.total }}">₩0</span>
+          <span class="home-card-foot">{{ inv.item_count }}품목 · {{ inv.code_count }}개 코드</span>
+        </button>
+        <button class="home-card" onclick="selectPage('oaov')">
+          <span class="home-card-eyebrow">전체재고 대비 OA+OV</span>
+          <span class="home-card-value">{{ '%.2f'|format(oaov.pct) }}%</span>
+          <span class="home-card-foot">OA+OV ₩{{ '{:,}'.format(oaov.total) }}</span>
+        </button>
+        <button class="home-card" onclick="selectPage('dday')">
+          <span class="home-card-eyebrow">다가오는 디데이</span>
+          {% if dday.rows %}
+          <span class="home-card-value"{% if dday.rows[0].sort_key <= 0 %} style="color:var(--critical);"{% endif %}>{{ dday.rows[0].dday }}</span>
+          <span class="home-card-foot">{{ dday.rows[0].title }} · {{ dday.rows[0].target }}</span>
+          {% else %}
+          <span class="home-card-value">-</span>
+          <span class="home-card-foot">등록된 디데이 없음</span>
+          {% endif %}
+        </button>
+      </div>
+    </section>
+
+    <section id="page-today" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>오늘 현황</b></span>
         <div class="spacer"></div>
@@ -1515,7 +1587,7 @@
   function selectExtKpi(key){ ['ext','shop'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  var PAGES = ['today','openro','noshow','sbresv','sbcar','external','accessory','extaudit','oaov','longstock','nonmng','stockcheck','stockcheckweek','noloc','tire','dday','opart','oflow','calendar'];
+  var PAGES = ['home','today','openro','noshow','sbresv','sbcar','external','accessory','extaudit','oaov','longstock','nonmng','stockcheck','stockcheckweek','noloc','tire','dday','opart','oflow','calendar'];
   var TIRE_DATA = {{ tires_json }};
   function selectPage(key){
     PAGES.forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); });
@@ -1526,7 +1598,24 @@
     if(nb){ var sc = nb.closest('.sb-section'); if(sc && sc.classList.contains('collapsed')) toggleSection(sc, true); }
     document.body.classList.remove('menu-open');
     window.scrollTo(0,0);
+    if(key==='home') runHomeCountups();
   }
+  // 홈 화면 금액 카운트업: 0에서 실제 값까지 빠르게 올라가는 연출
+  function runHomeCountups(){
+    document.querySelectorAll('#page-home [data-countup]').forEach(function(el){
+      var target = parseInt(el.getAttribute('data-countup'), 10) || 0;
+      var t0 = null, dur = 900;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min(1, (ts - t0) / dur);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = '₩' + Math.round(target * eased).toLocaleString('ko-KR');
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if(!document.getElementById('page-home').hidden) runHomeCountups();
   function toggleSection(sec, force){
     var c = (force===undefined) ? !sec.classList.contains('collapsed') : !force;
     sec.classList.toggle('collapsed', c);
@@ -1611,7 +1700,7 @@
   }
 
   // 10분 자동새로고침 후에도 보던 화면 유지
-  try{ var savedPage = sessionStorage.getItem('dsparts-page'); if(savedPage && PAGES.indexOf(savedPage)>=0 && savedPage!=='today'){ selectPage(savedPage); } }catch(e){}
+  try{ var savedPage = sessionStorage.getItem('dsparts-page'); if(savedPage && PAGES.indexOf(savedPage)>=0 && savedPage!=='home'){ selectPage(savedPage); } }catch(e){}
 
   // 진행RO 경과일: 30일 이상은 붉은색, 오래될수록 진하게
   document.querySelectorAll('.dday-cell').forEach(function(td){
