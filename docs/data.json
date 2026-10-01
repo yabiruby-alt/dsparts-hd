@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 14:18 기준",
+    "generated_at": "10월 1일 (목) · 14:24 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,8 +16,8 @@
     "top5": []
   },
   "inv": {
-    "total": 1005581182,
-    "item_count": 2184,
+    "total": 1005273373,
+    "item_count": 2182,
     "code_count": 25,
     "alois_groups": [
       {
@@ -28,7 +28,7 @@
           {
             "code": "A1",
             "val": 222646125,
-            "pct": 22.14,
+            "pct": 22.15,
             "qty": 2612,
             "parts": [
               {
@@ -314,7 +314,7 @@
           {
             "code": "A3",
             "val": 26394648,
-            "pct": 2.62,
+            "pct": 2.63,
             "qty": 522,
             "parts": [
               {
@@ -4486,7 +4486,7 @@
         ],
         "subtotal_val": 473915845,
         "subtotal_qty": 9039,
-        "subtotal_pct": 47.13
+        "subtotal_pct": 47.14
       },
       {
         "code": "L",
@@ -10011,9 +10011,9 @@
           },
           {
             "code": "OA",
-            "val": 26713716,
-            "pct": 2.66,
-            "qty": 221,
+            "val": 26405907,
+            "pct": 2.63,
+            "qty": 219,
             "parts": [
               {
                 "item": "63119850426",
@@ -10250,12 +10250,6 @@
                 "val": 179400
               },
               {
-                "item": "51377446224",
-                "name": "Finisher, si",
-                "qty": 1,
-                "val": 176484
-              },
-              {
                 "item": "51437496417",
                 "name": "Cover, B-col",
                 "qty": 1,
@@ -10290,12 +10284,6 @@
                 "name": "Trim panel",
                 "qty": 1,
                 "val": 131989
-              },
-              {
-                "item": "51337446190",
-                "name": "Trim, window",
-                "qty": 1,
-                "val": 131325
               },
               {
                 "item": "51357446212",
@@ -11962,9 +11950,9 @@
             ]
           }
         ],
-        "subtotal_val": 203947308,
-        "subtotal_qty": 2375,
-        "subtotal_pct": 20.28
+        "subtotal_val": 203639499,
+        "subtotal_qty": 2373,
+        "subtotal_pct": 20.26
       },
       {
         "code": "I",
@@ -13377,16 +13365,16 @@
     ]
   },
   "oaov": {
-    "total": 45691292,
-    "inv_total": 1005581182,
-    "pct": 4.54,
-    "oa_val": 26713716,
+    "total": 45383483,
+    "inv_total": 1005273373,
+    "pct": 4.51,
+    "oa_val": 26405907,
     "ov_val": 18977576,
-    "oa_lines": 104,
+    "oa_lines": 102,
     "ov_lines": 105,
-    "oa_qty": 221,
+    "oa_qty": 219,
     "ov_qty": 209,
-    "item_count": 209,
+    "item_count": 207,
     "oa_items": [
       {
         "item": "63119850426",
@@ -13701,14 +13689,6 @@
         "val": 179400
       },
       {
-        "item": "51377446224",
-        "name": "Finisher, si",
-        "pgrp": "B1",
-        "alois": "OA",
-        "qty": 1,
-        "val": 176484
-      },
-      {
         "item": "51437496417",
         "name": "Cover, B-col",
         "pgrp": "B1",
@@ -13755,14 +13735,6 @@
         "alois": "OA",
         "qty": 1,
         "val": 131989
-      },
-      {
-        "item": "51337446190",
-        "name": "Trim, window",
-        "pgrp": "B1",
-        "alois": "OA",
-        "qty": 1,
-        "val": 131325
       },
       {
         "item": "51357446212",
@@ -15852,15 +15824,6 @@
         "last_in": "2024-12-19"
       },
       {
-        "item": "51377446224",
-        "name": "Finisher, si",
-        "pgrp": "B1",
-        "alois": "OA",
-        "qty": 1,
-        "val": 176484,
-        "last_in": "2025-06-30"
-      },
-      {
         "item": "51472465482",
         "name": "Sill trim ca",
         "pgrp": "B3",
@@ -15966,15 +15929,6 @@
         "alois": "OV",
         "qty": 7,
         "val": 131880,
-        "last_in": "2025-06-30"
-      },
-      {
-        "item": "51337446190",
-        "name": "Trim, window",
-        "pgrp": "B1",
-        "alois": "OA",
-        "qty": 1,
-        "val": 131325,
         "last_in": "2025-06-30"
       },
       {
@@ -17058,9 +17012,9 @@
         "last_in": "2025-06-24"
       }
     ],
-    "m12_val": 54296238,
-    "m12_count": 205,
-    "m12_pct": 5.4,
+    "m12_val": 53988429,
+    "m12_count": 203,
+    "m12_pct": 5.37,
     "m24_items": [
       {
         "item": "24008741536",
@@ -22109,40 +22063,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "51377446224",
-        "name": "Finisher, si",
-        "alois": "OA",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001193",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-30",
-        "req_dt_full": "2026-09-30 13:46:53",
-        "req_brch": "AS_부산(전포)",
-        "val": 176484,
-        "sa": "정경훈",
-        "dday": "D+1일"
-      },
-      {
-        "item": "51337446190",
-        "name": "Trim, window",
-        "alois": "OA",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001193",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-30",
-        "req_dt_full": "2026-09-30 13:46:53",
-        "req_brch": "AS_부산(전포)",
-        "val": 131325,
-        "sa": "정경훈",
-        "dday": "D+1일"
-      },
-      {
         "item": "11287594969",
         "name": "Tensioner",
         "alois": "O8",
@@ -22908,8 +22828,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 318,
-    "total_val": 97243562,
+    "count": 316,
+    "total_val": 96935753,
     "groups": [
       {
         "code": "RO",
@@ -25567,40 +25487,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "51377446224",
-            "name": "Finisher, si",
-            "alois": "OA",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001193",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-30",
-            "req_dt_full": "2026-09-30 13:46:53",
-            "req_brch": "AS_부산(전포)",
-            "val": 176484,
-            "sa": "정경훈",
-            "dday": "D+1일"
-          },
-          {
-            "item": "51337446190",
-            "name": "Trim, window",
-            "alois": "OA",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001193",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-30",
-            "req_dt_full": "2026-09-30 13:46:53",
-            "req_brch": "AS_부산(전포)",
-            "val": 131325,
-            "sa": "정경훈",
-            "dday": "D+1일"
-          },
-          {
             "item": "07119906460",
             "name": "Bolt",
             "alois": "O8",
@@ -26196,9 +26082,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 193,
-        "qty_sum": 262,
-        "val": 67366072
+        "count": 191,
+        "qty_sum": 260,
+        "val": 67058263
       },
       {
         "code": "SB",
@@ -36932,8 +36818,8 @@
       {
         "code": "OA",
         "in_val": 0,
-        "out_val": 131362,
-        "net": -131362
+        "out_val": 439171,
+        "net": -439171
       },
       {
         "code": "OV",
@@ -38027,8 +37913,8 @@
       },
       {
         "ro": "RO2609001216",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "우상만",
         "pub": "2026-09-18",
@@ -40425,8 +40311,8 @@
       },
       {
         "ro": "RO2610000054",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-01",
@@ -40598,25 +40484,36 @@
         "pub_full": "2026-10-01 14:01",
         "dday": "D+0일",
         "amt": 372250
+      },
+      {
+        "ro": "RO2610000070",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Recall/TC",
+        "sa": "정용환",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 14:25",
+        "dday": "D+0일",
+        "amt": 867071
       }
     ],
-    "count": 332,
-    "total_amt": 744242745,
+    "count": 333,
+    "total_amt": 745109816,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 20,
-        "amt": 8874899
+        "count": 21,
+        "amt": 9741970
       },
       {
         "stat": "상담완료",
-        "count": 157,
-        "amt": 499945621
+        "count": 155,
+        "amt": 498497834
       },
       {
         "stat": "정비시작",
-        "count": 48,
-        "amt": 45741561
+        "count": 50,
+        "amt": 47189348
       },
       {
         "stat": "End Control 요청",
@@ -46216,58 +46113,6 @@
   "sbcar": {
     "groups": [
       {
-        "code": "SB2608001572",
-        "resv_full": "2026-10-01 14:08",
-        "resv": "10-01",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "12415BA2AE4",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 15,
-            "avail_qty": 11,
-            "val": 653835
-          },
-          {
-            "item": "61610003090",
-            "name": "Set of wiper 6GT",
-            "alois": "A2",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 19,
-            "avail_qty": 18,
-            "val": 64935
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 53,
-            "avail_qty": 20,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L3",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 122,
-            "avail_qty": 98,
-            "val": 1125
-          }
-        ],
-        "count": 4,
-        "qty_sum": 4,
-        "val": 728217
-      },
-      {
         "code": "SB2609002161",
         "resv_full": "2026-10-01 14:12",
         "resv": "10-01",
@@ -46310,9 +46155,9 @@
         "val": 162508
       }
     ],
-    "sb_count": 2,
-    "line_count": 7,
-    "total_val": 890725,
+    "sb_count": 1,
+    "line_count": 3,
+    "total_val": 162508,
     "o_lines": 2,
     "o_val": 160548,
     "resv_total": 10169
