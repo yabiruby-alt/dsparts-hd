@@ -78,6 +78,9 @@ TIRE_LOCK = threading.Lock()
 DDAY_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1OmZxvQjz1DutkjB1Jkm7JRPinr_7P60BXBLycYo0RU8/export?format=csv&gid=782790237"
 DDAY_FILE = BASE_DIR / "dday_items.json"   # 시트를 못 읽을 때 쓸 마지막 성공본 캐시
 DDAY_LOCK = threading.Lock()
+# 매출 대시보드 모듈 위치 (지점장 전용 — 파츠베이 공개 사이트와 별도 저장소로 배포)
+SALES_DIR = BASE_DIR.parent / "업무자동화 생성" / "매출데이터 사이트"
+SALES_ENABLED = (SALES_DIR / "sales.py").exists()
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
 LAST_DATA = {}                    # 마지막 갱신 데이터(사유만 바뀌었을 때 DMS 재조회 없이 재렌더용)
 
@@ -1526,6 +1529,18 @@ def run_cycle(page: Page) -> None:
 
         if PUBLISH_TO_GITHUB:
             publish_to_github(f"대시보드 갱신 {generated_at}")
+
+    # 매출 대시보드(지점장 전용, 비밀번호 암호화 페이지) — DMS 세션을 두 개 띄울 수 없어서 별도 데몬이 아니라 여기서 이어서 실행.
+    # 실패해도 파츠베이 갱신에는 영향 없음.
+    if SALES_ENABLED:
+        print(" - 매출 대시보드")
+        try:
+            if str(SALES_DIR) not in sys.path:
+                sys.path.insert(0, str(SALES_DIR))
+            import sales
+            sales.run(to_rows, lambda s, e: extract_turnover(page, s, e), now, BRANCH_NAME, page=page)
+        except Exception as e:
+            print(f"   [매출 대시보드 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
 
 
 def main():

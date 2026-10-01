@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 15:58 기준",
+    "generated_at": "10월 1일 (목) · 16:10 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,7 +16,7 @@
     "top5": []
   },
   "inv": {
-    "total": 998777749,
+    "total": 998674877,
     "item_count": 2173,
     "code_count": 25,
     "alois_groups": [
@@ -28,7 +28,7 @@
           {
             "code": "A1",
             "val": 222367519,
-            "pct": 22.26,
+            "pct": 22.27,
             "qty": 2603,
             "parts": [
               {
@@ -107,9 +107,9 @@
           },
           {
             "code": "A2",
-            "val": 20414513,
+            "val": 20341778,
             "pct": 2.04,
-            "qty": 1118,
+            "qty": 1117,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -118,16 +118,16 @@
                 "val": 5809716
               },
               {
-                "item": "61615A43610",
-                "name": "Set of wiper G70",
-                "qty": 24,
-                "val": 1745640
-              },
-              {
                 "item": "64115A547D9",
                 "name": "Microfilter/",
                 "qty": 23,
                 "val": 1740939
+              },
+              {
+                "item": "61615A43610",
+                "name": "Set of wiper G70",
+                "qty": 23,
+                "val": 1672905
               },
               {
                 "item": "61610003090",
@@ -501,9 +501,9 @@
           },
           {
             "code": "A4",
-            "val": 46941542,
+            "val": 46911405,
             "pct": 4.7,
-            "qty": 1928,
+            "qty": 1927,
             "parts": [
               {
                 "item": "63117214962",
@@ -824,12 +824,6 @@
                 "val": 183488
               },
               {
-                "item": "33127607158",
-                "name": "Repair kit i",
-                "qty": 6,
-                "val": 180822
-              },
-              {
                 "item": "13327822499",
                 "name": "Fuel filter Ex ,Fx 3,5,7",
                 "qty": 3,
@@ -888,6 +882,12 @@
                 "name": "Filt.Element",
                 "qty": 8,
                 "val": 152232
+              },
+              {
+                "item": "33127607158",
+                "name": "Repair kit i",
+                "qty": 5,
+                "val": 150685
               },
               {
                 "item": "07148854416",
@@ -4478,8 +4478,8 @@
             ]
           }
         ],
-        "subtotal_val": 471834132,
-        "subtotal_qty": 8995,
+        "subtotal_val": 471731260,
+        "subtotal_qty": 8993,
         "subtotal_pct": 47.24
       },
       {
@@ -7720,7 +7720,7 @@
         ],
         "subtotal_val": 163448730,
         "subtotal_qty": 4709,
-        "subtotal_pct": 16.36
+        "subtotal_pct": 16.37
       },
       {
         "code": "O",
@@ -13306,13 +13306,13 @@
         ],
         "subtotal_val": 159646969,
         "subtotal_qty": 2043,
-        "subtotal_pct": 15.98
+        "subtotal_pct": 15.99
       }
     ]
   },
   "oaov": {
     "total": 45264368,
-    "inv_total": 998777749,
+    "inv_total": 998674877,
     "pct": 4.53,
     "oa_val": 26405907,
     "ov_val": 18858461,
@@ -37297,7 +37297,7 @@
         "pub": "2026-09-04",
         "pub_full": "2026-09-04 16:00",
         "dday": "D+27일",
-        "amt": 873431
+        "amt": 911059
       },
       {
         "ro": "RO2609000344",
@@ -39805,7 +39805,7 @@
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 09:20",
         "dday": "D+0일",
-        "amt": 425012
+        "amt": 424664
       },
       {
         "ro": "RO2610000014",
@@ -39952,8 +39952,8 @@
       },
       {
         "ro": "RO2610000030",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-01",
@@ -40370,8 +40370,8 @@
       },
       {
         "ro": "RO2610000068",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-01",
@@ -40414,8 +40414,8 @@
       },
       {
         "ro": "RO2610000072",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-10-01",
@@ -40480,8 +40480,8 @@
       },
       {
         "ro": "RO2610000078",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "경수리",
         "sa": "김민규",
         "pub": "2026-10-01",
@@ -40532,30 +40532,41 @@
         "pub_full": "2026-10-01 15:47",
         "dday": "D+0일",
         "amt": 640478
+      },
+      {
+        "ro": "RO2610000083",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 16:00",
+        "dday": "D+0일",
+        "amt": 951300
       }
     ],
-    "count": 342,
-    "total_amt": 758344606,
+    "count": 343,
+    "total_amt": 759333186,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 21,
-        "amt": 19691799
+        "count": 22,
+        "amt": 20643099
       },
       {
         "stat": "상담완료",
-        "count": 152,
-        "amt": 489214866
+        "count": 150,
+        "amt": 488825012
       },
       {
         "stat": "정비시작",
         "count": 55,
-        "amt": 58641166
+        "amt": 58530136
       },
       {
         "stat": "End Control 요청",
-        "count": 69,
-        "amt": 84728683
+        "count": 71,
+        "amt": 85266847
       },
       {
         "stat": "가정산 완료",
@@ -41339,7 +41350,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 285,
-            "avail_qty": 78,
+            "avail_qty": 77,
             "val": 24160
           }
         ],
@@ -41485,7 +41496,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 285,
-            "avail_qty": 78,
+            "avail_qty": 77,
             "val": 12080
           }
         ],
@@ -43120,7 +43131,7 @@
             "alois": "A4",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 6,
+            "crt_qty": 5,
             "avail_qty": 2,
             "val": 30137
           }
@@ -45127,7 +45138,7 @@
             "sa": "우종훈",
             "req_qty": 2,
             "crt_qty": 285,
-            "avail_qty": 78,
+            "avail_qty": 77,
             "val": 24160
           },
           {
@@ -45888,7 +45899,7 @@
             "alois": "A4",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 6,
+            "crt_qty": 5,
             "avail_qty": 2,
             "val": 30137
           }
@@ -46049,7 +46060,7 @@
     "total_val": 61203657,
     "o_lines": 71,
     "o_val": 18533841,
-    "resv_total": 363
+    "resv_total": 364
   },
   "sbcar": {
     "groups": [],
@@ -47735,7 +47746,7 @@
         "item": "61615A43610",
         "name": "Set of wiper G70",
         "alois": "A2",
-        "qty": 24,
+        "qty": 23,
         "no": 208
       },
       {
@@ -48583,7 +48594,7 @@
         "item": "33127607158",
         "name": "Repair kit i",
         "alois": "A4",
-        "qty": 6,
+        "qty": 5,
         "no": 314
       },
       {
