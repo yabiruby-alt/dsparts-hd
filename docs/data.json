@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 1일 (목) · 11:16 기준",
+    "generated_at": "10월 1일 (목) · 11:27 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -40548,17 +40548,6 @@
         "amt": 634379
       },
       {
-        "ro": "RO2610000047",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "이정환",
-        "pub": "2026-10-01",
-        "pub_full": "2026-10-01 10:42",
-        "dday": "D+0일",
-        "amt": 1079200
-      },
-      {
         "ro": "RO2610000046",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -40568,6 +40557,17 @@
         "pub_full": "2026-10-01 10:42",
         "dday": "D+0일",
         "amt": 0
+      },
+      {
+        "ro": "RO2610000047",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 10:42",
+        "dday": "D+0일",
+        "amt": 1079200
       },
       {
         "ro": "RO2610000048",
@@ -40648,28 +40648,39 @@
       },
       {
         "ro": "RO2610000055",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 11:12",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 105400
+      },
+      {
+        "ro": "RO2610000056",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "김민규",
+        "pub": "2026-10-01",
+        "pub_full": "2026-10-01 11:21",
+        "dday": "D+0일",
+        "amt": 758509
       }
     ],
-    "count": 319,
-    "total_amt": 728379393,
+    "count": 320,
+    "total_amt": 729243302,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 20,
+        "count": 19,
         "amt": 9794199
       },
       {
         "stat": "상담완료",
-        "count": 162,
-        "amt": 478951695
+        "count": 163,
+        "amt": 478736404
       },
       {
         "stat": "정비시작",
@@ -40678,8 +40689,8 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 58,
-        "amt": 79636091
+        "count": 59,
+        "amt": 80715291
       },
       {
         "stat": "가정산 완료",
@@ -41463,7 +41474,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 287,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 24160
           }
         ],
@@ -41609,7 +41620,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 287,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 12080
           }
         ],
@@ -45985,7 +45996,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 20,
-            "avail_qty": 16,
+            "avail_qty": 15,
             "val": 68185
           },
           {
@@ -46025,7 +46036,7 @@
             "sa": "우종훈",
             "req_qty": 2,
             "crt_qty": 287,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 24160
           },
           {
@@ -46469,55 +46480,13 @@
     "total_val": 63599485,
     "o_lines": 75,
     "o_val": 18998098,
-    "resv_total": 373
+    "resv_total": 374
   },
   "sbcar": {
     "groups": [
       {
         "code": "SB2609001950",
         "resv_full": "2026-10-01 10:14",
-        "resv": "10-01",
-        "dday": "오늘",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 33,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 62,
-            "avail_qty": 20,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L3",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 131,
-            "avail_qty": 98,
-            "val": 1125
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 577937
-      },
-      {
-        "code": "SB2609001644",
-        "resv_full": "2026-10-01 10:49",
         "resv": "10-01",
         "dday": "오늘",
         "sa": "김민규",
@@ -46580,9 +46549,9 @@
         "val": 72735
       }
     ],
-    "sb_count": 3,
-    "line_count": 7,
-    "total_val": 1228609,
+    "sb_count": 2,
+    "line_count": 4,
+    "total_val": 650672,
     "o_lines": 0,
     "o_val": 0,
     "resv_total": 10153
