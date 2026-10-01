@@ -249,6 +249,10 @@
   .home-card-eyebrow{ font-family:var(--font-body); font-weight:600; font-size:13.5px; color:var(--muted); }
   .home-card-value{ font-family:var(--font-mono); font-weight:700; font-size:28px; letter-spacing:-.02em; color:var(--ink); font-variant-numeric:tabular-nums; }
   .home-card-foot{ font-size:13px; color:var(--muted); }
+  .home-dday-list{ display:flex; flex-direction:column; gap:7px; margin-top:2px; }
+  .home-dday-item{ display:flex; align-items:baseline; gap:9px; }
+  .home-dday-badge{ font-family:var(--font-mono); font-weight:700; font-size:16px; color:var(--ink); flex:none; min-width:42px; }
+  .home-dday-title{ font-size:13.5px; color:var(--ink-2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; min-width:0; }
   .aloistag{ display:inline-block; font-family:var(--font-mono); font-size:12.5px; font-weight:600; padding:2px 7px; border-radius:7px; background:var(--surface-2); color:var(--ink-2); }
   .subttl{ font-family:var(--font-display); font-weight:600; font-size:15px; text-transform:none; letter-spacing:0; color:var(--ink); margin:0 0 10px; display:flex; justify-content:space-between; }
   .subttl .n{ font-family:var(--font-mono); color:var(--muted); font-weight:500; text-transform:none; letter-spacing:0; }
@@ -475,6 +479,10 @@
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="14" height="13" rx="1.5"/><path d="M2 7h14"/><path d="M6 2v3M12 2v3"/></svg>
         팀 캘린더
       </button>
+      <button class="sb-item" id="nav-dday" aria-current="false" onclick="selectPage('dday')">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="12" height="12" rx="2"/><path d="M3 7h12M6.5 2v2.5M11.5 2v2.5"/></svg>
+        디데이 현황
+      </button>
     </div>
 
     <div class="sb-section">
@@ -518,14 +526,6 @@
       <button class="sb-item" id="nav-tire" aria-current="false" onclick="selectPage('tire')">
         <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="6.5"/><circle cx="9" cy="9" r="2.2"/><path d="M9 2.5v2M9 13.5v2M2.5 9h2M13.5 9h2M4.4 4.4l1.4 1.4M12.2 12.2l1.4 1.4M4.4 13.6l1.4-1.4M12.2 5.8l1.4-1.4"/></svg>
         타이어 사이즈 조회
-      </button>
-    </div>
-
-    <div class="sb-section">
-      <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">디데이 관리<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
-      <button class="sb-item" id="nav-dday" aria-current="false" onclick="selectPage('dday')">
-        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="12" height="12" rx="2"/><path d="M3 7h12M6.5 2v2.5M11.5 2v2.5"/></svg>
-        디데이 현황
       </button>
     </div>
 
@@ -602,10 +602,16 @@
           <span class="home-card-foot">OA+OV ₩{{ '{:,}'.format(oaov.total) }}</span>
         </button>
         <button class="home-card" onclick="selectPage('dday')">
-          <span class="home-card-eyebrow">다가오는 디데이</span>
+          <span class="home-card-eyebrow">다가오는 디데이{% if dday.count > 3 %} · 외 {{ dday.count - 3 }}건{% endif %}</span>
           {% if dday.rows %}
-          <span class="home-card-value"{% if dday.rows[0].sort_key <= 0 %} style="color:var(--critical);"{% endif %}>{{ dday.rows[0].dday }}</span>
-          <span class="home-card-foot">{{ dday.rows[0].title }} · {{ dday.rows[0].target }}</span>
+          <div class="home-dday-list">
+            {% for r in dday.rows[:3] %}
+            <div class="home-dday-item">
+              <span class="home-dday-badge"{% if r.sort_key <= 0 %} style="color:var(--critical);"{% endif %}>{{ r.dday }}</span>
+              <span class="home-dday-title">{{ r.title }}</span>
+            </div>
+            {% endfor %}
+          </div>
           {% else %}
           <span class="home-card-value">-</span>
           <span class="home-card-foot">등록된 디데이 없음</span>
@@ -1520,6 +1526,7 @@
           <span class="lbl">디데이 리스트</span>
           <span class="val">{{ dday.count }}건</span>
           <span class="foot">목표일까지 D-N, 지난 항목은 D+N · 임박/경과 순</span>
+          <a class="rbtn rbtn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSckVV_0hllM-JYnFyKqhu1JLP9IxXWeQG2zmZBLJm16kEJOlQ/viewform" target="_blank" rel="noopener">디데이 추가/수정하기 ↗</a>
         </div>
         <div class="tablewrap">
           <table>
