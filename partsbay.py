@@ -1247,8 +1247,11 @@ def import_tire_excel() -> dict | None:
             pn = str(pn).strip()
             brand = row[3].value
             sale_tp = row[5].value  # F열: 판매유형
-            # D+1(특수주문/입고지연)인 품목은 Yokohama 제외하고는 재고조회 리스트에서 아예 제외
-            if sale_tp == "D+1" and brand != "Yokohama":
+            # Yokohama는 D+1만 사용(D+0 제외), 나머지 브랜드는 D+0만 사용(D+1 제외)
+            if brand == "Yokohama":
+                if sale_tp != "D+1":
+                    continue
+            elif sale_tp == "D+1":
                 continue
             size = row[6].value  # G열: 사이즈
             price = row[11].value  # L열: 구매단가
