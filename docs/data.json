@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 2일 (금) · 16:34 기준",
+    "generated_at": "10월 2일 (금) · 16:47 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -36132,8 +36132,8 @@
       },
       {
         "ro": "RO2609000918",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "소음",
         "sa": "우종훈",
         "pub": "2026-09-14",
@@ -37936,8 +37936,8 @@
       },
       {
         "ro": "RO2610000003",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "안준영",
         "pub": "2026-10-01",
@@ -38816,8 +38816,8 @@
       },
       {
         "ro": "RO2610000102",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-02",
@@ -39410,14 +39410,14 @@
       },
       {
         "ro": "RO2610000159",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 15:16",
         "dday": "D+0일",
-        "amt": 790303
+        "amt": 796403
       },
       {
         "ro": "RO2610000160",
@@ -39476,8 +39476,8 @@
       },
       {
         "ro": "RO2610000164",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-10-02",
@@ -39498,7 +39498,7 @@
       }
     ],
     "count": 378,
-    "total_amt": 779119903,
+    "total_amt": 779126003,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -39507,18 +39507,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 151,
-        "amt": 460148679
+        "count": 150,
+        "amt": 454010872
       },
       {
         "stat": "정비시작",
-        "count": 47,
-        "amt": 64330663
+        "count": 46,
+        "amt": 69559413
       },
       {
         "stat": "End Control 요청",
-        "count": 51,
-        "amt": 82970197
+        "count": 53,
+        "amt": 83885354
       },
       {
         "stat": "가정산 완료",
@@ -44750,7 +44750,7 @@
     "total_val": 55568745,
     "o_lines": 76,
     "o_val": 20126457,
-    "resv_total": 358
+    "resv_total": 360
   },
   "sbcar": {
     "groups": [],
