@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 2일 (금) · 11:41 기준",
+    "generated_at": "10월 2일 (금) · 11:58 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -36707,8 +36707,8 @@
       },
       {
         "ro": "RO2609001198",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-18",
@@ -38489,8 +38489,8 @@
       },
       {
         "ro": "RO2610000018",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "이정환",
         "pub": "2026-10-01",
@@ -39226,25 +39226,14 @@
       },
       {
         "ro": "RO2610000099",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "최민수",
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 08:54",
         "dday": "D+0일",
         "amt": 672862
-      },
-      {
-        "ro": "RO2610000101",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "입고 Proactive-RITA",
-        "sa": "최민수",
-        "pub": "2026-10-02",
-        "pub_full": "2026-10-02 09:03",
-        "dday": "D+0일",
-        "amt": 699046
       },
       {
         "ro": "RO2610000100",
@@ -39256,6 +39245,17 @@
         "pub_full": "2026-10-02 09:03",
         "dday": "D+0일",
         "amt": 481464
+      },
+      {
+        "ro": "RO2610000101",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
+        "svc": "입고 Proactive-RITA",
+        "sa": "최민수",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 09:03",
+        "dday": "D+0일",
+        "amt": 699046
       },
       {
         "ro": "RO2610000102",
@@ -39281,8 +39281,8 @@
       },
       {
         "ro": "RO2610000104",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-02",
@@ -39303,8 +39303,8 @@
       },
       {
         "ro": "RO2610000106",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-10-02",
@@ -39358,14 +39358,14 @@
       },
       {
         "ro": "RO2610000111",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 09:50",
         "dday": "D+0일",
-        "amt": 579945
+        "amt": 1002445
       },
       {
         "ro": "RO2610000113",
@@ -39457,8 +39457,8 @@
       },
       {
         "ro": "RO2610000120",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-10-02",
@@ -39497,7 +39497,7 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 10:37",
         "dday": "D+0일",
-        "amt": 56000
+        "amt": 1480300
       },
       {
         "ro": "RO2610000124",
@@ -39523,8 +39523,8 @@
       },
       {
         "ro": "RO2610000126",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-10-02",
@@ -39545,8 +39545,8 @@
       },
       {
         "ro": "RO2610000128",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-02",
@@ -39597,30 +39597,41 @@
         "pub_full": "2026-10-02 11:15",
         "dday": "D+0일",
         "amt": 100000
+      },
+      {
+        "ro": "RO2610000133",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "진단",
+        "sa": "최민수",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 11:56",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 356,
-    "total_amt": 764248298,
+    "count": 357,
+    "total_amt": 766095098,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 20,
+        "count": 21,
         "amt": 18035799
       },
       {
         "stat": "상담완료",
-        "count": 152,
-        "amt": 461301258
+        "count": 150,
+        "amt": 462935329
       },
       {
         "stat": "정비시작",
-        "count": 47,
-        "amt": 81230790
+        "count": 42,
+        "amt": 76075293
       },
       {
         "stat": "End Control 요청",
-        "count": 49,
-        "amt": 61371034
+        "count": 56,
+        "amt": 66739260
       },
       {
         "stat": "공정마감",
@@ -41146,14 +41157,56 @@
         "count": 3,
         "qty_sum": 7,
         "val": 217094
+      },
+      {
+        "code": "SB2610000031",
+        "resv_full": "2026-10-02 11:20",
+        "resv": "10-02",
+        "dday": "오늘",
+        "sa": "정용환",
+        "rows": [
+          {
+            "item": "64119382886",
+            "name": "MICROFILTER/",
+            "alois": "OE",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 28,
+            "avail_qty": 24,
+            "val": 85576
+          },
+          {
+            "item": "83215B49DD6",
+            "name": "LL-17FE+ 0W-20",
+            "alois": "L1",
+            "sa": "정용환",
+            "req_qty": 5,
+            "crt_qty": 395,
+            "avail_qty": 373,
+            "val": 80215
+          },
+          {
+            "item": "11428575211",
+            "name": "Set oil-filt",
+            "alois": "A1",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 189,
+            "avail_qty": 184,
+            "val": 19920
+          }
+        ],
+        "count": 3,
+        "qty_sum": 7,
+        "val": 185711
       }
     ],
-    "sb_count": 45,
-    "line_count": 97,
-    "total_val": 16131875,
-    "o_lines": 25,
-    "o_val": 5992084,
-    "resv_total": 12065
+    "sb_count": 46,
+    "line_count": 100,
+    "total_val": 16317586,
+    "o_lines": 26,
+    "o_val": 6077660,
+    "resv_total": 12066
   },
   "sbresv": {
     "groups": [
@@ -44876,65 +44929,96 @@
         "count": 3,
         "qty_sum": 3,
         "val": 577937
-      },
-      {
-        "code": "SB2610000031",
-        "resv_full": "2026-10-02 11:20",
-        "resv": "10-02",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 28,
-            "avail_qty": 24,
-            "val": 85576
-          },
-          {
-            "item": "83215B49DD6",
-            "name": "LL-17FE+ 0W-20",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 5,
-            "crt_qty": 395,
-            "avail_qty": 373,
-            "val": 80215
-          },
-          {
-            "item": "11428575211",
-            "name": "Set oil-filt",
-            "alois": "A1",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 189,
-            "avail_qty": 184,
-            "val": 19920
-          }
-        ],
-        "count": 3,
-        "qty_sum": 7,
-        "val": 185711
       }
     ],
-    "sb_count": 71,
-    "line_count": 291,
-    "total_val": 55996164,
-    "o_lines": 72,
-    "o_val": 19467775,
-    "resv_total": 354
+    "sb_count": 70,
+    "line_count": 288,
+    "total_val": 55810453,
+    "o_lines": 71,
+    "o_val": 19382199,
+    "resv_total": 353
   },
   "sbcar": {
-    "groups": [],
-    "sb_count": 0,
-    "line_count": 0,
-    "total_val": 0,
+    "groups": [
+      {
+        "code": "SB2610000103",
+        "resv_full": "2026-10-02 11:56",
+        "resv": "10-02",
+        "dday": "오늘",
+        "sa": "강충성",
+        "rows": [
+          {
+            "item": "51125A3DA93",
+            "name": "Bumper trim",
+            "alois": "A5",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "val": 1185420
+          },
+          {
+            "item": "51128081541",
+            "name": "Trim panel,",
+            "alois": "A5",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 226111
+          },
+          {
+            "item": "51128081599",
+            "name": "Trim strip,",
+            "alois": "A5",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "val": 76523
+          },
+          {
+            "item": "51128081600",
+            "name": "Trim strip,",
+            "alois": "A5",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "val": 63410
+          },
+          {
+            "item": "51128081528",
+            "name": "Trim strip,",
+            "alois": "A5",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "val": 49895
+          },
+          {
+            "item": "63215A5B468",
+            "name": "Adhesive pad",
+            "alois": "L4",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 3,
+            "avail_qty": 0,
+            "val": 16405
+          }
+        ],
+        "count": 6,
+        "qty_sum": 6,
+        "val": 1617764
+      }
+    ],
+    "sb_count": 1,
+    "line_count": 6,
+    "total_val": 1617764,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10192
+    "resv_total": 10195
   },
   "nonmng": {
     "rows": [],
