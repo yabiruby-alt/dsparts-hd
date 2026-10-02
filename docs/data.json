@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 2일 (금) · 12:41 기준",
+    "generated_at": "10월 2일 (금) · 12:59 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -38236,8 +38236,8 @@
       },
       {
         "ro": "RO2609001777",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-30",
@@ -38247,8 +38247,8 @@
       },
       {
         "ro": "RO2609001779",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-30",
@@ -38258,8 +38258,8 @@
       },
       {
         "ro": "RO2609001784",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-09-30",
@@ -39258,17 +39258,6 @@
         "amt": 538102
       },
       {
-        "ro": "RO2610000103",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "Maintenance",
-        "sa": "정용환",
-        "pub": "2026-10-02",
-        "pub_full": "2026-10-02 09:07",
-        "dday": "D+0일",
-        "amt": 277200
-      },
-      {
         "ro": "RO2610000104",
         "stat": "End Control 요청",
         "stat_cd": "08",
@@ -39486,7 +39475,7 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 10:37",
         "dday": "D+0일",
-        "amt": 1480300
+        "amt": 1486100
       },
       {
         "ro": "RO2610000124",
@@ -39534,14 +39523,14 @@
       },
       {
         "ro": "RO2610000128",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 10:59",
         "dday": "D+0일",
-        "amt": 56000
+        "amt": 469500
       },
       {
         "ro": "RO2610000130",
@@ -39618,11 +39607,33 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 12:05",
         "dday": "D+0일",
+        "amt": 641831
+      },
+      {
+        "ro": "RO2610000136",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "이정환",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 12:44",
+        "dday": "D+0일",
+        "amt": 28000
+      },
+      {
+        "ro": "RO2610000137",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "안준영",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 12:53",
+        "dday": "D+0일",
         "amt": 0
       }
     ],
-    "count": 358,
-    "total_amt": 768144574,
+    "count": 359,
+    "total_amt": 768956505,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -39631,8 +39642,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 153,
-        "amt": 465335129
+        "count": 156,
+        "amt": 466480260
       },
       {
         "stat": "정비시작",
@@ -39641,8 +39652,8 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 55,
-        "amt": 66600703
+        "count": 50,
+        "amt": 64447525
       },
       {
         "stat": "공정마감",
@@ -39651,8 +39662,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 89,
-        "amt": 140903005
+        "count": 92,
+        "amt": 142722983
       }
     ],
     "oldest": "D+528일"
@@ -40441,7 +40452,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 281,
-            "avail_qty": 270,
+            "avail_qty": 269,
             "val": 24160
           }
         ],
@@ -40587,7 +40598,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 281,
-            "avail_qty": 270,
+            "avail_qty": 269,
             "val": 12080
           }
         ],
@@ -41119,7 +41130,7 @@
             "sa": "정용환",
             "req_qty": 2,
             "crt_qty": 281,
-            "avail_qty": 270,
+            "avail_qty": 269,
             "val": 24160
           }
         ],
@@ -41161,7 +41172,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 189,
-            "avail_qty": 184,
+            "avail_qty": 183,
             "val": 19920
           }
         ],
@@ -41203,7 +41214,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 189,
-            "avail_qty": 184,
+            "avail_qty": 183,
             "val": 19920
           }
         ],
@@ -44523,7 +44534,7 @@
             "sa": "우종훈",
             "req_qty": 2,
             "crt_qty": 281,
-            "avail_qty": 270,
+            "avail_qty": 269,
             "val": 24160
           },
           {
@@ -44607,7 +44618,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 17,
-            "avail_qty": 14,
+            "avail_qty": 13,
             "val": 29739
           }
         ],
@@ -44723,55 +44734,13 @@
             "sa": "정용환",
             "req_qty": 2,
             "crt_qty": 281,
-            "avail_qty": 270,
+            "avail_qty": 269,
             "val": 24160
           }
         ],
         "count": 2,
         "qty_sum": 10,
         "val": 181296
-      },
-      {
-        "code": "SB2609002059",
-        "resv_full": "2026-10-02 13:00",
-        "resv": "10-02",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "64115B78AA5",
-            "name": "Set nanopart",
-            "alois": "SX",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 47,
-            "avail_qty": 46,
-            "val": 156975
-          },
-          {
-            "item": "83215A65B99",
-            "name": "LL-22FE++ 0W12",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 6,
-            "crt_qty": 195,
-            "avail_qty": 183,
-            "val": 97456
-          },
-          {
-            "item": "11425B4C845",
-            "name": "Set oil-filt",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 94,
-            "avail_qty": 92,
-            "val": 20064
-          }
-        ],
-        "count": 3,
-        "qty_sum": 8,
-        "val": 274495
       },
       {
         "code": "SB2609001933",
@@ -44805,48 +44774,6 @@
             "name": "Clip",
             "alois": "L3",
             "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 109,
-            "avail_qty": 96,
-            "val": 1125
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 577937
-      },
-      {
-        "code": "SB2609001881",
-        "resv_full": "2026-10-02 13:00",
-        "resv": "10-02",
-        "dday": "오늘",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 16,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 41,
-            "avail_qty": 20,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L3",
-            "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 109,
             "avail_qty": 96,
@@ -44942,21 +44869,106 @@
         "val": 577937
       }
     ],
-    "sb_count": 70,
-    "line_count": 288,
-    "total_val": 55810453,
+    "sb_count": 68,
+    "line_count": 282,
+    "total_val": 54958021,
     "o_lines": 71,
     "o_val": 19382199,
-    "resv_total": 355
+    "resv_total": 354
   },
   "sbcar": {
-    "groups": [],
-    "sb_count": 0,
-    "line_count": 0,
-    "total_val": 0,
+    "groups": [
+      {
+        "code": "SB2609002059",
+        "resv_full": "2026-10-02 12:56",
+        "resv": "10-02",
+        "dday": "오늘",
+        "sa": "정용환",
+        "rows": [
+          {
+            "item": "64115B78AA5",
+            "name": "Set nanopart",
+            "alois": "SX",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 47,
+            "avail_qty": 46,
+            "val": 156975
+          },
+          {
+            "item": "83215A65B99",
+            "name": "LL-22FE++ 0W12",
+            "alois": "L1",
+            "sa": "정용환",
+            "req_qty": 6,
+            "crt_qty": 195,
+            "avail_qty": 178,
+            "val": 97456
+          },
+          {
+            "item": "11425B4C845",
+            "name": "Set oil-filt",
+            "alois": "L1",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 94,
+            "avail_qty": 92,
+            "val": 20064
+          }
+        ],
+        "count": 3,
+        "qty_sum": 8,
+        "val": 274495
+      },
+      {
+        "code": "SB2609001881",
+        "resv_full": "2026-10-02 12:59",
+        "resv": "10-02",
+        "dday": "오늘",
+        "sa": "김민규",
+        "rows": [
+          {
+            "item": "12415BA2AE6",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 16,
+            "avail_qty": 0,
+            "val": 568490
+          },
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 41,
+            "avail_qty": 20,
+            "val": 8322
+          },
+          {
+            "item": "51337025635",
+            "name": "Clip",
+            "alois": "L3",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 109,
+            "avail_qty": 96,
+            "val": 1125
+          }
+        ],
+        "count": 3,
+        "qty_sum": 3,
+        "val": 577937
+      }
+    ],
+    "sb_count": 2,
+    "line_count": 6,
+    "total_val": 852432,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10197
+    "resv_total": 10199
   },
   "nonmng": {
     "rows": [],
