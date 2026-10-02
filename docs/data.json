@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 2일 (금) · 15:42 기준",
+    "generated_at": "10월 2일 (금) · 15:55 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -249,7 +249,7 @@
     ]
   },
   "inv": {
-    "total": 965156222,
+    "total": 965087222,
     "item_count": 2171,
     "code_count": 25,
     "alois_groups": [
@@ -261,7 +261,7 @@
           {
             "code": "A1",
             "val": 224528469,
-            "pct": 23.26,
+            "pct": 23.27,
             "qty": 2616,
             "parts": [
               {
@@ -12107,7 +12107,7 @@
         ],
         "subtotal_val": 182551601,
         "subtotal_qty": 2278,
-        "subtotal_pct": 18.91
+        "subtotal_pct": 18.92
       },
       {
         "code": "I",
@@ -12740,9 +12740,9 @@
           },
           {
             "code": "SX",
-            "val": 9946393,
-            "pct": 1.03,
-            "qty": 187,
+            "val": 9877393,
+            "pct": 1.02,
+            "qty": 186,
             "parts": [
               {
                 "item": "64115B78AA5",
@@ -12765,8 +12765,8 @@
               {
                 "item": "99975BBD7D3",
                 "name": "BMW AMBERNES",
-                "qty": 8,
-                "val": 552000
+                "qty": 7,
+                "val": 483000
               },
               {
                 "item": "99975BA1A07",
@@ -13525,15 +13525,15 @@
             ]
           }
         ],
-        "subtotal_val": 144698315,
-        "subtotal_qty": 2009,
+        "subtotal_val": 144629315,
+        "subtotal_qty": 2008,
         "subtotal_pct": 14.99
       }
     ]
   },
   "oaov": {
     "total": 30695869,
-    "inv_total": 965156222,
+    "inv_total": 965087222,
     "pct": 3.18,
     "oa_val": 13286203,
     "ov_val": 17409666,
@@ -36112,8 +36112,8 @@
       },
       {
         "ro": "RO2609001076",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "소음",
         "sa": "최민수",
         "pub": "2026-09-17",
@@ -38785,8 +38785,8 @@
       },
       {
         "ro": "RO2610000115",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-10-02",
@@ -39015,17 +39015,6 @@
         "amt": 641831
       },
       {
-        "ro": "RO2610000136",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "진단",
-        "sa": "이정환",
-        "pub": "2026-10-02",
-        "pub_full": "2026-10-02 12:44",
-        "dday": "D+0일",
-        "amt": 28000
-      },
-      {
         "ro": "RO2610000137",
         "stat": "End Control 요청",
         "stat_cd": "08",
@@ -39148,8 +39137,8 @@
       },
       {
         "ro": "RO2610000148",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-02",
@@ -39269,8 +39258,8 @@
       },
       {
         "ro": "RO2610000159",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-02",
@@ -39298,11 +39287,22 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 15:30",
         "dday": "D+0일",
-        "amt": 44000
+        "amt": 144000
+      },
+      {
+        "ro": "RO2610000162",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 15:46",
+        "dday": "D+0일",
+        "amt": 54380
       }
     ],
     "count": 374,
-    "total_amt": 778008461,
+    "total_amt": 778134841,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -39311,23 +39311,23 @@
       },
       {
         "stat": "상담완료",
-        "count": 153,
-        "amt": 468724631
+        "count": 151,
+        "amt": 461192633
       },
       {
         "stat": "정비시작",
-        "count": 50,
-        "amt": 68046389
+        "count": 53,
+        "amt": 75732767
       },
       {
         "stat": "End Control 요청",
-        "count": 43,
-        "amt": 68927621
+        "count": 41,
+        "amt": 68150518
       },
       {
         "stat": "가정산 완료",
-        "count": 104,
-        "amt": 150135017
+        "count": 105,
+        "amt": 150884120
       }
     ],
     "oldest": "D+528일"
@@ -41877,6 +41877,38 @@
         "val": 1174327
       },
       {
+        "code": "SB2609001374",
+        "resv_full": "2026-10-26 09:00",
+        "resv": "10-26",
+        "dday": "D-24일",
+        "sa": "강충성",
+        "rows": [
+          {
+            "item": "51139853595",
+            "name": "Locking rod",
+            "alois": "OV",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 28836
+          },
+          {
+            "item": "51215A12228",
+            "name": "Single key l",
+            "alois": "SC",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 0
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 28836
+      },
+      {
         "code": "SB2609002179",
         "resv_full": "2026-10-26 09:00",
         "resv": "10-26",
@@ -43533,8 +43565,8 @@
             "alois": "SX",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 8,
-            "avail_qty": 5,
+            "crt_qty": 7,
+            "avail_qty": 4,
             "val": 69000
           }
         ],
@@ -43794,7 +43826,7 @@
             "sa": "M GARAGE",
             "req_qty": 10,
             "crt_qty": 40,
-            "avail_qty": 10,
+            "avail_qty": 8,
             "val": 153120
           },
           {
@@ -44467,28 +44499,6 @@
         "val": 1260217
       },
       {
-        "code": "SB2609001374",
-        "resv_full": "2026-10-06 09:00",
-        "resv": "10-06",
-        "dday": "D-4일",
-        "sa": "강충성",
-        "rows": [
-          {
-            "item": "51139853595",
-            "name": "Locking rod",
-            "alois": "OV",
-            "sa": "강충성",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 28836
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 28836
-      },
-      {
         "code": "SB2609001990",
         "resv_full": "2026-10-02 15:40",
         "resv": "10-02",
@@ -44522,7 +44532,7 @@
       }
     ],
     "sb_count": 65,
-    "line_count": 277,
+    "line_count": 278,
     "total_val": 54211105,
     "o_lines": 72,
     "o_val": 19393474,
@@ -44535,7 +44545,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10220
+    "resv_total": 10221
   },
   "nonmng": {
     "rows": [],
@@ -44695,7 +44705,7 @@
         "item": "99975BBD7D3",
         "name": "BMW AMBERNES",
         "alois": "SX",
-        "qty": 8,
+        "qty": 7,
         "no": 19
       },
       {
@@ -46797,7 +46807,7 @@
         "item": "99975BBD7D3",
         "name": "BMW AMBERNES",
         "alois": "SX",
-        "qty": 8,
+        "qty": 7,
         "no": 179
       },
       {
