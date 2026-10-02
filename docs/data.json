@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 2일 (금) · 15:55 기준",
+    "generated_at": "10월 2일 (금) · 16:08 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -249,7 +249,7 @@
     ]
   },
   "inv": {
-    "total": 965087222,
+    "total": 965056598,
     "item_count": 2171,
     "code_count": 25,
     "alois_groups": [
@@ -4836,9 +4836,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 23564426,
+            "val": 23533802,
             "pct": 2.44,
-            "qty": 1820,
+            "qty": 1818,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4897,8 +4897,8 @@
               {
                 "item": "83215A7EDA5",
                 "name": "LL-01FE 0W-30",
-                "qty": 40,
-                "val": 617074
+                "qty": 38,
+                "val": 586450
               },
               {
                 "item": "90200007672",
@@ -8095,9 +8095,9 @@
             ]
           }
         ],
-        "subtotal_val": 143772644,
-        "subtotal_qty": 4496,
-        "subtotal_pct": 14.9
+        "subtotal_val": 143742020,
+        "subtotal_qty": 4494,
+        "subtotal_pct": 14.89
       },
       {
         "code": "O",
@@ -13533,7 +13533,7 @@
   },
   "oaov": {
     "total": 30695869,
-    "inv_total": 965087222,
+    "inv_total": 965056598,
     "pct": 3.18,
     "oa_val": 13286203,
     "ov_val": 17409666,
@@ -17424,7 +17424,7 @@
     ],
     "m24_val": 19253269,
     "m24_count": 48,
-    "m24_pct": 1.99
+    "m24_pct": 2.0
   },
   "opart": {
     "items": [
@@ -39247,8 +39247,8 @@
       },
       {
         "ro": "RO2610000158",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-10-02",
@@ -39299,25 +39299,58 @@
         "pub_full": "2026-10-02 15:46",
         "dday": "D+0일",
         "amt": 54380
+      },
+      {
+        "ro": "RO2610000163",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "최민수",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 16:00",
+        "dday": "D+0일",
+        "amt": 102824
+      },
+      {
+        "ro": "RO2610000165",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "입고 Proactive-RITA",
+        "sa": "최민수",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 16:05",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000164",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 16:05",
+        "dday": "D+0일",
+        "amt": 608780
       }
     ],
-    "count": 374,
-    "total_amt": 778134841,
+    "count": 377,
+    "total_amt": 778846445,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 24,
+        "count": 25,
         "amt": 22174803
       },
       {
         "stat": "상담완료",
-        "count": 151,
-        "amt": 461192633
+        "count": 152,
+        "amt": 461792237
       },
       {
         "stat": "정비시작",
-        "count": 53,
-        "amt": 75732767
+        "count": 54,
+        "amt": 75844767
       },
       {
         "stat": "End Control 요청",
@@ -40887,38 +40920,6 @@
         "val": 185711
       },
       {
-        "code": "SB2609002149",
-        "resv_full": "2026-10-02 13:40",
-        "resv": "10-02",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "12120057704",
-            "name": "Spark plug N63B,S68",
-            "alois": "A4",
-            "sa": "정용환",
-            "req_qty": 8,
-            "crt_qty": 52,
-            "avail_qty": 44,
-            "val": 157136
-          },
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 2,
-            "crt_qty": 276,
-            "avail_qty": 264,
-            "val": 24160
-          }
-        ],
-        "count": 2,
-        "qty_sum": 10,
-        "val": 181296
-      },
-      {
         "code": "SB2609002184",
         "resv_full": "2026-10-02 14:20",
         "resv": "10-02",
@@ -40961,12 +40962,12 @@
         "val": 211874
       }
     ],
-    "sb_count": 48,
-    "line_count": 105,
-    "total_val": 16710756,
+    "sb_count": 47,
+    "line_count": 103,
+    "total_val": 16529460,
     "o_lines": 26,
     "o_val": 6077660,
-    "resv_total": 12072
+    "resv_total": 12067
   },
   "sbresv": {
     "groups": [
@@ -43642,20 +43643,10 @@
             "crt_qty": 1,
             "avail_qty": 0,
             "val": 124047
-          },
-          {
-            "item": "51135A35BB0",
-            "name": "Grill front",
-            "alois": "SZ",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "val": 0
           }
         ],
-        "count": 4,
-        "qty_sum": 4,
+        "count": 3,
+        "qty_sum": 3,
         "val": 799969
       },
       {
@@ -43825,7 +43816,7 @@
             "alois": "L1",
             "sa": "M GARAGE",
             "req_qty": 10,
-            "crt_qty": 40,
+            "crt_qty": 38,
             "avail_qty": 8,
             "val": 153120
           },
@@ -44532,11 +44523,11 @@
       }
     ],
     "sb_count": 65,
-    "line_count": 278,
+    "line_count": 277,
     "total_val": 54211105,
     "o_lines": 72,
     "o_val": 19393474,
-    "resv_total": 354
+    "resv_total": 356
   },
   "sbcar": {
     "groups": [],
@@ -44545,7 +44536,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10221
+    "resv_total": 10224
   },
   "nonmng": {
     "rows": [],
@@ -48367,7 +48358,7 @@
         "item": "83215A7EDA5",
         "name": "LL-01FE 0W-30",
         "alois": "L1",
-        "qty": 40,
+        "qty": 38,
         "no": 374
       },
       {
@@ -48384,32 +48375,11 @@
     "end": "2026-09-26"
   },
   "noloc": {
-    "rows": [
-      {
-        "item": "82205B30D96",
-        "name": "JCW key wall",
-        "alois": "SZ",
-        "loc": "(공란)",
-        "qty": 1,
-        "prc": 48433,
-        "val": 48433,
-        "last_purc": "2026-09-18"
-      },
-      {
-        "item": "82205B30D95",
-        "name": "MINI key wal",
-        "alois": "SZ",
-        "loc": "(공란)",
-        "qty": 1,
-        "prc": 42350,
-        "val": 42350,
-        "last_purc": "2026-09-18"
-      }
-    ],
-    "count": 2,
-    "total_val": 90783,
-    "qty_sum": 2,
-    "pct": 0.01
+    "rows": [],
+    "count": 0,
+    "total_val": 0,
+    "qty_sum": 0,
+    "pct": 0.0
   },
   "extaudit": {
     "date": "2026-10-02",
