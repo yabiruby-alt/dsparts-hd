@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 2일 (금) · 17:26 기준",
+    "generated_at": "10월 2일 (금) · 17:39 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -249,8 +249,8 @@
     ]
   },
   "inv": {
-    "total": 964152798,
-    "item_count": 2171,
+    "total": 964045005,
+    "item_count": 2170,
     "code_count": 25,
     "alois_groups": [
       {
@@ -261,7 +261,7 @@
           {
             "code": "A1",
             "val": 224501497,
-            "pct": 23.28,
+            "pct": 23.29,
             "qty": 2612,
             "parts": [
               {
@@ -4827,7 +4827,7 @@
         ],
         "subtotal_val": 490763463,
         "subtotal_qty": 9031,
-        "subtotal_pct": 50.9
+        "subtotal_pct": 50.91
       },
       {
         "code": "L",
@@ -8106,9 +8106,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 63780722,
-            "pct": 6.62,
-            "qty": 1201,
+            "val": 63672929,
+            "pct": 6.6,
+            "qty": 1200,
             "parts": [
               {
                 "item": "17425A18806",
@@ -8745,12 +8745,6 @@
                 "name": "Wiper blade",
                 "qty": 5,
                 "val": 110750
-              },
-              {
-                "item": "13717811026",
-                "name": "Filter elmnt",
-                "qty": 1,
-                "val": 107793
               },
               {
                 "item": "16137300683",
@@ -12105,9 +12099,9 @@
             ]
           }
         ],
-        "subtotal_val": 182466025,
-        "subtotal_qty": 2277,
-        "subtotal_pct": 18.93
+        "subtotal_val": 182358232,
+        "subtotal_qty": 2276,
+        "subtotal_pct": 18.92
       },
       {
         "code": "I",
@@ -13533,7 +13527,7 @@
   },
   "oaov": {
     "total": 30695869,
-    "inv_total": 964152798,
+    "inv_total": 964045005,
     "pct": 3.18,
     "oa_val": 13286203,
     "ov_val": 17409666,
@@ -19758,74 +19752,6 @@
         "dday": "D+14일"
       },
       {
-        "item": "90200005955",
-        "name": "BMW DCTF 1 +",
-        "alois": "O8",
-        "pgrp": "B9",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001547",
-        "req_qty": 7,
-        "crt_qty": 10,
-        "avail_qty": 3,
-        "req_dt": "09-21",
-        "req_dt_full": "2026-09-21 14:00:59",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 450800,
-        "sa": "M GARAGE",
-        "dday": "D+11일"
-      },
-      {
-        "item": "12120039634",
-        "name": "Spark plug",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001547",
-        "req_qty": 8,
-        "crt_qty": 13,
-        "avail_qty": 5,
-        "req_dt": "09-21",
-        "req_dt_full": "2026-09-21 14:00:59",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 191728,
-        "sa": "M GARAGE",
-        "dday": "D+11일"
-      },
-      {
-        "item": "83222365988",
-        "name": "FINAL-DRIVE",
-        "alois": "O8",
-        "pgrp": "B9",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001547",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-21",
-        "req_dt_full": "2026-09-21 14:00:59",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 49985,
-        "sa": "M GARAGE",
-        "dday": "D+11일"
-      },
-      {
-        "item": "12138647689",
-        "name": "Ignition coi",
-        "alois": "OV",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001547",
-        "req_qty": 8,
-        "crt_qty": 8,
-        "avail_qty": 0,
-        "req_dt": "09-21",
-        "req_dt_full": "2026-09-21 14:00:59",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 543400,
-        "sa": "M GARAGE",
-        "dday": "D+11일"
-      },
-      {
         "item": "51775A62B37",
         "name": "Rocker panel",
         "alois": "O8",
@@ -19891,40 +19817,6 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 1064756,
         "sa": "강충성",
-        "dday": "D+11일"
-      },
-      {
-        "item": "13727843284",
-        "name": "Filter elmnt",
-        "alois": "OA",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001547",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-21",
-        "req_dt_full": "2026-09-21 14:59:21",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 25707,
-        "sa": "M GARAGE",
-        "dday": "D+11일"
-      },
-      {
-        "item": "13727843283",
-        "name": "Filter elmnt",
-        "alois": "OA",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001547",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-21",
-        "req_dt_full": "2026-09-21 14:59:21",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 25707,
-        "sa": "M GARAGE",
         "dday": "D+11일"
       },
       {
@@ -20554,23 +20446,6 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 31752,
         "sa": "염진아",
-        "dday": "D+3일"
-      },
-      {
-        "item": "13717811026",
-        "name": "Filter elmnt",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2609001597",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-29",
-        "req_dt_full": "2026-09-29 09:57:17",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 107793,
-        "sa": "정용환",
         "dday": "D+3일"
       },
       {
@@ -22087,40 +21962,6 @@
         "dday": "D+0일"
       },
       {
-        "item": "13727843283",
-        "name": "Filter elmnt",
-        "alois": "OA",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001547",
-        "req_qty": 3,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "10-02",
-        "req_dt_full": "2026-10-02 16:23:37",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 77121,
-        "sa": "M GARAGE",
-        "dday": "D+0일"
-      },
-      {
-        "item": "13727843284",
-        "name": "Filter elmnt",
-        "alois": "OA",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609001547",
-        "req_qty": 3,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "10-02",
-        "req_dt_full": "2026-10-02 16:23:37",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 77121,
-        "sa": "M GARAGE",
-        "dday": "D+0일"
-      },
-      {
         "item": "31336776389",
         "name": "Guide suppor",
         "alois": "O8",
@@ -22136,10 +21977,146 @@
         "val": 13000,
         "sa": "우종훈",
         "dday": "D+0일"
+      },
+      {
+        "item": "13727843284",
+        "name": "Filter elmnt",
+        "alois": "OA",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000171",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-02",
+        "req_dt_full": "2026-10-02 17:38:40",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 25707,
+        "sa": "우상만",
+        "dday": "D+0일"
+      },
+      {
+        "item": "13727843283",
+        "name": "Filter elmnt",
+        "alois": "OA",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000171",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-02",
+        "req_dt_full": "2026-10-02 17:38:40",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 25707,
+        "sa": "우상만",
+        "dday": "D+0일"
+      },
+      {
+        "item": "90200005955",
+        "name": "BMW DCTF 1 +",
+        "alois": "O8",
+        "pgrp": "B9",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000171",
+        "req_qty": 7,
+        "crt_qty": 10,
+        "avail_qty": 3,
+        "req_dt": "10-02",
+        "req_dt_full": "2026-10-02 17:38:40",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 450800,
+        "sa": "우상만",
+        "dday": "D+0일"
+      },
+      {
+        "item": "12120039634",
+        "name": "Spark plug",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000171",
+        "req_qty": 8,
+        "crt_qty": 13,
+        "avail_qty": 5,
+        "req_dt": "10-02",
+        "req_dt_full": "2026-10-02 17:38:40",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 191728,
+        "sa": "우상만",
+        "dday": "D+0일"
+      },
+      {
+        "item": "83222365988",
+        "name": "FINAL-DRIVE",
+        "alois": "O8",
+        "pgrp": "B9",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000171",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-02",
+        "req_dt_full": "2026-10-02 17:38:40",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 49985,
+        "sa": "우상만",
+        "dday": "D+0일"
+      },
+      {
+        "item": "12138647689",
+        "name": "Ignition coi",
+        "alois": "OV",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000171",
+        "req_qty": 8,
+        "crt_qty": 8,
+        "avail_qty": 0,
+        "req_dt": "10-02",
+        "req_dt_full": "2026-10-02 17:38:40",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 543400,
+        "sa": "우상만",
+        "dday": "D+0일"
+      },
+      {
+        "item": "13727843283",
+        "name": "Filter elmnt",
+        "alois": "OA",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000171",
+        "req_qty": 3,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-02",
+        "req_dt_full": "2026-10-02 17:38:41",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 77121,
+        "sa": "우상만",
+        "dday": "D+0일"
+      },
+      {
+        "item": "13727843284",
+        "name": "Filter elmnt",
+        "alois": "OA",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000171",
+        "req_qty": 3,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-02",
+        "req_dt_full": "2026-10-02 17:38:41",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 77121,
+        "sa": "우상만",
+        "dday": "D+0일"
       }
     ],
-    "count": 277,
-    "total_val": 72276694,
+    "count": 276,
+    "total_val": 72168901,
     "groups": [
       {
         "code": "RO",
@@ -23624,23 +23601,6 @@
             "dday": "D+3일"
           },
           {
-            "item": "13717811026",
-            "name": "Filter elmnt",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2609001597",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-29",
-            "req_dt_full": "2026-09-29 09:57:17",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 107793,
-            "sa": "정용환",
-            "dday": "D+3일"
-          },
-          {
             "item": "63175A61B56",
             "name": "Holder, lamp",
             "alois": "OE",
@@ -24693,11 +24653,147 @@
             "val": 13000,
             "sa": "우종훈",
             "dday": "D+0일"
+          },
+          {
+            "item": "13727843284",
+            "name": "Filter elmnt",
+            "alois": "OA",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000171",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-02",
+            "req_dt_full": "2026-10-02 17:38:40",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 25707,
+            "sa": "우상만",
+            "dday": "D+0일"
+          },
+          {
+            "item": "13727843283",
+            "name": "Filter elmnt",
+            "alois": "OA",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000171",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-02",
+            "req_dt_full": "2026-10-02 17:38:40",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 25707,
+            "sa": "우상만",
+            "dday": "D+0일"
+          },
+          {
+            "item": "90200005955",
+            "name": "BMW DCTF 1 +",
+            "alois": "O8",
+            "pgrp": "B9",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000171",
+            "req_qty": 7,
+            "crt_qty": 10,
+            "avail_qty": 3,
+            "req_dt": "10-02",
+            "req_dt_full": "2026-10-02 17:38:40",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 450800,
+            "sa": "우상만",
+            "dday": "D+0일"
+          },
+          {
+            "item": "12120039634",
+            "name": "Spark plug",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000171",
+            "req_qty": 8,
+            "crt_qty": 13,
+            "avail_qty": 5,
+            "req_dt": "10-02",
+            "req_dt_full": "2026-10-02 17:38:40",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 191728,
+            "sa": "우상만",
+            "dday": "D+0일"
+          },
+          {
+            "item": "83222365988",
+            "name": "FINAL-DRIVE",
+            "alois": "O8",
+            "pgrp": "B9",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000171",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-02",
+            "req_dt_full": "2026-10-02 17:38:40",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 49985,
+            "sa": "우상만",
+            "dday": "D+0일"
+          },
+          {
+            "item": "12138647689",
+            "name": "Ignition coi",
+            "alois": "OV",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000171",
+            "req_qty": 8,
+            "crt_qty": 8,
+            "avail_qty": 0,
+            "req_dt": "10-02",
+            "req_dt_full": "2026-10-02 17:38:40",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 543400,
+            "sa": "우상만",
+            "dday": "D+0일"
+          },
+          {
+            "item": "13727843283",
+            "name": "Filter elmnt",
+            "alois": "OA",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000171",
+            "req_qty": 3,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-02",
+            "req_dt_full": "2026-10-02 17:38:41",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 77121,
+            "sa": "우상만",
+            "dday": "D+0일"
+          },
+          {
+            "item": "13727843284",
+            "name": "Filter elmnt",
+            "alois": "OA",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000171",
+            "req_qty": 3,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-02",
+            "req_dt_full": "2026-10-02 17:38:41",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 77121,
+            "sa": "우상만",
+            "dday": "D+0일"
           }
         ],
-        "count": 150,
-        "qty_sum": 208,
-        "val": 41438757
+        "count": 157,
+        "qty_sum": 239,
+        "val": 42772533
       },
       {
         "code": "SB",
@@ -25791,108 +25887,6 @@
             "dday": "D+14일"
           },
           {
-            "item": "90200005955",
-            "name": "BMW DCTF 1 +",
-            "alois": "O8",
-            "pgrp": "B9",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001547",
-            "req_qty": 7,
-            "crt_qty": 10,
-            "avail_qty": 3,
-            "req_dt": "09-21",
-            "req_dt_full": "2026-09-21 14:00:59",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 450800,
-            "sa": "M GARAGE",
-            "dday": "D+11일"
-          },
-          {
-            "item": "12120039634",
-            "name": "Spark plug",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001547",
-            "req_qty": 8,
-            "crt_qty": 13,
-            "avail_qty": 5,
-            "req_dt": "09-21",
-            "req_dt_full": "2026-09-21 14:00:59",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 191728,
-            "sa": "M GARAGE",
-            "dday": "D+11일"
-          },
-          {
-            "item": "83222365988",
-            "name": "FINAL-DRIVE",
-            "alois": "O8",
-            "pgrp": "B9",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001547",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-21",
-            "req_dt_full": "2026-09-21 14:00:59",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 49985,
-            "sa": "M GARAGE",
-            "dday": "D+11일"
-          },
-          {
-            "item": "12138647689",
-            "name": "Ignition coi",
-            "alois": "OV",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001547",
-            "req_qty": 8,
-            "crt_qty": 8,
-            "avail_qty": 0,
-            "req_dt": "09-21",
-            "req_dt_full": "2026-09-21 14:00:59",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 543400,
-            "sa": "M GARAGE",
-            "dday": "D+11일"
-          },
-          {
-            "item": "13727843284",
-            "name": "Filter elmnt",
-            "alois": "OA",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001547",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-21",
-            "req_dt_full": "2026-09-21 14:59:21",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 25707,
-            "sa": "M GARAGE",
-            "dday": "D+11일"
-          },
-          {
-            "item": "13727843283",
-            "name": "Filter elmnt",
-            "alois": "OA",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001547",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-21",
-            "req_dt_full": "2026-09-21 14:59:21",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 25707,
-            "sa": "M GARAGE",
-            "dday": "D+11일"
-          },
-          {
             "item": "64119382886",
             "name": "MICROFILTER/",
             "alois": "OE",
@@ -26452,45 +26446,11 @@
             "val": 539856,
             "sa": "M GARAGE",
             "dday": "D+0일"
-          },
-          {
-            "item": "13727843283",
-            "name": "Filter elmnt",
-            "alois": "OA",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001547",
-            "req_qty": 3,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "10-02",
-            "req_dt_full": "2026-10-02 16:23:37",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 77121,
-            "sa": "M GARAGE",
-            "dday": "D+0일"
-          },
-          {
-            "item": "13727843284",
-            "name": "Filter elmnt",
-            "alois": "OA",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609001547",
-            "req_qty": 3,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "10-02",
-            "req_dt_full": "2026-10-02 16:23:37",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 77121,
-            "sa": "M GARAGE",
-            "dday": "D+0일"
           }
         ],
-        "count": 105,
-        "qty_sum": 168,
-        "val": 26468365
+        "count": 97,
+        "qty_sum": 136,
+        "val": 25026796
       },
       {
         "code": "SP",
@@ -38472,7 +38432,7 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 11:00",
         "dday": "D+0일",
-        "amt": 28221
+        "amt": 585121
       },
       {
         "ro": "RO2610000129",
@@ -38828,8 +38788,8 @@
       },
       {
         "ro": "RO2610000163",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "경수리",
         "sa": "최민수",
         "pub": "2026-10-02",
@@ -38883,8 +38843,8 @@
       },
       {
         "ro": "RO2610000169",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "최민수",
         "pub": "2026-10-02",
@@ -38894,38 +38854,49 @@
       },
       {
         "ro": "RO2610000170",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
-        "sa": "M GARAGE",
+        "sa": "우상만",
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 17:27",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 498515
+      },
+      {
+        "ro": "RO2610000171",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "우상만",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 17:38",
+        "dday": "D+0일",
+        "amt": 4724300
       }
     ],
-    "count": 321,
-    "total_amt": 744867133,
+    "count": 322,
+    "total_amt": 750646848,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 24,
+        "count": 23,
         "amt": 20709903
       },
       {
         "stat": "상담완료",
-        "count": 148,
-        "amt": 452072149
+        "count": 149,
+        "amt": 457751864
       },
       {
         "stat": "정비시작",
         "count": 47,
-        "amt": 72681661
+        "amt": 72678837
       },
       {
         "stat": "End Control 요청",
-        "count": 53,
-        "amt": 83974485
+        "count": 54,
+        "amt": 84077309
       },
       {
         "stat": "가정산 완료",
@@ -40439,7 +40410,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 185,
-            "avail_qty": 181,
+            "avail_qty": 180,
             "val": 19920
           }
         ],
@@ -40481,7 +40452,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 185,
-            "avail_qty": 181,
+            "avail_qty": 180,
             "val": 19920
           }
         ],
@@ -43230,48 +43201,6 @@
         "val": 576812
       },
       {
-        "code": "SB2605000905",
-        "resv_full": "2026-10-06 13:00",
-        "resv": "10-06",
-        "dday": "D-4일",
-        "sa": "M GARAGE",
-        "rows": [
-          {
-            "item": "66315A076D4",
-            "name": "Radome",
-            "alois": "O8",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 361420
-          },
-          {
-            "item": "51135A35BC0",
-            "name": "Grill front",
-            "alois": "SZ",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 314502
-          },
-          {
-            "item": "51248080625",
-            "name": "Emblem butto",
-            "alois": "O8",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 124047
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 799969
-      },
-      {
         "code": "SB2609001826",
         "resv_full": "2026-10-06 10:20",
         "resv": "10-06",
@@ -43384,168 +43313,6 @@
         "count": 7,
         "qty_sum": 12,
         "val": 487667
-      },
-      {
-        "code": "SB2609001547",
-        "resv_full": "2026-10-06 10:00",
-        "resv": "10-06",
-        "dday": "D-4일",
-        "sa": "M GARAGE",
-        "rows": [
-          {
-            "item": "12138647689",
-            "name": "Ignition coi",
-            "alois": "OV",
-            "sa": "M GARAGE",
-            "req_qty": 8,
-            "crt_qty": 8,
-            "avail_qty": 0,
-            "val": 543400
-          },
-          {
-            "item": "90200005955",
-            "name": "BMW DCTF 1 +",
-            "alois": "O8",
-            "sa": "M GARAGE",
-            "req_qty": 7,
-            "crt_qty": 10,
-            "avail_qty": 3,
-            "val": 450800
-          },
-          {
-            "item": "28005B43141",
-            "name": "Oil filter k",
-            "alois": "SZ",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 435820
-          },
-          {
-            "item": "64119272642",
-            "name": "Microfilter",
-            "alois": "A3",
-            "sa": "M GARAGE",
-            "req_qty": 3,
-            "crt_qty": 7,
-            "avail_qty": 2,
-            "val": 308016
-          },
-          {
-            "item": "12120039634",
-            "name": "Spark plug",
-            "alois": "O8",
-            "sa": "M GARAGE",
-            "req_qty": 8,
-            "crt_qty": 13,
-            "avail_qty": 5,
-            "val": 191728
-          },
-          {
-            "item": "83215A7EDA5",
-            "name": "LL-01FE 0W-30",
-            "alois": "L1",
-            "sa": "M GARAGE",
-            "req_qty": 10,
-            "crt_qty": 37,
-            "avail_qty": 7,
-            "val": 153120
-          },
-          {
-            "item": "64119272642",
-            "name": "Microfilter",
-            "alois": "A3",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 2,
-            "val": 102672
-          },
-          {
-            "item": "13727843283",
-            "name": "Filter elmnt",
-            "alois": "OA",
-            "sa": "M GARAGE",
-            "req_qty": 3,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 77121
-          },
-          {
-            "item": "13727843284",
-            "name": "Filter elmnt",
-            "alois": "OA",
-            "sa": "M GARAGE",
-            "req_qty": 3,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 77121
-          },
-          {
-            "item": "11427848321",
-            "name": "Filt.Element",
-            "alois": "A6",
-            "sa": "M GARAGE",
-            "req_qty": 3,
-            "crt_qty": 10,
-            "avail_qty": 6,
-            "val": 72783
-          },
-          {
-            "item": "83222365988",
-            "name": "FINAL-DRIVE",
-            "alois": "O8",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 49985
-          },
-          {
-            "item": "13727843284",
-            "name": "Filter elmnt",
-            "alois": "OA",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 25707
-          },
-          {
-            "item": "13727843283",
-            "name": "Filter elmnt",
-            "alois": "OA",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 25707
-          },
-          {
-            "item": "11427848321",
-            "name": "Filt.Element",
-            "alois": "A6",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 10,
-            "avail_qty": 6,
-            "val": 24261
-          },
-          {
-            "item": "33117525064",
-            "name": "Screw plug",
-            "alois": "A1",
-            "sa": "M GARAGE",
-            "req_qty": 2,
-            "crt_qty": 137,
-            "avail_qty": 123,
-            "val": 13486
-          }
-        ],
-        "count": 15,
-        "qty_sum": 53,
-        "val": 2551727
       },
       {
         "code": "SB2608001506",
@@ -44152,12 +43919,12 @@
         "val": 1260217
       }
     ],
-    "sb_count": 65,
-    "line_count": 283,
-    "total_val": 55568745,
-    "o_lines": 76,
-    "o_val": 20126457,
-    "resv_total": 359
+    "sb_count": 63,
+    "line_count": 265,
+    "total_val": 52217049,
+    "o_lines": 66,
+    "o_val": 18199421,
+    "resv_total": 358
   },
   "sbcar": {
     "groups": [],
@@ -44166,7 +43933,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10228
+    "resv_total": 10230
   },
   "nonmng": {
     "rows": [],
