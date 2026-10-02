@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 2일 (금) · 11:58 기준",
+    "generated_at": "10월 2일 (금) · 12:14 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -39402,8 +39402,8 @@
       },
       {
         "ro": "RO2610000115",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-10-02",
@@ -39545,8 +39545,8 @@
       },
       {
         "ro": "RO2610000128",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-02",
@@ -39600,38 +39600,60 @@
       },
       {
         "ro": "RO2610000133",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "최민수",
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 11:56",
         "dday": "D+0일",
+        "amt": 84000
+      },
+      {
+        "ro": "RO2610000134",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "강충성",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 12:02",
+        "dday": "D+0일",
+        "amt": 2315800
+      },
+      {
+        "ro": "RO2610000135",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 12:05",
+        "dday": "D+0일",
         "amt": 0
       }
     ],
-    "count": 357,
-    "total_amt": 766095098,
+    "count": 359,
+    "total_amt": 768494898,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 21,
+        "count": 20,
         "amt": 18035799
       },
       {
         "stat": "상담완료",
-        "count": 150,
-        "amt": 462935329
+        "count": 153,
+        "amt": 465335129
       },
       {
         "stat": "정비시작",
-        "count": 42,
-        "amt": 76075293
+        "count": 40,
+        "amt": 75270190
       },
       {
         "stat": "End Control 요청",
-        "count": 56,
-        "amt": 66739260
+        "count": 58,
+        "amt": 67544363
       },
       {
         "stat": "공정마감",
@@ -44936,89 +44958,16 @@
     "total_val": 55810453,
     "o_lines": 71,
     "o_val": 19382199,
-    "resv_total": 353
+    "resv_total": 354
   },
   "sbcar": {
-    "groups": [
-      {
-        "code": "SB2610000103",
-        "resv_full": "2026-10-02 11:56",
-        "resv": "10-02",
-        "dday": "오늘",
-        "sa": "강충성",
-        "rows": [
-          {
-            "item": "51125A3DA93",
-            "name": "Bumper trim",
-            "alois": "A5",
-            "sa": "강충성",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "val": 1185420
-          },
-          {
-            "item": "51128081541",
-            "name": "Trim panel,",
-            "alois": "A5",
-            "sa": "강충성",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 226111
-          },
-          {
-            "item": "51128081599",
-            "name": "Trim strip,",
-            "alois": "A5",
-            "sa": "강충성",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "val": 76523
-          },
-          {
-            "item": "51128081600",
-            "name": "Trim strip,",
-            "alois": "A5",
-            "sa": "강충성",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "val": 63410
-          },
-          {
-            "item": "51128081528",
-            "name": "Trim strip,",
-            "alois": "A5",
-            "sa": "강충성",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "val": 49895
-          },
-          {
-            "item": "63215A5B468",
-            "name": "Adhesive pad",
-            "alois": "L4",
-            "sa": "강충성",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 0,
-            "val": 16405
-          }
-        ],
-        "count": 6,
-        "qty_sum": 6,
-        "val": 1617764
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 6,
-    "total_val": 1617764,
+    "groups": [],
+    "sb_count": 0,
+    "line_count": 0,
+    "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10195
+    "resv_total": 10196
   },
   "nonmng": {
     "rows": [],
