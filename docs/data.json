@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 2일 (금) · 08:55 기준",
+    "generated_at": "10월 2일 (금) · 08:58 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -37616,8 +37616,8 @@
       },
       {
         "ro": "RO2609001085",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-09-17",
@@ -40208,11 +40208,11 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 08:54",
         "dday": "D+0일",
-        "amt": 335125
+        "amt": 551486
       }
     ],
     "count": 324,
-    "total_amt": 747312235,
+    "total_amt": 747528596,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40221,13 +40221,13 @@
       },
       {
         "stat": "상담완료",
-        "count": 143,
-        "amt": 481943084
+        "count": 142,
+        "amt": 477070255
       },
       {
         "stat": "정비시작",
-        "count": 33,
-        "amt": 45650541
+        "count": 34,
+        "amt": 50739731
       },
       {
         "stat": "End Control 요청",
@@ -46024,7 +46024,7 @@
     "total_val": 62476672,
     "o_lines": 72,
     "o_val": 19467775,
-    "resv_total": 370
+    "resv_total": 369
   },
   "sbcar": {
     "groups": [],
@@ -46033,7 +46033,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10157
+    "resv_total": 10158
   },
   "nonmng": {
     "rows": [
@@ -50568,6 +50568,104 @@
     "review_count": 0,
     "violation_amt": 0,
     "review_amt": 0
+  },
+  "wholesale": {
+    "year": 2026,
+    "rows": [
+      {
+        "month": "2026-01",
+        "month_label": "1월",
+        "purchase": 1136920357,
+        "return": 47860404,
+        "net": 1089059953,
+        "purchase_pct": 92.9,
+        "return_pct": 3.9
+      },
+      {
+        "month": "2026-02",
+        "month_label": "2월",
+        "purchase": 884906435,
+        "return": 20144001,
+        "net": 864762434,
+        "purchase_pct": 72.3,
+        "return_pct": 1.6
+      },
+      {
+        "month": "2026-03",
+        "month_label": "3월",
+        "purchase": 895827773,
+        "return": 24863555,
+        "net": 870964218,
+        "purchase_pct": 73.2,
+        "return_pct": 2.0
+      },
+      {
+        "month": "2026-04",
+        "month_label": "4월",
+        "purchase": 923509831,
+        "return": 39106274,
+        "net": 884403557,
+        "purchase_pct": 75.5,
+        "return_pct": 3.2
+      },
+      {
+        "month": "2026-05",
+        "month_label": "5월",
+        "purchase": 845896121,
+        "return": 6219094,
+        "net": 839677027,
+        "purchase_pct": 69.1,
+        "return_pct": 0.5
+      },
+      {
+        "month": "2026-06",
+        "month_label": "6월",
+        "purchase": 1002053063,
+        "return": 37960760,
+        "net": 964092303,
+        "purchase_pct": 81.9,
+        "return_pct": 3.1
+      },
+      {
+        "month": "2026-07",
+        "month_label": "7월",
+        "purchase": 1075193940,
+        "return": 18546729,
+        "net": 1056647211,
+        "purchase_pct": 87.9,
+        "return_pct": 1.5
+      },
+      {
+        "month": "2026-08",
+        "month_label": "8월",
+        "purchase": 1169055724,
+        "return": 55826960,
+        "net": 1113228764,
+        "purchase_pct": 95.6,
+        "return_pct": 4.6
+      },
+      {
+        "month": "2026-09",
+        "month_label": "9월",
+        "purchase": 1223481305,
+        "return": 233320902,
+        "net": 990160403,
+        "purchase_pct": 100.0,
+        "return_pct": 19.1
+      },
+      {
+        "month": "2026-10",
+        "month_label": "10월",
+        "purchase": 41414335,
+        "return": 0,
+        "net": 41414335,
+        "purchase_pct": 3.4,
+        "return_pct": 0.0
+      }
+    ],
+    "total_purchase": 9198258884,
+    "total_return": 483848679,
+    "total_net": 8714410205
   },
   "reasons": {},
   "tires": {
