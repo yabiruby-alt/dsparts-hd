@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 2일 (금) · 16:47 기준",
+    "generated_at": "10월 2일 (금) · 17:01 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -249,7 +249,7 @@
     ]
   },
   "inv": {
-    "total": 964591753,
+    "total": 964357822,
     "item_count": 2171,
     "code_count": 25,
     "alois_groups": [
@@ -261,7 +261,7 @@
           {
             "code": "A1",
             "val": 224501497,
-            "pct": 23.27,
+            "pct": 23.28,
             "qty": 2612,
             "parts": [
               {
@@ -346,9 +346,9 @@
           },
           {
             "code": "A2",
-            "val": 19190052,
-            "pct": 1.99,
-            "qty": 1082,
+            "val": 19028985,
+            "pct": 1.97,
+            "qty": 1080,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -359,8 +359,8 @@
               {
                 "item": "34216890353",
                 "name": "Repair kit,",
-                "qty": 14,
-                "val": 1838592
+                "qty": 13,
+                "val": 1707264
               },
               {
                 "item": "64115A547D9",
@@ -425,8 +425,8 @@
               {
                 "item": "34356890791",
                 "name": "Brake pad we",
-                "qty": 15,
-                "val": 446085
+                "qty": 14,
+                "val": 416346
               },
               {
                 "item": "34356890788",
@@ -2731,7 +2731,7 @@
           {
             "code": "A6",
             "val": 96680048,
-            "pct": 10.02,
+            "pct": 10.03,
             "qty": 1469,
             "parts": [
               {
@@ -4825,8 +4825,8 @@
             ]
           }
         ],
-        "subtotal_val": 490924530,
-        "subtotal_qty": 9033,
+        "subtotal_val": 490763463,
+        "subtotal_qty": 9031,
         "subtotal_pct": 50.89
       },
       {
@@ -4992,9 +4992,9 @@
           },
           {
             "code": "L4",
-            "val": 19943685,
-            "pct": 2.07,
-            "qty": 514,
+            "val": 19870821,
+            "pct": 2.06,
+            "qty": 513,
             "parts": [
               {
                 "item": "83215A65BF4",
@@ -5065,8 +5065,8 @@
               {
                 "item": "84102447710",
                 "name": "ACCUMULATOR",
-                "qty": 5,
-                "val": 364320
+                "qty": 4,
+                "val": 291456
               },
               {
                 "item": "99995B99E54",
@@ -8095,9 +8095,9 @@
             ]
           }
         ],
-        "subtotal_val": 143414656,
-        "subtotal_qty": 4486,
-        "subtotal_pct": 14.87
+        "subtotal_val": 143341792,
+        "subtotal_qty": 4485,
+        "subtotal_pct": 14.86
       },
       {
         "code": "O",
@@ -11529,7 +11529,7 @@
           {
             "code": "OV",
             "val": 17409666,
-            "pct": 1.8,
+            "pct": 1.81,
             "qty": 191,
             "parts": [
               {
@@ -13527,13 +13527,13 @@
         ],
         "subtotal_val": 144629315,
         "subtotal_qty": 2008,
-        "subtotal_pct": 14.99
+        "subtotal_pct": 15.0
       }
     ]
   },
   "oaov": {
     "total": 30695869,
-    "inv_total": 964591753,
+    "inv_total": 964357822,
     "pct": 3.18,
     "oa_val": 13286203,
     "ov_val": 17409666,
@@ -39267,8 +39267,8 @@
       },
       {
         "ro": "RO2610000146",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-10-02",
@@ -39487,8 +39487,8 @@
       },
       {
         "ro": "RO2610000166",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-02",
@@ -39507,13 +39507,13 @@
       },
       {
         "stat": "상담완료",
-        "count": 150,
-        "amt": 454010872
+        "count": 148,
+        "amt": 452998682
       },
       {
         "stat": "정비시작",
-        "count": 46,
-        "amt": 69559413
+        "count": 48,
+        "amt": 70571603
       },
       {
         "stat": "End Control 요청",
@@ -44759,7 +44759,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10225
+    "resv_total": 10226
   },
   "nonmng": {
     "rows": [],
@@ -44847,7 +44847,7 @@
         "item": "34356890791",
         "name": "Brake pad we",
         "alois": "A2",
-        "qty": 15,
+        "qty": 14,
         "no": 10
       },
       {
@@ -44911,7 +44911,7 @@
         "item": "34216890353",
         "name": "Repair kit,",
         "alois": "A2",
-        "qty": 14,
+        "qty": 13,
         "no": 18
       },
       {
@@ -46285,7 +46285,7 @@
         "item": "84102447710",
         "name": "ACCUMULATOR",
         "alois": "L4",
-        "qty": 5,
+        "qty": 4,
         "no": 87
       },
       {
@@ -46381,7 +46381,7 @@
         "item": "34356890791",
         "name": "Brake pad we",
         "alois": "A2",
-        "qty": 15,
+        "qty": 14,
         "no": 99
       },
       {
@@ -46861,7 +46861,7 @@
         "item": "34216890353",
         "name": "Repair kit,",
         "alois": "A2",
-        "qty": 14,
+        "qty": 13,
         "no": 159
       },
       {
