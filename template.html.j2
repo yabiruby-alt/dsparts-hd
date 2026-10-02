@@ -183,19 +183,6 @@
   .stockcheck-table td:nth-child(4){ font-family:var(--font-body); }
   .stockcheck-table tbody tr:nth-child(even) td{ background:var(--surface-2); }
   .stockcheck-table tbody tr:hover td{ background:var(--surface-2); }
-  .wsale-chartwrap{ overflow-x:auto; }
-  .wsale-chart{ display:flex; align-items:flex-end; gap:10px; height:220px; min-width:560px; padding:0 4px 0 0; }
-  .wsale-col{ flex:1 1 0; display:flex; flex-direction:column; align-items:center; min-width:34px; height:100%; }
-  .wsale-bars{ flex:1; width:100%; display:flex; align-items:flex-end; justify-content:center; gap:3px; }
-  .wsale-bar{ width:40%; border-radius:3px 3px 0 0; min-height:2px; transition:height .4s ease; }
-  .wsale-bar-buy{ background:var(--accent); }
-  .wsale-bar-ret{ background:var(--critical); }
-  .wsale-col-label{ margin-top:8px; font-size:12px; color:var(--muted); font-family:var(--font-mono); }
-  .wsale-legend{ display:flex; gap:18px; margin-top:12px; font-size:13px; color:var(--ink-2); }
-  .wsale-legend-item{ display:inline-flex; align-items:center; gap:6px; }
-  .wsale-dot{ width:10px; height:10px; border-radius:3px; display:inline-block; }
-  .wsale-dot-buy{ background:var(--accent); }
-  .wsale-dot-ret{ background:var(--critical); }
   .tire-table{ table-layout:fixed; }
   .tire-table th, .tire-table td{ text-align:center; padding:6px 5px; font-size:12.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .tire-table td.mono{ font-size:11.5px; }
@@ -518,16 +505,6 @@
         외부판매 검증
       </button>
     </div>
-
-    {% if wholesale is defined %}
-    <div class="sb-section">
-      <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">통계<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
-      <button class="sb-item" id="nav-wholesale" aria-current="false" onclick="selectPage('wholesale')">
-        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 15V3M2 15h14"/><rect x="4.5" y="9.5" width="2.4" height="5.5"/><rect x="8.3" y="6.5" width="2.4" height="8.5"/><rect x="12.1" y="3.5" width="2.4" height="11.5"/></svg>
-        홀세일 현황
-      </button>
-    </div>
-    {% endif %}
 
     <div class="sb-section">
       <button class="sb-label" aria-expanded="true" onclick="toggleSection(this.parentNode)">재고 관리<svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5 6 7.5 9 4.5"/></svg></button>
@@ -1173,72 +1150,6 @@
       </div>
     </section>
 
-    {% if wholesale is defined %}
-    <section id="page-wholesale" hidden>
-      <div class="crumbbar">
-        <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>홀세일 현황</b></span>
-        <div class="spacer"></div>
-        <div class="freshness"><span class="dot"></span>{{ meta.branch_name }} · 비엠더블유코리아(주) · {{ wholesale.year }}년 1월~</div>
-      </div>
-
-      <div class="kpistrip">
-        <div class="kpitile" style="cursor:default">
-          <span class="rank">01</span>
-          <span class="eyebrow">구매송장 합계</span>
-          <span class="value">₩{{ '{:,}'.format(wholesale.total_purchase) }}</span>
-          <span class="foot">{{ wholesale.year }}년 누계 · 일반입고 기준</span>
-        </div>
-        <div class="kpitile" style="cursor:default">
-          <span class="rank">02</span>
-          <span class="eyebrow">반품송장 합계</span>
-          <span class="value">₩{{ '{:,}'.format(wholesale.total_return) }}</span>
-          <span class="foot">{{ wholesale.year }}년 누계 · 반품입고 기준</span>
-        </div>
-        <div class="kpitile" style="cursor:default">
-          <span class="rank">03</span>
-          <span class="eyebrow">순매입 (구매-반품)</span>
-          <span class="value">₩{{ '{:,}'.format(wholesale.total_net) }}</span>
-          <span class="foot">{{ wholesale.year }}년 누계</span>
-        </div>
-      </div>
-
-      <div class="viewer">
-        <div class="viewer-head">
-          <span class="lbl">월별 구매·반품 송장 금액</span>
-          <span class="foot">파란색=구매송장 · 빨간색=반품송장 · 실제고현황(입고현황) 기준, 비엠더블유코리아(주) 거래분만</span>
-        </div>
-        <div class="wsale-chartwrap">
-          <div class="wsale-chart">
-            {% for r in wholesale.rows %}
-            <div class="wsale-col">
-              <div class="wsale-bars">
-                <div class="wsale-bar wsale-bar-buy" style="height:{{ r.purchase_pct }}%" title="구매 ₩{{ '{:,}'.format(r.purchase) }}"></div>
-                <div class="wsale-bar wsale-bar-ret" style="height:{{ r.return_pct }}%" title="반품 ₩{{ '{:,}'.format(r.return) }}"></div>
-              </div>
-              <div class="wsale-col-label">{{ r.month_label }}</div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        <div class="wsale-legend">
-          <span class="wsale-legend-item"><i class="wsale-dot wsale-dot-buy"></i>구매송장</span>
-          <span class="wsale-legend-item"><i class="wsale-dot wsale-dot-ret"></i>반품송장</span>
-        </div>
-        <div class="tablewrap" style="margin-top:18px">
-          <table>
-            <thead><tr><th>월</th><th class="num">구매송장금액</th><th class="num">반품송장금액</th><th class="num">순매입(구매-반품)</th></tr></thead>
-            <tbody>
-              {% for r in wholesale.rows %}
-              <tr><td>{{ r.month_label }}</td><td class="num">{{ '{:,}'.format(r.purchase) }}</td><td class="num">{{ '{:,}'.format(r.return) }}</td><td class="num">{{ '{:,}'.format(r.net) }}</td></tr>
-              {% endfor %}
-              <tr class="subtotal"><td>합계</td><td class="num">{{ '{:,}'.format(wholesale.total_purchase) }}</td><td class="num">{{ '{:,}'.format(wholesale.total_return) }}</td><td class="num">{{ '{:,}'.format(wholesale.total_net) }}</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-    {% endif %}
-
     <section id="page-oaov" hidden>
       <div class="crumbbar">
         <span class="crumb">동성모터스 PARTS &nbsp;›&nbsp; <b>OAOV 현황</b></span>
@@ -1738,7 +1649,7 @@
   function selectAccKpi(key){ ['acc','tire'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectLongKpi(key){ ['m12','m24'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
   function selectStockKpi(key){ ['stockdaily','stockweekly'].forEach(k=>{ document.getElementById('detail-'+k).hidden=(k!==key); document.getElementById('tile-'+k).setAttribute('aria-pressed', String(k===key)); }); }
-  var PAGES = ['home','today','openro','noshow','sbresv','sbcar','external','accessory','extaudit',{% if wholesale is defined %}'wholesale',{% endif %}'oaov','longstock','nonmng','stockcheck','noloc','tire','dday','opart','oflow','calendar'];
+  var PAGES = ['home','today','openro','noshow','sbresv','sbcar','external','accessory','extaudit','oaov','longstock','nonmng','stockcheck','noloc','tire','dday','opart','oflow','calendar'];
   var TIRE_DATA = {{ tires_json }};
   function selectPage(key){
     PAGES.forEach(k=>{ document.getElementById('page-'+k).hidden=(k!==key); document.getElementById('nav-'+k).setAttribute('aria-current', k===key?'page':'false'); });

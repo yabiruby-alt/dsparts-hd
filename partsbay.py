@@ -385,44 +385,6 @@ def group_alois(rows, val_fn, qty_fn=None):
     return groups
 
 
-def build_wholesale(rows, year, up_to_month):
-    """입고현황(별도 DMS 탭 추가 없이 기존 조회 재사용)에서 비엠더블유코리아(주) 거래분만 골라
-    whTp(일반입고=구매/반품입고=반품) 기준으로 월별 구매·반품 송장 금액을 집계."""
-    by_month = defaultdict(lambda: {"purchase": 0.0, "return": 0.0})
-    for r in rows:
-        if "비엠더블유코리아" not in (r.get("bpNm") or ""):
-            continue
-        wh_tp = r.get("whTp")
-        if wh_tp not in ("일반입고", "반품입고"):
-            continue
-        month = (r.get("realWhDt") or "")[:7]
-        if not month:
-            continue
-        key = "purchase" if wh_tp == "일반입고" else "return"
-        by_month[month][key] += abs(num(r.get("purcAmt")))
-
-    months = [f"{year}-{m:02d}" for m in range(1, up_to_month + 1)]
-    rows_out = []
-    max_val = 0.0
-    for m in months:
-        agg = by_month.get(m, {"purchase": 0.0, "return": 0.0})
-        purchase, ret = agg["purchase"], agg["return"]
-        max_val = max(max_val, purchase, ret)
-        rows_out.append({"month": m, "month_label": f"{int(m[5:7])}월", "purchase": round(purchase), "return": round(ret), "net": round(purchase - ret)})
-    max_val = max_val or 1
-    for r in rows_out:
-        r["purchase_pct"] = round(r["purchase"] / max_val * 100, 1)
-        r["return_pct"] = round(r["return"] / max_val * 100, 1)
-
-    total_purchase = sum(r["purchase"] for r in rows_out)
-    total_return = sum(r["return"] for r in rows_out)
-    return {
-        "year": year, "rows": rows_out,
-        "total_purchase": round(total_purchase), "total_return": round(total_return),
-        "total_net": round(total_purchase - total_return),
-    }
-
-
 def build_recv(rows, today_str):
     rows = [r for r in rows if r.get("whTp") == "일반입고"]  # 반품입고 제외 (금액 상쇄 방지)
 
@@ -1506,8 +1468,6 @@ def run_cycle(page: Page, rr_page: Page | None = None) -> None:
     sbcar_rows, sbcar_total = extract_carin_sbs_without_ro(page, req_rows, datetime.now(ZoneInfo("Asia/Seoul")).date())
     print(" - 입고현황 (당월, O파트 입출고 내역용)")
     recv_month_rows = extract_receiving_range(page, month_start, today_str)
-    print(" - 입고현황 (연초~오늘, 홀세일 현황용)")
-    wholesale_rows = extract_receiving_range(page, f"{now.year}-01-01", today_str)
     print(" - Turn Over 리포트 (지난주 월~토, 주간 재고조사용)")
     to_lastweek_rows = extract_turnover(page, last_week_start_str, last_week_end_str)
 
@@ -1532,7 +1492,6 @@ def run_cycle(page: Page, rr_page: Page | None = None) -> None:
     sbcar = build_sb_parts(req_rows, sbcar_rows, now, date_field="carAcptDtime")
     sbcar["resv_total"] = sbcar_total
     oflow = build_o_daily_flow(recv_month_rows, to_rows, month_start, today_str)
-    wholesale = build_wholesale(wholesale_rows, now.year, now.month)
     calendar_image = next((f for f in CALENDAR_IMAGE_CANDIDATES if (DOCS_DIR / f).exists()), None)
 
     data = {
@@ -1541,7 +1500,6 @@ def run_cycle(page: Page, rr_page: Page | None = None) -> None:
         "recv": recv, "inv": inv, "oaov": oaov, "ext": ext, "shop": shop, "acc": acc, "tire": tire,
         "longstock": longstock, "opart": opart, "oavail": oavail, "oflow": oflow, "openro": openro, "noshow": noshow, "sbresv": sbresv, "sbcar": sbcar, "nonmng": nonmng,
         "stockcheck": stockcheck, "stockcheck_week": stockcheck_week, "noloc": noloc, "extaudit": extaudit,
-        "wholesale": wholesale,
     }
 
     global LAST_DATA
