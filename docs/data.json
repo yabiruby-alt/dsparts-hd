@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 2일 (금) · 08:58 기준",
+    "generated_at": "10월 2일 (금) · 09:10 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -40208,21 +40208,65 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 08:54",
         "dday": "D+0일",
-        "amt": 551486
+        "amt": 673210
+      },
+      {
+        "ro": "RO2610000101",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "입고 Proactive-RITA",
+        "sa": "최민수",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 09:03",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000100",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 09:03",
+        "dday": "D+0일",
+        "amt": 481464
+      },
+      {
+        "ro": "RO2610000102",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 09:05",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000103",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 09:07",
+        "dday": "D+0일",
+        "amt": 277200
       }
     ],
-    "count": 324,
-    "total_amt": 747528596,
+    "count": 328,
+    "total_amt": 748408984,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 20,
+        "count": 21,
         "amt": 18035799
       },
       {
         "stat": "상담완료",
-        "count": 142,
-        "amt": 477070255
+        "count": 145,
+        "amt": 477950643
       },
       {
         "stat": "정비시작",
@@ -44950,7 +44994,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 17,
-            "avail_qty": 16,
+            "avail_qty": 15,
             "val": 131328
           },
           {
@@ -44960,7 +45004,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 18,
-            "avail_qty": 15,
+            "avail_qty": 14,
             "val": 29739
           }
         ],
@@ -45407,38 +45451,6 @@
         "count": 3,
         "qty_sum": 7,
         "val": 185711
-      },
-      {
-        "code": "SB2610000017",
-        "resv_full": "2026-10-02 11:00",
-        "resv": "10-02",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "13718513944",
-            "name": "Air filter e",
-            "alois": "A2",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 14,
-            "avail_qty": 13,
-            "val": 35258
-          },
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 283,
-            "avail_qty": 271,
-            "val": 12080
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 47338
       },
       {
         "code": "SB2609001808",
@@ -45915,48 +45927,6 @@
         "val": 612921
       },
       {
-        "code": "SB2609001963",
-        "resv_full": "2026-10-02 09:00",
-        "resv": "10-02",
-        "dday": "오늘",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 22,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 49,
-            "avail_qty": 20,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L3",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 117,
-            "avail_qty": 97,
-            "val": 1125
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 577937
-      },
-      {
         "code": "SB2609000806",
         "resv_full": "2026-10-02 09:00",
         "resv": "10-02",
@@ -46019,21 +45989,64 @@
         "val": 706285
       }
     ],
-    "sb_count": 85,
-    "line_count": 336,
-    "total_val": 62476672,
+    "sb_count": 83,
+    "line_count": 331,
+    "total_val": 61851397,
     "o_lines": 72,
     "o_val": 19467775,
-    "resv_total": 369
+    "resv_total": 367
   },
   "sbcar": {
-    "groups": [],
-    "sb_count": 0,
-    "line_count": 0,
-    "total_val": 0,
+    "groups": [
+      {
+        "code": "SB2609001963",
+        "resv_full": "2026-10-02 09:02",
+        "resv": "10-02",
+        "dday": "오늘",
+        "sa": "김민규",
+        "rows": [
+          {
+            "item": "12415BA2AE6",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 22,
+            "avail_qty": 0,
+            "val": 568490
+          },
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 49,
+            "avail_qty": 20,
+            "val": 8322
+          },
+          {
+            "item": "51337025635",
+            "name": "Clip",
+            "alois": "L3",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 117,
+            "avail_qty": 97,
+            "val": 1125
+          }
+        ],
+        "count": 3,
+        "qty_sum": 3,
+        "val": 577937
+      }
+    ],
+    "sb_count": 1,
+    "line_count": 3,
+    "total_val": 577937,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10158
+    "resv_total": 10161
   },
   "nonmng": {
     "rows": [
