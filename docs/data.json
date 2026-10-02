@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 2일 (금) · 10:52 기준",
+    "generated_at": "10월 2일 (금) · 11:07 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -249,7 +249,7 @@
     ]
   },
   "inv": {
-    "total": 978320570,
+    "total": 978213970,
     "item_count": 2189,
     "code_count": 25,
     "alois_groups": [
@@ -1469,7 +1469,7 @@
           {
             "code": "A5",
             "val": 80269164,
-            "pct": 8.2,
+            "pct": 8.21,
             "qty": 1445,
             "parts": [
               {
@@ -4928,15 +4928,15 @@
           },
           {
             "code": "L2",
-            "val": 11587921,
-            "pct": 1.18,
-            "qty": 238,
+            "val": 11481321,
+            "pct": 1.17,
+            "qty": 236,
             "parts": [
               {
                 "item": "90200006494",
                 "name": "Hypoid Axle G5",
-                "qty": 66,
-                "val": 3517800
+                "qty": 64,
+                "val": 3411200
               },
               {
                 "item": "90200006413",
@@ -8125,9 +8125,9 @@
             ]
           }
         ],
-        "subtotal_val": 146405790,
-        "subtotal_qty": 4570,
-        "subtotal_pct": 14.97
+        "subtotal_val": 146299190,
+        "subtotal_qty": 4568,
+        "subtotal_pct": 14.96
       },
       {
         "code": "O",
@@ -13641,7 +13641,7 @@
   },
   "oaov": {
     "total": 31556789,
-    "inv_total": 978320570,
+    "inv_total": 978213970,
     "pct": 3.23,
     "oa_val": 14147123,
     "ov_val": 17409666,
@@ -38783,7 +38783,7 @@
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 10:54",
         "dday": "D+1일",
-        "amt": 2486123
+        "amt": 2563923
       },
       {
         "ro": "RO2610000051",
@@ -39293,8 +39293,8 @@
       },
       {
         "ro": "RO2610000104",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-02",
@@ -39392,8 +39392,8 @@
       },
       {
         "ro": "RO2610000112",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "안준영",
         "pub": "2026-10-02",
@@ -39403,8 +39403,8 @@
       },
       {
         "ro": "RO2610000114",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "최민수",
         "pub": "2026-10-02",
@@ -39447,8 +39447,8 @@
       },
       {
         "ro": "RO2610000117",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-02",
@@ -39521,10 +39521,76 @@
         "pub_full": "2026-10-02 10:43",
         "dday": "D+0일",
         "amt": 758509
+      },
+      {
+        "ro": "RO2610000125",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "우상만",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 10:54",
+        "dday": "D+0일",
+        "amt": 28221
+      },
+      {
+        "ro": "RO2610000126",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "김민규",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 10:55",
+        "dday": "D+0일",
+        "amt": 37628
+      },
+      {
+        "ro": "RO2610000127",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 10:58",
+        "dday": "D+0일",
+        "amt": 759500
+      },
+      {
+        "ro": "RO2610000128",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "김민규",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 10:59",
+        "dday": "D+0일",
+        "amt": 56000
+      },
+      {
+        "ro": "RO2610000130",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 11:00",
+        "dday": "D+0일",
+        "amt": 28221
+      },
+      {
+        "ro": "RO2610000129",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-02",
+        "pub_full": "2026-10-02 11:00",
+        "dday": "D+0일",
+        "amt": 415450
       }
     ],
-    "count": 348,
-    "total_amt": 762761165,
+    "count": 354,
+    "total_amt": 764163985,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -39533,18 +39599,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 153,
-        "amt": 465073984
+        "count": 156,
+        "amt": 464994284
       },
       {
         "stat": "정비시작",
-        "count": 44,
-        "amt": 78365728
+        "count": 46,
+        "amt": 79729220
       },
       {
         "stat": "End Control 요청",
-        "count": 43,
-        "amt": 58976237
+        "count": 44,
+        "amt": 59095265
       },
       {
         "stat": "공정마감",
@@ -40915,7 +40981,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 14,
-            "avail_qty": 13,
+            "avail_qty": 12,
             "val": 19665
           }
         ],
@@ -41013,7 +41079,7 @@
     "total_val": 15890621,
     "o_lines": 25,
     "o_val": 5992084,
-    "resv_total": 12064
+    "resv_total": 12063
   },
   "sbresv": {
     "groups": [
@@ -42376,8 +42442,8 @@
             "alois": "L2",
             "sa": "M GARAGE",
             "req_qty": 2,
-            "crt_qty": 66,
-            "avail_qty": 62,
+            "crt_qty": 64,
+            "avail_qty": 61,
             "val": 106600
           },
           {
@@ -44825,7 +44891,7 @@
             "sa": "안준영",
             "req_qty": 5,
             "crt_qty": 230,
-            "avail_qty": 219,
+            "avail_qty": 214,
             "val": 84282
           },
           {
@@ -44852,86 +44918,13 @@
     "resv_total": 354
   },
   "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609002070",
-        "resv_full": "2026-10-02 10:51",
-        "resv": "10-02",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "90200005957",
-            "name": "Hypoid axle",
-            "alois": "L5",
-            "sa": "최민수",
-            "req_qty": 2,
-            "crt_qty": 13,
-            "avail_qty": 9,
-            "val": 113800
-          },
-          {
-            "item": "90200005956",
-            "name": "Hypoid axle",
-            "alois": "L5",
-            "sa": "최민수",
-            "req_qty": 2,
-            "crt_qty": 15,
-            "avail_qty": 11,
-            "val": 113800
-          },
-          {
-            "item": "83225A4F016",
-            "name": "Dtf 1",
-            "alois": "L2",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 13,
-            "avail_qty": 10,
-            "val": 60292
-          },
-          {
-            "item": "33117525064",
-            "name": "Screw plug",
-            "alois": "A1",
-            "sa": "최민수",
-            "req_qty": 2,
-            "crt_qty": 142,
-            "avail_qty": 124,
-            "val": 13486
-          },
-          {
-            "item": "33117525064",
-            "name": "Screw plug",
-            "alois": "A1",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 142,
-            "avail_qty": 124,
-            "val": 6743
-          },
-          {
-            "item": "33117525064",
-            "name": "Screw plug",
-            "alois": "A1",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 142,
-            "avail_qty": 124,
-            "val": 6743
-          }
-        ],
-        "count": 6,
-        "qty_sum": 9,
-        "val": 314864
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 6,
-    "total_val": 314864,
+    "groups": [],
+    "sb_count": 0,
+    "line_count": 0,
+    "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10186
+    "resv_total": 10190
   },
   "nonmng": {
     "rows": [],
@@ -45873,7 +45866,7 @@
         "item": "90200006494",
         "name": "Hypoid Axle G5",
         "alois": "L2",
-        "qty": 66,
+        "qty": 64,
         "no": 9
       },
       {
