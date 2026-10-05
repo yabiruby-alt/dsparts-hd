@@ -1904,7 +1904,8 @@
       filtered.forEach(function(t, i){
         var tr = document.createElement('tr');
         var rftHtml = t.std_rft === 'RFT' ? '<span class="rft-tag">RFT</span>' : esc(t.std_rft);
-        tr.innerHTML = '<td class="num">'+(i+1)+'</td><td class="mono">'+esc(t.pn)+'</td><td>'+esc(t.name)+'</td><td>'+esc(t.brand)+'</td><td class="mono">'+esc(t.mat_no)+'</td><td class="mono">'+esc(t.sale_tp)+'</td><td class="mono">'+esc(t.size)+'</td><td>'+rftHtml+'</td><td>'+esc(t.sw)+'</td><td>'+esc(t.oe)+'</td><td>'+esc(t.qr)+'</td><td class="num">'+fmtMoney(t.price)+'</td>';
+        var oeHtml = String(t.oe||'').trim().toUpperCase() === 'RE' ? '<span class="rft-tag">'+esc(t.oe)+'</span>' : esc(t.oe);
+        tr.innerHTML = '<td class="num">'+(i+1)+'</td><td class="mono">'+esc(t.pn)+'</td><td>'+esc(t.name)+'</td><td>'+esc(t.brand)+'</td><td class="mono">'+esc(t.mat_no)+'</td><td class="mono">'+esc(t.sale_tp)+'</td><td class="mono">'+esc(t.size)+'</td><td>'+rftHtml+'</td><td>'+esc(t.sw)+'</td><td>'+oeHtml+'</td><td>'+esc(t.qr)+'</td><td class="num">'+fmtMoney(t.price)+'</td>';
         tbody.appendChild(tr);
       });
     }
