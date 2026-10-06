@@ -84,6 +84,7 @@ SALES_ENABLED = (SALES_DIR / "sales.py").exists()
 RR_ENABLED = True   # 롤스로이스 DMS 연동 — 켜면 데몬 시작 시 RR 로그인 창이 하나 더 뜸
 RR_BASE_URL = "https://www.rrdms.co.kr"   # 롤스로이스 DMS (같은 My DMS 플랫폼, 별도 계정/세션)
 RR_AUTH_DIR = Path.home() / "AppData" / "Local" / "PartsBayDMS" / "authdata_rr"
+POPUP_PROBE_FILE = BASE_DIR / "popup_probe.log"   # [임시] RDC 재고조회 팝업 요청 주소 확인용 — 확인 후 제거
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
 LAST_DATA = {}                    # 마지막 갱신 데이터(사유만 바뀌었을 때 DMS 재조회 없이 재렌더용)
 
@@ -1565,6 +1566,27 @@ def main():
                 args=["--start-minimized"],
             )
             page = ctx.new_page()
+
+            def _probe_log(line):
+                with open(POPUP_PROBE_FILE, "a", encoding="utf-8") as f:
+                    f.write(f"{datetime.now().strftime('%H:%M:%S')} {line}\n")
+
+            def _probe_page(pg):
+                try:
+                    _probe_log(f"[새 창] {pg.url}")
+                except Exception:
+                    pass
+
+            def _probe_request(req):
+                try:
+                    if req.frame.page == page or ".do" not in req.url:
+                        return
+                    _probe_log(f"[팝업요청] {req.method} {req.url} | {req.post_data}")
+                except Exception:
+                    pass
+
+            ctx.on("page", _probe_page)
+            ctx.on("request", _probe_request)
             ensure_logged_in(page)
 
             if ONCE:
@@ -1597,7 +1619,10 @@ def main():
                 except Exception as e:
                     print(f"[이번 주기 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
                 print(f"다음 갱신까지 {CYCLE_INTERVAL_SEC}초 대기...")
-                time.sleep(CYCLE_INTERVAL_SEC)
+                try:
+                    page.wait_for_timeout(CYCLE_INTERVAL_SEC * 1000)  # [임시] 대기 중에도 팝업 이벤트가 처리되도록
+                except Exception:
+                    time.sleep(CYCLE_INTERVAL_SEC)
     finally:
         LOCK_FILE.unlink(missing_ok=True)
 
