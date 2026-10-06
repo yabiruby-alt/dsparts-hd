@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 10:30 기준",
+    "generated_at": "10월 6일 (화) · 10:42 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,7 +16,7 @@
     "top5": []
   },
   "inv": {
-    "total": 976660155,
+    "total": 976430834,
     "item_count": 2181,
     "code_count": 25,
     "alois_groups": [
@@ -27,15 +27,15 @@
         "rows": [
           {
             "code": "A1",
-            "val": 223202228,
+            "val": 223069416,
             "pct": 22.85,
-            "qty": 2580,
+            "qty": 2578,
             "parts": [
               {
                 "item": "64115A1BDB6",
                 "name": "Set, microfi",
-                "qty": 1583,
-                "val": 178708036
+                "qty": 1582,
+                "val": 178595144
               },
               {
                 "item": "64115A547D4",
@@ -76,8 +76,8 @@
               {
                 "item": "11428575211",
                 "name": "Set oil-filt",
-                "qty": 178,
-                "val": 3545760
+                "qty": 177,
+                "val": 3525840
               },
               {
                 "item": "64316835405",
@@ -4676,8 +4676,8 @@
             ]
           }
         ],
-        "subtotal_val": 504218979,
-        "subtotal_qty": 9066,
+        "subtotal_val": 504086167,
+        "subtotal_qty": 9064,
         "subtotal_pct": 51.63
       },
       {
@@ -4687,21 +4687,21 @@
         "rows": [
           {
             "code": "L1",
-            "val": 21974405,
-            "pct": 2.25,
-            "qty": 1701,
+            "val": 21877896,
+            "pct": 2.24,
+            "qty": 1694,
             "parts": [
               {
                 "item": "83215B49DD6",
                 "name": "LL-17FE+ 0W-20",
-                "qty": 362,
-                "val": 5543985
+                "qty": 357,
+                "val": 5463770
               },
               {
                 "item": "83135A82511",
                 "name": "Brake fluid",
-                "qty": 266,
-                "val": 3213280
+                "qty": 265,
+                "val": 3201200
               },
               {
                 "item": "83212469985",
@@ -4742,8 +4742,8 @@
               {
                 "item": "66126912985",
                 "name": "Key Battery",
-                "qty": 155,
-                "val": 653170
+                "qty": 154,
+                "val": 648956
               },
               {
                 "item": "90200007672",
@@ -7880,8 +7880,8 @@
             ]
           }
         ],
-        "subtotal_val": 138706553,
-        "subtotal_qty": 4314,
+        "subtotal_val": 138610044,
+        "subtotal_qty": 4306,
         "subtotal_pct": 14.2
       },
       {
@@ -12012,7 +12012,7 @@
         ],
         "subtotal_val": 190554917,
         "subtotal_qty": 2301,
-        "subtotal_pct": 19.51
+        "subtotal_pct": 19.52
       },
       {
         "code": "I",
@@ -12710,7 +12710,7 @@
           {
             "code": "SZ",
             "val": 77870854,
-            "pct": 7.97,
+            "pct": 7.98,
             "qty": 773,
             "parts": [
               {
@@ -13360,7 +13360,7 @@
   },
   "oaov": {
     "total": 38456708,
-    "inv_total": 976660155,
+    "inv_total": 976430834,
     "pct": 3.94,
     "oa_val": 18294144,
     "ov_val": 20162564,
@@ -18832,40 +18832,6 @@
         "dday": "D+33일"
       },
       {
-        "item": "51317422806",
-        "name": "Cover, winds",
-        "alois": "O8",
-        "pgrp": "M1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609000380",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-04",
-        "req_dt_full": "2026-09-04 13:37:30",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 25696,
-        "sa": "염진아",
-        "dday": "D+32일"
-      },
-      {
-        "item": "51317443871",
-        "name": "[R] Windshield,",
-        "alois": "O8",
-        "pgrp": "M1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609000380",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "09-04",
-        "req_dt_full": "2026-09-04 13:37:30",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 246927,
-        "sa": "염진아",
-        "dday": "D+32일"
-      },
-      {
         "item": "11288519128",
         "name": "FAN BELT REPO",
         "alois": "O8",
@@ -22043,10 +22009,163 @@
         "val": 28073,
         "sa": "강충성",
         "dday": "D+0일"
+      },
+      {
+        "item": "51317422806",
+        "name": "Cover, winds",
+        "alois": "O8",
+        "pgrp": "M1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000227",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 10:31:59",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 25696,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51317443871",
+        "name": "[R] Windshield,",
+        "alois": "O8",
+        "pgrp": "M1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000227",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 10:31:59",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 246927,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51487941312",
+        "name": "Sound insula",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000208",
+        "req_qty": 2,
+        "crt_qty": 2,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 10:35:41",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 139740,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51317477267",
+        "name": "Windshield,",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000208",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 10:35:41",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 564810,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51118079669",
+        "name": "Mount, bumpe",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000223",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 10:36:17",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 219106,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51125B78713",
+        "name": "Trim panel b",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000184",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 10:40:27",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 414345,
+        "sa": "박영묵",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51775B782B6",
+        "name": "Wheel arch t",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000184",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 10:40:27",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 112035,
+        "sa": "박영묵",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51125B68C30",
+        "name": "Trim panel,",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000184",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 10:40:27",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 251988,
+        "sa": "박영묵",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51125B68C31",
+        "name": "Bumper guide",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000184",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 10:40:27",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 98197,
+        "sa": "박영묵",
+        "dday": "D+0일"
       }
     ],
-    "count": 275,
-    "total_val": 76541191,
+    "count": 282,
+    "total_val": 78341412,
     "groups": [
       {
         "code": "RO",
@@ -24804,11 +24923,164 @@
             "val": 28073,
             "sa": "강충성",
             "dday": "D+0일"
+          },
+          {
+            "item": "51317422806",
+            "name": "Cover, winds",
+            "alois": "O8",
+            "pgrp": "M1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000227",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 10:31:59",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 25696,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51317443871",
+            "name": "[R] Windshield,",
+            "alois": "O8",
+            "pgrp": "M1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000227",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 10:31:59",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 246927,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51487941312",
+            "name": "Sound insula",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000208",
+            "req_qty": 2,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 10:35:41",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 139740,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51317477267",
+            "name": "Windshield,",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000208",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 10:35:41",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 564810,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51118079669",
+            "name": "Mount, bumpe",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000223",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 10:36:17",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 219106,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51125B78713",
+            "name": "Trim panel b",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000184",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 10:40:27",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 414345,
+            "sa": "박영묵",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51775B782B6",
+            "name": "Wheel arch t",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000184",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 10:40:27",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 112035,
+            "sa": "박영묵",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51125B68C30",
+            "name": "Trim panel,",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000184",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 10:40:27",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 251988,
+            "sa": "박영묵",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51125B68C31",
+            "name": "Bumper guide",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000184",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 10:40:27",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 98197,
+            "sa": "박영묵",
+            "dday": "D+0일"
           }
         ],
-        "count": 162,
-        "qty_sum": 219,
-        "val": 47772847
+        "count": 171,
+        "qty_sum": 229,
+        "val": 49845691
       },
       {
         "code": "SB",
@@ -25526,40 +25798,6 @@
             "val": 218133,
             "sa": "이정환",
             "dday": "D+34일"
-          },
-          {
-            "item": "51317422806",
-            "name": "Cover, winds",
-            "alois": "O8",
-            "pgrp": "M1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609000380",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-04",
-            "req_dt_full": "2026-09-04 13:37:30",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 25696,
-            "sa": "염진아",
-            "dday": "D+32일"
-          },
-          {
-            "item": "51317443871",
-            "name": "[R] Windshield,",
-            "alois": "O8",
-            "pgrp": "M1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609000380",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "09-04",
-            "req_dt_full": "2026-09-04 13:37:30",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 246927,
-            "sa": "염진아",
-            "dday": "D+32일"
           },
           {
             "item": "51128081859",
@@ -26361,9 +26599,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 91,
-        "qty_sum": 130,
-        "val": 24398772
+        "count": 89,
+        "qty_sum": 128,
+        "val": 24126149
       },
       {
         "code": "SP",
@@ -36712,8 +36950,8 @@
       },
       {
         "ro": "RO2609001389",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "이정환",
         "pub": "2026-09-22",
@@ -39055,14 +39293,14 @@
       },
       {
         "ro": "RO2610000184",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "박영묵",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 09:03",
         "dday": "D+0일",
-        "amt": 28000
+        "amt": 2242200
       },
       {
         "ro": "RO2610000185",
@@ -39286,8 +39524,8 @@
       },
       {
         "ro": "RO2610000207",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "사고수리",
         "sa": "이정환",
         "pub": "2026-10-06",
@@ -39297,8 +39535,8 @@
       },
       {
         "ro": "RO2610000208",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-10-06",
@@ -39406,20 +39644,9 @@
         "amt": 0
       },
       {
-        "ro": "RO2610000216",
-        "stat": "상담시작",
-        "stat_cd": "01",
-        "svc": "사고수리",
-        "sa": "강충성",
-        "pub": "2026-10-06",
-        "pub_full": "2026-10-06 10:15",
-        "dday": "D+0일",
-        "amt": 589400
-      },
-      {
         "ro": "RO2610000220",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "경수리",
         "sa": "김민규",
         "pub": "2026-10-06",
@@ -39451,44 +39678,99 @@
       },
       {
         "ro": "RO2610000223",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 10:23",
         "dday": "D+0일",
-        "amt": 2834400
+        "amt": 1845500
       },
       {
         "ro": "RO2610000224",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 10:30",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 37628
+      },
+      {
+        "ro": "RO2610000227",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "염진아",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 10:31",
+        "dday": "D+0일",
+        "amt": 795100
+      },
+      {
+        "ro": "RO2610000226",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "김민규",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 10:31",
+        "dday": "D+0일",
+        "amt": 643624
+      },
+      {
+        "ro": "RO2610000225",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "김민규",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 10:31",
+        "dday": "D+0일",
+        "amt": 28000
+      },
+      {
+        "ro": "RO2610000228",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 10:32",
+        "dday": "D+0일",
+        "amt": 133724
+      },
+      {
+        "ro": "RO2610000229",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 10:38",
+        "dday": "D+0일",
+        "amt": 75256
       }
     ],
-    "count": 364,
-    "total_amt": 778310508,
+    "count": 368,
+    "total_amt": 780659740,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 36,
-        "amt": 33121293
+        "count": 31,
+        "amt": 28418093
       },
       {
         "stat": "상담완료",
-        "count": 160,
-        "amt": 455172276
+        "count": 166,
+        "amt": 454324820
       },
       {
         "stat": "정비시작",
-        "count": 33,
-        "amt": 54651170
+        "count": 36,
+        "amt": 62551058
       },
       {
         "stat": "End Control 요청",
@@ -40291,7 +40573,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 2,
-            "crt_qty": 266,
+            "crt_qty": 265,
             "avail_qty": 257,
             "val": 24160
           }
@@ -40437,7 +40719,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 266,
+            "crt_qty": 265,
             "avail_qty": 257,
             "val": 12080
           }
@@ -40664,7 +40946,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 36,
-            "avail_qty": 35,
+            "avail_qty": 34,
             "val": 68569
           },
           {
@@ -40706,7 +40988,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 19,
-            "avail_qty": 13,
+            "avail_qty": 12,
             "val": 7080
           }
         ],
@@ -40843,7 +41125,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 362,
+            "crt_qty": 357,
             "avail_qty": 329,
             "val": 80215
           },
@@ -40969,7 +41251,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 2,
-            "crt_qty": 266,
+            "crt_qty": 265,
             "avail_qty": 257,
             "val": 24160
           }
@@ -40991,7 +41273,7 @@
             "alois": "A1",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 1583,
+            "crt_qty": 1582,
             "avail_qty": 1581,
             "val": 112892
           },
@@ -41011,7 +41293,7 @@
             "alois": "A1",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 178,
+            "crt_qty": 177,
             "avail_qty": 173,
             "val": 19920
           }
@@ -41043,7 +41325,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 5,
-            "crt_qty": 362,
+            "crt_qty": 357,
             "avail_qty": 329,
             "val": 80215
           },
@@ -41053,7 +41335,7 @@
             "alois": "A1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 178,
+            "crt_qty": 177,
             "avail_qty": 173,
             "val": 19920
           }
@@ -43299,7 +43581,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 6,
-            "crt_qty": 362,
+            "crt_qty": 357,
             "avail_qty": 329,
             "val": 99314
           },
@@ -43919,10 +44201,20 @@
         "count": 2,
         "qty_sum": 2,
         "val": 90737
-      },
+      }
+    ],
+    "sb_count": 56,
+    "line_count": 205,
+    "total_val": 45103606,
+    "o_lines": 58,
+    "o_val": 17563675,
+    "resv_total": 377
+  },
+  "sbcar": {
+    "groups": [
       {
         "code": "SB2609001826",
-        "resv_full": "2026-10-06 10:20",
+        "resv_full": "2026-10-06 10:35",
         "resv": "10-06",
         "dday": "오늘",
         "sa": "안준영",
@@ -43953,104 +44245,12 @@
         "val": 576812
       }
     ],
-    "sb_count": 57,
-    "line_count": 207,
-    "total_val": 45680418,
-    "o_lines": 58,
-    "o_val": 17563675,
-    "resv_total": 375
-  },
-  "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609000380",
-        "resv_full": "2026-10-06 10:25",
-        "resv": "10-06",
-        "dday": "오늘",
-        "sa": "염진아",
-        "rows": [
-          {
-            "item": "51317443871",
-            "name": "[R] Windshield,",
-            "alois": "O8",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 246927
-          },
-          {
-            "item": "83192289285",
-            "name": "Repair flat",
-            "alois": "L2",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 2,
-            "val": 70811
-          },
-          {
-            "item": "51487325890",
-            "name": "Sound insul.",
-            "alois": "L7",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 70692
-          },
-          {
-            "item": "61359856157",
-            "name": "Silicone rep",
-            "alois": "A3",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 10,
-            "avail_qty": 6,
-            "val": 43055
-          },
-          {
-            "item": "51317422806",
-            "name": "Cover, winds",
-            "alois": "O8",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 25696
-          },
-          {
-            "item": "99995BA3923",
-            "name": "CleanerR1(BM",
-            "alois": "SY",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 0,
-            "val": 15600
-          },
-          {
-            "item": "51317288462",
-            "name": "[R] Bump stop",
-            "alois": "A3",
-            "sa": "염진아",
-            "req_qty": 6,
-            "crt_qty": 69,
-            "avail_qty": 53,
-            "val": 14886
-          }
-        ],
-        "count": 7,
-        "qty_sum": 12,
-        "val": 487667
-      }
-    ],
     "sb_count": 1,
-    "line_count": 7,
-    "total_val": 487667,
-    "o_lines": 2,
-    "o_val": 272623,
-    "resv_total": 10048
+    "line_count": 2,
+    "total_val": 576812,
+    "o_lines": 0,
+    "o_val": 0,
+    "resv_total": 10049
   },
   "nonmng": {
     "rows": [],
@@ -44095,7 +44295,7 @@
         "item": "83135A82511",
         "name": "Brake fluid",
         "alois": "L1",
-        "qty": 266,
+        "qty": 265,
         "no": 4
       },
       {
@@ -44543,7 +44743,7 @@
         "item": "66126912985",
         "name": "Key Battery",
         "alois": "L1",
-        "qty": 155,
+        "qty": 154,
         "no": 60
       },
       {
@@ -45351,7 +45551,7 @@
         "item": "64115A1BDB6",
         "name": "Set, microfi",
         "alois": "A1",
-        "qty": 1583,
+        "qty": 1582,
         "no": 161
       },
       {
@@ -45527,7 +45727,7 @@
         "item": "11428575211",
         "name": "Set oil-filt",
         "alois": "A1",
-        "qty": 178,
+        "qty": 177,
         "no": 183
       },
       {
@@ -47831,7 +48031,7 @@
         "item": "83215B49DD6",
         "name": "LL-17FE+ 0W-20",
         "alois": "L1",
-        "qty": 362,
+        "qty": 357,
         "no": 471
       }
     ],
