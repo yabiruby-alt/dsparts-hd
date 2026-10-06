@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 12:41 기준",
+    "generated_at": "10월 6일 (화) · 12:52 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -36242,8 +36242,8 @@
       },
       {
         "ro": "RO2609001753",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-09-03",
@@ -39252,7 +39252,7 @@
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 08:25",
         "dday": "D+0일",
-        "amt": 3327045
+        "amt": 3511745
       },
       {
         "ro": "RO2610000179",
@@ -39879,11 +39879,22 @@
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 12:27",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 478771
+      },
+      {
+        "ro": "RO2610000243",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 12:43",
+        "dday": "D+0일",
+        "amt": 328623
       }
     ],
-    "count": 376,
-    "total_amt": 815964352,
+    "count": 377,
+    "total_amt": 816956446,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -39893,7 +39904,7 @@
       {
         "stat": "상담완료",
         "count": 165,
-        "amt": 481485493
+        "amt": 477509587
       },
       {
         "stat": "정비시작",
@@ -39902,8 +39913,8 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 77,
-        "amt": 106189527
+        "count": 78,
+        "amt": 111157527
       },
       {
         "stat": "공정마감",
@@ -41232,7 +41243,7 @@
             "sa": "안준영",
             "req_qty": 5,
             "crt_qty": 357,
-            "avail_qty": 329,
+            "avail_qty": 320,
             "val": 80215
           },
           {
@@ -41432,7 +41443,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 357,
-            "avail_qty": 329,
+            "avail_qty": 320,
             "val": 80215
           },
           {
@@ -43710,7 +43721,7 @@
             "sa": "안준영",
             "req_qty": 6,
             "crt_qty": 357,
-            "avail_qty": 329,
+            "avail_qty": 320,
             "val": 99314
           },
           {
@@ -44304,49 +44315,16 @@
     "total_val": 45976590,
     "o_lines": 58,
     "o_val": 17563675,
-    "resv_total": 384
+    "resv_total": 383
   },
   "sbcar": {
-    "groups": [
-      {
-        "code": "SB2610000220",
-        "resv_full": "2026-10-06 12:33",
-        "resv": "10-06",
-        "dday": "오늘",
-        "sa": "이정환",
-        "rows": [
-          {
-            "item": "64316835405",
-            "name": "MICROFILTER/",
-            "alois": "A1",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 40,
-            "avail_qty": 38,
-            "val": 71071
-          },
-          {
-            "item": "11428593186",
-            "name": "Set oil-filt",
-            "alois": "A1",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 37,
-            "avail_qty": 36,
-            "val": 19666
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 90737
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 2,
-    "total_val": 90737,
+    "groups": [],
+    "sb_count": 0,
+    "line_count": 0,
+    "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10063
+    "resv_total": 10064
   },
   "nonmng": {
     "rows": [],
