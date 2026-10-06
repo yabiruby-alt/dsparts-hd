@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 11:30 기준",
+    "generated_at": "10월 6일 (화) · 11:42 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,7 +16,7 @@
     "top5": []
   },
   "inv": {
-    "total": 974299261,
+    "total": 974234326,
     "item_count": 2176,
     "code_count": 25,
     "alois_groups": [
@@ -28,7 +28,7 @@
           {
             "code": "A1",
             "val": 222767272,
-            "pct": 22.86,
+            "pct": 22.87,
             "qty": 2573,
             "parts": [
               {
@@ -113,9 +113,9 @@
           },
           {
             "code": "A2",
-            "val": 18710252,
-            "pct": 1.92,
-            "qty": 1090,
+            "val": 18645317,
+            "pct": 1.91,
+            "qty": 1089,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -144,8 +144,8 @@
               {
                 "item": "61610003090",
                 "name": "Set of wiper 6GT",
-                "qty": 16,
-                "val": 1038960
+                "qty": 15,
+                "val": 974025
               },
               {
                 "item": "64115A13762",
@@ -4676,8 +4676,8 @@
             ]
           }
         ],
-        "subtotal_val": 503341877,
-        "subtotal_qty": 9052,
+        "subtotal_val": 503276942,
+        "subtotal_qty": 9051,
         "subtotal_pct": 51.66
       },
       {
@@ -13330,7 +13330,7 @@
   },
   "oaov": {
     "total": 38370013,
-    "inv_total": 974299261,
+    "inv_total": 974234326,
     "pct": 3.94,
     "oa_val": 18229933,
     "ov_val": 20140080,
@@ -14958,10 +14958,10 @@
     "foot_note": "이번 달 발행 없음"
   },
   "acc": {
-    "total": 1052020,
-    "cost": 1083040,
-    "lines": 209,
-    "invoices_count": 17,
+    "total": 1094500,
+    "cost": 1125520,
+    "lines": 210,
+    "invoices_count": 18,
     "by_type": [
       {
         "code": "3",
@@ -14978,11 +14978,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 144,
-        "val": 1040820
+        "lines": 145,
+        "val": 1083300
       }
     ],
     "recent5": [
+      {
+        "inv": "AR2610003816",
+        "num": "SP2610000018",
+        "sa": "김창열",
+        "dt": "2026-10-06 11:31",
+        "amt": 42480,
+        "cost": 42480
+      },
       {
         "inv": "IV2610000246",
         "num": "RO2609000681",
@@ -15014,14 +15022,6 @@
         "dt": "2026-10-02 17:18",
         "amt": 0,
         "cost": 7080
-      },
-      {
-        "inv": "AR2610003811",
-        "num": "SP2610000006",
-        "sa": "박태강",
-        "dt": "2026-10-02 15:17",
-        "amt": 0,
-        "cost": 0
       }
     ]
   },
@@ -22142,10 +22142,44 @@
         "val": 58800,
         "sa": "김창열",
         "dday": "D+0일"
+      },
+      {
+        "item": "66215A444A5",
+        "name": "MINI Advance",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000130",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 11:32:52",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 442260,
+        "sa": "안준영",
+        "dday": "D+0일"
+      },
+      {
+        "item": "61627442093",
+        "name": "Wiper blade F40 G05 Rear",
+        "alois": "OE",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000235",
+        "req_qty": 1,
+        "crt_qty": 6,
+        "avail_qty": 5,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 11:39:14",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 23596,
+        "sa": "정용환",
+        "dday": "D+0일"
       }
     ],
-    "count": 286,
-    "total_val": 79510882,
+    "count": 288,
+    "total_val": 79976738,
     "groups": [
       {
         "code": "RO",
@@ -25107,11 +25141,45 @@
             "val": 87399,
             "sa": "강충성",
             "dday": "D+0일"
+          },
+          {
+            "item": "66215A444A5",
+            "name": "MINI Advance",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000130",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 11:32:52",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 442260,
+            "sa": "안준영",
+            "dday": "D+0일"
+          },
+          {
+            "item": "61627442093",
+            "name": "Wiper blade F40 G05 Rear",
+            "alois": "OE",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000235",
+            "req_qty": 1,
+            "crt_qty": 6,
+            "avail_qty": 5,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 11:39:14",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 23596,
+            "sa": "정용환",
+            "dday": "D+0일"
           }
         ],
-        "count": 174,
-        "qty_sum": 232,
-        "val": 50785761
+        "count": 176,
+        "qty_sum": 234,
+        "val": 51251617
       },
       {
         "code": "SB",
@@ -28235,15 +28303,6 @@
         "val": 142373
       },
       {
-        "item": "61627442093",
-        "name": "Wiper blade F40 G05 Rear",
-        "pgrp": "B1",
-        "alois": "OE",
-        "qty": 6,
-        "avail_qty": 6,
-        "val": 141576
-      },
-      {
         "item": "36135A37E40",
         "name": "Hub cap 50 Y",
         "pgrp": "B1",
@@ -28386,6 +28445,15 @@
         "qty": 5,
         "avail_qty": 5,
         "val": 119830
+      },
+      {
+        "item": "61627442093",
+        "name": "Wiper blade F40 G05 Rear",
+        "pgrp": "B1",
+        "alois": "OE",
+        "qty": 6,
+        "avail_qty": 5,
+        "val": 117980
       },
       {
         "item": "34118855002",
@@ -34765,15 +34833,6 @@
             "val": 144000
           },
           {
-            "item": "61627442093",
-            "name": "Wiper blade F40 G05 Rear",
-            "pgrp": "B1",
-            "alois": "OE",
-            "qty": 6,
-            "avail_qty": 6,
-            "val": 141576
-          },
-          {
             "item": "80932413782",
             "name": "BMW Baby Rac",
             "pgrp": "B7",
@@ -34799,6 +34858,15 @@
             "qty": 5,
             "avail_qty": 5,
             "val": 120400
+          },
+          {
+            "item": "61627442093",
+            "name": "Wiper blade F40 G05 Rear",
+            "pgrp": "B1",
+            "alois": "OE",
+            "qty": 6,
+            "avail_qty": 5,
+            "val": 117980
           },
           {
             "item": "90200007650",
@@ -35037,8 +35105,8 @@
         ],
         "count": 92,
         "qty_sum": 645,
-        "avail_sum": 631,
-        "val": 80252283
+        "avail_sum": 630,
+        "val": 80228687
       },
       {
         "code": "ON",
@@ -35564,7 +35632,7 @@
       }
     ],
     "count": 471,
-    "total_val": 129917682
+    "total_val": 129894086
   },
   "oflow": {
     "rows": [
@@ -35601,13 +35669,13 @@
       {
         "date": "10-06",
         "in_val": 0,
-        "out_val": 107793,
-        "net": -107793
+        "out_val": 194488,
+        "net": -194488
       }
     ],
     "total_in": 25749592,
-    "total_out": 10641610,
-    "net": 15107982,
+    "total_out": 10728305,
+    "net": 15021287,
     "by_code": [
       {
         "code": "O8",
@@ -35618,8 +35686,8 @@
       {
         "code": "OA",
         "in_val": 4471054,
-        "out_val": 131362,
-        "net": 4339692
+        "out_val": 195573,
+        "net": 4275481
       },
       {
         "code": "OE",
@@ -35636,8 +35704,8 @@
       {
         "code": "OV",
         "in_val": 4034711,
-        "out_val": 0,
-        "net": 4034711
+        "out_val": 22484,
+        "net": 4012227
       }
     ],
     "in_days": 2,
@@ -36039,7 +36107,7 @@
         "pub": "2026-08-28",
         "pub_full": "2026-08-28 09:19",
         "dday": "D+39일",
-        "amt": 18862300
+        "amt": 18942100
       },
       {
         "ro": "RO2608001747",
@@ -38668,7 +38736,7 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 11:00",
         "dday": "D+4일",
-        "amt": 585121
+        "amt": 470481
       },
       {
         "ro": "RO2610000131",
@@ -39617,17 +39685,6 @@
         "amt": 795100
       },
       {
-        "ro": "RO2610000225",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "진단",
-        "sa": "김민규",
-        "pub": "2026-10-06",
-        "pub_full": "2026-10-06 10:31",
-        "dday": "D+0일",
-        "amt": 28000
-      },
-      {
         "ro": "RO2610000226",
         "stat": "정비시작",
         "stat_cd": "03",
@@ -39639,9 +39696,20 @@
         "amt": 653924
       },
       {
+        "ro": "RO2610000225",
+        "stat": "정비시작",
+        "stat_cd": "03",
+        "svc": "진단",
+        "sa": "김민규",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 10:31",
+        "dday": "D+0일",
+        "amt": 28000
+      },
+      {
         "ro": "RO2610000228",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-06",
@@ -39717,33 +39785,66 @@
       },
       {
         "ro": "RO2610000235",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 11:30",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 918820
+      },
+      {
+        "ro": "RO2610000236",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "우종훈",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 11:32",
+        "dday": "D+0일",
+        "amt": 56000
+      },
+      {
+        "ro": "RO2610000237",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "우종훈",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 11:37",
+        "dday": "D+0일",
+        "amt": 203014
+      },
+      {
+        "ro": "RO2610000238",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 11:40",
+        "dday": "D+0일",
+        "amt": 112884
       }
     ],
-    "count": 371,
-    "total_amt": 798992935,
+    "count": 374,
+    "total_amt": 800248813,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 31,
+        "count": 30,
         "amt": 41230693
       },
       {
         "stat": "상담완료",
-        "count": 161,
-        "amt": 470134265
+        "count": 163,
+        "amt": 471228419
       },
       {
         "stat": "정비시작",
-        "count": 34,
-        "amt": 46657826
+        "count": 36,
+        "amt": 46819550
       },
       {
         "stat": "End Control 요청",
@@ -40294,28 +40395,6 @@
         "count": 1,
         "qty_sum": 1,
         "val": 612588
-      },
-      {
-        "code": "SB2608000628",
-        "resv_full": "2026-08-21 09:20",
-        "resv": "08-21",
-        "dday": "D+46일",
-        "sa": "우종훈",
-        "rows": [
-          {
-            "item": "63115A788B8",
-            "name": "Gasket, head",
-            "alois": "SZ",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 134466
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 134466
       },
       {
         "code": "SB2608000389",
@@ -40919,7 +40998,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 35,
-            "avail_qty": 34,
+            "avail_qty": 33,
             "val": 68569
           },
           {
@@ -41444,12 +41523,12 @@
         "val": 577937
       }
     ],
-    "sb_count": 49,
-    "line_count": 109,
-    "total_val": 18427185,
+    "sb_count": 48,
+    "line_count": 108,
+    "total_val": 18292719,
     "o_lines": 28,
     "o_val": 6298226,
-    "resv_total": 12077
+    "resv_total": 12076
   },
   "sbresv": {
     "groups": [
@@ -44203,7 +44282,7 @@
     "total_val": 46067327,
     "o_lines": 58,
     "o_val": 17563675,
-    "resv_total": 382
+    "resv_total": 383
   },
   "sbcar": {
     "groups": [],
@@ -44212,7 +44291,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10056
+    "resv_total": 10058
   },
   "nonmng": {
     "rows": [],
@@ -46241,7 +46320,7 @@
         "item": "61610003090",
         "name": "Set of wiper 6GT",
         "alois": "A2",
-        "qty": 16,
+        "qty": 15,
         "no": 252
       },
       {
