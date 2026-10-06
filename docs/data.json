@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 15:32 기준",
+    "generated_at": "10월 6일 (화) · 15:44 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,7 +16,7 @@
     "top5": []
   },
   "inv": {
-    "total": 969993892,
+    "total": 969891790,
     "item_count": 2170,
     "code_count": 25,
     "alois_groups": [
@@ -113,9 +113,9 @@
           },
           {
             "code": "A2",
-            "val": 18171287,
+            "val": 18149057,
             "pct": 1.87,
-            "qty": 1070,
+            "qty": 1069,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -264,8 +264,8 @@
               {
                 "item": "11428507683",
                 "name": "Filt.Element",
-                "qty": 6,
-                "val": 133380
+                "qty": 5,
+                "val": 111150
               },
               {
                 "item": "11428092620",
@@ -4670,7 +4670,7 @@
             ]
           }
         ],
-        "subtotal_val": 501196216,
+        "subtotal_val": 501173986,
         "subtotal_qty": 8994,
         "subtotal_pct": 51.67
       },
@@ -12649,9 +12649,9 @@
           },
           {
             "code": "SZ",
-            "val": 77736388,
+            "val": 77656516,
             "pct": 8.01,
-            "qty": 772,
+            "qty": 767,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -12673,15 +12673,15 @@
               },
               {
                 "item": "99995BC4397",
-                "name": "BMW LL-12 FE (20L)",
+                "name": "0W-30 DA5 (20L)",
                 "qty": 240,
                 "val": 3722400
               },
               {
                 "item": "99995BC4396",
-                "name": "BMW LL-01 FE (20L)",
-                "qty": 240,
-                "val": 3686400
+                "name": "0W-30 985 (20L)",
+                "qty": 234,
+                "val": 3606528
               },
               {
                 "item": "61215B80875",
@@ -13286,15 +13286,15 @@
             ]
           }
         ],
-        "subtotal_val": 140756363,
-        "subtotal_qty": 1987,
-        "subtotal_pct": 14.51
+        "subtotal_val": 140676491,
+        "subtotal_qty": 1982,
+        "subtotal_pct": 14.5
       }
     ]
   },
   "oaov": {
     "total": 38312281,
-    "inv_total": 969993892,
+    "inv_total": 969891790,
     "pct": 3.95,
     "oa_val": 18172201,
     "ov_val": 20140080,
@@ -22353,10 +22353,95 @@
         "val": 136907,
         "sa": "M GARAGE",
         "dday": "D+0일"
+      },
+      {
+        "item": "41007482637",
+        "name": "Door, alumin",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000265",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 15:37:08",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 1352520,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51357392369",
+        "name": "Duct cover,",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000265",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 15:37:08",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 85680,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51767416351",
+        "name": "Gap seal doo",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000265",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 15:37:08",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 35883,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51767392341",
+        "name": "Weatherstrip",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000265",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 15:37:08",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 60993,
+        "sa": "강충성",
+        "dday": "D+0일"
+      },
+      {
+        "item": "01297933183",
+        "name": "Template",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000265",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 15:37:08",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 10353,
+        "sa": "강충성",
+        "dday": "D+0일"
       }
     ],
-    "count": 301,
-    "total_val": 86740532,
+    "count": 306,
+    "total_val": 88285961,
     "groups": [
       {
         "code": "RO",
@@ -25386,11 +25471,96 @@
             "val": 109208,
             "sa": "박영묵",
             "dday": "D+0일"
+          },
+          {
+            "item": "41007482637",
+            "name": "Door, alumin",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000265",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 15:37:08",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 1352520,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51357392369",
+            "name": "Duct cover,",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000265",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 15:37:08",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 85680,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51767416351",
+            "name": "Gap seal doo",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000265",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 15:37:08",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 35883,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51767392341",
+            "name": "Weatherstrip",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000265",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 15:37:08",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 60993,
+            "sa": "강충성",
+            "dday": "D+0일"
+          },
+          {
+            "item": "01297933183",
+            "name": "Template",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000265",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 15:37:08",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 10353,
+            "sa": "강충성",
+            "dday": "D+0일"
           }
         ],
-        "count": 178,
-        "qty_sum": 237,
-        "val": 51568356
+        "count": 183,
+        "qty_sum": 242,
+        "val": 53113785
       },
       {
         "code": "SB",
@@ -29097,15 +29267,6 @@
         "val": 86265
       },
       {
-        "item": "51357392369",
-        "name": "Duct cover,",
-        "pgrp": "B1",
-        "alois": "O8",
-        "qty": 1,
-        "avail_qty": 1,
-        "val": 85680
-      },
-      {
         "item": "51337446194",
         "name": "Finisher win",
         "pgrp": "B1",
@@ -32207,15 +32368,6 @@
             "val": 86432
           },
           {
-            "item": "51357392369",
-            "name": "Duct cover,",
-            "pgrp": "B1",
-            "alois": "O8",
-            "qty": 1,
-            "avail_qty": 1,
-            "val": 85680
-          },
-          {
             "item": "13538587546",
             "name": "Overflow oil",
             "pgrp": "B1",
@@ -34061,10 +34213,10 @@
             "val": 432
           }
         ],
-        "count": 263,
-        "qty_sum": 1061,
-        "avail_sum": 1050,
-        "val": 35116616
+        "count": 262,
+        "qty_sum": 1060,
+        "avail_sum": 1049,
+        "val": 35030936
       },
       {
         "code": "OA",
@@ -35921,8 +36073,8 @@
         "val": 5923478
       }
     ],
-    "count": 465,
-    "total_val": 126292628
+    "count": 464,
+    "total_val": 126206948
   },
   "oflow": {
     "rows": [
@@ -38227,8 +38379,8 @@
       },
       {
         "ro": "RO2610000004",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "입고 Proactive-RITA",
         "sa": "최민수",
         "pub": "2026-10-01",
@@ -38590,8 +38742,8 @@
       },
       {
         "ro": "RO2610000084",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-01",
@@ -40064,14 +40216,14 @@
       },
       {
         "ro": "RO2610000245",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 13:05",
         "dday": "D+0일",
-        "amt": 70000
+        "amt": 125900
       },
       {
         "ro": "RO2610000246",
@@ -40130,8 +40282,8 @@
       },
       {
         "ro": "RO2610000251",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-06",
@@ -40273,38 +40425,49 @@
       },
       {
         "ro": "RO2610000265",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 15:22",
         "dday": "D+0일",
-        "amt": 1591200
+        "amt": 2009000
+      },
+      {
+        "ro": "RO2610000266",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "김민규",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 15:36",
+        "dday": "D+0일",
+        "amt": 72400
       }
     ],
-    "count": 389,
-    "total_amt": 829191955,
+    "count": 390,
+    "total_amt": 829738055,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 29,
-        "amt": 40063650
+        "count": 28,
+        "amt": 38472450
       },
       {
         "stat": "상담완료",
-        "count": 165,
-        "amt": 497955788
+        "count": 168,
+        "amt": 503332449
       },
       {
         "stat": "정비시작",
-        "count": 36,
-        "amt": 51159728
+        "count": 35,
+        "amt": 51457691
       },
       {
         "stat": "End Control 요청",
         "count": 77,
-        "amt": 97497785
+        "amt": 93960461
       },
       {
         "stat": "공정마감",
@@ -41924,46 +42087,14 @@
         "count": 3,
         "qty_sum": 3,
         "val": 577937
-      },
-      {
-        "code": "SB2609001978",
-        "resv_full": "2026-10-06 15:00",
-        "resv": "10-06",
-        "dday": "오늘",
-        "sa": "우종훈",
-        "rows": [
-          {
-            "item": "12415BA2AE6",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 9,
-            "avail_qty": 0,
-            "val": 568490
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 34,
-            "avail_qty": 20,
-            "val": 8322
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 576812
       }
     ],
-    "sb_count": 48,
-    "line_count": 106,
-    "total_val": 17586387,
+    "sb_count": 47,
+    "line_count": 104,
+    "total_val": 17009575,
     "o_lines": 28,
     "o_val": 6298226,
-    "resv_total": 12078
+    "resv_total": 12072
   },
   "sbresv": {
     "groups": [
@@ -44989,7 +45120,7 @@
     "total_val": 47969439,
     "o_lines": 60,
     "o_val": 17723961,
-    "resv_total": 382
+    "resv_total": 381
   },
   "sbcar": {
     "groups": [
@@ -45031,7 +45162,7 @@
     "total_val": 576812,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10086
+    "resv_total": 10087
   },
   "nonmng": {
     "rows": [],
@@ -46380,7 +46511,7 @@
         "item": "11428507683",
         "name": "Filt.Element",
         "alois": "A2",
-        "qty": 6,
+        "qty": 5,
         "no": 167
       },
       {
