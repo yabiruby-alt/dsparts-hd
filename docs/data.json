@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 16:20 기준",
+    "generated_at": "10월 6일 (화) · 16:31 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,8 +16,8 @@
     "top5": []
   },
   "inv": {
-    "total": 964994092,
-    "item_count": 2164,
+    "total": 964909768,
+    "item_count": 2163,
     "code_count": 25,
     "alois_groups": [
       {
@@ -2486,7 +2486,7 @@
           {
             "code": "A6",
             "val": 99723925,
-            "pct": 10.33,
+            "pct": 10.34,
             "qty": 1503,
             "parts": [
               {
@@ -4654,7 +4654,7 @@
         ],
         "subtotal_val": 497280038,
         "subtotal_qty": 8962,
-        "subtotal_pct": 51.53
+        "subtotal_pct": 51.54
       },
       {
         "code": "L",
@@ -5485,9 +5485,9 @@
           },
           {
             "code": "L7",
-            "val": 58960166,
+            "val": 58908894,
             "pct": 6.11,
-            "qty": 1275,
+            "qty": 1274,
             "parts": [
               {
                 "item": "11419895359",
@@ -6634,12 +6634,6 @@
                 "name": "Lettering",
                 "qty": 1,
                 "val": 51322
-              },
-              {
-                "item": "64319127516",
-                "name": "Filter",
-                "qty": 1,
-                "val": 51272
               },
               {
                 "item": "51118067656",
@@ -7862,9 +7856,9 @@
             ]
           }
         ],
-        "subtotal_val": 138177473,
-        "subtotal_qty": 4203,
-        "subtotal_pct": 14.32
+        "subtotal_val": 138126201,
+        "subtotal_qty": 4202,
+        "subtotal_pct": 14.31
       },
       {
         "code": "O",
@@ -10107,9 +10101,9 @@
           },
           {
             "code": "OA",
-            "val": 18172201,
+            "val": 18139149,
             "pct": 1.88,
-            "qty": 198,
+            "qty": 197,
             "parts": [
               {
                 "item": "63118496163",
@@ -10208,12 +10202,6 @@
                 "val": 275598
               },
               {
-                "item": "13718509032",
-                "name": "Filter elmnt",
-                "qty": 8,
-                "val": 264416
-              },
-              {
                 "item": "11288479241",
                 "name": "Belt tension REPO",
                 "qty": 2,
@@ -10236,6 +10224,12 @@
                 "name": "Light module",
                 "qty": 1,
                 "val": 231450
+              },
+              {
+                "item": "13718509032",
+                "name": "Filter elmnt",
+                "qty": 7,
+                "val": 231364
               },
               {
                 "item": "11428512283",
@@ -11920,8 +11914,8 @@
             ]
           }
         ],
-        "subtotal_val": 188653622,
-        "subtotal_qty": 2267,
+        "subtotal_val": 188620570,
+        "subtotal_qty": 2266,
         "subtotal_pct": 19.55
       },
       {
@@ -13257,14 +13251,14 @@
     ]
   },
   "oaov": {
-    "total": 38213664,
-    "inv_total": 964994092,
+    "total": 38180612,
+    "inv_total": 964909768,
     "pct": 3.96,
-    "oa_val": 18172201,
+    "oa_val": 18139149,
     "ov_val": 20041463,
     "oa_lines": 85,
     "ov_lines": 100,
-    "oa_qty": 198,
+    "oa_qty": 197,
     "ov_qty": 190,
     "item_count": 185,
     "oa_items": [
@@ -13397,14 +13391,6 @@
         "val": 275598
       },
       {
-        "item": "13718509032",
-        "name": "Filter elmnt",
-        "pgrp": "M1",
-        "alois": "OA",
-        "qty": 8,
-        "val": 264416
-      },
-      {
         "item": "11288479241",
         "name": "Belt tension REPO",
         "pgrp": "B1",
@@ -13435,6 +13421,14 @@
         "alois": "OA",
         "qty": 1,
         "val": 231450
+      },
+      {
+        "item": "13718509032",
+        "name": "Filter elmnt",
+        "pgrp": "M1",
+        "alois": "OA",
+        "qty": 7,
+        "val": 231364
       },
       {
         "item": "11428512283",
@@ -28317,15 +28311,6 @@
         "val": 269280
       },
       {
-        "item": "13718509032",
-        "name": "Filter elmnt",
-        "pgrp": "M1",
-        "alois": "OA",
-        "qty": 8,
-        "avail_qty": 8,
-        "val": 264416
-      },
-      {
         "item": "36122447401",
         "name": "Set of valve(BMW)",
         "pgrp": "B3",
@@ -28414,6 +28399,15 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 231450
+      },
+      {
+        "item": "13718509032",
+        "name": "Filter elmnt",
+        "pgrp": "M1",
+        "alois": "OA",
+        "qty": 7,
+        "avail_qty": 7,
+        "val": 231364
       },
       {
         "item": "51125A35F11",
@@ -34199,15 +34193,6 @@
             "val": 275598
           },
           {
-            "item": "13718509032",
-            "name": "Filter elmnt",
-            "pgrp": "M1",
-            "alois": "OA",
-            "qty": 8,
-            "avail_qty": 8,
-            "val": 264416
-          },
-          {
             "item": "11288479241",
             "name": "Belt tension REPO",
             "pgrp": "B1",
@@ -34242,6 +34227,15 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 231450
+          },
+          {
+            "item": "13718509032",
+            "name": "Filter elmnt",
+            "pgrp": "M1",
+            "alois": "OA",
+            "qty": 7,
+            "avail_qty": 7,
+            "val": 231364
           },
           {
             "item": "11428512283",
@@ -34650,9 +34644,9 @@
           }
         ],
         "count": 57,
-        "qty_sum": 158,
-        "avail_sum": 149,
-        "val": 8220883
+        "qty_sum": 157,
+        "avail_sum": 148,
+        "val": 8187831
       },
       {
         "code": "OE",
@@ -35988,7 +35982,7 @@
       }
     ],
     "count": 464,
-    "total_val": 125789214
+    "total_val": 125756162
   },
   "oflow": {
     "rows": [
@@ -36025,25 +36019,25 @@
       {
         "date": "10-06",
         "in_val": 0,
-        "out_val": 9091559,
-        "net": -9091559
+        "out_val": 9258017,
+        "net": -9258017
       }
     ],
     "total_in": 25749592,
-    "total_out": 19625376,
-    "net": 6124216,
+    "total_out": 19791834,
+    "net": 5957758,
     "by_code": [
       {
         "code": "O8",
         "in_val": 16541683,
-        "out_val": 19306574,
-        "net": -2764891
+        "out_val": 19473032,
+        "net": -2931349
       },
       {
         "code": "OA",
         "in_val": 4471054,
-        "out_val": 195573,
-        "net": 4275481
+        "out_val": 228625,
+        "net": 4242429
       },
       {
         "code": "OE",
@@ -37116,14 +37110,14 @@
       },
       {
         "ro": "RO2610000275",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-18",
         "pub_full": "2026-09-18 17:22",
         "dday": "D+18일",
-        "amt": 0
+        "amt": 250024
       },
       {
         "ro": "RO2609001250",
@@ -38326,8 +38320,8 @@
       },
       {
         "ro": "RO2610000015",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-10-01",
@@ -38348,8 +38342,8 @@
       },
       {
         "ro": "RO2610000018",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "진단",
         "sa": "이정환",
         "pub": "2026-10-01",
@@ -38587,17 +38581,6 @@
         "pub_full": "2026-10-01 14:32",
         "dday": "D+5일",
         "amt": 967670
-      },
-      {
-        "ro": "RO2610000074",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "경수리",
-        "sa": "이정환",
-        "pub": "2026-10-01",
-        "pub_full": "2026-10-01 14:42",
-        "dday": "D+5일",
-        "amt": 376400
       },
       {
         "ro": "RO2610000077",
@@ -39554,7 +39537,7 @@
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 09:03",
         "dday": "D+0일",
-        "amt": 2242200
+        "amt": 2257200
       },
       {
         "ro": "RO2610000185",
@@ -39928,7 +39911,7 @@
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 10:30",
         "dday": "D+0일",
-        "amt": 37628
+        "amt": 1037428
       },
       {
         "ro": "RO2610000227",
@@ -40042,8 +40025,8 @@
       },
       {
         "ro": "RO2610000235",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-06",
@@ -40273,8 +40256,8 @@
       },
       {
         "ro": "RO2610000259",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-06",
@@ -40291,7 +40274,7 @@
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 14:55",
         "dday": "D+0일",
-        "amt": 278024
+        "amt": 0
       },
       {
         "ro": "RO2610000261",
@@ -40437,8 +40420,8 @@
         "amt": 958000
       }
     ],
-    "count": 397,
-    "total_amt": 847194943,
+    "count": 396,
+    "total_amt": 847805343,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40447,18 +40430,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 168,
-        "amt": 498562750
+        "count": 169,
+        "amt": 499949307
       },
       {
         "stat": "정비시작",
         "count": 37,
-        "amt": 53712459
+        "amt": 54241822
       },
       {
         "stat": "End Control 요청",
-        "count": 79,
-        "amt": 94525392
+        "count": 75,
+        "amt": 92389358
       },
       {
         "stat": "공정마감",
@@ -40467,8 +40450,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 82,
-        "amt": 143153092
+        "count": 84,
+        "amt": 143983606
       }
     ],
     "oldest": "D+532일"
@@ -42085,7 +42068,7 @@
     "total_val": 17009575,
     "o_lines": 28,
     "o_val": 6298226,
-    "resv_total": 12072
+    "resv_total": 12073
   },
   "sbresv": {
     "groups": [
@@ -45120,7 +45103,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10090
+    "resv_total": 10091
   },
   "nonmng": {
     "rows": [],
