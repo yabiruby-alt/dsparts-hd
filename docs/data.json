@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 11:54 기준",
+    "generated_at": "10월 6일 (화) · 12:05 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -39211,14 +39211,14 @@
       },
       {
         "ro": "RO2610000178",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 08:25",
         "dday": "D+0일",
-        "amt": 142945
+        "amt": 3327045
       },
       {
         "ro": "RO2610000179",
@@ -39519,8 +39519,8 @@
       },
       {
         "ro": "RO2610000209",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-06",
@@ -39563,8 +39563,8 @@
       },
       {
         "ro": "RO2610000213",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "최민수",
         "pub": "2026-10-06",
@@ -39684,8 +39684,8 @@
       },
       {
         "ro": "RO2610000226",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-06",
@@ -39695,8 +39695,8 @@
       },
       {
         "ro": "RO2610000225",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-10-06",
@@ -39706,8 +39706,8 @@
       },
       {
         "ro": "RO2610000228",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-06",
@@ -39717,8 +39717,8 @@
       },
       {
         "ro": "RO2610000229",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-06",
@@ -39761,8 +39761,8 @@
       },
       {
         "ro": "RO2610000233",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "박영묵",
         "pub": "2026-10-06",
@@ -39772,8 +39772,8 @@
       },
       {
         "ro": "RO2610000234",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-10-06",
@@ -39827,27 +39827,27 @@
       }
     ],
     "count": 374,
-    "total_amt": 800546413,
+    "total_amt": 803730513,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 30,
-        "amt": 41230693
+        "count": 29,
+        "amt": 31553093
       },
       {
         "stat": "상담완료",
-        "count": 161,
-        "amt": 467983509
+        "count": 163,
+        "amt": 480988154
       },
       {
         "stat": "정비시작",
-        "count": 37,
-        "amt": 49041695
+        "count": 30,
+        "amt": 47144313
       },
       {
         "stat": "End Control 요청",
-        "count": 71,
-        "amt": 104435090
+        "count": 77,
+        "amt": 106189527
       },
       {
         "stat": "공정마감",
@@ -44289,7 +44289,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10059
+    "resv_total": 10060
   },
   "nonmng": {
     "rows": [],
