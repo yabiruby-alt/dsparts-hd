@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 13:18 기준",
+    "generated_at": "10월 6일 (화) · 13:30 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,8 +16,8 @@
     "top5": []
   },
   "inv": {
-    "total": 972761230,
-    "item_count": 2173,
+    "total": 972626764,
+    "item_count": 2172,
     "code_count": 25,
     "alois_groups": [
       {
@@ -4688,7 +4688,7 @@
           {
             "code": "L1",
             "val": 21449381,
-            "pct": 2.2,
+            "pct": 2.21,
             "qty": 1663,
             "parts": [
               {
@@ -12661,9 +12661,9 @@
           },
           {
             "code": "SZ",
-            "val": 77870854,
-            "pct": 8.01,
-            "qty": 773,
+            "val": 77736388,
+            "pct": 7.99,
+            "qty": 772,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -12952,12 +12952,6 @@
                 "name": "Repair kit,",
                 "qty": 1,
                 "val": 139867
-              },
-              {
-                "item": "63115A788B8",
-                "name": "Gasket, head",
-                "qty": 1,
-                "val": 134466
               },
               {
                 "item": "16135A3DE80",
@@ -13304,15 +13298,15 @@
             ]
           }
         ],
-        "subtotal_val": 141112036,
-        "subtotal_qty": 1995,
-        "subtotal_pct": 14.51
+        "subtotal_val": 140977570,
+        "subtotal_qty": 1994,
+        "subtotal_pct": 14.49
       }
     ]
   },
   "oaov": {
     "total": 38370013,
-    "inv_total": 972761230,
+    "inv_total": 972626764,
     "pct": 3.94,
     "oa_val": 18229933,
     "ov_val": 20140080,
@@ -22209,10 +22203,61 @@
         "val": 30456,
         "sa": "박성원",
         "dday": "D+0일"
+      },
+      {
+        "item": "61627407273",
+        "name": "WIPER BLADE X3 Rear",
+        "alois": "OE",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000246",
+        "req_qty": 1,
+        "crt_qty": 5,
+        "avail_qty": 4,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 13:19:54",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 24080,
+        "sa": "김민규",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51135A2F5F0",
+        "name": "Trim, front",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000188",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 13:23:14",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 184575,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51115A9C282",
+        "name": "Kit mount PD",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000188",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 13:23:14",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 55680,
+        "sa": "염진아",
+        "dday": "D+0일"
       }
     ],
-    "count": 291,
-    "total_val": 83135300,
+    "count": 294,
+    "total_val": 83399635,
     "groups": [
       {
         "code": "RO",
@@ -25208,11 +25253,62 @@
             "val": 30456,
             "sa": "박성원",
             "dday": "D+0일"
+          },
+          {
+            "item": "61627407273",
+            "name": "WIPER BLADE X3 Rear",
+            "alois": "OE",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000246",
+            "req_qty": 1,
+            "crt_qty": 5,
+            "avail_qty": 4,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 13:19:54",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 24080,
+            "sa": "김민규",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51135A2F5F0",
+            "name": "Trim, front",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000188",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 13:23:14",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 184575,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51115A9C282",
+            "name": "Kit mount PD",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000188",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 13:23:14",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 55680,
+            "sa": "염진아",
+            "dday": "D+0일"
           }
         ],
-        "count": 176,
-        "qty_sum": 234,
-        "val": 51186979
+        "count": 179,
+        "qty_sum": 237,
+        "val": 51451314
       },
       {
         "code": "SB",
@@ -28486,15 +28582,6 @@
         "val": 123808
       },
       {
-        "item": "61627407273",
-        "name": "WIPER BLADE X3 Rear",
-        "pgrp": "B1",
-        "alois": "OE",
-        "qty": 5,
-        "avail_qty": 5,
-        "val": 120400
-      },
-      {
         "item": "12120039634",
         "name": "Spark plug",
         "pgrp": "B1",
@@ -28682,6 +28769,15 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 96712
+      },
+      {
+        "item": "61627407273",
+        "name": "WIPER BLADE X3 Rear",
+        "pgrp": "B1",
+        "alois": "OE",
+        "qty": 5,
+        "avail_qty": 4,
+        "val": 96320
       },
       {
         "item": "51648491817",
@@ -34863,15 +34959,6 @@
             "val": 124200
           },
           {
-            "item": "61627407273",
-            "name": "WIPER BLADE X3 Rear",
-            "pgrp": "B1",
-            "alois": "OE",
-            "qty": 5,
-            "avail_qty": 5,
-            "val": 120400
-          },
-          {
             "item": "61627442093",
             "name": "Wiper blade F40 G05 Rear",
             "pgrp": "B1",
@@ -34924,6 +35011,15 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 103584
+          },
+          {
+            "item": "61627407273",
+            "name": "WIPER BLADE X3 Rear",
+            "pgrp": "B1",
+            "alois": "OE",
+            "qty": 5,
+            "avail_qty": 4,
+            "val": 96320
           },
           {
             "item": "90200007300",
@@ -35117,8 +35213,8 @@
         ],
         "count": 89,
         "qty_sum": 600,
-        "avail_sum": 597,
-        "val": 76919911
+        "avail_sum": 596,
+        "val": 76895831
       },
       {
         "code": "ON",
@@ -35644,7 +35740,7 @@
       }
     ],
     "count": 467,
-    "total_val": 126554854
+    "total_val": 126530774
   },
   "oflow": {
     "rows": [
@@ -39290,17 +39386,6 @@
         "amt": 4146900
       },
       {
-        "ro": "RO2610000188",
-        "stat": "상담시작",
-        "stat_cd": "01",
-        "svc": "사고수리",
-        "sa": "염진아",
-        "pub": "2026-10-06",
-        "pub_full": "2026-10-06 09:06",
-        "dday": "D+0일",
-        "amt": 970890
-      },
-      {
         "ro": "RO2610000186",
         "stat": "상담시작",
         "stat_cd": "01",
@@ -39310,6 +39395,17 @@
         "pub_full": "2026-10-06 09:06",
         "dday": "D+0일",
         "amt": 11736500
+      },
+      {
+        "ro": "RO2610000188",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "염진아",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:06",
+        "dday": "D+0일",
+        "amt": 970890
       },
       {
         "ro": "RO2610000187",
@@ -39786,8 +39882,8 @@
       },
       {
         "ro": "RO2610000236",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-10-06",
@@ -39797,14 +39893,14 @@
       },
       {
         "ro": "RO2610000237",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 11:37",
         "dday": "D+0일",
-        "amt": 203014
+        "amt": 153280
       },
       {
         "ro": "RO2610000238",
@@ -39874,33 +39970,55 @@
       },
       {
         "ro": "RO2610000246",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 13:16",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 160548
+      },
+      {
+        "ro": "RO2610000247",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "안준영",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 13:22",
+        "dday": "D+0일",
+        "amt": 56000
+      },
+      {
+        "ro": "RO2610000248",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "최민수",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 13:28",
+        "dday": "D+0일",
+        "amt": 37628
       }
     ],
-    "count": 378,
-    "total_amt": 812074070,
+    "count": 380,
+    "total_amt": 812278512,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 29,
-        "amt": 39142693
+        "count": 27,
+        "amt": 38171803
       },
       {
         "stat": "상담완료",
-        "count": 165,
-        "amt": 480267560
+        "count": 167,
+        "amt": 481233612
       },
       {
         "stat": "정비시작",
-        "count": 32,
-        "amt": 48640264
+        "count": 34,
+        "amt": 48849544
       },
       {
         "stat": "End Control 요청",
@@ -44315,7 +44433,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10067
+    "resv_total": 10070
   },
   "nonmng": {
     "rows": [],
