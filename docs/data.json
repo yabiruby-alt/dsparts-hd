@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 09:41 기준",
+    "generated_at": "10월 6일 (화) · 09:53 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,7 +16,7 @@
     "top5": []
   },
   "inv": {
-    "total": 979912248,
+    "total": 979900168,
     "item_count": 2188,
     "code_count": 25,
     "alois_groups": [
@@ -4687,9 +4687,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 22756362,
+            "val": 22744282,
             "pct": 2.32,
-            "qty": 1765,
+            "qty": 1764,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4700,8 +4700,8 @@
               {
                 "item": "83135A82511",
                 "name": "Brake fluid",
-                "qty": 270,
-                "val": 3261600
+                "qty": 269,
+                "val": 3249520
               },
               {
                 "item": "83212469985",
@@ -7880,8 +7880,8 @@
             ]
           }
         ],
-        "subtotal_val": 139502809,
-        "subtotal_qty": 4379,
+        "subtotal_val": 139490729,
+        "subtotal_qty": 4378,
         "subtotal_pct": 14.24
       },
       {
@@ -13402,7 +13402,7 @@
   },
   "oaov": {
     "total": 38987985,
-    "inv_total": 979912248,
+    "inv_total": 979900168,
     "pct": 3.98,
     "oa_val": 18294144,
     "ov_val": 20693841,
@@ -22192,10 +22192,27 @@
         "val": 231775,
         "sa": "염진아",
         "dday": "D+0일"
+      },
+      {
+        "item": "41009621597",
+        "name": "Side panel,",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000192",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 09:42:22",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 366321,
+        "sa": "강충성",
+        "dday": "D+0일"
       }
     ],
-    "count": 278,
-    "total_val": 76381920,
+    "count": 279,
+    "total_val": 76748241,
     "groups": [
       {
         "code": "RO",
@@ -24970,11 +24987,28 @@
             "val": 231775,
             "sa": "염진아",
             "dday": "D+0일"
+          },
+          {
+            "item": "41009621597",
+            "name": "Side panel,",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000192",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 09:42:22",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 366321,
+            "sa": "강충성",
+            "dday": "D+0일"
           }
         ],
-        "count": 163,
-        "qty_sum": 243,
-        "val": 47512526
+        "count": 164,
+        "qty_sum": 244,
+        "val": 47878847
       },
       {
         "code": "SB",
@@ -39203,7 +39237,7 @@
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 08:25",
         "dday": "D+0일",
-        "amt": 114724
+        "amt": 142945
       },
       {
         "ro": "RO2610000179",
@@ -39269,7 +39303,7 @@
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 09:03",
         "dday": "D+0일",
-        "amt": 769800
+        "amt": 28000
       },
       {
         "ro": "RO2610000185",
@@ -39317,8 +39351,8 @@
       },
       {
         "ro": "RO2610000189",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-10-06",
@@ -39339,8 +39373,8 @@
       },
       {
         "ro": "RO2610000191",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-06",
@@ -39350,14 +39384,14 @@
       },
       {
         "ro": "RO2610000192",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 09:17",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 629800
       },
       {
         "ro": "RO2610000195",
@@ -39460,14 +39494,14 @@
       },
       {
         "ro": "RO2610000203",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Proactive-일반",
         "sa": "정용환",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 09:37",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 133724
       },
       {
         "ro": "RO2610000204",
@@ -39493,38 +39527,93 @@
       },
       {
         "ro": "RO2610000206",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 09:42",
         "dday": "D+0일",
+        "amt": 131216
+      },
+      {
+        "ro": "RO2610000207",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "이정환",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:43",
+        "dday": "D+0일",
+        "amt": 37628
+      },
+      {
+        "ro": "RO2610000208",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "강충성",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:45",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000209",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:47",
+        "dday": "D+0일",
+        "amt": 412615
+      },
+      {
+        "ro": "RO2610000210",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Recall/TC",
+        "sa": "안준영",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:53",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000211",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "입고 Proactive-RITA",
+        "sa": "최민수",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:54",
+        "dday": "D+0일",
         "amt": 0
       }
     ],
-    "count": 347,
-    "total_amt": 764205214,
+    "count": 352,
+    "total_amt": 764836618,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 34,
-        "amt": 27349803
+        "amt": 26608003
       },
       {
         "stat": "상담완료",
-        "count": 149,
-        "amt": 447781065
+        "count": 154,
+        "amt": 449126048
       },
       {
         "stat": "정비시작",
-        "count": 33,
-        "amt": 55756222
+        "count": 31,
+        "amt": 55734443
       },
       {
         "stat": "End Control 요청",
-        "count": 65,
-        "amt": 104154440
+        "count": 67,
+        "amt": 104204440
       },
       {
         "stat": "공정마감",
@@ -40322,8 +40411,8 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 2,
-            "crt_qty": 270,
-            "avail_qty": 261,
+            "crt_qty": 269,
+            "avail_qty": 259,
             "val": 24160
           }
         ],
@@ -40468,8 +40557,8 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 270,
-            "avail_qty": 261,
+            "crt_qty": 269,
+            "avail_qty": 259,
             "val": 12080
           }
         ],
@@ -40737,7 +40826,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 20,
-            "avail_qty": 14,
+            "avail_qty": 13,
             "val": 7080
           }
         ],
@@ -40875,7 +40964,7 @@
             "sa": "안준영",
             "req_qty": 5,
             "crt_qty": 383,
-            "avail_qty": 350,
+            "avail_qty": 345,
             "val": 80215
           },
           {
@@ -41000,8 +41089,8 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 2,
-            "crt_qty": 270,
-            "avail_qty": 261,
+            "crt_qty": 269,
+            "avail_qty": 259,
             "val": 24160
           }
         ],
@@ -41023,7 +41112,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 1584,
-            "avail_qty": 1583,
+            "avail_qty": 1582,
             "val": 112892
           },
           {
@@ -41032,7 +41121,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 207,
+            "crt_qty": 202,
             "avail_qty": 162,
             "val": 84282
           },
@@ -41042,8 +41131,8 @@
             "alois": "A1",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 183,
-            "avail_qty": 177,
+            "crt_qty": 182,
+            "avail_qty": 176,
             "val": 19920
           }
         ],
@@ -41075,7 +41164,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 383,
-            "avail_qty": 350,
+            "avail_qty": 345,
             "val": 80215
           },
           {
@@ -41084,8 +41173,8 @@
             "alois": "A1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 183,
-            "avail_qty": 177,
+            "crt_qty": 182,
+            "avail_qty": 176,
             "val": 19920
           }
         ],
@@ -41225,7 +41314,7 @@
     "total_val": 18427185,
     "o_lines": 28,
     "o_val": 6298226,
-    "resv_total": 12075
+    "resv_total": 12076
   },
   "sbresv": {
     "groups": [
@@ -42846,7 +42935,7 @@
             "alois": "L1",
             "sa": "M GARAGE",
             "req_qty": 7,
-            "crt_qty": 207,
+            "crt_qty": 202,
             "avail_qty": 162,
             "val": 107268
           },
@@ -43331,7 +43420,7 @@
             "sa": "안준영",
             "req_qty": 6,
             "crt_qty": 383,
-            "avail_qty": 350,
+            "avail_qty": 345,
             "val": 99314
           },
           {
@@ -44173,7 +44262,7 @@
     "total_val": 47212151,
     "o_lines": 62,
     "o_val": 17937348,
-    "resv_total": 381
+    "resv_total": 382
   },
   "sbcar": {
     "groups": [],
@@ -44182,7 +44271,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10030
+    "resv_total": 10033
   },
   "nonmng": {
     "rows": [],
@@ -44227,7 +44316,7 @@
         "item": "83135A82511",
         "name": "Brake fluid",
         "alois": "L1",
-        "qty": 270,
+        "qty": 269,
         "no": 4
       },
       {
