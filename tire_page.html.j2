@@ -189,7 +189,7 @@
       var filtered = items.filter(function(t){
         if(q && (t.filter_key || '').indexOf(q) === -1) return false;
         if(brand && t.brand !== brand) return false;
-        if(rft && t.std_rft !== rft) return false;
+        if(rft && (rft === 'RFT' ? (t.std_rft !== 'RFT' && t.std_rft !== 'RSC') : t.std_rft !== rft)) return false;
         var isRe = String(t.oe||'').trim().toUpperCase() === 'RE';
         if(re === 'RE' && !isRe) return false;
         if(re === 'OE' && isRe) return false;
@@ -209,7 +209,7 @@
       }
       filtered.forEach(function(t, i){
         var tr = document.createElement('tr');
-        var rftHtml = t.std_rft === 'RFT' ? '<span class="rft-tag">RFT</span>' : esc(t.std_rft);
+        var rftHtml = (t.std_rft === 'RFT' || t.std_rft === 'RSC') ? '<span class="rft-tag">'+esc(t.std_rft)+'</span>' : esc(t.std_rft);
         var oeHtml = String(t.oe||'').trim().toUpperCase() === 'RE' ? '<span class="rft-tag">'+esc(t.oe)+'</span>' : esc(t.oe);
         tr.innerHTML = '<td class="num">'+(i+1)+'</td><td class="mono">'+esc(t.pn)+'</td><td>'+esc(t.name)+'</td><td>'+esc(t.brand)+'</td><td class="mono">'+esc(t.mat_no)+'</td><td class="mono">'+esc(t.sale_tp)+'</td><td class="mono">'+esc(t.size)+'</td><td>'+rftHtml+'</td><td>'+esc(t.sw)+'</td><td>'+oeHtml+'</td><td>'+esc(t.qr)+'</td><td class="num">'+fmtMoney(t.price)+'</td>';
         tbody.appendChild(tr);
