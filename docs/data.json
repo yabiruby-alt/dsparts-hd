@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 12:17 기준",
+    "generated_at": "10월 6일 (화) · 12:29 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -39824,19 +39824,41 @@
         "pub_full": "2026-10-06 11:40",
         "dday": "D+0일",
         "amt": 112884
+      },
+      {
+        "ro": "RO2610000242",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 12:27",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000241",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "입고 Proactive-RITA",
+        "sa": "최민수",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 12:27",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 374,
+    "count": 376,
     "total_amt": 815461013,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 29,
+        "count": 30,
         "amt": 43270393
       },
       {
         "stat": "상담완료",
-        "count": 163,
+        "count": 164,
         "amt": 481001354
       },
       {
@@ -44280,7 +44302,7 @@
     "total_val": 46067327,
     "o_lines": 58,
     "o_val": 17563675,
-    "resv_total": 387
+    "resv_total": 385
   },
   "sbcar": {
     "groups": [],
@@ -44289,7 +44311,7 @@
     "total_val": 0,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10060
+    "resv_total": 10062
   },
   "nonmng": {
     "rows": [],
