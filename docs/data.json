@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 08:55 기준",
+    "generated_at": "10월 6일 (화) · 09:07 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,8 +16,8 @@
     "top5": []
   },
   "inv": {
-    "total": 984875813,
-    "item_count": 2198,
+    "total": 984862688,
+    "item_count": 2197,
     "code_count": 25,
     "alois_groups": [
       {
@@ -5515,9 +5515,9 @@
           },
           {
             "code": "L7",
-            "val": 58003358,
+            "val": 57990233,
             "pct": 5.89,
-            "qty": 1283,
+            "qty": 1282,
             "parts": [
               {
                 "item": "11419895359",
@@ -7602,12 +7602,6 @@
                 "val": 13344
               },
               {
-                "item": "83195B4D4F9",
-                "name": "Lubricat.mat",
-                "qty": 1,
-                "val": 13125
-              },
-              {
                 "item": "51165A356A9",
                 "name": "Set of screw",
                 "qty": 1,
@@ -7898,9 +7892,9 @@
             ]
           }
         ],
-        "subtotal_val": 140497546,
-        "subtotal_qty": 4416,
-        "subtotal_pct": 14.27
+        "subtotal_val": 140484421,
+        "subtotal_qty": 4415,
+        "subtotal_pct": 14.26
       },
       {
         "code": "O",
@@ -13462,7 +13456,7 @@
   },
   "oaov": {
     "total": 39186196,
-    "inv_total": 984875813,
+    "inv_total": 984862688,
     "pct": 3.98,
     "oa_val": 18294144,
     "ov_val": 20892052,
@@ -20969,40 +20963,6 @@
         "dday": "D+6일"
       },
       {
-        "item": "31106780613",
-        "name": "Combin.nut",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609002041",
-        "req_qty": 2,
-        "crt_qty": 4,
-        "avail_qty": 0,
-        "req_dt": "09-30",
-        "req_dt_full": "2026-09-30 08:30:04",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 28310,
-        "sa": "김민규",
-        "dday": "D+6일"
-      },
-      {
-        "item": "31106866023",
-        "name": "Clip nut",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2609002041",
-        "req_qty": 2,
-        "crt_qty": 4,
-        "avail_qty": 0,
-        "req_dt": "09-30",
-        "req_dt_full": "2026-09-30 08:30:42",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 10618,
-        "sa": "김민규",
-        "dday": "D+6일"
-      },
-      {
         "item": "11718579364",
         "name": "Gasket Steel",
         "alois": "O8",
@@ -22361,10 +22321,61 @@
         "val": 24080,
         "sa": "우종훈",
         "dday": "D+0일"
+      },
+      {
+        "item": "31106780613",
+        "name": "Combin.nut",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000182",
+        "req_qty": 2,
+        "crt_qty": 4,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 08:59:45",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 28310,
+        "sa": "김민규",
+        "dday": "D+0일"
+      },
+      {
+        "item": "31106866023",
+        "name": "Clip nut",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000182",
+        "req_qty": 2,
+        "crt_qty": 4,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 08:59:45",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 10618,
+        "sa": "김민규",
+        "dday": "D+0일"
+      },
+      {
+        "item": "22316858990",
+        "name": "ASA-Bolt",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "SB",
+        "ref_no": "SB2610000121",
+        "req_qty": 3,
+        "crt_qty": 6,
+        "avail_qty": 3,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 09:00:10",
+        "req_brch": "AS_진주",
+        "val": 15549,
+        "sa": "김명주",
+        "dday": "D+0일"
       }
     ],
-    "count": 284,
-    "total_val": 76885592,
+    "count": 285,
+    "total_val": 76901141,
     "groups": [
       {
         "code": "RO",
@@ -25224,11 +25235,45 @@
             "val": 24080,
             "sa": "우종훈",
             "dday": "D+0일"
+          },
+          {
+            "item": "31106780613",
+            "name": "Combin.nut",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000182",
+            "req_qty": 2,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 08:59:45",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 28310,
+            "sa": "김민규",
+            "dday": "D+0일"
+          },
+          {
+            "item": "31106866023",
+            "name": "Clip nut",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000182",
+            "req_qty": 2,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 08:59:45",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 10618,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 168,
-        "qty_sum": 246,
-        "val": 47992819
+        "count": 170,
+        "qty_sum": 250,
+        "val": 48031747
       },
       {
         "code": "SB",
@@ -26543,40 +26588,6 @@
             "dday": "D+7일"
           },
           {
-            "item": "31106780613",
-            "name": "Combin.nut",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609002041",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "req_dt": "09-30",
-            "req_dt_full": "2026-09-30 08:30:04",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 28310,
-            "sa": "김민규",
-            "dday": "D+6일"
-          },
-          {
-            "item": "31106866023",
-            "name": "Clip nut",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2609002041",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "req_dt": "09-30",
-            "req_dt_full": "2026-09-30 08:30:42",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 10618,
-            "sa": "김민규",
-            "dday": "D+6일"
-          },
-          {
             "item": "51118082439",
             "name": "Grill, air i",
             "alois": "O8",
@@ -26830,11 +26841,28 @@
             "val": 539856,
             "sa": "M GARAGE",
             "dday": "D+4일"
+          },
+          {
+            "item": "22316858990",
+            "name": "ASA-Bolt",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "SB",
+            "ref_no": "SB2610000121",
+            "req_qty": 3,
+            "crt_qty": 6,
+            "avail_qty": 3,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 09:00:10",
+            "req_brch": "AS_진주",
+            "val": 15549,
+            "sa": "김명주",
+            "dday": "D+0일"
           }
         ],
-        "count": 94,
-        "qty_sum": 133,
-        "val": 24523201
+        "count": 93,
+        "qty_sum": 132,
+        "val": 24499822
       },
       {
         "code": "SP",
@@ -30310,15 +30338,6 @@
         "val": 31185
       },
       {
-        "item": "22316858990",
-        "name": "Star-socket",
-        "pgrp": "B1",
-        "alois": "O8",
-        "qty": 6,
-        "avail_qty": 6,
-        "val": 31098
-      },
-      {
         "item": "26117621344",
         "name": "ASA-Bolt",
         "pgrp": "B1",
@@ -30920,6 +30939,15 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 15663
+      },
+      {
+        "item": "22316858990",
+        "name": "Star-socket",
+        "pgrp": "B1",
+        "alois": "O8",
+        "qty": 6,
+        "avail_qty": 3,
+        "val": 15549
       },
       {
         "item": "32106871896",
@@ -33015,15 +33043,6 @@
             "val": 31185
           },
           {
-            "item": "22316858990",
-            "name": "Star-socket",
-            "pgrp": "B1",
-            "alois": "O8",
-            "qty": 6,
-            "avail_qty": 6,
-            "val": 31098
-          },
-          {
             "item": "26117621344",
             "name": "ASA-Bolt",
             "pgrp": "B1",
@@ -33436,6 +33455,15 @@
             "qty": 1,
             "avail_qty": 1,
             "val": 15663
+          },
+          {
+            "item": "22316858990",
+            "name": "Star-socket",
+            "pgrp": "B1",
+            "alois": "O8",
+            "qty": 6,
+            "avail_qty": 3,
+            "val": 15549
           },
           {
             "item": "32106871896",
@@ -33944,8 +33972,8 @@
         ],
         "count": 268,
         "qty_sum": 1069,
-        "avail_sum": 1058,
-        "val": 35417088
+        "avail_sum": 1055,
+        "val": 35401539
       },
       {
         "code": "OA",
@@ -35875,7 +35903,7 @@
       }
     ],
     "count": 478,
-    "total_val": 130570051
+    "total_val": 130554502
   },
   "oflow": {
     "rows": [
@@ -39012,7 +39040,7 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 11:56",
         "dday": "D+4일",
-        "amt": 84000
+        "amt": 1405000
       },
       {
         "ro": "RO2610000134",
@@ -39467,8 +39495,8 @@
       },
       {
         "ro": "RO2610000178",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-10-06",
@@ -39478,14 +39506,14 @@
       },
       {
         "ro": "RO2610000179",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 08:26",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 56000
       },
       {
         "ro": "RO2610000180",
@@ -39497,25 +39525,124 @@
         "pub_full": "2026-10-06 08:53",
         "dday": "D+0일",
         "amt": 2525036
+      },
+      {
+        "ro": "RO2610000181",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 08:56",
+        "dday": "D+0일",
+        "amt": 461464
+      },
+      {
+        "ro": "RO2610000182",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "김민규",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 08:59",
+        "dday": "D+0일",
+        "amt": 1785920
+      },
+      {
+        "ro": "RO2610000183",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "김민규",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:01",
+        "dday": "D+0일",
+        "amt": 56000
+      },
+      {
+        "ro": "RO2610000184",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:03",
+        "dday": "D+0일",
+        "amt": 769800
+      },
+      {
+        "ro": "RO2610000185",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "염진아",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:05",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000188",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "염진아",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:06",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000187",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:06",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000186",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "염진아",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:06",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000189",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "진단",
+        "sa": "김민규",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 09:07",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 322,
-    "total_amt": 754757388,
+    "count": 331,
+    "total_amt": 759207572,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 27,
-        "amt": 26580003
+        "count": 32,
+        "amt": 27349803
       },
       {
         "stat": "상담완료",
-        "count": 142,
-        "amt": 448278887
+        "count": 145,
+        "amt": 451844547
       },
       {
         "stat": "정비시작",
-        "count": 24,
-        "amt": 51772861
+        "count": 25,
+        "amt": 51887585
       },
       {
         "stat": "End Control 요청",
@@ -43820,6 +43947,28 @@
         "val": 69000
       },
       {
+        "code": "SB2610000121",
+        "resv_full": "2026-10-06 16:00",
+        "resv": "10-06",
+        "dday": "오늘",
+        "sa": "최민수",
+        "rows": [
+          {
+            "item": "22316858990",
+            "name": "ASA-Bolt",
+            "alois": "O8",
+            "sa": "최민수",
+            "req_qty": 3,
+            "crt_qty": 6,
+            "avail_qty": 3,
+            "val": 15549
+          }
+        ],
+        "count": 1,
+        "qty_sum": 3,
+        "val": 15549
+      },
+      {
         "code": "SB2609001978",
         "resv_full": "2026-10-06 15:00",
         "resv": "10-06",
@@ -44194,224 +44343,21 @@
         "val": 577937
       }
     ],
-    "sb_count": 61,
-    "line_count": 232,
-    "total_val": 50159464,
-    "o_lines": 63,
-    "o_val": 18142365,
-    "resv_total": 396
+    "sb_count": 62,
+    "line_count": 233,
+    "total_val": 50175013,
+    "o_lines": 64,
+    "o_val": 18157914,
+    "resv_total": 392
   },
   "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609002041",
-        "resv_full": "2026-10-06 08:46",
-        "resv": "10-06",
-        "dday": "오늘",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "11418646454",
-            "name": "Oil pump",
-            "alois": "A6",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 28,
-            "avail_qty": 27,
-            "val": 502656
-          },
-          {
-            "item": "31508860349",
-            "name": "Repair kit o",
-            "alois": "A4",
-            "sa": "김민규",
-            "req_qty": 2,
-            "crt_qty": 5,
-            "avail_qty": 1,
-            "val": 77498
-          },
-          {
-            "item": "31106870648",
-            "name": "Hex bolt wit",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 12,
-            "crt_qty": 24,
-            "avail_qty": 0,
-            "val": 47736
-          },
-          {
-            "item": "31106780613",
-            "name": "Combin.nut",
-            "alois": "O8",
-            "sa": "김민규",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "val": 28310
-          },
-          {
-            "item": "31206866022",
-            "name": "Collar screw",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 2,
-            "crt_qty": 8,
-            "avail_qty": 0,
-            "val": 27182
-          },
-          {
-            "item": "31106872062",
-            "name": "Hex bolt wit",
-            "alois": "A5",
-            "sa": "김민규",
-            "req_qty": 4,
-            "crt_qty": 10,
-            "avail_qty": 2,
-            "val": 21904
-          },
-          {
-            "item": "33306760349",
-            "name": "Nut",
-            "alois": "A2",
-            "sa": "김민규",
-            "req_qty": 4,
-            "crt_qty": 61,
-            "avail_qty": 45,
-            "val": 15756
-          },
-          {
-            "item": "31106872063",
-            "name": "Hex bolt wit",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 2,
-            "crt_qty": 6,
-            "avail_qty": 1,
-            "val": 11050
-          },
-          {
-            "item": "31106866023",
-            "name": "Clip nut",
-            "alois": "O8",
-            "sa": "김민규",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "val": 10618
-          },
-          {
-            "item": "33306760585",
-            "name": "Combin.nut",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "val": 10044
-          },
-          {
-            "item": "33306787062",
-            "name": "Combin.nut",
-            "alois": "A2",
-            "sa": "김민규",
-            "req_qty": 2,
-            "crt_qty": 49,
-            "avail_qty": 43,
-            "val": 8904
-          },
-          {
-            "item": "31106765451",
-            "name": "Combin.nut",
-            "alois": "A3",
-            "sa": "김민규",
-            "req_qty": 2,
-            "crt_qty": 16,
-            "avail_qty": 12,
-            "val": 7026
-          },
-          {
-            "item": "33117525064",
-            "name": "Screw plug",
-            "alois": "A1",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 135,
-            "avail_qty": 123,
-            "val": 6743
-          },
-          {
-            "item": "11418612615",
-            "name": "ASA-Bolt",
-            "alois": "A5",
-            "sa": "김민규",
-            "req_qty": 4,
-            "crt_qty": 16,
-            "avail_qty": 8,
-            "val": 5256
-          },
-          {
-            "item": "33131214961",
-            "name": "Lock Ring",
-            "alois": "A4",
-            "sa": "김민규",
-            "req_qty": 2,
-            "crt_qty": 19,
-            "avail_qty": 13,
-            "val": 3496
-          },
-          {
-            "item": "11121726238",
-            "name": "Dowel",
-            "alois": "A5",
-            "sa": "김민규",
-            "req_qty": 2,
-            "crt_qty": 11,
-            "avail_qty": 7,
-            "val": 1754
-          },
-          {
-            "item": "11417823426",
-            "name": "ISA screw",
-            "alois": "A5",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 6,
-            "avail_qty": 4,
-            "val": 1753
-          },
-          {
-            "item": "32306778609",
-            "name": "Torx bolt",
-            "alois": "SK",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 0,
-            "val": 1470
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L3",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 106,
-            "avail_qty": 96,
-            "val": 1125
-          }
-        ],
-        "count": 19,
-        "qty_sum": 49,
-        "val": 790281
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 19,
-    "total_val": 790281,
-    "o_lines": 2,
-    "o_val": 38928,
-    "resv_total": 10005
+    "groups": [],
+    "sb_count": 0,
+    "line_count": 0,
+    "total_val": 0,
+    "o_lines": 0,
+    "o_val": 0,
+    "resv_total": 10015
   },
   "nonmng": {
     "rows": [
