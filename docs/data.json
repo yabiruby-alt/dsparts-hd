@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 15:20 기준",
+    "generated_at": "10월 6일 (화) · 15:32 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -22336,10 +22336,27 @@
         "val": 28310,
         "sa": "이정환",
         "dday": "D+0일"
+      },
+      {
+        "item": "51472473240",
+        "name": "Floor liner",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SB",
+        "ref_no": "SB2610000294",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-06",
+        "req_dt_full": "2026-10-06 15:23:55",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 136907,
+        "sa": "M GARAGE",
+        "dday": "D+0일"
       }
     ],
-    "count": 300,
-    "total_val": 86603625,
+    "count": 301,
+    "total_val": 86740532,
     "groups": [
       {
         "code": "RO",
@@ -26907,11 +26924,28 @@
             "val": 28310,
             "sa": "이정환",
             "dday": "D+0일"
+          },
+          {
+            "item": "51472473240",
+            "name": "Floor liner",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SB",
+            "ref_no": "SB2610000294",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-06",
+            "req_dt_full": "2026-10-06 15:23:55",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 136907,
+            "sa": "M GARAGE",
+            "dday": "D+0일"
           }
         ],
-        "count": 90,
-        "qty_sum": 129,
-        "val": 24149528
+        "count": 91,
+        "qty_sum": 130,
+        "val": 24286435
       },
       {
         "code": "SP",
@@ -36884,14 +36918,14 @@
       },
       {
         "ro": "RO2609001071",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-09-17",
         "pub_full": "2026-09-17 07:49",
         "dday": "D+19일",
-        "amt": 56000
+        "amt": 21376800
       },
       {
         "ro": "RO2609001076",
@@ -37885,8 +37919,8 @@
       },
       {
         "ro": "RO2609001720",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "소음",
         "sa": "최민수",
         "pub": "2026-09-30",
@@ -38050,14 +38084,14 @@
       },
       {
         "ro": "RO2609001761",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-09-30",
         "pub_full": "2026-09-30 11:55",
         "dday": "D+6일",
-        "amt": 1164200
+        "amt": 28000
       },
       {
         "ro": "RO2609001763",
@@ -40008,8 +40042,8 @@
       },
       {
         "ro": "RO2610000243",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-06",
@@ -40206,8 +40240,8 @@
       },
       {
         "ro": "RO2610000262",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-06",
@@ -40217,14 +40251,14 @@
       },
       {
         "ro": "RO2610000263",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "입고 Proactive-RITA",
-        "sa": "이정환",
+        "sa": "정용환",
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 15:13",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 465600
       },
       {
         "ro": "RO2610000264",
@@ -40236,30 +40270,41 @@
         "pub_full": "2026-10-06 15:18",
         "dday": "D+0일",
         "amt": 387860
+      },
+      {
+        "ro": "RO2610000265",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "강충성",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 15:22",
+        "dday": "D+0일",
+        "amt": 1591200
       }
     ],
-    "count": 388,
-    "total_amt": 806950555,
+    "count": 389,
+    "total_amt": 829191955,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 29,
-        "amt": 38472450
+        "amt": 40063650
       },
       {
         "stat": "상담완료",
-        "count": 163,
-        "amt": 476113388
+        "count": 165,
+        "amt": 497955788
       },
       {
         "stat": "정비시작",
         "count": 36,
-        "amt": 51470651
+        "amt": 51159728
       },
       {
         "stat": "End Control 요청",
-        "count": 79,
-        "amt": 100251462
+        "count": 77,
+        "amt": 97497785
       },
       {
         "stat": "공정마감",
@@ -40268,8 +40313,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 80,
-        "amt": 135630204
+        "count": 81,
+        "amt": 137502604
       }
     ],
     "oldest": "D+532일"
@@ -41879,14 +41924,46 @@
         "count": 3,
         "qty_sum": 3,
         "val": 577937
+      },
+      {
+        "code": "SB2609001978",
+        "resv_full": "2026-10-06 15:00",
+        "resv": "10-06",
+        "dday": "오늘",
+        "sa": "우종훈",
+        "rows": [
+          {
+            "item": "12415BA2AE6",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 9,
+            "avail_qty": 0,
+            "val": 568490
+          },
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 34,
+            "avail_qty": 20,
+            "val": 8322
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 576812
       }
     ],
-    "sb_count": 47,
-    "line_count": 104,
-    "total_val": 17009575,
+    "sb_count": 48,
+    "line_count": 106,
+    "total_val": 17586387,
     "o_lines": 28,
     "o_val": 6298226,
-    "resv_total": 12076
+    "resv_total": 12078
   },
   "sbresv": {
     "groups": [
@@ -43829,6 +43906,58 @@
         "val": 609616
       },
       {
+        "code": "SB2609001238",
+        "resv_full": "2026-10-12 10:20",
+        "resv": "10-12",
+        "dday": "D-6일",
+        "sa": "이정환",
+        "rows": [
+          {
+            "item": "11715A7A498",
+            "name": "Exhaust gas",
+            "alois": "SK",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 864017
+          },
+          {
+            "item": "13718513916",
+            "name": "Intake muffl",
+            "alois": "SK",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 308760
+          },
+          {
+            "item": "17128475728",
+            "name": "Hose, expans",
+            "alois": "SK",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 83503
+          },
+          {
+            "item": "11715A9D336",
+            "name": "Pipe union",
+            "alois": "SK",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 26864
+          }
+        ],
+        "count": 4,
+        "qty_sum": 4,
+        "val": 1283144
+      },
+      {
         "code": "SB2609002181",
         "resv_full": "2026-10-12 09:00",
         "resv": "10-12",
@@ -44243,56 +44372,46 @@
         "val": 612921
       },
       {
-        "code": "SB2609001238",
-        "resv_full": "2026-10-08 10:00",
+        "code": "SB2610000294",
+        "resv_full": "2026-10-08 11:00",
         "resv": "10-08",
         "dday": "D-2일",
-        "sa": "이정환",
+        "sa": "M GARAGE",
         "rows": [
           {
-            "item": "11715A7A498",
-            "name": "Exhaust gas",
-            "alois": "SK",
-            "sa": "이정환",
+            "item": "51472473240",
+            "name": "Floor liner",
+            "alois": "O8",
+            "sa": "M GARAGE",
             "req_qty": 1,
-            "crt_qty": 1,
+            "crt_qty": 0,
             "avail_qty": 0,
-            "val": 864017
+            "val": 136907
           },
           {
-            "item": "13718513916",
-            "name": "Intake muffl",
-            "alois": "SK",
-            "sa": "이정환",
+            "item": "51472468590",
+            "name": "Fitted lugga",
+            "alois": "L7",
+            "sa": "M GARAGE",
             "req_qty": 1,
-            "crt_qty": 1,
+            "crt_qty": 0,
             "avail_qty": 0,
-            "val": 308760
+            "val": 134904
           },
           {
-            "item": "17128475728",
-            "name": "Hose, expans",
-            "alois": "SK",
-            "sa": "이정환",
+            "item": "51472462751",
+            "name": "Floor liner",
+            "alois": "L7",
+            "sa": "M GARAGE",
             "req_qty": 1,
             "crt_qty": 1,
             "avail_qty": 0,
-            "val": 83503
-          },
-          {
-            "item": "11715A9D336",
-            "name": "Pipe union",
-            "alois": "SK",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 26864
+            "val": 96635
           }
         ],
-        "count": 4,
-        "qty_sum": 4,
-        "val": 1283144
+        "count": 3,
+        "qty_sum": 3,
+        "val": 368446
       },
       {
         "code": "SB2610000135",
@@ -44863,10 +44982,20 @@
         "count": 1,
         "qty_sum": 1,
         "val": 69000
-      },
+      }
+    ],
+    "sb_count": 58,
+    "line_count": 232,
+    "total_val": 47969439,
+    "o_lines": 60,
+    "o_val": 17723961,
+    "resv_total": 382
+  },
+  "sbcar": {
+    "groups": [
       {
         "code": "SB2609001978",
-        "resv_full": "2026-10-06 15:00",
+        "resv_full": "2026-10-06 15:33",
         "resv": "10-06",
         "dday": "오늘",
         "sa": "우종훈",
@@ -44897,21 +45026,12 @@
         "val": 576812
       }
     ],
-    "sb_count": 58,
-    "line_count": 231,
-    "total_val": 48177805,
-    "o_lines": 59,
-    "o_val": 17587054,
-    "resv_total": 384
-  },
-  "sbcar": {
-    "groups": [],
-    "sb_count": 0,
-    "line_count": 0,
-    "total_val": 0,
+    "sb_count": 1,
+    "line_count": 2,
+    "total_val": 576812,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10084
+    "resv_total": 10086
   },
   "nonmng": {
     "rows": [],
