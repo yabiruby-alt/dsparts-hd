@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 14:51 기준",
+    "generated_at": "10월 6일 (화) · 14:57 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,8 +16,8 @@
     "top5": []
   },
   "inv": {
-    "total": 969666585,
-    "item_count": 2169,
+    "total": 970353681,
+    "item_count": 2170,
     "code_count": 25,
     "alois_groups": [
       {
@@ -28,7 +28,7 @@
           {
             "code": "A1",
             "val": 221992099,
-            "pct": 22.89,
+            "pct": 22.88,
             "qty": 2559,
             "parts": [
               {
@@ -113,9 +113,9 @@
           },
           {
             "code": "A2",
-            "val": 18297804,
-            "pct": 1.89,
-            "qty": 1079,
+            "val": 18290760,
+            "pct": 1.88,
+            "qty": 1073,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -288,8 +288,8 @@
               {
                 "item": "51755A383B7",
                 "name": "Blind compre",
-                "qty": 39,
-                "val": 45786
+                "qty": 33,
+                "val": 38742
               },
               {
                 "item": "07149807127",
@@ -1242,7 +1242,7 @@
           {
             "code": "A5",
             "val": 81996940,
-            "pct": 8.46,
+            "pct": 8.45,
             "qty": 1440,
             "parts": [
               {
@@ -4670,9 +4670,9 @@
             ]
           }
         ],
-        "subtotal_val": 501460208,
-        "subtotal_qty": 9006,
-        "subtotal_pct": 51.71
+        "subtotal_val": 501453164,
+        "subtotal_qty": 9000,
+        "subtotal_pct": 51.68
       },
       {
         "code": "L",
@@ -4844,7 +4844,7 @@
           {
             "code": "L4",
             "val": 17989000,
-            "pct": 1.86,
+            "pct": 1.85,
             "qty": 505,
             "parts": [
               {
@@ -5503,9 +5503,9 @@
           },
           {
             "code": "L7",
-            "val": 58266026,
-            "pct": 6.01,
-            "qty": 1274,
+            "val": 58960166,
+            "pct": 6.08,
+            "qty": 1275,
             "parts": [
               {
                 "item": "11419895359",
@@ -5602,6 +5602,12 @@
                 "name": "Trim cover,",
                 "qty": 1,
                 "val": 723672
+              },
+              {
+                "item": "12418671505",
+                "name": "Starter",
+                "qty": 1,
+                "val": 694140
               },
               {
                 "item": "41009491517",
@@ -7874,9 +7880,9 @@
             ]
           }
         ],
-        "subtotal_val": 137827096,
-        "subtotal_qty": 4224,
-        "subtotal_pct": 14.21
+        "subtotal_val": 138521236,
+        "subtotal_qty": 4225,
+        "subtotal_pct": 14.28
       },
       {
         "code": "O",
@@ -10644,7 +10650,7 @@
           {
             "code": "OE",
             "val": 83198965,
-            "pct": 8.58,
+            "pct": 8.57,
             "qty": 649,
             "parts": [
               {
@@ -11952,7 +11958,7 @@
         ],
         "subtotal_val": 188839638,
         "subtotal_qty": 2270,
-        "subtotal_pct": 19.47
+        "subtotal_pct": 19.46
       },
       {
         "code": "I",
@@ -12644,7 +12650,7 @@
           {
             "code": "SZ",
             "val": 77736388,
-            "pct": 8.02,
+            "pct": 8.01,
             "qty": 772,
             "parts": [
               {
@@ -13282,13 +13288,13 @@
         ],
         "subtotal_val": 140756363,
         "subtotal_qty": 1987,
-        "subtotal_pct": 14.52
+        "subtotal_pct": 14.51
       }
     ]
   },
   "oaov": {
     "total": 38312281,
-    "inv_total": 969666585,
+    "inv_total": 970353681,
     "pct": 3.95,
     "oa_val": 18172201,
     "ov_val": 20140080,
@@ -16799,7 +16805,7 @@
     ],
     "m12_val": 53875824,
     "m12_count": 201,
-    "m12_pct": 5.56,
+    "m12_pct": 5.55,
     "m24_items": [
       {
         "item": "24008741536",
@@ -40186,20 +40192,42 @@
         "pub_full": "2026-10-06 14:33",
         "dday": "D+0일",
         "amt": 938134
+      },
+      {
+        "ro": "RO2610000259",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 14:52",
+        "dday": "D+0일",
+        "amt": 519063
+      },
+      {
+        "ro": "RO2610000260",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-10-06",
+        "pub_full": "2026-10-06 14:55",
+        "dday": "D+0일",
+        "amt": 440824
       }
     ],
-    "count": 384,
-    "total_amt": 817251260,
+    "count": 386,
+    "total_amt": 818211147,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 28,
-        "amt": 38472450
+        "count": 29,
+        "amt": 38913274
       },
       {
         "stat": "상담완료",
-        "count": 162,
-        "amt": 474555575
+        "count": 163,
+        "amt": 475074638
       },
       {
         "stat": "정비시작",
@@ -41538,7 +41566,7 @@
             "sa": "안준영",
             "req_qty": 5,
             "crt_qty": 343,
-            "avail_qty": 315,
+            "avail_qty": 310,
             "val": 80215
           },
           {
@@ -41548,7 +41576,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 20,
-            "avail_qty": 19,
+            "avail_qty": 18,
             "val": 75693
           },
           {
@@ -41558,7 +41586,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 11,
-            "avail_qty": 10,
+            "avail_qty": 9,
             "val": 19665
           }
         ],
@@ -41738,7 +41766,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 343,
-            "avail_qty": 315,
+            "avail_qty": 310,
             "val": 80215
           },
           {
@@ -42757,7 +42785,7 @@
             "alois": "A2",
             "sa": "염진아",
             "req_qty": 3,
-            "crt_qty": 39,
+            "crt_qty": 33,
             "avail_qty": 18,
             "val": 3522
           },
@@ -44068,7 +44096,7 @@
             "sa": "안준영",
             "req_qty": 6,
             "crt_qty": 343,
-            "avail_qty": 315,
+            "avail_qty": 310,
             "val": 99314
           },
           {
@@ -46002,7 +46030,7 @@
         "item": "51755A383B7",
         "name": "Blind compre",
         "alois": "A2",
-        "qty": 39,
+        "qty": 33,
         "no": 145
       },
       {

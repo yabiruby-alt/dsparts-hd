@@ -19,11 +19,13 @@ import io
 import json
 import mimetypes
 import os
+import queue
 import re
 import subprocess
 import sys
 import threading
 import time
+import urllib.parse
 import urllib.request
 import webbrowser
 
@@ -84,7 +86,7 @@ SALES_ENABLED = (SALES_DIR / "sales.py").exists()
 RR_ENABLED = True   # 롤스로이스 DMS 연동 — 켜면 데몬 시작 시 RR 로그인 창이 하나 더 뜸
 RR_BASE_URL = "https://www.rrdms.co.kr"   # 롤스로이스 DMS (같은 My DMS 플랫폼, 별도 계정/세션)
 RR_AUTH_DIR = Path.home() / "AppData" / "Local" / "PartsBayDMS" / "authdata_rr"
-POPUP_PROBE_FILE = BASE_DIR / "popup_probe.log"   # [임시] RDC 재고조회 팝업 요청 주소 확인용 — 확인 후 제거
+STOCK_QUEUE = queue.Queue()       # 부품번호 재고조회 요청(HTTP 스레드 -> 메인 스레드의 DMS 세션으로 처리)
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
 LAST_DATA = {}                    # 마지막 갱신 데이터(사유만 바뀌었을 때 DMS 재조회 없이 재렌더용)
 
@@ -183,6 +185,62 @@ async ({url, body}) => {
   });
 }
 """
+
+
+FETCH_RAW_JS = """
+async ({url, body}) => {
+  return await new Promise((resolve) => {
+    jQuery.ajax({
+      url, type: 'POST', dataType: 'text', contentType: 'application/json',
+      data: JSON.stringify(body),
+      success: (res) => resolve({ok: true, text: res}),
+      error: (xhr) => resolve({ok: false, status: xhr.status, text: (xhr.responseText || '').slice(0, 300)})
+    });
+  });
+}
+"""
+
+
+def lookup_stock(page: Page, pn: str) -> dict:
+    """부품번호 하나의 해운대(우리 지점) 재고 + RDC 재고 원본 응답. DMS 세션을 쓰므로 메인 스레드에서만 호출."""
+    out = {"pn": pn}
+    click_menu(page, "icon-parts", "현재고리스트 조회")
+    frame = wait_for_frame(page, "selectInventListMain")
+    own_body = {
+        "recordCountPerPage": 100, "pageIndex": 1, "firstIndex": 0, "lastIndex": 100,
+        "sCorpCd": DEALER_CD, "sBizAreaCd": BIZ_AREA_CD, "sBrchCd": BRCH_CD,
+        "sProdType": "", "sItemCd": pn, "sItemNm": "", "sStrgeCd": "", "sCrtQtyYn": False,
+    }
+    try:
+        out["own"] = fetch_rows(frame, "/parts/inventory/selectInventoryList.do", own_body)
+    except Exception as e:
+        out["own_error"] = str(e)[:300]
+    rdc_body = {
+        "recordCountPerPage": 30, "pageIndex": 1, "firstIndex": 0, "lastIndex": 30,
+        "sItemCds": [pn], "sRefDocNo": [], "sRefDocLineNo": [], "sView": "saleView",
+    }
+    res = frame.evaluate(FETCH_RAW_JS, {"url": "/parts/cmm/popup/selectRdcPartsPopup.do", "body": rdc_body})
+    if res.get("ok"):
+        try:
+            out["rdc"] = json.loads(res["text"])
+        except ValueError:
+            out["rdc_text"] = (res["text"] or "")[:3000]
+    else:
+        out["rdc_error"] = res
+    return out
+
+
+def serve_stock_requests(page: Page) -> None:
+    while True:
+        try:
+            pn, holder, done = STOCK_QUEUE.get_nowait()
+        except queue.Empty:
+            return
+        try:
+            holder["result"] = lookup_stock(page, pn)
+        except Exception as e:
+            holder["error"] = f"{type(e).__name__}: {e}"[:300]
+        done.set()
 
 
 def fetch_rows(frame: Frame, url: str, body: dict) -> list:
@@ -1396,6 +1454,24 @@ class ReasonHandler(BaseHTTPRequestHandler):
         route = self.path.split("?", 1)[0]
         if route.startswith("/ping"):
             self._send(200, {"ok": True})
+        elif route == "/stock":
+            origin = self.headers.get("Origin", "")
+            if origin and origin not in ALLOWED_ORIGINS:
+                self._send(403, {"ok": False, "error": "forbidden origin"})
+                return
+            qs = urllib.parse.parse_qs(self.path.split("?", 1)[1]) if "?" in self.path else {}
+            pn = (qs.get("pn", [""])[0] or "").strip().upper()
+            if not re.fullmatch(r"[A-Z0-9]{5,20}", pn):
+                self._send(400, {"ok": False, "error": "pn은 영문/숫자 5~20자리 부품번호여야 합니다 (예: /stock?pn=80165B70CF2)"})
+                return
+            holder, done = {}, threading.Event()
+            STOCK_QUEUE.put((pn, holder, done))
+            if not done.wait(240):
+                self._send(503, {"ok": False, "error": "데이터 갱신 중이라 시간 초과 - 잠시 후 다시 시도하세요"})
+            elif "error" in holder:
+                self._send(500, {"ok": False, "error": holder["error"]})
+            else:
+                self._send(200, {"ok": True, **holder["result"]})
         elif route.startswith("/reasons"):
             self._send(200, load_reasons())
         else:
@@ -1566,29 +1642,6 @@ def main():
                 args=["--start-minimized"],
             )
             page = ctx.new_page()
-
-            def _probe_log(line):
-                with open(POPUP_PROBE_FILE, "a", encoding="utf-8") as f:
-                    f.write(f"{datetime.now().strftime('%H:%M:%S')} {line}\n")
-
-            def _probe_page(pg):
-                try:
-                    _probe_log(f"[새 창] {pg.url}")
-                except Exception:
-                    pass
-
-            probe = {"on": False}
-
-            def _probe_request(req):
-                try:
-                    if not probe["on"] or ".do" not in req.url:
-                        return
-                    _probe_log(f"[요청] {req.method} {req.url} | frame={req.frame.url} | {req.post_data}")
-                except Exception:
-                    pass
-
-            ctx.on("page", _probe_page)
-            ctx.on("request", _probe_request)
             ensure_logged_in(page)
 
             if ONCE:
@@ -1615,19 +1668,19 @@ def main():
 
             print(f"로그인 확인 완료. 상시 실행 시작 — {CYCLE_INTERVAL_SEC//60}분마다 자동 갱신합니다 (창은 계속 켜둔 채 백그라운드로 동작).")
             while True:
-                probe["on"] = False
                 try:
                     ensure_logged_in(page)  # 그 사이 세션이 끊겼으면 재확인
                     run_cycle(page, rr_page)
                 except Exception as e:
                     print(f"[이번 주기 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
                 print(f"다음 갱신까지 {CYCLE_INTERVAL_SEC}초 대기...")
-                _probe_log("--- 주기 종료, 이후 요청 기록 시작 ---")
-                probe["on"] = True
-                try:
-                    page.wait_for_timeout(CYCLE_INTERVAL_SEC * 1000)  # [임시] 대기 중에도 팝업 이벤트가 처리되도록
-                except Exception:
-                    time.sleep(CYCLE_INTERVAL_SEC)
+                deadline = time.time() + CYCLE_INTERVAL_SEC
+                while time.time() < deadline:  # 대기 중에도 /stock 부품 재고조회 요청을 처리
+                    serve_stock_requests(page)
+                    try:
+                        page.wait_for_timeout(1000)
+                    except Exception:
+                        time.sleep(1)
     finally:
         LOCK_FILE.unlink(missing_ok=True)
 
