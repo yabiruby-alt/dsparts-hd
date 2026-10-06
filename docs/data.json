@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 6일 (화) · 14:49 기준",
+    "generated_at": "10월 6일 (화) · 14:51 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,8 +16,8 @@
     "top5": []
   },
   "inv": {
-    "total": 969528761,
-    "item_count": 2167,
+    "total": 969666585,
+    "item_count": 2169,
     "code_count": 25,
     "alois_groups": [
       {
@@ -28,7 +28,7 @@
           {
             "code": "A1",
             "val": 221992099,
-            "pct": 22.9,
+            "pct": 22.89,
             "qty": 2559,
             "parts": [
               {
@@ -2504,7 +2504,7 @@
           {
             "code": "A6",
             "val": 99723925,
-            "pct": 10.29,
+            "pct": 10.28,
             "qty": 1503,
             "parts": [
               {
@@ -4672,7 +4672,7 @@
         ],
         "subtotal_val": 501460208,
         "subtotal_qty": 9006,
-        "subtotal_pct": 51.72
+        "subtotal_pct": 51.71
       },
       {
         "code": "L",
@@ -7876,7 +7876,7 @@
         ],
         "subtotal_val": 137827096,
         "subtotal_qty": 4224,
-        "subtotal_pct": 14.22
+        "subtotal_pct": 14.21
       },
       {
         "code": "O",
@@ -7885,9 +7885,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 63865011,
-            "pct": 6.59,
-            "qty": 1214,
+            "val": 64002835,
+            "pct": 6.6,
+            "qty": 1216,
             "parts": [
               {
                 "item": "17425A18806",
@@ -8506,6 +8506,12 @@
                 "name": "Wiper blade",
                 "qty": 5,
                 "val": 110750
+              },
+              {
+                "item": "31605A42B46",
+                "name": "Repair kit b",
+                "qty": 1,
+                "val": 109208
               },
               {
                 "item": "16137300683",
@@ -9471,6 +9477,12 @@
                 "item": "07129907184",
                 "name": "ASA screw, s",
                 "qty": 8,
+                "val": 28616
+              },
+              {
+                "item": "51317427861",
+                "name": "Cover, winds",
+                "qty": 1,
                 "val": 28616
               },
               {
@@ -11938,9 +11950,9 @@
             ]
           }
         ],
-        "subtotal_val": 188701814,
-        "subtotal_qty": 2268,
-        "subtotal_pct": 19.46
+        "subtotal_val": 188839638,
+        "subtotal_qty": 2270,
+        "subtotal_pct": 19.47
       },
       {
         "code": "I",
@@ -13276,7 +13288,7 @@
   },
   "oaov": {
     "total": 38312281,
-    "inv_total": 969528761,
+    "inv_total": 969666585,
     "pct": 3.95,
     "oa_val": 18172201,
     "ov_val": 20140080,
@@ -21732,12 +21744,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000208",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 10:22:08",
         "req_brch": "AS_부산(해운중동)",
-        "val": 28073,
+        "val": 28616,
         "sa": "강충성",
         "dday": "D+0일"
       },
@@ -22272,16 +22284,16 @@
         "item": "31605A42B46",
         "name": "Repair kit b",
         "alois": "O8",
-        "pgrp": "-",
+        "pgrp": "B1",
         "ref_tp": "RO",
         "ref_no": "RO2610000093",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 14:18:58",
         "req_brch": "AS_부산(해운중동)",
-        "val": 112200,
+        "val": 109208,
         "sa": "박영묵",
         "dday": "D+0일"
       },
@@ -22321,7 +22333,7 @@
       }
     ],
     "count": 300,
-    "total_val": 86606074,
+    "total_val": 86603625,
     "groups": [
       {
         "code": "RO",
@@ -25020,12 +25032,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000208",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 10:22:08",
             "req_brch": "AS_부산(해운중동)",
-            "val": 28073,
+            "val": 28616,
             "sa": "강충성",
             "dday": "D+0일"
           },
@@ -25339,23 +25351,23 @@
             "item": "31605A42B46",
             "name": "Repair kit b",
             "alois": "O8",
-            "pgrp": "-",
+            "pgrp": "B1",
             "ref_tp": "RO",
             "ref_no": "RO2610000093",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 14:18:58",
             "req_brch": "AS_부산(해운중동)",
-            "val": 112200,
+            "val": 109208,
             "sa": "박영묵",
             "dday": "D+0일"
           }
         ],
         "count": 178,
         "qty_sum": 237,
-        "val": 51570805
+        "val": 51568356
       },
       {
         "code": "SB",

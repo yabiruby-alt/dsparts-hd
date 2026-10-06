@@ -1577,11 +1577,13 @@ def main():
                 except Exception:
                     pass
 
+            probe = {"on": False}
+
             def _probe_request(req):
                 try:
-                    if req.frame.page == page or ".do" not in req.url:
+                    if not probe["on"] or ".do" not in req.url:
                         return
-                    _probe_log(f"[팝업요청] {req.method} {req.url} | {req.post_data}")
+                    _probe_log(f"[요청] {req.method} {req.url} | frame={req.frame.url} | {req.post_data}")
                 except Exception:
                     pass
 
@@ -1613,12 +1615,15 @@ def main():
 
             print(f"로그인 확인 완료. 상시 실행 시작 — {CYCLE_INTERVAL_SEC//60}분마다 자동 갱신합니다 (창은 계속 켜둔 채 백그라운드로 동작).")
             while True:
+                probe["on"] = False
                 try:
                     ensure_logged_in(page)  # 그 사이 세션이 끊겼으면 재확인
                     run_cycle(page, rr_page)
                 except Exception as e:
                     print(f"[이번 주기 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
                 print(f"다음 갱신까지 {CYCLE_INTERVAL_SEC}초 대기...")
+                _probe_log("--- 주기 종료, 이후 요청 기록 시작 ---")
+                probe["on"] = True
                 try:
                     page.wait_for_timeout(CYCLE_INTERVAL_SEC * 1000)  # [임시] 대기 중에도 팝업 이벤트가 처리되도록
                 except Exception:
