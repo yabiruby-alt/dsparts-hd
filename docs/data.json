@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 7일 (수) · 08:48 기준",
+    "generated_at": "10월 7일 (수) · 09:00 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -264,8 +264,8 @@
     ]
   },
   "inv": {
-    "total": 986994645,
-    "item_count": 2221,
+    "total": 986634645,
+    "item_count": 2220,
     "code_count": 25,
     "alois_groups": [
       {
@@ -4962,7 +4962,7 @@
         ],
         "subtotal_val": 505625732,
         "subtotal_qty": 9002,
-        "subtotal_pct": 51.23
+        "subtotal_pct": 51.25
       },
       {
         "code": "L",
@@ -8184,7 +8184,7 @@
         ],
         "subtotal_val": 140387594,
         "subtotal_qty": 4231,
-        "subtotal_pct": 14.22
+        "subtotal_pct": 14.23
       },
       {
         "code": "O",
@@ -11742,7 +11742,7 @@
           {
             "code": "OV",
             "val": 20676864,
-            "pct": 2.09,
+            "pct": 2.1,
             "qty": 195,
             "parts": [
               {
@@ -13161,9 +13161,9 @@
           },
           {
             "code": "SZ",
-            "val": 79426983,
-            "pct": 8.05,
-            "qty": 797,
+            "val": 79066983,
+            "pct": 8.01,
+            "qty": 757,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -13374,12 +13374,6 @@
                 "name": "BMW Boston Olive (New)",
                 "qty": 7,
                 "val": 411600
-              },
-              {
-                "item": "99975BA19F1",
-                "name": "BMWWaterBott",
-                "qty": 40,
-                "val": 360000
               },
               {
                 "item": "51437410574",
@@ -13840,15 +13834,15 @@
             ]
           }
         ],
-        "subtotal_val": 143362564,
-        "subtotal_qty": 1996,
-        "subtotal_pct": 14.53
+        "subtotal_val": 143002564,
+        "subtotal_qty": 1956,
+        "subtotal_pct": 14.49
       }
     ]
   },
   "oaov": {
     "total": 38816013,
-    "inv_total": 986994645,
+    "inv_total": 986634645,
     "pct": 3.93,
     "oa_val": 18139149,
     "ov_val": 20676864,
@@ -40216,8 +40210,8 @@
       },
       {
         "ro": "RO2610000179",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-10-06",
@@ -40864,17 +40858,6 @@
         "amt": 98000
       },
       {
-        "ro": "RO2610000254",
-        "stat": "상담시작",
-        "stat_cd": "01",
-        "svc": "사고수리",
-        "sa": "박영묵",
-        "pub": "2026-10-06",
-        "pub_full": "2026-10-06 14:01",
-        "dday": "D+1일",
-        "amt": 0
-      },
-      {
         "ro": "RO2610000256",
         "stat": "가정산 완료",
         "stat_cd": "05",
@@ -41104,25 +41087,47 @@
         "pub_full": "2026-10-07 07:46",
         "dday": "D+0일",
         "amt": 56000
+      },
+      {
+        "ro": "RO2610000285",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "이정환",
+        "pub": "2026-10-07",
+        "pub_full": "2026-10-07 08:51",
+        "dday": "D+0일",
+        "amt": 1977338
+      },
+      {
+        "ro": "RO2610000286",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-07",
+        "pub_full": "2026-10-07 08:55",
+        "dday": "D+0일",
+        "amt": 368588
       }
     ],
-    "count": 354,
-    "total_amt": 781717244,
+    "count": 355,
+    "total_amt": 784063170,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 25,
+        "count": 24,
         "amt": 31691250
       },
       {
         "stat": "상담완료",
-        "count": 164,
-        "amt": 520336894
+        "count": 165,
+        "amt": 521465320
       },
       {
         "stat": "정비시작",
-        "count": 25,
-        "amt": 44227301
+        "count": 26,
+        "amt": 45444801
       },
       {
         "stat": "End Control 요청",
@@ -47025,8 +47030,40 @@
         "val": 452277
       },
       {
+        "code": "SB2609002022",
+        "resv_full": "2026-10-07 09:00",
+        "resv": "10-07",
+        "dday": "오늘",
+        "sa": "안준영",
+        "rows": [
+          {
+            "item": "99975BBD7D3",
+            "name": "BMW AMBERNES",
+            "alois": "SX",
+            "sa": "안준영",
+            "req_qty": 1,
+            "crt_qty": 6,
+            "avail_qty": 4,
+            "val": 69000
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 69000
+      }
+    ],
+    "sb_count": 91,
+    "line_count": 328,
+    "total_val": 54883590,
+    "o_lines": 65,
+    "o_val": 17883481,
+    "resv_total": 392
+  },
+  "sbcar": {
+    "groups": [
+      {
         "code": "SB2610000185",
-        "resv_full": "2026-10-07 09:20",
+        "resv_full": "2026-10-07 08:51",
         "resv": "10-07",
         "dday": "오늘",
         "sa": "정용환",
@@ -47065,310 +47102,14 @@
         "count": 3,
         "qty_sum": 7,
         "val": 185711
-      },
-      {
-        "code": "SB2609002022",
-        "resv_full": "2026-10-07 09:00",
-        "resv": "10-07",
-        "dday": "오늘",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "99975BBD7D3",
-            "name": "BMW AMBERNES",
-            "alois": "SX",
-            "sa": "안준영",
-            "req_qty": 1,
-            "crt_qty": 6,
-            "avail_qty": 4,
-            "val": 69000
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 69000
       }
     ],
-    "sb_count": 92,
-    "line_count": 331,
-    "total_val": 55069301,
-    "o_lines": 66,
-    "o_val": 17969057,
-    "resv_total": 395
-  },
-  "sbcar": {
-    "groups": [
-      {
-        "code": "SB2610000076",
-        "resv_full": "2026-10-07 08:46",
-        "resv": "10-07",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "83212469985",
-            "name": "LL-12FE 0W-30",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 5,
-            "crt_qty": 173,
-            "avail_qty": 126,
-            "val": 79685
-          },
-          {
-            "item": "11428507683",
-            "name": "Filt.Element",
-            "alois": "A2",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 2,
-            "val": 22230
-          },
-          {
-            "item": "99995A2A668",
-            "name": "Windshield w",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 161,
-            "avail_qty": 159,
-            "val": 6332
-          }
-        ],
-        "count": 3,
-        "qty_sum": 7,
-        "val": 108247
-      },
-      {
-        "code": "SB2609002093",
-        "resv_full": "2026-10-07 08:48",
-        "resv": "10-07",
-        "dday": "오늘",
-        "sa": "이정환",
-        "rows": [
-          {
-            "item": "11418646454",
-            "name": "Oil pump",
-            "alois": "A6",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 27,
-            "avail_qty": 26,
-            "val": 502656
-          },
-          {
-            "item": "31508860349",
-            "name": "Repair kit o",
-            "alois": "A4",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 5,
-            "avail_qty": 1,
-            "val": 78058
-          },
-          {
-            "item": "31106870648",
-            "name": "Hex bolt wit",
-            "alois": "SK",
-            "sa": "이정환",
-            "req_qty": 12,
-            "crt_qty": 24,
-            "avail_qty": 0,
-            "val": 48168
-          },
-          {
-            "item": "99995BBA0C2",
-            "name": "Liquid seala",
-            "alois": "SY",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 26,
-            "avail_qty": 25,
-            "val": 30420
-          },
-          {
-            "item": "31106780613",
-            "name": "Combin.nut",
-            "alois": "L7",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "val": 28556
-          },
-          {
-            "item": "31206866022",
-            "name": "Collar screw",
-            "alois": "SK",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 6,
-            "avail_qty": 0,
-            "val": 27322
-          },
-          {
-            "item": "31106872062",
-            "name": "Hex bolt wit",
-            "alois": "A4",
-            "sa": "이정환",
-            "req_qty": 4,
-            "crt_qty": 50,
-            "avail_qty": 42,
-            "val": 21948
-          },
-          {
-            "item": "31106872063",
-            "name": "Hex bolt wit",
-            "alois": "SK",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 5,
-            "avail_qty": 1,
-            "val": 11130
-          },
-          {
-            "item": "31106866023",
-            "name": "Clip nut",
-            "alois": "L7",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "val": 10710
-          },
-          {
-            "item": "07146875114",
-            "name": "Hexagon nut",
-            "alois": "A2",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 30,
-            "avail_qty": 18,
-            "val": 10538
-          },
-          {
-            "item": "33306760585",
-            "name": "Combin.nut",
-            "alois": "SK",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "val": 10122
-          },
-          {
-            "item": "33306787062",
-            "name": "Combin.nut",
-            "alois": "A2",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 47,
-            "avail_qty": 41,
-            "val": 8904
-          },
-          {
-            "item": "33306760349",
-            "name": "Nut",
-            "alois": "A2",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 57,
-            "avail_qty": 43,
-            "val": 7878
-          },
-          {
-            "item": "33117525064",
-            "name": "Screw plug",
-            "alois": "A1",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 130,
-            "avail_qty": 117,
-            "val": 6743
-          },
-          {
-            "item": "11418612615",
-            "name": "ASA-Bolt",
-            "alois": "A5",
-            "sa": "이정환",
-            "req_qty": 4,
-            "crt_qty": 12,
-            "avail_qty": 4,
-            "val": 5256
-          },
-          {
-            "item": "37106789678",
-            "name": "Hex nut",
-            "alois": "A2",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 30,
-            "avail_qty": 28,
-            "val": 3942
-          },
-          {
-            "item": "33131214961",
-            "name": "Lock Ring",
-            "alois": "A4",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 17,
-            "avail_qty": 11,
-            "val": 3496
-          },
-          {
-            "item": "11121726238",
-            "name": "Dowel",
-            "alois": "A5",
-            "sa": "이정환",
-            "req_qty": 2,
-            "crt_qty": 9,
-            "avail_qty": 5,
-            "val": 1754
-          },
-          {
-            "item": "11417823426",
-            "name": "ISA screw",
-            "alois": "A5",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 3,
-            "val": 1753
-          },
-          {
-            "item": "32306778609",
-            "name": "Torx bolt",
-            "alois": "SK",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 0,
-            "val": 1480
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L3",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 101,
-            "avail_qty": 92,
-            "val": 1125
-          }
-        ],
-        "count": 21,
-        "qty_sum": 50,
-        "val": 821959
-      }
-    ],
-    "sb_count": 2,
-    "line_count": 24,
-    "total_val": 930206,
-    "o_lines": 0,
-    "o_val": 0,
-    "resv_total": 10020
+    "sb_count": 1,
+    "line_count": 3,
+    "total_val": 185711,
+    "o_lines": 1,
+    "o_val": 85576,
+    "resv_total": 10024
   },
   "nonmng": {
     "rows": [],
@@ -48234,17 +47975,9 @@
         "alois": "O8",
         "qty": 1,
         "no": 107
-      },
-      {
-        "loc": "-",
-        "item": "99975BA19F1",
-        "name": "BMWWaterBott",
-        "alois": "SZ",
-        "qty": 40,
-        "no": 108
       }
     ],
-    "count": 108,
+    "count": 107,
     "date": "2026-10-07"
   },
   "stockcheck_week": {
@@ -52109,16 +51842,6 @@
         "last_purc": "2026-10-07"
       },
       {
-        "item": "99975BA19F1",
-        "name": "BMWWaterBott",
-        "alois": "SZ",
-        "loc": "(공란)",
-        "qty": 40,
-        "prc": 9000,
-        "val": 360000,
-        "last_purc": "2026-10-07"
-      },
-      {
         "item": "51437410574",
         "name": "Side trim pa",
         "alois": "SZ",
@@ -52209,10 +51932,10 @@
         "last_purc": "2026-10-07"
       }
     ],
-    "count": 12,
-    "total_val": 3519403,
-    "qty_sum": 52,
-    "pct": 0.36
+    "count": 11,
+    "total_val": 3159403,
+    "qty_sum": 12,
+    "pct": 0.32
   },
   "extaudit": {
     "date": "2026-10-07",
