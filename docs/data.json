@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 8일 (목) · 07:58 기준",
+    "generated_at": "10월 8일 (목) · 08:10 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -38848,14 +38848,14 @@
       },
       {
         "ro": "RO2609001456",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "소음",
         "sa": "우종훈",
         "pub": "2026-09-23",
         "pub_full": "2026-09-23 13:55",
         "dday": "D+15일",
-        "amt": 215352
+        "amt": 2909752
       },
       {
         "ro": "RO2609001457",
@@ -41246,7 +41246,7 @@
       }
     ],
     "count": 324,
-    "total_amt": 747181213,
+    "total_amt": 749875613,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -41255,13 +41255,13 @@
       },
       {
         "stat": "상담완료",
-        "count": 145,
-        "amt": 465457709
+        "count": 146,
+        "amt": 468367461
       },
       {
         "stat": "정비시작",
-        "count": 37,
-        "amt": 84595114
+        "count": 36,
+        "amt": 84379762
       },
       {
         "stat": "End Control 요청",
@@ -42211,7 +42211,7 @@
             "sa": "최민수",
             "req_qty": 2,
             "crt_qty": 29,
-            "avail_qty": 18,
+            "avail_qty": 14,
             "val": 2396
           },
           {
@@ -42221,7 +42221,7 @@
             "sa": "최민수",
             "req_qty": 2,
             "crt_qty": 29,
-            "avail_qty": 18,
+            "avail_qty": 14,
             "val": 2396
           }
         ],
@@ -42535,7 +42535,7 @@
             "sa": "이정환",
             "req_qty": 2,
             "crt_qty": 28,
-            "avail_qty": 15,
+            "avail_qty": 11,
             "val": 10538
           }
         ],
@@ -43532,58 +43532,6 @@
         "count": 4,
         "qty_sum": 8,
         "val": 511156
-      },
-      {
-        "code": "SB2610000052",
-        "resv_full": "2026-10-30 09:40",
-        "resv": "10-30",
-        "dday": "D-22일",
-        "sa": "이정환",
-        "rows": [
-          {
-            "item": "63115A9CF86",
-            "name": "LED headligh",
-            "alois": "A6",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 1371900
-          },
-          {
-            "item": "65775A67847",
-            "name": "Sensor door",
-            "alois": "SZ",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 128586
-          },
-          {
-            "item": "51119883445",
-            "name": "Bumper guide",
-            "alois": "A5",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 3,
-            "val": 46268
-          },
-          {
-            "item": "51119883446",
-            "name": "Bumper guide",
-            "alois": "A5",
-            "sa": "이정환",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 2,
-            "val": 46109
-          }
-        ],
-        "count": 4,
-        "qty_sum": 4,
-        "val": 1592863
       },
       {
         "code": "SB2609002164",
@@ -45401,7 +45349,7 @@
             "sa": "M GARAGE",
             "req_qty": 2,
             "crt_qty": 28,
-            "avail_qty": 15,
+            "avail_qty": 11,
             "val": 10538
           },
           {
@@ -45411,7 +45359,7 @@
             "sa": "M GARAGE",
             "req_qty": 2,
             "crt_qty": 55,
-            "avail_qty": 40,
+            "avail_qty": 36,
             "val": 7878
           },
           {
@@ -46726,6 +46674,58 @@
         "val": 12080
       },
       {
+        "code": "SB2610000052",
+        "resv_full": "2026-10-08 10:20",
+        "resv": "10-08",
+        "dday": "오늘",
+        "sa": "이정환",
+        "rows": [
+          {
+            "item": "63115A9CF86",
+            "name": "LED headligh",
+            "alois": "A6",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 1371900
+          },
+          {
+            "item": "65775A67847",
+            "name": "Sensor door",
+            "alois": "SZ",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 128586
+          },
+          {
+            "item": "51119883445",
+            "name": "Bumper guide",
+            "alois": "A5",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 3,
+            "val": 46268
+          },
+          {
+            "item": "51119883446",
+            "name": "Bumper guide",
+            "alois": "A5",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 3,
+            "avail_qty": 2,
+            "val": 46109
+          }
+        ],
+        "count": 4,
+        "qty_sum": 4,
+        "val": 1592863
+      },
+      {
         "code": "SB2609002175",
         "resv_full": "2026-10-08 10:00",
         "resv": "10-08",
@@ -46934,6 +46934,108 @@
         "val": 175268
       },
       {
+        "code": "SB2609000664",
+        "resv_full": "2026-10-08 09:00",
+        "resv": "10-08",
+        "dday": "오늘",
+        "sa": "최민수",
+        "rows": [
+          {
+            "item": "34108842578",
+            "name": "Brake disc v",
+            "alois": "SZ",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 435708
+          },
+          {
+            "item": "34216882245",
+            "name": "Brake rotor",
+            "alois": "A5",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 2,
+            "val": 144680
+          },
+          {
+            "item": "34216882246",
+            "name": "Brake rotor",
+            "alois": "A5",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 3,
+            "avail_qty": 1,
+            "val": 142923
+          },
+          {
+            "item": "34106898192",
+            "name": "Repair kit,",
+            "alois": "A5",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 5,
+            "avail_qty": 3,
+            "val": 136026
+          },
+          {
+            "item": "34216892641",
+            "name": "Repair kit,",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 7,
+            "avail_qty": 5,
+            "val": 114231
+          },
+          {
+            "item": "34356870350",
+            "name": "Brake pad we X3,4 (G)",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 5,
+            "avail_qty": 3,
+            "val": 25326
+          },
+          {
+            "item": "34356870351",
+            "name": "Brake pad we",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 5,
+            "avail_qty": 3,
+            "val": 25220
+          },
+          {
+            "item": "34211161806",
+            "name": "Bolt",
+            "alois": "A3",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 29,
+            "avail_qty": 14,
+            "val": 2396
+          },
+          {
+            "item": "34211161806",
+            "name": "Bolt",
+            "alois": "A3",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 29,
+            "avail_qty": 14,
+            "val": 2396
+          }
+        ],
+        "count": 9,
+        "qty_sum": 12,
+        "val": 1028906
+      },
+      {
         "code": "SB2609001589",
         "resv_full": "2026-10-08 09:00",
         "resv": "10-08",
@@ -47067,7 +47169,7 @@
             "sa": "우종훈",
             "req_qty": 2,
             "crt_qty": 29,
-            "avail_qty": 18,
+            "avail_qty": 14,
             "val": 2396
           },
           {
@@ -47077,7 +47179,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 29,
-            "avail_qty": 18,
+            "avail_qty": 14,
             "val": 1198
           }
         ],
@@ -47158,93 +47260,11 @@
         "count": 4,
         "qty_sum": 5,
         "val": 87981
-      },
-      {
-        "code": "SB2609000664",
-        "resv_full": "2026-10-08 09:00",
-        "resv": "10-08",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "34108842578",
-            "name": "Brake disc v",
-            "alois": "SZ",
-            "sa": "최민수",
-            "req_qty": 2,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 435708
-          },
-          {
-            "item": "34216882245",
-            "name": "Brake rotor",
-            "alois": "A5",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 2,
-            "val": 144680
-          },
-          {
-            "item": "34216882246",
-            "name": "Brake rotor",
-            "alois": "A5",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 1,
-            "val": 142923
-          },
-          {
-            "item": "34106898192",
-            "name": "Repair kit,",
-            "alois": "A5",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 3,
-            "val": 136026
-          },
-          {
-            "item": "34216892641",
-            "name": "Repair kit,",
-            "alois": "A4",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 5,
-            "val": 114231
-          },
-          {
-            "item": "34356870350",
-            "name": "Brake pad we X3,4 (G)",
-            "alois": "A4",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 3,
-            "val": 25326
-          },
-          {
-            "item": "34356870351",
-            "name": "Brake pad we",
-            "alois": "A4",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 3,
-            "val": 25220
-          }
-        ],
-        "count": 7,
-        "qty_sum": 8,
-        "val": 1024114
       }
     ],
     "sb_count": 89,
-    "line_count": 343,
-    "total_val": 55976426,
+    "line_count": 345,
+    "total_val": 55981218,
     "o_lines": 70,
     "o_val": 19483732,
     "resv_total": 394
