@@ -86,6 +86,9 @@ SALES_ENABLED = (SALES_DIR / "sales.py").exists()
 RR_ENABLED = True   # 롤스로이스 DMS 연동 — 켜면 데몬 시작 시 RR 로그인 창이 하나 더 뜸
 RR_BASE_URL = "https://www.rrdms.co.kr"   # 롤스로이스 DMS (같은 My DMS 플랫폼, 별도 계정/세션)
 RR_AUTH_DIR = Path.home() / "AppData" / "Local" / "PartsBayDMS" / "authdata_rr"
+# 재고조사 앱(휴대폰) 연동 모듈 — 매 주기 다시 읽으므로 그 파일을 고쳐도 데몬 재시작 불필요
+STOCKAPP_DIR = BASE_DIR.parent / "재고조사 어플" / "daemon"
+STOCKAPP_ENABLED = (STOCKAPP_DIR / "stockapp.py").exists()
 STOCK_QUEUE = queue.Queue()       # 부품번호 재고조회 요청(HTTP 스레드 -> 메인 스레드의 DMS 세션으로 처리)
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
 LAST_DATA = {}                    # 마지막 갱신 데이터(사유만 바뀌었을 때 DMS 재조회 없이 재렌더용)
@@ -1624,6 +1627,36 @@ def run_cycle(page: Page, rr_page: Page | None = None) -> None:
         except Exception as e:
             print(f"   [매출 대시보드 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
 
+    # 재고조사 앱(휴대폰): 현재고·재고조사 목록을 Supabase에 올림. 실패해도 파츠베이 갱신에는 영향 없음.
+    if STOCKAPP_ENABLED:
+        print(" - 재고조사 앱")
+        try:
+            stockapp = _load_stockapp(reload=True)
+            stockapp.on_cycle(page, {"pw_rows": pw_rows, "stockcheck": stockcheck,
+                                     "stockcheck_week": stockcheck_week, "today": today_str})
+        except Exception as e:
+            print(f"   [재고조사 앱 업로드 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
+
+
+def _load_stockapp(reload: bool = False):
+    import importlib
+    if str(STOCKAPP_DIR) not in sys.path:
+        sys.path.insert(0, str(STOCKAPP_DIR))
+    import stockapp
+    if reload:
+        importlib.reload(stockapp)  # stockapp.py 를 고쳐도 데몬 재시작(=DMS 재로그인) 없이 다음 주기부터 반영
+    return stockapp
+
+
+def serve_stockapp_requests(page: Page) -> None:
+    """대기 중 1초마다: 재고조사 앱이 보낸 요청(RDC 조회, 현재고 조회, 위치 변경)을 처리."""
+    if not STOCKAPP_ENABLED:
+        return
+    try:
+        _load_stockapp().poll(page)
+    except Exception as e:
+        print(f"   [재고조사 앱 요청 처리 실패] {type(e).__name__}: {e}")
+
 
 def main():
     if not _acquire_lock():
@@ -1677,6 +1710,7 @@ def main():
                 deadline = time.time() + CYCLE_INTERVAL_SEC
                 while time.time() < deadline:  # 대기 중에도 /stock 부품 재고조회 요청을 처리
                     serve_stock_requests(page)
+                    serve_stockapp_requests(page)
                     try:
                         page.wait_for_timeout(1000)
                     except Exception:
