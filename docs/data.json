@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 7일 (수) · 11:03 기준",
+    "generated_at": "10월 7일 (수) · 11:16 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -264,8 +264,8 @@
     ]
   },
   "inv": {
-    "total": 970086989,
-    "item_count": 2198,
+    "total": 969966107,
+    "item_count": 2197,
     "code_count": 25,
     "alois_groups": [
       {
@@ -4941,9 +4941,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 19305743,
+            "val": 19299411,
             "pct": 1.99,
-            "qty": 1504,
+            "qty": 1503,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4990,8 +4990,8 @@
               {
                 "item": "99995A2A668",
                 "name": "Windshield w",
-                "qty": 154,
-                "val": 978294
+                "qty": 153,
+                "val": 971962
               },
               {
                 "item": "66126912985",
@@ -8152,8 +8152,8 @@
             ]
           }
         ],
-        "subtotal_val": 138523554,
-        "subtotal_qty": 4122,
+        "subtotal_val": 138517222,
+        "subtotal_qty": 4121,
         "subtotal_pct": 14.28
       },
       {
@@ -10976,7 +10976,7 @@
           {
             "code": "OE",
             "val": 82893677,
-            "pct": 8.54,
+            "pct": 8.55,
             "qty": 644,
             "parts": [
               {
@@ -11663,9 +11663,9 @@
           },
           {
             "code": "OV",
-            "val": 20676864,
-            "pct": 2.13,
-            "qty": 195,
+            "val": 20562314,
+            "pct": 2.12,
+            "qty": 193,
             "parts": [
               {
                 "item": "61445A602F7",
@@ -11936,12 +11936,6 @@
                 "name": "Integrated s",
                 "qty": 1,
                 "val": 121512
-              },
-              {
-                "item": "83192359263",
-                "name": "Drill bit, h",
-                "qty": 2,
-                "val": 114550
               },
               {
                 "item": "17128572905",
@@ -12300,9 +12294,9 @@
             ]
           }
         ],
-        "subtotal_val": 192847718,
-        "subtotal_qty": 2276,
-        "subtotal_pct": 19.88
+        "subtotal_val": 192733168,
+        "subtotal_qty": 2274,
+        "subtotal_pct": 19.87
       },
       {
         "code": "I",
@@ -13042,7 +13036,7 @@
           {
             "code": "SZ",
             "val": 76878618,
-            "pct": 7.92,
+            "pct": 7.93,
             "qty": 720,
             "parts": [
               {
@@ -13709,16 +13703,16 @@
     ]
   },
   "oaov": {
-    "total": 38152812,
-    "inv_total": 970086989,
-    "pct": 3.93,
+    "total": 38038262,
+    "inv_total": 969966107,
+    "pct": 3.92,
     "oa_val": 17475948,
-    "ov_val": 20676864,
+    "ov_val": 20562314,
     "oa_lines": 84,
-    "ov_lines": 105,
+    "ov_lines": 104,
     "oa_qty": 196,
-    "ov_qty": 195,
-    "item_count": 189,
+    "ov_qty": 193,
+    "item_count": 188,
     "oa_items": [
       {
         "item": "63118496163",
@@ -14753,14 +14747,6 @@
         "alois": "OV",
         "qty": 1,
         "val": 121512
-      },
-      {
-        "item": "83192359263",
-        "name": "Drill bit, h",
-        "pgrp": "B6",
-        "alois": "OV",
-        "qty": 2,
-        "val": 114550
       },
       {
         "item": "17128572905",
@@ -21630,23 +21616,6 @@
         "dday": "D+5일"
       },
       {
-        "item": "83192359263",
-        "name": "Drill bit, h",
-        "alois": "OV",
-        "pgrp": "B6",
-        "ref_tp": "RO",
-        "ref_no": "RO2608001777",
-        "req_qty": 2,
-        "crt_qty": 2,
-        "avail_qty": 0,
-        "req_dt": "10-02",
-        "req_dt_full": "2026-10-02 13:53:11",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 114550,
-        "sa": "염진아",
-        "dday": "D+5일"
-      },
-      {
         "item": "90200005645",
         "name": "Cleaner R1",
         "alois": "OE",
@@ -23160,8 +23129,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 322,
-    "total_val": 86145348,
+    "count": 321,
+    "total_val": 86030798,
     "groups": [
       {
         "code": "RO",
@@ -25428,23 +25397,6 @@
             "dday": "D+5일"
           },
           {
-            "item": "83192359263",
-            "name": "Drill bit, h",
-            "alois": "OV",
-            "pgrp": "B6",
-            "ref_tp": "RO",
-            "ref_no": "RO2608001777",
-            "req_qty": 2,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "req_dt": "10-02",
-            "req_dt_full": "2026-10-02 13:53:11",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 114550,
-            "sa": "염진아",
-            "dday": "D+5일"
-          },
-          {
             "item": "51357390132",
             "name": "Window well",
             "alois": "OV",
@@ -26465,9 +26417,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 194,
-        "qty_sum": 257,
-        "val": 53240272
+        "count": 193,
+        "qty_sum": 255,
+        "val": 53125722
       },
       {
         "code": "SB",
@@ -38077,8 +38029,8 @@
       },
       {
         "ro": "RO2609001309",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-09-21",
@@ -38836,8 +38788,8 @@
       },
       {
         "ro": "RO2609001731",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-30",
@@ -39987,7 +39939,7 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 17:38",
         "dday": "D+5일",
-        "amt": 5417500
+        "amt": 5783300
       },
       {
         "ro": "RO2610000172",
@@ -41157,8 +41109,8 @@
       },
       {
         "ro": "RO2610000307",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-10-07",
@@ -41168,8 +41120,8 @@
       },
       {
         "ro": "RO2610000306",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-07",
@@ -41263,7 +41215,7 @@
         "pub": "2026-10-07",
         "pub_full": "2026-10-07 10:32",
         "dday": "D+0일",
-        "amt": 1239420
+        "amt": 1249720
       },
       {
         "ro": "RO2610000316",
@@ -41297,10 +41249,21 @@
         "pub_full": "2026-10-07 11:04",
         "dday": "D+0일",
         "amt": 0
+      },
+      {
+        "ro": "RO2610000320",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-07",
+        "pub_full": "2026-10-07 11:04",
+        "dday": "D+0일",
+        "amt": 90168
       }
     ],
-    "count": 385,
-    "total_amt": 802245234,
+    "count": 386,
+    "total_amt": 802711502,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -41309,18 +41272,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 168,
-        "amt": 488676768
+        "count": 167,
+        "amt": 479439208
       },
       {
         "stat": "정비시작",
         "count": 42,
-        "amt": 90209404
+        "amt": 97157592
       },
       {
         "stat": "End Control 요청",
-        "count": 49,
-        "amt": 76566070
+        "count": 51,
+        "amt": 79321710
       },
       {
         "stat": "공정마감",
@@ -42181,7 +42144,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 127,
-            "avail_qty": 124,
+            "avail_qty": 118,
             "val": 21298
           },
           {
@@ -42786,43 +42749,11 @@
         "count": 3,
         "qty_sum": 3,
         "val": 1319788
-      },
-      {
-        "code": "SB2609002069",
-        "resv_full": "2026-10-07 10:20",
-        "resv": "10-07",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "83212469985",
-            "name": "LL-12FE 0W-30",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 5,
-            "crt_qty": 168,
-            "avail_qty": 126,
-            "val": 79685
-          },
-          {
-            "item": "11428507683",
-            "name": "Filt.Element",
-            "alois": "A2",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 2,
-            "val": 22230
-          }
-        ],
-        "count": 2,
-        "qty_sum": 6,
-        "val": 101915
       }
     ],
-    "sb_count": 46,
-    "line_count": 93,
-    "total_val": 14926428,
+    "sb_count": 45,
+    "line_count": 91,
+    "total_val": 14824513,
     "o_lines": 28,
     "o_val": 6298226,
     "resv_total": 12077
@@ -47078,19 +47009,61 @@
         "count": 1,
         "qty_sum": 1,
         "val": 12080
+      }
+    ],
+    "sb_count": 85,
+    "line_count": 323,
+    "total_val": 55840015,
+    "o_lines": 69,
+    "o_val": 19438030,
+    "resv_total": 381
+  },
+  "sbcar": {
+    "groups": [
+      {
+        "code": "SB2609002069",
+        "resv_full": "2026-10-07 11:05",
+        "resv": "10-07",
+        "dday": "오늘",
+        "sa": "정용환",
+        "rows": [
+          {
+            "item": "83212469985",
+            "name": "LL-12FE 0W-30",
+            "alois": "L1",
+            "sa": "정용환",
+            "req_qty": 5,
+            "crt_qty": 168,
+            "avail_qty": 126,
+            "val": 79685
+          },
+          {
+            "item": "11428507683",
+            "name": "Filt.Element",
+            "alois": "A2",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 2,
+            "val": 22230
+          }
+        ],
+        "count": 2,
+        "qty_sum": 6,
+        "val": 101915
       },
       {
         "code": "SB2609001962",
-        "resv_full": "2026-10-07 11:20",
+        "resv_full": "2026-10-07 11:08",
         "resv": "10-07",
         "dday": "오늘",
-        "sa": "안준영",
+        "sa": "정용환",
         "rows": [
           {
             "item": "12415BA2AE6",
             "name": "Starter",
             "alois": "SK",
-            "sa": "안준영",
+            "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 7,
             "avail_qty": 0,
@@ -47100,7 +47073,7 @@
             "item": "12418571349",
             "name": "Acoustic plu",
             "alois": "SK",
-            "sa": "안준영",
+            "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 32,
             "avail_qty": 20,
@@ -47112,21 +47085,12 @@
         "val": 576812
       }
     ],
-    "sb_count": 86,
-    "line_count": 325,
-    "total_val": 56416827,
-    "o_lines": 69,
-    "o_val": 19438030,
-    "resv_total": 381
-  },
-  "sbcar": {
-    "groups": [],
-    "sb_count": 0,
-    "line_count": 0,
-    "total_val": 0,
+    "sb_count": 2,
+    "line_count": 4,
+    "total_val": 678727,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10055
+    "resv_total": 10057
   },
   "nonmng": {
     "rows": [],
@@ -47924,7 +47888,7 @@
         "item": "99995A2A668",
         "name": "Windshield w",
         "alois": "L1",
-        "qty": 154,
+        "qty": 153,
         "no": 2
       },
       {
