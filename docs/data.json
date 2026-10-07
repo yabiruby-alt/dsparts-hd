@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 7일 (수) · 13:32 기준",
+    "generated_at": "10월 7일 (수) · 13:36 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -264,7 +264,7 @@
     ]
   },
   "inv": {
-    "total": 963794800,
+    "total": 963713815,
     "item_count": 2187,
     "code_count": 25,
     "alois_groups": [
@@ -275,9 +275,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 220437318,
+            "val": 220364583,
             "pct": 22.87,
-            "qty": 2525,
+            "qty": 2524,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -294,8 +294,8 @@
               {
                 "item": "61615A85266",
                 "name": "Kit wiper bl",
-                "qty": 61,
-                "val": 4436835
+                "qty": 60,
+                "val": 4364100
               },
               {
                 "item": "12122455258",
@@ -4924,9 +4924,9 @@
             ]
           }
         ],
-        "subtotal_val": 497294579,
-        "subtotal_qty": 8930,
-        "subtotal_pct": 51.6
+        "subtotal_val": 497221844,
+        "subtotal_qty": 8928,
+        "subtotal_pct": 51.59
       },
       {
         "code": "L",
@@ -12242,7 +12242,7 @@
         ],
         "subtotal_val": 189042249,
         "subtotal_qty": 2268,
-        "subtotal_pct": 19.61
+        "subtotal_pct": 19.62
       },
       {
         "code": "I",
@@ -12839,9 +12839,9 @@
           },
           {
             "code": "SX",
-            "val": 8005601,
+            "val": 7997351,
             "pct": 0.83,
-            "qty": 157,
+            "qty": 156,
             "parts": [
               {
                 "item": "64115B78AA5",
@@ -12870,8 +12870,8 @@
               {
                 "item": "99975BA1A07",
                 "name": "BMWLongUmbre (New)",
-                "qty": 43,
-                "val": 354750
+                "qty": 42,
+                "val": 346500
               },
               {
                 "item": "99975BA1A04",
@@ -13636,15 +13636,15 @@
             ]
           }
         ],
-        "subtotal_val": 138446339,
-        "subtotal_qty": 1903,
-        "subtotal_pct": 14.36
+        "subtotal_val": 138438089,
+        "subtotal_qty": 1902,
+        "subtotal_pct": 14.37
       }
     ]
   },
   "oaov": {
     "total": 34612112,
-    "inv_total": 963794800,
+    "inv_total": 963713815,
     "pct": 3.59,
     "oa_val": 14109048,
     "ov_val": 20503064,
@@ -41609,8 +41609,8 @@
       },
       {
         "ro": "RO2610000315",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "우종훈",
         "pub": "2026-10-07",
@@ -41752,8 +41752,8 @@
       },
       {
         "ro": "RO2610000330",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "우종훈",
         "pub": "2026-10-07",
@@ -41803,11 +41803,22 @@
         "pub": "2026-10-07",
         "pub_full": "2026-10-07 13:31",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 233604
+      },
+      {
+        "ro": "RO2610000335",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "입고 Proactive-RITA",
+        "sa": "김민규",
+        "pub": "2026-10-07",
+        "pub_full": "2026-10-07 13:33",
+        "dday": "D+0일",
+        "amt": 56000
       }
     ],
-    "count": 396,
-    "total_amt": 814193411,
+    "count": 397,
+    "total_amt": 814483015,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -41816,13 +41827,13 @@
       },
       {
         "stat": "상담완료",
-        "count": 171,
-        "amt": 509200976
+        "count": 170,
+        "amt": 507995551
       },
       {
         "stat": "정비시작",
-        "count": 45,
-        "amt": 87603458
+        "count": 47,
+        "amt": 89098487
       },
       {
         "stat": "End Control 요청",
@@ -42915,7 +42926,7 @@
             "alois": "SX",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 43,
+            "crt_qty": 42,
             "avail_qty": 40,
             "val": 8250
           }
@@ -45909,7 +45920,7 @@
             "alois": "A1",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 61,
+            "crt_qty": 60,
             "avail_qty": 58,
             "val": 72735
           },
@@ -46523,7 +46534,7 @@
             "alois": "A1",
             "sa": "김도현",
             "req_qty": 1,
-            "crt_qty": 61,
+            "crt_qty": 60,
             "avail_qty": 58,
             "val": 72735
           },
@@ -47427,10 +47438,52 @@
         "count": 3,
         "qty_sum": 4,
         "val": 116325
+      }
+    ],
+    "sb_count": 82,
+    "line_count": 314,
+    "total_val": 54914540,
+    "o_lines": 69,
+    "o_val": 19438030,
+    "resv_total": 377
+  },
+  "sbcar": {
+    "groups": [
+      {
+        "code": "SB2609002069",
+        "resv_full": "2026-10-07 11:05",
+        "resv": "10-07",
+        "dday": "오늘",
+        "sa": "정용환",
+        "rows": [
+          {
+            "item": "83212469985",
+            "name": "LL-12FE 0W-30",
+            "alois": "L1",
+            "sa": "정용환",
+            "req_qty": 5,
+            "crt_qty": 168,
+            "avail_qty": 126,
+            "val": 79685
+          },
+          {
+            "item": "11428507683",
+            "name": "Filt.Element",
+            "alois": "A2",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 2,
+            "val": 22230
+          }
+        ],
+        "count": 2,
+        "qty_sum": 6,
+        "val": 101915
       },
       {
         "code": "SB2609002167",
-        "resv_full": "2026-10-07 13:20",
+        "resv_full": "2026-10-07 13:37",
         "resv": "10-07",
         "dday": "오늘",
         "sa": "정용환",
@@ -47491,54 +47544,12 @@
         "val": 327589
       }
     ],
-    "sb_count": 83,
-    "line_count": 319,
-    "total_val": 55242129,
-    "o_lines": 69,
-    "o_val": 19438030,
-    "resv_total": 378
-  },
-  "sbcar": {
-    "groups": [
-      {
-        "code": "SB2609002069",
-        "resv_full": "2026-10-07 11:05",
-        "resv": "10-07",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "83212469985",
-            "name": "LL-12FE 0W-30",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 5,
-            "crt_qty": 168,
-            "avail_qty": 126,
-            "val": 79685
-          },
-          {
-            "item": "11428507683",
-            "name": "Filt.Element",
-            "alois": "A2",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 2,
-            "val": 22230
-          }
-        ],
-        "count": 2,
-        "qty_sum": 6,
-        "val": 101915
-      }
-    ],
-    "sb_count": 1,
-    "line_count": 2,
-    "total_val": 101915,
+    "sb_count": 2,
+    "line_count": 7,
+    "total_val": 429504,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10069
+    "resv_total": 10070
   },
   "nonmng": {
     "rows": [],
@@ -50408,7 +50419,7 @@
         "item": "61615A85266",
         "name": "Kit wiper bl",
         "alois": "A1",
-        "qty": 61,
+        "qty": 60,
         "no": 263
       },
       {
@@ -51152,7 +51163,7 @@
         "item": "99975BA1A07",
         "name": "BMWLongUmbre (New)",
         "alois": "SX",
-        "qty": 43,
+        "qty": 42,
         "no": 356
       },
       {
