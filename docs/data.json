@@ -2,22 +2,120 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 8일 (목) · 07:08 기준",
+    "generated_at": "10월 8일 (목) · 07:23 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
-    "total": 0,
+    "total": 3845748,
     "date": "2026-10-08",
-    "grn_count": 0,
-    "lines": 0,
-    "qty": 0,
-    "alois_groups": [],
-    "grn_rows": [],
-    "top5": []
+    "grn_count": 3,
+    "lines": 6,
+    "qty": 255,
+    "alois_groups": [
+      {
+        "code": "L",
+        "label": "로컬조달",
+        "oseries": false,
+        "rows": [
+          {
+            "code": "L1",
+            "val": 3718812,
+            "pct": 96.7
+          }
+        ],
+        "subtotal_val": 3718812,
+        "subtotal_qty": 0,
+        "subtotal_pct": 96.7
+      },
+      {
+        "code": "S",
+        "label": "특수발주",
+        "oseries": false,
+        "rows": [
+          {
+            "code": "SC",
+            "val": 67396,
+            "pct": 1.75
+          },
+          {
+            "code": "SK",
+            "val": 59540,
+            "pct": 1.55
+          }
+        ],
+        "subtotal_val": 126936,
+        "subtotal_qty": 0,
+        "subtotal_pct": 3.3
+      }
+    ],
+    "grn_rows": [
+      {
+        "grn": "2289599",
+        "val": 3718812,
+        "is_top": true
+      },
+      {
+        "grn": "2289578",
+        "val": 67396,
+        "is_top": false
+      },
+      {
+        "grn": "2289562",
+        "val": 59540,
+        "is_top": false
+      }
+    ],
+    "top5": [
+      {
+        "item": "83215A65B99",
+        "name": "LL-22FE++ 0W12",
+        "alois": "L1",
+        "grn": "2289599",
+        "qty": 120,
+        "val": 1718640,
+        "oseries": false
+      },
+      {
+        "item": "83215B49DD6",
+        "name": "LL-17FE+ 0W-20",
+        "alois": "L1",
+        "grn": "2289599",
+        "qty": 108,
+        "val": 1629396,
+        "oseries": false
+      },
+      {
+        "item": "83215A7EDA5",
+        "name": "LL-01FE 0W-30",
+        "alois": "L1",
+        "grn": "2289599",
+        "qty": 24,
+        "val": 370776,
+        "oseries": false
+      },
+      {
+        "item": "51215A65D30",
+        "name": "Integrierter",
+        "alois": "SC",
+        "grn": "2289578",
+        "qty": 1,
+        "val": 67396,
+        "oseries": false
+      },
+      {
+        "item": "11657796857",
+        "name": "VACUUM HOSE",
+        "alois": "SK",
+        "grn": "2289562",
+        "qty": 1,
+        "val": 45430,
+        "oseries": false
+      }
+    ]
   },
   "inv": {
-    "total": 961711543,
-    "item_count": 2142,
+    "total": 965557368,
+    "item_count": 2144,
     "code_count": 25,
     "alois_groups": [
       {
@@ -28,7 +126,7 @@
           {
             "code": "A1",
             "val": 218846940,
-            "pct": 22.76,
+            "pct": 22.67,
             "qty": 2487,
             "parts": [
               {
@@ -314,7 +412,7 @@
           {
             "code": "A3",
             "val": 29732570,
-            "pct": 3.09,
+            "pct": 3.08,
             "qty": 443,
             "parts": [
               {
@@ -484,7 +582,7 @@
           {
             "code": "A4",
             "val": 45211807,
-            "pct": 4.7,
+            "pct": 4.68,
             "qty": 1936,
             "parts": [
               {
@@ -1236,7 +1334,7 @@
           {
             "code": "A5",
             "val": 92035010,
-            "pct": 9.57,
+            "pct": 9.53,
             "qty": 1434,
             "parts": [
               {
@@ -2516,7 +2614,7 @@
           {
             "code": "A6",
             "val": 88771977,
-            "pct": 9.23,
+            "pct": 9.19,
             "qty": 1465,
             "parts": [
               {
@@ -4636,7 +4734,7 @@
         ],
         "subtotal_val": 491854801,
         "subtotal_qty": 8786,
-        "subtotal_pct": 51.14
+        "subtotal_pct": 50.94
       },
       {
         "code": "L",
@@ -4645,15 +4743,21 @@
         "rows": [
           {
             "code": "L1",
-            "val": 17780818,
-            "pct": 1.85,
-            "qty": 1364,
+            "val": 21499706,
+            "pct": 2.23,
+            "qty": 1616,
             "parts": [
               {
                 "item": "83215B49DD6",
                 "name": "LL-17FE+ 0W-20",
-                "qty": 249,
-                "val": 3813638
+                "qty": 357,
+                "val": 5443030
+              },
+              {
+                "item": "83215A65B99",
+                "name": "LL-22FE++ 0W12",
+                "qty": 219,
+                "val": 3159625
               },
               {
                 "item": "83135A82511",
@@ -4686,12 +4790,6 @@
                 "val": 1443200
               },
               {
-                "item": "83215A65B99",
-                "name": "LL-22FE++ 0W12",
-                "qty": 99,
-                "val": 1440912
-              },
-              {
                 "item": "99995A2A668",
                 "name": "Windshield w",
                 "qty": 145,
@@ -4706,8 +4804,8 @@
               {
                 "item": "83215A7EDA5",
                 "name": "LL-01FE 0W-30",
-                "qty": 9,
-                "val": 142402
+                "qty": 33,
+                "val": 513186
               }
             ]
           },
@@ -4776,7 +4874,7 @@
           {
             "code": "L3",
             "val": 4000740,
-            "pct": 0.42,
+            "pct": 0.41,
             "qty": 61,
             "parts": [
               {
@@ -5028,7 +5126,7 @@
           {
             "code": "L6",
             "val": 21675525,
-            "pct": 2.25,
+            "pct": 2.24,
             "qty": 290,
             "parts": [
               {
@@ -5432,7 +5530,7 @@
           {
             "code": "L7",
             "val": 58664125,
-            "pct": 6.1,
+            "pct": 6.08,
             "qty": 1258,
             "parts": [
               {
@@ -7754,9 +7852,9 @@
             ]
           }
         ],
-        "subtotal_val": 134653488,
-        "subtotal_qty": 3877,
-        "subtotal_pct": 14.0
+        "subtotal_val": 138372376,
+        "subtotal_qty": 4129,
+        "subtotal_pct": 14.33
       },
       {
         "code": "O",
@@ -7766,7 +7864,7 @@
           {
             "code": "O8",
             "val": 62159310,
-            "pct": 6.46,
+            "pct": 6.44,
             "qty": 1196,
             "parts": [
               {
@@ -9976,7 +10074,7 @@
           {
             "code": "OA",
             "val": 34373666,
-            "pct": 3.57,
+            "pct": 3.56,
             "qty": 217,
             "parts": [
               {
@@ -10548,7 +10646,7 @@
           {
             "code": "OE",
             "val": 81636273,
-            "pct": 8.49,
+            "pct": 8.45,
             "qty": 633,
             "parts": [
               {
@@ -11150,7 +11248,7 @@
           {
             "code": "ON",
             "val": 3325557,
-            "pct": 0.35,
+            "pct": 0.34,
             "qty": 15,
             "parts": [
               {
@@ -11236,7 +11334,7 @@
           {
             "code": "OV",
             "val": 20154683,
-            "pct": 2.1,
+            "pct": 2.09,
             "qty": 190,
             "parts": [
               {
@@ -11850,7 +11948,7 @@
         ],
         "subtotal_val": 201649489,
         "subtotal_qty": 2251,
-        "subtotal_pct": 20.97
+        "subtotal_pct": 20.88
       },
       {
         "code": "I",
@@ -11919,15 +12017,21 @@
         "rows": [
           {
             "code": "SC",
-            "val": 195096,
-            "pct": 0.02,
-            "qty": 3,
+            "val": 262492,
+            "pct": 0.03,
+            "qty": 4,
             "parts": [
               {
                 "item": "61355B5AF76",
                 "name": "Service Card",
                 "qty": 1,
                 "val": 68226
+              },
+              {
+                "item": "51215A65D30",
+                "name": "Integrierter",
+                "qty": 1,
+                "val": 67396
               },
               {
                 "item": "61355B3E613",
@@ -11959,9 +12063,9 @@
           },
           {
             "code": "SK",
-            "val": 45951544,
-            "pct": 4.78,
-            "qty": 895,
+            "val": 46011084,
+            "pct": 4.77,
+            "qty": 897,
             "parts": [
               {
                 "item": "34505B77C23",
@@ -12144,6 +12248,18 @@
                 "val": 46320
               },
               {
+                "item": "11657796857",
+                "name": "VACUUM HOSE",
+                "qty": 1,
+                "val": 45430
+              },
+              {
+                "item": "11718490640",
+                "name": "AGR small pa",
+                "qty": 3,
+                "val": 42330
+              },
+              {
                 "item": "18325A0BF72",
                 "name": "Screw clamp",
                 "qty": 1,
@@ -12178,12 +12294,6 @@
                 "name": "Oil dipstick",
                 "qty": 1,
                 "val": 30885
-              },
-              {
-                "item": "11718490640",
-                "name": "AGR small pa",
-                "qty": 2,
-                "val": 28220
               },
               {
                 "item": "11715A9D336",
@@ -12352,7 +12462,7 @@
           {
             "code": "SX",
             "val": 7578937,
-            "pct": 0.79,
+            "pct": 0.78,
             "qty": 150,
             "parts": [
               {
@@ -12402,7 +12512,7 @@
           {
             "code": "SY",
             "val": 7468188,
-            "pct": 0.78,
+            "pct": 0.77,
             "qty": 230,
             "parts": [
               {
@@ -12494,7 +12604,7 @@
           {
             "code": "SZ",
             "val": 72200897,
-            "pct": 7.51,
+            "pct": 7.48,
             "qty": 515,
             "parts": [
               {
@@ -13118,16 +13228,16 @@
             ]
           }
         ],
-        "subtotal_val": 133459662,
-        "subtotal_qty": 1794,
-        "subtotal_pct": 13.88
+        "subtotal_val": 133586598,
+        "subtotal_qty": 1797,
+        "subtotal_pct": 13.84
       }
     ]
   },
   "oaov": {
     "total": 54528349,
-    "inv_total": 961711543,
-    "pct": 5.67,
+    "inv_total": 965557368,
+    "pct": 5.65,
     "oa_val": 34373666,
     "ov_val": 20154683,
     "oa_lines": 94,
@@ -16775,7 +16885,7 @@
     ],
     "m12_val": 61770527,
     "m12_count": 205,
-    "m12_pct": 6.42,
+    "m12_pct": 6.4,
     "m24_items": [
       {
         "item": "24008741536",
@@ -17212,7 +17322,7 @@
     ],
     "m24_val": 20584613,
     "m24_count": 48,
-    "m24_pct": 2.14
+    "m24_pct": 2.13
   },
   "opart": {
     "items": [
@@ -19808,12 +19918,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2609001580",
         "req_qty": 1,
-        "crt_qty": 1,
+        "crt_qty": 2,
         "avail_qty": 0,
         "req_dt": "09-28",
         "req_dt_full": "2026-09-28 12:09:39",
         "req_brch": "AS_부산(해운중동)",
-        "val": 57205,
+        "val": 57878,
         "sa": "박영묵",
         "dday": "D+10일"
       },
@@ -19978,12 +20088,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2609001640",
         "req_qty": 1,
-        "crt_qty": 1,
+        "crt_qty": 2,
         "avail_qty": 0,
         "req_dt": "09-29",
         "req_dt_full": "2026-09-29 09:28:19",
         "req_brch": "AS_부산(해운중동)",
-        "val": 31752,
+        "val": 32144,
         "sa": "염진아",
         "dday": "D+9일"
       },
@@ -21508,12 +21618,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000265",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 15:37:08",
         "req_brch": "AS_부산(해운중동)",
-        "val": 35883,
+        "val": 36769,
         "sa": "강충성",
         "dday": "D+2일"
       },
@@ -21525,12 +21635,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000265",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 15:37:08",
         "req_brch": "AS_부산(해운중동)",
-        "val": 60993,
+        "val": 62499,
         "sa": "강충성",
         "dday": "D+2일"
       },
@@ -21542,7 +21652,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000265",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 15:37:08",
@@ -21559,7 +21669,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000245",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 15:54:51",
@@ -21593,7 +21703,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000268",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:08:04",
@@ -21610,7 +21720,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000268",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:08:04",
@@ -21627,12 +21737,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000268",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:08:04",
         "req_brch": "AS_부산(해운중동)",
-        "val": 77616,
+        "val": 79632,
         "sa": "염진아",
         "dday": "D+2일"
       },
@@ -21644,12 +21754,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000268",
         "req_qty": 1,
-        "crt_qty": 1,
+        "crt_qty": 2,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:08:04",
         "req_brch": "AS_부산(해운중동)",
-        "val": 57205,
+        "val": 57878,
         "sa": "염진아",
         "dday": "D+2일"
       },
@@ -21661,7 +21771,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000268",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:08:04",
@@ -21678,7 +21788,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000268",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:08:04",
@@ -21695,12 +21805,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2608001740",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:10:07",
         "req_brch": "AS_부산(해운중동)",
-        "val": 75249,
+        "val": 77107,
         "sa": "강충성",
         "dday": "D+2일"
       },
@@ -21729,12 +21839,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000233",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:16:13",
         "req_brch": "AS_부산(해운중동)",
-        "val": 22125,
+        "val": 23305,
         "sa": "박영묵",
         "dday": "D+2일"
       },
@@ -21746,7 +21856,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000233",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:16:13",
@@ -21763,12 +21873,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000233",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:16:14",
         "req_brch": "AS_부산(해운중동)",
-        "val": 1493160,
+        "val": 1536440,
         "sa": "박영묵",
         "dday": "D+2일"
       },
@@ -21780,7 +21890,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000233",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:16:14",
@@ -21797,7 +21907,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000233",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:16:14",
@@ -21814,7 +21924,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000233",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:16:14",
@@ -21899,12 +22009,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000271",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-06",
         "req_dt_full": "2026-10-06 17:35:10",
         "req_brch": "AS_부산(해운중동)",
-        "val": 46574,
+        "val": 47850,
         "sa": "박영묵",
         "dday": "D+2일"
       },
@@ -22103,12 +22213,12 @@
         "ref_tp": "SB",
         "ref_no": "SB2610000304",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 10:55:04",
         "req_brch": "AS_부산(해운중동)",
-        "val": 11704,
+        "val": 12087,
         "sa": "강충성",
         "dday": "D+1일"
       },
@@ -22120,12 +22230,12 @@
         "ref_tp": "SB",
         "ref_no": "SB2610000304",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 10:55:04",
         "req_brch": "AS_부산(해운중동)",
-        "val": 212382,
+        "val": 221942,
         "sa": "강충성",
         "dday": "D+1일"
       },
@@ -22137,12 +22247,12 @@
         "ref_tp": "SB",
         "ref_no": "SB2610000304",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 10:55:04",
         "req_brch": "AS_부산(해운중동)",
-        "val": 316239,
+        "val": 340727,
         "sa": "강충성",
         "dday": "D+1일"
       },
@@ -22154,12 +22264,12 @@
         "ref_tp": "SB",
         "ref_no": "SB2610000304",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 10:55:04",
         "req_brch": "AS_부산(해운중동)",
-        "val": 928341,
+        "val": 1001550,
         "sa": "강충성",
         "dday": "D+1일"
       },
@@ -22171,7 +22281,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000171",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 11:03:47",
@@ -22188,7 +22298,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2609000879",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 11:58:16",
@@ -22494,12 +22604,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000322",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 13:06:29",
         "req_brch": "AS_부산(해운중동)",
-        "val": 1085508,
+        "val": 1116972,
         "sa": "염진아",
         "dday": "D+1일"
       },
@@ -22511,12 +22621,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000322",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 13:06:30",
         "req_brch": "AS_부산(해운중동)",
-        "val": 114464,
+        "val": 117600,
         "sa": "염진아",
         "dday": "D+1일"
       },
@@ -22528,12 +22638,12 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000322",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 13:06:30",
         "req_brch": "AS_부산(해운중동)",
-        "val": 181602,
+        "val": 186086,
         "sa": "염진아",
         "dday": "D+1일"
       },
@@ -22613,7 +22723,7 @@
         "ref_tp": "SP",
         "ref_no": "SP2610000001",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 14:40:55",
@@ -22630,7 +22740,7 @@
         "ref_tp": "SP",
         "ref_no": "SP2610000001",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 14:40:55",
@@ -22647,7 +22757,7 @@
         "ref_tp": "SP",
         "ref_no": "SP2610000001",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 14:40:56",
@@ -22664,7 +22774,7 @@
         "ref_tp": "SP",
         "ref_no": "SP2610000001",
         "req_qty": 4,
-        "crt_qty": 0,
+        "crt_qty": 4,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 14:40:56",
@@ -22681,7 +22791,7 @@
         "ref_tp": "SP",
         "ref_no": "SP2610000001",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 14:40:56",
@@ -22698,12 +22808,12 @@
         "ref_tp": "SP",
         "ref_no": "SP2610000001",
         "req_qty": 1,
-        "crt_qty": 1,
+        "crt_qty": 2,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 14:40:56",
         "req_brch": "AS_부산(해운중동)",
-        "val": 31752,
+        "val": 32144,
         "sa": "박태강",
         "dday": "D+1일"
       },
@@ -22715,7 +22825,7 @@
         "ref_tp": "SP",
         "ref_no": "SP2610000001",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 14:40:56",
@@ -22817,7 +22927,7 @@
         "ref_tp": "RO",
         "ref_no": "RO2610000362",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-07",
         "req_dt_full": "2026-10-07 17:44:38",
@@ -22879,7 +22989,7 @@
       }
     ],
     "count": 333,
-    "total_val": 82888397,
+    "total_val": 83089253,
     "groups": [
       {
         "code": "RO",
@@ -24133,12 +24243,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2609001580",
             "req_qty": 1,
-            "crt_qty": 1,
+            "crt_qty": 2,
             "avail_qty": 0,
             "req_dt": "09-28",
             "req_dt_full": "2026-09-28 12:09:39",
             "req_brch": "AS_부산(해운중동)",
-            "val": 57205,
+            "val": 57878,
             "sa": "박영묵",
             "dday": "D+10일"
           },
@@ -24286,12 +24396,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2609001640",
             "req_qty": 1,
-            "crt_qty": 1,
+            "crt_qty": 2,
             "avail_qty": 0,
             "req_dt": "09-29",
             "req_dt_full": "2026-09-29 09:28:19",
             "req_brch": "AS_부산(해운중동)",
-            "val": 31752,
+            "val": 32144,
             "sa": "염진아",
             "dday": "D+9일"
           },
@@ -25289,12 +25399,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000265",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 15:37:08",
             "req_brch": "AS_부산(해운중동)",
-            "val": 35883,
+            "val": 36769,
             "sa": "강충성",
             "dday": "D+2일"
           },
@@ -25306,12 +25416,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000265",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 15:37:08",
             "req_brch": "AS_부산(해운중동)",
-            "val": 60993,
+            "val": 62499,
             "sa": "강충성",
             "dday": "D+2일"
           },
@@ -25323,7 +25433,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000265",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 15:37:08",
@@ -25340,7 +25450,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000245",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 15:54:51",
@@ -25374,7 +25484,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000268",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:08:04",
@@ -25391,7 +25501,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000268",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:08:04",
@@ -25408,12 +25518,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000268",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:08:04",
             "req_brch": "AS_부산(해운중동)",
-            "val": 77616,
+            "val": 79632,
             "sa": "염진아",
             "dday": "D+2일"
           },
@@ -25425,12 +25535,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000268",
             "req_qty": 1,
-            "crt_qty": 1,
+            "crt_qty": 2,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:08:04",
             "req_brch": "AS_부산(해운중동)",
-            "val": 57205,
+            "val": 57878,
             "sa": "염진아",
             "dday": "D+2일"
           },
@@ -25442,7 +25552,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000268",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:08:04",
@@ -25459,7 +25569,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000268",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:08:04",
@@ -25476,12 +25586,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2608001740",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:10:07",
             "req_brch": "AS_부산(해운중동)",
-            "val": 75249,
+            "val": 77107,
             "sa": "강충성",
             "dday": "D+2일"
           },
@@ -25493,12 +25603,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000233",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:16:13",
             "req_brch": "AS_부산(해운중동)",
-            "val": 22125,
+            "val": 23305,
             "sa": "박영묵",
             "dday": "D+2일"
           },
@@ -25510,7 +25620,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000233",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:16:13",
@@ -25527,12 +25637,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000233",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:16:14",
             "req_brch": "AS_부산(해운중동)",
-            "val": 1493160,
+            "val": 1536440,
             "sa": "박영묵",
             "dday": "D+2일"
           },
@@ -25544,7 +25654,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000233",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:16:14",
@@ -25561,7 +25671,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000233",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:16:14",
@@ -25578,7 +25688,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000233",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:16:14",
@@ -25612,12 +25722,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000271",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-06",
             "req_dt_full": "2026-10-06 17:35:10",
             "req_brch": "AS_부산(해운중동)",
-            "val": 46574,
+            "val": 47850,
             "sa": "박영묵",
             "dday": "D+2일"
           },
@@ -25765,7 +25875,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000171",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 11:03:47",
@@ -25782,7 +25892,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2609000879",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 11:58:16",
@@ -26088,12 +26198,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000322",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 13:06:29",
             "req_brch": "AS_부산(해운중동)",
-            "val": 1085508,
+            "val": 1116972,
             "sa": "염진아",
             "dday": "D+1일"
           },
@@ -26105,12 +26215,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000322",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 13:06:30",
             "req_brch": "AS_부산(해운중동)",
-            "val": 114464,
+            "val": 117600,
             "sa": "염진아",
             "dday": "D+1일"
           },
@@ -26122,12 +26232,12 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000322",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 13:06:30",
             "req_brch": "AS_부산(해운중동)",
-            "val": 181602,
+            "val": 186086,
             "sa": "염진아",
             "dday": "D+1일"
           },
@@ -26292,7 +26402,7 @@
             "ref_tp": "RO",
             "ref_no": "RO2610000362",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 17:44:38",
@@ -26304,7 +26414,7 @@
         ],
         "count": 201,
         "qty_sum": 297,
-        "val": 50111124
+        "val": 50203948
       },
       {
         "code": "SB",
@@ -27915,12 +28025,12 @@
             "ref_tp": "SB",
             "ref_no": "SB2610000304",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 10:55:04",
             "req_brch": "AS_부산(해운중동)",
-            "val": 11704,
+            "val": 12087,
             "sa": "강충성",
             "dday": "D+1일"
           },
@@ -27932,12 +28042,12 @@
             "ref_tp": "SB",
             "ref_no": "SB2610000304",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 10:55:04",
             "req_brch": "AS_부산(해운중동)",
-            "val": 212382,
+            "val": 221942,
             "sa": "강충성",
             "dday": "D+1일"
           },
@@ -27949,12 +28059,12 @@
             "ref_tp": "SB",
             "ref_no": "SB2610000304",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 10:55:04",
             "req_brch": "AS_부산(해운중동)",
-            "val": 316239,
+            "val": 340727,
             "sa": "강충성",
             "dday": "D+1일"
           },
@@ -27966,12 +28076,12 @@
             "ref_tp": "SB",
             "ref_no": "SB2610000304",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 10:55:04",
             "req_brch": "AS_부산(해운중동)",
-            "val": 928341,
+            "val": 1001550,
             "sa": "강충성",
             "dday": "D+1일"
           },
@@ -28029,7 +28139,7 @@
         ],
         "count": 101,
         "qty_sum": 138,
-        "val": 25938566
+        "val": 26046206
       },
       {
         "code": "SP",
@@ -28450,7 +28560,7 @@
             "ref_tp": "SP",
             "ref_no": "SP2610000001",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 14:40:55",
@@ -28467,7 +28577,7 @@
             "ref_tp": "SP",
             "ref_no": "SP2610000001",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 14:40:55",
@@ -28484,7 +28594,7 @@
             "ref_tp": "SP",
             "ref_no": "SP2610000001",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 14:40:56",
@@ -28501,7 +28611,7 @@
             "ref_tp": "SP",
             "ref_no": "SP2610000001",
             "req_qty": 4,
-            "crt_qty": 0,
+            "crt_qty": 4,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 14:40:56",
@@ -28518,7 +28628,7 @@
             "ref_tp": "SP",
             "ref_no": "SP2610000001",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 14:40:56",
@@ -28535,12 +28645,12 @@
             "ref_tp": "SP",
             "ref_no": "SP2610000001",
             "req_qty": 1,
-            "crt_qty": 1,
+            "crt_qty": 2,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 14:40:56",
             "req_brch": "AS_부산(해운중동)",
-            "val": 31752,
+            "val": 32144,
             "sa": "박태강",
             "dday": "D+1일"
           },
@@ -28552,7 +28662,7 @@
             "ref_tp": "SP",
             "ref_no": "SP2610000001",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-07",
             "req_dt_full": "2026-10-07 14:40:56",
@@ -28564,7 +28674,7 @@
         ],
         "count": 31,
         "qty_sum": 67,
-        "val": 6838707
+        "val": 6839099
       }
     ]
   },
@@ -37019,20 +37129,20 @@
       },
       {
         "date": "10-08",
-        "in_val": 0,
+        "in_val": 12889118,
         "out_val": 0,
-        "net": 0
+        "net": 12889118
       }
     ],
-    "total_in": 41295621,
+    "total_in": 54184739,
     "total_out": 49719809,
-    "net": -8424188,
+    "net": 4464930,
     "by_code": [
       {
         "code": "O8",
-        "in_val": 31233607,
+        "in_val": 44122725,
         "out_val": 44167400,
-        "net": -12933793
+        "net": -44675
       },
       {
         "code": "OA",
@@ -37059,8 +37169,8 @@
         "net": 4198981
       }
     ],
-    "in_days": 3,
-    "avg_in": 13765207
+    "in_days": 4,
+    "avg_in": 13546185
   },
   "openro": {
     "rows": [
@@ -38327,7 +38437,7 @@
         "pub": "2026-09-28",
         "pub_full": "2026-09-28 10:33",
         "dday": "D+10일",
-        "amt": 2498056
+        "amt": 3035912
       },
       {
         "ro": "RO2609001580",
@@ -40619,7 +40729,7 @@
       }
     ],
     "count": 323,
-    "total_amt": 746070867,
+    "total_amt": 746608723,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40629,7 +40739,7 @@
       {
         "stat": "상담완료",
         "count": 144,
-        "amt": 464259453
+        "amt": 464797309
       },
       {
         "stat": "정비시작",
@@ -41655,7 +41765,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 2,
+            "crt_qty": 3,
             "avail_qty": 0,
             "val": 14110
           },
@@ -41803,9 +41913,9 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 80215
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 79910
           },
           {
             "item": "64115A547D9",
@@ -41830,7 +41940,7 @@
         ],
         "count": 3,
         "qty_sum": 7,
-        "val": 175573
+        "val": 175268
       },
       {
         "code": "SB2609000187",
@@ -42003,9 +42113,9 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 5,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 80215
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 79910
           },
           {
             "item": "11428575211",
@@ -42020,7 +42130,7 @@
         ],
         "count": 3,
         "qty_sum": 7,
-        "val": 185711
+        "val": 185406
       },
       {
         "code": "SB2609002184",
@@ -42109,7 +42219,7 @@
     ],
     "sb_count": 45,
     "line_count": 91,
-    "total_val": 14824513,
+    "total_val": 14823903,
     "o_lines": 28,
     "o_val": 6298226,
     "resv_total": 12074
@@ -43107,7 +43217,7 @@
             "alois": "SC",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "val": 67396
           },
@@ -43829,7 +43939,7 @@
             "alois": "SY",
             "sa": "염진아",
             "req_qty": 1,
-            "crt_qty": 2,
+            "crt_qty": 3,
             "avail_qty": 0,
             "val": 15600
           },
@@ -44363,7 +44473,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "val": 45430
           },
@@ -44383,7 +44493,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 2,
+            "crt_qty": 3,
             "avail_qty": 0,
             "val": 14110
           }
@@ -44415,7 +44525,7 @@
             "alois": "SC",
             "sa": "M GARAGE",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "val": 67396
           }
@@ -44437,9 +44547,9 @@
             "alois": "O8",
             "sa": "강충성",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
-            "val": 928341
+            "val": 1001550
           },
           {
             "item": "36108093839",
@@ -44447,9 +44557,9 @@
             "alois": "II",
             "sa": "강충성",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
-            "val": 912065
+            "val": 919086
           },
           {
             "item": "51778084239",
@@ -44457,9 +44567,9 @@
             "alois": "O8",
             "sa": "강충성",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
-            "val": 316239
+            "val": 340727
           },
           {
             "item": "51778084409",
@@ -44467,9 +44577,9 @@
             "alois": "O8",
             "sa": "강충성",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
-            "val": 212382
+            "val": 221942
           },
           {
             "item": "51727390750",
@@ -44477,9 +44587,9 @@
             "alois": "L6",
             "sa": "강충성",
             "req_qty": 1,
-            "crt_qty": 4,
+            "crt_qty": 8,
             "avail_qty": 0,
-            "val": 130095
+            "val": 130410
           },
           {
             "item": "51337482749",
@@ -44487,9 +44597,19 @@
             "alois": "II",
             "sa": "강충성",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
-            "val": 100725
+            "val": 106314
+          },
+          {
+            "item": "51118084178",
+            "name": "Support cove",
+            "alois": "II",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 77273
           },
           {
             "item": "51118084177",
@@ -44502,24 +44622,14 @@
             "val": 58887
           },
           {
-            "item": "51118084178",
-            "name": "Support cove",
-            "alois": "II",
-            "sa": "강충성",
-            "req_qty": 1,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "val": 54285
-          },
-          {
             "item": "51778076445",
             "name": "Support, sil",
             "alois": "O8",
             "sa": "강충성",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
-            "val": 11704
+            "val": 12087
           },
           {
             "item": "01295A085F2",
@@ -44527,14 +44637,14 @@
             "alois": "SZ",
             "sa": "강충성",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
-            "val": 10115
+            "val": 10353
           }
         ],
         "count": 10,
         "qty_sum": 10,
-        "val": 2734838
+        "val": 2878629
       },
       {
         "code": "SB2609001958",
@@ -44953,9 +45063,9 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 4,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 68756
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 68494
           },
           {
             "item": "61610040534",
@@ -45000,7 +45110,7 @@
         ],
         "count": 6,
         "qty_sum": 9,
-        "val": 232855
+        "val": 232593
       },
       {
         "code": "SB2609001898",
@@ -45035,9 +45145,9 @@
             "alois": "L1",
             "sa": "김도현",
             "req_qty": 5,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 80215
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 79910
           },
           {
             "item": "61612447932",
@@ -45072,7 +45182,7 @@
         ],
         "count": 6,
         "qty_sum": 13,
-        "val": 392524
+        "val": 392219
       },
       {
         "code": "SB2610000191",
@@ -45087,9 +45197,9 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 5,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 80215
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 79910
           },
           {
             "item": "64316835405",
@@ -45124,7 +45234,7 @@
         ],
         "count": 4,
         "qty_sum": 8,
-        "val": 183032
+        "val": 182727
       },
       {
         "code": "SB2609001845",
@@ -45159,9 +45269,9 @@
             "alois": "L1",
             "sa": "김도현",
             "req_qty": 5,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 80215
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 79910
           },
           {
             "item": "13718580428",
@@ -45186,7 +45296,7 @@
         ],
         "count": 5,
         "qty_sum": 12,
-        "val": 300275
+        "val": 299970
       },
       {
         "code": "SB2609001894",
@@ -45327,9 +45437,9 @@
             "alois": "L1",
             "sa": "김민규",
             "req_qty": 5,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 80215
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 79910
           },
           {
             "item": "13718577171",
@@ -45354,7 +45464,7 @@
         ],
         "count": 5,
         "qty_sum": 12,
-        "val": 300273
+        "val": 299968
       },
       {
         "code": "SB2610000088",
@@ -45379,9 +45489,9 @@
             "alois": "L1",
             "sa": "김도현",
             "req_qty": 4,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 68756
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 68494
           },
           {
             "item": "11428593186",
@@ -45406,7 +45516,7 @@
         ],
         "count": 4,
         "qty_sum": 7,
-        "val": 171573
+        "val": 171311
       },
       {
         "code": "SB2610000057",
@@ -45431,9 +45541,9 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 6,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 99314
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 98936
           },
           {
             "item": "64119382886",
@@ -45468,7 +45578,7 @@
         ],
         "count": 5,
         "qty_sum": 15,
-        "val": 367760
+        "val": 367382
       },
       {
         "code": "SB2609001685",
@@ -45493,9 +45603,9 @@
             "alois": "L1",
             "sa": "김도현",
             "req_qty": 5,
-            "crt_qty": 99,
-            "avail_qty": 72,
-            "val": 75800
+            "crt_qty": 219,
+            "avail_qty": 192,
+            "val": 75469
           },
           {
             "item": "61615A85266",
@@ -45520,7 +45630,7 @@
         ],
         "count": 4,
         "qty_sum": 8,
-        "val": 289630
+        "val": 289299
       },
       {
         "code": "SB2609000945",
@@ -45545,9 +45655,9 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 5,
-            "crt_qty": 99,
-            "avail_qty": 72,
-            "val": 75800
+            "crt_qty": 219,
+            "avail_qty": 192,
+            "val": 75469
           },
           {
             "item": "11428575211",
@@ -45562,7 +45672,7 @@
         ],
         "count": 3,
         "qty_sum": 7,
-        "val": 216895
+        "val": 216564
       },
       {
         "code": "SB2608001634",
@@ -45587,9 +45697,9 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 99,
-            "avail_qty": 72,
-            "val": 75800
+            "crt_qty": 219,
+            "avail_qty": 192,
+            "val": 75469
           },
           {
             "item": "11428575211",
@@ -45604,7 +45714,7 @@
         ],
         "count": 3,
         "qty_sum": 7,
-        "val": 216895
+        "val": 216564
       },
       {
         "code": "SB2609001382",
@@ -45819,9 +45929,9 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 5,
-            "crt_qty": 99,
-            "avail_qty": 72,
-            "val": 75800
+            "crt_qty": 219,
+            "avail_qty": 192,
+            "val": 75469
           },
           {
             "item": "61619478361",
@@ -45856,7 +45966,7 @@
         ],
         "count": 5,
         "qty_sum": 9,
-        "val": 256561
+        "val": 256230
       },
       {
         "code": "SB2610000404",
@@ -45891,9 +46001,9 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 4,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 68756
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 68494
           },
           {
             "item": "13718513944",
@@ -45928,7 +46038,7 @@
         ],
         "count": 6,
         "qty_sum": 9,
-        "val": 324294
+        "val": 324032
       },
       {
         "code": "SB2609001240",
@@ -46017,9 +46127,9 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 5,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 80215
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 79910
           },
           {
             "item": "64316835405",
@@ -46074,7 +46184,7 @@
         ],
         "count": 6,
         "qty_sum": 10,
-        "val": 244314
+        "val": 244009
       },
       {
         "code": "SB2610000067",
@@ -46121,9 +46231,9 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 6,
-            "crt_qty": 99,
-            "avail_qty": 72,
-            "val": 97456
+            "crt_qty": 219,
+            "avail_qty": 192,
+            "val": 97031
           },
           {
             "item": "61619466377",
@@ -46158,7 +46268,7 @@
         ],
         "count": 5,
         "qty_sum": 10,
-        "val": 366660
+        "val": 366235
       },
       {
         "code": "SB2610000355",
@@ -46215,9 +46325,9 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 4,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 68756
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 68494
           },
           {
             "item": "61610040534",
@@ -46262,7 +46372,7 @@
         ],
         "count": 6,
         "qty_sum": 9,
-        "val": 233713
+        "val": 233451
       },
       {
         "code": "SB2610000207",
@@ -46277,9 +46387,9 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 5,
-            "crt_qty": 249,
-            "avail_qty": 164,
-            "val": 80215
+            "crt_qty": 357,
+            "avail_qty": 272,
+            "val": 79910
           },
           {
             "item": "64115A547D9",
@@ -46304,7 +46414,7 @@
         ],
         "count": 3,
         "qty_sum": 7,
-        "val": 175573
+        "val": 175268
       },
       {
         "code": "SB2609001589",
@@ -46319,9 +46429,9 @@
             "alois": "L5",
             "sa": "우종훈",
             "req_qty": 2,
-            "crt_qty": 0,
+            "crt_qty": 2,
             "avail_qty": 0,
-            "val": 445056
+            "val": 466944
           },
           {
             "item": "34216882245",
@@ -46329,9 +46439,9 @@
             "alois": "A5",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 3,
+            "crt_qty": 4,
             "avail_qty": 2,
-            "val": 142923
+            "val": 144680
           },
           {
             "item": "34216882246",
@@ -46349,9 +46459,9 @@
             "alois": "A5",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 4,
+            "crt_qty": 5,
             "avail_qty": 3,
-            "val": 133507
+            "val": 136026
           },
           {
             "item": "34216892641",
@@ -46456,7 +46566,7 @@
         ],
         "count": 14,
         "qty_sum": 20,
-        "val": 1259017
+        "val": 1285181
       },
       {
         "code": "SB2610000135",
@@ -46513,7 +46623,7 @@
             "alois": "SK",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 2,
+            "crt_qty": 3,
             "avail_qty": 0,
             "val": 14110
           },
@@ -46555,9 +46665,9 @@
             "alois": "A5",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 3,
+            "crt_qty": 4,
             "avail_qty": 2,
-            "val": 142923
+            "val": 144680
           },
           {
             "item": "34216882246",
@@ -46575,9 +46685,9 @@
             "alois": "A5",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 4,
+            "crt_qty": 5,
             "avail_qty": 3,
-            "val": 133507
+            "val": 136026
           },
           {
             "item": "34216892641",
@@ -46612,14 +46722,14 @@
         ],
         "count": 7,
         "qty_sum": 8,
-        "val": 1019838
+        "val": 1024114
       }
     ],
     "sb_count": 89,
     "line_count": 343,
-    "total_val": 55807770,
+    "total_val": 55976996,
     "o_lines": 70,
-    "o_val": 19376092,
+    "o_val": 19483732,
     "resv_total": 394
   },
   "sbcar": {
@@ -46694,8 +46804,57 @@
     "pct": 0.0
   },
   "stockcheck": {
-    "rows": [],
-    "count": 0,
+    "rows": [
+      {
+        "loc": "A070382",
+        "item": "11657796857",
+        "name": "VACUUM HOSE",
+        "alois": "SK",
+        "qty": 1,
+        "no": 1
+      },
+      {
+        "loc": "A070773",
+        "item": "11718490640",
+        "name": "AGR small pa",
+        "alois": "SK",
+        "qty": 3,
+        "no": 2
+      },
+      {
+        "loc": "A140271",
+        "item": "51215A65D30",
+        "name": "Integrierter",
+        "alois": "SC",
+        "qty": 1,
+        "no": 3
+      },
+      {
+        "loc": "E/G Oil",
+        "item": "83215A65B99",
+        "name": "LL-22FE++ 0W12",
+        "alois": "L1",
+        "qty": 219,
+        "no": 4
+      },
+      {
+        "loc": "E/G Oil",
+        "item": "83215A7EDA5",
+        "name": "LL-01FE 0W-30",
+        "alois": "L1",
+        "qty": 33,
+        "no": 5
+      },
+      {
+        "loc": "E/G Oil",
+        "item": "83215B49DD6",
+        "name": "LL-17FE+ 0W-20",
+        "alois": "L1",
+        "qty": 357,
+        "no": 6
+      }
+    ],
+    "count": 6,
     "date": "2026-10-08"
   },
   "stockcheck_week": {
@@ -50417,7 +50576,7 @@
         "item": "83215A65B99",
         "name": "LL-22FE++ 0W12",
         "alois": "L1",
-        "qty": 99,
+        "qty": 219,
         "no": 465
       },
       {
@@ -50425,7 +50584,7 @@
         "item": "83215A7EDA5",
         "name": "LL-01FE 0W-30",
         "alois": "L1",
-        "qty": 9,
+        "qty": 33,
         "no": 466
       },
       {
@@ -50433,7 +50592,7 @@
         "item": "83215B49DD6",
         "name": "LL-17FE+ 0W-20",
         "alois": "L1",
-        "qty": 249,
+        "qty": 357,
         "no": 467
       }
     ],
