@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 7일 (수) · 15:38 기준",
+    "generated_at": "10월 7일 (수) · 15:50 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -264,8 +264,8 @@
     ]
   },
   "inv": {
-    "total": 976121284,
-    "item_count": 2182,
+    "total": 975849874,
+    "item_count": 2180,
     "code_count": 26,
     "alois_groups": [
       {
@@ -276,7 +276,7 @@
           {
             "code": "A1",
             "val": 219074613,
-            "pct": 22.44,
+            "pct": 22.45,
             "qty": 2494,
             "parts": [
               {
@@ -2758,7 +2758,7 @@
           {
             "code": "A6",
             "val": 102729097,
-            "pct": 10.52,
+            "pct": 10.53,
             "qty": 1498,
             "parts": [
               {
@@ -4908,7 +4908,7 @@
         ],
         "subtotal_val": 495284462,
         "subtotal_qty": 8878,
-        "subtotal_pct": 50.74
+        "subtotal_pct": 50.75
       },
       {
         "code": "L",
@@ -12311,16 +12311,10 @@
         "rows": [
           {
             "code": "SC",
-            "val": 466506,
-            "pct": 0.05,
-            "qty": 5,
+            "val": 195096,
+            "pct": 0.02,
+            "qty": 3,
             "parts": [
-              {
-                "item": "66123456369",
-                "name": "Radio",
-                "qty": 1,
-                "val": 223187
-              },
               {
                 "item": "61355B5AF76",
                 "name": "Service Card",
@@ -12338,12 +12332,6 @@
                 "name": "Key Card",
                 "qty": 1,
                 "val": 61798
-              },
-              {
-                "item": "51212756061",
-                "name": "Key",
-                "qty": 1,
-                "val": 48223
               }
             ]
           },
@@ -13614,15 +13602,15 @@
             ]
           }
         ],
-        "subtotal_val": 141908004,
-        "subtotal_qty": 1867,
-        "subtotal_pct": 14.54
+        "subtotal_val": 141636594,
+        "subtotal_qty": 1865,
+        "subtotal_pct": 14.51
       }
     ]
   },
   "oaov": {
     "total": 34612112,
-    "inv_total": 976121284,
+    "inv_total": 975849874,
     "pct": 3.55,
     "oa_val": 14109048,
     "ov_val": 20503064,
@@ -38446,14 +38434,14 @@
       },
       {
         "ro": "RO2609000685",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-09-10",
         "pub_full": "2026-09-10 10:23",
         "dday": "D+27일",
-        "amt": 725604
+        "amt": 11656704
       },
       {
         "ro": "RO2609001306",
@@ -42384,38 +42372,49 @@
       },
       {
         "ro": "RO2610000353",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-07",
         "pub_full": "2026-10-07 15:37",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 40000
+      },
+      {
+        "ro": "RO2610000354",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
+        "svc": "경수리",
+        "sa": "최민수",
+        "pub": "2026-10-07",
+        "pub_full": "2026-10-07 15:46",
+        "dday": "D+0일",
+        "amt": 341000
       }
     ],
-    "count": 413,
-    "total_amt": 826495348,
+    "count": 414,
+    "total_amt": 837807448,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 26,
+        "count": 25,
         "amt": 21394250
       },
       {
         "stat": "상담완료",
-        "count": 172,
-        "amt": 523236367
+        "count": 174,
+        "amt": 534933071
       },
       {
         "stat": "정비시작",
-        "count": 52,
-        "amt": 74658674
+        "count": 51,
+        "amt": 73933070
       },
       {
         "stat": "End Control 요청",
-        "count": 64,
-        "amt": 91458786
+        "count": 65,
+        "amt": 91799786
       },
       {
         "stat": "공정마감",
@@ -43536,7 +43535,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 11,
-            "avail_qty": 7,
+            "avail_qty": 6,
             "val": 7080
           }
         ],
@@ -44765,38 +44764,6 @@
         "count": 6,
         "qty_sum": 8,
         "val": 1933012
-      },
-      {
-        "code": "SB2609001647",
-        "resv_full": "2026-10-30 09:00",
-        "resv": "10-30",
-        "dday": "D-23일",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "66123456369",
-            "name": "Radio",
-            "alois": "SC",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 223187
-          },
-          {
-            "item": "51212756061",
-            "name": "Key",
-            "alois": "SC",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 48223
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 271410
       },
       {
         "code": "SB2609001802",
@@ -46572,7 +46539,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 11,
-            "avail_qty": 7,
+            "avail_qty": 6,
             "val": 7080
           }
         ],
@@ -46874,7 +46841,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 11,
-            "avail_qty": 7,
+            "avail_qty": 6,
             "val": 7080
           }
         ],
@@ -47851,38 +47818,6 @@
         "val": 1019838
       },
       {
-        "code": "SB2610000228",
-        "resv_full": "2026-10-07 16:00",
-        "resv": "10-07",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "34106860019",
-            "name": "Repair kit, 1,2,MI",
-            "alois": "A4",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 5,
-            "val": 144843
-          },
-          {
-            "item": "34356888167",
-            "name": "Brake pad we",
-            "alois": "A4",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 8,
-            "avail_qty": 7,
-            "val": 25220
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 170063
-      },
-      {
         "code": "SB2610000001",
         "resv_full": "2026-10-07 16:00",
         "resv": "10-07",
@@ -47943,10 +47878,52 @@
         "count": 5,
         "qty_sum": 9,
         "val": 232234
+      }
+    ],
+    "sb_count": 79,
+    "line_count": 304,
+    "total_val": 54381417,
+    "o_lines": 67,
+    "o_val": 19328858,
+    "resv_total": 381
+  },
+  "sbcar": {
+    "groups": [
+      {
+        "code": "SB2609002069",
+        "resv_full": "2026-10-07 11:05",
+        "resv": "10-07",
+        "dday": "오늘",
+        "sa": "정용환",
+        "rows": [
+          {
+            "item": "83212469985",
+            "name": "LL-12FE 0W-30",
+            "alois": "L1",
+            "sa": "정용환",
+            "req_qty": 5,
+            "crt_qty": 168,
+            "avail_qty": 126,
+            "val": 79685
+          },
+          {
+            "item": "11428507683",
+            "name": "Filt.Element",
+            "alois": "A2",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 2,
+            "val": 22230
+          }
+        ],
+        "count": 2,
+        "qty_sum": 6,
+        "val": 101915
       },
       {
         "code": "SB2610000227",
-        "resv_full": "2026-10-07 15:40",
+        "resv_full": "2026-10-07 15:48",
         "resv": "10-07",
         "dday": "오늘",
         "sa": "최민수",
@@ -47985,56 +47962,46 @@
         "count": 3,
         "qty_sum": 10,
         "val": 304298
-      }
-    ],
-    "sb_count": 82,
-    "line_count": 311,
-    "total_val": 55127188,
-    "o_lines": 67,
-    "o_val": 19328858,
-    "resv_total": 383
-  },
-  "sbcar": {
-    "groups": [
+      },
       {
-        "code": "SB2609002069",
-        "resv_full": "2026-10-07 11:05",
+        "code": "SB2610000228",
+        "resv_full": "2026-10-07 15:48",
         "resv": "10-07",
         "dday": "오늘",
-        "sa": "정용환",
+        "sa": "최민수",
         "rows": [
           {
-            "item": "83212469985",
-            "name": "LL-12FE 0W-30",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 5,
-            "crt_qty": 168,
-            "avail_qty": 126,
-            "val": 79685
+            "item": "34106860019",
+            "name": "Repair kit, 1,2,MI",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 7,
+            "avail_qty": 5,
+            "val": 144843
           },
           {
-            "item": "11428507683",
-            "name": "Filt.Element",
-            "alois": "A2",
-            "sa": "정용환",
+            "item": "34356888167",
+            "name": "Brake pad we",
+            "alois": "A4",
+            "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 2,
-            "val": 22230
+            "crt_qty": 8,
+            "avail_qty": 7,
+            "val": 25220
           }
         ],
         "count": 2,
-        "qty_sum": 6,
-        "val": 101915
+        "qty_sum": 2,
+        "val": 170063
       }
     ],
-    "sb_count": 1,
-    "line_count": 2,
-    "total_val": 101915,
+    "sb_count": 3,
+    "line_count": 7,
+    "total_val": 576276,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10089
+    "resv_total": 10092
   },
   "nonmng": {
     "rows": [],
