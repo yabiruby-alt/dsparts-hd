@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 7일 (수) · 16:02 기준",
+    "generated_at": "10월 7일 (수) · 16:14 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -264,7 +264,7 @@
     ]
   },
   "inv": {
-    "total": 974862246,
+    "total": 974639702,
     "item_count": 2180,
     "code_count": 26,
     "alois_groups": [
@@ -731,9 +731,9 @@
           },
           {
             "code": "A4",
-            "val": 46221506,
-            "pct": 4.74,
-            "qty": 1959,
+            "val": 46051443,
+            "pct": 4.72,
+            "qty": 1957,
             "parts": [
               {
                 "item": "63117214962",
@@ -778,12 +778,6 @@
                 "val": 1196253
               },
               {
-                "item": "34106860019",
-                "name": "Repair kit, 1,2,MI",
-                "qty": 7,
-                "val": 1013901
-              },
-              {
                 "item": "51118069072",
                 "name": "Trim cover, G30 front",
                 "qty": 1,
@@ -806,6 +800,12 @@
                 "name": "Trim panel,",
                 "qty": 4,
                 "val": 898092
+              },
+              {
+                "item": "34106860019",
+                "name": "Repair kit, 1,2,MI",
+                "qty": 6,
+                "val": 869058
               },
               {
                 "item": "34106884492",
@@ -1042,12 +1042,6 @@
                 "val": 203634
               },
               {
-                "item": "34356888167",
-                "name": "Brake pad we",
-                "qty": 8,
-                "val": 201760
-              },
-              {
                 "item": "31508860349",
                 "name": "Repair kit o",
                 "qty": 5,
@@ -1079,6 +1073,12 @@
               },
               {
                 "item": "34356870353",
+                "name": "Brake pad we",
+                "qty": 7,
+                "val": 176540
+              },
+              {
+                "item": "34356888167",
                 "name": "Brake pad we",
                 "qty": 7,
                 "val": 176540
@@ -1483,9 +1483,9 @@
           },
           {
             "code": "A5",
-            "val": 80016520,
+            "val": 79979363,
             "pct": 8.21,
-            "qty": 1436,
+            "qty": 1434,
             "parts": [
               {
                 "item": "66325A84CF7",
@@ -1944,12 +1944,6 @@
                 "val": 149163
               },
               {
-                "item": "51317388713",
-                "name": "Cover, winds",
-                "qty": 4,
-                "val": 148628
-              },
-              {
                 "item": "51147316703",
                 "name": "MINI emblem",
                 "qty": 3,
@@ -2062,6 +2056,12 @@
                 "name": "Set of wiper",
                 "qty": 2,
                 "val": 121878
+              },
+              {
+                "item": "51317388713",
+                "name": "Cover, winds",
+                "qty": 3,
+                "val": 111471
               },
               {
                 "item": "36122455268",
@@ -4906,9 +4906,9 @@
             ]
           }
         ],
-        "subtotal_val": 495334023,
-        "subtotal_qty": 8874,
-        "subtotal_pct": 50.81
+        "subtotal_val": 495126803,
+        "subtotal_qty": 8872,
+        "subtotal_pct": 50.8
       },
       {
         "code": "L",
@@ -4917,9 +4917,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 18124156,
+            "val": 18108832,
             "pct": 1.86,
-            "qty": 1387,
+            "qty": 1386,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4936,8 +4936,8 @@
               {
                 "item": "83212469985",
                 "name": "LL-12FE 0W-30",
-                "qty": 168,
-                "val": 2582094
+                "qty": 167,
+                "val": 2566770
               },
               {
                 "item": "83515A6CDD7",
@@ -8080,8 +8080,8 @@
             ]
           }
         ],
-        "subtotal_val": 136345907,
-        "subtotal_qty": 3968,
+        "subtotal_val": 136330583,
+        "subtotal_qty": 3967,
         "subtotal_pct": 13.99
       },
       {
@@ -13610,7 +13610,7 @@
   },
   "oaov": {
     "total": 34612112,
-    "inv_total": 974862246,
+    "inv_total": 974639702,
     "pct": 3.55,
     "oa_val": 14109048,
     "ov_val": 20503064,
@@ -38051,7 +38051,7 @@
         "pub": "2026-08-28",
         "pub_full": "2026-08-28 09:19",
         "dday": "D+40일",
-        "amt": 20212300
+        "amt": 20263200
       },
       {
         "ro": "RO2608001747",
@@ -39881,8 +39881,8 @@
       },
       {
         "ro": "RO2610000071",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-01",
@@ -41575,8 +41575,8 @@
       },
       {
         "ro": "RO2610000292",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "우종훈",
         "pub": "2026-10-07",
@@ -41608,8 +41608,8 @@
       },
       {
         "ro": "RO2610000296",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-07",
@@ -41883,8 +41883,8 @@
       },
       {
         "ro": "RO2610000323",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-07",
@@ -41938,8 +41938,8 @@
       },
       {
         "ro": "RO2610000329",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-07",
@@ -41949,8 +41949,8 @@
       },
       {
         "ro": "RO2610000330",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "우종훈",
         "pub": "2026-10-07",
@@ -41960,8 +41960,8 @@
       },
       {
         "ro": "RO2610000331",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-10-07",
@@ -42004,8 +42004,8 @@
       },
       {
         "ro": "RO2610000335",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-10-07",
@@ -42103,8 +42103,8 @@
       },
       {
         "ro": "RO2610000344",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "최민수",
         "pub": "2026-10-07",
@@ -42231,7 +42231,7 @@
         "pub": "2026-10-07",
         "pub_full": "2026-10-07 15:52",
         "dday": "D+0일",
-        "amt": 27190
+        "amt": 0
       },
       {
         "ro": "RO2610000356",
@@ -42254,30 +42254,52 @@
         "pub_full": "2026-10-07 16:00",
         "dday": "D+0일",
         "amt": 464863
+      },
+      {
+        "ro": "RO2610000358",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "염진아",
+        "pub": "2026-10-07",
+        "pub_full": "2026-10-07 16:12",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000359",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-10-07",
+        "pub_full": "2026-10-07 16:13",
+        "dday": "D+0일",
+        "amt": 1720000
       }
     ],
-    "count": 417,
-    "total_amt": 838526181,
+    "count": 419,
+    "total_amt": 840269891,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 24,
-        "amt": 19954750
+        "count": 26,
+        "amt": 21674750
       },
       {
         "stat": "상담완료",
-        "count": 176,
-        "amt": 535518904
+        "count": 175,
+        "amt": 535186899
       },
       {
         "stat": "정비시작",
-        "count": 53,
-        "amt": 75505470
+        "count": 45,
+        "amt": 74280568
       },
       {
         "stat": "End Control 요청",
-        "count": 65,
-        "amt": 91799786
+        "count": 74,
+        "amt": 93380403
       },
       {
         "stat": "공정마감",
@@ -43600,7 +43622,7 @@
             "sa": "안준영",
             "req_qty": 5,
             "crt_qty": 168,
-            "avail_qty": 133,
+            "avail_qty": 134,
             "val": 84282
           },
           {
@@ -43750,7 +43772,7 @@
     "total_val": 14824513,
     "o_lines": 28,
     "o_val": 6298226,
-    "resv_total": 12080
+    "resv_total": 12074
   },
   "sbresv": {
     "groups": [
@@ -45488,7 +45510,7 @@
             "sa": "M GARAGE",
             "req_qty": 7,
             "crt_qty": 168,
-            "avail_qty": 133,
+            "avail_qty": 134,
             "val": 107268
           },
           {
@@ -45717,8 +45739,8 @@
             "alois": "A5",
             "sa": "박영묵",
             "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 3,
+            "crt_qty": 3,
+            "avail_qty": 2,
             "val": 37157
           },
           {
@@ -47164,7 +47186,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 168,
-            "avail_qty": 133,
+            "avail_qty": 134,
             "val": 84282
           },
           {
@@ -47686,7 +47708,7 @@
     "total_val": 54149183,
     "o_lines": 67,
     "o_val": 19328858,
-    "resv_total": 382
+    "resv_total": 381
   },
   "sbcar": {
     "groups": [
@@ -47704,7 +47726,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 168,
-            "avail_qty": 133,
+            "avail_qty": 134,
             "val": 79685
           },
           {
@@ -47728,7 +47750,7 @@
     "total_val": 101915,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10093
+    "resv_total": 10095
   },
   "nonmng": {
     "rows": [],
@@ -49030,7 +49052,7 @@
         "item": "34356888167",
         "name": "Brake pad we",
         "alois": "A4",
-        "qty": 8,
+        "qty": 7,
         "no": 69
       },
       {
@@ -50262,7 +50284,7 @@
         "item": "34106860019",
         "name": "Repair kit, 1,2,MI",
         "alois": "A4",
-        "qty": 7,
+        "qty": 6,
         "no": 223
       },
       {
@@ -51286,7 +51308,7 @@
         "item": "51317388713",
         "name": "Cover, winds",
         "alois": "A5",
-        "qty": 4,
+        "qty": 3,
         "no": 351
       },
       {
@@ -52254,7 +52276,7 @@
         "item": "83212469985",
         "name": "LL-12FE 0W-30",
         "alois": "L1",
-        "qty": 168,
+        "qty": 167,
         "no": 472
       },
       {
