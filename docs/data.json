@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 8일 (목) · 15:19 기준",
+    "generated_at": "10월 8일 (목) · 15:32 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -22154,10 +22154,44 @@
         "val": 42891,
         "sa": "강충성",
         "dday": "D+0일"
+      },
+      {
+        "item": "51119463481",
+        "name": "Cover, air d",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000429",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-08",
+        "req_dt_full": "2026-10-08 15:30:47",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 87399,
+        "sa": "박영묵",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51119852199",
+        "name": "Trim cover,",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000429",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-08",
+        "req_dt_full": "2026-10-08 15:30:47",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 806702,
+        "sa": "박영묵",
+        "dday": "D+0일"
       }
     ],
-    "count": 281,
-    "total_val": 73602432,
+    "count": 283,
+    "total_val": 74496533,
     "groups": [
       {
         "code": "RO",
@@ -24864,11 +24898,45 @@
             "val": 42891,
             "sa": "강충성",
             "dday": "D+0일"
+          },
+          {
+            "item": "51119463481",
+            "name": "Cover, air d",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000429",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-08",
+            "req_dt_full": "2026-10-08 15:30:47",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 87399,
+            "sa": "박영묵",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51119852199",
+            "name": "Trim cover,",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000429",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-08",
+            "req_dt_full": "2026-10-08 15:30:47",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 806702,
+            "sa": "박영묵",
+            "dday": "D+0일"
           }
         ],
-        "count": 159,
-        "qty_sum": 255,
-        "val": 42220239
+        "count": 161,
+        "qty_sum": 257,
+        "val": 43114340
       },
       {
         "code": "SB",
@@ -36846,8 +36914,8 @@
       },
       {
         "ro": "RO2609001662",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-29",
@@ -36857,8 +36925,8 @@
       },
       {
         "ro": "RO2609001670",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-29",
@@ -37447,7 +37515,7 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 11:00",
         "dday": "D+6일",
-        "amt": 490448
+        "amt": 504448
       },
       {
         "ro": "RO2610000133",
@@ -39354,14 +39422,14 @@
       },
       {
         "ro": "RO2610000408",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-08",
         "pub_full": "2026-10-08 13:03",
         "dday": "D+0일",
-        "amt": 746755
+        "amt": 688955
       },
       {
         "ro": "RO2610000409",
@@ -39530,8 +39598,8 @@
       },
       {
         "ro": "RO2610000424",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-10-08",
@@ -39571,10 +39639,32 @@
         "pub_full": "2026-10-08 15:15",
         "dday": "D+0일",
         "amt": 1422800
+      },
+      {
+        "ro": "RO2610000428",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "김민규",
+        "pub": "2026-10-08",
+        "pub_full": "2026-10-08 15:22",
+        "dday": "D+0일",
+        "amt": 37628
+      },
+      {
+        "ro": "RO2610000429",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-10-08",
+        "pub_full": "2026-10-08 15:30",
+        "dday": "D+0일",
+        "amt": 4880300
       }
     ],
-    "count": 374,
-    "total_amt": 830569118,
+    "count": 376,
+    "total_amt": 835443246,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -39584,17 +39674,17 @@
       {
         "stat": "상담완료",
         "count": 152,
-        "amt": 491859712
+        "amt": 493507727
       },
       {
         "stat": "정비시작",
-        "count": 37,
-        "amt": 103339383
+        "count": 38,
+        "amt": 103429551
       },
       {
         "stat": "End Control 요청",
-        "count": 54,
-        "amt": 103217252
+        "count": 53,
+        "amt": 102470497
       },
       {
         "stat": "공정마감",
@@ -39603,8 +39693,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 102,
-        "amt": 118425321
+        "count": 104,
+        "amt": 122308021
       }
     ],
     "oldest": "D+534일"
@@ -41119,7 +41209,7 @@
     "total_val": 13978989,
     "o_lines": 26,
     "o_val": 6077660,
-    "resv_total": 12080
+    "resv_total": 12081
   },
   "sbresv": {
     "groups": [
@@ -44099,7 +44189,7 @@
             "sa": "염진아",
             "req_qty": 6,
             "crt_qty": 187,
-            "avail_qty": 157,
+            "avail_qty": 151,
             "val": 5238
           }
         ],
@@ -45337,7 +45427,7 @@
     "total_val": 1416628,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10084
+    "resv_total": 10085
   },
   "nonmng": {
     "rows": [],
