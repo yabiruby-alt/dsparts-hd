@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 8일 (목) · 15:44 기준",
+    "generated_at": "10월 8일 (목) · 15:57 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -22161,10 +22161,27 @@
         "val": 57324,
         "sa": "최민수",
         "dday": "D+0일"
+      },
+      {
+        "item": "18309894675",
+        "name": "Tailpipe tip",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SB",
+        "ref_no": "SB2609002157",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-08",
+        "req_dt_full": "2026-10-08 15:49:01",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 76358,
+        "sa": "이정환",
+        "dday": "D+0일"
       }
     ],
-    "count": 282,
-    "total_val": 74210313,
+    "count": 283,
+    "total_val": 74286671,
     "groups": [
       {
         "code": "RO",
@@ -26579,11 +26596,28 @@
             "val": 24480,
             "sa": "이정환",
             "dday": "D+0일"
+          },
+          {
+            "item": "18309894675",
+            "name": "Tailpipe tip",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SB",
+            "ref_no": "SB2609002157",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-08",
+            "req_dt_full": "2026-10-08 15:49:01",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 76358,
+            "sa": "이정환",
+            "dday": "D+0일"
           }
         ],
-        "count": 99,
-        "qty_sum": 136,
-        "val": 25983221
+        "count": 100,
+        "qty_sum": 137,
+        "val": 26059579
       },
       {
         "code": "SP",
@@ -35438,19 +35472,19 @@
       {
         "date": "10-08",
         "in_val": 12889118,
-        "out_val": 6313885,
-        "net": 6575233
+        "out_val": 6647024,
+        "net": 6242094
       }
     ],
     "total_in": 54184739,
-    "total_out": 55637362,
-    "net": -1452623,
+    "total_out": 55970501,
+    "net": -1785762,
     "by_code": [
       {
         "code": "O8",
         "in_val": 44122725,
-        "out_val": 48685785,
-        "net": -4563060
+        "out_val": 49018924,
+        "net": -4896199
       },
       {
         "code": "OA",
@@ -37541,8 +37575,8 @@
       },
       {
         "ro": "RO2610000146",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-10-02",
@@ -37769,17 +37803,6 @@
         "pub_full": "2026-10-06 09:06",
         "dday": "D+2일",
         "amt": 11736500
-      },
-      {
-        "ro": "RO2610000188",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "사고수리",
-        "sa": "염진아",
-        "pub": "2026-10-06",
-        "pub_full": "2026-10-06 09:06",
-        "dday": "D+2일",
-        "amt": 970890
       },
       {
         "ro": "RO2610000192",
@@ -39081,8 +39104,8 @@
       },
       {
         "ro": "RO2610000375",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "우종훈",
         "pub": "2026-10-08",
@@ -39499,8 +39522,8 @@
       },
       {
         "ro": "RO2610000419",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "최민수",
         "pub": "2026-10-08",
@@ -39543,14 +39566,14 @@
       },
       {
         "ro": "RO2610000423",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-10-08",
         "pub_full": "2026-10-08 14:21",
         "dday": "D+0일",
-        "amt": 56000
+        "amt": 28000
       },
       {
         "ro": "RO2610000424",
@@ -39630,8 +39653,8 @@
         "amt": 96600
       }
     ],
-    "count": 377,
-    "total_amt": 835864951,
+    "count": 376,
+    "total_amt": 834866061,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -39640,18 +39663,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 149,
-        "amt": 486854432
+        "count": 148,
+        "amt": 485745182
       },
       {
         "stat": "정비시작",
-        "count": 36,
-        "amt": 102159838
+        "count": 37,
+        "amt": 100773652
       },
       {
         "stat": "End Control 요청",
         "count": 56,
-        "amt": 108417242
+        "amt": 110884678
       },
       {
         "stat": "공정마감",
@@ -39660,8 +39683,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 106,
-        "amt": 124609389
+        "count": 105,
+        "amt": 123638499
       }
     ],
     "oldest": "D+534일"
@@ -41176,7 +41199,7 @@
     "total_val": 13978989,
     "o_lines": 26,
     "o_val": 6077660,
-    "resv_total": 12080
+    "resv_total": 12076
   },
   "sbresv": {
     "groups": [
@@ -42213,6 +42236,28 @@
         "count": 3,
         "qty_sum": 3,
         "val": 1500649
+      },
+      {
+        "code": "SB2609002157",
+        "resv_full": "2026-10-30 09:20",
+        "resv": "10-30",
+        "dday": "D-22일",
+        "sa": "이정환",
+        "rows": [
+          {
+            "item": "18309894675",
+            "name": "Tailpipe tip",
+            "alois": "O8",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 76358
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 76358
       },
       {
         "code": "SB2609002164",
@@ -45283,11 +45328,11 @@
         "val": 24160
       }
     ],
-    "sb_count": 81,
-    "line_count": 313,
-    "total_val": 54807694,
-    "o_lines": 70,
-    "o_val": 19641313,
+    "sb_count": 82,
+    "line_count": 314,
+    "total_val": 54884052,
+    "o_lines": 71,
+    "o_val": 19717671,
     "resv_total": 371
   },
   "sbcar": {
