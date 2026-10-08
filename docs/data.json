@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 8일 (목) · 11:10 기준",
+    "generated_at": "10월 8일 (목) · 11:23 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,7 +284,7 @@
     ]
   },
   "inv": {
-    "total": 979843422,
+    "total": 979847636,
     "item_count": 2165,
     "code_count": 25,
     "alois_groups": [
@@ -4925,9 +4925,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 20283845,
+            "val": 20288059,
             "pct": 2.07,
-            "qty": 1527,
+            "qty": 1528,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4980,8 +4980,8 @@
               {
                 "item": "66126912985",
                 "name": "Key Battery",
-                "qty": 139,
-                "val": 585746
+                "qty": 140,
+                "val": 589960
               },
               {
                 "item": "83215A7EDA5",
@@ -8040,8 +8040,8 @@
             ]
           }
         ],
-        "subtotal_val": 137240506,
-        "subtotal_qty": 4031,
+        "subtotal_val": 137244720,
+        "subtotal_qty": 4032,
         "subtotal_pct": 14.01
       },
       {
@@ -13532,7 +13532,7 @@
   },
   "oaov": {
     "total": 53698736,
-    "inv_total": 979843422,
+    "inv_total": 979847636,
     "pct": 5.48,
     "oa_val": 34194176,
     "ov_val": 19504560,
@@ -22401,10 +22401,78 @@
         "val": 120516,
         "sa": "박영묵",
         "dday": "D+0일"
+      },
+      {
+        "item": "37146879041",
+        "name": "Control rod",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000370",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-08",
+        "req_dt_full": "2026-10-08 11:11:51",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 13783,
+        "sa": "우종훈",
+        "dday": "D+0일"
+      },
+      {
+        "item": "37146895467",
+        "name": "Level sensor",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000370",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-08",
+        "req_dt_full": "2026-10-08 11:11:51",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 55407,
+        "sa": "우종훈",
+        "dday": "D+0일"
+      },
+      {
+        "item": "11615A40C06",
+        "name": "Preformed se",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609000722",
+        "req_qty": 6,
+        "crt_qty": 14,
+        "avail_qty": 8,
+        "req_dt": "10-08",
+        "req_dt_full": "2026-10-08 11:16:44",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 83448,
+        "sa": "우상만",
+        "dday": "D+0일"
+      },
+      {
+        "item": "90200007313",
+        "name": "BMW Caddy Olive",
+        "alois": "OE",
+        "pgrp": "B7",
+        "ref_tp": "SP",
+        "ref_no": "SP2610000025",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-08",
+        "req_dt_full": "2026-10-08 11:23:09",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 170600,
+        "sa": "조재완",
+        "dday": "D+0일"
       }
     ],
-    "count": 284,
-    "total_val": 74968104,
+    "count": 288,
+    "total_val": 75291342,
     "groups": [
       {
         "code": "RO",
@@ -25196,11 +25264,62 @@
             "val": 120516,
             "sa": "박영묵",
             "dday": "D+0일"
+          },
+          {
+            "item": "37146879041",
+            "name": "Control rod",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000370",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-08",
+            "req_dt_full": "2026-10-08 11:11:51",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 13783,
+            "sa": "우종훈",
+            "dday": "D+0일"
+          },
+          {
+            "item": "37146895467",
+            "name": "Level sensor",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000370",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-08",
+            "req_dt_full": "2026-10-08 11:11:51",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 55407,
+            "sa": "우종훈",
+            "dday": "D+0일"
+          },
+          {
+            "item": "11615A40C06",
+            "name": "Preformed se",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609000722",
+            "req_qty": 6,
+            "crt_qty": 14,
+            "avail_qty": 8,
+            "req_dt": "10-08",
+            "req_dt_full": "2026-10-08 11:16:44",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 83448,
+            "sa": "우상만",
+            "dday": "D+0일"
           }
         ],
-        "count": 164,
-        "qty_sum": 246,
-        "val": 42902095
+        "count": 167,
+        "qty_sum": 254,
+        "val": 43054733
       },
       {
         "code": "SB",
@@ -27252,11 +27371,28 @@
             "val": 853000,
             "sa": "조재완",
             "dday": "D+2일"
+          },
+          {
+            "item": "90200007313",
+            "name": "BMW Caddy Olive",
+            "alois": "OE",
+            "pgrp": "B7",
+            "ref_tp": "SP",
+            "ref_no": "SP2610000025",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-08",
+            "req_dt_full": "2026-10-08 11:23:09",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 170600,
+            "sa": "조재완",
+            "dday": "D+0일"
           }
         ],
-        "count": 22,
-        "qty_sum": 54,
-        "val": 6045772
+        "count": 23,
+        "qty_sum": 55,
+        "val": 6216372
       }
     ]
   },
@@ -28280,15 +28416,6 @@
         "val": 195102
       },
       {
-        "item": "11615A40C06",
-        "name": "Preformed se",
-        "pgrp": "B1",
-        "alois": "O8",
-        "qty": 14,
-        "avail_qty": 14,
-        "val": 194712
-      },
-      {
         "item": "90200005955",
         "name": "BMW DCTF 1 +",
         "pgrp": "B9",
@@ -28710,6 +28837,15 @@
         "qty": 10,
         "avail_qty": 10,
         "val": 112270
+      },
+      {
+        "item": "11615A40C06",
+        "name": "Preformed se",
+        "pgrp": "B1",
+        "alois": "O8",
+        "qty": 14,
+        "avail_qty": 8,
+        "val": 111264
       },
       {
         "item": "61628492159",
@@ -31687,15 +31823,6 @@
             "val": 213180
           },
           {
-            "item": "11615A40C06",
-            "name": "Preformed se",
-            "pgrp": "B1",
-            "alois": "O8",
-            "qty": 14,
-            "avail_qty": 14,
-            "val": 194712
-          },
-          {
             "item": "90200005955",
             "name": "BMW DCTF 1 +",
             "pgrp": "B9",
@@ -31829,6 +31956,15 @@
             "qty": 4,
             "avail_qty": 4,
             "val": 112972
+          },
+          {
+            "item": "11615A40C06",
+            "name": "Preformed se",
+            "pgrp": "B1",
+            "alois": "O8",
+            "qty": 14,
+            "avail_qty": 8,
+            "val": 111264
           },
           {
             "item": "61628492159",
@@ -33741,8 +33877,8 @@
         ],
         "count": 255,
         "qty_sum": 1041,
-        "avail_sum": 1035,
-        "val": 34360262
+        "avail_sum": 1029,
+        "val": 34276814
       },
       {
         "code": "OA",
@@ -35663,7 +35799,7 @@
       }
     ],
     "count": 464,
-    "total_val": 143746621
+    "total_val": 143663173
   },
   "oflow": {
     "rows": [
@@ -36381,7 +36517,7 @@
         "pub": "2026-09-10",
         "pub_full": "2026-09-10 16:24",
         "dday": "D+28일",
-        "amt": 1852642
+        "amt": 20791542
       },
       {
         "ro": "RO2609000738",
@@ -37562,8 +37698,8 @@
       },
       {
         "ro": "RO2610000049",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Recall/TC",
         "sa": "최민수",
         "pub": "2026-10-01",
@@ -38299,17 +38435,6 @@
       },
       {
         "ro": "RO2610000395",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "진단",
-        "sa": "최민수",
-        "pub": "2026-10-06",
-        "pub_full": "2026-10-06 10:56",
-        "dday": "D+2일",
-        "amt": 158724
-      },
-      {
-        "ro": "RO2610000231",
         "stat": "가정산 완료",
         "stat_cd": "05",
         "svc": "진단",
@@ -38317,7 +38442,7 @@
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 10:56",
         "dday": "D+2일",
-        "amt": 139221
+        "amt": 158724
       },
       {
         "ro": "RO2610000232",
@@ -39267,8 +39392,8 @@
       },
       {
         "ro": "RO2610000361",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-07",
@@ -39373,7 +39498,7 @@
         "pub": "2026-10-08",
         "pub_full": "2026-10-08 09:02",
         "dday": "D+0일",
-        "amt": 37628
+        "amt": 129828
       },
       {
         "ro": "RO2610000372",
@@ -39432,8 +39557,8 @@
       },
       {
         "ro": "RO2610000376",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-08",
@@ -39641,38 +39766,49 @@
       },
       {
         "ro": "RO2610000398",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "입고 Proactive-RITA",
         "sa": "안준영",
         "pub": "2026-10-08",
         "pub_full": "2026-10-08 11:08",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 591135
+      },
+      {
+        "ro": "RO2610000399",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-08",
+        "pub_full": "2026-10-08 11:20",
+        "dday": "D+0일",
+        "amt": 200000
       }
     ],
     "count": 354,
-    "total_amt": 777333476,
+    "total_amt": 797016490,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 29,
-        "amt": 15200150
+        "amt": 15400150
       },
       {
         "stat": "상담완료",
         "count": 153,
-        "amt": 480421986
+        "amt": 497452396
       },
       {
         "stat": "정비시작",
         "count": 41,
-        "amt": 85124963
+        "amt": 85143291
       },
       {
         "stat": "End Control 요청",
-        "count": 40,
-        "amt": 97894622
+        "count": 39,
+        "amt": 97735898
       },
       {
         "stat": "공정마감",
@@ -39681,8 +39817,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 90,
-        "amt": 98274855
+        "count": 91,
+        "amt": 100867855
       }
     ],
     "oldest": "D+534일"
@@ -40837,7 +40973,7 @@
             "sa": "안준영",
             "req_qty": 5,
             "crt_qty": 340,
-            "avail_qty": 260,
+            "avail_qty": 255,
             "val": 79910
           },
           {
@@ -41037,7 +41173,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 340,
-            "avail_qty": 260,
+            "avail_qty": 255,
             "val": 79910
           },
           {
@@ -41111,7 +41247,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 340,
-            "avail_qty": 260,
+            "avail_qty": 255,
             "val": 79910
           },
           {
@@ -44053,7 +44189,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 26,
-            "avail_qty": 22,
+            "avail_qty": 21,
             "val": 71071
           },
           {
@@ -44063,7 +44199,7 @@
             "sa": "정용환",
             "req_qty": 4,
             "crt_qty": 340,
-            "avail_qty": 260,
+            "avail_qty": 255,
             "val": 68494
           },
           {
@@ -44083,7 +44219,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 24,
-            "avail_qty": 20,
+            "avail_qty": 19,
             "val": 19666
           },
           {
@@ -44135,7 +44271,7 @@
             "sa": "김도현",
             "req_qty": 4,
             "crt_qty": 197,
-            "avail_qty": 179,
+            "avail_qty": 175,
             "val": 82476
           },
           {
@@ -44145,7 +44281,7 @@
             "sa": "김도현",
             "req_qty": 5,
             "crt_qty": 340,
-            "avail_qty": 260,
+            "avail_qty": 255,
             "val": 79910
           },
           {
@@ -44197,7 +44333,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 340,
-            "avail_qty": 260,
+            "avail_qty": 255,
             "val": 79910
           },
           {
@@ -44207,7 +44343,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 26,
-            "avail_qty": 22,
+            "avail_qty": 21,
             "val": 71071
           },
           {
@@ -44217,7 +44353,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 24,
-            "avail_qty": 20,
+            "avail_qty": 19,
             "val": 19666
           },
           {
@@ -44259,7 +44395,7 @@
             "sa": "김도현",
             "req_qty": 4,
             "crt_qty": 197,
-            "avail_qty": 179,
+            "avail_qty": 175,
             "val": 82476
           },
           {
@@ -44269,7 +44405,7 @@
             "sa": "김도현",
             "req_qty": 5,
             "crt_qty": 340,
-            "avail_qty": 260,
+            "avail_qty": 255,
             "val": 79910
           },
           {
@@ -44427,7 +44563,7 @@
             "sa": "김민규",
             "req_qty": 4,
             "crt_qty": 197,
-            "avail_qty": 179,
+            "avail_qty": 175,
             "val": 82476
           },
           {
@@ -44437,7 +44573,7 @@
             "sa": "김민규",
             "req_qty": 5,
             "crt_qty": 340,
-            "avail_qty": 260,
+            "avail_qty": 255,
             "val": 79910
           },
           {
@@ -44479,7 +44615,7 @@
             "sa": "김도현",
             "req_qty": 1,
             "crt_qty": 26,
-            "avail_qty": 22,
+            "avail_qty": 21,
             "val": 71071
           },
           {
@@ -44489,7 +44625,7 @@
             "sa": "김도현",
             "req_qty": 4,
             "crt_qty": 340,
-            "avail_qty": 260,
+            "avail_qty": 255,
             "val": 68494
           },
           {
@@ -44499,7 +44635,7 @@
             "sa": "김도현",
             "req_qty": 1,
             "crt_qty": 24,
-            "avail_qty": 20,
+            "avail_qty": 19,
             "val": 19666
           },
           {
@@ -44531,7 +44667,7 @@
             "sa": "안준영",
             "req_qty": 6,
             "crt_qty": 197,
-            "avail_qty": 179,
+            "avail_qty": 175,
             "val": 123714
           },
           {
@@ -44541,7 +44677,7 @@
             "sa": "안준영",
             "req_qty": 6,
             "crt_qty": 340,
-            "avail_qty": 260,
+            "avail_qty": 255,
             "val": 98936
           },
           {
@@ -45109,7 +45245,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 26,
-            "avail_qty": 22,
+            "avail_qty": 21,
             "val": 71071
           },
           {
@@ -45119,7 +45255,7 @@
             "sa": "정용환",
             "req_qty": 4,
             "crt_qty": 340,
-            "avail_qty": 260,
+            "avail_qty": 255,
             "val": 68494
           },
           {
@@ -45129,7 +45265,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 9,
-            "avail_qty": 8,
+            "avail_qty": 7,
             "val": 35258
           },
           {
@@ -45149,7 +45285,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 24,
-            "avail_qty": 20,
+            "avail_qty": 19,
             "val": 19666
           }
         ],
@@ -45198,43 +45334,11 @@
         "count": 3,
         "qty_sum": 3,
         "val": 612921
-      },
-      {
-        "code": "SB2610000412",
-        "resv_full": "2026-10-08 12:00",
-        "resv": "10-08",
-        "dday": "오늘",
-        "sa": "정용환",
-        "rows": [
-          {
-            "item": "13718577171",
-            "name": "Air filter e",
-            "alois": "A2",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 8,
-            "avail_qty": 5,
-            "val": 32086
-          },
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "sa": "정용환",
-            "req_qty": 1,
-            "crt_qty": 237,
-            "avail_qty": 211,
-            "val": 12080
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 44166
       }
     ],
-    "sb_count": 86,
-    "line_count": 305,
-    "total_val": 53181150,
+    "sb_count": 85,
+    "line_count": 303,
+    "total_val": 53136984,
     "o_lines": 69,
     "o_val": 19678329,
     "resv_total": 371
@@ -45343,7 +45447,7 @@
     "total_val": 1416628,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10059
+    "resv_total": 10060
   },
   "nonmng": {
     "rows": [
@@ -46761,7 +46865,7 @@
         "item": "66126912985",
         "name": "Key Battery",
         "alois": "L1",
-        "qty": 139,
+        "qty": 140,
         "no": 63
       },
       {
