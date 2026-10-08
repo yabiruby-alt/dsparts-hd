@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 8일 (목) · 12:12 기준",
+    "generated_at": "10월 8일 (목) · 12:24 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -35842,14 +35842,14 @@
       {
         "date": "10-07",
         "in_val": 14985896,
-        "out_val": 17159537,
-        "net": -2173641
+        "out_val": 16886914,
+        "net": -1901018
       },
       {
         "date": "10-08",
         "in_val": 12889118,
-        "out_val": 4831025,
-        "net": 8058093
+        "out_val": 5103648,
+        "net": 7785470
       }
     ],
     "total_in": 54184739,
@@ -37775,8 +37775,8 @@
       },
       {
         "ro": "RO2610000078",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "경수리",
         "sa": "김민규",
         "pub": "2026-10-01",
@@ -39634,8 +39634,8 @@
       },
       {
         "ro": "RO2610000382",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-08",
@@ -39824,13 +39824,13 @@
       },
       {
         "stat": "정비시작",
-        "count": 38,
-        "amt": 82188509
+        "count": 36,
+        "amt": 80570670
       },
       {
         "stat": "End Control 요청",
-        "count": 48,
-        "amt": 104083802
+        "count": 50,
+        "amt": 105701641
       },
       {
         "stat": "공정마감",
@@ -45363,7 +45363,7 @@
     "total_val": 53136984,
     "o_lines": 69,
     "o_val": 19678329,
-    "resv_total": 374
+    "resv_total": 375
   },
   "sbcar": {
     "groups": [
