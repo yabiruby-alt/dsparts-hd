@@ -175,6 +175,52 @@ def wait_for_frame(page: Page, url_substr: str, timeout_ms: int = 20000) -> Fram
         page.wait_for_timeout(300)
     raise TimeoutError(f"화면을 찾지 못했습니다: {url_substr}")
 
+# 메뉴를 열지 않고 홈 화면(최상위 페이지)에서 바로 조회 API를 부른다 (2026-10-12 전 조회 일치 확인).
+# 홈 화면 호출이 실패하면 그 조회만 기존 방식(메뉴 열기 -> 화면 안에서 호출)으로 자동 전환한다.
+# 끄려면 환경변수 PARTSBAY_MENU_MODE=1.
+DIRECT_MODE = os.environ.get("PARTSBAY_MENU_MODE") != "1"
+_FALLBACK_SEEN = set()
+
+
+class DirectScreen:
+    """frame 처럼 .evaluate(js, arg) 를 받는 객체. 먼저 홈 화면에서 실행, 실패하면 메뉴 화면(frame)에서 다시 실행."""
+
+    def __init__(self, page, section, label, substr):
+        self.page, self.section, self.label, self.substr = page, section, label, substr
+        self._frame = None
+
+    def menu_frame(self) -> Frame:
+        """기존 방식의 화면 frame (화면의 입력칸 값처럼 DOM이 필요할 때도 이걸 씀)"""
+        if self._frame is None or self._frame.is_detached():
+            click_menu(self.page, self.section, self.label)
+            self._frame = wait_for_frame(self.page, self.substr)
+        return self._frame
+
+    def evaluate(self, js, arg=None):
+        if self._frame is None:
+            try:
+                r = self.page.evaluate(js, arg)
+                if not (isinstance(r, dict) and r.get("ok") is False):
+                    return r
+                why = str(r)[:120]
+            except Exception as e:
+                if type(e).__name__ == "TargetClosedError":
+                    raise
+                why = f"{type(e).__name__}: {e}"[:120]
+            if self.label not in _FALLBACK_SEEN:
+                _FALLBACK_SEEN.add(self.label)
+                print(f"   [직접 조회 실패 -> 메뉴 방식으로 전환] {self.label}: {why}")
+        return self.menu_frame().evaluate(js, arg)
+
+
+def open_screen(page, section: str, label: str, substr: str):
+    """조회에 쓸 대상. 직접 모드면 메뉴를 열지 않음. (반환값은 fetch_rows/.evaluate 에 그대로 쓰면 됨)"""
+    if DIRECT_MODE:
+        return DirectScreen(page, section, label, substr)
+    click_menu(page, section, label)
+    return wait_for_frame(page, substr)
+
+
 
 FETCH_JS = """
 async ({url, body}) => {
@@ -207,8 +253,7 @@ async ({url, body}) => {
 def lookup_stock(page: Page, pn: str) -> dict:
     """부품번호 하나의 해운대(우리 지점) 재고 + RDC 재고 원본 응답. DMS 세션을 쓰므로 메인 스레드에서만 호출."""
     out = {"pn": pn}
-    click_menu(page, "icon-parts", "현재고리스트 조회")
-    frame = wait_for_frame(page, "selectInventListMain")
+    frame = open_screen(page, "icon-parts", "현재고리스트 조회", "selectInventListMain")
     own_body = {
         "recordCountPerPage": 100, "pageIndex": 1, "firstIndex": 0, "lastIndex": 100,
         "sCorpCd": DEALER_CD, "sBizAreaCd": BIZ_AREA_CD, "sBrchCd": BRCH_CD,
@@ -258,8 +303,7 @@ def fetch_rows(frame: Frame, url: str, body: dict) -> list:
 # ============================================================
 
 def extract_receiving(page: Page, today_str: str) -> list:
-    click_menu(page, "icon-parts", "입고현황")
-    frame = wait_for_frame(page, "selectWhStatusMain")
+    frame = open_screen(page, "icon-parts", "입고현황", "selectWhStatusMain")
     body = {
         "recordCountPerPage": 5000, "pageIndex": 1,
         "sRealWhDtFrom": today_str, "sRealWhDtTo": today_str,
@@ -271,8 +315,7 @@ def extract_receiving(page: Page, today_str: str) -> list:
 
 def extract_receiving_range(page: Page, start_str: str, end_str: str) -> list:
     """입고현황을 날짜 범위(예: 이번달 1일~오늘)로 조회. O파트 입출고 내역 메뉴용."""
-    click_menu(page, "icon-parts", "입고현황")
-    frame = wait_for_frame(page, "selectWhStatusMain")
+    frame = open_screen(page, "icon-parts", "입고현황", "selectWhStatusMain")
     body = {
         "recordCountPerPage": 200000, "pageIndex": 1,
         "sRealWhDtFrom": start_str, "sRealWhDtTo": end_str,
@@ -283,8 +326,7 @@ def extract_receiving_range(page: Page, start_str: str, end_str: str) -> list:
 
 
 def extract_inventory(page: Page) -> list:
-    click_menu(page, "icon-parts", "현재고리스트 조회")
-    frame = wait_for_frame(page, "selectInventListMain")
+    frame = open_screen(page, "icon-parts", "현재고리스트 조회", "selectInventListMain")
     body = {
         "recordCountPerPage": 200000, "pageIndex": 1, "firstIndex": 0, "lastIndex": 200000,
         "sCorpCd": DEALER_CD, "sBizAreaCd": BIZ_AREA_CD, "sBrchCd": BRCH_CD,
@@ -308,15 +350,13 @@ def _turnover_body(start_str: str, end_str: str) -> dict:
 
 
 def extract_turnover(page: Page, month_start: str, today_str: str) -> list:
-    click_menu(page, "icon-report", "Turn Over 리포트")
-    frame = wait_for_frame(page, "selectDLRTurnOver")
+    frame = open_screen(page, "icon-report", "Turn Over 리포트", "selectDLRTurnOver")
     return fetch_rows(frame, "/rpt/raw/selectDLRTurnOver.do", _turnover_body(month_start, today_str))
 
 
 def extract_resv_sbs(page: Page, stat: str, start_str: str) -> list:
     """서비스예약현황에서 예약상태(01 예약접수/03 예약취소/04 No Show)별 SB. start_str부터 무한대(2099)까지."""
-    click_menu(page, "icon-service", "서비스예약현황")
-    frame = wait_for_frame(page, "selectResvAcptStatusMain")
+    frame = open_screen(page, "icon-service", "서비스예약현황", "selectResvAcptStatusMain")
     body = {
         "recordCountPerPage": 200000, "pageIndex": 1, "firstIndex": 0, "lastIndex": 200000,
         "sDlrCd": DEALER_CD, "sBizAreaCd": BIZ_AREA_CD, "sBrchCd": BRCH_CD,
@@ -338,8 +378,7 @@ def extract_carin_sbs_without_ro(page: Page, req_rows: list, today) -> tuple:
 
     ro_from = min(((r.get("carAcptDtime") or r.get("resvDtime") or "")[:10] or start) for r in cand)
     cur = datetime.strptime(ro_from, "%Y-%m-%d").date() - timedelta(days=2)
-    click_menu(page, "icon-report", "RO 리포트")
-    frame = wait_for_frame(page, "selectRawRptByRoRptMain")
+    frame = open_screen(page, "icon-report", "RO 리포트", "selectRawRptByRoRptMain")
     resv_with_ro = set()
     while cur <= today:  # RO 리포트는 길게 조회하면 느려서 월 단위로 쪼갬
         nxt = (cur.replace(day=28) + timedelta(days=4)).replace(day=1)
@@ -365,8 +404,7 @@ OPEN_RO_STAT_CODES = ("01", "02", "03", "08", "04", "05")  # 06=인보이스 완
 
 def extract_open_ros(page: Page, today_str: str) -> list:
     """RO 리포트에서 2000-01-01~오늘 발행된 RO 중 인보이스 안 된 것(상태별로 나눠 조회)."""
-    click_menu(page, "icon-report", "RO 리포트")
-    frame = wait_for_frame(page, "selectRawRptByRoRptMain")
+    frame = open_screen(page, "icon-report", "RO 리포트", "selectRawRptByRoRptMain")
     rows = []
     for stat in OPEN_RO_STAT_CODES:
         body = {
@@ -385,8 +423,7 @@ def extract_open_ros(page: Page, today_str: str) -> list:
 def extract_part_requests(page: Page) -> list:
     """출고요청관리: 미처리 부품 출고요청(어떤 RO/SB/SP에 재고가 묶여있는지 참조문서번호 포함).
     sNotProcQty(처리잔여수량 존재여부) 필터를 걸면 partStatCd=R("가용(입고)") 건이 빠지므로 필터를 풀어서(빈 값) 전체를 가져온다."""
-    click_menu(page, "icon-parts", "출고요청관리")
-    frame = wait_for_frame(page, "selectDlvReqMngMain")
+    frame = open_screen(page, "icon-parts", "출고요청관리", "selectDlvReqMngMain")
     rows = []
     for req_tp in ("01", "03"):  # 01=RO/SB/SP 대부분, 03=소수 잔여 유형(확인됨)
         body = {
