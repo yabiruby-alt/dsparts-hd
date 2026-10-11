@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 12일 (월) · 08:33 기준",
+    "generated_at": "10월 12일 (월) · 08:38 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,7 +16,7 @@
     "top5": []
   },
   "inv": {
-    "total": 985273873,
+    "total": 984408820,
     "item_count": 2178,
     "code_count": 25,
     "alois_groups": [
@@ -28,7 +28,7 @@
           {
             "code": "A1",
             "val": 215122000,
-            "pct": 21.83,
+            "pct": 21.85,
             "qty": 2397,
             "parts": [
               {
@@ -484,7 +484,7 @@
           {
             "code": "A4",
             "val": 42674310,
-            "pct": 4.33,
+            "pct": 4.34,
             "qty": 1921,
             "parts": [
               {
@@ -1229,9 +1229,9 @@
           },
           {
             "code": "A5",
-            "val": 94856295,
-            "pct": 9.63,
-            "qty": 1468,
+            "val": 93991242,
+            "pct": 9.55,
+            "qty": 1466,
             "parts": [
               {
                 "item": "11418646454",
@@ -1312,12 +1312,6 @@
                 "val": 1802319
               },
               {
-                "item": "51128073725",
-                "name": "Bumper trim",
-                "qty": 2,
-                "val": 1730106
-              },
-              {
                 "item": "31106898553",
                 "name": "Wishbone, bo",
                 "qty": 3,
@@ -1358,6 +1352,12 @@
                 "name": "Disc wheel l",
                 "qty": 1,
                 "val": 925540
+              },
+              {
+                "item": "51128073725",
+                "name": "Bumper trim",
+                "qty": 1,
+                "val": 865053
               },
               {
                 "item": "31108837711",
@@ -2528,7 +2528,7 @@
           {
             "code": "A6",
             "val": 87433834,
-            "pct": 8.87,
+            "pct": 8.88,
             "qty": 1434,
             "parts": [
               {
@@ -4598,9 +4598,9 @@
             ]
           }
         ],
-        "subtotal_val": 486355124,
+        "subtotal_val": 485490071,
         "subtotal_qty": 8642,
-        "subtotal_pct": 49.36
+        "subtotal_pct": 49.32
       },
       {
         "code": "L",
@@ -4678,7 +4678,7 @@
           {
             "code": "L2",
             "val": 14818272,
-            "pct": 1.5,
+            "pct": 1.51,
             "qty": 389,
             "parts": [
               {
@@ -5396,7 +5396,7 @@
           {
             "code": "L7",
             "val": 58148136,
-            "pct": 5.9,
+            "pct": 5.91,
             "qty": 1254,
             "parts": [
               {
@@ -7726,7 +7726,7 @@
         ],
         "subtotal_val": 136074473,
         "subtotal_qty": 3859,
-        "subtotal_pct": 13.81
+        "subtotal_pct": 13.82
       },
       {
         "code": "O",
@@ -7736,7 +7736,7 @@
           {
             "code": "O8",
             "val": 71075513,
-            "pct": 7.21,
+            "pct": 7.22,
             "qty": 1217,
             "parts": [
               {
@@ -9988,7 +9988,7 @@
           {
             "code": "OA",
             "val": 34909724,
-            "pct": 3.54,
+            "pct": 3.55,
             "qty": 211,
             "parts": [
               {
@@ -10548,7 +10548,7 @@
           {
             "code": "OE",
             "val": 80384084,
-            "pct": 8.16,
+            "pct": 8.17,
             "qty": 616,
             "parts": [
               {
@@ -11904,7 +11904,7 @@
         ],
         "subtotal_val": 212452547,
         "subtotal_qty": 2260,
-        "subtotal_pct": 21.56
+        "subtotal_pct": 21.58
       },
       {
         "code": "I",
@@ -12638,7 +12638,7 @@
           {
             "code": "SZ",
             "val": 88210129,
-            "pct": 8.95,
+            "pct": 8.96,
             "qty": 516,
             "parts": [
               {
@@ -13336,14 +13336,14 @@
         ],
         "subtotal_val": 145945256,
         "subtotal_qty": 1776,
-        "subtotal_pct": 14.81
+        "subtotal_pct": 14.83
       }
     ]
   },
   "oaov": {
     "total": 56692243,
-    "inv_total": 985273873,
-    "pct": 5.75,
+    "inv_total": 984408820,
+    "pct": 5.76,
     "oa_val": 34909724,
     "ov_val": 21782519,
     "oa_lines": 92,
@@ -17084,7 +17084,7 @@
     ],
     "m12_val": 61795655,
     "m12_count": 206,
-    "m12_pct": 6.27,
+    "m12_pct": 6.28,
     "m24_items": [
       {
         "item": "24008741536",
@@ -22573,10 +22573,27 @@
         "val": 158191,
         "sa": "우종훈",
         "dday": "D+0일"
+      },
+      {
+        "item": "61278606057",
+        "name": "ISA screw",
+        "alois": "O8",
+        "pgrp": "M1",
+        "ref_tp": "RO",
+        "ref_no": "RO2609001026",
+        "req_qty": 4,
+        "crt_qty": 24,
+        "avail_qty": 20,
+        "req_dt": "10-12",
+        "req_dt_full": "2026-10-12 08:38:19",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 12784,
+        "sa": "최민수",
+        "dday": "D+0일"
       }
     ],
-    "count": 297,
-    "total_val": 78503393,
+    "count": 298,
+    "total_val": 78516177,
     "groups": [
       {
         "code": "RO",
@@ -25453,11 +25470,28 @@
             "val": 158191,
             "sa": "우종훈",
             "dday": "D+0일"
+          },
+          {
+            "item": "61278606057",
+            "name": "ISA screw",
+            "alois": "O8",
+            "pgrp": "M1",
+            "ref_tp": "RO",
+            "ref_no": "RO2609001026",
+            "req_qty": 4,
+            "crt_qty": 24,
+            "avail_qty": 20,
+            "req_dt": "10-12",
+            "req_dt_full": "2026-10-12 08:38:19",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 12784,
+            "sa": "최민수",
+            "dday": "D+0일"
           }
         ],
-        "count": 169,
-        "qty_sum": 272,
-        "val": 45044731
+        "count": 170,
+        "qty_sum": 276,
+        "val": 45057515
       },
       {
         "code": "SB",
@@ -29492,15 +29526,6 @@
         "val": 77265
       },
       {
-        "item": "61278606057",
-        "name": "ISA screw",
-        "pgrp": "M1",
-        "alois": "O8",
-        "qty": 24,
-        "avail_qty": 24,
-        "val": 76704
-      },
-      {
         "item": "82292469991",
         "name": "Door pin",
         "pgrp": "M3",
@@ -29742,6 +29767,15 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 63975
+      },
+      {
+        "item": "61278606057",
+        "name": "ISA screw",
+        "pgrp": "M1",
+        "alois": "O8",
+        "qty": 24,
+        "avail_qty": 20,
+        "val": 63920
       },
       {
         "item": "82292355518",
@@ -32494,15 +32528,6 @@
             "val": 77265
           },
           {
-            "item": "61278606057",
-            "name": "ISA screw",
-            "pgrp": "M1",
-            "alois": "O8",
-            "qty": 24,
-            "avail_qty": 24,
-            "val": 76704
-          },
-          {
             "item": "51118098671",
             "name": "Impact absor",
             "pgrp": "B1",
@@ -32618,6 +32643,15 @@
             "qty": 8,
             "avail_qty": 8,
             "val": 65408
+          },
+          {
+            "item": "61278606057",
+            "name": "ISA screw",
+            "pgrp": "M1",
+            "alois": "O8",
+            "qty": 24,
+            "avail_qty": 20,
+            "val": 63920
           },
           {
             "item": "07148845501",
@@ -34188,8 +34222,8 @@
         ],
         "count": 258,
         "qty_sum": 1060,
-        "avail_sum": 1047,
-        "val": 34573134
+        "avail_sum": 1043,
+        "val": 34560350
       },
       {
         "code": "OA",
@@ -36110,7 +36144,7 @@
       }
     ],
     "count": 467,
-    "total_val": 144053745
+    "total_val": 144040961
   },
   "oflow": {
     "rows": [
@@ -36929,7 +36963,7 @@
         "pub": "2026-09-16",
         "pub_full": "2026-09-16 10:40",
         "dday": "D+26일",
-        "amt": 4645700
+        "amt": 4831500
       },
       {
         "ro": "RO2609001040",
@@ -40494,20 +40528,42 @@
         "pub_full": "2026-10-12 07:42",
         "dday": "D+0일",
         "amt": 105400
+      },
+      {
+        "ro": "RO2610000484",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "염진아",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 08:37",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000485",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "염진아",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 08:38",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 388,
-    "total_amt": 825620296,
+    "count": 390,
+    "total_amt": 825806096,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 26,
+        "count": 28,
         "amt": 12914131
       },
       {
         "stat": "상담완료",
         "count": 145,
-        "amt": 490925148
+        "amt": 491110948
       },
       {
         "stat": "정비시작",
@@ -45414,7 +45470,7 @@
     "total_val": 51077800,
     "o_lines": 73,
     "o_val": 21600335,
-    "resv_total": 376
+    "resv_total": 377
   },
   "sbcar": {
     "groups": [
@@ -45520,7 +45576,7 @@
     "total_val": 1416628,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 9918
+    "resv_total": 9921
   },
   "nonmng": {
     "rows": [
@@ -48384,7 +48440,7 @@
         "item": "51128073725",
         "name": "Bumper trim",
         "alois": "A5",
-        "qty": 2,
+        "qty": 1,
         "no": 337
       },
       {

@@ -354,8 +354,38 @@ def extract_turnover(page: Page, month_start: str, today_str: str) -> list:
     return fetch_rows(frame, "/rpt/raw/selectDLRTurnOver.do", _turnover_body(month_start, today_str))
 
 
+# 서비스예약현황 중 무거운 조회(노쇼 04 약 15초, 차량접수 02 약 11초)는 하루 3번만: 데몬을 켰을 때 + 12시 + 16시.
+RESV_CACHE_STATS = ("04", "02")
+RESV_REFRESH_HOURS = (12, 16)
+_RESV_CACHE = {}   # stat -> (조회 시각, rows)
+
+
+def _resv_cache_due(stat: str, now: datetime) -> bool:
+    hit = _RESV_CACHE.get(stat)
+    if hit is None:   # 데몬을 켠 뒤 첫 조회
+        return True
+    fetched = hit[0]
+    for h in RESV_REFRESH_HOURS:
+        slot = now.replace(hour=h, minute=0, second=0, microsecond=0)
+        if fetched < slot <= now:   # 마지막 조회 이후 12시/16시를 지났으면 다시 조회
+            return True
+    return False
+
+
 def extract_resv_sbs(page: Page, stat: str, start_str: str) -> list:
     """서비스예약현황에서 예약상태(01 예약접수/03 예약취소/04 No Show)별 SB. start_str부터 무한대(2099)까지."""
+    now = datetime.now(ZoneInfo("Asia/Seoul"))
+    if stat in RESV_CACHE_STATS and not _resv_cache_due(stat, now):
+        fetched, rows = _RESV_CACHE[stat]
+        print(f"   (서비스예약 {stat}: {fetched:%H:%M} 조회분 사용, 다음 조회는 12시/16시)")
+        return rows
+    rows = _fetch_resv_sbs(page, stat, start_str)
+    if stat in RESV_CACHE_STATS:
+        _RESV_CACHE[stat] = (now, rows)
+    return rows
+
+
+def _fetch_resv_sbs(page: Page, stat: str, start_str: str) -> list:
     frame = open_screen(page, "icon-service", "서비스예약현황", "selectResvAcptStatusMain")
     body = {
         "recordCountPerPage": 200000, "pageIndex": 1, "firstIndex": 0, "lastIndex": 200000,
