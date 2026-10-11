@@ -1584,6 +1584,15 @@ def start_reason_server() -> None:
     print(f"진행RO 사유 / 타이어 마스터 입력 서버 시작 - 이 PC에서 http://127.0.0.1:{REASON_PORT} 로 접속하면 입력/수정 가능")
 
 
+def _serve_app_mid(page: Page) -> None:
+    """주기(조회 10여 개)가 도는 중간중간 재고조회·재고조사 앱 요청을 처리 — 갱신이 끝날 때까지 기다리지 않게."""
+    try:
+        serve_stock_requests(page)
+    except Exception as e:
+        print(f"   [재고조회 요청 처리 실패] {type(e).__name__}: {e}")
+    serve_stockapp_requests(page)
+
+
 def run_cycle(page: Page, rr_page: Page | None = None) -> None:
     """이미 로그인된 page로 데이터 한 번 뽑아서 대시보드 생성 + 깃허브 push."""
     now = datetime.now(ZoneInfo("Asia/Seoul"))
@@ -1599,25 +1608,35 @@ def run_cycle(page: Page, rr_page: Page | None = None) -> None:
 
     print(" - 오늘 입고현황")
     recv_rows = extract_receiving(page, today_str)
+    _serve_app_mid(page)
     print(" - 현재고리스트")
     inv_rows = extract_inventory(page)
+    _serve_app_mid(page)
     print(" - Turn Over 리포트 (당월)")
     to_rows = extract_turnover(page, month_start, today_str)
+    _serve_app_mid(page)
     print(" - 출고요청관리 (O계열 RO/SB/SP)")
     req_rows = extract_part_requests(page)
+    _serve_app_mid(page)
     print(" - RO 리포트 (진행 RO: 인보이스 미완료)")
     open_ro_rows = extract_open_ros(page, today_str)
+    _serve_app_mid(page)
     print(" - 서비스예약현황 (노쇼 SB)")
     noshow_rows = extract_resv_sbs(page, "04", "2020-01-01")
+    _serve_app_mid(page)
     print(" - 서비스예약현황 (예약접수 SB, 오늘~)")
     sbresv_rows = extract_resv_sbs(page, "01", today_str)
+    _serve_app_mid(page)
     print(" - 차량접수 SB 중 RO 미발행 + 부품 (서비스예약현황 + RO 리포트)")
     sbcar_rows, sbcar_total = extract_carin_sbs_without_ro(page, req_rows, datetime.now(ZoneInfo("Asia/Seoul")).date())
+    _serve_app_mid(page)
     print(" - 입고현황 (당월, O파트 입출고 내역용)")
     recv_month_rows = extract_receiving_range(page, month_start, today_str)
+    _serve_app_mid(page)
     print(" - Turn Over 리포트 (지난주 월~토, 주간 재고조사용)")
     to_lastweek_rows = extract_turnover(page, last_week_start_str, last_week_end_str)
 
+    _serve_app_mid(page)
     print("집계 중...")
     recv = build_recv(recv_rows, today_str)
     inv, pw_rows = build_inventory(inv_rows)
@@ -1682,6 +1701,7 @@ def run_cycle(page: Page, rr_page: Page | None = None) -> None:
 
     # 매출 대시보드(지점장 전용, 비밀번호 암호화 페이지) — DMS 세션을 두 개 띄울 수 없어서 별도 데몬이 아니라 여기서 이어서 실행.
     # 실패해도 파츠베이 갱신에는 영향 없음.
+    _serve_app_mid(page)
     if SALES_ENABLED:
         print(" - 매출 대시보드")
         try:
@@ -1695,6 +1715,7 @@ def run_cycle(page: Page, rr_page: Page | None = None) -> None:
             print(f"   [매출 대시보드 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
 
     # 재고조사 앱(휴대폰): 현재고·재고조사 목록을 Supabase에 올림. 실패해도 파츠베이 갱신에는 영향 없음.
+    _serve_app_mid(page)
     if STOCKAPP_ENABLED:
         print(" - 재고조사 앱")
         try:
