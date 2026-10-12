@@ -1651,6 +1651,26 @@ def _cleanup_output() -> None:
         print(f"   [output 정리 실패] {type(e).__name__}: {e}")
 
 
+# 지난주(월~토) Turn Over 는 주간 재고조사 목록용이라 출고 이력이 거의 안 바뀜 -> 약 16초짜리 조회를 가끔만:
+# 데몬을 켰을 때, 날짜가 바뀐 뒤 첫 주기, 12시, 16시. (현재고 0 제외 판단은 매 주기 새 현재고로 다시 계산됨)
+_TO_LASTWEEK = {}   # (시작일, 종료일) -> (조회 시각, rows)
+
+
+def _turnover_lastweek(page, start_str: str, end_str: str, now: datetime) -> list:
+    key = (start_str, end_str)
+    hit = _TO_LASTWEEK.get(key)
+    due = hit is None or hit[0].date() != now.date()
+    if not due:
+        due = any(hit[0] < now.replace(hour=h, minute=0, second=0, microsecond=0) <= now for h in RESV_REFRESH_HOURS)
+    if not due:
+        print(f"   (지난주 Turn Over: {hit[0]:%m-%d %H:%M} 조회분 사용, 다음 조회는 날짜 변경/12시/16시)")
+        return hit[1]
+    rows = extract_turnover(page, start_str, end_str)
+    _TO_LASTWEEK.clear()   # 주가 바뀌면 지난 주 것은 버림
+    _TO_LASTWEEK[key] = (now, rows)
+    return rows
+
+
 def _cycle_begin() -> None:
     _CYCLE["t0"] = time.time()
     _CYCLE["last_t"], _CYCLE["last_label"] = 0.0, None
@@ -1715,7 +1735,7 @@ def _run_cycle_impl(page: Page, rr_page: Page | None = None) -> None:
     recv_month_rows = extract_receiving_range(page, month_start, today_str)
     _serve_app_mid(page)
     _step(" - Turn Over 리포트 (지난주 월~토, 주간 재고조사용)")
-    to_lastweek_rows = extract_turnover(page, last_week_start_str, last_week_end_str)
+    to_lastweek_rows = _turnover_lastweek(page, last_week_start_str, last_week_end_str, now)
 
     _serve_app_mid(page)
     _step("집계 중...")
