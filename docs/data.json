@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 12일 (월) · 14:33 기준",
+    "generated_at": "10월 12일 (월) · 14:45 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -21564,23 +21564,6 @@
         "dday": "D+4일"
       },
       {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "alois": "OE",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2610000043",
-        "req_qty": 1,
-        "crt_qty": 4,
-        "avail_qty": 0,
-        "req_dt": "10-12",
-        "req_dt_full": "2026-10-12 08:02:04",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 85576,
-        "sa": "최민수",
-        "dday": "D+0일"
-      },
-      {
         "item": "61278606057",
         "name": "ISA screw",
         "alois": "O8",
@@ -22241,6 +22224,23 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 34800,
         "sa": "박영묵",
+        "dday": "D+0일"
+      },
+      {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "alois": "OE",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000558",
+        "req_qty": 1,
+        "crt_qty": 4,
+        "avail_qty": 0,
+        "req_dt": "10-12",
+        "req_dt_full": "2026-10-12 14:45:18",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 85576,
+        "sa": "최민수",
         "dday": "D+0일"
       }
     ],
@@ -25292,11 +25292,28 @@
             "val": 34800,
             "sa": "박영묵",
             "dday": "D+0일"
+          },
+          {
+            "item": "64119382886",
+            "name": "MICROFILTER/",
+            "alois": "OE",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000558",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "req_dt": "10-12",
+            "req_dt_full": "2026-10-12 14:45:18",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 85576,
+            "sa": "최민수",
+            "dday": "D+0일"
           }
         ],
-        "count": 179,
-        "qty_sum": 297,
-        "val": 47469296
+        "count": 180,
+        "qty_sum": 298,
+        "val": 47554872
       },
       {
         "code": "SB",
@@ -26832,23 +26849,6 @@
             "dday": "D+4일"
           },
           {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2610000043",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "req_dt": "10-12",
-            "req_dt_full": "2026-10-12 08:02:04",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 85576,
-            "sa": "최민수",
-            "dday": "D+0일"
-          },
-          {
             "item": "61627407273",
             "name": "WIPER BLADE X3 Rear",
             "alois": "OE",
@@ -26883,9 +26883,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 93,
-        "qty_sum": 130,
-        "val": 24667726
+        "count": 92,
+        "qty_sum": 129,
+        "val": 24582150
       },
       {
         "code": "SP",
@@ -37493,8 +37493,8 @@
       },
       {
         "ro": "RO2610000064",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "경수리",
         "sa": "최민수",
         "pub": "2026-10-01",
@@ -37526,14 +37526,14 @@
       },
       {
         "ro": "RO2610000073",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "우상만",
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 14:32",
         "dday": "D+11일",
-        "amt": 867659
+        "amt": 905287
       },
       {
         "ro": "RO2610000080",
@@ -37823,14 +37823,14 @@
       },
       {
         "ro": "RO2610000171",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "경수리",
         "sa": "우상만",
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 17:38",
         "dday": "D+10일",
-        "amt": 5783300
+        "amt": 5934800
       },
       {
         "ro": "RO2610000175",
@@ -40430,8 +40430,8 @@
       },
       {
         "ro": "RO2610000521",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "소음",
         "sa": "김민규",
         "pub": "2026-10-12",
@@ -40496,14 +40496,14 @@
       },
       {
         "ro": "RO2610000527",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "정용환",
         "pub": "2026-10-12",
         "pub_full": "2026-10-12 11:38",
         "dday": "D+0일",
-        "amt": 56000
+        "amt": 112000
       },
       {
         "ro": "RO2610000528",
@@ -40749,8 +40749,8 @@
       },
       {
         "ro": "RO2610000549",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "정용환",
         "pub": "2026-10-12",
@@ -40822,31 +40822,42 @@
         "pub": "2026-10-12",
         "pub_full": "2026-10-12 14:30",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 1696900
+      },
+      {
+        "ro": "RO2610000558",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 14:45",
+        "dday": "D+0일",
+        "amt": 484139
       }
     ],
-    "count": 453,
-    "total_amt": 895680553,
+    "count": 454,
+    "total_amt": 898106720,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 25,
-        "amt": 16842600
+        "amt": 18539500
       },
       {
         "stat": "상담완료",
-        "count": 173,
-        "amt": 529979233
+        "count": 174,
+        "amt": 536538949
       },
       {
         "stat": "정비시작",
-        "count": 35,
-        "amt": 68056312
+        "count": 34,
+        "amt": 67505563
       },
       {
         "stat": "End Control 요청",
-        "count": 77,
-        "amt": 153673323
+        "count": 78,
+        "amt": 148393623
       },
       {
         "stat": "공정마감",
@@ -45534,58 +45545,6 @@
         "val": 1041912
       },
       {
-        "code": "SB2610000043",
-        "resv_full": "2026-10-12 15:20",
-        "resv": "10-12",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "val": 85576
-          },
-          {
-            "item": "83215B49DD6",
-            "name": "LL-17FE+ 0W-20",
-            "alois": "L1",
-            "sa": "최민수",
-            "req_qty": 5,
-            "crt_qty": 225,
-            "avail_qty": 183,
-            "val": 79910
-          },
-          {
-            "item": "61619478361",
-            "name": "SET OF WIPER 3/4 series",
-            "alois": "A1",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 55,
-            "avail_qty": 51,
-            "val": 68185
-          },
-          {
-            "item": "11428575211",
-            "name": "Set oil-filt",
-            "alois": "A1",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 145,
-            "avail_qty": 140,
-            "val": 19920
-          }
-        ],
-        "count": 4,
-        "qty_sum": 8,
-        "val": 253591
-      },
-      {
         "code": "SB2610000156",
         "resv_full": "2026-10-12 15:00",
         "resv": "10-12",
@@ -45608,11 +45567,11 @@
         "val": 12080
       }
     ],
-    "sb_count": 58,
-    "line_count": 235,
-    "total_val": 43744990,
-    "o_lines": 58,
-    "o_val": 15732415,
+    "sb_count": 57,
+    "line_count": 231,
+    "total_val": 43491399,
+    "o_lines": 57,
+    "o_val": 15646839,
     "resv_total": 365
   },
   "sbcar": {
