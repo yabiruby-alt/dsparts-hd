@@ -1593,7 +1593,88 @@ def _serve_app_mid(page: Page) -> None:
     serve_stockapp_requests(page)
 
 
+# ---- 주기 계측 + output 폴더 정리 (2026-10-12) ----
+OUTPUT_KEEP_HOURS = 24   # output/dashboard_*.html 은 이 시간보다 오래되면 삭제 (latest.* 는 항상 유지)
+_CYCLE = {"t0": 0.0, "last_t": 0.0, "last_label": None}
+
+
+def _mem_mb():
+    """이 파이썬 프로세스의 메모리(MB). 윈도우 전용, 실패하면 None."""
+    try:
+        import ctypes
+        from ctypes import wintypes
+
+        class PMC(ctypes.Structure):
+            _fields_ = [("cb", wintypes.DWORD), ("PageFaultCount", wintypes.DWORD),
+                        ("PeakWorkingSetSize", ctypes.c_size_t), ("WorkingSetSize", ctypes.c_size_t),
+                        ("QuotaPeakPagedPoolUsage", ctypes.c_size_t), ("QuotaPagedPoolUsage", ctypes.c_size_t),
+                        ("QuotaPeakNonPagedPoolUsage", ctypes.c_size_t), ("QuotaNonPagedPoolUsage", ctypes.c_size_t),
+                        ("PagefileUsage", ctypes.c_size_t), ("PeakPagefileUsage", ctypes.c_size_t)]
+        k32, psapi = ctypes.windll.kernel32, ctypes.windll.psapi
+        k32.GetCurrentProcess.restype = wintypes.HANDLE
+        psapi.GetProcessMemoryInfo.argtypes = [wintypes.HANDLE, ctypes.POINTER(PMC), wintypes.DWORD]
+        pmc = PMC()
+        pmc.cb = ctypes.sizeof(pmc)
+        if not psapi.GetProcessMemoryInfo(k32.GetCurrentProcess(), ctypes.byref(pmc), pmc.cb):
+            return None
+        return pmc.WorkingSetSize / 1048576
+    except Exception:
+        return None
+
+
+def _step(label: str) -> None:
+    """이전 단계 소요시간을 찍고 새 단계를 시각과 함께 알림."""
+    now = time.time()
+    if _CYCLE["last_label"] is not None:
+        print(f"      ({now - _CYCLE['last_t']:.1f}초)")
+    _CYCLE["last_t"], _CYCLE["last_label"] = now, label
+    print(f"{label}  [{datetime.now():%H:%M:%S}]")
+
+
+def _cleanup_output() -> None:
+    """output/ 에 주기마다 쌓이는 dashboard_YYYYMMDD_HHMM.html 중 오래된 것 삭제."""
+    try:
+        cutoff = time.time() - OUTPUT_KEEP_HOURS * 3600
+        n, size = 0, 0
+        for f in OUTPUT_DIR.glob("dashboard_*.html"):
+            try:
+                st = f.stat()
+                if st.st_mtime < cutoff:
+                    f.unlink()
+                    n += 1
+                    size += st.st_size
+            except OSError:
+                pass
+        if n:
+            print(f"   (output 정리: 오래된 대시보드 {n}개 삭제, {size / 1048576:.0f}MB 확보)")
+    except Exception as e:
+        print(f"   [output 정리 실패] {type(e).__name__}: {e}")
+
+
+def _cycle_begin() -> None:
+    _CYCLE["t0"] = time.time()
+    _CYCLE["last_t"], _CYCLE["last_label"] = 0.0, None
+    print(f"===== 주기 시작 [{datetime.now():%H:%M:%S}] =====")
+    _cleanup_output()
+
+
+def _cycle_end() -> None:
+    now = time.time()
+    if _CYCLE["last_label"] is not None:
+        print(f"      ({now - _CYCLE['last_t']:.1f}초)")
+    mem = _mem_mb()
+    print(f"===== 주기 끝: 총 {now - _CYCLE['t0']:.0f}초" + (f", 데몬 메모리 {mem:.0f}MB" if mem else "") + " =====")
+
+
 def run_cycle(page: Page, rr_page: Page | None = None) -> None:
+    _cycle_begin()
+    try:
+        _run_cycle_impl(page, rr_page)
+    finally:
+        _cycle_end()
+
+
+def _run_cycle_impl(page: Page, rr_page: Page | None = None) -> None:
     """이미 로그인된 page로 데이터 한 번 뽑아서 대시보드 생성 + 깃허브 push."""
     now = datetime.now(ZoneInfo("Asia/Seoul"))
     today_str = now.strftime("%Y-%m-%d")
@@ -1606,38 +1687,38 @@ def run_cycle(page: Page, rr_page: Page | None = None) -> None:
     last_week_start_str = last_monday.strftime("%Y-%m-%d")
     last_week_end_str = last_saturday.strftime("%Y-%m-%d")
 
-    print(" - 오늘 입고현황")
+    _step(" - 오늘 입고현황")
     recv_rows = extract_receiving(page, today_str)
     _serve_app_mid(page)
-    print(" - 현재고리스트")
+    _step(" - 현재고리스트")
     inv_rows = extract_inventory(page)
     _serve_app_mid(page)
-    print(" - Turn Over 리포트 (당월)")
+    _step(" - Turn Over 리포트 (당월)")
     to_rows = extract_turnover(page, month_start, today_str)
     _serve_app_mid(page)
-    print(" - 출고요청관리 (O계열 RO/SB/SP)")
+    _step(" - 출고요청관리 (O계열 RO/SB/SP)")
     req_rows = extract_part_requests(page)
     _serve_app_mid(page)
-    print(" - RO 리포트 (진행 RO: 인보이스 미완료)")
+    _step(" - RO 리포트 (진행 RO: 인보이스 미완료)")
     open_ro_rows = extract_open_ros(page, today_str)
     _serve_app_mid(page)
-    print(" - 서비스예약현황 (노쇼 SB)")
+    _step(" - 서비스예약현황 (노쇼 SB)")
     noshow_rows = extract_resv_sbs(page, "04", "2020-01-01")
     _serve_app_mid(page)
-    print(" - 서비스예약현황 (예약접수 SB, 오늘~)")
+    _step(" - 서비스예약현황 (예약접수 SB, 오늘~)")
     sbresv_rows = extract_resv_sbs(page, "01", today_str)
     _serve_app_mid(page)
-    print(" - 차량접수 SB 중 RO 미발행 + 부품 (서비스예약현황 + RO 리포트)")
+    _step(" - 차량접수 SB 중 RO 미발행 + 부품 (서비스예약현황 + RO 리포트)")
     sbcar_rows, sbcar_total = extract_carin_sbs_without_ro(page, req_rows, datetime.now(ZoneInfo("Asia/Seoul")).date())
     _serve_app_mid(page)
-    print(" - 입고현황 (당월, O파트 입출고 내역용)")
+    _step(" - 입고현황 (당월, O파트 입출고 내역용)")
     recv_month_rows = extract_receiving_range(page, month_start, today_str)
     _serve_app_mid(page)
-    print(" - Turn Over 리포트 (지난주 월~토, 주간 재고조사용)")
+    _step(" - Turn Over 리포트 (지난주 월~토, 주간 재고조사용)")
     to_lastweek_rows = extract_turnover(page, last_week_start_str, last_week_end_str)
 
     _serve_app_mid(page)
-    print("집계 중...")
+    _step("집계 중...")
     recv = build_recv(recv_rows, today_str)
     inv, pw_rows = build_inventory(inv_rows)
     oaov = build_oaov(pw_rows, inv["total"])
@@ -1703,7 +1784,7 @@ def run_cycle(page: Page, rr_page: Page | None = None) -> None:
     # 실패해도 파츠베이 갱신에는 영향 없음.
     _serve_app_mid(page)
     if SALES_ENABLED:
-        print(" - 매출 대시보드")
+        _step(" - 매출 대시보드")
         try:
             if str(SALES_DIR) not in sys.path:
                 sys.path.insert(0, str(SALES_DIR))
@@ -1717,7 +1798,7 @@ def run_cycle(page: Page, rr_page: Page | None = None) -> None:
     # 재고조사 앱(휴대폰): 현재고·재고조사 목록을 Supabase에 올림. 실패해도 파츠베이 갱신에는 영향 없음.
     _serve_app_mid(page)
     if STOCKAPP_ENABLED:
-        print(" - 재고조사 앱")
+        _step(" - 재고조사 앱")
         try:
             stockapp = _load_stockapp(reload=True)
             stockapp.on_cycle(page, {"pw_rows": pw_rows, "stockcheck": stockcheck,
