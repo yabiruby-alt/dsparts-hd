@@ -1213,6 +1213,7 @@ def _git(*args, check=True, timeout=None):
     return subprocess.run(
         ["git", *args], cwd=str(BASE_DIR), capture_output=True, text=True, encoding="utf-8",
         check=check, timeout=timeout,
+        creationflags=subprocess.CREATE_NO_WINDOW,   # 부모 콘솔(cmd)이 사라져도 git 이 0xC0000142 로 못 뜨는 일 방지
     )
 
 
@@ -1283,7 +1284,7 @@ def _pid_alive(pid: int) -> bool:
     try:
         result = subprocess.run(
             ["tasklist", "/FI", f"PID eq {pid}", "/NH"],
-            capture_output=True, text=True, timeout=5,
+            capture_output=True, text=True, timeout=5, creationflags=subprocess.CREATE_NO_WINDOW,
         )
         return str(pid) in result.stdout
     except Exception:
