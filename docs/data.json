@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 12일 (월) · 17:43 기준",
+    "generated_at": "10월 12일 (월) · 17:54 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -16,7 +16,7 @@
     "top5": []
   },
   "inv": {
-    "total": 959290318,
+    "total": 959212345,
     "item_count": 2122,
     "code_count": 25,
     "alois_groups": [
@@ -27,9 +27,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 213243563,
-            "pct": 22.23,
-            "qty": 2367,
+            "val": 213170828,
+            "pct": 22.22,
+            "qty": 2366,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -80,16 +80,16 @@
                 "val": 2888400
               },
               {
-                "item": "61615A43610",
-                "name": "Set of wiper G70",
-                "qty": 20,
-                "val": 1454700
-              },
-              {
                 "item": "61619466377",
                 "name": "Set of wiper X5,6,7",
                 "qty": 21,
                 "val": 1439949
+              },
+              {
+                "item": "61615A43610",
+                "name": "Set of wiper G70",
+                "qty": 19,
+                "val": 1381965
               },
               {
                 "item": "64316835405",
@@ -113,9 +113,9 @@
           },
           {
             "code": "A2",
-            "val": 16224709,
+            "val": 16219471,
             "pct": 1.69,
-            "qty": 966,
+            "qty": 960,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -246,8 +246,8 @@
               {
                 "item": "51471911992",
                 "name": "Plug",
-                "qty": 175,
-                "val": 152775
+                "qty": 169,
+                "val": 147537
               },
               {
                 "item": "61629478894",
@@ -4574,9 +4574,9 @@
             ]
           }
         ],
-        "subtotal_val": 478945481,
-        "subtotal_qty": 8508,
-        "subtotal_pct": 49.93
+        "subtotal_val": 478867508,
+        "subtotal_qty": 8502,
+        "subtotal_pct": 49.92
       },
       {
         "code": "L",
@@ -13006,7 +13006,7 @@
   },
   "oaov": {
     "total": 55701568,
-    "inv_total": 959290318,
+    "inv_total": 959212345,
     "pct": 5.81,
     "oa_val": 34671326,
     "ov_val": 21030242,
@@ -22292,10 +22292,27 @@
         "val": 6059,
         "sa": "박영묵",
         "dday": "D+0일"
+      },
+      {
+        "item": "11148490577",
+        "name": "Acoustic cov",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000380",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-12",
+        "req_dt_full": "2026-10-12 17:46:17",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 69174,
+        "sa": "정용환",
+        "dday": "D+0일"
       }
     ],
-    "count": 306,
-    "total_val": 78594938,
+    "count": 307,
+    "total_val": 78664112,
     "groups": [
       {
         "code": "RO",
@@ -25563,11 +25580,28 @@
             "val": 6059,
             "sa": "박영묵",
             "dday": "D+0일"
+          },
+          {
+            "item": "11148490577",
+            "name": "Acoustic cov",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000380",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-12",
+            "req_dt_full": "2026-10-12 17:46:17",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 69174,
+            "sa": "정용환",
+            "dday": "D+0일"
           }
         ],
-        "count": 192,
-        "qty_sum": 309,
-        "val": 50710422
+        "count": 193,
+        "qty_sum": 310,
+        "val": 50779596
       },
       {
         "code": "SB",
@@ -36796,8 +36830,8 @@
       },
       {
         "ro": "RO2609001101",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-09-17",
@@ -36895,14 +36929,14 @@
       },
       {
         "ro": "RO2609001309",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-09-21",
         "pub_full": "2026-09-21 12:07",
         "dday": "D+21일",
-        "amt": 10002800
+        "amt": 10071300
       },
       {
         "ro": "RO2609001328",
@@ -36950,14 +36984,14 @@
       },
       {
         "ro": "RO2609001379",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-09-22",
         "pub_full": "2026-09-22 11:20",
         "dday": "D+20일",
-        "amt": 15799660
+        "amt": 15664100
       },
       {
         "ro": "RO2609001382",
@@ -37511,14 +37545,14 @@
       },
       {
         "ro": "RO2610000014",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 09:20",
         "dday": "D+11일",
-        "amt": 404476
+        "amt": 390476
       },
       {
         "ro": "RO2610000016",
@@ -38204,8 +38238,8 @@
       },
       {
         "ro": "RO2610000237",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-10-06",
@@ -38409,7 +38443,7 @@
         "pub": "2026-10-07",
         "pub_full": "2026-10-07 08:51",
         "dday": "D+5일",
-        "amt": 2065720
+        "amt": 2072920
       },
       {
         "ro": "RO2610000289",
@@ -39700,8 +39734,8 @@
       },
       {
         "ro": "RO2610000490",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-10-12",
@@ -39810,8 +39844,8 @@
       },
       {
         "ro": "RO2610000504",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-10-12",
@@ -39832,8 +39866,8 @@
       },
       {
         "ro": "RO2610000506",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-12",
@@ -39865,8 +39899,8 @@
       },
       {
         "ro": "RO2610000510",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Recall/TC",
         "sa": "최민수",
         "pub": "2026-10-12",
@@ -39974,17 +40008,6 @@
         "amt": 548211
       },
       {
-        "ro": "RO2610000520",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "Maintenance",
-        "sa": "최민수",
-        "pub": "2026-10-12",
-        "pub_full": "2026-10-12 10:36",
-        "dday": "D+0일",
-        "amt": 119400
-      },
-      {
         "ro": "RO2610000521",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -40019,8 +40042,8 @@
       },
       {
         "ro": "RO2610000524",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-12",
@@ -40052,8 +40075,8 @@
       },
       {
         "ro": "RO2610000527",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "정용환",
         "pub": "2026-10-12",
@@ -40107,8 +40130,8 @@
       },
       {
         "ro": "RO2610000533",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-12",
@@ -40206,8 +40229,8 @@
       },
       {
         "ro": "RO2610000543",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "최민수",
         "pub": "2026-10-12",
@@ -40283,8 +40306,8 @@
       },
       {
         "ro": "RO2610000549",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "정용환",
         "pub": "2026-10-12",
@@ -40316,8 +40339,8 @@
       },
       {
         "ro": "RO2610000553",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-12",
@@ -40327,8 +40350,8 @@
       },
       {
         "ro": "RO2610000554",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-12",
@@ -40393,8 +40416,8 @@
       },
       {
         "ro": "RO2610000562",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-12",
@@ -40470,8 +40493,8 @@
       },
       {
         "ro": "RO2610000570",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-10-12",
@@ -40489,17 +40512,6 @@
         "pub_full": "2026-10-12 16:49",
         "dday": "D+0일",
         "amt": 545944
-      },
-      {
-        "ro": "RO2610000572",
-        "stat": "상담시작",
-        "stat_cd": "01",
-        "svc": "Maintenance",
-        "sa": "최민수",
-        "pub": "2026-10-12",
-        "pub_full": "2026-10-12 16:50",
-        "dday": "D+0일",
-        "amt": 0
       },
       {
         "ro": "RO2610000573",
@@ -40525,8 +40537,8 @@
       },
       {
         "ro": "RO2610000576",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-10-12",
@@ -40535,28 +40547,28 @@
         "amt": 121724
       }
     ],
-    "count": 413,
-    "total_amt": 915683750,
+    "count": 411,
+    "total_amt": 915490490,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 23,
+        "count": 22,
         "amt": 22878660
       },
       {
         "stat": "상담완료",
-        "count": 177,
-        "amt": 545653690
+        "count": 175,
+        "amt": 554906251
       },
       {
         "stat": "정비시작",
-        "count": 33,
-        "amt": 58275026
+        "count": 23,
+        "amt": 45128198
       },
       {
         "stat": "End Control 요청",
-        "count": 61,
-        "amt": 166503036
+        "count": 65,
+        "amt": 143617038
       },
       {
         "stat": "공정마감",
@@ -40565,8 +40577,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 118,
-        "amt": 121956438
+        "count": 125,
+        "amt": 148543443
       }
     ],
     "oldest": "D+538일"
@@ -45297,7 +45309,7 @@
     "total_val": 40550482,
     "o_lines": 53,
     "o_val": 13432786,
-    "resv_total": 373
+    "resv_total": 374
   },
   "sbcar": {
     "groups": [
@@ -46127,7 +46139,7 @@
         "item": "51471911992",
         "name": "Plug",
         "alois": "A2",
-        "qty": 175,
+        "qty": 169,
         "no": 86
       },
       {
@@ -47015,7 +47027,7 @@
         "item": "61615A43610",
         "name": "Set of wiper G70",
         "alois": "A1",
-        "qty": 20,
+        "qty": 19,
         "no": 197
       },
       {
@@ -48469,6 +48481,34 @@
     "ro_violations": [],
     "ro_review": [
       {
+        "inv": "IV2610000829",
+        "ro": "RO2609001101",
+        "spno": "-",
+        "cust": "박승민",
+        "vin": "WBATB4107N9L54028",
+        "pgrp": "1",
+        "detl": "고객",
+        "itemcd": "52107444269",
+        "item": "Support for",
+        "amt": 100100,
+        "dt": "2026-10-12",
+        "reason": "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"
+      },
+      {
+        "inv": "IV2610000829",
+        "ro": "RO2609001101",
+        "spno": "-",
+        "cust": "박승민",
+        "vin": "WBATB4107N9L54028",
+        "pgrp": "1",
+        "detl": "고객",
+        "itemcd": "52107042164",
+        "item": "Blind rivet",
+        "amt": 1200,
+        "dt": "2026-10-12",
+        "reason": "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"
+      },
+      {
         "inv": "IV2610000700",
         "ro": "RO2610000458",
         "spno": "-",
@@ -48573,12 +48613,12 @@
     "sp_v_count": 3,
     "sp_r_count": 0,
     "ro_v_count": 0,
-    "ro_r_count": 7,
-    "total_count": 10,
+    "ro_r_count": 9,
+    "total_count": 12,
     "violation_count": 3,
-    "review_count": 7,
+    "review_count": 9,
     "violation_amt": 427800,
-    "review_amt": 541680
+    "review_amt": 642980
   },
   "reasons": {},
   "tires": {
