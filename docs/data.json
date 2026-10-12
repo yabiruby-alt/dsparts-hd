@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 13일 (화) · 08:23 기준",
+    "generated_at": "10월 13일 (화) · 08:34 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -20807,23 +20807,6 @@
         "dday": "D+11일"
       },
       {
-        "item": "51192458369",
-        "name": "Rear spoiler",
-        "alois": "OV",
-        "pgrp": "B3",
-        "ref_tp": "SB",
-        "ref_no": "SB2610000120",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "10-02",
-        "req_dt_full": "2026-10-02 14:11:33",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 1017025,
-        "sa": "M GARAGE",
-        "dday": "D+11일"
-      },
-      {
         "item": "32306884010",
         "name": "connecting l",
         "alois": "OV",
@@ -23711,6 +23694,23 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 66281,
         "sa": "우종훈",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51192458369",
+        "name": "Rear spoiler",
+        "alois": "OV",
+        "pgrp": "B3",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000583",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-13",
+        "req_dt_full": "2026-10-13 08:34:09",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 1017025,
+        "sa": "우상만",
         "dday": "D+0일"
       }
     ],
@@ -27306,11 +27306,28 @@
             "val": 66281,
             "sa": "우종훈",
             "dday": "D+0일"
+          },
+          {
+            "item": "51192458369",
+            "name": "Rear spoiler",
+            "alois": "OV",
+            "pgrp": "B3",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000583",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-13",
+            "req_dt_full": "2026-10-13 08:34:09",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 1017025,
+            "sa": "우상만",
+            "dday": "D+0일"
           }
         ],
-        "count": 211,
-        "qty_sum": 340,
-        "val": 52358940
+        "count": 212,
+        "qty_sum": 341,
+        "val": 53375965
       },
       {
         "code": "SB",
@@ -28489,23 +28506,6 @@
             "dday": "D+13일"
           },
           {
-            "item": "51192458369",
-            "name": "Rear spoiler",
-            "alois": "OV",
-            "pgrp": "B3",
-            "ref_tp": "SB",
-            "ref_no": "SB2610000120",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "10-02",
-            "req_dt_full": "2026-10-02 14:11:33",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 1017025,
-            "sa": "M GARAGE",
-            "dday": "D+11일"
-          },
-          {
             "item": "51135A3CDD4",
             "name": "Cover, nozzl",
             "alois": "O8",
@@ -28812,9 +28812,9 @@
             "dday": "D+1일"
           }
         ],
-        "count": 88,
-        "qty_sum": 122,
-        "val": 23308764
+        "count": 87,
+        "qty_sum": 121,
+        "val": 22291739
       },
       {
         "code": "SP",
@@ -38309,6 +38309,17 @@
         "amt": 339356
       },
       {
+        "ro": "RO2610000582",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-09-09",
+        "pub_full": "2026-09-09 15:05",
+        "dday": "D+34일",
+        "amt": 389440
+      },
+      {
         "ro": "RO2609000643",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -38317,7 +38328,7 @@
         "pub": "2026-09-09",
         "pub_full": "2026-09-09 15:05",
         "dday": "D+34일",
-        "amt": 5466665
+        "amt": 5077225
       },
       {
         "ro": "RO2609000685",
@@ -39054,7 +39065,7 @@
         "pub": "2026-09-29",
         "pub_full": "2026-09-29 15:01",
         "dday": "D+14일",
-        "amt": 3492700
+        "amt": 2723500
       },
       {
         "ro": "RO2609001702",
@@ -39109,7 +39120,7 @@
         "pub": "2026-09-30",
         "pub_full": "2026-09-30 08:43",
         "dday": "D+13일",
-        "amt": 1872400
+        "amt": 1354400
       },
       {
         "ro": "RO2609001722",
@@ -42113,10 +42124,32 @@
         "pub_full": "2026-10-13 08:08",
         "dday": "D+0일",
         "amt": 65849
+      },
+      {
+        "ro": "RO2610000581",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-10-13",
+        "pub_full": "2026-10-13 08:26",
+        "dday": "D+0일",
+        "amt": 1398000
+      },
+      {
+        "ro": "RO2610000583",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "우상만",
+        "pub": "2026-10-13",
+        "pub_full": "2026-10-13 08:34",
+        "dday": "D+0일",
+        "amt": 2116130
       }
     ],
-    "count": 396,
-    "total_amt": 929468630,
+    "count": 399,
+    "total_amt": 931695560,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -42125,8 +42158,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 179,
-        "amt": 603181251
+        "count": 182,
+        "amt": 605926181
       },
       {
         "stat": "정비시작",
@@ -42146,7 +42179,7 @@
       {
         "stat": "가정산 완료",
         "count": 144,
-        "amt": 171020988
+        "amt": 170502988
       }
     ],
     "oldest": "D+539일"
@@ -42997,7 +43030,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 117,
-            "avail_qty": 112,
+            "avail_qty": 111,
             "val": 21298
           },
           {
@@ -46072,98 +46105,6 @@
         "val": 1149185
       },
       {
-        "code": "SB2610000120",
-        "resv_full": "2026-10-14 09:40",
-        "resv": "10-14",
-        "dday": "D-1일",
-        "sa": "M GARAGE",
-        "rows": [
-          {
-            "item": "51192458369",
-            "name": "Rear spoiler",
-            "alois": "OV",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 1017025
-          },
-          {
-            "item": "83212469985",
-            "name": "LL-12FE 0W-30",
-            "alois": "L1",
-            "sa": "M GARAGE",
-            "req_qty": 7,
-            "crt_qty": 128,
-            "avail_qty": 98,
-            "val": 107268
-          },
-          {
-            "item": "51148087196",
-            "name": "BMW emblem 5",
-            "alois": "A6",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 80155
-          },
-          {
-            "item": "51148087194",
-            "name": "BMW emblem 5",
-            "alois": "A6",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 80155
-          },
-          {
-            "item": "51145A4B373",
-            "name": "M Logos Seit",
-            "alois": "A4",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 2,
-            "val": 43505
-          },
-          {
-            "item": "83192289286",
-            "name": "Window adhes",
-            "alois": "L6",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "val": 20618
-          },
-          {
-            "item": "11425B4C845",
-            "name": "Set oil-filt",
-            "alois": "L1",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 81,
-            "avail_qty": 79,
-            "val": 20064
-          },
-          {
-            "item": "99995BA3923",
-            "name": "CleanerR1(BM",
-            "alois": "SY",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 0,
-            "val": 15600
-          }
-        ],
-        "count": 8,
-        "qty_sum": 14,
-        "val": 1384390
-      },
-      {
         "code": "SB2610000585",
         "resv_full": "2026-10-14 09:20",
         "resv": "10-14",
@@ -47114,12 +47055,12 @@
         "val": 1041912
       }
     ],
-    "sb_count": 65,
-    "line_count": 246,
-    "total_val": 41614623,
-    "o_lines": 53,
-    "o_val": 14373453,
-    "resv_total": 379
+    "sb_count": 64,
+    "line_count": 238,
+    "total_val": 40230233,
+    "o_lines": 52,
+    "o_val": 13356428,
+    "resv_total": 376
   },
   "sbcar": {
     "groups": [
