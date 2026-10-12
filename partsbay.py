@@ -1749,6 +1749,17 @@ def _run_cycle_impl(page: Page, rr_page: Page | None = None) -> None:
     longstock = build_longstock(pw_rows, inv["total"], now)
     stockcheck = build_daily_stockcheck(recv_rows, pw_rows, today_str)
     stockcheck_week = build_weekly_stockcheck(to_lastweek_rows, pw_rows, last_week_start_str, last_week_end_str)
+    # 재고조사 앱(휴대폰): 현재고·재고조사 목록을 Supabase에 올림. 대시보드 생성·깃허브·매출보다 먼저 해서
+    # 휴대폰에 더 빨리 반영하고, 뒤 단계가 실패해도 올라가게 함. 실패해도 파츠베이 갱신에는 영향 없음.
+    if STOCKAPP_ENABLED:
+        _step(" - 재고조사 앱")
+        try:
+            stockapp = _load_stockapp(reload=True)
+            stockapp.on_cycle(page, {"pw_rows": pw_rows, "stockcheck": stockcheck,
+                                     "stockcheck_week": stockcheck_week, "today": today_str, "rr_page": rr_page})
+        except Exception as e:
+            print(f"   [재고조사 앱 업로드 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
+        _step("집계 계속...")
     pgrp_map = {r.get("itemCd"): r.get("prodGroup") for r in inv_rows if r.get("prodGroup")}
     opart = build_o_parts(req_rows, now, pgrp_map)
     oavail = build_o_available(pw_rows)
@@ -1799,7 +1810,10 @@ def _run_cycle_impl(page: Page, rr_page: Page | None = None) -> None:
             webbrowser.open(out_path.resolve().as_uri())
 
         if PUBLISH_TO_GITHUB:
-            publish_to_github(f"대시보드 갱신 {generated_at}")
+            try:
+                publish_to_github(f"대시보드 갱신 {generated_at}")
+            except Exception as e:   # 깃허브가 안 돼도 매출·재고조사 앱 갱신은 계속
+                print(f"   [깃허브 push 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
 
     # 매출 대시보드(지점장 전용, 비밀번호 암호화 페이지) — DMS 세션을 두 개 띄울 수 없어서 별도 데몬이 아니라 여기서 이어서 실행.
     # 실패해도 파츠베이 갱신에는 영향 없음.
@@ -1816,16 +1830,7 @@ def _run_cycle_impl(page: Page, rr_page: Page | None = None) -> None:
         except Exception as e:
             print(f"   [매출 대시보드 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
 
-    # 재고조사 앱(휴대폰): 현재고·재고조사 목록을 Supabase에 올림. 실패해도 파츠베이 갱신에는 영향 없음.
     _serve_app_mid(page)
-    if STOCKAPP_ENABLED:
-        _step(" - 재고조사 앱")
-        try:
-            stockapp = _load_stockapp(reload=True)
-            stockapp.on_cycle(page, {"pw_rows": pw_rows, "stockcheck": stockcheck,
-                                     "stockcheck_week": stockcheck_week, "today": today_str})
-        except Exception as e:
-            print(f"   [재고조사 앱 업로드 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
 
 
 def _load_stockapp(reload: bool = False):
