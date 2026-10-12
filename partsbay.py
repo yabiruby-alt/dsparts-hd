@@ -87,7 +87,7 @@ RR_ENABLED = True   # 롤스로이스 DMS 연동 — 켜면 데몬 시작 시 RR
 RR_BASE_URL = "https://www.rrdms.co.kr"   # 롤스로이스 DMS (같은 My DMS 플랫폼, 별도 계정/세션)
 RR_AUTH_DIR = Path.home() / "AppData" / "Local" / "PartsBayDMS" / "authdata_rr"
 # 재고조사 앱(휴대폰) 연동 모듈 — 매 주기 다시 읽으므로 그 파일을 고쳐도 데몬 재시작 불필요
-STOCKAPP_DIR = BASE_DIR.parent / "재고조사 어플" / "daemon"
+STOCKAPP_DIR = BASE_DIR.parent / "파트실 자동화업무" / "재고조사 어플" / "daemon"
 STOCKAPP_ENABLED = (STOCKAPP_DIR / "stockapp.py").exists()
 STOCK_QUEUE = queue.Queue()       # 부품번호 재고조회 요청(HTTP 스레드 -> 메인 스레드의 DMS 세션으로 처리)
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
