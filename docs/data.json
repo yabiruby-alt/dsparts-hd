@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 12일 (월) · 12:51 기준",
+    "generated_at": "10월 12일 (월) · 13:02 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -40184,8 +40184,8 @@
       },
       {
         "ro": "RO2610000496",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-12",
@@ -40294,8 +40294,8 @@
       },
       {
         "ro": "RO2610000507",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-12",
@@ -40327,8 +40327,8 @@
       },
       {
         "ro": "RO2610000508",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-12",
@@ -40437,8 +40437,8 @@
       },
       {
         "ro": "RO2610000520",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-12",
@@ -40654,10 +40654,21 @@
         "pub_full": "2026-10-12 12:48",
         "dday": "D+0일",
         "amt": 271800
+      },
+      {
+        "ro": "RO2610000540",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 12:55",
+        "dday": "D+0일",
+        "amt": 141700
       }
     ],
-    "count": 438,
-    "total_amt": 882752257,
+    "count": 439,
+    "total_amt": 882893957,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40666,18 +40677,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 173,
-        "amt": 532162791
+        "count": 172,
+        "amt": 530994840
       },
       {
         "stat": "정비시작",
-        "count": 30,
-        "amt": 70718717
+        "count": 28,
+        "amt": 70105377
       },
       {
         "stat": "End Control 요청",
-        "count": 65,
-        "amt": 134601042
+        "count": 69,
+        "amt": 136524033
       },
       {
         "stat": "공정마감",
@@ -41842,7 +41853,7 @@
             "sa": "안준영",
             "req_qty": 5,
             "crt_qty": 231,
-            "avail_qty": 183,
+            "avail_qty": 178,
             "val": 79910
           },
           {
@@ -42042,7 +42053,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 231,
-            "avail_qty": 183,
+            "avail_qty": 178,
             "val": 79910
           },
           {
@@ -42116,7 +42127,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 231,
-            "avail_qty": 183,
+            "avail_qty": 178,
             "val": 79910
           },
           {
@@ -42242,7 +42253,7 @@
             "sa": "김도현",
             "req_qty": 4,
             "crt_qty": 163,
-            "avail_qty": 155,
+            "avail_qty": 152,
             "val": 82476
           },
           {
@@ -42252,7 +42263,7 @@
             "sa": "김도현",
             "req_qty": 5,
             "crt_qty": 231,
-            "avail_qty": 183,
+            "avail_qty": 178,
             "val": 79910
           },
           {
@@ -44825,6 +44836,68 @@
         "val": 13783
       },
       {
+        "code": "SB2610000413",
+        "resv_full": "2026-10-13 14:20",
+        "resv": "10-13",
+        "dday": "D-1일",
+        "sa": "안준영",
+        "rows": [
+          {
+            "item": "64316835405",
+            "name": "MICROFILTER/",
+            "alois": "A1",
+            "sa": "안준영",
+            "req_qty": 1,
+            "crt_qty": 18,
+            "avail_qty": 17,
+            "val": 71071
+          },
+          {
+            "item": "83215B49DD6",
+            "name": "LL-17FE+ 0W-20",
+            "alois": "L1",
+            "sa": "안준영",
+            "req_qty": 4,
+            "crt_qty": 231,
+            "avail_qty": 178,
+            "val": 68494
+          },
+          {
+            "item": "12122455258",
+            "name": "Spark plug B38x,46x,48x",
+            "alois": "A1",
+            "sa": "안준영",
+            "req_qty": 3,
+            "crt_qty": 163,
+            "avail_qty": 152,
+            "val": 61857
+          },
+          {
+            "item": "13718513944",
+            "name": "Air filter e",
+            "alois": "A2",
+            "sa": "안준영",
+            "req_qty": 1,
+            "crt_qty": 8,
+            "avail_qty": 7,
+            "val": 35258
+          },
+          {
+            "item": "11428593186",
+            "name": "Set oil-filt",
+            "alois": "A1",
+            "sa": "안준영",
+            "req_qty": 1,
+            "crt_qty": 16,
+            "avail_qty": 15,
+            "val": 19666
+          }
+        ],
+        "count": 5,
+        "qty_sum": 10,
+        "val": 256346
+      },
+      {
         "code": "SB2610000485",
         "resv_full": "2026-10-13 13:20",
         "resv": "10-13",
@@ -44848,7 +44921,7 @@
             "sa": "안준영",
             "req_qty": 4,
             "crt_qty": 163,
-            "avail_qty": 155,
+            "avail_qty": 152,
             "val": 82476
           },
           {
@@ -44858,7 +44931,7 @@
             "sa": "안준영",
             "req_qty": 5,
             "crt_qty": 231,
-            "avail_qty": 183,
+            "avail_qty": 178,
             "val": 79910
           },
           {
@@ -45336,7 +45409,7 @@
             "sa": "최민수",
             "req_qty": 5,
             "crt_qty": 231,
-            "avail_qty": 183,
+            "avail_qty": 178,
             "val": 79910
           },
           {
@@ -45385,38 +45458,6 @@
         "count": 1,
         "qty_sum": 1,
         "val": 12080
-      },
-      {
-        "code": "SB2609002092",
-        "resv_full": "2026-10-12 14:00",
-        "resv": "10-12",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "33127607158",
-            "name": "Repair kit i",
-            "alois": "A4",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 0,
-            "val": 29992
-          },
-          {
-            "item": "99975BA1A04",
-            "name": "BMWFoldingUm",
-            "alois": "SX",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 6,
-            "avail_qty": 2,
-            "val": 7080
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 37072
       },
       {
         "code": "SB2608000793",
@@ -45504,8 +45545,8 @@
       }
     ],
     "sb_count": 59,
-    "line_count": 236,
-    "total_val": 44545248,
+    "line_count": 239,
+    "total_val": 44764522,
     "o_lines": 59,
     "o_val": 15746366,
     "resv_total": 367
