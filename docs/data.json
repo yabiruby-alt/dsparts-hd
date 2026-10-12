@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 13일 (화) · 07:48 기준",
+    "generated_at": "10월 13일 (화) · 08:01 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -23760,10 +23760,44 @@
         "val": 26718,
         "sa": "우종훈",
         "dday": "D+0일"
+      },
+      {
+        "item": "07129952102",
+        "name": "Clamp",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000304",
+        "req_qty": 2,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-13",
+        "req_dt_full": "2026-10-13 08:00:36",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 3750,
+        "sa": "우종훈",
+        "dday": "D+0일"
+      },
+      {
+        "item": "17125A706F0",
+        "name": "Hose expansi",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000304",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-13",
+        "req_dt_full": "2026-10-13 08:00:36",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 66281,
+        "sa": "우종훈",
+        "dday": "D+0일"
       }
     ],
-    "count": 325,
-    "total_val": 82605447,
+    "count": 327,
+    "total_val": 82675478,
     "groups": [
       {
         "code": "RO",
@@ -27354,11 +27388,45 @@
             "val": 26718,
             "sa": "우종훈",
             "dday": "D+0일"
+          },
+          {
+            "item": "07129952102",
+            "name": "Clamp",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000304",
+            "req_qty": 2,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-13",
+            "req_dt_full": "2026-10-13 08:00:36",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 3750,
+            "sa": "우종훈",
+            "dday": "D+0일"
+          },
+          {
+            "item": "17125A706F0",
+            "name": "Hose expansi",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000304",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-13",
+            "req_dt_full": "2026-10-13 08:00:36",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 66281,
+            "sa": "우종훈",
+            "dday": "D+0일"
           }
         ],
-        "count": 211,
-        "qty_sum": 339,
-        "val": 53780264
+        "count": 213,
+        "qty_sum": 342,
+        "val": 53850295
       },
       {
         "code": "SB",
@@ -39744,8 +39812,8 @@
       },
       {
         "ro": "RO2610000178",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-10-06",
@@ -40294,14 +40362,14 @@
       },
       {
         "ro": "RO2610000304",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-10-07",
         "pub_full": "2026-10-07 09:46",
         "dday": "D+6일",
-        "amt": 37628
+        "amt": 1933228
       },
       {
         "ro": "RO2610000305",
@@ -42164,7 +42232,7 @@
       }
     ],
     "count": 396,
-    "total_amt": 927977315,
+    "total_amt": 929872915,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -42173,18 +42241,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 177,
-        "amt": 601596308
+        "count": 178,
+        "amt": 603529536
       },
       {
         "stat": "정비시작",
-        "count": 21,
-        "amt": 41741741
+        "count": 20,
+        "amt": 41704113
       },
       {
         "stat": "End Control 요청",
-        "count": 36,
-        "amt": 107466423
+        "count": 35,
+        "amt": 103912078
       },
       {
         "stat": "공정마감",
@@ -42193,8 +42261,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 143,
-        "amt": 167466643
+        "count": 144,
+        "amt": 171020988
       }
     ],
     "oldest": "D+539일"
