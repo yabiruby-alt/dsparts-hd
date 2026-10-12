@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 12일 (월) · 12:23 기준",
+    "generated_at": "10월 12일 (월) · 12:34 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -22221,10 +22221,61 @@
         "val": 117348,
         "sa": "염진아",
         "dday": "D+0일"
+      },
+      {
+        "item": "51127432638",
+        "name": "Reinforcemen",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000537",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-12",
+        "req_dt_full": "2026-10-12 12:32:09",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 96744,
+        "sa": "박영묵",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51127432637",
+        "name": "Guide, cente",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000537",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-12",
+        "req_dt_full": "2026-10-12 12:32:09",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 116920,
+        "sa": "박영묵",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51127496125",
+        "name": "Bumper trim",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000537",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-12",
+        "req_dt_full": "2026-10-12 12:32:09",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 684653,
+        "sa": "박영묵",
+        "dday": "D+0일"
       }
     ],
-    "count": 293,
-    "total_val": 78902710,
+    "count": 296,
+    "total_val": 79801027,
     "groups": [
       {
         "code": "RO",
@@ -25152,11 +25203,62 @@
             "val": 117348,
             "sa": "염진아",
             "dday": "D+0일"
+          },
+          {
+            "item": "51127432638",
+            "name": "Reinforcemen",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000537",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-12",
+            "req_dt_full": "2026-10-12 12:32:09",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 96744,
+            "sa": "박영묵",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51127432637",
+            "name": "Guide, cente",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000537",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-12",
+            "req_dt_full": "2026-10-12 12:32:09",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 116920,
+            "sa": "박영묵",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51127496125",
+            "name": "Bumper trim",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000537",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-12",
+            "req_dt_full": "2026-10-12 12:32:09",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 684653,
+            "sa": "박영묵",
+            "dday": "D+0일"
           }
         ],
-        "count": 172,
-        "qty_sum": 275,
-        "val": 48619038
+        "count": 175,
+        "qty_sum": 278,
+        "val": 49517355
       },
       {
         "code": "SB",
@@ -40486,20 +40588,64 @@
         "pub_full": "2026-10-12 12:18",
         "dday": "D+0일",
         "amt": 355715
+      },
+      {
+        "ro": "RO2610000534",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 12:27",
+        "dday": "D+0일",
+        "amt": 817300
+      },
+      {
+        "ro": "RO2610000536",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "염진아",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 12:30",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000535",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "염진아",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 12:30",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000537",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 12:32",
+        "dday": "D+0일",
+        "amt": 1534400
       }
     ],
-    "count": 432,
-    "total_amt": 879182857,
+    "count": 436,
+    "total_amt": 881534557,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 22,
-        "amt": 15849979
+        "count": 25,
+        "amt": 16667279
       },
       {
         "stat": "상담완료",
-        "count": 171,
-        "amt": 530349491
+        "count": 172,
+        "amt": 531883891
       },
       {
         "stat": "정비시작",
@@ -45226,7 +45372,7 @@
     "total_val": 43879982,
     "o_lines": 59,
     "o_val": 15746366,
-    "resv_total": 368
+    "resv_total": 369
   },
   "sbcar": {
     "groups": [
