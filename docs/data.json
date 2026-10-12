@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 12일 (월) · 14:56 기준",
+    "generated_at": "10월 12일 (월) · 15:08 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -22242,10 +22242,27 @@
         "val": 285430,
         "sa": "우종훈",
         "dday": "D+0일"
+      },
+      {
+        "item": "51128081713",
+        "name": "Accent moldi",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000557",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-12",
+        "req_dt_full": "2026-10-12 15:00:49",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 51294,
+        "sa": "염진아",
+        "dday": "D+0일"
       }
     ],
-    "count": 298,
-    "total_val": 77853295,
+    "count": 299,
+    "total_val": 77904589,
     "groups": [
       {
         "code": "RO",
@@ -25309,11 +25326,28 @@
             "val": 285430,
             "sa": "우종훈",
             "dday": "D+0일"
+          },
+          {
+            "item": "51128081713",
+            "name": "Accent moldi",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000557",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-12",
+            "req_dt_full": "2026-10-12 15:00:49",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 51294,
+            "sa": "염진아",
+            "dday": "D+0일"
           }
         ],
-        "count": 180,
-        "qty_sum": 298,
-        "val": 47754726
+        "count": 181,
+        "qty_sum": 299,
+        "val": 47806020
       },
       {
         "code": "SB",
@@ -38483,8 +38517,8 @@
       },
       {
         "ro": "RO2610000302",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-10-07",
@@ -40096,7 +40130,7 @@
         "pub": "2026-10-12",
         "pub_full": "2026-10-12 08:55",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 112884
       },
       {
         "ro": "RO2610000489",
@@ -40628,8 +40662,8 @@
       },
       {
         "ro": "RO2610000539",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "정용환",
         "pub": "2026-10-12",
@@ -40705,8 +40739,8 @@
       },
       {
         "ro": "RO2610000546",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-12",
@@ -40760,8 +40794,8 @@
       },
       {
         "ro": "RO2610000551",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-12",
@@ -40811,12 +40845,12 @@
         "pub": "2026-10-12",
         "pub_full": "2026-10-12 14:24",
         "dday": "D+0일",
-        "amt": 379500
+        "amt": 516224
       },
       {
         "ro": "RO2610000557",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-10-12",
@@ -40845,30 +40879,52 @@
         "pub_full": "2026-10-12 14:48",
         "dday": "D+0일",
         "amt": 0
+      },
+      {
+        "ro": "RO2610000560",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 15:01",
+        "dday": "D+0일",
+        "amt": 152352
+      },
+      {
+        "ro": "RO2610000561",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 15:05",
+        "dday": "D+0일",
+        "amt": 4634400
       }
     ],
-    "count": 455,
-    "total_amt": 899010045,
+    "count": 457,
+    "total_amt": 904046405,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 26,
-        "amt": 18539500
+        "amt": 21477000
       },
       {
         "stat": "상담완료",
         "count": 171,
-        "amt": 531067363
+        "amt": 532781683
       },
       {
         "stat": "정비시작",
-        "count": 35,
-        "amt": 67579874
+        "count": 34,
+        "amt": 67041174
       },
       {
         "stat": "End Control 요청",
-        "count": 79,
-        "amt": 153254723
+        "count": 82,
+        "amt": 154177963
       },
       {
         "stat": "공정마감",
@@ -41667,7 +41723,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 54,
-            "avail_qty": 51,
+            "avail_qty": 50,
             "val": 68185
           }
         ],
@@ -41957,7 +42013,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 39,
-            "avail_qty": 38,
+            "avail_qty": 37,
             "val": 8250
           }
         ],
@@ -41979,7 +42035,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 54,
-            "avail_qty": 51,
+            "avail_qty": 50,
             "val": 68185
           },
           {
@@ -45583,7 +45639,7 @@
     "total_val": 43491399,
     "o_lines": 57,
     "o_val": 15646839,
-    "resv_total": 364
+    "resv_total": 366
   },
   "sbcar": {
     "groups": [
