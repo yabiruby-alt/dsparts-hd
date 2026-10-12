@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 12일 (월) · 11:14 기준",
+    "generated_at": "10월 12일 (월) · 11:25 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -22249,10 +22249,27 @@
         "val": 682528,
         "sa": "안준영",
         "dday": "D+0일"
+      },
+      {
+        "item": "51118081214",
+        "name": "Air inlet fi",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000397",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-12",
+        "req_dt_full": "2026-10-12 11:19:49",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 72072,
+        "sa": "염진아",
+        "dday": "D+0일"
       }
     ],
-    "count": 291,
-    "total_val": 79180211,
+    "count": 292,
+    "total_val": 79252283,
     "groups": [
       {
         "code": "RO",
@@ -25146,11 +25163,28 @@
             "val": 691740,
             "sa": "우상만",
             "dday": "D+0일"
+          },
+          {
+            "item": "51118081214",
+            "name": "Air inlet fi",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000397",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-12",
+            "req_dt_full": "2026-10-12 11:19:49",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 72072,
+            "sa": "염진아",
+            "dday": "D+0일"
           }
         ],
-        "count": 170,
-        "qty_sum": 273,
-        "val": 48896539
+        "count": 171,
+        "qty_sum": 274,
+        "val": 48968611
       },
       {
         "code": "SB",
@@ -28157,15 +28191,6 @@
         "val": 219450
       },
       {
-        "item": "34358074297",
-        "name": "Brake pad we",
-        "pgrp": "B1",
-        "alois": "O8",
-        "qty": 8,
-        "avail_qty": 8,
-        "val": 217456
-      },
-      {
         "item": "51237347412",
         "name": "Lock top par",
         "pgrp": "B1",
@@ -28272,6 +28297,15 @@
         "qty": 2,
         "avail_qty": 2,
         "val": 190560
+      },
+      {
+        "item": "34358074297",
+        "name": "Brake pad we",
+        "pgrp": "B1",
+        "alois": "O8",
+        "qty": 8,
+        "avail_qty": 7,
+        "val": 190274
       },
       {
         "item": "51472473486",
@@ -31636,15 +31670,6 @@
             "val": 219732
           },
           {
-            "item": "34358074297",
-            "name": "Brake pad we",
-            "pgrp": "B1",
-            "alois": "O8",
-            "qty": 8,
-            "avail_qty": 8,
-            "val": 217456
-          },
-          {
             "item": "51237347412",
             "name": "Lock top par",
             "pgrp": "B1",
@@ -31679,6 +31704,15 @@
             "qty": 4,
             "avail_qty": 4,
             "val": 190792
+          },
+          {
+            "item": "34358074297",
+            "name": "Brake pad we",
+            "pgrp": "B1",
+            "alois": "O8",
+            "qty": 8,
+            "avail_qty": 7,
+            "val": 190274
           },
           {
             "item": "11518482250",
@@ -33726,8 +33760,8 @@
         ],
         "count": 256,
         "qty_sum": 1054,
-        "avail_sum": 1038,
-        "val": 34183844
+        "avail_sum": 1037,
+        "val": 34156662
       },
       {
         "code": "OA",
@@ -35648,7 +35682,7 @@
       }
     ],
     "count": 465,
-    "total_val": 143639975
+    "total_val": 143612793
   },
   "oflow": {
     "rows": [
@@ -36405,8 +36439,8 @@
       },
       {
         "ro": "RO2609000918",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "소음",
         "sa": "우종훈",
         "pub": "2026-09-14",
@@ -37791,8 +37825,8 @@
       },
       {
         "ro": "RO2610000178",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-10-06",
@@ -39199,8 +39233,8 @@
       },
       {
         "ro": "RO2610000397",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-10-08",
@@ -40178,8 +40212,8 @@
       },
       {
         "ro": "RO2610000503",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "우종훈",
         "pub": "2026-10-12",
@@ -40243,17 +40277,6 @@
         "amt": 56000
       },
       {
-        "ro": "RO2610000508",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "우종훈",
-        "pub": "2026-10-12",
-        "pub_full": "2026-10-12 10:14",
-        "dday": "D+0일",
-        "amt": 493940
-      },
-      {
         "ro": "RO2610000510",
         "stat": "정비시작",
         "stat_cd": "03",
@@ -40263,6 +40286,17 @@
         "pub_full": "2026-10-12 10:14",
         "dday": "D+0일",
         "amt": 662600
+      },
+      {
+        "ro": "RO2610000508",
+        "stat": "정비시작",
+        "stat_cd": "03",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 10:14",
+        "dday": "D+0일",
+        "amt": 493940
       },
       {
         "ro": "RO2610000511",
@@ -40310,8 +40344,8 @@
       },
       {
         "ro": "RO2610000515",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-12",
@@ -40354,8 +40388,8 @@
       },
       {
         "ro": "RO2610000519",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-12",
@@ -40428,30 +40462,41 @@
         "pub_full": "2026-10-12 11:03",
         "dday": "D+0일",
         "amt": 0
+      },
+      {
+        "ro": "RO2610000526",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Recall/TC",
+        "sa": "정용환",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 11:22",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 424,
+    "count": 425,
     "total_amt": 872876381,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 26,
-        "amt": 32958879
+        "amt": 32716279
       },
       {
         "stat": "상담완료",
-        "count": 168,
-        "amt": 514893511
+        "count": 164,
+        "amt": 503442875
       },
       {
         "stat": "정비시작",
-        "count": 29,
-        "amt": 72416077
+        "count": 32,
+        "amt": 76451273
       },
       {
         "stat": "End Control 요청",
-        "count": 57,
-        "amt": 124944286
+        "count": 59,
+        "amt": 132602326
       },
       {
         "stat": "공정마감",
@@ -41292,7 +41337,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 6,
-            "avail_qty": 2,
+            "avail_qty": 1,
             "val": 47740
           },
           {
@@ -41302,7 +41347,7 @@
             "sa": "우종훈",
             "req_qty": 2,
             "crt_qty": 18,
-            "avail_qty": 11,
+            "avail_qty": 9,
             "val": 23114
           },
           {
@@ -41311,8 +41356,8 @@
             "alois": "L1",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 120,
-            "avail_qty": 117,
+            "crt_qty": 117,
+            "avail_qty": 114,
             "val": 21298
           },
           {
@@ -41352,7 +41397,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 7,
-            "avail_qty": 3,
+            "avail_qty": 2,
             "val": 3001
           }
         ],
@@ -41448,7 +41493,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 6,
-            "avail_qty": 2,
+            "avail_qty": 1,
             "val": 47740
           },
           {
@@ -41458,7 +41503,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 18,
-            "avail_qty": 11,
+            "avail_qty": 9,
             "val": 23114
           },
           {
@@ -41508,7 +41553,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 7,
-            "avail_qty": 3,
+            "avail_qty": 2,
             "val": 3001
           }
         ],
@@ -42514,7 +42559,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 6,
-            "avail_qty": 2,
+            "avail_qty": 1,
             "val": 47740
           },
           {
@@ -42524,7 +42569,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 18,
-            "avail_qty": 11,
+            "avail_qty": 9,
             "val": 11557
           },
           {
@@ -42544,7 +42589,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 7,
-            "avail_qty": 3,
+            "avail_qty": 2,
             "val": 3001
           }
         ],
@@ -43536,13 +43581,33 @@
             "val": 682528
           },
           {
+            "item": "13628589665",
+            "name": "Oxygen senso",
+            "alois": "A5",
+            "sa": "안준영",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "val": 327624
+          },
+          {
+            "item": "13627101680",
+            "name": "Oxygen senso",
+            "alois": "SK",
+            "sa": "안준영",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 323952
+          },
+          {
             "item": "83195A42DF3",
             "name": "HT-12 Anti-freeze",
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 82,
-            "avail_qty": 76,
+            "crt_qty": 72,
+            "avail_qty": 66,
             "val": 21320
           },
           {
@@ -43586,9 +43651,9 @@
             "val": 8357
           }
         ],
-        "count": 6,
-        "qty_sum": 9,
-        "val": 748857
+        "count": 8,
+        "qty_sum": 11,
+        "val": 1400433
       },
       {
         "code": "SB2609001794",
@@ -43763,108 +43828,6 @@
         "count": 8,
         "qty_sum": 11,
         "val": 1382006
-      },
-      {
-        "code": "SB2609001345",
-        "resv_full": "2026-10-20 10:00",
-        "resv": "10-20",
-        "dday": "D-8일",
-        "sa": "M GARAGE",
-        "rows": [
-          {
-            "item": "34107889662",
-            "name": "Ventilated b",
-            "alois": "O8",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 681360
-          },
-          {
-            "item": "34107889661",
-            "name": "Ventilated b",
-            "alois": "O8",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 681360
-          },
-          {
-            "item": "34108093705",
-            "name": "Repair kit,",
-            "alois": "L7",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 601545
-          },
-          {
-            "item": "34207889663",
-            "name": "Brake disc,",
-            "alois": "O8",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 423951
-          },
-          {
-            "item": "34207889664",
-            "name": "Brake disc v",
-            "alois": "O8",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 423951
-          },
-          {
-            "item": "34208093728",
-            "name": "Repair kit f",
-            "alois": "A6",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "val": 419220
-          },
-          {
-            "item": "34356870349",
-            "name": "Brake pad we",
-            "alois": "A4",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 13,
-            "avail_qty": 7,
-            "val": 25277
-          },
-          {
-            "item": "34358095575",
-            "name": "Brake pad we",
-            "alois": "A6",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "val": 25220
-          },
-          {
-            "item": "34111123072",
-            "name": "BOLT",
-            "alois": "O8",
-            "sa": "M GARAGE",
-            "req_qty": 4,
-            "crt_qty": 8,
-            "avail_qty": 0,
-            "val": 4672
-          }
-        ],
-        "count": 9,
-        "qty_sum": 12,
-        "val": 3286556
       },
       {
         "code": "SB2609002191",
@@ -44649,6 +44612,108 @@
         "val": 13783
       },
       {
+        "code": "SB2609001345",
+        "resv_full": "2026-10-13 11:00",
+        "resv": "10-13",
+        "dday": "D-1일",
+        "sa": "M GARAGE",
+        "rows": [
+          {
+            "item": "34107889662",
+            "name": "Ventilated b",
+            "alois": "O8",
+            "sa": "M GARAGE",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 681360
+          },
+          {
+            "item": "34107889661",
+            "name": "Ventilated b",
+            "alois": "O8",
+            "sa": "M GARAGE",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 681360
+          },
+          {
+            "item": "34108093705",
+            "name": "Repair kit,",
+            "alois": "L7",
+            "sa": "M GARAGE",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 601545
+          },
+          {
+            "item": "34207889663",
+            "name": "Brake disc,",
+            "alois": "O8",
+            "sa": "M GARAGE",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 423951
+          },
+          {
+            "item": "34207889664",
+            "name": "Brake disc v",
+            "alois": "O8",
+            "sa": "M GARAGE",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 423951
+          },
+          {
+            "item": "34208093728",
+            "name": "Repair kit f",
+            "alois": "A6",
+            "sa": "M GARAGE",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "val": 419220
+          },
+          {
+            "item": "34356870349",
+            "name": "Brake pad we",
+            "alois": "A4",
+            "sa": "M GARAGE",
+            "req_qty": 1,
+            "crt_qty": 13,
+            "avail_qty": 7,
+            "val": 25277
+          },
+          {
+            "item": "34358095575",
+            "name": "Brake pad we",
+            "alois": "A6",
+            "sa": "M GARAGE",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "val": 25220
+          },
+          {
+            "item": "34111123072",
+            "name": "BOLT",
+            "alois": "O8",
+            "sa": "M GARAGE",
+            "req_qty": 4,
+            "crt_qty": 8,
+            "avail_qty": 0,
+            "val": 4672
+          }
+        ],
+        "count": 9,
+        "qty_sum": 12,
+        "val": 3286556
+      },
+      {
         "code": "SB2610000439",
         "resv_full": "2026-10-13 10:40",
         "resv": "10-13",
@@ -44711,6 +44776,68 @@
         "count": 3,
         "qty_sum": 3,
         "val": 165841
+      },
+      {
+        "code": "SB2609001388",
+        "resv_full": "2026-10-13 10:00",
+        "resv": "10-13",
+        "dday": "D-1일",
+        "sa": "이정환",
+        "rows": [
+          {
+            "item": "11717822350",
+            "name": "Abgas-K#hler",
+            "alois": "A6",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "val": 758142
+          },
+          {
+            "item": "11148490568",
+            "name": "Acoustic cov",
+            "alois": "A6",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 49357
+          },
+          {
+            "item": "11658595650",
+            "name": "Vacuum hose",
+            "alois": "A5",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 6,
+            "avail_qty": 1,
+            "val": 47740
+          },
+          {
+            "item": "11717799853",
+            "name": "Pipe union",
+            "alois": "A4",
+            "sa": "이정환",
+            "req_qty": 2,
+            "crt_qty": 18,
+            "avail_qty": 9,
+            "val": 23114
+          },
+          {
+            "item": "61131369832",
+            "name": "Holder",
+            "alois": "A5",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 7,
+            "avail_qty": 2,
+            "val": 3001
+          }
+        ],
+        "count": 5,
+        "qty_sum": 6,
+        "val": 881354
       },
       {
         "code": "SB2610000423",
@@ -45111,9 +45238,9 @@
         "val": 318085
       }
     ],
-    "sb_count": 56,
-    "line_count": 223,
-    "total_val": 42704848,
+    "sb_count": 57,
+    "line_count": 230,
+    "total_val": 44237778,
     "o_lines": 59,
     "o_val": 15746366,
     "resv_total": 365
