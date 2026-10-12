@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 12일 (월) · 12:00 기준",
+    "generated_at": "10월 12일 (월) · 12:12 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -40434,14 +40434,14 @@
       },
       {
         "ro": "RO2610000530",
-        "stat": "상담시작",
-        "stat_cd": "01",
-        "svc": "진단",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-12",
         "pub_full": "2026-10-12 11:45",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 365800
       },
       {
         "ro": "RO2610000529",
@@ -40464,10 +40464,21 @@
         "pub_full": "2026-10-12 11:55",
         "dday": "D+0일",
         "amt": 628632
+      },
+      {
+        "ro": "RO2610000532",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 12:11",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 430,
-    "total_amt": 876791742,
+    "count": 431,
+    "total_amt": 877157542,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40476,8 +40487,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 169,
-        "amt": 527958376
+        "count": 170,
+        "amt": 528324176
       },
       {
         "stat": "정비시작",
@@ -43437,6 +43448,38 @@
         "val": 1174327
       },
       {
+        "code": "SB2610000604",
+        "resv_full": "2026-10-29 09:00",
+        "resv": "10-29",
+        "dday": "D-17일",
+        "sa": "M GARAGE",
+        "rows": [
+          {
+            "item": "31336783090",
+            "name": "Additional s",
+            "alois": "II",
+            "sa": "M GARAGE",
+            "req_qty": 2,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 37676
+          },
+          {
+            "item": "31331094749",
+            "name": "Tube",
+            "alois": "II",
+            "sa": "M GARAGE",
+            "req_qty": 2,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 12374
+          }
+        ],
+        "count": 2,
+        "qty_sum": 4,
+        "val": 50050
+      },
+      {
         "code": "SB2610000586",
         "resv_full": "2026-10-26 09:40",
         "resv": "10-26",
@@ -45167,12 +45210,12 @@
         "val": 609616
       }
     ],
-    "sb_count": 56,
-    "line_count": 225,
-    "total_val": 43829932,
+    "sb_count": 57,
+    "line_count": 227,
+    "total_val": 43879982,
     "o_lines": 59,
     "o_val": 15746366,
-    "resv_total": 366
+    "resv_total": 367
   },
   "sbcar": {
     "groups": [
