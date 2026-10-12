@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 12일 (월) · 15:14 기준",
+    "generated_at": "10월 12일 (월) · 15:26 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -22259,10 +22259,44 @@
         "val": 51294,
         "sa": "염진아",
         "dday": "D+0일"
+      },
+      {
+        "item": "39106865725",
+        "name": "Multi-purpos",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609000179",
+        "req_qty": 4,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-12",
+        "req_dt_full": "2026-10-12 15:15:34",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 30660,
+        "sa": "김민규",
+        "dday": "D+0일"
+      },
+      {
+        "item": "61279884703",
+        "name": "Gasket",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2609000179",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-12",
+        "req_dt_full": "2026-10-12 15:15:34",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 638253,
+        "sa": "김민규",
+        "dday": "D+0일"
       }
     ],
-    "count": 299,
-    "total_val": 77904589,
+    "count": 301,
+    "total_val": 78573502,
     "groups": [
       {
         "code": "RO",
@@ -25343,11 +25377,45 @@
             "val": 51294,
             "sa": "염진아",
             "dday": "D+0일"
+          },
+          {
+            "item": "39106865725",
+            "name": "Multi-purpos",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609000179",
+            "req_qty": 4,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-12",
+            "req_dt_full": "2026-10-12 15:15:34",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 30660,
+            "sa": "김민규",
+            "dday": "D+0일"
+          },
+          {
+            "item": "61279884703",
+            "name": "Gasket",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2609000179",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-12",
+            "req_dt_full": "2026-10-12 15:15:34",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 638253,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 181,
-        "qty_sum": 299,
-        "val": 47806020
+        "count": 183,
+        "qty_sum": 304,
+        "val": 48474933
       },
       {
         "code": "SB",
@@ -36669,8 +36737,8 @@
       },
       {
         "ro": "RO2609001101",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-09-17",
@@ -37274,8 +37342,8 @@
       },
       {
         "ro": "RO2609001726",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-09-30",
@@ -38517,8 +38585,8 @@
       },
       {
         "ro": "RO2610000302",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-10-07",
@@ -40794,8 +40862,8 @@
       },
       {
         "ro": "RO2610000551",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-12",
@@ -40901,10 +40969,32 @@
         "pub_full": "2026-10-12 15:05",
         "dday": "D+0일",
         "amt": 5690000
+      },
+      {
+        "ro": "RO2610000562",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 15:17",
+        "dday": "D+0일",
+        "amt": 35300
+      },
+      {
+        "ro": "RO2610000563",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 15:18",
+        "dday": "D+0일",
+        "amt": 1559952
       }
     ],
-    "count": 457,
-    "total_amt": 905468878,
+    "count": 459,
+    "total_amt": 907064130,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40913,18 +41003,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 171,
-        "amt": 533148556
+        "count": 172,
+        "amt": 533895585
       },
       {
         "stat": "정비시작",
-        "count": 34,
-        "amt": 67041174
+        "count": 33,
+        "amt": 58619757
       },
       {
         "stat": "End Control 요청",
-        "count": 82,
-        "amt": 154177963
+        "count": 83,
+        "amt": 163316003
       },
       {
         "stat": "공정마감",
@@ -40933,8 +41023,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 143,
-        "amt": 128151685
+        "count": 144,
+        "amt": 128283285
       }
     ],
     "oldest": "D+538일"
@@ -42003,7 +42093,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 21,
-            "avail_qty": 19,
+            "avail_qty": 18,
             "val": 68569
           },
           {
@@ -43677,7 +43767,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 21,
-            "avail_qty": 19,
+            "avail_qty": 18,
             "val": 68569
           },
           {
@@ -44240,6 +44330,28 @@
         "count": 3,
         "qty_sum": 3,
         "val": 612921
+      },
+      {
+        "code": "SB2610000636",
+        "resv_full": "2026-10-19 09:00",
+        "resv": "10-19",
+        "dday": "D-7일",
+        "sa": "M GARAGE",
+        "rows": [
+          {
+            "item": "61445B904E7",
+            "name": "Discharge ad",
+            "alois": null,
+            "sa": "M GARAGE",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 0
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 0
       },
       {
         "code": "SB2610000292",
@@ -44887,7 +44999,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 72,
-            "avail_qty": 66,
+            "avail_qty": 65,
             "val": 21320
           },
           {
@@ -45634,8 +45746,8 @@
         "val": 12080
       }
     ],
-    "sb_count": 57,
-    "line_count": 231,
+    "sb_count": 58,
+    "line_count": 232,
     "total_val": 43491399,
     "o_lines": 57,
     "o_val": 15646839,
