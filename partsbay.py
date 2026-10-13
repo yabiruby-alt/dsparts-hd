@@ -1888,6 +1888,9 @@ def _run_cycle_impl(page: Page, rr_page: Page | None = None) -> None:
             except Exception as e:   # 깃허브가 안 돼도 매출·재고조사 앱 갱신은 계속
                 print(f"   [깃허브 push 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
 
+    # 통합 대시보드 KPI: 구역별 원본을 Supabase 에 올림 (고객명·차대번호는 올리기 전에 지움). 실패해도 갱신에는 영향 없음.
+    _run_branchsync(data)
+
     # 매출 대시보드(지점장 전용, 비밀번호 암호화 페이지) — DMS 세션을 두 개 띄울 수 없어서 별도 데몬이 아니라 여기서 이어서 실행.
     # 실패해도 파츠베이 갱신에는 영향 없음.
     _serve_app_mid(page)
@@ -1914,6 +1917,21 @@ def _load_stockapp(reload: bool = False):
     if reload:
         importlib.reload(stockapp)  # stockapp.py 를 고쳐도 데몬 재시작(=DMS 재로그인) 없이 다음 주기부터 반영
     return stockapp
+
+
+def _run_branchsync(data: dict) -> None:
+    """branchsync.py(같은 폴더)로 지점 KPI 올리기. 재고조사 앱의 로그인·설정을 같이 쓰므로 그게 없으면 건너뜀."""
+    if not STOCKAPP_ENABLED:
+        return
+    _step(" - KPI 올리기")
+    try:
+        import importlib
+        sa = _load_stockapp()
+        import branchsync
+        importlib.reload(branchsync)  # 고쳐도 데몬 재시작 없이 다음 주기부터 반영
+        branchsync.run(data, sa)
+    except Exception as e:
+        print(f"   [KPI 올리기 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
 
 
 def serve_stockapp_requests(page: Page) -> None:
