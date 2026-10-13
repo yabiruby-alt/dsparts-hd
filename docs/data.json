@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 13일 (화) · 16:23 기준",
+    "generated_at": "10월 13일 (화) · 16:35 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,8 +284,8 @@
     ]
   },
   "inv": {
-    "total": 973385054,
-    "item_count": 2148,
+    "total": 973574315,
+    "item_count": 2149,
     "code_count": 25,
     "alois_groups": [
       {
@@ -295,9 +295,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 216173042,
-            "pct": 22.21,
-            "qty": 2415,
+            "val": 216296756,
+            "pct": 22.22,
+            "qty": 2421,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -338,8 +338,8 @@
               {
                 "item": "12122455258",
                 "name": "Spark plug B38x,46x,48x",
-                "qty": 152,
-                "val": 3134088
+                "qty": 158,
+                "val": 3257802
               },
               {
                 "item": "11428575211",
@@ -1491,9 +1491,9 @@
           },
           {
             "code": "A5",
-            "val": 88515569,
-            "pct": 9.09,
-            "qty": 1494,
+            "val": 88554661,
+            "pct": 9.1,
+            "qty": 1496,
             "parts": [
               {
                 "item": "11418646454",
@@ -2186,6 +2186,12 @@
                 "val": 80145
               },
               {
+                "item": "13718635102",
+                "name": "Air filter e",
+                "qty": 2,
+                "val": 78184
+              },
+              {
                 "item": "51119883883",
                 "name": "Impact absor",
                 "qty": 1,
@@ -2454,12 +2460,6 @@
                 "name": "Trim strip,",
                 "qty": 1,
                 "val": 39100
-              },
-              {
-                "item": "13718635102",
-                "name": "Air filter e",
-                "qty": 1,
-                "val": 39092
               },
               {
                 "item": "51418224768",
@@ -4800,9 +4800,9 @@
             ]
           }
         ],
-        "subtotal_val": 478305495,
-        "subtotal_qty": 8500,
-        "subtotal_pct": 49.14
+        "subtotal_val": 478468301,
+        "subtotal_qty": 8506,
+        "subtotal_pct": 49.15
       },
       {
         "code": "L",
@@ -7892,7 +7892,7 @@
         ],
         "subtotal_val": 134770950,
         "subtotal_qty": 3590,
-        "subtotal_pct": 13.85
+        "subtotal_pct": 13.84
       },
       {
         "code": "O",
@@ -11872,7 +11872,7 @@
         ],
         "subtotal_val": 206719951,
         "subtotal_qty": 2242,
-        "subtotal_pct": 21.24
+        "subtotal_pct": 21.23
       },
       {
         "code": "I",
@@ -12665,9 +12665,9 @@
           },
           {
             "code": "SZ",
-            "val": 88596308,
+            "val": 88622763,
             "pct": 9.1,
-            "qty": 318,
+            "qty": 319,
             "parts": [
               {
                 "item": "80225A8F293",
@@ -13348,6 +13348,12 @@
                 "val": 29200
               },
               {
+                "item": "34356770996",
+                "name": "Brake pad we",
+                "qty": 1,
+                "val": 26455
+              },
+              {
                 "item": "51719622340",
                 "name": "Mount, vehic",
                 "qty": 1,
@@ -13416,16 +13422,16 @@
             ]
           }
         ],
-        "subtotal_val": 145527208,
-        "subtotal_qty": 1770,
+        "subtotal_val": 145553662,
+        "subtotal_qty": 1771,
         "subtotal_pct": 14.95
       }
     ]
   },
   "oaov": {
     "total": 57387277,
-    "inv_total": 973385054,
-    "pct": 5.9,
+    "inv_total": 973574315,
+    "pct": 5.89,
     "oa_val": 34580045,
     "ov_val": 22807232,
     "oa_lines": 88,
@@ -37204,7 +37210,7 @@
         "pub": "2026-09-18",
         "pub_full": "2026-09-18 15:24",
         "dday": "D+25일",
-        "amt": 137842
+        "amt": 97142
       },
       {
         "ro": "RO2609001216",
@@ -39613,7 +39619,7 @@
         "pub": "2026-10-10",
         "pub_full": "2026-10-10 10:08",
         "dday": "D+3일",
-        "amt": 386388
+        "amt": 117888
       },
       {
         "ro": "RO2610000461",
@@ -41190,8 +41196,8 @@
       },
       {
         "ro": "RO2610000646",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-13",
@@ -41220,30 +41226,52 @@
         "pub_full": "2026-10-13 16:17",
         "dday": "D+0일",
         "amt": 0
+      },
+      {
+        "ro": "RO2610000650",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "김민규",
+        "pub": "2026-10-13",
+        "pub_full": "2026-10-13 16:27",
+        "dday": "D+0일",
+        "amt": 203600
+      },
+      {
+        "ro": "RO2610000651",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-13",
+        "pub_full": "2026-10-13 16:35",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 439,
-    "total_amt": 919745845,
+    "count": 441,
+    "total_amt": 919640245,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 21,
+        "count": 22,
         "amt": 9289300
       },
       {
         "stat": "상담완료",
         "count": 182,
-        "amt": 583676281
+        "amt": 583248191
       },
       {
         "stat": "정비시작",
-        "count": 42,
-        "amt": 54677773
+        "count": 43,
+        "amt": 55268763
       },
       {
         "stat": "End Control 요청",
         "count": 42,
-        "amt": 96012756
+        "amt": 95744256
       },
       {
         "stat": "공정마감",
@@ -42765,8 +42793,8 @@
             "alois": "A1",
             "sa": "김도현",
             "req_qty": 4,
-            "crt_qty": 152,
-            "avail_qty": 144,
+            "crt_qty": 158,
+            "avail_qty": 150,
             "val": 82476
           },
           {
@@ -45437,8 +45465,8 @@
             "alois": "A1",
             "sa": "안준영",
             "req_qty": 4,
-            "crt_qty": 152,
-            "avail_qty": 144,
+            "crt_qty": 158,
+            "avail_qty": 150,
             "val": 82476
           },
           {
@@ -46356,7 +46384,7 @@
     "total_val": 49199072,
     "o_lines": 60,
     "o_val": 16275777,
-    "resv_total": 370
+    "resv_total": 369
   },
   "sbcar": {
     "groups": [
@@ -48030,7 +48058,7 @@
         "item": "12122455258",
         "name": "Spark plug B38x,46x,48x",
         "alois": "A1",
-        "qty": 152,
+        "qty": 158,
         "no": 61
       },
       {
