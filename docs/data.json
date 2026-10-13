@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 13일 (화) · 13:39 기준",
+    "generated_at": "10월 13일 (화) · 13:50 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,8 +284,8 @@
     ]
   },
   "inv": {
-    "total": 986827608,
-    "item_count": 2176,
+    "total": 986778549,
+    "item_count": 2175,
     "code_count": 25,
     "alois_groups": [
       {
@@ -7922,7 +7922,7 @@
         ],
         "subtotal_val": 137904165,
         "subtotal_qty": 3639,
-        "subtotal_pct": 13.97
+        "subtotal_pct": 13.98
       },
       {
         "code": "O",
@@ -7931,9 +7931,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 65926592,
+            "val": 65877533,
             "pct": 6.68,
-            "qty": 1206,
+            "qty": 1205,
             "parts": [
               {
                 "item": "17425A18806",
@@ -9086,12 +9086,6 @@
                 "name": "Coolant hose",
                 "qty": 1,
                 "val": 49129
-              },
-              {
-                "item": "51117385284",
-                "name": "Protective s",
-                "qty": 1,
-                "val": 49059
               },
               {
                 "item": "07148838235",
@@ -12014,9 +12008,9 @@
             ]
           }
         ],
-        "subtotal_val": 209372339,
-        "subtotal_qty": 2267,
-        "subtotal_pct": 21.22
+        "subtotal_val": 209323280,
+        "subtotal_qty": 2266,
+        "subtotal_pct": 21.21
       },
       {
         "code": "I",
@@ -13586,13 +13580,13 @@
         ],
         "subtotal_val": 146295246,
         "subtotal_qty": 1780,
-        "subtotal_pct": 14.82
+        "subtotal_pct": 14.83
       }
     ]
   },
   "oaov": {
     "total": 58017016,
-    "inv_total": 986827608,
+    "inv_total": 986778549,
     "pct": 5.88,
     "oa_val": 34680095,
     "ov_val": 23336921,
@@ -15352,22 +15346,22 @@
     ]
   },
   "tire": {
-    "total": 7792700,
-    "cost": 8118000,
-    "lines": 11,
-    "invoices_count": 6,
+    "total": 9344300,
+    "cost": 9518000,
+    "lines": 13,
+    "invoices_count": 8,
     "by_sa": [
+      {
+        "sa": "우종훈",
+        "qty": 10,
+        "val": 3717400,
+        "margin": -230600
+      },
       {
         "sa": "최민수",
         "qty": 4,
         "val": 3164000,
         "margin": 0
-      },
-      {
-        "sa": "우종훈",
-        "qty": 6,
-        "val": 2165800,
-        "margin": -382200
       },
       {
         "sa": "안준영",
@@ -15382,9 +15376,25 @@
         "margin": 0
       }
     ],
-    "qty_total": 16,
-    "margin_total": -325300,
+    "qty_total": 20,
+    "margin_total": -173700,
     "all_invoices": [
+      {
+        "inv": "IV2610000920",
+        "num": "RO2610000633",
+        "sa": "우종훈",
+        "dt": "2026-10-13 13:47",
+        "amt": 1551600,
+        "cost": 1400000
+      },
+      {
+        "inv": "IV2610000919",
+        "num": "RO2610000092",
+        "sa": "우종훈",
+        "dt": "2026-10-13 13:45",
+        "amt": 0,
+        "cost": 0
+      },
       {
         "inv": "IV2610000713",
         "num": "RO2610000274",
@@ -23048,23 +23058,6 @@
         "dday": "D+0일"
       },
       {
-        "item": "51117385284",
-        "name": "Protective s",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2610000468",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "10-13",
-        "req_dt_full": "2026-10-13 13:11:58",
-        "req_brch": "AS_부산(전포)",
-        "val": 49059,
-        "sa": "정경훈",
-        "dday": "D+0일"
-      },
-      {
         "item": "51717164761",
         "name": "Support",
         "alois": "O8",
@@ -23114,10 +23107,27 @@
         "val": 158191,
         "sa": "우종훈",
         "dday": "D+0일"
+      },
+      {
+        "item": "32411131373",
+        "name": "Hose clamp",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000369",
+        "req_qty": 2,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-13",
+        "req_dt_full": "2026-10-13 13:49:05",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 4950,
+        "sa": "이정환",
+        "dday": "D+0일"
       }
     ],
     "count": 317,
-    "total_val": 80138020,
+    "total_val": 80093911,
     "groups": [
       {
         "code": "RO",
@@ -26506,26 +26516,26 @@
             "dday": "D+0일"
           },
           {
-            "item": "51117385284",
-            "name": "Protective s",
+            "item": "32411131373",
+            "name": "Hose clamp",
             "alois": "O8",
-            "pgrp": "B1",
+            "pgrp": "-",
             "ref_tp": "RO",
-            "ref_no": "RO2610000468",
-            "req_qty": 1,
-            "crt_qty": 1,
+            "ref_no": "RO2610000369",
+            "req_qty": 2,
+            "crt_qty": 0,
             "avail_qty": 0,
             "req_dt": "10-13",
-            "req_dt_full": "2026-10-13 13:11:58",
-            "req_brch": "AS_부산(전포)",
-            "val": 49059,
-            "sa": "정경훈",
+            "req_dt_full": "2026-10-13 13:49:05",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 4950,
+            "sa": "이정환",
             "dday": "D+0일"
           }
         ],
         "count": 200,
-        "qty_sum": 317,
-        "val": 50944536
+        "qty_sum": 318,
+        "val": 50900427
       },
       {
         "code": "SB",
@@ -36991,8 +37001,8 @@
       {
         "code": "O8",
         "in_val": 54701337,
-        "out_val": 77800312,
-        "net": -23098975
+        "out_val": 77849371,
+        "net": -23148034
       },
       {
         "code": "OA",
@@ -37730,8 +37740,8 @@
       },
       {
         "ro": "RO2609001060",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-09-16",
@@ -38563,17 +38573,6 @@
         "pub_full": "2026-10-01 09:54",
         "dday": "D+12일",
         "amt": 596693
-      },
-      {
-        "ro": "RO2610000092",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "Maintenance",
-        "sa": "우종훈",
-        "pub": "2026-10-01",
-        "pub_full": "2026-10-01 09:55",
-        "dday": "D+12일",
-        "amt": 2046000
       },
       {
         "ro": "RO2610000040",
@@ -39838,7 +39837,7 @@
         "pub": "2026-10-08",
         "pub_full": "2026-10-08 09:00",
         "dday": "D+5일",
-        "amt": 257998
+        "amt": 264598
       },
       {
         "ro": "RO2610000370",
@@ -41789,8 +41788,8 @@
       },
       {
         "ro": "RO2610000623",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "입고 Proactive-RITA",
         "sa": "최민수",
         "pub": "2026-10-13",
@@ -41885,21 +41884,10 @@
         "pub_full": "2026-10-13 13:23",
         "dday": "D+0일",
         "amt": 1777700
-      },
-      {
-        "ro": "RO2610000633",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "우종훈",
-        "pub": "2026-10-13",
-        "pub_full": "2026-10-13 13:39",
-        "dday": "D+0일",
-        "amt": 0
       }
     ],
-    "count": 443,
-    "total_amt": 957105541,
+    "count": 441,
+    "total_amt": 955066141,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -41908,18 +41896,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 189,
-        "amt": 576700332
+        "count": 187,
+        "amt": 574369068
       },
       {
         "stat": "정비시작",
         "count": 40,
-        "amt": 61196341
+        "amt": 61039505
       },
       {
         "stat": "End Control 요청",
-        "count": 44,
-        "amt": 124601011
+        "count": 43,
+        "amt": 122555011
       },
       {
         "stat": "공정마감",
@@ -41928,8 +41916,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 150,
-        "amt": 184901657
+        "count": 151,
+        "amt": 187396357
       }
     ],
     "oldest": "D+539일"
@@ -46738,7 +46726,7 @@
     "total_val": 39455687,
     "o_lines": 53,
     "o_val": 13596798,
-    "resv_total": 359
+    "resv_total": 355
   },
   "sbcar": {
     "groups": [
