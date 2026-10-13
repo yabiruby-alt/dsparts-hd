@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 13일 (화) · 11:35 기준",
+    "generated_at": "10월 13일 (화) · 11:46 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -37957,7 +37957,7 @@
         "pub": "2026-09-09",
         "pub_full": "2026-09-09 15:05",
         "dday": "D+34일",
-        "amt": 6426960
+        "amt": 5348960
       },
       {
         "ro": "RO2609000685",
@@ -41855,8 +41855,8 @@
       },
       {
         "ro": "RO2610000594",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-13",
@@ -42108,8 +42108,8 @@
       },
       {
         "ro": "RO2610000619",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-13",
@@ -42196,7 +42196,7 @@
       }
     ],
     "count": 436,
-    "total_amt": 959264127,
+    "total_amt": 958186127,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -42205,18 +42205,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 189,
-        "amt": 582351091
+        "count": 188,
+        "amt": 581717872
       },
       {
         "stat": "정비시작",
         "count": 36,
-        "amt": 61339540
+        "amt": 61782691
       },
       {
         "stat": "End Control 요청",
-        "count": 43,
-        "amt": 123722767
+        "count": 44,
+        "amt": 123912835
       },
       {
         "stat": "공정마감",
@@ -42226,7 +42226,7 @@
       {
         "stat": "가정산 완료",
         "count": 147,
-        "amt": 180943829
+        "amt": 179865829
       }
     ],
     "oldest": "D+539일"
@@ -45506,6 +45506,98 @@
         "val": 1440720
       },
       {
+        "code": "SB2610000694",
+        "resv_full": "2026-10-22 09:00",
+        "resv": "10-22",
+        "dday": "D-9일",
+        "sa": "염진아",
+        "rows": [
+          {
+            "item": "51315A8A8A5",
+            "name": "Windscreen g",
+            "alois": "A6",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 1043120
+          },
+          {
+            "item": "51485A68387",
+            "name": "Sound insula",
+            "alois": "SZ",
+            "sa": "염진아",
+            "req_qty": 2,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 142120
+          },
+          {
+            "item": "83192289285",
+            "name": "Repair flat",
+            "alois": "L2",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 70811
+          },
+          {
+            "item": "51315A8A8B0",
+            "name": "Cover windsh",
+            "alois": "L6",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 64167
+          },
+          {
+            "item": "61359856157",
+            "name": "Silicone rep",
+            "alois": "A3",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 6,
+            "avail_qty": 3,
+            "val": 43055
+          },
+          {
+            "item": "99995BA3923",
+            "name": "CleanerR1(BM",
+            "alois": "SY",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 15600
+          },
+          {
+            "item": "51317930784",
+            "name": "Water access",
+            "alois": "L7",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "val": 14308
+          },
+          {
+            "item": "51317930783",
+            "name": "Water access",
+            "alois": "L7",
+            "sa": "염진아",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "val": 10585
+          }
+        ],
+        "count": 8,
+        "qty_sum": 9,
+        "val": 1403766
+      },
+      {
         "code": "SB2609002190",
         "resv_full": "2026-10-22 09:00",
         "resv": "10-22",
@@ -45596,98 +45688,6 @@
         "count": 8,
         "qty_sum": 11,
         "val": 1382006
-      },
-      {
-        "code": "SB2610000694",
-        "resv_full": "2026-10-21 09:00",
-        "resv": "10-21",
-        "dday": "D-8일",
-        "sa": "염진아",
-        "rows": [
-          {
-            "item": "51315A8A8A5",
-            "name": "Windscreen g",
-            "alois": "A6",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 1043120
-          },
-          {
-            "item": "51485A68387",
-            "name": "Sound insula",
-            "alois": "SZ",
-            "sa": "염진아",
-            "req_qty": 2,
-            "crt_qty": 0,
-            "avail_qty": 0,
-            "val": 142120
-          },
-          {
-            "item": "83192289285",
-            "name": "Repair flat",
-            "alois": "L2",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 70811
-          },
-          {
-            "item": "51315A8A8B0",
-            "name": "Cover windsh",
-            "alois": "L6",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 64167
-          },
-          {
-            "item": "61359856157",
-            "name": "Silicone rep",
-            "alois": "A3",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 6,
-            "avail_qty": 3,
-            "val": 43055
-          },
-          {
-            "item": "99995BA3923",
-            "name": "CleanerR1(BM",
-            "alois": "SY",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 15600
-          },
-          {
-            "item": "51317930784",
-            "name": "Water access",
-            "alois": "L7",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "val": 14308
-          },
-          {
-            "item": "51317930783",
-            "name": "Water access",
-            "alois": "L7",
-            "sa": "염진아",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "val": 10585
-          }
-        ],
-        "count": 8,
-        "qty_sum": 9,
-        "val": 1403766
       },
       {
         "code": "SB2609002191",
@@ -45796,6 +45796,38 @@
         "count": 1,
         "qty_sum": 1,
         "val": 0
+      },
+      {
+        "code": "SB2610000699",
+        "resv_full": "2026-10-17 09:40",
+        "resv": "10-17",
+        "dday": "D-4일",
+        "sa": "최민수",
+        "rows": [
+          {
+            "item": "51475A87FF0",
+            "name": "Kit all-weat",
+            "alois": "A6",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 102487
+          },
+          {
+            "item": "51475A87FF2",
+            "name": "Kit all-weat",
+            "alois": "A6",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 86548
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 189035
       },
       {
         "code": "SB2610000643",
@@ -46864,12 +46896,12 @@
         "val": 68185
       }
     ],
-    "sb_count": 60,
-    "line_count": 219,
-    "total_val": 38744385,
+    "sb_count": 61,
+    "line_count": 221,
+    "total_val": 38933420,
     "o_lines": 51,
     "o_val": 13280416,
-    "resv_total": 358
+    "resv_total": 360
   },
   "sbcar": {
     "groups": [
