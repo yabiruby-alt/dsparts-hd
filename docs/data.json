@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 14일 (수) · 08:08 기준",
+    "generated_at": "10월 14일 (수) · 08:19 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -22852,23 +22852,6 @@
         "dday": "D+2일"
       },
       {
-        "item": "61627407273",
-        "name": "WIPER BLADE X3 Rear",
-        "alois": "OE",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2610000457",
-        "req_qty": 1,
-        "crt_qty": 12,
-        "avail_qty": 11,
-        "req_dt": "10-12",
-        "req_dt_full": "2026-10-12 13:41:18",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 24480,
-        "sa": "최민수",
-        "dday": "D+2일"
-      },
-      {
         "item": "36118071998",
         "name": "Disk wheel,",
         "alois": "OV",
@@ -24074,6 +24057,23 @@
         "val": 700256,
         "sa": "안준영",
         "dday": "D+1일"
+      },
+      {
+        "item": "61627407273",
+        "name": "WIPER BLADE X3 Rear",
+        "alois": "OE",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000660",
+        "req_qty": 1,
+        "crt_qty": 12,
+        "avail_qty": 11,
+        "req_dt": "10-14",
+        "req_dt_full": "2026-10-14 08:12:30",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 24480,
+        "sa": "최민수",
+        "dday": "D+0일"
       }
     ],
     "count": 334,
@@ -27668,11 +27668,28 @@
             "val": 700256,
             "sa": "안준영",
             "dday": "D+1일"
+          },
+          {
+            "item": "61627407273",
+            "name": "WIPER BLADE X3 Rear",
+            "alois": "OE",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000660",
+            "req_qty": 1,
+            "crt_qty": 12,
+            "avail_qty": 11,
+            "req_dt": "10-14",
+            "req_dt_full": "2026-10-14 08:12:30",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 24480,
+            "sa": "최민수",
+            "dday": "D+0일"
           }
         ],
-        "count": 211,
-        "qty_sum": 335,
-        "val": 57568509
+        "count": 212,
+        "qty_sum": 336,
+        "val": 57592989
       },
       {
         "code": "SB",
@@ -29157,23 +29174,6 @@
             "dday": "D+6일"
           },
           {
-            "item": "61627407273",
-            "name": "WIPER BLADE X3 Rear",
-            "alois": "OE",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2610000457",
-            "req_qty": 1,
-            "crt_qty": 12,
-            "avail_qty": 11,
-            "req_dt": "10-12",
-            "req_dt_full": "2026-10-12 13:41:18",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 24480,
-            "sa": "최민수",
-            "dday": "D+2일"
-          },
-          {
             "item": "07119906050",
             "name": "Hex nut",
             "alois": "O8",
@@ -29293,9 +29293,9 @@
             "dday": "D+1일"
           }
         ],
-        "count": 95,
-        "qty_sum": 131,
-        "val": 24495071
+        "count": 94,
+        "qty_sum": 130,
+        "val": 24470591
       },
       {
         "code": "SP",
@@ -42986,10 +42986,21 @@
         "pub_full": "2026-10-13 18:54",
         "dday": "D+1일",
         "amt": 1720271
+      },
+      {
+        "ro": "RO2610000660",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-14",
+        "pub_full": "2026-10-14 08:12",
+        "dday": "D+0일",
+        "amt": 2281400
       }
     ],
-    "count": 410,
-    "total_amt": 891602434,
+    "count": 411,
+    "total_amt": 893883834,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -42998,8 +43009,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 178,
-        "amt": 571579864
+        "count": 179,
+        "amt": 573861264
       },
       {
         "stat": "정비시작",
@@ -48023,128 +48034,6 @@
         "val": 289299
       },
       {
-        "code": "SB2610000457",
-        "resv_full": "2026-10-14 09:40",
-        "resv": "10-14",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "34118854273",
-            "name": "Ventilated b",
-            "alois": "L5",
-            "sa": "최민수",
-            "req_qty": 2,
-            "crt_qty": 2,
-            "avail_qty": 0,
-            "val": 456000
-          },
-          {
-            "item": "34216882245",
-            "name": "Brake rotor",
-            "alois": "A4",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 149952
-          },
-          {
-            "item": "34216882246",
-            "name": "Brake rotor",
-            "alois": "A4",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 6,
-            "val": 143592
-          },
-          {
-            "item": "34106898192",
-            "name": "Repair kit,",
-            "alois": "A5",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 3,
-            "avail_qty": 2,
-            "val": 134347
-          },
-          {
-            "item": "34216892641",
-            "name": "Repair kit,",
-            "alois": "A4",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 6,
-            "avail_qty": 5,
-            "val": 114230
-          },
-          {
-            "item": "61617469820",
-            "name": "Set of wiper X3,X4 front",
-            "alois": "A1",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 38,
-            "avail_qty": 37,
-            "val": 68185
-          },
-          {
-            "item": "34356870350",
-            "name": "Brake pad we X3,4 (G)",
-            "alois": "A4",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 6,
-            "avail_qty": 5,
-            "val": 25238
-          },
-          {
-            "item": "34356870351",
-            "name": "Brake pad we",
-            "alois": "A4",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 6,
-            "avail_qty": 5,
-            "val": 25220
-          },
-          {
-            "item": "61627407273",
-            "name": "WIPER BLADE X3 Rear",
-            "alois": "OE",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 12,
-            "avail_qty": 11,
-            "val": 24480
-          },
-          {
-            "item": "34211161806",
-            "name": "Bolt",
-            "alois": "A2",
-            "sa": "최민수",
-            "req_qty": 2,
-            "crt_qty": 52,
-            "avail_qty": 42,
-            "val": 2350
-          },
-          {
-            "item": "34211161806",
-            "name": "Bolt",
-            "alois": "A2",
-            "sa": "최민수",
-            "req_qty": 2,
-            "crt_qty": 52,
-            "avail_qty": 42,
-            "val": 2350
-          }
-        ],
-        "count": 11,
-        "qty_sum": 14,
-        "val": 1145944
-      },
-      {
         "code": "SB2610000690",
         "resv_full": "2026-10-14 09:20",
         "resv": "10-14",
@@ -48383,12 +48272,12 @@
         "val": 2877684
       }
     ],
-    "sb_count": 82,
-    "line_count": 266,
-    "total_val": 53822951,
-    "o_lines": 67,
-    "o_val": 18238739,
-    "resv_total": 384
+    "sb_count": 81,
+    "line_count": 255,
+    "total_val": 52677007,
+    "o_lines": 66,
+    "o_val": 18214259,
+    "resv_total": 382
   },
   "sbcar": {
     "groups": [
