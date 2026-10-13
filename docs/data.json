@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 13일 (화) · 12:43 기준",
+    "generated_at": "10월 13일 (화) · 12:54 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -23368,10 +23368,27 @@
         "val": 68098,
         "sa": "김민규",
         "dday": "D+0일"
+      },
+      {
+        "item": "51117293796",
+        "name": "Finisher",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000585",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-13",
+        "req_dt_full": "2026-10-13 12:46:39",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 52893,
+        "sa": "염진아",
+        "dday": "D+0일"
       }
     ],
-    "count": 323,
-    "total_val": 81703908,
+    "count": 324,
+    "total_val": 81756801,
     "groups": [
       {
         "code": "RO",
@@ -26928,11 +26945,28 @@
             "val": 68098,
             "sa": "김민규",
             "dday": "D+0일"
+          },
+          {
+            "item": "51117293796",
+            "name": "Finisher",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000585",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-13",
+            "req_dt_full": "2026-10-13 12:46:39",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 52893,
+            "sa": "염진아",
+            "dday": "D+0일"
           }
         ],
-        "count": 209,
-        "qty_sum": 331,
-        "val": 52996822
+        "count": 210,
+        "qty_sum": 332,
+        "val": 53049715
       },
       {
         "code": "SB",
@@ -41734,8 +41768,8 @@
       },
       {
         "ro": "RO2610000585",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-10-13",
@@ -42193,20 +42227,31 @@
         "pub_full": "2026-10-13 11:58",
         "dday": "D+0일",
         "amt": 2032000
+      },
+      {
+        "ro": "RO2610000628",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "입고 Proactive-RITA",
+        "sa": "우종훈",
+        "pub": "2026-10-13",
+        "pub_full": "2026-10-13 12:53",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 436,
+    "count": 437,
     "total_amt": 955507079,
     "by_stat": [
       {
         "stat": "상담시작",
         "count": 20,
-        "amt": 10490000
+        "amt": 9289300
       },
       {
         "stat": "상담완료",
-        "count": 186,
-        "amt": 581757291
+        "count": 187,
+        "amt": 582957991
       },
       {
         "stat": "정비시작",
@@ -46201,7 +46246,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 20,
-            "avail_qty": 19,
+            "avail_qty": 18,
             "val": 156975
           },
           {
@@ -46520,6 +46565,48 @@
         "count": 1,
         "qty_sum": 1,
         "val": 29325
+      },
+      {
+        "code": "SB2610000176",
+        "resv_full": "2026-10-14 10:00",
+        "resv": "10-14",
+        "dday": "D-1일",
+        "sa": "이정환",
+        "rows": [
+          {
+            "item": "64115B78AA5",
+            "name": "Set nanopart",
+            "alois": "SX",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 20,
+            "avail_qty": 18,
+            "val": 156975
+          },
+          {
+            "item": "83215A65B99",
+            "name": "LL-22FE++ 0W12",
+            "alois": "L1",
+            "sa": "이정환",
+            "req_qty": 6,
+            "crt_qty": 96,
+            "avail_qty": 89,
+            "val": 97031
+          },
+          {
+            "item": "11425B4C845",
+            "name": "Set oil-filt",
+            "alois": "L1",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 79,
+            "avail_qty": 77,
+            "val": 20064
+          }
+        ],
+        "count": 3,
+        "qty_sum": 8,
+        "val": 274070
       },
       {
         "code": "SB2610000457",
@@ -46978,12 +47065,12 @@
         "val": 68185
       }
     ],
-    "sb_count": 61,
-    "line_count": 221,
-    "total_val": 38933420,
+    "sb_count": 62,
+    "line_count": 224,
+    "total_val": 39207490,
     "o_lines": 51,
     "o_val": 13280416,
-    "resv_total": 363
+    "resv_total": 361
   },
   "sbcar": {
     "groups": [
