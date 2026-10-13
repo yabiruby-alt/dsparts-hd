@@ -45,17 +45,51 @@ from jinja2 import Environment, FileSystemLoader
 from playwright.sync_api import sync_playwright, Frame, Page
 
 # ============================================================
-# 설정 - 지점마다 이 블록만 바꿔서 배포
+# 설정 - 지점별 값은 코드가 아니라 branch.local.json 에 둔다 (깃허브에 올리지 않음, branch.example.json 참고)
+#   · 파일이 없으면 아래 기본값(해운대) 그대로 동작 → 해운대 PC 는 아무것도 안 바꿔도 됨
+#   · 파일이 있으면 지점 코드 4개는 반드시 적어야 하고, 안 적은 선택 항목은 "쓰지 않음"으로 처리
+#     (다른 지점이 해운대의 디데이 시트·재고조사 폴더를 실수로 쓰지 않게)
 # ============================================================
-BASE_URL = "https://bmwdms.co.kr"
-DEALER_CD = "001672"
-BIZ_AREA_CD = "051"
-BRCH_CD = "15"
-BRANCH_NAME = "AS_부산(해운중동)"
-
 BASE_DIR = Path(__file__).resolve().parent
+BRANCH_CONFIG_FILE = BASE_DIR / "branch.local.json"
+
+
+def _load_branch_config() -> dict:
+    if not BRANCH_CONFIG_FILE.exists():
+        return {}
+    try:
+        cfg = json.loads(BRANCH_CONFIG_FILE.read_text(encoding="utf-8"))
+    except Exception as e:
+        raise SystemExit(f"branch.local.json 을 읽지 못했습니다 (JSON 형식 확인): {e}")
+    missing = [k for k in ("dealer_cd", "biz_area_cd", "brch_cd", "branch_name") if not cfg.get(k)]
+    if missing:
+        raise SystemExit(f"branch.local.json 에 꼭 필요한 항목이 없습니다: {', '.join(missing)}")
+    return cfg
+
+
+BRANCH_CFG = _load_branch_config()
+BRANCH_MODE = bool(BRANCH_CFG)   # True = 해운대가 아닌 지점 설정으로 실행 중
+
+
+def _cfg_path(key: str):
+    """설정의 폴더 경로. 상대 경로는 이 파일 폴더 기준. 비었으면 None."""
+    v = BRANCH_CFG.get(key)
+    return (BASE_DIR / v).resolve() if v else None
+
+
+BASE_URL = "https://bmwdms.co.kr"
+DEALER_CD = BRANCH_CFG.get("dealer_cd", "001672")
+BIZ_AREA_CD = BRANCH_CFG.get("biz_area_cd", "051")
+BRCH_CD = BRANCH_CFG.get("brch_cd", "15")
+BRANCH_NAME = BRANCH_CFG.get("branch_name", "AS_부산(해운중동)")
+
 OUTPUT_DIR = BASE_DIR / "output"
-DOCS_DIR = BASE_DIR / "docs"  # GitHub Pages가 서빙하는 폴더
+# 지점 모드: 대시보드를 이 지점 전용 출력 저장소(별도 clone)의 docs 에 바로 만들고 거기서 push.
+# 코드 저장소(이 폴더)는 push 하지 않는다 → 지점 9곳이 서로 충돌하지 않음. 해운대 모드는 예전과 같이 이 폴더의 docs.
+PUBLISH_REPO_DIR = _cfg_path("publish_repo_dir")
+if BRANCH_MODE and not PUBLISH_REPO_DIR:
+    raise SystemExit("branch.local.json 에 publish_repo_dir (이 지점 출력 저장소를 clone 한 폴더) 를 적어 주세요.")
+DOCS_DIR = (PUBLISH_REPO_DIR / "docs") if PUBLISH_REPO_DIR else (BASE_DIR / "docs")  # GitHub Pages가 서빙하는 폴더
 # 팀 캘린더: 이 이름의 이미지 파일을 docs 폴더에 넣어두면 "팀 캘린더" 메뉴에 그대로 표시됨.
 CALENDAR_IMAGE_CANDIDATES = ["team-calendar.jpg", "team-calendar.jpeg", "team-calendar.png", "team-calendar.webp"]
 GIT_REMOTE_URL = "https://github.com/yabiruby-alt/dsparts-hd.git"
@@ -68,26 +102,28 @@ TEMPLATE_NAME = "template.html.j2"
 # 진행RO 사유: 이 PC에서만 입력(로컬 서버) -> reasons.json 저장 -> 사이트에 반영해 폰/다른 기기는 조회 전용
 REASONS_FILE = BASE_DIR / "reasons.json"
 REASON_PORT = 8765
-ALLOWED_ORIGINS = {"https://yabiruby-alt.github.io", "http://127.0.0.1:8765", "http://localhost:8765"}
+ALLOWED_ORIGINS = {BRANCH_CFG.get("pages_origin") or "https://yabiruby-alt.github.io", "http://127.0.0.1:8765", "http://localhost:8765"}
 REASONS_LOCK = threading.Lock()   # reasons.json 읽기/쓰기
 # 타이어 사이즈 조회 마스터: 이 엑셀 파일을 저장하면 매 주기 자동으로 다시 읽어 반영 (사이트에서 직접 수정하지 않음)
 # docs 폴더 안에 둬서 원본 파일(타이어 마스터 폴더)이 없어져도 안전하게 보관 — 깃허브에는 올라가지 않도록 .gitignore 처리됨
-TIRE_XLSX_PATH = BASE_DIR / "docs" / "타이어_마스터파일.xlsx"
+TIRE_XLSX_PATH = DOCS_DIR / "타이어_마스터파일.xlsx"
 TIRE_FILE = BASE_DIR / "tire_master.json"   # 엑셀을 못 읽을 때 쓸 마지막 성공본 캐시
 TIRE_LOCK = threading.Lock()
 # 디데이 현황: 구글 폼(제목/목표일/메모) 응답 시트를 CSV로 내보낸 링크를 읽어와 매 주기 자동 반영
 # 설정 전까지는 빈 문자열로 두면 "연동 전" 상태로 표시됨
-DDAY_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1OmZxvQjz1DutkjB1Jkm7JRPinr_7P60BXBLycYo0RU8/export?format=csv&gid=782790237"
+_HAEUNDAE_DDAY_CSV = "https://docs.google.com/spreadsheets/d/1OmZxvQjz1DutkjB1Jkm7JRPinr_7P60BXBLycYo0RU8/export?format=csv&gid=782790237"
+DDAY_SHEET_CSV_URL = BRANCH_CFG.get("dday_sheet_csv_url", "") if BRANCH_MODE else _HAEUNDAE_DDAY_CSV
 DDAY_FILE = BASE_DIR / "dday_items.json"   # 시트를 못 읽을 때 쓸 마지막 성공본 캐시
 DDAY_LOCK = threading.Lock()
 # 매출 대시보드 모듈 위치 (지점장 전용 — 파츠베이 공개 사이트와 별도 저장소로 배포)
 SALES_DIR = BASE_DIR.parent / "업무자동화 생성" / "매출데이터 사이트"
-SALES_ENABLED = (SALES_DIR / "sales.py").exists()
-RR_ENABLED = True   # 롤스로이스 DMS 연동 — 켜면 데몬 시작 시 RR 로그인 창이 하나 더 뜸
+SALES_ENABLED = (not BRANCH_MODE) and (SALES_DIR / "sales.py").exists()   # 지점 모드에서는 매출 대시보드를 쓰지 않음
+# 롤스로이스 DMS 연동 — 켜면 데몬 시작 시 RR 로그인 창이 하나 더 뜸. 지점에 RR 이 없으면 branch.local.json 에 "rr_enabled": false
+RR_ENABLED = bool(BRANCH_CFG.get("rr_enabled", True))
 RR_BASE_URL = "https://www.rrdms.co.kr"   # 롤스로이스 DMS (같은 My DMS 플랫폼, 별도 계정/세션)
 RR_AUTH_DIR = Path.home() / "AppData" / "Local" / "PartsBayDMS" / "authdata_rr"
 # 재고조사 앱(휴대폰) 연동 모듈 — 매 주기 다시 읽으므로 그 파일을 고쳐도 데몬 재시작 불필요
-STOCKAPP_DIR = BASE_DIR.parent / "파트실 자동화업무" / "재고조사 어플" / "daemon"
+STOCKAPP_DIR = _cfg_path("stockapp_dir") or (BASE_DIR.parent / "파트실 자동화업무" / "재고조사 어플" / "daemon")
 STOCKAPP_ENABLED = (STOCKAPP_DIR / "stockapp.py").exists()
 STOCK_QUEUE = queue.Queue()       # 부품번호 재고조회 요청(HTTP 스레드 -> 메인 스레드의 DMS 세션으로 처리)
 PUBLISH_LOCK = threading.Lock()   # 렌더 + docs 쓰기 + 깃허브 push 직렬화
@@ -251,7 +287,7 @@ async ({url, body}) => {
 
 
 def lookup_stock(page: Page, pn: str) -> dict:
-    """부품번호 하나의 해운대(우리 지점) 재고 + RDC 재고 원본 응답. DMS 세션을 쓰므로 메인 스레드에서만 호출."""
+    """부품번호 하나의 우리 지점 재고 + RDC 재고 원본 응답. DMS 세션을 쓰므로 메인 스레드에서만 호출."""
     out = {"pn": pn}
     frame = open_screen(page, "icon-parts", "현재고리스트 조회", "selectInventListMain")
     own_body = {
@@ -1209,39 +1245,76 @@ def build_acc_tire(rows):
 # 렌더 & 저장
 # ============================================================
 
-def _git(*args, check=True, timeout=None):
+def _git(*args, check=True, timeout=None, cwd=None):
     return subprocess.run(
-        ["git", *args], cwd=str(BASE_DIR), capture_output=True, text=True, encoding="utf-8",
+        ["git", *args], cwd=str(cwd or BASE_DIR), capture_output=True, text=True, encoding="utf-8",
         check=check, timeout=timeout,
         creationflags=subprocess.CREATE_NO_WINDOW,   # 부모 콘솔(cmd)이 사라져도 git 이 0xC0000142 로 못 뜨는 일 방지
     )
 
 
-def publish_to_github(commit_message: str) -> bool:
-    """docs/ 안의 최신 대시보드를 깃허브에 push. 저장소가 아직 없으면 초기화."""
-    if not (BASE_DIR / ".git").exists():
-        print("깃 저장소 초기화...")
-        _git("init")
-        _git("remote", "add", "origin", GIT_REMOTE_URL)
-        gitignore = BASE_DIR / ".gitignore"
-        if not gitignore.exists():
-            gitignore.write_text("__pycache__/\noutput/\n*.pyc\n", encoding="utf-8")
+# 지점 모드에서 코드 저장소 docs 의 정적 파일(배경·로고)을 출력 저장소 docs 로 한 번 복사할 때 제외할 것
+# (해운대 자료 — 팀 캘린더, 생성물, 엑셀)
+_STATIC_SKIP = {"index.html", "tire.html", "data.json"}
 
-    _git("add", "docs", ".gitignore", "partsbay.py", "template.html.j2", "tire_page.html.j2", "requirements.txt", check=False)
-    status = _git("status", "--porcelain")
+
+def _sync_static_assets() -> None:
+    """지점 모드: 출력 저장소 docs 에 없는 정적 파일(배경 이미지·로고)만 코드 저장소 docs 에서 복사. 이미 있으면 건드리지 않음."""
+    src = BASE_DIR / "docs"
+    if not src.is_dir() or src.resolve() == DOCS_DIR.resolve():
+        return
+    import shutil
+    DOCS_DIR.mkdir(parents=True, exist_ok=True)
+    for f in src.iterdir():
+        if (not f.is_file() or f.name in _STATIC_SKIP or f.name.startswith("team-calendar")
+                or f.suffix.lower() == ".xlsx" or f.name.startswith("~$")):
+            continue
+        if not (DOCS_DIR / f.name).exists():
+            shutil.copy2(f, DOCS_DIR / f.name)
+
+
+def publish_to_github(commit_message: str) -> bool:
+    """docs/ 안의 최신 대시보드를 깃허브에 push. 저장소가 아직 없으면 초기화.
+    지점 모드는 이 지점 전용 출력 저장소(PUBLISH_REPO_DIR)에서만 commit·push 한다."""
+    repo = PUBLISH_REPO_DIR or BASE_DIR
+
+    def git(*args, **kw):
+        return _git(*args, cwd=repo, **kw)
+
+    if PUBLISH_REPO_DIR:
+        if not (repo / ".git").exists():
+            print(f"출력 저장소가 아닙니다 (git clone 한 폴더여야 함): {repo}")
+            return False
+        _sync_static_assets()
+        gitignore = repo / ".gitignore"
+        if not gitignore.exists():
+            gitignore.write_text("docs/*.xlsx\ndocs/~$*.xlsx\n", encoding="utf-8")
+        to_add = ["docs", ".gitignore"]
+    else:
+        if not (BASE_DIR / ".git").exists():
+            print("깃 저장소 초기화...")
+            git("init")
+            git("remote", "add", "origin", GIT_REMOTE_URL)
+            gitignore = BASE_DIR / ".gitignore"
+            if not gitignore.exists():
+                gitignore.write_text("__pycache__/\noutput/\n*.pyc\n", encoding="utf-8")
+        to_add = ["docs", ".gitignore", "partsbay.py", "template.html.j2", "tire_page.html.j2", "requirements.txt"]
+
+    git("add", *to_add, check=False)
+    status = git("status", "--porcelain")
     if not status.stdout.strip():
         print("깃허브에 올릴 변경사항이 없습니다 (이전과 동일한 데이터).")
         return True
 
-    _git("commit", "-m", commit_message)
+    git("commit", "-m", commit_message)
     print("깃허브에 push 중... (세션 만료 시 브라우저 로그인 창이 뜰 수 있습니다)")
     push_timeout = 60  # 인증 대기 등으로 상시 실행 루프가 무한정 멈추지 않게
     try:
-        result = _git("push", "-u", "origin", "main", check=False, timeout=push_timeout)
+        result = git("push", "-u", "origin", "main", check=False, timeout=push_timeout)
         if result.returncode != 0:
             # main이 처음이라 브랜치 이름이 다를 수 있음 (master 등) -> 강제로 main 사용
-            _git("branch", "-M", "main", check=False)
-            result = _git("push", "-u", "origin", "main", check=False, timeout=push_timeout)
+            git("branch", "-M", "main", check=False)
+            result = git("push", "-u", "origin", "main", check=False, timeout=push_timeout)
     except subprocess.TimeoutExpired:
         print("push가 시간 내에 끝나지 않았습니다 (인증 대기 중일 수 있음). 다음 주기에 재시도합니다.")
         return False
@@ -1815,6 +1888,9 @@ def _run_cycle_impl(page: Page, rr_page: Page | None = None) -> None:
             except Exception as e:   # 깃허브가 안 돼도 매출·재고조사 앱 갱신은 계속
                 print(f"   [깃허브 push 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
 
+    # 통합 대시보드 KPI: 구역별 원본을 Supabase 에 올림 (고객명·차대번호는 올리기 전에 지움). 실패해도 갱신에는 영향 없음.
+    _run_branchsync(data)
+
     # 매출 대시보드(지점장 전용, 비밀번호 암호화 페이지) — DMS 세션을 두 개 띄울 수 없어서 별도 데몬이 아니라 여기서 이어서 실행.
     # 실패해도 파츠베이 갱신에는 영향 없음.
     _serve_app_mid(page)
@@ -1841,6 +1917,21 @@ def _load_stockapp(reload: bool = False):
     if reload:
         importlib.reload(stockapp)  # stockapp.py 를 고쳐도 데몬 재시작(=DMS 재로그인) 없이 다음 주기부터 반영
     return stockapp
+
+
+def _run_branchsync(data: dict) -> None:
+    """branchsync.py(같은 폴더)로 지점 KPI 올리기. 재고조사 앱의 로그인·설정을 같이 쓰므로 그게 없으면 건너뜀."""
+    if not STOCKAPP_ENABLED:
+        return
+    _step(" - KPI 올리기")
+    try:
+        import importlib
+        sa = _load_stockapp()
+        import branchsync
+        importlib.reload(branchsync)  # 고쳐도 데몬 재시작 없이 다음 주기부터 반영
+        branchsync.run(data, sa)
+    except Exception as e:
+        print(f"   [KPI 올리기 실패, 다음 주기에 재시도] {type(e).__name__}: {e}")
 
 
 def serve_stockapp_requests(page: Page) -> None:
@@ -1881,7 +1972,7 @@ def main():
             # 롤스로이스 DMS(매출 대시보드 RR 항목용) — 도메인이 달라 BMW 세션과 충돌하지 않음. 로그인은 그 창에서 직접,
             # 로그인 전이어도 BMW 갱신은 그대로 진행되고 매출 모듈이 매 주기 로그인 여부만 확인한다.
             rr_page = None
-            if SALES_ENABLED and RR_ENABLED:
+            if (SALES_ENABLED or STOCKAPP_ENABLED) and RR_ENABLED:   # RR 재고를 재고조사 앱이 쓰므로 매출 모듈이 없어도 연다
                 try:
                     RR_AUTH_DIR.mkdir(parents=True, exist_ok=True)
                     rr_ctx = p.chromium.launch_persistent_context(
@@ -1891,7 +1982,7 @@ def main():
                     rr_page = rr_ctx.new_page()
                     rr_page.goto(f"{RR_BASE_URL}/selectHome.do")
                 except Exception as e:
-                    print(f"[RR DMS 브라우저 시작 실패 — 매출 RR 항목만 빠짐] {type(e).__name__}: {e}")
+                    print(f"[RR DMS 브라우저 시작 실패 — RR 항목만 빠짐] {type(e).__name__}: {e}")
                     rr_page = None
 
             print(f"로그인 확인 완료. 상시 실행 시작 — {CYCLE_INTERVAL_SEC//60}분마다 자동 갱신합니다 (창은 계속 켜둔 채 백그라운드로 동작).")
