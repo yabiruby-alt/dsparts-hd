@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 13일 (화) · 15:01 기준",
+    "generated_at": "10월 13일 (화) · 15:13 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,7 +284,7 @@
     ]
   },
   "inv": {
-    "total": 978305722,
+    "total": 978283672,
     "item_count": 2157,
     "code_count": 25,
     "alois_groups": [
@@ -2789,9 +2789,9 @@
           },
           {
             "code": "A6",
-            "val": 84344153,
+            "val": 84322103,
             "pct": 8.62,
-            "qty": 1407,
+            "qty": 1406,
             "parts": [
               {
                 "item": "63119450229",
@@ -3346,12 +3346,6 @@
                 "val": 176715
               },
               {
-                "item": "13717593250",
-                "name": "Filter elmnt",
-                "qty": 8,
-                "val": 176400
-              },
-              {
                 "item": "51127906292",
                 "name": "Guide",
                 "qty": 1,
@@ -3434,6 +3428,12 @@
                 "name": "Strut",
                 "qty": 1,
                 "val": 155480
+              },
+              {
+                "item": "13717593250",
+                "name": "Filter elmnt",
+                "qty": 7,
+                "val": 154350
               },
               {
                 "item": "51359447510",
@@ -4800,7 +4800,7 @@
             ]
           }
         ],
-        "subtotal_val": 481637675,
+        "subtotal_val": 481615625,
         "subtotal_qty": 8528,
         "subtotal_pct": 49.23
       },
@@ -13478,7 +13478,7 @@
   },
   "oaov": {
     "total": 57655267,
-    "inv_total": 978305722,
+    "inv_total": 978283672,
     "pct": 5.89,
     "oa_val": 34680095,
     "ov_val": 22975172,
@@ -17147,7 +17147,7 @@
     ],
     "m12_val": 62366375,
     "m12_count": 205,
-    "m12_pct": 6.37,
+    "m12_pct": 6.38,
     "m24_items": [
       {
         "item": "24008741536",
@@ -40495,7 +40495,7 @@
         "pub": "2026-10-12",
         "pub_full": "2026-10-12 10:45",
         "dday": "D+1일",
-        "amt": 1699929
+        "amt": 1690522
       },
       {
         "ro": "RO2610000524",
@@ -41155,7 +41155,7 @@
         "pub": "2026-10-13",
         "pub_full": "2026-10-13 09:22",
         "dday": "D+0일",
-        "amt": 457100
+        "amt": 474600
       },
       {
         "ro": "RO2610000598",
@@ -41489,8 +41489,8 @@
       },
       {
         "ro": "RO2610000630",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "최민수",
         "pub": "2026-10-13",
@@ -41522,8 +41522,8 @@
       },
       {
         "ro": "RO2610000634",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-10-13",
@@ -41566,8 +41566,8 @@
       },
       {
         "ro": "RO2610000638",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-13",
@@ -41621,7 +41621,7 @@
       }
     ],
     "count": 441,
-    "total_amt": 941184743,
+    "total_amt": 941192836,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -41630,13 +41630,13 @@
       },
       {
         "stat": "상담완료",
-        "count": 193,
-        "amt": 573165384
+        "count": 190,
+        "amt": 572221055
       },
       {
         "stat": "정비시작",
-        "count": 36,
-        "amt": 60621205
+        "count": 39,
+        "amt": 61583034
       },
       {
         "stat": "End Control 요청",
@@ -41651,7 +41651,7 @@
       {
         "stat": "가정산 완료",
         "count": 147,
-        "amt": 174727257
+        "amt": 174717850
       }
     ],
     "oldest": "D+539일"
@@ -46445,14 +46445,126 @@
         "count": 6,
         "qty_sum": 12,
         "val": 595377
+      },
+      {
+        "code": "SB2610000304",
+        "resv_full": "2026-10-14 09:00",
+        "resv": "10-14",
+        "dday": "D-1일",
+        "sa": "강충성",
+        "rows": [
+          {
+            "item": "41009478691",
+            "name": "Door front l",
+            "alois": "O8",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 1001550
+          },
+          {
+            "item": "36108093839",
+            "name": "Disc wheel l",
+            "alois": "OV",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 919086
+          },
+          {
+            "item": "51778084239",
+            "name": "Door sill co",
+            "alois": "O8",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 340727
+          },
+          {
+            "item": "51778084409",
+            "name": "Sill insert,",
+            "alois": "O8",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 221942
+          },
+          {
+            "item": "51727390750",
+            "name": "Door weather",
+            "alois": "L6",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "val": 130410
+          },
+          {
+            "item": "51337482749",
+            "name": "Shaft cover",
+            "alois": "OV",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 106314
+          },
+          {
+            "item": "51118084178",
+            "name": "Support cove",
+            "alois": "OV",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 77273
+          },
+          {
+            "item": "51118084177",
+            "name": "Support cove",
+            "alois": "L7",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 58887
+          },
+          {
+            "item": "51778076445",
+            "name": "Support, sil",
+            "alois": "O8",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 12087
+          },
+          {
+            "item": "01295A085F2",
+            "name": "Set, templat",
+            "alois": "SZ",
+            "sa": "강충성",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 10353
+          }
+        ],
+        "count": 10,
+        "qty_sum": 10,
+        "val": 2878629
       }
     ],
-    "sb_count": 63,
-    "line_count": 223,
-    "total_val": 39564708,
-    "o_lines": 54,
-    "o_val": 13882228,
-    "resv_total": 354
+    "sb_count": 64,
+    "line_count": 233,
+    "total_val": 42443337,
+    "o_lines": 61,
+    "o_val": 16561207,
+    "resv_total": 356
   },
   "sbcar": {
     "groups": [
