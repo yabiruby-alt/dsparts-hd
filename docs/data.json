@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 13일 (화) · 12:54 기준",
+    "generated_at": "10월 13일 (화) · 13:05 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,8 +284,8 @@
     ]
   },
   "inv": {
-    "total": 991996106,
-    "item_count": 2195,
+    "total": 992391887,
+    "item_count": 2199,
     "code_count": 25,
     "alois_groups": [
       {
@@ -1492,7 +1492,7 @@
           {
             "code": "A5",
             "val": 92904388,
-            "pct": 9.37,
+            "pct": 9.36,
             "qty": 1512,
             "parts": [
               {
@@ -4832,7 +4832,7 @@
         ],
         "subtotal_val": 485541556,
         "subtotal_qty": 8588,
-        "subtotal_pct": 48.95
+        "subtotal_pct": 48.93
       },
       {
         "code": "L",
@@ -5645,9 +5645,9 @@
           },
           {
             "code": "L7",
-            "val": 62595030,
+            "val": 62624338,
             "pct": 6.31,
-            "qty": 1248,
+            "qty": 1249,
             "parts": [
               {
                 "item": "11419895359",
@@ -7222,6 +7222,12 @@
                 "val": 29325
               },
               {
+                "item": "34356791960",
+                "name": "Sensor",
+                "qty": 1,
+                "val": 29308
+              },
+              {
                 "item": "16117476100",
                 "name": "O-ring",
                 "qty": 1,
@@ -7962,9 +7968,9 @@
             ]
           }
         ],
-        "subtotal_val": 138843133,
-        "subtotal_qty": 3647,
-        "subtotal_pct": 14.0
+        "subtotal_val": 138872441,
+        "subtotal_qty": 3648,
+        "subtotal_pct": 13.99
       },
       {
         "code": "O",
@@ -7973,9 +7979,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 67647131,
-            "pct": 6.82,
-            "qty": 1210,
+            "val": 67946042,
+            "pct": 6.85,
+            "qty": 1212,
             "parts": [
               {
                 "item": "17425A18806",
@@ -8428,6 +8434,12 @@
                 "val": 173712
               },
               {
+                "item": "34216885187",
+                "name": "Repair kit,",
+                "qty": 1,
+                "val": 172038
+              },
+              {
                 "item": "11518482250",
                 "name": "Water pump",
                 "qty": 1,
@@ -8540,6 +8552,12 @@
                 "name": "Guide suppor",
                 "qty": 1,
                 "val": 128115
+              },
+              {
+                "item": "34216790966",
+                "name": "Brake pads",
+                "qty": 1,
+                "val": 126873
               },
               {
                 "item": "51487067242",
@@ -10202,7 +10220,7 @@
           {
             "code": "OA",
             "val": 34680095,
-            "pct": 3.5,
+            "pct": 3.49,
             "qty": 208,
             "parts": [
               {
@@ -12110,9 +12128,9 @@
             ]
           }
         ],
-        "subtotal_val": 211227666,
-        "subtotal_qty": 2281,
-        "subtotal_pct": 21.29
+        "subtotal_val": 211526577,
+        "subtotal_qty": 2283,
+        "subtotal_pct": 21.31
       },
       {
         "code": "I",
@@ -12912,7 +12930,7 @@
           {
             "code": "SZ",
             "val": 90422022,
-            "pct": 9.12,
+            "pct": 9.11,
             "qty": 326,
             "parts": [
               {
@@ -13712,8 +13730,8 @@
   },
   "oaov": {
     "total": 58085945,
-    "inv_total": 991996106,
-    "pct": 5.86,
+    "inv_total": 992391887,
+    "pct": 5.85,
     "oa_val": 34680095,
     "ov_val": 23405850,
     "oa_lines": 89,
@@ -17437,7 +17455,7 @@
     ],
     "m12_val": 62366375,
     "m12_count": 205,
-    "m12_pct": 6.29,
+    "m12_pct": 6.28,
     "m24_items": [
       {
         "item": "24008741536",
@@ -17874,7 +17892,7 @@
     ],
     "m24_val": 20584613,
     "m24_count": 48,
-    "m24_pct": 2.08
+    "m24_pct": 2.07
   },
   "opart": {
     "items": [
@@ -23220,11 +23238,11 @@
         "item": "34216790966",
         "name": "Brake pads",
         "alois": "O8",
-        "pgrp": "-",
+        "pgrp": "B1",
         "ref_tp": "RO",
         "ref_no": "RO2610000584",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-13",
         "req_dt_full": "2026-10-13 09:48:43",
@@ -23271,11 +23289,11 @@
         "item": "34216885187",
         "name": "Repair kit,",
         "alois": "O8",
-        "pgrp": "-",
+        "pgrp": "B1",
         "ref_tp": "RO",
         "ref_no": "RO2609001511",
         "req_qty": 1,
-        "crt_qty": 0,
+        "crt_qty": 1,
         "avail_qty": 0,
         "req_dt": "10-13",
         "req_dt_full": "2026-10-13 09:51:33",
@@ -26848,11 +26866,11 @@
             "item": "34216790966",
             "name": "Brake pads",
             "alois": "O8",
-            "pgrp": "-",
+            "pgrp": "B1",
             "ref_tp": "RO",
             "ref_no": "RO2610000584",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-13",
             "req_dt_full": "2026-10-13 09:48:43",
@@ -26865,11 +26883,11 @@
             "item": "34216885187",
             "name": "Repair kit,",
             "alois": "O8",
-            "pgrp": "-",
+            "pgrp": "B1",
             "ref_tp": "RO",
             "ref_no": "RO2609001511",
             "req_qty": 1,
-            "crt_qty": 0,
+            "crt_qty": 1,
             "avail_qty": 0,
             "req_dt": "10-13",
             "req_dt_full": "2026-10-13 09:51:33",
@@ -42230,18 +42248,51 @@
       },
       {
         "ro": "RO2610000628",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "입고 Proactive-RITA",
         "sa": "우종훈",
         "pub": "2026-10-13",
         "pub_full": "2026-10-13 12:53",
         "dday": "D+0일",
+        "amt": 198176
+      },
+      {
+        "ro": "RO2610000629",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "안준영",
+        "pub": "2026-10-13",
+        "pub_full": "2026-10-13 12:59",
+        "dday": "D+0일",
+        "amt": 9407
+      },
+      {
+        "ro": "RO2610000630",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "최민수",
+        "pub": "2026-10-13",
+        "pub_full": "2026-10-13 13:03",
+        "dday": "D+0일",
+        "amt": 28221
+      },
+      {
+        "ro": "RO2610000631",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Recall/TC",
+        "sa": "김민규",
+        "pub": "2026-10-13",
+        "pub_full": "2026-10-13 13:06",
+        "dday": "D+0일",
         "amt": 0
       }
     ],
-    "count": 437,
-    "total_amt": 955507079,
+    "count": 440,
+    "total_amt": 955742883,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -42250,8 +42301,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 187,
-        "amt": 582957991
+        "count": 190,
+        "amt": 583193795
       },
       {
         "stat": "정비시작",
@@ -46672,7 +46723,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 41,
-            "avail_qty": 40,
+            "avail_qty": 39,
             "val": 68185
           },
           {
@@ -47070,7 +47121,7 @@
     "total_val": 39207490,
     "o_lines": 51,
     "o_val": 13280416,
-    "resv_total": 361
+    "resv_total": 359
   },
   "sbcar": {
     "groups": [
@@ -51407,11 +51458,21 @@
         "prc": 178160,
         "val": 178160,
         "last_purc": "2026-10-13"
+      },
+      {
+        "item": "51759450505",
+        "name": "Rear diffuse",
+        "alois": null,
+        "loc": "(공란)",
+        "qty": 1,
+        "prc": 67562,
+        "val": 67562,
+        "last_purc": "2026-10-13"
       }
     ],
-    "count": 7,
-    "total_val": 5930160,
-    "qty_sum": 12,
+    "count": 8,
+    "total_val": 5997722,
+    "qty_sum": 13,
     "pct": 0.6
   },
   "extaudit": {
