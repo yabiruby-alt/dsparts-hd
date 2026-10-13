@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 13일 (화) · 15:37 기준",
+    "generated_at": "10월 13일 (화) · 15:48 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,7 +284,7 @@
     ]
   },
   "inv": {
-    "total": 975121760,
+    "total": 975106539,
     "item_count": 2157,
     "code_count": 25,
     "alois_groups": [
@@ -4811,15 +4811,15 @@
         "rows": [
           {
             "code": "L1",
-            "val": 14157573,
+            "val": 14142352,
             "pct": 1.45,
-            "qty": 1092,
+            "qty": 1091,
             "parts": [
               {
                 "item": "83215B49DD6",
                 "name": "LL-17FE+ 0W-20",
-                "qty": 178,
-                "val": 2721515
+                "qty": 177,
+                "val": 2706294
               },
               {
                 "item": "83135A82511",
@@ -7890,8 +7890,8 @@
             ]
           }
         ],
-        "subtotal_val": 134934934,
-        "subtotal_qty": 3602,
+        "subtotal_val": 134919713,
+        "subtotal_qty": 3601,
         "subtotal_pct": 13.84
       },
       {
@@ -13478,7 +13478,7 @@
   },
   "oaov": {
     "total": 57655267,
-    "inv_total": 975121760,
+    "inv_total": 975106539,
     "pct": 5.91,
     "oa_val": 34680095,
     "ov_val": 22975172,
@@ -37032,8 +37032,8 @@
       },
       {
         "ro": "RO2608001713",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-08-27",
@@ -40647,7 +40647,7 @@
         "pub": "2026-10-12",
         "pub_full": "2026-10-12 13:50",
         "dday": "D+1일",
-        "amt": 716036
+        "amt": 716037
       },
       {
         "ro": "RO2610000549",
@@ -41047,8 +41047,8 @@
       },
       {
         "ro": "RO2610000597",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "입고 Proactive-RITA",
         "sa": "이정환",
         "pub": "2026-10-13",
@@ -41373,7 +41373,7 @@
         "pub": "2026-10-13",
         "pub_full": "2026-10-13 12:53",
         "dday": "D+0일",
-        "amt": 198176
+        "amt": 319354
       },
       {
         "ro": "RO2610000629",
@@ -41388,8 +41388,8 @@
       },
       {
         "ro": "RO2610000630",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "김민규",
         "pub": "2026-10-13",
@@ -41564,7 +41564,7 @@
       }
     ],
     "count": 442,
-    "total_amt": 923783226,
+    "total_amt": 923904405,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -41574,17 +41574,17 @@
       {
         "stat": "상담완료",
         "count": 192,
-        "amt": 572516430
+        "amt": 580523009
       },
       {
         "stat": "정비시작",
-        "count": 39,
-        "amt": 62061749
+        "count": 38,
+        "amt": 54148128
       },
       {
         "stat": "End Control 요청",
-        "count": 44,
-        "amt": 104780997
+        "count": 45,
+        "amt": 104809218
       },
       {
         "stat": "공정마감",
@@ -42297,7 +42297,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 12,
-            "avail_qty": 9,
+            "avail_qty": 5,
             "val": 653835
           },
           {
@@ -42306,8 +42306,8 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 25,
-            "avail_qty": 18,
+            "crt_qty": 24,
+            "avail_qty": 14,
             "val": 8322
           }
         ],
@@ -42329,7 +42329,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 12,
-            "avail_qty": 9,
+            "avail_qty": 5,
             "val": 653835
           },
           {
@@ -42338,8 +42338,8 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 25,
-            "avail_qty": 18,
+            "crt_qty": 24,
+            "avail_qty": 14,
             "val": 8322
           }
         ],
@@ -42748,7 +42748,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 178,
+            "crt_qty": 177,
             "avail_qty": 135,
             "val": 79910
           },
@@ -42980,7 +42980,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 5,
-            "crt_qty": 178,
+            "crt_qty": 177,
             "avail_qty": 135,
             "val": 79910
           },
@@ -43116,7 +43116,7 @@
             "alois": "L1",
             "sa": "김도현",
             "req_qty": 5,
-            "crt_qty": 178,
+            "crt_qty": 177,
             "avail_qty": 135,
             "val": 79910
           },
@@ -44146,7 +44146,7 @@
             "alois": "L2",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 95,
+            "crt_qty": 94,
             "avail_qty": 89,
             "val": 1125
           }
@@ -44460,6 +44460,38 @@
         "val": 1533769
       },
       {
+        "code": "SB2610000729",
+        "resv_full": "2026-10-30 09:20",
+        "resv": "10-30",
+        "dday": "D-17일",
+        "sa": "이정환",
+        "rows": [
+          {
+            "item": "12415BA2AE4",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 12,
+            "avail_qty": 5,
+            "val": 653835
+          },
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 24,
+            "avail_qty": 14,
+            "val": 8322
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 662157
+      },
+      {
         "code": "SB2609002164",
         "resv_full": "2026-10-30 09:20",
         "resv": "10-30",
@@ -44552,6 +44584,38 @@
         "count": 6,
         "qty_sum": 8,
         "val": 1933012
+      },
+      {
+        "code": "SB2610000726",
+        "resv_full": "2026-10-30 09:00",
+        "resv": "10-30",
+        "dday": "D-17일",
+        "sa": "우종훈",
+        "rows": [
+          {
+            "item": "12415BA2AE5",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 9,
+            "avail_qty": 6,
+            "val": 603474
+          },
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 24,
+            "avail_qty": 14,
+            "val": 8322
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 611796
       },
       {
         "code": "SB2609001802",
@@ -44780,7 +44844,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 5,
-            "crt_qty": 178,
+            "crt_qty": 177,
             "avail_qty": 135,
             "val": 79910
           },
@@ -45216,8 +45280,8 @@
             "alois": "SK",
             "sa": "M GARAGE",
             "req_qty": 1,
-            "crt_qty": 25,
-            "avail_qty": 18,
+            "crt_qty": 24,
+            "avail_qty": 14,
             "val": 8322
           }
         ],
@@ -45248,8 +45312,8 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 25,
-            "avail_qty": 18,
+            "crt_qty": 24,
+            "avail_qty": 14,
             "val": 8322
           },
           {
@@ -45258,7 +45322,7 @@
             "alois": "L2",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 95,
+            "crt_qty": 94,
             "avail_qty": 89,
             "val": 1125
           }
@@ -45382,6 +45446,60 @@
         "count": 1,
         "qty_sum": 1,
         "val": 0
+      },
+      {
+        "code": "SB2610000728",
+        "resv_full": "2026-10-17 11:00",
+        "resv": "10-17",
+        "dday": "D-4일",
+        "sa": "우종훈",
+        "rows": [
+          {
+            "item": "12415BA2AE5",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 9,
+            "avail_qty": 6,
+            "val": 603474
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 603474
+      },
+      {
+        "code": "SB2610000731",
+        "resv_full": "2026-10-17 09:40",
+        "resv": "10-17",
+        "dday": "D-4일",
+        "sa": "안준영",
+        "rows": [
+          {
+            "item": "12415BA2AE4",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "안준영",
+            "req_qty": 1,
+            "crt_qty": 12,
+            "avail_qty": 5,
+            "val": 653835
+          },
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "안준영",
+            "req_qty": 1,
+            "crt_qty": 24,
+            "avail_qty": 14,
+            "val": 8322
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 662157
       },
       {
         "code": "SB2610000699",
@@ -45545,7 +45663,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 12,
-            "avail_qty": 9,
+            "avail_qty": 5,
             "val": 653835
           },
           {
@@ -45554,8 +45672,8 @@
             "alois": "SK",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 25,
-            "avail_qty": 18,
+            "crt_qty": 24,
+            "avail_qty": 14,
             "val": 8322
           },
           {
@@ -45564,7 +45682,7 @@
             "alois": "L2",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 95,
+            "crt_qty": 94,
             "avail_qty": 89,
             "val": 1125
           }
@@ -45683,7 +45801,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 9,
-            "avail_qty": 8,
+            "avail_qty": 6,
             "val": 603474
           },
           {
@@ -45692,8 +45810,8 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 25,
-            "avail_qty": 18,
+            "crt_qty": 24,
+            "avail_qty": 14,
             "val": 8322
           }
         ],
@@ -45756,7 +45874,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 178,
+            "crt_qty": 177,
             "avail_qty": 135,
             "val": 79910
           },
@@ -45838,6 +45956,28 @@
         "val": 983666
       },
       {
+        "code": "SB2610000727",
+        "resv_full": "2026-10-15 10:20",
+        "resv": "10-15",
+        "dday": "D-2일",
+        "sa": "안준영",
+        "rows": [
+          {
+            "item": "12415BA2AE4",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "안준영",
+            "req_qty": 1,
+            "crt_qty": 12,
+            "avail_qty": 5,
+            "val": 653835
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 653835
+      },
+      {
         "code": "SB2610000698",
         "resv_full": "2026-10-15 10:00",
         "resv": "10-15",
@@ -45850,7 +45990,7 @@
             "alois": "L1",
             "sa": "이정환",
             "req_qty": 5,
-            "crt_qty": 178,
+            "crt_qty": 177,
             "avail_qty": 135,
             "val": 79910
           },
@@ -45878,6 +46018,38 @@
         "count": 3,
         "qty_sum": 7,
         "val": 175268
+      },
+      {
+        "code": "SB2610000730",
+        "resv_full": "2026-10-15 09:40",
+        "resv": "10-15",
+        "dday": "D-2일",
+        "sa": "이정환",
+        "rows": [
+          {
+            "item": "12415BA2AE4",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 12,
+            "avail_qty": 5,
+            "val": 653835
+          },
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 24,
+            "avail_qty": 14,
+            "val": 8322
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 662157
       },
       {
         "code": "SB2610000586",
@@ -46574,12 +46746,12 @@
         "val": 2878629
       }
     ],
-    "sb_count": 65,
-    "line_count": 239,
-    "total_val": 44134150,
+    "sb_count": 71,
+    "line_count": 249,
+    "total_val": 47989726,
     "o_lines": 60,
     "o_val": 16275777,
-    "resv_total": 360
+    "resv_total": 365
   },
   "sbcar": {
     "groups": [
@@ -50717,7 +50889,7 @@
         "item": "83215B49DD6",
         "name": "LL-17FE+ 0W-20",
         "alois": "L1",
-        "qty": 178,
+        "qty": 177,
         "no": 368
       },
       {
