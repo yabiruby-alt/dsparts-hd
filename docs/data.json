@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 13일 (화) · 13:16 기준",
+    "generated_at": "10월 13일 (화) · 13:28 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -284,7 +284,7 @@
     ]
   },
   "inv": {
-    "total": 991599808,
+    "total": 991591558,
     "item_count": 2192,
     "code_count": 25,
     "alois_groups": [
@@ -12751,9 +12751,9 @@
           },
           {
             "code": "SX",
-            "val": 5301703,
+            "val": 5293453,
             "pct": 0.53,
-            "qty": 119,
+            "qty": 118,
             "parts": [
               {
                 "item": "64115B78AA5",
@@ -12782,8 +12782,8 @@
               {
                 "item": "99975BA1A07",
                 "name": "BMWLongUmbre (New)",
-                "qty": 38,
-                "val": 313500
+                "qty": 37,
+                "val": 305250
               },
               {
                 "item": "99975BA0896",
@@ -13680,15 +13680,15 @@
             ]
           }
         ],
-        "subtotal_val": 148056442,
-        "subtotal_qty": 1785,
+        "subtotal_val": 148048192,
+        "subtotal_qty": 1784,
         "subtotal_pct": 14.93
       }
     ]
   },
   "oaov": {
     "total": 58081745,
-    "inv_total": 991599808,
+    "inv_total": 991591558,
     "pct": 5.86,
     "oa_val": 34680095,
     "ov_val": 23401650,
@@ -15404,10 +15404,10 @@
     "foot_note": "이번 달 발행 없음"
   },
   "acc": {
-    "total": 3485908,
-    "cost": 3598880,
-    "lines": 259,
-    "invoices_count": 51,
+    "total": 3494158,
+    "cost": 3607130,
+    "lines": 260,
+    "invoices_count": 52,
     "by_type": [
       {
         "code": "3",
@@ -15424,11 +15424,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 172,
-        "val": 2365097
+        "lines": 173,
+        "val": 2373347
       }
     ],
     "recent5": [
+      {
+        "inv": "AR2610003839",
+        "num": "SP2610000044",
+        "sa": "김창열",
+        "dt": "2026-10-13 13:17",
+        "amt": 8250,
+        "cost": 8250
+      },
       {
         "inv": "AR2610003838",
         "num": "SP2610000042",
@@ -15459,14 +15467,6 @@
         "sa": "최민수",
         "dt": "2026-10-12 18:03",
         "amt": 7080,
-        "cost": 7080
-      },
-      {
-        "inv": "IV2610000838",
-        "num": "RO2610000553",
-        "sa": "우종훈",
-        "dt": "2026-10-12 18:01",
-        "amt": 0,
         "cost": 7080
       }
     ]
@@ -23336,10 +23336,44 @@
         "val": 170016,
         "sa": "김창열",
         "dday": "D+0일"
+      },
+      {
+        "item": "22117581618",
+        "name": "Engine mount",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SB",
+        "ref_no": "SB2610000706",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-13",
+        "req_dt_full": "2026-10-13 13:18:26",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 158191,
+        "sa": "우종훈",
+        "dday": "D+0일"
+      },
+      {
+        "item": "22117581617",
+        "name": "Engine mount",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "SB",
+        "ref_no": "SB2610000706",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-13",
+        "req_dt_full": "2026-10-13 13:18:26",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 158191,
+        "sa": "우종훈",
+        "dday": "D+0일"
       }
     ],
-    "count": 323,
-    "total_val": 81832777,
+    "count": 325,
+    "total_val": 82149159,
     "groups": [
       {
         "code": "RO",
@@ -28349,11 +28383,45 @@
             "val": 85254,
             "sa": "최민수",
             "dday": "D+0일"
+          },
+          {
+            "item": "22117581618",
+            "name": "Engine mount",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SB",
+            "ref_no": "SB2610000706",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-13",
+            "req_dt_full": "2026-10-13 13:18:26",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 158191,
+            "sa": "우종훈",
+            "dday": "D+0일"
+          },
+          {
+            "item": "22117581617",
+            "name": "Engine mount",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "SB",
+            "ref_no": "SB2610000706",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-13",
+            "req_dt_full": "2026-10-13 13:18:26",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 158191,
+            "sa": "우종훈",
+            "dday": "D+0일"
           }
         ],
-        "count": 86,
-        "qty_sum": 120,
-        "val": 22215727
+        "count": 88,
+        "qty_sum": 122,
+        "val": 22532109
       },
       {
         "code": "SP",
@@ -38593,8 +38661,8 @@
       },
       {
         "ro": "RO2609001640",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-29",
@@ -40162,7 +40230,7 @@
         "pub": "2026-10-08",
         "pub_full": "2026-10-08 09:00",
         "dday": "D+5일",
-        "amt": 220370
+        "amt": 257998
       },
       {
         "ro": "RO2610000370",
@@ -40397,14 +40465,14 @@
       },
       {
         "ro": "RO2610000403",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-10-08",
         "pub_full": "2026-10-08 12:32",
         "dday": "D+5일",
-        "amt": 28000
+        "amt": 42000
       },
       {
         "ro": "RO2610000404",
@@ -41167,8 +41235,8 @@
       },
       {
         "ro": "RO2610000522",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "김민규",
         "pub": "2026-10-12",
@@ -42190,38 +42258,49 @@
       },
       {
         "ro": "RO2610000631",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Recall/TC",
         "sa": "김민규",
         "pub": "2026-10-13",
         "pub_full": "2026-10-13 13:06",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 57142
+      },
+      {
+        "ro": "RO2610000632",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-10-13",
+        "pub_full": "2026-10-13 13:23",
+        "dday": "D+0일",
+        "amt": 1777700
       }
     ],
-    "count": 441,
-    "total_amt": 955993271,
+    "count": 442,
+    "total_amt": 957879741,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 20,
+        "count": 19,
         "amt": 9289300
       },
       {
         "stat": "상담완료",
-        "count": 189,
-        "amt": 582430019
+        "count": 190,
+        "amt": 578174685
       },
       {
         "stat": "정비시작",
-        "count": 36,
-        "amt": 54326384
+        "count": 38,
+        "amt": 60496188
       },
       {
         "stat": "End Control 요청",
-        "count": 45,
-        "amt": 124629011
+        "count": 44,
+        "amt": 124601011
       },
       {
         "stat": "공정마감",
@@ -45777,6 +45856,38 @@
         "val": 1382006
       },
       {
+        "code": "SB2610000706",
+        "resv_full": "2026-10-19 13:00",
+        "resv": "10-19",
+        "dday": "D-6일",
+        "sa": "우종훈",
+        "rows": [
+          {
+            "item": "22117581618",
+            "name": "Engine mount",
+            "alois": "O8",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 158191
+          },
+          {
+            "item": "22117581617",
+            "name": "Engine mount",
+            "alois": "O8",
+            "sa": "우종훈",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 158191
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 316382
+      },
+      {
         "code": "SB2609002191",
         "resv_full": "2026-10-19 10:00",
         "resv": "10-19",
@@ -47025,12 +47136,12 @@
         "val": 68185
       }
     ],
-    "sb_count": 62,
-    "line_count": 224,
-    "total_val": 39207490,
-    "o_lines": 51,
-    "o_val": 13280416,
-    "resv_total": 359
+    "sb_count": 63,
+    "line_count": 226,
+    "total_val": 39523872,
+    "o_lines": 53,
+    "o_val": 13596798,
+    "resv_total": 360
   },
   "sbcar": {
     "groups": [
@@ -50552,7 +50663,7 @@
         "item": "99975BA1A07",
         "name": "BMWLongUmbre (New)",
         "alois": "SX",
-        "qty": 38,
+        "qty": 37,
         "no": 283
       },
       {
