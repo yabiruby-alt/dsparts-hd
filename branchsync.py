@@ -19,6 +19,7 @@ import hashlib
 import json
 import re
 import sys
+import time
 import types
 from datetime import datetime, timedelta, timezone
 
@@ -37,6 +38,7 @@ VIN_RE = re.compile(r"\b[A-HJ-NPR-Z0-9]{17}\b")
 PLATE_RE = re.compile(r"\d{2,3}\s?[가-힣]\s?\d{4}")
 
 KST = timezone(timedelta(hours=9))
+MAX_SECONDS = 45   # 이 시간이 넘으면 남은 구역은 다음 주기로 미룬다 (Supabase 가 느려도 DMS 갱신 주기를 붙잡지 않게)
 
 _S = sys.modules.get("_branchsync_state")
 if _S is None:
@@ -101,10 +103,14 @@ def run(data: dict, sa, now: datetime | None = None) -> dict:
     stats = {"keys": 0, "values": 0}
     gen = now.astimezone(timezone.utc).isoformat()
 
+    t0 = time.time()
+    failed = False
     sent = changed = 0
     for sec in cfg["upload_sections"]:
         if sec not in data:
             continue
+        if failed or time.time() - t0 > MAX_SECONDS:   # 한 번 실패했거나 시간이 넘으면 나머지는 다음 주기에
+            break
         payload = scrub(data[sec], deny, stats)
         h = _hash(payload)
         if _S.sent.get(sec) == h:
@@ -116,7 +122,8 @@ def run(data: dict, sa, now: datetime | None = None) -> dict:
             _S.sent[sec] = h
             changed += 1
         except Exception as e:
-            _log(f"{sec} 올리기 실패 (다음 주기에 다시): {e}")
+            _log(f"{sec} 올리기 실패 — 나머지는 다음 주기에: {e}")
+            failed = True
         sent += 1
 
     # 생존 신호: 바뀐 구역이 없어도 매 주기 갱신 → 대시보드가 "마지막 갱신"을 판단
@@ -124,6 +131,8 @@ def run(data: dict, sa, now: datetime | None = None) -> dict:
     live = {"branch_name": meta.get("branch_name"), "brch_code": meta.get("brch_code"),
             "generated_at_text": meta.get("generated_at"), "sections": cfg["upload_sections"]}
     try:
+        if failed:
+            raise RuntimeError("앞 단계 실패로 생략")
         sa._rest("POST", "kpi_snapshot?on_conflict=branch,section",
                  {"branch": branch, "section": "_meta", "data": live, "data_hash": _hash(live), "generated_at": gen},
                  "resolution=merge-duplicates,return=minimal")
@@ -133,7 +142,7 @@ def run(data: dict, sa, now: datetime | None = None) -> dict:
     # 일별 기록 (설정에서 고른 구역, 하루 한 번)
     day = now.astimezone(KST).strftime("%Y-%m-%d")
     hist = [s for s in cfg["history_sections"] if s in data]
-    if hist and (_S.hist_day != day or _S.hist_sections != hist):
+    if hist and not failed and time.time() - t0 <= MAX_SECONDS and (_S.hist_day != day or _S.hist_sections != hist):
         try:
             rows = [{"day": day, "branch": branch, "section": s, "data": scrub(data[s], deny, stats)} for s in hist]
             sa._rest("POST", "kpi_history?on_conflict=day,branch,section", rows,
