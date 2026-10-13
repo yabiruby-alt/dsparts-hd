@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 14일 (수) · 08:19 기준",
+    "generated_at": "10월 14일 (수) · 08:32 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -40580,8 +40580,8 @@
       },
       {
         "ro": "RO2610000285",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-10-07",
@@ -42997,25 +42997,36 @@
         "pub_full": "2026-10-14 08:12",
         "dday": "D+0일",
         "amt": 2281400
+      },
+      {
+        "ro": "RO2610000661",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "염진아",
+        "pub": "2026-10-14",
+        "pub_full": "2026-10-14 08:32",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 411,
+    "count": 412,
     "total_amt": 893883834,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 19,
+        "count": 20,
         "amt": 6403600
       },
       {
         "stat": "상담완료",
-        "count": 179,
-        "amt": 573861264
+        "count": 180,
+        "amt": 575934184
       },
       {
         "stat": "정비시작",
-        "count": 24,
-        "amt": 43214539
+        "count": 23,
+        "amt": 41141619
       },
       {
         "stat": "End Control 요청",
@@ -48277,7 +48288,7 @@
     "total_val": 52677007,
     "o_lines": 66,
     "o_val": 18214259,
-    "resv_total": 382
+    "resv_total": 383
   },
   "sbcar": {
     "groups": [
