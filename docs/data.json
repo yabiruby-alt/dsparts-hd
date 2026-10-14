@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 14일 (수) · 12:01 기준",
+    "generated_at": "10월 14일 (수) · 12:14 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -43081,17 +43081,6 @@
         "amt": 910700
       },
       {
-        "ro": "RO2610000691",
-        "stat": "상담시작",
-        "stat_cd": "01",
-        "svc": "진단",
-        "sa": "우종훈",
-        "pub": "2026-10-14",
-        "pub_full": "2026-10-14 10:20",
-        "dday": "D+0일",
-        "amt": 0
-      },
-      {
         "ro": "RO2610000690",
         "stat": "End Control 요청",
         "stat_cd": "08",
@@ -43191,12 +43180,12 @@
         "amt": 37628
       }
     ],
-    "count": 447,
+    "count": 446,
     "total_amt": 952138960,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 23,
+        "count": 22,
         "amt": 31088260
       },
       {
@@ -48031,58 +48020,6 @@
         "val": 216564
       },
       {
-        "code": "SB2608001188",
-        "resv_full": "2026-10-14 13:20",
-        "resv": "10-14",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 15,
-            "avail_qty": 3,
-            "val": 86565
-          },
-          {
-            "item": "83215B49DD6",
-            "name": "LL-17FE+ 0W-20",
-            "alois": "L1",
-            "sa": "최민수",
-            "req_qty": 5,
-            "crt_qty": 158,
-            "avail_qty": 110,
-            "val": 79910
-          },
-          {
-            "item": "61617469820",
-            "name": "Set of wiper X3,X4 front",
-            "alois": "A1",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 37,
-            "avail_qty": 36,
-            "val": 68185
-          },
-          {
-            "item": "11428575211",
-            "name": "Set oil-filt",
-            "alois": "A1",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 134,
-            "avail_qty": 127,
-            "val": 19920
-          }
-        ],
-        "count": 4,
-        "qty_sum": 8,
-        "val": 254580
-      },
-      {
         "code": "SB2610000624",
         "resv_full": "2026-10-14 13:00",
         "resv": "10-14",
@@ -48105,11 +48042,11 @@
         "val": 26044
       }
     ],
-    "sb_count": 75,
-    "line_count": 229,
-    "total_val": 48802437,
-    "o_lines": 55,
-    "o_val": 15102444,
+    "sb_count": 74,
+    "line_count": 225,
+    "total_val": 48547857,
+    "o_lines": 54,
+    "o_val": 15015879,
     "resv_total": 368
   },
   "sbcar": {
