@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 14일 (수) · 12:39 기준",
+    "generated_at": "10월 14일 (수) · 12:51 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -39463,8 +39463,8 @@
       },
       {
         "ro": "RO2609001640",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-09-29",
@@ -39760,14 +39760,14 @@
       },
       {
         "ro": "RO2610000071",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-01",
         "pub_full": "2026-10-01 14:30",
         "dday": "D+13일",
-        "amt": 2393135
+        "amt": 1925035
       },
       {
         "ro": "RO2610000073",
@@ -43181,8 +43181,8 @@
       },
       {
         "ro": "RO2610000700",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-14",
@@ -43192,17 +43192,17 @@
       }
     ],
     "count": 447,
-    "total_amt": 952623099,
+    "total_amt": 952154999,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 23,
-        "amt": 31572399
+        "count": 22,
+        "amt": 31088260
       },
       {
         "stat": "상담완료",
-        "count": 186,
-        "amt": 587214652
+        "count": 188,
+        "amt": 589623826
       },
       {
         "stat": "정비시작",
@@ -43211,13 +43211,13 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 48,
-        "amt": 104424626
+        "count": 46,
+        "amt": 98094191
       },
       {
         "stat": "가정산 완료",
-        "count": 154,
-        "amt": 184044095
+        "count": 155,
+        "amt": 187981395
       }
     ],
     "oldest": "D+540일"
@@ -48029,36 +48029,14 @@
         "count": 3,
         "qty_sum": 7,
         "val": 216564
-      },
-      {
-        "code": "SB2610000624",
-        "resv_full": "2026-10-14 13:00",
-        "resv": "10-14",
-        "dday": "오늘",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "16117470341",
-            "name": "Filler cap",
-            "alois": "II",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 26044
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 26044
       }
     ],
-    "sb_count": 74,
-    "line_count": 225,
-    "total_val": 48547857,
+    "sb_count": 73,
+    "line_count": 224,
+    "total_val": 48521813,
     "o_lines": 54,
     "o_val": 15015879,
-    "resv_total": 368
+    "resv_total": 366
   },
   "sbcar": {
     "groups": [
