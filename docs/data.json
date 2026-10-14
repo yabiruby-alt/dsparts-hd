@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 14일 (수) · 14:01 기준",
+    "generated_at": "10월 14일 (수) · 14:13 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -259,7 +259,7 @@
     ]
   },
   "inv": {
-    "total": 975269108,
+    "total": 975253838,
     "item_count": 2173,
     "code_count": 25,
     "alois_groups": [
@@ -1460,9 +1460,9 @@
           },
           {
             "code": "A5",
-            "val": 86881550,
+            "val": 86866280,
             "pct": 8.91,
-            "qty": 1480,
+            "qty": 1470,
             "parts": [
               {
                 "item": "11418646454",
@@ -2437,12 +2437,6 @@
                 "val": 32120
               },
               {
-                "item": "07149462118",
-                "name": "Clip",
-                "qty": 21,
-                "val": 32067
-              },
-              {
                 "item": "51757399329",
                 "name": "Underbody pa",
                 "qty": 1,
@@ -2579,6 +2573,12 @@
                 "name": "Hex bolt",
                 "qty": 7,
                 "val": 18396
+              },
+              {
+                "item": "07149462118",
+                "name": "Clip",
+                "qty": 11,
+                "val": 16797
               },
               {
                 "item": "26119454792",
@@ -4733,8 +4733,8 @@
             ]
           }
         ],
-        "subtotal_val": 475280550,
-        "subtotal_qty": 8604,
+        "subtotal_val": 475265280,
+        "subtotal_qty": 8594,
         "subtotal_pct": 48.73
       },
       {
@@ -13555,7 +13555,7 @@
   },
   "oaov": {
     "total": 63157445,
-    "inv_total": 975269108,
+    "inv_total": 975253838,
     "pct": 6.48,
     "oa_val": 39384683,
     "ov_val": 23772762,
@@ -15415,10 +15415,10 @@
     "foot_note": "이번 달 발행 없음"
   },
   "acc": {
-    "total": 4983858,
-    "cost": 4759689,
-    "lines": 265,
-    "invoices_count": 56,
+    "total": 5183874,
+    "cost": 4936189,
+    "lines": 266,
+    "invoices_count": 57,
     "by_type": [
       {
         "code": "3",
@@ -15435,11 +15435,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 175,
-        "val": 2419347
+        "lines": 176,
+        "val": 2619363
       }
     ],
     "recent5": [
+      {
+        "inv": "AR2610003845",
+        "num": "SP2610000049",
+        "sa": "김창열",
+        "dt": "2026-10-14 14:02",
+        "amt": 200016,
+        "cost": 176500
+      },
       {
         "inv": "AR2610003842",
         "num": "SP2608000052",
@@ -15471,14 +15479,6 @@
         "dt": "2026-10-13 18:56",
         "amt": 1198200,
         "cost": 922614
-      },
-      {
-        "inv": "AR2610003839",
-        "num": "SP2610000044",
-        "sa": "김창열",
-        "dt": "2026-10-13 13:17",
-        "amt": 8250,
-        "cost": 8250
       }
     ]
   },
@@ -24586,10 +24586,27 @@
         "val": 25438,
         "sa": "염진아",
         "dday": "D+0일"
+      },
+      {
+        "item": "61138727251",
+        "name": "Crimp connec",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000304",
+        "req_qty": 2,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-14",
+        "req_dt_full": "2026-10-14 14:03:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 3850,
+        "sa": "우종훈",
+        "dday": "D+0일"
       }
     ],
-    "count": 394,
-    "total_val": 101537402,
+    "count": 395,
+    "total_val": 101541252,
     "groups": [
       {
         "code": "RO",
@@ -28537,11 +28554,28 @@
             "val": 25438,
             "sa": "염진아",
             "dday": "D+0일"
+          },
+          {
+            "item": "61138727251",
+            "name": "Crimp connec",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000304",
+            "req_qty": 2,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-14",
+            "req_dt_full": "2026-10-14 14:03:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 3850,
+            "sa": "우종훈",
+            "dday": "D+0일"
           }
         ],
-        "count": 232,
-        "qty_sum": 332,
-        "val": 65555695
+        "count": 233,
+        "qty_sum": 334,
+        "val": 65559545
       },
       {
         "code": "SB",
@@ -40842,7 +40876,7 @@
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 09:06",
         "dday": "D+8일",
-        "amt": 11736500
+        "amt": 11756500
       },
       {
         "ro": "RO2610000195",
@@ -41077,8 +41111,8 @@
       },
       {
         "ro": "RO2610000265",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-10-06",
@@ -44011,25 +44045,36 @@
         "pub_full": "2026-10-14 13:59",
         "dday": "D+0일",
         "amt": 0
+      },
+      {
+        "ro": "RO2610000706",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-14",
+        "pub_full": "2026-10-14 14:12",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 449,
-    "total_amt": 964043987,
+    "count": 450,
+    "total_amt": 964063987,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 20,
+        "count": 21,
         "amt": 10549900
       },
       {
         "stat": "상담완료",
-        "count": 188,
-        "amt": 616773734
+        "count": 187,
+        "amt": 614784734
       },
       {
         "stat": "정비시작",
-        "count": 41,
-        "amt": 51993528
+        "count": 42,
+        "amt": 54002528
       },
       {
         "stat": "End Control 요청",
@@ -48940,7 +48985,7 @@
     "total_val": 49456606,
     "o_lines": 54,
     "o_val": 15015879,
-    "resv_total": 369
+    "resv_total": 370
   },
   "sbcar": {
     "groups": [
@@ -49810,7 +49855,7 @@
         "no": 76
       },
       {
-        "loc": "A160730",
+        "loc": "A160630",
         "item": "51475B3C4E8",
         "name": "Floorliner",
         "alois": "O8",
@@ -49902,7 +49947,7 @@
         "item": "07149462118",
         "name": "Clip",
         "alois": "A5",
-        "qty": 21,
+        "qty": 11,
         "no": 88
       },
       {
