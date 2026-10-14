@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 14일 (수) · 12:26 기준",
+    "generated_at": "10월 14일 (수) · 12:39 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -22853,23 +22853,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "alois": "OE",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2608001188",
-        "req_qty": 1,
-        "crt_qty": 15,
-        "avail_qty": 3,
-        "req_dt": "10-14",
-        "req_dt_full": "2026-10-14 08:51:57",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 86565,
-        "sa": "최민수",
-        "dday": "D+0일"
-      },
-      {
         "item": "51358491347",
         "name": "Window well",
         "alois": "O8",
@@ -24227,6 +24210,23 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 208378,
         "sa": "우상만",
+        "dday": "D+0일"
+      },
+      {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "alois": "OE",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000700",
+        "req_qty": 1,
+        "crt_qty": 15,
+        "avail_qty": 3,
+        "req_dt": "10-14",
+        "req_dt_full": "2026-10-14 12:38:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 86565,
+        "sa": "최민수",
         "dday": "D+0일"
       }
     ],
@@ -27720,11 +27720,28 @@
             "val": 208378,
             "sa": "우상만",
             "dday": "D+0일"
+          },
+          {
+            "item": "64119382886",
+            "name": "MICROFILTER/",
+            "alois": "OE",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000700",
+            "req_qty": 1,
+            "crt_qty": 15,
+            "avail_qty": 3,
+            "req_dt": "10-14",
+            "req_dt_full": "2026-10-14 12:38:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 86565,
+            "sa": "최민수",
+            "dday": "D+0일"
           }
         ],
-        "count": 205,
-        "qty_sum": 303,
-        "val": 62305209
+        "count": 206,
+        "qty_sum": 304,
+        "val": 62391774
       },
       {
         "code": "SB",
@@ -29078,23 +29095,6 @@
             "alois": "OE",
             "pgrp": "B1",
             "ref_tp": "SB",
-            "ref_no": "SB2608001188",
-            "req_qty": 1,
-            "crt_qty": 15,
-            "avail_qty": 3,
-            "req_dt": "10-14",
-            "req_dt_full": "2026-10-14 08:51:57",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 86565,
-            "sa": "최민수",
-            "dday": "D+0일"
-          },
-          {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "pgrp": "B1",
-            "ref_tp": "SB",
             "ref_no": "SB2610000773",
             "req_qty": 1,
             "crt_qty": 15,
@@ -29124,9 +29124,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 82,
-        "qty_sum": 98,
-        "val": 21350213
+        "count": 81,
+        "qty_sum": 97,
+        "val": 21263648
       },
       {
         "code": "SP",
@@ -43104,8 +43104,8 @@
       },
       {
         "ro": "RO2610000693",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-10-14",
@@ -43178,15 +43178,26 @@
         "pub_full": "2026-10-14 11:39",
         "dday": "D+0일",
         "amt": 37628
+      },
+      {
+        "ro": "RO2610000700",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-14",
+        "pub_full": "2026-10-14 12:38",
+        "dday": "D+0일",
+        "amt": 484139
       }
     ],
-    "count": 446,
-    "total_amt": 952138960,
+    "count": 447,
+    "total_amt": 952623099,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 22,
-        "amt": 31088260
+        "count": 23,
+        "amt": 31572399
       },
       {
         "stat": "상담완료",
@@ -43195,13 +43206,13 @@
       },
       {
         "stat": "정비시작",
-        "count": 37,
-        "amt": 45423327
+        "count": 36,
+        "amt": 45367327
       },
       {
         "stat": "End Control 요청",
-        "count": 47,
-        "amt": 104368626
+        "count": 48,
+        "amt": 104424626
       },
       {
         "stat": "가정산 완료",
