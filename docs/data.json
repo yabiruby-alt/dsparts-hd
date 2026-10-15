@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 15일 (목) · 11:40 기준",
+    "generated_at": "10월 15일 (목) · 11:52 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 967009535,
-    "item_count": 2121,
+    "total": 966800991,
+    "item_count": 2120,
     "code_count": 25,
     "alois_groups": [
       {
@@ -342,9 +342,9 @@
           },
           {
             "code": "A2",
-            "val": 19286361,
-            "pct": 1.99,
-            "qty": 1039,
+            "val": 19156818,
+            "pct": 1.98,
+            "qty": 1037,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -377,16 +377,16 @@
                 "val": 1094134
               },
               {
-                "item": "34218867488",
-                "name": "Repair kit,",
-                "qty": 9,
-                "val": 924939
-              },
-              {
                 "item": "13718513944",
                 "name": "Air filter e",
                 "qty": 24,
                 "val": 846192
+              },
+              {
+                "item": "34218867488",
+                "name": "Repair kit,",
+                "qty": 8,
+                "val": 822168
               },
               {
                 "item": "61610040534",
@@ -461,16 +461,16 @@
                 "val": 224602
               },
               {
-                "item": "34356865612",
-                "name": "Brake pad we",
-                "qty": 8,
-                "val": 214176
-              },
-              {
                 "item": "11428092620",
                 "name": "Set oil-filt",
                 "qty": 10,
                 "val": 206700
+              },
+              {
+                "item": "34356865612",
+                "name": "Brake pad we",
+                "qty": 7,
+                "val": 187404
               },
               {
                 "item": "33306787062",
@@ -1458,9 +1458,9 @@
           },
           {
             "code": "A5",
-            "val": 93901629,
-            "pct": 9.71,
-            "qty": 1452,
+            "val": 93818179,
+            "pct": 9.7,
+            "qty": 1450,
             "parts": [
               {
                 "item": "11418646454",
@@ -2213,12 +2213,6 @@
                 "val": 61614
               },
               {
-                "item": "61615A27D68",
-                "name": "Set of wiper",
-                "qty": 1,
-                "val": 61490
-              },
-              {
                 "item": "07148867263",
                 "name": "O-ring",
                 "qty": 6,
@@ -2513,12 +2507,6 @@
                 "val": 22850
               },
               {
-                "item": "61627356223",
-                "name": "WIPER BLADE",
-                "qty": 1,
-                "val": 21960
-              },
-              {
                 "item": "07147213303",
                 "name": "Rivet",
                 "qty": 25,
@@ -2738,9 +2726,9 @@
           },
           {
             "code": "A6",
-            "val": 84251243,
-            "pct": 8.71,
-            "qty": 1366,
+            "val": 84279852,
+            "pct": 8.72,
+            "qty": 1367,
             "parts": [
               {
                 "item": "63119450229",
@@ -4195,6 +4183,12 @@
                 "val": 28704
               },
               {
+                "item": "11429886567",
+                "name": "Gasket set",
+                "qty": 1,
+                "val": 28609
+              },
+              {
                 "item": "11427925922",
                 "name": "Gasket",
                 "qty": 2,
@@ -4677,9 +4671,9 @@
             ]
           }
         ],
-        "subtotal_val": 483510394,
-        "subtotal_qty": 8732,
-        "subtotal_pct": 50.0
+        "subtotal_val": 483326010,
+        "subtotal_qty": 8728,
+        "subtotal_pct": 49.99
       },
       {
         "code": "L",
@@ -4688,9 +4682,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 12663774,
+            "val": 12639614,
             "pct": 1.31,
-            "qty": 988,
+            "qty": 986,
             "parts": [
               {
                 "item": "83515A6CDD7",
@@ -4701,8 +4695,8 @@
               {
                 "item": "83135A82511",
                 "name": "Brake fluid",
-                "qty": 163,
-                "val": 1969040
+                "qty": 161,
+                "val": 1944880
               },
               {
                 "item": "83215B49DD6",
@@ -7617,8 +7611,8 @@
             ]
           }
         ],
-        "subtotal_val": 132854038,
-        "subtotal_qty": 3456,
+        "subtotal_val": 132829878,
+        "subtotal_qty": 3454,
         "subtotal_pct": 13.74
       },
       {
@@ -11815,7 +11809,7 @@
         ],
         "subtotal_val": 209949025,
         "subtotal_qty": 2319,
-        "subtotal_pct": 21.71
+        "subtotal_pct": 21.72
       },
       {
         "code": "I",
@@ -13223,7 +13217,7 @@
   },
   "oaov": {
     "total": 64104260,
-    "inv_total": 967009535,
+    "inv_total": 966800991,
     "pct": 6.63,
     "oa_val": 42129790,
     "ov_val": 21974470,
@@ -41222,14 +41216,14 @@
       },
       {
         "ro": "RO2610000600",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-10-13",
         "pub_full": "2026-10-13 09:27",
         "dday": "D+2일",
-        "amt": 592682
+        "amt": 634682
       },
       {
         "ro": "RO2610000601",
@@ -42351,7 +42345,7 @@
         "pub": "2026-10-15",
         "pub_full": "2026-10-15 09:37",
         "dday": "D+0일",
-        "amt": 501200
+        "amt": 548100
       },
       {
         "ro": "RO2610000737",
@@ -42509,8 +42503,8 @@
       },
       {
         "ro": "RO2610000751",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-10-15",
@@ -42605,25 +42599,36 @@
         "pub_full": "2026-10-15 11:22",
         "dday": "D+0일",
         "amt": 121392
+      },
+      {
+        "ro": "RO2610000761",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-15",
+        "pub_full": "2026-10-15 11:47",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 460,
-    "total_amt": 963796603,
+    "count": 461,
+    "total_amt": 963885503,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 21,
+        "count": 22,
         "amt": 9719600
       },
       {
         "stat": "상담완료",
         "count": 176,
-        "amt": 589581090
+        "amt": 589574216
       },
       {
         "stat": "정비시작",
         "count": 45,
-        "amt": 61335221
+        "amt": 61430995
       },
       {
         "stat": "End Control 요청",
@@ -43377,7 +43382,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 2,
-            "crt_qty": 163,
+            "crt_qty": 161,
             "avail_qty": 138,
             "val": 24160
           }
@@ -43523,7 +43528,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 163,
+            "crt_qty": 161,
             "avail_qty": 138,
             "val": 12080
           }
@@ -43891,7 +43896,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 2,
-            "crt_qty": 163,
+            "crt_qty": 161,
             "avail_qty": 138,
             "val": 24160
           }
@@ -44049,7 +44054,7 @@
             "alois": "A2",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 9,
+            "crt_qty": 8,
             "avail_qty": 7,
             "val": 102771
           },
@@ -44059,7 +44064,7 @@
             "alois": "A2",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 8,
+            "crt_qty": 7,
             "avail_qty": 6,
             "val": 26772
           },
@@ -44091,7 +44096,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 2,
-            "crt_qty": 163,
+            "crt_qty": 161,
             "avail_qty": 138,
             "val": 24160
           }
@@ -44207,7 +44212,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 163,
+            "crt_qty": 161,
             "avail_qty": 138,
             "val": 12080
           }
@@ -45911,7 +45916,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 163,
+            "crt_qty": 161,
             "avail_qty": 138,
             "val": 12080
           },
@@ -46615,6 +46620,38 @@
         "val": 338394
       },
       {
+        "code": "SB2610000879",
+        "resv_full": "2026-10-20 11:20",
+        "resv": "10-20",
+        "dday": "D-5일",
+        "sa": "안준영",
+        "rows": [
+          {
+            "item": "63117461884",
+            "name": "Headlight, L",
+            "alois": "A6",
+            "sa": "안준영",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "val": 3122985
+          },
+          {
+            "item": "63117214940",
+            "name": "LED module,",
+            "alois": "A4",
+            "sa": "안준영",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "val": 174944
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 3297929
+      },
+      {
         "code": "SB2610000730",
         "resv_full": "2026-10-19 14:00",
         "resv": "10-19",
@@ -46809,7 +46846,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 2,
-            "crt_qty": 163,
+            "crt_qty": 161,
             "avail_qty": 138,
             "val": 24160
           }
@@ -47443,7 +47480,7 @@
             "alois": "L1",
             "sa": "우종훈",
             "req_qty": 2,
-            "crt_qty": 163,
+            "crt_qty": 161,
             "avail_qty": 138,
             "val": 24160
           },
@@ -47485,7 +47522,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 163,
+            "crt_qty": 161,
             "avail_qty": 138,
             "val": 12080
           }
@@ -47697,7 +47734,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 163,
+            "crt_qty": 161,
             "avail_qty": 138,
             "val": 12080
           }
@@ -47769,7 +47806,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 163,
+            "crt_qty": 161,
             "avail_qty": 138,
             "val": 12080
           }
@@ -47873,12 +47910,12 @@
         "val": 99830
       }
     ],
-    "sb_count": 82,
-    "line_count": 264,
-    "total_val": 61383335,
+    "sb_count": 83,
+    "line_count": 266,
+    "total_val": 64681264,
     "o_lines": 55,
     "o_val": 16515954,
-    "resv_total": 356
+    "resv_total": 357
   },
   "sbcar": {
     "groups": [
@@ -48512,7 +48549,7 @@
         "item": "83135A82511",
         "name": "Brake fluid",
         "alois": "L1",
-        "qty": 163,
+        "qty": 161,
         "no": 4
       },
       {
@@ -48888,7 +48925,7 @@
         "item": "34356865612",
         "name": "Brake pad we",
         "alois": "A2",
-        "qty": 8,
+        "qty": 7,
         "no": 51
       },
       {
@@ -49800,7 +49837,7 @@
         "item": "34218867488",
         "name": "Repair kit,",
         "alois": "A2",
-        "qty": 9,
+        "qty": 8,
         "no": 165
       },
       {
