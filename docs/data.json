@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 15일 (목) · 11:17 기준",
+    "generated_at": "10월 15일 (목) · 11:29 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -39175,7 +39175,7 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 17:08",
         "dday": "D+13일",
-        "amt": 846171
+        "amt": 757755
       },
       {
         "ro": "RO2610000170",
@@ -41764,8 +41764,8 @@
       },
       {
         "ro": "RO2610000675",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-10-14",
@@ -42501,8 +42501,8 @@
       },
       {
         "ro": "RO2610000751",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-10-15",
@@ -42578,43 +42578,54 @@
       },
       {
         "ro": "RO2610000758",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-10-15",
         "pub_full": "2026-10-15 11:13",
         "dday": "D+0일",
         "amt": 1279100
+      },
+      {
+        "ro": "RO2610000760",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "김민규",
+        "pub": "2026-10-15",
+        "pub_full": "2026-10-15 11:22",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 459,
-    "total_amt": 963367071,
+    "count": 460,
+    "total_amt": 963278655,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 22,
-        "amt": 10998700
+        "count": 21,
+        "amt": 9719600
       },
       {
         "stat": "상담완료",
-        "count": 173,
-        "amt": 587669098
+        "count": 174,
+        "amt": 588270042
       },
       {
         "stat": "정비시작",
         "count": 46,
-        "amt": 61849097
+        "amt": 62013377
       },
       {
         "stat": "End Control 요청",
-        "count": 57,
-        "amt": 111232135
+        "count": 58,
+        "amt": 111746011
       },
       {
         "stat": "가정산 완료",
         "count": 161,
-        "amt": 191618041
+        "amt": 191529625
       }
     ],
     "oldest": "D+541일"
@@ -47946,67 +47957,11 @@
     "resv_total": 9964
   },
   "nonmng": {
-    "rows": [
-      {
-        "item": "51127403391",
-        "name": "Bumper trim",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 495580,
-        "val": 495580,
-        "last_in": "2026-10-15",
-        "last_sale": "2023-01-27"
-      },
-      {
-        "item": "51177359171",
-        "name": "Cover pot",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 96114,
-        "val": 96114,
-        "last_in": "2026-10-15",
-        "last_sale": "2017-12-08"
-      },
-      {
-        "item": "61139230659",
-        "name": "Socket housi",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 14773,
-        "val": 14773,
-        "last_in": "2026-10-15",
-        "last_sale": "2021-06-21"
-      },
-      {
-        "item": "31106768887",
-        "name": "Hex nut",
-        "alois": "II",
-        "qty": 2,
-        "avail_qty": 0,
-        "prc": 4453,
-        "val": 8906,
-        "last_in": "2026-10-15",
-        "last_sale": "2022-12-12"
-      },
-      {
-        "item": "61131383793",
-        "name": "Dummy gromme",
-        "alois": "II",
-        "qty": 2,
-        "avail_qty": 0,
-        "prc": 1650,
-        "val": 3300,
-        "last_in": "2026-10-15",
-        "last_sale": "2019-11-20"
-      }
-    ],
-    "count": 5,
-    "total_val": 618673,
-    "qty_sum": 7,
-    "pct": 0.06
+    "rows": [],
+    "count": 0,
+    "total_val": 0,
+    "qty_sum": 0,
+    "pct": 0.0
   },
   "stockcheck": {
     "rows": [
