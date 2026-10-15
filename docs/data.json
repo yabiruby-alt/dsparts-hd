@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 16일 (금) · 08:25 기준",
+    "generated_at": "10월 16일 (금) · 08:36 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -38155,19 +38155,19 @@
       {
         "date": "10-16",
         "in_val": 12295523,
-        "out_val": 0,
-        "net": 12295523
+        "out_val": 37433,
+        "net": 12258090
       }
     ],
     "total_in": 124876218,
-    "total_out": 136333790,
-    "net": -11457572,
+    "total_out": 136371223,
+    "net": -11495005,
     "by_code": [
       {
         "code": "O8",
         "in_val": 98610355,
-        "out_val": 125937250,
-        "net": -27326895
+        "out_val": 125974683,
+        "net": -27364328
       },
       {
         "code": "OA",
@@ -39081,8 +39081,8 @@
       },
       {
         "ro": "RO2609001425",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-09-23",
@@ -41864,8 +41864,8 @@
       },
       {
         "ro": "RO2610000768",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-15",
@@ -41951,17 +41951,6 @@
         "amt": 90168
       },
       {
-        "ro": "RO2610000779",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "Recall/TC",
-        "sa": "김민규",
-        "pub": "2026-10-15",
-        "pub_full": "2026-10-15 13:47",
-        "dday": "D+1일",
-        "amt": 9407
-      },
-      {
         "ro": "RO2610000780",
         "stat": "가정산 완료",
         "stat_cd": "05",
@@ -41973,6 +41962,17 @@
         "amt": 26470
       },
       {
+        "ro": "RO2610000779",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
+        "svc": "Recall/TC",
+        "sa": "김민규",
+        "pub": "2026-10-15",
+        "pub_full": "2026-10-15 13:47",
+        "dday": "D+1일",
+        "amt": 9407
+      },
+      {
         "ro": "RO2610000781",
         "stat": "가정산 완료",
         "stat_cd": "05",
@@ -41982,17 +41982,6 @@
         "pub_full": "2026-10-15 13:53",
         "dday": "D+1일",
         "amt": 834547
-      },
-      {
-        "ro": "RO2610000783",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "경수리",
-        "sa": "김민규",
-        "pub": "2026-10-15",
-        "pub_full": "2026-10-15 14:18",
-        "dday": "D+1일",
-        "amt": 73100
       },
       {
         "ro": "RO2610000784",
@@ -42103,10 +42092,21 @@
         "pub_full": "2026-10-15 17:46",
         "dday": "D+1일",
         "amt": 1485600
+      },
+      {
+        "ro": "RO2610000799",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "입고 Proactive-RITA",
+        "sa": "최민수",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 08:36",
+        "dday": "D+0일",
+        "amt": 719724
       }
     ],
     "count": 355,
-    "total_amt": 863399634,
+    "total_amt": 864046258,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -42116,7 +42116,7 @@
       {
         "stat": "상담완료",
         "count": 161,
-        "amt": 540170384
+        "amt": 540344057
       },
       {
         "stat": "정비시작",
@@ -42125,8 +42125,8 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 35,
-        "amt": 88722404
+        "count": 32,
+        "amt": 85760497
       },
       {
         "stat": "공정마감",
@@ -42135,8 +42135,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 113,
-        "amt": 181294765
+        "count": 116,
+        "amt": 184729623
       }
     ],
     "oldest": "D+542일"
@@ -47406,200 +47406,6 @@
         "val": 289299
       },
       {
-        "code": "SB2608001378",
-        "resv_full": "2026-10-16 09:40",
-        "resv": "10-16",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "12415BA2AE4",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 11,
-            "avail_qty": 2,
-            "val": 653835
-          },
-          {
-            "item": "12418571349",
-            "name": "Acoustic plu",
-            "alois": "SK",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 22,
-            "avail_qty": 11,
-            "val": 8322
-          },
-          {
-            "item": "51337025635",
-            "name": "Clip",
-            "alois": "L2",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 92,
-            "avail_qty": 89,
-            "val": 1125
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 663282
-      },
-      {
-        "code": "SB2610000657",
-        "resv_full": "2026-10-16 09:00",
-        "resv": "10-16",
-        "dday": "오늘",
-        "sa": "우종훈",
-        "rows": [
-          {
-            "item": "34118854273",
-            "name": "Ventilated b",
-            "alois": "L5",
-            "sa": "우종훈",
-            "req_qty": 2,
-            "crt_qty": 6,
-            "avail_qty": 4,
-            "val": 452352
-          },
-          {
-            "item": "34216882245",
-            "name": "Brake rotor",
-            "alois": "A4",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 6,
-            "val": 143927
-          },
-          {
-            "item": "34216882246",
-            "name": "Brake rotor",
-            "alois": "A4",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 6,
-            "avail_qty": 5,
-            "val": 143592
-          },
-          {
-            "item": "34106898192",
-            "name": "Repair kit,",
-            "alois": "A5",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "val": 134347
-          },
-          {
-            "item": "34216892641",
-            "name": "Repair kit,",
-            "alois": "A4",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 3,
-            "val": 114230
-          },
-          {
-            "item": "64119382886",
-            "name": "MICROFILTER/",
-            "alois": "OE",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 59,
-            "avail_qty": 46,
-            "val": 85411
-          },
-          {
-            "item": "61617469820",
-            "name": "Set of wiper X3,X4 front",
-            "alois": "A1",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 34,
-            "avail_qty": 33,
-            "val": 68185
-          },
-          {
-            "item": "34356870350",
-            "name": "Brake pad we X3,4 (G)",
-            "alois": "A4",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 3,
-            "val": 25238
-          },
-          {
-            "item": "34356870351",
-            "name": "Brake pad we",
-            "alois": "A4",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 5,
-            "avail_qty": 4,
-            "val": 25220
-          },
-          {
-            "item": "34108838589",
-            "name": "Torx screw w",
-            "alois": "A6",
-            "sa": "우종훈",
-            "req_qty": 4,
-            "crt_qty": 10,
-            "avail_qty": 2,
-            "val": 24500
-          },
-          {
-            "item": "61627407273",
-            "name": "WIPER BLADE X3 Rear",
-            "alois": "OE",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 11,
-            "avail_qty": 10,
-            "val": 24480
-          },
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "sa": "우종훈",
-            "req_qty": 2,
-            "crt_qty": 153,
-            "avail_qty": 131,
-            "val": 24160
-          },
-          {
-            "item": "34211161806",
-            "name": "Bolt",
-            "alois": "A2",
-            "sa": "우종훈",
-            "req_qty": 2,
-            "crt_qty": 46,
-            "avail_qty": 36,
-            "val": 2350
-          },
-          {
-            "item": "34211161806",
-            "name": "Bolt",
-            "alois": "A2",
-            "sa": "우종훈",
-            "req_qty": 2,
-            "crt_qty": 46,
-            "avail_qty": 36,
-            "val": 2350
-          }
-        ],
-        "count": 14,
-        "qty_sum": 21,
-        "val": 1270342
-      },
-      {
         "code": "SB2610000162",
         "resv_full": "2026-10-16 09:00",
         "resv": "10-16",
@@ -47696,12 +47502,12 @@
         "val": 610275
       }
     ],
-    "sb_count": 85,
-    "line_count": 287,
-    "total_val": 73981100,
-    "o_lines": 58,
-    "o_val": 21645186,
-    "resv_total": 364
+    "sb_count": 83,
+    "line_count": 270,
+    "total_val": 72047476,
+    "o_lines": 56,
+    "o_val": 21535295,
+    "resv_total": 362
   },
   "sbcar": {
     "groups": [
