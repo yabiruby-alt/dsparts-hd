@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 15일 (목) · 11:52 기준",
+    "generated_at": "10월 15일 (목) · 12:04 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -39111,7 +39111,7 @@
         "pub": "2026-10-02",
         "pub_full": "2026-10-02 12:05",
         "dday": "D+13일",
-        "amt": 647931
+        "amt": 579163
       },
       {
         "ro": "RO2610000140",
@@ -39430,7 +39430,7 @@
         "pub": "2026-10-06",
         "pub_full": "2026-10-06 13:03",
         "dday": "D+9일",
-        "amt": 2304324
+        "amt": 1787509
       },
       {
         "ro": "RO2610000245",
@@ -41216,8 +41216,8 @@
       },
       {
         "ro": "RO2610000600",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-10-13",
@@ -42481,8 +42481,8 @@
       },
       {
         "ro": "RO2610000749",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-15",
@@ -42610,25 +42610,36 @@
         "pub_full": "2026-10-15 11:47",
         "dday": "D+0일",
         "amt": 0
+      },
+      {
+        "ro": "RO2610000762",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-10-15",
+        "pub_full": "2026-10-15 12:04",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 461,
-    "total_amt": 963885503,
+    "count": 462,
+    "total_amt": 963299920,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 22,
+        "count": 23,
         "amt": 9719600
       },
       {
         "stat": "상담완료",
-        "count": 176,
-        "amt": 589574216
+        "count": 174,
+        "amt": 588067004
       },
       {
         "stat": "정비시작",
-        "count": 45,
-        "amt": 61430995
+        "count": 47,
+        "amt": 62421392
       },
       {
         "stat": "End Control 요청",
@@ -42638,7 +42649,7 @@
       {
         "stat": "가정산 완료",
         "count": 161,
-        "amt": 191470681
+        "amt": 191401913
       }
     ],
     "oldest": "D+541일"
@@ -44242,14 +44253,68 @@
         "count": 1,
         "qty_sum": 1,
         "val": 68185
+      },
+      {
+        "code": "SB2610000717",
+        "resv_full": "2026-10-15 09:20",
+        "resv": "10-15",
+        "dday": "오늘",
+        "sa": "이정환",
+        "rows": [
+          {
+            "item": "61615A9DCE3",
+            "name": "Set of wiper",
+            "alois": "A6",
+            "sa": "이정환",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 1,
+            "val": 66625
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 66625
+      },
+      {
+        "code": "SB2610000732",
+        "resv_full": "2026-10-15 10:40",
+        "resv": "10-15",
+        "dday": "오늘",
+        "sa": "김민규",
+        "rows": [
+          {
+            "item": "12415BA2AE4",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 11,
+            "avail_qty": 2,
+            "val": 653835
+          },
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "김민규",
+            "req_qty": 1,
+            "crt_qty": 23,
+            "avail_qty": 11,
+            "val": 8322
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 662157
       }
     ],
-    "sb_count": 49,
-    "line_count": 101,
-    "total_val": 14929919,
+    "sb_count": 51,
+    "line_count": 104,
+    "total_val": 15658701,
     "o_lines": 24,
     "o_val": 5983521,
-    "resv_total": 12085
+    "resv_total": 12097
   },
   "sbresv": {
     "groups": [
@@ -47915,7 +47980,7 @@
     "total_val": 64681264,
     "o_lines": 55,
     "o_val": 16515954,
-    "resv_total": 357
+    "resv_total": 356
   },
   "sbcar": {
     "groups": [
@@ -47999,7 +48064,7 @@
     "total_val": 1006906,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 9964
+    "resv_total": 10005
   },
   "nonmng": {
     "rows": [],
