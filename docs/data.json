@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 15일 (목) · 12:27 기준",
+    "generated_at": "10월 15일 (목) · 12:38 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -42591,8 +42591,8 @@
       },
       {
         "ro": "RO2610000760",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-15",
@@ -42621,25 +42621,36 @@
         "pub_full": "2026-10-15 12:04",
         "dday": "D+0일",
         "amt": 0
+      },
+      {
+        "ro": "RO2610000763",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "김도현",
+        "pub": "2026-10-15",
+        "pub_full": "2026-10-15 12:39",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 462,
+    "count": 463,
     "total_amt": 963625120,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 23,
+        "count": 24,
         "amt": 10044800
       },
       {
         "stat": "상담완료",
-        "count": 174,
-        "amt": 588067004
+        "count": 173,
+        "amt": 587945612
       },
       {
         "stat": "정비시작",
-        "count": 47,
-        "amt": 62421392
+        "count": 48,
+        "amt": 62542784
       },
       {
         "stat": "End Control 요청",
