@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 15일 (목) · 14:44 기준",
+    "generated_at": "10월 15일 (목) · 14:56 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 958614462,
-    "item_count": 2098,
+    "total": 958278897,
+    "item_count": 2097,
     "code_count": 25,
     "alois_groups": [
       {
@@ -251,7 +251,7 @@
           {
             "code": "A1",
             "val": 215231334,
-            "pct": 22.45,
+            "pct": 22.46,
             "qty": 2397,
             "parts": [
               {
@@ -718,9 +718,9 @@
           },
           {
             "code": "A4",
-            "val": 40975510,
+            "val": 40934127,
             "pct": 4.27,
-            "qty": 1916,
+            "qty": 1905,
             "parts": [
               {
                 "item": "63117214962",
@@ -765,16 +765,16 @@
                 "val": 928305
               },
               {
-                "item": "33127607158",
-                "name": "Repair kit i",
-                "qty": 30,
-                "val": 912690
-              },
-              {
                 "item": "51125A5A721",
                 "name": "Bumper cover",
                 "qty": 1,
                 "val": 910700
+              },
+              {
+                "item": "33127607158",
+                "name": "Repair kit i",
+                "qty": 29,
+                "val": 882267
               },
               {
                 "item": "34106860019",
@@ -1155,12 +1155,6 @@
                 "val": 109800
               },
               {
-                "item": "07147145753",
-                "name": "Clip",
-                "qty": 99,
-                "val": 108504
-              },
-              {
                 "item": "22116858061",
                 "name": "ASA-Bolt",
                 "qty": 20,
@@ -1171,6 +1165,12 @@
                 "name": "Expanding nu",
                 "qty": 115,
                 "val": 100740
+              },
+              {
+                "item": "07147145753",
+                "name": "Clip",
+                "qty": 89,
+                "val": 97544
               },
               {
                 "item": "11427953125",
@@ -1459,7 +1459,7 @@
           {
             "code": "A5",
             "val": 93592408,
-            "pct": 9.76,
+            "pct": 9.77,
             "qty": 1444,
             "parts": [
               {
@@ -4671,9 +4671,9 @@
             ]
           }
         ],
-        "subtotal_val": 481654570,
-        "subtotal_qty": 8674,
-        "subtotal_pct": 50.24
+        "subtotal_val": 481613187,
+        "subtotal_qty": 8662,
+        "subtotal_pct": 50.26
       },
       {
         "code": "L",
@@ -4682,9 +4682,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 12071693,
+            "val": 12047533,
             "pct": 1.26,
-            "qty": 944,
+            "qty": 942,
             "parts": [
               {
                 "item": "83515A6CDD7",
@@ -4695,8 +4695,8 @@
               {
                 "item": "83135A82511",
                 "name": "Brake fluid",
-                "qty": 156,
-                "val": 1884480
+                "qty": 154,
+                "val": 1860320
               },
               {
                 "item": "83195A42DF3",
@@ -5469,7 +5469,7 @@
           {
             "code": "L7",
             "val": 58316386,
-            "pct": 6.08,
+            "pct": 6.09,
             "qty": 1215,
             "parts": [
               {
@@ -7581,8 +7581,8 @@
             ]
           }
         ],
-        "subtotal_val": 129022561,
-        "subtotal_qty": 3404,
+        "subtotal_val": 128998401,
+        "subtotal_qty": 3402,
         "subtotal_pct": 13.46
       },
       {
@@ -7592,9 +7592,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 58673243,
-            "pct": 6.12,
-            "qty": 1181,
+            "val": 58403221,
+            "pct": 6.09,
+            "qty": 1180,
             "parts": [
               {
                 "item": "17425A18806",
@@ -7853,12 +7853,6 @@
                 "name": "Klapptisch s",
                 "qty": 2,
                 "val": 275106
-              },
-              {
-                "item": "51215A36EA1",
-                "name": "Automatic So",
-                "qty": 1,
-                "val": 270022
               },
               {
                 "item": "61278848677",
@@ -11681,9 +11675,9 @@
             ]
           }
         ],
-        "subtotal_val": 207344314,
-        "subtotal_qty": 2295,
-        "subtotal_pct": 21.63
+        "subtotal_val": 207074292,
+        "subtotal_qty": 2294,
+        "subtotal_pct": 21.61
       },
       {
         "code": "I",
@@ -13079,13 +13073,13 @@
         ],
         "subtotal_val": 138929832,
         "subtotal_qty": 1718,
-        "subtotal_pct": 14.49
+        "subtotal_pct": 14.5
       }
     ]
   },
   "oaov": {
     "total": 62266584,
-    "inv_total": 958614462,
+    "inv_total": 958278897,
     "pct": 6.5,
     "oa_val": 41578403,
     "ov_val": 20688181,
@@ -23149,23 +23143,6 @@
         "dday": "D+0일"
       },
       {
-        "item": "51215A36EA1",
-        "name": "Automatic So",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2610000542",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "10-15",
-        "req_dt_full": "2026-10-15 10:26:39",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 270022,
-        "sa": "우종훈",
-        "dday": "D+0일"
-      },
-      {
         "item": "51337364351",
         "name": "Strip for do 10/15 판금 클레임",
         "alois": "O8",
@@ -23385,10 +23362,95 @@
         "val": 62031,
         "sa": "박태강",
         "dday": "D+0일"
+      },
+      {
+        "item": "51337299992",
+        "name": "Decorative s",
+        "alois": "O8",
+        "pgrp": "M1",
+        "ref_tp": "SP",
+        "ref_no": "SP2610000001",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-15",
+        "req_dt_full": "2026-10-15 14:49:12",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 74980,
+        "sa": "박태강",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51767420825",
+        "name": "Gap seal A-p",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000773",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-15",
+        "req_dt_full": "2026-10-15 14:51:48",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 43160,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51437217734",
+        "name": "Stop buffer",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000773",
+        "req_qty": 3,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-15",
+        "req_dt_full": "2026-10-15 14:51:48",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 20475,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51337420815",
+        "name": "Outer weathe",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000773",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-15",
+        "req_dt_full": "2026-10-15 14:51:48",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 103704,
+        "sa": "염진아",
+        "dday": "D+0일"
+      },
+      {
+        "item": "34108853555",
+        "name": "Brake disk",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000374",
+        "req_qty": 2,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-15",
+        "req_dt_full": "2026-10-15 14:54:06",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 445056,
+        "sa": "이정환",
+        "dday": "D+0일"
       }
     ],
-    "count": 348,
-    "total_val": 91895164,
+    "count": 352,
+    "total_val": 92312517,
     "groups": [
       {
         "code": "RO",
@@ -26318,23 +26380,6 @@
             "dday": "D+0일"
           },
           {
-            "item": "51215A36EA1",
-            "name": "Automatic So",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2610000542",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "10-15",
-            "req_dt_full": "2026-10-15 10:26:39",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 270022,
-            "sa": "우종훈",
-            "dday": "D+0일"
-          },
-          {
             "item": "51167401230",
             "name": "Cover for mi",
             "alois": "O8",
@@ -26367,11 +26412,79 @@
             "val": 1001550,
             "sa": "강충성",
             "dday": "D+0일"
+          },
+          {
+            "item": "51767420825",
+            "name": "Gap seal A-p",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000773",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-15",
+            "req_dt_full": "2026-10-15 14:51:48",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 43160,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51437217734",
+            "name": "Stop buffer",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000773",
+            "req_qty": 3,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-15",
+            "req_dt_full": "2026-10-15 14:51:48",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 20475,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "51337420815",
+            "name": "Outer weathe",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000773",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-15",
+            "req_dt_full": "2026-10-15 14:51:48",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 103704,
+            "sa": "염진아",
+            "dday": "D+0일"
+          },
+          {
+            "item": "34108853555",
+            "name": "Brake disk",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000374",
+            "req_qty": 2,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-15",
+            "req_dt_full": "2026-10-15 14:54:06",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 445056,
+            "sa": "이정환",
+            "dday": "D+0일"
           }
         ],
-        "count": 175,
-        "qty_sum": 260,
-        "val": 54025162
+        "count": 178,
+        "qty_sum": 266,
+        "val": 54367535
       },
       {
         "code": "SB",
@@ -29324,11 +29437,28 @@
             "val": 62031,
             "sa": "박태강",
             "dday": "D+0일"
+          },
+          {
+            "item": "51337299992",
+            "name": "Decorative s",
+            "alois": "O8",
+            "pgrp": "M1",
+            "ref_tp": "SP",
+            "ref_no": "SP2610000001",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-15",
+            "req_dt_full": "2026-10-15 14:49:12",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 74980,
+            "sa": "박태강",
+            "dday": "D+0일"
           }
         ],
-        "count": 92,
-        "qty_sum": 243,
-        "val": 15143712
+        "count": 93,
+        "qty_sum": 244,
+        "val": 15218692
       }
     ]
   },
@@ -39576,14 +39706,14 @@
       },
       {
         "ro": "RO2610000374",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "소음",
         "sa": "이정환",
         "pub": "2026-10-08",
         "pub_full": "2026-10-08 09:07",
         "dday": "D+7일",
-        "amt": 918100
+        "amt": 2025800
       },
       {
         "ro": "RO2610000376",
@@ -41820,8 +41950,8 @@
       },
       {
         "ro": "RO2610000724",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "경수리",
         "sa": "우상만",
         "pub": "2026-10-14",
@@ -42106,14 +42236,14 @@
       },
       {
         "ro": "RO2610000752",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "박영묵",
         "pub": "2026-10-15",
         "pub_full": "2026-10-15 10:34",
         "dday": "D+0일",
-        "amt": 353200
+        "amt": 461200
       },
       {
         "ro": "RO2610000753",
@@ -42216,8 +42346,8 @@
       },
       {
         "ro": "RO2610000763",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-15",
@@ -42315,8 +42445,8 @@
       },
       {
         "ro": "RO2610000773",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-10-15",
@@ -42447,27 +42577,27 @@
       }
     ],
     "count": 483,
-    "total_amt": 978450212,
+    "total_amt": 979665912,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 23,
-        "amt": 12381166
+        "count": 21,
+        "amt": 9691600
       },
       {
         "stat": "상담완료",
-        "count": 182,
-        "amt": 585233328
+        "count": 183,
+        "amt": 587812179
       },
       {
         "stat": "정비시작",
-        "count": 48,
-        "amt": 45925384
+        "count": 50,
+        "amt": 48169899
       },
       {
         "stat": "End Control 요청",
-        "count": 69,
-        "amt": 143508421
+        "count": 68,
+        "amt": 142590321
       },
       {
         "stat": "가정산 완료",
@@ -43216,7 +43346,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 2,
-            "crt_qty": 156,
+            "crt_qty": 154,
             "avail_qty": 135,
             "val": 24160
           }
@@ -43362,7 +43492,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 156,
+            "crt_qty": 154,
             "avail_qty": 135,
             "val": 12080
           }
@@ -43730,7 +43860,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 2,
-            "crt_qty": 156,
+            "crt_qty": 154,
             "avail_qty": 135,
             "val": 24160
           }
@@ -43930,7 +44060,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 2,
-            "crt_qty": 156,
+            "crt_qty": 154,
             "avail_qty": 135,
             "val": 24160
           }
@@ -44046,7 +44176,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 156,
+            "crt_qty": 154,
             "avail_qty": 135,
             "val": 12080
           }
@@ -44908,7 +45038,7 @@
             "alois": "A4",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 30,
+            "crt_qty": 29,
             "avail_qty": 27,
             "val": 30423
           }
@@ -45804,7 +45934,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 156,
+            "crt_qty": 154,
             "avail_qty": 135,
             "val": 12080
           },
@@ -46499,7 +46629,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 9,
-            "avail_qty": 7,
+            "avail_qty": 6,
             "val": 29739
           }
         ],
@@ -46818,7 +46948,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 2,
-            "crt_qty": 156,
+            "crt_qty": 154,
             "avail_qty": 135,
             "val": 24160
           }
@@ -47079,7 +47209,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 9,
-            "avail_qty": 7,
+            "avail_qty": 6,
             "val": 29739
           }
         ],
@@ -47452,7 +47582,7 @@
             "alois": "L1",
             "sa": "우종훈",
             "req_qty": 2,
-            "crt_qty": 156,
+            "crt_qty": 154,
             "avail_qty": 135,
             "val": 24160
           },
@@ -47494,7 +47624,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 156,
+            "crt_qty": 154,
             "avail_qty": 135,
             "val": 12080
           }
@@ -47516,7 +47646,7 @@
             "alois": "A4",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 30,
+            "crt_qty": 29,
             "avail_qty": 27,
             "val": 30423
           }
@@ -47677,7 +47807,7 @@
     "total_val": 64251826,
     "o_lines": 54,
     "o_val": 16478521,
-    "resv_total": 346
+    "resv_total": 347
   },
   "sbcar": {
     "groups": [
@@ -48161,7 +48291,7 @@
         "item": "07147145753",
         "name": "Clip",
         "alois": "A4",
-        "qty": 99,
+        "qty": 89,
         "no": 49
       },
       {
@@ -48169,7 +48299,7 @@
         "item": "33127607158",
         "name": "Repair kit i",
         "alois": "A4",
-        "qty": 30,
+        "qty": 29,
         "no": 50
       },
       {
@@ -48311,7 +48441,7 @@
         "item": "83135A82511",
         "name": "Brake fluid",
         "alois": "L1",
-        "qty": 156,
+        "qty": 154,
         "no": 4
       },
       {
@@ -50647,7 +50777,7 @@
         "item": "33127607158",
         "name": "Repair kit i",
         "alois": "A4",
-        "qty": 30,
+        "qty": 29,
         "no": 296
       },
       {
