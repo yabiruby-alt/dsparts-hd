@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 15일 (목) · 10:30 기준",
+    "generated_at": "10월 15일 (목) · 10:42 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -23816,10 +23816,27 @@
         "val": 270022,
         "sa": "우종훈",
         "dday": "D+0일"
+      },
+      {
+        "item": "51337364351",
+        "name": "Strip for do 10/15 판금 클레임",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "SP",
+        "ref_no": "SP2610000003",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-15",
+        "req_dt_full": "2026-10-15 10:42:45",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 139277,
+        "sa": "박태강",
+        "dday": "D+0일"
       }
     ],
-    "count": 357,
-    "total_val": 95928628,
+    "count": 358,
+    "total_val": 96067905,
     "groups": [
       {
         "code": "RO",
@@ -29908,11 +29925,28 @@
             "val": 106872,
             "sa": "김창열",
             "dday": "D+1일"
+          },
+          {
+            "item": "51337364351",
+            "name": "Strip for do 10/15 판금 클레임",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "SP",
+            "ref_no": "SP2610000003",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-15",
+            "req_dt_full": "2026-10-15 10:42:45",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 139277,
+            "sa": "박태강",
+            "dday": "D+0일"
           }
         ],
-        "count": 81,
-        "qty_sum": 231,
-        "val": 14407197
+        "count": 82,
+        "qty_sum": 232,
+        "val": 14546474
       }
     ]
   },
@@ -40336,8 +40370,8 @@
       },
       {
         "ro": "RO2610000404",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-08",
@@ -42687,25 +42721,47 @@
         "pub_full": "2026-10-15 10:24",
         "dday": "D+0일",
         "amt": 678156
+      },
+      {
+        "ro": "RO2610000752",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "박영묵",
+        "pub": "2026-10-15",
+        "pub_full": "2026-10-15 10:34",
+        "dday": "D+0일",
+        "amt": 28000
+      },
+      {
+        "ro": "RO2610000753",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-10-15",
+        "pub_full": "2026-10-15 10:37",
+        "dday": "D+0일",
+        "amt": 75256
       }
     ],
-    "count": 452,
-    "total_amt": 959624516,
+    "count": 454,
+    "total_amt": 959727772,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 20,
-        "amt": 9691600
+        "count": 21,
+        "amt": 9719600
       },
       {
         "stat": "상담완료",
         "count": 176,
-        "amt": 593087739
+        "amt": 590028004
       },
       {
         "stat": "정비시작",
-        "count": 40,
-        "amt": 55527748
+        "count": 41,
+        "amt": 58662739
       },
       {
         "stat": "End Control 요청",
