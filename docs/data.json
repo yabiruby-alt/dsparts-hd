@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 15일 (목) · 15:30 기준",
+    "generated_at": "10월 15일 (목) · 15:42 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 947382500,
-    "item_count": 2090,
+    "total": 947332938,
+    "item_count": 2089,
     "code_count": 25,
     "alois_groups": [
       {
@@ -1458,9 +1458,9 @@
           },
           {
             "code": "A5",
-            "val": 93592408,
+            "val": 93574296,
             "pct": 9.88,
-            "qty": 1444,
+            "qty": 1440,
             "parts": [
               {
                 "item": "11418646454",
@@ -2321,12 +2321,6 @@
                 "val": 45600
               },
               {
-                "item": "36136890324",
-                "name": "Wheel bolt",
-                "qty": 10,
-                "val": 45280
-              },
-              {
                 "item": "13715A1BC47",
                 "name": "Air filter i",
                 "qty": 2,
@@ -2457,6 +2451,12 @@
                 "name": "Sensor",
                 "qty": 1,
                 "val": 28015
+              },
+              {
+                "item": "36136890324",
+                "name": "Wheel bolt",
+                "qty": 6,
+                "val": 27168
               },
               {
                 "item": "51117255361",
@@ -4671,8 +4671,8 @@
             ]
           }
         ],
-        "subtotal_val": 481613187,
-        "subtotal_qty": 8662,
+        "subtotal_val": 481595075,
+        "subtotal_qty": 8658,
         "subtotal_pct": 50.84
       },
       {
@@ -7592,9 +7592,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 57597439,
+            "val": 57565989,
             "pct": 6.08,
-            "qty": 1178,
+            "qty": 1177,
             "parts": [
               {
                 "item": "17425A18806",
@@ -8975,12 +8975,6 @@
                 "name": "Air Curtain",
                 "qty": 1,
                 "val": 31787
-              },
-              {
-                "item": "51135A3CDD3",
-                "name": "Trim camera",
-                "qty": 1,
-                "val": 31450
               },
               {
                 "item": "51717394830",
@@ -11663,8 +11657,8 @@
             ]
           }
         ],
-        "subtotal_val": 206268510,
-        "subtotal_qty": 2292,
+        "subtotal_val": 206237060,
+        "subtotal_qty": 2291,
         "subtotal_pct": 21.77
       },
       {
@@ -13037,7 +13031,7 @@
   },
   "oaov": {
     "total": 62266584,
-    "inv_total": 947382500,
+    "inv_total": 947332938,
     "pct": 6.57,
     "oa_val": 41578403,
     "ov_val": 20688181,
@@ -32244,15 +32238,6 @@
         "val": 31787
       },
       {
-        "item": "51135A3CDD3",
-        "name": "Trim camera",
-        "pgrp": "B1",
-        "alois": "O8",
-        "qty": 1,
-        "avail_qty": 1,
-        "val": 31450
-      },
-      {
         "item": "51717394830",
         "name": "Lid for bulb",
         "pgrp": "B1",
@@ -34337,15 +34322,6 @@
             "val": 31787
           },
           {
-            "item": "51135A3CDD3",
-            "name": "Trim camera",
-            "pgrp": "B1",
-            "alois": "O8",
-            "qty": 1,
-            "avail_qty": 1,
-            "val": 31450
-          },
-          {
             "item": "51717394830",
             "name": "Lid for bulb",
             "pgrp": "B1",
@@ -35030,10 +35006,10 @@
             "val": 432
           }
         ],
-        "count": 207,
-        "qty_sum": 877,
-        "avail_sum": 865,
-        "val": 25252393
+        "count": 206,
+        "qty_sum": 876,
+        "avail_sum": 864,
+        "val": 25220943
       },
       {
         "code": "OA",
@@ -37016,8 +36992,8 @@
         "val": 7028572
       }
     ],
-    "count": 423,
-    "total_val": 137901678
+    "count": 422,
+    "total_val": 137870228
   },
   "oflow": {
     "rows": [
@@ -37108,19 +37084,19 @@
       {
         "date": "10-15",
         "in_val": 3748624,
-        "out_val": 2830419,
-        "net": 918205
+        "out_val": 2859175,
+        "net": 889449
       }
     ],
     "total_in": 96136217,
-    "total_out": 125197306,
-    "net": -29061089,
+    "total_out": 125226062,
+    "net": -29089845,
     "by_code": [
       {
         "code": "O8",
         "in_val": 72544572,
-        "out_val": 116766433,
-        "net": -44221861
+        "out_val": 116795189,
+        "net": -44250617
       },
       {
         "code": "OA",
@@ -39508,8 +39484,8 @@
       },
       {
         "ro": "RO2610000358",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "사고수리",
         "sa": "염진아",
         "pub": "2026-10-07",
@@ -40343,17 +40319,6 @@
         "amt": 1565600
       },
       {
-        "ro": "RO2610000516",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "사고수리",
-        "sa": "박영묵",
-        "pub": "2026-10-12",
-        "pub_full": "2026-10-12 10:32",
-        "dday": "D+3일",
-        "amt": 1384590
-      },
-      {
         "ro": "RO2610000518",
         "stat": "상담시작",
         "stat_cd": "01",
@@ -40531,8 +40496,8 @@
       },
       {
         "ro": "RO2610000542",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-10-12",
@@ -41399,17 +41364,6 @@
         "amt": 80344
       },
       {
-        "ro": "RO2610000679",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "Maintenance",
-        "sa": "이정환",
-        "pub": "2026-10-14",
-        "pub_full": "2026-10-14 09:44",
-        "dday": "D+1일",
-        "amt": 168000
-      },
-      {
         "ro": "RO2610000678",
         "stat": "End Control 요청",
         "stat_cd": "08",
@@ -41818,14 +41772,14 @@
       },
       {
         "ro": "RO2610000724",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "경수리",
         "sa": "우상만",
         "pub": "2026-10-14",
         "pub_full": "2026-10-14 18:34",
         "dday": "D+1일",
-        "amt": 1678600
+        "amt": 1715600
       },
       {
         "ro": "RO2610000726",
@@ -42453,10 +42407,21 @@
         "pub_full": "2026-10-15 14:57",
         "dday": "D+0일",
         "amt": 9407
+      },
+      {
+        "ro": "RO2610000788",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-10-15",
+        "pub_full": "2026-10-15 15:40",
+        "dday": "D+0일",
+        "amt": 789423
       }
     ],
-    "count": 482,
-    "total_amt": 961765619,
+    "count": 481,
+    "total_amt": 961039452,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -42465,18 +42430,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 174,
-        "amt": 544979103
+        "count": 175,
+        "amt": 546389300
       },
       {
         "stat": "정비시작",
-        "count": 50,
-        "amt": 48375955
+        "count": 49,
+        "amt": 46762181
       },
       {
         "stat": "End Control 요청",
-        "count": 76,
-        "amt": 167317048
+        "count": 75,
+        "amt": 166794458
       },
       {
         "stat": "가정산 완료",
@@ -47587,68 +47552,6 @@
         "val": 610275
       },
       {
-        "code": "SB2610000816",
-        "resv_full": "2026-10-15 16:00",
-        "resv": "10-15",
-        "dday": "오늘",
-        "sa": "안준영",
-        "rows": [
-          {
-            "item": "64115B78AA5",
-            "name": "Set nanopart",
-            "alois": "SX",
-            "sa": "안준영",
-            "req_qty": 1,
-            "crt_qty": 14,
-            "avail_qty": 12,
-            "val": 156975
-          },
-          {
-            "item": "12122455258",
-            "name": "Spark plug B38x,46x,48x",
-            "alois": "A1",
-            "sa": "안준영",
-            "req_qty": 4,
-            "crt_qty": 142,
-            "avail_qty": 130,
-            "val": 82476
-          },
-          {
-            "item": "83215B49DD6",
-            "name": "LL-17FE+ 0W-20",
-            "alois": "L1",
-            "sa": "안준영",
-            "req_qty": 5,
-            "crt_qty": 101,
-            "avail_qty": 59,
-            "val": 79910
-          },
-          {
-            "item": "13718691835",
-            "name": "ir filter el",
-            "alois": "A2",
-            "sa": "안준영",
-            "req_qty": 1,
-            "crt_qty": 11,
-            "avail_qty": 8,
-            "val": 32086
-          },
-          {
-            "item": "11428575211",
-            "name": "Set oil-filt",
-            "alois": "A1",
-            "sa": "안준영",
-            "req_qty": 1,
-            "crt_qty": 122,
-            "avail_qty": 117,
-            "val": 19920
-          }
-        ],
-        "count": 5,
-        "qty_sum": 12,
-        "val": 371367
-      },
-      {
         "code": "SB2610000725",
         "resv_full": "2026-10-15 15:40",
         "resv": "10-15",
@@ -47681,12 +47584,12 @@
         "val": 611796
       }
     ],
-    "sb_count": 80,
-    "line_count": 257,
-    "total_val": 64251826,
+    "sb_count": 79,
+    "line_count": 252,
+    "total_val": 63880459,
     "o_lines": 54,
     "o_val": 16478521,
-    "resv_total": 346
+    "resv_total": 345
   },
   "sbcar": {
     "groups": [
@@ -48928,7 +48831,7 @@
         "item": "36136890324",
         "name": "Wheel bolt",
         "alois": "A5",
-        "qty": 10,
+        "qty": 6,
         "no": 80
       },
       {
