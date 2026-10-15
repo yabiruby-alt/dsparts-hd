@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 15일 (목) · 14:09 기준",
+    "generated_at": "10월 15일 (목) · 14:21 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 959819488,
-    "item_count": 2100,
+    "total": 959070920,
+    "item_count": 2099,
     "code_count": 25,
     "alois_groups": [
       {
@@ -251,7 +251,7 @@
           {
             "code": "A1",
             "val": 215231334,
-            "pct": 22.42,
+            "pct": 22.44,
             "qty": 2397,
             "parts": [
               {
@@ -718,9 +718,9 @@
           },
           {
             "code": "A4",
-            "val": 41070178,
-            "pct": 4.28,
-            "qty": 1917,
+            "val": 40975510,
+            "pct": 4.27,
+            "qty": 1916,
             "parts": [
               {
                 "item": "63117214962",
@@ -885,12 +885,6 @@
                 "val": 397974
               },
               {
-                "item": "51119883454",
-                "name": "Centre inlay",
-                "qty": 4,
-                "val": 378672
-              },
-              {
                 "item": "51137424554",
                 "name": "Set of trim",
                 "qty": 3,
@@ -925,6 +919,12 @@
                 "name": "Brake pad we",
                 "qty": 12,
                 "val": 303324
+              },
+              {
+                "item": "51119883454",
+                "name": "Centre inlay",
+                "qty": 3,
+                "val": 284004
               },
               {
                 "item": "13718511668",
@@ -2721,7 +2721,7 @@
           {
             "code": "A6",
             "val": 84187378,
-            "pct": 8.77,
+            "pct": 8.78,
             "qty": 1365,
             "parts": [
               {
@@ -4665,9 +4665,9 @@
             ]
           }
         ],
-        "subtotal_val": 481518351,
-        "subtotal_qty": 8670,
-        "subtotal_pct": 50.17
+        "subtotal_val": 481423683,
+        "subtotal_qty": 8668,
+        "subtotal_pct": 50.2
       },
       {
         "code": "L",
@@ -7583,7 +7583,7 @@
         ],
         "subtotal_val": 129672473,
         "subtotal_qty": 3406,
-        "subtotal_pct": 13.51
+        "subtotal_pct": 13.52
       },
       {
         "code": "O",
@@ -7593,7 +7593,7 @@
           {
             "code": "O8",
             "val": 58673243,
-            "pct": 6.11,
+            "pct": 6.12,
             "qty": 1181,
             "parts": [
               {
@@ -9707,7 +9707,7 @@
           {
             "code": "OA",
             "val": 41578403,
-            "pct": 4.33,
+            "pct": 4.34,
             "qty": 237,
             "parts": [
               {
@@ -10345,7 +10345,7 @@
           {
             "code": "OE",
             "val": 80768809,
-            "pct": 8.41,
+            "pct": 8.42,
             "qty": 640,
             "parts": [
               {
@@ -11002,9 +11002,9 @@
           },
           {
             "code": "OV",
-            "val": 21379514,
-            "pct": 2.23,
-            "qty": 221,
+            "val": 20725614,
+            "pct": 2.16,
+            "qty": 220,
             "parts": [
               {
                 "item": "36118071998",
@@ -11053,12 +11053,6 @@
                 "name": "Brake disc",
                 "qty": 1,
                 "val": 761600
-              },
-              {
-                "item": "12418490093",
-                "name": "Starter",
-                "qty": 1,
-                "val": 653900
               },
               {
                 "item": "72117469953",
@@ -11693,9 +11687,9 @@
             ]
           }
         ],
-        "subtotal_val": 208035647,
-        "subtotal_qty": 2297,
-        "subtotal_pct": 21.67
+        "subtotal_val": 207381747,
+        "subtotal_qty": 2296,
+        "subtotal_pct": 21.62
       },
       {
         "code": "I",
@@ -11871,7 +11865,7 @@
           {
             "code": "SK",
             "val": 40436372,
-            "pct": 4.21,
+            "pct": 4.22,
             "qty": 868,
             "parts": [
               {
@@ -13091,21 +13085,21 @@
         ],
         "subtotal_val": 138929832,
         "subtotal_qty": 1718,
-        "subtotal_pct": 14.47
+        "subtotal_pct": 14.49
       }
     ]
   },
   "oaov": {
-    "total": 62957917,
-    "inv_total": 959819488,
-    "pct": 6.56,
+    "total": 62304017,
+    "inv_total": 959070920,
+    "pct": 6.5,
     "oa_val": 41578403,
-    "ov_val": 21379514,
+    "ov_val": 20725614,
     "oa_lines": 105,
-    "ov_lines": 114,
+    "ov_lines": 113,
     "oa_qty": 237,
-    "ov_qty": 221,
-    "item_count": 219,
+    "ov_qty": 220,
+    "item_count": 218,
     "oa_items": [
       {
         "item": "63119850411",
@@ -14012,14 +14006,6 @@
         "alois": "OV",
         "qty": 1,
         "val": 761600
-      },
-      {
-        "item": "12418490093",
-        "name": "Starter",
-        "pgrp": "B1",
-        "alois": "OV",
-        "qty": 1,
-        "val": 653900
       },
       {
         "item": "72117469953",
@@ -20295,23 +20281,6 @@
         "dday": "D+8일"
       },
       {
-        "item": "51769447719",
-        "name": "Sealing, B-c",
-        "alois": "OV",
-        "pgrp": "M1",
-        "ref_tp": "SB",
-        "ref_no": "SB2610000403",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "10-07",
-        "req_dt_full": "2026-10-07 16:26:55",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 37433,
-        "sa": "김민규",
-        "dday": "D+8일"
-      },
-      {
         "item": "11618507332",
         "name": "PROFILE-GASK",
         "alois": "O8",
@@ -23302,6 +23271,23 @@
         "val": 158081,
         "sa": "홍윤택",
         "dday": "D+0일"
+      },
+      {
+        "item": "51769447719",
+        "name": "Sealing, B-c",
+        "alois": "OV",
+        "pgrp": "M1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000783",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-15",
+        "req_dt_full": "2026-10-15 14:18:04",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 37433,
+        "sa": "김민규",
+        "dday": "D+0일"
       }
     ],
     "count": 341,
@@ -26284,11 +26270,28 @@
             "val": 1001550,
             "sa": "강충성",
             "dday": "D+0일"
+          },
+          {
+            "item": "51769447719",
+            "name": "Sealing, B-c",
+            "alois": "OV",
+            "pgrp": "M1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000783",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-15",
+            "req_dt_full": "2026-10-15 14:18:04",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 37433,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 175,
-        "qty_sum": 260,
-        "val": 54025162
+        "count": 176,
+        "qty_sum": 261,
+        "val": 54062595
       },
       {
         "code": "SB",
@@ -27365,23 +27368,6 @@
             "dday": "D+15일"
           },
           {
-            "item": "51769447719",
-            "name": "Sealing, B-c",
-            "alois": "OV",
-            "pgrp": "M1",
-            "ref_tp": "SB",
-            "ref_no": "SB2610000403",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "10-07",
-            "req_dt_full": "2026-10-07 16:26:55",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 37433,
-            "sa": "김민규",
-            "dday": "D+8일"
-          },
-          {
             "item": "11618507332",
             "name": "PROFILE-GASK",
             "alois": "O8",
@@ -27688,9 +27674,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 82,
-        "qty_sum": 98,
-        "val": 22763723
+        "count": 81,
+        "qty_sum": 97,
+        "val": 22726290
       },
       {
         "code": "SP",
@@ -37383,8 +37369,8 @@
       },
       {
         "ro": "RO2609000470",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "안준영",
         "pub": "2026-09-08",
@@ -40349,7 +40335,7 @@
         "pub": "2026-10-12",
         "pub_full": "2026-10-12 13:12",
         "dday": "D+3일",
-        "amt": 2373800
+        "amt": 2485000
       },
       {
         "ro": "RO2610000552",
@@ -42091,8 +42077,8 @@
       },
       {
         "ro": "RO2610000770",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-15",
@@ -42131,7 +42117,7 @@
         "pub": "2026-10-15",
         "pub_full": "2026-10-15 13:28",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 2336366
       },
       {
         "ro": "RO2610000774",
@@ -42222,39 +42208,39 @@
         "amt": 834547
       },
       {
-        "ro": "RO2610000782",
-        "stat": "상담시작",
-        "stat_cd": "01",
-        "svc": "Maintenance",
-        "sa": "이정환",
+        "ro": "RO2610000783",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "김민규",
         "pub": "2026-10-15",
-        "pub_full": "2026-10-15 14:11",
+        "pub_full": "2026-10-15 14:18",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 73100
       }
     ],
     "count": 482,
-    "total_amt": 975587687,
+    "total_amt": 978108353,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 25,
-        "amt": 10044800
+        "count": 24,
+        "amt": 12381166
       },
       {
         "stat": "상담완료",
-        "count": 184,
-        "amt": 593187045
+        "count": 183,
+        "amt": 585847006
       },
       {
         "stat": "정비시작",
-        "count": 47,
-        "amt": 46516881
+        "count": 48,
+        "amt": 46953340
       },
       {
         "stat": "End Control 요청",
-        "count": 65,
-        "amt": 134559339
+        "count": 66,
+        "amt": 141647219
       },
       {
         "stat": "가정산 완료",
