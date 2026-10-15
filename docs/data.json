@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 15일 (목) · 17:17 기준",
+    "generated_at": "10월 15일 (목) · 17:28 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -14861,10 +14861,10 @@
     "foot_note": "이번 달 발행 없음"
   },
   "acc": {
-    "total": 7098493,
-    "cost": 6929239,
-    "lines": 282,
-    "invoices_count": 67,
+    "total": 7167493,
+    "cost": 7006489,
+    "lines": 284,
+    "invoices_count": 69,
     "by_type": [
       {
         "code": "3",
@@ -14881,11 +14881,27 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 189,
-        "val": 4671917
+        "lines": 191,
+        "val": 4740917
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2610001256",
+        "num": "RO2610000698",
+        "sa": "정용환",
+        "dt": "2026-10-15 17:25",
+        "amt": 0,
+        "cost": 8250
+      },
+      {
+        "inv": "IV2610001251",
+        "num": "RO2610000071",
+        "sa": "이정환",
+        "dt": "2026-10-15 17:17",
+        "amt": 69000,
+        "cost": 69000
+      },
       {
         "inv": "IV2610001238",
         "num": "RO2610000690",
@@ -14909,22 +14925,6 @@
         "dt": "2026-10-15 15:06",
         "amt": 69000,
         "cost": 69000
-      },
-      {
-        "inv": "AR2610003849",
-        "num": "SP2610000033",
-        "sa": "박태강",
-        "dt": "2026-10-15 14:42",
-        "amt": 71200,
-        "cost": 61590
-      },
-      {
-        "inv": "AR2610003848",
-        "num": "SP2610000033",
-        "sa": "박태강",
-        "dt": "2026-10-15 11:32",
-        "amt": 0,
-        "cost": 0
       }
     ]
   },
@@ -20532,57 +20532,6 @@
         "dday": "D+3일"
       },
       {
-        "item": "07119906050",
-        "name": "Hex nut",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2610000643",
-        "req_qty": 1,
-        "crt_qty": 4,
-        "avail_qty": 0,
-        "req_dt": "10-12",
-        "req_dt_full": "2026-10-12 15:45:11",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 1241,
-        "sa": "M GARAGE",
-        "dday": "D+3일"
-      },
-      {
-        "item": "07119906978",
-        "name": "Hex bolt",
-        "alois": "OV",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2610000643",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "10-12",
-        "req_dt_full": "2026-10-12 15:45:11",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 5625,
-        "sa": "M GARAGE",
-        "dday": "D+3일"
-      },
-      {
-        "item": "22326860537",
-        "name": "Transmission",
-        "alois": "OV",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2610000643",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "10-12",
-        "req_dt_full": "2026-10-12 15:45:11",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 105600,
-        "sa": "M GARAGE",
-        "dday": "D+3일"
-      },
-      {
         "item": "41357475796",
         "name": "Side panel b",
         "alois": "O8",
@@ -21237,7 +21186,7 @@
         "ref_no": "RO2610000404",
         "req_qty": 10,
         "crt_qty": 29,
-        "avail_qty": 18,
+        "avail_qty": 17,
         "req_dt": "10-13",
         "req_dt_full": "2026-10-13 09:48:33",
         "req_brch": "AS_부산(해운중동)",
@@ -21305,7 +21254,7 @@
         "ref_no": "SB2610000603",
         "req_qty": 1,
         "crt_qty": 29,
-        "avail_qty": 18,
+        "avail_qty": 17,
         "req_dt": "10-13",
         "req_dt_full": "2026-10-13 10:11:52",
         "req_brch": "AS_부산(해운중동)",
@@ -22835,7 +22784,7 @@
         "ref_no": "SB2610000657",
         "req_qty": 1,
         "crt_qty": 29,
-        "avail_qty": 18,
+        "avail_qty": 17,
         "req_dt": "10-15",
         "req_dt_full": "2026-10-15 07:39:58",
         "req_brch": "AS_부산(해운중동)",
@@ -23284,10 +23233,78 @@
         "val": 24480,
         "sa": "안준영",
         "dday": "D+0일"
+      },
+      {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "alois": "OE",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000791",
+        "req_qty": 1,
+        "crt_qty": 29,
+        "avail_qty": 17,
+        "req_dt": "10-15",
+        "req_dt_full": "2026-10-15 17:28:34",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 85705,
+        "sa": "우상만",
+        "dday": "D+0일"
+      },
+      {
+        "item": "07119906050",
+        "name": "Hex nut",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000792",
+        "req_qty": 1,
+        "crt_qty": 4,
+        "avail_qty": 0,
+        "req_dt": "10-15",
+        "req_dt_full": "2026-10-15 17:28:57",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 1241,
+        "sa": "우상만",
+        "dday": "D+0일"
+      },
+      {
+        "item": "07119906978",
+        "name": "Hex bolt",
+        "alois": "OV",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000792",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-15",
+        "req_dt_full": "2026-10-15 17:28:57",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 5625,
+        "sa": "우상만",
+        "dday": "D+0일"
+      },
+      {
+        "item": "22326860537",
+        "name": "Transmission",
+        "alois": "OV",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000792",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-15",
+        "req_dt_full": "2026-10-15 17:28:57",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 105600,
+        "sa": "우상만",
+        "dday": "D+0일"
       }
     ],
-    "count": 349,
-    "total_val": 92988449,
+    "count": 350,
+    "total_val": 93074154,
     "groups": [
       {
         "code": "RO",
@@ -25562,7 +25579,7 @@
             "ref_no": "RO2610000404",
             "req_qty": 10,
             "crt_qty": 29,
-            "avail_qty": 18,
+            "avail_qty": 17,
             "req_dt": "10-13",
             "req_dt_full": "2026-10-13 09:48:33",
             "req_brch": "AS_부산(해운중동)",
@@ -26232,11 +26249,79 @@
             "val": 445056,
             "sa": "이정환",
             "dday": "D+0일"
+          },
+          {
+            "item": "64119382886",
+            "name": "MICROFILTER/",
+            "alois": "OE",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000791",
+            "req_qty": 1,
+            "crt_qty": 29,
+            "avail_qty": 17,
+            "req_dt": "10-15",
+            "req_dt_full": "2026-10-15 17:28:34",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 85705,
+            "sa": "우상만",
+            "dday": "D+0일"
+          },
+          {
+            "item": "07119906050",
+            "name": "Hex nut",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000792",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "req_dt": "10-15",
+            "req_dt_full": "2026-10-15 17:28:57",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 1241,
+            "sa": "우상만",
+            "dday": "D+0일"
+          },
+          {
+            "item": "07119906978",
+            "name": "Hex bolt",
+            "alois": "OV",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000792",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-15",
+            "req_dt_full": "2026-10-15 17:28:57",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 5625,
+            "sa": "우상만",
+            "dday": "D+0일"
+          },
+          {
+            "item": "22326860537",
+            "name": "Transmission",
+            "alois": "OV",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000792",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-15",
+            "req_dt_full": "2026-10-15 17:28:57",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 105600,
+            "sa": "우상만",
+            "dday": "D+0일"
           }
         ],
-        "count": 173,
-        "qty_sum": 261,
-        "val": 53360332
+        "count": 177,
+        "qty_sum": 265,
+        "val": 53558503
       },
       {
         "code": "SB",
@@ -27364,57 +27449,6 @@
             "dday": "D+7일"
           },
           {
-            "item": "07119906050",
-            "name": "Hex nut",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2610000643",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "req_dt": "10-12",
-            "req_dt_full": "2026-10-12 15:45:11",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 1241,
-            "sa": "M GARAGE",
-            "dday": "D+3일"
-          },
-          {
-            "item": "07119906978",
-            "name": "Hex bolt",
-            "alois": "OV",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2610000643",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "10-12",
-            "req_dt_full": "2026-10-12 15:45:11",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 5625,
-            "sa": "M GARAGE",
-            "dday": "D+3일"
-          },
-          {
-            "item": "22326860537",
-            "name": "Transmission",
-            "alois": "OV",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2610000643",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "10-12",
-            "req_dt_full": "2026-10-12 15:45:11",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 105600,
-            "sa": "M GARAGE",
-            "dday": "D+3일"
-          },
-          {
             "item": "31331094749",
             "name": "Tube",
             "alois": "OA",
@@ -27440,7 +27474,7 @@
             "ref_no": "SB2610000603",
             "req_qty": 1,
             "crt_qty": 29,
-            "avail_qty": 18,
+            "avail_qty": 17,
             "req_dt": "10-13",
             "req_dt_full": "2026-10-13 10:11:52",
             "req_brch": "AS_부산(해운중동)",
@@ -27576,7 +27610,7 @@
             "ref_no": "SB2610000657",
             "req_qty": 1,
             "crt_qty": 29,
-            "avail_qty": 18,
+            "avail_qty": 17,
             "req_dt": "10-15",
             "req_dt_full": "2026-10-15 07:39:58",
             "req_brch": "AS_부산(해운중동)",
@@ -27653,9 +27687,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 83,
-        "qty_sum": 99,
-        "val": 24409425
+        "count": 80,
+        "qty_sum": 96,
+        "val": 24296959
       },
       {
         "code": "SP",
@@ -29368,15 +29402,6 @@
         "val": 1674000
       },
       {
-        "item": "64119382886",
-        "name": "MICROFILTER/",
-        "pgrp": "B1",
-        "alois": "OE",
-        "qty": 29,
-        "avail_qty": 18,
-        "val": 1542690
-      },
-      {
         "item": "63115A7F387",
         "name": "Headlight, L",
         "pgrp": "B1",
@@ -29384,6 +29409,15 @@
         "qty": 1,
         "avail_qty": 1,
         "val": 1537310
+      },
+      {
+        "item": "64119382886",
+        "name": "MICROFILTER/",
+        "pgrp": "B1",
+        "alois": "OE",
+        "qty": 29,
+        "avail_qty": 17,
+        "val": 1456985
       },
       {
         "item": "61278880208",
@@ -35597,8 +35631,8 @@
             "pgrp": "B1",
             "alois": "OE",
             "qty": 29,
-            "avail_qty": 18,
-            "val": 1542690
+            "avail_qty": 17,
+            "val": 1456985
           },
           {
             "item": "61278880208",
@@ -36296,8 +36330,8 @@
         ],
         "count": 86,
         "qty_sum": 623,
-        "avail_sum": 594,
-        "val": 76042697
+        "avail_sum": 593,
+        "val": 75956992
       },
       {
         "code": "ON",
@@ -36895,7 +36929,7 @@
       }
     ],
     "count": 422,
-    "total_val": 137845748
+    "total_val": 137760043
   },
   "oflow": {
     "rows": [
@@ -38109,17 +38143,6 @@
         "amt": 6409545
       },
       {
-        "ro": "RO2609001596",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "김민규",
-        "pub": "2026-09-28",
-        "pub_full": "2026-09-28 14:20",
-        "dday": "D+17일",
-        "amt": 720411
-      },
-      {
         "ro": "RO2609001621",
         "stat": "End Control 요청",
         "stat_cd": "08",
@@ -38252,17 +38275,6 @@
         "amt": 959994
       },
       {
-        "ro": "RO2609001738",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "입고 Proactive-RITA",
-        "sa": "김민규",
-        "pub": "2026-09-30",
-        "pub_full": "2026-09-30 09:40",
-        "dday": "D+15일",
-        "amt": 428364
-      },
-      {
         "ro": "RO2610000090",
         "stat": "End Control 요청",
         "stat_cd": "08",
@@ -38393,17 +38405,6 @@
         "pub_full": "2026-10-01 11:12",
         "dday": "D+14일",
         "amt": 105400
-      },
-      {
-        "ro": "RO2610000071",
-        "stat": "가정산 완료",
-        "stat_cd": "05",
-        "svc": "Maintenance",
-        "sa": "이정환",
-        "pub": "2026-10-01",
-        "pub_full": "2026-10-01 14:30",
-        "dday": "D+14일",
-        "amt": 1925035
       },
       {
         "ro": "RO2610000073",
@@ -40277,8 +40278,8 @@
       },
       {
         "ro": "RO2610000677",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-14",
@@ -40299,8 +40300,8 @@
       },
       {
         "ro": "RO2610000680",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-14",
@@ -40310,8 +40311,8 @@
       },
       {
         "ro": "RO2610000681",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-14",
@@ -40354,8 +40355,8 @@
       },
       {
         "ro": "RO2610000687",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-14",
@@ -40431,14 +40432,14 @@
       },
       {
         "ro": "RO2610000698",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-14",
         "pub_full": "2026-10-14 11:09",
         "dday": "D+1일",
-        "amt": 129724
+        "amt": 114724
       },
       {
         "ro": "RO2610000703",
@@ -40486,8 +40487,8 @@
       },
       {
         "ro": "RO2610000707",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-14",
@@ -40497,8 +40498,8 @@
       },
       {
         "ro": "RO2610000708",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Recall/TC",
         "sa": "정용환",
         "pub": "2026-10-14",
@@ -41212,8 +41213,8 @@
       },
       {
         "ro": "RO2610000786",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Recall/TC",
         "sa": "정용환",
         "pub": "2026-10-15",
@@ -41242,20 +41243,53 @@
         "pub_full": "2026-10-15 16:25",
         "dday": "D+0일",
         "amt": 668238
+      },
+      {
+        "ro": "RO2610000791",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우상만",
+        "pub": "2026-10-15",
+        "pub_full": "2026-10-15 17:26",
+        "dday": "D+0일",
+        "amt": 531182
+      },
+      {
+        "ro": "RO2610000792",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "우상만",
+        "pub": "2026-10-15",
+        "pub_full": "2026-10-15 17:28",
+        "dday": "D+0일",
+        "amt": 318000
+      },
+      {
+        "ro": "RO2610000793",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "M GARAGE",
+        "pub": "2026-10-15",
+        "pub_full": "2026-10-15 17:29",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
     "count": 383,
-    "total_amt": 901745857,
+    "total_amt": 899506229,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 21,
+        "count": 22,
         "amt": 9691600
       },
       {
         "stat": "상담완료",
-        "count": 160,
-        "amt": 541269114
+        "count": 163,
+        "amt": 542198640
       },
       {
         "stat": "정비시작",
@@ -41264,13 +41298,13 @@
       },
       {
         "stat": "End Control 요청",
-        "count": 69,
-        "amt": 141249393
+        "count": 61,
+        "amt": 139495078
       },
       {
         "stat": "가정산 완료",
-        "count": 83,
-        "amt": 161457384
+        "count": 87,
+        "amt": 160042545
       }
     ],
     "oldest": "D+541일"
@@ -42037,7 +42071,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 47,
-            "avail_qty": 43,
+            "avail_qty": 42,
             "val": 68185
           }
         ],
@@ -42349,7 +42383,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 47,
-            "avail_qty": 43,
+            "avail_qty": 42,
             "val": 68185
           },
           {
@@ -42867,7 +42901,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 47,
-            "avail_qty": 43,
+            "avail_qty": 42,
             "val": 68185
           }
         ],
@@ -44595,7 +44629,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 29,
-            "avail_qty": 18,
+            "avail_qty": 17,
             "val": 85705
           },
           {
@@ -44615,7 +44649,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 47,
-            "avail_qty": 43,
+            "avail_qty": 42,
             "val": 68185
           },
           {
@@ -45990,48 +46024,6 @@
         "val": 338394
       },
       {
-        "code": "SB2610000643",
-        "resv_full": "2026-10-16 11:00",
-        "resv": "10-16",
-        "dday": "D-1일",
-        "sa": "M GARAGE",
-        "rows": [
-          {
-            "item": "22326860537",
-            "name": "Transmission",
-            "alois": "OV",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 105600
-          },
-          {
-            "item": "07119906978",
-            "name": "Hex bolt",
-            "alois": "OV",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 5625
-          },
-          {
-            "item": "07119906050",
-            "name": "Hex nut",
-            "alois": "O8",
-            "sa": "M GARAGE",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 0,
-            "val": 1241
-          }
-        ],
-        "count": 3,
-        "qty_sum": 3,
-        "val": 112466
-      },
-      {
         "code": "SB2610000292",
         "resv_full": "2026-10-16 11:00",
         "resv": "10-16",
@@ -46439,7 +46431,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 29,
-            "avail_qty": 18,
+            "avail_qty": 17,
             "val": 85705
           },
           {
@@ -46624,12 +46616,12 @@
         "val": 610275
       }
     ],
-    "sb_count": 82,
-    "line_count": 270,
-    "total_val": 66298051,
-    "o_lines": 56,
-    "o_val": 18161656,
-    "resv_total": 355
+    "sb_count": 81,
+    "line_count": 267,
+    "total_val": 66185585,
+    "o_lines": 53,
+    "o_val": 18049190,
+    "resv_total": 353
   },
   "sbcar": {
     "groups": [
