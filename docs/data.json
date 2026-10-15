@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 15일 (목) · 15:54 기준",
+    "generated_at": "10월 15일 (목) · 16:05 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -37460,8 +37460,8 @@
       },
       {
         "ro": "RO2608001713",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-08-27",
@@ -42355,8 +42355,8 @@
       },
       {
         "ro": "RO2610000781",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-15",
@@ -42388,8 +42388,8 @@
       },
       {
         "ro": "RO2610000785",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "진단",
         "sa": "이정환",
         "pub": "2026-10-15",
@@ -42430,23 +42430,23 @@
       },
       {
         "stat": "상담완료",
-        "count": 174,
-        "amt": 546309432
+        "count": 172,
+        "amt": 545012817
       },
       {
         "stat": "정비시작",
-        "count": 50,
-        "amt": 46852349
+        "count": 52,
+        "amt": 48148964
       },
       {
         "stat": "End Control 요청",
-        "count": 75,
-        "amt": 166794458
+        "count": 74,
+        "amt": 158434458
       },
       {
         "stat": "가정산 완료",
-        "count": 161,
-        "amt": 191401913
+        "count": 162,
+        "amt": 199761913
       }
     ],
     "oldest": "D+541일"
@@ -44111,7 +44111,7 @@
     "total_val": 15658701,
     "o_lines": 24,
     "o_val": 5983521,
-    "resv_total": 12097
+    "resv_total": 12098
   },
   "sbresv": {
     "groups": [
@@ -47589,7 +47589,7 @@
     "total_val": 63880459,
     "o_lines": 54,
     "o_val": 16478521,
-    "resv_total": 347
+    "resv_total": 349
   },
   "sbcar": {
     "groups": [
@@ -47673,7 +47673,7 @@
     "total_val": 1006906,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10005
+    "resv_total": 10030
   },
   "nonmng": {
     "rows": [],
