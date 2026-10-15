@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 15일 (목) · 16:18 기준",
+    "generated_at": "10월 15일 (목) · 16:30 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 948364297,
+    "total": 949328627,
     "item_count": 2085,
     "code_count": 25,
     "alois_groups": [
@@ -251,7 +251,7 @@
           {
             "code": "A1",
             "val": 215128938,
-            "pct": 22.68,
+            "pct": 22.66,
             "qty": 2392,
             "parts": [
               {
@@ -549,7 +549,7 @@
           {
             "code": "A3",
             "val": 28598340,
-            "pct": 3.02,
+            "pct": 3.01,
             "qty": 527,
             "parts": [
               {
@@ -1459,7 +1459,7 @@
           {
             "code": "A5",
             "val": 93574296,
-            "pct": 9.87,
+            "pct": 9.86,
             "qty": 1440,
             "parts": [
               {
@@ -2727,7 +2727,7 @@
           {
             "code": "A6",
             "val": 84345295,
-            "pct": 8.89,
+            "pct": 8.88,
             "qty": 1391,
             "parts": [
               {
@@ -4673,7 +4673,7 @@
         ],
         "subtotal_val": 481467901,
         "subtotal_qty": 8674,
-        "subtotal_pct": 50.77
+        "subtotal_pct": 50.72
       },
       {
         "code": "L",
@@ -4839,7 +4839,7 @@
           {
             "code": "L4",
             "val": 12567891,
-            "pct": 1.33,
+            "pct": 1.32,
             "qty": 430,
             "parts": [
               {
@@ -5468,9 +5468,9 @@
           },
           {
             "code": "L7",
-            "val": 58397108,
-            "pct": 6.16,
-            "qty": 1254,
+            "val": 59361438,
+            "pct": 6.25,
+            "qty": 1255,
             "parts": [
               {
                 "item": "11419895359",
@@ -5489,6 +5489,12 @@
                 "name": "Headlight, L",
                 "qty": 1,
                 "val": 2566830
+              },
+              {
+                "item": "64119361707",
+                "name": "Reciever dry",
+                "qty": 2,
+                "val": 1928660
               },
               {
                 "item": "13647852362",
@@ -5549,12 +5555,6 @@
                 "name": "Brake disc,",
                 "qty": 6,
                 "val": 1001376
-              },
-              {
-                "item": "64119361707",
-                "name": "Reciever dry",
-                "qty": 1,
-                "val": 964330
               },
               {
                 "item": "11717822346",
@@ -7575,9 +7575,9 @@
             ]
           }
         ],
-        "subtotal_val": 128990802,
-        "subtotal_qty": 3432,
-        "subtotal_pct": 13.6
+        "subtotal_val": 129955132,
+        "subtotal_qty": 3433,
+        "subtotal_pct": 13.69
       },
       {
         "code": "O",
@@ -7587,7 +7587,7 @@
           {
             "code": "O8",
             "val": 59173350,
-            "pct": 6.24,
+            "pct": 6.23,
             "qty": 1177,
             "parts": [
               {
@@ -10309,7 +10309,7 @@
           {
             "code": "OE",
             "val": 80768809,
-            "pct": 8.52,
+            "pct": 8.51,
             "qty": 640,
             "parts": [
               {
@@ -11641,7 +11641,7 @@
         ],
         "subtotal_val": 207694294,
         "subtotal_qty": 2289,
-        "subtotal_pct": 21.9
+        "subtotal_pct": 21.88
       },
       {
         "code": "I",
@@ -13001,14 +13001,14 @@
         ],
         "subtotal_val": 128548114,
         "subtotal_qty": 1711,
-        "subtotal_pct": 13.55
+        "subtotal_pct": 13.54
       }
     ]
   },
   "oaov": {
     "total": 62116457,
-    "inv_total": 948364297,
-    "pct": 6.55,
+    "inv_total": 949328627,
+    "pct": 6.54,
     "oa_val": 41456081,
     "ov_val": 20660376,
     "oa_lines": 104,
@@ -36958,19 +36958,19 @@
       {
         "date": "10-15",
         "in_val": 3748624,
-        "out_val": 2859175,
-        "net": 889449
+        "out_val": 4007029,
+        "net": -258405
       }
     ],
     "total_in": 96136217,
-    "total_out": 125226062,
-    "net": -29089845,
+    "total_out": 126373916,
+    "net": -30237699,
     "by_code": [
       {
         "code": "O8",
         "in_val": 72544572,
-        "out_val": 116795189,
-        "net": -44250617
+        "out_val": 117943043,
+        "net": -45398471
       },
       {
         "code": "OA",
@@ -40347,17 +40347,6 @@
         "amt": 403400
       },
       {
-        "ro": "RO2610000537",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "사고수리",
-        "sa": "박영묵",
-        "pub": "2026-10-12",
-        "pub_full": "2026-10-12 12:32",
-        "dday": "D+3일",
-        "amt": 1565800
-      },
-      {
         "ro": "RO2610000538",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -42292,10 +42281,21 @@
         "pub_full": "2026-10-15 15:40",
         "dday": "D+0일",
         "amt": 799723
+      },
+      {
+        "ro": "RO2610000789",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "안준영",
+        "pub": "2026-10-15",
+        "pub_full": "2026-10-15 16:25",
+        "dday": "D+0일",
+        "amt": 668238
       }
     ],
     "count": 481,
-    "total_amt": 961059576,
+    "total_amt": 960162014,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -42305,7 +42305,7 @@
       {
         "stat": "상담완료",
         "count": 172,
-        "amt": 545012817
+        "amt": 544115255
       },
       {
         "stat": "정비시작",
@@ -47463,7 +47463,7 @@
     "total_val": 65068834,
     "o_lines": 55,
     "o_val": 18137176,
-    "resv_total": 350
+    "resv_total": 353
   },
   "sbcar": {
     "groups": [
