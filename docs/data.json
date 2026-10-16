@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 16일 (금) · 12:25 기준",
+    "generated_at": "10월 16일 (금) · 12:37 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -264,8 +264,8 @@
     ]
   },
   "inv": {
-    "total": 994426187,
-    "item_count": 2165,
+    "total": 994307258,
+    "item_count": 2164,
     "code_count": 25,
     "alois_groups": [
       {
@@ -2812,7 +2812,7 @@
           {
             "code": "A6",
             "val": 92323794,
-            "pct": 9.28,
+            "pct": 9.29,
             "qty": 1446,
             "parts": [
               {
@@ -11993,9 +11993,9 @@
         "rows": [
           {
             "code": "II",
-            "val": 9387253,
-            "pct": 0.94,
-            "qty": 80,
+            "val": 9268324,
+            "pct": 0.93,
+            "qty": 79,
             "parts": [
               {
                 "item": "36116895390",
@@ -12086,12 +12086,6 @@
                 "name": "Adapter",
                 "qty": 1,
                 "val": 172457
-              },
-              {
-                "item": "51127425073",
-                "name": "Trim cover,",
-                "qty": 1,
-                "val": 118929
               },
               {
                 "item": "51779491677",
@@ -12240,9 +12234,9 @@
             ]
           }
         ],
-        "subtotal_val": 9387253,
-        "subtotal_qty": 80,
-        "subtotal_pct": 0.94
+        "subtotal_val": 9268324,
+        "subtotal_qty": 79,
+        "subtotal_pct": 0.93
       },
       {
         "code": "S",
@@ -13512,8 +13506,8 @@
   },
   "oaov": {
     "total": 59910027,
-    "inv_total": 994426187,
-    "pct": 6.02,
+    "inv_total": 994307258,
+    "pct": 6.03,
     "oa_val": 39063529,
     "ov_val": 20846498,
     "oa_lines": 104,
@@ -39593,8 +39587,8 @@
       },
       {
         "ro": "RO2610000816",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "입고 Proactive-RITA",
         "sa": "우종훈",
         "pub": "2026-10-16",
@@ -39711,10 +39705,21 @@
         "pub_full": "2026-10-16 12:15",
         "dday": "D+0일",
         "amt": 190068
+      },
+      {
+        "ro": "RO2610000832",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "입고 Proactive-RITA",
+        "sa": "최민수",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 12:27",
+        "dday": "D+0일",
+        "amt": 1724700
       }
     ],
-    "count": 374,
-    "total_amt": 864839379,
+    "count": 375,
+    "total_amt": 866564079,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -39723,18 +39728,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 169,
-        "amt": 523185577
+        "count": 170,
+        "amt": 524910277
       },
       {
         "stat": "정비시작",
-        "count": 32,
-        "amt": 37406106
+        "count": 31,
+        "amt": 36868527
       },
       {
         "stat": "End Control 요청",
-        "count": 47,
-        "amt": 114860708
+        "count": 48,
+        "amt": 115398287
       },
       {
         "stat": "공정마감",
@@ -42419,7 +42424,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 115,
-            "avail_qty": 91,
+            "avail_qty": 87,
             "val": 6743
           },
           {
@@ -43709,7 +43714,7 @@
             "sa": "M GARAGE",
             "req_qty": 1,
             "crt_qty": 7,
-            "avail_qty": 3,
+            "avail_qty": 2,
             "val": 60292
           },
           {
@@ -43719,7 +43724,7 @@
             "sa": "M GARAGE",
             "req_qty": 2,
             "crt_qty": 115,
-            "avail_qty": 91,
+            "avail_qty": 87,
             "val": 13486
           },
           {
@@ -43729,7 +43734,7 @@
             "sa": "M GARAGE",
             "req_qty": 1,
             "crt_qty": 115,
-            "avail_qty": 91,
+            "avail_qty": 87,
             "val": 6743
           },
           {
@@ -43739,7 +43744,7 @@
             "sa": "M GARAGE",
             "req_qty": 1,
             "crt_qty": 115,
-            "avail_qty": 91,
+            "avail_qty": 87,
             "val": 6743
           }
         ],
@@ -43813,7 +43818,7 @@
             "sa": "M GARAGE",
             "req_qty": 1,
             "crt_qty": 7,
-            "avail_qty": 3,
+            "avail_qty": 2,
             "val": 60292
           },
           {
@@ -43823,7 +43828,7 @@
             "sa": "M GARAGE",
             "req_qty": 2,
             "crt_qty": 115,
-            "avail_qty": 91,
+            "avail_qty": 87,
             "val": 13486
           },
           {
@@ -43833,7 +43838,7 @@
             "sa": "M GARAGE",
             "req_qty": 1,
             "crt_qty": 115,
-            "avail_qty": 91,
+            "avail_qty": 87,
             "val": 6743
           },
           {
@@ -43843,7 +43848,7 @@
             "sa": "M GARAGE",
             "req_qty": 1,
             "crt_qty": 115,
-            "avail_qty": 91,
+            "avail_qty": 87,
             "val": 6743
           }
         ],
@@ -44655,7 +44660,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 115,
-            "avail_qty": 91,
+            "avail_qty": 87,
             "val": 6743
           },
           {
@@ -46956,11 +46961,19 @@
       },
       {
         "loc": "C000001",
+        "item": "41008491727",
+        "name": "Door front l",
+        "alois": "SZ",
+        "qty": 1,
+        "no": 190
+      },
+      {
+        "loc": "C000001",
         "item": "41008499868",
         "name": "Hood",
         "alois": "A5",
         "qty": 1,
-        "no": 190
+        "no": 191
       },
       {
         "loc": "C000001",
@@ -46968,7 +46981,7 @@
         "name": "Door front l",
         "alois": "O8",
         "qty": 1,
-        "no": 191
+        "no": 192
       },
       {
         "loc": "C000001",
@@ -46976,7 +46989,7 @@
         "name": "Door rear ri",
         "alois": "II",
         "qty": 1,
-        "no": 192
+        "no": 193
       },
       {
         "loc": "C000002",
@@ -46984,21 +46997,13 @@
         "name": "Air duct, ce",
         "alois": "L7",
         "qty": 1,
-        "no": 193
+        "no": 194
       },
       {
         "loc": "C000002",
         "item": "51125A01199",
         "name": "Carrier, bum",
         "alois": "A6",
-        "qty": 1,
-        "no": 194
-      },
-      {
-        "loc": "C000002",
-        "item": "51127425073",
-        "name": "Trim cover,",
-        "alois": "II",
         "qty": 1,
         "no": 195
       },
@@ -47116,19 +47121,11 @@
       },
       {
         "loc": "-",
-        "item": "41008491727",
-        "name": "Door front l",
-        "alois": "SZ",
-        "qty": 1,
-        "no": 210
-      },
-      {
-        "loc": "-",
         "item": "41629629354",
         "name": "Tailgate",
         "alois": "SZ",
         "qty": 1,
-        "no": 211
+        "no": 210
       },
       {
         "loc": "-",
@@ -47136,7 +47133,7 @@
         "name": "Verkleidung",
         "alois": "SZ",
         "qty": 1,
-        "no": 212
+        "no": 211
       },
       {
         "loc": "-",
@@ -47144,7 +47141,7 @@
         "name": "Bumper trim",
         "alois": "SZ",
         "qty": 1,
-        "no": 213
+        "no": 212
       },
       {
         "loc": "-",
@@ -47152,7 +47149,7 @@
         "name": "Bumper panel",
         "alois": "SZ",
         "qty": 1,
-        "no": 214
+        "no": 213
       },
       {
         "loc": "-",
@@ -47160,10 +47157,10 @@
         "name": "Trim diffuse",
         "alois": "O8",
         "qty": 1,
-        "no": 215
+        "no": 214
       }
     ],
-    "count": 215,
+    "count": 214,
     "date": "2026-10-16"
   },
   "stockcheck_week": {
@@ -50310,16 +50307,6 @@
         "last_purc": "2026-10-09"
       },
       {
-        "item": "41008491727",
-        "name": "Door front l",
-        "alois": "SZ",
-        "loc": "(공란)",
-        "qty": 1,
-        "prc": 773700,
-        "val": 773700,
-        "last_purc": "2026-10-16"
-      },
-      {
         "item": "99985BA37B8",
         "name": "PILOTSPORT42",
         "alois": "SZ",
@@ -50370,10 +50357,10 @@
         "last_purc": "2026-10-16"
       }
     ],
-    "count": 13,
-    "total_val": 10425777,
-    "qty_sum": 18,
-    "pct": 1.05
+    "count": 12,
+    "total_val": 9652077,
+    "qty_sum": 17,
+    "pct": 0.97
   },
   "extaudit": {
     "date": "2026-10-16",
