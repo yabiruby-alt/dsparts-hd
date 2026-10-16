@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 16일 (금) · 11:13 기준",
+    "generated_at": "10월 16일 (금) · 11:25 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -264,7 +264,7 @@
     ]
   },
   "inv": {
-    "total": 994871559,
+    "total": 994532115,
     "item_count": 2165,
     "code_count": 25,
     "alois_groups": [
@@ -276,7 +276,7 @@
           {
             "code": "A1",
             "val": 214910534,
-            "pct": 21.6,
+            "pct": 21.61,
             "qty": 2391,
             "parts": [
               {
@@ -367,9 +367,9 @@
           },
           {
             "code": "A2",
-            "val": 20021814,
+            "val": 19992075,
             "pct": 2.01,
-            "qty": 981,
+            "qty": 980,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -480,16 +480,16 @@
                 "val": 224602
               },
               {
-                "item": "34356890788",
-                "name": "Brake pad we",
-                "qty": 7,
-                "val": 208173
-              },
-              {
                 "item": "11428092620",
                 "name": "Set oil-filt",
                 "qty": 9,
                 "val": 186030
+              },
+              {
+                "item": "34356890788",
+                "name": "Brake pad we",
+                "qty": 6,
+                "val": 178434
               },
               {
                 "item": "33306787062",
@@ -573,9 +573,9 @@
           },
           {
             "code": "A3",
-            "val": 28516382,
-            "pct": 2.87,
-            "qty": 512,
+            "val": 28207727,
+            "pct": 2.84,
+            "qty": 511,
             "parts": [
               {
                 "item": "63117214961",
@@ -598,8 +598,8 @@
               {
                 "item": "34116889570",
                 "name": "Repair kit,",
-                "qty": 4,
-                "val": 1234620
+                "qty": 3,
+                "val": 925965
               },
               {
                 "item": "51147057794",
@@ -1514,7 +1514,7 @@
           {
             "code": "A5",
             "val": 102801559,
-            "pct": 10.33,
+            "pct": 10.34,
             "qty": 1466,
             "parts": [
               {
@@ -4888,9 +4888,9 @@
             ]
           }
         ],
-        "subtotal_val": 505647712,
-        "subtotal_qty": 8756,
-        "subtotal_pct": 50.83
+        "subtotal_val": 505309318,
+        "subtotal_qty": 8754,
+        "subtotal_pct": 50.81
       },
       {
         "code": "L",
@@ -11984,7 +11984,7 @@
         ],
         "subtotal_val": 208529902,
         "subtotal_qty": 2188,
-        "subtotal_pct": 20.96
+        "subtotal_pct": 20.97
       },
       {
         "code": "I",
@@ -12709,21 +12709,21 @@
           },
           {
             "code": "SY",
-            "val": 9510500,
+            "val": 9509450,
             "pct": 0.96,
             "qty": 386,
             "parts": [
               {
-                "item": "99995BC4397",
-                "name": "0W-30 985 (20L) 985",
-                "qty": 156,
-                "val": 2423438
-              },
-              {
                 "item": "99995BC4396",
                 "name": "0W-30 DA5 (20L) DA5",
-                "qty": 154,
-                "val": 2369280
+                "qty": 161,
+                "val": 2476800
+              },
+              {
+                "item": "99995BC4397",
+                "name": "0W-30 985 (20L) 985",
+                "qty": 149,
+                "val": 2314868
               },
               {
                 "item": "99975BA26A5",
@@ -13504,15 +13504,15 @@
             ]
           }
         ],
-        "subtotal_val": 131851488,
+        "subtotal_val": 131850438,
         "subtotal_qty": 1708,
-        "subtotal_pct": 13.25
+        "subtotal_pct": 13.26
       }
     ]
   },
   "oaov": {
     "total": 59910027,
-    "inv_total": 994871559,
+    "inv_total": 994532115,
     "pct": 6.02,
     "oa_val": 39063529,
     "ov_val": 20846498,
@@ -20666,7 +20666,7 @@
         "ref_no": "SB2610000466",
         "req_qty": 1,
         "crt_qty": 11,
-        "avail_qty": 10,
+        "avail_qty": 9,
         "req_dt": "10-08",
         "req_dt_full": "2026-10-08 14:50:01",
         "req_brch": "AS_부산(해운중동)",
@@ -22815,10 +22815,27 @@
         "val": 8320,
         "sa": "박영묵",
         "dday": "D+0일"
+      },
+      {
+        "item": "61627474264",
+        "name": "Wiper blade G07 rear",
+        "alois": "OE",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000826",
+        "req_qty": 1,
+        "crt_qty": 11,
+        "avail_qty": 9,
+        "req_dt": "10-16",
+        "req_dt_full": "2026-10-16 11:26:24",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 24480,
+        "sa": "우종훈",
+        "dday": "D+0일"
       }
     ],
-    "count": 292,
-    "total_val": 86743685,
+    "count": 293,
+    "total_val": 86768165,
     "groups": [
       {
         "code": "RO",
@@ -25797,11 +25814,28 @@
             "val": 8320,
             "sa": "박영묵",
             "dday": "D+0일"
+          },
+          {
+            "item": "61627474264",
+            "name": "Wiper blade G07 rear",
+            "alois": "OE",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000826",
+            "req_qty": 1,
+            "crt_qty": 11,
+            "avail_qty": 9,
+            "req_dt": "10-16",
+            "req_dt_full": "2026-10-16 11:26:24",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 24480,
+            "sa": "우종훈",
+            "dday": "D+0일"
           }
         ],
-        "count": 175,
-        "qty_sum": 265,
-        "val": 52730411
+        "count": 176,
+        "qty_sum": 266,
+        "val": 52754891
       },
       {
         "code": "SB",
@@ -26903,7 +26937,7 @@
             "ref_no": "SB2610000466",
             "req_qty": 1,
             "crt_qty": 11,
-            "avail_qty": 10,
+            "avail_qty": 9,
             "req_dt": "10-08",
             "req_dt_full": "2026-10-08 14:50:01",
             "req_brch": "AS_부산(해운중동)",
@@ -37118,8 +37152,8 @@
       },
       {
         "ro": "RO2610000265",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "사고수리",
         "sa": "강충성",
         "pub": "2026-10-06",
@@ -37722,6 +37756,17 @@
         "amt": 466464
       },
       {
+        "ro": "RO2610000826",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Recall/TC",
+        "sa": "우종훈",
+        "pub": "2026-10-12",
+        "pub_full": "2026-10-12 09:54",
+        "dday": "D+4일",
+        "amt": 936733
+      },
+      {
         "ro": "RO2610000503",
         "stat": "가정산 완료",
         "stat_cd": "05",
@@ -37730,7 +37775,7 @@
         "pub": "2026-10-12",
         "pub_full": "2026-10-12 09:54",
         "dday": "D+4일",
-        "amt": 996200
+        "amt": 819368
       },
       {
         "ro": "RO2610000507",
@@ -38493,14 +38538,14 @@
       },
       {
         "ro": "RO2610000678",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-14",
         "pub_full": "2026-10-14 09:44",
         "dday": "D+2일",
-        "amt": 1187183
+        "amt": 1182633
       },
       {
         "ro": "RO2610000680",
@@ -39600,7 +39645,7 @@
         "pub": "2026-10-16",
         "pub_full": "2026-10-16 10:23",
         "dday": "D+0일",
-        "amt": 379200
+        "amt": 351200
       },
       {
         "ro": "RO2610000819",
@@ -39645,30 +39690,52 @@
         "pub_full": "2026-10-16 10:56",
         "dday": "D+0일",
         "amt": 673016
+      },
+      {
+        "ro": "RO2610000824",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "입고 Proactive-RITA",
+        "sa": "김민규",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 11:19",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000825",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 11:20",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 368,
-    "total_amt": 860735881,
+    "count": 371,
+    "total_amt": 861463232,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 13,
+        "count": 15,
         "amt": 10726000
       },
       {
         "stat": "상담완료",
-        "count": 171,
-        "amt": 520544165
+        "count": 172,
+        "amt": 522203731
       },
       {
         "stat": "정비시작",
-        "count": 29,
-        "amt": 39789856
+        "count": 30,
+        "amt": 40221656
       },
       {
         "stat": "End Control 요청",
-        "count": 42,
-        "amt": 110838040
+        "count": 41,
+        "amt": 109650857
       },
       {
         "stat": "공정마감",
@@ -39678,7 +39745,7 @@
       {
         "stat": "가정산 완료",
         "count": 111,
-        "amt": 177903502
+        "amt": 177726670
       }
     ],
     "oldest": "D+542일"
@@ -40725,7 +40792,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 48,
-            "avail_qty": 46,
+            "avail_qty": 45,
             "val": 68322
           },
           {
@@ -42603,7 +42670,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 48,
-            "avail_qty": 46,
+            "avail_qty": 45,
             "val": 68322
           },
           {
@@ -42613,7 +42680,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 11,
-            "avail_qty": 10,
+            "avail_qty": 9,
             "val": 24480
           }
         ],
@@ -44029,7 +44096,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 12,
-            "avail_qty": 11,
+            "avail_qty": 10,
             "val": 156975
           },
           {
@@ -50023,7 +50090,7 @@
         "item": "99995BC4396",
         "name": "0W-30 DA5 (20L) DA5",
         "alois": "SY",
-        "qty": 154,
+        "qty": 161,
         "no": 381
       },
       {
@@ -50031,7 +50098,7 @@
         "item": "99995BC4397",
         "name": "0W-30 985 (20L) 985",
         "alois": "SY",
-        "qty": 156,
+        "qty": 149,
         "no": 382
       },
       {
