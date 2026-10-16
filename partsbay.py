@@ -1129,15 +1129,13 @@ def build_ext_audit(rows, today_str):
                     sp_violations.append(base_of(r, "차대 없는 일반부품인데 정산상세유형이 '고객' — 원래 외부판매 대상 (BMW 타 딜러 판매는 예외)"))
                 elif not vin and detl in ("외부", "외부공업사") and not is_staff_name(cust) and not looks_like_business(cust):
                     sp_review.append(base_of(r, "차대 없는 외부/외부공업사 건인데 고객명이 직원/업체명 형식이 아님 — 확인 필요"))
-                elif not vin and detl in ("외부", "외부공업사") and is_staff_name(cust):
-                    sp_violations.append(base_of(r, "고객명이 직원 형식인데 정산상세유형이 외부/외부공업사 — 직원 판매는 외부판매 대상이 아님"))
             else:
                 if not vin and detl == "고객" and not is_staff_name(cust):
                     sp_violations.append(base_of(r, "라이프스타일(부품그룹7) 차대없음 '고객' 건인데 고객명이 직원 형식이 아님"))
                 elif not vin and detl in ("외부", "외부공업사") and not is_staff_name(cust):
                     sp_violations.append(base_of(r, "라이프스타일(부품그룹7) 차대없음 외부/외부공업사 건인데 고객명이 직원 형식이 아님 (마케팅 에이전시 예외 확인)"))
                 elif not vin and detl in ("외부", "외부공업사") and is_staff_name(cust):
-                    sp_violations.append(base_of(r, "라이프스타일(부품그룹7) 고객명이 직원 형식인데 정산상세유형이 외부/외부공업사 — 직원 판매는 외부판매 대상이 아님"))
+                    sp_violations.append(base_of(r, "라이프스타일(부품그룹7) 고객명이 직원 형식인데 정산상세유형이 외부/외부공업사 — 라이프스타일 직원 판매는 '고객' 처리가 맞음"))
             if vin and detl in ("외부", "외부공업사"):
                 sp_violations.append(base_of(r, "차대(VIN) 있는 외부/외부공업사 건 — 외부업체는 차대정보가 있으면 안 됨"))
             elif vin and detl == "고객" and looks_like_business(cust):

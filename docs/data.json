@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 16일 (금) · 15:16 기준",
+    "generated_at": "10월 16일 (금) · 15:18 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -39704,8 +39704,8 @@
       },
       {
         "ro": "RO2610000846",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우종훈",
         "pub": "2026-10-16",
@@ -39839,13 +39839,13 @@
       },
       {
         "stat": "정비시작",
-        "count": 41,
-        "amt": 40436422
+        "count": 40,
+        "amt": 39878239
       },
       {
         "stat": "End Control 요청",
-        "count": 52,
-        "amt": 114562752
+        "count": 53,
+        "amt": 115120935
       },
       {
         "stat": "공정마감",
@@ -45278,7 +45278,7 @@
     "total_val": 1006906,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10058
+    "resv_total": 10060
   },
   "nonmng": {
     "rows": [
@@ -50354,20 +50354,6 @@
         "reason": "라이프스타일(부품그룹7) 차대없음 외부/외부공업사 건인데 고객명이 직원 형식이 아님 (마케팅 에이전시 예외 확인)"
       },
       {
-        "inv": "AR2610003824",
-        "ro": "-",
-        "spno": "SP2610000028",
-        "cust": "정양석(영업직원)",
-        "vin": "-",
-        "pgrp": "3",
-        "detl": "외부",
-        "itemcd": "51952449251",
-        "item": "Coat hanger",
-        "amt": 84160,
-        "dt": "2026-10-07",
-        "reason": "고객명이 직원 형식인데 정산상세유형이 외부/외부공업사 — 직원 판매는 외부판매 대상이 아님"
-      },
-      {
         "inv": "AR2610003812",
         "ro": "-",
         "spno": "SP2610000011",
@@ -50656,14 +50642,14 @@
     ],
     "epc_count": 6,
     "epc_amt": 504200,
-    "sp_v_count": 5,
+    "sp_v_count": 4,
     "sp_r_count": 0,
     "ro_v_count": 0,
     "ro_r_count": 11,
-    "total_count": 16,
-    "violation_count": 5,
+    "total_count": 15,
+    "violation_count": 4,
     "review_count": 11,
-    "violation_amt": 2312214,
+    "violation_amt": 2228054,
     "review_amt": 792370
   },
   "reasons": {},
