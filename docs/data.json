@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 16일 (금) · 12:37 기준",
+    "generated_at": "10월 16일 (금) · 12:48 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -37925,17 +37925,6 @@
         "amt": 606794
       },
       {
-        "ro": "RO2610000557",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "사고수리",
-        "sa": "염진아",
-        "pub": "2026-10-12",
-        "pub_full": "2026-10-12 14:30",
-        "dday": "D+4일",
-        "amt": 1696900
-      },
-      {
         "ro": "RO2610000561",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -39653,8 +39642,8 @@
       },
       {
         "ro": "RO2610000823",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-16",
@@ -39716,30 +39705,52 @@
         "pub_full": "2026-10-16 12:27",
         "dday": "D+0일",
         "amt": 1724700
+      },
+      {
+        "ro": "RO2610000833",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "진단",
+        "sa": "최민수",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 12:49",
+        "dday": "D+0일",
+        "amt": 98000
+      },
+      {
+        "ro": "RO2610000834",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 12:50",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 375,
-    "total_amt": 866564079,
+    "count": 376,
+    "total_amt": 864965179,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 13,
+        "count": 14,
         "amt": 10726000
       },
       {
         "stat": "상담완료",
         "count": 170,
-        "amt": 524910277
+        "amt": 523311377
       },
       {
         "stat": "정비시작",
-        "count": 31,
-        "amt": 36868527
+        "count": 30,
+        "amt": 36195511
       },
       {
         "stat": "End Control 요청",
-        "count": 48,
-        "amt": 115398287
+        "count": 49,
+        "amt": 116071303
       },
       {
         "stat": "공정마감",
@@ -45056,7 +45067,7 @@
     "total_val": 69508366,
     "o_lines": 51,
     "o_val": 20571389,
-    "resv_total": 373
+    "resv_total": 370
   },
   "sbcar": {
     "groups": [
