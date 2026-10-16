@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 16일 (금) · 12:13 기준",
+    "generated_at": "10월 16일 (금) · 12:25 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -37800,8 +37800,8 @@
       },
       {
         "ro": "RO2610000828",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "정용환",
         "pub": "2026-10-12",
@@ -37830,17 +37830,6 @@
         "pub_full": "2026-10-12 10:44",
         "dday": "D+4일",
         "amt": 2340304
-      },
-      {
-        "ro": "RO2610000525",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "사고수리",
-        "sa": "염진아",
-        "pub": "2026-10-12",
-        "pub_full": "2026-10-12 11:03",
-        "dday": "D+4일",
-        "amt": 129100
       },
       {
         "ro": "RO2610000526",
@@ -39482,17 +39471,6 @@
         "amt": 3467700
       },
       {
-        "ro": "RO2610000804",
-        "stat": "정비시작",
-        "stat_cd": "03",
-        "svc": "입고 Proactive-RITA",
-        "sa": "김민규",
-        "pub": "2026-10-16",
-        "pub_full": "2026-10-16 09:00",
-        "dday": "D+0일",
-        "amt": 446171
-      },
-      {
         "ro": "RO2610000805",
         "stat": "End Control 요청",
         "stat_cd": "08",
@@ -39502,6 +39480,17 @@
         "pub_full": "2026-10-16 09:00",
         "dday": "D+0일",
         "amt": 1077567
+      },
+      {
+        "ro": "RO2610000804",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
+        "svc": "입고 Proactive-RITA",
+        "sa": "김민규",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 09:00",
+        "dday": "D+0일",
+        "amt": 446171
       },
       {
         "ro": "RO2610000806",
@@ -39527,8 +39516,8 @@
       },
       {
         "ro": "RO2610000808",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "안준영",
         "pub": "2026-10-16",
@@ -39670,8 +39659,8 @@
       },
       {
         "ro": "RO2610000823",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-16",
@@ -39711,10 +39700,21 @@
         "pub_full": "2026-10-16 12:02",
         "dday": "D+0일",
         "amt": 252940
+      },
+      {
+        "ro": "RO2610000831",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 12:15",
+        "dday": "D+0일",
+        "amt": 190068
       }
     ],
     "count": 374,
-    "total_amt": 864778411,
+    "total_amt": 864839379,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -39723,18 +39723,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 172,
-        "amt": 525846417
+        "count": 169,
+        "amt": 523185577
       },
       {
         "stat": "정비시작",
         "count": 32,
-        "amt": 37179261
+        "amt": 37406106
       },
       {
         "stat": "End Control 요청",
-        "count": 44,
-        "amt": 112365745
+        "count": 47,
+        "amt": 114860708
       },
       {
         "stat": "공정마감",
@@ -40489,7 +40489,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 146,
-            "avail_qty": 128,
+            "avail_qty": 127,
             "val": 24160
           }
         ],
@@ -40635,7 +40635,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 146,
-            "avail_qty": 128,
+            "avail_qty": 127,
             "val": 12080
           }
         ],
@@ -41003,7 +41003,7 @@
             "sa": "정용환",
             "req_qty": 2,
             "crt_qty": 146,
-            "avail_qty": 128,
+            "avail_qty": 127,
             "val": 24160
           }
         ],
@@ -41203,7 +41203,7 @@
             "sa": "최민수",
             "req_qty": 2,
             "crt_qty": 146,
-            "avail_qty": 128,
+            "avail_qty": 127,
             "val": 24160
           }
         ],
@@ -41319,7 +41319,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 146,
-            "avail_qty": 128,
+            "avail_qty": 127,
             "val": 12080
           }
         ],
@@ -43397,7 +43397,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 146,
-            "avail_qty": 128,
+            "avail_qty": 127,
             "val": 12080
           },
           {
@@ -44759,7 +44759,7 @@
             "sa": "최민수",
             "req_qty": 2,
             "crt_qty": 146,
-            "avail_qty": 128,
+            "avail_qty": 127,
             "val": 24160
           }
         ],
@@ -45170,33 +45170,11 @@
         "count": 3,
         "qty_sum": 10,
         "val": 220058
-      },
-      {
-        "code": "SB2610000802",
-        "resv_full": "2026-10-16 11:35",
-        "resv": "10-16",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "61610003090",
-            "name": "Set of wiper 6GT",
-            "alois": "A2",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 11,
-            "avail_qty": 10,
-            "val": 64935
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 64935
       }
     ],
-    "sb_count": 4,
-    "line_count": 9,
-    "total_val": 1291899,
+    "sb_count": 3,
+    "line_count": 8,
+    "total_val": 1226964,
     "o_lines": 0,
     "o_val": 0,
     "resv_total": 10035
