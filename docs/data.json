@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 16일 (금) · 16:06 기준",
+    "generated_at": "10월 16일 (금) · 16:18 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -264,7 +264,7 @@
     ]
   },
   "inv": {
-    "total": 996883563,
+    "total": 996156471,
     "item_count": 2150,
     "code_count": 25,
     "alois_groups": [
@@ -276,7 +276,7 @@
           {
             "code": "A1",
             "val": 214015197,
-            "pct": 21.47,
+            "pct": 21.48,
             "qty": 2368,
             "parts": [
               {
@@ -367,9 +367,9 @@
           },
           {
             "code": "A2",
-            "val": 19836284,
-            "pct": 1.99,
-            "qty": 974,
+            "val": 19771349,
+            "pct": 1.98,
+            "qty": 973,
             "parts": [
               {
                 "item": "64115A547D8",
@@ -420,16 +420,16 @@
                 "val": 676000
               },
               {
-                "item": "61610003090",
-                "name": "Set of wiper 6GT",
-                "qty": 10,
-                "val": 649350
-              },
-              {
                 "item": "61610049744",
                 "name": "Set of wiper F60",
                 "qty": 9,
                 "val": 584460
+              },
+              {
+                "item": "61610003090",
+                "name": "Set of wiper 6GT",
+                "qty": 9,
+                "val": 584415
               },
               {
                 "item": "13718577171",
@@ -1514,7 +1514,7 @@
           {
             "code": "A5",
             "val": 101385556,
-            "pct": 10.17,
+            "pct": 10.18,
             "qty": 1458,
             "parts": [
               {
@@ -2812,7 +2812,7 @@
           {
             "code": "A6",
             "val": 92238372,
-            "pct": 9.25,
+            "pct": 9.26,
             "qty": 1443,
             "parts": [
               {
@@ -4888,9 +4888,9 @@
             ]
           }
         ],
-        "subtotal_val": 502513749,
+        "subtotal_val": 502448814,
         "subtotal_qty": 8696,
-        "subtotal_pct": 50.41
+        "subtotal_pct": 50.44
       },
       {
         "code": "L",
@@ -5734,7 +5734,7 @@
           {
             "code": "L7",
             "val": 59626256,
-            "pct": 5.98,
+            "pct": 5.99,
             "qty": 1389,
             "parts": [
               {
@@ -7998,7 +7998,7 @@
         ],
         "subtotal_val": 151763108,
         "subtotal_qty": 4508,
-        "subtotal_pct": 15.22
+        "subtotal_pct": 15.23
       },
       {
         "code": "O",
@@ -10014,7 +10014,7 @@
           {
             "code": "OA",
             "val": 39021946,
-            "pct": 3.91,
+            "pct": 3.92,
             "qty": 226,
             "parts": [
               {
@@ -11948,7 +11948,7 @@
         ],
         "subtotal_val": 205237307,
         "subtotal_qty": 2164,
-        "subtotal_pct": 20.59
+        "subtotal_pct": 20.6
       },
       {
         "code": "I",
@@ -12237,9 +12237,9 @@
           },
           {
             "code": "SK",
-            "val": 39221068,
-            "pct": 3.93,
-            "qty": 878,
+            "val": 38558911,
+            "pct": 3.87,
+            "qty": 876,
             "parts": [
               {
                 "item": "34505B77C23",
@@ -12250,8 +12250,8 @@
               {
                 "item": "12415BA2AE4",
                 "name": "Starter",
-                "qty": 10,
-                "val": 6538350
+                "qty": 9,
+                "val": 5884515
               },
               {
                 "item": "12415BA2AE5",
@@ -12340,8 +12340,8 @@
               {
                 "item": "12418571349",
                 "name": "Acoustic plu",
-                "qty": 21,
-                "val": 174762
+                "qty": 20,
+                "val": 166440
               },
               {
                 "item": "11318490219",
@@ -12742,7 +12742,7 @@
           {
             "code": "SZ",
             "val": 75689422,
-            "pct": 7.59,
+            "pct": 7.6,
             "qty": 323,
             "parts": [
               {
@@ -13414,16 +13414,16 @@
             ]
           }
         ],
-        "subtotal_val": 128665636,
-        "subtotal_qty": 1684,
-        "subtotal_pct": 12.91
+        "subtotal_val": 128003479,
+        "subtotal_qty": 1682,
+        "subtotal_pct": 12.85
       }
     ]
   },
   "oaov": {
     "total": 57953419,
-    "inv_total": 996883563,
-    "pct": 5.81,
+    "inv_total": 996156471,
+    "pct": 5.82,
     "oa_val": 39021946,
     "ov_val": 18931473,
     "oa_lines": 103,
@@ -15242,10 +15242,10 @@
     "foot_note": "이번 달 발행 없음"
   },
   "acc": {
-    "total": 7315693,
-    "cost": 7142389,
-    "lines": 288,
-    "invoices_count": 73,
+    "total": 8233293,
+    "cost": 8059989,
+    "lines": 290,
+    "invoices_count": 74,
     "by_type": [
       {
         "code": "3",
@@ -15262,11 +15262,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 195,
-        "val": 4889117
+        "lines": 197,
+        "val": 5806717
       }
     ],
     "recent5": [
+      {
+        "inv": "AR2610003852",
+        "num": "SP2610000032",
+        "sa": "조재완",
+        "dt": "2026-10-16 16:10",
+        "amt": 917600,
+        "cost": 917600
+      },
       {
         "inv": "AR2610003851",
         "num": "SP2610000061",
@@ -15298,14 +15306,6 @@
         "dt": "2026-10-15 17:51",
         "amt": 45000,
         "cost": 24750
-      },
-      {
-        "inv": "IV2610001256",
-        "num": "RO2610000698",
-        "sa": "정용환",
-        "dt": "2026-10-15 17:25",
-        "amt": 0,
-        "cost": 8250
       }
     ]
   },
@@ -21930,23 +21930,6 @@
         "dday": "D+2일"
       },
       {
-        "item": "51139883469",
-        "name": "Lid",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "SB",
-        "ref_no": "SB2610000842",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "10-14",
-        "req_dt_full": "2026-10-14 17:58:50",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 24648,
-        "sa": "최민수",
-        "dday": "D+2일"
-      },
-      {
         "item": "63217477603",
         "name": "Rear light i",
         "alois": "O8",
@@ -22590,6 +22573,23 @@
         "req_brch": "AS_부산(해운중동)",
         "val": 42662,
         "sa": "박태강",
+        "dday": "D+0일"
+      },
+      {
+        "item": "51139883469",
+        "name": "Lid",
+        "alois": "O8",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000865",
+        "req_qty": 1,
+        "crt_qty": 1,
+        "avail_qty": 0,
+        "req_dt": "10-16",
+        "req_dt_full": "2026-10-16 16:17:18",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 24648,
+        "sa": "최민수",
         "dday": "D+0일"
       }
     ],
@@ -25420,11 +25420,28 @@
             "val": 50058,
             "sa": "심호연",
             "dday": "D+0일"
+          },
+          {
+            "item": "51139883469",
+            "name": "Lid",
+            "alois": "O8",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000865",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "req_dt": "10-16",
+            "req_dt_full": "2026-10-16 16:17:18",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 24648,
+            "sa": "최민수",
+            "dday": "D+0일"
           }
         ],
-        "count": 166,
-        "qty_sum": 243,
-        "val": 49772131
+        "count": 167,
+        "qty_sum": 244,
+        "val": 49796779
       },
       {
         "code": "SB",
@@ -26688,23 +26705,6 @@
             "dday": "D+2일"
           },
           {
-            "item": "51139883469",
-            "name": "Lid",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "SB",
-            "ref_no": "SB2610000842",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "10-14",
-            "req_dt_full": "2026-10-14 17:58:50",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 24648,
-            "sa": "최민수",
-            "dday": "D+2일"
-          },
-          {
             "item": "63117470414",
             "name": "Headlight wi",
             "alois": "O8",
@@ -26790,9 +26790,9 @@
             "dday": "D+1일"
           }
         ],
-        "count": 80,
-        "qty_sum": 98,
-        "val": 27392464
+        "count": 79,
+        "qty_sum": 97,
+        "val": 27367816
       },
       {
         "code": "SP",
@@ -35228,13 +35228,13 @@
       {
         "date": "10-16",
         "in_val": 12295523,
-        "out_val": 16491859,
-        "net": -4196336
+        "out_val": 17409459,
+        "net": -5113936
       }
     ],
     "total_in": 124876218,
-    "total_out": 151905504,
-    "net": -27029286,
+    "total_out": 152823104,
+    "net": -27946886,
     "by_code": [
       {
         "code": "O8",
@@ -35251,8 +35251,8 @@
       {
         "code": "OE",
         "in_val": 9978375,
-        "out_val": 12048660,
-        "net": -2070285
+        "out_val": 12966260,
+        "net": -2987885
       },
       {
         "code": "ON",
@@ -39586,8 +39586,8 @@
       },
       {
         "ro": "RO2610000863",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Recall/TC",
         "sa": "안준영",
         "pub": "2026-10-16",
@@ -39605,25 +39605,47 @@
         "pub_full": "2026-10-16 16:00",
         "dday": "D+0일",
         "amt": 511751
+      },
+      {
+        "ro": "RO2610000865",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "경수리",
+        "sa": "최민수",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 16:17",
+        "dday": "D+0일",
+        "amt": 31200
+      },
+      {
+        "ro": "RO2610000866",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "우종훈",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 16:18",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 394,
-    "total_amt": 835199937,
+    "count": 396,
+    "total_amt": 835231137,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 16,
+        "count": 17,
         "amt": 10726000
       },
       {
         "stat": "상담완료",
         "count": 175,
-        "amt": 525119537
+        "amt": 524265972
       },
       {
         "stat": "정비시작",
-        "count": 42,
-        "amt": 40523231
+        "count": 43,
+        "amt": 41407996
       },
       {
         "stat": "End Control 요청",
@@ -40318,7 +40340,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 10,
+            "crt_qty": 9,
             "avail_qty": 2,
             "val": 653835
           },
@@ -40328,7 +40350,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 21,
+            "crt_qty": 20,
             "avail_qty": 10,
             "val": 8322
           }
@@ -40350,7 +40372,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 10,
+            "crt_qty": 9,
             "avail_qty": 2,
             "val": 653835
           },
@@ -40360,7 +40382,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 21,
+            "crt_qty": 20,
             "avail_qty": 10,
             "val": 8322
           }
@@ -40382,7 +40404,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 2,
-            "crt_qty": 138,
+            "crt_qty": 137,
             "avail_qty": 123,
             "val": 24160
           }
@@ -40528,7 +40550,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 138,
+            "crt_qty": 137,
             "avail_qty": 123,
             "val": 12080
           }
@@ -40770,7 +40792,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 662,
+            "crt_qty": 657,
             "avail_qty": 619,
             "val": 79910
           },
@@ -40896,7 +40918,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 2,
-            "crt_qty": 138,
+            "crt_qty": 137,
             "avail_qty": 123,
             "val": 24160
           }
@@ -41002,7 +41024,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 5,
-            "crt_qty": 662,
+            "crt_qty": 657,
             "avail_qty": 619,
             "val": 79910
           },
@@ -41096,7 +41118,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 2,
-            "crt_qty": 138,
+            "crt_qty": 137,
             "avail_qty": 123,
             "val": 24160
           }
@@ -41138,7 +41160,7 @@
             "alois": "L1",
             "sa": "김도현",
             "req_qty": 5,
-            "crt_qty": 662,
+            "crt_qty": 657,
             "avail_qty": 619,
             "val": 79910
           },
@@ -41212,7 +41234,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 138,
+            "crt_qty": 137,
             "avail_qty": 123,
             "val": 12080
           }
@@ -41278,7 +41300,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 10,
+            "crt_qty": 9,
             "avail_qty": 2,
             "val": 653835
           },
@@ -41288,7 +41310,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 21,
+            "crt_qty": 20,
             "avail_qty": 10,
             "val": 8322
           }
@@ -42698,7 +42720,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 10,
+            "crt_qty": 9,
             "avail_qty": 2,
             "val": 653835
           },
@@ -42708,7 +42730,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 21,
+            "crt_qty": 20,
             "avail_qty": 10,
             "val": 8322
           }
@@ -42856,7 +42878,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 21,
+            "crt_qty": 20,
             "avail_qty": 10,
             "val": 8322
           }
@@ -43058,7 +43080,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 10,
+            "crt_qty": 9,
             "avail_qty": 2,
             "val": 653835
           },
@@ -43068,7 +43090,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 21,
+            "crt_qty": 20,
             "avail_qty": 10,
             "val": 8322
           }
@@ -43260,7 +43282,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 5,
-            "crt_qty": 662,
+            "crt_qty": 657,
             "avail_qty": 619,
             "val": 79910
           },
@@ -43290,7 +43312,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 138,
+            "crt_qty": 137,
             "avail_qty": 123,
             "val": 12080
           },
@@ -44112,7 +44134,7 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 662,
+            "crt_qty": 657,
             "avail_qty": 619,
             "val": 79910
           },
@@ -44186,7 +44208,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 10,
+            "crt_qty": 9,
             "avail_qty": 2,
             "val": 653835
           },
@@ -44196,7 +44218,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 21,
+            "crt_qty": 20,
             "avail_qty": 10,
             "val": 8322
           }
@@ -44250,7 +44272,7 @@
             "alois": "SK",
             "sa": "M GARAGE",
             "req_qty": 1,
-            "crt_qty": 21,
+            "crt_qty": 20,
             "avail_qty": 10,
             "val": 8322
           }
@@ -44314,7 +44336,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 21,
+            "crt_qty": 20,
             "avail_qty": 10,
             "val": 8322
           },
@@ -44652,7 +44674,7 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 2,
-            "crt_qty": 138,
+            "crt_qty": 137,
             "avail_qty": 123,
             "val": 24160
           }
@@ -44716,7 +44738,7 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 5,
-            "crt_qty": 662,
+            "crt_qty": 657,
             "avail_qty": 619,
             "val": 79910
           },
@@ -44790,7 +44812,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 10,
+            "crt_qty": 9,
             "avail_qty": 2,
             "val": 653835
           },
@@ -44800,7 +44822,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 21,
+            "crt_qty": 20,
             "avail_qty": 10,
             "val": 8322
           }
@@ -44978,35 +45000,13 @@
         "count": 2,
         "qty_sum": 5,
         "val": 137794
-      },
-      {
-        "code": "SB2610000842",
-        "resv_full": "2026-10-16 16:07",
-        "resv": "10-16",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "51139883469",
-            "name": "Lid",
-            "alois": "O8",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 24648
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 24648
       }
     ],
-    "sb_count": 4,
-    "line_count": 8,
-    "total_val": 1169348,
-    "o_lines": 1,
-    "o_val": 24648,
+    "sb_count": 3,
+    "line_count": 7,
+    "total_val": 1144700,
+    "o_lines": 0,
+    "o_val": 0,
     "resv_total": 10065
   },
   "nonmng": {
@@ -48309,7 +48309,7 @@
         "item": "12418571349",
         "name": "Acoustic plu",
         "alois": "SK",
-        "qty": 21,
+        "qty": 20,
         "no": 172
       },
       {
@@ -48525,7 +48525,7 @@
         "item": "61610003090",
         "name": "Set of wiper 6GT",
         "alois": "A2",
-        "qty": 10,
+        "qty": 9,
         "no": 199
       },
       {
@@ -49205,7 +49205,7 @@
         "item": "12415BA2AE4",
         "name": "Starter",
         "alois": "SK",
-        "qty": 10,
+        "qty": 9,
         "no": 284
       },
       {
