@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 16일 (금) · 11:02 기준",
+    "generated_at": "10월 16일 (금) · 11:13 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -264,7 +264,7 @@
     ]
   },
   "inv": {
-    "total": 995034805,
+    "total": 994871559,
     "item_count": 2165,
     "code_count": 25,
     "alois_groups": [
@@ -2811,9 +2811,9 @@
           },
           {
             "code": "A6",
-            "val": 92457354,
-            "pct": 9.29,
-            "qty": 1447,
+            "val": 92323794,
+            "pct": 9.28,
+            "qty": 1446,
             "parts": [
               {
                 "item": "63119450229",
@@ -3314,12 +3314,6 @@
                 "val": 270687
               },
               {
-                "item": "34526884421",
-                "name": "Pulse genera",
-                "qty": 2,
-                "val": 267120
-              },
-              {
                 "item": "11318590950",
                 "name": "Repair kit f",
                 "qty": 3,
@@ -3624,6 +3618,12 @@
                 "name": "Key case, M",
                 "qty": 2,
                 "val": 135898
+              },
+              {
+                "item": "34526884421",
+                "name": "Pulse genera",
+                "qty": 1,
+                "val": 133560
               },
               {
                 "item": "61615A9DCE3",
@@ -4888,8 +4888,8 @@
             ]
           }
         ],
-        "subtotal_val": 505781272,
-        "subtotal_qty": 8758,
+        "subtotal_val": 505647712,
+        "subtotal_qty": 8756,
         "subtotal_pct": 50.83
       },
       {
@@ -5305,9 +5305,9 @@
           },
           {
             "code": "L6",
-            "val": 29680866,
+            "val": 29651180,
             "pct": 2.98,
-            "qty": 300,
+            "qty": 299,
             "parts": [
               {
                 "item": "32307855724",
@@ -5490,12 +5490,6 @@
                 "val": 135490
               },
               {
-                "item": "83125A7DC77",
-                "name": "BMW Natural",
-                "qty": 4,
-                "val": 118744
-              },
-              {
                 "item": "61615A43585",
                 "name": "Set of wiper F30,34,80",
                 "qty": 2,
@@ -5524,6 +5518,12 @@
                 "name": "Protective r",
                 "qty": 1,
                 "val": 92976
+              },
+              {
+                "item": "83125A7DC77",
+                "name": "BMW Natural",
+                "qty": 3,
+                "val": 89058
               },
               {
                 "item": "34206881294",
@@ -7996,8 +7996,8 @@
             ]
           }
         ],
-        "subtotal_val": 139484890,
-        "subtotal_qty": 3640,
+        "subtotal_val": 139455204,
+        "subtotal_qty": 3639,
         "subtotal_pct": 14.02
       },
       {
@@ -12298,7 +12298,7 @@
           {
             "code": "SK",
             "val": 39248842,
-            "pct": 3.94,
+            "pct": 3.95,
             "qty": 881,
             "parts": [
               {
@@ -13512,7 +13512,7 @@
   },
   "oaov": {
     "total": 59910027,
-    "inv_total": 995034805,
+    "inv_total": 994871559,
     "pct": 6.02,
     "oa_val": 39063529,
     "ov_val": 20846498,
@@ -39450,8 +39450,8 @@
       },
       {
         "ro": "RO2610000805",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "입고 Proactive-RITA",
         "sa": "우종훈",
         "pub": "2026-10-16",
@@ -39657,13 +39657,13 @@
       },
       {
         "stat": "상담완료",
-        "count": 172,
-        "amt": 521621732
+        "count": 171,
+        "amt": 520544165
       },
       {
         "stat": "정비시작",
-        "count": 28,
-        "amt": 38712289
+        "count": 29,
+        "amt": 39789856
       },
       {
         "stat": "End Control 요청",
@@ -43942,7 +43942,7 @@
             "alois": "A3",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 4,
+            "crt_qty": 3,
             "avail_qty": 2,
             "val": 308655
           },
@@ -43952,7 +43952,7 @@
             "alois": "A2",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 7,
+            "crt_qty": 6,
             "avail_qty": 5,
             "val": 29739
           }
@@ -44854,6 +44854,28 @@
         "val": 61282
       },
       {
+        "code": "SB2610000842",
+        "resv_full": "2026-10-16 15:20",
+        "resv": "10-16",
+        "dday": "오늘",
+        "sa": "최민수",
+        "rows": [
+          {
+            "item": "51139883469",
+            "name": "Lid",
+            "alois": "O8",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 24648
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 24648
+      },
+      {
         "code": "SB2610000802",
         "resv_full": "2026-10-16 11:40",
         "resv": "10-16",
@@ -44874,28 +44896,6 @@
         "count": 1,
         "qty_sum": 1,
         "val": 64935
-      },
-      {
-        "code": "SB2610000842",
-        "resv_full": "2026-10-16 11:20",
-        "resv": "10-16",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "51139883469",
-            "name": "Lid",
-            "alois": "O8",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "val": 24648
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 24648
       }
     ],
     "sb_count": 75,
