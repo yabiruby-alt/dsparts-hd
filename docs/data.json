@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 16일 (금) · 08:50 기준",
+    "generated_at": "10월 16일 (금) · 09:04 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -39015,14 +39015,14 @@
       },
       {
         "ro": "RO2609001392",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "경수리",
         "sa": "김민규",
         "pub": "2026-09-22",
         "pub_full": "2026-09-22 13:39",
         "dday": "D+24일",
-        "amt": 0
+        "amt": 3996900
       },
       {
         "ro": "RO2609001401",
@@ -39477,8 +39477,8 @@
       },
       {
         "ro": "RO2610000086",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-01",
@@ -42114,25 +42114,80 @@
         "pub_full": "2026-10-16 08:42",
         "dday": "D+0일",
         "amt": 2581036
+      },
+      {
+        "ro": "RO2610000802",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 08:56",
+        "dday": "D+0일",
+        "amt": 56000
+      },
+      {
+        "ro": "RO2610000803",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "사고수리",
+        "sa": "강충성",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 08:58",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000805",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "입고 Proactive-RITA",
+        "sa": "우종훈",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 09:00",
+        "dday": "D+0일",
+        "amt": 0
+      },
+      {
+        "ro": "RO2610000804",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "입고 Proactive-RITA",
+        "sa": "김민규",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 09:00",
+        "dday": "D+0일",
+        "amt": 445885
+      },
+      {
+        "ro": "RO2610000806",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "안준영",
+        "pub": "2026-10-16",
+        "pub_full": "2026-10-16 09:05",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 356,
-    "total_amt": 864188610,
+    "count": 361,
+    "total_amt": 868687395,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 15,
+        "count": 17,
         "amt": 10726000
       },
       {
         "stat": "상담완료",
-        "count": 161,
-        "amt": 543244417
+        "count": 163,
+        "amt": 547196400
       },
       {
         "stat": "정비시작",
-        "count": 30,
-        "amt": 41551763
+        "count": 31,
+        "amt": 42098565
       },
       {
         "stat": "End Control 요청",
@@ -46454,7 +46509,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 4,
-            "avail_qty": 2,
+            "avail_qty": 1,
             "val": 174944
           }
         ],
@@ -46560,7 +46615,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 3,
-            "avail_qty": 2,
+            "avail_qty": 1,
             "val": 2937453
           },
           {
@@ -46570,7 +46625,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 4,
-            "avail_qty": 2,
+            "avail_qty": 1,
             "val": 174944
           }
         ],
@@ -47417,28 +47472,6 @@
         "val": 289299
       },
       {
-        "code": "SB2610000162",
-        "resv_full": "2026-10-16 09:00",
-        "resv": "10-16",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "83135A82511",
-            "name": "Brake fluid",
-            "alois": "L1",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 153,
-            "avail_qty": 131,
-            "val": 12080
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 12080
-      },
-      {
         "code": "SB2609001571",
         "resv_full": "2026-10-16 09:00",
         "resv": "10-16",
@@ -47491,12 +47524,12 @@
         "val": 610275
       }
     ],
-    "sb_count": 82,
-    "line_count": 269,
-    "total_val": 72017053,
+    "sb_count": 81,
+    "line_count": 268,
+    "total_val": 72004973,
     "o_lines": 56,
     "o_val": 21535295,
-    "resv_total": 361
+    "resv_total": 359
   },
   "sbcar": {
     "groups": [
