@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 17일 (토) · 14:31 기준",
+    "generated_at": "10월 17일 (토) · 14:43 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1040774881,
+    "total": 1040500811,
     "item_count": 2208,
     "code_count": 25,
     "alois_groups": [
@@ -251,7 +251,7 @@
           {
             "code": "A1",
             "val": 212255815,
-            "pct": 20.39,
+            "pct": 20.4,
             "qty": 2330,
             "parts": [
               {
@@ -4919,7 +4919,7 @@
         ],
         "subtotal_val": 506517073,
         "subtotal_qty": 8748,
-        "subtotal_pct": 48.67
+        "subtotal_pct": 48.68
       },
       {
         "code": "L",
@@ -4928,9 +4928,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 24322065,
-            "pct": 2.34,
-            "qty": 1777,
+            "val": 24204969,
+            "pct": 2.33,
+            "qty": 1769,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4941,8 +4941,8 @@
               {
                 "item": "83215A65B99",
                 "name": "LL-22FE++ 0W12",
-                "qty": 367,
-                "val": 5287125
+                "qty": 361,
+                "val": 5190094
               },
               {
                 "item": "83515A6CDD7",
@@ -4965,8 +4965,8 @@
               {
                 "item": "11425B4C845",
                 "name": "Set oil-filt",
-                "qty": 73,
-                "val": 1464672
+                "qty": 72,
+                "val": 1444608
               },
               {
                 "item": "83212469985",
@@ -8055,9 +8055,9 @@
             ]
           }
         ],
-        "subtotal_val": 152478997,
-        "subtotal_qty": 4430,
-        "subtotal_pct": 14.65
+        "subtotal_val": 152361902,
+        "subtotal_qty": 4422,
+        "subtotal_pct": 14.64
       },
       {
         "code": "O",
@@ -12874,15 +12874,15 @@
           },
           {
             "code": "SX",
-            "val": 3160047,
-            "pct": 0.3,
-            "qty": 89,
+            "val": 3003072,
+            "pct": 0.29,
+            "qty": 88,
             "parts": [
               {
                 "item": "64115B78AA5",
                 "name": "Set nanopart",
-                "qty": 8,
-                "val": 1255800
+                "qty": 7,
+                "val": 1098825
               },
               {
                 "item": "11425B95013",
@@ -13737,15 +13737,15 @@
             ]
           }
         ],
-        "subtotal_val": 159675566,
-        "subtotal_qty": 1773,
-        "subtotal_pct": 15.34
+        "subtotal_val": 159518591,
+        "subtotal_qty": 1772,
+        "subtotal_pct": 15.33
       }
     ]
   },
   "oaov": {
     "total": 61119672,
-    "inv_total": 1040774881,
+    "inv_total": 1040500811,
     "pct": 5.87,
     "oa_val": 41405953,
     "ov_val": 19713719,
@@ -15630,9 +15630,9 @@
   },
   "acc": {
     "total": 9253093,
-    "cost": 9082266,
-    "lines": 303,
-    "invoices_count": 83,
+    "cost": 9089346,
+    "lines": 304,
+    "invoices_count": 84,
     "by_type": [
       {
         "code": "3",
@@ -15649,11 +15649,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 202,
+        "lines": 203,
         "val": 6091462
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2610001513",
+        "num": "RO2610000467",
+        "sa": "우상만",
+        "dt": "2026-10-17 14:41",
+        "amt": 0,
+        "cost": 7080
+      },
       {
         "inv": "IV2610001503",
         "num": "RO2610000362",
@@ -15685,14 +15693,6 @@
         "dt": "2026-10-17 13:21",
         "amt": 104535,
         "cost": 104535
-      },
-      {
-        "inv": "AR2610003855",
-        "num": "SP2610000063",
-        "sa": "박진호",
-        "dt": "2026-10-17 11:51",
-        "amt": 273540,
-        "cost": 247100
       }
     ]
   },
@@ -17649,7 +17649,7 @@
     ],
     "m12_val": 62279148,
     "m12_count": 200,
-    "m12_pct": 5.98,
+    "m12_pct": 5.99,
     "m24_items": [
       {
         "item": "24008741536",
@@ -38439,17 +38439,6 @@
         "amt": 2048601
       },
       {
-        "ro": "RO2610000409",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "진단",
-        "sa": "우상만",
-        "pub": "2026-10-08",
-        "pub_full": "2026-10-08 13:05",
-        "dday": "D+9일",
-        "amt": 56442
-      },
-      {
         "ro": "RO2610000427",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -38483,17 +38472,6 @@
         "amt": 163348
       },
       {
-        "ro": "RO2610000438",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "우상만",
-        "pub": "2026-10-08",
-        "pub_full": "2026-10-08 17:44",
-        "dday": "D+9일",
-        "amt": 643500
-      },
-      {
         "ro": "RO2610000439",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -38525,28 +38503,6 @@
         "pub_full": "2026-10-10 10:35",
         "dday": "D+7일",
         "amt": 606335
-      },
-      {
-        "ro": "RO2610000467",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "우상만",
-        "pub": "2026-10-10",
-        "pub_full": "2026-10-10 10:51",
-        "dday": "D+7일",
-        "amt": 26000
-      },
-      {
-        "ro": "RO2610000474",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "우상만",
-        "pub": "2026-10-10",
-        "pub_full": "2026-10-10 12:37",
-        "dday": "D+7일",
-        "amt": 28221
       },
       {
         "ro": "RO2610000480",
@@ -38602,17 +38558,6 @@
         "pub_full": "2026-10-12 08:55",
         "dday": "D+5일",
         "amt": 232884
-      },
-      {
-        "ro": "RO2610000493",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "진단",
-        "sa": "우상만",
-        "pub": "2026-10-12",
-        "pub_full": "2026-10-12 09:14",
-        "dday": "D+5일",
-        "amt": 84663
       },
       {
         "ro": "RO2610000494",
@@ -38847,8 +38792,8 @@
       },
       {
         "ro": "RO2610000583",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "공정마감",
+        "stat_cd": "04",
         "svc": "경수리",
         "sa": "우상만",
         "pub": "2026-10-13",
@@ -40376,8 +40321,8 @@
       },
       {
         "ro": "RO2610000883",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40431,8 +40376,8 @@
       },
       {
         "ro": "RO2610000888",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40442,8 +40387,8 @@
       },
       {
         "ro": "RO2610000889",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40508,8 +40453,8 @@
       },
       {
         "ro": "RO2610000894",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40530,8 +40475,8 @@
       },
       {
         "ro": "RO2610000897",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40574,8 +40519,8 @@
       },
       {
         "ro": "RO2610000901",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40651,43 +40596,43 @@
       },
       {
         "ro": "RO2610000909",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
-        "sa": "정용환",
+        "sa": "우상만",
         "pub": "2026-10-17",
         "pub_full": "2026-10-17 14:30",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 524040
       }
     ],
-    "count": 335,
-    "total_amt": 743847777,
+    "count": 330,
+    "total_amt": 743532991,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 16,
+        "count": 15,
         "amt": 10726000
       },
       {
         "stat": "상담완료",
-        "count": 143,
-        "amt": 487224999
+        "count": 138,
+        "amt": 484358462
       },
       {
         "stat": "정비시작",
-        "count": 31,
-        "amt": 19776227
+        "count": 25,
+        "amt": 16888288
       },
       {
         "stat": "End Control 요청",
-        "count": 36,
-        "amt": 63491681
+        "count": 42,
+        "amt": 66379620
       },
       {
         "stat": "공정마감",
-        "count": 5,
-        "amt": 11412333
+        "count": 6,
+        "amt": 13964084
       },
       {
         "stat": "가정산 완료",
@@ -42426,8 +42371,8 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 367,
-            "avail_qty": 357,
+            "crt_qty": 361,
+            "avail_qty": 350,
             "val": 75469
           },
           {
@@ -45554,8 +45499,8 @@
             "alois": "SX",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 8,
-            "avail_qty": 7,
+            "crt_qty": 7,
+            "avail_qty": 6,
             "val": 156975
           },
           {
@@ -46843,7 +46788,7 @@
         "no": 17
       },
       {
-        "loc": "A110101",
+        "loc": "A110102",
         "item": "34208842965",
         "name": "Repair kit b",
         "alois": "A5",
@@ -48621,7 +48566,7 @@
         "item": "64115B78AA5",
         "name": "Set nanopart",
         "alois": "SX",
-        "qty": 8,
+        "qty": 7,
         "no": 129
       },
       {
@@ -49045,7 +48990,7 @@
         "item": "11425B4C845",
         "name": "Set oil-filt",
         "alois": "L1",
-        "qty": 73,
+        "qty": 72,
         "no": 182
       },
       {
@@ -50661,7 +50606,7 @@
         "item": "83215A65B99",
         "name": "LL-22FE++ 0W12",
         "alois": "L1",
-        "qty": 367,
+        "qty": 361,
         "no": 384
       },
       {
@@ -50888,6 +50833,34 @@
     "sp_review": [],
     "ro_violations": [],
     "ro_review": [
+      {
+        "inv": "IV2610001512",
+        "ro": "RO2610000438",
+        "spno": "-",
+        "cust": "전선영",
+        "vin": "WBA71FJ02TCX67474",
+        "pgrp": "1",
+        "detl": "고객",
+        "itemcd": "66125B7D7B0",
+        "item": "Radio remote",
+        "amt": 562300,
+        "dt": "2026-10-17",
+        "reason": "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"
+      },
+      {
+        "inv": "IV2610001512",
+        "ro": "RO2610000438",
+        "spno": "-",
+        "cust": "전선영",
+        "vin": "WBA71FJ02TCX67474",
+        "pgrp": "1",
+        "detl": "고객",
+        "itemcd": "51215A65D30",
+        "item": "Integrierter",
+        "amt": 81200,
+        "dt": "2026-10-17",
+        "reason": "공임 0원 + 부품만 존재 — 예외 품목(오일/워셔액/부동액/요소수/키/배터리) 아니면 확인 필요"
+      },
       {
         "inv": "IV2610001446",
         "ro": "RO2610000865",
@@ -51148,12 +51121,12 @@
     "sp_v_count": 4,
     "sp_r_count": 0,
     "ro_v_count": 0,
-    "ro_r_count": 12,
-    "total_count": 16,
+    "ro_r_count": 14,
+    "total_count": 18,
     "violation_count": 4,
-    "review_count": 12,
+    "review_count": 14,
     "violation_amt": 2228054,
-    "review_amt": 823570
+    "review_amt": 1467070
   },
   "reasons": {},
   "tires": {
