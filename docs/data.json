@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 17일 (토) · 12:58 기준",
+    "generated_at": "10월 17일 (토) · 13:09 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1042178380,
+    "total": 1042097395,
     "item_count": 2212,
     "code_count": 25,
     "alois_groups": [
@@ -250,9 +250,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 212504472,
+            "val": 212431737,
             "pct": 20.39,
-            "qty": 2341,
+            "qty": 2340,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -299,8 +299,8 @@
               {
                 "item": "61615A85266",
                 "name": "Kit wiper bl",
-                "qty": 37,
-                "val": 2691195
+                "qty": 36,
+                "val": 2618460
               },
               {
                 "item": "61617469820",
@@ -1495,7 +1495,7 @@
           {
             "code": "A5",
             "val": 103224944,
-            "pct": 9.9,
+            "pct": 9.91,
             "qty": 1514,
             "parts": [
               {
@@ -4935,9 +4935,9 @@
             ]
           }
         ],
-        "subtotal_val": 507495481,
+        "subtotal_val": 507422746,
         "subtotal_qty": 8770,
-        "subtotal_pct": 48.7
+        "subtotal_pct": 48.69
       },
       {
         "code": "L",
@@ -8075,7 +8075,7 @@
         ],
         "subtotal_val": 152834493,
         "subtotal_qty": 4445,
-        "subtotal_pct": 14.66
+        "subtotal_pct": 14.67
       },
       {
         "code": "O",
@@ -12898,9 +12898,9 @@
           },
           {
             "code": "SX",
-            "val": 3184797,
-            "pct": 0.31,
-            "qty": 92,
+            "val": 3176547,
+            "pct": 0.3,
+            "qty": 91,
             "parts": [
               {
                 "item": "64115B78AA5",
@@ -12929,8 +12929,8 @@
               {
                 "item": "99975BA1A07",
                 "name": "BMWLongUmbre (New)",
-                "qty": 27,
-                "val": 222750
+                "qty": 26,
+                "val": 214500
               },
               {
                 "item": "99975BA0896",
@@ -13761,16 +13761,16 @@
             ]
           }
         ],
-        "subtotal_val": 159719976,
-        "subtotal_qty": 1792,
+        "subtotal_val": 159711726,
+        "subtotal_qty": 1791,
         "subtotal_pct": 15.33
       }
     ]
   },
   "oaov": {
     "total": 61119672,
-    "inv_total": 1042178380,
-    "pct": 5.86,
+    "inv_total": 1042097395,
+    "pct": 5.87,
     "oa_val": 41405953,
     "ov_val": 19713719,
     "oa_lines": 108,
@@ -39847,8 +39847,8 @@
       },
       {
         "ro": "RO2610000804",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-10-16",
@@ -39902,8 +39902,8 @@
       },
       {
         "ro": "RO2610000812",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-16",
@@ -40045,8 +40045,8 @@
       },
       {
         "ro": "RO2610000830",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-16",
@@ -40650,8 +40650,8 @@
       },
       {
         "ro": "RO2610000895",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40672,8 +40672,8 @@
       },
       {
         "ro": "RO2610000896",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40727,8 +40727,8 @@
       },
       {
         "ro": "RO2610000901",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40738,38 +40738,60 @@
       },
       {
         "ro": "RO2610000902",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
-        "sa": "최민수",
+        "sa": "우상만",
         "pub": "2026-10-17",
         "pub_full": "2026-10-17 12:54",
         "dday": "D+0일",
-        "amt": 0
+        "amt": 362235
+      },
+      {
+        "ro": "RO2610000903",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-17",
+        "pub_full": "2026-10-17 13:02",
+        "dday": "D+0일",
+        "amt": 556351
+      },
+      {
+        "ro": "RO2610000904",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우상만",
+        "pub": "2026-10-17",
+        "pub_full": "2026-10-17 13:06",
+        "dday": "D+0일",
+        "amt": 139381
       }
     ],
-    "count": 350,
-    "total_amt": 761290574,
+    "count": 352,
+    "total_amt": 762348541,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 16,
+        "count": 15,
         "amt": 10726000
       },
       {
         "stat": "상담완료",
-        "count": 157,
-        "amt": 501974557
+        "count": 158,
+        "amt": 501994244
       },
       {
         "stat": "정비시작",
-        "count": 30,
-        "amt": 21173048
+        "count": 33,
+        "amt": 22464268
       },
       {
         "stat": "End Control 요청",
-        "count": 52,
-        "amt": 76882618
+        "count": 49,
+        "amt": 76033979
       },
       {
         "stat": "공정마감",
@@ -40778,8 +40800,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 90,
-        "amt": 139122018
+        "count": 92,
+        "amt": 139717717
       }
     ],
     "oldest": "D+543일"
@@ -41470,7 +41492,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 64,
-            "avail_qty": 55,
+            "avail_qty": 54,
             "val": 8322
           }
         ],
@@ -41502,7 +41524,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 64,
-            "avail_qty": 55,
+            "avail_qty": 54,
             "val": 8322
           }
         ],
@@ -41523,8 +41545,8 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 2,
-            "crt_qty": 127,
-            "avail_qty": 113,
+            "crt_qty": 126,
+            "avail_qty": 112,
             "val": 24160
           }
         ],
@@ -41669,8 +41691,8 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 127,
-            "avail_qty": 113,
+            "crt_qty": 126,
+            "avail_qty": 112,
             "val": 12080
           }
         ],
@@ -41835,8 +41857,8 @@
             "alois": "SX",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 27,
-            "avail_qty": 24,
+            "crt_qty": 26,
+            "avail_qty": 23,
             "val": 8250
           }
         ],
@@ -41911,8 +41933,8 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 622,
-            "avail_qty": 584,
+            "crt_qty": 612,
+            "avail_qty": 574,
             "val": 79910
           },
           {
@@ -41921,8 +41943,8 @@
             "alois": "A2",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 29,
-            "avail_qty": 27,
+            "crt_qty": 28,
+            "avail_qty": 26,
             "val": 75693
           },
           {
@@ -41931,8 +41953,8 @@
             "alois": "A1",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 18,
-            "avail_qty": 16,
+            "crt_qty": 17,
+            "avail_qty": 15,
             "val": 19665
           }
         ],
@@ -42037,8 +42059,8 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 2,
-            "crt_qty": 127,
-            "avail_qty": 113,
+            "crt_qty": 126,
+            "avail_qty": 112,
             "val": 24160
           }
         ],
@@ -42143,8 +42165,8 @@
             "alois": "L1",
             "sa": "정용환",
             "req_qty": 5,
-            "crt_qty": 622,
-            "avail_qty": 584,
+            "crt_qty": 612,
+            "avail_qty": 574,
             "val": 79910
           },
           {
@@ -42153,8 +42175,8 @@
             "alois": "A2",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 29,
-            "avail_qty": 27,
+            "crt_qty": 28,
+            "avail_qty": 26,
             "val": 75693
           },
           {
@@ -42163,8 +42185,8 @@
             "alois": "A1",
             "sa": "정용환",
             "req_qty": 1,
-            "crt_qty": 18,
-            "avail_qty": 16,
+            "crt_qty": 17,
+            "avail_qty": 15,
             "val": 19665
           }
         ],
@@ -42237,8 +42259,8 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 2,
-            "crt_qty": 127,
-            "avail_qty": 113,
+            "crt_qty": 126,
+            "avail_qty": 112,
             "val": 24160
           }
         ],
@@ -42279,8 +42301,8 @@
             "alois": "L1",
             "sa": "김도현",
             "req_qty": 5,
-            "crt_qty": 622,
-            "avail_qty": 584,
+            "crt_qty": 612,
+            "avail_qty": 574,
             "val": 79910
           },
           {
@@ -42353,8 +42375,8 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 127,
-            "avail_qty": 113,
+            "crt_qty": 126,
+            "avail_qty": 112,
             "val": 12080
           }
         ],
@@ -42430,7 +42452,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 64,
-            "avail_qty": 55,
+            "avail_qty": 54,
             "val": 8322
           }
         ],
@@ -42523,8 +42545,8 @@
             "alois": "A1",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 37,
-            "avail_qty": 34,
+            "crt_qty": 36,
+            "avail_qty": 33,
             "val": 72735
           },
           {
@@ -43546,7 +43568,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 85,
-            "avail_qty": 82,
+            "avail_qty": 81,
             "val": 1125
           }
         ],
@@ -43914,7 +43936,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 64,
-            "avail_qty": 55,
+            "avail_qty": 54,
             "val": 8322
           }
         ],
@@ -44062,7 +44084,7 @@
             "sa": "우종훈",
             "req_qty": 1,
             "crt_qty": 64,
-            "avail_qty": 55,
+            "avail_qty": 54,
             "val": 8322
           }
         ],
@@ -44386,7 +44408,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 64,
-            "avail_qty": 55,
+            "avail_qty": 54,
             "val": 8322
           }
         ],
@@ -44577,8 +44599,8 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 5,
-            "crt_qty": 622,
-            "avail_qty": 584,
+            "crt_qty": 612,
+            "avail_qty": 574,
             "val": 79910
           },
           {
@@ -44607,8 +44629,8 @@
             "alois": "L1",
             "sa": "최민수",
             "req_qty": 1,
-            "crt_qty": 127,
-            "avail_qty": 113,
+            "crt_qty": 126,
+            "avail_qty": 112,
             "val": 12080
           },
           {
@@ -45491,8 +45513,8 @@
             "alois": "L1",
             "sa": "안준영",
             "req_qty": 5,
-            "crt_qty": 622,
-            "avail_qty": 584,
+            "crt_qty": 612,
+            "avail_qty": 574,
             "val": 79910
           },
           {
@@ -45553,6 +45575,70 @@
         "val": 3112397
       },
       {
+        "code": "SB2610001034",
+        "resv_full": "2026-10-19 15:20",
+        "resv": "10-19",
+        "dday": "D-2일",
+        "sa": "정용환",
+        "rows": [
+          {
+            "item": "12415BA2AE6",
+            "name": "Starter",
+            "alois": "SK",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 48,
+            "avail_qty": 47,
+            "val": 568490
+          },
+          {
+            "item": "12418571349",
+            "name": "Acoustic plu",
+            "alois": "SK",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 64,
+            "avail_qty": 54,
+            "val": 8322
+          },
+          {
+            "item": "51337025635",
+            "name": "Clip",
+            "alois": "L2",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 85,
+            "avail_qty": 81,
+            "val": 1125
+          }
+        ],
+        "count": 3,
+        "qty_sum": 3,
+        "val": 577937
+      },
+      {
+        "code": "SB2610001033",
+        "resv_full": "2026-10-19 14:00",
+        "resv": "10-19",
+        "dday": "D-2일",
+        "sa": "정용환",
+        "rows": [
+          {
+            "item": "51147499154",
+            "name": "Badge",
+            "alois": "A4",
+            "sa": "정용환",
+            "req_qty": 1,
+            "crt_qty": 6,
+            "avail_qty": 5,
+            "val": 57242
+          }
+        ],
+        "count": 1,
+        "qty_sum": 1,
+        "val": 57242
+      },
+      {
         "code": "SB2610000730",
         "resv_full": "2026-10-19 14:00",
         "resv": "10-19",
@@ -45576,7 +45662,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 64,
-            "avail_qty": 55,
+            "avail_qty": 54,
             "val": 8322
           }
         ],
@@ -45629,8 +45715,8 @@
             "alois": "L1",
             "sa": "우종훈",
             "req_qty": 2,
-            "crt_qty": 127,
-            "avail_qty": 113,
+            "crt_qty": 126,
+            "avail_qty": 112,
             "val": 24160
           }
         ],
@@ -45694,7 +45780,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 64,
-            "avail_qty": 55,
+            "avail_qty": 54,
             "val": 8322
           },
           {
@@ -45704,7 +45790,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 85,
-            "avail_qty": 82,
+            "avail_qty": 81,
             "val": 1125
           }
         ],
@@ -45988,7 +46074,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 85,
-            "avail_qty": 82,
+            "avail_qty": 81,
             "val": 1125
           }
         ],
@@ -46019,12 +46105,12 @@
         "val": 285430
       }
     ],
-    "sb_count": 67,
-    "line_count": 263,
-    "total_val": 69925077,
+    "sb_count": 69,
+    "line_count": 267,
+    "total_val": 70560256,
     "o_lines": 53,
     "o_val": 20762136,
-    "resv_total": 354
+    "resv_total": 355
   },
   "sbcar": {
     "groups": [
@@ -49103,7 +49189,7 @@
         "item": "61615A85266",
         "name": "Kit wiper bl",
         "alois": "A1",
-        "qty": 37,
+        "qty": 36,
         "no": 209
       },
       {
@@ -49775,7 +49861,7 @@
         "item": "99975BA1A07",
         "name": "BMWLongUmbre (New)",
         "alois": "SX",
-        "qty": 27,
+        "qty": 26,
         "no": 293
       },
       {
