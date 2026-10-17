@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 17일 (토) · 14:43 기준",
+    "generated_at": "10월 17일 (토) · 14:54 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -15629,16 +15629,16 @@
     "foot_note": "이번 달 발행 없음"
   },
   "acc": {
-    "total": 9253093,
-    "cost": 9089346,
-    "lines": 304,
-    "invoices_count": 84,
+    "total": 10469483,
+    "cost": 10519666,
+    "lines": 311,
+    "invoices_count": 85,
     "by_type": [
       {
         "code": "3",
         "label": "Car Accessories",
-        "lines": 94,
-        "val": 1963431
+        "lines": 100,
+        "val": 3145521
       },
       {
         "code": "5",
@@ -15649,11 +15649,19 @@
       {
         "code": "7",
         "label": "Accessories (Lifestyle)",
-        "lines": 203,
-        "val": 6091462
+        "lines": 204,
+        "val": 6125762
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2610001517",
+        "num": "RO2610000583",
+        "sa": "우상만",
+        "dt": "2026-10-17 14:44",
+        "amt": 1216390,
+        "cost": 1430320
+      },
       {
         "inv": "IV2610001513",
         "num": "RO2610000467",
@@ -15685,14 +15693,6 @@
         "dt": "2026-10-17 13:31",
         "amt": 50850,
         "cost": 43505
-      },
-      {
-        "inv": "IV2610001482",
-        "num": "RO2609001392",
-        "sa": "김민규",
-        "dt": "2026-10-17 13:21",
-        "amt": 104535,
-        "cost": 104535
       }
     ]
   },
@@ -36931,19 +36931,19 @@
       {
         "date": "10-17",
         "in_val": 5483525,
-        "out_val": 8474460,
-        "net": -2990935
+        "out_val": 9525295,
+        "net": -4041770
       }
     ],
     "total_in": 134913252,
-    "total_out": 178226251,
-    "net": -43312999,
+    "total_out": 179277086,
+    "net": -44363834,
     "by_code": [
       {
         "code": "O8",
         "in_val": 109108285,
-        "out_val": 174031079,
-        "net": -64922794
+        "out_val": 175081914,
+        "net": -65973629
       },
       {
         "code": "OA",
@@ -38077,8 +38077,8 @@
       },
       {
         "ro": "RO2610000171",
-        "stat": "공정마감",
-        "stat_cd": "04",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "경수리",
         "sa": "우상만",
         "pub": "2026-10-02",
@@ -38791,17 +38791,6 @@
         "amt": 177620
       },
       {
-        "ro": "RO2610000583",
-        "stat": "공정마감",
-        "stat_cd": "04",
-        "svc": "경수리",
-        "sa": "우상만",
-        "pub": "2026-10-13",
-        "pub_full": "2026-10-13 08:34",
-        "dday": "D+4일",
-        "amt": 2551751
-      },
-      {
         "ro": "RO2610000584",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -39011,17 +39000,6 @@
         "amt": 851400
       },
       {
-        "ro": "RO2610000653",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "우상만",
-        "pub": "2026-10-13",
-        "pub_full": "2026-10-13 17:06",
-        "dday": "D+4일",
-        "amt": 238000
-      },
-      {
         "ro": "RO2610000655",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -39045,8 +39023,8 @@
       },
       {
         "ro": "RO2610000657",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-13",
@@ -39056,8 +39034,8 @@
       },
       {
         "ro": "RO2610000658",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-13",
@@ -40222,8 +40200,8 @@
       },
       {
         "ro": "RO2610000874",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40233,8 +40211,8 @@
       },
       {
         "ro": "RO2610000875",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40244,8 +40222,8 @@
       },
       {
         "ro": "RO2610000876",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40266,8 +40244,8 @@
       },
       {
         "ro": "RO2610000878",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40343,8 +40321,8 @@
       },
       {
         "ro": "RO2610000885",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40409,8 +40387,8 @@
       },
       {
         "ro": "RO2610000891",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40431,8 +40409,8 @@
       },
       {
         "ro": "RO2610000893",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40442,8 +40420,8 @@
       },
       {
         "ro": "RO2610000895",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40497,8 +40475,8 @@
       },
       {
         "ro": "RO2610000899",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40530,8 +40508,8 @@
       },
       {
         "ro": "RO2610000902",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40563,8 +40541,8 @@
       },
       {
         "ro": "RO2610000905",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40606,8 +40584,8 @@
         "amt": 524040
       }
     ],
-    "count": 330,
-    "total_amt": 743532991,
+    "count": 328,
+    "total_amt": 740743240,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40616,28 +40594,28 @@
       },
       {
         "stat": "상담완료",
-        "count": 138,
-        "amt": 484358462
+        "count": 133,
+        "amt": 481773352
       },
       {
         "stat": "정비시작",
-        "count": 25,
-        "amt": 16888288
+        "count": 16,
+        "amt": 13802214
       },
       {
         "stat": "End Control 요청",
-        "count": 42,
-        "amt": 66379620
+        "count": 55,
+        "amt": 71812804
       },
       {
         "stat": "공정마감",
-        "count": 6,
-        "amt": 13964084
+        "count": 4,
+        "amt": 5477533
       },
       {
         "stat": "가정산 완료",
-        "count": 104,
-        "amt": 151216537
+        "count": 105,
+        "amt": 157151337
       }
     ],
     "oldest": "D+543일"
