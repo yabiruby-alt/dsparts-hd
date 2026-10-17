@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 17일 (토) · 14:19 기준",
+    "generated_at": "10월 17일 (토) · 14:31 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -23607,10 +23607,27 @@
         "val": 23360,
         "sa": "최민수",
         "dday": "D+0일"
+      },
+      {
+        "item": "34116886478",
+        "name": "Brake disc,",
+        "alois": "OE",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000819",
+        "req_qty": 2,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-17",
+        "req_dt_full": "2026-10-17 14:21:42",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 291960,
+        "sa": "김민규",
+        "dday": "D+0일"
       }
     ],
-    "count": 323,
-    "total_val": 89447878,
+    "count": 324,
+    "total_val": 89739838,
     "groups": [
       {
         "code": "RO",
@@ -27099,11 +27116,28 @@
             "val": 23360,
             "sa": "최민수",
             "dday": "D+0일"
+          },
+          {
+            "item": "34116886478",
+            "name": "Brake disc,",
+            "alois": "OE",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000819",
+            "req_qty": 2,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-17",
+            "req_dt_full": "2026-10-17 14:21:42",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 291960,
+            "sa": "김민규",
+            "dday": "D+0일"
           }
         ],
-        "count": 205,
-        "qty_sum": 286,
-        "val": 56225951
+        "count": 206,
+        "qty_sum": 288,
+        "val": 56517911
       },
       {
         "code": "SB",
@@ -40154,17 +40188,6 @@
         "amt": 0
       },
       {
-        "ro": "RO2610000862",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "김민규",
-        "pub": "2026-10-16",
-        "pub_full": "2026-10-16 15:40",
-        "dday": "D+1일",
-        "amt": 56000
-      },
-      {
         "ro": "RO2610000863",
         "stat": "가정산 완료",
         "stat_cd": "05",
@@ -40232,8 +40255,8 @@
       },
       {
         "ro": "RO2610000872",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40331,8 +40354,8 @@
       },
       {
         "ro": "RO2610000881",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40452,8 +40475,8 @@
       },
       {
         "ro": "RO2610000892",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Recall/TC",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40518,8 +40541,8 @@
       },
       {
         "ro": "RO2610000898",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40573,8 +40596,8 @@
       },
       {
         "ro": "RO2610000903",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40625,30 +40648,41 @@
         "pub_full": "2026-10-17 14:02",
         "dday": "D+0일",
         "amt": 0
+      },
+      {
+        "ro": "RO2610000909",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "정용환",
+        "pub": "2026-10-17",
+        "pub_full": "2026-10-17 14:30",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
     "count": 335,
-    "total_amt": 743903777,
+    "total_amt": 743847777,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 15,
+        "count": 16,
         "amt": 10726000
       },
       {
         "stat": "상담완료",
-        "count": 144,
-        "amt": 487280999
+        "count": 143,
+        "amt": 487224999
       },
       {
         "stat": "정비시작",
-        "count": 36,
-        "amt": 23902407
+        "count": 31,
+        "amt": 19776227
       },
       {
         "stat": "End Control 요청",
-        "count": 31,
-        "amt": 59365501
+        "count": 36,
+        "amt": 63491681
       },
       {
         "stat": "공정마감",
@@ -46159,7 +46193,7 @@
     "total_val": 71430823,
     "o_lines": 54,
     "o_val": 20771042,
-    "resv_total": 357
+    "resv_total": 356
   },
   "sbcar": {
     "groups": [
