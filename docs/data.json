@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 17일 (토) · 09:56 기준",
+    "generated_at": "10월 17일 (토) · 10:08 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1046812266,
+    "total": 1046800186,
     "item_count": 2215,
     "code_count": 25,
     "alois_groups": [
@@ -4946,9 +4946,9 @@
         "rows": [
           {
             "code": "L1",
-            "val": 25025491,
+            "val": 25013411,
             "pct": 2.39,
-            "qty": 1828,
+            "qty": 1827,
             "parts": [
               {
                 "item": "83215B49DD6",
@@ -4977,8 +4977,8 @@
               {
                 "item": "83135A82511",
                 "name": "Brake fluid",
-                "qty": 131,
-                "val": 1582480
+                "qty": 130,
+                "val": 1570400
               },
               {
                 "item": "11425B4C845",
@@ -8073,8 +8073,8 @@
             ]
           }
         ],
-        "subtotal_val": 153557774,
-        "subtotal_qty": 4490,
+        "subtotal_val": 153545694,
+        "subtotal_qty": 4489,
         "subtotal_pct": 14.67
       },
       {
@@ -13787,7 +13787,7 @@
   },
   "oaov": {
     "total": 61119672,
-    "inv_total": 1046812266,
+    "inv_total": 1046800186,
     "pct": 5.84,
     "oa_val": 41405953,
     "ov_val": 19713719,
@@ -20939,7 +20939,7 @@
         "ref_no": "SB2610000466",
         "req_qty": 1,
         "crt_qty": 11,
-        "avail_qty": 10,
+        "avail_qty": 9,
         "req_dt": "10-08",
         "req_dt_full": "2026-10-08 14:50:01",
         "req_brch": "AS_부산(해운중동)",
@@ -23632,10 +23632,27 @@
         "val": 12784,
         "sa": "최민수",
         "dday": "D+0일"
+      },
+      {
+        "item": "61627474264",
+        "name": "Wiper blade G07 rear",
+        "alois": "OE",
+        "pgrp": "B1",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000889",
+        "req_qty": 1,
+        "crt_qty": 11,
+        "avail_qty": 9,
+        "req_dt": "10-17",
+        "req_dt_full": "2026-10-17 10:04:31",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 24480,
+        "sa": "이정환",
+        "dday": "D+0일"
       }
     ],
-    "count": 322,
-    "total_val": 89429262,
+    "count": 323,
+    "total_val": 89453742,
     "groups": [
       {
         "code": "RO",
@@ -27124,11 +27141,28 @@
             "val": 12784,
             "sa": "최민수",
             "dday": "D+0일"
+          },
+          {
+            "item": "61627474264",
+            "name": "Wiper blade G07 rear",
+            "alois": "OE",
+            "pgrp": "B1",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000889",
+            "req_qty": 1,
+            "crt_qty": 11,
+            "avail_qty": 9,
+            "req_dt": "10-17",
+            "req_dt_full": "2026-10-17 10:04:31",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 24480,
+            "sa": "이정환",
+            "dday": "D+0일"
           }
         ],
-        "count": 205,
-        "qty_sum": 286,
-        "val": 56216241
+        "count": 206,
+        "qty_sum": 287,
+        "val": 56240721
       },
       {
         "code": "SB",
@@ -28230,7 +28264,7 @@
             "ref_no": "SB2610000466",
             "req_qty": 1,
             "crt_qty": 11,
-            "avail_qty": 10,
+            "avail_qty": 9,
             "req_dt": "10-08",
             "req_dt_full": "2026-10-08 14:50:01",
             "req_brch": "AS_부산(해운중동)",
@@ -29914,15 +29948,6 @@
         "val": 244881
       },
       {
-        "item": "61627474264",
-        "name": "Wiper blade G07 rear",
-        "pgrp": "B1",
-        "alois": "OE",
-        "qty": 11,
-        "avail_qty": 10,
-        "val": 244800
-      },
-      {
         "item": "80225A0A669",
         "name": "MINI Cabin T",
         "pgrp": "M7",
@@ -30018,6 +30043,15 @@
         "pgrp": "B1",
         "alois": "OE",
         "qty": 9,
+        "avail_qty": 9,
+        "val": 220320
+      },
+      {
+        "item": "61627474264",
+        "name": "Wiper blade G07 rear",
+        "pgrp": "B1",
+        "alois": "OE",
+        "qty": 11,
         "avail_qty": 9,
         "val": 220320
       },
@@ -35850,15 +35884,6 @@
             "val": 247100
           },
           {
-            "item": "61627474264",
-            "name": "Wiper blade G07 rear",
-            "pgrp": "B1",
-            "alois": "OE",
-            "qty": 11,
-            "avail_qty": 10,
-            "val": 244800
-          },
-          {
             "item": "80225A0A669",
             "name": "MINI Cabin T",
             "pgrp": "M7",
@@ -35873,6 +35898,15 @@
             "pgrp": "B1",
             "alois": "OE",
             "qty": 9,
+            "avail_qty": 9,
+            "val": 220320
+          },
+          {
+            "item": "61627474264",
+            "name": "Wiper blade G07 rear",
+            "pgrp": "B1",
+            "alois": "OE",
+            "qty": 11,
             "avail_qty": 9,
             "val": 220320
           },
@@ -36221,8 +36255,8 @@
         ],
         "count": 86,
         "qty_sum": 637,
-        "avail_sum": 628,
-        "val": 79028921
+        "avail_sum": 627,
+        "val": 79004441
       },
       {
         "code": "ON",
@@ -36820,7 +36854,7 @@
       }
     ],
     "count": 424,
-    "total_val": 141058021
+    "total_val": 141033541
   },
   "oflow": {
     "rows": [
@@ -37427,7 +37461,7 @@
         "pub": "2026-09-09",
         "pub_full": "2026-09-09 15:05",
         "dday": "D+38일",
-        "amt": 4498435
+        "amt": 4531535
       },
       {
         "ro": "RO2609000685",
@@ -38883,8 +38917,8 @@
       },
       {
         "ro": "RO2610000542",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "진단",
         "sa": "우종훈",
         "pub": "2026-10-12",
@@ -40566,8 +40600,8 @@
       },
       {
         "ro": "RO2610000877",
-        "stat": "정비시작",
-        "stat_cd": "03",
+        "stat": "End Control 요청",
+        "stat_cd": "08",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40632,8 +40666,8 @@
       },
       {
         "ro": "RO2610000883",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40643,8 +40677,8 @@
       },
       {
         "ro": "RO2610000884",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40684,30 +40718,63 @@
         "pub_full": "2026-10-17 09:52",
         "dday": "D+0일",
         "amt": 80344
+      },
+      {
+        "ro": "RO2610000888",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우상만",
+        "pub": "2026-10-17",
+        "pub_full": "2026-10-17 09:58",
+        "dday": "D+0일",
+        "amt": 351935
+      },
+      {
+        "ro": "RO2610000889",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "이정환",
+        "pub": "2026-10-17",
+        "pub_full": "2026-10-17 10:00",
+        "dday": "D+0일",
+        "amt": 1029084
+      },
+      {
+        "ro": "RO2610000890",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "최민수",
+        "pub": "2026-10-17",
+        "pub_full": "2026-10-17 10:09",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 338,
-    "total_amt": 763023037,
+    "count": 341,
+    "total_amt": 764437156,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 15,
+        "count": 16,
         "amt": 10726000
       },
       {
         "stat": "상담완료",
-        "count": 155,
-        "amt": 497619696
+        "count": 154,
+        "amt": 497699293
       },
       {
         "stat": "정비시작",
-        "count": 23,
-        "amt": 20730684
+        "count": 24,
+        "amt": 20443753
       },
       {
         "stat": "End Control 요청",
-        "count": 59,
-        "amt": 98277122
+        "count": 61,
+        "amt": 99898575
       },
       {
         "stat": "공정마감",
@@ -41764,7 +41831,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 48,
-            "avail_qty": 46,
+            "avail_qty": 45,
             "val": 68322
           },
           {
@@ -41774,7 +41841,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 28,
-            "avail_qty": 26,
+            "avail_qty": 25,
             "val": 8250
           }
         ],
@@ -41850,7 +41917,7 @@
             "sa": "안준영",
             "req_qty": 5,
             "crt_qty": 647,
-            "avail_qty": 609,
+            "avail_qty": 603,
             "val": 79910
           },
           {
@@ -41860,7 +41927,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 30,
-            "avail_qty": 28,
+            "avail_qty": 27,
             "val": 75693
           },
           {
@@ -41870,7 +41937,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 19,
-            "avail_qty": 17,
+            "avail_qty": 16,
             "val": 19665
           }
         ],
@@ -42082,7 +42149,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 647,
-            "avail_qty": 609,
+            "avail_qty": 603,
             "val": 79910
           },
           {
@@ -42092,7 +42159,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 30,
-            "avail_qty": 28,
+            "avail_qty": 27,
             "val": 75693
           },
           {
@@ -42102,7 +42169,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 19,
-            "avail_qty": 17,
+            "avail_qty": 16,
             "val": 19665
           }
         ],
@@ -42218,7 +42285,7 @@
             "sa": "김도현",
             "req_qty": 5,
             "crt_qty": 647,
-            "avail_qty": 609,
+            "avail_qty": 603,
             "val": 79910
           },
           {
@@ -43746,7 +43813,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 48,
-            "avail_qty": 46,
+            "avail_qty": 45,
             "val": 68322
           },
           {
@@ -43756,7 +43823,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 11,
-            "avail_qty": 10,
+            "avail_qty": 9,
             "val": 24480
           }
         ],
@@ -44372,7 +44439,7 @@
             "sa": "최민수",
             "req_qty": 5,
             "crt_qty": 647,
-            "avail_qty": 609,
+            "avail_qty": 603,
             "val": 79910
           },
           {
@@ -45266,7 +45333,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 10,
-            "avail_qty": 9,
+            "avail_qty": 8,
             "val": 156975
           },
           {
@@ -45286,7 +45353,7 @@
             "sa": "안준영",
             "req_qty": 5,
             "crt_qty": 647,
-            "avail_qty": 609,
+            "avail_qty": 603,
             "val": 79910
           },
           {
@@ -45846,7 +45913,7 @@
             "sa": "정용환",
             "req_qty": 5,
             "crt_qty": 647,
-            "avail_qty": 609,
+            "avail_qty": 603,
             "val": 79910
           },
           {
@@ -45885,60 +45952,6 @@
         "val": 392219
       },
       {
-        "code": "SB2610000728",
-        "resv_full": "2026-10-17 11:00",
-        "resv": "10-17",
-        "dday": "오늘",
-        "sa": "우종훈",
-        "rows": [
-          {
-            "item": "12415BA2AE5",
-            "name": "Starter",
-            "alois": "SK",
-            "sa": "우종훈",
-            "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 5,
-            "val": 603474
-          }
-        ],
-        "count": 1,
-        "qty_sum": 1,
-        "val": 603474
-      },
-      {
-        "code": "SB2610000975",
-        "resv_full": "2026-10-17 10:20",
-        "resv": "10-17",
-        "dday": "오늘",
-        "sa": "김민규",
-        "rows": [
-          {
-            "item": "34216890353",
-            "name": "Repair kit,",
-            "alois": "A2",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 20,
-            "avail_qty": 18,
-            "val": 131328
-          },
-          {
-            "item": "34356880543",
-            "name": "Brake pad we",
-            "alois": "A5",
-            "sa": "김민규",
-            "req_qty": 1,
-            "crt_qty": 2,
-            "avail_qty": 1,
-            "val": 25222
-          }
-        ],
-        "count": 2,
-        "qty_sum": 2,
-        "val": 156550
-      },
-      {
         "code": "SB2610001012",
         "resv_full": "2026-10-17 10:00",
         "resv": "10-17",
@@ -45952,7 +45965,7 @@
             "sa": "최민수",
             "req_qty": 10,
             "crt_qty": 134,
-            "avail_qty": 117,
+            "avail_qty": 106,
             "val": 165120
           },
           {
@@ -45972,7 +45985,7 @@
             "sa": "최민수",
             "req_qty": 1,
             "crt_qty": 8,
-            "avail_qty": 7,
+            "avail_qty": 6,
             "val": 25228
           },
           {
@@ -46033,12 +46046,12 @@
         "val": 189035
       }
     ],
-    "sb_count": 71,
-    "line_count": 269,
-    "total_val": 70485289,
+    "sb_count": 69,
+    "line_count": 266,
+    "total_val": 69725265,
     "o_lines": 53,
     "o_val": 20762136,
-    "resv_total": 362
+    "resv_total": 359
   },
   "sbcar": {
     "groups": [
@@ -47496,7 +47509,7 @@
         "item": "83135A82511",
         "name": "Brake fluid",
         "alois": "L1",
-        "qty": 131,
+        "qty": 130,
         "no": 4
       },
       {
