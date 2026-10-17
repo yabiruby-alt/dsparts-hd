@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 17일 (토) · 11:53 기준",
+    "generated_at": "10월 17일 (토) · 12:05 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1042231680,
+    "total": 1042178380,
     "item_count": 2212,
     "code_count": 25,
     "alois_groups": [
@@ -4937,7 +4937,7 @@
         ],
         "subtotal_val": 507495481,
         "subtotal_qty": 8770,
-        "subtotal_pct": 48.69
+        "subtotal_pct": 48.7
       },
       {
         "code": "L",
@@ -5014,21 +5014,21 @@
           },
           {
             "code": "L2",
-            "val": 15837513,
-            "pct": 1.52,
-            "qty": 360,
+            "val": 15784213,
+            "pct": 1.51,
+            "qty": 359,
             "parts": [
-              {
-                "item": "90200006413",
-                "name": "Hypoid Axle G4",
-                "qty": 93,
-                "val": 4967560
-              },
               {
                 "item": "61216806755",
                 "name": "Battery 90AH AGM",
                 "qty": 12,
                 "val": 4916664
+              },
+              {
+                "item": "90200006413",
+                "name": "Hypoid Axle G4",
+                "qty": 92,
+                "val": 4914260
               },
               {
                 "item": "90200006494",
@@ -8073,9 +8073,9 @@
             ]
           }
         ],
-        "subtotal_val": 152887793,
-        "subtotal_qty": 4446,
-        "subtotal_pct": 14.67
+        "subtotal_val": 152834493,
+        "subtotal_qty": 4445,
+        "subtotal_pct": 14.66
       },
       {
         "code": "O",
@@ -12495,7 +12495,7 @@
           {
             "code": "SK",
             "val": 64149226,
-            "pct": 6.15,
+            "pct": 6.16,
             "qty": 999,
             "parts": [
               {
@@ -13763,13 +13763,13 @@
         ],
         "subtotal_val": 159719976,
         "subtotal_qty": 1792,
-        "subtotal_pct": 15.32
+        "subtotal_pct": 15.33
       }
     ]
   },
   "oaov": {
     "total": 61119672,
-    "inv_total": 1042231680,
+    "inv_total": 1042178380,
     "pct": 5.86,
     "oa_val": 41405953,
     "ov_val": 19713719,
@@ -38494,8 +38494,8 @@
       },
       {
         "ro": "RO2610000437",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-08",
@@ -40679,7 +40679,7 @@
         "pub": "2026-10-17",
         "pub_full": "2026-10-17 10:42",
         "dday": "D+0일",
-        "amt": 598344
+        "amt": 676144
       },
       {
         "ro": "RO2610000897",
@@ -40716,7 +40716,7 @@
       }
     ],
     "count": 347,
-    "total_amt": 760293866,
+    "total_amt": 760371666,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40725,8 +40725,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 156,
-        "amt": 501141197
+        "count": 155,
+        "amt": 501055649
       },
       {
         "stat": "정비시작",
@@ -40745,8 +40745,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 86,
-        "amt": 133952120
+        "count": 87,
+        "amt": 134115468
       }
     ],
     "oldest": "D+543일"
@@ -41659,7 +41659,7 @@
             "sa": "최민수",
             "req_qty": 2,
             "crt_qty": 42,
-            "avail_qty": 34,
+            "avail_qty": 30,
             "val": 2350
           },
           {
@@ -41669,7 +41669,7 @@
             "sa": "최민수",
             "req_qty": 2,
             "crt_qty": 42,
-            "avail_qty": 34,
+            "avail_qty": 30,
             "val": 2350
           }
         ],
@@ -42508,14 +42508,46 @@
         "count": 4,
         "qty_sum": 8,
         "val": 289299
+      },
+      {
+        "code": "SB2610000699",
+        "resv_full": "2026-10-17 09:40",
+        "resv": "10-17",
+        "dday": "오늘",
+        "sa": "최민수",
+        "rows": [
+          {
+            "item": "51475A87FF0",
+            "name": "Kit all-weat",
+            "alois": "A6",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 102487
+          },
+          {
+            "item": "51475A87FF2",
+            "name": "Kit all-weat",
+            "alois": "A6",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 86548
+          }
+        ],
+        "count": 2,
+        "qty_sum": 2,
+        "val": 189035
       }
     ],
-    "sb_count": 53,
-    "line_count": 112,
-    "total_val": 16559156,
+    "sb_count": 54,
+    "line_count": 114,
+    "total_val": 16748191,
     "o_lines": 26,
     "o_val": 6556827,
-    "resv_total": 12092
+    "resv_total": 12097
   },
   "sbresv": {
     "groups": [
@@ -44186,6 +44218,118 @@
         "val": 65376
       },
       {
+        "code": "SB2610001032",
+        "resv_full": "2026-10-28 09:40",
+        "resv": "10-28",
+        "dday": "D-11일",
+        "sa": "최민수",
+        "rows": [
+          {
+            "item": "34118854273",
+            "name": "Ventilated b",
+            "alois": "L5",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 452352
+          },
+          {
+            "item": "34216882245",
+            "name": "Brake rotor",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 5,
+            "avail_qty": 4,
+            "val": 143927
+          },
+          {
+            "item": "34216882246",
+            "name": "Brake rotor",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 3,
+            "val": 143592
+          },
+          {
+            "item": "34106898192",
+            "name": "Repair kit,",
+            "alois": "A5",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 134347
+          },
+          {
+            "item": "34216892641",
+            "name": "Repair kit,",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 3,
+            "avail_qty": 2,
+            "val": 114230
+          },
+          {
+            "item": "34116883731",
+            "name": "Repair kit f",
+            "alois": "II",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 1,
+            "avail_qty": 0,
+            "val": 50370
+          },
+          {
+            "item": "34356870350",
+            "name": "Brake pad we X3,4 (G)",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 3,
+            "avail_qty": 2,
+            "val": 25238
+          },
+          {
+            "item": "34356870351",
+            "name": "Brake pad we",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 4,
+            "avail_qty": 3,
+            "val": 25220
+          },
+          {
+            "item": "34211161806",
+            "name": "Bolt",
+            "alois": "A2",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 42,
+            "avail_qty": 30,
+            "val": 2350
+          },
+          {
+            "item": "34211161806",
+            "name": "Bolt",
+            "alois": "A2",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 42,
+            "avail_qty": 30,
+            "val": 2350
+          }
+        ],
+        "count": 10,
+        "qty_sum": 14,
+        "val": 1093976
+      },
+      {
         "code": "SB2610000736",
         "resv_full": "2026-10-27 09:20",
         "resv": "10-27",
@@ -44784,8 +44928,8 @@
             "alois": "L2",
             "sa": "M GARAGE",
             "req_qty": 2,
-            "crt_qty": 93,
-            "avail_qty": 85,
+            "crt_qty": 92,
+            "avail_qty": 84,
             "val": 106600
           },
           {
@@ -44898,8 +45042,8 @@
             "alois": "L2",
             "sa": "M GARAGE",
             "req_qty": 2,
-            "crt_qty": 93,
-            "avail_qty": 85,
+            "crt_qty": 92,
+            "avail_qty": 84,
             "val": 106600
           },
           {
@@ -45842,12 +45986,12 @@
         "val": 285430
       }
     ],
-    "sb_count": 66,
-    "line_count": 253,
-    "total_val": 68831101,
+    "sb_count": 67,
+    "line_count": 263,
+    "total_val": 69925077,
     "o_lines": 53,
     "o_val": 20762136,
-    "resv_total": 357
+    "resv_total": 358
   },
   "sbcar": {
     "groups": [
@@ -45963,7 +46107,7 @@
     "total_val": 1144742,
     "o_lines": 0,
     "o_val": 0,
-    "resv_total": 10071
+    "resv_total": 10099
   },
   "nonmng": {
     "rows": [
@@ -47318,7 +47462,7 @@
         "item": "90200006413",
         "name": "Hypoid Axle G4",
         "alois": "L2",
-        "qty": 93,
+        "qty": 92,
         "no": 8
       },
       {
