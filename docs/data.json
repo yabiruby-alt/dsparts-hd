@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 17일 (토) · 13:21 기준",
+    "generated_at": "10월 17일 (토) · 13:33 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1041215487,
+    "total": 1041102144,
     "item_count": 2212,
     "code_count": 25,
     "alois_groups": [
@@ -250,9 +250,9 @@
         "rows": [
           {
             "code": "A1",
-            "val": 212075391,
+            "val": 212068648,
             "pct": 20.37,
-            "qty": 2330,
+            "qty": 2329,
             "parts": [
               {
                 "item": "64115A1BDB6",
@@ -329,8 +329,8 @@
               {
                 "item": "33117525064",
                 "name": "Screw plug",
-                "qty": 109,
-                "val": 734987
+                "qty": 108,
+                "val": 728244
               },
               {
                 "item": "11428570590",
@@ -4935,9 +4935,9 @@
             ]
           }
         ],
-        "subtotal_val": 506808479,
-        "subtotal_qty": 8754,
-        "subtotal_pct": 48.67
+        "subtotal_val": 506801736,
+        "subtotal_qty": 8752,
+        "subtotal_pct": 48.68
       },
       {
         "code": "L",
@@ -5014,9 +5014,9 @@
           },
           {
             "code": "L2",
-            "val": 15784213,
-            "pct": 1.52,
-            "qty": 359,
+            "val": 15677613,
+            "pct": 1.51,
+            "qty": 357,
             "parts": [
               {
                 "item": "61216806755",
@@ -5033,8 +5033,8 @@
               {
                 "item": "90200006494",
                 "name": "Hypoid Axle G5",
-                "qty": 86,
-                "val": 4583800
+                "qty": 84,
+                "val": 4477200
               },
               {
                 "item": "90200006986",
@@ -8073,9 +8073,9 @@
             ]
           }
         ],
-        "subtotal_val": 152575102,
-        "subtotal_qty": 4426,
-        "subtotal_pct": 14.65
+        "subtotal_val": 152468502,
+        "subtotal_qty": 4424,
+        "subtotal_pct": 14.64
       },
       {
         "code": "O",
@@ -13769,7 +13769,7 @@
   },
   "oaov": {
     "total": 61119672,
-    "inv_total": 1041215487,
+    "inv_total": 1041102144,
     "pct": 5.87,
     "oa_val": 41405953,
     "ov_val": 19713719,
@@ -15653,16 +15653,16 @@
     "foot_note": "이번 달 발행 없음"
   },
   "acc": {
-    "total": 8758443,
-    "cost": 8580293,
-    "lines": 297,
-    "invoices_count": 80,
+    "total": 8809293,
+    "cost": 8623798,
+    "lines": 298,
+    "invoices_count": 81,
     "by_type": [
       {
         "code": "3",
         "label": "Car Accessories",
-        "lines": 88,
-        "val": 1468781
+        "lines": 89,
+        "val": 1519631
       },
       {
         "code": "5",
@@ -15678,6 +15678,14 @@
       }
     ],
     "recent5": [
+      {
+        "inv": "IV2610001488",
+        "num": "RO2610000724",
+        "sa": "우상만",
+        "dt": "2026-10-17 13:31",
+        "amt": 50850,
+        "cost": 43505
+      },
       {
         "inv": "IV2610001482",
         "num": "RO2609001392",
@@ -15709,14 +15717,6 @@
         "dt": "2026-10-17 10:51",
         "amt": 7080,
         "cost": 7080
-      },
-      {
-        "inv": "AR2610003853",
-        "num": "SP2610000045",
-        "sa": "박진호",
-        "dt": "2026-10-17 09:45",
-        "amt": 135870,
-        "cost": 153339
       }
     ]
   },
@@ -23597,10 +23597,27 @@
         "val": 12784,
         "sa": "최민수",
         "dday": "D+0일"
+      },
+      {
+        "item": "31106768887",
+        "name": "Hex nut",
+        "alois": "OV",
+        "pgrp": "B1",
+        "ref_tp": "SB",
+        "ref_no": "SB2610000402",
+        "req_qty": 2,
+        "crt_qty": 2,
+        "avail_qty": 0,
+        "req_dt": "10-17",
+        "req_dt_full": "2026-10-17 13:28:55",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 8906,
+        "sa": "최민수",
+        "dday": "D+0일"
       }
     ],
-    "count": 321,
-    "total_val": 89415612,
+    "count": 322,
+    "total_val": 89424518,
     "groups": [
       {
         "code": "RO",
@@ -28474,11 +28491,28 @@
             "val": 80008,
             "sa": "M GARAGE",
             "dday": "D+1일"
+          },
+          {
+            "item": "31106768887",
+            "name": "Hex nut",
+            "alois": "OV",
+            "pgrp": "B1",
+            "ref_tp": "SB",
+            "ref_no": "SB2610000402",
+            "req_qty": 2,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "req_dt": "10-17",
+            "req_dt_full": "2026-10-17 13:28:55",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 8906,
+            "sa": "최민수",
+            "dday": "D+0일"
           }
         ],
-        "count": 82,
-        "qty_sum": 100,
-        "val": 27583211
+        "count": 83,
+        "qty_sum": 102,
+        "val": 27592117
       },
       {
         "code": "SP",
@@ -36853,19 +36887,19 @@
       {
         "date": "10-17",
         "in_val": 5483525,
-        "out_val": 5830214,
-        "net": -346689
+        "out_val": 6886953,
+        "net": -1403428
       }
     ],
     "total_in": 134913252,
-    "total_out": 175582005,
-    "net": -40668753,
+    "total_out": 176638744,
+    "net": -41725492,
     "by_code": [
       {
         "code": "O8",
         "in_val": 109108285,
-        "out_val": 171386833,
-        "net": -62278548
+        "out_val": 172443572,
+        "net": -63335287
       },
       {
         "code": "OA",
@@ -37504,14 +37538,14 @@
       },
       {
         "ro": "RO2609001076",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "소음",
         "sa": "최민수",
         "pub": "2026-09-17",
         "pub_full": "2026-09-17 08:59",
         "dday": "D+30일",
-        "amt": 8628905
+        "amt": 6458905
       },
       {
         "ro": "RO2609001084",
@@ -37724,8 +37758,8 @@
       },
       {
         "ro": "RO2609001463",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "중수리",
         "sa": "김민규",
         "pub": "2026-09-23",
@@ -39351,28 +39385,6 @@
         "amt": 52400
       },
       {
-        "ro": "RO2610000723",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "Maintenance",
-        "sa": "우상만",
-        "pub": "2026-10-14",
-        "pub_full": "2026-10-14 18:29",
-        "dday": "D+3일",
-        "amt": 386752
-      },
-      {
-        "ro": "RO2610000724",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
-        "svc": "경수리",
-        "sa": "우상만",
-        "pub": "2026-10-14",
-        "pub_full": "2026-10-14 18:34",
-        "dday": "D+3일",
-        "amt": 1715600
-      },
-      {
         "ro": "RO2610000726",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -40683,8 +40695,8 @@
       },
       {
         "ro": "RO2610000903",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40694,38 +40706,49 @@
       },
       {
         "ro": "RO2610000904",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
         "pub_full": "2026-10-17 13:06",
         "dday": "D+0일",
         "amt": 139381
+      },
+      {
+        "ro": "RO2610000905",
+        "stat": "상담시작",
+        "stat_cd": "01",
+        "svc": "Maintenance",
+        "sa": "우상만",
+        "pub": "2026-10-17",
+        "pub_full": "2026-10-17 13:33",
+        "dday": "D+0일",
+        "amt": 0
       }
     ],
-    "count": 346,
-    "total_amt": 750717844,
+    "count": 345,
+    "total_amt": 746445492,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 15,
+        "count": 16,
         "amt": 10726000
       },
       {
         "stat": "상담완료",
-        "count": 156,
-        "amt": 487427689
+        "count": 154,
+        "amt": 486731957
       },
       {
         "stat": "정비시작",
-        "count": 33,
-        "amt": 22464268
+        "count": 35,
+        "amt": 23160000
       },
       {
         "stat": "End Control 요청",
-        "count": 41,
-        "amt": 77915106
+        "count": 37,
+        "amt": 64017649
       },
       {
         "stat": "공정마감",
@@ -40734,8 +40757,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 96,
-        "amt": 140772448
+        "count": 98,
+        "amt": 150397553
       }
     ],
     "oldest": "D+543일"
@@ -41972,7 +41995,7 @@
             "sa": "이정환",
             "req_qty": 2,
             "crt_qty": 43,
-            "avail_qty": 29,
+            "avail_qty": 27,
             "val": 10524
           }
         ],
@@ -43322,7 +43345,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 22,
-            "avail_qty": 21,
+            "avail_qty": 20,
             "val": 554880
           },
           {
@@ -43332,7 +43355,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 12,
-            "avail_qty": 4,
+            "avail_qty": 2,
             "val": 77006
           },
           {
@@ -43372,7 +43395,7 @@
             "sa": "안준영",
             "req_qty": 4,
             "crt_qty": 38,
-            "avail_qty": 30,
+            "avail_qty": 26,
             "val": 21948
           },
           {
@@ -43402,7 +43425,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 43,
-            "avail_qty": 29,
+            "avail_qty": 27,
             "val": 10524
           },
           {
@@ -43432,7 +43455,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 42,
-            "avail_qty": 26,
+            "avail_qty": 24,
             "val": 7878
           },
           {
@@ -43442,7 +43465,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 108,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 6743
           },
           {
@@ -43452,7 +43475,7 @@
             "sa": "안준영",
             "req_qty": 4,
             "crt_qty": 22,
-            "avail_qty": 14,
+            "avail_qty": 10,
             "val": 5276
           },
           {
@@ -43462,7 +43485,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 27,
-            "avail_qty": 20,
+            "avail_qty": 18,
             "val": 3502
           },
           {
@@ -43492,7 +43515,7 @@
             "sa": "안준영",
             "req_qty": 2,
             "crt_qty": 23,
-            "avail_qty": 19,
+            "avail_qty": 17,
             "val": 1752
           },
           {
@@ -43502,7 +43525,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 85,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 1125
           }
         ],
@@ -44435,6 +44458,208 @@
         "val": 67396
       },
       {
+        "code": "SB2610000402",
+        "resv_full": "2026-10-26 09:00",
+        "resv": "10-26",
+        "dday": "D-9일",
+        "sa": "최민수",
+        "rows": [
+          {
+            "item": "11419895359",
+            "name": "Oil pump",
+            "alois": "L7",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 22,
+            "avail_qty": 20,
+            "val": 554880
+          },
+          {
+            "item": "31508860349",
+            "name": "Repair kit o",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 12,
+            "avail_qty": 2,
+            "val": 77006
+          },
+          {
+            "item": "31106870648",
+            "name": "Hex bolt wit",
+            "alois": "SK",
+            "sa": "최민수",
+            "req_qty": 12,
+            "crt_qty": 36,
+            "avail_qty": 0,
+            "val": 48348
+          },
+          {
+            "item": "31106780613",
+            "name": "Combin.nut",
+            "alois": "L6",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "val": 28578
+          },
+          {
+            "item": "31206866022",
+            "name": "Collar screw",
+            "alois": "SK",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 7,
+            "avail_qty": 0,
+            "val": 27224
+          },
+          {
+            "item": "31106872062",
+            "name": "Hex bolt wit",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 4,
+            "crt_qty": 38,
+            "avail_qty": 26,
+            "val": 21948
+          },
+          {
+            "item": "31106872063",
+            "name": "Hex bolt wit",
+            "alois": "SK",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "val": 11158
+          },
+          {
+            "item": "31106866023",
+            "name": "Clip nut",
+            "alois": "L6",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "val": 10718
+          },
+          {
+            "item": "07146875114",
+            "name": "Hexagon nut",
+            "alois": "A2",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 43,
+            "avail_qty": 27,
+            "val": 10524
+          },
+          {
+            "item": "33306760585",
+            "name": "Combin.nut",
+            "alois": "SK",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 4,
+            "avail_qty": 0,
+            "val": 10124
+          },
+          {
+            "item": "31106768887",
+            "name": "Hex nut",
+            "alois": "OV",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 8906
+          },
+          {
+            "item": "33306760349",
+            "name": "Nut",
+            "alois": "A2",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 42,
+            "avail_qty": 24,
+            "val": 7878
+          },
+          {
+            "item": "33117525064",
+            "name": "Screw plug",
+            "alois": "A1",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 108,
+            "avail_qty": 80,
+            "val": 6743
+          },
+          {
+            "item": "11418612615",
+            "name": "ASA-Bolt",
+            "alois": "A5",
+            "sa": "최민수",
+            "req_qty": 4,
+            "crt_qty": 22,
+            "avail_qty": 10,
+            "val": 5276
+          },
+          {
+            "item": "33131214961",
+            "name": "Lock Ring",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 27,
+            "avail_qty": 18,
+            "val": 3502
+          },
+          {
+            "item": "31511213527",
+            "name": "O-Ring",
+            "alois": "A6",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 3,
+            "avail_qty": 0,
+            "val": 2701
+          },
+          {
+            "item": "11417823426",
+            "name": "ISA screw",
+            "alois": "A5",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 2,
+            "avail_qty": 0,
+            "val": 1753
+          },
+          {
+            "item": "11121726238",
+            "name": "Dowel",
+            "alois": "A4",
+            "sa": "최민수",
+            "req_qty": 2,
+            "crt_qty": 23,
+            "avail_qty": 17,
+            "val": 1752
+          },
+          {
+            "item": "51337025635",
+            "name": "Clip",
+            "alois": "L2",
+            "sa": "최민수",
+            "req_qty": 1,
+            "crt_qty": 85,
+            "avail_qty": 80,
+            "val": 1125
+          }
+        ],
+        "count": 19,
+        "qty_sum": 47,
+        "val": 840144
+      },
+      {
         "code": "SB2610000640",
         "resv_full": "2026-10-26 09:00",
         "resv": "10-26",
@@ -44948,7 +45173,7 @@
             "sa": "M GARAGE",
             "req_qty": 2,
             "crt_qty": 108,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 13486
           },
           {
@@ -44958,7 +45183,7 @@
             "sa": "M GARAGE",
             "req_qty": 1,
             "crt_qty": 108,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 6743
           },
           {
@@ -44968,7 +45193,7 @@
             "sa": "M GARAGE",
             "req_qty": 1,
             "crt_qty": 108,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 6743
           }
         ],
@@ -45052,7 +45277,7 @@
             "sa": "M GARAGE",
             "req_qty": 2,
             "crt_qty": 108,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 13486
           },
           {
@@ -45062,7 +45287,7 @@
             "sa": "M GARAGE",
             "req_qty": 1,
             "crt_qty": 108,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 6743
           },
           {
@@ -45072,7 +45297,7 @@
             "sa": "M GARAGE",
             "req_qty": 1,
             "crt_qty": 108,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 6743
           }
         ],
@@ -45542,7 +45767,7 @@
             "sa": "정용환",
             "req_qty": 1,
             "crt_qty": 85,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 1125
           }
         ],
@@ -45724,7 +45949,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 85,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 1125
           }
         ],
@@ -45838,7 +46063,7 @@
             "sa": "이정환",
             "req_qty": 2,
             "crt_qty": 12,
-            "avail_qty": 4,
+            "avail_qty": 2,
             "val": 77006
           },
           {
@@ -45878,7 +46103,7 @@
             "sa": "이정환",
             "req_qty": 4,
             "crt_qty": 38,
-            "avail_qty": 30,
+            "avail_qty": 26,
             "val": 21948
           },
           {
@@ -45888,7 +46113,7 @@
             "sa": "이정환",
             "req_qty": 4,
             "crt_qty": 42,
-            "avail_qty": 26,
+            "avail_qty": 24,
             "val": 15756
           },
           {
@@ -45948,7 +46173,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 108,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 6743
           },
           {
@@ -45958,7 +46183,7 @@
             "sa": "이정환",
             "req_qty": 4,
             "crt_qty": 22,
-            "avail_qty": 14,
+            "avail_qty": 10,
             "val": 5276
           },
           {
@@ -45968,7 +46193,7 @@
             "sa": "이정환",
             "req_qty": 2,
             "crt_qty": 27,
-            "avail_qty": 20,
+            "avail_qty": 18,
             "val": 3502
           },
           {
@@ -45988,7 +46213,7 @@
             "sa": "이정환",
             "req_qty": 2,
             "crt_qty": 23,
-            "avail_qty": 19,
+            "avail_qty": 17,
             "val": 1752
           },
           {
@@ -46008,7 +46233,7 @@
             "sa": "이정환",
             "req_qty": 1,
             "crt_qty": 85,
-            "avail_qty": 81,
+            "avail_qty": 80,
             "val": 1125
           }
         ],
@@ -46039,11 +46264,11 @@
         "val": 285430
       }
     ],
-    "sb_count": 69,
-    "line_count": 267,
-    "total_val": 70560256,
-    "o_lines": 53,
-    "o_val": 20762136,
+    "sb_count": 70,
+    "line_count": 286,
+    "total_val": 71400400,
+    "o_lines": 54,
+    "o_val": 20771042,
     "resv_total": 357
   },
   "sbcar": {
@@ -47539,7 +47764,7 @@
         "item": "90200006494",
         "name": "Hypoid Axle G5",
         "alois": "L2",
-        "qty": 86,
+        "qty": 84,
         "no": 11
       },
       {
@@ -47587,7 +47812,7 @@
         "item": "33117525064",
         "name": "Screw plug",
         "alois": "A1",
-        "qty": 109,
+        "qty": 108,
         "no": 17
       },
       {
