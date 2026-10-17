@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 17일 (토) · 11:30 기준",
+    "generated_at": "10월 17일 (토) · 11:41 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1043031885,
-    "item_count": 2215,
+    "total": 1042478780,
+    "item_count": 2213,
     "code_count": 25,
     "alois_groups": [
       {
@@ -251,7 +251,7 @@
           {
             "code": "A1",
             "val": 212504472,
-            "pct": 20.37,
+            "pct": 20.38,
             "qty": 2341,
             "parts": [
               {
@@ -719,7 +719,7 @@
           {
             "code": "A4",
             "val": 48012595,
-            "pct": 4.6,
+            "pct": 4.61,
             "qty": 1974,
             "parts": [
               {
@@ -1494,9 +1494,9 @@
           },
           {
             "code": "A5",
-            "val": 103329479,
-            "pct": 9.91,
-            "qty": 1516,
+            "val": 103224944,
+            "pct": 9.9,
+            "qty": 1514,
             "parts": [
               {
                 "item": "11418646454",
@@ -1655,12 +1655,6 @@
                 "val": 736713
               },
               {
-                "item": "36122455268",
-                "name": "Hub cap fixe",
-                "qty": 7,
-                "val": 731745
-              },
-              {
                 "item": "34208853554",
                 "name": "Brake disk",
                 "qty": 4,
@@ -1683,6 +1677,12 @@
                 "name": "Hood",
                 "qty": 1,
                 "val": 647703
+              },
+              {
+                "item": "36122455268",
+                "name": "Hub cap fixe",
+                "qty": 6,
+                "val": 627210
               },
               {
                 "item": "13627828769",
@@ -4935,9 +4935,9 @@
             ]
           }
         ],
-        "subtotal_val": 507600016,
-        "subtotal_qty": 8772,
-        "subtotal_pct": 48.67
+        "subtotal_val": 507495481,
+        "subtotal_qty": 8770,
+        "subtotal_pct": 48.68
       },
       {
         "code": "L",
@@ -8075,7 +8075,7 @@
         ],
         "subtotal_val": 152887793,
         "subtotal_qty": 4446,
-        "subtotal_pct": 14.66
+        "subtotal_pct": 14.67
       },
       {
         "code": "O",
@@ -8084,9 +8084,9 @@
         "rows": [
           {
             "code": "O8",
-            "val": 64508990,
-            "pct": 6.18,
-            "qty": 1070,
+            "val": 64495340,
+            "pct": 6.19,
+            "qty": 1069,
             "parts": [
               {
                 "item": "17425A18806",
@@ -9817,12 +9817,6 @@
                 "val": 15379
               },
               {
-                "item": "11128654637",
-                "name": "Cap for oil",
-                "qty": 1,
-                "val": 13650
-              },
-              {
                 "item": "33205A31900",
                 "name": "Dust guard r",
                 "qty": 1,
@@ -10813,7 +10807,7 @@
           {
             "code": "OE",
             "val": 81906649,
-            "pct": 7.85,
+            "pct": 7.86,
             "qty": 653,
             "parts": [
               {
@@ -12137,9 +12131,9 @@
             ]
           }
         ],
-        "subtotal_val": 213170989,
-        "subtotal_qty": 2188,
-        "subtotal_pct": 20.44
+        "subtotal_val": 213157339,
+        "subtotal_qty": 2187,
+        "subtotal_pct": 20.45
       },
       {
         "code": "I",
@@ -12148,9 +12142,9 @@
         "rows": [
           {
             "code": "II",
-            "val": 9653111,
-            "pct": 0.93,
-            "qty": 105,
+            "val": 9218191,
+            "pct": 0.88,
+            "qty": 104,
             "parts": [
               {
                 "item": "36116895390",
@@ -12187,12 +12181,6 @@
                 "name": "Wiring harne",
                 "qty": 1,
                 "val": 439587
-              },
-              {
-                "item": "51248499572",
-                "name": "Spindle driv",
-                "qty": 1,
-                "val": 434920
               },
               {
                 "item": "61355A398E8",
@@ -12455,9 +12443,9 @@
             ]
           }
         ],
-        "subtotal_val": 9653111,
-        "subtotal_qty": 105,
-        "subtotal_pct": 0.93
+        "subtotal_val": 9218191,
+        "subtotal_qty": 104,
+        "subtotal_pct": 0.88
       },
       {
         "code": "S",
@@ -13077,7 +13065,7 @@
           {
             "code": "SZ",
             "val": 80048774,
-            "pct": 7.67,
+            "pct": 7.68,
             "qty": 327,
             "parts": [
               {
@@ -13781,13 +13769,13 @@
         ],
         "subtotal_val": 159719976,
         "subtotal_qty": 1792,
-        "subtotal_pct": 15.31
+        "subtotal_pct": 15.32
       }
     ]
   },
   "oaov": {
     "total": 61119672,
-    "inv_total": 1043031885,
+    "inv_total": 1042478780,
     "pct": 5.86,
     "oa_val": 41405953,
     "ov_val": 19713719,
@@ -22886,23 +22874,6 @@
         "dday": "D+1일"
       },
       {
-        "item": "11128654637",
-        "name": "Cap for oil",
-        "alois": "O8",
-        "pgrp": "B1",
-        "ref_tp": "RO",
-        "ref_no": "RO2610000785",
-        "req_qty": 1,
-        "crt_qty": 1,
-        "avail_qty": 0,
-        "req_dt": "10-16",
-        "req_dt_full": "2026-10-16 10:33:08",
-        "req_brch": "AS_부산(해운중동)",
-        "val": 13650,
-        "sa": "이정환",
-        "dday": "D+1일"
-      },
-      {
         "item": "22116883513",
         "name": "Engine mount",
         "alois": "O8",
@@ -23634,8 +23605,8 @@
         "dday": "D+0일"
       }
     ],
-    "count": 322,
-    "total_val": 89429262,
+    "count": 321,
+    "total_val": 89415612,
     "groups": [
       {
         "code": "RO",
@@ -26446,23 +26417,6 @@
             "dday": "D+1일"
           },
           {
-            "item": "11128654637",
-            "name": "Cap for oil",
-            "alois": "O8",
-            "pgrp": "B1",
-            "ref_tp": "RO",
-            "ref_no": "RO2610000785",
-            "req_qty": 1,
-            "crt_qty": 1,
-            "avail_qty": 0,
-            "req_dt": "10-16",
-            "req_dt_full": "2026-10-16 10:33:08",
-            "req_brch": "AS_부산(해운중동)",
-            "val": 13650,
-            "sa": "이정환",
-            "dday": "D+1일"
-          },
-          {
             "item": "22116883513",
             "name": "Engine mount",
             "alois": "O8",
@@ -27126,9 +27080,9 @@
             "dday": "D+0일"
           }
         ],
-        "count": 205,
-        "qty_sum": 286,
-        "val": 56216241
+        "count": 204,
+        "qty_sum": 285,
+        "val": 56202591
       },
       {
         "code": "SB",
@@ -37640,8 +37594,8 @@
       },
       {
         "ro": "RO2609001207",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-09-18",
@@ -39235,14 +39189,14 @@
       },
       {
         "ro": "RO2610000657",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-13",
         "pub_full": "2026-10-13 17:46",
         "dday": "D+4일",
-        "amt": 874236
+        "amt": 1138336
       },
       {
         "ro": "RO2610000658",
@@ -39781,7 +39735,7 @@
         "pub": "2026-10-15",
         "pub_full": "2026-10-15 14:39",
         "dday": "D+2일",
-        "amt": 517896
+        "amt": 528376
       },
       {
         "ro": "RO2610000786",
@@ -40775,8 +40729,8 @@
       },
       {
         "ro": "RO2610000898",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "이정환",
         "pub": "2026-10-17",
@@ -40786,8 +40740,8 @@
       },
       {
         "ro": "RO2610000899",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40797,7 +40751,7 @@
       }
     ],
     "count": 348,
-    "total_amt": 765977716,
+    "total_amt": 766252296,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40806,18 +40760,18 @@
       },
       {
         "stat": "상담완료",
-        "count": 156,
-        "amt": 501518406
+        "count": 155,
+        "amt": 500686770
       },
       {
         "stat": "정비시작",
-        "count": 27,
-        "amt": 18578388
+        "count": 29,
+        "amt": 20558840
       },
       {
         "stat": "End Control 요청",
-        "count": 64,
-        "amt": 98061983
+        "count": 62,
+        "amt": 96628765
       },
       {
         "stat": "공정마감",
@@ -40826,8 +40780,8 @@
       },
       {
         "stat": "가정산 완료",
-        "count": 82,
-        "amt": 131615406
+        "count": 83,
+        "amt": 132174388
       }
     ],
     "oldest": "D+543일"
@@ -44331,7 +44285,7 @@
             "alois": "A5",
             "sa": "M GARAGE",
             "req_qty": 1,
-            "crt_qty": 7,
+            "crt_qty": 6,
             "avail_qty": 5,
             "val": 104535
           },
@@ -45928,7 +45882,7 @@
     "total_val": 68831101,
     "o_lines": 53,
     "o_val": 20762136,
-    "resv_total": 355
+    "resv_total": 356
   },
   "sbcar": {
     "groups": [
@@ -46113,17 +46067,6 @@
         "val": 439587,
         "last_in": "2026-10-17",
         "last_sale": "2021-03-26"
-      },
-      {
-        "item": "51248499572",
-        "name": "Spindle driv",
-        "alois": "II",
-        "qty": 1,
-        "avail_qty": 0,
-        "prc": 434920,
-        "val": 434920,
-        "last_in": "2026-10-16",
-        "last_sale": "2022-10-25"
       },
       {
         "item": "61355A398E8",
@@ -46456,10 +46399,10 @@
         "last_sale": "2020-10-29"
       }
     ],
-    "count": 37,
-    "total_val": 9100167,
-    "qty_sum": 78,
-    "pct": 0.87
+    "count": 36,
+    "total_val": 8665247,
+    "qty_sum": 77,
+    "pct": 0.83
   },
   "stockcheck": {
     "rows": [
@@ -46889,19 +46832,11 @@
       },
       {
         "loc": "A140842",
-        "item": "11128654637",
-        "name": "Cap for oil",
-        "alois": "O8",
-        "qty": 1,
-        "no": 54
-      },
-      {
-        "loc": "A140842",
         "item": "11289888617",
         "name": "Bush",
         "alois": "SK",
         "qty": 4,
-        "no": 55
+        "no": 54
       },
       {
         "loc": "A140843",
@@ -46909,7 +46844,7 @@
         "name": "Hex bolt wit",
         "alois": "SK",
         "qty": 4,
-        "no": 56
+        "no": 55
       },
       {
         "loc": "A140862",
@@ -46917,7 +46852,7 @@
         "name": "Gasket, thro",
         "alois": "SK",
         "qty": 1,
-        "no": 57
+        "no": 56
       },
       {
         "loc": "A140862",
@@ -46925,7 +46860,7 @@
         "name": "O-ring",
         "alois": "II",
         "qty": 1,
-        "no": 58
+        "no": 57
       },
       {
         "loc": "A140862",
@@ -46933,7 +46868,7 @@
         "name": "Additional s",
         "alois": "II",
         "qty": 1,
-        "no": 59
+        "no": 58
       },
       {
         "loc": "A140863",
@@ -46941,7 +46876,7 @@
         "name": "Combin.nut",
         "alois": "L6",
         "qty": 4,
-        "no": 60
+        "no": 59
       },
       {
         "loc": "A141002",
@@ -46949,7 +46884,7 @@
         "name": "Venting line",
         "alois": "II",
         "qty": 1,
-        "no": 61
+        "no": 60
       },
       {
         "loc": "A141012",
@@ -46957,7 +46892,7 @@
         "name": "Fuel feed li",
         "alois": "II",
         "qty": 1,
-        "no": 62
+        "no": 61
       },
       {
         "loc": "A141020",
@@ -46965,7 +46900,7 @@
         "name": "Cover housin",
         "alois": "A6",
         "qty": 1,
-        "no": 63
+        "no": 62
       },
       {
         "loc": "A141040",
@@ -46973,7 +46908,7 @@
         "name": "Gasket",
         "alois": "II",
         "qty": 1,
-        "no": 64
+        "no": 63
       },
       {
         "loc": "A160310",
@@ -46981,7 +46916,7 @@
         "name": "Door weather",
         "alois": "L5",
         "qty": 6,
-        "no": 65
+        "no": 64
       },
       {
         "loc": "A160340",
@@ -46989,7 +46924,7 @@
         "name": "Electrical m",
         "alois": "SZ",
         "qty": 1,
-        "no": 66
+        "no": 65
       },
       {
         "loc": "A160620",
@@ -46997,7 +46932,7 @@
         "name": "Support, fog",
         "alois": "A6",
         "qty": 1,
-        "no": 67
+        "no": 66
       },
       {
         "loc": "A160630",
@@ -47005,7 +46940,7 @@
         "name": "Finisher win",
         "alois": "II",
         "qty": 1,
-        "no": 68
+        "no": 67
       },
       {
         "loc": "A160830",
@@ -47013,7 +46948,7 @@
         "name": "Wiring harne",
         "alois": "II",
         "qty": 1,
-        "no": 69
+        "no": 68
       },
       {
         "loc": "A160840",
@@ -47021,7 +46956,7 @@
         "name": "Floor mats,",
         "alois": "A5",
         "qty": 3,
-        "no": 70
+        "no": 69
       },
       {
         "loc": "A160910",
@@ -47029,7 +46964,7 @@
         "name": "Channel cove",
         "alois": "L7",
         "qty": 1,
-        "no": 71
+        "no": 70
       },
       {
         "loc": "A160920",
@@ -47037,7 +46972,7 @@
         "name": "Tail light,",
         "alois": "A5",
         "qty": 3,
-        "no": 72
+        "no": 71
       },
       {
         "loc": "A161010",
@@ -47045,7 +46980,7 @@
         "name": "Grill, cente",
         "alois": "L7",
         "qty": 1,
-        "no": 73
+        "no": 72
       },
       {
         "loc": "A161020",
@@ -47053,7 +46988,7 @@
         "name": "Intake manif",
         "alois": "L7",
         "qty": 1,
-        "no": 74
+        "no": 73
       },
       {
         "loc": "A930160",
@@ -47061,7 +46996,7 @@
         "name": "Gap seal rea",
         "alois": "II",
         "qty": 1,
-        "no": 75
+        "no": 74
       },
       {
         "loc": "A940120",
@@ -47069,7 +47004,7 @@
         "name": "Window well",
         "alois": "II",
         "qty": 1,
-        "no": 76
+        "no": 75
       },
       {
         "loc": "A940130",
@@ -47077,7 +47012,7 @@
         "name": "Abdichtung A",
         "alois": "L7",
         "qty": 1,
-        "no": 77
+        "no": 76
       },
       {
         "loc": "A940140",
@@ -47085,7 +47020,7 @@
         "name": "Shaft cover",
         "alois": "A6",
         "qty": 1,
-        "no": 78
+        "no": 77
       },
       {
         "loc": "B070116",
@@ -47093,7 +47028,7 @@
         "name": "Absorber fun",
         "alois": "A6",
         "qty": 1,
-        "no": 79
+        "no": 78
       },
       {
         "loc": "B070132",
@@ -47101,7 +47036,7 @@
         "name": "Clip Natur",
         "alois": "A5",
         "qty": 16,
-        "no": 80
+        "no": 79
       },
       {
         "loc": "B070153",
@@ -47109,7 +47044,7 @@
         "name": "Screw with L",
         "alois": "A5",
         "qty": 20,
-        "no": 81
+        "no": 80
       },
       {
         "loc": "B070324",
@@ -47117,7 +47052,7 @@
         "name": "Multi-purpos",
         "alois": "II",
         "qty": 4,
-        "no": 82
+        "no": 81
       },
       {
         "loc": "B070345",
@@ -47125,7 +47060,7 @@
         "name": "Screw, therm",
         "alois": "O8",
         "qty": 2,
-        "no": 83
+        "no": 82
       },
       {
         "loc": "B070366",
@@ -47133,7 +47068,7 @@
         "name": "Hex bolt wit",
         "alois": "SK",
         "qty": 36,
-        "no": 84
+        "no": 83
       },
       {
         "loc": "B070503",
@@ -47141,7 +47076,7 @@
         "name": "Gasket",
         "alois": "O8",
         "qty": 1,
-        "no": 85
+        "no": 84
       },
       {
         "loc": "B070601",
@@ -47149,7 +47084,7 @@
         "name": "Gasket",
         "alois": "L7",
         "qty": 2,
-        "no": 86
+        "no": 85
       },
       {
         "loc": "B070606",
@@ -47157,7 +47092,7 @@
         "name": "Rep. kit, sc",
         "alois": "A5",
         "qty": 5,
-        "no": 87
+        "no": 86
       },
       {
         "loc": "B070815",
@@ -47165,7 +47100,7 @@
         "name": "Plug-in nut",
         "alois": "A5",
         "qty": 10,
-        "no": 88
+        "no": 87
       },
       {
         "loc": "B070843",
@@ -47173,7 +47108,7 @@
         "name": "Nut",
         "alois": "A4",
         "qty": 9,
-        "no": 89
+        "no": 88
       },
       {
         "loc": "B090451",
@@ -47181,7 +47116,7 @@
         "name": "Line coolant",
         "alois": "A6",
         "qty": 1,
-        "no": 90
+        "no": 89
       },
       {
         "loc": "B110152",
@@ -47189,7 +47124,7 @@
         "name": "Engine mount",
         "alois": "O8",
         "qty": 1,
-        "no": 91
+        "no": 90
       },
       {
         "loc": "B110153",
@@ -47197,7 +47132,7 @@
         "name": "Engine mount",
         "alois": "O8",
         "qty": 1,
-        "no": 92
+        "no": 91
       },
       {
         "loc": "B140106",
@@ -47205,7 +47140,7 @@
         "name": "Set bolts",
         "alois": "II",
         "qty": 1,
-        "no": 93
+        "no": 92
       },
       {
         "loc": "C000000",
@@ -47213,7 +47148,7 @@
         "name": "Cover, bumpe",
         "alois": "II",
         "qty": 1,
-        "no": 94
+        "no": 93
       },
       {
         "loc": "C000002",
@@ -47221,7 +47156,7 @@
         "name": "Steering gea",
         "alois": "O8",
         "qty": 1,
-        "no": 95
+        "no": 94
       },
       {
         "loc": "C000002",
@@ -47229,7 +47164,7 @@
         "name": "Cover",
         "alois": "A6",
         "qty": 1,
-        "no": 96
+        "no": 95
       },
       {
         "loc": "C000002",
@@ -47237,7 +47172,7 @@
         "name": "Fitted lugga",
         "alois": "A5",
         "qty": 1,
-        "no": 97
+        "no": 96
       },
       {
         "loc": "C000002",
@@ -47245,7 +47180,7 @@
         "name": "Air flaps, l",
         "alois": "O8",
         "qty": 1,
-        "no": 98
+        "no": 97
       },
       {
         "loc": "C000002",
@@ -47253,7 +47188,7 @@
         "name": "ocker panel",
         "alois": "L7",
         "qty": 1,
-        "no": 99
+        "no": 98
       },
       {
         "loc": "C000002",
@@ -47261,7 +47196,7 @@
         "name": "Railing carr",
         "alois": "O8",
         "qty": 1,
-        "no": 100
+        "no": 99
       },
       {
         "loc": "C000003",
@@ -47269,7 +47204,7 @@
         "name": "Headlight, L",
         "alois": "A6",
         "qty": 1,
-        "no": 101
+        "no": 100
       },
       {
         "loc": "C000004",
@@ -47277,7 +47212,7 @@
         "name": "Center brack",
         "alois": "II",
         "qty": 1,
-        "no": 102
+        "no": 101
       },
       {
         "loc": "C000005",
@@ -47285,7 +47220,7 @@
         "name": "Disk wheel,",
         "alois": "O8",
         "qty": 2,
-        "no": 103
+        "no": 102
       },
       {
         "loc": "C000005",
@@ -47293,7 +47228,7 @@
         "name": "Scheibenrad",
         "alois": "II",
         "qty": 2,
-        "no": 104
+        "no": 103
       },
       {
         "loc": "C000005",
@@ -47301,7 +47236,7 @@
         "name": "Disc wheel l",
         "alois": "O8",
         "qty": 1,
-        "no": 105
+        "no": 104
       },
       {
         "loc": "TIRE",
@@ -47309,7 +47244,7 @@
         "name": "FREcoContact",
         "alois": "SZ",
         "qty": 2,
-        "no": 106
+        "no": 105
       },
       {
         "loc": "TIRE",
@@ -47317,7 +47252,7 @@
         "name": "PZerorf275/4",
         "alois": "SY",
         "qty": 2,
-        "no": 107
+        "no": 106
       },
       {
         "loc": "-",
@@ -47325,7 +47260,7 @@
         "name": "REAR COIL SP",
         "alois": "SZ",
         "qty": 2,
-        "no": 108
+        "no": 107
       },
       {
         "loc": "-",
@@ -47333,7 +47268,7 @@
         "name": "Bumper trim",
         "alois": "SZ",
         "qty": 1,
-        "no": 109
+        "no": 108
       },
       {
         "loc": "-",
@@ -47341,7 +47276,7 @@
         "name": "PILOTSPORT42",
         "alois": "SZ",
         "qty": 4,
-        "no": 110
+        "no": 109
       },
       {
         "loc": "-",
@@ -47349,10 +47284,10 @@
         "name": "Serenity Plu",
         "alois": "SZ",
         "qty": 2,
-        "no": 111
+        "no": 110
       }
     ],
-    "count": 111,
+    "count": 110,
     "date": "2026-10-17"
   },
   "stockcheck_week": {
@@ -49762,7 +49697,7 @@
         "item": "36122455268",
         "name": "Hub cap fixe",
         "alois": "A5",
-        "qty": 7,
+        "qty": 6,
         "no": 301
       },
       {
