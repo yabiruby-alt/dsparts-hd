@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 17일 (토) · 10:20 기준",
+    "generated_at": "10월 17일 (토) · 10:31 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,7 +239,7 @@
     ]
   },
   "inv": {
-    "total": 1046091880,
+    "total": 1045478959,
     "item_count": 2215,
     "code_count": 25,
     "alois_groups": [
@@ -251,7 +251,7 @@
           {
             "code": "A1",
             "val": 213105720,
-            "pct": 20.37,
+            "pct": 20.38,
             "qty": 2355,
             "parts": [
               {
@@ -1495,7 +1495,7 @@
           {
             "code": "A5",
             "val": 103354701,
-            "pct": 9.88,
+            "pct": 9.89,
             "qty": 1516,
             "parts": [
               {
@@ -4937,7 +4937,7 @@
         ],
         "subtotal_val": 508571317,
         "subtotal_qty": 8794,
-        "subtotal_pct": 48.62
+        "subtotal_pct": 48.64
       },
       {
         "code": "L",
@@ -5014,9 +5014,9 @@
           },
           {
             "code": "L2",
-            "val": 15946363,
-            "pct": 1.52,
-            "qty": 364,
+            "val": 15945238,
+            "pct": 1.53,
+            "qty": 363,
             "parts": [
               {
                 "item": "90200006413",
@@ -5063,8 +5063,8 @@
               {
                 "item": "51337025635",
                 "name": "Clip",
-                "qty": 87,
-                "val": 97875
+                "qty": 86,
+                "val": 96750
               },
               {
                 "item": "90200006490",
@@ -8073,9 +8073,9 @@
             ]
           }
         ],
-        "subtotal_val": 153465784,
-        "subtotal_qty": 4484,
-        "subtotal_pct": 14.67
+        "subtotal_val": 153464659,
+        "subtotal_qty": 4483,
+        "subtotal_pct": 14.68
       },
       {
         "code": "O",
@@ -11471,7 +11471,7 @@
           {
             "code": "OV",
             "val": 19713719,
-            "pct": 1.88,
+            "pct": 1.89,
             "qty": 216,
             "parts": [
               {
@@ -12139,7 +12139,7 @@
         ],
         "subtotal_val": 213170989,
         "subtotal_qty": 2188,
-        "subtotal_pct": 20.38
+        "subtotal_pct": 20.39
       },
       {
         "code": "I",
@@ -12512,9 +12512,9 @@
           },
           {
             "code": "SK",
-            "val": 65337834,
-            "pct": 6.25,
-            "qty": 1003,
+            "val": 64726038,
+            "pct": 6.19,
+            "qty": 1001,
             "parts": [
               {
                 "item": "12415BA2AE6",
@@ -12537,8 +12537,8 @@
               {
                 "item": "12415BA2AE5",
                 "name": "Starter",
-                "qty": 7,
-                "val": 4224318
+                "qty": 6,
+                "val": 3620844
               },
               {
                 "item": "34516893390",
@@ -12573,8 +12573,8 @@
               {
                 "item": "12418571349",
                 "name": "Acoustic plu",
-                "qty": 66,
-                "val": 549252
+                "qty": 65,
+                "val": 540930
               },
               {
                 "item": "51648076922",
@@ -13077,7 +13077,7 @@
           {
             "code": "SZ",
             "val": 80048774,
-            "pct": 7.65,
+            "pct": 7.66,
             "qty": 327,
             "parts": [
               {
@@ -13779,16 +13779,16 @@
             ]
           }
         ],
-        "subtotal_val": 161230679,
-        "subtotal_qty": 1808,
-        "subtotal_pct": 15.41
+        "subtotal_val": 160618883,
+        "subtotal_qty": 1806,
+        "subtotal_pct": 15.36
       }
     ]
   },
   "oaov": {
     "total": 61119672,
-    "inv_total": 1046091880,
-    "pct": 5.84,
+    "inv_total": 1045478959,
+    "pct": 5.85,
     "oa_val": 41405953,
     "ov_val": 19713719,
     "oa_lines": 108,
@@ -17691,7 +17691,7 @@
     ],
     "m12_val": 62279148,
     "m12_count": 200,
-    "m12_pct": 5.95,
+    "m12_pct": 5.96,
     "m24_items": [
       {
         "item": "24008741536",
@@ -36923,19 +36923,19 @@
       {
         "date": "10-17",
         "in_val": 5483525,
-        "out_val": 153339,
-        "net": 5330186
+        "out_val": 195843,
+        "net": 5287682
       }
     ],
     "total_in": 134913252,
-    "total_out": 169905130,
-    "net": -34991878,
+    "total_out": 169947634,
+    "net": -35034382,
     "by_code": [
       {
         "code": "O8",
         "in_val": 109108285,
-        "out_val": 165957058,
-        "net": -56848773
+        "out_val": 165999562,
+        "net": -56891277
       },
       {
         "code": "OA",
@@ -40654,8 +40654,8 @@
       },
       {
         "ro": "RO2610000885",
-        "stat": "상담완료",
-        "stat_cd": "02",
+        "stat": "정비시작",
+        "stat_cd": "03",
         "svc": "Maintenance",
         "sa": "우상만",
         "pub": "2026-10-17",
@@ -40751,13 +40751,13 @@
       },
       {
         "stat": "상담완료",
-        "count": 155,
-        "amt": 498735119
+        "count": 154,
+        "amt": 498574431
       },
       {
         "stat": "정비시작",
-        "count": 26,
-        "amt": 20876032
+        "count": 27,
+        "amt": 21036720
       },
       {
         "stat": "End Control 요청",
@@ -41462,7 +41462,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 66,
+            "crt_qty": 65,
             "avail_qty": 56,
             "val": 8322
           }
@@ -41494,7 +41494,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 66,
+            "crt_qty": 65,
             "avail_qty": 56,
             "val": 8322
           }
@@ -42422,7 +42422,7 @@
             "alois": "SK",
             "sa": "김민규",
             "req_qty": 1,
-            "crt_qty": 66,
+            "crt_qty": 65,
             "avail_qty": 56,
             "val": 8322
           }
@@ -43506,7 +43506,7 @@
             "alois": "L2",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 87,
+            "crt_qty": 86,
             "avail_qty": 83,
             "val": 1125
           }
@@ -43874,7 +43874,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 66,
+            "crt_qty": 65,
             "avail_qty": 56,
             "val": 8322
           }
@@ -44012,7 +44012,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 7,
+            "crt_qty": 6,
             "avail_qty": 5,
             "val": 603474
           },
@@ -44022,7 +44022,7 @@
             "alois": "SK",
             "sa": "우종훈",
             "req_qty": 1,
-            "crt_qty": 66,
+            "crt_qty": 65,
             "avail_qty": 56,
             "val": 8322
           }
@@ -44234,7 +44234,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 66,
+            "crt_qty": 65,
             "avail_qty": 56,
             "val": 8322
           }
@@ -45424,7 +45424,7 @@
             "alois": "SK",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 66,
+            "crt_qty": 65,
             "avail_qty": 56,
             "val": 8322
           }
@@ -45542,7 +45542,7 @@
             "alois": "SK",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 66,
+            "crt_qty": 65,
             "avail_qty": 56,
             "val": 8322
           },
@@ -45552,7 +45552,7 @@
             "alois": "L2",
             "sa": "안준영",
             "req_qty": 1,
-            "crt_qty": 87,
+            "crt_qty": 86,
             "avail_qty": 83,
             "val": 1125
           }
@@ -45836,7 +45836,7 @@
             "alois": "L2",
             "sa": "이정환",
             "req_qty": 1,
-            "crt_qty": 87,
+            "crt_qty": 86,
             "avail_qty": 83,
             "val": 1125
           }
@@ -45938,76 +45938,14 @@
         "count": 6,
         "qty_sum": 13,
         "val": 392219
-      },
-      {
-        "code": "SB2610001012",
-        "resv_full": "2026-10-17 10:00",
-        "resv": "10-17",
-        "dday": "오늘",
-        "sa": "최민수",
-        "rows": [
-          {
-            "item": "99995BC4396",
-            "name": "0W-30 DA5 (20L) DA5",
-            "alois": "SY",
-            "sa": "최민수",
-            "req_qty": 10,
-            "crt_qty": 124,
-            "avail_qty": 106,
-            "val": 165120
-          },
-          {
-            "item": "90200006413",
-            "name": "Hypoid Axle G4",
-            "alois": "L2",
-            "sa": "최민수",
-            "req_qty": 2,
-            "crt_qty": 95,
-            "avail_qty": 85,
-            "val": 106600
-          },
-          {
-            "item": "11425A33C43",
-            "name": "Set oil-filt",
-            "alois": "A3",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 7,
-            "avail_qty": 6,
-            "val": 25228
-          },
-          {
-            "item": "07145A38759",
-            "name": "Oil drain pl",
-            "alois": "A3",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 4,
-            "avail_qty": 3,
-            "val": 9219
-          },
-          {
-            "item": "33117525064",
-            "name": "Screw plug",
-            "alois": "A1",
-            "sa": "최민수",
-            "req_qty": 1,
-            "crt_qty": 110,
-            "avail_qty": 81,
-            "val": 6743
-          }
-        ],
-        "count": 5,
-        "qty_sum": 15,
-        "val": 312910
       }
     ],
-    "sb_count": 68,
-    "line_count": 264,
-    "total_val": 69536230,
+    "sb_count": 67,
+    "line_count": 259,
+    "total_val": 69223320,
     "o_lines": 53,
     "o_val": 20762136,
-    "resv_total": 358
+    "resv_total": 356
   },
   "sbcar": {
     "groups": [
@@ -46707,7 +46645,7 @@
         "item": "12418571349",
         "name": "Acoustic plu",
         "alois": "SK",
-        "qty": 66,
+        "qty": 65,
         "no": 21
       },
       {
@@ -48817,7 +48755,7 @@
         "item": "51337025635",
         "name": "Clip",
         "alois": "L2",
-        "qty": 87,
+        "qty": 86,
         "no": 173
       },
       {
@@ -48825,7 +48763,7 @@
         "item": "12418571349",
         "name": "Acoustic plu",
         "alois": "SK",
-        "qty": 66,
+        "qty": 65,
         "no": 174
       },
       {
