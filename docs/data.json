@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 17일 (토) · 14:08 기준",
+    "generated_at": "10월 17일 (토) · 14:19 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -239,8 +239,8 @@
     ]
   },
   "inv": {
-    "total": 1040963916,
-    "item_count": 2210,
+    "total": 1040774881,
+    "item_count": 2208,
     "code_count": 25,
     "alois_groups": [
       {
@@ -2810,9 +2810,9 @@
           },
           {
             "code": "A6",
-            "val": 96014277,
-            "pct": 9.22,
-            "qty": 1459,
+            "val": 95825242,
+            "pct": 9.21,
+            "qty": 1457,
             "parts": [
               {
                 "item": "63119450229",
@@ -3805,12 +3805,6 @@
                 "val": 103194
               },
               {
-                "item": "51475A87FF0",
-                "name": "Kit all-weat",
-                "qty": 1,
-                "val": 102487
-              },
-              {
                 "item": "51475A87FF3",
                 "name": "Floor liner",
                 "qty": 1,
@@ -3893,12 +3887,6 @@
                 "name": "Kit dummy tr",
                 "qty": 2,
                 "val": 88290
-              },
-              {
-                "item": "51475A87FF2",
-                "name": "Kit all-weat",
-                "qty": 1,
-                "val": 86548
               },
               {
                 "item": "51475A87FF4",
@@ -4929,9 +4917,9 @@
             ]
           }
         ],
-        "subtotal_val": 506706108,
-        "subtotal_qty": 8750,
-        "subtotal_pct": 48.68
+        "subtotal_val": 506517073,
+        "subtotal_qty": 8748,
+        "subtotal_pct": 48.67
       },
       {
         "code": "L",
@@ -10801,7 +10789,7 @@
           {
             "code": "OE",
             "val": 81659549,
-            "pct": 7.84,
+            "pct": 7.85,
             "qty": 652,
             "parts": [
               {
@@ -12121,7 +12109,7 @@
         ],
         "subtotal_val": 212910239,
         "subtotal_qty": 2186,
-        "subtotal_pct": 20.45
+        "subtotal_pct": 20.46
       },
       {
         "code": "I",
@@ -13757,7 +13745,7 @@
   },
   "oaov": {
     "total": 61119672,
-    "inv_total": 1040963916,
+    "inv_total": 1040774881,
     "pct": 5.87,
     "oa_val": 41405953,
     "ov_val": 19713719,
@@ -23602,10 +23590,27 @@
         "val": 8906,
         "sa": "최민수",
         "dday": "D+0일"
+      },
+      {
+        "item": "11658591888",
+        "name": "Gasket Asbes",
+        "alois": "O8",
+        "pgrp": "-",
+        "ref_tp": "RO",
+        "ref_no": "RO2610000907",
+        "req_qty": 1,
+        "crt_qty": 0,
+        "avail_qty": 0,
+        "req_dt": "10-17",
+        "req_dt_full": "2026-10-17 14:10:26",
+        "req_brch": "AS_부산(해운중동)",
+        "val": 23360,
+        "sa": "최민수",
+        "dday": "D+0일"
       }
     ],
-    "count": 322,
-    "total_val": 89424518,
+    "count": 323,
+    "total_val": 89447878,
     "groups": [
       {
         "code": "RO",
@@ -27077,11 +27082,28 @@
             "val": 12784,
             "sa": "최민수",
             "dday": "D+0일"
+          },
+          {
+            "item": "11658591888",
+            "name": "Gasket Asbes",
+            "alois": "O8",
+            "pgrp": "-",
+            "ref_tp": "RO",
+            "ref_no": "RO2610000907",
+            "req_qty": 1,
+            "crt_qty": 0,
+            "avail_qty": 0,
+            "req_dt": "10-17",
+            "req_dt_full": "2026-10-17 14:10:26",
+            "req_brch": "AS_부산(해운중동)",
+            "val": 23360,
+            "sa": "최민수",
+            "dday": "D+0일"
           }
         ],
-        "count": 204,
-        "qty_sum": 285,
-        "val": 56202591
+        "count": 205,
+        "qty_sum": 286,
+        "val": 56225951
       },
       {
         "code": "SB",
@@ -37280,7 +37302,7 @@
         "pub": "2026-09-02",
         "pub_full": "2026-09-02 08:57",
         "dday": "D+45일",
-        "amt": 6378200
+        "amt": 6144000
       },
       {
         "ro": "RO2609000179",
@@ -39143,25 +39165,14 @@
       },
       {
         "ro": "RO2610000678",
-        "stat": "공정마감",
-        "stat_cd": "04",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "Maintenance",
         "sa": "김민규",
         "pub": "2026-10-14",
         "pub_full": "2026-10-14 09:44",
         "dday": "D+3일",
         "amt": 1182633
-      },
-      {
-        "ro": "RO2610000682",
-        "stat": "정비시작",
-        "stat_cd": "03",
-        "svc": "경수리",
-        "sa": "김민규",
-        "pub": "2026-10-14",
-        "pub_full": "2026-10-14 09:56",
-        "dday": "D+3일",
-        "amt": 188140
       },
       {
         "ro": "RO2610000684",
@@ -39206,17 +39217,6 @@
         "pub_full": "2026-10-14 10:45",
         "dday": "D+3일",
         "amt": 346800
-      },
-      {
-        "ro": "RO2610000697",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "진단",
-        "sa": "김민규",
-        "pub": "2026-10-14",
-        "pub_full": "2026-10-14 10:53",
-        "dday": "D+3일",
-        "amt": 0
       },
       {
         "ro": "RO2610000703",
@@ -39538,17 +39538,6 @@
         "amt": 56000
       },
       {
-        "ro": "RO2610000784",
-        "stat": "상담완료",
-        "stat_cd": "02",
-        "svc": "Maintenance",
-        "sa": "김민규",
-        "pub": "2026-10-15",
-        "pub_full": "2026-10-15 14:36",
-        "dday": "D+2일",
-        "amt": 56000
-      },
-      {
         "ro": "RO2610000785",
         "stat": "상담완료",
         "stat_cd": "02",
@@ -39825,8 +39814,8 @@
       },
       {
         "ro": "RO2610000818",
-        "stat": "End Control 요청",
-        "stat_cd": "08",
+        "stat": "가정산 완료",
+        "stat_cd": "05",
         "svc": "입고 Proactive-RITA",
         "sa": "김민규",
         "pub": "2026-10-16",
@@ -40628,48 +40617,48 @@
       },
       {
         "ro": "RO2610000908",
-        "stat": "상담시작",
-        "stat_cd": "01",
+        "stat": "상담완료",
+        "stat_cd": "02",
         "svc": "Maintenance",
         "sa": "최민수",
         "pub": "2026-10-17",
         "pub_full": "2026-10-17 14:02",
         "dday": "D+0일",
-        "amt": 245500
+        "amt": 0
       }
     ],
-    "count": 338,
-    "total_amt": 744627617,
+    "count": 335,
+    "total_amt": 743903777,
     "by_stat": [
       {
         "stat": "상담시작",
-        "count": 16,
-        "amt": 10971500
+        "count": 15,
+        "amt": 10726000
       },
       {
         "stat": "상담완료",
-        "count": 145,
-        "amt": 487571199
+        "count": 144,
+        "amt": 487280999
       },
       {
         "stat": "정비시작",
-        "count": 37,
-        "amt": 24090547
+        "count": 36,
+        "amt": 23902407
       },
       {
         "stat": "End Control 요청",
-        "count": 32,
-        "amt": 59716701
+        "count": 31,
+        "amt": 59365501
       },
       {
         "stat": "공정마감",
-        "count": 6,
-        "amt": 12594966
+        "count": 5,
+        "amt": 11412333
       },
       {
         "stat": "가정산 완료",
-        "count": 102,
-        "amt": 149682704
+        "count": 104,
+        "amt": 151216537
       }
     ],
     "oldest": "D+543일"
