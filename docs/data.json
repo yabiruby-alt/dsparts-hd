@@ -2,7 +2,7 @@
   "meta": {
     "branch_name": "AS_부산(해운중동)",
     "brch_code": "BRCH 15",
-    "generated_at": "10월 17일 (토) · 12:45 기준",
+    "generated_at": "10월 17일 (토) · 12:58 기준",
     "calendar_image": "team-calendar.png"
   },
   "recv": {
@@ -40727,18 +40727,29 @@
       },
       {
         "ro": "RO2610000901",
+        "stat": "상담완료",
+        "stat_cd": "02",
+        "svc": "Maintenance",
+        "sa": "우상만",
+        "pub": "2026-10-17",
+        "pub_full": "2026-10-17 12:45",
+        "dday": "D+0일",
+        "amt": 177009
+      },
+      {
+        "ro": "RO2610000902",
         "stat": "상담시작",
         "stat_cd": "01",
         "svc": "Maintenance",
-        "sa": "안준영",
+        "sa": "최민수",
         "pub": "2026-10-17",
-        "pub_full": "2026-10-17 12:45",
+        "pub_full": "2026-10-17 12:54",
         "dday": "D+0일",
         "amt": 0
       }
     ],
-    "count": 349,
-    "total_amt": 761113565,
+    "count": 350,
+    "total_amt": 761290574,
     "by_stat": [
       {
         "stat": "상담시작",
@@ -40747,8 +40758,8 @@
       },
       {
         "stat": "상담완료",
-        "count": 156,
-        "amt": 501797548
+        "count": 157,
+        "amt": 501974557
       },
       {
         "stat": "정비시작",
@@ -41825,7 +41836,7 @@
             "sa": "김민규",
             "req_qty": 1,
             "crt_qty": 27,
-            "avail_qty": 25,
+            "avail_qty": 24,
             "val": 8250
           }
         ],
@@ -42513,7 +42524,7 @@
             "sa": "안준영",
             "req_qty": 1,
             "crt_qty": 37,
-            "avail_qty": 35,
+            "avail_qty": 34,
             "val": 72735
           },
           {
@@ -46013,7 +46024,7 @@
     "total_val": 69925077,
     "o_lines": 53,
     "o_val": 20762136,
-    "resv_total": 356
+    "resv_total": 354
   },
   "sbcar": {
     "groups": [
