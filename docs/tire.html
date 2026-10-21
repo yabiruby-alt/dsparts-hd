@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>동성모터스 PARTS</title>
+<style>
+  :root { --bg:#f3f4f6; --card:#fff; --ink:#111827; --sub:#6b7280; --line:#d1d5db; --accent:#1c69d4; --err:#b91c1c; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1115; --card:#181b21; --ink:#f3f4f6; --sub:#9ca3af; --line:#2f3440; --accent:#6ea8ff; --err:#f87171; } }
+  * { box-sizing:border-box; }
+  html,body { height:100%; margin:0; }
+  body { background:var(--bg); color:var(--ink); font-family:"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;
+         display:flex; align-items:center; justify-content:center; padding:16px; }
+  .box { width:100%; max-width:340px; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:26px 22px; }
+  h1 { font-size:17px; margin:0 0 4px; }
+  p.sub { margin:0 0 18px; font-size:13px; color:var(--sub); }
+  label { display:block; font-size:12px; color:var(--sub); margin:12px 0 4px; }
+  input { width:100%; font-size:16px; padding:11px 12px; border:1px solid var(--line); border-radius:9px; background:transparent; color:var(--ink); }
+  input:focus { outline:2px solid var(--accent); outline-offset:-1px; }
+  button { width:100%; margin-top:18px; font-size:15px; padding:12px; border:0; border-radius:9px; background:var(--accent); color:#fff; font-weight:600; cursor:pointer; }
+  button[disabled] { opacity:.55; cursor:default; }
+  .msg { min-height:18px; margin-top:12px; font-size:13px; color:var(--sub); }
+  .msg.err { color:var(--err); }
+  #form { display:none; }
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>동성모터스 PARTS</h1>
+  <p class="sub" id="sub">불러오는 중…</p>
+  <form id="form" autocomplete="on">
+    <label for="uid">아이디</label>
+    <input id="uid" name="username" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required>
+    <label for="pw">비밀번호</label>
+    <input id="pw" name="password" type="password" autocomplete="current-password" required>
+    <button id="go" type="submit">로그인</button>
+  </form>
+  <div class="msg" id="msg"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/dist/umd/supabase.js"></script>
+<script>
+/* 이 페이지에는 데이터가 없습니다. 재고조사 앱과 같은 계정으로 로그인하면 Supabase 에서 화면을 받아 그립니다.
+   (로그인 세션 저장 이름이 재고조사 앱과 같아서, 앱에 로그인돼 있으면 바로 열립니다) */
+var SUPABASE_URL = "https://qswzxudtzjuheugdnuoc.supabase.co";
+var SUPABASE_KEY = "sb_publishable_L2_ucSAJjdWvMfvWZborbQ_1cmSAuR4";
+var LOGIN_DOMAIN = "@tablet.dongsung.local";
+var PAGE = /tire\.html$/i.test(location.pathname) ? "tire" : "index";
+
+var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY, {
+  auth: { persistSession: true, autoRefreshToken: true, storageKey: "inventory-scan-auth" }
+});
+window.__dashSb = sb;
+window.__dashSignOut = async function () { try { await sb.auth.signOut(); } catch (e) {} location.reload(); };
+
+var $ = function (id) { return document.getElementById(id); };
+function say(text, err) { var m = $("msg"); m.textContent = text || ""; m.className = "msg" + (err ? " err" : ""); }
+function showForm() { $("sub").textContent = "재고조사 앱과 같은 계정으로 로그인하세요."; $("form").style.display = "block"; $("uid").focus(); }
+
+async function gunzipText(b64) {
+  var bin = atob(b64), bytes = new Uint8Array(bin.length);
+  for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  var stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
+  return await new Response(stream).arrayBuffer();
+}
+async function sha256Hex(buf) {
+  var d = await crypto.subtle.digest("SHA-256", buf);
+  return Array.from(new Uint8Array(d)).map(function (b) { return b.toString(16).padStart(2, "0"); }).join("");
+}
+
+async function load() {
+  $("form").style.display = "none";
+  $("sub").textContent = "화면을 불러오는 중…"; say("");
+  var r = await sb.from("dash_pages").select("body_gz,sha256,generated_at").eq("page", PAGE).limit(1);
+  if (r.error) { $("sub").textContent = "불러오지 못했습니다."; say("권한이 없거나 연결에 문제가 있습니다. (" + r.error.message + ")", true); return; }
+  if (!r.data || !r.data.length) { $("sub").textContent = "아직 올라온 화면이 없습니다."; say("데몬 PC 가 켜져 있는지 확인해 주세요.", true); return; }
+  var buf;
+  try { buf = await gunzipText(r.data[0].body_gz); } catch (e) { $("sub").textContent = "화면을 풀지 못했습니다."; say(String(e), true); return; }
+  if (r.data[0].sha256 && (await sha256Hex(buf)) !== r.data[0].sha256) {
+    $("sub").textContent = "화면이 손상되었습니다."; say("잠시 후 다시 열어 주세요.", true); return;
+  }
+  var html = new TextDecoder("utf-8").decode(buf);
+  var logout = '<button onclick="window.__dashSignOut()" style="position:fixed;right:10px;bottom:10px;z-index:2147483647;'
+    + 'font:12px/1 sans-serif;padding:7px 10px;border:1px solid #9ca3af;border-radius:8px;background:rgba(255,255,255,.92);color:#374151;'
+    + 'cursor:pointer;opacity:.75">로그아웃</button>';
+  var at = html.toLowerCase().lastIndexOf("</body>");   // 화면 안의 스크립트 문자열에 든 </body> 가 아니라 맨 끝 것
+  html = at >= 0 ? html.slice(0, at) + logout + html.slice(at) : html + logout;
+  document.open(); document.write(html); document.close();
+}
+
+$("form").addEventListener("submit", async function (ev) {
+  ev.preventDefault();
+  var id = $("uid").value.trim(), pw = $("pw").value;
+  if (!id || !pw) return;
+  $("go").disabled = true; say("로그인 중…");
+  var r = await sb.auth.signInWithPassword({ email: id.indexOf("@") >= 0 ? id : id + LOGIN_DOMAIN, password: pw });
+  $("go").disabled = false;
+  if (r.error) { say("아이디 또는 비밀번호가 맞지 않습니다.", true); $("pw").value = ""; $("pw").focus(); return; }
+  load();
+});
+
+(async function () {
+  var s = await sb.auth.getSession();
+  if (s.data && s.data.session) load(); else showForm();
+})();
+</script>
+</body>
+</html>
